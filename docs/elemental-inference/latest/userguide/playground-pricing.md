@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/pla
 ---
 
 # Pricing
-<a name="playground-pricing"></a>
 
 Playground jobs incur both AWS Elemental Inference and AWS Elemental MediaConvert charges. For more information about pricing, see [AWS Elemental Inference pricing](https://aws.amazon.com/elemental-inference/pricing/) and [AWS Elemental MediaConvert pricing](https://aws.amazon.com/mediaconvert/pricing/). Before you submit, the **Create job** page shows an estimated cost per minute of the clip. For an All features preview, it shows figures only when pricing is available for your Region. Otherwise, it describes what's charged.
 + A Smart Cropping job is charged only if it succeeds.

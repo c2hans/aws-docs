@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/toDate.html
 ---
 
 # $toDate
-<a name="toDate"></a>
 
 New from version 4.0
 

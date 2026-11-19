@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # Update a Windows Server AMI
-<a name="automation-tutorial-update-patch-windows-ami"></a>
 
 The `AWS-UpdateWindowsAmi` runbook lets you automate image maintenance tasks on your Amazon Windows Amazon Machine Image (AMI) without having to author the runbook in JSON or YAML. This runbook is supported for Windows Server 2008 R2 or later. You can use the `AWS-UpdateWindowsAmi` runbook to perform the following types of tasks.
 + Install all Windows updates and upgrade Amazon software (default behavior).

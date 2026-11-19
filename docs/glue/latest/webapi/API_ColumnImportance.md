@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ColumnImportance.
 ---
 
 # ColumnImportance
-<a name="API_ColumnImportance"></a>
 
 A structure containing the column name and column importance score for a column.
 

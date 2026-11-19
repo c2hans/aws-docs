@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/replace-function.
 ---
 
 # Replace
-<a name="replace-function"></a>
 
 `replace` replaces part of a string with another string that you specify.
 

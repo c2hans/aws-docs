@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListConsentPortals
-<a name="API_ListConsentPortals"></a>
 
 Lists all of the consent portals in your account.
 

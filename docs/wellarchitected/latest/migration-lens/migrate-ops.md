@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/mi
 ---
 
 # Migrate
-<a name="migrate-ops"></a>
 
  The migrate phase is a pivotal stage in any migration process, and effective strategies are key to success. It's essential to have a well-defined testing phase strategy that covers thorough testing of workloads in the AWS cloud environment. Rigorous and appropriate testing helps identify and rectify issues before they impact operations. Additionally, it's crucial to review your application lifecycle management, such as the CI/CD pipeline, and make necessary adjustments once your workloads are in the AWS Cloud. Aligning your application deployment and management processes with the cloud environment can enhance efficiency and maximize the benefits of AWS migration.
 

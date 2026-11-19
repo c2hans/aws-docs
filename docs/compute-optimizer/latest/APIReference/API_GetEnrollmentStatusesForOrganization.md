@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # GetEnrollmentStatusesForOrganization
-<a name="API_GetEnrollmentStatusesForOrganization"></a>
 
 Returns the AWS Compute Optimizer enrollment (opt-in) status of organization member accounts, if your account is an organization management account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Working with memories in Amazon OpenSearch Memory
-<a name="memory-memories"></a>
 
 In Amazon OpenSearch Memory, a *memory* is a piece of text that a memory strategy extracted from events, or that you wrote directly. Each memory belongs to one actor, one session, and one strategy, and carries the IDs of the events it was derived from.
 

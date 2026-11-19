@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_C
 ---
 
 # CommonControlMappingDetails
-<a name="API_CommonControlMappingDetails"></a>
 
 A structure that contains details about a common control mapping. In particular, it returns the Amazon Resource Name (ARN) of the common control.
 

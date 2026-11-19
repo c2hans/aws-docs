@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # PutVoiceConnectorOrigination
-<a name="API_voice-chime_PutVoiceConnectorOrigination"></a>
 
 Updates a Voice Connector's origination settings.
 

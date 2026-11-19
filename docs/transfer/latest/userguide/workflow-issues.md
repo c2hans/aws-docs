@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/workflow-issue
 ---
 
 # Troubleshoot workflow issues
-<a name="workflow-issues"></a>
 
 This section describes possible solutions for issues with managed workflows.
 

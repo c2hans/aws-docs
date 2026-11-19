@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Lis
 ---
 
 # ListRuleExecutions
-<a name="API_ListRuleExecutions"></a>
 
 Lists the rule executions that have occurred in a pipeline configured for conditions with rules.
 

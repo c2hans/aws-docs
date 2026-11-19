@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-marketing-clou
 ---
 
 # Limitations and notes for Salesforce Marketing Cloud Account Engagement connector
-<a name="salesforce-marketing-cloud-account-engagement-connector-limitations"></a>
 
 The following notes and limitations apply:
 + When both a limit and partitioning are applied, the limit takes precedence over the partitioning.

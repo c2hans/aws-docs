@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cdk/v1/guide/work-with-cdk-csharp.html
 This is the AWS CDK v1 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and will now only receive critical bug fixes and security patches. New features will be developed for CDK v2 exclusively. Support for CDK v1 will end entirely on June 1, 2023. [Migrate to CDK v2](work-with-cdk-v2.md) to have access to the latest features and fixes.
 
 # Working with the AWS CDK in C\#
-<a name="work-with-cdk-csharp"></a>
 
 .NET is a fully-supported client language for the AWS CDK and is considered stable. C\# is the main .NET language for which we provide examples and support. You can choose to write AWS CDK applications in other .NET languages, such as Visual Basic or F\#, but AWS offers limited support for using these languages with the CDK.
 

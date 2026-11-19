@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/designing-your-s
 ---
 
 # Designing your GraphQL schema
-<a name="designing-your-schema"></a>
 
 The GraphQL schema is the foundation of any GraphQL server implementation. Each GraphQL API is defined by a **single** schema that contains types and fields describing how the data from requests will be populated. The data flowing through your API and the operations performed must be validated against the schema.
 

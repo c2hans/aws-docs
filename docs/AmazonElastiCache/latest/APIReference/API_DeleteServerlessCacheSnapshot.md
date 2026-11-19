@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DeleteServerlessCacheSnapshot
-<a name="API_DeleteServerlessCacheSnapshot"></a>
 
 Deletes an existing serverless cache snapshot. Available for Valkey, Redis OSS and Serverless Memcached only.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # AlertStateData
-<a name="API_AlertStateData"></a>
 
 Structured detail about the current evaluation.
 

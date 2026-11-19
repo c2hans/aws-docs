@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_OnDemandProv
 ---
 
 # OnDemandProvisioningSpecification
-<a name="API_OnDemandProvisioningSpecification"></a>
 
  The launch specification for On-Demand Instances in the instance fleet, which determines the allocation strategy.
 

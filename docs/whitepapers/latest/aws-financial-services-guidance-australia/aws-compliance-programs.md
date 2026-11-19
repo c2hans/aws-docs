@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 ---
 
 # AWS compliance programs
-<a name="aws-compliance-programs"></a>
 
  AWS has obtained certifications and independent third-party attestations for a variety of industry specific workloads; however, the following are of particular importance to ARIs:
 +  **ISO 27001** – ISO 27001 is a security management standard that specifies security management best practices and comprehensive security controls that follow the ISO 27002 best practice guidance. The basis of this certification is the development and implementation of a rigorous security program, which includes the development and implementation of an Information Security Management System, which defines how AWS perpetually manages security in a holistic, comprehensive manner. For more information or to download the AWS ISO 27001 certification, see [ISO 27001 Compliance](https://aws.amazon.com/compliance/iso-27001-faqs/).

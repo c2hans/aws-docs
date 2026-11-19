@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 ---
 
 # Cost optimization and sustainability
-<a name="cost-optimization-sustainability"></a>
 
  Microservices architecture can enhance cost optimization and sustainability. By breaking an application into smaller parts, you can scale up only the services that need more resources, reducing cost and waste. This is particularly useful when dealing with variable traffic. Microservices are independently developed. So developers can do smaller updates, and reduce the resources spent on end to end testing. While updating they will have to test only a subset of the features as opposed to monoliths.
 

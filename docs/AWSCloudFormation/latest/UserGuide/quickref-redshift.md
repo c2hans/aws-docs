@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # Amazon Redshift template snippets
-<a name="quickref-redshift"></a>
 
 Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. You can use CloudFormation to provision and manage Amazon Redshift clusters.
 

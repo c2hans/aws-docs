@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/understanding-tables-da
 ---
 
 # Understanding tables, databases, and data catalogs in Athena
-<a name="understanding-tables-databases-and-the-data-catalog"></a>
 
 In Athena, catalogs, databases, and tables are containers for the metadata definitions that define a schema for underlying source data.
 

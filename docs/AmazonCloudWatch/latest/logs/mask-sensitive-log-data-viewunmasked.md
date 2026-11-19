@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/mask-sensit
 ---
 
 # View unmasked data
-<a name="mask-sensitive-log-data-viewunmasked"></a>
 
 To view unmasked data, a user must have the `logs:Unmask` permission. Users with this permission can see the unmasked data in the following ways:
 + When viewing the events in a log stream, choose **Display**, **Unmask**.

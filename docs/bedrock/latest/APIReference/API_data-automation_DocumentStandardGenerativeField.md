@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # DocumentStandardGenerativeField
-<a name="API_data-automation_DocumentStandardGenerativeField"></a>
 
 Settings for generating descriptions of documents.
 

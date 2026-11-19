@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Cu
 ---
 
 # CustomStruct
-<a name="API_CustomStruct"></a>
 
 The custom structure represents a complex or higher-order data structure.
 

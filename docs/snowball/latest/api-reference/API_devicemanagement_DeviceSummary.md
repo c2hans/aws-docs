@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # DeviceSummary
-<a name="API_devicemanagement_DeviceSummary"></a>
 
 Identifying information about the device.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/website.ht
 ---
 
 # .website
-<a name="website"></a>
 
 Used for information about website development, promotion, improvements, and experiences.
 

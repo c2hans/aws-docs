@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/amaz
 ---
 
 # Amazon DynamoDB
-<a name="amazon-dynamodb"></a>
 
  The solution deploys the following Amazon DynamoDB tables which are configured to use on-demand capacity and encryption at rest using Server-Side Encryption (SSE).
 +  A table to store ingestion information

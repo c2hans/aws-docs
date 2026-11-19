@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Notification
-<a name="API_budgets_Notification"></a>
 
 A notification that's associated with a budget. A budget can have up to ten notifications.
 

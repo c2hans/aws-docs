@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/large-records.html
 ---
 
 # Handle large records
-<a name="large-records"></a>
 
 Amazon Kinesis Data Streams supports records up to 10 mebibytes (MiBs). This capability is recommended for processing intermittent data payloads that exceed the default 1 MiB record size limit. The default maximum record size for existing, and newly created streams is set to 1 MiB.
 

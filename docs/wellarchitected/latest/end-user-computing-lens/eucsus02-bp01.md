@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSUS02-BP01 Select the instance type or bundle to match software requirement and user personas
-<a name="eucsus02-bp01"></a>
 
  Consider the performance needs, cost implications, and any specific workload characteristics (for example, GPU requirements). Benchmark and test different instance types to find the best fit for your workload. Regularly review and adjust your instance type selection as your application's demands change over time.
 

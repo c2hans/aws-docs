@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle and PostgreSQL high availability and disaster recovery
-<a name="chap-oracle-aurora-pg.hadr"></a>
 
 This section includes pages about Oracle and PostgreSQL high availability and disaster recovery capabilities.
 

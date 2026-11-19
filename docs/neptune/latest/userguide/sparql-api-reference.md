@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-api-refe
 ---
 
 # SPARQL HTTP API
-<a name="sparql-api-reference"></a>
 
 SPARQL HTTP requests are accepted at the following endpoint: `https://{{your-neptune-endpoint}}:{{port}}/sparql`
 

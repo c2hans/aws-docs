@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon RHEL Knowledgebase Portal
-<a name="amazonrhelknowledgebaseportal"></a>
 
 Amazon RHEL Knowledgebase Portal provides the following APIs for data retrieval.
 

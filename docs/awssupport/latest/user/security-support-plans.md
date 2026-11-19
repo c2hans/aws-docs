@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/security-support-
 ---
 
 # Manage access to AWS Support Plans
-<a name="security-support-plans"></a>
 
 **Topics**
 + [Permissions for the Support Plans console](#using-the-trusted-advisor-console)

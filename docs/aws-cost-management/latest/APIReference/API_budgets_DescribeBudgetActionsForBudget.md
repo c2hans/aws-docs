@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DescribeBudgetActionsForBudget
-<a name="API_budgets_DescribeBudgetActionsForBudget"></a>
 
  Describes all of the budget actions for a budget.
 

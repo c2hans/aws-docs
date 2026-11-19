@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # Descriptors
-<a name="API_Descriptors"></a>
 
 The typed set of descriptors for a registry record. Exactly one descriptor field is populated based on the record type.
 

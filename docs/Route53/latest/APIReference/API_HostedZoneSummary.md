@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_HostedZo
 ---
 
 # HostedZoneSummary
-<a name="API_HostedZoneSummary"></a>
 
 In the response to a `ListHostedZonesByVPC` request, the `HostedZoneSummaries` element contains one `HostedZoneSummary` element for each hosted zone that the specified Amazon VPC is associated with. Each `HostedZoneSummary` element contains the hosted zone name and ID, and information about who owns the hosted zone.
 

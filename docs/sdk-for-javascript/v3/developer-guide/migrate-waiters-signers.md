@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Waiters and signers
-<a name="migrate-waiters-signers"></a>
 
 This page describes the usage of waiters and signers in the AWS SDK for JavaScript v3.
 

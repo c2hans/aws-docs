@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/compression-support-zst
 ---
 
 # Use ZSTD compression levels
-<a name="compression-support-zstd-levels"></a>
 
 The [Zstandard real-time data compression algorithm](http://facebook.github.io/zstd/) is a fast compression algorithm that provides high compression ratios. The Zstandard (ZSTD) library is open source software and uses a BSD license. Athena supports reading and writing ZSTD compressed ORC, Parquet, and text file data.
 

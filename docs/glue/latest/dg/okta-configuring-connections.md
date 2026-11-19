@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/okta-configuring-connecti
 ---
 
 # Configuring Okta connections
-<a name="okta-configuring-connections"></a>
 
  Okta supports two types of authentication mechanisms:
 +  OAuth auth: Okta supports the `AUTHORIZATION_CODE` grant type.

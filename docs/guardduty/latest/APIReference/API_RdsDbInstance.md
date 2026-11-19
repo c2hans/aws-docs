@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_RdsDbI
 ---
 
 # RdsDbInstance
-<a name="API_RdsDbInstance"></a>
 
 Contains details about an Amazon RDS database instance.
 

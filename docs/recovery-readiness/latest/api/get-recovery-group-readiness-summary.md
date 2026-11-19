@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/get-recove
 ---
 
 # Check the readiness of a recovery group
-<a name="get-recovery-group-readiness-summary"></a>
 
 The following is an example of a request to check a recovery group readiness, and the response.
 

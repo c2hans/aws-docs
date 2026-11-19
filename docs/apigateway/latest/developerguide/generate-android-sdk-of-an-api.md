@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/generat
 ---
 
 # Generate the Android SDK of an API in API Gateway
-<a name="generate-android-sdk-of-an-api"></a>
 
 The following procedure shows how to generate the Android SDK of an API in API Gateway.
 

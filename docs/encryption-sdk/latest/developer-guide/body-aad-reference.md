@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/bo
 ---
 
 # Body additional authenticated data (AAD) reference for the AWS Encryption SDK
-<a name="body-aad-reference"></a>
 
 |  |
 | --- |

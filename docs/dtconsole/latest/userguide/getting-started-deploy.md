@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/getting-start
 ---
 
 # Create a notification rule for a deployment application
-<a name="getting-started-deploy"></a>
 
 You can create notification rules to send notifications about the events on your deployment application that are important to you. The following steps show you how to set up a notification rule on a single build project event. These steps are written with the assumption that you have a deployment application configured in your AWS account.
 

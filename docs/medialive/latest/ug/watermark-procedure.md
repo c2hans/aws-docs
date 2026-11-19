@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/watermark-procedure.
 ---
 
 # Setting up Nielsen watermarks in a MediaLive channel
-<a name="watermark-procedure"></a>
 
 **Note**
 The information in this section assumes that you are familiar with the general steps for creating a channel, as described in [Creating a channel from scratch](creating-channel-scratch.md). It also assumes that you have already set up the audio encodes (outputs) that will contain the watermarks.

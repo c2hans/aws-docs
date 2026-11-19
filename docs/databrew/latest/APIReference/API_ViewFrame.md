@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_ViewFra
 ---
 
 # ViewFrame
-<a name="API_ViewFrame"></a>
 
 Represents the data being transformed during an action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-dep
 ---
 
 # Programming language dependency collection
-<a name="sbom-generator-dependency-collection"></a>
 
  The Amazon Inspector SBOM Generator supports different programming languages and frameworks, which make up a robust and detailed collection of dependencies. Generating an SBOM helps you understand the composition of your software, so you can identify vulnerabilities and maintain compliance with security standards. The Amazon Inspector SBOM Generator supports the following programming languages and file formats.
 

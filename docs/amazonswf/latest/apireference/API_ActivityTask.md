@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Activi
 ---
 
 # ActivityTask
-<a name="API_ActivityTask"></a>
 
 Unit of work sent to an activity worker.
 

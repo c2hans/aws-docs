@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_We
 ---
 
 # WeeklySchedule
-<a name="API_agent_WeeklySchedule"></a>
 
 A weekly sync on a specified day of the week.
 

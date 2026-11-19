@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/nodejs.html
 ---
 
 # Node.js in AL2023
-<a name="nodejs"></a>
 
  [Node.js](https://nodejs.org/) in AL2023 is represented by versions 20, 22 and 24. Amazon Linux follows the upstream [support schedule](https://github.com/nodejs/Release) and a support status of any Node.js version can always be checked on the [Package support status page](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-AL2023.12.html). All supported Node.js versions are namespaced and can be installed on the same system simultaneously. Namespacing ensures that each Node.js installation is unique within the file system. This is achieved by renaming key directories and files based on the runtime version. The actual executable names will look like *node-{MAJOR\_VERSION}* or *npm-{MAJOR\_VERSION}*. However, only one Node.js version can be active at a time. This active version provides the default directories and file names, such as *node*, *npm* or */usr/lib/node\_modules*, pointing them to the currently active runtime.
 

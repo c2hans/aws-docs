@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEMRCleanupPolicy
-<a name="AmazonEMRCleanupPolicy"></a>
 
 **Description**: Allows the actions that EMR requires to terminate and delete AWS EC2 resources if the EMR Service role has lost that ability.
 

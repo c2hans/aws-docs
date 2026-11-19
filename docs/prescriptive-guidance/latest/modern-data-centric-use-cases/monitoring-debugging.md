@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data
 ---
 
 # Monitoring and debugging
-<a name="monitoring-debugging"></a>
 
 Certain phases in the data lifecycle are not sequential but consistently present. This is true for the monitoring and debugging stage, as shown in the following diagram.
 

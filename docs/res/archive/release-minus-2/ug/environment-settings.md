@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/environme
 ---
 
 # Environment settings
-<a name="environment-settings"></a>
 
 The **Environment settings** page displays product configuration details, such as:
 + General

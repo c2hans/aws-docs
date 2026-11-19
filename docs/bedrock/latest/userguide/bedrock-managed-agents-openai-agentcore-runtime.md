@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-managed
 ---
 
 # Run your agent on Amazon Bedrock AgentCore Runtime
-<a name="bedrock-managed-agents-openai-agentcore-runtime"></a>
 
 This tutorial deploys an AgentCore Runtime that runs `codex exec-server` for BMA. BMA activates the Runtime for agent work. You do not attach an exec server manually.
 

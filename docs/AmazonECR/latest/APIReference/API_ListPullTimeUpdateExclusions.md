@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListPu
 ---
 
 # ListPullTimeUpdateExclusions
-<a name="API_ListPullTimeUpdateExclusions"></a>
 
 Lists the IAM principals that are excluded from having their image pull times recorded.
 

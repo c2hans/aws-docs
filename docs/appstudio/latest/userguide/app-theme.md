@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/app-theme.htm
 ---
 
 # Change colors in your app with app themes
-<a name="app-theme"></a>
 
 Use the following procedure to update the colors in your application by configuring an app theme.
 

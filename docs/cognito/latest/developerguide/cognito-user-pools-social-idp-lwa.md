@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 ---
 
 # Add Login with Amazon as a social identity provider
-<a name="cognito-user-pools-social-idp-lwa"></a>
 
 **Note**
 **Last verified against the provider console:** October 2, 2026. Login with Amazon steps use the [Amazon Developer console](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html) (not the AWS console).

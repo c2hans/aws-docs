@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # SuccessfulProfileOutboundRequest
-<a name="API_connect-outbound-campaigns-v2_SuccessfulProfileOutboundRequest"></a>
 
 Success details for a profile outbound request.
 

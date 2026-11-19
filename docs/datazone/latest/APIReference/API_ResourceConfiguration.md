@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Resourc
 ---
 
 # ResourceConfiguration
-<a name="API_ResourceConfiguration"></a>
 
 The details of the resource configuration.
 

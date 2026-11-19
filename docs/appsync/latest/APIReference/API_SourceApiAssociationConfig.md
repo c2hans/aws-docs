@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_SourceAp
 ---
 
 # SourceApiAssociationConfig
-<a name="API_SourceApiAssociationConfig"></a>
 
 Describes properties used to specify configurations related to a source API.
 

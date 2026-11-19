@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-StandardD
 ---
 
 # StandardDeviation
-<a name="dqdl-rule-types-StandardDeviation"></a>
 
 Checks the standard deviation of all of the values in a column against a given expression.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Pattern 2: Agentic AI orchestration with Amazon Bedrock
-<a name="pattern-agentic-ai-orchestration"></a>
 
 As businesses look to improve user engagement, automate content-heavy workflows, and build smarter assistants, they face a common set of challenges:
 + **Content generation** is labor-intensive, inconsistent, and slow (for example, writing marketing copy, help articles, status summaries).

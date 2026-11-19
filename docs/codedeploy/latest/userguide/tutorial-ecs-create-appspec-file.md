@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-ecs
 ---
 
 # Step 2: Create the AppSpec file
-<a name="tutorial-ecs-create-appspec-file"></a>
 
  In this section, you create your AppSpec file and upload it to the Amazon S3 bucket you created in the [Prerequisites](tutorial-ecs-prereqs.md) section. The AppSpec file for an Amazon ECS deployment specifies your task definition, container name, and container port. For more information, see [AppSpec File example for an Amazon ECS deployment](reference-appspec-file-example.md#appspec-file-example-ecs) and [AppSpec 'resources' section for Amazon ECS deployments](reference-appspec-file-structure-resources.md#reference-appspec-file-structure-resources-ecs).
 

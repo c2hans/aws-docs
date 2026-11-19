@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptTra
 ---
 
 # AcceptTransitGatewayClientVpnAttachment
-<a name="API_AcceptTransitGatewayClientVpnAttachment"></a>
 
 Accepts a Transit Gateway attachment request for a Client VPN endpoint. The Transit Gateway owner must accept the attachment request before the Client VPN endpoint can route traffic through the Transit Gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/day.html
 ---
 
 # .day
-<a name="day"></a>
 
 Used to bring attention to any important day, from birthdays to weddings to special occasions.
 

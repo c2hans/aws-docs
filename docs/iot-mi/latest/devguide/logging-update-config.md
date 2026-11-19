@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/logging-update-co
 ---
 
 # Updating event log configurations
-<a name="logging-update-config"></a>
 
 You can change the log level at any time using [UpdateEventLogConfiguration](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_UpdateEventLogConfiguration.html):
 

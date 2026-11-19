@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_Reta
 ---
 
 # RetainedMessageSummary
-<a name="API_iotdata_RetainedMessageSummary"></a>
 
 Information about a single retained message.
 

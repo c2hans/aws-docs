@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/webcrawler-i
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # IAM role for Amazon Q Business Web Crawler connector
-<a name="webcrawler-iam-role"></a>
 
 To connect Web Crawler to Amazon Q Business, you must give Amazon Q an IAM role that has the following permissions.
 

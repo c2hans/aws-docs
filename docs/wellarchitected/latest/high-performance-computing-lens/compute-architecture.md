@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Compute architecture
-<a name="compute-architecture"></a>
 
 | HPCPERF01: How do you select the compute environment for your application? |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/snapstart-runtime-hooks
 ---
 
 # Lambda SnapStart runtime hooks for Python
-<a name="snapstart-runtime-hooks-python"></a>
 
 You can use runtime hooks to implement code before Lambda creates a snapshot or after Lambda resumes a function from a snapshot. Python runtime hooks are available as part of the open-source [Snapshot Restore for Python library](https://pypi.org/project/snapshot-restore-py/), which is included in Python managed runtimes. This library provides two decorators that you can use to define your runtime hooks:
 + `@register_before_snapshot`: For functions you want to run before Lambda creates a snapshot.

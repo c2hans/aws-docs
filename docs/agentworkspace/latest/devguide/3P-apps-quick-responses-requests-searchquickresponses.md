@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-q
 ---
 
 # Retrieve quick responses that match a search query in Connect Customer agent workspace
-<a name="3P-apps-quick-responses-requests-searchquickresponses"></a>
 
 Returns the SearchQuickResponsesResult object, which contains the matching quick response results and a token to retrieve the next page of results, if available. The SearchQuickResponsesRequest object is used to configure the search, allowing you to filter by various criteria, as well as specify the channels, user-defined contact attributes, and pagination options. If no queries are provided, the method will return all quick responses associated with the agent's routing profile.
 

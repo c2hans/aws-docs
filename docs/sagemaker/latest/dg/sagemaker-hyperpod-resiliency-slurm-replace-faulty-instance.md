@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Manually replace or reboot a node using Slurm
-<a name="sagemaker-hyperpod-resiliency-slurm-replace-faulty-instance"></a>
 
 This section talks about when you should manually reboot or replace a node, with instructions on how to do both.
 

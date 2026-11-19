@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Searc
 ---
 
 # SearchForTextResult
-<a name="API_SearchForTextResult"></a>
 
 Contains a search result from a text search query that is run on a place index resource.
 

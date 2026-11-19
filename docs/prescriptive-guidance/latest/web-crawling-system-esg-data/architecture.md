@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/web-crawlin
 ---
 
 # Architecture for a scalable web crawling system on AWS
-<a name="architecture"></a>
 
 The following architecture diagram shows a web crawler system that is designed to ethically extract environmental, social, and governance (ESG) data from websites. You use a Python-based crawler that is optimized for AWS infrastructure. You use AWS Batch to orchestrate the large-scale crawling jobs and use Amazon Simple Storage Service (Amazon S3) for storage. Downstream applications can ingest and store the data from the Amazon S3 bucket.
 

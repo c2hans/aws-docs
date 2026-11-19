@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-troublesh
 ---
 
 # Collections of common errors in Amazon EMR
-<a name="emr-troubleshoot-errors"></a>
 
 Sometimes, clusters fail or are slow to process data. The following sections list common cluster issues. Errors include bootstrap failures and validation errors, with suggestions on how to resolve them.
 

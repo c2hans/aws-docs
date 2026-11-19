@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPartnerCentralBusinessPlanManagement
-<a name="AWSPartnerCentralBusinessPlanManagement"></a>
 
 **Description**: Provides access to manage business plans and their attachments in AWS Partner Central, including read access to the Partner Central and AWS Marketplace reporting data behind business plan metrics
 

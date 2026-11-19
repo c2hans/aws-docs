@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/vp
 ---
 
 # Requirements and considerations
-<a name="vpc-connectivity-considerations"></a>
 
 ## Requirements
 <a name="vpc-connectivity-requirements"></a>

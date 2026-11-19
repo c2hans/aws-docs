@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_Inquiry
 ---
 
 # InquiryFileContent
-<a name="API_InquiryFileContent"></a>
 
 File content structure for compliance inquiry uploads.
 

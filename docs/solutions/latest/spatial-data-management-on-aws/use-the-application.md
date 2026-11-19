@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # User guide
-<a name="use-the-application"></a>
 
 This section provides information about permissions, common tasks, and access methods for working with the solution.
 

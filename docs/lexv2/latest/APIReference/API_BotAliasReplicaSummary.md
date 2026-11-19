@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotAliasRe
 ---
 
 # BotAliasReplicaSummary
-<a name="API_BotAliasReplicaSummary"></a>
 
 Contains information about all the aliases replication statuses applicable for global resiliency.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIotRoboRunnerFullAccess
-<a name="AWSIotRoboRunnerFullAccess"></a>
 
 **Description**: This policy grants permissions that allow full access to AWS Iot RoboRunner.
 

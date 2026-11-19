@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/faq-screenreco
 ---
 
 # Frequently asked questions about Connect Customer screen recording capabilities
-<a name="faq-screenrecording"></a>
 
 This topic provides frequently asked questions about using Connect Customer screen recording capabilities.
 

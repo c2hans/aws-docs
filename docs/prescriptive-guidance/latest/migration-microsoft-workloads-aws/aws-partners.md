@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # AWS Partners
-<a name="aws-partners"></a>
 
 ## Benefits of engaging an AWS Competency Partner
 <a name="aws-partners-benefits"></a>

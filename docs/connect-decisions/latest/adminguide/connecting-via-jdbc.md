@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/conn
 ---
 
 # Connecting via JDBC
-<a name="connecting-via-jdbc"></a>
 
 ## Connecting to Your Database with JDBC
 <a name="connecting-via-jdbc-intro"></a>

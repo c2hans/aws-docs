@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Mainframe Modernization Service
-<a name="list_m2"></a>
 
 AWS Mainframe Modernization Service (service prefix: `m2`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyBuildLogEntry
-<a name="API_AutomatedReasoningPolicyBuildLogEntry"></a>
 
 Represents a single entry in the policy build log, containing information about a specific step or event in the build process.
 

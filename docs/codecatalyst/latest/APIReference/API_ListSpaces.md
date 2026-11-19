@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Lis
 ---
 
 # ListSpaces
-<a name="API_ListSpaces"></a>
 
 Retrieves a list of spaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Step 1. Prepare the CSV file and import the data
-<a name="step1"></a>
 
 The first step in a large-scale migration is to prepare the application and server metadata. This metadata is usually collected from portfolio analysis and wave planning, and placed in a comma-separated values (CSV) file. You use the metadata to automate the migration process and to update the Amazon Elastic Compute Cloud (Amazon EC2) launch templates in order to launch target EC2 instances. The default CSV file that we'll provide includes the following attributes:
 + `wave_name` – Unique wave ID, based on priority and dependencies.

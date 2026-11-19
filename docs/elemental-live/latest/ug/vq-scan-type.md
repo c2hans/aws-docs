@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vq-scan-type.ht
 ---
 
 # Converting the scan type
-<a name="vq-scan-type"></a>
 
 You can convert the scan type of the input to a different scan type: progressive, interlaced, hard telecine, or soft telecine. You can configure to leave the scan type as is or to convert from one incoming type (or a mix of incoming scan types) to another single type.
 

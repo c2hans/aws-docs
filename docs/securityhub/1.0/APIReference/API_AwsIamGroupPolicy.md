@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsIamG
 ---
 
 # AwsIamGroupPolicy
-<a name="API_AwsIamGroupPolicy"></a>
 
 A managed policy that is attached to the IAM group.
 

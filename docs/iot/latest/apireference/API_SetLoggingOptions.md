@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_SetLoggingOp
 ---
 
 # SetLoggingOptions
-<a name="API_SetLoggingOptions"></a>
 
 Sets the logging options.
 

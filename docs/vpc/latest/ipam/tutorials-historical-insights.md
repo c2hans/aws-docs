@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-historical-ins
 ---
 
 # Tutorial: View IP address history using the AWS CLI
-<a name="tutorials-historical-insights"></a>
 
 The scenarios in this section show you how to analyze and audit IP address usage using the AWS CLI. For general information about using the AWS CLI, see [Using the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-using.html) in the *AWS Command Line Interface User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DeleteCertificate
-<a name="API_DeleteCertificate"></a>
 
 Deletes an SSL/TLS certificate for your Amazon Lightsail content delivery network (CDN) distribution.
 

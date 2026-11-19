@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ListExperime
 ---
 
 # ListExperimentResolvedTargets
-<a name="API_ListExperimentResolvedTargets"></a>
 
 Lists the resolved targets information of the specified experiment.
 

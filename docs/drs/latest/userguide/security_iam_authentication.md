@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/security_iam_authen
 ---
 
 # Authenticating with identities in AWS Elastic Disaster Recovery
-<a name="security_iam_authentication"></a>
 
 Authentication is how you sign in to AWS using your identity credentials. You must be authenticated as the AWS account root user, an IAM user, or by assuming an IAM role.
 

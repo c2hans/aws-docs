@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeTrainingJob
-<a name="API_DescribeTrainingJob"></a>
 
 Returns information about a training job.
 

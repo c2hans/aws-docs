@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/S3-artifac
 ---
 
 # Configure server-side encryption for artifacts stored in Amazon S3 for CodePipeline
-<a name="S3-artifact-encryption"></a>
 
 There are two ways to configure server-side encryption for Amazon S3 artifacts:
 + CodePipeline creates an S3 artifact bucket and default AWS managed key when you create a pipeline using the Create Pipeline wizard. The AWS managed key is encrypted along with object data and managed by AWS.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Supported targets for Amazon Bedrock AgentCore gateways
-<a name="gateway-supported-targets"></a>
 
 Targets define the capabilities that your gateway will host. Amazon Bedrock AgentCore Gateway supports three categories of targets:
 +  **MCP targets** – Operate in aggregation mode. The gateway acts as an MCP server whose capabilities combine those of all its MCP targets into a single unified virtual MCP server.

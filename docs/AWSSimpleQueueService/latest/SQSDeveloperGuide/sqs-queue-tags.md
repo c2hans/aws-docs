@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Amazon SQS cost allocation tags
-<a name="sqs-queue-tags"></a>
 
 To organize and identify your Amazon SQS queues for cost allocation, you can add metadata *tags* that identify a queue's purpose, owner, or environment. This is especially useful when you have many queues. To configure tags using the Amazon SQS console, see [Configuring cost allocation tags for a queue using the Amazon SQS console](sqs-configure-tag-queue.md)
 

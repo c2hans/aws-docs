@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Integrate solution’s library into existing playback services
-<a name="integrate-solutions-library-into-existing-playback-services"></a>
 
  Another option to add the token generation step into your workflow is to include the solutions’ library into your existing playback services. The library can be used in NodeJS runtimes and is available in the solution’s [source code repository](https://github.com/aws-solutions/secure-media-delivery-at-the-edge). There are no specific requirements or restrictions as to where you should be running your playback API services. Solution’s library contains a set of constructs and methods that interact directly with the specific components created in the base module of the solution. These components provide necessary data for the library to work (like token signing keys) and also accepts the inputs originated from the library calls (like information about session ID to be revoked). Conceptually, this is illustrated in the following diagram.
 

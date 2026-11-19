@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/VPNTunnelConn
 ---
 
 # Troubleshooting AWS Client VPN: Tunnel connectivity issues to a VPC
-<a name="VPNTunnelConnectivityTroubleshooting"></a>
 
 When experiencing connectivity issues with your AWS Client VPN connection, follow this systematic troubleshooting approach to identify and resolve the problem. This section provides step-by-step procedures to diagnose common Client VPN connectivity issues between remote clients and Amazon VPC resources.
 

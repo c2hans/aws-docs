@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-la
 ---
 
 # Introduction
-<a name="introduction"></a>
 
 ## Why Now?
 <a name="why-now-.9bc0bf61-ad08-5806-9932-e37726d37e63"></a>

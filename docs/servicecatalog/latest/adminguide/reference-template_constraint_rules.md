@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/referen
 ---
 
 # Template Constraint Rules
-<a name="reference-template_constraint_rules"></a>
 
 The rules that define template constraints in a AWS Service Catalog portfolio describe when end users can use the template and which values they can specify for parameters that are declared in the CloudFormation template used to create the product they are attempting to use. Rules are useful for preventing end users from inadvertently specifying an incorrect value. For example, you can add a rule to verify whether end users specified a valid subnet in a given VPC or used `m1.small` instance types for test environments. CloudFormation uses rules to validate parameter values before it creates the resources for the product.
 

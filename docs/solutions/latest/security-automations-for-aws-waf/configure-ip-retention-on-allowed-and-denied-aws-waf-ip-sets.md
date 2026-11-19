@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Configure IP retention on Allowed and Denied AWS WAF IP sets
-<a name="configure-ip-retention-on-allowed-and-denied-aws-waf-ip-sets"></a>
 
 You can configure IP retention on Allowed and Denied AWS WAF IP sets that the solution creates. The following sections explain how it works and provide the steps to set it up.
 

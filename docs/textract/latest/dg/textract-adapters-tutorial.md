@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-adapters-tut
 ---
 
 # Custom Queries tutorial
-<a name="textract-adapters-tutorial"></a>
 
 This tutorial shows you how to create, train, evaluate, use, and manage adapters.
 

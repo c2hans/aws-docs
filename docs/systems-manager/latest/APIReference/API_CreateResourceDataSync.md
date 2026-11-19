@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # CreateResourceDataSync
-<a name="API_CreateResourceDataSync"></a>
 
 A resource data sync helps you view data from multiple sources in a single location. AWS Systems Manager offers two types of resource data sync: `SyncToDestination` and `SyncFromSource`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Enable MCP response streaming for your AgentCore gateway
-<a name="gateway-mcp-streaming"></a>
 
 MCP response streaming enables your AgentCore gateway to deliver real-time Server-Sent Events (SSE) to clients during tool execution. Instead of waiting for the entire tool call to complete before returning a response, the gateway streams events as they occur — including progress notifications, log messages, elicitation requests, and sampling requests.
 

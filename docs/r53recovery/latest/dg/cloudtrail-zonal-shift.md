@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/cloudtrail-zonal-s
 ---
 
 # Logging zonal shift API calls using AWS CloudTrail
-<a name="cloudtrail-zonal-shift"></a>
 
 Zonal shift for ARC is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in ARC. CloudTrail captures all API calls for zonal shift as events. The calls captured include calls from the ARC console and code calls to the ARC API operations for zonal shift.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_Destination.htm
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 Contains information about an audit log destination.
 

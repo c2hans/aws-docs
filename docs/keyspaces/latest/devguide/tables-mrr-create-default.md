@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/tables-mrr-cre
 ---
 
 # Create a multi-Region table with default settings in Amazon Keyspaces
-<a name="tables-mrr-create-default"></a>
 
 This section provides examples of how to create a multi-Region table in on-demand mode with all default settings. You can do this on the Amazon Keyspaces console, using CQL or the AWS CLI. All tables that you create in a multi-Region keyspace automatically inherit the multi-Region settings from the keyspace.
 

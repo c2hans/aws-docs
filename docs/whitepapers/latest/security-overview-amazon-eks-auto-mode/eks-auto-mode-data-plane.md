@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-overview-ama
 ---
 
 # EKS Auto Mode data plane
-<a name="eks-auto-mode-data-plane"></a>
 
 The EKS Auto Mode data plane consists primarily of the Auto Mode nodes, the compute that your workloads run directly on. The data plane is built to give you full flexibility and control with respect to the types of workloads that can be run and the instances that they run on while still delegating operational responsibility for the scaling and health of that data plane to AWS.
 

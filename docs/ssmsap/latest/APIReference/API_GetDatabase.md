@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_GetDataba
 ---
 
 # GetDatabase
-<a name="API_GetDatabase"></a>
 
 Gets the SAP HANA database of an application registered with AWS Systems Manager for SAP.
 

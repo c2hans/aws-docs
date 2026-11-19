@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/file-oper
 ---
 
 # File operations
-<a name="file-operations"></a>
 
 S3 Transfer Manager provides methods for uploading and downloading individual files.
 

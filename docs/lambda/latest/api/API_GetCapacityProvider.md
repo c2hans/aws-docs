@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_GetCapacityProvide
 ---
 
 # GetCapacityProvider
-<a name="API_GetCapacityProvider"></a>
 
 Retrieves information about a specific capacity provider, including its configuration, state, and associated resources.
 

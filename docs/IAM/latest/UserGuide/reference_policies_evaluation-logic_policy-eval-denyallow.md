@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_
 ---
 
 # How AWS enforcement code logic evaluates requests to allow or deny access
-<a name="reference_policies_evaluation-logic_policy-eval-denyallow"></a>
 
 The AWS enforcement code decides whether a request sent to AWS should be allowed or denied. AWS evaluates all policies that are applicable to the request context. The following is a summary of the AWS policy evaluation logic.
 + By default, all requests are implicitly denied with the exception of the AWS account root user, which has full access.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-
 ---
 
 # Allocate an Amazon EC2 Dedicated Host for use in your account
-<a name="dedicated-hosts-allocating"></a>
 
 To begin using a Dedicated Host, you must first allocate it in your account. After you allocate the Dedicated Host, the Dedicated Host capacity is made available in your account immediately and you can start launching instances onto the Dedicated Host.
 

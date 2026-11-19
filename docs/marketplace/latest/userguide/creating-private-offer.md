@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/creating-pr
 ---
 
 # Creating and managing private offers
-<a name="creating-private-offer"></a>
 
 As an AWS Marketplace seller, you can create and manage private offers. Private offers are negotiated terms used to purchase a product from AWS Marketplace. This can involve a custom pricing plan, end user license agreement (EULA), or custom solutions. The following sections describe how to create and manage private offers.
 

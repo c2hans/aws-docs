@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Statement.ht
 ---
 
 # Statement
-<a name="API_Statement"></a>
 
 The processing guidance for a [Rule](API_Rule.md), used by AWS WAF to determine whether a web request matches the rule.
 
@@ -13,7 +12,7 @@ For example specifications, see the examples section of [CreateWebACL](API_Creat
 <a name="API_Statement_Contents"></a>
 
  ** AndStatement **   <a name="WAF-Type-Statement-AndStatement"></a>
-A logical rule statement used to combine other rule statements with AND logic. You provide more than one [Statement](#API_Statement) within the `AndStatement`.
+A logical rule statement used to combine other rule statements with AND logic. You provide more than one [Statement](API_Statement.md) within the `AndStatement`.
 Type: [AndStatement](API_AndStatement.md) object
 Required: No
 
@@ -59,12 +58,12 @@ Type: [ManagedRuleGroupStatement](API_ManagedRuleGroupStatement.md) object
 Required: No
 
  ** NotStatement **   <a name="WAF-Type-Statement-NotStatement"></a>
-A logical rule statement used to negate the results of another rule statement. You provide one [Statement](#API_Statement) within the `NotStatement`.
+A logical rule statement used to negate the results of another rule statement. You provide one [Statement](API_Statement.md) within the `NotStatement`.
 Type: [NotStatement](API_NotStatement.md) object
 Required: No
 
  ** OrStatement **   <a name="WAF-Type-Statement-OrStatement"></a>
-A logical rule statement used to combine other rule statements with OR logic. You provide more than one [Statement](#API_Statement) within the `OrStatement`.
+A logical rule statement used to combine other rule statements with OR logic. You provide more than one [Statement](API_Statement.md) within the `OrStatement`.
 Type: [OrStatement](API_OrStatement.md) object
 Required: No
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/warm-pools-eve
 ---
 
 # Warm pool example events and patterns
-<a name="warm-pools-eventbridge-events"></a>
 
 Amazon EC2 Auto Scaling supports several predefined patterns in Amazon EventBridge. This simplifies how an event pattern is created. You select field values on a form, and EventBridge generates the pattern for you. At this time, Amazon EC2 Auto Scaling doesn't support predefined patterns for any events that are emitted by an Auto Scaling group with a warm pool. You must enter the pattern as a JSON object. This section and the [Create EventBridge rules for warm pool events](warm-pool-events-eventbridge-rules.md) topic show you how to use an event pattern to select events and send them to targets.
 

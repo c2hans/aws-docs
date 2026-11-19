@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_Types.
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by AWS Snowball Edge:
 +  [Address](API_Address.md)

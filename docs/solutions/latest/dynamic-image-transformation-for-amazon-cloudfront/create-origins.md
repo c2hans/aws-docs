@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Create origins
-<a name="create-origins"></a>
 
 An origin defines a source location for your images. The Admin UI validates each field as you enter it; the examples below use values that satisfy those validation rules.
 

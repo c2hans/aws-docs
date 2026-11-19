@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-core/latest/pg/prerequisites.
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 To deploy a Amazon WorkSpaces Core-based virtual desktop infrastructure (VDI) using WorkSpaces Core bundles or Managed Instances, customers must meet the following requirements:
 + Customers must either work with a technology partner or build and manage their own control plane. This includes brokering, orchestration, and pixel streaming capabilities.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib
 ---
 
 # List of available contact attributes in Connect Customer and their JSONPath references
-<a name="connect-attrib-list"></a>
 
 The following tables describe the contact attributes available in Connect Customer.
 

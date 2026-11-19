@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/train-classifier-ou
 ---
 
 # Classifier training output
-<a name="train-classifier-output"></a>
 
 After Amazon Comprehend completes the custom classifier model training, it creates output files in the Amazon S3 output location that you specified in the [CreateDocumentClassifier](https://docs.aws.amazon.com/comprehend/latest/APIReference/API_CreateDocumentClassifier.html) API request or the equivalent console request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53ResolverReadOnlyAccess
-<a name="AmazonRoute53ResolverReadOnlyAccess"></a>
 
 **Description**: Read only policy for Route 53 Resolver
 

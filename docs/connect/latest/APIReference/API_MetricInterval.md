@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricIn
 ---
 
 # MetricInterval
-<a name="API_MetricInterval"></a>
 
 The interval period with the start and end time for the metrics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-ListP
 ---
 
 # ListPermissions
-<a name="JavaApi-ListPermissions"></a>
 
 The following Java sample shows how to use the [ListPermissions](https://docs.aws.amazon.com/privateca/latest/APIReference/API_ListPermissions.html) operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Export
 ---
 
 # ExportedEnvironmentVariable
-<a name="API_ExportedEnvironmentVariable"></a>
 
 Contains information about an exported environment variable.
 

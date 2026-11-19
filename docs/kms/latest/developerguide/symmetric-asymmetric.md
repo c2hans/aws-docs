@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/symmetric-asym
 ---
 
 # Asymmetric keys in AWS KMS
-<a name="symmetric-asymmetric"></a>
 
 An *asymmetric KMS key* represents a mathematically related public key and private key pair. You can give the public key to anyone, even if they're not trusted, but the private key must be kept secret.
 

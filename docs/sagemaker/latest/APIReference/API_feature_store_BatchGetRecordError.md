@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_featur
 ---
 
 # BatchGetRecordError
-<a name="API_feature_store_BatchGetRecordError"></a>
 
 The error that has occurred when attempting to retrieve a batch of Records.
 

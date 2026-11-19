@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Tabula
 ---
 
 # TabularJobConfig
-<a name="API_TabularJobConfig"></a>
 
 The collection of settings used by an AutoML job V2 for the tabular problem type.
 

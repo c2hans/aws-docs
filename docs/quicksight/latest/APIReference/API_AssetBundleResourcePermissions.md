@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleResourcePermissions
-<a name="API_AssetBundleResourcePermissions"></a>
 
 A structure that contains the permissions for the resource that you want to override in an asset bundle import job.
 

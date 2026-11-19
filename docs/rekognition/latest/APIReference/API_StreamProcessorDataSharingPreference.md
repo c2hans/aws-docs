@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Stre
 ---
 
 # StreamProcessorDataSharingPreference
-<a name="API_StreamProcessorDataSharingPreference"></a>
 
  Allows you to opt in or opt out to share data with Rekognition to improve model performance. You can choose this option at the account level or on a per-stream basis. Note that if you opt out at the account level this setting is ignored on individual streams.
 

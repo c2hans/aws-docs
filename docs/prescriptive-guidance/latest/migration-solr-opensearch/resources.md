@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Resources
-<a name="resources"></a>
 + [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/)
 + [Amazon OpenSearch Service Pricing](https://aws.amazon.com/opensearch-service/pricing/)
 + [Amazon OpenSearch Service Developer Guide](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-migrate.h
 ---
 
 # **eb migrate**
-<a name="eb3-migrate"></a>
 
 ## Description
 <a name="eb3-migratedescription"></a>

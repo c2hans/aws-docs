@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/pingi
 ---
 
 # CloudWatch pipelines configuration for PingIdentity PingOne
-<a name="pingidentity-pingone-pipeline-setup"></a>
 
 Collects audit logs from PingIdentity PingOne using OAuth2 authentication.
 

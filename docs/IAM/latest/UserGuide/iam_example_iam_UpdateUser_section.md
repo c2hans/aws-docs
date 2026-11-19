@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Upd
 ---
 
 # Use `UpdateUser` with an AWS SDK or CLI
-<a name="iam_example_iam_UpdateUser_section"></a>
 
 The following code examples show how to use `UpdateUser`.
 

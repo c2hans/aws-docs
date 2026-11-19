@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchApplicationSignalsServiceRolePolicy
-<a name="CloudWatchApplicationSignalsServiceRolePolicy"></a>
 
 **Description**: Policy grants permission to CloudWatch Application Signals to collect monitoring and tagging data from other relevant AWS services.
 

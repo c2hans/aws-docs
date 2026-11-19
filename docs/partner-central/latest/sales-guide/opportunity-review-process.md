@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/sales-guide/oppor
 ---
 
 # AWS opportunity review process
-<a name="opportunity-review-process"></a>
 
 AWS conducts an initial review of submitted opportunities, and may require additional information from the AWS Partner, according to the [ACE Terms and Conditions](https://partnercentral.awspartner.com/partnercentral2/s/resources?Id=0690h0000061bwnAAA). If additional information is required for a secondary review, users with the alliance lead or opportunity contacts will receive email notifications. On the **Opportunities** page, **Action required** displays in the **Status** column for opportunities that require more information.
 

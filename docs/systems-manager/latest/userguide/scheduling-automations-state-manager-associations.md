@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/schedul
 ---
 
 # Scheduling automations with State Manager associations
-<a name="scheduling-automations-state-manager-associations"></a>
 
 You can start an automation by creating a State Manager association with a runbook. State Manager is a tool in AWS Systems Manager. By creating a State Manager association with a runbook, you can target different types of AWS resources. For example, you can create associations that enforce a desired state on an AWS resource, including the following:
 + Attach a Systems Manager role to Amazon Elastic Compute Cloud (Amazon EC2) instances to make them *managed instances*.

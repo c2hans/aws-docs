@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Managing demand and supply resources
-<a name="gamecost-mdsr"></a>
 
  There are no managing demand and supply resources best practices specific to the Games Lens.
 

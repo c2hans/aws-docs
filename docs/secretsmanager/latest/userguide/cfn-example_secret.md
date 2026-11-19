@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/cfn-exam
 ---
 
 # Create an AWS Secrets Manager secret with CloudFormation
-<a name="cfn-example_secret"></a>
 
 This example creates a secret named **CloudFormationCreatedSecret-{{a1b2c3d4e5f6}}**. The secret value is the following JSON, with a 32-character password that is generated when the secret is created.
 

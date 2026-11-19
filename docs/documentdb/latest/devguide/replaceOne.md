@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/replaceOne.ht
 ---
 
 # $replaceOne
-<a name="replaceOne"></a>
 
 Introduced in 5.0
 

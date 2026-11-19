@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_RemoveTa
 ---
 
 # RemoveTagsFromStream
-<a name="API_RemoveTagsFromStream"></a>
 
 Removes tags from the specified Kinesis data stream. Removed tags are deleted and cannot be recovered after this operation successfully completes.
 
@@ -12,7 +11,7 @@ When invoking this API, you must use either the `StreamARN` or the `StreamName` 
 
 If you specify a tag that does not exist, it is ignored.
 
- [RemoveTagsFromStream](#API_RemoveTagsFromStream) has a limit of five transactions per second per account.
+ [RemoveTagsFromStream](API_RemoveTagsFromStream.md) has a limit of five transactions per second per account.
 
 ## Request Syntax
 <a name="API_RemoveTagsFromStream_RequestSyntax"></a>

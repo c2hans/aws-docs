@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Operatio
 ---
 
 # Amazon Route 53 Resolver
-<a name="API_Operations_Amazon_Route_53_Resolver"></a>
 
 The following actions are supported by Amazon Route 53 Resolver:
 +  [AssociateFirewallRuleGroup](API_route53resolver_AssociateFirewallRuleGroup.md)

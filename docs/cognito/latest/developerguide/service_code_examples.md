@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/service_co
 ---
 
 # Code examples for Amazon Cognito using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Amazon Cognito with an AWS software development kit (SDK).
 

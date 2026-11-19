@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/userguide/security_logging-mo
 ---
 
 # Logging and monitoring in Resource Groups
-<a name="security_logging-monitoring"></a>
 
 All AWS Resource Groups actions are logged in AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Quota and scheduling behavior for Ray workloads
-<a name="sagemaker-hyperpod-ray-task-governance-quota"></a>
 
 Task Governance accounts quota at `RayCluster` granularity. A cluster reserves quota for its full declared size when it is admitted, and holds that quota for its whole lifetime regardless of load. A long-lived cluster that sits idle still counts against your team quota until you delete it.
 

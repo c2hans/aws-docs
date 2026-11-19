@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-and
 ---
 
 # Connect Studio notebooks in a VPC to external resources
-<a name="studio-notebooks-and-internet-access"></a>
 
 The following topic gives information about how to connect Studio Notebooks in a VPC to external resources.
 

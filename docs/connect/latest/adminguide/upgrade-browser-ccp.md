@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/upgrade-browse
 ---
 
 # Upgrade your Contact Control Panel (CCP) when your CCP URL ends with /ccp\#
-<a name="upgrade-browser-ccp"></a>
 
 Upgrading to the latest CCP is easy. If you want, you can try out the latest CCP and then at a later date make the switch. Here's what you do:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Inst
 ---
 
 # InstanceMarketOptionsRequest
-<a name="API_InstanceMarketOptionsRequest"></a>
 
 Configures marketplace-specific instance deployment options.
 

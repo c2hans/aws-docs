@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Enab
 ---
 
 # EnableOperatorApp
-<a name="API_EnableOperatorApp"></a>
 
 Enable the Operator App to access the given AgentSpace
 

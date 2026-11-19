@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/journey-flow-b
 ---
 
 # End flow
-<a name="journey-flow-block-end-flow"></a>
 
 ## Description
 <a name="journey-flow-block-end-flow-description"></a>

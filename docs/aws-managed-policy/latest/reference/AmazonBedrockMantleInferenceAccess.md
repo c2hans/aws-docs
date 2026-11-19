@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonBedrockMantleInferenceAccess
-<a name="AmazonBedrockMantleInferenceAccess"></a>
 
 **Description**: Provides read and inference creation access to Amazon Bedrock Mantle
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/S3-bucket
 ---
 
 # Preventing data exfiltration in a private VPC
-<a name="S3-buckets-preventing-exfiltration"></a>
 
 To prevent users from exfiltrating data from secure S3 buckets into their own S3 buckets in their account, you can attach a VPC endpoint to secure your private VPC. The following steps show how to create a VPC endpoint for the S3 service that supports access to S3 buckets within your account, as well as any additional accounts that have cross-account buckets.
 

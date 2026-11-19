@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources-migratio
 ---
 
 # Migration & transfer services
-<a name="sns-event-sources-migration-transfer"></a>
 
 The following table describes how Amazon SNS integrates with AWS migration and transfer services, such as AWS Application Discovery Service, AWS Database Migration Service (DMS), and AWS Snowball Edge, to provide notifications for events like server data collection, database migration activities, and data transfer jobs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_P
 ---
 
 # PublicNetworkConfiguration
-<a name="API_PublicNetworkConfiguration"></a>
 
 Specifies the network configuration for the public ingress point.
 

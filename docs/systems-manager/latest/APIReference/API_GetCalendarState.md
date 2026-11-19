@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetCalendarState
-<a name="API_GetCalendarState"></a>
 
 Gets the state of a AWS Systems Manager change calendar at the current time or a specified time. If you specify a time, `GetCalendarState` returns the state of the calendar at that specific time, and returns the next time that the change calendar state will transition. If you don't specify a time, `GetCalendarState` uses the current time. Change Calendar entries have two possible states: `OPEN` or `CLOSED`.
 

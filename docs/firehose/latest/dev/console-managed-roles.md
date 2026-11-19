@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/console-managed-role
 ---
 
 # Manage IAM roles through Amazon Data Firehose console
-<a name="console-managed-roles"></a>
 
 Amazon Data Firehose is a fully managed service that delivers real-time streaming data to destinations. You can also configure Firehose to transform and convert the format of your data before delivery. To use these features, you must first provide IAM roles to grant permissions to Firehose when you create or edit a Firehose stream. Firehose uses this IAM role for all the permissions that the Firehose stream needs.
 

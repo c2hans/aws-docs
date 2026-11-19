@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Techni
 ---
 
 # TechniqueCoverage
-<a name="API_TechniqueCoverage"></a>
 
 Contains information about the findings associated with a MITRE ATT&CK technique.
 

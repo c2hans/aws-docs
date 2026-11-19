@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-attaching-volum
 ---
 
 # Attach an Amazon EBS volume to an Amazon EC2 instance
-<a name="ebs-attaching-volume"></a>
 
 You can attach an available EBS volume to one or more of your instances that is in the same Availability Zone as the volume.
 

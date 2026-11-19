@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Li
 ---
 
 # ListVirtualInterfaceRoutes
-<a name="API_ListVirtualInterfaceRoutes"></a>
 
 Lists the routes for the specified virtual interface.
 

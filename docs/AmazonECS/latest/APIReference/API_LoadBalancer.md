@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_LoadBa
 ---
 
 # LoadBalancer
-<a name="API_LoadBalancer"></a>
 
 The load balancer configuration to use with a service or task set.
 

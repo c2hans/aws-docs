@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_CreateA
 ---
 
 # CreateAct
-<a name="API_CreateAct"></a>
 
 Creates a new AI task (act) within a session that can interact with tools and perform specific actions.
 

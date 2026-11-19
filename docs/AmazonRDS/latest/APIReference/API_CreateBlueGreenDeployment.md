@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Create
 ---
 
 # CreateBlueGreenDeployment
-<a name="API_CreateBlueGreenDeployment"></a>
 
 Creates a blue/green deployment.
 

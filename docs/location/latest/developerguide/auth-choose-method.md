@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/auth-choo
 ---
 
 # Choosing an authentication method
-<a name="auth-choose-method"></a>
 
 Amazon Location Service supports three authentication methods. Use the following guidance to choose the right method for your application.
 

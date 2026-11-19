@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/cre
 ---
 
 # Create a new DynamoDB table with higher warm throughput
-<a name="create-table-warm-throughput"></a>
 
 You can adjust the warm throughput values when you create your DynamoDB table by following the steps below. These steps also apply when creating a [global table](GlobalTables.md) or [secondary index](SecondaryIndexes.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-create
 ---
 
 # Creating an initial SaaS product page on AWS Marketplace
-<a name="saas-create-product-page"></a>
 
 You can use your software as a service (SaaS) application metadata to create an initial SaaS product page in the AWS Marketplace catalog, using AWS Partner Central. You can then also add product information, product deployment details, and public offer details. Optionally, you can add accounts to the allowlist to test the product. For more information see the following procedure.
 

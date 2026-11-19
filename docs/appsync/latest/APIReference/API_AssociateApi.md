@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Associat
 ---
 
 # AssociateApi
-<a name="API_AssociateApi"></a>
 
 Maps an endpoint to your custom domain.
 

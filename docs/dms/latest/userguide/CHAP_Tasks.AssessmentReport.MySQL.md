@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Assessme
 ---
 
 # MySQL assessments
-<a name="CHAP_Tasks.AssessmentReport.MySQL"></a>
 
 This section describes individual premigration assessments for migration tasks that use a MySQL, Aurora MySQL-Compatible Edition or Aurora MySQL-Compatible Edition Serverless source endpoint.
 

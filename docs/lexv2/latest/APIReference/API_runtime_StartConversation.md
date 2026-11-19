@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_St
 ---
 
 # StartConversation
-<a name="API_runtime_StartConversation"></a>
 
 Starts an HTTP/2 bidirectional event stream that enables you to send audio, text, or DTMF input in real time. After your application starts a conversation, users send input to Amazon Lex as a stream of events. Amazon Lex processes the incoming events and responds with streaming text or audio events.
 

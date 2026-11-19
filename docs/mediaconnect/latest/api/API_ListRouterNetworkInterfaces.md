@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListRouterNe
 ---
 
 # ListRouterNetworkInterfaces
-<a name="API_ListRouterNetworkInterfaces"></a>
 
 Retrieves a list of router network interfaces in AWS Elemental MediaConnect.
 

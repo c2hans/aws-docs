@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsC
 ---
 
 # AwsEcsClusterClusterSettingsDetails
-<a name="API_AwsEcsClusterClusterSettingsDetails"></a>
 
 Indicates whether to enable CloudWatch Container Insights for the ECS cluster.
 

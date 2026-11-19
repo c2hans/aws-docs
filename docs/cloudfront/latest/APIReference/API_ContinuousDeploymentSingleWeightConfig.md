@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Conti
 ---
 
 # ContinuousDeploymentSingleWeightConfig
-<a name="API_ContinuousDeploymentSingleWeightConfig"></a>
 
 Contains the percentage of traffic to send to a staging distribution.
 

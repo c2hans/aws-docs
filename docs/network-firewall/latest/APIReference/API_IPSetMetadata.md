@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # IPSetMetadata
-<a name="API_IPSetMetadata"></a>
 
 General information about the IP set.
 

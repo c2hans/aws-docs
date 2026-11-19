@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteLaunch
 ---
 
 # DeleteLaunchAction
-<a name="API_DeleteLaunchAction"></a>
 
 Deletes a resource launch action.
 

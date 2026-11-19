@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Medic
 ---
 
 # MedicalScribeChannelDefinition
-<a name="API_MedicalScribeChannelDefinition"></a>
 
 Indicates which speaker is on which channel. The options are `CLINICIAN` and `PATIENT`
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 1.6 Future state
-<a name="future-state"></a>
 
 ## Overview
 <a name="future-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customerprofil
 ---
 
 # Understanding IPv6 support in Connect Customer Customer Profiles
-<a name="customerprofiles-ipv6-support"></a>
 
 ## Public Connectivity
 <a name="public-connectivity"></a>

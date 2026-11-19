@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 ---
 
 # Tools
-<a name="harness-tools"></a>
 
 Tools are declarative. You list what the agent can call; AgentCore handles invocation, credentials, and results. The harness supports five tool types and managed built-in tools.
 +  ** [Model Context Protocol](https://modelcontextprotocol.io) (MCP) servers:** Connect to any remote MCP endpoint by URL. To authenticate, send request headers, or have the harness sign each request with Signature Version 4 (SigV4) using the harness execution role.

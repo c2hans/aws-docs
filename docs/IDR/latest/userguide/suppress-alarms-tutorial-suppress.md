@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/suppress-alarms-tut
 ---
 
 # Tutorial: Use a metric math function to suppress an alarm
-<a name="suppress-alarms-tutorial-suppress"></a>
 
 The following tutorial walks you through how to suppress a CloudWatch alarm using metric math.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/connections-packag
 ---
 
 # Apache Airflow provider packages installed on Amazon MWAA environments
-<a name="connections-packages"></a>
 
 This page lists the Apache Airflow provider packages installed by Amazon MWAA for all supported Apache Airflow environments. For more information about these packages, refer to the [Apache Airflow reference for package extras](https://airflow.apache.org/docs/apache-airflow/stable/extra-packages-ref.html).
 

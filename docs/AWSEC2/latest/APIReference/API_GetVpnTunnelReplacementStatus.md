@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetVpnTun
 ---
 
 # GetVpnTunnelReplacementStatus
-<a name="API_GetVpnTunnelReplacementStatus"></a>
 
 Get details of available tunnel endpoint maintenance.
 

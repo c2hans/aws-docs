@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Generation
 ---
 
 # GenerationSummary
-<a name="API_GenerationSummary"></a>
 
 Contains information about a generation request made for the bot locale.
 

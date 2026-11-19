@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle DBMS\_OUTPUT and MySQL SELECT
-<a name="chap-oracle-aurora-mysql.sql.raise"></a>
 
 Oracle `DBMS_OUTPUT` is a package that lets you send messages from stored procedures, functions, and anonymous blocks to a message buffer. MySQL `SELECT` is a statement used to retrieve data from one or more tables in a MySQL database. The following sections will provide details on using `DBMS_OUTPUT` in Oracle and `SELECT` statements in MySQL with AWS DMS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-manage-automa
 ---
 
 # Edit your automatic batch prediction configuration
-<a name="canvas-manage-automations-edit-batch"></a>
 
 When you edit a batch prediction configuration, you can change the target dataset but not the frequency (since automatic batch predictions occur whenever the dataset is updated).
 

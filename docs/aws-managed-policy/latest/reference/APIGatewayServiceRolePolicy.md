@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/APIG
 ---
 
 # APIGatewayServiceRolePolicy
-<a name="APIGatewayServiceRolePolicy"></a>
 
 **Description**: Allows API Gateway to manage associated AWS Resources on behalf of the customer.
 

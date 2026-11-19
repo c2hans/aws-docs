@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_ListArti
 ---
 
 # ListArtifacts
-<a name="API_ListArtifacts"></a>
 
 Returns a list of end-to-end testing artifacts for a specified app, branch, and job.
 

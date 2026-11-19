@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/snowflake-setup-authoriza
 ---
 
 # Set up the Authorization Code flow for Snowflake
-<a name="snowflake-setup-authorization-code-flow"></a>
 
 To use OAuth authentication method, ensure the following setup is complete:
 + **Configure Snowflake OAuth for a custom client** by following the official Snowflake documentation: [Configure Snowflake OAuth for custom clients.](https://docs.snowflake.com/en/user-guide/oauth-custom)

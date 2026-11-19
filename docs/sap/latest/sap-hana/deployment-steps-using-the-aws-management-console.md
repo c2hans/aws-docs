@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/deployment-steps-usi
 ---
 
 # Deploy SAP HANA Workloads with Amazon EBS Volumes
-<a name="deployment-steps-using-the-aws-management-console"></a>
 
 This topic explains how to assign EBS Volumes when launching an Amazon EC2 Instance. Choose one of the following methods.
 

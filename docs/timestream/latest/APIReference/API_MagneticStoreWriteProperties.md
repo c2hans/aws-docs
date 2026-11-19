@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Magne
 ---
 
 # MagneticStoreWriteProperties
-<a name="API_MagneticStoreWriteProperties"></a>
 
 The set of properties on a table for configuring magnetic store writes.
 

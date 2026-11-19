@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_AwsEc2Ne
 ---
 
 # AwsEc2NetworkInterfaceViolation
-<a name="API_AwsEc2NetworkInterfaceViolation"></a>
 
 Violation detail for network interfaces associated with an EC2 instance.
 

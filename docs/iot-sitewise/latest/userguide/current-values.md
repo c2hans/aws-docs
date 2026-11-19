@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/current-va
 ---
 
 # Query current asset property values in AWS IoT SiteWise
-<a name="current-values"></a>
 
 This tutorial shows two ways to get the current value of an asset property. You can use the AWS IoT SiteWise console or use API in the AWS Command Line Interface (AWS CLI).
 

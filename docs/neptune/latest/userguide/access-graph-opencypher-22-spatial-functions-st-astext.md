@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # ST\_AsText
-<a name="access-graph-opencypher-22-spatial-functions-st-astext"></a>
 
 ST\_AsText returns the well-known text (WKT) representation of an input geometry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Attached
 ---
 
 # AttachedFilesConfiguration
-<a name="API_AttachedFilesConfiguration"></a>
 
 The configuration for attached files for a specific attachment scope.
 

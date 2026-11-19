@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_S3Destination.html
 ---
 
 # S3Destination
-<a name="API_S3Destination"></a>
 
 The name and prefix of the Amazon S3 bucket where AWS Signer saves your signed objects.
 

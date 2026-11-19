@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSSOMemberAccountAdministrator
-<a name="AWSSSOMemberAccountAdministrator"></a>
 
 **Description**: Provides access within AWS SSO to manage AWS Organizations member accounts and cloud application
 

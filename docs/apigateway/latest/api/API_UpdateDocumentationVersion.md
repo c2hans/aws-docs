@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateDocument
 ---
 
 # UpdateDocumentationVersion
-<a name="API_UpdateDocumentationVersion"></a>
 
 Updates a documentation version.
 

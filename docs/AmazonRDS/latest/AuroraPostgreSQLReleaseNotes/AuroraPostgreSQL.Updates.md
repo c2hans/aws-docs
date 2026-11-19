@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLRelease
 ---
 
 # Amazon Aurora PostgreSQL updates
-<a name="AuroraPostgreSQL.Updates"></a>
 
 Following, you can find information about versions of the Amazon Aurora PostgreSQL-Compatible Edition database engine that have been released for Amazon Aurora.
 

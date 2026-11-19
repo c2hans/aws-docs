@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_R
 ---
 
 # RejectPortfolioShare
-<a name="API_RejectPortfolioShare"></a>
 
 Rejects an offer to share the specified portfolio.
 

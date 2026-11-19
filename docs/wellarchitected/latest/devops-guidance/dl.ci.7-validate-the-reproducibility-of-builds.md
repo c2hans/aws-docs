@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CI.7] Validate the reproducibility of builds
-<a name="dl.ci.7-validate-the-reproducibility-of-builds"></a>
 
  **Category:** OPTIONAL
 

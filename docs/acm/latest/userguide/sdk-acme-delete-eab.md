@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-delete-eab
 ---
 
 # Deleting an ACME external account binding
-<a name="sdk-acme-delete-eab"></a>
 
 The following example shows how to use the [DeleteAcmeExternalAccountBinding](https://docs.aws.amazon.com/acm/latest/APIReference/API_DeleteAcmeExternalAccountBinding.html) function.
 

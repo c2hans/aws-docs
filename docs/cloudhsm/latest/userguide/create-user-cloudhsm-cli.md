@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/create-user-cl
 ---
 
 # Create an HSM crypto user using CloudHSM CLI
-<a name="create-user-cloudhsm-cli"></a>
 
 Follow these steps to create a hardware security module (HSM) crypto user (CU) using the CloudHSM CLI.
 

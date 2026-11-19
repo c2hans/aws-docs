@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prev
 ---
 
 # PreviewPrivacyImpact
-<a name="API_PreviewPrivacyImpact"></a>
 
 An estimate of the number of aggregation functions that the member who can query can run given epsilon and noise parameters.
 

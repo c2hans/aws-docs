@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_LocationTime
 ---
 
 # LocationTimestamp
-<a name="API_LocationTimestamp"></a>
 
 Describes how to interpret an application-defined timestamp value from an MQTT message payload and the precision of that value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_ApprovalStra
 ---
 
 # ApprovalStrategy
-<a name="API_ApprovalStrategy"></a>
 
 Strategy for how an approval team grants approval.
 

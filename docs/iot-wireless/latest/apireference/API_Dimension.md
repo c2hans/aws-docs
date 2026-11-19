@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Dim
 ---
 
 # Dimension
-<a name="API_Dimension"></a>
 
 The required list of dimensions for the metric.
 

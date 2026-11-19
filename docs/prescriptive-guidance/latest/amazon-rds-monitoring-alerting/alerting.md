@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Alerting
-<a name="alerting"></a>
 
 Alerts are one of the most important information sources when it comes to the security, availability, performance, and reliability of your IT infrastructure and IT services. They notify and inform your IT teams about ongoing security threats, outages, performance issues, or system failures.
 

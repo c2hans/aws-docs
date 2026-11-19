@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Stage 3 — Onboard / Own
-<a name="onboard-own"></a>
 
 Once a vehicle is purchased, the Onboard / Own stage spans the entire ownership tenure. At Onboard, the agent establishes the vehicle’s digital identity, activates connected services, and orients the owner to their vehicle’s features. During the Ownership phase, the agent delivers proactive outreach — maintenance reminders, recall notifications, energy-usage insights for EVs — without waiting for the owner to call.
 

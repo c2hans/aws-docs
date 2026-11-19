@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-update
 ---
 
 # UPDATE
-<a name="querying-iceberg-update"></a>
 
 Athena Iceberg `UPDATE` writes Iceberg position delete files and newly updated rows as data files in the same transaction. `UPDATE` can be imagined as a combination of `INSERT INTO` and `DELETE`. `UPDATE` operations are charged by the amount of data scanned. For syntax, see [UPDATE](update-statement.md).
 

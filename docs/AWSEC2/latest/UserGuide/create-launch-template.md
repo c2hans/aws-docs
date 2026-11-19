@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-launch-te
 ---
 
 # Create an Amazon EC2 launch template
-<a name="create-launch-template"></a>
 
 You can create an Amazon EC2 launch template by specifying your own values for the instance configuration parameters, or by getting the values from an existing launch template or Amazon EC2 instance.
 

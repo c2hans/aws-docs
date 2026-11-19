@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_SearchCase
 ---
 
 # SearchCases
-<a name="API_connect-cases_SearchCases"></a>
 
 Searches for cases within their associated Cases domain. Search results are returned as a paginated list of abridged case documents.
 

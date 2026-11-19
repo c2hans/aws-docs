@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/mapping-zendes
 ---
 
 # Mapping Zendesk objects to the standard profile in Connect Customer Customer Profiles
-<a name="mapping-zendesk-objects"></a>
 
 This topic lists which fields in Zendesk objects map to fields in the standard profile in Customer Profiles.
 

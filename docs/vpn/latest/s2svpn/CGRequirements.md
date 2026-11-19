@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/CGRequirements.html
 ---
 
 # Requirements for an AWS Site-to-Site VPN customer gateway device
-<a name="CGRequirements"></a>
 
  AWS supports a number of Site-to-Site VPN customer gateway devices, which we provide downloadable configuration files for. For a list of supported devices, and the steps to download the configuration files, see [Static and dynamic routing configuration files](example-configuration-files.md).
 

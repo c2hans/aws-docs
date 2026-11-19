@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkIn
 ---
 
 # NetworkInterfacePermissionState
-<a name="API_NetworkInterfacePermissionState"></a>
 
 Describes the state of a network interface permission.
 

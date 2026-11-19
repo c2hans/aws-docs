@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-rec
 ---
 
 # Automatic instance recovery
-<a name="ec2-instance-recover"></a>
 
 **Important**
 This section describes how to proactively configure recovery mechanisms on an EC2 instance. These recovery mechanisms are designed to restore instance availability when AWS detects an underlying hardware or software issue that causes a system status check to fail. If you are currently experiencing problems accessing your instance, see [Troubleshoot EC2 instances](ec2-instance-troubleshoot.md).

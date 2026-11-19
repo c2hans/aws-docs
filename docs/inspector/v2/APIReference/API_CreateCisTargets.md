@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CreateCisT
 ---
 
 # CreateCisTargets
-<a name="API_CreateCisTargets"></a>
 
 Creates CIS targets.
 

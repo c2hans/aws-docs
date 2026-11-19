@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/custo
 ---
 
 # customer\_cost
-<a name="customer-cost-entity"></a>
 
 **Primary key (PK)**
 

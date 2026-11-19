@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/cwl-f
 ---
 
 # View CloudWatch AWS IoT Wireless log entries
-<a name="cwl-format"></a>
 
 After you've configured logging for AWS IoT Wireless as described in [Create logging role and policy for AWS IoT Wireless monitoring](create-logging-role-policy.md) and written some log entries, you can view the log entries in the CloudWatch console by performing the following steps.
 

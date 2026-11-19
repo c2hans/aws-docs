@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Assu
 ---
 
 # AssuranceServiceRolePolicy
-<a name="AssuranceServiceRolePolicy"></a>
 
 **Description**: Allows AWS Assurance to access your resources for compliance assessments and evidence collection.
 

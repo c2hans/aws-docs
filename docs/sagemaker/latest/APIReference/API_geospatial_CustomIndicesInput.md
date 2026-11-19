@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # CustomIndicesInput
-<a name="API_geospatial_CustomIndicesInput"></a>
 
 Input object defining the custom BandMath indices to compute.
 

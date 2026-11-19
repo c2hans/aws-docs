@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/http-validation-tim
 ---
 
 # Validation timeout
-<a name="http-validation-timeout"></a>
 
 HTTP validation may time out if the content isn't available within the expected time frame. To troubleshoot validation issues, follow these steps.
 

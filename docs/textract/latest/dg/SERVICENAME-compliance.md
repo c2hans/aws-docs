@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/SERVICENAME-complianc
 ---
 
 # Compliance Validation for Amazon Textract
-<a name="SERVICENAME-compliance"></a>
 
 Third-party auditors assess the security and compliance of Amazon Textract as part of multiple AWS compliance programs. These include HIPAA, SOC, ISO, and PCI.
 

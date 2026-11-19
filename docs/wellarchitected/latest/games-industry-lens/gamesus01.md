@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Data management
-<a name="gamesus01"></a>
 
 |  GAMESUS01: How do you manage user and game data in your game system?   |
 | --- |

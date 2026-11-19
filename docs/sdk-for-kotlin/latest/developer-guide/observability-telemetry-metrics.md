@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/ob
 ---
 
 # Metrics
-<a name="observability-telemetry-metrics"></a>
 
 The following table lists the telemetry metrics that the SDK emits. [Configure a telemetry provider](observability.md#observability-conf-telemetry-provider) to make the metrics observable.
 

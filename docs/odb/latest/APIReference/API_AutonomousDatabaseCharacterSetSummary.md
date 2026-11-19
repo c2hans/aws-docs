@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AutonomousDa
 ---
 
 # AutonomousDatabaseCharacterSetSummary
-<a name="API_AutonomousDatabaseCharacterSetSummary"></a>
 
 A summary of an available character set for Autonomous Databases.
 

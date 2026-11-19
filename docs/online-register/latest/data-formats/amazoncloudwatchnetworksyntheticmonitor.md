@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon CloudWatch Network Synthetic Monitor
-<a name="amazoncloudwatchnetworksyntheticmonitor"></a>
 
 Amazon CloudWatch Network Synthetic Monitor provides the following APIs for data retrieval.
 

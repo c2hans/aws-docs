@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/master-disasso
 ---
 
 # Master Disassociation
-<a name="master-disassociate"></a>
 
 This resource has been deprecated and is retained only for backward compatibility. If you joined an organization by accepting an Amazon Macie membership invitation, use the [Administrator Disassociation](administrator-disassociate.md) resource instead of this resource to disassociate your Macie account from its Macie administrator account. To learn more about disassociating your account from its administrator account, see [Managing your membership in an organization](https://docs.aws.amazon.com/macie/latest/user/accounts-mgmt-invitations-membership-manage.html) in the *Amazon Macie User Guide*.
 

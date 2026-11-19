@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListOnDema
 ---
 
 # ListOnDemandScans
-<a name="API_ListOnDemandScans"></a>
 
 Lists the on-demand scans for a resource.
 

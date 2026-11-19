@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/personalize-runtim
 ---
 
 # Use `GetRecommendations` with an AWS SDK
-<a name="personalize-runtime_example_personalize-runtime_GetRecommendations_section"></a>
 
 The following code examples show how to use `GetRecommendations`.
 

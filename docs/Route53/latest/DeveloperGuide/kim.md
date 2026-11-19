@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/kim.html
 ---
 
 # .kim
-<a name="kim"></a>
 
 Used by people whose name or surname is Kim.
 

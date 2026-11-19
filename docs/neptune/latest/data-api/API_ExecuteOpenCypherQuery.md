@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_ExecuteOpenC
 ---
 
 # ExecuteOpenCypherQuery
-<a name="API_ExecuteOpenCypherQuery"></a>
 
 Executes an openCypher query. See [Accessing the Neptune Graph with openCypher](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-opencypher.html) for more information.
 

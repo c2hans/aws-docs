@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # RecommenderRecipe
-<a name="API_connect-customer-profiles_RecommenderRecipe"></a>
 
 Defines the algorithm and approach used to generate recommendations.
 

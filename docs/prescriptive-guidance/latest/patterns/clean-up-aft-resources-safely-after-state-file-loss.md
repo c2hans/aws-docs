@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cl
 ---
 
 # Clean up AWS Account Factory for Terraform (AFT) resources safely after state file loss
-<a name="clean-up-aft-resources-safely-after-state-file-loss"></a>
 
 *Gokendra Malviya, Amazon Web Services*
 

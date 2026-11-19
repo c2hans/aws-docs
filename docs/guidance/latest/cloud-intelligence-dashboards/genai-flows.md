@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Flows
-<a name="genai-flows"></a>
 
 Create intelligent workflows that monitor your CID dashboards and automatically take actions based on dashboard insights. Amazon Quick offers multiple approaches for creating flows, allowing you to choose the method that best fits your workflow preferences and technical requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrialC
 ---
 
 # TrialComponentSourceDetail
-<a name="API_TrialComponentSourceDetail"></a>
 
 Detailed information about the source of a trial component. Either `ProcessingJob` or `TrainingJob` is returned.
 

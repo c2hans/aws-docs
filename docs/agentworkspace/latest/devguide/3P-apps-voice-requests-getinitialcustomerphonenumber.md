@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-v
 ---
 
 # Gets the phone number of the initial customer connection in Connect Customer agent workspace
-<a name="3P-apps-voice-requests-getinitialcustomerphonenumber"></a>
 
  Gets the phone number of the initial customer connection. Applicable only for voice contacts.
 

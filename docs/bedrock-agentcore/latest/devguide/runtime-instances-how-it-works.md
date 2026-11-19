@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Instances
-<a name="runtime-instances-how-it-works"></a>
 
 When you host an agent on the **Instances** compute type, Amazon Bedrock AgentCore Runtime runs your agent on [Amazon EC2 managed instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-managed-instances.html) that it provisions and operates inside your own AWS account — so you get the hardware selection and pricing benefits of Amazon EC2 without managing instance lifecycle, operating system and runtime patching, scaling, or teardown. A [capacity provider](#runtime-instances-capacity-provider) defines the infrastructure those instances use, and AgentCore handles provisioning, patching, scaling, and teardown on your behalf. Because the instances run in your account, your data stays in your account, your existing account controls apply, and you can use your EC2 pricing agreements such as Savings Plans, Reserved Instances, and On-Demand Capacity Reservations (ODCRs). With Instances, you get persistent compute and can run multiple collaborating agents on a single instance, while retaining visibility and control over the underlying infrastructure.
 

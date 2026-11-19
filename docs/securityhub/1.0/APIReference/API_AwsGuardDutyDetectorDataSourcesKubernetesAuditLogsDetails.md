@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsGuar
 ---
 
 # AwsGuardDutyDetectorDataSourcesKubernetesAuditLogsDetails
-<a name="API_AwsGuardDutyDetectorDataSourcesKubernetesAuditLogsDetails"></a>
 
  An object that contains information on the status of Kubernetes audit logs as a data source for the detector.
 

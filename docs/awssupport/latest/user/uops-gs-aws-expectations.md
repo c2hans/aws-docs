@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/uops-gs-aws-expec
 ---
 
 # Unified Operations Getting started: What you can expect from AWS
-<a name="uops-gs-aws-expectations"></a>
 
 When you onboard to Unified Operations, you can expect the following from AWS.
 + Provide a team of designated AWS experts with deep technical expertise in the your workload domain and services.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSCOST02-BP03 Use the warm storage tier to optimize storage for a significant amount of read-only data
-<a name="aoscost02-bp03"></a>
 
  Reduce costs, improve query performance, and enhance domain stability by storing a significant amount of read-only data in the warm tier.
 

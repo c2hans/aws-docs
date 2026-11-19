@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_ListSinks.ht
 ---
 
 # ListSinks
-<a name="API_ListSinks"></a>
 
 Use this operation in a monitoring account to return the list of sinks created in that account.
 

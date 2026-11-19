@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateContext
-<a name="API_UpdateContext"></a>
 
 Updates a context.
 

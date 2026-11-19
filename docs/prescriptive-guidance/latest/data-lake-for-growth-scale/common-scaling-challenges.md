@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-f
 ---
 
 # Common scaling challenges
-<a name="common-scaling-challenges"></a>
 
 A data lake goes through several stages when its data grows after the initial deployment. If you didn't use scalable architecture to design your data lake, your organization might encounter challenges and can be disadvantaged by the data lake's growth.
 

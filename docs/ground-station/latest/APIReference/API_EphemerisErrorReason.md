@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_E
 ---
 
 # EphemerisErrorReason
-<a name="API_EphemerisErrorReason"></a>
 
 Detailed error information for ephemeris validation failures.
 

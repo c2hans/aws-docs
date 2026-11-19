@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Tag
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Metadata assigned to a directory consisting of a key-value pair.
 

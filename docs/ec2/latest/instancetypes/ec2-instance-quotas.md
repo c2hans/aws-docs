@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-instance-qu
 ---
 
 # Amazon EC2 instance type quotas
-<a name="ec2-instance-quotas"></a>
 
 Your AWS account has quotas that affect the number of instances that you can run in each Region. These quotas are grouped by purchasing option.
 

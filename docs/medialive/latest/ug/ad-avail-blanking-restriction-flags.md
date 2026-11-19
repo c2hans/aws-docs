@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ad-avail-blanking-re
 ---
 
 # Ad avail blanking restriction flags
-<a name="ad-avail-blanking-restriction-flags"></a>
 
 This section provides information about the restriction flags that you can set in a MediaLive channel, when you set up for ad avail blanking.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Works
 ---
 
 # WorkspaceDescription
-<a name="API_WorkspaceDescription"></a>
 
 The full details about one Amazon Managed Service for Prometheus workspace in your account.
 

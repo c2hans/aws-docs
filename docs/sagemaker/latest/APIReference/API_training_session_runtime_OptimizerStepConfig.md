@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # OptimizerStepConfig
-<a name="API_training_session_runtime_OptimizerStepConfig"></a>
 
 The configuration for an optimizer step that updates model weights using gradients accumulated from previous forward-backward passes.
 

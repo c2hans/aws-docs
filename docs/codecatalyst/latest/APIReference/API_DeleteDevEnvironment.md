@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Del
 ---
 
 # DeleteDevEnvironment
-<a name="API_DeleteDevEnvironment"></a>
 
 Deletes a Dev Environment.
 

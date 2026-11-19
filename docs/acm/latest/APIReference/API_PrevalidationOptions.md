@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_Prevalidatio
 ---
 
 # PrevalidationOptions
-<a name="API_PrevalidationOptions"></a>
 
 Specifies prevalidation options for domain validation.
 

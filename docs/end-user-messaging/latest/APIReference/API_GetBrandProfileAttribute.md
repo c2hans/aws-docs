@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # GetBrandProfileAttribute
-<a name="API_GetBrandProfileAttribute"></a>
 
 Retrieves a single brand profile attribute.
 

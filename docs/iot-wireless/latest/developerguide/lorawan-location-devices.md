@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Configuring the position of LoRaWAN devices
-<a name="lorawan-location-devices"></a>
 
 When you add your device to AWS IoT Core for LoRaWAN, you can specify the static position information, optionally activate positioning, and specify a destination. The destination describes the IoT rule that processes the device's position information and routes the updated position to Amazon Location Service. After you configure your device position, the position data is displayed on an Amazon Location map with the accuracy information, and the destination that you specified.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-logging.ht
 ---
 
 # IVS Chat Logging
-<a name="chat-logging"></a>
 
 The Chat Logging feature allows you to record all messages in a room to any of three standard locations: an Amazon S3 bucket, Amazon CloudWatch Logs, or Amazon Kinesis Data Firehose. Subsequently, the logs can be used for analysis or building a chat replay that links to a live-video session.
 

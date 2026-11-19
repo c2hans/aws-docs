@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/intercom-connection-optio
 ---
 
 # Intercom connection options
-<a name="intercom-connection-options"></a>
 
 The following are connection options for Intercom:
 +  `ENTITY_NAME`(String) - (Required) Used for Read. The name of your Object in Intercom.

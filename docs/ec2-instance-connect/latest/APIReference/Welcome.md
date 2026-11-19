@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2-instance-connect/latest/APIReference
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This is the * Amazon EC2 Instance Connect API Reference*. It provides descriptions, syntax, and usage examples for each of the actions for Amazon EC2 Instance Connect. Amazon EC2 Instance Connect enables system administrators to publish one-time use SSH public keys to EC2, providing users a simple and secure way to connect to their instances.
 
@@ -11,4 +10,4 @@ To view the Amazon EC2 Instance Connect content in the * Amazon EC2 User Guide*,
 
 For Amazon EC2 APIs, see the [Amazon EC2 API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Welcome.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

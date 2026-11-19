@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Agreemen
 ---
 
 # AgreementAvailability
-<a name="API_AgreementAvailability"></a>
 
 Information about the agreement availability
 

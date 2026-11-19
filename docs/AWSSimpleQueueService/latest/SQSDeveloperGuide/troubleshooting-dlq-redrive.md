@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Troubleshoot Amazon SQS dead-letter queue and DLQ redrive issues
-<a name="troubleshooting-dlq-redrive"></a>
 
 The following topics cover the most common causes of Amazon SQS DLQ and DLQ redrive issues, and how to troubleshoot them. For more information, see [How do I troubleshoot Amazon SQS DLQ redrive issues?](https://repost.aws/knowledge-center/sqs-dead-letter-queue-redrive) in the *AWS Knowledge Center Guide*.
 

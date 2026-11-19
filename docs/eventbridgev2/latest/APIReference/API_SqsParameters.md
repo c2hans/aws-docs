@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Sq
 ---
 
 # SqsParameters
-<a name="API_SqsParameters"></a>
 
 SQS invocation parameters for subscribers. Values are forwarded to the SQS SendMessageBatch API. All scalar values accept a literal or a JSONata expression (e.g. "{% $events.Data.groupId %}").
 

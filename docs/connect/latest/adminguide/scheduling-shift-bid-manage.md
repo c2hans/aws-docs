@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-shi
 ---
 
 # Review and manage a shift bid
-<a name="scheduling-shift-bid-manage"></a>
 
 After you generate a shift bid, you review it, open it for agents to rank their preferences, close it, and then assign shifts.
 

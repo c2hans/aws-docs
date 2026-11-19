@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # JWTOptionsInput
-<a name="API_JWTOptionsInput"></a>
 
 The JWT authentication and authorization configuration for an Amazon OpenSearch Service domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-n
 ---
 
 # Step 1: Create a notify code policy
-<a name="nx-notify-get-set-up-policy"></a>
 
 Complete this step only if you want AWS End User Messaging to generate and validate the passcode. If you generate the passcode in your own application, skip to [Step 2: Create a Notify configuration](nx-notify-get-set-up-create.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Su
 ---
 
 # SubscriptionDescription
-<a name="API_SubscriptionDescription"></a>
 
 Complete subscription resource data.
 

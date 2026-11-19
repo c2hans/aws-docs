@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Cache
 ---
 
 # CacheTagConfig
-<a name="API_CacheTagConfig"></a>
 
 A complex type that specifies the HTTP header name from which CloudFront extracts cache tags from origin responses. When you add `CacheTagConfig` to a distribution, CloudFront reads the specified header from origin responses, parses the comma-separated tag values, and stores them with the cached object. You can then invalidate cached objects by tag using the `CreateInvalidation` API.
 

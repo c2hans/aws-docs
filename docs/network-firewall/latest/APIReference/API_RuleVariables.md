@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # RuleVariables
-<a name="API_RuleVariables"></a>
 
 Settings that are available for use in the rules in the [RuleGroup](API_RuleGroup.md) where this is defined. See [CreateRuleGroup](API_CreateRuleGroup.md) or [UpdateRuleGroup](API_UpdateRuleGroup.md) for usage.
 

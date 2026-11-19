@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/getting-started.html
 ---
 
 # Getting started with Amazon EFS
-<a name="getting-started"></a>
 
 If you are using Amazon Elastic File System (Amazon EFS) for the first time, complete the following steps to get started with your first EFS file system.
 

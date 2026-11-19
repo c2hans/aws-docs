@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Ma
 ---
 
 # MacSecKey
-<a name="API_MacSecKey"></a>
 
 Information about the MAC Security (MACsec) secret key.
 

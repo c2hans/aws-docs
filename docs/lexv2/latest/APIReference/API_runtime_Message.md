@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Me
 ---
 
 # Message
-<a name="API_runtime_Message"></a>
 
 Container for text that is returned to the customer..
 

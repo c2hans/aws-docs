@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutSig
 ---
 
 # PutSigningConfiguration
-<a name="API_PutSigningConfiguration"></a>
 
 Creates or updates the registry's signing configuration, which defines rules for automatically signing images with AWS Signer.
 

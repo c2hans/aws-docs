@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::TopicV2 ResourcePermission
-<a name="aws-properties-quicksight-topicv2-resourcepermission"></a>
 
 <a name="aws-properties-quicksight-topicv2-resourcepermission-description"></a>The `ResourcePermission` property type specifies Property description not available. for an [AWS::QuickSight::TopicV2](aws-resource-quicksight-topicv2.md).
 

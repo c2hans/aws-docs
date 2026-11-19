@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-custom-end
 ---
 
 # Creating and configuring AWS managed domains
-<a name="iot-custom-endpoints-configurable-aws"></a>
 
 You create a configurable endpoint on an AWS managed domain by using the [CreateDomainConfiguration](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateDomainConfiguration.html) API. A domain configuration for an AWS managed domain consists of the following:
 + `domainConfigurationName`

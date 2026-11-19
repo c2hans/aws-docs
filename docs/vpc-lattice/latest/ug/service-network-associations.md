@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/service-network-as
 ---
 
 # Manage the associations for a VPC Lattice service network
-<a name="service-network-associations"></a>
 
 When you associate a service or a resource configuration with the service network, it enables clients in VPCs connected to the service network, to make requests to the service and resource configuration. When you connect a VPC with the service network, it enables all the targets within that VPC to be clients and communicate with other services and resource configurations in the service network.
 

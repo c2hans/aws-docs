@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SsmActionDefinition
-<a name="API_budgets_SsmActionDefinition"></a>
 
 The AWS Systems Manager (SSM) action definition details.
 

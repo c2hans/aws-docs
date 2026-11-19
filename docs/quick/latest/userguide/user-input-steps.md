@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/user-input-steps.
 ---
 
 # User input steps
-<a name="user-input-steps"></a>
 
 User input steps collect information from users when they run a flow.
 

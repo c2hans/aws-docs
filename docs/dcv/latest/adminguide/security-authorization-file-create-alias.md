@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/security-authoriza
 ---
 
 # Creating aliases
-<a name="security-authorization-file-create-alias"></a>
 
 You can use the `[aliases]` section of the permissions file to create sets of Amazon DCV features. After an alias was defined, you can grant or deny groups or individual users permissions to use it. Granting or denying permissions to an alias grants or denies permissions to all of the features that are included in it.
 

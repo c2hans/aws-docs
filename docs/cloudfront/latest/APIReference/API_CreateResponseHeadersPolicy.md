@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Creat
 ---
 
 # CreateResponseHeadersPolicy
-<a name="API_CreateResponseHeadersPolicy"></a>
 
 Creates a response headers policy.
 

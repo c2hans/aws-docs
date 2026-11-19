@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automate RabbitMQ configuration in Amazon MQ
-<a name="automate-rabbitmq-configuration-in-amazon-mq"></a>
 
 *Yogesh Bhatia and Afroz Khan, Amazon Web Services*
 

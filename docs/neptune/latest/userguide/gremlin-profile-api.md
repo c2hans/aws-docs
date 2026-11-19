@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-profile
 ---
 
 # Gremlin `profile` API in Neptune
-<a name="gremlin-profile-api"></a>
 
 The Neptune Gremlin `profile` API runs a specified Gremlin traversal, collects various metrics about the run, and produces a profile report as output.
 
@@ -246,7 +245,7 @@ Nested subqueries in different `DFESubQuery` elements are flattened in this sect
 ## Sample `profile` output when the Neptune Dataflow engine (DFE) is enabled
 <a name="gremlin-profile-sample-dfe-output"></a>
 
-When the DFE engine is being used to run Gremlin queries, output of the [Gremlin `profile` API](#gremlin-profile-api) is formatted as shown in the example below.
+When the DFE engine is being used to run Gremlin queries, output of the [Gremlin `profile` API](gremlin-profile-api.md) is formatted as shown in the example below.
 
 Query:
 

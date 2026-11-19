@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/vpc-webapp-ac
 ---
 
 # Accessing the AWS Transform web application from a VPC
-<a name="vpc-webapp-access"></a>
 
 When you use AWS PrivateLink to access the AWS Transform API privately from your VPC, the web application requires additional network configuration. It serves static content (HTML, JavaScript, CSS) through CloudFront, which requires internet connectivity. API calls from the web application go through your VPC endpoint and remain fully private.
 

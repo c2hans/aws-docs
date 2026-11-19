@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-subm
 ---
 
 # Example quantum tasks on Amazon Braket
-<a name="braket-submit-tasks-to-braket"></a>
 
 This section walks through the stages of running an example quantum task, from selecting the device to viewing the result. As a best practice for Amazon Braket, we recommend that you begin by running the circuit on a simulator, such as SV1.
 

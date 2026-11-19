@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalCodingOutput
-<a name="API_MedicalCodingOutput"></a>
 
 The location of the results of a medical coding job.
 

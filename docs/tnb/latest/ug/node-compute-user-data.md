@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-compute-user-data.htm
 ---
 
 # AWS.Compute.UserData
-<a name="node-compute-user-data"></a>
 
 AWS TNB supports launching Amazon EC2 instances with custom user data, through the UserData node in Network Service Descriptor (NSD). For more information about custom user data, see [User data and shell scripts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html#user-data-shell-scripts) in the *Amazon EC2 User Guide*.
 

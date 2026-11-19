@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Labeli
 ---
 
 # LabelingJobSnsDataSource
-<a name="API_LabelingJobSnsDataSource"></a>
 
 An Amazon SNS data source used for streaming labeling jobs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/ABS.htm
 ---
 
 # ABS function
-<a name="ABS"></a>
 
  ABS calculates the absolute value of a number, where that number can be a literal or an expression that evaluates to a number.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Render Blender wedges from a CSV file on Deadline Cloud
-<a name="examples-jb-blender-wedge-csv"></a>
 
 The [blender\_wedge\_from\_csv](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/blender_wedge_from_csv) job bundle on the GitHub website renders a wedge from a CSV file. A wedge is a set of look-development variations of the same Blender scene, with one image for each variation. Choose the bundle when a spreadsheet defines your job's task list: wedge variations and shot lists, simulation parameter sweeps, per-asset QC checks, and similar structured data that doesn't fit a numeric frame range.
 

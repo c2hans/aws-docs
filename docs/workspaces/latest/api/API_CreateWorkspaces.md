@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_CreateWorkspac
 ---
 
 # CreateWorkspaces
-<a name="API_CreateWorkspaces"></a>
 
 Creates one or more WorkSpaces.
 

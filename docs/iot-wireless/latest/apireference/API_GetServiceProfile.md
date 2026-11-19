@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetServiceProfile
-<a name="API_GetServiceProfile"></a>
 
 Gets information about a service profile.
 

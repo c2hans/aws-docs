@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteCoi
 ---
 
 # DeleteCoipPool
-<a name="API_DeleteCoipPool"></a>
 
 Deletes a pool of customer-owned IP (CoIP) addresses.
 

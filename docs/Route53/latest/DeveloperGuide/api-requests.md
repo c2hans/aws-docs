@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/api-reques
 ---
 
 # Making API Requests
-<a name="api-requests"></a>
 
 **Topics**
 + [Making API Requests for Hosted Zones, Resource Record Sets, and Health Checks](api-requests-rest.md)

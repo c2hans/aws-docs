@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/preparing-to-u
 ---
 
 # Preparing to use Software Package Catalog
-<a name="preparing-to-use-software-package-catalog"></a>
 
 The following section provides an overview of the package version lifecycle and information for using AWS IoT Device Management Software Package Catalog.
 

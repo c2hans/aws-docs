@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/host-management.htm
 ---
 
 # Manage hosts
-<a name="host-management"></a>
 
 Because Amazon Elastic VMware Service is a self-managed service, you’re responsible for monitoring host health and for replacing a host when it fails. You add, replace, and delete hosts with the Amazon EVS console or the AWS CLI, and you bring them into or out of the cluster with VMware Cloud Foundation (VCF) tools. The VCF steps differ by VCF version, so each version has its own pages.
 

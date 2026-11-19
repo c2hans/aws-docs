@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteVerifi
 ---
 
 # DeleteVerifiedEmailAddress
-<a name="API_DeleteVerifiedEmailAddress"></a>
 
 Deprecated. Use the `DeleteIdentity` operation to delete email addresses and domains.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appintegrations/latest/APIReference/API_
 ---
 
 # DataIntegrationAssociationSummary
-<a name="API_connect-app-integrations_DataIntegrationAssociationSummary"></a>
 
 Summary information about the DataIntegration association.
 

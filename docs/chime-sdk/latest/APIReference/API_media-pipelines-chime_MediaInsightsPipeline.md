@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # MediaInsightsPipeline
-<a name="API_media-pipelines-chime_MediaInsightsPipeline"></a>
 
 A media pipeline that streams call analytics data.
 

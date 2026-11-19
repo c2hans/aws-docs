@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/routing-control/latest/APIReference/API_
 ---
 
 # UpdateRoutingControlStateEntry
-<a name="API_UpdateRoutingControlStateEntry"></a>
 
 A routing control state entry.
 

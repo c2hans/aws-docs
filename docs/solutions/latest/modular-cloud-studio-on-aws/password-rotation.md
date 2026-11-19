@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Password rotation
-<a name="password-rotation"></a>
 
 ## Overview and prerequisites
 <a name="overview-and-prerequisites"></a>

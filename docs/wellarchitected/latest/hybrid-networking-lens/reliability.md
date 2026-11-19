@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # Reliability
-<a name="reliability"></a>
 
  In this lens, reliability pillar focuses on ensuring hybrid network infrastructures can maintain consistent operations, recover from failures, and adapt to changing demands. In hybrid environments, reliability extends beyond individual components to encompass the complex interconnections between on-premises and cloud networks, where disruptions in either environment or the connecting paths can impact overall system availability.
 

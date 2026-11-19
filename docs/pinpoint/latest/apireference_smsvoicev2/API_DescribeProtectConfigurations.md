@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribeProtectConfigurations
-<a name="API_DescribeProtectConfigurations"></a>
 
 Retrieves the protect configurations that match any of filters. If a filter isn’t provided then all protect configurations are returned.
 

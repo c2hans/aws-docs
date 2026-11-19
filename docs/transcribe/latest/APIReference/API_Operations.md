@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Opera
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported by Amazon Transcribe Service:
 +  [CreateCallAnalyticsCategory](API_CreateCallAnalyticsCategory.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_PartialM
 ---
 
 # PartialMatch
-<a name="API_PartialMatch"></a>
 
 The reference rule that partially matches the `ViolationTarget` rule and violation reason.
 

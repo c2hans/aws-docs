@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ExportingConfig
-<a name="API_connect-customer-profiles_ExportingConfig"></a>
 
 Configuration information about the S3 bucket where Identity Resolution Jobs writes result files.
 

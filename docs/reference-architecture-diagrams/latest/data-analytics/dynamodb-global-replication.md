@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # DynamoDB global replication with data localization
-<a name="dynamodb-global-replication"></a>
 
 Publication date: **March 10, 2023 ([Diagram history](diagram-history.md))**
 

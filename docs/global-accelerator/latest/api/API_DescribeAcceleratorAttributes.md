@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Descri
 ---
 
 # DescribeAcceleratorAttributes
-<a name="API_DescribeAcceleratorAttributes"></a>
 
 Describe the attributes of an accelerator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-brex.h
 ---
 
 # Connecting to Brex in AWS Glue Studio
-<a name="connecting-to-data-brex"></a>
 
 Brex is a corporate spend \+ business-banking platform. Because you are a Brex user, you can connect AWS Glue to your Brex account. You can then use Brex as a data source in your AWS Glue ETL jobs to transfer data between Brex and AWS services or other supported applications.
 

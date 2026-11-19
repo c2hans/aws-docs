@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ExcludedRule
 ---
 
 # ExcludedRule
-<a name="API_ExcludedRule"></a>
 
 Specifies a single rule in a rule group whose action you want to override to `Count`.
 

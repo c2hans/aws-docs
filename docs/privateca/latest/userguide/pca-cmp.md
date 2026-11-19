@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/pca-cmp.html
 ---
 
 # Customer managed permissions in RAM
-<a name="pca-cmp"></a>
 
 In addition to the AWS managed permissions available in RAM, AWS Private CA supports RAM customer managed permissions (CMP). Customer managed permissions allow CA owners to define a custom set of actions that cross-account principals can perform on a shared CA, providing finer-grained access control than the default AWS managed permissions.
 

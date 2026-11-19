@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Se
 ---
 
 # SemanticChunkingConfiguration
-<a name="API_agent_SemanticChunkingConfiguration"></a>
 
 Settings for semantic document chunking for a data source. Semantic chunking splits a document into into smaller documents based on groups of similar content derived from the text with natural language processing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-work
 ---
 
 # Workflow monitor quotas
-<a name="monitor-with-workflow-monitor-configure-quotas"></a>
 
 The following section contains quotas for workflow monitor resources. Each quota is on a "per account" basis. If you need to increase a quota for your account, you can use the [AWS Service Quotas console](https://console.aws.amazon.com/servicequotas/home) to request an increase, unless otherwise noted in the following table.
 

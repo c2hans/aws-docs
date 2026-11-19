@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/brevo-reading-from-entiti
 ---
 
 # Reading from Brevo entities
-<a name="brevo-reading-from-entities"></a>
 
 **Prerequisites**
 

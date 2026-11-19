@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DescribeStackSetOperation
-<a name="API_DescribeStackSetOperation"></a>
 
 Returns the description of the specified StackSet operation.
 

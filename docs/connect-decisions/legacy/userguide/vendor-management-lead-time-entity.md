@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/vendo
 ---
 
 # vendor\_lead\_time
-<a name="vendor-management-lead-time-entity"></a>
 
 **Primary key (PK)**
 

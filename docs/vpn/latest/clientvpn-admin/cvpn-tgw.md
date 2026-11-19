@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-tgw.html
 ---
 
 # Transit Gateway integration with Client VPN
-<a name="cvpn-tgw"></a>
 
 You can attach a Client VPN endpoint natively to a Transit Gateway for secure remote access to multiple VPCs, on-premises networks, and other resources connected to the Transit Gateway. This eliminates the need to create separate VPN endpoints for each VPC or manage complex routing through intermediate VPCs.
 

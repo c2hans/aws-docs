@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/deleting-securit
 ---
 
 # Delete an Amazon EC2 security group
-<a name="deleting-security-group"></a>
 
 When you are finished with a security group that you created for use with your Amazon EC2 instances, you can delete it.
 

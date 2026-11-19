@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This chapter provides solutions to common issues encountered when deploying and operating the Automotive Data Platform foundation (`platform-foundation/`). All commands assume `STAGE=staging` unless noted; substitute `prod` where applicable.
 

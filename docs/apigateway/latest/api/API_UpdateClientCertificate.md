@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateClientCe
 ---
 
 # UpdateClientCertificate
-<a name="API_UpdateClientCertificate"></a>
 
 Changes information about an ClientCertificate resource.
 

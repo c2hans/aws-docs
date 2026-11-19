@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # CloudWatchOutputConfig
-<a name="API_CloudWatchOutputConfig"></a>
 
 CloudWatch Logs destination for batch evaluation results.
 

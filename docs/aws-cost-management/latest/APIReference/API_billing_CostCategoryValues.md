@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostCategoryValues
-<a name="API_billing_CostCategoryValues"></a>
 
  The Cost Categories values used for filtering the costs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/choose-best-training
 ---
 
 # Reserve the best training plan
-<a name="choose-best-training-plan-using-api-cli-sdk"></a>
 
 After reviewing the available training plan offerings that best match your requirements, you can reserve a specific plan by calling the [`CreateTrainingPlan`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingPlan.html) API operation. When created, the plan initially enters a `Pending` state and remains there until the reservation process is complete. The response to the API call returns a training plan Amazon Resource Name (ARN). Make a note of this ARN for tracking and monitoring purposes later on. The training plan reservation is fulfilled asynchronously in the backend. The payment for the total amount is automatically collected as part of the fulfillment process. Once the payment transaction is completed and the requested reserved capacities are secured, the training plan is set to the `Scheduled` state, and is ready for scheduling.
 

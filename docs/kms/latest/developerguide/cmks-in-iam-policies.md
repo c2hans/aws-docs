@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/cmks-in-iam-po
 ---
 
 # Specifying KMS keys in IAM policy statements
-<a name="cmks-in-iam-policies"></a>
 
 You can use an IAM policy to allow a principal to use or manage KMS keys. KMS keys are specified in the `Resource` element of the policy statement.
 + To specify a KMS key in an IAM policy statement, you must use its [key ARN](concepts.md#key-id-key-ARN). You cannot use a [key id](concepts.md#key-id-key-id), [alias name](concepts.md#key-id-alias-name), or [alias ARN](concepts.md#key-id-alias-ARN) to identify a KMS key in an IAM policy statement.

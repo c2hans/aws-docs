@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CreateCampaign
-<a name="API_connect-outbound-campaigns-v2_CreateCampaign"></a>
 
  Creates an outbound campaign.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_A
 ---
 
 # AWS IoT Secure Tunneling
-<a name="API_Operations_AWS_IoT_Secure_Tunneling"></a>
 
 The following actions are supported by AWS IoT Secure Tunneling:
 +  [CloseTunnel](API_iot-secure-tunneling_CloseTunnel.md)

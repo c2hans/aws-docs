@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pinecone-configuring-conn
 ---
 
 # Configuring Pinecone connections
-<a name="pinecone-configuring-connections"></a>
 
 Pinecone connections authenticate with an API key (or token). You store the key in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

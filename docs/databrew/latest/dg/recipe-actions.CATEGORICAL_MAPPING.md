@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.CATEGO
 ---
 
 # CATEGORICAL\_MAPPING
-<a name="recipe-actions.CATEGORICAL_MAPPING"></a>
 
 Maps one or more categorical values to numeric or other values
 

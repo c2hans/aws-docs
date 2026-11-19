@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/ug/managing-compliance-i
 ---
 
 # Using Assurance Assistant in AWS Artifact
-<a name="managing-compliance-inquiries"></a>
 
 **What Is Assurance Assistant?**
 

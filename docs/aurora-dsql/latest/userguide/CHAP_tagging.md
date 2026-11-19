@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/CHAP_taggin
 ---
 
 # Tagging resources in Aurora DSQL
-<a name="CHAP_tagging"></a>
 
 In AWS, tags are user-defined key-value pairs that you define and associate with Aurora DSQL resources such as clusters and CDC streams. Tags are optional. If you provide a key, the value is optional.
 

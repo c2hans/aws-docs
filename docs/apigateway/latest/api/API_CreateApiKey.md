@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_CreateApiKey.h
 ---
 
 # CreateApiKey
-<a name="API_CreateApiKey"></a>
 
 Create an ApiKey resource.
 

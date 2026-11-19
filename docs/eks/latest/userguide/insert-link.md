@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/insert-link.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Insert a link
-<a name="insert-link"></a>
 
 AsciiDoc supports multiple types of links. Using the right link type is important so the link works properly in different environments.
 

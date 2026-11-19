@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Generate a `TableSchema` from a data class
-<a name="ddb-en-client-gs-tableschema"></a>
 
 A `[TableSchema](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/TableSchema.html)` enables the enhanced client to map DynamoDB attribute values to and from your client-side classes. In this tutorial, you learn about `TableSchema`s derived from a static data class and generated from code by using a builder.
 

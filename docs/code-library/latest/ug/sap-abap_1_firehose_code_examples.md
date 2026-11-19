@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sap-abap_1_fireho
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Firehose examples using SDK for SAP ABAP
-<a name="sap-abap_1_firehose_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for SAP ABAP with Firehose.
 

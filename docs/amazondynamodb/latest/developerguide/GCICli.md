@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GCI
 ---
 
 # Working with Global Secondary Indexes in DynamoDB using AWS CLI
-<a name="GCICli"></a>
 
 You can use the AWS CLI to create an Amazon DynamoDB table with one or more global secondary indexes, describe the indexes on the table, and perform queries using the indexes.
 

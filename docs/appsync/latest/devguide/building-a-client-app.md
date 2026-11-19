@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/building-a-clien
 ---
 
 # Building a client application using Amplify client
-<a name="building-a-client-app"></a>
 
 You can connect to your AWS AppSync GraphQL API using any GraphQL client, but we strongly recommend the Amplify v6 client. Amplify not only autogenerates strongly typed client SDKs for your GraphQL API but also offers support for real-time data and enhanced GraphQL query capabilities in client applications. For web applications, Amplify can produce a JavaScript client. For those targeting cross-platform or mobile environments, Amplify caters to Android, iOS, and React Native. To delve deeper into client code generation for these platforms, consult the Amplify [documentation](https://docs.amplify.aws/cli/graphql/client-code-generation/). Here's a guide to kickstart your journey with a JavaScript React application:
 

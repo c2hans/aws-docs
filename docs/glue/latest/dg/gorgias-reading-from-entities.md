@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gorgias-reading-from-enti
 ---
 
 # Reading from Gorgias entities
-<a name="gorgias-reading-from-entities"></a>
 
 **Prerequisites**
 

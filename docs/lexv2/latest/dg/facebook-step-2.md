@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/facebook-step-2.html
 ---
 
 # Step 2: Integrate Facebook Messenger with the Amazon Lex V2 bot
-<a name="facebook-step-2"></a>
 
 In this step you link your Amazon Lex V2 bot with Facebook.
 

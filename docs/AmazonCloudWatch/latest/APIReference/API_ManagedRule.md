@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # ManagedRule
-<a name="API_ManagedRule"></a>
 
  Contains the information that's required to enable a managed Contributor Insights rule for an AWS resource.
 

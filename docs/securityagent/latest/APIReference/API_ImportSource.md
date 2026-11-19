@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Im
 ---
 
 # ImportSource
-<a name="API_ImportSource"></a>
 
 The source from which to import security requirements. Currently supports document uploads.
 

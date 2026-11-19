@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ValidityTerm
-<a name="API_marketplace-discovery_ValidityTerm"></a>
 
 Defines a validity term that specifies the duration or date range of an agreement.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SAPODataCon
 ---
 
 # SAPODataConnectorProfileProperties
-<a name="API_SAPODataConnectorProfileProperties"></a>
 
  The connector-specific profile properties required when using SAPOData.
 

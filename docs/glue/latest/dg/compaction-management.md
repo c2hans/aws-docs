@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/compaction-management.htm
 ---
 
 # Compaction optimization
-<a name="compaction-management"></a>
 
  The Amazon S3 data lakes using open table formats like Apache Iceberg store data as S3 objects. Having thousands of small Amazon S3 objects in a data lake table increases metadata overhead and affects read performance. AWS Glue Data Catalog provides managed compaction for Iceberg tables, compacting small objects into larger ones for better read performance by AWS analytics services like Amazon Athena and Amazon EMR, and AWS Glue ETL jobs. Data Catalog performs compaction without interfering with concurrent queries and supports compaction only for Parquet format tables.
 

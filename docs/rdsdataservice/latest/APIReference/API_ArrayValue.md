@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_A
 ---
 
 # ArrayValue
-<a name="API_ArrayValue"></a>
 
 Contains an array.
 
@@ -15,7 +14,7 @@ This data type is a UNION, so only one of the following members can be specified
 
  ** arrayValues **   <a name="rdsdtataservice-Type-ArrayValue-arrayValues"></a>
 An array of arrays. Can contain null values.
-Type: Array of [ArrayValue](#API_ArrayValue) objects
+Type: Array of [ArrayValue](API_ArrayValue.md) objects
 Required: No
 
  ** booleanValues **   <a name="rdsdtataservice-Type-ArrayValue-booleanValues"></a>

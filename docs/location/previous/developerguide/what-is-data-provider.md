@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/what-is
 ---
 
 # What is a data provider?
-<a name="what-is-data-provider"></a>
 
 Use Amazon Location Service to access geolocation resources from multiple data providers through your AWS account without requiring third-party contracts or integrations. This can help you focus on building your application, without having to manage third-party accounts, credentials, licenses, and billing.
 

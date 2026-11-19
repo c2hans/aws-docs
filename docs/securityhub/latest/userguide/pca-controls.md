@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/pca-control
 ---
 
 # Security Hub CSPM controls for AWS Private CA
-<a name="pca-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the AWS Private Certificate Authority (AWS Private CA) service and resources.
 

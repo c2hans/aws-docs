@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Wor
 ---
 
 # WorkloadDeploymentPatternDataSummary
-<a name="API_WorkloadDeploymentPatternDataSummary"></a>
 
 Describes a workload deployment pattern.
 

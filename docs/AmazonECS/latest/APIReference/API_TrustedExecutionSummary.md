@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Truste
 ---
 
 # TrustedExecutionSummary
-<a name="API_TrustedExecutionSummary"></a>
 
 A summary of the trusted execution configuration for a task. This is a read-only view of the isolation configuration that was set on the task definition. Use it to see a task's isolation configuration in the response to `DescribeTasks`, `RunTask`, or `StopTask` without calling `DescribeTaskDefinition`. This summary never includes the attestation policy itself.
 

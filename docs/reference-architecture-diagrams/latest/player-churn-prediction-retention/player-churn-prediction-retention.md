@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/p
 ---
 
 # Player Churn Prediction and Retention
-<a name="player-churn-prediction-retention"></a>
 
 Publication date: **January 8, 2021 ([Diagram history](#churn-history))**
 

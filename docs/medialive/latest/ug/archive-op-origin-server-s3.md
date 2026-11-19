@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/archive-op-origin-se
 ---
 
 # Coordinate with the downstream system
-<a name="archive-op-origin-server-s3"></a>
 
 The destination for an Archive output group is always in an Amazon S3 bucket. You and the Amazon S3 operator must agree about the bucket to use.
 

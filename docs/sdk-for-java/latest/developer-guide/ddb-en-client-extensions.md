@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Use extensions to customize DynamoDB Enhanced Client operations
-<a name="ddb-en-client-extensions"></a>
 
 The DynamoDB Enhanced Client API supports plugin extensions that provide functionality beyond mapping operations. Extensions use two hook methods to modify data during read and write operations:
 + `beforeWrite()` - Modifies a write operation before it happens

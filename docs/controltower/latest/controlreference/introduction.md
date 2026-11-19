@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/int
 ---
 
 # Introduction: AWS Control Tower Controls Reference Guide
-<a name="introduction"></a>
 
 The *AWS Control Tower Controls Reference Guide* accompanies the [*AWS Control Tower User Guide*](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html). It gives information about the controls that are specific to the AWS Control Tower environment.
 

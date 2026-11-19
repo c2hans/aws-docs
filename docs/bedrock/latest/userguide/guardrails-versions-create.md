@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-vers
 ---
 
 # Create a version of a guardrail
-<a name="guardrails-versions-create"></a>
 
 To create a version of a guardrail, choose the tab for your preferred method, and then follow the steps:
 

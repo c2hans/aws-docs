@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipeline-t
 ---
 
 # Pipeline types
-<a name="pipeline-types"></a>
 
 CodePipeline provides the following pipeline types, which differ in characteristics and price, so that you can tailor your pipeline features and cost to the needs of your applications.
 + V1 type pipelines have a JSON structure that contains standard pipeline, stage, and action-level parameters.

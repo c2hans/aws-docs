@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/vg.html
 ---
 
 # .vg (British Virgin Islands)
-<a name="vg"></a>
 
 Also used as a generic TLD, often by organizations involved in video gaming.
 

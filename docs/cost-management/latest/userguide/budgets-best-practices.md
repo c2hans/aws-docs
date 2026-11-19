@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/budgets
 ---
 
 # Best practices for AWS Budgets
-<a name="budgets-best-practices"></a>
 
 Note the following best practices when you're working with budgets.
 

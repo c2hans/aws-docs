@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/transform-userguide/Examples.
 ---
 
 # Other examples
-<a name="Examples"></a>
 
 Use the following examples to further help you tag your migrated workloads.
 

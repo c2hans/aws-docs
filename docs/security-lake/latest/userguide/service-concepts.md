@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/service-c
 ---
 
 # Concepts and terminology
-<a name="service-concepts"></a>
 
 This section describes the key concepts and terms to help you use Amazon Security Lake.
 

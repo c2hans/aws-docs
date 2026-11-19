@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/insights-
 ---
 
 # Logging Insights events with the AWS CLI
-<a name="insights-events-CLI-enable"></a>
 
 You can configure your trails and event data stores to log Insights events using the AWS CLI.
 

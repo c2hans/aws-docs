@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kds
 ---
 
 # Using Kinesis Data Streams to capture changes to DynamoDB
-<a name="kds"></a>
 
 You can use Amazon Kinesis Data Streams to capture changes to Amazon DynamoDB.
 

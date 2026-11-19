@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetSavingsPlanPurchaseRecommendationDetails
-<a name="API_GetSavingsPlanPurchaseRecommendationDetails"></a>
 
 Retrieves the details for a Savings Plan recommendation. These details include the hourly data-points that construct the cost, coverage, and utilization charts.
 

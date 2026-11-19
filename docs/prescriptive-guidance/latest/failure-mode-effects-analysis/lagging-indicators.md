@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Lagging indicators
-<a name="lagging-indicators"></a>
 
 *Lagging indicators* confirm whether the effort is paying off. Fewer production incidents, faster recovery times, and reduced customer impact are the outcomes that justify the investment.
 

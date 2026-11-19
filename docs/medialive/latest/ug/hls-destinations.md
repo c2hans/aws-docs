@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-destinations.htm
 ---
 
 # Destination fields in an HLS output group
-<a name="hls-destinations"></a>
 
 The HLS output group in MediaLive supports several types of destinations. Each type has different configuration requirements.
 

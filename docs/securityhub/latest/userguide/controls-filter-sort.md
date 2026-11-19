@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/controls-fi
 ---
 
 # Filtering and sorting controls in Security Hub CSPM
-<a name="controls-filter-sort"></a>
 
 On the AWS Security Hub CSPM console, you can use the **Controls** page to review a table of the controls that are available in the current AWS Region. The exception is an aggregation Region. If you [configured an aggregation Region](finding-aggregation.md) and sign in to that Region, the console shows controls that are available in the aggregation Region or one or more linked Regions.
 

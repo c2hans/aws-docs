@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetWorkerIdentifier
-<a name="API_BatchGetWorkerIdentifier"></a>
 
 The identifiers for a worker.
 

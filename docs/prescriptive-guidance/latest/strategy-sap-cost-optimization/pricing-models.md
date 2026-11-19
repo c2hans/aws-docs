@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Choosing AWS pricing models for SAP workloads
-<a name="pricing-models"></a>
 
 One of the key benefits of running SAP on AWS is the *pay-as-you-go* pricing models, which means you pay only for what you use. Some models allow you reduce costs by committing to services or resources for a period of time. AWS also offers volume-based discounts so that you can realize savings as your usage increases. For more information, see [How does AWS pricing work? ](https://aws.amazon.com/pricing/)You can estimate the costs of running your SAP workloads on AWS by using the [AWS Pricing Calculator](https://calculator.aws/#/).
 

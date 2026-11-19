@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_DeleteTags.h
 ---
 
 # DeleteTags
-<a name="API_DeleteTags"></a>
 
 **Note**
 DEPRECATED - `DeleteTags` is deprecated and not maintained. To remove tags from EFS resources, use the [UntagResource](API_UntagResource.md) API action.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # NotVisibleMarker
-<a name="API_NotVisibleMarker"></a>
 
 Indicates that details are not visible because of cross-account restrictions.
 

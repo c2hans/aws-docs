@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DescribeOffe
 ---
 
 # DescribeOffering
-<a name="API_DescribeOffering"></a>
 
  Displays the details of an offering. The response includes the offering description, duration, outbound bandwidth, price, and Amazon Resource Name (ARN).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-storage
 ---
 
 # Storage
-<a name="net-win-storage-1"></a>
 
 Refer to the sizing section for resources on SAP’s standard recommendations. If no storage performance requirements are available, AWS recommends General Purpose SSD (gp2) as the default EBS volume type for SAP workloads.
 

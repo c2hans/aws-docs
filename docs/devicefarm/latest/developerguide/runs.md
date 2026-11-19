@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/runs.ht
 ---
 
 # Test runs in AWS Device Farm
-<a name="runs"></a>
 
 A run in Device Farm represents a specific build of your app, with a specific set of tests, to be run on a specific set of devices. A run produces a report that contains information about the results of the run. A run contains one or more jobs. For more information, see [Runs](test-runs.md).
 

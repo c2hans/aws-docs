@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # VisualPalette
-<a name="API_VisualPalette"></a>
 
 The visual display options for the visual palette.
 

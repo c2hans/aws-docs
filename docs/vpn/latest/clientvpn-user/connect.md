@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/connect.html
 ---
 
 # Connect to an AWS Client VPN endpoint using an OpenVPN client
-<a name="connect"></a>
 
 You can establish a connection to a Client VPN endpoint using common Open VPN client applications. Client VPN is supported on the following operating systems:
 + **Windows**

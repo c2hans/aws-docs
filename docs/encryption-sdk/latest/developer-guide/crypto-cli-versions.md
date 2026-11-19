@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/cr
 ---
 
 # Versions of the AWS Encryption CLI
-<a name="crypto-cli-versions"></a>
 
 We recommend that you use the latest version of the AWS Encryption CLI.
 

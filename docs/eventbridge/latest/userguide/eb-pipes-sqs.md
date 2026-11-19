@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes-sq
 ---
 
 # Amazon Simple Queue Service as a source in EventBridge Pipes
-<a name="eb-pipes-sqs"></a>
 
 You can use EventBridge Pipes to receive records from an Amazon SQS queue. You can then optionally filter or enhance these records before sending them to an available destination for processing.
 

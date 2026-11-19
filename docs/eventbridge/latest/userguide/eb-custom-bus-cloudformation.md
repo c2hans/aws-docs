@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Creating Custom Event Bus resources with CloudFormation
-<a name="eb-custom-bus-cloudformation"></a>
 
 You can create a bus, its subscribers, its event sources, and its resource policy from a CloudFormation template. The resource types are in the `AWS::EventsV2` namespace. The `AWS::Events` types belong to Custom Event Bus - Classic and cannot configure a Custom Event Bus.
 

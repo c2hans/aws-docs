@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC02-BP05 Audit and rotate credentials periodically
-<a name="sec_identities_audit"></a>
 
  When you cannot rely on temporary credentials and require long-term credentials, audit credentials to ensure that the defined controls for example, multi-factor authentication (MFA), are enforced, rotated regularly, and have the appropriate access level. Periodic validation, preferably through an automated tool, is necessary to verify that the correct controls are enforced. For human identities, you should require users to change their passwords periodically and retire access keys in favor of temporary credentials. As you are moving from users to centralized identities, you can [generate a credential report ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html)to audit your users. We also recommend that you enforce MFA settings in your identity provider. You can set up [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html) to monitor these settings. For machine identities, you should rely on temporary credentials using IAM roles. For situations where this is not possible, frequent auditing and rotating access keys is necessary.
 

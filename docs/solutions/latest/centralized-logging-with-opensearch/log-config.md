@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Log config
-<a name="log-config"></a>
 
 Centralized Logging with OpenSearch solution supports creating log configs for the following log formats:
 +  [JSON](#create-a-json-config)

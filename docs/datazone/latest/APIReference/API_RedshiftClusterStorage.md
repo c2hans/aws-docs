@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Redshif
 ---
 
 # RedshiftClusterStorage
-<a name="API_RedshiftClusterStorage"></a>
 
 The details of the Amazon Redshift cluster storage.
 

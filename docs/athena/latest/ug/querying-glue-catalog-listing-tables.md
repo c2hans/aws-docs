@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-glue-catalog-l
 ---
 
 # List tables in a specified database and searching for a table by name
-<a name="querying-glue-catalog-listing-tables"></a>
 
 To list metadata for tables, you can query by table schema or by table name.
 

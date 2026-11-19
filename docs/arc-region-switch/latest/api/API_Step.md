@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Step.ht
 ---
 
 # Step
-<a name="API_Step"></a>
 
 Represents a step in a Region switch plan workflow. Each step performs a specific action during the Region switch process.
 

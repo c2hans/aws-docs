@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Delete
 ---
 
 # DeleteGraph
-<a name="API_DeleteGraph"></a>
 
 Disables the specified behavior graph and queues it to be deleted. This operation removes the behavior graph from each member account's list of behavior graphs.
 

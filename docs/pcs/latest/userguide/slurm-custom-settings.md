@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-custom-settin
 ---
 
 # Configuring custom Slurm settings in AWS PCS
-<a name="slurm-custom-settings"></a>
 
 Use custom Slurm settings to configure additional Slurm parameters across Cluster, Queue, and Compute Node Group resources. This release adds support for Slurm settings on Queue resources, providing granular control over partition-specific behaviors.
 

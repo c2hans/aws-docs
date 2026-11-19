@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StartResourceScan
-<a name="API_StartResourceScan"></a>
 
 Starts a scan of the resources in this account in this Region. You can the status of a scan using the `ListResourceScans` API action.
 

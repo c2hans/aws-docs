@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/add-instance-sto
 ---
 
 # Add instance store volumes to an EC2 instance
-<a name="add-instance-store-volumes"></a>
 
 For instance types with **NVMe instance store volumes**, all of the supported instance store volumes are automatically attached to the instance at launch. They are automatically enumerated and assigned a device name on instance launch.
 

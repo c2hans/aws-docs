@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateOdbPee
 ---
 
 # UpdateOdbPeeringConnection
-<a name="API_UpdateOdbPeeringConnection"></a>
 
 Modifies the settings of an Oracle Database@AWS peering connection. You can update the display name and add or remove CIDR blocks from the peering connection.
 

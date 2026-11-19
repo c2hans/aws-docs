@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateEma
 ---
 
 # CreateEmailIdentityPolicy
-<a name="API_CreateEmailIdentityPolicy"></a>
 
 Creates the specified sending authorization policy for the given identity (an email address or a domain).
 

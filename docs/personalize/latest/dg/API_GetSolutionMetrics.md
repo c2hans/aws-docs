@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_GetSolutionMet
 ---
 
 # GetSolutionMetrics
-<a name="API_GetSolutionMetrics"></a>
 
 Gets the metrics for the specified solution version.
 

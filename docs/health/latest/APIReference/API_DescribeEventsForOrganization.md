@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeE
 ---
 
 # DescribeEventsForOrganization
-<a name="API_DescribeEventsForOrganization"></a>
 
 Returns information about events across your organization in AWS Organizations. You can use the`filters` parameter to specify the events that you want to return. Events are returned in a summary form and don't include the affected accounts, detailed description, any additional metadata that depends on the event type, or any affected resources. To retrieve that information, use the following operations:
 +  [DescribeAffectedAccountsForOrganization](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeAffectedAccountsForOrganization.html)
@@ -46,6 +45,9 @@ This API operation uses pagination. Specify the `nextToken` parameter in the nex
       "startTime": {
          "from": {{number}},
          "to": {{number}}
+      },
+      "tags": {
+         "{{string}}" : [ "{{string}}" ]
       }
    },
    "locale": "{{string}}",

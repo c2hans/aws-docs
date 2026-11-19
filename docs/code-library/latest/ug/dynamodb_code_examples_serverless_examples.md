@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/dynamodb_code_exa
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Serverless examples for DynamoDB
-<a name="dynamodb_code_examples_serverless_examples"></a>
 
 The following code examples show how to use DynamoDB with AWS SDKs.
 

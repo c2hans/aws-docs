@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_AccountAs
 ---
 
 # AccountAssociationItem
-<a name="API_AccountAssociationItem"></a>
 
 Structure containing information about an account association, including its identifier, state, and related metadata.
 

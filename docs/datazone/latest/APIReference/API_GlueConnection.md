@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GlueCon
 ---
 
 # GlueConnection
-<a name="API_GlueConnection"></a>
 
 The AWS Glue connection.
 

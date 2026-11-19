@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWi
 ---
 
 # Creating and using an IAM policy for IAM database access
-<a name="UsingWithRDS.IAMDBAuth.IAMPolicy"></a>
 
 To allow a user or role to connect to your DB cluster, you must create an IAM policy. After that, you attach the policy to a permissions set or role.
 

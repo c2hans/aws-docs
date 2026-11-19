@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vq-gop.html
 ---
 
 # Group of pictures (GOP) configuration
-<a name="vq-gop"></a>
 
 ## Description
 <a name="description-vp-gop"></a>

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/zone-shift.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Learn about Amazon Application Recovery Controller (ARC) zonal shift in Amazon EKS
-<a name="zone-shift"></a>
 
 Kubernetes has native features that enable you to make your applications more resilient to events such as the degraded health or impairment of an Availability Zone (AZ). When you run your workloads in an Amazon EKS cluster, you can further improve your application environment’s fault tolerance and application recovery by using [Amazon Application Recovery Controller (ARC) zonal shift](https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-shift.html) or [zonal autoshift](https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-autoshift.html). ARC zonal shift is designed to be a temporary measure that enables you to move traffic for a resource away from an impaired AZ until the zonal shift expires or you cancel it. You can extend the zonal shift, if necessary.
 

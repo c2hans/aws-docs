@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_UpdateCertif
 ---
 
 # UpdateCertificateOptions
-<a name="API_UpdateCertificateOptions"></a>
 
 Updates certificate options. You can use this operation to change the domain validation method or specify whether to export your certificate. For more information, see [Migrate from email to DNS validation](https://docs.aws.amazon.com/acm/latest/userguide/email-to-dns-migration.html) and [AWS Certificate Manager Exportable Managed Certificates](https://docs.aws.amazon.com/acm/latest/userguide/acm-exportable-certificates.html).
 

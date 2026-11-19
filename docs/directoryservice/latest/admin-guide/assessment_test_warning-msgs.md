@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/asse
 ---
 
 # Assessment Test warning messages
-<a name="assessment_test_warning-msgs"></a>
 
 The following table describes warning messages that can occur during assessment tests. These warnings represent recommendations for optimal configuration but do not prevent hybrid directory setup.
 

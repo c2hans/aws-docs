@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/urls-webhook-tutorial.h
 ---
 
 # Tutorial: Creating a webhook endpoint using a Lambda function URL
-<a name="urls-webhook-tutorial"></a>
 
 In this tutorial, you create a Lambda function URL to implement a webhook endpoint. A webhook is a lightweight, event-driven communication that automatically sends data between applications using HTTP. You can use a webhook to receive immediate updates about events happening in another system, such as when a new customer signs up on a website, a payment is processed, or a file is uploaded.
 

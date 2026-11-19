@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetSpotPl
 ---
 
 # GetSpotPlacementScores
-<a name="API_GetSpotPlacementScores"></a>
 
 Calculates the Spot placement score for a Region or Availability Zone based on the specified target capacity and compute requirements.
 

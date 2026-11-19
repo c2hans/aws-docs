@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/auth-pric
 ---
 
 # Pricing
-<a name="auth-pricing"></a>
 
 The cost of using Amazon Location Service authentication depends on the API requests your applications make. API key management operations are charged under the Service Resources pricing category, with a free tier allowance. The API calls made *using* an authentication method (such as retrieving map tiles or geocoding addresses) are charged based on the underlying service. The unit price for each request depends on the service used and the response fields requested. For pricing information, see the [Amazon Location Service pricing page](https://aws.amazon.com/location/pricing/).
 

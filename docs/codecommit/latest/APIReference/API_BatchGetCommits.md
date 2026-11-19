@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Batch
 ---
 
 # BatchGetCommits
-<a name="API_BatchGetCommits"></a>
 
 Returns information about the contents of one or more commits in a repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/fargate-job-defin
 ---
 
 # Job definitions on Fargate
-<a name="fargate-job-definitions"></a>
 
 AWS Batch jobs on AWS Fargate don't support all of the job definition parameters that are available. Some parameters are not supported at all, and others behave differently for Fargate jobs.
 

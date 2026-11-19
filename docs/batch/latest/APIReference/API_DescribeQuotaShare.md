@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeQu
 ---
 
 # DescribeQuotaShare
-<a name="API_DescribeQuotaShare"></a>
 
 Returns a description of the specified quota share.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # VpcInformation
-<a name="API_VpcInformation"></a>
 
 Information about your VPC and security groups used with the connector.
 

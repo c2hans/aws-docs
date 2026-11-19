@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TestCase
 ---
 
 # TestCaseSearchFilter
-<a name="API_TestCaseSearchFilter"></a>
 
 Filters to be applied to search results.
 

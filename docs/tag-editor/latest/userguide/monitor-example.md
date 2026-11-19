@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/monitor-exam
 ---
 
 # Tutorial: Automatically stopping Amazon EC2 instances that are missing required tags
-<a name="monitor-example"></a>
 
 As your pool of AWS resources and AWS accounts that you manage grows, you can use tags to make it easier to categorize your resources. Tags are commonly used for critical use cases such as cost allocation and security. To effectively manage AWS resources, your resources need to be consistently tagged. Often, when a resource is provisioned, it gets all the appropriate tags. However, a later process can result in a tag change that results in drift from the corporate tag policy. By monitoring changes to your tags, you can spot tag drift and immediately respond. This gives you more confidence that the processes that depend on your resources being properly categorized will produce the desired results.
 

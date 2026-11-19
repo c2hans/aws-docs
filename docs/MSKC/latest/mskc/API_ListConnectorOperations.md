@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_ListConnectorOperat
 ---
 
 # ListConnectorOperations
-<a name="API_ListConnectorOperations"></a>
 
 Lists information about a connector's operation(s).
 

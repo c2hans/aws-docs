@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Tru
 ---
 
 # TrustedTokenIssuerUpdateConfiguration
-<a name="API_TrustedTokenIssuerUpdateConfiguration"></a>
 
 A structure that contains details to be updated for a trusted token issuer configuration. The structure and settings that you can include depend on the type of the trusted token issuer being updated.
 

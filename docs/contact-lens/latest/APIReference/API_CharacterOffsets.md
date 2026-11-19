@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/contact-lens/latest/APIReference/API_Cha
 ---
 
 # CharacterOffsets
-<a name="API_connect-contact-lens_CharacterOffsets"></a>
 
 For characters that were detected as issues, where they occur in the transcript.
 

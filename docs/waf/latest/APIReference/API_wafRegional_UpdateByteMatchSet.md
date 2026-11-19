@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_
 ---
 
 # UpdateByteMatchSet
-<a name="API_wafRegional_UpdateByteMatchSet"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.

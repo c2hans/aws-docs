@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-
 ---
 
 # View pipeline details and history (CLI)
-<a name="pipelines-view-cli"></a>
 
 You can run the following commands to view details about your pipelines and pipeline executions:
 +  **list-pipelines** command to view a summary of all of the pipelines associated with your AWS account.

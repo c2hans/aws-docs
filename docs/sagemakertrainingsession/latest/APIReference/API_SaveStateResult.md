@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # SaveStateResult
-<a name="API_SaveStateResult"></a>
 
 The result of saving full training state.
 

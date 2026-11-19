@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/co
 ---
 
 # Create a container group definition for an Amazon GameLift Servers container fleet
-<a name="containers-create-groups"></a>
 
 A container group definition describes how to deploy your containerized game server applications to a container fleet. It's a blueprint that tells Amazon GameLift Servers what container images to deploy to the fleet and how to run them. When you create a container fleet, you specify the container group definitions to deploy to the fleet. For more information about container groups, see [Container fleet components](containers-howitworks.md#containers-howitworks-components).
 

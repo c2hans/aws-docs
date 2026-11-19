@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/ai-investig
 ---
 
 # AI Investigative Agent
-<a name="ai-investigative-agent"></a>
 
 ## Overview
 <a name="ai-investigative-agent-overview"></a>

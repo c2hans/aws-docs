@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/mo
 ---
 
 # Mocking in the AWS SDK for Kotlin
-<a name="mocking"></a>
 
 Developers can use several frameworks to perform mocking in tests with the AWS SDK for Kotlin. This topic documents extra configuration or special considerations that some frameworks require.
 

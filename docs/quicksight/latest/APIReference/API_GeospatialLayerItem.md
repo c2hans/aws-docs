@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialLayerItem
-<a name="API_GeospatialLayerItem"></a>
 
 The properties for a single geospatial layer.
 

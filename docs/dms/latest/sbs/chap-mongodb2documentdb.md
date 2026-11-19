@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-mongodb2documentdb.h
 ---
 
 # Migrating from MongoDB to Amazon DocumentDB
-<a name="chap-mongodb2documentdb"></a>
 
 Use the following tutorial to guide you through the process of migrating from MongoDB to Amazon DocumentDB (with MongoDB compatibility). In this tutorial, you do the following:
 + Install MongoDB on an Amazon EC2 instance.

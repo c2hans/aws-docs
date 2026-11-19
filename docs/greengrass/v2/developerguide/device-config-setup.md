@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/device-conf
 ---
 
 # Configure your device to run IDT tests
-<a name="device-config-setup"></a>
 
 To enable IDT to run tests for device qualification, you must configure your host computer to access your device, and configure user permissions on your device.
 

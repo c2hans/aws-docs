@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_OneDriveC
 ---
 
 # OneDriveConfiguration
-<a name="API_OneDriveConfiguration"></a>
 
 Provides the configuration information to connect to OneDrive as your data source.
 

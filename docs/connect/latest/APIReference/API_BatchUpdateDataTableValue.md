@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchUpd
 ---
 
 # BatchUpdateDataTableValue
-<a name="API_BatchUpdateDataTableValue"></a>
 
 Updates multiple data table values using all properties from BatchCreateDataTableValue. System managed values are not modifiable by customers. The operation requires proper lock versions to prevent concurrent modification conflicts.
 

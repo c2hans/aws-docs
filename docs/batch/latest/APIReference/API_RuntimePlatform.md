@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_RuntimePla
 ---
 
 # RuntimePlatform
-<a name="API_RuntimePlatform"></a>
 
  An object that represents the compute environment architecture for AWS Batch jobs on Fargate.
 

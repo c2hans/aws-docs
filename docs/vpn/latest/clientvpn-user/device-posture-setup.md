@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/device-posture
 ---
 
 # Setting up a device trust provider
-<a name="device-posture-setup"></a>
 
 If your administrator has enabled device posture on a Client VPN endpoint, your device must have a supported device trust provider configured. The device trust provider makes a device posture token available on your device, which the AWS provided client reads when you connect.
 

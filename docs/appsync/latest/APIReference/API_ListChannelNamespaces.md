@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListChan
 ---
 
 # ListChannelNamespaces
-<a name="API_ListChannelNamespaces"></a>
 
 Lists the channel namespaces for a specified `Api`.
 

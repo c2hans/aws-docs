@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TimeR
 ---
 
 # TimeRangeFilterValue
-<a name="API_TimeRangeFilterValue"></a>
 
 The value of a time range filter.
 

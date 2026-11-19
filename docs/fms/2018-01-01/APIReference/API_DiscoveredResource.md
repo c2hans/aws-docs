@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Discover
 ---
 
 # DiscoveredResource
-<a name="API_DiscoveredResource"></a>
 
 A resource in the organization that's available to be associated with a Firewall Manager resource set.
 

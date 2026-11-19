@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Capability S3Location
-<a name="aws-properties-b2bi-capability-s3location"></a>
 
 Specifies the details for the Amazon S3 file location that is being used with AWS B2B Data Interchange. File locations in Amazon S3 are identified using a combination of the bucket and key.
 

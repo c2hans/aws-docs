@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
 ---
 
 # Scoping generative AI use cases
-<a name="scoping-generative-ai-use-cases"></a>
 
 The first step in developing a robust security strategy for generative AI is to properly scope its use within your organization. See the [AWS Generative AI Security Scoping Matrix](https://aws.amazon.com/ai/generative-ai/security/scoping-matrix/) (shown in the following figure) to categorize your use cases.
 

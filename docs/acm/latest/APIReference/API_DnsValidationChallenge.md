@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DnsValidatio
 ---
 
 # DnsValidationChallenge
-<a name="API_DnsValidationChallenge"></a>
 
 Contains the CNAME record that you must add to your DNS configuration to validate domain ownership using DNS validation.
 

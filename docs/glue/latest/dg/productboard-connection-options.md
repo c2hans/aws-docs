@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/productboard-connection-o
 ---
 
 # Productboard connection options
-<a name="productboard-connection-options"></a>
 
 The following are connection options for Productboard:
 +  `ENTITY_NAME`(String) – (Required) Used for Read/Write. The name of your Object in Productboard.

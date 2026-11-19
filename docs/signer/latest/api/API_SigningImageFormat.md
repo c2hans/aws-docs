@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_SigningImageFormat
 ---
 
 # SigningImageFormat
-<a name="API_SigningImageFormat"></a>
 
 The image format of a AWS Signer platform or profile.
 

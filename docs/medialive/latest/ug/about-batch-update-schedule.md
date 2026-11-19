@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/about-batch-update-s
 ---
 
 # Creating and deleting using a batch command
-<a name="about-batch-update-schedule"></a>
 
 To create and delete actions in the schedule for a channel, you use the batch update schedule command. This command lets you perform multiple actions in one request. There isn't one command for creating actions and another for deleting actions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/resource-matc
 ---
 
 # Placeholder value filtering
-<a name="resource-matching-placeholder-filtering"></a>
 
 Resource matching automatically ignores identifier values that are:
 + all zeros (for example, `0`, `000000000`, `00-000-0000`);

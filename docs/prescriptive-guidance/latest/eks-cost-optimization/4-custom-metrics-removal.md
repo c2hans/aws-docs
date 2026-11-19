@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Vendor and custom metrics cost reduction
-<a name="4-custom-metrics-removal"></a>
 
 Amazon CloudWatch, Prometheus, and third-party monitoring can become significant cost drivers in Amazon EKS.
 

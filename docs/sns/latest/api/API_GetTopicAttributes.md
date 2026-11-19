@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_GetTopicAttributes.ht
 ---
 
 # GetTopicAttributes
-<a name="API_GetTopicAttributes"></a>
 
 Returns all of the properties of a topic. Topic properties returned might differ based on the authorization of the user.
 

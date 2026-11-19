@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/performance
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Contributors to this document include:
 + Varun Sharma, Sr. Lead Consultant, AWS

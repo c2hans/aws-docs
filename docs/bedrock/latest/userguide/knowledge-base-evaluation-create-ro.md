@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Creating a retrieve-only RAG evaluation job
-<a name="knowledge-base-evaluation-create-ro"></a>
 
 You can create a RAG evaluation job using the AWS Management Console, AWS CLI, or a supported AWS SDK.
 

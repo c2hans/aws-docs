@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/RestoringPrevi
 ---
 
 # Restoring previous versions
-<a name="RestoringPreviousVersions"></a>
 
 You can use versioning to retrieve previous versions of an object. There are two approaches to doing so:
 + Copy a previous version of the object into the same bucket.

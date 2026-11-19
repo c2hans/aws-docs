@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-3x-create.ht
 ---
 
 # Creating a cluster with earlier AMI versions of Amazon EMR
-<a name="emr-3x-create"></a>
 
 Amazon EMR 2.x and 3.x releases are referenced by AMI version. With Amazon EMR release 4.0.0 and later, releases are referenced by release version, using a release label such as `emr-5.11.0`. This change is most apparent when you create a cluster using the AWS CLI or programmatically.
 

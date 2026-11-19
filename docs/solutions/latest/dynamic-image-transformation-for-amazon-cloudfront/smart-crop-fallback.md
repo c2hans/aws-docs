@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Smart crop returns an uncropped or full-frame image
-<a name="smart-crop-fallback"></a>
 
  **Symptoms:**
 + A smart crop request returns the configured fallback (for example, a centered `cover` crop) instead of cropping around the detected content.

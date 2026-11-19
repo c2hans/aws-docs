@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/sap-ibm-pacemaker-p
 ---
 
 # Planning
-<a name="sap-ibm-pacemaker-planning"></a>
 
 ## Architecture Options
 <a name="sap-ibm-pacemaker-architecture-options"></a>

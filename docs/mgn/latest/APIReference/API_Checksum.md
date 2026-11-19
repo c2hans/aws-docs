@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_Checksum.htm
 ---
 
 # Checksum
-<a name="API_Checksum"></a>
 
 A checksum structure used to verify data integrity.
 

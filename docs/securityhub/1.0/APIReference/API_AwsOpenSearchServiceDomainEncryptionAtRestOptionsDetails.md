@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsOpen
 ---
 
 # AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetails
-<a name="API_AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetails"></a>
 
 Details about the configuration for encryption at rest for the OpenSearch domain.
 

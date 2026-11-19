@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityR
 ---
 
 # CapacityReservationCommitmentInfo
-<a name="API_CapacityReservationCommitmentInfo"></a>
 
 Information about your commitment for a future-dated Capacity Reservation.
 

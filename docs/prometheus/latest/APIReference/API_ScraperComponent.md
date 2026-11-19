@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Scrap
 ---
 
 # ScraperComponent
-<a name="API_ScraperComponent"></a>
 
 A component of a Amazon Managed Service for Prometheus scraper that can be configured for logging.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Updat
 ---
 
 # UpdateDataSecurityConfig
-<a name="API_UpdateDataSecurityConfig"></a>
 
 Data security configuration.
 

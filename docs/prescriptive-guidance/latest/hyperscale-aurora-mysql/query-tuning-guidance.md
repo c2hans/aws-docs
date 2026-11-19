@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hyperscale-
 ---
 
 # Guidance for query tuning
-<a name="query-tuning-guidance"></a>
 
 After you identify problematic queries in your workload, each query should be tuned. Use the following guidelines on tuning to help your workload to run more efficiently.
 

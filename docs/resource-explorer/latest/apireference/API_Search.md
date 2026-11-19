@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # Search
-<a name="API_Search"></a>
 
 Searches for resources and displays details about all resources that match the specified criteria. You must specify a query string.
 

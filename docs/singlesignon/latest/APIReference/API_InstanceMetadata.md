@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Ins
 ---
 
 # InstanceMetadata
-<a name="API_InstanceMetadata"></a>
 
 Provides information about the IAM Identity Center instance.
 

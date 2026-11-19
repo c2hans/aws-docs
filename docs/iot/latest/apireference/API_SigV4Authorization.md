@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_SigV4Authori
 ---
 
 # SigV4Authorization
-<a name="API_SigV4Authorization"></a>
 
 For more information, see [Signature Version 4 signing process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html).
 

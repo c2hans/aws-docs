@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Connect
 ---
 
 # ConnectionSummary
-<a name="API_ConnectionSummary"></a>
 
 The summary of a connection.
 

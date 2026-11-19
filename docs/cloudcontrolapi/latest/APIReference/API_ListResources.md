@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_
 ---
 
 # ListResources
-<a name="API_ListResources"></a>
 
 Returns information about the specified resources. For more information, see [Discovering resources](https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/resource-operations-list.html) in the * AWS Cloud Control API User Guide*.
 

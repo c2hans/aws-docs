@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DeleteCampaignChannelSubtypeConfig
-<a name="API_connect-outbound-campaigns-v2_DeleteCampaignChannelSubtypeConfig"></a>
 
 Deletes the channel subtype configuration of an outbound campaign. Only campaigns in the `Initialized` state are valid for this operation.
 

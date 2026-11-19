@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/schema-conversion-oracle-
 ---
 
 # Step 9: Edit and Apply Your Converted Code
-<a name="schema-conversion-oracle-aurora-mysql-step-9"></a>
 
 After you convert your source Oracle database objects, you can review the conversion statistics. DMS Schema Conversion converts most of the database objects, but some of the objects require manual conversion.
 

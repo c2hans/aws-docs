@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Prometheus metrics troubleshooting
-<a name="ContainerInsights-Prometheus-troubleshooting"></a>
 
 This section provides help for troubleshooting your Prometheus metrics setup.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-c
 ---
 
 # Belarus registration
-<a name="nx-country-reg-by"></a>
 
 The following registrations are available for Belarus.
 

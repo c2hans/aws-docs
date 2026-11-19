@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/jiracloud-v
 ---
 
 # Viewing a ticket for a Jira Cloud integration
-<a name="jiracloud-view-ticket"></a>
 
  After you create a ticket for a finding, you can open the ticket on your Jira Cloud instance.
 

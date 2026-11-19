@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-sagemak
 ---
 
 # Inference Container Features
-<a name="nova-sagemaker-inference-container-features"></a>
 
 The Amazon Nova SageMaker inference container includes a set of features that you can enable to customize model behavior during inference. Each feature is introduced in a specific container version and may require environment variables, request parameters, or both to activate.
 

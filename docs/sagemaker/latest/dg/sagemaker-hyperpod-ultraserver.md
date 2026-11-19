@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-u
 ---
 
 # Using UltraServers in Amazon SageMaker HyperPod
-<a name="sagemaker-hyperpod-ultraserver"></a>
 
 SageMaker HyperPod support for Ultraservers provides high-performance GPU computing capabilities for AI and machine learning workloads. Built on NVIDIA GB200 and NVL72 architecture, these Ultraservers provide NVLink connectivity across 18 GB200 instances in a dual-rack configuration, totaling 72 B200 GPUs. This NVLink fabric allows workloads to use GPU communications that increase usable GPU capacity and addressable memory beyond what's possible with discrete instances, supporting more complex and resource-intensive AI models. The NVLink connectivity is enabled by NVIDIA IMEX technology, which handles the low-level configuration for secure GPU fabric connections across instances within the same rack.
 

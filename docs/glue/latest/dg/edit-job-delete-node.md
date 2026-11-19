@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/edit-job-delete-node.html
 ---
 
 # Deleting nodes from the job diagram
-<a name="edit-job-delete-node"></a>
 
  When working with Visual ETL jobs, you can remove nodes from the canvas without having to re-add or restructure any nodes that are connected to the removed node.
 

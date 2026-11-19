@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/dataset-parameter
 ---
 
 # Adding dataset parameters to calculated fields
-<a name="dataset-parameters-calculated-fields"></a>
 
 You can also add dataset parameters to calculated field expressions using the format `${parameter_name}`.
 

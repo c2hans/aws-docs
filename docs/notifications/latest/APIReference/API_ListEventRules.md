@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Li
 ---
 
 # ListEventRules
-<a name="API_ListEventRules"></a>
 
 Returns a list of `EventRules` according to specified filters, in reverse chronological order (newest first).
 

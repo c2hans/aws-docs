@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/fivetran-reading-from-ent
 ---
 
 # Reading from Fivetran entities
-<a name="fivetran-reading-from-entities"></a>
 
 **Prerequisites**
 

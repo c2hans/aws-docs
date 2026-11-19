@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-fun
 ---
 
 # Constructor functions
-<a name="sql-functions-constructor"></a>
 
 A SQL constructor function is a function that is used to create new data structures, such as arrays or maps.
 

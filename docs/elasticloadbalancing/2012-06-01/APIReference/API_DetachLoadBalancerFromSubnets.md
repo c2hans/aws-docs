@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # DetachLoadBalancerFromSubnets
-<a name="API_DetachLoadBalancerFromSubnets"></a>
 
 Removes the specified subnets from the set of configured subnets for the load balancer.
 

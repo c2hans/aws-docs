@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateEdgeDeploymentStage
-<a name="API_CreateEdgeDeploymentStage"></a>
 
 Creates a new stage in an existing edge deployment plan.
 

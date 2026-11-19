@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 ---
 
 # Skills
-<a name="harness-skills"></a>
 
  [Agent Skills](https://strandsagents.com/docs/user-guide/concepts/plugins/skills/) are bundles of markdown and scripts that give the agent domain knowledge on demand. Each skill follows the open [AgentSkills.io](https://agentskills.io/specification) standard: a `SKILL.md` file with YAML frontmatter (name, description) and markdown instructions, plus optional `scripts/`, `references/`, and `assets/` directories.
 

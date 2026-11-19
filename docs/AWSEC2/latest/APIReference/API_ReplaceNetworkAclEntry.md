@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceNe
 ---
 
 # ReplaceNetworkAclEntry
-<a name="API_ReplaceNetworkAclEntry"></a>
 
 Replaces an entry (rule) in a network ACL. For more information, see [Network ACLs](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html) in the *Amazon VPC User Guide*.
 

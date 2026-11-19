@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/cluster-vertica
 ---
 
 # Online scaling up
-<a name="cluster-vertical-scaling-scaling-up"></a>
 
 **Topics**
 + [Scaling up MemoryDB clusters (Console)](#cluster-vertical-scaling-console)

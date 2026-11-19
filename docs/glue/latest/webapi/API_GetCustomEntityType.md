@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetCustomEntityTy
 ---
 
 # GetCustomEntityType
-<a name="API_GetCustomEntityType"></a>
 
 Retrieves the details of a custom pattern by specifying its name.
 

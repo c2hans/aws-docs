@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/importing-fhi
 ---
 
 # Getting FHIR import job properties
-<a name="importing-fhir-data-describe"></a>
 
 Use `DescribeFHIRImportJob` to get FHIR import job properties. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`DescribeFHIRImportJob`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DescribeFHIRImportJob.html) in the *AWS HealthLake API Reference*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/underst
 ---
 
 # Understanding rightsizing recommendations calculations
-<a name="understanding-rr-calc"></a>
 
 This section provides an overview of the savings calculations that are used in your rightsizing recommendations algorithms.
 

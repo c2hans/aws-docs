@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Software and architecture patterns
-<a name="software-and-architecture-patterns"></a>
 
 | CONTAINER\_BUILD\_SUSTAINABILITY\_01: How do you design your containerized application in a way that reduces the use of the underlying resources? |
 | --- |

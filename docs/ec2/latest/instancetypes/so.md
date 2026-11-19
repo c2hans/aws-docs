@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/instancetypes/so.html
 ---
 
 # Specifications for Amazon EC2 storage optimized instances
-<a name="so"></a>
 
 Storage optimized instances are designed for workloads that require high, sequential read and write access to very large data sets on local storage. They are optimized to deliver tens of thousands of low-latency, random I/O operations per second (IOPS) to applications.
 

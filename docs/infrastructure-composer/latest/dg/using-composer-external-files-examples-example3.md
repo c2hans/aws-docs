@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Create an application that references an external file in Infrastructure Composer
-<a name="using-composer-external-files-examples-example3"></a>
 
 This example uses the AWS SAM CLI to create an application that references an external file for its state machine definition. You then load your project in Infrastructure Composer with your external file properly referenced.
 

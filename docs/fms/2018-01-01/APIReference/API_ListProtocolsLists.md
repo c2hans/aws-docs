@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ListProt
 ---
 
 # ListProtocolsLists
-<a name="API_ListProtocolsLists"></a>
 
 Returns an array of `ProtocolsListDataSummary` objects.
 

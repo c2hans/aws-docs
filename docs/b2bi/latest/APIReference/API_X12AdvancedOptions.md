@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_X12Advanced
 ---
 
 # X12AdvancedOptions
-<a name="API_X12AdvancedOptions"></a>
 
 Contains advanced options specific to X12 EDI processing, such as splitting large X12 files into smaller units.
 

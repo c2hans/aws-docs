@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate Oracle native functions to PostgreSQL using extensions
-<a name="migrate-oracle-native-functions-to-postgresql-using-extensions"></a>
 
 *Pinesh Singal, Amazon Web Services*
 

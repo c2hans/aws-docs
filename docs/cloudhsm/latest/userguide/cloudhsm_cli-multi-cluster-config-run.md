@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-m
 ---
 
 # Configure the CloudHSM CLI for multi-cluster functionality
-<a name="cloudhsm_cli-multi-cluster-config-run"></a>
 
 To configure your CloudHSM CLI for multi-cluster functionality, follow these steps:
 

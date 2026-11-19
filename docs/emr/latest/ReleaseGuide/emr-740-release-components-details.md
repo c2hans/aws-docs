@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-740-release-
 ---
 
 # 7.4.0 release components details
-<a name="emr-740-release-components-details"></a>
 
 See the following table for more information about the *Extras* packages in Amazon EMR 7.4.0.
 

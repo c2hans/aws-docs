@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Connectivity
 ---
 
 # ConnectivityFilter
-<a name="API_ConnectivityFilter"></a>
 
 Provides connectivity filter selections for the fleet indexing configuration.
 

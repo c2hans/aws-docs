@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_F
 ---
 
 # FleetSoftwareAddOn
-<a name="API_FleetSoftwareAddOn"></a>
 
 Software that the service installs on worker hosts in a service-managed fleet.
 

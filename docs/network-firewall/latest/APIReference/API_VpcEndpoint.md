@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # VpcEndpoint
-<a name="API_VpcEndpoint"></a>
 
 The VPC and subnets for the endpoints of a proxy mode firewall. You use this in `CreateFirewall`. Network Firewall creates the firewall endpoints and the firewall's NAT gateways in this VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIReco
 ---
 
 # AIRecommendationOutputResult
-<a name="API_AIRecommendationOutputResult"></a>
 
 The output configuration for an AI recommendation job, including the S3 location for results and the model package group for deployment.
 

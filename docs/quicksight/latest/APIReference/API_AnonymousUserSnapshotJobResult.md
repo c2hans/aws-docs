@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Anony
 ---
 
 # AnonymousUserSnapshotJobResult
-<a name="API_AnonymousUserSnapshotJobResult"></a>
 
 A structure that contains the file groups that are requested for the artifact generation in a `StartDashboardSnapshotJob` API call.
 

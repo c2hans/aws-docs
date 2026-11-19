@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # CatalogItem
-<a name="API_connect-customer-profiles_CatalogItem"></a>
 
 Represents an item in the catalog with its complete set of attributes and metadata.
 

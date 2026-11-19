@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Rbin::Rule ResourceTag
-<a name="aws-properties-rbin-rule-resourcetag"></a>
 
 [Tag-level retention rules only] Information about the resource tags used to identify resources that are retained by the retention rule.
 

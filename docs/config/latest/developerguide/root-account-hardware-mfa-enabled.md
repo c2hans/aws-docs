@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/root-accoun
 ---
 
 # root-account-hardware-mfa-enabled
-<a name="root-account-hardware-mfa-enabled"></a>
 
 Checks if your AWS account is enabled to use multi-factor authentication (MFA) hardware device to sign in with root credentials. The rule is NON\_COMPLIANT if any virtual MFA devices are permitted for signing in with root credentials.
 

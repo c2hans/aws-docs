@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/global-view-main.html
 ---
 
 # Using global view
-<a name="global-view-main"></a>
 
 Use the global view feature to see source servers across various member accounts and to perform various actions such as installing the SSM Agent.
 

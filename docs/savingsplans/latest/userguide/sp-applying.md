@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-applyin
 ---
 
 # Understanding how Savings Plans apply to your usage
-<a name="sp-applying"></a>
 
 If you have active Savings Plans, they apply automatically to your eligible AWS usage to reduce your bill.
 

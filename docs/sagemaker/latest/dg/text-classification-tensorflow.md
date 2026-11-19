@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/text-classification-
 ---
 
 # Text Classification - TensorFlow
-<a name="text-classification-tensorflow"></a>
 
 The Amazon SageMaker AI Text Classification - TensorFlow algorithm is a supervised learning algorithm that supports transfer learning with many pretrained models from the [TensorFlow Hub](https://tfhub.dev/). Use transfer learning to fine-tune one of the available pretrained models on your own dataset, even if a large amount of text data is not available. The text classification algorithm takes a text string as input and outputs a probability for each of the class labels. Training datasets must be in CSV format. This page includes information about Amazon EC2 instance recommendations and sample notebooks for Text Classification - TensorFlow.
 

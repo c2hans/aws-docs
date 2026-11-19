@@ -3,12 +3,14 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Known issue resolution
-<a name="known-issue-resolution"></a>
 +  **Issue:** A finding that I suppressed in AWS Security Hub CSPM changed to `NOTIFIED` (**In progress** in AWS Security Hub) and was then automatically remediated.
 
    **Cause:** This affects versions earlier than v4.1.0. A suppression set in AWS Security Hub CSPM is not reflected in the finding’s status in AWS Security Hub. Those versions based their remediation decision only on the status included in each incoming event. The solution therefore treated an AWS Security Hub event that still showed the finding’s previous status as actionable. The solution then changed the AWS Security Hub CSPM workflow status from `SUPPRESSED` to `NOTIFIED`. A later event could then start a remediation. The finding history shows the change as made by the `SO0111-ASR-sendNotifications` Lambda function’s role, with a note such as `Finding Workflow State is not NEW (NOTIFIED)`.
 
    **Resolution:** Update the solution to v4.1.0 or later. Starting in v4.1.0, the solution reads the finding’s current status in both AWS Security Hub CSPM and AWS Security Hub before an automatic or deadline-enforced remediation. It no longer changes the workflow status of a finding that was not `NEW`. Until you update, keep the affected resources out of fully automated remediation with an exclude-mode resource filter. The filter should match the resources by account ID, organizational unit, or ARN pattern (see [Create and apply resource filters](manage-automated-remediation.md#manage-resource-filters)). Resource filters require the Web UI or the MCP server. Alternatively, disable automated remediation for the control.
++  **Issue:** In v4.1.2 and later, AWS Security Hub CSPM control IAM.21 reports a `FAILED` finding for the `SO0111-ASR-Remediation-Boundary` or `SO0111-ASR-Custom-Runbook-Test-Boundary` policy. In earlier versions, control IAM.1 reports the finding instead.
+
+   **Resolution:** These policies are permissions boundaries and grant no permissions on their own. The finding clears after a Custom Runbook remediation role uses the boundary. For the cause and how to suppress the finding, see [IAM.21 findings for the solution’s permissions boundaries](security.md#iam21-permissions-boundary-findings).
 +  **Issue:** The solution deployment fails with an error stating that the resources are already available in Amazon CloudWatch.
 
    **Resolution:** Check for an error message in the CloudFormation resources/events section indicating log groups already exist. The ASR deployment templates allow reuse of existing log groups. Verify that you have selected reuse.

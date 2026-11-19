@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Updat
 ---
 
 # UpdateTracker
-<a name="API_UpdateTracker"></a>
 
 Updates the specified properties of a given tracker resource.
 

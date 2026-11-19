@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/troublesh
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Troubleshooting common issues in AWS Audit Manager
-<a name="troubleshooting"></a>
 
 As you use AWS Audit Manager, you might encounter certain issues or challenges that require troubleshooting. Whether you're facing challenges with setting up assessments, collecting evidence, or any other aspect of the service, you can use this troubleshooting guide to find our recommendations that help you to help you resolve common problems quickly and efficiently.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestSetSum
 ---
 
 # TestSetSummary
-<a name="API_TestSetSummary"></a>
 
 Contains summary information about the test set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # EpisodicReflectionConfiguration
-<a name="API_EpisodicReflectionConfiguration"></a>
 
 The configuration for the reflections created with the episodic memory strategy.
 

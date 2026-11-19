@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # UpdateMediaStorageConfiguration
-<a name="API_UpdateMediaStorageConfiguration"></a>
 
 Associates a `SignalingChannel` to a stream to store the media. There are two signaling modes that you can specify :
 + If `StorageStatus` is enabled, the data will be stored in the `StreamARN` provided. In order for WebRTC Ingestion to work, the stream must have data retention enabled.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Agentic AI cost optimization
-<a name="advcost05"></a>
 
  In high-scale adtech environments engineered for low-latency and high-volume operations, fraudulent activity directly amplifies usage across compute, storage, and networking resources. Design fraud detection pipelines to minimize redundant processing and optimize inference costs through caching known outcomes, filtering threats as early as possible, and running only necessary inference steps on cost-efficient compute. Beyond fraud detection, agentic AI advertising workloads on Amazon Bedrock incur costs through foundation model inference, knowledge base retrieval, and multi-agent orchestration. Without ongoing cost monitoring tied to business outcomes, spending grows unchecked as agent usage scales with campaign activity. The highest-impact optimizations are matching model capability to task complexity, optimizing token consumption, and aligning pricing models to invocation patterns.
 

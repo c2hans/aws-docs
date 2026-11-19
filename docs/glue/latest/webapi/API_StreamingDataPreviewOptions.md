@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StreamingDataPrev
 ---
 
 # StreamingDataPreviewOptions
-<a name="API_StreamingDataPreviewOptions"></a>
 
 Specifies options related to data preview for viewing a sample of your data.
 

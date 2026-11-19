@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/pod-execution-role.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Amazon EKS Pod execution IAM role
-<a name="pod-execution-role"></a>
 
 The Amazon EKS Pod execution role is required to run Pods on AWS Fargate infrastructure.
 

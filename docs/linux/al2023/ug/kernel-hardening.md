@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/kernel-hardening.html
 ---
 
 # AL2023 Kernel Hardening
-<a name="kernel-hardening"></a>
 
  The 6.1 Linux kernel in AL2023 is configured and built with several hardening options and features.
 

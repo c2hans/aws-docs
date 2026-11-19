@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Risk
-<a name="tune-and-measure-risk"></a>
 
 During the mature phase of the walk stage, you can use AWS Security Hub CSPM to continually tune and measure security risk. Security Hub CSPM continually assesses an organization's security posture and takes actions to remediate identified issues. Security Hub CSPM centralizes and prioritizes security findings from across AWS accounts, services, and supported third-party partners. This helps you analyze security trends and identify the high priority security issues.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Containerize .NET apps
-<a name="net-containerize"></a>
 
 ## Overview
 <a name="net-containerize-overview"></a>

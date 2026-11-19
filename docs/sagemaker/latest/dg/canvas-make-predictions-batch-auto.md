@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-make-predicti
 ---
 
 # Make automatic batch predictions
-<a name="canvas-make-predictions-batch-auto"></a>
 
 **Note**
 Time series forecasting models don't support automatic batch predictions.

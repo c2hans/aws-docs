@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/http-configurati
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # HTTP configuration
-<a name="http-configuration"></a>
 
 Most applications don't need to change the HTTP client. You might change it to use an HTTP client that supports bidirectional streaming or to provide your own implementation. This page includes the following topics:
 + [Provided HTTP clients](#http-clients) describes the HTTP clients that the SDK provides and their capabilities.

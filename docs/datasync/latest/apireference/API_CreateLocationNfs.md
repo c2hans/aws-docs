@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_CreateL
 ---
 
 # CreateLocationNfs
-<a name="API_CreateLocationNfs"></a>
 
 Creates a transfer *location* for a Network File System (NFS) file server. AWS DataSync can use this location as a source or destination for transferring data.
 

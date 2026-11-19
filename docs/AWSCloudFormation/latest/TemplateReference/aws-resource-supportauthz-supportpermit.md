@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SupportAuthZ::SupportPermit
-<a name="aws-resource-supportauthz-supportpermit"></a>
 
 The `AWS::SupportAuthZ::SupportPermit` resource creates a support permit that authorizes AWS Support to perform a specific set of actions on one or more of your resources for a bounded period of time. You define which actions are allowed, which resources they apply to, and optional time-window conditions that control when the permit is active.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/lustre-quotas.htm
 ---
 
 # Using Lustre storage quotas
-<a name="lustre-quotas"></a>
 
 You can create storage quotas for users, groups, and projects on FSx for Lustre file systems. With storage quotas, you can limit the amount of disk space and the number of files that a user, group, or project can consume. Storage quotas automatically track user-level, group-level, and project-level usage so you can monitor consumption whether or not you choose to set storage limits.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ob
 ---
 
 # ObdSignal
-<a name="API_ObdSignal"></a>
 
 Information about signal messages using the on-board diagnostics (OBD) II protocol in a vehicle.
 

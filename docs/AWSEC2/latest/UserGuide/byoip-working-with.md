@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/byoip-working-wi
 ---
 
 # Use your BYOIP address range in Amazon EC2
-<a name="byoip-working-with"></a>
 
 You can view and use the IPv4 and IPv6 address ranges that you've provisioned in your account. For more information, see [Onboard your address range for use in Amazon EC2](byoip-onboard.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Account
 ---
 
 # AccountDetails
-<a name="API_AccountDetails"></a>
 
 The details of an AWS account.
 

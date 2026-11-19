@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_SSEKMS.html
 ---
 
 # SSEKMS
-<a name="API_SSEKMS"></a>
 
 Specifies the use of SSE-KMS to encrypt delivered inventory reports.
 

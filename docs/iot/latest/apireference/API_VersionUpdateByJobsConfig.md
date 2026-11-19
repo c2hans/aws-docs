@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_VersionUpdat
 ---
 
 # VersionUpdateByJobsConfig
-<a name="API_VersionUpdateByJobsConfig"></a>
 
 Configuration to manage IoT Job's package version reporting. If configured, Jobs updates the thing's reserved named shadow with the package version information up on successful job completion.
 

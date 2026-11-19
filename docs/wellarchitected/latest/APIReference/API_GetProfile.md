@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GetProfile
-<a name="API_GetProfile"></a>
 
 Get profile information.
 

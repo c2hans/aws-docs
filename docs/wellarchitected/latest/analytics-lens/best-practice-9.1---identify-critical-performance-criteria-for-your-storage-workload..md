@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 ---
 
 # Best practice 9.1 – Identify critical performance criteria for your storage workload
-<a name="best-practice-9.1---identify-critical-performance-criteria-for-your-storage-workload."></a>
 
  In data analytics, throughput is often a constraining factor to enable your workloads to run effectively. Throughput is measured by the amount of information that has successfully moved through the network, compute, or storage layers. Improving throughput in each of these layers generally results in better query performance.
 

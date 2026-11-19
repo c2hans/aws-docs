@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # EncryptionConfig
-<a name="API_EncryptionConfig"></a>
 
 Encryption settings for a collection.
 

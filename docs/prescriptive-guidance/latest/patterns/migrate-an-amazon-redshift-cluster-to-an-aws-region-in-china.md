@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an Amazon Redshift cluster to an AWS Region in China
-<a name="migrate-an-amazon-redshift-cluster-to-an-aws-region-in-china"></a>
 
 *Jing Yan, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpRou
 ---
 
 # HttpRouteMatch
-<a name="API_HttpRouteMatch"></a>
 
 An object that represents the requirements for a route to match HTTP requests for a virtual router.
 

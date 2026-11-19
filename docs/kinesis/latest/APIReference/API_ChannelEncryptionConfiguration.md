@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ChannelE
 ---
 
 # ChannelEncryptionConfiguration
-<a name="API_ChannelEncryptionConfiguration"></a>
 
 Specifies the AWS KMS key that Amazon Kinesis Data Streams uses to encrypt data delivered to the channel's destination.
 

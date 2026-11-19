@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetIntegration
-<a name="API_connect-customer-profiles_GetIntegration"></a>
 
 Returns an integration for a domain.
 

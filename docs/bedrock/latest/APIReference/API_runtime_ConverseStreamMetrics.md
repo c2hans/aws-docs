@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ConverseStreamMetrics
-<a name="API_runtime_ConverseStreamMetrics"></a>
 
 Metrics for the stream.
 

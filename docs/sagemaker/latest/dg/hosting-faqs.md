@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/hosting-faqs.html
 ---
 
 # Model Hosting FAQs
-<a name="hosting-faqs"></a>
 
 Refer to the following FAQ items for answers to commonly asked questions about SageMaker AI Inference Hosting.
 

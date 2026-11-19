@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/firehydrant-support.html
 ---
 
 # AWS Glue support for FireHydrant
-<a name="firehydrant-support"></a>
 
 AWS Glue supports FireHydrant as follows:
 

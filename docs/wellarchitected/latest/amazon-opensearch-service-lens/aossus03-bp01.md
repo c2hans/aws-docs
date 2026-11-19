@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSSUS03-BP01 Use Index State Management to manage the lifecycle of your dataset
-<a name="aossus03-bp01"></a>
 
  Improve data management, meet compliance requirements, and reduce data loss risk by using Index State Management (ISM) to manage the lifecycle of your dataset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AcceptC
 ---
 
 # AcceptChoice
-<a name="API_AcceptChoice"></a>
 
 Specifies the prediction (aka, the automatically generated piece of metadata) and the target (for example, a column name) that can be accepted.
 

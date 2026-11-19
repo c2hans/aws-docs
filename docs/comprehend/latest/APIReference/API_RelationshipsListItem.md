@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Relat
 ---
 
 # RelationshipsListItem
-<a name="API_RelationshipsListItem"></a>
 
 List of child blocks for the current block.
 

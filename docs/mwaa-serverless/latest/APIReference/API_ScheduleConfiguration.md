@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_
 ---
 
 # ScheduleConfiguration
-<a name="API_ScheduleConfiguration"></a>
 
 Contains the configuration used to schedule automated workflow execution. Only one version of a workflow can have an active schedule at any time.
 

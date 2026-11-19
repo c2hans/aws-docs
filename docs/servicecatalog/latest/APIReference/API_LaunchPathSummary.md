@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # LaunchPathSummary
-<a name="API_LaunchPathSummary"></a>
 
 Summary information about a product path for a user.
 

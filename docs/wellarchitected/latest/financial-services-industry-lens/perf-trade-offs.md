@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Trade-offs
-<a name="perf-trade-offs"></a>
 
 **Topics**
 + [FSIPERF07: How do you make trade-offs in your architecture?](fsiperf07.md)

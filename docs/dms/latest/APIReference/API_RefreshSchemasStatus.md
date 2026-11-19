@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_RefreshSchem
 ---
 
 # RefreshSchemasStatus
-<a name="API_RefreshSchemasStatus"></a>
 
 Provides information that describes status of a schema at an endpoint specified by the `DescribeRefreshSchemaStatus` operation.
 

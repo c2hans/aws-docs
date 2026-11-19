@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UpdateStorageProfile
-<a name="API_UpdateStorageProfile"></a>
 
 Updates a storage profile.
 

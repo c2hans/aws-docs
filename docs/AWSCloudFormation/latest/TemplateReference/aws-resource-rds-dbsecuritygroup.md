@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RDS::DBSecurityGroup
-<a name="aws-resource-rds-dbsecuritygroup"></a>
 
 The `AWS::RDS::DBSecurityGroup` resource creates or updates an Amazon RDS DB security group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Profi
 ---
 
 # ProfileLimitValue
-<a name="API_ProfileLimitValue"></a>
 
 A value that defines a resource usage limit, consisting of a maximum value and a unit of measurement.
 

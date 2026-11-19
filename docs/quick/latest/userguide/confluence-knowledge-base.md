@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/confluence-knowle
 ---
 
 # Atlassian Confluence Cloud knowledge base integration
-<a name="confluence-knowledge-base"></a>
 
 Use the Atlassian Confluence Cloud knowledge base integration to index Confluence content so that AWS Quick agents can search and answer questions about it. AWS Quick supports optional document-level access controls (ACLs) for Confluence knowledge bases. When enabled, users only see answers from documents they are authorized to access in Confluence. For more information, see [Document-level access controls](confluence-kb-acl.md).
 

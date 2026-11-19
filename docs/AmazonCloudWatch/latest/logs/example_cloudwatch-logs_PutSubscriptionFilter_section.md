@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/example_clo
 ---
 
 # Use `PutSubscriptionFilter` with an AWS SDK
-<a name="example_cloudwatch-logs_PutSubscriptionFilter_section"></a>
 
 The following code examples show how to use `PutSubscriptionFilter`.
 

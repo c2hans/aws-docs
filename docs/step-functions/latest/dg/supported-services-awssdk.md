@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/supported-servi
 ---
 
 # Learning to use AWS service SDK integrations in Step Functions
-<a name="supported-services-awssdk"></a>
 
 With Step Functions' AWS SDK integration, your workflows can call almost any AWS service's API actions. The services or SDKs that are not available might be recently released, require customized configuration, or are not suitable for use in a workflow, such as SDKs for streaming audio or video.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/s_neste
 ---
 
 # Examples of nested data types
-<a name="s_nested-data-type-examples"></a>
 
 For the `struct<given:varchar, family:varchar>` type, there are two attribute names: `given`, and `family`, each corresponding to a `varchar` value.
 

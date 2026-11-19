@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/task-reports.h
 ---
 
 # Monitoring your data transfers with task reports
-<a name="task-reports"></a>
 
 *Task reports* provide detailed information about what AWS DataSync attempts to transfer, skip, verify, and delete during a task execution. For more information, see [How DataSync transfers files, objects, and directories](how-datasync-transfer-works.md#transferring-files).
 

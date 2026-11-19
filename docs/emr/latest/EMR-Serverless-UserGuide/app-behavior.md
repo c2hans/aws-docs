@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/app-
 ---
 
 # Understanding application behavior in EMR Serverless
-<a name="app-behavior"></a>
 
 This section describes job submission behavior, capacity configuration for scaling, and worker configuration settings for EMR Serverless.
 

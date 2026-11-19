@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # ShiftDetails
-<a name="API_SSMContacts_ShiftDetails"></a>
 
 Information about overrides to an on-call rotation shift.
 

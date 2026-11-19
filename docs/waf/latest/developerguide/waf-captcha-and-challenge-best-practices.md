@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-captcha-an
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Best practices for using the CAPTCHA and Challenge actions
-<a name="waf-captcha-and-challenge-best-practices"></a>
 
 Follow the guidance in this section to plan and implement AWS WAF CAPTCHA or challenge.
 

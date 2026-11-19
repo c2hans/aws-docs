@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # MCP Server
-<a name="MCP-Server"></a>
 
 The optional Model Context Protocol (MCP) Server integration enables AI agents to programmatically access and analyze your load testing data through natural language interactions. This component is only deployed if you select the MCP Server option during solution deployment.
 

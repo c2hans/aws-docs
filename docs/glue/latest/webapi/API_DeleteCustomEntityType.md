@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteCustomEntit
 ---
 
 # DeleteCustomEntityType
-<a name="API_DeleteCustomEntityType"></a>
 
 Deletes a custom pattern by specifying its name.
 

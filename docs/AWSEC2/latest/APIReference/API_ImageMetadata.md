@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageMeta
 ---
 
 # ImageMetadata
-<a name="API_ImageMetadata"></a>
 
 Information about the AMI.
 

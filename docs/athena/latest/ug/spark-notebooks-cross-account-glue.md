@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/spark-notebooks-cross-a
 ---
 
 # Configure cross-account AWS Glue access in Athena for Spark
-<a name="spark-notebooks-cross-account-glue"></a>
 
 This topic shows how consumer account {{666666666666}} and owner account {{999999999999}} can be configured for cross-account AWS Glue access. When the accounts are configured, the consumer account can run queries from Athena for Spark on the owner's AWS Glue databases and tables.
 

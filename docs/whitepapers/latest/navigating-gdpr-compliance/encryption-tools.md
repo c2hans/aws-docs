@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Encryption Tools
-<a name="encryption-tools"></a>
 
 AWS offers various highly scalable data encryption services, tools, and mechanisms to help protect your data stored and processed on AWS. For information about AWS Service functionality and privacy, refer to [Privacy Features of AWS services](https://aws.amazon.com/compliance/privacy-features/).
 

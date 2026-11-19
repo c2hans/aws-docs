@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PipelineBlueprint
-<a name="API_osis_PipelineBlueprint"></a>
 
 Container for information about an OpenSearch Ingestion blueprint.
 

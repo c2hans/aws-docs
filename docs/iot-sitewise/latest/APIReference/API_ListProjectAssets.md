@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListProjectAssets
-<a name="API_ListProjectAssets"></a>
 
 Retrieves a paginated list of assets associated with an AWS IoT SiteWise Monitor project.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/statuspage-reading-from-e
 ---
 
 # Reading from Statuspage entities
-<a name="statuspage-reading-from-entities"></a>
 
 **Prerequisites**
 

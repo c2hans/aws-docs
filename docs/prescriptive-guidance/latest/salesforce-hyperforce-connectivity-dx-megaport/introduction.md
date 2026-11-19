@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/salesforce-
 ---
 
 # Connecting to Salesforce Hyperforce by using AWS Direct Connect with Megaport
-<a name="introduction"></a>
 
 *Bennett Borofka and Kranthi Pullagurla, Amazon Web Services*
 

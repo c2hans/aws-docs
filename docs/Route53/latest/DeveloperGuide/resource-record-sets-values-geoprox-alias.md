@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-r
 ---
 
 # Values specific for geoproximity alias records
-<a name="resource-record-sets-values-geoprox-alias"></a>
 
 When you create geoproximity alias records, you specify the following values.
 

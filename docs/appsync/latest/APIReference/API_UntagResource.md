@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_UntagRes
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Untags a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-create-w
 ---
 
 # Create a Amazon Managed Service for Prometheus workspace
-<a name="AMP-create-workspace"></a>
 
 Follow these steps to create a Amazon Managed Service for Prometheus workspace. You can choose to use the AWS CLI or the Amazon Managed Service for Prometheus console.
 

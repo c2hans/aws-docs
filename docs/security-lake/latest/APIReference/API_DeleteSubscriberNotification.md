@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_De
 ---
 
 # DeleteSubscriberNotification
-<a name="API_DeleteSubscriberNotification"></a>
 
 Deletes the specified subscription notification in Amazon Security Lake for the organization you specify.
 

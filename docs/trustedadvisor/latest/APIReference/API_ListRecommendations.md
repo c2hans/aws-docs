@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_L
 ---
 
 # ListRecommendations
-<a name="API_ListRecommendations"></a>
 
 List a filterable set of Recommendations. This API provides global recommendations, eliminating the need to call the API in each AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_As
 ---
 
 # AssessmentControlSet
-<a name="API_AssessmentControlSet"></a>
 
  Represents a set of controls in an Audit Manager assessment.
 

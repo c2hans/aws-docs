@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/dry-run-re
 ---
 
 # Validate Image Builder resource creation with a dry run
-<a name="dry-run-resources"></a>
 
 With a dry run, you can check whether a request to create an Image Builder resource would succeed, without creating the resource. When you set the `dryRun` parameter to `true` in your request, Image Builder validates the required permissions and request parameters, and then stops before it creates anything. The outcome is one of the following:
 + If validation succeeds, the request fails with a `DryRunOperationException` error. This error indicates that the request is valid, and that the resource creation would have succeeded without the `dryRun` parameter.

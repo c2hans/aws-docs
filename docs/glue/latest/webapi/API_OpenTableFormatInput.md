@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_OpenTableFormatIn
 ---
 
 # OpenTableFormatInput
-<a name="API_OpenTableFormatInput"></a>
 
 A structure representing an open format table.
 

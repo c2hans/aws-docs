@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/upgrade-domain
 ---
 
 # Upgrade Amazon DataZone domains to Amazon SageMaker unified domains
-<a name="upgrade-domain"></a>
 
 ## Considerations before you upgrade your domain
 <a name="upgrade-domain-consider"></a>

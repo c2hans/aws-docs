@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/month.html
 ---
 
 # $month
-<a name="month"></a>
 
 The `$month` operator in Amazon DocumentDB returns the month of a date as a number between 1 and 12. This operator is useful for extracting the month component from a date field and performing date-based aggregations and analyses.
 

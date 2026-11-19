@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ExecutionSummaryCluster
-<a name="API_ExecutionSummaryCluster"></a>
 
 A cluster of similar execution patterns identified across sessions.
 

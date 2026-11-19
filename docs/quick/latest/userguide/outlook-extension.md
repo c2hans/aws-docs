@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/outlook-extension
 ---
 
 # AWS Quick Microsoft Outlook extension
-<a name="outlook-extension"></a>
 
 The Quick extension for Microsoft Outlook integrates AI-powered assistance directly into your email workflows. Users can leverage Quick within Outlook to streamline their inbox and calendar management, draft contextual emails using their Quick data, and perform external actions without switching applications.
 

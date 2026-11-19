@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-laun
 ---
 
 # Launching with a Container image fulfillment option
-<a name="buyer-launch-container-image"></a>
 
 For a fulfillment option with a **Container image** delivery method, use the seller-provided instructions to launch the product. This is done by pulling Docker images directly from Amazon ECR. The general steps to launch the product are as follows:
 

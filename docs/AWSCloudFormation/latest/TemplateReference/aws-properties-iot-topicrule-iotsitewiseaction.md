@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule IotSiteWiseAction
-<a name="aws-properties-iot-topicrule-iotsitewiseaction"></a>
 
 Describes an action to send data from an MQTT message that triggered the rule to AWS IoT SiteWise asset properties.
 

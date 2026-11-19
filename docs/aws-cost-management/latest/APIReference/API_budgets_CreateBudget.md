@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CreateBudget
-<a name="API_budgets_CreateBudget"></a>
 
 Creates a budget and, if included, notifications and subscribers.
 

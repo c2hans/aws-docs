@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # Security incident response and resources
-<a name="security-incident-response-and-resources"></a>
 
 If your startup experiences an active security event in your AWS environment, such as unauthorized access, data exfiltration, or ransomware, the [AWS Customer Incident Response Team](https://aws.amazon.com/blogs/security/welcoming-the-aws-customer-incident-response-team/) (AWS CIRT) can help at no additional charge, regardless of your AWS Support plan. The AWS CIRT is a specialized 24/7 global team of security engineers that provides hands-on support to customers during active security events on the customer side of the shared responsibility model.
 

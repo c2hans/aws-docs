@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Capacit
 ---
 
 # CapacityReservationTarget
-<a name="API_CapacityReservationTarget"></a>
 
  The target for the Capacity Reservation. Specify Capacity Reservations IDs or Capacity Reservation resource group ARNs.
 

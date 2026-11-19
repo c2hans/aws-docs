@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html
 ---
 
 # What is Tag Editor?
-<a name="tagging"></a>
 
 Tag Editor enables you to effectively manage tags. *Tags* are key and value pairs that act as metadata for organizing your AWS resources. With most AWS resources, you have the option of adding tags when you create the resource. Examples of resources include an Amazon Elastic Compute Cloud (Amazon EC2) instance, an Amazon Simple Storage Service (Amazon S3) bucket, or a secret in AWS Secrets Manager.
 

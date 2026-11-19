@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NotificationsContacts::EmailContact EmailContact
-<a name="aws-properties-notificationscontacts-emailcontact-emailcontact"></a>
 
 Configures email contacts for AWS User Notifications. You must activate the email contact using the activation token that you will receive when the email contact is set up.
 

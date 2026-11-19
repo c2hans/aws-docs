@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ThirdPar
 ---
 
 # ThirdPartyFirewallMissingSubnetViolation
-<a name="API_ThirdPartyFirewallMissingSubnetViolation"></a>
 
 The violation details for a third-party firewall for an Availability Zone that's missing the Firewall Manager managed subnet.
 

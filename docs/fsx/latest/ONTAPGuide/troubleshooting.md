@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/troubleshooting.ht
 ---
 
 # Troubleshooting Amazon FSx for NetApp ONTAP
-<a name="troubleshooting"></a>
 
 Use the following sections to help troubleshoot FSx for ONTAP file systems.
 

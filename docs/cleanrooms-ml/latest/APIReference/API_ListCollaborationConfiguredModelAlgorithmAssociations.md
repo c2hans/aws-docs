@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Li
 ---
 
 # ListCollaborationConfiguredModelAlgorithmAssociations
-<a name="API_ListCollaborationConfiguredModelAlgorithmAssociations"></a>
 
 Returns a list of the configured model algorithm associations in a collaboration.
 

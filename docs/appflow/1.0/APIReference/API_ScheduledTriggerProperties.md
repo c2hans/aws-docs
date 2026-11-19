@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ScheduledTr
 ---
 
 # ScheduledTriggerProperties
-<a name="API_ScheduledTriggerProperties"></a>
 
  Specifies the configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the `Scheduled` trigger type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_
 ---
 
 # CancelResourceRequest
-<a name="API_CancelResourceRequest"></a>
 
 Cancels the specified resource operation request. For more information, see [Canceling resource operation requests](https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/resource-operations-manage-requests.html#resource-operations-manage-requests-cancel) in the * AWS Cloud Control API User Guide*.
 

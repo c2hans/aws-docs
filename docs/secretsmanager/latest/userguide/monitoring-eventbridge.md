@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/monitori
 ---
 
 # Match AWS Secrets Manager events with Amazon EventBridge
-<a name="monitoring-eventbridge"></a>
 
 In Amazon EventBridge, you can match Secrets Manager events from CloudTrail log entries. You can configure EventBridge rules that look for these events and then send new generated events to a target to take action. For a list of CloudTrail entries that Secrets Manager logs, see [CloudTrail entries](cloudtrail_log_entries.md). For instructions to set up EventBridge, see [Getting started with EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html) in the *EventBridge User Guide*.
 

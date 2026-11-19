@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ErrorInfo.ht
 ---
 
 # ErrorInfo
-<a name="API_ErrorInfo"></a>
 
 Provides error information.
 

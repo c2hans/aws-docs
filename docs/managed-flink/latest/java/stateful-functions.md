@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/stateful-funct
 ---
 
 # Apache Flink stateful functions
-<a name="stateful-functions"></a>
 
 [Stateful Functions](https://nightlies.apache.org/flink/flink-statefun-docs-stable/) is an API that simplifies building distributed stateful applications. It’s based on functions with persistent state that can interact dynamically with strong consistency guarantees.
 

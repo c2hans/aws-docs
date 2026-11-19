@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_GetSourceEnd
 ---
 
 # GetSourceEndpoint
-<a name="API_GetSourceEndpoint"></a>
 
 Retrieves information about a source endpoint.
 

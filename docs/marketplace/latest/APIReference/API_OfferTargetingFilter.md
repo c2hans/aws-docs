@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferTargetingFilter
-<a name="API_OfferTargetingFilter"></a>
 
 Allows filtering on the `Targeting` of an offer.
 

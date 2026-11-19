@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ListAnalysisReports
-<a name="API_ListAnalysisReports"></a>
 
 Returns a list of all traffic analysis reports generated within the last 30 days.
 

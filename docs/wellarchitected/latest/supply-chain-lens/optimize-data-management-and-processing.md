@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Optimize data management and processing
-<a name="optimize-data-management-and-processing"></a>
 
 | SCCOST02: How do you optimize compute and data storage within supply chain systems? |
 | --- |

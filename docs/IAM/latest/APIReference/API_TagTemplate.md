@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagTemplate.
 ---
 
 # TagTemplate
-<a name="API_TagTemplate"></a>
 
 Represents a tag that is applied to roles that are created from a role template. The key and value can include `@{parameter}` placeholders that are replaced with template parameter values when the role is created.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/text-to-speech
 ---
 
 # Add text-to-speech to prompts in flow blocks in Amazon Polly
-<a name="text-to-speech"></a>
 
 You can enter text-to-speech prompts in the following flow blocks:
 + [Get customer input](get-customer-input.md)

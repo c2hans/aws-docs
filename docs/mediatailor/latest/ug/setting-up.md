@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/setting-up.html
 ---
 
 # Setting up AWS Elemental MediaTailor
-<a name="setting-up"></a>
 
 This section guides you through the steps required to configure users to access AWS Elemental MediaTailor. For background and additional information about identity and access management for MediaTailor, see [Identity and Access Management for AWS Elemental MediaTailor](security-iam.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFle
 ---
 
 # CreateFleetInstance
-<a name="API_CreateFleetInstance"></a>
 
 Describes the instances that were launched by the fleet.
 

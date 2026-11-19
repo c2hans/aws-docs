@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Aggregate
 ---
 
 # AggregatedSourceStatus
-<a name="API_AggregatedSourceStatus"></a>
 
 The current sync status between the source and the aggregator account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_A
 ---
 
 # ActivityTimedOutEventDetails
-<a name="API_ActivityTimedOutEventDetails"></a>
 
 Contains details about an activity timeout that occurred during an execution.
 

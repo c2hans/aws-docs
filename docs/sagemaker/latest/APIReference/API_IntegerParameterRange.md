@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Intege
 ---
 
 # IntegerParameterRange
-<a name="API_IntegerParameterRange"></a>
 
 For a hyperparameter of the integer type, specifies the range that a hyperparameter tuning job searches.
 

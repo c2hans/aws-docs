@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_FilterOverrides.h
 ---
 
 # FilterOverrides
-<a name="API_FilterOverrides"></a>
 
 Configuration that defines per-field overrides for filter behavior, allowing individual fields to customize how filter operations are applied.
 

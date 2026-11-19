@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Colum
 ---
 
 # ColumnSort
-<a name="API_ColumnSort"></a>
 
 The sort configuration for a column that is not used in a field well.
 

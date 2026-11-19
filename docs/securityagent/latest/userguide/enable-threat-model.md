@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/enable-th
 ---
 
 # Enable threat modeling
-<a name="enable-threat-model"></a>
 
 Configure your Agent Space to enable threat modeling by connecting source code repositories and configuring AWS resources. Threat modeling analyzes your application’s architecture and identifies security threats from source code, design documents, or both.
 

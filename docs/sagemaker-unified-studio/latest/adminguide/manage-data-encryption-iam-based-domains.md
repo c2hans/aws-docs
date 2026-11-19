@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Manage data encryption in IAM-based domains
-<a name="manage-data-encryption-iam-based-domains"></a>
 
 Data encryption in IAM-based domains protects your data at rest and in transit within Amazon SageMaker Unified Studio. You can choose between AWS-managed encryption keys for simplified management or customer-managed AWS KMS keys for enhanced control over encryption operations. Encryption settings are configured during domain setup and cannot be changed after domain creation.
 

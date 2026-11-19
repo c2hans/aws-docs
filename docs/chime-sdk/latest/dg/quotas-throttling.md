@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/quotas-throttling.ht
 ---
 
 # Verifying SDK quotas and API throttling for Amazon Chime SDK meetings
-<a name="quotas-throttling"></a>
 
 The [Amazon Chime SDK endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/chime-sdk.html) page lists the service quotas, API rates, and whether you can adjust them. Use the [AWS Console Service Quota](https://console.aws.amazon.com/servicequotas/home/services/chime/quotas) page to request quota adjustments.
 

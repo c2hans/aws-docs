@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 ---
 
 # Migrating a DynamoDB table from one account to another
-<a name="bp-migrating-table-between-accounts"></a>
 
 You can migrate an Amazon DynamoDB table from one account to another to implement a multi-account strategy or a backup strategy. You can also do it for testing, debugging, or compliance reasons. A common use case is copying DynamoDB tables across production, staging, test, and development environments where each environment utilizes a different AWS account.
 

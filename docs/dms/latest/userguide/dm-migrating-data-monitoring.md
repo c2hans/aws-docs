@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/dm-migrating-data-m
 ---
 
 # Monitoring data migrations in AWS DMS
-<a name="dm-migrating-data-monitoring"></a>
 
 After you start your homogeneous data migration, you can monitor its status and progress. Data migrations of large data sets such as hundreds of gigabytes take hours to complete. To maintain the reliability, availability, and high performance of your data migration, monitor its progress regularly.
 

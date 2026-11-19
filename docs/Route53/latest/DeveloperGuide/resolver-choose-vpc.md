@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-c
 ---
 
 # Considerations when creating inbound and outbound endpoints
-<a name="resolver-choose-vpc"></a>
 
 Before you create inbound and outbound Resolver endpoints in an AWS Region, consider the following issues.
 

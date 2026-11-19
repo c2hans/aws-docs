@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/architectural
 ---
 
 # Migrating from an existing FHIR server
-<a name="architectural-patterns-migration"></a>
 
 To migrate data from an existing FHIR server to HealthLake, follow these steps.
 

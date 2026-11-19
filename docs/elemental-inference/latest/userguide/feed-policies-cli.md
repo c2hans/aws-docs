@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fee
 ---
 
 # Managing policies using the CLI
-<a name="feed-policies-cli"></a>
 
 You can use the Elemental Inference API to attach, retrieve, and delete feed policies.
 

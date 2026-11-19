@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Operations_A
 ---
 
 # AWS WAF Classic Regional
-<a name="API_Operations_AWS_WAF_Regional"></a>
 
 The following actions are supported by AWS WAF Classic Regional:
 +  [AssociateWebACL](API_wafRegional_AssociateWebACL.md)

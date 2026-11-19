@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/inte
 ---
 
 # Run interactive workloads with EMR Serverless through EMR Studio
-<a name="interactive-workloads"></a>
 
 With EMR Serverless interactive applications, run interactive workloads for Spark with EMR Serverless using notebooks that are hosted in EMR Studio.
 

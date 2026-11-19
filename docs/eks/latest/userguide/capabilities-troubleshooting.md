@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/capabilities-troubl
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Troubleshooting EKS Capabilities
-<a name="capabilities-troubleshooting"></a>
 
 **Note**
 EKS Capabilities are fully managed and run outside your cluster. You do not have direct access to controller namespaces. Troubleshooting focuses on capability health, resource status, configuration, and controller logs. You can configure controller log delivery to gain visibility into controller behavior. See [Access EKS Capabilities controller logs](capabilities-controller-logs.md).

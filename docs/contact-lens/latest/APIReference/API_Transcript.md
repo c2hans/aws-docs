@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/contact-lens/latest/APIReference/API_Tra
 ---
 
 # Transcript
-<a name="API_connect-contact-lens_Transcript"></a>
 
 A list of messages in the session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ac
 ---
 
 # Action
-<a name="API_Action"></a>
 
 What occurs after a certain event.
 

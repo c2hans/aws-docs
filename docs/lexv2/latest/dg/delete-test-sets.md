@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/delete-test-sets.html
 ---
 
 # Delete a test set in Test Workbench
-<a name="delete-test-sets"></a>
 
 You can easily delete a test set from your list of test sets.
 

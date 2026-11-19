@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # DescribeMappedResourceConfiguration
-<a name="API_DescribeMappedResourceConfiguration"></a>
 
 Returns the most current information about the stream. The `streamName` or `streamARN` should be provided in the input.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/supported-events.ht
 ---
 
 # Amazon EventBridge support for ACM
-<a name="supported-events"></a>
 
 This topic lists and describes the ACM related events supported by Amazon EventBridge.
 

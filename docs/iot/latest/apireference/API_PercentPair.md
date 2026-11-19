@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_PercentPair.
 ---
 
 # PercentPair
-<a name="API_PercentPair"></a>
 
 Describes the percentile and percentile value.
 

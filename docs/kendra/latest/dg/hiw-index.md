@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/dg/hiw-index.html
 Amazon Kendra is no longer open to new customers. For capabilities similar to Amazon Kendra, explore Amazon Bedrock Knowledge Bases. [Learn more](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
 # Indexes in Amazon Kendra
-<a name="hiw-index"></a>
 
 An index holds the contents of your documents and is structured in a way to make the documents searchable. This section provides an overview of the supported index types and index features.
 

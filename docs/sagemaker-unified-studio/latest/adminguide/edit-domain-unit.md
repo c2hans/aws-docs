@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Edit domain units in Amazon SageMaker Unified Studio
-<a name="edit-domain-unit"></a>
 
 **To edit a domain unit**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationRestCycles
-<a name="API_WaypointOptimizationRestCycles"></a>
 
 Resting phase of the cycle.
 

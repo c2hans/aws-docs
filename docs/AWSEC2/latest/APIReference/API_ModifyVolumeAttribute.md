@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVol
 ---
 
 # ModifyVolumeAttribute
-<a name="API_ModifyVolumeAttribute"></a>
 
 Modifies a volume attribute.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # NumberAttributeConstraintsType
-<a name="API_NumberAttributeConstraintsType"></a>
 
 The minimum and maximum values of an attribute that is of the number type, for example `custom:age`.
 

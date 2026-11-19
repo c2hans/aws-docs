@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AdminCreateUser
-<a name="API_AdminCreateUser"></a>
 
 Creates a new user in the specified user pool.
 

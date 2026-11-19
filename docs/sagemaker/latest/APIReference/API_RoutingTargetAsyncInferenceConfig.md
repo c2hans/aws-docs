@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Routin
 ---
 
 # RoutingTargetAsyncInferenceConfig
-<a name="API_RoutingTargetAsyncInferenceConfig"></a>
 
 The asynchronous inference settings of a routing target.
 

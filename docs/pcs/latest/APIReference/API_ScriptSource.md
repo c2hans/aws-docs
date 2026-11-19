@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_ScriptSource
 ---
 
 # ScriptSource
-<a name="API_ScriptSource"></a>
 
 The source location and integrity information for a node lifecycle script.
 

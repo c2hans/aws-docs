@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UsageTrackingResource
-<a name="API_UsageTrackingResource"></a>
 
 The usage details of the allotted budget.
 

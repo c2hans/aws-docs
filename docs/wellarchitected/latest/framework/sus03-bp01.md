@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus03-b
 ---
 
 # SUS03-BP01 Optimize workloads for high resource usage efficiency
-<a name="sus03-bp01"></a>
 
  Optimizing workloads to use resources efficiently and eliminate waste is fundamental to sustainable cloud operations. By implementing a cycle of measurement, optimization, and validation, you can identify and eliminate inefficiencies such as idle resources, over-provisioning, or inefficient processes. The goal is to maximize the business value per resource consumed, reducing both environmental impact and operational costs.
 

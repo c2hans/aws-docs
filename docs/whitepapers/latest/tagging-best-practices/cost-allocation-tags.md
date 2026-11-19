@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Cost allocation tags
-<a name="cost-allocation-tags"></a>
 
  Cost allocation refers to the assignment or distribution of incurred costs to the users or beneficiaries of those costs following a defined process. In the context of this whitepaper, we divide cost allocation into two types: *showback* and *chargeback*.
 

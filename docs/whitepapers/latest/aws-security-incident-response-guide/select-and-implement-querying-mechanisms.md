@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Select and implement querying mechanisms for logs
-<a name="select-and-implement-querying-mechanisms"></a>
 
  In AWS, the main services you can use to query logs are [CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html) for data stored in CloudWatch log groups, and [Amazon Athena](https://aws.amazon.com/athena/) and [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/) for data stored in Amazon S3. You can also use third-party querying tools such as a security information and event management (SIEM).
 

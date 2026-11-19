@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # ExportKeyMaterial
-<a name="API_ExportKeyMaterial"></a>
 
 Parameter information for key material export from AWS Payment Cryptography using TR-31 or TR-34 or RSA wrap and unwrap key exchange method.
 

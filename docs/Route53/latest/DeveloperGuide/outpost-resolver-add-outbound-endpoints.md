@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/outpost-re
 ---
 
 # Creating outbound endpoints (first-generation AWS Outposts only)
-<a name="outpost-resolver-add-outbound-endpoints"></a>
 
 **Note**
 This content applies to first-generation AWS Outposts only. It doesn't apply to second-generation AWS Outposts.

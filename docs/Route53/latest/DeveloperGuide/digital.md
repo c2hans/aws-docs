@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/digital.ht
 ---
 
 # .digital
-<a name="digital"></a>
 
 Used for anything and everything digital, but ideal for technology businesses.
 

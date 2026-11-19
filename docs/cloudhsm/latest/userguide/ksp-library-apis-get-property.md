@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-ap
 ---
 
 # NCryptGetProperty with Key storage provider (KSP)
-<a name="ksp-library-apis-get-property"></a>
 
 The `NCryptGetProperty` function retrieves property values for a key storage object.
 

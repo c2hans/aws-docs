@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_DeleteLinkRout
 ---
 
 # DeleteLinkRoutingRule
-<a name="API_DeleteLinkRoutingRule"></a>
 
 Deletes a routing rule from a link.
 

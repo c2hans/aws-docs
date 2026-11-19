@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/trouble
 ---
 
 # Amazon MQ for RabbitMQ: Instance type has reached end of support
-<a name="troubleshooting-action-required-codes-rabbitmq-instance-type-end-of-support"></a>
 
 Amazon MQ for RabbitMQ raises a `RABBITMQ_INSTANCE_TYPE_END_OF_SUPPORT` action required code when your broker is running on an instance type that has reached end of support. Support for `mq.t3.micro` ended on October 1, 2026.
 

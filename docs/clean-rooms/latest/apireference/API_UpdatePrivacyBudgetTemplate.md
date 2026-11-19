@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Upda
 ---
 
 # UpdatePrivacyBudgetTemplate
-<a name="API_UpdatePrivacyBudgetTemplate"></a>
 
 Updates the privacy budget template for the specified collaboration.
 

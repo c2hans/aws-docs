@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Validation and analysis overview
-<a name="policy-validation-overview"></a>
 
 ## Schema checks
 <a name="policy-schema-checks"></a>

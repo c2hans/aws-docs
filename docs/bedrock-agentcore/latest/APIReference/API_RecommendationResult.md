@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # RecommendationResult
-<a name="API_RecommendationResult"></a>
 
 The result of a recommendation, containing the optimized output.
 

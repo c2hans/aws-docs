@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_CreateGatewa
 ---
 
 # CreateGateway
-<a name="API_CreateGateway"></a>
 
  Creates a new gateway. The request must include at least one network (up to four).
 

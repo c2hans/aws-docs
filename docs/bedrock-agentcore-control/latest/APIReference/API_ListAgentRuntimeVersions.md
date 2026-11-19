@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListAgentRuntimeVersions
-<a name="API_ListAgentRuntimeVersions"></a>
 
 Lists all versions of a specific Amazon Secure Agent.
 

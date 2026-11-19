@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_List
 ---
 
 # ListServiceNetworkVpcEndpointAssociations
-<a name="API_ListServiceNetworkVpcEndpointAssociations"></a>
 
 Lists the associations between a service network and a VPC endpoint.
 

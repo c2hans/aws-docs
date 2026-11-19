@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/openssl3.html
 ---
 
 # OpenSSL 3
-<a name="openssl3"></a>
 
 AL2023 features the Open Secure Sockets Layer version 3 (OpenSSL 3) cryptography toolkit. AL2023 supports TLS 1.3 and TLS 1.2 network protocols.
 

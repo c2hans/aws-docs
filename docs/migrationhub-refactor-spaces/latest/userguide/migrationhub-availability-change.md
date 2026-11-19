@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/user
 AWS Migration Hub Refactor Spaces is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub Refactor Spaces, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # AWS Migration Hub Refactor Spaces availability change
-<a name="migrationhub-availability-change"></a>
 
 AWS Migration Hub has stopped accepting new customers as of November 7, 2025. AWS Transform, launched in May 2025, is our next-generation service that provides equivalent capabilities and enhanced migration and modernization capabilities with AI-driven automation. Existing AWS Migration Hub customers can continue using the service to complete their ongoing migration projects. All current Migration Hub features, including Strategy Recommendations for modernization pathway, EC2 Instance Recommendations, Migration Hub Journeys, and Orchestrator, are available in AWS Transform with improved functionality.
 

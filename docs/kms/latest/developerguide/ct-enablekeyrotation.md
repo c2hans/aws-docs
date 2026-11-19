@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-enablekeyro
 ---
 
 # EnableKeyRotation
-<a name="ct-enablekeyrotation"></a>
 
 The following example shows an AWS CloudTrail log entry of a call to the [EnableKeyRotation](https://docs.aws.amazon.com/kms/latest/APIReference/API_EnableKeyRotation.html) operation. For an example of the CloudTrail log entry that is written when the key is rotated, see [RotateKey](ct-rotatekey.md). For information about rotating AWS KMS keys, see [Rotate AWS KMS keys](rotate-keys.md).
 

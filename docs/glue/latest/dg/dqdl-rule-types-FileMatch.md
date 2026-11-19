@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-FileMatch
 ---
 
 # FileMatch
-<a name="dqdl-rule-types-FileMatch"></a>
 
  The FileMatch rule allows you to compare files against other files or checksums. This can be useful in a few scenarios:
 

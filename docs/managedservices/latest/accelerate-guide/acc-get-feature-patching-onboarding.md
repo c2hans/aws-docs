@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Onboarding patching in Accelerate
-<a name="acc-get-feature-patching-onboarding"></a>
 
 You need to configure patching to ensure that your software is up-to-date and meets your compliance policies.
 

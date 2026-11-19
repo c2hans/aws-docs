@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chime-using-assistant.ht
 ---
 
 # Using the Amazon Chime Assistant
-<a name="chime-using-assistant"></a>
 
 The Amazon Chime Assistant is a self-service tool that you can use to get any files attached to chat messages, or to submit a request to delete your account.
 

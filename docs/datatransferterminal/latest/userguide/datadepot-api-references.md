@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datatransferterminal/latest/userguide/da
 ---
 
 # Data Transfer Terminal API references: Actions and resources
-<a name="datadepot-api-references"></a>
 
 When creating AWS Identity and Access Management (IAM) policies, this page can help you understand the relationship between AWS Data Transfer Terminal API operations, the corresponding actions that you can grant permissions to perform, and the AWS resources for which you can grant the permissions.
 

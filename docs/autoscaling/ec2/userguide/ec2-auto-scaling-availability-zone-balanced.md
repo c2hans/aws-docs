@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scali
 ---
 
 # Auto Scaling group Availability Zone distribution
-<a name="ec2-auto-scaling-availability-zone-balanced"></a>
 
 The following information describes Auto Scaling group Availability Zone strategies.
 

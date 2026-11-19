@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SendInAp
 ---
 
 # SendInAppNotificationActionDefinition
-<a name="API_SendInAppNotificationActionDefinition"></a>
 
 Information about the send in-app notification action.
 

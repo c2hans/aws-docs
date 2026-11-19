@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Upda
 ---
 
 # UpdateAssetFile
-<a name="API_UpdateAssetFile"></a>
 
 Updates a file in an asset
 

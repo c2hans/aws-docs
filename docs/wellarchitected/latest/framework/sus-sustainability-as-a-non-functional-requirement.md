@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus-sus
 ---
 
 # Sustainability as a non-functional requirement
-<a name="sus-sustainability-as-a-non-functional-requirement"></a>
 
  Adding sustainability to your list of business requirements can result in more cost-effective solutions. Focusing on getting more value from the resources you use and using fewer of them directly translates to cost savings on AWS as you pay only for what you use.
 

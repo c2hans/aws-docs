@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/performance-i
 ---
 
 # Performance Insights for counter metrics
-<a name="performance-insights-counter-metrics"></a>
 
 Counter metrics are operating system metrics in the Performance Insights dashboard. To help identify and analyze performance problems, you can correlate counter metrics with DB load.
 

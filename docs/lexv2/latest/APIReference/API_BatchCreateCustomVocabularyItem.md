@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BatchCreat
 ---
 
 # BatchCreateCustomVocabularyItem
-<a name="API_BatchCreateCustomVocabularyItem"></a>
 
 Create a batch of custom vocabulary items for a given bot locale's custom vocabulary.
 

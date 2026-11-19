@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AcceptP
 ---
 
 # AcceptPredictions
-<a name="API_AcceptPredictions"></a>
 
 Accepts automatically generated business-friendly metadata for your Amazon DataZone assets.
 

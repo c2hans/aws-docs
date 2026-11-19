@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/chat-networ
 ---
 
 # Chatting about your network security
-<a name="chat-network-security"></a>
 
 **Note**
 The public preview of this capability has now ended and is no longer accessible. For more information about this capability, contact [AWS Support](https://aws.amazon.com/premiumsupport) or an [AWS Sales Representative](https://aws.amazon.com/contact-us/sales-support/).

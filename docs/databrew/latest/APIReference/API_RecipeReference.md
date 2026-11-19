@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_RecipeR
 ---
 
 # RecipeReference
-<a name="API_RecipeReference"></a>
 
 Represents the name and version of a DataBrew recipe.
 

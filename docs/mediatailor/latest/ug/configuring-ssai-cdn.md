@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/configuring-ssai-c
 ---
 
 # Set up basic MediaTailor SSAI with a CDN for optimal ad delivery
-<a name="configuring-ssai-cdn"></a>
 
 This section provides step-by-step instructions for configuring AWS Elemental MediaTailor dynamic ad insertion with a content delivery network (CDN) to optimize your video monetization workflow.
 

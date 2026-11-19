@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/nodegroup-additional-v
 ---
 
 # Additional Volume Mappings
-<a name="nodegroup-additional-volume-mappings"></a>
 
 As an additional configuration option, when dealing with volume mappings, it’s possible to configure extra mappings when the nodegroup is created.
 

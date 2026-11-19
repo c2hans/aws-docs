@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_W
 ---
 
 # WriteOperation
-<a name="API_WriteOperation"></a>
 
 Defines an object to add to or delete from a governed table.
 

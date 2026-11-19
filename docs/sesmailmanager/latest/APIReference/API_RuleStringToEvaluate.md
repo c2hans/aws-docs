@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RuleStringToEvaluate
-<a name="API_RuleStringToEvaluate"></a>
 
 The string to evaluate in a string condition expression.
 

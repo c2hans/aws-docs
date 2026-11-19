@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # TrafficSplitEntry
-<a name="API_TrafficSplitEntry"></a>
 
 An entry in a traffic split configuration, defining a named variant with a weight and configuration bundle reference.
 

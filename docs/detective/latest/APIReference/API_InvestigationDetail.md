@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Invest
 ---
 
 # InvestigationDetail
-<a name="API_InvestigationDetail"></a>
 
 Details about the investigation related to a potential security event identified by Detective.
 

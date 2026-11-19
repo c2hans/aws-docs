@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Content delivery network distributions
-<a name="amazon-lightsail-faq-cdn-distributions"></a>
 
 ## What can I do with Lightsail CDN distributions?
 <a name="what-to-do-with-distribution"></a>

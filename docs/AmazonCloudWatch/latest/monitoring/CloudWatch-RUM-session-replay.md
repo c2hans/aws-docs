@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Session replay
-<a name="CloudWatch-RUM-session-replay"></a>
 
 CloudWatch RUM session replay allows you to capture end user sessions for your web application. You can play back these sessions to visually see what users experienced, helping you identify issues, understand user behavior, and troubleshoot problems.
 

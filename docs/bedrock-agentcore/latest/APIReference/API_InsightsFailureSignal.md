@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # InsightsFailureSignal
-<a name="API_InsightsFailureSignal"></a>
 
 A signal indicating a detected failure within a span.
 

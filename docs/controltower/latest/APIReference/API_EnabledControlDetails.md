@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledControlDetails
-<a name="API_EnabledControlDetails"></a>
 
 Information about the enabled control.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-iceberg-use-
 ---
 
 # Use an Iceberg cluster with Hive
-<a name="emr-iceberg-use-hive-cluster"></a>
 
 With Amazon EMR releases 6.9.0 and higher, you can use Iceberg with a Hive cluster without having to perform the setup steps that are required for Open Source Iceberg Hive Integration. For Amazon EMR versions 6.8.0 and earlier, you can use a bootstrap action to install `iceberg-hive-runtime` jar for configuring Hive for Iceberg support.
 

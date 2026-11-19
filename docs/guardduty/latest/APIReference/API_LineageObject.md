@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Lineag
 ---
 
 # LineageObject
-<a name="API_LineageObject"></a>
 
 Information about the runtime process details.
 

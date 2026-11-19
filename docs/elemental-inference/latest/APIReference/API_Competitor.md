@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # Competitor
-<a name="API_Competitor"></a>
 
 Contains information about one competitor in a fixture. It is used in the FixtureSummary that is in the SearchFixtures response.
 

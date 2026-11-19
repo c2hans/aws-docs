@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Next steps and resources
-<a name="next-steps"></a>
 
 By starting with your users and business outcomes, and by focusing on impact, you can derive better value from your observability solution while controlling costs and avoiding tool sprawl. Remember that observability is an iterative process, not a destination. Set up your teams and processes to continuously iterate and improve your observability posture, incorporate best practices, and close gaps as your architecture, business requirements, and teams evolve, with well-defined goals as a guide. By planning for failure, incorporating a culture of continuous improvement, and adopting the best practices that are discussed in this guide, you should be able to put the guidance from Dr. Werner Vogels into practice:"Everything fails all the time... so plan for failure and nothing will fail."
 

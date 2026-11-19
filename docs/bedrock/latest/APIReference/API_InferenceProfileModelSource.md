@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Inferenc
 ---
 
 # InferenceProfileModelSource
-<a name="API_InferenceProfileModelSource"></a>
 
 Contains information about the model or system-defined inference profile that is the source for an inference profile..
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/vp
 ---
 
 # Giving Amazon GameLift Streams access to resources in an Amazon VPC
-<a name="vpc-connectivity"></a>
 
 By default, Amazon GameLift Streams runs your streaming applications on compute resources that have access to the public internet but not to resources in your private Amazon VPCs. To give your streaming applications access to private resources such as databases, cache servers, or internal APIs, you can configure VPC connectivity when creating a stream group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UpdateQueueFleetAssociation
-<a name="API_UpdateQueueFleetAssociation"></a>
 
 Updates a queue-fleet association.
 

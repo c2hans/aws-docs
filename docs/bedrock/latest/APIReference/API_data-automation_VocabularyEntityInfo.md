@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # VocabularyEntityInfo
-<a name="API_data-automation_VocabularyEntityInfo"></a>
 
 Information about a vocabulary entity.
 

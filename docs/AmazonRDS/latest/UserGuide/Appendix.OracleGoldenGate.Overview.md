@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Oracle GoldenGate architecture
-<a name="Appendix.OracleGoldenGate.Overview"></a>
 
 The Oracle GoldenGate architecture for use with Amazon RDS consists of the following decoupled modules:
 

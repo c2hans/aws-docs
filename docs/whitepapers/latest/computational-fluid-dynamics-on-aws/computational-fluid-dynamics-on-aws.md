@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Computational Fluid Dynamics on AWS
-<a name="computational-fluid-dynamics-on-aws"></a>
 
 Publication date: **March 24, 2022** ([Document revisions](document-revisions.md))
 

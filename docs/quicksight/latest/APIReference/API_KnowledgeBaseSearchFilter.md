@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Knowl
 ---
 
 # KnowledgeBaseSearchFilter
-<a name="API_KnowledgeBaseSearchFilter"></a>
 
 A filter to apply when searching knowledge bases.
 

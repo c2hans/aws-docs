@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Manage DynamoDB Global Secondary Indexes using AWS Command Line Interface v2
-<a name="example_dynamodb_Scenario_GSILifecycle_section"></a>
 
 The following code example shows how to manage the complete lifecycle of Global Secondary Indexes.
 + Create a table with a Global Secondary Index.

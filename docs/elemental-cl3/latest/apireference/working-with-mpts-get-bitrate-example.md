@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # Example
-<a name="working-with-mpts-get-bitrate-example"></a>
 
 This request returns the statistics for the MPTS with the ID 5. This MPTS contains two MPTS members (IDs 30 and 29).
 

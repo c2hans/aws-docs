@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Host a static site using a Lightsail bucket and distribution
-<a name="amazon-lightsail-static-site-hosting-tutorial"></a>
 
 ## Overview
 <a name="static-site-overview"></a>

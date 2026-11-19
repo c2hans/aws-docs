@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ips-start-channel-mu
 ---
 
 # Starting and restarting a channel that has multiple inputs
-<a name="ips-start-channel-multi-inputs"></a>
 
 After you create the MediaLive channel and add actions to its schedule, you can start the channel.
 

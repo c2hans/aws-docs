@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Writing a canary script
-<a name="CloudWatch_Synthetics_Canaries_WritingCanary"></a>
 
 The following sections explain how to write a canary script and how to integrate a canary with other AWS services and with external dependencies and libraries.
 

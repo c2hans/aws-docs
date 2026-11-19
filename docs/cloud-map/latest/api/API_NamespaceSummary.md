@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_NamespaceSummar
 ---
 
 # NamespaceSummary
-<a name="API_NamespaceSummary"></a>
 
 A complex type that contains information about a namespace.
 

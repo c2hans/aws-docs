@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/get-at
 ---
 
 # GET: Get the Attributes of a Profile
-<a name="get-attributes-of-profiles"></a>
 
 Get the attributes of the specified profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Converting MultiLoad scripts to Amazon Redshift RSQL with AWS Schema Conversion Tool
-<a name="CHAP-converting-multiload-rsql"></a>
 
 You can use AWS SCT to convert Teradata MultiLoad job scripts to Amazon Redshift RSQL.
 

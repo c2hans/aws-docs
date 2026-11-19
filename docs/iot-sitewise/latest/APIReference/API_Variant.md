@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Var
 ---
 
 # Variant
-<a name="API_Variant"></a>
 
 Contains an asset property value (of a single type only).
 

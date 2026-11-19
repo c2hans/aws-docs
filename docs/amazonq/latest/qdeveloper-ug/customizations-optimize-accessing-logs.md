@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/customizati
 ---
 
 # Accessing customization-related messages in Amazon CloudWatch Logs
-<a name="customizations-optimize-accessing-logs"></a>
 
 You can store information about the creation of your customizations in [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html).
 

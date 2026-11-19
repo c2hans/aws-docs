@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/manage-stop.html
 ---
 
 # Stopping the Amazon DCV Server
-<a name="manage-stop"></a>
 
 You can stop the Amazon DCV server at any time. Stopping the server terminates all active Amazon DCV sessions. You can't start new sessions until after the server is restarted.
 

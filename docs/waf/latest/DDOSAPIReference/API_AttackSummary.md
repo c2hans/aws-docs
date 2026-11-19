@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_AttackSu
 ---
 
 # AttackSummary
-<a name="API_AttackSummary"></a>
 
 Summarizes all DDoS attacks for a specified time period.
 

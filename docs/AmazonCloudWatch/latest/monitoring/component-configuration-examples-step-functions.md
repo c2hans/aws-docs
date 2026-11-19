@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # AWS Step Functions
-<a name="component-configuration-examples-step-functions"></a>
 
 The following example shows a component configurations in JSON format for AWS Step Functions.
 

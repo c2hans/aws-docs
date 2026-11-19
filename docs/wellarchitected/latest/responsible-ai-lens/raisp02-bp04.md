@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAISP02-BP04 Build security protections directly into the core AI system design
-<a name="raisp02-bp04"></a>
 
  Follow "secure by design" and "defense in depth" principles and build security protections into your system from the beginning to protect your system and maintain its intended operation. This means incorporating safeguards like access controls, input validation and sanitization to defend against prompt injections, and robust techniques to mitigate attempts at jailbreaking or bypassing your system's safety guardrails. The specific security measures you choose should directly address the security requirements in your release criteria.
 

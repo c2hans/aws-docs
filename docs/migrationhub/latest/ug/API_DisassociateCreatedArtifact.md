@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub/latest/ug/API_DisassociateC
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # DisassociateCreatedArtifact
-<a name="API_DisassociateCreatedArtifact"></a>
 
 Disassociates a created artifact of an AWS resource with a migration task performed by a migration tool that was previously associated. This API has the following traits:
 + A migration user can call the `DisassociateCreatedArtifacts` operation to disassociate a created AWS Artifact from a migration task.

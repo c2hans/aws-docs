@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TablePathElement
-<a name="API_TablePathElement"></a>
 
 An element in the hierarchical path to a table within a data source, containing both name and identifier.
 

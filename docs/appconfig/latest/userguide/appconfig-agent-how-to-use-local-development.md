@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-age
 ---
 
 # Working with AWS AppConfig Agent local development mode
-<a name="appconfig-agent-how-to-use-local-development"></a>
 
 AWS AppConfig Agent supports a *local development mode*. If you enable local development mode, the agent reads configuration data from a specified directory on disk. It doesn't retrieve configuration data from AWS AppConfig. You can simulate configuration deployments by updating files in the specified directory. We recommend local development mode for the following use cases:
 + Test different configuration versions before deploying them using AWS AppConfig.

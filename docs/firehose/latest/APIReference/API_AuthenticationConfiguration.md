@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Authent
 ---
 
 # AuthenticationConfiguration
-<a name="API_AuthenticationConfiguration"></a>
 
 The authentication configuration of the Amazon MSK cluster.
 

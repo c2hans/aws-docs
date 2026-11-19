@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zendesk-support.html
 ---
 
 # AWS Glue support for Zendesk
-<a name="zendesk-support"></a>
 
 AWS Glue supports Zendesk as follows:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/operations-clustero
 ---
 
 # Cluster Operation
-<a name="operations-clusteroperationarn"></a>
 
 Represents an operation that was performed on an MSK cluster.
 

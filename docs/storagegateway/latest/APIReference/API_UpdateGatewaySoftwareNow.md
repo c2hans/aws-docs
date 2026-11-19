@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_U
 ---
 
 # UpdateGatewaySoftwareNow
-<a name="API_UpdateGatewaySoftwareNow"></a>
 
 Updates the gateway virtual machine (VM) software. The request immediately triggers the software update.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/procuremen
 ---
 
 # Disabling procurement system integration
-<a name="procurement-integration-disabling"></a>
 
 To disable integration with either Coupa or SAP Ariba, you must remove the punchout integration from within the procurement system. To do this, disable the auto-redirect functionality for AWS Marketplace from within either Coupa or Ariba. This disables the integration, but maintains the settings and allows it to be re-enabled easily.
 

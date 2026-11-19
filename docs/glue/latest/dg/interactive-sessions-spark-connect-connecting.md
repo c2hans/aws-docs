@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/interactive-sessions-spar
 ---
 
 # Connecting to a Spark Connect session via API
-<a name="interactive-sessions-spark-connect-connecting"></a>
 
 Spark Connect provides a thin client interface that you can use to connect to AWS Glue interactive sessions from any environment that supports PySpark. Unlike Livy-based sessions, Spark Connect does not require a Jupyter kernel installation. You can connect directly from a Python script, a notebook, or an IDE such as VS Code.
 

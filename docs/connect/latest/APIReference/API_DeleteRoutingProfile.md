@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteRo
 ---
 
 # DeleteRoutingProfile
-<a name="API_DeleteRoutingProfile"></a>
 
 Deletes a routing profile.
 

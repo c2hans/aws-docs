@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automated-p
 ---
 
 # Key stakeholders, roles, and responsibilities in patch management
-<a name="stakeholders"></a>
 
 Successful OS patch management requires having well-defined roles and responsibilities for supporting your automated patching solution and optimizing it continually. This section describes suggested roles and responsibilities that you can modify according to your needs and organizational structure.
 

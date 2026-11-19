@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteLogGroup
-<a name="API_DeleteLogGroup"></a>
 
 Deletes the specified log group and permanently deletes all the archived log events associated with the log group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/best-prac
 ---
 
 # Security best practices for Security Lake
-<a name="best-practices-overview"></a>
 
 See the following best practices for working with Amazon Security Lake.
 

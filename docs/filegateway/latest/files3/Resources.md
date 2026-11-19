@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/Resources.html
 ---
 
 # Additional Storage Gateway resources
-<a name="Resources"></a>
 
 This section contains the following topics, which provide additional information and resources related to setting up and using AWS Storage Gateway:
 

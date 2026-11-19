@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ExportFilt
 ---
 
 # ExportFilter
-<a name="API_ExportFilter"></a>
 
 Filters the response form the [ListExports](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListExports.html) operation
 

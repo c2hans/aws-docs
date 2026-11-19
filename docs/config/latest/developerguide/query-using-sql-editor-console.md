@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/query-using
 ---
 
 # Query Using the SQL Query Editor for AWS Config (Console)
-<a name="query-using-sql-editor-console"></a>
 
 You can either use AWS sample queries or you can create your own query called as custom queries.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/gsg/document-history.htm
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Document history
-<a name="document-history"></a>
 
 **Note**
 For a description of new features in Amazon Redshift, see [What's new](https://aws.amazon.com/redshift/whats-new).

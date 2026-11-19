@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetAggr
 ---
 
 # GetAggregatorV2
-<a name="API_GetAggregatorV2"></a>
 
 Returns the configuration of the specified Aggregator V2.
 

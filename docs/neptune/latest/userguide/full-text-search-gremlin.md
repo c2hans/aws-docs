@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/full-text-searc
 ---
 
 # Using Neptune full-text search in Gremlin queries
-<a name="full-text-search-gremlin"></a>
 
 `NeptuneSearchStep` enables full-text search queries for the part of a Gremlin traversal that is not converted into Neptune steps. For example, consider a query like the following.
 

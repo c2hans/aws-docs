@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Protecti
 ---
 
 # ProtectionGroupArbitraryPatternLimits
-<a name="API_ProtectionGroupArbitraryPatternLimits"></a>
 
 Limits settings on protection groups with arbitrary pattern type.
 

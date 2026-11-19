@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/fleet-provi
 ---
 
 # Configure the AWS IoT fleet provisioning plugin
-<a name="fleet-provisioning-configuration"></a>
 
 The AWS IoT fleet provisioning plugin provides the following configuration parameters that you can customize when you [install the AWS IoT Greengrass Core software with fleet provisioning](fleet-provisioning.md).
 

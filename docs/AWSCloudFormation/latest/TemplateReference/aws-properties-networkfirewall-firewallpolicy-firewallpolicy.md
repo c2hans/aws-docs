@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkFirewall::FirewallPolicy FirewallPolicy
-<a name="aws-properties-networkfirewall-firewallpolicy-firewallpolicy"></a>
 
 The traffic filtering behavior of a firewall policy, defined in a collection of stateless and stateful rule groups and other settings.
 

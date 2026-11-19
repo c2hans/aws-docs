@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::WebFunction
-<a name="aws-resource-lambda-webfunction"></a>
 
 The `AWS::Lambda::WebFunction` resource creates a Lambda web function. A web function is a container for revisions and endpoints. This resource creates the web function only, with no revisions and no endpoints. The web function serves no traffic until you add revisions and endpoints. To add them, use the `AWS::Lambda::WebFunctionRevision` and `AWS::Lambda::WebFunctionEndpoint` resources. In this resource's template, you can set only `FunctionName` and `Tags`.
 

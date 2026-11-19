@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Render Arnold .ass files on Deadline Cloud
-<a name="examples-jb-arnold-render"></a>
 
 The [arnold\_standalone\_render](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/arnold_standalone_render) job bundle on the GitHub website renders Arnold `.ass` (Arnold Scene Source) files using the `kick` command-line renderer that ships with MtoA (Arnold for Maya). Point it at a directory of `.ass` files with a naming pattern, and it renders each frame as a separate task distributed across workers. This sample is useful for batch rendering pre-exported Arnold scenes without a full Maya session.
 

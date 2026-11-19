@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateBridge
 ---
 
 # UpdateBridgeState
-<a name="API_UpdateBridgeState"></a>
 
  Updates the bridge state.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkFirewall::RuleGroup SummaryConfiguration
-<a name="aws-properties-networkfirewall-rulegroup-summaryconfiguration"></a>
 
 A complex type that specifies which Suricata rule metadata fields to use when displaying threat information. Contains:
 + `RuleOptions` - The Suricata rule options fields to extract and display

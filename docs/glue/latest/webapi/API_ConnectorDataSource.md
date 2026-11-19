@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConnectorDataSour
 ---
 
 # ConnectorDataSource
-<a name="API_ConnectorDataSource"></a>
 
 Specifies a source generated with standard connection options.
 

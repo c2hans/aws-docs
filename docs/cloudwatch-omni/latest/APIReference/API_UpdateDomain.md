@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # UpdateDomain
-<a name="API_UpdateDomain"></a>
 
 Updates a domain's name or identity provider configuration.
 

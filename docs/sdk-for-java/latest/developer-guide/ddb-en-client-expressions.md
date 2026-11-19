@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Use expressions and conditions
-<a name="ddb-en-client-expressions"></a>
 
 Expressions in the DynamoDB Enhanced Client API are Java representations of [DynamoDB expressions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.html).
 

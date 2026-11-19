@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Mea
 ---
 
 # Measurement
-<a name="API_Measurement"></a>
 
 Contains an asset measurement property. For more information, see [Measurements](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/asset-properties.html#measurements) in the * AWS IoT SiteWise User Guide*.
 

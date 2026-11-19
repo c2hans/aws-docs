@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ListConnect
 ---
 
 # ListConnectors
-<a name="API_ListConnectors"></a>
 
 Returns the list of all registered custom connectors in your AWS account. This API lists only custom connectors registered in this account, not the AWS authored connectors.
 

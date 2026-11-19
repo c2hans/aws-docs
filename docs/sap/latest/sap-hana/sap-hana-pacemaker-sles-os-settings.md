@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-s
 ---
 
 # Operating System Requirements
-<a name="sap-hana-pacemaker-sles-os-settings"></a>
 
 This section outlines the required operating system configurations for SUSE Linux Enterprise Server for SAP (SLES for SAP) cluster nodes. Note that this is not a comprehensive list of configuration requirements for running SAP HANA on AWS, but rather focuses specifically on cluster management prerequisites.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetIn
 ---
 
 # GetInstanceProfile
-<a name="API_GetInstanceProfile"></a>
 
 Returns information about the specified instance profile.
 

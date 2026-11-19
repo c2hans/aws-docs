@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/troubleshooting.ht
 ---
 
 # Troubleshooting MediaTailor
-<a name="troubleshooting"></a>
 
 If you encounter playback errors or similar difficulties when working with AWS Elemental MediaTailor, consult the topics in this section.
 

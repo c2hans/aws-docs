@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/startup-res
 ---
 
 # Stage 3: Evaluate and test
-<a name="stage-3"></a>
 
 You've built a resilient foundation, but how do you know it actually works? Testing resilience might sound like a luxury when you're racing to prove product-market fit. However, there's a smart way to do this without derailing your feature development. This chapter describes lean, practical testing that fits a startup's pace.
 

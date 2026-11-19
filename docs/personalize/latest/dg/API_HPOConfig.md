@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_HPOConfig.html
 ---
 
 # HPOConfig
-<a name="API_HPOConfig"></a>
 
 Describes the properties for hyperparameter optimization (HPO).
 

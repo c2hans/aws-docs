@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cl
 ---
 
 # Cloud Operating Model overview
-<a name="overview"></a>
 
 This document provides a definition of the Cloud Operating Model and core capabilities that organizations should focus on when building their own model.
 

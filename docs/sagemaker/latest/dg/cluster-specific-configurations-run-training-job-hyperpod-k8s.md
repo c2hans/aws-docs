@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/cluster-specific-con
 ---
 
 # Running a training job on HyperPod k8s
-<a name="cluster-specific-configurations-run-training-job-hyperpod-k8s"></a>
 
 SageMaker HyperPod Recipes supports submitting a training job to a GPU/Trainium Kubernetes cluster. Before you submit the training job do one of the following:
 + Modify the `k8s.yaml` cluster configuration file

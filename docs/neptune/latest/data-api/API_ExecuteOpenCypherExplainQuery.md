@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_ExecuteOpenC
 ---
 
 # ExecuteOpenCypherExplainQuery
-<a name="API_ExecuteOpenCypherExplainQuery"></a>
 
 Executes an openCypher `explain` request. See [The openCypher explain feature](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-opencypher-explain.html) for more information.
 

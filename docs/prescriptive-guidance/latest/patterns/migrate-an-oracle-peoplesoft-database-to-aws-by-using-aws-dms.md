@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an Oracle PeopleSoft database to AWS by using AWS DMS
-<a name="migrate-an-oracle-peoplesoft-database-to-aws-by-using-aws-dms"></a>
 
 *sampath kathirvel, Amazon Web Services*
 

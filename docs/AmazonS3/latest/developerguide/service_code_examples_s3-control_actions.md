@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/service_c
 ---
 
 # Actions for Amazon S3 Control using AWS SDKs
-<a name="service_code_examples_s3-control_actions"></a>
 
 The following code examples demonstrate how to perform individual Amazon S3 Control actions with AWS SDKs. Each example includes a link to GitHub, where you can find instructions for setting up and running the code.
 

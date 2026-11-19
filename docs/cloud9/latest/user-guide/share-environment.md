@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/share-environme
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Working with shared environment in AWS Cloud9
-<a name="share-environment"></a>
 
 A *shared environment* is an AWS Cloud9 development environment that multiple users were invited to participate in. This topic provides instructions for sharing an environment in AWS Cloud9 and how to participate in a shared environment.
 

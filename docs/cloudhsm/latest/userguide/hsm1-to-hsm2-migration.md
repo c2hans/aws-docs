@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/hsm1-to-hsm2-m
 ---
 
 # Migrating from hsm1.medium to hsm2m.medium
-<a name="hsm1-to-hsm2-migration"></a>
 
 You can migrate your AWS CloudHSM cluster from hsm1.medium to hsm2m.medium. This topic describes the prerequisites, migration process, and rollback procedures.
 

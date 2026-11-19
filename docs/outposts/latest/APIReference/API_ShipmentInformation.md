@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Shipmen
 ---
 
 # ShipmentInformation
-<a name="API_ShipmentInformation"></a>
 
  Information about a line item shipment.
 

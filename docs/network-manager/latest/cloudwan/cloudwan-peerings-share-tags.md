@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Edit shared peering tags in an AWS Cloud WAN global network
-<a name="cloudwan-peerings-share-tags"></a>
 
 Edit the tags associated with a shared transit gateway peering.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_De
 ---
 
 # DeleteIntegration
-<a name="API_DeleteIntegration"></a>
 
 Deletes an integration with a third-party provider.
 

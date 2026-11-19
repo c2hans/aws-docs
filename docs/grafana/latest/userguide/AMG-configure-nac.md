@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-configure-n
 ---
 
 # Configure network access to your Amazon Managed Grafana workspace
-<a name="AMG-configure-nac"></a>
 
 You can control how users and hosts access your Grafana workspaces.
 

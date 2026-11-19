@@ -3,8 +3,7 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/Welcome.htm
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This reference provides descriptions of the low-level AWS Artifact Service API.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/account-tr
 ---
 
 # Account Factory for Terraform (AFT) troubleshooting guide
-<a name="account-troubleshooting-guide"></a>
 
  This section can help you troubleshoot common issues that you might encounter when using Account Factory for Terraform (AFT).
 

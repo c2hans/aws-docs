@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Discovery not returning expected dependencies
-<a name="next-gen-troubleshoot-missing-deps"></a>
 
 **Symptom:** You enabled dependency discovery but don't see dependencies you know exist.
 

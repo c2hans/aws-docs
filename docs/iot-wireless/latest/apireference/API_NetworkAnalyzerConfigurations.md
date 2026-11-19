@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Net
 ---
 
 # NetworkAnalyzerConfigurations
-<a name="API_NetworkAnalyzerConfigurations"></a>
 
 Network analyzer configurations.
 

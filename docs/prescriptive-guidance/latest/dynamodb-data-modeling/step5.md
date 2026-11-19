@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 5. Create the DynamoDB data model
-<a name="step5"></a>
 
 ## Objective
 <a name="obj5"></a>

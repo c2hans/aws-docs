@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Cod
 ---
 
 # Running the code examples in this Developer Guide
-<a name="CodeSamples"></a>
 
 The AWS SDKs provide broad support for Amazon DynamoDB in the following languages:
 + [ Java](https://aws.amazon.com/sdk-for-java)

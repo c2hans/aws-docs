@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_WorkerSetting.html
 ---
 
 # WorkerSetting
-<a name="API_WorkerSetting"></a>
 
 Details about worker setting of a connector
 

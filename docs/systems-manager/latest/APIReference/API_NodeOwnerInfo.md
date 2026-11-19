@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # NodeOwnerInfo
-<a name="API_NodeOwnerInfo"></a>
 
 Information about ownership of a managed node.
 

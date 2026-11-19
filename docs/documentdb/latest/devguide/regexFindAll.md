@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/regexFindAll.
 ---
 
 # $regexFindAll
-<a name="regexFindAll"></a>
 
 Introduced in 5.0
 

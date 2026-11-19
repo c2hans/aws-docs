@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # Monitor Amazon WorkSpaces usage and optimize costs with the Cost Optimizer for Amazon WorkSpaces solution
-<a name="overview"></a>
 
 The Cost Optimizer for [Amazon WorkSpaces](https://aws.amazon.com/workspaces) solution analyzes all of your WorkSpaces usage data and automatically converts the WorkSpace to the most cost-effective billing option (hourly or monthly), depending on your individual usage. Amazon WorkSpaces is a fully managed, secure Desktop-as-a-Service (DaaS) offering that eliminates the need for you to procure, deploy, and manage complex virtual desktop environments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_StartBotAn
 ---
 
 # StartBotAnalyzer
-<a name="API_StartBotAnalyzer"></a>
 
 Initiates an asynchronous analysis of your bot configuration using AI-powered analysis to identify potential issues and recommend improvements based on AWS best practices.
 

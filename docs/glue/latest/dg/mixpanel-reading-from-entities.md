@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/mixpanel-reading-from-ent
 ---
 
 # Reading from Mixpanel entities
-<a name="mixpanel-reading-from-entities"></a>
 
  **Prerequisites**
 

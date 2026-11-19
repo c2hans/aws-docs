@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/alter-view-
 ---
 
 # `ALTER VIEW`
-<a name="alter-view-syntax-support"></a>
 
 The `ALTER VIEW` statement allows changing various properties of an existing view, and Aurora DSQL supports all the PostgreSQL syntax for this command.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNSEC04-BP01 Control access to network resources
-<a name="hnsec04-bp01"></a>
 
  Comprehensive network access control applied across both on-premises and cloud environments to create a unified security posture that addresses the unique challenges of hybrid infrastructures while maintaining compliance with regulatory requirements.
 

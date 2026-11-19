@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator
 ---
 
 # Monitor replication
-<a name="msk-replicator-monitor"></a>
 
 You can use [Amazon CloudWatch](https://console.aws.amazon.com/cloudwatch/) in the target cluster Region to view metrics for `ReplicationLatency`, `MessageLag`, and `ReplicatorThroughput` at a topic and aggregate level for each MSK Replicator. Metrics are visible under **ReplicatorName** in the "AWS/Kafka" namespace. You can also see `ReplicatorFailure`, `AuthError`, and `ThrottleTime` metrics to check for issues.
 

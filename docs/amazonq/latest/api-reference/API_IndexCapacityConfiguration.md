@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_IndexCa
 ---
 
 # IndexCapacityConfiguration
-<a name="API_IndexCapacityConfiguration"></a>
 
 Provides information about index capacity configuration.
 

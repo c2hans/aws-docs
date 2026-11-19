@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms-trai
 ---
 
 # How Amazon SageMaker AI Provides Training Information
-<a name="your-algorithms-training-algo-running-container"></a>
 
 This section explains how SageMaker AI makes training information, such as training data, hyperparameters, and other configuration information, available to your Docker container.
 

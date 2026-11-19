@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/IS_NOT_
 ---
 
 # IS\_NOT\_NULL expression
-<a name="IS_NOT_NULL"></a>
 
 The IS\_NOT\_NULL conditional expression is used to check if a value is not null.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # UPPER
-<a name="sql-reference-upper"></a>
 
 ```
 < UPPER ( <character-expression> )

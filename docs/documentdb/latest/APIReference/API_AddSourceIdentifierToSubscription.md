@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_AddSo
 ---
 
 # AddSourceIdentifierToSubscription
-<a name="API_AddSourceIdentifierToSubscription"></a>
 
 Adds a source identifier to an existing event notification subscription.
 

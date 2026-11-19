@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 ---
 
 # Profile
-<a name="API_route53profiles_Profile"></a>
 
  A complex type that includes settings for a Route 53 Profile.
 

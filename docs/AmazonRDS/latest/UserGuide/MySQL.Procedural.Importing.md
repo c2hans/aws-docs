@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedu
 ---
 
 # Restoring a backup into an Amazon RDS for MySQL DB instance
-<a name="MySQL.Procedural.Importing"></a>
 
 Amazon RDS supports importing MySQL databases with backup files. You can create a backup of your database, store the backup file on Amazon S3, and then restore the backup file to a new Amazon RDS DB instance running MySQL. Amazon RDS supports importing backup files from Amazon S3 in all AWS Regions.
 

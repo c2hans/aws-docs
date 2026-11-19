@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListAl
 ---
 
 # ListAlgorithms
-<a name="API_ListAlgorithms"></a>
 
 Lists the machine learning algorithms that have been created.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2N
 ---
 
 # AwsEc2NetworkAclAssociation
-<a name="API_AwsEc2NetworkAclAssociation"></a>
 
 An association between the network ACL and a subnet.
 

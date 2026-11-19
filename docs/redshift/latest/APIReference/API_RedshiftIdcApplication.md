@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Redshif
 ---
 
 # RedshiftIdcApplication
-<a name="API_RedshiftIdcApplication"></a>
 
 Contains properties for the Redshift IDC application.
 

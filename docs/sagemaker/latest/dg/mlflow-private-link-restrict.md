@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-private-link-
 ---
 
 # Allow Access only from within your VPC
-<a name="mlflow-private-link-restrict"></a>
 
 Users outside your VPC can connect to SageMaker AI MLflow or over the internet even if you set up an interface endpoint in your VPC.
 

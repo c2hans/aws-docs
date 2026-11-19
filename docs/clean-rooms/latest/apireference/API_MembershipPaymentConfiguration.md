@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Memb
 ---
 
 # MembershipPaymentConfiguration
-<a name="API_MembershipPaymentConfiguration"></a>
 
 An object representing the payment responsibilities accepted by the collaboration member.
 

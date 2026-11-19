@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DynatraceCo
 ---
 
 # DynatraceConnectorProfileCredentials
-<a name="API_DynatraceConnectorProfileCredentials"></a>
 
  The connector-specific profile credentials required by Dynatrace.
 

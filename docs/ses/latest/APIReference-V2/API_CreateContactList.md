@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateCon
 ---
 
 # CreateContactList
-<a name="API_CreateContactList"></a>
 
 Creates a contact list.
 

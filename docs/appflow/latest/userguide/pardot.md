@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/pardot.html
 ---
 
 # Salesforce Pardot
-<a name="pardot"></a>
 
 The following are the requirements and connection instructions for using Pardot with Amazon AppFlow.
 

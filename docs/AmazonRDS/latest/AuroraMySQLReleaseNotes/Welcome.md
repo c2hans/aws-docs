@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes
 ---
 
 # Release notes for Amazon Aurora MySQL-Compatible Edition
-<a name="Welcome"></a><a name="mysql_relnotes"></a>
+<a name="mysql_relnotes"></a>
 
 Amazon Aurora MySQL-Compatible Edition releases updates regularly. Updates are applied to Aurora MySQL DB clusters during system maintenance windows. The timing when updates are applied depends on the AWS Region and maintenance window setting for the DB cluster, and also the type of update.
 

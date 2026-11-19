@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Subscribe to incoming contact events in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-on-incoming"></a>
 
 Creates a subscription whenever a new incoming event occurs in the Connect Customer agent workspace.
 

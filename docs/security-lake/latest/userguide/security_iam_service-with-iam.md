@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/security_
 ---
 
 # How Security Lake works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Security Lake, learn what IAM features are available to use with Security Lake.
 

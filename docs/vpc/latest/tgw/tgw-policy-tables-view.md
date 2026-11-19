@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-view.ht
 ---
 
 # View transit gateway policy tables in AWS Transit Gateway
-<a name="tgw-policy-tables-view"></a>
 
 You can view your transit gateway policy tables and their entries.
 

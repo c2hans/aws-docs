@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/performance-testing/def
 ---
 
 # Defining Success: SLIs, SLOs, and Performance Budgets
-<a name="defining-success"></a>
 
 Before running a single test, you need to define what "good" looks like. Without clear success criteria, load test results become interesting data that never drives decisions. Service Level Indicators (SLIs), Service Level Objectives (SLOs), and error budgets provide the framework.
 

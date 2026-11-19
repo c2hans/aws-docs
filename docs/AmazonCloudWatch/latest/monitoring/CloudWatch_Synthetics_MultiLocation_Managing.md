@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Managing multilocation canaries
-<a name="CloudWatch_Synthetics_MultiLocation_Managing"></a>
 
 ## Creating a multilocation canary
 <a name="CloudWatch_Synthetics_MultiLocation_Create_Manage"></a>

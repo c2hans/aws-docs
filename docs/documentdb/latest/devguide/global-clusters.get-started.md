@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/global-cluste
 ---
 
 # Quick start guide: global clusters
-<a name="global-clusters.get-started"></a>
 
 **Topics**
 + [Configuration](#global-clusters.config)

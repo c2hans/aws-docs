@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonElasticTranscoder\_FullAccess
-<a name="AmazonElasticTranscoder_FullAccess"></a>
 
 **Description**: Grants users full access to Elastic Transcoder and the access to associated services that is required for full Elastic Transcoder functionality.
 

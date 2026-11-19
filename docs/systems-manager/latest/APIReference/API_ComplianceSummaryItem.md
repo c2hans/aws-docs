@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ComplianceSummaryItem
-<a name="API_ComplianceSummaryItem"></a>
 
 A summary of compliance information by compliance type.
 

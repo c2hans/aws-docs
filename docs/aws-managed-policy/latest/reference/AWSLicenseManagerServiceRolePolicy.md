@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLicenseManagerServiceRolePolicy
-<a name="AWSLicenseManagerServiceRolePolicy"></a>
 
 **Description**: AWS License Manager service default role policy
 

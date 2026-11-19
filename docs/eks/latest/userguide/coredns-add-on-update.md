@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/coredns-add-on-upda
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Update the CoreDNS Amazon EKS add-on
-<a name="coredns-add-on-update"></a>
 
 Update the Amazon EKS type of the add-on. If you haven’t added the Amazon EKS add-on to your cluster, either [add it](coredns-add-on-create.md) or see [Update the CoreDNS Amazon EKS self-managed add-on](coredns-add-on-self-managed-update.md).
 

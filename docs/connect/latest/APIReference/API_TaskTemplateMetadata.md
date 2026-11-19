@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TaskTemp
 ---
 
 # TaskTemplateMetadata
-<a name="API_TaskTemplateMetadata"></a>
 
 Contains summary information about the task template.
 

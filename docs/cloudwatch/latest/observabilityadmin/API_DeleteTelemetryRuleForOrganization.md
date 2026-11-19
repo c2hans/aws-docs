@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # DeleteTelemetryRuleForOrganization
-<a name="API_DeleteTelemetryRuleForOrganization"></a>
 
  Deletes an organization-wide telemetry rule. This operation can only be called by the organization's management account or a delegated administrator account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-sche
 ---
 
 # Configuring flexible time windows in EventBridge Scheduler
-<a name="managing-schedule-flexible-time-windows"></a>
 
  When you configure your schedule with a flexible time window, EventBridge Scheduler invokes the target within the time window you set. This is useful in cases that do not require precise scheduled invocation of targets. Setting a flexible time window improves the reliability of your schedule by dispersing your target invocations.
 

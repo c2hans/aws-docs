@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_SourceDoc
 ---
 
 # SourceDocument
-<a name="API_SourceDocument"></a>
 
 The document ID and its fields/attributes that are used for a query suggestion, if document fields set to use for query suggestions.
 

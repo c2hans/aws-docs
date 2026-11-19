@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Exe
 ---
 
 # ExecuteQuery
-<a name="API_ExecuteQuery"></a>
 
 Run SQL queries to retrieve metadata and time-series data from asset models, assets, measurements, metrics, transforms, and aggregates.
 

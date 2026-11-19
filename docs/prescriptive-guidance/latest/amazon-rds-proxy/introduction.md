@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Increasing application scalability, performance, and availability by using Amazon RDS Proxy
-<a name="introduction"></a>
 
 *Anand Komandooru, Noorul Hasan, Varun Kumar, and Venkat Nalajala, Amazon Web Services*
 

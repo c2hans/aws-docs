@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # FilterValue
-<a name="API_FilterValue"></a>
 
  The value used in filter comparisons, supporting different data types for flexible filtering criteria.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Pu
 ---
 
 # PutNotificationSettings
-<a name="API_PutNotificationSettings"></a>
 
 Attaches a list of *notification settings* to a trust anchor.
 

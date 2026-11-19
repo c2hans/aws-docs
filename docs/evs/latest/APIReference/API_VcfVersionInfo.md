@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_VcfVersionIn
 ---
 
 # VcfVersionInfo
-<a name="API_VcfVersionInfo"></a>
 
 Information about a VCF versions provided by Amazon EVS, including its status, default ESX version, and EC2 instance types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_SchemaConver
 ---
 
 # SchemaConversionRequest
-<a name="API_SchemaConversionRequest"></a>
 
 Provides information about a schema conversion action.
 

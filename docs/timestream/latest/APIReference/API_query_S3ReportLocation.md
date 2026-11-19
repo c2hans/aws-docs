@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # S3ReportLocation
-<a name="API_query_S3ReportLocation"></a>
 
  S3 report location for the scheduled query run.
 

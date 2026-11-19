@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/continuous-mo
 ---
 
 # AWS Transform continuous modernization
-<a name="continuous-modernization"></a>
 
 ## What is AWS Transform continuous modernization?
 <a name="ct-what-is"></a>

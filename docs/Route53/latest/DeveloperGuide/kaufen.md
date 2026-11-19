@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/kaufen.htm
 ---
 
 # .kaufen
-<a name="kaufen"></a>
 
 Used for information about e-commerce.
 

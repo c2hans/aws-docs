@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafR
 ---
 
 # AwsWafRegionalRuleGroupRulesDetails
-<a name="API_AwsWafRegionalRuleGroupRulesDetails"></a>
 
 Provides information about the rules attached to a rule group
 

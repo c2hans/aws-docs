@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/list-te
 ---
 
 # ListTemplateVersions
-<a name="list-template-versions"></a>
 
 Use the `ListTemplateVersions` operation to list all the versions of the templates in the current Quick Sight account. To use this operation to list the versions of a template, you need that template's ID. You can use the `ListTemplates` operation to list all templates and their corresponding template IDs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/administrator.
 ---
 
 # Administrator
-<a name="administrator"></a>
 
 If your account is an Amazon Macie member account in an organization, the Administrator resource provides information about the Macie administrator account for your account. If you joined the organization by accepting a Macie membership invitation, this resource also provides information about that invitation. For information about the relationship between your account and its Macie administrator account, see [Managing multiple accounts](https://docs.aws.amazon.com/macie/latest/user/macie-accounts.html) in the *Amazon Macie User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/transcription-option
 ---
 
 # Choosing Amazon Chime SDK live transcription options
-<a name="transcription-options"></a>
 
 When you use Amazon Chime SDK live transcription, you use [Amazon Transcribe](https://aws.amazon.com/transcribe/) or [Amazon Transcribe Medical](https://aws.amazon.com/transcribe/medical/) in your AWS account. You have access to all the [streaming languages supported by Amazon Transcribe](https://docs.aws.amazon.com/transcribe/latest/dg/what-is-transcribe.html), plus features such as [custom vocabularies](https://docs.aws.amazon.com/transcribe/latest/dg/how-vocabulary.html) and [vocabulary filters](https://docs.aws.amazon.com/transcribe/latest/dg/filter-unwanted-words.html). When using Amazon Transcribe Medical, you can choose a medical specialty, conversation type, and optionally provide any custom vocabulary. Standard Amazon Transcribe and Amazon Transcribe Medical costs apply.
 

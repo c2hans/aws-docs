@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # IpsRuleGroupOverride
-<a name="API_IpsRuleGroupOverride"></a>
 
 The setting that allows the policy owner to change the behavior of an IPS engine rule group within a Next Generation policy.
 

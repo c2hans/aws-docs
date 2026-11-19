@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/manage-job-cli
 ---
 
 # Create and manage jobs by using the AWS CLI
-<a name="manage-job-cli"></a>
 
 This section describes how to create and manage jobs.
 

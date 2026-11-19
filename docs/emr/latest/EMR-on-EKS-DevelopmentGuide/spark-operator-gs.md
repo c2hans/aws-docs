@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Getting started with the Spark operator for Amazon EMR on EKS
-<a name="spark-operator-gs"></a>
 
 This topic helps you start to use the Spark operator on Amazon EKS by deploying a Spark application and a Schedule Spark application.
 

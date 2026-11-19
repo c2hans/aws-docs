@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Create a log delivery for REST API execution logs
-<a name="rest-api-create-log-delivery"></a>
 
 You can route execution logs to your own CloudWatch Logs log groups, Amazon S3 buckets, or Firehose streams. To do this, create a Amazon CloudWatch Logs delivery. This involves three steps: creating a delivery source, creating a delivery destination, and linking them with a delivery.
 

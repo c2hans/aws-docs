@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Me
 ---
 
 # MetadataTransferJobProgress
-<a name="API_MetadataTransferJobProgress"></a>
 
 The metadata transfer job's progress.
 

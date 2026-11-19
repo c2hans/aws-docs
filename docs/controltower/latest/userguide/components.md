@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/components
 ---
 
 # Component services
-<a name="components"></a>
 
  The following AWS services are components of *Customizations for AWS Control Tower* (CfCT).
 

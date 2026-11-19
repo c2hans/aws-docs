@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTra
 ---
 
 # ModifyTransitGatewayPeeringAttachmentRequestOptions
-<a name="API_ModifyTransitGatewayPeeringAttachmentRequestOptions"></a>
 
 Contains the options to modify for a transit gateway peering attachment, including multipath resilience settings.
 

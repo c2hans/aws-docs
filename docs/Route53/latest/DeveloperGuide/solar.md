@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/solar.html
 ---
 
 # .solar
-<a name="solar"></a>
 
 Used for information about the solar system or solar energy.
 

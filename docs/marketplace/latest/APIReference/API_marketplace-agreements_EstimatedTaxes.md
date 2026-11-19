@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # EstimatedTaxes
-<a name="API_marketplace-agreements_EstimatedTaxes"></a>
 
 Provides an aggregated view of estimated tax information.
 

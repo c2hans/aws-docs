@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Transl
 ---
 
 # TranslateDocument
-<a name="API_TranslateDocument"></a>
 
 Translates the input document from the source language to the target language. This synchronous operation supports text, HTML, or Word documents as the input document. `TranslateDocument` supports translations from English to any supported language, and from any supported language to English. Therefore, specify either the source language code or the target language code as “en” (English).
 

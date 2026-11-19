@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/jumpcloud.ht
 ---
 
 # Configure JumpCloud for AppFabric
-<a name="jumpcloud"></a>
 
 JumpCloud Inc. is an American enterprise software company that provides a cloud-based directory platform for identity management. It centralizes and simplifies identity management, allowing users to securely access their systems, apps, networks, and file servers with a single set of credentials, regardless of platform, protocol, provider, or location.
 

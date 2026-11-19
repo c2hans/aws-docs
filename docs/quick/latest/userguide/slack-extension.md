@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/slack-extension.h
 ---
 
 # AWS Quick Slack extension
-<a name="slack-extension"></a>
 
 The Quick extension for Slack integrates AI-powered assistance directly into your team communication workflows. Users can access Quick knowledge and capabilities within Slack channels and direct messages without switching between applications.
 

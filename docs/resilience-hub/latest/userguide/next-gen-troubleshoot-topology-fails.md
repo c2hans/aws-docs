@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Resources discovered but topology generation fails
-<a name="next-gen-troubleshoot-topology-fails"></a>
 
 **Symptom:** Resources appear in the list but topology shows no connections.
 

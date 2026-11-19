@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Evolve
-<a name="evolve"></a>
 
 |  LSOPS13: Are you able to adapt as technology advances (for example, can you implement AI into your analysis process)?  |
 | --- |

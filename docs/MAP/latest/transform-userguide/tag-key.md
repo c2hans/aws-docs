@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/transform-userguide/tag-key.h
 ---
 
 # MAP tag
-<a name="tag-key"></a>
 
 The Migration Acceleration Program requires that you tag resources with the following tag key. Copy the following key and use it exactly as it is without any alterations:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/security-iam-awsman
 ---
 
 # AWS managed policy: AWSElasticDisasterRecoveryFailbackInstallationPolicy
-<a name="security-iam-awsmanpol-AWSElasticDisasterRecoveryFailbackInstallationPolicy"></a>
 
 You can attach the AWSElasticDisasterRecoveryFailbackInstallationPolicy policy to your IAM identities.
 

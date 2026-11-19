@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Unin
 ---
 
 # UnindexedFace
-<a name="API_UnindexedFace"></a>
 
 A face that [IndexFaces](API_IndexFaces.md) detected, but didn't index. Use the `Reasons` response attribute to determine why a face wasn't indexed.
 

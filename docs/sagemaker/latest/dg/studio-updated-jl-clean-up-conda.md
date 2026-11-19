@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-cl
 ---
 
 # Clean up a conda environment
-<a name="studio-updated-jl-clean-up-conda"></a>
 
 Cleaning up conda environments that you’re not using can help free up disk space and improve performance. Use the following template to clean up a conda environment:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # AWS Client VPN maximum VPN session duration timeout
-<a name="cvpn-working-max-duration"></a>
 
 AWS Client VPN provides several options for the maximum VPN session duration, which is the maximum time allowed for a client connection to the Client VPN endpoint. You can configure a shorter maximum VPN session duration to help meet security and compliance requirements. By default, the maximum VPN session duration is 24 hours. Once you set the maximum session duration, you can control what happens with that session when that timeout is reached. The disconnect on session timeout option allows you to terminate the session or to automatically attempt a reconnection to the endpoint. Terminating a session allows you more control over endpoint security by enforcing maximum VPN session duration. If a session is set to terminate when the maximum time is reached, users will need to reconnect and provide their authentication credentials in order to re-establish the VPN connection.
 

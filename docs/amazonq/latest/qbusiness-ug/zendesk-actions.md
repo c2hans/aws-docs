@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/zendesk-acti
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Configuring a Zendesk Suite plugin for Amazon Q Business
-<a name="zendesk-actions"></a>
 
 Zendesk Suite is a customer relationship management system that helps businesses automate and enhance customer support interactions by creating tickets to track work. If you’re a Zendesk Suite user, you can create an Amazon Q Business plugin to allow your end users to create, update, search for, and get ticket details from within their web experience chat.
 

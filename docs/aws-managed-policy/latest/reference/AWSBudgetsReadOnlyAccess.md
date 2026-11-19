@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBudgetsReadOnlyAccess
-<a name="AWSBudgetsReadOnlyAccess"></a>
 
 **Description**: Provides read only access to AWS Budgets Console via the AWS Management Console.
 

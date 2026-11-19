@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/userguide/security-ia
 End of support notice: Amazon DevOps Guru will stop accepting new customers on October 29, 2026. Current customers will not be impacted and can continue using Amazon DevOps Guru until September 30, 2027. After September 30, 2027 you will no longer be able to access Amazon DevOps Guru. For more information, see [Amazon DevOps Guru end of support](devops-guru-end-of-support.md).
 
 # Identity and Access Management for Amazon DevOps Guru
-<a name="security-iam"></a>
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access to AWS resources. IAM administrators control who can be *authenticated* (signed in) and *authorized* (have permissions) to use DevOps Guru resources. IAM is an AWS service that you can use with no additional charge.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_RuntimeLo
 ---
 
 # RuntimeLogConfigurations
-<a name="API_RuntimeLogConfigurations"></a>
 
 The different configurations for runtime logs.
 

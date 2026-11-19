@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_HeatM
 ---
 
 # HeatMapVisual
-<a name="API_HeatMapVisual"></a>
 
 A heat map.
 

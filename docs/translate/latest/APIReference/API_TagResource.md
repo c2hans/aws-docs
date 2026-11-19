@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_TagRes
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Associates a specific tag with a resource. A tag is a key-value pair that adds as a metadata to a resource. For more information, see [ Tagging your resources](https://docs.aws.amazon.com/translate/latest/dg/tagging.html) in the Amazon Translate Developer Guide.
 

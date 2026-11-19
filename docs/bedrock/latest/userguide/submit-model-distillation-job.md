@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/submit-model-di
 ---
 
 # Submit a model distillation job in Amazon Bedrock
-<a name="submit-model-distillation-job"></a>
 
 You can perform model distillation through the Amazon Bedrock console or by sending a [CreateModelCustomizationJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelCustomizationJob.html) request with an [Amazon Bedrock control plane endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#br-cp).
 

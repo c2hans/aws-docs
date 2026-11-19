@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mu
 ---
 
 # Building a multicloud strategy in the financial services industry
-<a name="introduction"></a>
 
 *Chris Ibbitson, Dan MacKay, Rich McDonough, Ahmed Raafat, Aviad Tamir, and Matias Undurraga, Amazon Web Services*
 

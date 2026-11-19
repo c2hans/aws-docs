@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2C
 ---
 
 # AwsEc2ClientVpnEndpointClientLoginBannerOptionsDetails
-<a name="API_AwsEc2ClientVpnEndpointClientLoginBannerOptionsDetails"></a>
 
  Options for enabling a customizable text banner that will be displayed on AWS provided clients when a VPN session is established.
 

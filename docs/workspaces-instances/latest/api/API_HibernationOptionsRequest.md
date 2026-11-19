@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Hibe
 ---
 
 # HibernationOptionsRequest
-<a name="API_HibernationOptionsRequest"></a>
 
 Defines hibernation configuration for the WorkSpace Instance.
 

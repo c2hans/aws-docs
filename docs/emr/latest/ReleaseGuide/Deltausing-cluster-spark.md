@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Deltausing-clust
 ---
 
 # Use a Delta Lake cluster with Spark
-<a name="Deltausing-cluster-spark"></a>
 
 Starting with Amazon EMR version 6.9.0, you can use Delta Lake with your Spark cluster without the need for bootstrap actions. For Amazon EMR releases 6.8.0 and lower, you can use bootstrap actions to pre-install the necessary dependencies.
 

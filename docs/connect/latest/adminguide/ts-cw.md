@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ts-cw.html
 ---
 
 # Troubleshoot issues with your Connect Customer communications widget
-<a name="ts-cw"></a>
 
 This topic is for developers who need to investigate issues that might occur when configuring a communications widget in the Connect Customer admin website.
 

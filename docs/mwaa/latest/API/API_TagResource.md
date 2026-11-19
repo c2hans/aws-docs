@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_TagResource.html
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Associates key-value tag pairs to your Amazon Managed Workflows for Apache Airflow (MWAA) environment.
 

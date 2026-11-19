@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_FileCacheNFS
 ---
 
 # FileCacheNFSConfiguration
-<a name="API_FileCacheNFSConfiguration"></a>
 
 The configuration for an NFS data repository association (DRA) created during the creation of the Amazon File Cache resource.
 

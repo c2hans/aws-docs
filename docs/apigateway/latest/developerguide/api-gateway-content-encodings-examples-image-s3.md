@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # Access binary files in Amazon S3 through an API Gateway API
-<a name="api-gateway-content-encodings-examples-image-s3"></a>
 
 The following examples show the OpenAPI file used to access images in Amazon S3, how to download an image from Amazon S3, and how to upload an image to Amazon S3.
 

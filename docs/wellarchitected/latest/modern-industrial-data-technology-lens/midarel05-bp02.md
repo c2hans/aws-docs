@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDAREL05-BP02 Implement and regularly test DR procedures
-<a name="midarel05-bp02"></a>
 
  Regularly test and review your disaster recovery procedures to verify they work as expected when needed. Manufacturing environments have unique requirements including machine connectivity, production data integrity, and maintaining operational technology systems, which makes systematic testing critical to validate recovery capabilities.
 

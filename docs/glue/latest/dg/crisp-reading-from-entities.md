@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/crisp-reading-from-entiti
 ---
 
 # Reading from Crisp entities
-<a name="crisp-reading-from-entities"></a>
 
 **Prerequisites**
 

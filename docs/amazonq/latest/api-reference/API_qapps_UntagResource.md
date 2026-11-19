@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_U
 ---
 
 # UntagResource
-<a name="API_qapps_UntagResource"></a>
 
 Disassociates tags from an Amazon Q Apps resource.
 

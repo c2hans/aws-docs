@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/snapstart-activate.html
 ---
 
 # Activating and managing Lambda SnapStart
-<a name="snapstart-activate"></a>
 
 To use SnapStart, activate SnapStart on a new or existing Lambda Event Function. Then, publish and invoke a function version.
 

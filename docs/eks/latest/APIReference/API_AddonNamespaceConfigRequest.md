@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AddonNamespa
 ---
 
 # AddonNamespaceConfigRequest
-<a name="API_AddonNamespaceConfigRequest"></a>
 
 The namespace configuration request object for specifying a custom namespace when creating an addon.
 

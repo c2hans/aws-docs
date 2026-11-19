@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_HoneycodeCo
 ---
 
 # HoneycodeConnectorProfileProperties
-<a name="API_HoneycodeConnectorProfileProperties"></a>
 
  The connector-specific properties required when using Amazon Honeycode.
 

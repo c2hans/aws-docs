@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-
 ---
 
 # Supported input formats
-<a name="reference-codecs-containers-input"></a>
 
 This page provides a detailed reference table listing all of the input containers, and their corresponding video and audio codecs, that AWS Elemental MediaConvert supports.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/what-is-flow-vod.
 ---
 
 # VOD Content Processing
-<a name="what-is-flow-vod"></a>
 
 In the processing flow for VOD content, AWS Elemental MediaPackage ingests file-based video content from Amazon S3. MediaPackage then packages the content, formatting it in response to playback requests from downstream devices.
 

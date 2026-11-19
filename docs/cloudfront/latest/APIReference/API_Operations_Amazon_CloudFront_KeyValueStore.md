@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Opera
 ---
 
 # Amazon CloudFront KeyValueStore
-<a name="API_Operations_Amazon_CloudFront_KeyValueStore"></a>
 
 The following actions are supported by Amazon CloudFront KeyValueStore:
 +  [DeleteKey](API_kvs_DeleteKey.md)

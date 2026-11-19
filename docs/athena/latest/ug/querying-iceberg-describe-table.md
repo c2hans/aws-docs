@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-descri
 ---
 
 # DESCRIBE
-<a name="querying-iceberg-describe-table"></a>
 
 Describes table information.
 

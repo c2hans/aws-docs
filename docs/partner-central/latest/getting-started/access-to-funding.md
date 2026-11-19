@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/a
 ---
 
 # Accessing funding
-<a name="access-to-funding"></a>
 
 To create, view, edit or manage fund requests, a user must be assigned the appropriate permissions in AWS IAM. For more information, see [AWS managed policies for AWS Partner Central users](https://docs.aws.amazon.com/partner-central/latest/getting-started/managed-policies.html). Please note that while a user may have access to the AWS Partner Funding Portal, they may not have anything to review or act on until their first Fund Request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 ---
 
 # AWS services in this guidance
-<a name="aws-services-in-this-guidance"></a>
 
 |  AWS service  |  Description  |
 | --- | --- |

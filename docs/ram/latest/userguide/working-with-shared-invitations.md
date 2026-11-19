@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared
 ---
 
 # Accepting and rejecting resource share invitations
-<a name="working-with-shared-invitations"></a>
 
 To access shared resources, the owner of the resource share must add you as a principal. The owner can add any of the following as a principal to the resource share.
 + The organization of which your account is a member

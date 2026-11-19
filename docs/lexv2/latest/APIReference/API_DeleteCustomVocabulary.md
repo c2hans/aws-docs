@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteCust
 ---
 
 # DeleteCustomVocabulary
-<a name="API_DeleteCustomVocabulary"></a>
 
 Removes a custom vocabulary from the specified locale in the specified bot.
 

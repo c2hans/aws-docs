@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/planning-y
 ---
 
 # Plan your AWS Control Tower landing zone
-<a name="planning-your-deployment"></a>
 
 When you go through the setup process, AWS Control Tower launches a key resource associated with your account, called a *landing zone*, which serves as a home for your organizations and their accounts.
 

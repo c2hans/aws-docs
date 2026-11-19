@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElas
 ---
 
 # AwsElasticsearchDomainVPCOptions
-<a name="API_AwsElasticsearchDomainVPCOptions"></a>
 
 Information that OpenSearch derives based on `VPCOptions` for the domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateGr
 ---
 
 # UpdateGraphqlApi
-<a name="API_UpdateGraphqlApi"></a>
 
 Updates a `GraphqlApi` object.
 

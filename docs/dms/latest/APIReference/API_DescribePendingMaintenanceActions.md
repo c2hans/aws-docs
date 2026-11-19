@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribePend
 ---
 
 # DescribePendingMaintenanceActions
-<a name="API_DescribePendingMaintenanceActions"></a>
 
 Returns a list of upcoming maintenance events for replication instances in your account in the current Region.
 

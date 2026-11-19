@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/getting
 ---
 
 # Add Session Manager permissions to an existing IAM role
-<a name="getting-started-add-permissions-to-existing-profile"></a>
 
 Use the following procedure to add Session Manager permissions to an existing AWS Identity and Access Management (IAM) role. By adding permissions to an existing role, you can enhance the security of your computing environment without having to use the AWS `AmazonSSMManagedInstanceCore` policy for instance permissions.
 

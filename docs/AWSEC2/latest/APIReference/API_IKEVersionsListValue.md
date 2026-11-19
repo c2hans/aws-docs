@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IKEVersio
 ---
 
 # IKEVersionsListValue
-<a name="API_IKEVersionsListValue"></a>
 
 The internet key exchange (IKE) version permitted for the VPN tunnel.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSumerianFullAccess
-<a name="AmazonSumerianFullAccess"></a>
 
 **Description**: Provides full access to Amazon Sumerian.
 

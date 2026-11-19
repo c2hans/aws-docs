@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # Interval
-<a name="API_Interval"></a>
 
 The time period used to evaluate the SLO. It can be either a calendar interval or rolling interval.
 

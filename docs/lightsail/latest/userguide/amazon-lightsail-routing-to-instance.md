@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Route domain traffic to a Lightsail instance
-<a name="amazon-lightsail-routing-to-instance"></a>
 
 You can use the DNS zone in Amazon Lightsail to point a registered domain name, like **example.com**, to your website running on a Lightsail instance, also known as a virtual private server (VPS). You can create up to six DNS zones in you Lightsail account. Not all DNS record types are supported. For more information about Lightsail DNS zones, see[ DNS](understanding-dns-in-amazon-lightsail.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Confirm cost tags associated with the guidance
-<a name="confirm-cost-tags-associated-with-the-solution"></a>
 
 After you activate cost allocation tags associated with the guidance, you must confirm the cost allocation tags to see the costs for this guidance. To confirm cost allocation tags:
 

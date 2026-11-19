@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Stack
 ---
 
 # StackError
-<a name="API_StackError"></a>
 
 Describes a stack error.
 

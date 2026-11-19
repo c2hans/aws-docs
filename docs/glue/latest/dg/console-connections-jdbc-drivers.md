@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/console-connections-jdbc-
 ---
 
 # Adding a JDBC connection using your own JDBC drivers
-<a name="console-connections-jdbc-drivers"></a>
 
  You can use your own JDBC driver when using a JDBC connection. When the default driver utilized by the AWS Glue crawler is unable to connect to a database, you can use your own JDBC Driver. For example, if you want to use SHA-256 with your Postgres database, and older postgres drivers do not support this, you can use your own JDBC driver.
 

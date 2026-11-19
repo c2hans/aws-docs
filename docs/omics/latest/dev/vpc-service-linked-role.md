@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/vpc-service-linked-role
 ---
 
 # Service-linked role for VPC networking
-<a name="vpc-service-linked-role"></a>
 
 HealthOmics uses an IAM service-linked role to create and manage elastic network interfaces (ENIs) in your VPC. This role is automatically created when you create your first VPC configuration.
 

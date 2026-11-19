@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Jenkins API Token
-<a name="mes-partner-JenkinsApiToken"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c35b3"></a>

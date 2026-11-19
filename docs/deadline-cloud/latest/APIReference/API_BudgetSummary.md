@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BudgetSummary
-<a name="API_BudgetSummary"></a>
 
 The budget summary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/getting-started-ja
 ---
 
 # Getting started (SDK for Java 2.x)
-<a name="getting-started-java"></a>
 
 This tutorial shows you how to complete the Amazon Personalize workflow from start to finish with the AWS SDK for Java 2.x.
 

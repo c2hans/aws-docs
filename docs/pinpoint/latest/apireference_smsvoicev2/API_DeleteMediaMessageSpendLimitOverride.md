@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeleteMediaMessageSpendLimitOverride
-<a name="API_DeleteMediaMessageSpendLimitOverride"></a>
 
 Deletes an account-level monthly spending limit override for sending multimedia messages (MMS). Deleting a spend limit override will set the `EnforcedLimit` to equal the `MaxLimit`, which is controlled by AWS. For more information on spend limits (quotas) see [Quotas for AWS SMS](https://docs.aws.amazon.com/sms-voice/latest/userguide/quotas.html) in the * AWS SMS User Guide*.
 

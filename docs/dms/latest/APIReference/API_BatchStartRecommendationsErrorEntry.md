@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_BatchStartRe
 ---
 
 # BatchStartRecommendationsErrorEntry
-<a name="API_BatchStartRecommendationsErrorEntry"></a>
 
 Provides information about the errors that occurred during the analysis of the source database.
 

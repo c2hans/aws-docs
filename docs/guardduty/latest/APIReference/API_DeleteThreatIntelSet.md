@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Delete
 ---
 
 # DeleteThreatIntelSet
-<a name="API_DeleteThreatIntelSet"></a>
 
 Deletes the ThreatIntelSet specified by the ThreatIntelSet ID.
 

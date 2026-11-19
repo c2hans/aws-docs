@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/alter-table-replace-col
 ---
 
 # ALTER TABLE REPLACE COLUMNS
-<a name="alter-table-replace-columns"></a>
 
 Removes all existing columns from a table created with the [LazySimpleSerDe](lazy-simple-serde.md) and replaces them with the set of columns specified. When the optional `PARTITION` syntax is used, updates partition metadata. You can also use `ALTER TABLE REPLACE COLUMNS` to drop columns by specifying only the columns that you want to keep.
 

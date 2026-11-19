@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/market
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Search for agreements with two custom filters using an AWS SDK
-<a name="marketplace-agreement_example_marketplace-agreement_SearchAgreementsByTwoFilters_section"></a>
 
 The following code example shows how to search for agreements with two custom filters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # Collector
-<a name="API_Collector"></a>
 
  Process data collector that runs in the environment that you specify.
 

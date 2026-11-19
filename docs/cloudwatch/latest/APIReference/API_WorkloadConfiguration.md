@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Workl
 ---
 
 # WorkloadConfiguration
-<a name="API_WorkloadConfiguration"></a>
 
 The configuration of the workload.
 

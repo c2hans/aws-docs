@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Describ
 ---
 
 # DescribeStandardsControls
-<a name="API_DescribeStandardsControls"></a>
 
 Returns a list of security standards controls.
 

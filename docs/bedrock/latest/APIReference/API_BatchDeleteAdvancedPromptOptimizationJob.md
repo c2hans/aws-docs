@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_BatchDel
 ---
 
 # BatchDeleteAdvancedPromptOptimizationJob
-<a name="API_BatchDeleteAdvancedPromptOptimizationJob"></a>
 
 Deletes one or more advanced prompt optimization jobs.
 

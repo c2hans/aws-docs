@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Capabilities.html
 ---
 
 # Capabilities
-<a name="API_Capabilities"></a>
 
 Specifies the supported authentication types returned by the `DescribeConnectionType` API.
 

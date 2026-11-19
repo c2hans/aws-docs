@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ResetConnec
 ---
 
 # ResetConnectorMetadataCache
-<a name="API_ResetConnectorMetadataCache"></a>
 
 Resets metadata about your connector entities that Amazon AppFlow stored in its cache. Use this action when you want Amazon AppFlow to return the latest information about the data that you have in a source application.
 

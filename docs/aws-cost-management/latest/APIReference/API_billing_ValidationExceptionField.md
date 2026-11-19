@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ValidationExceptionField
-<a name="API_billing_ValidationExceptionField"></a>
 
 The field's information of a request that resulted in an exception.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AddMediaStre
 ---
 
 # AddMediaStreamRequest
-<a name="API_AddMediaStreamRequest"></a>
 
  The media stream that you want to add to the flow.
 

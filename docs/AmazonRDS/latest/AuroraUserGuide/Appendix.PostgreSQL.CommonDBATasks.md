@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Appendi
 ---
 
 # Working with extensions and foreign data wrappers
-<a name="Appendix.PostgreSQL.CommonDBATasks"></a>
 
 To extend the functionality to your Aurora PostgreSQL-Compatible Edition DB cluster, you can install and use various PostgreSQL *extensions*. For example, if your use case calls for intensive data entry across very large tables, you can install the `[pg\_partman](https://pgxn.org/dist/pg_partman/doc/pg_partman.html)` extension to partition your data and thus spread the workload.
 

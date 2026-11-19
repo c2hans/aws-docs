@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Updat
 ---
 
 # UpdateRestoreTestingPlan
-<a name="API_UpdateRestoreTestingPlan"></a>
 
 This request will send changes to your specified restore testing plan. `RestoreTestingPlanName` cannot be updated after it is created.
 

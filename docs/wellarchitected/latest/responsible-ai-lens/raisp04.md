@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Choosing a system configuration
-<a name="raisp04"></a>
 
 | RAISP04: How will you choose between different system configurations? |
 | --- |

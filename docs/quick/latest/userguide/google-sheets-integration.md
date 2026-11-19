@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/google-sheets-int
 ---
 
 # Google Sheets integration
-<a name="google-sheets-integration"></a>
 
 With the Google Sheets connector, you can access Google Sheets directly in AWS Quick through natural language. You can create and edit spreadsheets, read and write cell ranges, format cells, and search for data without leaving AWS Quick.
 

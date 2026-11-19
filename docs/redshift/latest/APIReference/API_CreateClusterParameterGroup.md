@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateC
 ---
 
 # CreateClusterParameterGroup
-<a name="API_CreateClusterParameterGroup"></a>
 
 Creates an Amazon Redshift parameter group.
 

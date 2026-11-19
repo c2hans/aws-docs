@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Update
 ---
 
 # UpdateAppInstanceUserEndpoint
-<a name="API_UpdateAppInstanceUserEndpoint"></a>
 
 Updates the details of an `AppInstanceUserEndpoint`. You can update the name and `AllowMessage` values.
 

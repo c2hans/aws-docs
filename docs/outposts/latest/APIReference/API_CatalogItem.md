@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Catalog
 ---
 
 # CatalogItem
-<a name="API_CatalogItem"></a>
 
  Information about a catalog item.
 

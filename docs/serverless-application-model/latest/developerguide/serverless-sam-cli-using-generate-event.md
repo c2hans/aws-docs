@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Generate sample event payloads with AWS SAM
-<a name="serverless-sam-cli-using-generate-event"></a>
 
 To test your Lambda Event Functions, you can generate and customize sample event payloads that imitate the data your Lambda functions will receive when triggered by other AWS services. This includes services like API Gateway, CloudFormation, Amazon S3, and more.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Using the neptune-export tool or Neptune-Export service to export data from Neptune for Neptune ML
-<a name="machine-learning-data-export"></a>
 
 Neptune ML requires that you provide training data for the [Deep Graph Library (DGL)](https://www.dgl.ai/) to create and evaluate models.
 

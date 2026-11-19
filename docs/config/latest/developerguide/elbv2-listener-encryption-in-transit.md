@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/elbv2-liste
 ---
 
 # elbv2-listener-encryption-in-transit
-<a name="elbv2-listener-encryption-in-transit"></a>
 
 Checks if listeners for the load balancers are configured with HTTPS or TLS termination. The rule is NON\_COMPLIANT if listeners are not configured with HTTPS or TLS termination.
 

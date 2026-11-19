@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/service_code_examples.h
 ---
 
 # Code examples for Lambda using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Lambda with an AWS software development kit (SDK).
 

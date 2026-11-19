@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Credential providers
-<a name="migrate-credential-providers"></a>
 
  In v2, the SDK for JavaScript provides a list of credential providers to choose from, as well as a credentials provider chain, available by default on Node.js, that tries to load the AWS credentials from all the most common providers. The SDK for JavaScript v3 simplifies the credential provider's interface, making it easier to use and write custom credential providers. On top of a new credentials provider chain, the SDK for JavaScript v3 all provides a list of credential providers aiming to provide equivalent to v2.
 

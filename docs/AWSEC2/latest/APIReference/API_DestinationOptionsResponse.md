@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Destinati
 ---
 
 # DestinationOptionsResponse
-<a name="API_DestinationOptionsResponse"></a>
 
 Describes the destination options for a flow log.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-barge-
 ---
 
 # Barge-in
-<a name="sonic-barge-in"></a>
 
 Barge-in allows users to interrupt the AI assistant while it's speaking, just like in natural human conversations. Instead of waiting for the assistant to finish, users can interject with new information, correct or clarify their previous statement, redirect the conversation to a different topic, or simply stop the assistant when they've heard enough. This creates a more natural and responsive conversational experience.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Por
 ---
 
 # PortalStatus
-<a name="API_PortalStatus"></a>
 
 Contains information about the current status of a portal.
 

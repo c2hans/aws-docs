@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Der
 ---
 
 # DeregisterWirelessDevice
-<a name="API_DeregisterWirelessDevice"></a>
 
 Deregister a wireless device from AWS IoT Wireless.
 

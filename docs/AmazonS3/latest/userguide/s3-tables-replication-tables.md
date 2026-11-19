@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-repl
 ---
 
 # Replicating S3 tables
-<a name="s3-tables-replication-tables"></a>
 
 Amazon S3 Tables support automatic replication of Apache Iceberg tables stored in Amazon S3 table buckets. Replication destinations can be within the same AWS Region, across multiple AWS Regions, the same account, or to other AWS accounts. By configuring replication for your tables, you can maintain read-only replicas of your data across multiple locations. You can use replicas to enhance data availability, meet compliance requirements and increase access performance for distributed applications.
 

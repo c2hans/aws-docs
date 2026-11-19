@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_DescribeTags
 ---
 
 # DescribeTags
-<a name="API_DescribeTags"></a>
 
 **Note**
 DEPRECATED - The `DescribeTags` action is deprecated and not maintained. To view tags associated with EFS resources, use the `ListTagsForResource` API action.

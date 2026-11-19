@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Resolving data source health and access errors in OpenSearch UI
-<a name="application-troubleshooting-data-sources"></a>
 
 Each data source that you associate with an OpenSearch UI application reports a health status.
 

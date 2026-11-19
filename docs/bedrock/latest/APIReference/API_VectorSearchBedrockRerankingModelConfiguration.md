@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_VectorSe
 ---
 
 # VectorSearchBedrockRerankingModelConfiguration
-<a name="API_VectorSearchBedrockRerankingModelConfiguration"></a>
 
 Configuration for the Amazon Bedrock foundation model used for reranking vector search results. This specifies which model to use and any additional parameters required by the model.
 

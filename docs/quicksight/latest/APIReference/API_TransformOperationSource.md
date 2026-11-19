@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Trans
 ---
 
 # TransformOperationSource
-<a name="API_TransformOperationSource"></a>
 
 Specifies the source of data for a transform operation, including the source operation and column mappings.
 

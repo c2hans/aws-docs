@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/dms-replica
 ---
 
 # dms-replication-task-sourcedb-logging
-<a name="dms-replication-task-sourcedb-logging"></a>
 
 Checks if logging is enabled with a valid severity level for AWS DMS replication tasks of a source database. The rule is NON\_COMPLIANT if logging is not enabled or logs for DMS replication tasks of a source database have a severity level that is not valid.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Securit
 ---
 
 # SecurityControl
-<a name="API_SecurityControl"></a>
 
  A security control in Security Hub CSPM describes a security best practice related to a specific resource.
 

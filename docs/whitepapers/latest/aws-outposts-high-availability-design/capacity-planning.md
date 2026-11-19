@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 ---
 
 # Capacity planning
-<a name="capacity-planning"></a>
 
  While Amazon EC2 capacity in AWS Regions is seemingly infinite, capacity on Outposts is finite – constrained by the total volume of compute capacity ordered. You are responsible for planning and managing the compute capacity of your Outposts deployments. You should order sufficient compute capacity to support an N\+M availability model, where N is the required number of servers and M is the number of spare servers provisioned to accommodate server failures. N\+1 and N\+2 are the most common availability levels.
 

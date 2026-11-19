@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetAn
 ---
 
 # GetAnycastIpList
-<a name="API_GetAnycastIpList"></a>
 
 Gets an Anycast static IP list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ListInstance
 ---
 
 # ListInstanceFleets
-<a name="API_ListInstanceFleets"></a>
 
 Lists all available details about the instance fleets in a cluster.
 

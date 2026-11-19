@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Operations automation
-<a name="operations-automation"></a>
 
 You are not expected to have all your IT operations fully automated on day 1. Take a phased approach instead. Start by carefully prioritizing the core operations functions that are listed in the following table. Use the AWS services listed in the[ AWS services for automation ](aws-services-for-automation.md)section to streamline the modernization process.
 

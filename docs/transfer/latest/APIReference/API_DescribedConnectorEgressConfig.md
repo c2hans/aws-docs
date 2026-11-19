@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedConnectorEgressConfig
-<a name="API_DescribedConnectorEgressConfig"></a>
 
 Response structure containing the current egress configuration details for the connector. Shows how traffic is currently routed from the connector to the SFTP server.
 

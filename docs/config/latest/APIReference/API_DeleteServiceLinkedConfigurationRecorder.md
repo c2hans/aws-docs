@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteSer
 ---
 
 # DeleteServiceLinkedConfigurationRecorder
-<a name="API_DeleteServiceLinkedConfigurationRecorder"></a>
 
 Deletes an existing service-linked configuration recorder.
 

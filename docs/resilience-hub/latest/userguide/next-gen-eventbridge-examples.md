@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Example event patterns and events
-<a name="next-gen-eventbridge-examples"></a>
 
 Event patterns have the same structure as the events that they match. The pattern quotes the fields that you want to match and provides the values that you're looking for.
 

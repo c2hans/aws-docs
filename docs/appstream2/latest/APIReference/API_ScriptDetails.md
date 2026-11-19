@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Scrip
 ---
 
 # ScriptDetails
-<a name="API_ScriptDetails"></a>
 
 Describes the details of the script.
 

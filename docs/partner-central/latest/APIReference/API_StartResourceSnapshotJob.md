@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # StartResourceSnapshotJob
-<a name="API_StartResourceSnapshotJob"></a>
 
 Starts a resource snapshot job that has been previously created.
 

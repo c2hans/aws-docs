@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/search-parame
 ---
 
 # Search parameters for HealthLake integrated NLP
-<a name="search-parameters-med"></a>
 
 The following table lists the searchable attributes for HealthLake integrated NLP.
 

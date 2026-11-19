@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsClou
 ---
 
 # AwsCloudFormationStackDetails
-<a name="API_AwsCloudFormationStackDetails"></a>
 
 Nests a stack as a resource in a top-level template. Nested stacks are stacks created as resources for another stack.
 

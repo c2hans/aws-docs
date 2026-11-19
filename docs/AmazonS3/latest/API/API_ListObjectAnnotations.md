@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectAnnota
 ---
 
 # ListObjectAnnotations
-<a name="API_ListObjectAnnotations"></a>
 
 Lists the annotations attached to an Amazon S3 object. Results are paginated, with a maximum of 1,000 annotations per object. Use the `AnnotationPrefix` parameter to filter the results by name prefix.
 

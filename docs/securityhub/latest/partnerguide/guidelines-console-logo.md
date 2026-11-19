@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/partnerguide/guidelin
 ---
 
 # Guidelines for the logo to display on the AWS Security Hub CSPM console
-<a name="guidelines-console-logo"></a>
 
 For the logo to display on the AWS Security Hub CSPM console, follow these guidelines.
 

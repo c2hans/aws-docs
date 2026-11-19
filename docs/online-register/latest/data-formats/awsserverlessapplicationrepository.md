@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 ---
 
 # Data retrieval APIs for AWS Serverless Application Repository
-<a name="awsserverlessapplicationrepository"></a>
 
 AWS Serverless Application Repository provides the following APIs for data retrieval.
 

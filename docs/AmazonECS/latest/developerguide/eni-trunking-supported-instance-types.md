@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/eni-trun
 ---
 
 # Supported instances for increased Amazon ECS container network interfaces
-<a name="eni-trunking-supported-instance-types"></a>
 
 The following shows the supported Amazon EC2 instance types and how many tasks using the `awsvpc` network mode can be launched on each instance type before and after enabling the `awsvpcTrunking` account setting.
 

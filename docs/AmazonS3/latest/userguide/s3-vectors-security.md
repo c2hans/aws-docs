@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-sec
 ---
 
 # Security in S3 Vectors
-<a name="s3-vectors-security"></a>
 
 Amazon S3 Vectors offers highly durable vector storage. Data written to S3 Vectors is stored on S3, which is designed for 99.999999999% (11 nines) of data durability.
 

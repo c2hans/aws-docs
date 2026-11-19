@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Colum
 ---
 
 # ColumnGroup
-<a name="API_ColumnGroup"></a>
 
 Groupings of columns that work together in certain Quick Sight features. This is a variant type structure. For this structure to be valid, only one of the attributes can be non-null.
 

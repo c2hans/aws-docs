@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-
 ---
 
 # Neptune Best Practices Using SPARQL
-<a name="best-practices-sparql"></a>
 
 Follow these best practices when using the SPARQL query language with Neptune. For information about using SPARQL in Neptune, see [Accessing the Neptune graph with SPARQL](access-graph-sparql.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Post
 ---
 
 # Using functions from the orafce extension
-<a name="Appendix.PostgreSQL.CommonDBATasks.orafce"></a>
 
 The orafce extension provides functions and operators that emulate a subset of functions and packages from an Oracle database. The orafce extension makes it easier for you to port an Oracle application to PostgreSQL. RDS for PostgreSQL versions 9.6.6 and higher support this extension. For more information about orafce, see [orafce](https://github.com/orafce/orafce) on GitHub.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/batch-inference-jo
 ---
 
 # Batch inference job output examples
-<a name="batch-inference-job-output-examples"></a>
 
 When you create a batch inference job, the job imports your batch input data from an Amazon S3 bucket, uses your solution version to generate *item recommendations*, and exports the recommendations to an Amazon S3 bucket in JSON format.
 

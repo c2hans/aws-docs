@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # FirewallPolicyV2Response
-<a name="API_FirewallPolicyV2Response"></a>
 
 The high-level properties of a Next Generation policy. This includes the policy's identity, status, consumed capacity, and association count. AWS Network Firewall returns this object in response to the Next Generation policy operations. To retrieve the policy's rule groups and settings, use the `FirewallPolicyV2` object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Remediati
 ---
 
 # RemediationParameterValue
-<a name="API_RemediationParameterValue"></a>
 
 The value is either a dynamic (resource) value or a static value. You must select either a dynamic value or a static value.
 

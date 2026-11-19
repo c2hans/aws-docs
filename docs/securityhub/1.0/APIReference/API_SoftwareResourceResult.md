@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Softwar
 ---
 
 # SoftwareResourceResult
-<a name="API_SoftwareResourceResult"></a>
 
 Provides information about a resource that contains a software package.
 

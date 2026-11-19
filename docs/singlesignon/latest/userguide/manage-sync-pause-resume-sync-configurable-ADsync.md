@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-syn
 ---
 
 # Pause and resume your sync
-<a name="manage-sync-pause-resume-sync-configurable-ADsync"></a>
 
 Pausing your sync pauses all future sync cycles and prevents any changes that you make to users and groups in Active Directory from being reflected in IAM Identity Center. After you resume the sync, the sync cycle picks up these changes from the next scheduled sync.
 

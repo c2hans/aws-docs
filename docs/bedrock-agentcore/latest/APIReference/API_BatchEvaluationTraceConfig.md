@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # BatchEvaluationTraceConfig
-<a name="API_BatchEvaluationTraceConfig"></a>
 
 Configuration for using a batch evaluation as the source of agent traces for recommendations.
 

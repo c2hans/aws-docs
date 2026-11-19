@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # SortAttribute
-<a name="API_connect-customer-profiles_SortAttribute"></a>
 
 Defines the characteristics and rules for sorting by a specific attribute.
 

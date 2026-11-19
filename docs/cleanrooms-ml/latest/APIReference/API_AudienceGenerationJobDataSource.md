@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Au
 ---
 
 # AudienceGenerationJobDataSource
-<a name="API_AudienceGenerationJobDataSource"></a>
 
 Defines the Amazon S3 bucket where the seed audience for the generating audience is stored.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/lay-yo
 ---
 
 # Lay your track
-<a name="lay-your-track"></a>
 
 When you build your track, it’s a good practice to start with a simple design, such as a straight or single-turn track. Next you can move on to looped tracks. Here, we use a single-turn track as an example to walk you through the steps to construct your own track. First let’s review dimensional requirements of a track.
 

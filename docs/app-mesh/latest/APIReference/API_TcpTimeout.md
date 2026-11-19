@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TcpTime
 ---
 
 # TcpTimeout
-<a name="API_TcpTimeout"></a>
 
 An object that represents types of timeouts.
 

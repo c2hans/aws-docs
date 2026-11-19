@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/nep
 ---
 
 # Amazon Neptune controls
-<a name="neptune-rules"></a>
 
 **Topics**
 + [[CT.NEPTUNE.PR.1] Require an Amazon Neptune DB cluster to have AWS Identity and Access Management (IAM) database authentication enabled](#ct-neptune-pr-1-description)

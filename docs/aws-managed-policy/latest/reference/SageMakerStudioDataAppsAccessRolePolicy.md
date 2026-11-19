@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioDataAppsAccessRolePolicy
-<a name="SageMakerStudioDataAppsAccessRolePolicy"></a>
 
 **Description**: Amazon SageMaker Studio uses this policy to access data apps shared with a user in the Amazon SageMaker Studio domain.
 

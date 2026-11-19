@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/setting-up.
 ---
 
 # Setting up AWS IoT Greengrass core devices
-<a name="setting-up"></a>
 
 Complete the tasks in this section to install, configure, and run the AWS IoT Greengrass Core software.
 

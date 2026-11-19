@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/interactions-ass
 ---
 
 # AssociateContactToCustomerProfile
-<a name="interactions-associatecontacttocustomerprofile"></a>
 
 Associate a contact to a customer profile. Customer Profiles must be enabled for your Connect Customer instance.
 

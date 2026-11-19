@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-presig
 ---
 
 # Amazon S3 pre-signed URL with AWS SDK for PHP Version 3
-<a name="s3-presigned-url"></a>
 
 You can authenticate certain types of requests by passing the required information as query-string parameters instead of using the Authorization HTTP header. This is useful for enabling direct third-party browser access to your private Amazon S3 data, without proxying the request. The idea is to construct a “pre-signed” request and encode it as a URL that another user can use. Additionally, you can limit a pre-signed request by specifying an expiration time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/c
 ---
 
 # Configuring Amazon Kinesis Agent for Microsoft Windows
-<a name="configuring-kinesis-agent-windows"></a>
 
 Before starting Amazon Kinesis Agent for Microsoft Windows, you must create a configuration file and deploy it. The configuration file provides the necessary information to collect, transform, and stream data on Windows servers and desktop computers to various AWS services. Configuration files define sets of sources, sinks, and pipes that connect sources to sinks, along with optional transformations.
 

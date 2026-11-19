@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSIREL05: Is the resilience of the architecture addressing challenges for distributed workloads across AWS and an external entity?
-<a name="fsirel05"></a>
 
 ## FSIREL05-BP01 Evaluate the resilience of cross-cloud application architectures
 <a name="fsirel05-bp01"></a>

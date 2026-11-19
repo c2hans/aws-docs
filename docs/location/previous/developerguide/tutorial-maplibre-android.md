@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/tutoria
 ---
 
 # Using the MapLibre Native SDK for Android with Amazon Location Service
-<a name="tutorial-maplibre-android"></a>
 
 Use [MapLibre Native](https://github.com/maplibre/maplibre-gl-native) SDK to embed interactive maps into your Android applications.
 

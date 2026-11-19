@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Documen
 ---
 
 # DocumentDbUngraceful
-<a name="API_DocumentDbUngraceful"></a>
 
 Configuration for handling failures when performing operations on DocumentDB global clusters.
 

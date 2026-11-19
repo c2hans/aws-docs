@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::EvaluationForm EvaluationFormQuestionTypeProperties
-<a name="aws-properties-connect-evaluationform-evaluationformquestiontypeproperties"></a>
 
 Information about properties for a question in an evaluation form. The question type properties must be either for a numeric question or a single select question.
 

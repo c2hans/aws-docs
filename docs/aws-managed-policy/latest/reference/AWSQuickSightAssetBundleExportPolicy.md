@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSightAssetBundleExportPolicy
-<a name="AWSQuickSightAssetBundleExportPolicy"></a>
 
 **Description**: Provides the set of permissions required to perform QuickSight Asset Bundle Export Operations
 

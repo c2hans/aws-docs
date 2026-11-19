@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBClus
 ---
 
 # DBClusterParameterGroup
-<a name="API_DBClusterParameterGroup"></a>
 
 Contains the details of an Amazon RDS DB cluster parameter group.
 

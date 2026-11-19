@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-ec2
 ---
 
 # Restore an Amazon EC2 instance
-<a name="restoring-ec2"></a>
 
 When you restore an EC2 instance, AWS Backup creates an Amazon Machine Image (AMI), an instance, the Amazon EBS root volume, Amazon EBS data volumes (if the protected resource had data volumes), and Amazon EBS snapshots. You can customize some instance settings using the AWS Backup console, or a larger number of settings using the AWS CLI or an AWS SDK.
 

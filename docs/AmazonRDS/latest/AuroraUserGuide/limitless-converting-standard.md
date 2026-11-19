@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Converting standard tables to limitless tables
-<a name="limitless-converting-standard"></a>
 
 You can convert standard tables into sharded or reference tables. During the conversion, data is moved from the standard table to the distributed table, then the source standard table is deleted. Data is moved using the `INSERT INTO SELECT FROM` command.
 

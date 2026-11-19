@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/lambda-rule-ac
 ---
 
 # Lambda
-<a name="lambda-rule-action"></a>
 
 A Lambda (`lambda`) action invokes an AWS Lambda function, passing in an MQTT message. AWS IoT invokes Lambda functions asynchronously.
 

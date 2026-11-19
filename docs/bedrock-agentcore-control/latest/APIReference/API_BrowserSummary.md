@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # BrowserSummary
-<a name="API_BrowserSummary"></a>
 
 Contains summary information about a browser. A browser enables Amazon Bedrock AgentCore Agent to interact with web content.
 

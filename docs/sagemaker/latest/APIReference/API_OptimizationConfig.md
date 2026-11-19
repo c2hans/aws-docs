@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Optimi
 ---
 
 # OptimizationConfig
-<a name="API_OptimizationConfig"></a>
 
 Settings for an optimization technique that you apply with a model optimization job.
 

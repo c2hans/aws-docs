@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/smb-workgroup-crea
 ---
 
 # Creating local groups on the SMB server
-<a name="smb-workgroup-create-local-groups"></a>
 
 You can create local groups that can be used for authorizing access to data associated with the SVM over an SMB connection. You can also assign privileges that define what user rights or capabilities a member of the group has.
 

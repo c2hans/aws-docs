@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ComponentConditionProperty
-<a name="API_ComponentConditionProperty"></a>
 
 Represents a conditional expression to set a component property. Use `ComponentConditionProperty` to set a property to different values conditionally, based on the value of another property.
 

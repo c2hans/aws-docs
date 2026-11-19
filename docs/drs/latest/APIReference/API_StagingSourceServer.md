@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_StagingSourc
 ---
 
 # StagingSourceServer
-<a name="API_StagingSourceServer"></a>
 
 Source server in staging account that extended source server connected to.
 

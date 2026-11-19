@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Comput
 ---
 
 # ComputeQuotaConfig
-<a name="API_ComputeQuotaConfig"></a>
 
 Configuration of the compute allocation definition for an entity. This includes the resource sharing option and the setting to preempt low priority tasks.
 

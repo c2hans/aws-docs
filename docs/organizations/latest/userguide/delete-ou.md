@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/delete-ou
 ---
 
 # Deleting an organizational unit (OU) with AWS Organizations
-<a name="delete-ou"></a>
 
 When you sign in to your organization's management account, you can delete any OUs that you no longer need.
 

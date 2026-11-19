@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/im
 ---
 
 # Implement cross-Region disaster recovery with AWS DMS and Amazon Aurora
-<a name="implement-cross-region-disaster-recovery-with-aws-dms-and-amazon-aurora"></a>
 
 *Mark Hudson, Amazon Web Services*
 

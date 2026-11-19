@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GetRecommendation
-<a name="API_GetRecommendation"></a>
 
 Retrieves detailed information about a recommendation, including its configuration, status, and results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/set-pricing
 ---
 
 # Step 4: Configure the pricing model
-<a name="set-pricing-model"></a>
 
  Choose how buyers pay for your software. You can't change the pricing model after you publish the product, so if you plan to charge per inference, choose it now. With per-inference pricing, your container reports the inferences, as described in [Reporting usage for inference pricing](ml-inference-metering.md). For help choosing, see [Machine learning product pricing for AWS Marketplace](machine-learning-pricing.md).
 

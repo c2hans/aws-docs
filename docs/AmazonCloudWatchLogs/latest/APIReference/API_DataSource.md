@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DataSource
-<a name="API_DataSource"></a>
 
 Represents a data source that categorizes logs by originating service and log type, providing service-based organization complementing traditional log groups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/findings-view.html
 ---
 
 # Reviewing Macie findings by using the console
-<a name="findings-view"></a>
 
 Amazon Macie monitors your AWS environment and generates policy findings when it detects potential policy violations or issues with the security or privacy of your Amazon Simple Storage Service (Amazon S3) general purpose buckets. Macie generates sensitive data findings when it detects sensitive data in S3 objects. Macie stores your policy and sensitive data findings for 90 days.
 

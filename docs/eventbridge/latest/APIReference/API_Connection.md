@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Conn
 ---
 
 # Connection
-<a name="API_Connection"></a>
 
 Contains information about a connection.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/using-s
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Service-linked role permissions for AWS Well-Architected Agent resource scanning
-<a name="using-service-linked-roles-agent-resource-scanning"></a>
 
 AWS Well-Architected Agent uses the service-linked role named ``. AWS WA Agent uses this service-linked role to discover and read resource configuration data across the accounts in your organization when you enable the agent's organization integration.
 

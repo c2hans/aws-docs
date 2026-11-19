@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Streamlined data integration with AWS AppSync
-<a name="data-integration"></a>
 
 Integrating MongoDB Atlas with [AWS AppSync](https://aws.amazon.com/pm/appsync/)provides seamless data synchronization, real-time interactions, and dynamic, responsive user experiences. The following diagram shows an example implementation.
 

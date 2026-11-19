@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Mou
 ---
 
 # Mount
-<a name="API_Mount"></a>
 
 Attaches a data source to the container filesystem for a task at a customer-supplied relative path under the service-owned mount root.
 

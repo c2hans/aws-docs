@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-connec
 ---
 
 # Connecting to Amazon Neptune databases using IAM authentication with Java and SPARQL
-<a name="iam-auth-connecting-sparql-java"></a>
 
 This section shows how to connect to Neptune using either RDF4J or Apache Jena with Signature Version 4 authentication.
 

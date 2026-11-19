@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/aam-security.html
 ---
 
 # Security in account access manager
-<a name="aam-security"></a>
 
 This section provides security information specific to account access manager. It complements the information in [Security in IAM and AWS STS](security.md), which covers security topics applicable to IAM as a whole.
 

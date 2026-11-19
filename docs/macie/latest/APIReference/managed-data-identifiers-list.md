@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/managed-data-i
 ---
 
 # Managed Data Identifiers
-<a name="managed-data-identifiers-list"></a>
 
 The Managed Data Identifiers resource represents the repository of managed data identifiers that Amazon Macie currently provides. A *managed data identifier* is a set of built-in criteria and techniques that are designed to detect a specific type of sensitive data. The types include credit card numbers, AWS secret access keys, and passport numbers for particular countries and regions. Managed data identifiers can detect a large and growing list of sensitive data types for many countries and regions, including multiple types of personally identifiable information (PII), financial information, and credentials data. For information about the categories and types of sensitive data that they can detect, see [Using managed data identifiers](https://docs.aws.amazon.com/macie/latest/user/managed-data-identifiers.html) in the *Amazon Macie User Guide*.
 

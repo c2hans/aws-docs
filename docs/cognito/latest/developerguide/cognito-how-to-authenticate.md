@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-ho
 ---
 
 # How authentication works with Amazon Cognito
-<a name="cognito-how-to-authenticate"></a>
 
 When your customer signs in to an Amazon Cognito user pool, your application receives JSON web tokens (JWTs).
 

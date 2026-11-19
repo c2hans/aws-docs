@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/terraform-depl
 ---
 
 # Troubleshoot Terraform deployment issues
-<a name="terraform-deployment-issues"></a>
 
 This section describes possible solutions for issues related to deploying Transfer Family resources using Terraform. For general information about Terraform modules for Transfer Family, see [Transfer Family Terraform modules](terraform.md).
 

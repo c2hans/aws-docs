@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # WKLD.06 Use Systems Manager instead of SSH or RDP
-<a name="wkld-06"></a>
 
 *Public subnets*, which have a default route pointing to an internet gateway, present a greater security risk than *private subnets*, which have no route to the internet. You can run Amazon EC2 instances in private subnets and use the Session Manager capability of [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/) to remotely access the instances through either the AWS Command Line Interface (AWS CLI) or AWS Management Console. You can then use the AWS CLI or console to start a session that connects into the instance through a secure tunnel, which removes the need to manage credentials for Secure Shell (SSH) or Remote Desktop Protocol (RDP).
 

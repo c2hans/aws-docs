@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/compliance-va
 ---
 
 # Compliance validation for Elastic Beanstalk
-<a name="compliance-validation"></a>
 
 The security and compliance of AWS Elastic Beanstalk is assessed by third-party auditors as part of multiple AWS compliance programs. These include SOC, PCI, FedRAMP, HIPAA, and others. AWS provides a frequently updated list of AWS services in scope of specific compliance programs at [AWS Services in Scope by Compliance Program](https://aws.amazon.com/compliance/services-in-scope/).
 

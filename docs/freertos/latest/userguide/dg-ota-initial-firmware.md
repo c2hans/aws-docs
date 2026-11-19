@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/dg-ota-initial
 ---
 
 # Installing the initial firmware
-<a name="dg-ota-initial-firmware"></a>
 
 To update firmware, you must install an initial version of the firmware that uses the OTA Agent library to listen for OTA update jobs. If you are not running FreeRTOS, skip this step. You must copy your OTA Agent implementation onto your devices instead.
 

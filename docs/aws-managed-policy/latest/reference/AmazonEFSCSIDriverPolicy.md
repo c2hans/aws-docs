@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEFSCSIDriverPolicy
-<a name="AmazonEFSCSIDriverPolicy"></a>
 
 **Description**: Provides management access to EFS resources and read access to EC2
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/supported-fsx-clie
 ---
 
 # Accessing your FSx for ONTAP data
-<a name="supported-fsx-clients"></a>
 
 You can access your Amazon FSx file systems using a variety of supported clients and methods in both the AWS Cloud and on premises environments.
 

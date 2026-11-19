@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/audi
 ---
 
 # Conflicting MQTT client IDs
-<a name="audit-chk-conflicting-client-ids"></a>
 
 Multiple devices connect using the same client ID.
 

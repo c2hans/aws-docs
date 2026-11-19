@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-ap
 ---
 
 # NCryptSignHash with Key storage provider (KSP)
-<a name="ksp-library-apis-sign-hash"></a>
 
 The `NCryptSignHash` function creates a signature of a hash value.
 

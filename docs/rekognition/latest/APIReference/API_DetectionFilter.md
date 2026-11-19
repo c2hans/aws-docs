@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dete
 ---
 
 # DetectionFilter
-<a name="API_DetectionFilter"></a>
 
 A set of parameters that allow you to filter out certain results from your returned results.
 

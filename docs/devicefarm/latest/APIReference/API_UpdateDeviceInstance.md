@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Updat
 ---
 
 # UpdateDeviceInstance
-<a name="API_UpdateDeviceInstance"></a>
 
 Updates information about a private device instance.
 

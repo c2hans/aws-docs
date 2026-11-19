@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # SoftwareRevenue
-<a name="API_SoftwareRevenue"></a>
 
 Specifies a customer's procurement terms details. Required only for partners in eligible programs.
 

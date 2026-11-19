@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Insta
 ---
 
 # Install the CloudWatch agent on new instances using CloudFormation
-<a name="Install-CloudWatch-Agent-New-Instances-CloudFormation"></a>
 
  This section describes how to install the CloudWatch agent on new Amazon EC2 instances using AWS CloudFormation.
 

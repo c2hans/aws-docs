@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DescribeDomainHealth
-<a name="API_DescribeDomainHealth"></a>
 
 Returns information about domain and node health, the standby Availability Zone, number of nodes per Availability Zone, and shard count per node.
 

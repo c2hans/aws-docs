@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Re
 ---
 
 # RemoveTags
-<a name="API_RemoveTags"></a>
 
 Removes the specified tags from a trail, event data store, dashboard, or channel.
 

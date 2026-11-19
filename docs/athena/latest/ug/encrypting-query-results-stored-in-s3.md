@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-result
 ---
 
 # Encrypt Athena query results stored in Amazon S3
-<a name="encrypting-query-results-stored-in-s3"></a>
 
 You set up query result encryption using the Athena console or when using JDBC or ODBC. Workgroups allow you to enforce the encryption of query results.
 

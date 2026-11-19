@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/dynamodb-v2-ru
 ---
 
 # DynamoDBv2
-<a name="dynamodb-v2-rule-action"></a>
 
 The DynamoDBv2 (`dynamoDBv2`) action writes all or part of an MQTT message to an Amazon DynamoDB table. Each attribute in the payload is written to a separate column in the DynamoDB database.
 

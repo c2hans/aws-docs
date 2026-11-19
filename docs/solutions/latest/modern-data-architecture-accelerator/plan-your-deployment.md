@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes the Region, cost, security, quota, and other considerations for planning your deployment.
 

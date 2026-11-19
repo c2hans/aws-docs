@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/codegurupro
 ---
 
 # Security Hub CSPM controls for Amazon CodeGuru Profiler
-<a name="codeguruprofiler-controls"></a>
 
 These Security Hub CSPM controls evaluate the Amazon CodeGuru Profiler service and resources.
 

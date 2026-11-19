@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_NodeProper
 ---
 
 # NodeProperties
-<a name="API_NodeProperties"></a>
 
 An object that represents the node properties of a multi-node parallel job.
 

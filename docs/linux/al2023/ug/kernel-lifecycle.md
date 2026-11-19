@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/kernel-lifecycle.html
 ---
 
 # The Amazon Linux Kernel
-<a name="kernel-lifecycle"></a>
 
 Amazon Linux 2023 (AL2023) releases a new Long-Term Support (LTS) kernel in Q1 of every year, based on the upstream Linux community's annual LTS kernel. Each new LTS kernel brings the latest security fixes, performance improvements, hardware support, and features from the upstream Linux kernel.
 

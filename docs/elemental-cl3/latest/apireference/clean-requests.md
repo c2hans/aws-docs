@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/clean-
 ---
 
 # “Clean” Requests
-<a name="clean-requests"></a>
 
 A quick way to prepare the body for a new POST is to do a GET on an existing entity, and include the clean parameter in the request.With this parameter set to `true`, the GET response omits the <id> elements and other elements such as <status>, <service\_name>, and <service\_provider\_name> that do not apply to a POST.
 

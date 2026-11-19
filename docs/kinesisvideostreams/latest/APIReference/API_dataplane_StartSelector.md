@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # StartSelector
-<a name="API_dataplane_StartSelector"></a>
 
 Identifies the chunk on the Kinesis video stream where you want the `GetMedia` API to start returning media data. You have the following options to identify the starting chunk:
 + Choose the latest (or oldest) chunk.

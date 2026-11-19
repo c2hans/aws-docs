@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/example_translate_Sc
 ---
 
 # Get started with Amazon Translate jobs using an AWS SDK
-<a name="example_translate_Scenario_GettingStarted_section"></a>
 
 The following code example shows how to:
 + Start an asynchronous batch translation job.

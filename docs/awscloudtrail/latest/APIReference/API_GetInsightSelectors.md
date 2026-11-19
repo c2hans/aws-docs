@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Ge
 ---
 
 # GetInsightSelectors
-<a name="API_GetInsightSelectors"></a>
 
 Describes the settings for the Insights event selectors that you configured for your trail or event data store. `GetInsightSelectors` shows if CloudTrail Insights logging is enabled and which Insights types are configured with corresponding event categories. If you run `GetInsightSelectors` on a trail or event data store that does not have Insights events enabled, the operation throws the exception `InsightNotEnabledException`
 

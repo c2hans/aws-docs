@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeEx
 ---
 
 # DescribeExport
-<a name="API_DescribeExport"></a>
 
 Gets information about a specific export.
 

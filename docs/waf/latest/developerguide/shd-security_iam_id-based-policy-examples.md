@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/shd-security_i
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Identity-based policy examples for AWS Shield
-<a name="shd-security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify Shield resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

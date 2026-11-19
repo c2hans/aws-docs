@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # DescribeUser
-<a name="API_DescribeUser"></a>
 
 Returns information about a specific user.
 

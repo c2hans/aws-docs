@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ventures.h
 ---
 
 # .ventures
-<a name="ventures"></a>
 
 Used by entrepreneurs, startups, venture capitalists, investment banks, and financiers.
 

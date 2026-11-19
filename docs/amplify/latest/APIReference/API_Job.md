@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_Job.html
 ---
 
 # Job
-<a name="API_Job"></a>
 
 Describes an execution job for an Amplify app.
 

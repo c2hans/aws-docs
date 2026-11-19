@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # POST: Create an MPTS
-<a name="working-with-mpts-create"></a>
 
 Create an MPTS output. Note that its SPTS programs (members) must be added after the MPTS is created. Use instruction for [POST MPTS member](working-with-members-of-mpts-add-spts.md).
 

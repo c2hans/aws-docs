@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/micro
 ---
 
 # Source configuration for Microsoft 365
-<a name="microsoft365-source-setup"></a>
 
 ## Integrating with Microsoft 365
 <a name="microsoft365-integrating"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillEstimateInputCommitmentModificationSummary
-<a name="API_AWSBCMPricingCalculator_BillEstimateInputCommitmentModificationSummary"></a>
 
  Summarizes an input commitment modification for a bill estimate.
 

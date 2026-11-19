@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonS3FilesClientFullAccess
-<a name="AmazonS3FilesClientFullAccess"></a>
 
 **Description**: Provides root client access to an S3 Files file system.
 

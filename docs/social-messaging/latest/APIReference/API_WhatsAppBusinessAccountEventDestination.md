@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WhatsAppBusinessAccountEventDestination
-<a name="API_WhatsAppBusinessAccountEventDestination"></a>
 
 Contains information on the event destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # WafConfig
-<a name="API_WafConfig"></a>
 
 AWS WAF-specific policy configuration settings.
 

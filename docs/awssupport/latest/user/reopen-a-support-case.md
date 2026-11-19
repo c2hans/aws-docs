@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/reopen-a-support-
 ---
 
 # Reopening a support case in Slack
-<a name="reopen-a-support-case"></a>
 
 After you resolve a support case, you can reopen the case from Slack.
 

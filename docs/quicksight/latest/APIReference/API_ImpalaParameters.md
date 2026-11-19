@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Impal
 ---
 
 # ImpalaParameters
-<a name="API_ImpalaParameters"></a>
 
 The parameters that are required to connect to a Impala data source.
 

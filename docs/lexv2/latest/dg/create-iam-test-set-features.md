@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/create-iam-test-set-feat
 ---
 
 # Create an IAM role for the Test Workbench - Advanced Features
-<a name="create-iam-test-set-features"></a>
 
 **Permission setup for Test workbench IAM role**
 

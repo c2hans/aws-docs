@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_AutoScal
 ---
 
 # AutoScalingGroup
-<a name="API_AutoScalingGroup"></a>
 
 Describes an Auto Scaling launch configuration.
 

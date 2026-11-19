@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # SourceSegment
-<a name="API_connect-customer-profiles_SourceSegment"></a>
 
 The source segments to build off of.
 

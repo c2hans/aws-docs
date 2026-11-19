@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/nimble-configuring-connec
 ---
 
 # Configuring Nimble connections
-<a name="nimble-configuring-connections"></a>
 
 Nimble connections authenticate with an API key (or token). You store the key in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

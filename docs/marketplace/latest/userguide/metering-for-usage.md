@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/metering-fo
 ---
 
 # Configuring metering for usage with SaaS subscriptions
-<a name="metering-for-usage"></a>
 
 For software as a service (SaaS) subscriptions, you meter for all usage, and then customers are billed by AWS based on the metering records that you provide. For SaaS contracts, you only meter for usage beyond a customer’s contract entitlements. The following sections provide information about how to configure metering for usage with SaaS products.
 

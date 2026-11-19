@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientDat
 ---
 
 # ClientData
-<a name="API_ClientData"></a>
 
 Describes the client-specific data.
 

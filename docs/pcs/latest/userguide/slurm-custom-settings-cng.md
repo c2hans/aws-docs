@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-custom-settin
 ---
 
 # Custom Slurm settings for AWS PCS compute node groups
-<a name="slurm-custom-settings-cng"></a>
 
 The following custom Slurm settings are supported at the compute node group level:
 + [CpuSpecList](https://slurm.schedmd.com/slurm.conf.html#OPT_CpuSpecList)

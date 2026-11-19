@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceRevisionVpcLatticeConfiguration
-<a name="API_ServiceRevisionVpcLatticeConfiguration"></a>
 
 The resolved VPC Lattice configuration for a service revision. This includes information about which target groups serve traffic and which listener rules direct traffic to them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/web-getti
 ---
 
 # Getting Started with the IVS Web Player SDK
-<a name="web-getting-started"></a>
 
 This document takes you through the steps involved in getting started with the Amazon IVS Web player SDK.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_GetParameter
 ---
 
 # GetParametersForImport
-<a name="API_GetParametersForImport"></a>
 
 Returns the public key and an import token you need to import or reimport key material for a KMS key.
 

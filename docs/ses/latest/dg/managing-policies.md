@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/managing-policies.html
 ---
 
 # Managing your identity authorization policies in Amazon SES
-<a name="managing-policies"></a>
 
 In addition to creating and attaching policies to identities, you can edit, remove, list, and retrieve an identity's policies as described in the following sections.
 

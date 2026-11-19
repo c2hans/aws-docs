@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Listene
 ---
 
 # ListenerTlsValidationContext
-<a name="API_ListenerTlsValidationContext"></a>
 
 An object that represents a listener's Transport Layer Security (TLS) validation context.
 

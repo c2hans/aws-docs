@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # DeleteHost
-<a name="API_DeleteHost"></a>
 
 The host to be deleted. Before you delete a host, all connections associated to the host must be deleted.
 

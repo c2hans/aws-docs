@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.DEP.4] Codify environment vending
-<a name="ag.dep.4-codify-environment-vending"></a>
 
  **Category:** RECOMMENDED
 

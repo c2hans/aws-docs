@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixAutoCircle
-<a name="API_RouteMatrixAutoCircle"></a>
 
  `AutoCircle` requests the route matrix service to define a `Circle` boundary that best attempts to include most waypoints (`Origins` and `Destinations`) using the `AutoCircle` settings. Any waypoints outside of the auto-defined `Circle` boundary will be considered out of the routing boundary, which results in a route matrix entry error.
 

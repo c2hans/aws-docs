@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/wor
 ---
 
 # Connecting to live datasets
-<a name="workbench.querybuilder.connect"></a>
 
 To connect to your Amazon DynamoDB tables with NoSQL Workbench, you must first connect to your AWS account.
 

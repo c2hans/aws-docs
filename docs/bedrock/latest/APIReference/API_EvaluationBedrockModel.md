@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationBedrockModel
-<a name="API_EvaluationBedrockModel"></a>
 
 Contains the ARN of the Amazon Bedrock model or [inference profile](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) specified in your evaluation job. Each Amazon Bedrock model supports different `inferenceParams`. To learn more about supported inference parameters for Amazon Bedrock models, see [Inference parameters for foundation models](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html).
 

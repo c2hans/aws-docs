@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/conne
 ---
 
 # AWS ACE connector
-<a name="connector-aws-ace"></a>
 
 Use the AWS ACE connector to synchronize co-selling opportunities with the AWS Partner Network.
 

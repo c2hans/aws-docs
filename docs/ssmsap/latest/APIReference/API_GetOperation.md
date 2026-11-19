@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_GetOperat
 ---
 
 # GetOperation
-<a name="API_GetOperation"></a>
 
 Gets the details of an operation by specifying the operation ID.
 

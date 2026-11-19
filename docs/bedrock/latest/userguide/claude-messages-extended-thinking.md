@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/claude-messages
 ---
 
 # Extended thinking
-<a name="claude-messages-extended-thinking"></a>
 
 **See also**
 [Thinking encryption](claude-messages-thinking-encryption.md) – encrypted-thinking and redaction behavior specific to Claude 3.7 Sonnet.

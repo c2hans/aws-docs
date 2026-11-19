@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/crea
 ---
 
 # Create a listener for your Network Load Balancer
-<a name="create-listener"></a>
 
 A listener is a process that checks for connection requests. You define a listener when you create your load balancer, and you can add listeners to your load balancer at any time.
 

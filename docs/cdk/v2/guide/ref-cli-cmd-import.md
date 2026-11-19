@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-import.html
 ---
 
 # `cdk import`
-<a name="ref-cli-cmd-import"></a>
 
 Use [AWS CloudFormation resource imports](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import.html) to import existing AWS resources into a CDK stack.
 

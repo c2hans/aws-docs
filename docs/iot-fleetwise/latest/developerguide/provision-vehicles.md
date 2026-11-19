@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/prov
 AWS IoT FleetWise is no longer open to new customers. Existing AWS IoT FleetWise customers can continue using the service. The [Guidance for Connected Mobility on AWS](https://aws.amazon.com/solutions/guidance/connected-mobility-on-aws/) provides guidance on how to develop and deploy modular services for connected mobility solutions that can be used to achieve equivalent capabilities as AWS IoT FleetWise.
 
 # Provision AWS IoT FleetWise vehicles
-<a name="provision-vehicles"></a>
 
 The Edge Agent for AWS IoT FleetWise software running in your vehicle collects and transfers data to the cloud. AWS IoT FleetWise integrates with AWS IoT Core to support secure communication between the Edge Agent software and the cloud through MQTT. Each vehicle corresponds to an AWS IoT thing. You can use an existing AWS IoT thing to create a vehicle or set AWS IoT FleetWise to automatically create an AWS IoT thing for your vehicle. For more information, see [Create an AWS IoT FleetWise vehicle](create-vehicle.md).
 

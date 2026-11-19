@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/mysql-s
 ---
 
 # Rotating the query logs
-<a name="mysql-stored-proc-logging"></a>
 
 The following stored procedures rotate MySQL logs to backup tables. For more information, see [AuroraMySQL database log files](USER_LogAccess.Concepts.MySQL.md).
 

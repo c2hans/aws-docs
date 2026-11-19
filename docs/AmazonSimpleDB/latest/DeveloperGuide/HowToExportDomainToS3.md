@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/How
 ---
 
 # Export a domain to Amazon S3
-<a name="HowToExportDomainToS3"></a>
 
  After completing the prerequisites, you can start exporting a domain using the `start-domain-export` command. The following example shows a basic export operation:
 

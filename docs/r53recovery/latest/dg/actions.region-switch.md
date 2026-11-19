@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/actions.region-swi
 ---
 
 # Region switch API operations
-<a name="actions.region-switch"></a>
 
 The following table lists ARC operations that you can use for Region switch, with links to relevant documentation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateConn
 ---
 
 # UpdateConnectorScanConfiguration
-<a name="API_UpdateConnectorScanConfiguration"></a>
 
 Updates scan configuration settings for resources associated with an AWS Config connector.
 

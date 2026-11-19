@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_NotificationConf
 ---
 
 # NotificationConfiguration
-<a name="API_NotificationConfiguration"></a>
 
 A container for specifying the notification configuration of the bucket. If this element is empty, notifications are turned off for the bucket.
 

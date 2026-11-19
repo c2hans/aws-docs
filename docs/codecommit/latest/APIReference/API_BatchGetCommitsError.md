@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Batch
 ---
 
 # BatchGetCommitsError
-<a name="API_BatchGetCommitsError"></a>
 
 Returns information about errors in a BatchGetCommits operation.
 

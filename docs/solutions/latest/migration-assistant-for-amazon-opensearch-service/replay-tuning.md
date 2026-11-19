@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Replay tuning
-<a name="replay-tuning"></a>
 
 Configure most Traffic Replayer settings under `replayerConfig` in the workflow configuration.
 

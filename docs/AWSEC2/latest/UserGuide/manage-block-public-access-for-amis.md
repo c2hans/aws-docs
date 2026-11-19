@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-block-pub
 ---
 
 # Manage the block public access setting for AMIs
-<a name="manage-block-public-access-for-amis"></a>
 
 You can manage the block public access setting for your AMIs to control whether they can be publicly shared. You can enable, disable, or view the current block public access state for your AMIs using the Amazon EC2 console or the AWS CLI.
 

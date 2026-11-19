@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeL
 ---
 
 # DescribeLockedSnapshots
-<a name="API_DescribeLockedSnapshots"></a>
 
 Describes the lock status for a snapshot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/conduct
 ---
 
 # Removing a Conductor Live node from the cluster
-<a name="conductor-live-config-cl-node-remove"></a>
 
 Generally, you remove a node only in these situations:
 + As one of the steps when you enable HTTPS in the cluster. For the complete procedure to enable HTTPS, see [Enabling and disabling HTTPS](ssl-config.md).

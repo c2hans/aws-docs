@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/relnote
 ---
 
 # Elastic Beanstalk release notes for 2025
-<a name="relnotes-2025"></a>
 
 All of the AWS Elastic Beanstalk release notes for the year 2025, latest first, are under this page in the table of contents.
 

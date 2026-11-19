@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-t
 ---
 
 # Troubleshoot issues in Connect Customer conversational analytics
-<a name="contact-lens-troubleshoot"></a>
 
 ## Why don't I see or hear unredacted content?
 <a name="where-is-unredacted-content"></a>

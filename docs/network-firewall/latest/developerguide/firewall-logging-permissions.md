@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Permissions to configure AWS Network Firewall logging
-<a name="firewall-logging-permissions"></a>
 
 You must have the following permissions to make any changes to your firewall logging configuration. These settings are included in the permissions requirements for each logging configuration type, under [AWS Network Firewall logging destinations](firewall-logging-destinations.md).
 

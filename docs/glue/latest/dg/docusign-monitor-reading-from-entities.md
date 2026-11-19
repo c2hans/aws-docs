@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/docusign-monitor-reading-
 ---
 
 # Reading from Docusign Monitor entities
-<a name="docusign-monitor-reading-from-entities"></a>
 
 **Prerequisite**
 

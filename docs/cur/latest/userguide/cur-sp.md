@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/cur-sp.html
 ---
 
 # Understanding Savings Plans
-<a name="cur-sp"></a>
 
 You can use Cost and Usage Reports (AWS CUR) to track your Savings Plans utilization, charges, and allocations.
 

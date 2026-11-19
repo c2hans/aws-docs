@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/paddle-connection-options
 ---
 
 # Paddle connection options
-<a name="paddle-connection-options"></a>
 
 The following are connection options for Paddle:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Paddle object to read.

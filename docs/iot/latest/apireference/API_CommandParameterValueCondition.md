@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CommandParam
 ---
 
 # CommandParameterValueCondition
-<a name="API_CommandParameterValueCondition"></a>
 
 A condition for the command parameter that must be evaluated to true for successful creation of a command execution.
 

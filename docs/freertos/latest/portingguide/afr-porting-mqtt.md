@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/afr-porting
 ---
 
 # Configuring the coreMQTT library
-<a name="afr-porting-mqtt"></a>
 
 Devices on the edge can use the MQTT protocol to communicate with the AWS Cloud. AWS IoT hosts an MQTT broker that sends and receives messages to and from connected devices at the edge.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Deploy
 ---
 
 # DeploymentLifecycleHook
-<a name="API_DeploymentLifecycleHook"></a>
 
 A deployment lifecycle hook runs custom logic or pauses the deployment at specific stages of the deployment process. You can use Lambda functions or pause hooks as hook targets.
 

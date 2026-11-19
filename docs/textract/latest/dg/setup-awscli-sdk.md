@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/setup-awscli-sdk.html
 ---
 
 # Step 2: Set Up the AWS CLI and AWS SDKs
-<a name="setup-awscli-sdk"></a>
 
 The following steps show you how to install the AWS Command Line Interface (AWS CLI) and AWS SDKs that the examples in this documentation use.
 

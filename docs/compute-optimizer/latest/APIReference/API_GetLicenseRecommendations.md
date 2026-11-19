@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # GetLicenseRecommendations
-<a name="API_GetLicenseRecommendations"></a>
 
 Returns license recommendations for Amazon EC2 instances that run on a specific license.
 

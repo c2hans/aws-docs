@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Getting started
-<a name="data-mesh-getting-started"></a>
 
 ## Foundation Deployment
 <a name="foundation-deployment"></a>

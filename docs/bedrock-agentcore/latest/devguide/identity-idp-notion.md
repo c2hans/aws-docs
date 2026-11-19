@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Notion
-<a name="identity-idp-notion"></a>
 
 Notion can be configured as an AgentCore Identity credential provider for outbound resource access. This allows your agents to authenticate users through Notion’s OAuth2 service and obtain access tokens for Notion API resources.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Cluster VpcConnectivityIam
-<a name="aws-properties-msk-cluster-vpcconnectivityiam"></a>
 
 Details for SASL/IAM client authentication for VpcConnectivity.
 

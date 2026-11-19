@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/firehose-example-create-de
 ---
 
 # Setting-up a Amazon Data Firehose delivery stream for Amazon SNS message archiving
-<a name="firehose-example-create-delivery-stream"></a>
 
 This topic explains how to create the Amazon Data Firehose delivery stream for the [message archiving and analytics example use case](firehose-example-use-case.md).
 

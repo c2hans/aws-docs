@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListTimeSeries
-<a name="API_ListTimeSeries"></a>
 
 Retrieves a paginated list of time series (data streams).
 

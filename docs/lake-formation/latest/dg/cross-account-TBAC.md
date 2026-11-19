@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/cross-account-T
 ---
 
 # Data sharing using tag-based access control
-<a name="cross-account-TBAC"></a>
 
 AWS Lake Formation tag-based access control (LF-TBAC) is an authorization strategy that defines permissions based on attributes. The following steps explain how to grant cross-account permissions by using LF-Tags.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateWave.h
 ---
 
 # UpdateWave
-<a name="API_UpdateWave"></a>
 
 Update wave.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Add a cache control header to a CloudFront Functions viewer response event
-<a name="example_cloudfront_functions_add_cache_control_header_section"></a>
 
 The following code example shows how to add a cache control header to a CloudFront Functions viewer response event.
 

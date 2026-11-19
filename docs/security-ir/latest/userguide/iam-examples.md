@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/iam-example
 ---
 
 # Identity-based policy examples
-<a name="iam-examples"></a>
 
  By default, users and roles don't have permission to create or modify AWS Security Incident Response resources. They also can't perform tasks by using the AWS Management Console, AWS Command Line Interface (AWS CLI), or AWS API. An IAM administrator can create IAM policies to grant users permission to perform actions on the resources they need. The administrator can then add the IAM policies to roles, and users can assume the roles.
 

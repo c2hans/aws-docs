@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Api backendEnvironmentName Remove
-<a name="backend-appid-api-backendenvironmentname-remove"></a>
 
 The data model from your Amplify project.
 

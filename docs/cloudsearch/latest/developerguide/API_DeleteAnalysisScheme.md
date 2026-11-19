@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_De
 ---
 
 # DeleteAnalysisScheme
-<a name="API_DeleteAnalysisScheme"></a>
 
 ## Description
 <a name="API_DeleteAnalysisScheme_Description"></a>

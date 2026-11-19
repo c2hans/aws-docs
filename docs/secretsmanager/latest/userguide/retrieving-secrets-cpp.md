@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 ---
 
 # Get a Secrets Manager secret value using the C\+\+ AWS SDK
-<a name="retrieving-secrets-cpp"></a>
 
 For C\+\+ applications, call the SDK directly with [GetSecretValue](https://docs.aws.amazon.com/goto/SdkForCpp/secretsmanager-2017-10-17/GetSecretValue) or [BatchGetSecretValue](https://docs.aws.amazon.com/goto/SdkForCpp/secretsmanager-2017-10-17/BatchGetSecretValue).
 

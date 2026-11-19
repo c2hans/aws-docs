@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/remedia
 ---
 
 # S3 bucket policies for the unified Systems Manager console
-<a name="remediate-s3-bucket-policies"></a>
 
 This topic includes the Amazon S3 bucket policies created by Systems Manager when you onboard an organization or single account to the unified Systems Manager console.
 

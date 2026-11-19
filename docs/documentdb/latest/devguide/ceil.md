@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/ceil.html
 ---
 
 # $ceil
-<a name="ceil"></a>
 
 New from version 4.0
 

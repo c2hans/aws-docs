@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_DeleteS
 ---
 
 # DeleteSite
-<a name="API_DeleteSite"></a>
 
 Deletes the specified site.
 

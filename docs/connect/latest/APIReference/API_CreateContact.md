@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateCo
 ---
 
 # CreateContact
-<a name="API_CreateContact"></a>
 
 **Important**
 Only the VOICE, EMAIL, and TASK channels are supported.

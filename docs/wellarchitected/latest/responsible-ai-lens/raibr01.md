@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Characterize benefits
-<a name="raibr01"></a>
 
 | RAIBR01: How will you characterize intended benefits? |
 | --- |

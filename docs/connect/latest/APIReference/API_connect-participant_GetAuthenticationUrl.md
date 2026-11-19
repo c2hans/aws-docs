@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetAuthenticationUrl
-<a name="API_connect-participant_GetAuthenticationUrl"></a>
 
 Retrieves the AuthenticationUrl for the current authentication session for the AuthenticateCustomer flow block.
 

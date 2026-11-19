@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # VisualAxisSortOption
-<a name="API_VisualAxisSortOption"></a>
 
 The axis sort options for a visual.
 

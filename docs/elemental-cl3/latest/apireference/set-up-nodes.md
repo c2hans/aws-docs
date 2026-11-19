@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # Setting up Nodes
-<a name="set-up-nodes"></a>
 
 **Topics**
 + [POST: Add a Node to the Cluster](set-up-nodes-add-note-to-cluster.md)

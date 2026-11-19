@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Upda
 ---
 
 # UpdateProgramTransition
-<a name="API_UpdateProgramTransition"></a>
 
 Program transition configuration.
 

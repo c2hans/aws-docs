@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Cost optimization
-<a name="cost-optimization"></a>
 
 The cost optimization pillar includes the ability to run systems to deliver business value at the lowest price point.
 

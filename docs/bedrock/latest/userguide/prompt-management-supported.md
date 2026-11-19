@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-manageme
 ---
 
 # Supported Regions and models for Prompt management
-<a name="prompt-management-supported"></a>
 
 Prompt management is supported in the following AWS Regions:
 + ap-northeast-1

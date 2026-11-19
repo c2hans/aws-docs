@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_De
 ---
 
 # DeduplicationConfiguration
-<a name="API_DeduplicationConfiguration"></a>
 
 Deduplication settings for a publish request.
 

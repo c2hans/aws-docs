@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/update-ima
 ---
 
 # Updating image set metadata
-<a name="update-image-set-metadata"></a>
 
 Use the `UpdateImageSetMetadata` action to update image set [metadata](getting-started-concepts.md#concept-metadata) in AWS HealthImaging. You can use this asynchronous process to add, update, and remove image set metadata attributes, which are manifestations of [DICOM normalization elements](metadata-normalization.md) that are created during import. Using the `UpdateImageSetMetadata` action, you can remove individual SOP Instances to keep image sets in sync with external systems and to de-identify image set metadata. For more information, see [`UpdateImageSetMetadata`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_UpdateImageSetMetadata.html) in the *AWS HealthImaging API Reference*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Comp
 ---
 
 # ComprehendDataAccessRolePolicy
-<a name="ComprehendDataAccessRolePolicy"></a>
 
 **Description**: Policy for AWS Comprehend service role which allows access to S3 resources for data access
 

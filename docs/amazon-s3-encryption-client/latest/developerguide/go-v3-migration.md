@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-s3-encryption-client/latest/devel
 ---
 
 # S3 Encryption Client Migration (2.*x* to 3.*x*)
-<a name="go-v3-migration"></a>
 
 **Note:** If you're using version 3.*x* of the Amazon S3 Encryption Client for Go and want to migrate to version 4.*x*, see [S3 Encryption Client Migration (3.*x* to 4.*x*)](go-v4-migration.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/call-analytics-stre
 ---
 
 # Real-time Call Analytics
-<a name="call-analytics-streaming"></a>
 
 Real-time Call Analytics provides real-time insights that can be used for addressing issues and mitigating escalations as they happen.
 

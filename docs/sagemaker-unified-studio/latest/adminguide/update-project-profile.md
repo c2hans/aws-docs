@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Update project profiles
-<a name="update-project-profile"></a>
 
  Complete the following procedure to update a project profile for your domain.
 

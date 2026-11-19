@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # PagerDutyIncidentConfiguration
-<a name="API_PagerDutyIncidentConfiguration"></a>
 
 Details about the PagerDuty service where the response plan creates an incident.
 

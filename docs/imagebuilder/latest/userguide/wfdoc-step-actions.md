@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/wfdoc-step
 ---
 
 # Supported step actions for your workflow document
-<a name="wfdoc-step-actions"></a>
 
 This section includes details for the step actions that Image Builder supports.Terms used in this section
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/create-vp-domain.htm
 ---
 
 # Creating voice profile domains
-<a name="create-vp-domain"></a>
 
 The steps in this section explain how to create voice profile domains. Remember the following:
 + Domain names can't exceed 256 characters.

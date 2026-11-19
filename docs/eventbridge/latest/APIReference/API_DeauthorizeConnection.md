@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Deau
 ---
 
 # DeauthorizeConnection
-<a name="API_DeauthorizeConnection"></a>
 
 Removes all authorization parameters from the connection. This lets you remove the secret from the connection so you can reuse it without having to create a new connection.
 

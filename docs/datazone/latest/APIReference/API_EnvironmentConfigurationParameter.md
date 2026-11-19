@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Environ
 ---
 
 # EnvironmentConfigurationParameter
-<a name="API_EnvironmentConfigurationParameter"></a>
 
 The environment configuration parameter.
 

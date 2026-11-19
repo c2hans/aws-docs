@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # AccessProfileSummary
-<a name="API_AccessProfileSummary"></a>
 
 Summary of an access profile. Call GetAccessProfile for the full profile.
 

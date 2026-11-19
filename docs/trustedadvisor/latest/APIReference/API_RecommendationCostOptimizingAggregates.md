@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_R
 ---
 
 # RecommendationCostOptimizingAggregates
-<a name="API_RecommendationCostOptimizingAggregates"></a>
 
 Cost optimizing aggregates for a Recommendation
 

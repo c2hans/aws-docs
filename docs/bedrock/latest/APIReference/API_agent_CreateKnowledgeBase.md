@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Cr
 ---
 
 # CreateKnowledgeBase
-<a name="API_agent_CreateKnowledgeBase"></a>
 
 Creates a knowledge base. A knowledge base contains your data sources so that Large Language Models (LLMs) can use your data. To create a knowledge base, you must first set up your data sources and configure a supported vector store. For more information, see [Set up a knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowlege-base-prereq.html).
 
@@ -460,6 +459,13 @@ Content-type: application/json
          }
       },
       "knowledgeBaseId": "string",
+      "metadataConfigurations": [
+         {
+            "name": "string",
+            "searchability": "string",
+            "type": "string"
+         }
+      ],
       "name": "string",
       "roleArn": "string",
       "status": "string",

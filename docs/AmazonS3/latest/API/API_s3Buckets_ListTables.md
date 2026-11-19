@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_ListTa
 ---
 
 # ListTables
-<a name="API_s3Buckets_ListTables"></a>
 
 List tables in the given table bucket. For more information, see [S3 Tables](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-tables.html) in the *Amazon Simple Storage Service User Guide*.
 

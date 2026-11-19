@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Files::FileSystem ExpirationDataRule
-<a name="aws-properties-s3files-filesystem-expirationdatarule"></a>
 
 Specifies a rule that controls when cached data expires from the file system based on last access time.
 

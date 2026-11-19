@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/logging-cw-log
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Sending protection pack (web ACL) traffic logs to a Amazon CloudWatch Logs log group
-<a name="logging-cw-logs"></a>
 
 This topic provides information for sending your protection pack (web ACL) traffic logs to a CloudWatch Logs log group.
 

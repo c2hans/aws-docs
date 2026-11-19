@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/data-loss-prevent
 ---
 
 # Data loss prevention
-<a name="data-loss-prevention"></a>
 
 |  |
 | --- |

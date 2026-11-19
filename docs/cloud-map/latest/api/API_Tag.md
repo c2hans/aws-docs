@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_Tag.html
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A custom key-value pair that's associated with a resource.
 

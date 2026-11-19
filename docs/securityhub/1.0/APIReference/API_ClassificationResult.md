@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Classif
 ---
 
 # ClassificationResult
-<a name="API_ClassificationResult"></a>
 
 Details about the sensitive data that was detected on the resource.
 

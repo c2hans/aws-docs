@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/cance
 ---
 
 # cancel-export-task
-<a name="cancel-export-task"></a>
 
  The `cancel-export-task` command allows you to cancel an ongoing export task that was started using the `start-export-task` command.
 

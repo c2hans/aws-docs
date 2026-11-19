@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_CustomModelT
 ---
 
 # CustomModelTransformParameters
-<a name="API_CustomModelTransformParameters"></a>
 
 Contains custom model transform parameters. See [Use a trained model to generate new model artifacts](https://docs.aws.amazon.com/neptune/latest/userguide/machine-learning-model-transform.html).
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/generati
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Enabling Metrics for the AWS SDK for Java
-<a name="generating-sdk-metrics"></a>
 
 The AWS SDK for Java can generate metrics for visualization and monitoring with [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) that measure:
 + your application’s performance when accessing AWS

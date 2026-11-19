@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-observability-op
 ---
 
 # Native AWS
-<a name="rise-observability-options-nativeaws"></a>
 
  **SAP Monitoring using Amazon CloudWatch**
 

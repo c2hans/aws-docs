@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # DataDetails
-<a name="API_amazon-q-connect_DataDetails"></a>
 
 Details about the data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-sql-ser
 ---
 
 # rds-sql-server-logs-to-cloudwatch
-<a name="rds-sql-server-logs-to-cloudwatch"></a>
 
 Checks if an Amazon SQL Server DB instance is configured to publish logs to Amazon CloudWatch Logs. This rule is NON\_COMPLIANT if the DB instance is not configured to publish logs to Amazon CloudWatch Logs.
 

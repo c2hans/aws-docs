@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/jdbc-v2.html
 ---
 
 # Athena JDBC 2.x driver
-<a name="jdbc-v2"></a>
 
 You can use a JDBC connection to connect Athena to business intelligence tools and other applications, such as [SQL workbench](http://www.sql-workbench.eu/downloads.html). To do this, use the Amazon S3 links on this page to download, install, and configure the Athena JDBC 2.x driver. For information about building the JDBC connection URL, see the downloadable [JDBC driver installation and configuration guide](https://downloads.athena.us-east-1.amazonaws.com/drivers/JDBC/SimbaAthenaJDBC-2.2.4.1000/docs/Simba+Amazon+Athena+JDBC+Connector+Install+and+Configuration+Guide.pdf). For permissions information, see [Control access through JDBC and ODBC connections](policy-actions.md). To submit feedback regarding the JDBC driver, email [athena-feedback@amazon.com](mailto:athena-feedback@amazon.com). Starting with version 2.0.24, two versions of the driver are available: one that includes the AWS SDK, and one that does not.
 

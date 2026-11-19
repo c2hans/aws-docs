@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterMetadata
-<a name="API_ClusterMetadata"></a>
 
 Metadata information about a HyperPod cluster showing information about the cluster level operations, such as creating, updating, and deleting.
 

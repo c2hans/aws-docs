@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/streaming-export.htm
 ---
 
 # Streaming messaging data in Amazon Chime SDK messaging
-<a name="streaming-export"></a>
 
 You can configure an `AppInstance` to receive data, such as messages and channel events, in the form of a stream. You can then react to that data in real time. Currently, Amazon Chime SDK messaging only accepts Kinesis streams as stream destinations. You must have these prerequisites to use Kinesis streams with this feature:
 + Kinesis streams must be in the same AWS account as the `AppInstance`.

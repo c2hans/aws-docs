@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/troublesh
 ---
 
 # Troubleshooting AWS SDK for C\+\+ build issues
-<a name="troubleshooting-cmake"></a>
 
 When building the AWS SDK for C\+\+ from source, some of the following common build issues might arise.
 

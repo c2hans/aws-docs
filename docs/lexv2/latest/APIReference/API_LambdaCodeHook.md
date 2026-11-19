@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_LambdaCode
 ---
 
 # LambdaCodeHook
-<a name="API_LambdaCodeHook"></a>
 
 Specifies a Lambda function that verifies requests to a bot or fulfills the user's request to a bot.
 

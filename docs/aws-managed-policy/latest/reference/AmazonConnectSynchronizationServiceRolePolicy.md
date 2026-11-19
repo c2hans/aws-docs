@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonConnectSynchronizationServiceRolePolicy
-<a name="AmazonConnectSynchronizationServiceRolePolicy"></a>
 
 **Description**: Allows Amazon Connect to synchronize AWS resources across regions on your behalf.
 

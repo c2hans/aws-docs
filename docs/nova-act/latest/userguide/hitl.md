@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/hitl.html
 ---
 
 # Human-in-the-loop (HITL)
-<a name="hitl"></a>
 
 Nova Act’s Human-in-the-Loop (HITL) capability enables seamless human supervision within autonomous web workflows. HITL is available in the Nova Act SDK for you to implement in your workflows (not provided as a managed AWS service). When your workflow encounters scenarios requiring human judgment or intervention, HITL provides tools and interfaces for supervisors to assist, verify, or take control of the process.
 

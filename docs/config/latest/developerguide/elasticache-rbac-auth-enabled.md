@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/elasticache
 ---
 
 # elasticache-rbac-auth-enabled
-<a name="elasticache-rbac-auth-enabled"></a>
 
 Checks if Amazon ElastiCache replication groups have RBAC authentication enabled. The rule is NON\_COMPLIANT if the Redis version is 6 or above and ‘UserGroupIds’ is missing, empty, or does not match an entry provided by the '`allowedUserGroupIDs`' parameter.
 

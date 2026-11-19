@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/dynamodb_example_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create a websocket chat application with API Gateway
-<a name="dynamodb_example_cross_ApiGatewayWebsocketChat_section"></a>
 
 The following code example shows how to create a chat application that is served by a websocket API built on Amazon API Gateway.
 

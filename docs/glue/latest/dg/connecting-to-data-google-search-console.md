@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-google
 ---
 
 # Connecting to Google Search Console
-<a name="connecting-to-data-google-search-console"></a>
 
 Google Search Console is a free platform available to website owners for monitoring how Google views the site and optimizing its organic presence. This includes viewing referring domains, mobile site performance, rich search results, and the highest-traffic queries and pages. If you are a Google Search Console user, you can connect AWS Glue to your Google Search Console account. You can use Google Search Console as a data source in your ETL jobs. Run these jobs to transfer data from Google Search Console to AWS services or other supported applications.
 

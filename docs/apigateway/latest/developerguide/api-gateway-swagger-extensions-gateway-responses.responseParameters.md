@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # x-amazon-apigateway-gateway-responses.responseParameters object
-<a name="api-gateway-swagger-extensions-gateway-responses.responseParameters"></a>
 
 Defines a string-to-string map of key-value pairs to generate gateway response parameters from the incoming request parameters or using literal strings. Supported only for REST APIs.
 

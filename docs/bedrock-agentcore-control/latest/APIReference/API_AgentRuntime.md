@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # AgentRuntime
-<a name="API_AgentRuntime"></a>
 
 Contains information about an agent runtime. An agent runtime is the execution environment for a Amazon Bedrock AgentCore Agent.
 

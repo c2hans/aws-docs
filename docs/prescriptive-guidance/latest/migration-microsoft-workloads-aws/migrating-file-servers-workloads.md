@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Migrating file servers
-<a name="migrating-file-servers-workloads"></a>
 
 Storage is an essential component to any workload you run. AWS has a number of options to store files in the cloud, including block, file, and object storage. For Microsoft workloads the most common options are block and file storage options. This section provides strategies to help you migrate your storage for Microsoft workloads to the AWS Cloud and guides you through the migration of your file servers.
 

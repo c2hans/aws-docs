@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Step 1: Build deployment assets
-<a name="step-1-build-deployment-assets"></a>
 
 Before you launch the stacks, build the CloudFormation templates and Lambda source code from the source code repository. Then stage the Lambda assets in an Amazon S3 bucket in your account. Perform these steps once, from a machine that has the AWS CLI, Git, Node.js, and Poetry installed.
 

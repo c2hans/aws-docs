@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/authentica
 ---
 
 # Manage authentication methods in AWS SDKs
-<a name="authentication-flows-selection-sdk"></a>
 
 Users in Amazon Cognito user pools can sign in with a variety of initial sign-in options, or *factors*. For some factors, users can follow up with multi-factor authentication (MFA). These first factors include username and password, one-time password, passkey, and custom authentication. For more information, see [Authentication flows](amazon-cognito-user-pools-authentication-flow-methods.md). When your application has built-in UI components and imports an AWS SDK module, you must build application logic for authentication. You must choose one of two primary methods and from that method, the authentication mechanisms that you want to implement.
 

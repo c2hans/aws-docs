@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Data Escrow Environment Reference Architecture
-<a name="data-escrow-environment"></a>
 
 Publication date: **May 13, 2022 ([Diagram history](#diagram-history))**
 

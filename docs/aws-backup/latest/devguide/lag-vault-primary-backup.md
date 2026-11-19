@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/lag-vault-pri
 ---
 
 # Primary backups to logically air-gapped vaults
-<a name="lag-vault-primary-backup"></a>
 
 ## Overview
 <a name="lag-primary-backup-overview"></a>

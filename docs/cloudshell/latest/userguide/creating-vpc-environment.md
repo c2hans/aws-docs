@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudshell/latest/userguide/creating-vpc
 ---
 
 # Creating a CloudShell VPC environment
-<a name="creating-vpc-environment"></a>
 
  This topic walks you through the steps to create a VPC environment in CloudShell.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/a2a-collaborat
 ---
 
 # Agent-to-agent collaboration
-<a name="a2a-collaboration"></a>
 
 Agent-to-agent collaboration lets a Connect Customer AI agent collaborate with other AI agents during a live contact. The collaborating agent can be either an AI agent that you already run in your Connect Customer instance, or an external agent that you or a third party hosts outside of Connect Customer, including agents that run on Amazon Bedrock AgentCore.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/iam-examp
 ---
 
 # Working with IAM policies with AWS SDK for PHP Version 3
-<a name="iam-examples-working-with-policies"></a>
 
 You grant permissions to a user by creating a policy. A policy is a document that lists the actions that a user can perform and the resources those actions can affect. By default, any actions or resources that are not explicitly allowed are denied. Policies can be created and attached to users, groups of users, roles assumed by users, and resources.
 

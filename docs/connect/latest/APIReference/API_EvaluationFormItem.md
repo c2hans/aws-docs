@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormItem
-<a name="API_EvaluationFormItem"></a>
 
 Information about an item from an evaluation form. The item must be either a section or a question.
 

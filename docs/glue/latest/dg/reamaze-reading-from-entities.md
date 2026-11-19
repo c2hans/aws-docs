@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/reamaze-reading-from-enti
 ---
 
 # Reading from Re:amaze entities
-<a name="reamaze-reading-from-entities"></a>
 
 **Prerequisites**
 

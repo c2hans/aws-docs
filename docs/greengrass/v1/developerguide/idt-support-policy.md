@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/developerguide/idt-support
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # Support policy for AWS IoT Device Tester for AWS IoT Greengrass V1
-<a name="idt-support-policy"></a>
 
 AWS IoT Device Tester (IDT) for AWS IoT Greengrass is a downloadable testing framework that lets you validate and [qualify](https://aws.amazon.com/partners/dqp/) your AWS IoT Greengrass devices for inclusion in the [AWS Partner Device Catalog](https://devices.amazonaws.com/). We recommend that you use the most recent version of AWS IoT Greengrass and IDT to test or qualify your devices. For more information, see [Supported versions of IDT for AWS IoT Greengrass V2](https://docs.aws.amazon.com/greengrass/v2/developerguide/dev-test-versions.html) in the *AWS IoT Greengrass Version 2 Developer Guide*.
 

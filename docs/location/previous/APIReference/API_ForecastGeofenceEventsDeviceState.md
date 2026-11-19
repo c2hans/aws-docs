@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Forec
 ---
 
 # ForecastGeofenceEventsDeviceState
-<a name="API_ForecastGeofenceEventsDeviceState"></a>
 
 The device's position and speed.
 

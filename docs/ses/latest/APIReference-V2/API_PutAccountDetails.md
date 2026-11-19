@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccoun
 ---
 
 # PutAccountDetails
-<a name="API_PutAccountDetails"></a>
 
 Update your Amazon SES account details.
 

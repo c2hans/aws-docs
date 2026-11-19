@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # SubChannelSummary
-<a name="API_messaging-chime_SubChannelSummary"></a>
 
 Summary of the sub-channels associated with the elastic channel.
 

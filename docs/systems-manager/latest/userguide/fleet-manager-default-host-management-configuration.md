@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 ---
 
 # Managing EC2 instances automatically with Default Host Management Configuration
-<a name="fleet-manager-default-host-management-configuration"></a>
 
 The Default Host Management Configuration setting allows AWS Systems Manager to manage your Amazon EC2 instances automatically as *managed instances*. A managed instance is an EC2 instance that is configured for use with Systems Manager.
 

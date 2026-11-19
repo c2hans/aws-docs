@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dat
 ---
 
 # Data modeling building blocks in DynamoDB
-<a name="data-modeling-blocks"></a>
 
 This section covers the building block layer to give you design patterns you can use in your application.
 

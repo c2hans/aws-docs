@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/PRUNE.html
 ---
 
 # $$PRUNE
-<a name="PRUNE"></a>
 
 The `$$PRUNE` system variable is used with the `$redact` stage in the aggregation pipeline to exclude documents or embedded document levels from the results. When a condition evaluates to `$$PRUNE`, the current document or subdocument is removed from the output. It is typically used with `$$DESCEND` (to keep and traverse the document) or `$$KEEP` (to keep the document at all levels).
 

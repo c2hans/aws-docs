@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetC
 ---
 
 # GetConfiguredTableAssociation
-<a name="API_GetConfiguredTableAssociation"></a>
 
 Retrieves a configured table association.
 

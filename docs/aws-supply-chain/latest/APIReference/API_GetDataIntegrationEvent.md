@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # GetDataIntegrationEvent
-<a name="API_GetDataIntegrationEvent"></a>
 
 Enables you to programmatically view an AWS Supply Chain Data Integration Event. Developers can view the eventType, eventGroupId, eventTimestamp, datasetTarget, datasetLoadExecution. Data integration event older than 30 days is not returned in the response.
 

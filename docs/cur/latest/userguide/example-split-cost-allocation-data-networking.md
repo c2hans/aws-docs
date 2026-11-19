@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/example-split-cost-
 ---
 
 # Example of split cost allocation data for networking
-<a name="example-split-cost-allocation-data-networking"></a>
 
 The following example shows how split cost allocation data allocates a NAT gateway's data processing charge to the Amazon EC2 instances that sent traffic through it. The data processing rate in this example is for illustrative purposes only. For current charges, see [Amazon VPC pricing](https://aws.amazon.com/vpc/pricing/).
 

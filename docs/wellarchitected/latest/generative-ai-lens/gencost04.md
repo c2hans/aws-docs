@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Cost-informed vector stores
-<a name="gencost04"></a>
 
 | GENCOST04: How do you optimize vector stores for cost? |
 | --- |

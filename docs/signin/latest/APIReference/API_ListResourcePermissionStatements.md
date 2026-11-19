@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_ListResou
 ---
 
 # ListResourcePermissionStatements
-<a name="API_ListResourcePermissionStatements"></a>
 
 Retrieves all permission statements in the account's AWS Sign-In resource-based policy.
 

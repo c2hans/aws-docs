@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Built-in metric evaluator prompts for model-as-a-judge evaluation jobs
-<a name="model-evaluation-type-judge-prompt"></a>
 
 When you run a judge-based model evaluation job the *evaluator model* scores the *generator model's* responses according to a set of metrics you define. Amazon Bedrock offers a number of built-in metrics, or you can define your own [custom metrics](model-evaluation-custom-metrics-prompt-formats.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/streaming-video-ta
 ---
 
 # Add tags to a new stream processor
-<a name="streaming-video-tagging-stream-processor"></a>
 
 **Note**
 Streaming Video and Bulk Image Analysis is no longer available to new customers. For more information, see [Amazon Rekognition feature availability changes](rekognition-availability-changes.md).

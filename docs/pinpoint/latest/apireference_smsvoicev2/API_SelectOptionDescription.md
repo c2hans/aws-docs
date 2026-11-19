@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SelectOptionDescription
-<a name="API_SelectOptionDescription"></a>
 
 A description of each select option.
 

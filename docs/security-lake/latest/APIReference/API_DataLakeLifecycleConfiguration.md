@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Da
 ---
 
 # DataLakeLifecycleConfiguration
-<a name="API_DataLakeLifecycleConfiguration"></a>
 
 Provides lifecycle details of Amazon Security Lake object.
 

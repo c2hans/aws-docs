@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-554-release.
 ---
 
 # Amazon EMR release 5.5.4
-<a name="emr-554-release"></a>
 
 ## 5.5.4 application versions
 <a name="emr-554-app-versions"></a>

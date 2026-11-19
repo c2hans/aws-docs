@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cognito-user-profiles-e
 ---
 
 # Guidance components
-<a name="guidance-components"></a>
 
 ## Export workflow
 <a name="export-workflow"></a>

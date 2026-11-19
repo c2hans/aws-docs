@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_AccountLimit.html
 ---
 
 # AccountLimit
-<a name="API_AccountLimit"></a>
 
 Limits that are related to concurrency and storage. All file and storage sizes are in bytes.
 

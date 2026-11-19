@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_D
 ---
 
 # DeleteResourcePolicy
-<a name="API_DeleteResourcePolicy"></a>
 
 Deletes the resource-based permission policy attached to the secret. To attach a policy to a secret, use [PutResourcePolicy](API_PutResourcePolicy.md).
 

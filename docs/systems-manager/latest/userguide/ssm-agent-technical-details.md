@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-age
 ---
 
 # Learn technical details about the SSM Agent
-<a name="ssm-agent-technical-details"></a>
 
 Use the information in this topic to help you implement AWS Systems Manager Agent (SSM Agent) and understand how the agent works.
 

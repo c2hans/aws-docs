@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/APIReference/API
 ---
 
 # GetExecutionOutput
-<a name="API_GetExecutionOutput"></a>
 
 Retrieve the output for an Execution using its ID.
 

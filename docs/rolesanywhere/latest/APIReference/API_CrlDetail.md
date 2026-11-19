@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Cr
 ---
 
 # CrlDetail
-<a name="API_CrlDetail"></a>
 
 The state of the certificate revocation list (CRL) after a read or write operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListExtr
 ---
 
 # ListExtractionDefinitions
-<a name="API_ListExtractionDefinitions"></a>
 
 Lists extraction definitions in the specified Connect Customer instance.
 

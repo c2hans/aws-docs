@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-agree
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Amend an AMI ConfigurableUpfrontPricingTerm for usage pricing model using an AWS SDK
-<a name="marketplace-agreement_example_marketplace-agreement_AmendAmiConfigurableUpfrontPricingTermForUsagePricingModel_section"></a>
 
 The following code examples show how to amend an AMI agreement with ConfigurableUpfrontPricingTerm by updating dimension quantity for usage pricing model.
 

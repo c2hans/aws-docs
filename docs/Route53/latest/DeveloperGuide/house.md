@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/house.html
 ---
 
 # .house
-<a name="house"></a>
 
 Used by real estate agents and buyers and sellers of houses.
 

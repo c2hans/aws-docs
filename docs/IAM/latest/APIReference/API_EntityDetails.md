@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_EntityDetail
 ---
 
 # EntityDetails
-<a name="API_EntityDetails"></a>
 
 An object that contains details about when the IAM entities (users or roles) were last used in an attempt to access the specified AWS service.
 

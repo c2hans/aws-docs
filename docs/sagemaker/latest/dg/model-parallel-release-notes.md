@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-relea
 ---
 
 # Release notes for the SageMaker model parallelism library
-<a name="model-parallel-release-notes"></a>
 
 See the following release notes to track the latest updates for the SageMaker model parallelism (SMP) library. If you have further questions about the SMP library, contact the SMP service team at `sm-model-parallel-feedback@amazon.com`.
 

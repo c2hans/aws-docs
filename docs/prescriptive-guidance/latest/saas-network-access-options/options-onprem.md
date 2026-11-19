@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Service consumers operating on premises
-<a name="options-onprem"></a>
 
 This section discusses connectivity options between SaaS workloads in the AWS Cloud and the on-premises data centers. Many consumers with on-premises requirements, especially at the enterprise level, see the cloud as an extension of their physical network, and they want to reflect that in their architecture. That means private connectivity to the SaaS offering in the cloud, either through logical tunnels or even through a private physical connection. Other consumers will accept connectivity through the public internet, which is also discussed in this section.
 

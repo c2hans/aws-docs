@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/integrate
 ---
 
 # Advanced configuration
-<a name="integrate-aws-managed-apps-advanced"></a>
 
 ## Prevent duplicate application instances
 <a name="integrate-aws-managed-apps-prevent-duplicates"></a>

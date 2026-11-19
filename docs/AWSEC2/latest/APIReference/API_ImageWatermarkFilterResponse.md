@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageWate
 ---
 
 # ImageWatermarkFilterResponse
-<a name="API_ImageWatermarkFilterResponse"></a>
 
 The watermark filter criteria for an allowed image. Each entry can specify one or more fields. All specified fields must match the same watermark on the image.
 

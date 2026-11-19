@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/getting-starte
 ---
 
 # Get started with Amazon Managed Service for Apache Flink (DataStream API)
-<a name="getting-started"></a>
 
 This section introduces you to the fundamental concepts of Managed Service for Apache Flink and implementing an application in Java using the DataStream API. It describes the available options for creating and testing your applications. It also provides instructions for installing the necessary tools to complete the tutorials in this guide and to create your first application.
 

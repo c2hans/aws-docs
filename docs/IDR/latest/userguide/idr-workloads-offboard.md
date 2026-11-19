@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/idr-workloads-offbo
 ---
 
 # Offboard a workload from Incident Detection and Response
-<a name="idr-workloads-offboard"></a>
 
 To offboard a workload from AWS Incident Detection and Response, create a new support case for each workload. When you create the support case, keep the following in mind:
 + To offboard a workload that's in a single AWS account, create the support case either from the workload's account or from your payer account.

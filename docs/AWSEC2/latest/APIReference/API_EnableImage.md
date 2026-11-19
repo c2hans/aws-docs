@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableIma
 ---
 
 # EnableImage
-<a name="API_EnableImage"></a>
 
 Re-enables a disabled AMI. The re-enabled AMI is marked as `available` and can be used for instance launches, appears in describe operations, and can be shared. AWS accounts, organizations, and Organizational Units that lost access to the AMI when it was disabled do not regain access automatically. Once the AMI is available, it can be shared with them again.
 

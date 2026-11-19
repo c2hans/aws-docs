@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/launchdarkly-configuring.
 ---
 
 # Configuring LaunchDarkly
-<a name="launchdarkly-configuring"></a>
 
 Before you can use AWS Glue to transfer data from LaunchDarkly, you must meet the following requirements:
 

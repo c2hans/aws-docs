@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/rust.html
 ---
 
 # Rust in AL2023
-<a name="rust"></a>
 
  You might want to build code written in [Rust](https://www.rust-lang.org/) on Amazon Linux, and might want to use a toolchain provided with AL2023.
 

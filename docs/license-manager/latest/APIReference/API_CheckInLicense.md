@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # CheckInLicense
-<a name="API_CheckInLicense"></a>
 
 Checks in the specified license. Check in a license when it is no longer in use.
 

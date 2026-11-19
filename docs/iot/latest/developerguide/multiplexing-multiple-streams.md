@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/multiplexing-m
 ---
 
 # Multiplexing multiple data streams in a secure tunnel
-<a name="multiplexing-multiple-streams"></a>
 
 You can use the multiplexing feature for devices that use multiple connections or ports. Multiplexing can also be used when you require multiple connections to a remote device to troubleshoot any issues. For example, it can be used in case of a web browser that requires sending multiple HTTP and SSH data streams. The application data from both streams are sent to the device concurrently over the multiplexed tunnel.
 

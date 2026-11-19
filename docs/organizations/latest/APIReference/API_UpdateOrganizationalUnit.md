@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Up
 ---
 
 # UpdateOrganizationalUnit
-<a name="API_UpdateOrganizationalUnit"></a>
 
 Renames the specified organizational unit (OU). The ID and ARN don't change. The child OUs and accounts remain in place, and any attached policies of the OU remain attached.
 

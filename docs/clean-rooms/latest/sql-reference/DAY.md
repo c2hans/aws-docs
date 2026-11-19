@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/DAY.htm
 ---
 
 # DAY function
-<a name="DAY"></a>
 
 The DAY function returns the day of month of the date/timestamp.
 

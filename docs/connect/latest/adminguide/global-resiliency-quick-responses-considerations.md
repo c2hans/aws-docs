@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/global-resilie
 ---
 
 # Understanding important things about Global Resiliency for quick responses
-<a name="global-resiliency-quick-responses-considerations"></a>
 
 Deleting a knowledge base doesn't delete its integration association with your instance. To remove the association, call the [DeleteIntegrationAssociation](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteIntegrationAssociation.html) API.
 

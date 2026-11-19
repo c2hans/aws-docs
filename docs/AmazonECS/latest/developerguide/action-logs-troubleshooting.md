@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/action-l
 ---
 
 # Troubleshooting with Amazon ECS Action Logs
-<a name="action-logs-troubleshooting"></a>
 
 Action Logs help you diagnose issues by providing detailed records of Amazon ECS service-initiated operations. Each log entry contains a timestamp, log level, event name, and a detail payload with context about what happened and why. This topic covers common troubleshooting scenarios and provides ready-to-use CloudWatch Logs Insights queries.
 

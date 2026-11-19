@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetDistributions
-<a name="API_GetDistributions"></a>
 
 Returns information about one or more of your Amazon Lightsail content delivery network (CDN) distributions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdateGatewayTarget
-<a name="API_UpdateGatewayTarget"></a>
 
 Updates an existing gateway target.
 

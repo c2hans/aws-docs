@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DataLakePrincipal
-<a name="API_DataLakePrincipal"></a>
 
 The AWS Lake Formation principal. Supported principals are IAM users or IAM roles.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # ChallengeConfig
-<a name="API_rekognitionstreaming_ChallengeConfig"></a>
 
 Configuration options for Face Liveness challenges performed at the client side.
 

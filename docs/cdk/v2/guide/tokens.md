@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/tokens.html
 ---
 
 # Tokens and the AWS CDK
-<a name="tokens"></a>
 
 In the AWS Cloud Development Kit (AWS CDK), *tokens* are placeholders for values that aren’t known when defining constructs or synthesizing stacks. These values will be fully resolved at deployment, when your actual infrastructure is created. When developing AWS CDK applications, you will work with tokens to manage these values across your application.
 

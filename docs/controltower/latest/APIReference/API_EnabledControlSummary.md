@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledControlSummary
-<a name="API_EnabledControlSummary"></a>
 
 Returns a summary of information about an enabled control.
 

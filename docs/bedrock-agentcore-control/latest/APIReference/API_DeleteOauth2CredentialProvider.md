@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DeleteOauth2CredentialProvider
-<a name="API_DeleteOauth2CredentialProvider"></a>
 
 Deletes an OAuth2 credential provider.
 

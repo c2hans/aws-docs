@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioBedrockFunctionExecutionRolePolicy
-<a name="SageMakerStudioBedrockFunctionExecutionRolePolicy"></a>
 
 **Description**: Allows AWS Lambda to access an Amazon Bedrock function component's configuration in SageMaker Studio.
 

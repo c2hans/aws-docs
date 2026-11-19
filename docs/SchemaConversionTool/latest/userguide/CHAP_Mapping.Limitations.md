@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Limitations of data type mapping in the AWS Schema Conversion Tool
-<a name="CHAP_Mapping.Limitations"></a>
 
 The following limitations apply when converting schemas using multiple servers in a single AWS SCT project:
 + You can add the same server to a project only once.

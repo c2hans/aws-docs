@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis-example.ht
 ---
 
 # Tutorial: Using Lambda with Kinesis Data Streams
-<a name="with-kinesis-example"></a>
 
 In this tutorial, you create a Lambda Event Function to consume events from a Amazon Kinesis data stream.
 

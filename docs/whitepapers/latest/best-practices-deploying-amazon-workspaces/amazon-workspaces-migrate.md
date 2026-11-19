@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Amazon WorkSpaces migrate
-<a name="amazon-workspaces-migrate"></a>
 
  Amazon WorkSpaces migrate feature enables you to bring your user volume data to a new bundle. You can use this feature to:
 +  Migrate your WorkSpaces from the Windows 7 Experience to the Windows 10 Desktop Experience.

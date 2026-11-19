@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataSync::Task TaskReportConfig
-<a name="aws-properties-datasync-task-taskreportconfig"></a>
 
 Specifies how you want to configure a task report, which provides detailed information about for your AWS DataSync transfer.
 

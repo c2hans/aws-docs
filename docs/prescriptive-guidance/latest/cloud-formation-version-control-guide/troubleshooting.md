@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-forma
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 If a deployment fails, follow this resolution process:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RuleGro
 ---
 
 # RuleGroupSourceListDetails
-<a name="API_RuleGroupSourceListDetails"></a>
 
 Stateful inspection criteria for a domain list rule group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Finding.ht
 ---
 
 # Finding
-<a name="API_Finding"></a>
 
 Details about an Amazon Inspector finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-s
 ---
 
 # Amazon S3
-<a name="kb-managed-ds-s3"></a>
 
 Amazon S3 is an object storage service that stores data as objects within buckets. You can connect an Amazon S3 bucket as a data source for your managed knowledge base to ingest the objects you store there.
 

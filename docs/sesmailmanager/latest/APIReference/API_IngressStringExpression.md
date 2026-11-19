@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # IngressStringExpression
-<a name="API_IngressStringExpression"></a>
 
 The structure for a string based condition matching on the incoming mail.
 

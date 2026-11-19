@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/multiple-algorithm-h
 ---
 
 # Create a Hyperparameter Optimization Tuning Job for One or More Algorithms (Console)
-<a name="multiple-algorithm-hpo-create-tuning-jobs"></a>
 
 This guide shows you how to create a new hyperparameter optimization (HPO) tuning job for one or more algorithms. To create an HPO job, define the settings for the tuning job, and create training job definitions for each algorithm being tuned. Next, configure the resources for and create the tuning job. The following sections provide details about how to complete each step. We provide an example of how to tune multiple algorithms using the SageMaker AI SDK for Python client at the end of this guide.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AcrLevelConfigType
-<a name="API_AcrLevelConfigType"></a>
 
 The configuration for a single authentication context class reference (ACR) level in a user pool. Each entry in an `AcrConfiguration` map associates a level (`Level1` through `Level4`) with this configuration, which provides the custom name that Amazon Cognito reports for that level in the `acr` token claim.
 

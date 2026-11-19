@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/securi
 ---
 
 # How Amazon Bedrock AgentCore works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AgentCore, learn what IAM features are available to use with AgentCore.
 

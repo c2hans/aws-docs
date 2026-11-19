@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # AWS Storage Gateway
-<a name="storage-main-storage-gateway"></a>
 
 [AWS Storage Gateway](https://docs.aws.amazon.com/filegateway/latest/files3) is a hybrid cloud storage service that connects on-premises environments with AWS cloud storage. It helps you integrate your existing on-premises infrastructure with AWS, so you can store and retrieve data from the cloud and run applications in a hybrid environment. For Windows workloads, you can use Storage Gateway to store and access data by using file protocols such as SMB and NFS. You can use Storage Gateway to help reduce costs associated with running Windows workloads on AWS by using on-premises hardware and software as a bridge to the cloud. This helps you take advantage of the scalability and cost-efficiency of AWS without making significant changes to your existing infrastructure.
 

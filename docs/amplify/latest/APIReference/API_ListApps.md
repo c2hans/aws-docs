@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_ListApps
 ---
 
 # ListApps
-<a name="API_ListApps"></a>
 
 Returns a list of the existing Amplify apps.
 

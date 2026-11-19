@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-untagresour
 ---
 
 # UntagResource
-<a name="ct-untagresource"></a>
 
 The following example shows an AWS CloudTrail log entry of a call to the [UntagResource](https://docs.aws.amazon.com/kms/latest/APIReference/API_UntagResource.html) operation to delete a tag with a tag key of `Dept`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Domi
 ---
 
 # DominantColor
-<a name="API_DominantColor"></a>
 
 A description of the dominant colors in an image.
 

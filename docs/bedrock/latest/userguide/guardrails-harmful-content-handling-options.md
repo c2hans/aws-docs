@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-harm
 ---
 
 # Options for handling harmful content detected by Amazon Bedrock Guardrails
-<a name="guardrails-harmful-content-handling-options"></a>
 
 You can configure what actions your Amazon Bedrock guardrail takes at runtime when it detects harmful content in prompts (`inputAction`) and responses (`outputAction`).
 

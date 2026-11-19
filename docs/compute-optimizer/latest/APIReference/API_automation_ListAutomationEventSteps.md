@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ListAutomationEventSteps
-<a name="API_automation_ListAutomationEventSteps"></a>
 
 Lists the steps for a specific automation event. You can only list steps for events created within the past year.
 

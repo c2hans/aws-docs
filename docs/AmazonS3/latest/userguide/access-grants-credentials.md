@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-
 ---
 
 # Request access to Amazon S3 data through S3 Access Grants
-<a name="access-grants-credentials"></a>
 
 After you [create an access grant](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-grant.html) using S3 Access Grants, grantees can request credentials to access the S3 data that they were granted access to. Grantees can be AWS Identity and Access Management (IAM) principals, your corporate directory identities, or authorized applications.
 

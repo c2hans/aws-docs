@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Del
 ---
 
 # DeletePermissionSet
-<a name="API_DeletePermissionSet"></a>
 
 Deletes the specified permission set.
 

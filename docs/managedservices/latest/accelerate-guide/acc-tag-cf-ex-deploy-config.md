@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Deploying a configuration profile with CloudFormation for Accelerate
-<a name="acc-tag-cf-ex-deploy-config"></a>
 
 If you wish to deploy your `CustomerManagedTags` configuration profile using CloudFormation, you can use the following CloudFormation templates. Put your desired JSON configuration in the `AMSResourceTaggerConfigurationVersion.Content` field.
 

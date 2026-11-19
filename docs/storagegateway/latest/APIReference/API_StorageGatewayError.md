@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_S
 ---
 
 # StorageGatewayError
-<a name="API_StorageGatewayError"></a>
 
 Provides additional information about an error that was returned by the service. See the `errorCode` and `errorDetails` members for more information about the error.
 

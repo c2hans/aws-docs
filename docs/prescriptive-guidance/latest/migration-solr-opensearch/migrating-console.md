@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Migrating the Admin Console
-<a name="migrating-console"></a>
 
 The Solr Admin UI is a web-based interface that users access at `http://hostname:8983/Solr/` to get comprehensive access to Solr configuration and features.
 

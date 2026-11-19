@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/services.h
 ---
 
 # .services
-<a name="services"></a>
 
 Used for websites that focus on services of any kind.
 

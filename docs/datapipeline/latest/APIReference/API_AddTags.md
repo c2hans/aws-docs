@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Add
 ---
 
 # AddTags
-<a name="API_AddTags"></a>
 
 Adds or modifies tags for the specified pipeline.
 

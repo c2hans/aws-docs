@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # GlobalNodeGroup
-<a name="API_GlobalNodeGroup"></a>
 
 Indicates the slot configuration and global identifier for a slice group.
 

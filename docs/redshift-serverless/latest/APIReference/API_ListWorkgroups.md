@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ListWorkgroups
-<a name="API_ListWorkgroups"></a>
 
 Returns information about a list of specified workgroups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/data-providers-reds
 ---
 
 # Using an Amazon Redshift cluster as a target in DMS Schema Conversion
-<a name="data-providers-redshift"></a>
 
 You can use Amazon Redshift databases as a migration target in DMS Schema Conversion. For information about supported target databases, see [Target data providers for DMS Schema Conversion](CHAP_Introduction.Targets.md#CHAP_Introduction.Targets.SchemaConversion).
 

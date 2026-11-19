@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/assisted-slot-genai.html
 ---
 
 # Enable assisted slot resolution in the Generative AI configuration screen
-<a name="assisted-slot-genai"></a>
 
 You can enable assisted slot resolution for supported built-in slots by navigating to the Generative AI screen.
 

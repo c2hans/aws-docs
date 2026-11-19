@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # Span
-<a name="API_amazon-q-connect_Span"></a>
 
 A span represents a unit of work during AI agent execution, capturing timing, status, and contextual attributes.
 

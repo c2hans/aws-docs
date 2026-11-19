@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_AbortEnv
 ---
 
 # AbortEnvironmentUpdate
-<a name="API_AbortEnvironmentUpdate"></a>
 
 Cancels in-progress environment configuration update or application version deployment.
 

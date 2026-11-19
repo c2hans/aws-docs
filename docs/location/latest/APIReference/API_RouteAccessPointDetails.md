@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteAc
 ---
 
 # RouteAccessPointDetails
-<a name="API_RouteAccessPointDetails"></a>
 
 Details of the access point.
 

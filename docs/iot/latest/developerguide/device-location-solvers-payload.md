@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-locatio
 ---
 
 # Location solvers and device payload
-<a name="device-location-solvers-payload"></a>
 
 Location solvers are algorithms that can be used to resolve the location of your IoT devices. AWS IoT Core Device Location supports the following location solvers. You'll see examples of the JSON payload format for these measurement types, the devices supported by the solver, and how the location is resolved.
 

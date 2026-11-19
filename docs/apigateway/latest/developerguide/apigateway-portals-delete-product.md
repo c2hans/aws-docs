@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Delete a portal product in API Gateway
-<a name="apigateway-portals-delete-product"></a>
 
 When you delete a portal product, it cannot be recovered.
 

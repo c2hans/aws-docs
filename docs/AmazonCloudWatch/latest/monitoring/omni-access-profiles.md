@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Access profiles
-<a name="omni-access-profiles"></a>
 
 An access profile is an identity for a resource that acts when no one is signed in. An alert, for example, evaluates its query on a schedule. The profile holds the permissions the resource uses at that time.
 

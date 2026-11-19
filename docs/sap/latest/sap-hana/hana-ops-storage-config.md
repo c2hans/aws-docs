@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-storage-con
 ---
 
 # Storage Configuration for SAP HANA
-<a name="hana-ops-storage-config"></a>
 
 **Important**
 This page has moved. The storage configuration documentation is now located in the Environment Setup section.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SchemaId.html
 ---
 
 # SchemaId
-<a name="API_SchemaId"></a>
 
 The unique ID of the schema in the AWS Glue schema registry.
 

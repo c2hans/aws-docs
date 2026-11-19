@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_MicrosoftSQLServe
 ---
 
 # MicrosoftSQLServerCatalogSource
-<a name="API_MicrosoftSQLServerCatalogSource"></a>
 
 Specifies a Microsoft SQL server data source in the AWS Glue Data Catalog.
 

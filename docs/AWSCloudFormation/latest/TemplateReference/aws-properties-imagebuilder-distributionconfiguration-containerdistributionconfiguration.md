@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::DistributionConfiguration ContainerDistributionConfiguration
-<a name="aws-properties-imagebuilder-distributionconfiguration-containerdistributionconfiguration"></a>
 
 Defines how the output container image is distributed in a specific AWS Region: the target repository, the image tags to apply to the distributed image, and an optional description.
 

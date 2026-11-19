@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/DATE_TR
 ---
 
 # DATE\_TRUNC function
-<a name="DATE_TRUNC"></a>
 
 The DATE\_TRUNC function truncates a timestamp expression or literal based on the date part that you specify, such as hour, day, or month.
 

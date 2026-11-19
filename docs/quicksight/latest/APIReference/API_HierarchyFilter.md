@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Hiera
 ---
 
 # HierarchyFilter
-<a name="API_HierarchyFilter"></a>
 
 A `HierarchyFilter` filters data by drilling down through an ordered list of columns. Each level in the list narrows the data by one column, and the selected values at each level determine which values are available at the next.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_S
 ---
 
 # SetupHistoryResource
-<a name="API_SetupHistoryResource"></a>
 
 The Lightsail resource that `SetupHistory` was ran on.
 

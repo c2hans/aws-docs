@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # Node
-<a name="API_dax_Node"></a>
 
 Represents an individual node within a DAX cluster.
 

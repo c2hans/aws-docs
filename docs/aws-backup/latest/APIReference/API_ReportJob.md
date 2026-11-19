@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Repor
 ---
 
 # ReportJob
-<a name="API_ReportJob"></a>
 
 Contains detailed information about a report job. A report job compiles a report based on a report plan and publishes it to Amazon S3.
 

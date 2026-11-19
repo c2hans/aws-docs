@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/broker-instanc
 ---
 
 # Amazon MSK broker sizes
-<a name="broker-instance-sizes"></a>
 
 When you create an Amazon MSK Provisioned cluster you specify the size of brokers that you want it to have. Depending on the [broker type](broker-instance-types.md), Amazon MSK supports the following broker sizes.
 

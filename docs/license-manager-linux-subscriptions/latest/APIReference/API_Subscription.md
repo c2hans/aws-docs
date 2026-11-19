@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # Subscription
-<a name="API_Subscription"></a>
 
 An object which details a discovered Linux subscription.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/web-bro
 ---
 
 # Web Browser Access
-<a name="web-browser-user"></a>
 
 The following information helps you use a web browser to connect to WorkSpaces Applications and stream applications.
 

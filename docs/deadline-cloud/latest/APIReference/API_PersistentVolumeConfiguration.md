@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_P
 ---
 
 # PersistentVolumeConfiguration
-<a name="API_PersistentVolumeConfiguration"></a>
 
 Specifies the persistent EBS volume configuration for workers in a service managed fleet.
 

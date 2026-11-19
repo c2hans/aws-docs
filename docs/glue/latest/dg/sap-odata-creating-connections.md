@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sap-odata-creating-connec
 ---
 
 # Create connections
-<a name="sap-odata-creating-connections"></a>
 
 To configure an SAP OData connection:
 

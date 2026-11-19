@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_A
 ---
 
 # AzElEphemeris
-<a name="API_AzElEphemeris"></a>
 
 Azimuth elevation ephemeris data.
 

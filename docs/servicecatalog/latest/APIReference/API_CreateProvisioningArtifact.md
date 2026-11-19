@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_C
 ---
 
 # CreateProvisioningArtifact
-<a name="API_CreateProvisioningArtifact"></a>
 
 Creates a provisioning artifact (also known as a version) for the specified product.
 

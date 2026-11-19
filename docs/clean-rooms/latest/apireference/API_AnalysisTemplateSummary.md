@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisTemplateSummary
-<a name="API_AnalysisTemplateSummary"></a>
 
 The metadata of the analysis template.
 

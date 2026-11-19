@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_PutTab
 ---
 
 # PutTableBucketLogging
-<a name="API_s3Buckets_PutTableBucketLogging"></a>
 
 Sets, updates, or removes the server access logging configuration for a table bucket. When logging is enabled, Amazon S3 delivers a record of the requests made to the table bucket and its tables to the target general purpose bucket that you specify. To disable logging, call this operation with an empty `tableBucketLoggingStatus`. For more information, see [Server access logging for table buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-server-logs.html) in the *Amazon Simple Storage Service User Guide*.
 

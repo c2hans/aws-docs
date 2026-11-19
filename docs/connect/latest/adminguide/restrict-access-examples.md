@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/restrict-acces
 ---
 
 # Restrict AWS resources that can be associated with Connect Customer
-<a name="restrict-access-examples"></a>
 
 Each Connect Customer instance is associated with an IAM [ service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role) when the instance is created. Connect Customer can integrate with other AWS services for use cases such as call recording storage (Amazon S3 bucket), natural language bots (Amazon Lex bots), and data streaming (Amazon Kinesis Data Streams). Connect Customer assumes the service-linked role to interact with these other services. The policy is first added to the service-linked role as part of corresponding APIs on the Connect Customer service (that are in turn called by the AWS admin console). For example, if you want to use a certain Amazon S3 bucket with your Connect Customer instance, the bucket must be passed to the [ AssociateInstanceStorageConfig](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateInstanceStorageConfig.html) API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Deregistering a custom Hook from the CloudFormation registry
-<a name="deregistering-hooks"></a>
 
 Deregistering a custom Hook marks the extension or extension version as `DEPRECATED` in the CloudFormation registry, which removes it from active use. Once deprecated, the custom Hook can't be used in a CloudFormation operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Types_Am
 ---
 
 # Amazon Connect Outbound Campaigns
-<a name="API_Types_Amazon_Connect_Outbound_Campaigns"></a>
 
 The following data types are supported by Amazon Connect Outbound Campaigns:
 +  [AgentlessDialerConfig](API_connect-outbound-campaigns_AgentlessDialerConfig.md)

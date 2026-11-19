@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel11-b
 ---
 
 # REL11-BP06 Send notifications when events impact availability
-<a name="rel11-bp06"></a>
 
  Send a notification whenever a threshold is breached, even when automation has already resolved the underlying event. Automated healing keeps a workload reliable, but it can also obscure recurring problems that need a real fix. Notify the right teams so they can spot patterns, including the failures that auto-healing absorbs, and address root causes before those failures grow.
 

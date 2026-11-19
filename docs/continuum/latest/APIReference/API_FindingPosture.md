@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Findin
 ---
 
 # FindingPosture
-<a name="API_FindingPosture"></a>
 
 The compliance posture a finding reports, for the Application Security Posture Finding class. Absent for a vulnerability finding.
 

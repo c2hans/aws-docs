@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk Amazon Linux 2 Docker platform update on September 10, 2020
-<a name="release-2020-09-10-al2docker"></a>
 
 This release is an emergent AWS Elastic Beanstalk Amazon Linux 2 Docker platform update. The release includes a kernel security update released after the latest Amazon Linux 2 platform update.
 

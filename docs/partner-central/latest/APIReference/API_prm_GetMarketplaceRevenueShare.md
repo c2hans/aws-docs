@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetMarketplaceRevenueShare
-<a name="API_prm_GetMarketplaceRevenueShare"></a>
 
 Retrieves the details of a specific marketplace revenue share.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/creating-svms.html
 ---
 
 # Creating storage virtual machines (SVM)
-<a name="creating-svms"></a>
 
 You can create an FSx for ONTAP SVM using the AWS Management Console, AWS CLI, and API.
 

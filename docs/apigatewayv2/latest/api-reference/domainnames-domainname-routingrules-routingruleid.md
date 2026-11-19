@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/domain
 ---
 
 # RoutingRule
-<a name="domainnames-domainname-routingrules-routingruleid"></a>
 
 Represents a routing rule. When the incoming request to a domain name matches the conditions for a rule, API Gateway invokes a stage of a target API. Supported only for REST APIs.
 

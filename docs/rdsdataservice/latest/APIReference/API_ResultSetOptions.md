@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_R
 ---
 
 # ResultSetOptions
-<a name="API_ResultSetOptions"></a>
 
 Options that control how the result set is returned.
 

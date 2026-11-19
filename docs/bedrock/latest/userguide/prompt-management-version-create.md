@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-manageme
 ---
 
 # Create a version of a prompt in Prompt management
-<a name="prompt-management-version-create"></a>
 
 To learn how to create a version of your prompt, choose the tab for your preferred method, and then follow the steps:
 

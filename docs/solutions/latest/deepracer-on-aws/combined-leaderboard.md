@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/combin
 ---
 
 # Combined leaderboard
-<a name="combined-leaderboard"></a>
 
 When an event has two or more tracks, the solution automatically maintains an additional leaderboard that ranks racers across tracks. It appears as a **Combined** tab alongside the individual track leaderboards, and it updates on its own as results are submitted. No manual step is required.
 

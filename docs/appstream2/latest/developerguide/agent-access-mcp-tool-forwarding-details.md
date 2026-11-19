@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-a
 ---
 
 # MCP tool forwarding
-<a name="agent-access-mcp-tool-forwarding-details"></a>
 
 With Model Context Protocol (MCP) tool forwarding, agents can work directly with the applications and operating system running on the desktop. They make direct MCP calls instead of using computer-use tools. When you turn on tool forwarding, the MCP server forwards the tools set up on the WorkSpaces Applications session to your agent.
 

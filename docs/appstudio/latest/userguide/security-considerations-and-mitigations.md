@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/security-cons
 ---
 
 # Security considerations and mitigations
-<a name="security-considerations-and-mitigations"></a>
 
 ## Security considerations
 <a name="security-considerations"></a>

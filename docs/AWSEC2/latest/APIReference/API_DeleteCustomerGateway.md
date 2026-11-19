@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteCus
 ---
 
 # DeleteCustomerGateway
-<a name="API_DeleteCustomerGateway"></a>
 
 Deletes the specified customer gateway. You must delete the VPN connection before you can delete the customer gateway.
 

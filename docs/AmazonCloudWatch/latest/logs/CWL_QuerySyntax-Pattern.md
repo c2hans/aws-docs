@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # pattern
-<a name="CWL_QuerySyntax-Pattern"></a>
 
  Use `pattern` to automatically cluster your log data into patterns.
 

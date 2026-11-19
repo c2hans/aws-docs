@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # NetworkEthereumAttributes
-<a name="API_NetworkEthereumAttributes"></a>
 
 Attributes of Ethereum for a network.
 

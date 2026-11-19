@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateCisS
 ---
 
 # UpdateCisScanConfiguration
-<a name="API_UpdateCisScanConfiguration"></a>
 
 Updates a CIS scan configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Up
 ---
 
 # UpdateAgentActionGroup
-<a name="API_agent_UpdateAgentActionGroup"></a>
 
 Updates the configuration for an action group for an agent.
 

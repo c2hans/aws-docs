@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-output-reserva
 ---
 
 # How input and output reservations work
-<a name="input-output-reservations"></a>
 
 MediaLive offers input and output reservations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Wcd
 ---
 
 # WcdmaNmrObj
-<a name="API_WcdmaNmrObj"></a>
 
 Network Measurement Reports.
 

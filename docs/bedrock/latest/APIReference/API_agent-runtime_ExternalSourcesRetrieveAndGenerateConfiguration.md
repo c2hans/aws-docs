@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ExternalSourcesRetrieveAndGenerateConfiguration
-<a name="API_agent-runtime_ExternalSourcesRetrieveAndGenerateConfiguration"></a>
 
 The configurations of the external source wrapper object in the `retrieveAndGenerate` function.
 

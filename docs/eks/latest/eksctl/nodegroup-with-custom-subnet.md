@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/nodegroup-with-custom-
 ---
 
 # Custom subnets
-<a name="nodegroup-with-custom-subnet"></a>
 
 It’s possible to extend an existing VPC with a new subnet and add a Nodegroup to that subnet.
 

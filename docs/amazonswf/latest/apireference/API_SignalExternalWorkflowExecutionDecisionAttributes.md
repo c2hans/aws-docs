@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Signal
 ---
 
 # SignalExternalWorkflowExecutionDecisionAttributes
-<a name="API_SignalExternalWorkflowExecutionDecisionAttributes"></a>
 
 Provides the details of the `SignalExternalWorkflowExecution` decision.
 

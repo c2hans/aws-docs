@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS SQL Workbench
-<a name="list_sqlworkbench"></a>
 
 AWS SQL Workbench (service prefix: `sqlworkbench`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

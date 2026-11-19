@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cloud-trail
 ---
 
 # cloud-trail-cloud-watch-logs-enabled
-<a name="cloud-trail-cloud-watch-logs-enabled"></a>
 
 Checks if AWS CloudTrail trails are configured to send logs to CloudWatch logs. The trail is NON\_COMPLIANT if the CloudWatchLogsLogGroupArn property of the trail is empty.
 

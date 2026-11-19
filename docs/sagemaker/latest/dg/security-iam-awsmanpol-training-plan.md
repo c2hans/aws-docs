@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanp
 ---
 
 # AWS managed policies for SageMaker training plans
-<a name="security-iam-awsmanpol-training-plan"></a>
 
  This AWS managed policy grants permissions needed to create and manage Amazon SageMaker training plans and Reserved Capacity in SageMaker AI. The policy can be attached to IAM roles used for creating and managing training plans and reserved capacity within SageMaker AI including your [SageMaker AI execution role](sagemaker-roles.md).
 

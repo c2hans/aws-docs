@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CspmPro
 ---
 
 # CspmProviderDetail
-<a name="API_CspmProviderDetail"></a>
 
 The detailed cloud provider configuration for a connector. This is a union type that currently supports Azure.
 

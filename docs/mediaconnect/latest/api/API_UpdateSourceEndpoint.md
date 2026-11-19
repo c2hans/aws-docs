@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateSource
 ---
 
 # UpdateSourceEndpoint
-<a name="API_UpdateSourceEndpoint"></a>
 
 Updates the configuration of a source endpoint.
 

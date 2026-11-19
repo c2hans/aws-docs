@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/service_c
 ---
 
 # Basic examples for Amazon S3 Control using AWS SDKs
-<a name="service_code_examples_s3-control_basics"></a>
 
 The following code examples show how to use the basics of Amazon S3 Control with AWS SDKs.
 

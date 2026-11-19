@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/confi
 ---
 
 # Adding tags to views
-<a name="configure-views-tag"></a>
 
 You can add tags to your views to categorize them. Tags are customer-supplied metadata that take the form of a key name string and an associated optional value string. For general information about tagging AWS resources, see [Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *Amazon Web Services General Reference*.
 

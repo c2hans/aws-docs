@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-
 ---
 
 # Using the Products page
-<a name="enduser-productlist"></a>
 
 The Products page shows the applications, tools, and cloud resources that your administrator assigned to you. You can use the Products page to launch an instance of those products.
 

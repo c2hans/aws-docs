@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/varpOver-function
 ---
 
 # varpOver
-<a name="varpOver-function"></a>
 
 The `varpOver` function calculates the variance of the specified measure, partitioned by the chosen attribute or attributes, based on a biased population.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Dele
 ---
 
 # DeleteConnection
-<a name="API_DeleteConnection"></a>
 
 Deletes a connection.
 

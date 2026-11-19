@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-open
 ---
 
 # GPT OSS Safeguard 120B
-<a name="model-card-openai-gpt-oss-safeguard-120b"></a>
 
 ## ![OpenAI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png) OpenAI — GPT OSS Safeguard 120B
 <a name="model-card-openai-gpt-oss-safeguard-120b-header"></a>

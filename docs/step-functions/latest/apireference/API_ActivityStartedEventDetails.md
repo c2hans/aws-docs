@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_A
 ---
 
 # ActivityStartedEventDetails
-<a name="API_ActivityStartedEventDetails"></a>
 
 Contains details about the start of an activity during an execution.
 

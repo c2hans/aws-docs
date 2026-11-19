@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-lake-outb
 ---
 
 # Outbound campaigns data in the Connect Customer data lake
-<a name="data-lake-outbound-campaigns-data"></a>
 
 This topic details the content in the Connect Customer data lake outbound campaign events table. The table lists the column, type, and description of the content.
 

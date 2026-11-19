@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeSpace
-<a name="API_DescribeSpace"></a>
 
 Describes the space.
 

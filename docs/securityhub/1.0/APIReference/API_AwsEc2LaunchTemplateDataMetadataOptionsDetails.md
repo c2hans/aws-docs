@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataMetadataOptionsDetails
-<a name="API_AwsEc2LaunchTemplateDataMetadataOptionsDetails"></a>
 
  Specifies the metadata options for an Amazon EC2 instance.
 

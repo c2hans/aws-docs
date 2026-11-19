@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_EnableR
 ---
 
 # EnableRegion
-<a name="API_EnableRegion"></a>
 
 Enables (opts-in) a particular Region for an account.
 

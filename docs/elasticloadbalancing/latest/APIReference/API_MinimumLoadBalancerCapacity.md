@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # MinimumLoadBalancerCapacity
-<a name="API_MinimumLoadBalancerCapacity"></a>
 
 The minimum capacity for a load balancer.
 

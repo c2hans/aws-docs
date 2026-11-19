@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/gs-identities-iam-u
 ---
 
 # Use cases for IAM users
-<a name="gs-identities-iam-users"></a>
 
 IAM users that you create in your AWS account have long-term credentials that you manage directly.
 

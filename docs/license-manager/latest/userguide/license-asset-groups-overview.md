@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/license
 ---
 
 # License asset groups
-<a name="license-asset-groups-overview"></a>
 
 License asset groups provide a centralized way to manage and monitor license usage across your AWS environment. You can group related assets, apply licensing rules, and track compliance from a management account or delegated admin account.
 

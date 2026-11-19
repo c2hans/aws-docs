@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCloudWatchRUMReadOnlyAccess
-<a name="AmazonCloudWatchRUMReadOnlyAccess"></a>
 
 **Description**: Grants read only permissions for the Amazon CloudWatch RUM service
 

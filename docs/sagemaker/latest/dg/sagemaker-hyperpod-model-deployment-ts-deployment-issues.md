@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Model deployment issues
-<a name="sagemaker-hyperpod-model-deployment-ts-deployment-issues"></a>
 
 **Overview:** This section covers common issues that occur during model deployment, including pending states, failed deployments, and monitoring deployment progress.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSy
 ---
 
 # UpdateFileSystemOntapConfiguration
-<a name="API_UpdateFileSystemOntapConfiguration"></a>
 
 The configuration updates for an Amazon FSx for NetApp ONTAP file system.
 

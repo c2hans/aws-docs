@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # MetricStreamEntry
-<a name="API_MetricStreamEntry"></a>
 
 This structure contains the configuration information about one metric stream.
 

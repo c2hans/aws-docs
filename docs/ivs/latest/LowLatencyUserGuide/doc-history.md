@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/doc-histo
 ---
 
 # IVS Document History \| Low-Latency Streaming
-<a name="doc-history"></a>
 
 The following tables describe the important changes to the documentation for Amazon IVS Low-Latency Streaming. We update the documentation frequently, for new releases and to address the feedback that you send us.
 

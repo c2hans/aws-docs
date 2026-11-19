@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # `$member-match` operation for HealthLake
-<a name="reference-fhir-operations-member-match"></a>
 
 AWS HealthLake now supports the `$member-match` operation for Patient resources, enabling healthcare organizations to find a member's unique identifier across different healthcare systems using demographic and coverage information. This operation is essential for achieving CMS compliance and facilitating secure payer-to-payer data exchange while maintaining patient privacy.
 

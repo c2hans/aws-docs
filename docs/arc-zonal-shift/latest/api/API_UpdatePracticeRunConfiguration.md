@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_UpdatePra
 ---
 
 # UpdatePracticeRunConfiguration
-<a name="API_UpdatePracticeRunConfiguration"></a>
 
 Update a practice run configuration to change one or more of the following: add, change, or remove the blocking alarm; change the outcome alarm; or add, change, or remove blocking dates or time windows.
 

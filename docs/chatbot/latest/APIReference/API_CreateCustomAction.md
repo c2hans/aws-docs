@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_CreateCu
 ---
 
 # CreateCustomAction
-<a name="API_CreateCustomAction"></a>
 
 Creates a custom action that can be invoked as an alias or as a button on a notification.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_QuoteOp
 ---
 
 # QuoteOption
-<a name="API_QuoteOption"></a>
 
 A configuration and pricing option for a quote. Each option includes the capacity breakdown, physical specifications for the racks or servers, and pricing details.
 

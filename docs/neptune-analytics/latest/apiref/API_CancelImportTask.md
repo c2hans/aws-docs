@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Canc
 ---
 
 # CancelImportTask
-<a name="API_CancelImportTask"></a>
 
 Deletes the specified import task.
 

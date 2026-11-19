@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_Reposit
 ---
 
 # RepositoryAssociationSummary
-<a name="API_RepositoryAssociationSummary"></a>
 
 Summary information about a repository association. The [ListRepositoryAssociations](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_ListRepositoryAssociations.html) operation returns a list of `RepositoryAssociationSummary` objects.
 

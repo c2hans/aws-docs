@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::ScheduledQuery DestinationConfiguration
-<a name="aws-properties-logs-scheduledquery-destinationconfiguration"></a>
 
 Configuration for where to deliver scheduled query results. Specifies the destination type and associated settings for result delivery.
 

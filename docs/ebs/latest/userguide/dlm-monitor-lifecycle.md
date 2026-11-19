@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/dlm-monitor-lifecyc
 ---
 
 # Monitor Amazon Data Lifecycle Manager policies
-<a name="dlm-monitor-lifecycle"></a>
 
 You can use the following features to monitor the lifecycle of your snapshots and AMIs.
 

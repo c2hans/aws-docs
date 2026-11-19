@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # VpcEndpointAssociationMetadata
-<a name="API_VpcEndpointAssociationMetadata"></a>
 
 High-level information about a VPC endpoint association, returned by `ListVpcEndpointAssociations`. You can use the information provided in the metadata to retrieve and manage a VPC endpoint association.
 

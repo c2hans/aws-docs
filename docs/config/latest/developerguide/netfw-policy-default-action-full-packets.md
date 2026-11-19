@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/netfw-polic
 ---
 
 # netfw-policy-default-action-full-packets
-<a name="netfw-policy-default-action-full-packets"></a>
 
 Checks if an AWS Network Firewall policy is configured with a user defined default stateless action for full packets. This rule is NON\_COMPLIANT if default stateless action for full packets does not match with user defined default stateless action.
 

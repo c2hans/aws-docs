@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/example_sns_ListPhoneNumbe
 ---
 
 # Use `ListPhoneNumbersOptedOut` with an AWS SDK or CLI
-<a name="example_sns_ListPhoneNumbersOptedOut_section"></a>
 
 The following code examples show how to use `ListPhoneNumbersOptedOut`.
 

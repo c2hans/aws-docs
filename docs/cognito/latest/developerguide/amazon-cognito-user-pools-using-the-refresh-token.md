@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cog
 ---
 
 # Refresh tokens
-<a name="amazon-cognito-user-pools-using-the-refresh-token"></a>
 
 You can use the refresh token to retrieve new ID and access tokens. By default, the refresh token expires 30 days after your application user signs into your user pool. When you create an application for your user pool, you can set the application's refresh token expiration to any value between 60 minutes and 10 years.
 

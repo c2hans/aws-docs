@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # TransactionEvent
-<a name="API_TransactionEvent"></a>
 
 The container for the properties of a transaction event.
 

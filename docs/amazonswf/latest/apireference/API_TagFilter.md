@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_TagFil
 ---
 
 # TagFilter
-<a name="API_TagFilter"></a>
 
 Used to filter the workflow executions in visibility APIs based on a tag.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/operational
 ---
 
 # Operational Best Practices for Amazon API Gateway
-<a name="operational-best-practices-for-amazon-API-gateway"></a>
 
  This conformance pack contains AWS Config rules based on the usage of Amazon API Gateway within AWS. For a list of all managed rules supported by AWS Config, see [List of AWS Config Managed Rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler-shut-d
 ---
 
 # Shut Down Data Wrangler
-<a name="data-wrangler-shut-down"></a>
 
 When you are not using Data Wrangler, it is important to shut down the instance on which it runs to avoid incurring additional fees.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Us
 ---
 
 # UserConfig
-<a name="API_UserConfig"></a>
 
 The configuration for a user membership, including the role assigned to the user within the agent space.
 

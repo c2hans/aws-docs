@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/remove-a-calculat
 ---
 
 # Removing a calculation
-<a name="remove-a-calculation"></a>
 
 Use the following procedure to remove a table calculation from a pivot table.
 

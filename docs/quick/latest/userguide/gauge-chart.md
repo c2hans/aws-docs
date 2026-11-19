@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/gauge-chart.html
 ---
 
 # Using gauge charts
-<a name="gauge-chart"></a>
 
 Use gauge charts to compare values for items in a measure. You can compare them to another measure or to a custom amount.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/import-sequence-store.h
 ---
 
 # Importing read sets into a HealthOmics sequence store
-<a name="import-sequence-store"></a>
 
 After you create your sequence store, create import jobs to upload read sets into the data store. You can upload your files from an Amazon S3 bucket, or you can upload directly by using the synchronous API operations. Your Amazon S3 bucket must be in the same Region as your sequence store.
 

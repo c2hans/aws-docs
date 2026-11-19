@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Amazon Nova Premier
-<a name="model-evaluation-type-kb-prompt-nova-premier"></a>
 
 Prompts used with Amazon Nova Premier.
 

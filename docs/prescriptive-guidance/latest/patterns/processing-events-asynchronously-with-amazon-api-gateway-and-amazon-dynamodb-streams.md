@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/pr
 ---
 
 # Process events asynchronously with Amazon API Gateway and Amazon DynamoDB Streams
-<a name="processing-events-asynchronously-with-amazon-api-gateway-and-amazon-dynamodb-streams"></a>
 
 *Andrea Meroni, Mariem Kthiri, Nadim Majed, Alessandro Trisolini, and Michael Wallner, Amazon Web Services*
 

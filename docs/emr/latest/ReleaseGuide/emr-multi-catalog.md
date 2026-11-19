@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-multi-catalo
 ---
 
 # Working with a multi-catalog hierarchy in AWS Glue Data Catalog with Spark on Amazon EMR
-<a name="emr-multi-catalog"></a>
 
 You can register your Amazon EMR cluster to access the AWS Glue Data Catalog, which makes tables and other catalog resources available to various consumers. AWS Glue Data Catalog supports a multi-catalog hierarchy, which unifies your data across Amazon S3 data lakes. It also provides both a Hive metastore API and an open-source Apache Iceberg REST API for accessing the data. These features are available to Amazon EMR and other services like Amazon Athena and Amazon Redshift.
 

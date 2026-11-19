@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/tutorial.html
 ---
 
 # Tutorial
-<a name="tutorial"></a>
 
 This topic walks you through installing and configuring eksctl, then using it to create an Amazon EKS cluster.
 

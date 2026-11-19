@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_DeleteA
 ---
 
 # DeleteAdapterVersion
-<a name="API_DeleteAdapterVersion"></a>
 
 Deletes an Amazon Textract adapter version. Requires that you specify both an AdapterId and a AdapterVersion. Deletes the adapter version specified by the AdapterId and the AdapterVersion.
 

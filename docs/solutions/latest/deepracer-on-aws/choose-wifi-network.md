@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/choose
 ---
 
 # Set up your vehicle
-<a name="choose-wifi-network"></a>
 
 The first time you open your AWS DeepRacer vehicle, you must set it up to connect to a Wi-Fi network. Complete this setup to get the vehicle’s software updated and to get the IP address to access the vehicle’s device console.
 

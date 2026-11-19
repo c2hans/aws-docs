@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/DATE_DI
 ---
 
 # DATE\_DIFF function
-<a name="DATE_DIFF_function"></a>
 
 DATE\_DIFF returns the difference between the date parts of two date or time expressions.
 

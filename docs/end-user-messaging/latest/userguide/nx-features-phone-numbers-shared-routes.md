@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Shared routes
-<a name="nx-features-phone-numbers-shared-routes"></a>
 
 In some countries, AWS End User Messaging maintains a pool of shared origination identities. When you activate shared routes, AWS End User Messaging makes an effort to deliver your message using one of the shared identities. Shared identities are unavailable in some countries, including the United States.
 

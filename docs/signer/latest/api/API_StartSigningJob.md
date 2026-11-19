@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_StartSigningJob.ht
 ---
 
 # StartSigningJob
-<a name="API_StartSigningJob"></a>
 
 Initiates a signing job to be performed on the code provided. Signing jobs are viewable by the `ListSigningJobs` operation. Note the following requirements:
 +  You must create an Amazon S3 source bucket. For more information, see [Creating a Bucket](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) in the *Amazon S3 Getting Started Guide*.

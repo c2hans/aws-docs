@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Multi-account enablement script
-<a name="securityhub-enable-multiaccount-script"></a>
 
 **Note**
 Instead of this script, we recommend integrating with AWS Organizations and using [declarative policies](accounts-orgs-policies.md) to enable and configure Security Hub CSPM across multiple accounts and Regions.

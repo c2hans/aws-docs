@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/srgs-language.html
 ---
 
 # Language
-<a name="srgs-language"></a>
 
 The following discussion applies to language identifiers applied to grammars. For more information, see [Language](https://www.w3.org/TR/speech-grammar/#S2.7) in the *Speech recognition grammar specification version 1* W3C recommendation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-notifi
 ---
 
 # Notification options with AWS Backup
-<a name="backup-notifications"></a>
 
 There are two ways to receive notifications about AWS Backup:
 + User Notifications can send notifications, including Amazon CloudWatch alarms, AWS Support, and other services' notifications.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-bp-tra
 ---
 
 # Transform interactively or autonomously
-<a name="dotnet-bp-transform-modes"></a>
 
 The Visual Studio IDE experience offers autonomous and interactive modes to control the degree of interactivity during transformation.
 

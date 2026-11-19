@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/mediastore_exampl
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `PutObject` with an AWS SDK
-<a name="mediastore_example_mediastore_PutObject_section"></a>
 
 The following code example shows how to use `PutObject`.
 

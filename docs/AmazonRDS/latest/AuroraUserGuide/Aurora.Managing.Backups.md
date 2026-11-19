@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.
 ---
 
 # Overview of backing up and restoring an Aurora DB cluster
-<a name="Aurora.Managing.Backups"></a>
 
 The following topics describe Aurora backups and how to restore your Aurora DB cluster.
 

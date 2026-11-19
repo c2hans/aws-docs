@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # ListGeofenceResponseEntry
-<a name="API_WaypointGeofencing_ListGeofenceResponseEntry"></a>
 
 Contains a list of geofences stored in a given geofence collection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.PIVOT.
 ---
 
 # PIVOT
-<a name="recipe-actions.PIVOT"></a>
 
 Converts all the row values in a selected column into individual columns with values.
 

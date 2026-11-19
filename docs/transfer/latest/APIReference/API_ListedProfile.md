@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListedP
 ---
 
 # ListedProfile
-<a name="API_ListedProfile"></a>
 
 Returns the properties of the profile that was specified.
 

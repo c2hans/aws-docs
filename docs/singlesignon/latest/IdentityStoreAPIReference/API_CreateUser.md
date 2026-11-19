@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # CreateUser
-<a name="API_CreateUser"></a>
 
 Creates a user within the specified identity store.
 

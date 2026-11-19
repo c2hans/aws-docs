@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Appendi
 ---
 
 # Resolving vacuum performance issues in Aurora PostgreSQL
-<a name="Appendix.PostgreSQL.CommonDBATasks.Autovacuum_Monitoring.Resolving_Performance"></a>
 
 This section discusses factors that often contribute to slower vacuum performance and how to address these issues.
 

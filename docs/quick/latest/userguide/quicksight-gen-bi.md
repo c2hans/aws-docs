@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quicksight-gen-bi
 ---
 
 # Generative BI with Quick Sight
-<a name="quicksight-gen-bi"></a>
 
 **Note**
  Powered by Amazon Bedrock: Amazon Q in Quick is built on Amazon Bedrock and includes [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html) implemented in Amazon Bedrock to enforce safety, security, and the responsible use of AI.

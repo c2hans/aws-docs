@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBShardGroups
-<a name="API_DescribeDBShardGroups"></a>
 
 Describes existing Aurora Limitless Database DB shard groups.
 

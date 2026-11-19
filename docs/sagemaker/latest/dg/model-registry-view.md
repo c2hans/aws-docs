@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-view.
 ---
 
 # View Model Groups and Versions
-<a name="model-registry-view"></a>
 
 Model Groups and versions help you organize your models. You can view a list of the model versions in a Model Group by using either the AWS SDK for Python (Boto3) (Boto3) or the Amazon SageMaker Studio console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-reboot-faq.ht
 ---
 
 # Slurm reboot frequently asked questions in AWS PCS
-<a name="slurm-reboot-faq"></a>
 
 Find answers to common questions about using Slurm reboot in AWS PCS.
 

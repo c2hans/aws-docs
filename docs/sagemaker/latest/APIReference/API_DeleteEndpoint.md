@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteEndpoint
-<a name="API_DeleteEndpoint"></a>
 
 Deletes an endpoint. SageMaker frees up all of the resources that were deployed when the endpoint was created.
 

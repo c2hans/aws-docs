@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AcceptR
 ---
 
 # AcceptRule
-<a name="API_AcceptRule"></a>
 
 Specifies the rule and the threshold under which a prediction can be accepted.
 

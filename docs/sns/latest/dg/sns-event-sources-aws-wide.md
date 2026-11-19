@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources-aws-wide
 ---
 
 # Additional event sources
-<a name="sns-event-sources-aws-wide"></a>
 
 The following table describes how Amazon SNS can be used to receive timely notifications about AWS daily feature updates and changes to AWS IP address ranges, ensuring that you are informed about the latest AWS service releases, instance types, VPC endpoints, and public IP address changes.
 

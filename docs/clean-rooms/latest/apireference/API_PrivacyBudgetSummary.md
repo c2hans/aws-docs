@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Priv
 ---
 
 # PrivacyBudgetSummary
-<a name="API_PrivacyBudgetSummary"></a>
 
 An array that summaries the specified privacy budget. This summary includes collaboration information, creation information, membership information, and privacy budget information.
 

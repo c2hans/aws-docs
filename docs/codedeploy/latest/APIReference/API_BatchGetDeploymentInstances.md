@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Batch
 ---
 
 # BatchGetDeploymentInstances
-<a name="API_BatchGetDeploymentInstances"></a>
 
 **Note**
  This method works, but is deprecated. Use `BatchGetDeploymentTargets` instead.

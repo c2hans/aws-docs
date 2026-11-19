@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Inference provider targets
-<a name="gateway-target-inference-provider"></a>
 
 Inference provider targets give you explicit control over the endpoint, model mappings, and operations for a model provider. Use a provider configuration when you need to customize which models are available, set per-model token limits, configure path rewriting, or connect to a provider that doesn’t have a built-in connector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/security_iam.
 ---
 
 # Identity and access management for Amazon Lightsail
-<a name="security_iam"></a>
 
 ## Audience
 <a name="security_iam_audience"></a>

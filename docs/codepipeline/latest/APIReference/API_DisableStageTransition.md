@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Dis
 ---
 
 # DisableStageTransition
-<a name="API_DisableStageTransition"></a>
 
 Prevents artifacts in a pipeline from transitioning to the next stage in the pipeline.
 

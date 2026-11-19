@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/c2pa-manifest-use
 ---
 
 # Configuring a job with a C2PA manifest
-<a name="c2pa-manifest-use"></a>
 
 To include a C2PA manifest in your MP4 output, you need to configure your job settings with the necessary parameters for signing and embedding the manifest.
 

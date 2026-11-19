@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/tutoria
 ---
 
 # Using Tangram ES for iOS with Amazon Location Service
-<a name="tutorial-tangram-es-ios"></a>
 
 [Tangram ES](https://github.com/tangrams/tangram-es) is a C\+\+ library for rendering 2D and 3D maps from vector data using OpenGL ES. It's the native counterpart to [Tangram](https://github.com/tangrams/tangram).
 

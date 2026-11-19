@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/best-p
 ---
 
 # Concepts and best practice for AWS Billing Conductor
-<a name="best-practices"></a>
 
 This section highlights some best practices for when you're working with AWS Billing Conductor.
 

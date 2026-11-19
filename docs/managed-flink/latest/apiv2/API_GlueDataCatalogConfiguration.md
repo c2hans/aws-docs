@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_GlueDataC
 ---
 
 # GlueDataCatalogConfiguration
-<a name="API_GlueDataCatalogConfiguration"></a>
 
 The configuration of the Glue Data Catalog that you use for Apache Flink SQL queries and table API transforms that you write in an application.
 

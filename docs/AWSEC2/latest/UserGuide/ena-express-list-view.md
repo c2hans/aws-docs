@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena-express-list
 ---
 
 # Review ENA Express settings for your EC2 instance
-<a name="ena-express-list-view"></a>
 
 You can verify the ENA Express settings by instance or by network interface. To update the ENA Express settings, see [Configure ENA Express settings for your EC2 instance](ena-express-configure.md).
 

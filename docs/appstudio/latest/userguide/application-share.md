@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/application-s
 ---
 
 # Sharing published applications
-<a name="application-share"></a>
 
 When you publish an application that has not been published yet, it is not available for users until it is shared. Once a published application has been shared, it will be available to users and will not need to be shared again if another version is published.
 

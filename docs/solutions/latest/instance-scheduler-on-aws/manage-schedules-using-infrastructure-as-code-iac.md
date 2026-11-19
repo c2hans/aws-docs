@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Manage schedules using Infrastructure as Code (IaC)
-<a name="manage-schedules-using-infrastructure-as-code-iac"></a>
 
 **Important**
 Deploy schedules using a separate template after the hub stack deployment is complete.

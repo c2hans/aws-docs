@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3-contro
 ---
 
 # Hello Amazon S3 Control
-<a name="s3-control_example_s3-control_Hello_section"></a>
 
 The following code examples show how to get started using Amazon S3 Control.
 

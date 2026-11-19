@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ProfileConfigurat
 ---
 
 # ProfileConfiguration
-<a name="API_ProfileConfiguration"></a>
 
 Specifies the job and session values that an admin configures in an AWS Glue usage profile.
 

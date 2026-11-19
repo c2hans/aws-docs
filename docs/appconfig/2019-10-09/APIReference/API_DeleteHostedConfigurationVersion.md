@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_De
 ---
 
 # DeleteHostedConfigurationVersion
-<a name="API_DeleteHostedConfigurationVersion"></a>
 
 Deletes a version of a configuration from the AWS AppConfig hosted configuration store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-data-o
 ---
 
 # Optimize Iceberg tables
-<a name="querying-iceberg-data-optimization"></a>
 
 Athena provides several optimization features to improve query performance on Apache Iceberg tables. As data accumulates, queries can become less efficient due to increased file processing overhead and the computational cost of applying row-level deletes stored in Iceberg delete files. To address these challenges, Athena supports manual compaction and vacuum operators to optimize table structure. Athena also works with Iceberg statistics to enable cost-based query optimization and Parquet column indexing for precise data pruning during query execution. These features work together to reduce query execution time, minimize data scanning, and lower costs. This topic describes how to use these optimization capabilities to maintain high-performance queries on your Iceberg tables.
 

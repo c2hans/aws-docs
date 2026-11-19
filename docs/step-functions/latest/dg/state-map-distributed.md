@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/state-map-distr
 ---
 
 # Using Map state in Distributed mode for large-scale parallel workloads in Step Functions
-<a name="state-map-distributed"></a>
 
 **Managing state and transforming data**
 Learn about [Passing data between states with variables](workflow-variables.md) and [Transforming data with JSONata](transforming-data.md).

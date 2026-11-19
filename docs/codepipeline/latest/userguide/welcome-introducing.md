@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome-in
 ---
 
 # A quick look at CodePipeline
-<a name="welcome-introducing"></a>
 
 The following diagram shows an example release process using CodePipeline.
 

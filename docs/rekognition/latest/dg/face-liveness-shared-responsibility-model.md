@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/face-liveness-shar
 ---
 
 # Face Liveness Shared Responsibility Model
-<a name="face-liveness-shared-responsibility-model"></a>
 
 Security and Compliance is a shared responsibility between AWS and you, the customer. Read more about AWS shared responsibility model [here](https://aws.amazon.com/compliance/shared-responsibility-model/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # CreateView
-<a name="API_CreateView"></a>
 
 Creates a new SQL view.
 

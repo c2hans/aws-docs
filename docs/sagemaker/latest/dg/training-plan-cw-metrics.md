@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-plan-cw-met
 ---
 
 # Monitor capacity reservation usage with Amazon CloudWatch metrics
-<a name="training-plan-cw-metrics"></a>
 
 You can use [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) metrics to monitor the utilization of capacity reservations associated with your SageMaker training plans. This feature provides access to both historical and real-time metrics on instance usage—at the individual plan level and across all plans in your account—so you can make informed decisions about capacity and cost. These metrics will be published directly in your account, and the SageMaker training plans service will not have access to them.
 

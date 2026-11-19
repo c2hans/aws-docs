@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/troublesho
 ---
 
 # Troubleshooting a SiteWise Edge gateway
-<a name="troubleshooting-gateway"></a>
 
 Troubleshoot common AWS IoT SiteWise Edge gateway issues by exploring relevant topics.
 
@@ -322,7 +321,7 @@ docker logs grafana
 ```
 
 SiteWise Edge logs
-Check the SiteWise Edge gateway logs for MQTT connection and data processing issues. For more information, see [Troubleshooting a SiteWise Edge gateway](#troubleshooting-gateway).
+Check the SiteWise Edge gateway logs for MQTT connection and data processing issues. For more information, see [Troubleshooting a SiteWise Edge gateway](troubleshooting-gateway.md).
 
 ## Troubleshooting AWS IoT Greengrass issues
 <a name="troubleshoot-greengrass-issues"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_ApiKeyCredentia
 ---
 
 # ApiKeyCredential
-<a name="API_ApiKeyCredential"></a>
 
 Contains API key credential information.
 

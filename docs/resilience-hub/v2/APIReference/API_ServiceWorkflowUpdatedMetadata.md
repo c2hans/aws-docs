@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServiceWorkflowUpdatedMetadata
-<a name="API_ServiceWorkflowUpdatedMetadata"></a>
 
 Metadata for a service workflow updated event.
 

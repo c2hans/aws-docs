@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-an-email-using-sdk-pr
 ---
 
 # Sending email through Amazon SES using an AWS SDK
-<a name="send-an-email-using-sdk-programmatically"></a>
 
 You can use an AWS SDK to send email through Amazon SES. AWS SDKs are available for several programming languages. For more information, see [Tools for Amazon Web Services](https://aws.amazon.com/tools/#sdk).
 

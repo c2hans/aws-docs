@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/data-pr
 ---
 
 # Features by data provider
-<a name="data-provider-features"></a>
 
 This section describes the features available in Amazon Location Service, categorized by data provider.
 

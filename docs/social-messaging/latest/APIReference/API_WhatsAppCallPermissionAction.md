@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WhatsAppCallPermissionAction
-<a name="API_WhatsAppCallPermissionAction"></a>
 
 Describes a single calling action the business can take with an end user, including whether the action is currently allowed and any limits that apply to it. Returned as an item in the actions list from `GetWhatsAppCallPermission`.
 

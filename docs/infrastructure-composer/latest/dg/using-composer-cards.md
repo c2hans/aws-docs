@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Configure and modify cards in Infrastructure Composer
-<a name="using-composer-cards"></a>
 
 In Infrastructure Composer, cards represent resources that you use to design your application architecture. When you configure a card in Infrastructure Composer, you define the details of the resources in your application. This includes details like a card's **Logical ID** and **Partition key**. The way this information is defined varies between **Enhanced component cards** and **Standard cards**.
 

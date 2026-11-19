@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/R
 ---
 
 # Request and response behavior
-<a name="RequestAndResponseBehavior"></a>
 
 The following topics describe how CloudFront handles requests and responses.
 

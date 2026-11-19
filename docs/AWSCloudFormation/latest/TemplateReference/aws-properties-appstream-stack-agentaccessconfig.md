@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::Stack AgentAccessConfig
-<a name="aws-properties-appstream-stack-agentaccessconfig"></a>
 
 The configuration for agent access on a stack. Agent access enables AI agents to interact with desktop applications during streaming sessions.
 

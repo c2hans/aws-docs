@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_MeshSpe
 ---
 
 # MeshSpec
-<a name="API_MeshSpec"></a>
 
 An object that represents the specification of a service mesh.
 

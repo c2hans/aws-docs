@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_G
 ---
 
 # GetSessionLogger
-<a name="API_GetSessionLogger"></a>
 
 Gets details about a specific session logger resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DataSou
 ---
 
 # DataSource
-<a name="API_DataSource"></a>
 
 A data source in an Amazon Q Business application.
 

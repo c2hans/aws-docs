@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSO
 ---
 
 # AWSObservabilityAdminServiceRolePolicy
-<a name="AWSObservabilityAdminServiceRolePolicy"></a>
 
 **Description**: Provides access to manage AWS Config Configuration Recorder, manage AWS Config Configuration Aggregator, create AWS Config Service Linked Role for Configuration Recorder functionality, consume recorder configuration data, and read AWS Organizations data for organizational features.
 

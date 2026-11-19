@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Calcu
 ---
 
 # CalculateRouteTruckModeOptions
-<a name="API_CalculateRouteTruckModeOptions"></a>
 
 Contains details about additional route preferences for requests that specify `TravelMode` as `Truck`.
 

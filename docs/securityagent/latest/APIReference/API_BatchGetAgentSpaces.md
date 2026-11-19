@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchGetAgentSpaces
-<a name="API_BatchGetAgentSpaces"></a>
 
 Retrieves information about one or more agent spaces.
 

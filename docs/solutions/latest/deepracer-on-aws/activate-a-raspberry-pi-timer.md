@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/activa
 ---
 
 # Activate a Raspberry Pi timer
-<a name="activate-a-raspberry-pi-timer"></a>
 
 You onboard timers with the same workflow as cars. Only administrators can activate a timer.
 

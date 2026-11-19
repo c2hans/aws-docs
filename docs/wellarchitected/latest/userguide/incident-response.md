@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/inciden
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Incident response in AWS Well-Architected
-<a name="incident-response"></a>
 
 Incident response for AWS Well-Architected is an AWS responsibility. AWS has a formal, documented policy and program that governs incident response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowValidationDetails
-<a name="API_agent_FlowValidationDetails"></a>
 
 A union type containing various possible validation issues in the flow.
 

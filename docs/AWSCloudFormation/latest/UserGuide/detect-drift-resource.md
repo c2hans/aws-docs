@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/detec
 ---
 
 # Detect drift on individual stack resources
-<a name="detect-drift-resource"></a>
 
 You can detect drift on specific resources within a stack, rather than the entire stack. This is especially useful when you only need to determine if specific resources now match their expected template configurations again.
 

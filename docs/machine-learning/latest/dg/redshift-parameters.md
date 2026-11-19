@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/dg/redshift-para
 We are no longer updating the Amazon Machine Learning service or accepting new users for it. This documentation is available for existing users, but we are no longer updating it. For more information, see [ What is Amazon Machine Learning](https://docs.aws.amazon.com/machine-learning/latest/dg/what-is-amazon-machine-learning.html).
 
 # Required Parameters for the Create Datasource Wizard
-<a name="redshift-parameters"></a>
 
  To allow Amazon ML to connect to your Amazon Redshift database and read data on your behalf, you must provide the following:
 + The Amazon Redshift `ClusterIdentifier`

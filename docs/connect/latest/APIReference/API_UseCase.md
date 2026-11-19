@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UseCase.
 ---
 
 # UseCase
-<a name="API_UseCase"></a>
 
 Contains the use case.
 

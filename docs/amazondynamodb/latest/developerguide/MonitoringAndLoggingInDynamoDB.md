@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Mon
 ---
 
 # Monitoring and logging in DynamoDB
-<a name="MonitoringAndLoggingInDynamoDB"></a>
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of DynamoDB and your AWS solutions. You should collect monitoring data from all parts of your AWS solutions so you can easily debug a multi-point failure.
 

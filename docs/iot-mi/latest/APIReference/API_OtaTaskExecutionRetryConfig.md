@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_OtaTaskEx
 ---
 
 # OtaTaskExecutionRetryConfig
-<a name="API_OtaTaskExecutionRetryConfig"></a>
 
 Over-the-air (OTA) task retry config.
 

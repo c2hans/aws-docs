@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon SageMaker Unified Studio MCP
-<a name="amazonsagemakerunifiedstudiomcp"></a>
 
 Amazon SageMaker Unified Studio MCP provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/orchestrate-using-workflo
 ---
 
 # Performing complex ETL activities using blueprints and workflows in AWS Glue
-<a name="orchestrate-using-workflows"></a>
 
 Some of your organization's complex extract, transform, and load (ETL) processes might best be implemented by using multiple, dependent AWS Glue jobs and crawlers. Using AWS Glue *workflows*, you can design a complex multi-job, multi-crawler ETL process that AWS Glue can run and track as single entity. After you create a workflow and specify the jobs, crawlers, and triggers in the workflow, you can run the workflow on demand or on a schedule.
 

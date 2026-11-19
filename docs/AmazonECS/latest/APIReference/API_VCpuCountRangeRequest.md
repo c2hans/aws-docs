@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_VCpuCo
 ---
 
 # VCpuCountRangeRequest
-<a name="API_VCpuCountRangeRequest"></a>
 
 The minimum and maximum number of vCPUs for instance type selection. This allows you to specify a range of vCPU counts that meet your workload requirements.
 

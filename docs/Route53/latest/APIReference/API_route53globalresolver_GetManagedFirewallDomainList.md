@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # GetManagedFirewallDomainList
-<a name="API_route53globalresolver_GetManagedFirewallDomainList"></a>
 
 Retrieves information about an AWS-managed firewall domain list. Managed domain lists contain domains associated with malicious activity, content categories, or specific threats.
 

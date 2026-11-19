@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Wir
 ---
 
 # WirelessDeviceStatistics
-<a name="API_WirelessDeviceStatistics"></a>
 
 Information about a wireless device's operation.
 

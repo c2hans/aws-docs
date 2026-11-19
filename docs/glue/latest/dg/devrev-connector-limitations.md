@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/devrev-connector-limitati
 ---
 
 # Limitations and notes for the DevRev connector
-<a name="devrev-connector-limitations"></a>
 
 The following are limitations and notes for the DevRev connector:
 + DevRev is supported as a source only. Writing to DevRev is not supported.

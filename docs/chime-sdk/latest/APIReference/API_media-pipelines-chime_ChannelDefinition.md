@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # ChannelDefinition
-<a name="API_media-pipelines-chime_ChannelDefinition"></a>
 
 Defines an audio channel in a Kinesis video stream.
 

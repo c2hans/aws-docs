@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/sts_example_sts_Ass
 ---
 
 # Use `AssumeRoleWithWebIdentity` with a CLI
-<a name="sts_example_sts_AssumeRoleWithWebIdentity_section"></a>
 
 The following code examples show how to use `AssumeRoleWithWebIdentity`.
 

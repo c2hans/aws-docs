@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/create_key_key
 ---
 
 # Create new AWS CloudHSM keys with keytool
-<a name="create_key_keytool_5"></a>
 
 You can use keytool to generate RSA, EC (Ed25519), AES, and DESede type of key supported by the AWS CloudHSM JCE SDK.
 

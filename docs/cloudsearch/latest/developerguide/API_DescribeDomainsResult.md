@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_De
 ---
 
 # DescribeDomainsResult
-<a name="API_DescribeDomainsResult"></a>
 
 ## Description
 <a name="API_DescribeDomainsResult_Description"></a>

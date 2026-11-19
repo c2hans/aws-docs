@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-migrat
 ---
 
 # Prerequisites
-<a name="dotnet-migrating-applications-prerequisites"></a>
 
 Before using the **eb migrate** command, ensure your environment meets these requirements:
 

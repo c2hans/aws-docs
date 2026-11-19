@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2N
 ---
 
 # AwsEc2NetworkAclDetails
-<a name="API_AwsEc2NetworkAclDetails"></a>
 
 Contains details about an Amazon EC2 network access control list (ACL).
 

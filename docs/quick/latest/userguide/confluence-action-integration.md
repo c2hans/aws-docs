@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/confluence-action
 ---
 
 # Atlassian Confluence Cloud action integration
-<a name="confluence-action-integration"></a>
 
 Use the Atlassian Confluence Cloud connector to create, update, and manage Confluence pages and spaces directly in AWS Quick through natural language.
 

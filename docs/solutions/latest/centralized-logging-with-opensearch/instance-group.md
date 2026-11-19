@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Instance group
-<a name="instance-group"></a>
 
 An instance group represents a group of EC2 Linux instances, which enables the solution to associate a Log Config with multiple EC2 instances quickly. Centralized Logging with OpenSearch uses [Systems Manager Agent (SSM Agent)](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html) to install/configure Fluent Bit agent, and sends log data to [Kinesis Data Streams](https://aws.amazon.com/kinesis/data-streams/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/aws-healthscribe/overv
 ---
 
 # AWS Healthscribe
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/aws-healthscribe/images/card-background.jpg)
 

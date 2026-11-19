@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk launches beta release of new console design on January 10, 2023
-<a name="release-2023-01-10-eb-console-beta"></a>
 
 AWS Elastic Beanstalk launches beta release of new console design in AWS Region *US East (N. Virginia) – us-east-1*.
 

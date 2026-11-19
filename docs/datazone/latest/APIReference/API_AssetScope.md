@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AssetSc
 ---
 
 # AssetScope
-<a name="API_AssetScope"></a>
 
 The asset scope.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_BatchC
 ---
 
 # BatchCheckLayerAvailability
-<a name="API_BatchCheckLayerAvailability"></a>
 
 Checks the availability of one or more image layers in a repository.
 

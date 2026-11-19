@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # ReEncryptionAttributes
-<a name="API_ReEncryptionAttributes"></a>
 
 Parameters that are required to perform reencryption operation.
 

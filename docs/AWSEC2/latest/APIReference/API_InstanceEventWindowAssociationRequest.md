@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceE
 ---
 
 # InstanceEventWindowAssociationRequest
-<a name="API_InstanceEventWindowAssociationRequest"></a>
 
 One or more targets associated with the specified event window. Only one *type* of target (instance ID, instance tag, or Dedicated Host ID) can be associated with an event window.
 

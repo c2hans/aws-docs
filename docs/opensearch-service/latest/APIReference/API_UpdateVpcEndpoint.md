@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # UpdateVpcEndpoint
-<a name="API_UpdateVpcEndpoint"></a>
 
 Modifies an Amazon OpenSearch Service-managed interface VPC endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/how-it-works.h
 ---
 
 # How Verified Access works
-<a name="how-it-works"></a>
 
 AWS Verified Access evaluates each application request from your users and allows access based on:
 + Trust data sent by your chosen trust provider (from AWS or a third party).

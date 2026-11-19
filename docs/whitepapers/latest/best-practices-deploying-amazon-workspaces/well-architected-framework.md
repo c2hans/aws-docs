@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Well-Architected Framework
-<a name="well-architected-framework"></a>
 
  [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/) helps cloud architects build secure, high-performing, resilient, and efficient infrastructure for their applications and workloads. It describes the key concepts, design principles, and architectural best practices for designing and running workloads in the cloud. It is based on five key pillars:
 +  Operational excellence

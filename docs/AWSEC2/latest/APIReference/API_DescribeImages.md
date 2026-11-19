@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeImages
-<a name="API_DescribeImages"></a>
 
 Describes the specified images (AMIs, AKIs, and ARIs) available to you or all of the images available to you.
 

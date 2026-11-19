@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/security-trusted-identity
 ---
 
 # Getting started with trusted identity propagation in AWS Glue ETL
-<a name="security-trusted-identity-propagation-getting-started"></a>
 
 This section helps you configure AWS Glue application with interactive sessions to integrate with IAM Identity Center and enable [Trusted identity propagation](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html).
 

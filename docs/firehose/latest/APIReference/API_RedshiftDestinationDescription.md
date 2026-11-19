@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Redshif
 ---
 
 # RedshiftDestinationDescription
-<a name="API_RedshiftDestinationDescription"></a>
 
 Describes a destination in Amazon Redshift.
 

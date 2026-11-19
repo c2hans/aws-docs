@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateUs
 ---
 
 # UpdateUserRoutingProfile
-<a name="API_UpdateUserRoutingProfile"></a>
 
 Assigns the specified routing profile to the specified user.
 

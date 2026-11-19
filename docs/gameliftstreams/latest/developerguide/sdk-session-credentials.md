@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/sd
 ---
 
 # AWS credentials for your application
-<a name="sdk-session-credentials"></a>
 
 To give your application access to AWS resources in your account — such as your Amazon S3 buckets, DynamoDB tables, or other AWS services — provide an IAM role ARN when starting a stream session. Amazon GameLift Streams assumes the role and makes credentials available to your application automatically.
 

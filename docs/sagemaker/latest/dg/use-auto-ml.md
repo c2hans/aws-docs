@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/use-auto-ml.html
 ---
 
 # Automated ML, no-code, or low-code
-<a name="use-auto-ml"></a>
 
 Amazon SageMaker AI offers the following features to automate key machine learning tasks and use no-code or low-code solutions.
 + **Amazon SageMaker Canvas**: For a UI-based, no-code AutoML experience, new users should use the [Amazon SageMaker Canvas](https://docs.aws.amazon.com/sagemaker/latest/dg/canvas.html) application in [Amazon SageMaker Studio](studio-updated.md).

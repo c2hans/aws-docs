@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListA
 ---
 
 # ListApps
-<a name="API_ListApps"></a>
 
 Lists the apps in an AWS account. Results are paginated; use the `NextToken` parameter to retrieve additional results.
 

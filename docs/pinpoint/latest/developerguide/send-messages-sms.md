@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/developerguide/send-mess
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Send transactional SMS messages using Amazon Pinpoint
-<a name="send-messages-sms"></a>
 
 You can use the Amazon Pinpoint API to send SMS messages (text messages) to specific phone numbers or endpoint IDs. This section contains complete code examples that you can use to send SMS messages through the Amazon Pinpoint API by using an AWS SDK. Your account has to be in production and you have an active origination identity that can send SMS messages.
 

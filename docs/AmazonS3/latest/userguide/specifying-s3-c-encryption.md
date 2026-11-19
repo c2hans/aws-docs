@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-s3-
 ---
 
 # Specifying server-side encryption with customer-provided keys (SSE-C)
-<a name="specifying-s3-c-encryption"></a>
 
 Server-side encryption with customer-provided keys (SSE-C) is disabled by default for new general purpose buckets. Before you can upload objects using SSE-C, you must enable it by setting `BlockedEncryptionTypes` to `NONE` in your bucket's default encryption configuration. For more information, see [Blocking or unblocking SSE-C for a general purpose bucket](blocking-unblocking-s3-c-encryption-gpb.md).
 

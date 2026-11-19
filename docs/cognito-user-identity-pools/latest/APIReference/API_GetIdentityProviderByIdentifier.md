@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # GetIdentityProviderByIdentifier
-<a name="API_GetIdentityProviderByIdentifier"></a>
 
 Given the identifier of an identity provider (IdP), for example `examplecorp`, returns information about the user pool configuration for that IdP. For more information about IdPs, see [Third-party IdP sign-in](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-federation.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/productboard-configuring-
 ---
 
 # Configuring Productboard connections
-<a name="productboard-configuring-connections"></a>
 
 Productboard supports custom authentication and `OAuth2.0`. For `OAuth2.0` Productboard supports the `AUTHORIZATION_CODE` grant type.
 + This grant type is considered “three-legged” `OAuth` as it relies on redirecting users to the third party authorization server to authenticate the user. It is used when creating connections via the AWS Glue Console. The user creating a connection may by default rely on a AWS Glue owned connected app where they do not need to provide any `OAuth` related information except for their Productboard Client ID and Client Secret. The AWS Glue Console will redirect the user to Productboard where the user must login and allow AWS Glue the requested permissions to access their Productboard instance.

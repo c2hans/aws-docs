@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Post-migration validation
-<a name="tdvk-validation"></a>
 
 After metadata migration completes, confirm that vector fields were transformed correctly on the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection before you backfill documents and switch traffic.
 

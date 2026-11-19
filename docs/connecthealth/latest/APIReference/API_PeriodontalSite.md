@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Pe
 ---
 
 # PeriodontalSite
-<a name="API_PeriodontalSite"></a>
 
 The measurements at one probing site of a tooth.
 

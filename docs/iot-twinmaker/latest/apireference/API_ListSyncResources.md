@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Li
 ---
 
 # ListSyncResources
-<a name="API_ListSyncResources"></a>
 
 Lists the sync resources.
 

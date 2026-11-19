@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/tm-log-format.html
 ---
 
 # AWS Elemental MediaTailor transcode logs description and event types
-<a name="tm-log-format"></a>
 
 The following sections describe the logs that MediaTailor emits to describe events with the transcode service when preparing creatives for ad stitching. These are `TranscodeService` logs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data
 ---
 
 # Data visualization and analysis
-<a name="data-visualization-analysis"></a>
 
 After you complete your data quality checks, then you can move to the data analysis or visualization stage, as shown in the following diagram.
 

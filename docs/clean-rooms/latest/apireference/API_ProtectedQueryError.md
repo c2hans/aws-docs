@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedQueryError
-<a name="API_ProtectedQueryError"></a>
 
 Details of the error that caused the protected query to fail.
 

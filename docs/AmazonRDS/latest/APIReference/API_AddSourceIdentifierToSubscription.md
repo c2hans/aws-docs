@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_AddSou
 ---
 
 # AddSourceIdentifierToSubscription
-<a name="API_AddSourceIdentifierToSubscription"></a>
 
 Adds a source identifier to an existing RDS event notification subscription.
 

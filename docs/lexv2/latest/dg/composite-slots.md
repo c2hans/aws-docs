@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/composite-slots.html
 ---
 
 # Composite slot type
-<a name="composite-slots"></a>
 
 A composite slot is a combination of two or more slots that capture multiple pieces of information in a single user input. For example, you can configure the bot to elicit the location by requesting for the “city and state or zipcode”. In contrast, when the conversation is configured to use separate slot types resulting in a rigid conversational experience (“What is the city?” followed by “What is the zipcode?”). With a composite slot, you can capture all the information through a single slot. A composite slot is a combination of slots called subslots, such as city, state, and zip code.
 

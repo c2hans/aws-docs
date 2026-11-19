@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # InferenceConfiguration
-<a name="API_InferenceConfiguration"></a>
 
  The configuration parameters that control how the foundation model behaves during evaluation, including response generation settings.
 

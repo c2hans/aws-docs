@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Operatio
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [AcknowledgeDeadLetterQueueRecords](API_AcknowledgeDeadLetterQueueRecords.md)

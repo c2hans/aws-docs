@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/macie-cloudtrail.html
 ---
 
 # Logging Macie API calls with AWS CloudTrail
-<a name="macie-cloudtrail"></a>
 
 Amazon Macie integrates with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html), which is a service that provides a record of actions taken by a user, a role, or an AWS service. CloudTrail captures all API calls for Macie as management events. The calls captured include calls from the Amazon Macie console and programmatic calls to Amazon Macie API operations. By using the information collected by CloudTrail, you can determine the request that was made to Macie, the IP address from which the request was made, when it was made, and additional details.
 

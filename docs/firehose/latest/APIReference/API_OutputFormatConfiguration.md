@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_OutputF
 ---
 
 # OutputFormatConfiguration
-<a name="API_OutputFormatConfiguration"></a>
 
 Specifies the serializer that you want Firehose to use to convert the format of your data before it writes it to Amazon S3. This parameter is required if `Enabled` is set to true.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor
 ---
 
 # Setting up
-<a name="device-advisor-setting-up"></a>
 
 Before you use Device Advisor for the first time, complete the following tasks:
 

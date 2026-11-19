@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-r
 ---
 
 # Values specific for weighted alias records
-<a name="resource-record-sets-values-weighted-alias"></a>
 
 When you create weighted alias records, you specify the following values. For more information, see [Choosing between alias and non-alias records](resource-record-sets-choosing-alias-non-alias.md).
 

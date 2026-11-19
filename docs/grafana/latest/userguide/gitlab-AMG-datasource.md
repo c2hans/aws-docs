@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/gitlab-AMG-data
 ---
 
 # Connect to a GitLab data source
-<a name="gitlab-AMG-datasource"></a>
 
 The GitLab data source allows you to keep track of detailed GitLab statistics, such as top contributors, commits per day, or deployments per day. You can also use template variables, such as projects, to set up filters for your dashboards. You can combine data from the GitLab API with data from other sources.
 

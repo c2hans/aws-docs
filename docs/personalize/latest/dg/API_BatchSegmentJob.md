@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_BatchSegmentJo
 ---
 
 # BatchSegmentJob
-<a name="API_BatchSegmentJob"></a>
 
 Contains information on a batch segment job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 ---
 
 # Data retrieval APIs for AWS CloudShell
-<a name="awscloudshell"></a>
 
 AWS CloudShell provides the following APIs for data retrieval.
 

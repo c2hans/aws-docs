@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Creat
 ---
 
 # CreateLogicallyAirGappedBackupVault
-<a name="API_CreateLogicallyAirGappedBackupVault"></a>
 
 Creates a logical container to where backups may be copied.
 

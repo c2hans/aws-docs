@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/metr
 ---
 
 # Monitoring EMR Serverless
-<a name="metrics"></a>
 
 This section covers the ways that monitor your Amazon EMR Serverless applications and jobs.
 

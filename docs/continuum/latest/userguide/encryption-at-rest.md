@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/userguide/encryption-at
 ---
 
 # Encryption at rest in AWS Continuum
-<a name="encryption-at-rest"></a>
 
 By default, AWS Continuum encrypts all of your data at rest using AWS owned encryption keys. You don't need to configure anything for this default encryption.
 

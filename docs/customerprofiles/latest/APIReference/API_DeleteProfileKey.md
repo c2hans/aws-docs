@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DeleteProfileKey
-<a name="API_connect-customer-profiles_DeleteProfileKey"></a>
 
 Removes a searchable key from a customer profile.
 

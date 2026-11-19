@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_MarketoConn
 ---
 
 # MarketoConnectorProfileCredentials
-<a name="API_MarketoConnectorProfileCredentials"></a>
 
  The connector-specific profile credentials required by Marketo.
 

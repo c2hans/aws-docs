@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster
 ---
 
 # rds-cluster-deletion-protection-enabled
-<a name="rds-cluster-deletion-protection-enabled"></a>
 
 Checks if an Amazon Relational Database Service (Amazon RDS) cluster has deletion protection enabled. This rule is NON\_COMPLIANT if an RDS cluster does not have deletion protection enabled.
 

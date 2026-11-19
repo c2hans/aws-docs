@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cre
 ---
 
 # Creating a namespace for your application in AWS AppConfig
-<a name="appconfig-creating-namespace"></a>
 
 The procedures in this section help you create an AWS AppConfig artifact called an application. An application is simply an organizational construct like a folder that identifies the namespace of your application. This organizational construct has a relationship with some unit of executable code. For example, you could create an application called MyMobileApp to organize and manage configuration data for a mobile application installed by your users. You must create these artifacts before you can use AWS AppConfig to deploy and retrieve feature flags or free form configuration data.
 

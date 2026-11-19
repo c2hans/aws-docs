@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Automating your disaster recovery strategy
-<a name="automating"></a>
 
 You can optionally choose to implement full or partial automation to gain better control of disaster recovery. If you're using the backup and restore DR option, you can automate your backups by using [AWS Backup](https://aws.amazon.com/backup/), which supports all Amazon RDS databases as well as DynamoDB, Amazon DocumentDB, and Amazon Neptune tables.
 

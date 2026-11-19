@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/cfigs-mss-include
 ---
 
 # Stream selection fields
-<a name="cfigs-mss-include-streams"></a>
 
 Limit which incoming bitrates are available for playback and sort the streams in the output of an asset that uses this packaging configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/troubleshooting
 ---
 
 # Troubleshooting Amazon Bedrock API Error Codes
-<a name="troubleshooting-api-error-codes"></a>
 
 This section provides detailed information about the common errors you might encounter when using Amazon Bedrock APIs, the cause of the error, and the solution for resolving the error.
 

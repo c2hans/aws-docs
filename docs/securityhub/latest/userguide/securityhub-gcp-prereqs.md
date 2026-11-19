@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Prerequisites for integrating Security Hub CSPM with Google Cloud Platform
-<a name="securityhub-gcp-prereqs"></a>
 
 Before you integrate Google Cloud Platform (GCP) with AWS Security Hub CSPM, complete the following tasks in your AWS and GCP environments. This helps ensure that you and Security Hub CSPM have the resources and permissions that you need to monitor your GCP resources.
 

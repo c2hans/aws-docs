@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate data to the AWS Cloud by using Starburst
-<a name="migrate-data-to-the-aws-cloud-by-using-starburst"></a>
 
 *Antony Prasad Thevaraj and Suresh Veeragoni, Amazon Web Services*
 

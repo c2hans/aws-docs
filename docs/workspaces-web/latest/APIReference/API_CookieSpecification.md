@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_C
 ---
 
 # CookieSpecification
-<a name="API_CookieSpecification"></a>
 
 Specifies a single cookie or set of cookies in an end user's browser.
 

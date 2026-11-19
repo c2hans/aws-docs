@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Remove
 ---
 
 # RemoveEndpoints
-<a name="API_RemoveEndpoints"></a>
 
 Remove endpoints from an endpoint group.
 

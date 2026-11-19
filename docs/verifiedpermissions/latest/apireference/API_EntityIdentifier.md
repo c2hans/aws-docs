@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # EntityIdentifier
-<a name="API_EntityIdentifier"></a>
 
 Contains the identifier of an entity, including its ID and type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-ruby.html
 ---
 
 # Building Lambda Event Functions with Ruby
-<a name="lambda-ruby"></a>
 
 You can run Ruby code in AWS Lambda Event Functions. Lambda provides [runtimes](lambda-runtimes.md) for Ruby that run your code to process events. Your code runs in an environment that includes the AWS SDK for Ruby, with credentials from an AWS Identity and Access Management (IAM) role that you manage. To learn more about the SDK versions included with the Ruby runtimes, see [Runtime-included SDK versions](#ruby-sdk-included).
 

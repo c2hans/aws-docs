@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/doc-history
 ---
 
 # Document history for the Amazon Braket Developer Guide
-<a name="doc-history"></a>
 
 The following table describes the documentation releases for Amazon Braket.
 + **Latest API Reference update:** November 20, 2025

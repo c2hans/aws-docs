@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyUpdateTypeMutation
-<a name="API_AutomatedReasoningPolicyUpdateTypeMutation"></a>
 
 A mutation operation that modifies an existing custom type in the policy definition during the build process.
 

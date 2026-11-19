@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AxisL
 ---
 
 # AxisLabelReferenceOptions
-<a name="API_AxisLabelReferenceOptions"></a>
 
 The reference that specifies where the axis label is applied to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Fleet.
 ---
 
 # Fleet
-<a name="API_Fleet"></a>
 
 A set of dedicated instances for your build environment.
 

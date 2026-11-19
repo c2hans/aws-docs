@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec10-b
 ---
 
 # SEC10-BP03 Develop and test security incident response playbooks
-<a name="sec10-bp03"></a>
 
  A playbook gives a responder the technical steps to investigate and contain a scenario. A separate management plan defines who responds and how you communicate.
 

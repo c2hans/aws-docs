@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/face-liveness-call
 ---
 
 # Calling the Face Liveness APIs
-<a name="face-liveness-calling-apis"></a>
 
 You can test Amazon Rekognition Face Liveness with any supported AWS SDK , like the [AWS Python SDK Boto3](https://docs.aws.amazon.com/pythonsdk/) or the [AWS SDK for Java](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/welcome.html). You can call the `CreateFaceLivenessSession` and `GetFaceLivenessSessionResults` APIs with your chosen SDK. The following section demonstrates how to call these APIs with the Python and Java SDKs.
 

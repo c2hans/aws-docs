@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/enab
 ---
 
 # Configure proxy protocol for your Classic Load Balancer
-<a name="enable-proxy-protocol"></a>
 
 Proxy protocol is an internet protocol used to carry connection information from the source requesting the connection to the destination for which the connection was requested. Elastic Load Balancing uses proxy protocol version 1, which uses a human-readable header format.
 

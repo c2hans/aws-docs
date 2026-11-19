@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ge
 ---
 
 # GetExperimentDefinition
-<a name="API_GetExperimentDefinition"></a>
 
 Retrieves information about an experiment definition.
 

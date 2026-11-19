@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/hybr
 ---
 
 # Deleting a hybrid directory
-<a name="hybrid_directory_delete"></a>
 
 When you delete a hybrid directory, all directory data and snapshots are deleted and cannot be recovered. After the directory is deleted, all instances that were joined to the directory remain intact. However, you cannot use the directory credentials to log into these instances. You must log into these instances with a local user account.
 

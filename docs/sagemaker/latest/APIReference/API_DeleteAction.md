@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteAction
-<a name="API_DeleteAction"></a>
 
 Deletes an action.
 

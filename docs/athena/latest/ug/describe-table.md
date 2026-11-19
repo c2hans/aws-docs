@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/describe-table.html
 ---
 
 # DESCRIBE
-<a name="describe-table"></a>
 
 Shows one or more columns, including partition columns, for the specified table. This command is useful for examining the attributes of complex columns.
 

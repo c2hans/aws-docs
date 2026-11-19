@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLDataSplitConfig
-<a name="API_AutoMLDataSplitConfig"></a>
 
 This structure specifies how to split the data into train and validation datasets.
 

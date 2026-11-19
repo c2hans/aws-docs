@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/create-bot.html
 ---
 
 # Different ways to create a bot with Amazon Lex V2
-<a name="create-bot"></a>
 
 You can create a bot with Amazon Lex V2 in the following ways:
 

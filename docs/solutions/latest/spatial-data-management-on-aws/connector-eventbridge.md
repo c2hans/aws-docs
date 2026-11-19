@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Amazon EventBridge connector
-<a name="connector-eventbridge"></a>
 
 The Amazon EventBridge connector publishes events to a custom EventBridge event bus when asset lifecycle events occur. Use this connector to fan out resource events to multiple downstream consumers through EventBridge rules — notifying external systems, triggering workflows in other AWS accounts, or feeding event-driven architectures.
 

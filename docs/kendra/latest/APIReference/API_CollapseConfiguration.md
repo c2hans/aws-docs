@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_CollapseC
 ---
 
 # CollapseConfiguration
-<a name="API_CollapseConfiguration"></a>
 
 Specifies how to group results by document attribute value, and how to display them collapsed/expanded under a designated primary document for each group.
 

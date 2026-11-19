@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-s
 ---
 
 # AWS Infrastructure Setup
-<a name="sap-hana-pacemaker-sles-infra-setup"></a>
 
 This section covers the one-time setup tasks required to prepare your AWS environment for the cluster deployment:
 

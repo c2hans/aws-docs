@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Dest
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 Object specifying the status of a Destination.
 

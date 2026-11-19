@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # CustomDescriptor
-<a name="API_CustomDescriptor"></a>
 
 Custom descriptor for user-defined content
 

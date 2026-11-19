@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-
 ---
 
 # Replace the SSL certificate for your Classic Load Balancer
-<a name="elb-update-ssl-cert"></a>
 
 If you have an HTTPS listener, you deployed an SSL server certificate on your load balancer when you created the listener. Each certificate comes with a validity period. You must ensure that you renew or replace the certificate before its validity period ends.
 

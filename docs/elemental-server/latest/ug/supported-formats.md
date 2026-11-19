@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-server/latest/ug/supported-for
 This is version 2.18 of the AWS Elemental Server documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server/).
 
 # Reference: Supported Captions Formats
-<a name="supported-formats"></a>
 
 The following lists show supported input and output captions types. The table at the end of this topic provides definitions for each of these captions types.
 

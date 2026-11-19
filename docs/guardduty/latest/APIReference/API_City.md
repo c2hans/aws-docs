@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_City.h
 ---
 
 # City
-<a name="API_City"></a>
 
 Contains information about the city associated with the IP address.
 

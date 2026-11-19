@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_U
 ---
 
 # UpdateTrafficPolicy
-<a name="API_UpdateTrafficPolicy"></a>
 
 Update attributes of an already provisioned traffic policy resource.
 

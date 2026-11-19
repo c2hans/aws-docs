@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_C
 ---
 
 # CloudWatchLogsLogGroup
-<a name="API_CloudWatchLogsLogGroup"></a>
 
 ## Contents
 <a name="API_CloudWatchLogsLogGroup_Contents"></a>

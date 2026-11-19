@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/pyspark-par
 ---
 
 # Working with parameters in PySpark analysis templates
-<a name="pyspark-parameter-handling"></a>
 
 Parameters increase the flexibility of your PySpark analysis templates by allowing different values to be provided at job submission time. Parameters are accessible through the context object passed to your entrypoint function.
 

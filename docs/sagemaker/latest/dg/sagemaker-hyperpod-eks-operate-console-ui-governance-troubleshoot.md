@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Troubleshoot
-<a name="sagemaker-hyperpod-eks-operate-console-ui-governance-troubleshoot"></a>
 
 The following page contains known solutions for troubleshooting your HyperPod EKS clusters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Mo
 ---
 
 # MongoDbAtlasConfiguration
-<a name="API_agent_MongoDbAtlasConfiguration"></a>
 
 Contains details about the storage configuration of the knowledge base in MongoDB Atlas.
 

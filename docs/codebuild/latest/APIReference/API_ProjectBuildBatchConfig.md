@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Projec
 ---
 
 # ProjectBuildBatchConfig
-<a name="API_ProjectBuildBatchConfig"></a>
 
 Contains configuration information about a batch build project.
 

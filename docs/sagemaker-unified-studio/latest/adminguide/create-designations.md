@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Create designations
-<a name="create-designations"></a>
 
 You can create designations to define custom permission sets for project members in your Amazon SageMaker Unified Studio domain. After you create a designation, you can assign it to project members to control which actions they can perform within the project.
 

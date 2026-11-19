@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/programmi
 ---
 
 # Guided examples for calling AWS services using the AWS SDK for C\+\+
-<a name="programming-services"></a>
 
 If you are new to AWS or the AWS code examples, we recommend you start with [Getting started on code examples](getting-started-code-examples.md).
 

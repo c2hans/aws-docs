@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/t-create-update-en
 ---
 
 # Troubleshooting: Creating and updating an Amazon MWAA environment
-<a name="t-create-update-environment"></a>
 
 The topics on this page contain errors you can encounter when creating and updating an Amazon Managed Workflows for Apache Airflow environment and how to resolve these errors.
 

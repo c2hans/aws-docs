@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/dynamodb_example_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Query a DynamoDB table with nested attributes using an AWS SDK
-<a name="dynamodb_example_dynamodb_Scenarios_QueryWithNestedAttributes_section"></a>
 
 The following code examples show how to query a table with nested attributes.
 + Access and filter by nested attributes in DynamoDB items.

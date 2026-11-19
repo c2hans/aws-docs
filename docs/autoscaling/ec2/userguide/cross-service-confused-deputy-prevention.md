@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/cross-service-
 ---
 
 # Cross-service confused deputy prevention
-<a name="cross-service-confused-deputy-prevention"></a>
 
 The confused deputy problem is a security issue where an entity that doesn't have permission to perform an action can coerce a more-privileged entity to perform the action.
 

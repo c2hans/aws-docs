@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_GetSpeechS
 ---
 
 # GetSpeechSynthesisTask
-<a name="API_GetSpeechSynthesisTask"></a>
 
 Retrieves a specific SpeechSynthesisTask object based on its TaskID. This object contains information about the given speech synthesis task, including the status of the task, and a link to the S3 bucket containing the output of the task.
 

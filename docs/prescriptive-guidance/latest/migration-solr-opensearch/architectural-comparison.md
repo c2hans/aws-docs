@@ -3,6 +3,5 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Architectural comparison
-<a name="architectural-comparison"></a>
 
 This section discusses the fundamental architectural differences between Solr and OpenSearch.

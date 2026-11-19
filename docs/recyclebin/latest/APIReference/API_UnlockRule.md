@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_Unloc
 ---
 
 # UnlockRule
-<a name="API_UnlockRule"></a>
 
 Unlocks a retention rule. After a retention rule is unlocked, it can be modified or deleted only after the unlock delay period expires.
 

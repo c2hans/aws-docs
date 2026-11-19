@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pipedrive-configuring-con
 ---
 
 # Configuring Pipedrive connections
-<a name="pipedrive-configuring-connections"></a>
 
  Pipedrive supports AUTHORIZATION\_CODE grant type for OAuth2.
 +  This grant type is considered “three-legged” OAuth as it relies on redirecting users to the third party authorization server to authenticate the user. It is used when creating connections via the AWS Glue Console. The user creating a connection may by default rely on a AWS Glue-owned connected app where they do not need to provide any OAuth related information except for the Pipedrive instanceurl. The AWS Glue Console will redirect the user to Pipedrive where the user must login and allow AWS Glue the requested permissions to access their Pipedrive instance.

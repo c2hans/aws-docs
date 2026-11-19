@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/pricing-mod
 ---
 
 # Pricing models
-<a name="pricing-models"></a>
 
 The following topics provide general information about the pricing models available in AWS Marketplace.
 

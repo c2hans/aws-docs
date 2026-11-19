@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Candid
 ---
 
 # CandidateGenerationConfig
-<a name="API_CandidateGenerationConfig"></a>
 
 Stores the configuration information for how model candidates are generated using an AutoML job V2.
 

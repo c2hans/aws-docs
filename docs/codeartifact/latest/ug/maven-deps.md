@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/maven-deps.html
 ---
 
 # Use CodeArtifact with deps.edn
-<a name="maven-deps"></a>
 
 You use `deps.edn` with `clj` to manage dependencies for Clojure projects. This section shows how to configure `deps.edn` to use a CodeArtifact repository.
 

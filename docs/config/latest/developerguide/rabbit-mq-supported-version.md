@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rabbit-mq-s
 ---
 
 # rabbit-mq-supported-version
-<a name="rabbit-mq-supported-version"></a>
 
 Checks if an Amazon MQ RabbitMQ broker is running on a specified minimum supported engine version. The rule is NON\_COMPLIANT if the RabbitMQ broker is not running on the minimum supported engine version that you specify.
 

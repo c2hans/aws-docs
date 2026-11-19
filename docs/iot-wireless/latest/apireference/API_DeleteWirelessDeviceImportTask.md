@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Del
 ---
 
 # DeleteWirelessDeviceImportTask
-<a name="API_DeleteWirelessDeviceImportTask"></a>
 
 Delete an import task.
 

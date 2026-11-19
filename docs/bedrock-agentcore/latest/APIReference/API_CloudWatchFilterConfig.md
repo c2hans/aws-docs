@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # CloudWatchFilterConfig
-<a name="API_CloudWatchFilterConfig"></a>
 
 Filter configuration for narrowing down CloudWatch Logs sessions for evaluation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_S
 ---
 
 # StopArchiveExport
-<a name="API_StopArchiveExport"></a>
 
 Stops an in-progress export of emails from an archive.
 

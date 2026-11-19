@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Crea
 ---
 
 # CreateConfiguredTableAssociation
-<a name="API_CreateConfiguredTableAssociation"></a>
 
 Creates a configured table association. A configured table association links a configured table with a collaboration.
 

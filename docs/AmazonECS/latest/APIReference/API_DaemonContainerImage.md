@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonContainerImage
-<a name="API_DaemonContainerImage"></a>
 
 The details about the container image a daemon revision uses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/guide.html
 ---
 
 # .guide
-<a name="guide"></a>
 
 Used as a general extension, but ideal for websites that focus on travel destinations, services, and products.
 

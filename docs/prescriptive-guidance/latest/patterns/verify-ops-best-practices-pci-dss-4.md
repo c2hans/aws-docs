@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ve
 ---
 
 # Verify operational best practices for PCI DSS 4.0 by using AWS Config
-<a name="verify-ops-best-practices-pci-dss-4"></a>
 
 *Tala Qraitem and Alex Goff, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 ---
 
 # Storage
-<a name="storage"></a>
 
  The AWS Outposts rack service provides three storage types:
 +  [Instance storage](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) on supported EC2 instance types

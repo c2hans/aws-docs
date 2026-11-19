@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-
 ---
 
 # Creating a trail for an organization
-<a name="creating-trail-organization"></a>
 
 If you have created an organization in AWS Organizations, you can create a trail that logs all events for all AWS accounts in that organization. This is sometimes called an *organization trail*.
 

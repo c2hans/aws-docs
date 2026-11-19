@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/securit
 ---
 
 # API authentication and authorization for Amazon MQ
-<a name="security-api-authentication-authorization"></a>
 
 Amazon MQ uses standard AWS request signing for API authentication. For more information, see [Signing AWS API Requests](https://docs.aws.amazon.com/general/latest/gr/signing_aws_api_requests.html) in the *AWS General Reference*.
 

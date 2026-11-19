@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AgentRegistry::Registry CustomClaimValidationType
-<a name="aws-properties-agentregistry-registry-customclaimvalidationtype"></a>
 
 A validation rule applied to a single claim of an inbound JSON Web Token (JWT).
 

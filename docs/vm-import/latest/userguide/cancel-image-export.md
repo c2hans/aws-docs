@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/cancel-image-
 ---
 
 # Cancel an export image task
-<a name="cancel-image-export"></a>
 
 After you start an image export using VM Import/Export, you can cancel the export operation if needed. If you attempt to cancel the export task after it is complete or is in the process of transferring the final disk image, the cancel operation fails and returns an error.
 

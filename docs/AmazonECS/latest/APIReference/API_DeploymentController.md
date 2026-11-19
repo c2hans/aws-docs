@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Deploy
 ---
 
 # DeploymentController
-<a name="API_DeploymentController"></a>
 
 The deployment controller to use for the service.
 

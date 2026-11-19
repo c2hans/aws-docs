@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Desc
 ---
 
 # DescribeChangeSet
-<a name="API_DescribeChangeSet"></a>
 
 Provides information about a given change set.
 

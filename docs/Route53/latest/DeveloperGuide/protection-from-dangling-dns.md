@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/protection
 ---
 
 # Protection from dangling delegation records in Route 53
-<a name="protection-from-dangling-dns"></a>
 
 With Route 53, a customer can create a hosted zone, such as `example.com`, to host their DNS records. Each hosted zone comes with a "delegation set", which is a set of four name servers that a customer can use to configure NS records in the parent domain. These NS records can be called "delegation NS records", or "delegation records".
 

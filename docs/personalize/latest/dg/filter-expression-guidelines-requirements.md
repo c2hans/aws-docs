@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/filter-expression-
 ---
 
 # Guidelines and requirements
-<a name="filter-expression-guidelines-requirements"></a>
 
  When creating a filter expression, note the following guidelines and requirements:
 + You can't use filters to include or exclude items based on unstructured textual item metadata such as product descriptions.

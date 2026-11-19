@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-se
 ---
 
 # Amazon SES in AWS GovCloud (US)
-<a name="govcloud-ses"></a>
 
 Lists the differences for using Amazon SES in the AWS GovCloud (US) compared to other AWS Regions.
 

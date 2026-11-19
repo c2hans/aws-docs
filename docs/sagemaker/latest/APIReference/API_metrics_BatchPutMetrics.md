@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_metric
 ---
 
 # BatchPutMetrics
-<a name="API_metrics_BatchPutMetrics"></a>
 
 Used to ingest training metrics into SageMaker. These metrics can be visualized in SageMaker Studio.
 

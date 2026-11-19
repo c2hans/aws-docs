@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-ownersh
 ---
 
 # Troubleshooting
-<a name="object-ownership-error-responses"></a>
 
 When you apply the Bucket owner enforced setting for S3 Object Ownership, access control lists (ACLs) are disabled and you, as the bucket owner, automatically own all objects in your bucket. ACLs no longer affect permissions for the objects in your bucket. You can use policies to grant permissions. All S3 `PUT` requests must either specify the `bucket-owner-full-control` canned ACL or not specify an ACL, or these requests will fail. For more information, see [Controlling ownership of objects and disabling ACLs for your bucket](about-object-ownership.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ma
 ---
 
 # ManagedSourceEventMetadataSummary
-<a name="API_ManagedSourceEventMetadataSummary"></a>
 
 A short summary and metadata for a managed notification event.
 

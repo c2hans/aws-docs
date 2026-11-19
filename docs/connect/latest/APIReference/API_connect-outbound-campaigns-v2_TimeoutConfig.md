@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # TimeoutConfig
-<a name="API_connect-outbound-campaigns-v2_TimeoutConfig"></a>
 
 Contains preview outbound mode timeout configuration.
 

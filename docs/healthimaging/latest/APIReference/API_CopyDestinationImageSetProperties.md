@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Co
 ---
 
 # CopyDestinationImageSetProperties
-<a name="API_CopyDestinationImageSetProperties"></a>
 
 Copy the image set properties of the destination image set.
 

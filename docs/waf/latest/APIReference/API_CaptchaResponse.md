@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CaptchaRespo
 ---
 
 # CaptchaResponse
-<a name="API_CaptchaResponse"></a>
 
 The result from the inspection of the web request for a valid `CAPTCHA` token.
 

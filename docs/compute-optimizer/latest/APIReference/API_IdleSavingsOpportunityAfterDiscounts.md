@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # IdleSavingsOpportunityAfterDiscounts
-<a name="API_IdleSavingsOpportunityAfterDiscounts"></a>
 
 Describes the savings opportunity for idle resource recommendations after applying discounts.
 

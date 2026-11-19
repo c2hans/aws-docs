@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Validati
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Provides information about a particular parameter passed inside a request that resulted in an exception.
 

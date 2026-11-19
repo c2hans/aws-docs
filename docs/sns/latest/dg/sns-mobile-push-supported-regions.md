@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-mobile-push-supported-
 ---
 
 # Amazon SNS mobile application supported Regions
-<a name="sns-mobile-push-supported-regions"></a>
 
 Currently, you can create mobile applications in the following Regions:
 + US East (Ohio)

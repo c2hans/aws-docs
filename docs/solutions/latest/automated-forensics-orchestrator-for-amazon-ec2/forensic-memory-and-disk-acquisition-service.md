@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Forensic memory and disk acquisition service
-<a name="forensic-memory-and-disk-acquisition-service"></a>
 
 The diagram below represents the logical interaction view of the forensic memory and disk acquisition service. The Forensic triaging step function initiates forensic acquisition flow to perform memory and disk acquisition. Following memory and disk acquisition, the investigation function is initiated.
 

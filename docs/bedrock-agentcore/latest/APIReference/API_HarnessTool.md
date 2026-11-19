@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessTool
-<a name="API_HarnessTool"></a>
 
 A tool available to the agent loop.
 

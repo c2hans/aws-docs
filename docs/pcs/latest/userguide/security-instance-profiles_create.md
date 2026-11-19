@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/security-instance-p
 ---
 
 # Create an instance profile for AWS PCS
-<a name="security-instance-profiles_create"></a>
 
 ------
 #### [ AWS PCS console ]

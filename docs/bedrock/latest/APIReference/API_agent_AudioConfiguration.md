@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Au
 ---
 
 # AudioConfiguration
-<a name="API_agent_AudioConfiguration"></a>
 
 Configuration settings for processing audio content in multimodal knowledge bases.
 

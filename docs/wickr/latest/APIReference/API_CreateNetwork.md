@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_CreateNetw
 ---
 
 # CreateNetwork
-<a name="API_CreateNetwork"></a>
 
 Creates a new Wickr network with specified access level and configuration. This operation provisions a new communication network for your organization.
 

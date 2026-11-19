@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-endpoints-
 ---
 
 # Configuring TLS settings in domain configurations
-<a name="iot-endpoints-tls-config"></a>
 
 AWS IoT Core provides [predefined security polices](transport-security.md#tls-policy-table) for you to customize your Transport Layer Security (TLS) settings for [TLS 1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2) and [TLS 1.3](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.3) in domain configurations. A security policy is a combination of TLS protocols and their ciphers that determine the supported protocols and ciphers during TLS negotiations between a client and a server. With the supported security policies, you can manage your devices' TLS settings with more flexibility, apply the most up-to-date security measures when connecting new devices, and maintain consistent TLS configurations for existing devices.
 

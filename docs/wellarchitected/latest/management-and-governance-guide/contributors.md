@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  The following organizations and individuals contributed to this document:
 +  AWS Well-Architected Management & Governance Guidance

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/images-displaying-
 ---
 
 # Displaying bounding boxes
-<a name="images-displaying-bounding-boxes"></a>
 
 Amazon Rekognition Image operations can return bounding boxes coordinates for items that are detected in images. For example, the [DetectFaces](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectFaces.html) operation returns a bounding box ([BoundingBox](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_BoundingBox.html)) for each face detected in an image. You can use the bounding box coordinates to display a box around detected items. For example, the following image shows a bounding box surrounding a face.
 

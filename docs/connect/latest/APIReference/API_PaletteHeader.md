@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PaletteH
 ---
 
 # PaletteHeader
-<a name="API_PaletteHeader"></a>
 
 Contains color configuration for header elements in a workspace theme.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsClou
 ---
 
 # AwsCloudFormationStackOutputsDetails
-<a name="API_AwsCloudFormationStackOutputsDetails"></a>
 
 Provides information about the CloudFormation stack output.
 

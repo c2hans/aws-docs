@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetImageSource
-<a name="API_SheetImageSource"></a>
 
 The source of the image.
 

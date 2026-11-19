@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_JwtAuth.html
 ---
 
 # JwtAuth
-<a name="API_JwtAuth"></a>
 
 The JWT authentication configuration for Slurm REST API access.
 

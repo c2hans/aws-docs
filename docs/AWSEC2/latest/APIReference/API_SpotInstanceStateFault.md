@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SpotInsta
 ---
 
 # SpotInstanceStateFault
-<a name="API_SpotInstanceStateFault"></a>
 
 Describes a Spot Instance state change.
 

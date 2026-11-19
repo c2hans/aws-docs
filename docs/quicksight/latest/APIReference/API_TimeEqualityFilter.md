@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TimeE
 ---
 
 # TimeEqualityFilter
-<a name="API_TimeEqualityFilter"></a>
 
 A `TimeEqualityFilter` filters values that are equal to a given value.
 

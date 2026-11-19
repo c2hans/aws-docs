@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Configure a custom domain
-<a name="custom-domain"></a>
 
 By default, the solution is served from the CloudFront distribution URL (for example, `dXXXXXXXXXXXXX.cloudfront.net`). To serve it from your own domain (for example, `isb.example.com`), use one of the following approaches.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::DistributionTenant WebAclCustomization
-<a name="aws-properties-cloudfront-distributiontenant-webaclcustomization"></a>
 
 The AWS WAF web ACL customization specified for the distribution tenant.
 

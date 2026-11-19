@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_GetTr
 ---
 
 # GetTranscriptionJob
-<a name="API_GetTranscriptionJob"></a>
 
 Provides information about the specified transcription job.
 

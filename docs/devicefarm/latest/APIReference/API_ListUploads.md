@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListU
 ---
 
 # ListUploads
-<a name="API_ListUploads"></a>
 
 Gets information about uploads, given an AWS Device Farm project ARN.
 

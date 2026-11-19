@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/mobile-push-notifications.
 ---
 
 # Using Amazon SNS for mobile push notifications
-<a name="mobile-push-notifications"></a>
 
  This section describes how to send mobile push notifications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Example – Classify each scene against your own taxonomy
-<a name="functions-examples-taxonomy"></a>
 
 Reuses the classification that Elemental Inference has already produced, and asks the model only to map it onto categories of your own – a much cheaper prompt than sending frames. Requires an enabled contextual metadata output on the feed, and a per-scene trigger.
 

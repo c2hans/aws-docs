@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_Content.html
 ---
 
 # Content
-<a name="API_Content"></a>
 
 Represents textual data, plus an optional character set specification.
 

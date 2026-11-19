@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_U
 ---
 
 # UpdateResult
-<a name="API_UpdateResult"></a>
 
 The response elements represent the results of an update.
 

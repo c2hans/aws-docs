@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/built-in-slot-alphanumer
 ---
 
 # AMAZON.AlphaNumeric
-<a name="built-in-slot-alphanumeric"></a>
 
 Recognizes strings made up of letters and numbers, such as **APQ123**.
 

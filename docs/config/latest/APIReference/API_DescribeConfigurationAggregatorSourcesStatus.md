@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeC
 ---
 
 # DescribeConfigurationAggregatorSourcesStatus
-<a name="API_DescribeConfigurationAggregatorSourcesStatus"></a>
 
 Returns status information for sources within an aggregator. The status includes information about the last time AWS Config verified authorization between the source account and an aggregator account. In case of a failure, the status contains the related error code or message.
 

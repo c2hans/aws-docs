@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost03-
 ---
 
 # COST03-BP02 Implement efficient resource lifecycle management
-<a name="cost03-bp02"></a>
 
  When a workload changes, some resources become oversized, idle, or obsolete, and keep running until someone acts. Efficient lifecycle management matches capacity to real demand and retires resources you no longer need, through scaling and decommissioning triggered on a schedule or by events.
 

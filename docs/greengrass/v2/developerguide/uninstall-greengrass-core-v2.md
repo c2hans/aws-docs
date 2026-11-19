@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/uninstall-g
 ---
 
 # Uninstall the AWS IoT Greengrass Core software
-<a name="uninstall-greengrass-core-v2"></a>
 
 You can uninstall the AWS IoT Greengrass Core software to remove it from a device that you don't want to use as a Greengrass core device. You can also use these steps to clean up an installation that fails.
 

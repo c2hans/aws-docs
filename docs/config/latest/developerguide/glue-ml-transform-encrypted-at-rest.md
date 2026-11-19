@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/glue-ml-tra
 ---
 
 # glue-ml-transform-encrypted-at-rest
-<a name="glue-ml-transform-encrypted-at-rest"></a>
 
 Checks if an AWS Glue ML Transform has encryption at rest enabled. The rule is NON\_COMPLIANT if `MLUserDataEncryptionMode` is set to `DISABLED`.
 

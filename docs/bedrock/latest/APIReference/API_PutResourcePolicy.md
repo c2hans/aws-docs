@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_PutResou
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
 Adds a resource policy for a Bedrock resource.
 

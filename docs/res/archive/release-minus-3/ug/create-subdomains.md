@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/create-su
 ---
 
 # Creating subdomains
-<a name="create-subdomains"></a>
 
 If you are using a custom domain, you will need to set up subdomains to support the web and VDI portions of your portal.
 

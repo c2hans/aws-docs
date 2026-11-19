@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/respons
 ---
 
 # Configure a Lambda proxy integration with payload response streaming in API Gateway
-<a name="response-streaming-lambda-configure"></a>
 
 When you set up response payload streaming, you specify the transfer mode in the integration request of your resource. You configure these settings in the integration request to control how API Gateway behaves before and during the integration response.
 

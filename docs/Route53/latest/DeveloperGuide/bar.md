@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/bar.html
 ---
 
 # .bar
-<a name="bar"></a>
 
 Used by bars, pubs, and nightlife-related businesses and enthusiasts.
 

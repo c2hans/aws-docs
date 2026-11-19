@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # EventBridge event formats
-<a name="securityhub-v2-cwe-event-formats"></a>
 
  The **Findings Imported V2** event type uses the following event format.
 

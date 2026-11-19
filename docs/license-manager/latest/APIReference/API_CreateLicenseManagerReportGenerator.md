@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # CreateLicenseManagerReportGenerator
-<a name="API_CreateLicenseManagerReportGenerator"></a>
 
 Creates a report generator.
 

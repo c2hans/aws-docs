@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_JobPostLaunc
 ---
 
 # JobPostLaunchActionsLaunchStatus
-<a name="API_JobPostLaunchActionsLaunchStatus"></a>
 
 Launch Status of the Job Post Launch Actions.
 

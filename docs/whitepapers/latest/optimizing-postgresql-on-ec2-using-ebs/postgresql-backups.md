@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql
 ---
 
 # PostgreSQL backups
-<a name="postgresql-backups"></a>
 
 ## Backup methodologies
 <a name="backup-methodologies"></a>

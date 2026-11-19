@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-b
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Deploying VMware Cloud on AWS SDDC
-<a name="deploying-vmware-cloud-on-aws-sddc"></a>
 
  To start the deployment process, sign in to Cloud Services Portal (CSP).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard
 ---
 
 # Objectives
-<a name="objectives"></a>
 
 By implementing disaster recovery (DR) solutions to recover your data, your business can achieve the following benefits:
 + **Increased resiliency and durability** – Having a strong DR solution for your databases helps ensure that multiple copies of data are available 24/7. This results in maximizing the data availability, and it boosts the durability of the data and the system.

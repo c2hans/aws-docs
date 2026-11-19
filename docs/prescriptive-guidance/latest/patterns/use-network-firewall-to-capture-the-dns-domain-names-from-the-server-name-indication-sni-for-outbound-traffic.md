@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/us
 ---
 
 # Use Network Firewall to capture the DNS domain names from the Server Name Indication for outbound traffic
-<a name="use-network-firewall-to-capture-the-dns-domain-names-from-the-server-name-indication-sni-for-outbound-traffic"></a>
 
 *Kirankumar Chandrashekar, Amazon Web Services*
 

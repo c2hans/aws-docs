@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DateFil
 ---
 
 # DateFilter
-<a name="API_DateFilter"></a>
 
 A date filter for querying findings.
 

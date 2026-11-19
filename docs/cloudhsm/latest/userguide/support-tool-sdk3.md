@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/support-tool-s
 ---
 
 # AWS CloudHSM Client SDK 3 support tool
-<a name="support-tool-sdk3"></a>
 
 The script for the AWS CloudHSM Client SDK 3 extracts the following information:
 + Operating system and its current version

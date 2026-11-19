@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/use-sto
 ---
 
 # Use Storage Connectors with Session Scripts
-<a name="use-storage-connectors-with-session-scripts"></a>
 
 When WorkSpaces Applications storage connectors are enabled, they begin mounting when the session start scripts run. If your script relies on the storage connectors being mounted, you can wait for the connectors to be available. WorkSpaces Applications maintains the mount status of the storage connectors in the Windows registry on Windows instances, at the following key:
 

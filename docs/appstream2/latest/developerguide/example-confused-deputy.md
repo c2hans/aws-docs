@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/example
 ---
 
 # Example: WorkSpaces Applications service role cross-service confused deputy prevention
-<a name="example-confused-deputy"></a>
 
 WorkSpaces Applications assumes a service role using a variety of resource ARNs, which leads to a complicated conditional statement. We recommend using a wildcard resource type to prevent any unexpected WorkSpaces Applications resources failures.
 

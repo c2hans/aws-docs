@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/userguide/common-us
 ---
 
 # Filtering event rules using customized JSON event patterns in AWS User Notifications
-<a name="common-usecases"></a>
 
 Event rules are used to receive notifications about specific events. To apply additional filters to your event rules, you can customize event patterns for those rules. Advanced filtering options include:
 +  Suffix filtering - match against characters at the end of a value

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-custom-end
 ---
 
 # Server certificate configuration for OCSP stapling
-<a name="iot-custom-endpoints-cert-config"></a>
 
 AWS IoT Core supports [Online Certificate Status Protocol (OCSP)](https://www.rfc-editor.org/rfc/rfc6960.html) stapling for server certificate, also known as server certificate OCSP stapling, or OCSP stapling. It is a security mechanism used to check the revocation status on the server certificate in a Transport Layer Security (TLS) handshake. OCSP stapling in AWS IoT Core lets you add an additional layer of verification to your custom domain's server certificate validity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sending-authorization-over
 ---
 
 # Overview of Amazon SES sending authorization
-<a name="sending-authorization-overview"></a>
 
 This topic provides an overview of the sending authorization process and then explains how the email sending features of Amazon SES, such as sending quotas and notifications, work with sending authorization.
 

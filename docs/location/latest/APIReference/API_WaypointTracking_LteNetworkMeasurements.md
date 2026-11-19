@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # LteNetworkMeasurements
-<a name="API_WaypointTracking_LteNetworkMeasurements"></a>
 
 LTE network measurements.
 

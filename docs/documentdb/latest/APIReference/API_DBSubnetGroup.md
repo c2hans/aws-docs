@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_DBSub
 ---
 
 # DBSubnetGroup
-<a name="API_DBSubnetGroup"></a>
 
 Detailed information about a subnet group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # POST Initiate Failover
-<a name="set-up-redundancy-groups-initiate-failover"></a>
 
 Initiate failover of the specified node. The node must be part of a redundancy group, must have an “active” role, and must be running a channel. The redundancy group must also have least one backup node.
 

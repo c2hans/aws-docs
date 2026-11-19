@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Phase1Int
 ---
 
 # Phase1IntegrityAlgorithmsRequestListValue
-<a name="API_Phase1IntegrityAlgorithmsRequestListValue"></a>
 
 Specifies the integrity algorithm for the VPN tunnel for phase 1 IKE negotiations.
 

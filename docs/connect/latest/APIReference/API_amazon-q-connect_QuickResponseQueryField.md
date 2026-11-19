@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # QuickResponseQueryField
-<a name="API_amazon-q-connect_QuickResponseQueryField"></a>
 
 The quick response fields to query quick responses by.
 

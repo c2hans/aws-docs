@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Selection
-<a name="selection"></a>
 
 | CMPERF\_1: Have you identified the critical components of the architecture, performance data collection to determine the best performing architecture? |
 | --- |

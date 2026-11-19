@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd06-b
 ---
 
 # FND06-BP04 Optimize software licensing and third-party agreements
-<a name="fnd06-bp04"></a>
 
  Establish organization-wide governance and processes for managing software licenses and third-party agreements. This includes centralizing license management, standardizing procurement processes, optimizing licensing costs, and using consolidated procurement channels for better commercial terms and billing.
 

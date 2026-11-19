@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/default-outbou
 ---
 
 # Default outbound flow in Connect Customer: "This call is not being recorded"
-<a name="default-outbound"></a>
 
 **Important**
 Before using the **Send message** block in an outbound flow, see [Important information about using the Send message block in outbound flows](send-message.md#send-message-outboundflow-important) for recommended safeguards you should implement.

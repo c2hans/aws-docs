@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/tool-choice.html
 ---
 
 # Choosing a tool
-<a name="tool-choice"></a>
 
 Amazon Nova models support the functionality of *tool choice*. Tool choice allows you, as the developer, to control the manner in which a tool is called. There are three supported parameter options for tool choice: `tool`, `any`, and `auto`.
 + **Tool** - The specified tool will be called once.

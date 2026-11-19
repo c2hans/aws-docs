@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # View a phone number status and capabilities in AWS End User Messaging
-<a name="nx-features-phone-numbers-status"></a>
 
 This section explains how to check that status and capabilities of your phone number in the AWS End User Messaging console.
 

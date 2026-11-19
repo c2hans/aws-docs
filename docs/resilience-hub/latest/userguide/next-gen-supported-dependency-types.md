@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Supported dependency types
-<a name="next-gen-supported-dependency-types"></a>
 
 Dependency discovery identifies the following types of dependencies:
 + **AWS service endpoints** – Amazon S3, Amazon DynamoDB, SQS, and other AWS services your application calls.

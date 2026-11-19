@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/manag
 ---
 
 # Identifying which Regions display full versus partial resource results
-<a name="manage-service-check"></a>
 
 AWS Resource Explorer provides different levels of search results depending on your permissions and the type of index in each Region. All Regions have Resource Explorer-owned indexes that provide partial results (all tagged resources and supported untagged resources created after the [immediate resource discovery](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-immediate-resource-discovery-experience.html) release. Accessing partial results requires that you have, at minimum, the permissions in the `[AWSResourceExplorerReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerReadOnlyAccess.html)` managed policy). Regions with user-owned indexes provide complete search results. You can identify which type of results you'll receive in each Region by checking the index types using the procedures on this page.
 

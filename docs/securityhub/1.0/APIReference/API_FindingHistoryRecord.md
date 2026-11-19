@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Finding
 ---
 
 # FindingHistoryRecord
-<a name="API_FindingHistoryRecord"></a>
 
  A list of events that changed the specified finding during the specified time period. Each record represents a single finding change event.
 

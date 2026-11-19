@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-
 ---
 
 # Working with parameters in Parameter Store using Run Command commands
-<a name="sysman-param-runcommand"></a>
 
 You can work with parameters in Run Command. For more information, see [AWS Systems Manager Run Command](run-command.md).
 

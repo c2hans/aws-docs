@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Pr
 ---
 
 # ProviderResourceCapabilities
-<a name="API_ProviderResourceCapabilities"></a>
 
 The capabilities for an integrated resource from a third-party provider. This is a union type that contains provider-specific capabilities.
 

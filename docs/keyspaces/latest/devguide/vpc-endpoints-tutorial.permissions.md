@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/vpc-endpoints-
 ---
 
 # Step 4: Configure permissions for the VPC endpoint connection
-<a name="vpc-endpoints-tutorial.permissions"></a>
 
 The procedures in this step demonstrate how to configure rules and permissions for using the VPC endpoint with Amazon Keyspaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_PolicyTy
 ---
 
 # PolicyTypeScope
-<a name="API_PolicyTypeScope"></a>
 
 Defines the policy types that the specified Firewall Manager administrator can manage.
 

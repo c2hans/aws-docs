@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/comman
 ---
 
 # Pass Through to AWS Elemental Live
-<a name="commands-pass-through-aws-elemental-live"></a>
 
 | Nickname | Action | Signature | Description |
 | --- | --- | --- | --- |

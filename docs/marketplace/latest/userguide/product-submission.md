@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/product-sub
 ---
 
 # Submitting your product for publication on AWS Marketplace
-<a name="product-submission"></a>
 
 You use the product submission process to make your products available on AWS Marketplace. Products can be simple, such as a single Amazon Machine Image (AMI) with one price structure, or more complicated, with AWS CloudFormation templates, and complex pricing options and payment schedules. You define your product offering and submit it through AWS Partner Central in one of two ways:
 + Using the **Build** tab – For products that are less complex, you use the **Build** tab to completely define and submit your request.

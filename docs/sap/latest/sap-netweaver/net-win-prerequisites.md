@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-prerequ
 ---
 
 # Prerequisites
-<a name="net-win-prerequisites"></a>
 
 ## Specialized Knowledge
 <a name="net-win-specialized-knowledge"></a>

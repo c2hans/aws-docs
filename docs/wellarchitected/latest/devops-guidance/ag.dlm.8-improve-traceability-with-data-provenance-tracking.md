@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.DLM.8] Improve traceability with data provenance tracking
-<a name="ag.dlm.8-improve-traceability-with-data-provenance-tracking"></a>
 
  **Category:** RECOMMENDED
 

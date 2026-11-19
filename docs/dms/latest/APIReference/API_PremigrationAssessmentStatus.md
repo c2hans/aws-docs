@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_Premigration
 ---
 
 # PremigrationAssessmentStatus
-<a name="API_PremigrationAssessmentStatus"></a>
 
 The results returned in `describe-replications` to display the results of the premigration assessment from the replication configuration.
 

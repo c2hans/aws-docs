@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MemoryDB::Cluster Endpoint
-<a name="aws-properties-memorydb-cluster-endpoint"></a>
 
 Represents the information required for client programs to connect to the cluster and its nodes.
 

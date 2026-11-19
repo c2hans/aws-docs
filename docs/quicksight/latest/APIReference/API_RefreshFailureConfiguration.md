@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Refre
 ---
 
 # RefreshFailureConfiguration
-<a name="API_RefreshFailureConfiguration"></a>
 
 The failure configuration of a dataset.
 

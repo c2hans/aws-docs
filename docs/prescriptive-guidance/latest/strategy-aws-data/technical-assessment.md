@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Technical assessment
-<a name="technical-assessment"></a>
 
 A technical assessment is important because it gives you a map of the current technical capabilities that your company has in place. The assessment covers data governance, data ingestion, data transformation, data sharing, ML platform, process, and automation.
 

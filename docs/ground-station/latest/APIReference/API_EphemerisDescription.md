@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_E
 ---
 
 # EphemerisDescription
-<a name="API_EphemerisDescription"></a>
 
 Description of ephemeris.
 

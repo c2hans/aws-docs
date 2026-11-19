@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListCloud
 ---
 
 # ListCloudConnectors
-<a name="API_ListCloudConnectors"></a>
 
 Returns a list of connectors filtered by its AWS Lambda Amazon Resource Name (ARN) and `type`.
 

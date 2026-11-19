@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_In
 ---
 
 # InsightsByAssessment
-<a name="API_InsightsByAssessment"></a>
 
 A summary of the latest analytics data for a specific active assessment.
 

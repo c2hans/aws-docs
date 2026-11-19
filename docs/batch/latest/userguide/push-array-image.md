@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/push-array-image.
 ---
 
 # Push your image to Amazon ECR
-<a name="push-array-image"></a>
 
 Now that you built and tested your Docker container, push it to an image repository. This example uses Amazon ECR, but you can use another registry, such as DockerHub.
 

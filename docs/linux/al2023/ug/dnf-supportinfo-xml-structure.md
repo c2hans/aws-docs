@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/dnf-supportinfo-xml-stru
 ---
 
 # SupportInfo XML Structure
-<a name="dnf-supportinfo-xml-structure"></a>
 
 This page documents the v1.0 XML schema used to define package support lifecycles, timelines, and classifications for Linux distributions. The schema is independent of DNF and not specific to any single distribution. You can consume it directly from any tool. The `dnf supportinfo` plugin is one such consumer.
 + **Schema definition (XSD):** `https://cdn.amazonlinux.com/al2023/core/supportinfo-1.0.xsd`

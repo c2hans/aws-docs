@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-v3-mech
 ---
 
 # Supported mechanisms for AWS CloudHSM Client SDK 3
-<a name="pkcs11-v3-mechanisms"></a>
 
 The PKCS \#11 library supports the following algorithms for AWS CloudHSM Client SDK 3:
 + **Encryption and decryption** – AES-CBC, AES-CTR, AES-ECB, AES-GCM, DES3-CBC, DES3-ECB, RSA-OAEP, and RSA-PKCS

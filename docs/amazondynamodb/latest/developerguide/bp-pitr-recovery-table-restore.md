@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 ---
 
 # Recovery by initiating a table restore
-<a name="bp-pitr-recovery-table-restore"></a>
 
 With PITR, you can restore a table to any specific second in the PITR recovery window. The PITR recovery window begins when PITR is enabled and holds up to 35 days of history. You can also configure it for a shorter duration.
 

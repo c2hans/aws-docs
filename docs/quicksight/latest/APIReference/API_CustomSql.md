@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomSql
-<a name="API_CustomSql"></a>
 
 A physical table type built from the results of the custom SQL query.
 

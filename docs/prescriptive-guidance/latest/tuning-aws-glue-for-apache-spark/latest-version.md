@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-
 ---
 
 # Use the latest AWS Glue version
-<a name="latest-version"></a>
 
 We recommend using the latest AWS Glue version. There are several optimizations and upgrades built into each version that might automatically improve job performance. For example, AWS Glue 4.0 provides following new features:
 + **New optimized Apache Spark 3.3.0 runtime** – AWS Glue 4.0 builds upon the Apache Spark 3.3.0 runtime, bringing comparable performance improvements to open source Spark. The Spark 3.3.0 runtime builds upon many of the innovations from Spark 2.x.

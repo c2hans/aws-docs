@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # SessionIntegrationConfiguration
-<a name="API_amazon-q-connect_SessionIntegrationConfiguration"></a>
 
 The configuration information for the session integration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # UriPathRouteInput
-<a name="API_UriPathRouteInput"></a>
 
 The configuration for the URI path route type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Elem
 ---
 
 # ElementalActivationsReadOnlyAccess
-<a name="ElementalActivationsReadOnlyAccess"></a>
 
 **Description**: Read-only access to the detailed list of purchased assets associated to the AWS account of the user
 

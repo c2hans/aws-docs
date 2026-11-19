@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/waf-global-
 ---
 
 # waf-global-webacl-not-empty
-<a name="waf-global-webacl-not-empty"></a>
 
 Checks whether a WAF Global Web ACL contains any WAF rules or rule groups. This rule is NON\_COMPLIANT if a Web ACL does not contain any WAF rule or rule group.
 

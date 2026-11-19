@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-privacy.html
 ---
 
 # Data Privacy in Amazon SageMaker AI
-<a name="data-privacy"></a>
 
 Amazon SageMaker AI collects aggregate information about the use of AWS-owned and open source libraries used during training. SageMaker AI uses this aggregate metadata to improve services and customer experience.
 

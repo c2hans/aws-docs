@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/s3files-volumes.h
 ---
 
 # Amazon S3 Files volumes
-<a name="s3files-volumes"></a>
 
 S3 Files provides direct file system access to data stored in Amazon Simple Storage Service (Amazon S3) buckets. With AWS Batch, you can define S3 Files volumes in your job definitions so that your containers can read and write Amazon S3 data using standard file operations.
 

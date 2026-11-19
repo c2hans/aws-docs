@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Example of a JSON training data configuration file
-<a name="machine-learning-processing-training-config-file-example"></a>
 
 Here is a sample training data configuration file that describes a graph for a node-classification task:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetDow
 ---
 
 # GetDownloadUrlForLayer
-<a name="API_GetDownloadUrlForLayer"></a>
 
 Retrieves the pre-signed Amazon S3 download URL corresponding to an image layer. You can only get URLs for image layers that are referenced in an image.
 

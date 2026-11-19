@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Aggregate
 ---
 
 # AggregateConformancePackComplianceSummaryFilters
-<a name="API_AggregateConformancePackComplianceSummaryFilters"></a>
 
 Filters the results based on account ID and region.
 

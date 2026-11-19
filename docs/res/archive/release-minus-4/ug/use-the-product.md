@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/use-the-p
 ---
 
 # Use the product
-<a name="use-the-product"></a>
 
 This section offers guidance to users on using virtual desktops to collaborate with other users.
 

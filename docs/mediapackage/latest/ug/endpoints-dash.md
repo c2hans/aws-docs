@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/endpoints-dash.ht
 ---
 
 # Creating a DASH endpoint
-<a name="endpoints-dash"></a>
 
 Create an endpoint that formats content for devices that support MPEG-DASH.
 

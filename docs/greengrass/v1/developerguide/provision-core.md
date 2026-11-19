@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/developerguide/provision-c
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # Provision an AWS IoT thing to use as a Greengrass core
-<a name="provision-core"></a>
 
 Greengrass *cores* are devices that run the AWS IoT Greengrass Core software to manage local IoT processes. To set up a Greengrass core, you create an AWS IoT *thing*, which represents a device or logical entity that connects to AWS IoT. When you register a device as an AWS IoT thing, that device can use a digital certificate and keys that allow it to access AWS IoT. You use an [AWS IoT policy](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html) to allow the device to communicate with the AWS IoT and AWS IoT Greengrass services.
 

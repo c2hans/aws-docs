@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_F
 ---
 
 # FailedGroupingRecommendationEntry
-<a name="API_FailedGroupingRecommendationEntry"></a>
 
 Indicates the accepted grouping recommendation whose implementation failed.
 

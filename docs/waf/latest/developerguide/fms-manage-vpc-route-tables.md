@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/fms-manage-vpc
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # How Firewall Manager manages and monitors VPC route tables for your policy
-<a name="fms-manage-vpc-route-tables"></a>
 
 This section explains how Firewall Manager manages and monitors your VPC route tables.
 

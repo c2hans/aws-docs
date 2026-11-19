@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-forecas
 ---
 
 # Create forecast groups in Connect Customer
-<a name="create-forecast-groups"></a>
 
 Forecast groups are a way for you to combine different queues into one forecast. With forecast groups, you can create a forecast from aggregated data from multiple queues, instead of from just one queue.
 

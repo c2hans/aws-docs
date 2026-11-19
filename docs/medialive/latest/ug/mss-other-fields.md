@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/mss-other-fields.htm
 ---
 
 # Fields for other Microsoft Smooth features
-<a name="mss-other-fields"></a>
 
 ## Fields for resiliency
 <a name="smooth-resiliency"></a>

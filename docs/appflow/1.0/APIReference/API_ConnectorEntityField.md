@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorEn
 ---
 
 # ConnectorEntityField
-<a name="API_ConnectorEntityField"></a>
 
  Describes the data model of a connector field. For example, for an *account* entity, the fields would be *account name*, *account ID*, and so on.
 

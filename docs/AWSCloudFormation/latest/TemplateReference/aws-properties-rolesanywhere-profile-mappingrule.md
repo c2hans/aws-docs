@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RolesAnywhere::Profile MappingRule
-<a name="aws-properties-rolesanywhere-profile-mappingrule"></a>
 
 A single mapping entry for each supported specifier or sub-field.
 

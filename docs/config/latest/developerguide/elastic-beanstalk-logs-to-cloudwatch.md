@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/elastic-bea
 ---
 
 # elastic-beanstalk-logs-to-cloudwatch
-<a name="elastic-beanstalk-logs-to-cloudwatch"></a>
 
 Checks if AWS Elastic Beanstalk environments are configured to send logs to Amazon CloudWatch Logs. The rule is NON\_COMPLIANT if the value of `StreamLogs` is false.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_MlflowP
 ---
 
 # MlflowPropertiesInput
-<a name="API_MlflowPropertiesInput"></a>
 
 The MLflow properties of a connection.
 

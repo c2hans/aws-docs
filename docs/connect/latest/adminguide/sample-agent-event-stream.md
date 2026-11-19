@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/sample-agent-e
 ---
 
 # Sample agent event stream in Connect Customer
-<a name="sample-agent-event-stream"></a>
 
 In the following sample agent event stream, the agent is assigned to a routing profile that requires them to take both chats and calls. They can take one call, and up to three chats at a time.
 

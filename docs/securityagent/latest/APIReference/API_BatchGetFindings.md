@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchGetFindings
-<a name="API_BatchGetFindings"></a>
 
 Retrieves information about one or more security findings in an agent space.
 

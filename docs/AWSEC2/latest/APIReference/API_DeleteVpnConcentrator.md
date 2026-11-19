@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpn
 ---
 
 # DeleteVpnConcentrator
-<a name="API_DeleteVpnConcentrator"></a>
 
 Deletes the specified VPN concentrator.
 

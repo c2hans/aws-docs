@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/certifi
 ---
 
 # Prerequisites
-<a name="certificate-based-authentication-prereq"></a>
 
 Complete the following steps before you use certificate-based authentication.
 

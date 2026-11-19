@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_KafkaClusterEncrypt
 ---
 
 # KafkaClusterEncryptionInTransit
-<a name="API_KafkaClusterEncryptionInTransit"></a>
 
 Details of encryption in transit to the Apache Kafka cluster.
 

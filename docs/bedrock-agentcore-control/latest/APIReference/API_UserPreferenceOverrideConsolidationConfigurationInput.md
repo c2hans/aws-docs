@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UserPreferenceOverrideConsolidationConfigurationInput
-<a name="API_UserPreferenceOverrideConsolidationConfigurationInput"></a>
 
 Input for user preference override consolidation configuration in a memory strategy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/version
 ---
 
 # Versions
-<a name="versions"></a>
 
 ## URI
 <a name="versions-url"></a>

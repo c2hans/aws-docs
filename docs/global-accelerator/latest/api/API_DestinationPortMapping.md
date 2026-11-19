@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Destin
 ---
 
 # DestinationPortMapping
-<a name="API_DestinationPortMapping"></a>
 
 The port mappings for a specified endpoint IP address (destination).
 

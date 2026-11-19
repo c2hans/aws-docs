@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_FargateProfi
 ---
 
 # FargateProfileIssue
-<a name="API_FargateProfileIssue"></a>
 
 An issue that is associated with the Fargate profile.
 

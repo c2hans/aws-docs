@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/step-scaling-c
 ---
 
 # Create a step scaling policy for scale out
-<a name="step-scaling-create-scale-out-policy"></a>
 
 To create a step scaling policy for scale out for your Auto Scaling group, use one of the following methods:
 

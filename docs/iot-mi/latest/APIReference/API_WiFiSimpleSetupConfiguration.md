@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_WiFiSimpl
 ---
 
 # WiFiSimpleSetupConfiguration
-<a name="API_WiFiSimpleSetupConfiguration"></a>
 
 The Wi-Fi Simple Setup configuration for the managed thing, which defines provisioning capabilities and timeout settings.
 

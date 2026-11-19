@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetTags.html
 ---
 
 # GetTags
-<a name="API_GetTags"></a>
 
 Retrieves a list of tags associated with a resource.
 

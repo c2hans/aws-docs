@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/feat
 ---
 
 # Create IAM policies with the AWS SDK for Java 2.x
-<a name="feature-iam-policy-builder"></a>
 
 The [IAM Policy Builder API](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/policybuilder/iam/package-summary.html) is a library that you can use to build [IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) in Java and upload them to AWS Identity and Access Management (IAM).
 

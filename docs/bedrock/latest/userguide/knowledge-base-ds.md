@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Prerequisites for your Amazon Bedrock knowledge base data
-<a name="knowledge-base-ds"></a>
 
 A data source contains files or content with information that can be retrieved when your knowledge base is queried. You must store your documents or content in at least one of the [supported data sources](https://docs.aws.amazon.com/bedrock/latest/userguide/data-source-connectors.html).
 

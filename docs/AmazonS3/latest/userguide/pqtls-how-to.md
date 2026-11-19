@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/pqtls-how-to.h
 ---
 
 # Configuring hybrid post-quantum TLS for your client
-<a name="pqtls-how-to"></a>
 
 To use PQ-TLS with Amazon S3, your client must support post-quantum key exchange algorithms. Also ensure that your client supports the hybrid approach, which combines traditional elliptic curve cryptography with post-quantum algorithms like ML-KEM (Module-Lattice-Based Key Encapsulation Mechanism).
 

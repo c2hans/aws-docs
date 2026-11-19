@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # UpdateCentralizationRuleForOrganization
-<a name="API_UpdateCentralizationRuleForOrganization"></a>
 
 Updates an existing centralization rule that applies across an AWS Organization. This operation can only be called by the organization's management account or a delegated administrator account.
 

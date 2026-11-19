@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Transform Solr traffic
-<a name="transform-solr"></a>
 
 The Solr transform providers translate captured Solr traffic into OpenSearch-compatible requests.
 

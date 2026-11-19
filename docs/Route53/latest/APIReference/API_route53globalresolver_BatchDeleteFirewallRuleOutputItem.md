@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # BatchDeleteFirewallRuleOutputItem
-<a name="API_route53globalresolver_BatchDeleteFirewallRuleOutputItem"></a>
 
 The result of deleting a firewall rule in a batch operation.
 

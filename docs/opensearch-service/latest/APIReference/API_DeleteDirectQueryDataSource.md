@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DeleteDirectQueryDataSource
-<a name="API_DeleteDirectQueryDataSource"></a>
 
  Deletes a previously configured direct query data source from Amazon OpenSearch Service.
 

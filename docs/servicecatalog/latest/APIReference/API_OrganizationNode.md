@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_O
 ---
 
 # OrganizationNode
-<a name="API_OrganizationNode"></a>
 
 Information about the organization node.
 

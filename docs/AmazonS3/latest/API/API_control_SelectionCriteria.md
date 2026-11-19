@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Selectio
 ---
 
 # SelectionCriteria
-<a name="API_control_SelectionCriteria"></a>
 
 ## Contents
 <a name="API_control_SelectionCriteria_Contents"></a>

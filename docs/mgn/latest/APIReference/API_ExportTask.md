@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ExportTask.h
 ---
 
 # ExportTask
-<a name="API_ExportTask"></a>
 
 Export task.
 

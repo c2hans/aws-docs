@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/support-for-ocr
 ---
 
 # Support for conversion using OCR optical character recognition)
-<a name="support-for-ocr"></a>
 
 You can convert source captions that are in DVB-Sub or SCTE-27 format into output captions that are in WebVTT format. AWS Elemental Live uses OCR (optical character recognition) to perform this conversion.
 

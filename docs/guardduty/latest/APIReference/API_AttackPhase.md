@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Attack
 ---
 
 # AttackPhase
-<a name="API_AttackPhase"></a>
 
 Contains information about one phase of an attack.
 

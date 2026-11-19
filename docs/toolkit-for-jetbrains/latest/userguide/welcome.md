@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/w
 ---
 
 # AWS Toolkit for JetBrains
-<a name="welcome"></a>
 
 The AWS Toolkit for JetBrains is an open source plugin for the integrated development environments (IDEs) from JetBrains. The toolkit makes it easier for you to develop, debug, and deploy serverless applications with Amazon Web Services (AWS) by making your AWS resources available from your JetBrains IDE.
 

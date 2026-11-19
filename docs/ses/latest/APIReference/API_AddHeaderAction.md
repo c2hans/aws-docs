@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_AddHeaderAct
 ---
 
 # AddHeaderAction
-<a name="API_AddHeaderAction"></a>
 
 When included in a receipt rule, this action adds a header to the received email.
 

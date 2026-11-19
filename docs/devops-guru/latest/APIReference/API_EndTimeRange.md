@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_EndT
 ---
 
 # EndTimeRange
-<a name="API_EndTimeRange"></a>
 
  A range of time that specifies when anomalous behavior in an anomaly or insight ended.
 

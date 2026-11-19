@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_SampleDocum
 ---
 
 # SampleDocuments
-<a name="API_SampleDocuments"></a>
 
 Describes a structure that contains the Amazon S3 bucket and an array of the corresponding keys used to identify the location for your sample documents.
 

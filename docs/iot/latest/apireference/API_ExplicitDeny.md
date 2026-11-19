@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ExplicitDeny
 ---
 
 # ExplicitDeny
-<a name="API_ExplicitDeny"></a>
 
 Information that explicitly denies authorization.
 

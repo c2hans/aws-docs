@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # Understanding hypothesis visualizations
-<a name="Investigations-HypothesisVisualization"></a>
 
 When CloudWatch investigations generates hypotheses that include multiple resources, the investigation view provides a visual representation of the causal relationships between those resources. This visual hypothesis view helps you quickly understand complex issues without reading lengthy text explanations.
 

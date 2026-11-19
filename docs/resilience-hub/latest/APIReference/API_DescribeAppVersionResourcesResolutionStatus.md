@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_D
 ---
 
 # DescribeAppVersionResourcesResolutionStatus
-<a name="API_DescribeAppVersionResourcesResolutionStatus"></a>
 
 Returns the resolution status for the specified resolution identifier for an application version. If `resolutionId` is not specified, the current resolution status is returned.
 

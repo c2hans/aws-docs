@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor-use-vers
 ---
 
 # Check the version of Code Editor
-<a name="code-editor-use-version"></a>
 
 The following steps show how to check the version of your Code Editor application.
 

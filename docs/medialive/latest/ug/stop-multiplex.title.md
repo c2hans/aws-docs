@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/stop-multiplex.title
 ---
 
 # Stopping activity in the multiplex
-<a name="stop-multiplex.title"></a>
 
 You can stop a multiplex or a channel.
 

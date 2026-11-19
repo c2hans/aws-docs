@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/automation-o
 ---
 
 # Enabling Automation for your organization
-<a name="automation-org"></a>
 
 When you enable Automation for your organization’s management account, you can also configure Automation for your organization’s member accounts. With this centralized approach, you can implement optimization actions across your organization at scale, which helps you optimize for cost and performance.
 

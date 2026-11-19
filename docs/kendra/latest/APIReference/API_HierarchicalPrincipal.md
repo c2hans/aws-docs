@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Hierarchi
 ---
 
 # HierarchicalPrincipal
-<a name="API_HierarchicalPrincipal"></a>
 
  Information to define the hierarchy for which documents users should have access to.
 

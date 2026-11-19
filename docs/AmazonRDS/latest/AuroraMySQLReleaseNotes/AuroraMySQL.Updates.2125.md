@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes
 ---
 
 # Aurora MySQL database engine updates 2025-04-09 (version 2.12.5, compatible with MySQL 5.7.44) - RDS Extended Support version
-<a name="AuroraMySQL.Updates.2125"></a><a name="2125"></a><a name="2.12.5"></a>
+<a name="2125"></a><a name="2.12.5"></a>
 
  **Version:** 2.12.5
 

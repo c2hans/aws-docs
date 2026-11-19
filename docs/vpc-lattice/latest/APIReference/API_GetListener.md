@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetL
 ---
 
 # GetListener
-<a name="API_GetListener"></a>
 
 Retrieves information about the specified listener for the specified service.
 

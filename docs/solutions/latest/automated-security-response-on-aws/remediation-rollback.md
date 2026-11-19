@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Remediation rollback
-<a name="remediation-rollback"></a>
 
 Remediation rollback lets you reverse a completed remediation. It returns the affected resource to the state it was in before the solution changed it. Rollback is an opt-in feature. You enable it by setting the **EnableRollback** parameter to `yes` when you deploy the administrator stack. Only users in the administrator or delegated administrator roles can trigger it (see [Rolling back a remediation](rolling-back-a-remediation.md)). It is supported for a defined set of controls whose remediation is a single, reversible configuration change.
 

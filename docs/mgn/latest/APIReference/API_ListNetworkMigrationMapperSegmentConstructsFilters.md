@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationMapperSegmentConstructsFilters
-<a name="API_ListNetworkMigrationMapperSegmentConstructsFilters"></a>
 
 Filters for listing mapper segment constructs.
 

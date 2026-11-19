@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-tem
 ---
 
 # IAM temporary delegation
-<a name="access_policies-temporary-delegation"></a>
 
 ## Overview
 <a name="temporary-delegation-overview"></a>

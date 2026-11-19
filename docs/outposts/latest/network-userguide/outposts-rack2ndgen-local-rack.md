@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/network-userguide/outpos
 ---
 
 # Local network connectivity for Outposts network racks
-<a name="outposts-rack2ndgen-local-rack"></a>
 
 You need the following components to connect your Outposts network racks to your on-premises network:
 + Physical connectivity from the Outposts network racks patch panel to your customer local network devices.

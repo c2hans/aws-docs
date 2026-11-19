@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-s
 ---
 
 # Logging CloudTrail S3 data events for data governance, security, and compliance
-<a name="logging-s3-data-events-governance"></a>
 
 **Upcoming: new Amazon S3 data event types**
 Starting December 21, 2026, AWS CloudTrail will deliver two new types of Amazon S3 data events to trails that already log S3 data events: S3 Lifecycle events and S3 authentication failure events. These event types are not available yet, and CloudTrail will not deliver them before December 21, 2026.

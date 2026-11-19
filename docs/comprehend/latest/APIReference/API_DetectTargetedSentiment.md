@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Detec
 ---
 
 # DetectTargetedSentiment
-<a name="API_DetectTargetedSentiment"></a>
 
 Inspects the input text and returns a sentiment analysis for each entity identified in the text.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Crea
 ---
 
 # CreateEncoderConfiguration
-<a name="API_CreateEncoderConfiguration"></a>
 
 Creates an EncoderConfiguration object.
 

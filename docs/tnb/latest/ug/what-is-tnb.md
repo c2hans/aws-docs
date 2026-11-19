@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/what-is-tnb.html
 ---
 
 # What is AWS Telco Network Builder?
-<a name="what-is-tnb"></a>
 
 AWS Telco Network Builder (AWS TNB) is an AWS service that provides communication service providers (CSPs) with an efficient way to deploy, manage, and scale 5G networks on AWS infrastructure.
 

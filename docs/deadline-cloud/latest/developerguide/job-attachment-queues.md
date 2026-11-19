@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/job
 ---
 
 # Secure job attachment and software buckets
-<a name="job-attachment-queues"></a>
 
 Each queue stores its job attachments in an Amazon S3 bucket that you own. Three pieces configure the connection between a queue and its bucket:
 + Job attachments write to and read from a root prefix in the Amazon S3 bucket. You specify this root prefix in the `CreateQueue` API call.

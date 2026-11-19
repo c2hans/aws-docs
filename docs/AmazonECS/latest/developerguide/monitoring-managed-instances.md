@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/monitori
 ---
 
 # Monitoring Amazon ECS Managed Instances
-<a name="monitoring-managed-instances"></a>
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of your Amazon ECS Managed Instances workloads. AWS provides several tools and services to help you monitor your containerized applications and infrastructure.
 

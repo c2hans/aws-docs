@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/calculating-ro
 ---
 
 # Estimate row size in Amazon Keyspaces
-<a name="calculating-row-size"></a>
 
 Amazon Keyspaces provides fully managed storage that offers single-digit millisecond read and write performance and stores data durably across multiple AWS Availability Zones. Amazon Keyspaces attaches metadata to all rows and primary key columns to support efficient data access and high availability.
 

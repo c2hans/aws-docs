@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Multi-Region: recovery
-<a name="next-gen-resilience-testing-iam-sa-multi-region-recovery"></a>
 
 The **Multi-Region: recovery** template runs AWS FIS actions that block dependency traffic in the impaired Region to exercise cross-Region failover. Attach the following permissions policy to the execution role.
 

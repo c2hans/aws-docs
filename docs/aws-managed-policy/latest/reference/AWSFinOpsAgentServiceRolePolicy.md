@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSF
 ---
 
 # AWSFinOpsAgentServiceRolePolicy
-<a name="AWSFinOpsAgentServiceRolePolicy"></a>
 
 **Description**: Provides AWS FinOps Agent access to billing, cost management, usage, optimization, and resource configuration capabilities to generate cost and savings insights, and allows it to manage its own Amazon EventBridge rules for configured workflows.
 

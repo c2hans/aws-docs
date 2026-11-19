@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Guidance components
-<a name="solution-components"></a>
 
 The Guidance comprises of the following five key components that collaborate to provide EC2 and EKS forensic orchestration capability:
 + Forensic triage service

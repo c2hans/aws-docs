@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # ScheduleActionStartConfiguration
-<a name="API_ScheduleActionStartConfiguration"></a>
 
 Holds the typed start settings that determine when a schedule action runs. Currently, only fixed mode is supported.
 

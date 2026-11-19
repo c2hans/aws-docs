@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Delet
 ---
 
 # DeleteBackupVaultAccessPolicy
-<a name="API_DeleteBackupVaultAccessPolicy"></a>
 
 Deletes the policy document that manages permissions on a backup vault.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/working-with-train
 ---
 
 # Evaluating an Amazon Personalize solution version with metrics
-<a name="working-with-training-metrics"></a>
 
  You can evaluate the performance of your solution version through offline and online metrics. *Online metrics* are the empirical results you observe in your users' interactions with real-time recommendations. For example, you might record your users' click-through rate as they browse your catalog. You are responsible for generating and recording any online metrics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Best practices for auditing SQL Server on AWS
-<a name="best-practices"></a>
 
 When you audit SQL Server databases on AWS, follow these best practices.
 + **Understand audit requirements.** Check if the audit solution has to meet compliance requirements such as GDPR or HIPAA. For example, the audit solution might have to track and log all changes performed on critical data such as PII and financial information.

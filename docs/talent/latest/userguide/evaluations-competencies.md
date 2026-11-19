@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/userguide/evaluations-comp
 ---
 
 # How competencies work
-<a name="evaluations-competencies"></a>
 
 A competency is a skill or quality that matters for a job, such as problem solving or collaboration. Amazon Connect Talent builds each evaluation around a job's competencies, so every assessment and AI-led interview question measures something that matters for the role.
 

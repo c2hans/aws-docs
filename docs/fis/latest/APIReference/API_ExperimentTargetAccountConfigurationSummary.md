@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentTa
 ---
 
 # ExperimentTargetAccountConfigurationSummary
-<a name="API_ExperimentTargetAccountConfigurationSummary"></a>
 
 Provides a summary of a target account configuration.
 

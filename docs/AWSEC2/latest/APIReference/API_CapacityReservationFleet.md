@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityR
 ---
 
 # CapacityReservationFleet
-<a name="API_CapacityReservationFleet"></a>
 
 Information about a Capacity Reservation Fleet.
 

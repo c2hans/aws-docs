@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Li
 ---
 
 # ListDelegatedAdministrators
-<a name="API_ListDelegatedAdministrators"></a>
 
 Lists the AWS accounts that are designated as delegated administrators in this organization.
 

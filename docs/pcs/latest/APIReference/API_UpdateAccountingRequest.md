@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_UpdateAccoun
 ---
 
 # UpdateAccountingRequest
-<a name="API_UpdateAccountingRequest"></a>
 
 The accounting configuration includes configurable settings for Slurm accounting.
 

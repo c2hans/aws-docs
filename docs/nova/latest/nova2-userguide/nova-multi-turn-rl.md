@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-multi-t
 ---
 
 # Multi-turn Reinforcement Learning
-<a name="nova-multi-turn-rl"></a>
 
 ## Overview
 <a name="nova-mtrl-overview"></a>

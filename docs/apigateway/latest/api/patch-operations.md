@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/patch-operations.h
 ---
 
 # Patch Operations
-<a name="patch-operations"></a>
 
 This section lists information about the supported patch operations to update resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # AWS::Serverless::SimpleTable
-<a name="sam-resource-simpletable"></a>
 
 Creates a DynamoDB table with a single attribute primary key. It is useful when data only needs to be accessed via a primary key.
 

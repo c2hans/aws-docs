@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/troubleshooting.h
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This chapter describes errors and warnings that you can use to troubleshoot AWS Elemental MediaConvert.
 

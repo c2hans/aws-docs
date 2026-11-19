@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Configuration requirements of an Amazon Aurora global database
-<a name="aurora-global-database.configuration.requirements"></a>
 
  Before you start working with your global database, plan the cluster and instance names, AWS Regions, number of instances and instance classes that you intend to use. Make sure that your choices agree with the following configuration requirements.
 

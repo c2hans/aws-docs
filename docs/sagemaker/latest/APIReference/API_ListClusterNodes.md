@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCl
 ---
 
 # ListClusterNodes
-<a name="API_ListClusterNodes"></a>
 
 Retrieves the list of instances (also called *nodes* interchangeably) in a SageMaker HyperPod cluster.
 

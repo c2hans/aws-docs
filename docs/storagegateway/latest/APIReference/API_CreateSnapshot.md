@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_C
 ---
 
 # CreateSnapshot
-<a name="API_CreateSnapshot"></a>
 
 Initiates a snapshot of a volume.
 

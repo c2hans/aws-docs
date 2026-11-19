@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/deploy-env
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Associating an environment with an action
-<a name="deploy-environments-add-app-to-environment"></a>
 
 When you associate an environment with a [supported workflow action](deploy-environments.md#deploy-environments-supported), the environment's AWS account, default IAM role, and optional Amazon VPC become assigned to the action. The action can then connect and deploy to the AWS account using the IAM role, and also connect to the optional Amazon VPC.
 

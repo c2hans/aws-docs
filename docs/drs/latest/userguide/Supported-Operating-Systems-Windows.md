@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/Supported-Operating
 ---
 
 # Windows operating systems supported by Elastic Disaster Recovery
-<a name="Supported-Operating-Systems-Windows"></a>
 
 AWS Elastic Disaster Recovery allows replication of physical, virtual or cloud-based source servers to the AWS Cloud for several versions of Windows.
 

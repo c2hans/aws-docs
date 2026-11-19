@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Paralleli
 ---
 
 # ParallelismConfigurationDescription
-<a name="API_ParallelismConfigurationDescription"></a>
 
 Describes parameters for how a Managed Service for Apache Flink application executes multiple tasks simultaneously.
 

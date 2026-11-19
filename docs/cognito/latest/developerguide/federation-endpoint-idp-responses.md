@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/federation
 ---
 
 # Managed login and federation error responses
-<a name="federation-endpoint-idp-responses"></a>
 
 A sign-in process in managed login or federated sign-in might return an error. The following are some conditions that can cause authentication to end with an error.
 + A user performs an operation that your user pool can't fulfill.

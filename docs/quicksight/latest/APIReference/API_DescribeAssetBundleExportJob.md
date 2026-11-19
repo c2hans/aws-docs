@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeAssetBundleExportJob
-<a name="API_DescribeAssetBundleExportJob"></a>
 
 Describes an existing export job.
 

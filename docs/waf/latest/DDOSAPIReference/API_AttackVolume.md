@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_AttackVo
 ---
 
 # AttackVolume
-<a name="API_AttackVolume"></a>
 
 Information about the volume of attacks during the time period, included in an [AttackStatisticsDataItem](API_AttackStatisticsDataItem.md). If the accompanying `AttackCount` in the statistics object is zero, this setting might be empty.
 

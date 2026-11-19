@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # CreateMaintenanceWindow
-<a name="API_CreateMaintenanceWindow"></a>
 
 Creates a new maintenance window.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MemoryRecordMetadataValue
-<a name="API_MemoryRecordMetadataValue"></a>
 
 The value of a memory record metadata entry.
 

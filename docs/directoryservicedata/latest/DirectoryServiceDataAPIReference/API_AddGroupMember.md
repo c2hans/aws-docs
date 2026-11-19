@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # AddGroupMember
-<a name="API_AddGroupMember"></a>
 
 Adds an existing user, group, or computer as a group member.
 

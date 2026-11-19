@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/delete-mpts.html
 ---
 
 # Deleting an MPTS
-<a name="delete-mpts"></a>
 
 1. On the Conductor Live main menu, choose **MPTS**.
 

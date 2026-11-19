@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena-express-conf
 ---
 
 # Configure ENA Express settings for your EC2 instance
-<a name="ena-express-configure"></a>
 
 You can configure ENA Express for supported EC2 instance types without needing to install any additional software. For more information, see [Supported instance types for ENA Express](ena-express.md#ena-express-supported-instance-types).
 

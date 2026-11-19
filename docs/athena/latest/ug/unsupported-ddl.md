@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/unsupported-ddl.html
 ---
 
 # Unsupported DDL
-<a name="unsupported-ddl"></a>
 
 The following DDL statements are not supported by Athena SQL. For DDL statements supported for Iceberg tables in Athena, see [Evolve Iceberg table schema](querying-iceberg-evolving-table-schema.md) and [Perform other DDL operations on Iceberg tables](querying-iceberg-additional-operations.md).
 + ALTER INDEX

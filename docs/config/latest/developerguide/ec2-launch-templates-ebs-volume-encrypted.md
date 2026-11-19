@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-
 ---
 
 # ec2-launch-templates-ebs-volume-encrypted
-<a name="ec2-launch-templates-ebs-volume-encrypted"></a>
 
 Checks whether Amazon EC2 launch templates have encryption enabled for all attached EBS volumes.The rule is NON\_COMPLIANT if encryption is set to False for any EBS volume configured in the launch template.
 

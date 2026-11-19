@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSn
 ---
 
 # Failure messages for Amazon S3 export tasks for Amazon RDS
-<a name="USER_ExportSnapshot.failure-msg"></a>
 
 The following table describes the messages that are returned when Amazon S3 export tasks fail.
 

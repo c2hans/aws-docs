@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # CopyBlueprintStage
-<a name="API_data-automation_CopyBlueprintStage"></a>
 
 Copies a blueprint from one stage to another.
 

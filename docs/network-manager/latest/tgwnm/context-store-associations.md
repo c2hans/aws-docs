@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/context-sto
 ---
 
 # Manage context store associations
-<a name="context-store-associations"></a>
 
 A context store association links a transit gateway to a context store. While associated, the context store collects context for resources connected to the transit gateway. When you disassociate the transit gateway, context collection stops and its resource context is removed from the store.
 

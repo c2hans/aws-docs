@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/devrev-support.html
 ---
 
 # AWS Glue support for DevRev
-<a name="devrev-support"></a>
 
 AWS Glue supports DevRev as follows:
 

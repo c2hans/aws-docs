@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsI
 ---
 
 # AnalyticsIntentNodeSummary
-<a name="API_AnalyticsIntentNodeSummary"></a>
 
 An object containing information about the requested path.
 

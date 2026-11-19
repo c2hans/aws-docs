@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # GetIdentityPoolRoles
-<a name="API_GetIdentityPoolRoles"></a>
 
 Gets the roles for an identity pool.
 

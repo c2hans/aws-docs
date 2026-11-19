@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/strlen-function.h
 ---
 
 # Strlen
-<a name="strlen-function"></a>
 
 `strlen` returns the number of characters in a string, including spaces.
 

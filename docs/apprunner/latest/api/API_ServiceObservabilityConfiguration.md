@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_ServiceObservab
 ---
 
 # ServiceObservabilityConfiguration
-<a name="API_ServiceObservabilityConfiguration"></a>
 
 Describes the observability configuration of an AWS App Runner service. These are additional observability features, like tracing, that you choose to enable. They're configured in a separate resource that you associate with your service.
 

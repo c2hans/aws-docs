@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RuleGroupRef
 ---
 
 # RuleGroupReferenceStatement
-<a name="API_RuleGroupReferenceStatement"></a>
 
 A rule statement used to run the rules that are defined in a [RuleGroup](API_RuleGroup.md). To use this, create a rule group with your rules, then provide the ARN of the rule group in this statement.
 

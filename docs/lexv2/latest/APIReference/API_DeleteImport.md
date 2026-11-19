@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteImpo
 ---
 
 # DeleteImport
-<a name="API_DeleteImport"></a>
 
 Removes a previous import and the associated file stored in an S3 bucket.
 

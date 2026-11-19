@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pinpoint::Campaign CampaignEmailMessage
-<a name="aws-properties-pinpoint-campaign-campaignemailmessage"></a>
 
 Specifies the content and "From" address for an email message that's sent to recipients of a campaign.
 

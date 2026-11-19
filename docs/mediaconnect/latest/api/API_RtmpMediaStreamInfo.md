@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RtmpMediaStr
 ---
 
 # RtmpMediaStreamInfo
-<a name="API_RtmpMediaStreamInfo"></a>
 
 Information about a single audio or video stream that is part of an RTMP source. This includes details about the stream type, codec, resolution, frame rate, audio channels, and sample rate.
 

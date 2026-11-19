@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Organization
-<a name="organization"></a>
 
  There are many organizational considerations that need to be made when striving for operational excellence while delivering AWS End User Computing solutions, these are discussed in detail in the overall AWS Well Architected Framework.
 

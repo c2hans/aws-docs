@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ecr_example_ecr_H
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Hello Amazon ECR
-<a name="ecr_example_ecr_Hello_section"></a>
 
 The following code examples show how to get started using Amazon ECR.
 

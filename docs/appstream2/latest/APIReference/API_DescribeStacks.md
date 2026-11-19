@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Descr
 ---
 
 # DescribeStacks
-<a name="API_DescribeStacks"></a>
 
 Retrieves a list that describes one or more specified stacks, if the stack names are provided. Otherwise, all stacks in the account are described.
 
@@ -71,6 +70,13 @@ Required: No
             "SettingsGroup": "string"
          },
          "Arn": "string",
+         "ContentRedirection": {
+            "HostToClient": {
+               "AllowedUrls": [ "string" ],
+               "DeniedUrls": [ "string" ],
+               "Enabled": boolean
+            }
+         },
          "CreatedTime": number,
          "Description": "string",
          "DisplayName": "string",

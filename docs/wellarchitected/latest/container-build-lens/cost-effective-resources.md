@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Cost-effective resources
-<a name="cost-effective-resources"></a>
 
  Container images can affect the overall cost of the system and workloads. In this section, we’ll describe what has to be done in order to optimize your container images, and why it is important from cost perspective.
 

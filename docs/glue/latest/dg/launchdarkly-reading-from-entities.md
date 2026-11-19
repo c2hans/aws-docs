@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/launchdarkly-reading-from
 ---
 
 # Reading from LaunchDarkly entities
-<a name="launchdarkly-reading-from-entities"></a>
 
 **Prerequisites**
 

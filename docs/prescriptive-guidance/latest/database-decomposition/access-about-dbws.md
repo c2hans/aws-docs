@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # Controlling access with the database wrapper service pattern
-<a name="access-about-dbws"></a>
 
 A *wrapper service* is a service layer that acts as a facade for the database. This approach is particularly valuable when you need to maintain existing functionality while preparing for future decomposition. This pattern follows a simple principle—when something is too messy, start by containing the mess. The wrapper service becomes the only authorized way to access the database, providing a controlled interface while hiding the underlying complexity.
 

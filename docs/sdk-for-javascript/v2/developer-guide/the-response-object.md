@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/th
 The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
 
 # Using the Response Object
-<a name="the-response-object"></a>
 
 After a service object method has been called, it returns an `AWS.Response` object by passing it to your callback function. You access the contents of the response through the properties of the `AWS.Response` object. There are two properties of the `AWS.Response` object you use to access the contents of the response:
 + `data` property

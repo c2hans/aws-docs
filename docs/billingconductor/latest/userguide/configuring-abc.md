@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/config
 ---
 
 # Configuring Cost and Usage Reports by billing group
-<a name="configuring-abc"></a>
 
 You can create pro forma AWS Cost and Usage Reports (AWS CUR) for each billing group that you create. The pro forma AWS CUR has the same file format, granularity, and columns as the standard AWS CUR, and contains the most comprehensive set of cost and usage data available for a given period of time.
 

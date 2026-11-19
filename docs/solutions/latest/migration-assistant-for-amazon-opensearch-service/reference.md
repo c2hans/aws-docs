@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Reference
-<a name="reference"></a>
 
 Use this section for durable reference material that supports the migration lifecycle:
 +  [Developer guide](developer-guide.md) - source code, release guidance, and AI agent details.

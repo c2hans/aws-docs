@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DeletePortal
-<a name="API_DeletePortal"></a>
 
 Deletes a web portal.
 

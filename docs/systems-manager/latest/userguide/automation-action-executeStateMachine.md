@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # `aws:executeStateMachine` – Run an AWS Step Functions state machine
-<a name="automation-action-executeStateMachine"></a>
 
 Runs an AWS Step Functions state machine.
 

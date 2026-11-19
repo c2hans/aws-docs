@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/WhatsNew
 ---
 
 # Document history
-<a name="WhatsNew"></a>
 
 The following table describes the important changes to the documentation since the last release of the *Amazon Simple Workflow Service Developer Guide*.
 

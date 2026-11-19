@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpnConnec
 ---
 
 # VpnConnection
-<a name="API_VpnConnection"></a>
 
 Describes a VPN connection.
 

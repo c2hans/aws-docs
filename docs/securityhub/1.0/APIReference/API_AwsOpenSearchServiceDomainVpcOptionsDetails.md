@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsOpen
 ---
 
 # AwsOpenSearchServiceDomainVpcOptionsDetails
-<a name="API_AwsOpenSearchServiceDomainVpcOptionsDetails"></a>
 
 Contains information that OpenSearch Service derives based on the `VPCOptions` for the domain.
 

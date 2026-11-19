@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBClus
 ---
 
 # DBClusterEndpoint
-<a name="API_DBClusterEndpoint"></a>
 
 This data type represents the information you need to connect to an Amazon Aurora DB cluster. This data type is used as a response element in the following actions:
 +  `CreateDBClusterEndpoint`

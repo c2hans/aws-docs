@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/ec2-
 ---
 
 # Troubleshooting Amazon Elastic Compute Cloud
-<a name="ec2-troubleshoot"></a>
 
 The following sections describe how to troubleshoot known issues that can occur when working with Amazon Elastic Compute Cloud in the AWS Toolkit for Visual Studio Code. For detailed information about troubleshooting issues specific to the Amazon EC2 service, see the [Troubleshoot issues with Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-troubleshoot.html) topic in the *Amazon Elastic Compute Cloud* User Guide.
 

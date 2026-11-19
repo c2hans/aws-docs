@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customize-widg
 ---
 
 # Customize widget launch behavior and button icon for your website hosted in Connect Customer
-<a name="customize-widget-launch"></a>
 
 To further customize how your website renders and launches the hosted widget icon, you can configure the launch behavior and hide the default icon. For example, you can programmatically launch the widget from a **Chat with us** button element that is rendered on your website.
 

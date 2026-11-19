@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListPolicyVe
 ---
 
 # ListPolicyVersions
-<a name="API_ListPolicyVersions"></a>
 
 Lists information about the versions of the specified managed policy, including the version that is currently set as the policy's default version.
 

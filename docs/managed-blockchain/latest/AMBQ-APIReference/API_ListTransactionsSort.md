@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # ListTransactionsSort
-<a name="API_ListTransactionsSort"></a>
 
 The container for determining how the list transaction result will be sorted.
 

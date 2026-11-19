@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_JobAc
 ---
 
 # JobActionOptions
-<a name="API_JobActionOptions"></a>
 
 Additional options for configuring job action parameters.
 

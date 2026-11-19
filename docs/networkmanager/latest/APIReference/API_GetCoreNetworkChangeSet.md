@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetCoreNetworkChangeSet
-<a name="API_GetCoreNetworkChangeSet"></a>
 
 Returns a change set between the LIVE core network policy and a submitted policy.
 

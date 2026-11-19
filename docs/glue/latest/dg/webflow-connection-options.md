@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/webflow-connection-option
 ---
 
 # Webflow connection options
-<a name="webflow-connection-options"></a>
 
 The following are connection options for Webflow:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Webflow object to read.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-
 ---
 
 # SMS and email message MFA
-<a name="user-pool-settings-mfa-sms-email-message"></a>
 
 SMS and email MFA messages confirm that users have access to a message destination before they can sign in. They confirm that they not only have access to a password, but to the SMS messages or the email inbox of the original user. Amazon Cognito requests that users provide a short code that your user pool sent after they successfully provide a username and password.
 

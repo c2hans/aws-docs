@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/dynamo-exa
 AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [AWS SDK for Go V2](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-go-v1-on-july-31-2025/).
 
 # Reading an Amazon DynamoDB Table Item
-<a name="dynamo-example-read-table-item"></a>
 
 The following example uses the DynamoDB [GetItem](https://docs.aws.amazon.com/sdk-for-go/api/service/dynamodb/#DynamoDB.GetItem) operation to retrieve information about the item with the `year` **2015** and `title` **The Big New Movie** in the `movies` table in your default region.
 

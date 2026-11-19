@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListApplicat
 ---
 
 # ListApplicationsRequestFilters
-<a name="API_ListApplicationsRequestFilters"></a>
 
 Applications list filters.
 

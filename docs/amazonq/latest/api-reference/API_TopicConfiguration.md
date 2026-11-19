@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_TopicCo
 ---
 
 # TopicConfiguration
-<a name="API_TopicConfiguration"></a>
 
 The topic specific controls configured for an Amazon Q Business application.
 

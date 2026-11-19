@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # DeleteMLModel
-<a name="API_DeleteMLModel"></a>
 
 Assigns the `DELETED` status to an `MLModel`, rendering it unusable.
 

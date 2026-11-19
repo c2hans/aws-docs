@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/plan-y
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section provides an overview of the cost, security, service quotas, and other key factors to consider prior to deploying the solution in your AWS account.
 

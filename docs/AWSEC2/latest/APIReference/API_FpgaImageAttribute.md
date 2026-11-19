@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FpgaImage
 ---
 
 # FpgaImageAttribute
-<a name="API_FpgaImageAttribute"></a>
 
 Describes an Amazon FPGA image (AFI) attribute.
 

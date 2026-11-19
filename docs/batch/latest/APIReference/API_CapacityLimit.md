@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_CapacityLi
 ---
 
 # CapacityLimit
-<a name="API_CapacityLimit"></a>
 
 Defines the type and maximum quantity of resources that can be allocated to service jobs in a service environment.
 

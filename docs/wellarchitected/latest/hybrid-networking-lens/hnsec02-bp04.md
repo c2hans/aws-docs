@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNSEC02-BP04 Limit access to networking APIs
-<a name="hnsec02-bp04"></a>
 
  Implement strict controls over network management interfaces and APIs to prevent unauthorized access and changes to critical network infrastructure. This includes limiting access based on identity, role, and network location while maintaining comprehensive audit trails of all management actions.
 

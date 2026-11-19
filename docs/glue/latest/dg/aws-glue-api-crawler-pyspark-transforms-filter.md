@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # Filter class
-<a name="aws-glue-api-crawler-pyspark-transforms-filter"></a>
 
 Builds a new `DynamicFrame` that contains records from the input `DynamicFrame` that satisfy a specified predicate function.
 

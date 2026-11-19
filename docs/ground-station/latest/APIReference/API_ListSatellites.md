@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_L
 ---
 
 # ListSatellites
-<a name="API_ListSatellites"></a>
 
 Returns a list of satellites.
 

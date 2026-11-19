@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/us
 ---
 
 # Use Amazon Bedrock agents to automate creation of access entry controls in Amazon EKS through text-based prompts
-<a name="using-amazon-bedrock-agents-to-automate-creation-of-access-entry-controls-in-amazon-eks"></a>
 
 *Keshav Ganesh and Sudhanshu Saurav, Amazon Web Services*
 

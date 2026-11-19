@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDACOST02-BP06 Implement manufacturing-aware cost controls
-<a name="midacost02-bp06"></a>
 
  Establish effective guardrails that help prevent unnecessary spending while maintaining operational efficiency and flexibility for production demands. This includes implementing approval workflows that don't hinder urgent production needs and differentiating between cost controls for different environments (production, development, testing).
 

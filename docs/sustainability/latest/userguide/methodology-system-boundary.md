@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/userguide/methodol
 ---
 
 # System boundary
-<a name="methodology-system-boundary"></a>
 
 The system boundary defines what activities and related emissions are accounted for in the carbon emissions calculations. The methodology is informed by the GHG Protocol's classification of emissions, which breaks down a company's emissions into three `scopes`.
 + **Scope 1**: Emissions are direct emissions from owned or controlled sources.

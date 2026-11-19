@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/vpc-creating-a-co
 ---
 
 # Managing VPC connection in AWS Quick
-<a name="vpc-creating-a-connection-in-quicksight"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # UpdateCanary
-<a name="API_UpdateCanary"></a>
 
 Updates the configuration of a canary that has already been created.
 

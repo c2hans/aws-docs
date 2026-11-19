@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_G
 ---
 
 # GetLibraryItem
-<a name="API_qapps_GetLibraryItem"></a>
 
 Retrieves details about a library item for an Amazon Q App, including its metadata, categories, ratings, and usage statistics.
 

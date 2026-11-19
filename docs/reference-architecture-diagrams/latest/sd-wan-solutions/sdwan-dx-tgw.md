@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # SD-WAN Devices Integration with AWS Transit Gateway and AWS Direct Connect
-<a name="sdwan-dx-tgw"></a>
 
 Publication date: **December 28, 2024 ([Diagram history](#sdwan6-diagram-history))**
 

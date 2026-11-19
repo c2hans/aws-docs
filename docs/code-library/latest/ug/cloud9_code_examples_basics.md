@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloud9_code_examp
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Basic examples for AWS Cloud9 using AWS SDKs
-<a name="cloud9_code_examples_basics"></a>
 
 The following code examples show how to use the basics of AWS Cloud9 with AWS SDKs.
 

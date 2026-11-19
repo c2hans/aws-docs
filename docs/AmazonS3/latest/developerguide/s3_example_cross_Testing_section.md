@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Example approaches for unit and integration testing with an AWS SDK
-<a name="s3_example_cross_Testing_section"></a>
 
 The following code example shows how to examples for best-practice techniques when writing unit and integration tests using an AWS SDK.
 

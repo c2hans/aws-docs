@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/incremental-crawls.html
 ---
 
 # Scheduling incremental crawls for adding new partitions
-<a name="incremental-crawls"></a>
 
 You can configure an AWS Glue crawler run incremental crawls to add only new partitions to the table schema. When the crawler runs for the first time, it performs a full crawl to processes the entire data source to record the complete schema and all existing partitions in the AWS Glue Data Catalog.
 

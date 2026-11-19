@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/creating-a-profi
 ---
 
 # Creating a profile from scratch
-<a name="creating-a-profile-from-scratch"></a>
 
 **Topics**
 + [Design the profile](#crud-profile-create-design)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-sdk-kotlin
 ---
 
 # IVS Chat Client Messaging SDK: Kotlin Coroutines Tutorial Part 2: Messages and Events
-<a name="chat-sdk-kotlin-tutorial-messages-events"></a>
 
 This second (and last) part of the tutorial is broken up into several sections:
 

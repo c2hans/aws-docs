@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTra
 ---
 
 # CreateTrafficMirrorTarget
-<a name="API_CreateTrafficMirrorTarget"></a>
 
 Creates a target for your Traffic Mirror session.
 

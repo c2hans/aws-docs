@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Tidal Accelerator
-<a name="discovery-tidal-accelerator"></a>
 
 *Last update: October 22, 2024*
 

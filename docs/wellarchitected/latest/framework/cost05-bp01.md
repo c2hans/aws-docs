@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost05-
 ---
 
 # COST05-BP01 Identify workload requirements for cost
-<a name="cost05-bp01"></a>
 
  Cost competes with performance, reliability, delivery speed, and team familiarity, and the right balance differs for every workload. Capture these priorities and the trade-offs behind them before you select services, then revisit them as the business changes.
 

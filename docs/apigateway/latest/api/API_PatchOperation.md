@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_PatchOperation
 ---
 
 # PatchOperation
-<a name="API_PatchOperation"></a>
 
 For more information about supported patch operations, see [Patch Operations](patch-operations.md).
 

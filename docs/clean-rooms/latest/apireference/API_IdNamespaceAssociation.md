@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_IdNa
 ---
 
 # IdNamespaceAssociation
-<a name="API_IdNamespaceAssociation"></a>
 
 Provides information to create the ID namespace association.
 

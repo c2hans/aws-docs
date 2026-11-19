@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VolumeSta
 ---
 
 # VolumeStatusAttachmentStatus
-<a name="API_VolumeStatusAttachmentStatus"></a>
 
 Information about the instances to which the volume is attached.
 

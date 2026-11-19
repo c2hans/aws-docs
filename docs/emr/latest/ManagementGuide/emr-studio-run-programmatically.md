@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-ru
 ---
 
 # Run Amazon EMR Studio Workspace Workspace notebooks programmatically
-<a name="emr-studio-run-programmatically"></a>
 
 **Note**
 Programmatic execution of notebooks isn't supported with Amazon EMR Serverless interactive applications.

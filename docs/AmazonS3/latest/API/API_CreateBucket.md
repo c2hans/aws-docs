@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.htm
 ---
 
 # CreateBucket
-<a name="API_CreateBucket"></a>
 
 **Note**
 This action creates an Amazon S3 bucket. To create an Amazon S3 on Outposts bucket, see [`CreateBucket`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateBucket.html).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KPISo
 ---
 
 # KPISortConfiguration
-<a name="API_KPISortConfiguration"></a>
 
 The sort configuration of a KPI visual.
 

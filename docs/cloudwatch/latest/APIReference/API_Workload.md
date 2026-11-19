@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Workl
 ---
 
 # Workload
-<a name="API_Workload"></a>
 
 Describes the workloads on a component.
 

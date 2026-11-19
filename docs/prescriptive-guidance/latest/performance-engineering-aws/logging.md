@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/performance
 ---
 
 # Logging
-<a name="logging"></a>
 
 Logging is the process of keeping data about events that occur in a system. The log can include problems, errors, or information about the current operation. Logs can be classified into different types, such as the following:
 + Events log

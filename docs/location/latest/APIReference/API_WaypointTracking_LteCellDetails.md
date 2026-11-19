@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # LteCellDetails
-<a name="API_WaypointTracking_LteCellDetails"></a>
 
 Details about the Long-Term Evolution (LTE) network.
 

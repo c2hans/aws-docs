@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/suspend-proces
 ---
 
 # Suspend processes
-<a name="suspend-processes"></a>
 
 To suspend a process for an Auto Scaling group, use one of the following methods:
 

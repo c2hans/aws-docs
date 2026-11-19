@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-fo
 ---
 
 # FOCUS 1.2 with AWS columns
-<a name="table-dictionary-focus-1-2-aws"></a>
 
 The FOCUS 1.2 with AWS columns table contains your cost and usage data formatted with FinOps Open Cost and Usage Specification (FOCUS) 1.0, along with three additional columns from AWS that contain proprietary billing data. These columns are **x\_Discounts**, **x\_Operation**, and **x\_ServiceCode**. For more information about the FOCUS open-source specification, refer to the [FOCUS](https://focus.finops.org/) website.
 

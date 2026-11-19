@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAcces
 ---
 
 # Enabling MariaDB binary log annotation
-<a name="USER_LogAccess.MariaDB.BinarylogAnnotation"></a>
 
 In a MariaDB DB instance, you can use the `Annotate_rows` event to annotate a row event with a copy of the SQL query that caused the row event. This approach provides similar functionality to enabling the `binlog_rows_query_log_events` parameter on an RDS for MySQL DB instance.
 

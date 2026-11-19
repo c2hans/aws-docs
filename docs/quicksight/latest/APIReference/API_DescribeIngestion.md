@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeIngestion
-<a name="API_DescribeIngestion"></a>
 
 Describes a SPICE ingestion.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/operate
 ---
 
 # Operate
-<a name="operate"></a>
 
 | SaaS OPS 1: How are you able to effectively monitor and manage the operational health of a multi-tenant environment?  |
 | --- |

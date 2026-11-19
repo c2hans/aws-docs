@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/marketing.
 ---
 
 # .marketing
-<a name="marketing"></a>
 
 Used by the marketing sector for a variety of purposes.
 

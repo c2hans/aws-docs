@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/userguide/ontology
 ---
 
 # Ontology overview
-<a name="ontology-overview"></a>
 
 AWS has developed a standard classification system to help classify, organize, and create mappings among controls. This ontology can be used to map controls to existing and new regulatory standards, including 24 frameworks, as well as regulatory standards such as PCI, HIPAA, and others. We also map to industry standards such as NIST and ISO, and to Amazon-specific frameworks, including the Well-Architected framework.
 

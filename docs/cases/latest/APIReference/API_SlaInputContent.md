@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_SlaInputCo
 ---
 
 # SlaInputContent
-<a name="API_connect-cases_SlaInputContent"></a>
 
 Represents the content of an SLA.
 

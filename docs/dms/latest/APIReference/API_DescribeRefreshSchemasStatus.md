@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeRefr
 ---
 
 # DescribeRefreshSchemasStatus
-<a name="API_DescribeRefreshSchemasStatus"></a>
 
 Returns the status of the RefreshSchemas operation.
 

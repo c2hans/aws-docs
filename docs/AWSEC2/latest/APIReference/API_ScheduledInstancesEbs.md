@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Scheduled
 ---
 
 # ScheduledInstancesEbs
-<a name="API_ScheduledInstancesEbs"></a>
 
 Describes an EBS volume for a Scheduled Instance.
 

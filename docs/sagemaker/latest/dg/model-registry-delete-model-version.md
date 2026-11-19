@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-delet
 ---
 
 # Delete a Model Version
-<a name="model-registry-delete-model-version"></a>
 
 This procedure demonstrates how to delete a model version in the Amazon SageMaker Studio console.
 

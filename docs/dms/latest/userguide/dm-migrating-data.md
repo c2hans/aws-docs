@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/dm-migrating-data.h
 ---
 
 # Running homogeneous data migrations in AWS DMS
-<a name="dm-migrating-data"></a>
 
 You can use [Homogeneous data migrations](data-migrations.md) in AWS DMS to migrate data from your source database to the equivalent engine on Amazon Relational Database Service (Amazon RDS) , Amazon Aurora, or Amazon DocumentDB. AWS DMS automates the data migration process by using native database tools in your source and target databases.
 

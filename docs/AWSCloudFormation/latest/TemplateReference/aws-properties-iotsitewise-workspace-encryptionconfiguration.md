@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::Workspace EncryptionConfiguration
-<a name="aws-properties-iotsitewise-workspace-encryptionconfiguration"></a>
 
 Specifies the encryption configuration to apply to the workspace, including whether to use the default AWS IoT SiteWise key or a customer managed AWS KMS key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/release-files-tas
 ---
 
 # Using data repository tasks to release files
-<a name="release-files-task"></a>
 
 Use the following procedures to create tasks that release files from the file system by using the Amazon FSx console and CLI. Releasing a file retains the file listing and metadata, but removes the local copy of that file's contents.
 

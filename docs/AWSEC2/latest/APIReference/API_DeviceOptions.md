@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeviceOpt
 ---
 
 # DeviceOptions
-<a name="API_DeviceOptions"></a>
 
 Describes the options for an AWS Verified Access device-identity based trust provider.
 

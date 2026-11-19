@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/getting-star
 ---
 
 # Get started with AWS AppFabric for security
-<a name="getting-started-security"></a>
 
 To get started with AWS AppFabric for security, you must first create an app bundle and then authorize and connect applications to your app bundle. After app authorizations are connected to applications, you can use AppFabric for security features such as audit log ingestions and user access.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Creat
 ---
 
 # CreateDirectoryConfig
-<a name="API_CreateDirectoryConfig"></a>
 
 Creates a Directory Config object in WorkSpaces Applications. This object includes the configuration information required to join fleets and image builders to Microsoft Active Directory domains.
 

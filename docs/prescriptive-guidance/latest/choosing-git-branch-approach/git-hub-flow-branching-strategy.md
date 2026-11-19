@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # GitHub Flow branching strategy
-<a name="git-hub-flow-branching-strategy"></a>
 
 GitHub Flow is a lightweight, branch-based workflow was developed by GitHub. GitHub Flow is based on the idea of short-lived feature branches that are merged into the main branch when the feature is complete and ready to be deployed. The key principles of GitHub Flow are:
 + **Branching is lightweight **– Developers can create feature branches for their work with just a few clicks, improving the ability to collaborate and experiment without affecting the main branch.

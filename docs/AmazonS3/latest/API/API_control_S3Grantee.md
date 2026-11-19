@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3Grante
 ---
 
 # S3Grantee
-<a name="API_control_S3Grantee"></a>
 
 ## Contents
 <a name="API_control_S3Grantee_Contents"></a>

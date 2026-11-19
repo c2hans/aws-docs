@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/transfers.html
 ---
 
 # Transfer calls to a quick connect or external phone number using the Contact Control Panel (CCP)
-<a name="transfers"></a>
 
 You can transfer calls to people in a predefined list, called quick connects. You can also transfer calls to external phone numbers that you enter.
 

@@ -3,8 +3,7 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/Welc
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS License Manager makes it easier to manage licenses from software vendors across multiple AWS accounts and on-premises servers.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

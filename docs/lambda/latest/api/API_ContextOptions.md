@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ContextOptions.htm
 ---
 
 # ContextOptions
-<a name="API_ContextOptions"></a>
 
 Configuration options for a durable execution context.
 

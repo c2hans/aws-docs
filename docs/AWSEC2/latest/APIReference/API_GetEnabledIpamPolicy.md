@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetEnable
 ---
 
 # GetEnabledIpamPolicy
-<a name="API_GetEnabledIpamPolicy"></a>
 
 Gets the enabled IPAM policy.
 

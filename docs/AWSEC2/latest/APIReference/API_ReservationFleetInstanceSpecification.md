@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Reservati
 ---
 
 # ReservationFleetInstanceSpecification
-<a name="API_ReservationFleetInstanceSpecification"></a>
 
 Information about an instance type to use in a Capacity Reservation Fleet.
 

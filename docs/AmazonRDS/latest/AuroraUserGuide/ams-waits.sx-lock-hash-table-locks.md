@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/ams-wai
 ---
 
 # synch/sxlock/innodb/hash\_table\_locks
-<a name="ams-waits.sx-lock-hash-table-locks"></a>
 
 The `synch/sxlock/innodb/hash_table_locks` event occurs when pages not found in the buffer pool must be read from storage.
 

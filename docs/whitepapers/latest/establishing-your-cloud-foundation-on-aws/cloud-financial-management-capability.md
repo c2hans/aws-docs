@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Cloud Financial Management capability
-<a name="cloud-financial-management-capability"></a>
 
 The Cloud Financial Management capability provides the ability to manage and optimize your expense for cloud services. This capability enables you to track, notify, and apply cost optimization techniques across your environment and resources. Expense information is centrally managed and consumed, and access to critical stakeholders can be provided for targeted visibility and decision making.
 

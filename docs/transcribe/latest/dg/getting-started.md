@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/getting-started.htm
 ---
 
 # Getting started with Amazon Transcribe
-<a name="getting-started"></a>
 
 Before you can create transcriptions, you have a few prerequisites:
 + [Sign up for an AWS account](#getting-started-api)

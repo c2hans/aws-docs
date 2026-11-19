@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/iam-example-restr
 ---
 
 # Resource: Restrict job submission by resource tags on job definition and job queue
-<a name="iam-example-restrict-job-submission-by-tags"></a>
 
 Use the following policy to submit jobs only when both the job queue has the tag `Environment=dev` and the job definition has the tag `Project=calc`. This policy demonstrates how to use resource tags to control access to AWS Batch resources during job submission.
 

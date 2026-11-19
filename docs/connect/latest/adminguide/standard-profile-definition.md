@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-profi
 ---
 
 # Standard profile definition in the Connect Customer Customer Profiles
-<a name="standard-profile-definition"></a>
 
 The following table lists all the fields in the Customer Profiles standard profile object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_ListWork
 ---
 
 # ListWorkspaceServiceAccounts
-<a name="API_ListWorkspaceServiceAccounts"></a>
 
 Returns a list of service accounts for a workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Update
 ---
 
 # UpdateListener
-<a name="API_UpdateListener"></a>
 
 Update a listener.
 

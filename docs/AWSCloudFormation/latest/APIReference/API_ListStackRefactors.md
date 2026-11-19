@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListStackRefactors
-<a name="API_ListStackRefactors"></a>
 
 Lists all account stack refactor operations and their statuses.
 

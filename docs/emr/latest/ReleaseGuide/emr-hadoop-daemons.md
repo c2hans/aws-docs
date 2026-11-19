@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hadoop-daemo
 ---
 
 # Hadoop daemon configuration settings
-<a name="emr-hadoop-daemons"></a>
 
 Hadoop daemon settings are different depending on the EC2 instance type that a cluster node uses. The following tables list the default configuration settings for each EC2 instance type.
 

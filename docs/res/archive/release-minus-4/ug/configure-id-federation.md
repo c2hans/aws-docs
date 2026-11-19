@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/configure
 ---
 
 # Configuring your identity provider for single sign-on (SSO)
-<a name="configure-id-federation"></a>
 
 Research and Engineering Studio integrates with any SAML 2.0 identity provider to authenticate user access to the RES portal. These steps provide directions to integrate with your chosen SAML 2.0 identity provider. If you intend to use IAM Identity Center, please see [Setting up single sign-on (SSO) with IAM Identity Center](sso-idc.md).
 

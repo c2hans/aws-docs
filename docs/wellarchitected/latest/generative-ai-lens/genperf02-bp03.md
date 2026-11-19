@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENPERF02-BP03 Select and customize the appropriate model for your use case
-<a name="genperf02-bp03"></a>
 
  There are several industry-leading model providers, and each offers different model families and sizes. When you select a model, choose the appropriate model family and size for your use case to provide consistent performance for your workload.
 

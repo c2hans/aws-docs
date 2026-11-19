@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_ListConfi
 ---
 
 # ListConfigurationCheckDefinitions
-<a name="API_ListConfigurationCheckDefinitions"></a>
 
 Lists all configuration check types supported by AWS Systems Manager for SAP.
 

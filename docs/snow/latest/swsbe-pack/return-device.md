@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snow/latest/swsbe-pack/return-device.htm
 ---
 
 # Returning the device
-<a name="return-device"></a>
 
 The prepaid shipping label on the E Ink display contains the correct address to return the Snowball Edge.
 

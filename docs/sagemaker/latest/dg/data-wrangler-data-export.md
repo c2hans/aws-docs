@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler-data-e
 ---
 
 # Export
-<a name="data-wrangler-data-export"></a>
 
 In your Data Wrangler flow, you can export some or all of the transformations that you've made to your data processing pipelines.
 

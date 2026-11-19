@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # FirewallDomainList
-<a name="API_route53resolver_FirewallDomainList"></a>
 
 High-level information about a list of firewall domains for use in a [FirewallRule](API_route53resolver_FirewallRule.md). This is returned by [GetFirewallDomainList](API_route53resolver_GetFirewallDomainList.md).
 

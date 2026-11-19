@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_Import
 ---
 
 # ImportCertificateAuthorityCertificate
-<a name="API_ImportCertificateAuthorityCertificate"></a>
 
 Imports a signed private CA certificate into AWS Private CA. This action is used when you are using a chain of trust whose root is located outside AWS Private CA. Before you can call this action, the following preparations must in place:
 

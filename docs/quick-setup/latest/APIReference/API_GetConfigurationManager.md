@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_GetC
 ---
 
 # GetConfigurationManager
-<a name="API_GetConfigurationManager"></a>
 
 Returns a configuration manager.
 

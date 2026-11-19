@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # POST: Add an SPTS to an MPTS
-<a name="working-with-members-of-mpts-add-spts"></a>
 
 Add an SPTS to the specified MPTS output.
 

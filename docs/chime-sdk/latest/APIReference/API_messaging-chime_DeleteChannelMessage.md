@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # DeleteChannelMessage
-<a name="API_messaging-chime_DeleteChannelMessage"></a>
 
 Deletes a channel message. Only admins can perform this action. Deletion makes messages inaccessible immediately. A background process deletes any revisions created by `UpdateChannelMessage`.
 

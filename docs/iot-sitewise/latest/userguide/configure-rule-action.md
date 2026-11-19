@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/configure-
 ---
 
 # Configure the AWS IoT SiteWise rule action
-<a name="configure-rule-action"></a>
 
 The AWS IoT SiteWise rule action sends data from the MQTT message that initiated the rule to asset properties in AWS IoT SiteWise. You can upload multiple data entries to different asset properties at the same time,to send updates for all sensors of a device in one message. You can also upload multiple data points at once for each data entry.
 

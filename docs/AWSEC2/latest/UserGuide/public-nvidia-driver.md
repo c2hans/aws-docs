@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/public-nvidia-dr
 ---
 
 # Install NVIDIA public drivers
-<a name="public-nvidia-driver"></a>
 
 If the AWS Marketplace AMIs described in [Use AMIs that include NVIDIA drivers](preinstalled-nvidia-driver.md) don't fit your use case, you can install the public drivers and bring your own license. Installation options include the following:
 + [Option 1: Driver-only install](#public-nvidia-driver-only-install)

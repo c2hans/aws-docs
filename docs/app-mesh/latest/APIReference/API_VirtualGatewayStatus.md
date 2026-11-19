@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewayStatus
-<a name="API_VirtualGatewayStatus"></a>
 
 An object that represents the status of the mesh resource.
 

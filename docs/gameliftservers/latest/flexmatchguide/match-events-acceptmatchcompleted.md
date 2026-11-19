@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # AcceptMatchCompleted
-<a name="match-events-acceptmatchcompleted"></a>
 
 Match acceptance is complete due to player acceptance, player rejection, or acceptance timeout.
 

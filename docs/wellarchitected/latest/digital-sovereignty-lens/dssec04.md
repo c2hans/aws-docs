@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Detection and investigation
-<a name="dssec04"></a>
 
  Sovereign workloads face threats beyond standard cybersecurity concerns. Unauthorized cross-border data transfers, operator access violations, and jurisdictional compliance drift are sovereignty-specific threats that require purpose-built detection capabilities. Standard threat detection must be augmented with jurisdiction-specific intelligence, full telemetry with data residency controls, and detailed logging of operator actions.
 

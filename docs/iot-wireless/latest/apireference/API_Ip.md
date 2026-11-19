@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ip.
 ---
 
 # Ip
-<a name="API_Ip"></a>
 
 IP address used for resolving device location.
 

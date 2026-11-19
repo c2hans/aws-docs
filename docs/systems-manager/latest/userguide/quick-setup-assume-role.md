@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/quick-s
 ---
 
 # Configuration for Assume Role for Systems Manager
-<a name="quick-setup-assume-role"></a>
 
 ## To create an assume role for Systems Manager Quick Setup:
 <a name="create-assume-role"></a>

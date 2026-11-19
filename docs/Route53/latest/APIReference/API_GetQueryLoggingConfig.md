@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetQuery
 ---
 
 # GetQueryLoggingConfig
-<a name="API_GetQueryLoggingConfig"></a>
 
 Gets information about a specified configuration for DNS query logging.
 

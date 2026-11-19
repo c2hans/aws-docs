@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # NumericalScaleDefinition
-<a name="API_NumericalScaleDefinition"></a>
 
  The definition of a numerical rating scale option that provides a numeric value with its description for evaluation scoring.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_GetOutp
 ---
 
 # GetOutpostInstanceTypes
-<a name="API_GetOutpostInstanceTypes"></a>
 
 Gets the instance types for the specified Outpost.
 

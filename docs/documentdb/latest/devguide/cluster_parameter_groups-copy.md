@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/cluster_param
 ---
 
 # Copying Amazon DocumentDB cluster parameter groups
-<a name="cluster_parameter_groups-copy"></a>
 
 You can make a copy of a cluster parameter group in Amazon DocumentDB using the AWS Management Console or the AWS Command Line Interface (AWS CLI).
 

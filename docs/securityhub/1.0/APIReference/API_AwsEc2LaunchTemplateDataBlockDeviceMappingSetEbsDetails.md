@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataBlockDeviceMappingSetEbsDetails
-<a name="API_AwsEc2LaunchTemplateDataBlockDeviceMappingSetEbsDetails"></a>
 
  Parameters for a block device for an Amazon Elastic Block Store (Amazon EBS) volume in an Amazon EC2 launch template.
 

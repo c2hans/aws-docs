@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gener
 ---
 
 # Generate templates from existing resources with IaC generator
-<a name="generate-IaC"></a>
 
 With the CloudFormation infrastructure as code generator (IaC generator), you can generate a template using AWS resources provisioned in your account that are not already managed by CloudFormation.
 

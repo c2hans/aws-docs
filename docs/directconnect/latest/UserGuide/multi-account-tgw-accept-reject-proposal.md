@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/multi-acc
 ---
 
 # Accept or reject a Transit Gateway and Direct Connect association proposal
-<a name="multi-account-tgw-accept-reject-proposal"></a>
 
 If you own the Direct Connect gateway, you must accept the association proposal in order to create the association. You also have the option of rejecting the association proposal. You can accept or reject the association proposal using either the Direct Connect console or using the command line or API.
 

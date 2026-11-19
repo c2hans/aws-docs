@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_StartSpeec
 ---
 
 # StartSpeechSynthesisStreamActionStream
-<a name="API_StartSpeechSynthesisStreamActionStream"></a>
 
 Inbound event stream for sending input and control events to manage bidirectional speech synthesis.
 

@@ -3,6 +3,5 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Process and culture
-<a name="process-and-culture-sus"></a>
 
  There are no process and culture best practices unique to data residency and hybrid cloud services workloads.

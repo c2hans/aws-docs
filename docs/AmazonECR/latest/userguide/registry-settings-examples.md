@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry-sett
 ---
 
 # Private image replication examples for Amazon ECR
-<a name="registry-settings-examples"></a>
 
 The following examples show common use cases for private image replication. If you configure replication by using the AWS CLI, you can use the JSON examples as a starting point when you create your JSON file. If you configure replication by using the AWS Management Console, you will see similar JSON when you review your replication rule on the **Review and submit** page.
 

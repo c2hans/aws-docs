@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/compare-timestam
 ---
 
 # Compare timestamps for your Linux instances
-<a name="compare-timestamps-with-clockbound"></a>
 
 If you're using the Amazon Time Sync Service, you can compare the timestamps on your Amazon EC2 Linux instances with ClockBound to determine the true time of an event. ClockBound measures the clock accuracy of your EC2 instance, and allows you to check if a given timestamp is in the past or future with respect to your instance's current clock. This information is valuable for determining the order and consistency of events and transactions across EC2 instances, independent of each instance's geographic location.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchCo
 ---
 
 # SearchContactsTimeRange
-<a name="API_SearchContactsTimeRange"></a>
 
 A structure of time range that you want to search results.
 

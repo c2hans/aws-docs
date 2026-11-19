@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Ap
 ---
 
 # AppMonitorConfiguration
-<a name="API_AppMonitorConfiguration"></a>
 
 This structure contains much of the configuration data for the app monitor.
 

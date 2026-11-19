@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/archive-data-a
 ---
 
 # Unpublish an asset from the Amazon DataZone catalog
-<a name="archive-data-asset"></a>
 
 When you unpublish an Amazon DataZone asset from the catalog, it no longer appears in global search results. New users won't be able to find or subscribe to the asset listing in the catalog, but all existing subscriptions remain the same.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/managing-file-sh
 ---
 
 # Creating, updating, removing file shares
-<a name="managing-file-shares"></a>
 
 This topic describes how you can manage file shares by performing the following tasks.
 + Create a new file share

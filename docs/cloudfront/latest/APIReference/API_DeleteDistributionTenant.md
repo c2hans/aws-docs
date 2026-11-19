@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Delet
 ---
 
 # DeleteDistributionTenant
-<a name="API_DeleteDistributionTenant"></a>
 
 Deletes a distribution tenant. If you use this API operation to delete a distribution tenant that is currently enabled, the request will fail.
 

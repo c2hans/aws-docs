@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/super-examples.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Examples of using semi-structured data in Amazon Redshift
-<a name="super-examples"></a>
 
  The following examples demonstrate how to work with semi-structured data in Amazon Redshift using PartiQL syntax. You will create a sample table to load a sample set of semi-structured data, then query semi-structured data objects in a variety of use cases.
 

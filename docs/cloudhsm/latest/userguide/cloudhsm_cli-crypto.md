@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-c
 ---
 
 # The crypto category in CloudHSM CLI
-<a name="cloudhsm_cli-crypto"></a>
 
 In the CloudHSM CLI, **crypto** is a parent category for a group of commands that, when combined with the parent category, create a command specific to cryptographic operations. Currently, this category consists of the following commands:
 + [sign](cloudhsm_cli-crypto-sign.md)

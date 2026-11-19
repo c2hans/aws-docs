@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-a
 ---
 
 # Infrastructure examples on AWS
-<a name="examples"></a>
 
 This section provides examples for designing an infrastructure for your application on AWS that you can use to implement a hexagonal architecture. We recommend that you start with a simple architecture for building a minimum viable product (MVP). Most microservices need a single entry point to handle client requests, a compute layer to run the code, and a persistence layer to store data. The following AWS services are great candidates for use as clients, primary adapters, and secondary adapters in hexagonal architecture:
 + **Clients:** Amazon API Gateway, Amazon Simple Queue Service (Amazon SQS), Elastic Load Balancing, Amazon EventBridge

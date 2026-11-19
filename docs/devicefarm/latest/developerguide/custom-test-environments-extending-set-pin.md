@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 ---
 
 # Setting a device PIN when running tests in Device Farm
-<a name="custom-test-environments-extending-set-pin"></a>
 
  Some applications require that you set a PIN on the device. Device Farm does not support setting a PIN on devices natively. However, this is possible with the following caveats:
 + The device must be running Android 8 or above.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Medi
 ---
 
 # MediaAnalysisJobDescription
-<a name="API_MediaAnalysisJobDescription"></a>
 
 Description for a media analysis job.
 

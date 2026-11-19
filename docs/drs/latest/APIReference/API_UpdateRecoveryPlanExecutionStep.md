@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateRecove
 ---
 
 # UpdateRecoveryPlanExecutionStep
-<a name="API_UpdateRecoveryPlanExecutionStep"></a>
 
 Updates an execution step. Supports two actions: (1) skip a step that is in `NOT_STARTED` or `FAILED` status; (2) update the wait duration of a `WAIT` type step that is in `NOT_STARTED` status.
 

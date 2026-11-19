@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_TimestampRan
 ---
 
 # TimestampRange
-<a name="API_TimestampRange"></a>
 
 Specifies a time range for filtering certificates.
 

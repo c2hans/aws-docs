@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Amazo
 ---
 
 # AmazonQInQuickSightDashboardConfigurations
-<a name="API_AmazonQInQuickSightDashboardConfigurations"></a>
 
 A collection of Amazon Q feature configurations in an embedded Quick Sight dashboard.
 

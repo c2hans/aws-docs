@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/deleting-channel
 ---
 
 # Deleting channels
-<a name="deleting-channels"></a>
 
 ## Deleting one channel
 <a name="delete-channels-one"></a>

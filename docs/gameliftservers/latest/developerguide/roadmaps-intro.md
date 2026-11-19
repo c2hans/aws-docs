@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ro
 ---
 
 # Development roadmaps
-<a name="roadmaps-intro"></a>
 
 Development roadmaps provide structured, step-by-step guidance for building different types of game hosting solutions with Amazon GameLift Servers. Each roadmap is tailored to a specific hosting approach and walks you through the essential tasks, from initial setup to deployment and testing.
 

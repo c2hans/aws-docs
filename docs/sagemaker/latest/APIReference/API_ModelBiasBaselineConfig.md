@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelB
 ---
 
 # ModelBiasBaselineConfig
-<a name="API_ModelBiasBaselineConfig"></a>
 
 The configuration for a baseline model bias job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-datasy
 ---
 
 # AWS DataSync events
-<a name="events-ref-datasync"></a>
 
 DataSync sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

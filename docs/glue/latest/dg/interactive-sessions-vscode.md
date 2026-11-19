@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/interactive-sessions-vsco
 ---
 
 # Using interactive sessions with Microsoft Visual Studio Code
-<a name="interactive-sessions-vscode"></a>
 
  **Prerequisites**
 +  Install AWS Glue interactive sessions and verify it works with Jupyter Notebook.

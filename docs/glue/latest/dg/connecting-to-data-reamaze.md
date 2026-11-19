@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-reamaz
 ---
 
 # Connecting to Re:amaze in AWS Glue Studio
-<a name="connecting-to-data-reamaze"></a>
 
 Re:amaze is a customer-support helpdesk and messaging platform. Because you are a Re:amaze user, you can connect AWS Glue to your Re:amaze account. You can then use Re:amaze as a data source in your AWS Glue ETL jobs to transfer data between Re:amaze and AWS services or other supported applications.
 

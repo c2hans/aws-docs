@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListQuic
 ---
 
 # ListQuickConnects
-<a name="API_ListQuickConnects"></a>
 
 Provides information about the quick connects for the specified Connect Customer instance.
 

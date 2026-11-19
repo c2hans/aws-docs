@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Data Exports
-<a name="API_Types_AWS_Billing_and_Cost_Management_Data_Exports"></a>
 
 The following data types are supported by AWS Data Exports:
 +  [Column](API_DataExports_Column.md)

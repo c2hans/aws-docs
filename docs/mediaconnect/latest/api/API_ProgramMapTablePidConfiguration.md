@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ProgramMapTa
 ---
 
 # ProgramMapTablePidConfiguration
-<a name="API_ProgramMapTablePidConfiguration"></a>
 
 The configuration settings for the Program Map Table (PMT) Packet ID (PID).
 

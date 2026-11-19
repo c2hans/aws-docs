@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Resourc
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
 The details of a provisioned resource of this Amazon DataZone environment.
 

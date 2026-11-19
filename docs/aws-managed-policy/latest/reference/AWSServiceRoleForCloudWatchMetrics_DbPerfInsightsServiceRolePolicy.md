@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForCloudWatchMetrics\_DbPerfInsightsServiceRolePolicy
-<a name="AWSServiceRoleForCloudWatchMetrics_DbPerfInsightsServiceRolePolicy"></a>
 
 **Description**: Allows CloudWatch to access RDS Performance Insights metrics on your behalf
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Working with the EXTRACT and REPLICAT utilities of Oracle GoldenGate
-<a name="Appendix.OracleGoldenGate.ExtractReplicat"></a>
 
 The Oracle GoldenGate utilities `EXTRACT` and `REPLICAT` work together to keep the source and target databases in sync via incremental transaction replication using trail files. All changes that occur on the source database are automatically detected by `EXTRACT`, then formatted and transferred to trail files on the Oracle GoldenGate on-premises or Amazon EC2 instance hub. After initial load is completed, the data is read from these files and replicated to the target database by the `REPLICAT` utility.
 

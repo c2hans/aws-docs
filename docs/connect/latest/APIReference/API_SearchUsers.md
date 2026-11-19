@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchUs
 ---
 
 # SearchUsers
-<a name="API_SearchUsers"></a>
 
 Searches users in an Connect Customer instance, with optional filtering.
 

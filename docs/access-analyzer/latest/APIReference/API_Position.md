@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # Position
-<a name="API_Position"></a>
 
 A position in a policy.
 

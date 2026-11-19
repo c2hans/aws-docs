@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEPERF08-BP01 Inform and include the player in your process
-<a name="gameperf08-bp01"></a>
 
  Provide an option to display in game metrics like latency, frames per second and dropped packets. Surface infrastructure issues and maintenance downtime through player facing communication like status pages. Celebrate new game locations with player comms including dev blogs and set expectations for expected player experience improvements.
 

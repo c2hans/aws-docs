@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_IndexSt
 ---
 
 # IndexStatistics
-<a name="API_IndexStatistics"></a>
 
 Provides information about the number of documents in an index.
 

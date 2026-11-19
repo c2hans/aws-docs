@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api.html
 ---
 
 # AWS Glue API
-<a name="aws-glue-api"></a>
 
 This section describes data types and primitives used by AWS Glue SDKs and Tools. There are three general ways to interact with AWS Glue programmatically outside of the AWS Management Console, each with its own documentation:
 +  Language SDK libraries allow you to access AWS resources from common programming languages. Find more information at [Tools to Build on AWS](https://aws.amazon.com/tools/).

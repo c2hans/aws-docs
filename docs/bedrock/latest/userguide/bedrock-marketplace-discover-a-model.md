@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-marketp
 ---
 
 # Discover a model
-<a name="bedrock-marketplace-discover-a-model"></a>
 
 You can discover both Amazon Bedrock Marketplace models and Amazon Bedrock serverless models from the model catalog.
 

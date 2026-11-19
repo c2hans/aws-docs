@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/console_keyspa
 ---
 
 # Accessing Amazon Keyspaces using the console
-<a name="console_keyspaces"></a>
 
 You can access the console for Amazon Keyspaces at [https://console.aws.amazon.com/keyspaces/home](https://console.aws.amazon.com/keyspaces/home). For more information about AWS Management Console access, see [Controlling IAM users access to the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/console_controlling-access.html) in the IAM User Guide.
 

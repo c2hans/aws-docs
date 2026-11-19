@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/security_iam_s
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Identity-based IAM policies for Amazon Q Developer
-<a name="security_iam_service-with-iam-id-based-policies"></a>
 
 A policy is an object in AWS that, when you attach it to an identity, defines their permissions. When you create a policy to restrict or allow access to a resource, you can use an identity-based policy.
 

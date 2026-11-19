@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/amending-y
 ---
 
 # Amending your future dated agreements
-<a name="amending-your-future-dated-agreements"></a>
 
 You can increase your purchased units of a particular dimension in your FDA after the agreement start date. This option is possible when the agreement doesn't have a flexible payment schedule. For more details, see [Flexible payment scheduler](https://docs.aws.amazon.com/marketplace/latest/userguide/flexible-payment-scheduler.html).
 

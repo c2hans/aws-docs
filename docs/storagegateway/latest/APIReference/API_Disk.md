@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # Disk
-<a name="API_Disk"></a>
 
 Represents a gateway's local disk.
 

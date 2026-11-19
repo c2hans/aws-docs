@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # DeleteResourceServer
-<a name="API_DeleteResourceServer"></a>
 
 Deletes a resource server. After you delete a resource server, users can no longer generate access tokens with scopes that are associate with that resource server.
 

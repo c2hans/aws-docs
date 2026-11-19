@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Dead
 ---
 
 # DeadLetterConfig
-<a name="API_DeadLetterConfig"></a>
 
 Configuration details of the Amazon SQS queue for EventBridge to use as a dead-letter queue (DLQ).
 

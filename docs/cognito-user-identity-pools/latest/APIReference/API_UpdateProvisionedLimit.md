@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # UpdateProvisionedLimit
-<a name="API_UpdateProvisionedLimit"></a>
 
 Sets the provisioned limit for a specific API category. The value must be between the default limit and your account-level maximum limit in Service Quotas.
 
@@ -109,7 +108,7 @@ The message returned when the Amazon Cognito service returns a resource not foun
 HTTP Status Code: 400
 
  ** ServiceQuotaExceededException **
-The request exceeded your account's service quota. To increase your limit, use [UpdateProvisionedLimit](#API_UpdateProvisionedLimit) or submit a Service Quotas increase request.
+The request exceeded your account's service quota. To increase your limit, use [UpdateProvisionedLimit](API_UpdateProvisionedLimit.md) or submit a Service Quotas increase request.
 HTTP Status Code: 400
 
  ** TooManyRequestsException **

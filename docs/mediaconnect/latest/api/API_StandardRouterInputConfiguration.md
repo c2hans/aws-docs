@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StandardRout
 ---
 
 # StandardRouterInputConfiguration
-<a name="API_StandardRouterInputConfiguration"></a>
 
 The configuration settings for a standard router input, including the protocol, protocol-specific configuration, network interface, and availability zone.
 

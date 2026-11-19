@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/schema-conversion-sql-ser
 ---
 
 # Step 2: Configure Your Source Database
-<a name="schema-conversion-sql-server-aurora-postgresql-step-2"></a>
 
 In this step, you configure a new database user on your source SQL Server database. Also, you configure the network to set up interaction for your source database with DMS Schema Conversion.
 

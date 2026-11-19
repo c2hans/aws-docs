@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/run-com
 ---
 
 # Updating software using Run Command
-<a name="run-command-tutorial-update-software"></a>
 
 The following procedures describe how to update software on your managed nodes.
 

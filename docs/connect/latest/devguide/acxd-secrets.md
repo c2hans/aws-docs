@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-secrets.htm
 ---
 
 # Secrets
-<a name="acxd-secrets"></a>
 
 Store sensitive values (API keys, credentials, connection strings) encrypted at rest. Secrets can be referenced in data requests and integrations without exposing the value.
 

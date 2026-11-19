@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_FailureDetai
 ---
 
 # FailureDetails
-<a name="API_FailureDetails"></a>
 
 The details of the step failure. The service attempts to detect the root cause for many common failures.
 

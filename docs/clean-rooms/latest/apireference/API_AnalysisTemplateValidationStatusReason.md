@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisTemplateValidationStatusReason
-<a name="API_AnalysisTemplateValidationStatusReason"></a>
 
 The reasons for the validation results.
 

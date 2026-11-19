@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListOTAUpdat
 ---
 
 # ListOTAUpdates
-<a name="API_ListOTAUpdates"></a>
 
 Lists OTA updates.
 

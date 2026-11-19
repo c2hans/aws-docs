@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # ECS Architecture
-<a name="ecs-architecture"></a>
 
 This high-performance container-based architecture supports images up to 100 MB and includes the solution’s advanced capabilities, including transformation policies, content-aware smart cropping, content moderation, multi-tier device detection, non-S3 origin support, and an administrative interface.
 

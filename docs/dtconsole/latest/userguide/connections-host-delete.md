@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-h
 ---
 
 # Delete a host
-<a name="connections-host-delete"></a>
 
 You can use the Developer Tools console or the **delete-host** command in the AWS Command Line Interface (AWS CLI) to delete a host.
 

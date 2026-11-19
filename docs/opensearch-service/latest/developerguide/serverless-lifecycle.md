@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Using data lifecycle policies with Amazon OpenSearch Serverless
-<a name="serverless-lifecycle"></a>
 
 A data lifecycle policy in Amazon OpenSearch Serverless defines how long OpenSearch Serverless retains data in a time series collection. For example, you can set a policy to retain log data for 30 days before OpenSearch Serverless deletes it.
 

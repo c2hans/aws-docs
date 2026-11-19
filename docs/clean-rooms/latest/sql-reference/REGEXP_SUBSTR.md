@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/REGEXP_
 ---
 
 # REGEXP\_SUBSTR function
-<a name="REGEXP_SUBSTR"></a>
 
 Returns characters from a string by searching it for a regular expression pattern. REGEXP\_SUBSTR is similar to the [SUBSTRING function](SUBSTRING.md) function, but lets you search a string for a regular expression pattern. If the function can't match the regular expression to any characters in the string, it returns an empty string.
 

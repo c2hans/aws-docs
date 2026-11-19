@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-manageddatabases.pos
 ---
 
 # PostgreSQL pglogical extension
-<a name="chap-manageddatabases.postgresql-rds-postgresql-full-load-pglogical"></a>
 
 The pglogical extension for PostgreSQL implements logical streaming replication, using a similar publish and subscribe built-in approach.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListB
 ---
 
 # ListBackupAccessPoints
-<a name="API_ListBackupAccessPoints"></a>
 
 Returns a list of the backup access points in your account and Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_HsmStat
 ---
 
 # HsmStatus
-<a name="API_HsmStatus"></a>
 
 Describes the status of changes to HSM settings.
 

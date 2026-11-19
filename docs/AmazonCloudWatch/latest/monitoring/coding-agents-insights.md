@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/codin
 ---
 
 # Monitor AI coding agents with Amazon CloudWatch Coding Agent Insights
-<a name="coding-agents-insights"></a>
 
 AI coding agents such as OpenAI Codex, Claude Code, and GitHub Copilot emit OpenTelemetry (OTel) telemetry about how your developers use them—token consumption, per-turn latency, tool calls, API requests, and approvals. When you send this telemetry to Amazon CloudWatch, you can monitor adoption, attribute usage and cost to teams and departments, and spot performance or reliability issues across your developer fleet.
 

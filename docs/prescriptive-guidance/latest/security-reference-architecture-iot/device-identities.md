@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Capability 3. Providing strong device identities and secure device access and management
-<a name="device-identities"></a>
 
 |  |
 | --- |

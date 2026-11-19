@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # LegalEntity
-<a name="API_billing_LegalEntity"></a>
 
 A legal entity on a private pricing contract. It can be found on your contract's signature page.
 

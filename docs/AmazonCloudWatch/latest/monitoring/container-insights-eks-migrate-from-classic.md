@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 ---
 
 # Migrate from Enhanced Container Insights (Classic) to OTel Container Insights
-<a name="container-insights-eks-migrate-from-classic"></a>
 
 Both Enhanced Container Insights (Classic) and OTel Container Insights use the same `amazon-cloudwatch-observability` Amazon EKS add-on. The migration is an in-place add-on version update that you can complete in 15–30 minutes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Card connections in Infrastructure Composer
-<a name="using-composer-connecting"></a>
 
 In AWS Infrastructure Composer, a connection between two cards is visually displayed by a line. These lines represent event-driven relationships within your application.
 

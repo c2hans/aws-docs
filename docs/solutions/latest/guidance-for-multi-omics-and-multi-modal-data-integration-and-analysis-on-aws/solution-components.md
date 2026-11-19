@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # Components
-<a name="solution-components"></a>
 
 ## CI/CD pipeline
 <a name="cicd-pipeline"></a>

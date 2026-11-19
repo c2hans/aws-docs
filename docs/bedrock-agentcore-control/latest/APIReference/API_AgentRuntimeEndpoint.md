@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # AgentRuntimeEndpoint
-<a name="API_AgentRuntimeEndpoint"></a>
 
 Contains information about an agent runtime endpoint. An endpoint provides a way to connect to and interact with an agent runtime.
 

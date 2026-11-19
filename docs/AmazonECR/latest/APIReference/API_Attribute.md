@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Attrib
 ---
 
 # Attribute
-<a name="API_Attribute"></a>
 
 This data type is used in the [ImageScanFinding](API_ImageScanFinding.md) data type.
 

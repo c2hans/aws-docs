@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Cr
 ---
 
 # CreateDataset
-<a name="API_CreateDataset"></a>
 
 Creates a Dataset in a Domain and starts building it. A new dataset has the status CREATING. When it's ready to use, its status changes to ACTIVE, or to CREATE\_FAILED if it fails to build. To check the status, call GetDataset.
 

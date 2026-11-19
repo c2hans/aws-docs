@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Preval
 ---
 
 # PrevalidationSignal
-<a name="API_PrevalidationSignal"></a>
 
 One producer's conclusion about one subject on one scoring dimension.
 

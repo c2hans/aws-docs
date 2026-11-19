@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-amplit
 ---
 
 # Connecting to Amplitude in AWS Glue Studio
-<a name="connecting-to-data-amplitude"></a>
 
 Amplitude is a product-analytics platform: product/growth/data teams instrument events, then analyze user behavior (segmentation, funnels, retention, cohorts). Because you are an Amplitude user, you can connect AWS Glue to your Amplitude account. You can then use Amplitude as a data source in your AWS Glue ETL jobs to transfer data between Amplitude and AWS services or other supported applications.
 

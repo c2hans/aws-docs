@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC10-BP07 Run game days
-<a name="sec_incident_response_run_game_days"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DataTabl
 ---
 
 # DataTableDeleteValueIdentifier
-<a name="API_DataTableDeleteValueIdentifier"></a>
 
 A data table delete value identifier.
 

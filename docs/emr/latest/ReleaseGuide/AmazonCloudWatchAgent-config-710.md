@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/AmazonCloudWatch
 ---
 
 # Configure CloudWatch agent for Amazon EMR 7.1.0
-<a name="AmazonCloudWatchAgent-config-710"></a>
 
 Starting with Amazon EMR 7.1.0, you can configure the Amazon CloudWatch agent to use additional system metrics, add application metrics, and change metrics destination by using the Amazon EMR configuration API. For more information about how to use the EMR configuration API to configure your cluster’s applications, see [Configure applications](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-configure-apps.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2rw-cli.html
 ---
 
 # Troubleshoot impaired Windows instance with the EC2Rescue CLI
-<a name="ec2rw-cli"></a>
 
 The EC2Rescue for Windows Server command line interface (CLI) allows you to run an EC2Rescue for Windows Server plugin (referred as an "action") programmatically.
 

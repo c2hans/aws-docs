@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # GlobalReplicationGroupMember
-<a name="API_GlobalReplicationGroupMember"></a>
 
 A member of a Global datastore. It contains the Replication Group Id, the Amazon region and the role of the replication group.
 

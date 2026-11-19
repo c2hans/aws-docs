@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/disabl
 ---
 
 # Disabling transitive matching
-<a name="disable-transitive-matching"></a>
 
 The `enableTransitiveMatching` setting is immutable. You cannot change this setting after you create a workflow.
 

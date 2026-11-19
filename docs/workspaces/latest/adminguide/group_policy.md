@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/group_polic
 ---
 
 # Manage your Windows WorkSpaces in WorkSpaces Personal
-<a name="group_policy"></a>
 
 You can use Group Policy Objects (GPOs) to apply settings to manage Windows WorkSpaces or users that are part of your Windows WorkSpaces directory.
 

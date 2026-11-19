@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applicati
 ---
 
 # Applications applicationId Policy
-<a name="applications-applicationid-policy"></a>
 
 ## URI
 <a name="applications-applicationid-policy-url"></a>

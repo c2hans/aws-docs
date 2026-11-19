@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeAlgorithm
-<a name="API_DescribeAlgorithm"></a>
 
 Returns a description of the specified algorithm that is in your account.
 

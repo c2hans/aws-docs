@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_GroupingStat
 ---
 
 # GroupingStatusesItem
-<a name="API_GroupingStatusesItem"></a>
 
 The information about a grouping or ungrouping resource action.
 

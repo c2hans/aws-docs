@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_ListSN
 ---
 
 # ListSNOMEDCTInferenceJobs
-<a name="API_ListSNOMEDCTInferenceJobs"></a>
 
  Gets a list of InferSNOMEDCT jobs a user has submitted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/wsp-console
 ---
 
 # Amazon WorkSpaces Console operations permissions reference
-<a name="wsp-console-permissions-ref"></a>
 
 Some Amazon WorkSpaces APIs can only be called through the AWS Management Console. They are not public APIs, in the sense they cannot be called programmatically, and they are not provided by any SDK. These API operations include:
 + workspaces:DirectoryAccessManagement

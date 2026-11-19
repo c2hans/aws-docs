@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/creating-filter-ex
 ---
 
 # Filter expression structure and elements
-<a name="creating-filter-expressions"></a>
 
 This section includes information about the structure of filter expressions and their elements.
 

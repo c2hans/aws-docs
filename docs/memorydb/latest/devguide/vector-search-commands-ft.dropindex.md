@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-c
 ---
 
 # FT.DROPINDEX
-<a name="vector-search-commands-ft.dropindex"></a>
 
 Drop an index. The index definition and associated content are deleted. Keys are unaffected.
 

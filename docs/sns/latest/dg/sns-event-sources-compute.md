@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources-compute.
 ---
 
 # Compute services
-<a name="sns-event-sources-compute"></a>
 
 The following table describes how Amazon SNS integrates with various AWS compute services, enabling you to receive notifications for key events such as Auto Scaling actions, EC2 Image Builder completions, Elastic Beanstalk environment changes, Lambda function outputs, and Lightsail metric thresholds.
 

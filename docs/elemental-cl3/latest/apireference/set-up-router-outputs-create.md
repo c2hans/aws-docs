@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # POST: Create a Router Output
-<a name="set-up-router-outputs-create"></a>
 
 Create a new output for the specified router. Use this command repeatedly to set up all the router outputs. The total number of Router Output entities for a specified router must not exceed the actual physical outputs on the router.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/signer-sign
 ---
 
 # signer-signingprofile-tagged
-<a name="signer-signingprofile-tagged"></a>
 
 Checks if AWS Signer signing profile resources have tags. Optionally, required tag keys can be specified. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.
 

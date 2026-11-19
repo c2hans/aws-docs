@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Editing data type mappings in the AWS Schema Conversion Tool
-<a name="CHAP_Mapping.Edit"></a>
 
 You can filter or delete existing mapping rules, and add a new mapping rule in your AWS Schema Conversion Tool (AWS SCT) project.
 

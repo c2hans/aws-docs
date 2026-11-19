@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/invoice
 ---
 
 # Viewing invoice units with AWS invoice configuration
-<a name="invoice-configuration-view"></a>
 
 Once you create an invoice unit, you can view invoice unit details in several different ways.
 

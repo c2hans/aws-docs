@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/sidew
 ---
 
 # Provision Sidewalk devices in bulk
-<a name="sidewalk-bulk-provision-how"></a>
 
 This section shows how you can provision Sidewalk devices in bulk to AWS IoT Core for Amazon Sidewalk using the AWS IoT console and the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AmiScanMod
 ---
 
 # AmiScanModeConfiguration
-<a name="API_AmiScanModeConfiguration"></a>
 
 The scan mode configuration that determines which Amazon Machine Images (AMIs) are scanned.
 

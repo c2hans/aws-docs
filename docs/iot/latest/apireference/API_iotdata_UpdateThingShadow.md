@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_Upda
 ---
 
 # UpdateThingShadow
-<a name="API_iotdata_UpdateThingShadow"></a>
 
 Updates the shadow for the specified thing.
 

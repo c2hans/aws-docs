@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Memo
 ---
 
 # MemoryDBServiceRolePolicy
-<a name="MemoryDBServiceRolePolicy"></a>
 
 **Description**: This policy allows MemoryDB to manage AWS resources on your behalf as necessary for managing your resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListStor
 ---
 
 # ListStorageLensGroups
-<a name="API_control_ListStorageLensGroups"></a>
 
  Lists all the Storage Lens groups in the specified home Region.
 

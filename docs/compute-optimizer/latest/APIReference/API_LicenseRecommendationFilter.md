@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # LicenseRecommendationFilter
-<a name="API_LicenseRecommendationFilter"></a>
 
  Describes a filter that returns a more specific list of license recommendations. Use this filter with the `GetLicenseRecommendation` action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/s3-sharing.html
 ---
 
 # Permissions for data access using Amazon S3 URIs
-<a name="s3-sharing"></a>
 
 You can access sequence store data using HealthOmics API operations or Amazon S3 API operations.
 

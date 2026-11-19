@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/configure-nfs-for-sc
 ---
 
 # Configure storage (Amazon EFS)
-<a name="configure-nfs-for-scale-out-workloads"></a>
 
 **Note**
 If you plan to use FSx for ONTAP storage for your deployment, refer to SAP HANA on AWS with Amazon FSx for NetApp ONTAP guide, and skip the Amazon EFS configuration steps detailed further here.

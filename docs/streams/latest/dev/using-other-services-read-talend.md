@@ -3,6 +3,5 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/using-other-services-
 ---
 
 # Talend
-<a name="using-other-services-read-talend"></a>
 
 Talend is a data integration and management software that allows users to collect, transform, and connect data from various sources in a scalable and efficient manner. For more information on consuming Kinesis data streams using Talend, see [Connect talend to an Amazon Kinesis stream](https://help.talend.com/r/en-US/Cloud/connectors-guide/connector-kinesis).

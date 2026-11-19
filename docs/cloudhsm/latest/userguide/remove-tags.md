@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/remove-tags.ht
 ---
 
 # Remove tags from AWS CloudHSM resources
-<a name="remove-tags"></a>
 
 You can remove tags from an AWS CloudHSM cluster by using the [AWS CloudHSM console](https://console.aws.amazon.com/cloudhsm/), the [AWS CLI](https://aws.amazon.com/cli/), or the AWS CloudHSM API.
 

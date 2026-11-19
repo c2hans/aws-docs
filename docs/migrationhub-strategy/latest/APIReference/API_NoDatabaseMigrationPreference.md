@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # NoDatabaseMigrationPreference
-<a name="API_NoDatabaseMigrationPreference"></a>
 
  The object containing details about database migration preferences, when you have no particular preference.
 

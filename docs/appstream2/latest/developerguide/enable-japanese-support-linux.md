@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/enable-
 ---
 
 # Tutorial: Enable Japanese Support for Your Linux Images
-<a name="enable-japanese-support-linux"></a>
 
 This tutorial describes how to enable Japanese support for a Linux image. This enables applications on the image to display Japanese characters, and streaming users to use the Japanese input method in the streaming sessions from the image.
 

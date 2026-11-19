@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Kubern
 ---
 
 # KubernetesApiCall
-<a name="API_KubernetesApiCall"></a>
 
 Contains details about a Kubernetes API call.
 

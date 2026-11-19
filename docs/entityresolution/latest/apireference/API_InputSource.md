@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # InputSource
-<a name="API_InputSource"></a>
 
 An object containing `inputSourceARN`, `schemaName`, and `applyNormalization`.
 

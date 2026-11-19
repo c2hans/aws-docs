@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # High availability
-<a name="high-availability"></a>
 
 Amazon RDS for Oracle supports Multi-AZ deployment, which automatically creates a standby instance in a different Availability Zone. A Multi-AZ deployment provides automatic failover during planned maintenance and unplanned disruptions.
 

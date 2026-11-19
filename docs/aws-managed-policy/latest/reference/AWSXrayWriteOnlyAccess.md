@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSX
 ---
 
 # AWSXrayWriteOnlyAccess
-<a name="AWSXrayWriteOnlyAccess"></a>
 
 **Description**: AWS X-Ray write only managed policy
 

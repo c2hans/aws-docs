@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # Data protection
-<a name="data-protection"></a>
 
 | AOSSEC03: How do you protect your data, indices, and documents? |
 | --- |

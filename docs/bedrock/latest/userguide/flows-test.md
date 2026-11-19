@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-test.html
 ---
 
 # Test a flow in Amazon Bedrock
-<a name="flows-test"></a>
 
 After you’ve created a flow, you will have a *working draft*. The working draft is a version of the flow that you can iteratively build and test. Each time you make changes to your flow, the working draft is updated.
 

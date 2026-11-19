@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/qualificationguide/getti
 ---
 
 # Getting started guide template
-<a name="getting_started_template"></a>
 
 Write an overview that provides a brief description of the board. This section should answer the following questions:
 + Which hardware is required to run the demo application?

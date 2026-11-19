@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SendPi
 ---
 
 # SendPipelineExecutionStepFailure
-<a name="API_SendPipelineExecutionStepFailure"></a>
 
 Notifies the pipeline that the execution of a callback step failed, along with a message describing why. When a callback step is run, the pipeline generates a callback token and includes the token in a message sent to Amazon Simple Queue Service (Amazon SQS).
 

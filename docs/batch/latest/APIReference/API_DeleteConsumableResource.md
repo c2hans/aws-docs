@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_DeleteCons
 ---
 
 # DeleteConsumableResource
-<a name="API_DeleteConsumableResource"></a>
 
 Deletes the specified consumable resource.
 

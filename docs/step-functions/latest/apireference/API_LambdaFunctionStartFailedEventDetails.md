@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_L
 ---
 
 # LambdaFunctionStartFailedEventDetails
-<a name="API_LambdaFunctionStartFailedEventDetails"></a>
 
 Contains details about a lambda function that failed to start during an execution.
 

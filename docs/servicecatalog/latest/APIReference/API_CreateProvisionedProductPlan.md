@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_C
 ---
 
 # CreateProvisionedProductPlan
-<a name="API_CreateProvisionedProductPlan"></a>
 
 Creates a plan.
 

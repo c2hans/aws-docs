@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::CapacityProvider CapacityReservationSpecification
-<a name="aws-properties-bedrockagentcore-capacityprovider-capacityreservationspecification"></a>
 
 <a name="aws-properties-bedrockagentcore-capacityprovider-capacityreservationspecification-description"></a>The `CapacityReservationSpecification` property type specifies Property description not available. for an [AWS::BedrockAgentCore::CapacityProvider](aws-resource-bedrockagentcore-capacityprovider.md).
 

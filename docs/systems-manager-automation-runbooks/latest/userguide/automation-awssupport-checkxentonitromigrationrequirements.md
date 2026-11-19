@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-CheckXenToNitroMigrationRequirements`
-<a name="automation-awssupport-checkxentonitromigrationrequirements"></a>
 
  **Description**
 

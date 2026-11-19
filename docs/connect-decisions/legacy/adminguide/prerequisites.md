@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/prer
 ---
 
 # Prerequisites to use AWS Supply Chain
-<a name="prerequisites"></a>
 
 Before you create an AWS Supply Chain instance, make sure that you complete the following steps:
 + You have an AWS account. To create an AWS account, see [Setting up an AWS account](setting-up.md).

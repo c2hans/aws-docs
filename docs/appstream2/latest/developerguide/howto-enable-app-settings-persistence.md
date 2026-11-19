@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/howto-e
 ---
 
 # How to Enable Application Settings Persistence
-<a name="howto-enable-app-settings-persistence"></a>
 
 You can enable or disable application settings persistence while creating a stack or after the stack is created by using the WorkSpaces Applications console, WorkSpaces Applications API, an AWS SDK, or the AWS Command Line Interface (CLI). For each AWS Region, persistent application settings are stored in an S3 bucket in your account.
 

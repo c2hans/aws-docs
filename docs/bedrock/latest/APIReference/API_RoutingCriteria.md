@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_RoutingC
 ---
 
 # RoutingCriteria
-<a name="API_RoutingCriteria"></a>
 
 Routing criteria for a prompt router.
 

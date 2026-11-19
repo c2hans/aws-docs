@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_ListLinks.ht
 ---
 
 # ListLinks
-<a name="API_ListLinks"></a>
 
 Use this operation in a source account to return a list of links to monitoring account sinks that this source account has.
 

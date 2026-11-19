@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Reference.html
 ---
 
 # AWS DMS reference
-<a name="CHAP_Reference"></a>
 
 In this reference section, you can find additional information you might need when using AWS Database Migration Service (AWS DMS), including data type conversion information.
 

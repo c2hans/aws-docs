@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateServer
 ---
 
 # UpdateServerCertificate
-<a name="API_UpdateServerCertificate"></a>
 
 Updates the name and/or the path of the specified server certificate stored in IAM.
 

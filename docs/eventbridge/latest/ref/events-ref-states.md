@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-states
 ---
 
 # AWS Step Functions events
-<a name="events-ref-states"></a>
 
 Step Functions sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

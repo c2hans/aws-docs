@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/streams-change-
 ---
 
 # Serialization Formats in Neptune Streams
-<a name="streams-change-formats"></a>
 
 Amazon Neptune uses two different formats for serializing graph-changes data to log streams, depending on whether the graph was created using Gremlin or SPARQL.
 

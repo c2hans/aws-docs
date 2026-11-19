@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_FieldsForTheme
 ---
 
 # FieldsForThemeGeneration
-<a name="API_FieldsForThemeGeneration"></a>
 
 A string to string map of the configuration details for theme generation.
 

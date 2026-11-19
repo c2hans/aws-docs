@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/wickrio/host-machine-requir
 This guide provides documentation for Wickr IO Integrations. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Host machine and requirements
-<a name="host-machine-requirements"></a>
 
 You should provision a host machine capable of running Docker to deploy the Wickr IO Docker container. Refer to the [Docker website](https://docs.docker.com/engine/install/) for instructions on how to install Docker on your system. Once the docker is installed, make sure the docker service is up and running using the `docker info` command.
 

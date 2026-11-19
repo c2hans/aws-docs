@@ -3,11 +3,12 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 ---
 
 # Migrate servers
-<a name="transform-vmware-migrate-servers"></a>
 
 AWS Transform automates the rehosting of your servers to Amazon EC2 at scale. The AI-powered agent guides you through each migration wave, from inventory validation and replication agent deployment through testing and final cutover. AWS Transform handles the orchestration across hundreds of servers while you maintain control over configuration and approval decisions. Internally, AWS Transform uses AWS Transform MGN (MGN) for data replication. For more information about MGN, see [What is AWS Transform MGN?](https://docs.aws.amazon.com/mgn/latest/ug/what-is-mgn.html) in the *MGN User Guide*.
 
 You can migrate servers from virtually any source environment, including on-premises data centers, other cloud providers, or other AWS Regions. AWS Transform supports both physical servers and virtual servers running on VMware, Hyper-V, KVM, or other virtualization platforms. The source infrastructure and hypervisor are not important as long as the source operating system is supported.
+
+You can migrate servers to AWS Regions (commercial and AWS GovCloud (US)), to AWS Local Zones, or to AWS Outposts. For the list of supported target Regions, see [Supported target Regions](transform-vmware-connect-target-account.md#transform-vmware-cta-supported-regions). For more information about Local Zones and Outposts, see [Replicating to AWS Local Zones](https://docs.aws.amazon.com/mgn/latest/ug/replication-server-settings.html#local-zone-snapshots) and [Migrating to AWS Outposts](https://docs.aws.amazon.com/mgn/latest/ug/outposts.html) in the *AWS Transform MGN User Guide*.
 
 Server migration has the following parts:
 + [Prerequisites](transform-vmware-ms-prerequisites.md) – Make sure your target accounts, network infrastructure, and inventory file are in place.

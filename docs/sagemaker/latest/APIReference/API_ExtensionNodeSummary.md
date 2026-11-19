@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Extens
 ---
 
 # ExtensionNodeSummary
-<a name="API_ExtensionNodeSummary"></a>
 
 A summary of an extension's installation across the nodes of a SageMaker HyperPod cluster.
 

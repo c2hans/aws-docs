@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_MatterCap
 ---
 
 # MatterCapabilityReport
-<a name="API_MatterCapabilityReport"></a>
 
 Matter based capability report.
 

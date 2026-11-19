@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENREL05-BP03 Verify that agent capabilities are available across all regions of availability
-<a name="genrel05-bp03"></a>
 
  Agents require supporting infrastructure to service requests from foundation models. Using agents across a region of availability requires the supporting infrastructure to be available in that region.
 

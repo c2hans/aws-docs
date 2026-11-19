@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Migr
 ---
 
 # MigrationHubServiceRolePolicy
-<a name="MigrationHubServiceRolePolicy"></a>
 
 **Description**: Allows Migration Hub to call Application Discovery Service on your behalf
 

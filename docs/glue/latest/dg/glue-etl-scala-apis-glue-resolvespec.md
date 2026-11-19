@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-etl-scala-apis-glue-
 ---
 
 # AWS Glue Scala ResolveSpec APIs
-<a name="glue-etl-scala-apis-glue-resolvespec"></a>
 
 **Topics**
 + [ResolveSpec object](#glue-etl-scala-apis-glue-resolvespec-object)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_EFSAut
 ---
 
 # EFSAuthorizationConfig
-<a name="API_EFSAuthorizationConfig"></a>
 
 The authorization configuration details for the Amazon EFS file system.
 

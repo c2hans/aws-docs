@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws/p
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 Plan your Live Streaming on AWS deployment
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_SourceProper
 ---
 
 # SourceProperties
-<a name="API_SourceProperties"></a>
 
 Properties of the Source Server machine.
 

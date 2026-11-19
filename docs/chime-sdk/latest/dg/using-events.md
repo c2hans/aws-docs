@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/using-events.html
 ---
 
 # Understanding Amazon Chime SDK meeting lifecycle events
-<a name="using-events"></a>
 
 The Amazon Chime SDK sends meeting lifecycle events, which you can use to trigger notifications and initiate downstream workflows. Some examples of using meeting events include:
 + Updating metadata when an attendee joins or leaves an Amazon Chime SDK meeting.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/square-support.html
 ---
 
 # AWS Glue support for Square
-<a name="square-support"></a>
 
 AWS Glue supports Square as follows:
 

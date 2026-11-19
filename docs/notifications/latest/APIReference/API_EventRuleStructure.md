@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ev
 ---
 
 # EventRuleStructure
-<a name="API_EventRuleStructure"></a>
 
 Contains a complete list of fields related to an `EventRule`.
 

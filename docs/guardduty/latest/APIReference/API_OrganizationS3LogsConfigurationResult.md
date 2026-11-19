@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationS3LogsConfigurationResult
-<a name="API_OrganizationS3LogsConfigurationResult"></a>
 
 The current configuration of S3 data event logs as a data source for the organization.
 

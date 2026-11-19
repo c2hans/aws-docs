@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Rul
 ---
 
 # RuleTypeSettings
-<a name="API_RuleTypeSettings"></a>
 
 Returns information about the settings for a rule type.
 

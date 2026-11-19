@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AppR
 ---
 
 # AppRunnerNetworkingServiceRolePolicy
-<a name="AppRunnerNetworkingServiceRolePolicy"></a>
 
 **Description**: Allows AWS AppRunner Networking to manage related AWS resources on your behalf.
 

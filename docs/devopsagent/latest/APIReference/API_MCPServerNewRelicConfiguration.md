@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerNewRelicConfiguration
-<a name="API_MCPServerNewRelicConfiguration"></a>
 
 Mixin for webhook update support.
 

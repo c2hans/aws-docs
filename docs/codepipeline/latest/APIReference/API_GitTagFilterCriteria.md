@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Git
 ---
 
 # GitTagFilterCriteria
-<a name="API_GitTagFilterCriteria"></a>
 
 The Git tags specified as filter criteria for whether a Git tag repository event will start the pipeline.
 

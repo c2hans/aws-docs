@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hiv.html
 ---
 
 # .hiv
-<a name="hiv"></a>
 
 Used for websites devoted to the fight against HIV.
 

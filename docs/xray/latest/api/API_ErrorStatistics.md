@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_ErrorStatistics.html
 ---
 
 # ErrorStatistics
-<a name="API_ErrorStatistics"></a>
 
 Information about requests that failed with a 4xx Client Error status code.
 

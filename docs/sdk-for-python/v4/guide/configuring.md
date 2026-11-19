@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/configuring.html
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Configuration
-<a name="configuring"></a>
 
 The AWS SDK for Python v4 resolves client configuration from values that you pass in code, environment variables, and the shared AWS config files. If you create a client without a configuration (`client = BedrockRuntimeClient()`), the client resolves its configuration from your environment the first time you call an operation.
 

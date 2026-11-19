@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/jdbc-v3-driver-release-
 ---
 
 # Amazon Athena JDBC 3.x release notes
-<a name="jdbc-v3-driver-release-notes"></a>
 
 These release notes provide details of improvements and fixes in the Amazon Athena JDBC 3.x driver.
 

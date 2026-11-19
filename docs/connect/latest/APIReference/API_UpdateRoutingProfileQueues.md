@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRo
 ---
 
 # UpdateRoutingProfileQueues
-<a name="API_UpdateRoutingProfileQueues"></a>
 
 Updates the properties associated with a set of queues for a routing profile.
 

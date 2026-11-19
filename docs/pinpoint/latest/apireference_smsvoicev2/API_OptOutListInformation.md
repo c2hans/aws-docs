@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # OptOutListInformation
-<a name="API_OptOutListInformation"></a>
 
 The information for all OptOutList in an AWS account.
 

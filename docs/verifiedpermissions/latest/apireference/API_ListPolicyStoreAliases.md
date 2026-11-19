@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # ListPolicyStoreAliases
-<a name="API_ListPolicyStoreAliases"></a>
 
 Returns a paginated list of all policy store aliases in the calling AWS account.
 

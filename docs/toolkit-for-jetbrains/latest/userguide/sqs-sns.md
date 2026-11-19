@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/s
 ---
 
 # Using Amazon SQS with Amazon SNS in the AWS Toolkit for JetBrains
-<a name="sqs-sns"></a>
 
 The following procedure details how to subscribe Standard Amazon SQS queues to Amazon SNS topics using the AWS Toolkit for JetBrains.
 

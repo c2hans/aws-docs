@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/example_glue_GetCrawler_s
 ---
 
 # Use `GetCrawler` with an AWS SDK
-<a name="example_glue_GetCrawler_section"></a>
 
 The following code examples show how to use `GetCrawler`.
 

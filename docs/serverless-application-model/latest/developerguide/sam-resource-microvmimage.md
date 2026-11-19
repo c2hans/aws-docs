@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # AWS::Serverless::MicrovmImage
-<a name="sam-resource-microvmimage"></a>
 
  Creates a AWS Lambda MicroVM image from a code artifact stored in Amazon S3. A MicroVM image is a Firecracker snapshot built from a Dockerfile and application code, enabling sub-second startup for MicroVM instances.
 

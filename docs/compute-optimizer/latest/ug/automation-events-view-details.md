@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/automation-e
 ---
 
 # View automation events
-<a name="automation-events-view-details"></a>
 
 This **Automation events** page displays automation events initiated by Compute Optimizer. Review details such as event type, description, status, and estimated savings.
 

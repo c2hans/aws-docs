@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Comprehend::DocumentClassifier DocumentClassifierDocuments
-<a name="aws-properties-comprehend-documentclassifier-documentclassifierdocuments"></a>
 
 The location of the training documents. This parameter is required in a request to create a semi-structured document classification model.
 

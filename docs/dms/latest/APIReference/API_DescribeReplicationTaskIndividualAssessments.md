@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeRepl
 ---
 
 # DescribeReplicationTaskIndividualAssessments
-<a name="API_DescribeReplicationTaskIndividualAssessments"></a>
 
 Returns a paginated list of individual assessments based on filter settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricing-calculator/latest/userguide/supp
 ---
 
 # Adding Support costs to your estimates
-<a name="support-estimates"></a>
 
 You can add Support costs to your estimates using the AWS Pricing Calculator. You can either directly choose your preferred support plan, or complete the recommendations that match your usage needs. You can change your Support within the calculator at any time.
 

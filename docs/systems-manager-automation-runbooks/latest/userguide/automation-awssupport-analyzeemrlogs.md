@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-AnalyzeEMRLogs`
-<a name="automation-awssupport-analyzeemrlogs"></a>
 
  **Description**
 

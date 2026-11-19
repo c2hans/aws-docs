@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # UpdateShareInvitation
-<a name="API_UpdateShareInvitation"></a>
 
 Update a workload or custom lens share invitation.
 

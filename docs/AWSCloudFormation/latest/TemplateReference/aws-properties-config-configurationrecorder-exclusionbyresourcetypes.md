@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Config::ConfigurationRecorder ExclusionByResourceTypes
-<a name="aws-properties-config-configurationrecorder-exclusionbyresourcetypes"></a>
 
 Specifies whether the configuration recorder excludes certain resource types from being recorded. Use the `ResourceTypes` field to enter a comma-separated list of resource types you want to exclude from recording.
 

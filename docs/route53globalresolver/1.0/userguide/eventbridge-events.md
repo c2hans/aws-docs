@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/even
 ---
 
 # EventBridge events for Amazon Route 53 Global Resolver automation and monitoring
-<a name="eventbridge-events"></a>
 
 You can monitor Amazon Route 53 Global Resolver events in EventBridge, which delivers a stream of real-time data from your own applications, software-as-a-service (SaaS) applications, and AWS services. EventBridge routes that data to targets such as Lambda and Amazon SNS. These events are the same as those that appear in CloudWatch Events, which delivers a near real-time stream of system events that describe changes in AWS resources.
 

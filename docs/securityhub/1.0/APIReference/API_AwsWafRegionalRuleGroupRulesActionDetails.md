@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafR
 ---
 
 # AwsWafRegionalRuleGroupRulesActionDetails
-<a name="API_AwsWafRegionalRuleGroupRulesActionDetails"></a>
 
 Describes the action that AWS WAF should take on a web request when it matches the criteria defined in the rule.
 

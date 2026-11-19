@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/installguide/instal
 ---
 
 # Installing Conductor Live on qualified hardware
-<a name="install-cl3-ig"></a>
 
 This section is for IT administrators who perform the first-time installation of AWS Elemental Conductor Live software on an appliance that is considered qualified hardware.
 

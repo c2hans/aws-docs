@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetTaxRegistration
-<a name="API_taxSettings_GetTaxRegistration"></a>
 
 Retrieves tax registration for a single account.
 

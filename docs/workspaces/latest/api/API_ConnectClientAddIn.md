@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ConnectClientA
 ---
 
 # ConnectClientAddIn
-<a name="API_ConnectClientAddIn"></a>
 
 Describes an Connect Customer client add-in.
 

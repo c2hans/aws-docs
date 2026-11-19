@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/dg/connector-vpc-setup.htm
 Amazon Kendra is no longer open to new customers. For capabilities similar to Amazon Kendra, explore Amazon Bedrock Knowledge Bases. [Learn more](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
 # Set up an Amazon Kendra data source to connect to Amazon VPC
-<a name="connector-vpc-setup"></a>
 
 When you add a new data source in Amazon Kendra, you can use the Amazon VPC feature if the selected data source connector supports this feature.
 

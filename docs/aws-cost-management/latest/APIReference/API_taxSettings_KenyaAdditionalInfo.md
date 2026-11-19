@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # KenyaAdditionalInfo
-<a name="API_taxSettings_KenyaAdditionalInfo"></a>
 
 Additional tax information associated with your TRN in Kenya.
 

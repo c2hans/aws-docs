@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeletePen
 ---
 
 # DeletePendingAggregationRequest
-<a name="API_DeletePendingAggregationRequest"></a>
 
 Deletes pending authorization requests for a specified aggregator account in a specified region.
 

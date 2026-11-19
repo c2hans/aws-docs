@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # DeploymentPreference
-<a name="sam-property-function-deploymentpreference"></a>
 
 Specifies the configurations to enable gradual Lambda deployments. For more information about configuring gradual Lambda deployments, see [Deploying serverless applications gradually with AWS SAM](automating-updates-to-serverless-apps.md).
 

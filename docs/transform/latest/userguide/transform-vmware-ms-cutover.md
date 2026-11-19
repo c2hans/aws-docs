@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 ---
 
 # Step 6: Cutover
-<a name="transform-vmware-ms-cutover"></a>
 
 Cutover is the final migration step where your production workloads are moved to AWS. For more information, see [Launch cutover instances](https://docs.aws.amazon.com/mgn/latest/ug/launch-cutover-instances.html) in the *MGN User Guide*. Similar to testing, AWS Transform supports full wave cutover or selective cutover for specific servers.
 

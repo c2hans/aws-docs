@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_CancelP
 ---
 
 # CancelPlanExecution
-<a name="API_CancelPlanExecution"></a>
 
 Cancels an in-progress plan execution. This operation stops the execution of the plan and prevents any further steps from being processed.
 

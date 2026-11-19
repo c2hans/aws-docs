@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/foo.html
 ---
 
 # .foo
-<a name="foo"></a>
 
 Used as a secure domain for developers. Use .foo for everything and anything.
 

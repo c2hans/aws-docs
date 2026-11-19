@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/getting
 ---
 
 # Start a default shell session by specifying the default session document in IAM policies
-<a name="getting-started-default-session-document"></a>
 
 When you configure Session Manager for your AWS account or when you change session preferences in the Systems Manager console, the system creates an SSM session document called `SSM-SessionManagerRunShell`. This is the default session document. Session Manager uses this document to store your session preferences, which include information like the following:
 + A location where you want to save session data, such an Amazon Simple Storage Service (Amazon S3) bucket or a Amazon CloudWatch Logs log group.

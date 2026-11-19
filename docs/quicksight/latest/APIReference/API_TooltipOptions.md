@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Toolt
 ---
 
 # TooltipOptions
-<a name="API_TooltipOptions"></a>
 
 The display options for the visual tooltip.
 

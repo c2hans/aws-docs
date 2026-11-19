@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # StringListFilterExpression
-<a name="API_StringListFilterExpression"></a>
 
 Searches for a particular list of strings.
 

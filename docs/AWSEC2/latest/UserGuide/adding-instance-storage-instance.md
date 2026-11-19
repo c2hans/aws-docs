@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/adding-instance-
 ---
 
 # Add instance store volumes to an EC2 instance during launch
-<a name="adding-instance-storage-instance"></a>
 
 When you launch an instance type with **non-NVMe instance store volumes**, such as C1, C3, M1, M2, M3, R3, D2, H1, I2, X1, and X1e, you must specify the block device mappings for the instance store volumes that you want to attach at launch. The block device mappings must be specified in the instance launch request or in the AMI used to launch the instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/s3-rule-action
 ---
 
 # S3
-<a name="s3-rule-action"></a>
 
 The S3 (`s3`) action writes the data from an MQTT message to an Amazon Simple Storage Service (Amazon S3) bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENSEC04-BP02 Sanitize and validate user inputs to foundation models
-<a name="gensec04-bp02"></a>
 
  Generative AI applications commonly request user input. This user input is often open, unstructured, and loosely formatted, creating a risk of prompt injection and improper content.
 

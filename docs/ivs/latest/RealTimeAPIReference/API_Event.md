@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Even
 ---
 
 # Event
-<a name="API_Event"></a>
 
 An occurrence during a stage session.
 

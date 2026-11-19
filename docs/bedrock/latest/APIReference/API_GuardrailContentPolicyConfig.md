@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailContentPolicyConfig
-<a name="API_GuardrailContentPolicyConfig"></a>
 
 Contains details about how to handle harmful content.
 

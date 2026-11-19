@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/in
 ---
 
 # Setting up local testing with Amazon GameLift Servers Anywhere
-<a name="integration-testing"></a>
 
 **Note**
 This topic covers local testing for games that are integrated with the server SDK for Amazon GameLift Servers version 5.x. If your game uses server SDK version 4.x or earlier, see [Testing your integration using Amazon GameLift Servers Local](integration-testing-local.md).

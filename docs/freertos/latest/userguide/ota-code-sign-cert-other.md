@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-code-sign-
 ---
 
 # Creating a code-signing certificate for custom hardware
-<a name="ota-code-sign-cert-other"></a>
 
 Using an appropriate toolset, create a self-signed certificate and private key for your hardware.
 

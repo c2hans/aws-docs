@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Describe
 ---
 
 # DescribeEmergencyContactSettings
-<a name="API_DescribeEmergencyContactSettings"></a>
 
 A list of email addresses and phone numbers that the Shield Response Team (SRT) can use to contact you if you have proactive engagement enabled, for escalations to the SRT and to initiate proactive customer support.
 

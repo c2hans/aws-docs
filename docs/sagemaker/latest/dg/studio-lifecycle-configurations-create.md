@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-lifecycle-con
 ---
 
 # Create and attach lifecycle configurations
-<a name="studio-lifecycle-configurations-create"></a>
 
 You can create and attach lifecycle configurations using either the AWS Management Console or the AWS Command Line Interface.
 

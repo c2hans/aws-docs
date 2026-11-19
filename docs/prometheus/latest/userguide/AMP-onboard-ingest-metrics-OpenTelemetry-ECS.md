@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-onboard-
 ---
 
 # Set up metrics ingestion from Amazon ECS using AWS Distro for Open Telemetry
-<a name="AMP-onboard-ingest-metrics-OpenTelemetry-ECS"></a>
 
 This section explains how to collect metrics from Amazon Elastic Container Service (Amazon ECS) and ingest them into Amazon Managed Service for Prometheus using AWS Distro for Open Telemetry (ADOT). It also describes how to visualize your metrics in Amazon Managed Grafana.
 

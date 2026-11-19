@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_DeleteStatis
 ---
 
 # DeleteStatisticsValueMap
-<a name="API_DeleteStatisticsValueMap"></a>
 
 The payload for DeleteStatistics.
 

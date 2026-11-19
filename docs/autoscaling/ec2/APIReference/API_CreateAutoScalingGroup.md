@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CreateA
 ---
 
 # CreateAutoScalingGroup
-<a name="API_CreateAutoScalingGroup"></a>
 
  **We strongly recommend using a launch template when calling this operation to ensure full functionality for Amazon EC2 Auto Scaling and Amazon EC2.**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/eks-pod-actions.htm
 ---
 
 # Use the AWS FIS aws:eks:pod actions
-<a name="eks-pod-actions"></a>
 
  You can use the **aws:eks:pod** actions to inject faults into the Kubernetes Pods running in your EKS clusters. These actions are only supported on standard Amazon EKS clusters running in AWS Regions. EKS Anywhere, Amazon EKS on AWS Outposts, Amazon EKS on AWS Wavelength, and Amazon EKS Hybrid Nodes clusters are not supported.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Restor
 ---
 
 # RestoreDBInstanceToPointInTime
-<a name="API_RestoreDBInstanceToPointInTime"></a>
 
 Restores a DB instance to an arbitrary point in time. You can restore to any point in time before the time identified by the `LatestRestorableTime` property. You can restore to a point up to the number of days specified by the `BackupRetentionPeriod` property.
 

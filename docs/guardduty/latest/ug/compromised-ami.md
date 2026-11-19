@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/compromised-ami.html
 ---
 
 # Remediating a potentially compromised EC2 AMI
-<a name="compromised-ami"></a>
 
 When GuardDuty generates an Execution:EC2/MaliciousFile\!AMI finding type, it indicates that malware has been detected in an Amazon Machine Image (AMI). Perform the following steps to remediate the potentially compromised AMI:
 

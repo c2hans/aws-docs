@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/WF_LAG.
 ---
 
 # LAG window function
-<a name="WF_LAG"></a>
 
  The LAG window function returns the values for a row at a given offset above (before) the current row in the partition.
 

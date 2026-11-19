@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/i
 ---
 
 # Installing AWS SDK for SAP ABAP - BTP edition
-<a name="installation-btp"></a>
 
 The BTP edition is in developer preview, and can be installed by joining the preview. To install the SDK, fill the participation form at [AWS SDK for SAP ABAP - BTP edition developer preview](https://pages.awscloud.com/Preview-AWS-SDK-for-SAP-ABAP-BTP-edition-2024-interest.html).
 

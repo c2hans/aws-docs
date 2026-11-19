@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/twenty-reading-from-entit
 ---
 
 # Reading from Twenty CRM entities
-<a name="twenty-reading-from-entities"></a>
 
 **Prerequisites**
 

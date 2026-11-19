@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetSetupHistory
-<a name="API_GetSetupHistory"></a>
 
 Returns detailed information for five of the most recent `SetupInstanceHttps` requests that were ran on the target instance.
 

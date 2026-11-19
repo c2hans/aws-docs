@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Proj
 ---
 
 # ProjectDescription
-<a name="API_ProjectDescription"></a>
 
 A description of an Amazon Rekognition Custom Labels project. For more information, see [DescribeProjects](API_DescribeProjects.md).
 

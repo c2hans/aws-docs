@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecu
 ---
 
 # AwsSecurityFindingFilters
-<a name="API_AwsSecurityFindingFilters"></a>
 
 A collection of filters that are applied to all active findings aggregated by AWS Security Hub CSPM.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Self-Service
 ---
 
 # Service updates in ElastiCache
-<a name="Self-Service-Updates"></a>
 
 ElastiCache automatically monitors your fleet of caches, clusters, and nodes to apply service updates as they become available. Service updates for serverless caches are automatically and transparently applied. For node-based clusters, you set up a predefined maintenance window. Critical security updates will automatically be applied in these maintenance windows. All other updates will be available via a self-service update.
 

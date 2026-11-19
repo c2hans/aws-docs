@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # AWS observability tools
-<a name="aws-observability-tools"></a>
 
  The following AWS services can be used to help you meet the prescribed benefits of the M&G Guide:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_KafkaSchemaRegistr
 ---
 
 # KafkaSchemaRegistryConfig
-<a name="API_KafkaSchemaRegistryConfig"></a>
 
 Specific configuration settings for a Kafka schema registry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # AccessDeniedException
-<a name="API_AccessDeniedException"></a>
 
 You don't have sufficient access permissions to perform this operation.
 

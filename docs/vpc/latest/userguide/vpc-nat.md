@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat.html
 ---
 
 # Connect to the internet or other networks using NAT devices
-<a name="vpc-nat"></a>
 
 You can use a NAT device to allow resources in private subnets to connect to the internet, other VPCs, or on-premises networks. These instances can communicate with services outside the VPC, but they cannot receive unsolicited connection requests.
 

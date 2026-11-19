@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags_Conso
 ---
 
 # Add and remove tags for Amazon EC2 resources
-<a name="Using_Tags_Console"></a>
 
 When you create an Amazon EC2 resource, such as an Amazon EC2 instance, you can specify the tags to add to the resource. You can also use the Amazon EC2 console to display the tags for a specific Amazon EC2 resource. You can also add or remove tags from an existing Amazon EC2 resource.
 

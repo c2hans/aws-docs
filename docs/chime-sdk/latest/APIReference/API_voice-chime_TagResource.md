@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # TagResource
-<a name="API_voice-chime_TagResource"></a>
 
 Adds a tag to the specified resource.
 

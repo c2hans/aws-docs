@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Labeli
 ---
 
 # LabelingJobDataAttributes
-<a name="API_LabelingJobDataAttributes"></a>
 
 Attributes of the data specified by the customer. Use these to describe the data to be labeled.
 

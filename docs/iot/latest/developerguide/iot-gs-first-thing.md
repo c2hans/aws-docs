@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs-first-t
 ---
 
 # Explore AWS IoT Core in hands-on tutorials
-<a name="iot-gs-first-thing"></a>
 
 In this tutorial, you'll install the software and create the AWS IoT resources necessary to connect a device to AWS IoT Core so that it can send and receive MQTT messages with AWS IoT Core. You'll see the messages in the MQTT client in the AWS IoT console.
 

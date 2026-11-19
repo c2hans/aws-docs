@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/how-to-
 ---
 
 # Using a remote access session in AWS Device Farm
-<a name="how-to-use-session"></a>
 
 For information about performing interactive testing of Android and iOS apps through remote access sessions, see [Sessions](sessions.md).
 + [Prerequisites](#how-to-use-session-prerequisites)

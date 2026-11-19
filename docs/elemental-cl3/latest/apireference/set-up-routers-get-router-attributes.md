@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # GET: Get Router Attributes
-<a name="set-up-routers-get-router-attributes"></a>
 
 Get the attributes of the specified video SDI router, including the data that is contained in the Router Input and Router Output.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_CreateCustomPlugin.
 ---
 
 # CreateCustomPlugin
-<a name="API_CreateCustomPlugin"></a>
 
 Creates a custom plugin using the specified properties.
 

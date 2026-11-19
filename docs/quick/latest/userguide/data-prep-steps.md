@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/data-prep-steps.h
 ---
 
 # Data preparation steps
-<a name="data-prep-steps"></a>
 
 AWS Quick Sight's data preparation experience offers eleven powerful step types that enable you to transform your data systematically. Each step serves a specific purpose in the data preparation workflow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.TOKENI
 ---
 
 # TOKENIZATION
-<a name="recipe-actions.TOKENIZATION"></a>
 
 Splits text into smaller units, or tokens, such as individual words or terms.
 

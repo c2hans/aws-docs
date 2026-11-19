@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Resolving sign-in and permission errors in OpenSearch UI
-<a name="application-troubleshooting-auth"></a>
 
 The following errors occur when a user cannot sign in to an OpenSearch UI application or cannot reach part of the interface after signing in.
 

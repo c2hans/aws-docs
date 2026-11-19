@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_QAppsCo
 ---
 
 # QAppsConfiguration
-<a name="API_QAppsConfiguration"></a>
 
 Configuration information about Amazon Q Apps.
 

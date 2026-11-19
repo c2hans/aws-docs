@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Create registrations from a brand profile
-<a name="nx-features-brand-profiles-sync-create-regs"></a>
 
 Create one or more new registrations that are pre-filled from a brand profile. You choose the registration types and AWS End User Messaging starts a registration for each, mapping the profile's attributes onto the registration form fields. With smart match enabled, an AI model maps the fields semantically.
 

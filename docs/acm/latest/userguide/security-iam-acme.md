@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/security-iam-acme.h
 ---
 
 # IAM for ACME certificate automation
-<a name="security-iam-acme"></a>
 
 ACME certificate automation uses IAM roles to authorize certificate issuance and revocation. This section describes the permissions model for ACME.
 

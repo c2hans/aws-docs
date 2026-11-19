@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamResou
 ---
 
 # IpamResourceDiscoveryAssociation
-<a name="API_IpamResourceDiscoveryAssociation"></a>
 
 An IPAM resource discovery association. An associated resource discovery is a resource discovery that has been associated with an IPAM. IPAM aggregates the resource CIDRs discovered by the associated resource discovery.
 

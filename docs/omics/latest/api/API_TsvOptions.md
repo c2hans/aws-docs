@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_TsvOptions.html
 ---
 
 # TsvOptions
-<a name="API_TsvOptions"></a>
 
 Formatting options for a TSV file.
 

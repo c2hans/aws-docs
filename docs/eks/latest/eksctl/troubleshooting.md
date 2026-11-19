@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/troubleshooting.html
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This topic includes instructions on how to resolve common errors with Eksctl.
 

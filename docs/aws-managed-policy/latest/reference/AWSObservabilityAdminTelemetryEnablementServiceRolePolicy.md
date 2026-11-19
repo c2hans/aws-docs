@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSO
 ---
 
 # AWSObservabilityAdminTelemetryEnablementServiceRolePolicy
-<a name="AWSObservabilityAdminTelemetryEnablementServiceRolePolicy"></a>
 
 **Description**: Provides access to manage AWS Config recorder resource and telemetry settings on AWS resources including logs, metrics.
 

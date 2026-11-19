@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/web-functions-revisions
 ---
 
 # Managing Web Function revisions
-<a name="web-functions-revisions"></a>
 
 A revision is an immutable snapshot of your Web Function application code and configuration. To change your code or any revision setting, such as `timeoutSeconds`, `maxConcurrencyPerEnvironment`, or `environmentVariables`, you create a new revision. Whether the new revision receives traffic depends on each endpoint's auto-deployment mode. An endpoint in **LatestRevision** mode routes all traffic to the new revision after it becomes **Active**. An endpoint in **Disabled** mode keeps its current revision weights until you change them. Because revisions are immutable, you can roll back by routing traffic to an earlier revision. The earlier revision must remain **Active**, and its code, key, role, and other dependencies must remain available. For information about routing traffic between revisions, see [Deployment patterns](web-functions-deployment.md).
 

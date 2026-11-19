@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_DeletePre
 ---
 
 # DeletePreparedStatement
-<a name="API_DeletePreparedStatement"></a>
 
 Deletes the prepared statement with the specified name from the specified workgroup.
 

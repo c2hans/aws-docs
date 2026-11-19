@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # VerificationResponseDetails
-<a name="API_account_VerificationResponseDetails"></a>
 
 A union structure containing the response details specific to different types of verification processes, providing type-specific information and results.
 

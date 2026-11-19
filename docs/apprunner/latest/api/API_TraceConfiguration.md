@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_TraceConfigurat
 ---
 
 # TraceConfiguration
-<a name="API_TraceConfiguration"></a>
 
 Describes the configuration of the tracing feature within an AWS App Runner observability configuration.
 

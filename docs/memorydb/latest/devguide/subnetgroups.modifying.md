@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/subnetgroups.mo
 ---
 
 # Updating a subnet group
-<a name="subnetgroups.modifying"></a>
 
 You can update a subnet group's description, or modify the list of subnet IDs associated with the subnet group. You cannot delete a subnet ID from a subnet group if a cluster is currently using that subnet.
 

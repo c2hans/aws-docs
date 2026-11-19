@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Tagging.Mana
 ---
 
 # Managing your cost allocation tags using the ElastiCache API
-<a name="Tagging.Managing.API"></a>
 
 You can use the ElastiCache API to add, modify, or remove cost allocation tags.
 

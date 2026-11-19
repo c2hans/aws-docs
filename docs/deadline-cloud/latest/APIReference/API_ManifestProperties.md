@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_M
 ---
 
 # ManifestProperties
-<a name="API_ManifestProperties"></a>
 
 The details of the manifest that links a job's source information.
 

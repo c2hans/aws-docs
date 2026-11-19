@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_DeleteSu
 ---
 
 # DeleteSubscription
-<a name="API_DeleteSubscription"></a>
 
  *This action has been deprecated.*
 

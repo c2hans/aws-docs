@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-typescript.html
 ---
 
 # Building Lambda Event Functions with TypeScript
-<a name="lambda-typescript"></a>
 
 You can use the Node.js runtime to run TypeScript code in AWS Lambda Event Functions. Because Node.js doesn't run TypeScript code natively, you must first transpile your TypeScript code into JavaScript. Then, use the JavaScript files to deploy your function code to Lambda. Your code runs in an environment that includes the AWS SDK for JavaScript, with credentials from an AWS Identity and Access Management (IAM) role that you manage. To learn more about the SDK versions included with the Node.js runtimes, see [Runtime-included SDK versions](lambda-nodejs.md#nodejs-sdk-included).
 

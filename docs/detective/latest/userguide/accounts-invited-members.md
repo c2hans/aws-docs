@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/accounts-invi
 ---
 
 # Managing invited member accounts in Detective
-<a name="accounts-invited-members"></a>
 
 A Detective administrator account can invite accounts to be member accounts in their behavior graph. A behavior graph can contain up to 1,200 member accounts. When a member account accepts the invitation and is enabled, Amazon Detective begins to ingest and extract the member account's data into that behavior graph.
 

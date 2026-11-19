@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DeleteBrowserProfile
-<a name="API_DeleteBrowserProfile"></a>
 
 Deletes a browser profile.
 

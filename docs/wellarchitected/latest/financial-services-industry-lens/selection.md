@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Selection
-<a name="selection"></a>
 
 **Topics**
 + [FSIPERF01: How do you select the best performing architecture?](fsiperf01.md)

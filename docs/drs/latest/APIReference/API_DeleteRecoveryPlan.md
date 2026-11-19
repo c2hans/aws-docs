@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteRecove
 ---
 
 # DeleteRecoveryPlan
-<a name="API_DeleteRecoveryPlan"></a>
 
 Deletes a Recovery Plan. Cannot delete a plan that has an execution in a non-terminal status (`CREATED`, `IN_PROGRESS`).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Dir
 ---
 
 # DirectoryConnectSettings
-<a name="API_DirectoryConnectSettings"></a>
 
 Contains connection settings for creating an AD Connector with the [ConnectDirectory](API_ConnectDirectory.md) action.
 

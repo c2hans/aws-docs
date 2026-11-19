@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/egone
 ---
 
 # .egonet.edgeList
-<a name="egonet-edgelist"></a>
 
  This `EgoNet EdgeList` algorithm is the same as the standard `EgoNet` algorithm, except that this variant has a different output schema, which returns the `EgoNet` in an edge list form.
 

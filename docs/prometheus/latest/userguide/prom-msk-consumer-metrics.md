@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/prom-msk-con
 ---
 
 # Consumer-group metrics
-<a name="prom-msk-consumer-metrics"></a>
 
 When you collect consumer-group metrics with the example configuration in [Collect Amazon MSK consumer-group metrics](prom-msk-kafka-exporter.md), the Amazon Managed Service for Prometheus collector sends the following metrics. Each metric has the `clusterArn` label from the scrape configuration, so that you can tell clusters apart.
 

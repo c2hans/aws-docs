@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/vpc-iam.html
 ---
 
 # Amazon Virtual Private Cloud endpoint policies for Account Management
-<a name="vpc-iam"></a>
 
 The following information is relevant for all AWS accounts.
 

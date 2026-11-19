@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/execute-sample-application
 ---
 
 # Step 2: Executing the SNS-linked sample application
-<a name="execute-sample-application"></a>
 
 1. In the AWS Lambda console, on the navigation panel, choose **Applications**.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_C
 ---
 
 # CreateRLSPolicy
-<a name="API_CreateRLSPolicy"></a>
 
 Creates a row-level security (RLS) policy. A row-level security policy defines a filter expression that AWS Lake Formation evaluates to determine which rows of a table a principal is allowed to see. The policy is created independently of any resource, and is later associated with a resource and principal using `AttachRLSPolicy`.
 

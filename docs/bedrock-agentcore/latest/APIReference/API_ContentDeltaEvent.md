@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ContentDeltaEvent
-<a name="API_ContentDeltaEvent"></a>
 
 An event that contains incremental output from a command execution. This event streams standard output and standard error content as it becomes available during command execution.
 

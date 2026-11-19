@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # Highlight
-<a name="API_amazon-q-connect_Highlight"></a>
 
 Offset specification to describe highlighting of document excerpts for rendering search results and recommendations.
 

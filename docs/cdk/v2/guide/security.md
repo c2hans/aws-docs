@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/security.html
 ---
 
 # Security for the AWS Cloud Development Kit (AWS CDK)
-<a name="security"></a>
 
 ## The AWS Shared Responsibility Model
 <a name="the_shared_aws_shared_responsibility_model"></a>

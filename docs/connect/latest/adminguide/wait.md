@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/wait.html
 ---
 
 # Flow block in Connect Customer: Wait
-<a name="wait"></a>
 
 This topic defines the flow block for pausing the flow for the specified amount of time.
 

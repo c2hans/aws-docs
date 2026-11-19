@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/Target-Related-FAQ.
 ---
 
 # AWS related
-<a name="Target-Related-FAQ"></a>
 
 ## What does the Elastic Disaster Recovery machine conversion server do?
 <a name="What-Conversion-Server-Do"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DeleteFilter.h
 ---
 
 # DeleteFilter
-<a name="API_DeleteFilter"></a>
 
 Deletes a filter.
 

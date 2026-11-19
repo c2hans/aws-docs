@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeStarConnections::Connection
-<a name="aws-resource-codestarconnections-connection"></a>
 
 The AWS::CodeStarConnections::Connection resource can be used to connect external source providers with services like AWS CodePipeline.
 

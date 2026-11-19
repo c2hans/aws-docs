@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationAccountAnalysis
-<a name="API_InvestigationAccountAnalysis"></a>
 
 Contains an analysis of the findings in an account. Either `Trend` or `Baseline` is set, depending on the `AnalysisType` of the record.
 

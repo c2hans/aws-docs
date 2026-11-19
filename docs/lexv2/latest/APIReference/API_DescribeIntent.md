@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeIn
 ---
 
 # DescribeIntent
-<a name="API_DescribeIntent"></a>
 
 Returns metadata about an intent.
 

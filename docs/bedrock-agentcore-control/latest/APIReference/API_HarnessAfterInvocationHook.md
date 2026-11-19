@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessAfterInvocationHook
-<a name="API_HarnessAfterInvocationHook"></a>
 
 The configuration for a hook that runs after an invocation completes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/device-iam-for-user.
 ---
 
 # Setting up users with IAM permissions
-<a name="device-iam-for-user"></a>
 
 This section describes the permissions that an IAM administrator must assign to users and other AWS identities so that they can configure a Link device to work with a MediaLive input or a MediaConnect flow.
 

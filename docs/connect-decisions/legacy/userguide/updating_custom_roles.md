@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/updat
 ---
 
 # Updating existing custom user roles to access Amazon Q in AWS Supply Chain
-<a name="updating_custom_roles"></a>
 
 To update an existing user permission role in AWS Supply Chain, perform the following procedure:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_PutConfigura
 ---
 
 # PutConfigurationSetDeliveryOptions
-<a name="API_PutConfigurationSetDeliveryOptions"></a>
 
 Adds or updates the delivery options for a configuration set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRedshiftQueryEditor
-<a name="AmazonRedshiftQueryEditor"></a>
 
 **Description**: Provides full access to the Amazon Redshift Query Editor and to saved queries via the AWS Management Console.
 

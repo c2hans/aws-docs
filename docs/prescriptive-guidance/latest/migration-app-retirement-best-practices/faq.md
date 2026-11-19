@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-a
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## Why should I have a methodical process for decommissioning assets?
 <a name="methodical-process"></a>

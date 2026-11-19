@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_G
 ---
 
 # GetQApp
-<a name="API_qapps_GetQApp"></a>
 
 Retrieves the full details of an Q App, including its definition specifying the cards and flow.
 

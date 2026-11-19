@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Neptune ML management API reference
-<a name="machine-learning-api-reference"></a>
 
 **Contents**
 + [The dataprocessing command](machine-learning-api-dataprocessing.md)

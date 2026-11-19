@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Add a Tenant-Specific Agent
-<a name="extend-tenant-agent"></a>
 
 Some tenants need behavior that differs enough from the shared supervisor that a per-tenant agent variant is the cleaner approach — for example, a fleet operator that requires a fully custom routing policy, a DMS integration unavailable to other tenants, or an OEM persona not present in the shared persona set.
 

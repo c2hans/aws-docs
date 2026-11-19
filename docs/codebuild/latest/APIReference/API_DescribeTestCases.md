@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Descri
 ---
 
 # DescribeTestCases
-<a name="API_DescribeTestCases"></a>
 
  Returns a list of details about test cases for a report.
 

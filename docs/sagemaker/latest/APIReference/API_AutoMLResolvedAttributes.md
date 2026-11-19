@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLResolvedAttributes
-<a name="API_AutoMLResolvedAttributes"></a>
 
 The resolved attributes used to configure an AutoML job V2.
 

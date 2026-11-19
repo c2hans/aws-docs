@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/sms-limitatio
 ---
 
 # Messaging limits and restrictions
-<a name="sms-limitations"></a>
 
 The SMS protocol is subject to several limitations and restrictions. For example, there are technical limitations that limit the length of each SMS message and MMS has limitations on the size of the media file and length of the message body. There are also restrictions on the type of content that you can send using SMS and MMS. This topic discusses several of these limitations and restrictions.
 

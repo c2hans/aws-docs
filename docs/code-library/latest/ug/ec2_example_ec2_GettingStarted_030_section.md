@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ec2_example_ec2_G
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Get started with software marketplace purchasing using the CLI
-<a name="ec2_example_ec2_GettingStarted_030_section"></a>
 
 The following code example shows how to:
 + Use ec2 AuthorizeSecurityGroupIngress

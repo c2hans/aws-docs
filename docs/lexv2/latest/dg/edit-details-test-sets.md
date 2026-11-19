@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/edit-details-test-sets.h
 ---
 
 # Edit test set details
-<a name="edit-details-test-sets"></a>
 
 You can edit a Test Set name and details in the list of test sets. The name or details can be added or updated later. However, you will have to update your test set before running the test with your bot or transcription data.
 

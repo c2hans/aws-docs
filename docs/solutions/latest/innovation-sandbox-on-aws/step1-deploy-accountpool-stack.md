@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Step 1: Deploy the AccountPool stack
-<a name="step1-deploy-accountpool-stack"></a>
 
 In this step, you deploy the resources required to set up Organizational Units (OUs), Service Control Policies (SCPs), roles, and Regions.
 

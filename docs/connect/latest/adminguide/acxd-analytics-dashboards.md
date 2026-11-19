@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-analytics
 ---
 
 # Analytics dashboards
-<a name="acxd-analytics-dashboards"></a>
 
 Analytics dashboards help you view, organize, and monitor performance data for deployed agentic CX designer applications.
 

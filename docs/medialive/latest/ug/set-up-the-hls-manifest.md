@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/set-up-the-hls-manif
 ---
 
 # Language information in HLS manifests
-<a name="set-up-the-hls-manifest"></a>
 
 This section applies if you are [setting up captions in an HLS output group](output-embedded-and-more.md) in a MediaLive channel. You must include captions language information in the manifest.
 

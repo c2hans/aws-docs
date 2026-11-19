@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_CloudWatchLo
 ---
 
 # CloudWatchLogConfiguration
-<a name="API_CloudWatchLogConfiguration"></a>
 
 Holds CloudWatch log configuration settings and metadata that specify settings like log files to monitor and where to send them.
 

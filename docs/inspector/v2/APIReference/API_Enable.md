@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Enable.htm
 ---
 
 # Enable
-<a name="API_Enable"></a>
 
 Enables Amazon Inspector scans for one or more AWS accounts.
 

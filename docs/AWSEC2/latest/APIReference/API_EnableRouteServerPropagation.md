@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableRou
 ---
 
 # EnableRouteServerPropagation
-<a name="API_EnableRouteServerPropagation"></a>
 
 Defines which route tables the route server can update with routes.
 

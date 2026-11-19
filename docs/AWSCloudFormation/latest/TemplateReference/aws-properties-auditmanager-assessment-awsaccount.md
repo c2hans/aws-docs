@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AuditManager::Assessment AWSAccount
-<a name="aws-properties-auditmanager-assessment-awsaccount"></a>
 
 The `AWSAccount` property type specifies the wrapper of the AWS account details, such as account ID, email address, and so on.
 

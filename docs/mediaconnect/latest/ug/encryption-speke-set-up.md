@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/encryption-speke-
 ---
 
 # Setting up SPEKE encryption using AWS Elemental MediaConnect
-<a name="encryption-speke-set-up"></a>
 
 Before you can grant an entitlement that uses SPEKE encryption, you must perform the following steps:
 

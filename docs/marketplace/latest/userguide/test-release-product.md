@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/test-releas
 ---
 
 # Testing and releasing your container product on AWS Marketplace
-<a name="test-release-product"></a>
 
 After you add a new version of your container product to AWS Marketplace, you can test your product and then release it to the public. This topic outlines the specific steps and process required for testing and releasing your product to public.
 

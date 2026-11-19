@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Networ
 ---
 
 # NetworkBandwidthGbpsRequest
-<a name="API_NetworkBandwidthGbpsRequest"></a>
 
 The minimum and maximum network bandwidth in gigabits per second (Gbps) for instance type selection. This is important for network-intensive workloads.
 

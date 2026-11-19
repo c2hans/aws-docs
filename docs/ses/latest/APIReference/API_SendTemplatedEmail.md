@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_SendTemplate
 ---
 
 # SendTemplatedEmail
-<a name="API_SendTemplatedEmail"></a>
 
 Composes an email message using an email template and immediately queues it for sending.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_ModuleLoggingConfigu
 ---
 
 # ModuleLoggingConfigurationInput
-<a name="API_ModuleLoggingConfigurationInput"></a>
 
 Enables the Apache Airflow log type (e.g. `DagProcessingLogs`) and defines the log level to send to CloudWatch Logs (e.g. `INFO`).
 

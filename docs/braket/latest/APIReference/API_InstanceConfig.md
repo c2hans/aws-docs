@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_InstanceC
 ---
 
 # InstanceConfig
-<a name="API_InstanceConfig"></a>
 
 Configures the resource instances to use while running the Amazon Braket hybrid job on Amazon Braket.
 

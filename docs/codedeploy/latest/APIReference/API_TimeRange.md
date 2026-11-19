@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_TimeR
 ---
 
 # TimeRange
-<a name="API_TimeRange"></a>
 
 Information about a time range.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetBillingView
-<a name="API_billing_GetBillingView"></a>
 
 Returns the metadata associated to the specified billing view ARN.
 

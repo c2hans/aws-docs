@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTLogging
-<a name="AWSIoTLogging"></a>
 
 **Description**: Allows creation of Amazon CloudWatch Log groups and streaming logs to the groups
 

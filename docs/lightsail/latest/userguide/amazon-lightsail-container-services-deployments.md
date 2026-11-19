@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Create and manage container service deployments in Lightsail
-<a name="amazon-lightsail-container-services-deployments"></a>
 
 Create a deployment when you're ready to launch containers on your Amazon Lightsail container service. A deployment is a set of specifications for the containers that you wish to launch on your service. Your container service can have one running deployment at a time, and a deployment can have up to 10 container entries. You can create a deployment at the same time as you create your container service, or you can create it after your service is up and running.
 

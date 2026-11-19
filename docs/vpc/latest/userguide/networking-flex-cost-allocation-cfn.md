@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/networking-flex-cos
 ---
 
 # Create Networking Flexible Cost Allocation resources with AWS CloudFormation
-<a name="networking-flex-cost-allocation-cfn"></a>
 
 Networking Flexible Cost Allocation (FCA) is integrated with AWS CloudFormation (CloudFormation), a service that helps you model and set up your AWS resources so that you can spend less time creating and managing your resources and infrastructure. You create a template that describes the FCA policies and associations that you want, and CloudFormation provisions and configures those resources for you.
 

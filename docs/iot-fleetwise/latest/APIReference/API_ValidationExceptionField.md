@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Va
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 A validation error due to mismatch between the expected data type, length, or pattern of the parameter and the input.
 

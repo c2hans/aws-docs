@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateCloudV
 ---
 
 # CreateCloudVmCluster
-<a name="API_CreateCloudVmCluster"></a>
 
 Creates a VM cluster on the specified Exadata infrastructure.
 

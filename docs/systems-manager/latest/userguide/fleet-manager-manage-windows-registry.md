@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 ---
 
 # Managing the Windows registry on managed nodes
-<a name="fleet-manager-manage-windows-registry"></a>
 
 You can use Fleet Manager to manage the registry on your Windows Server managed nodes. From the Fleet Manager console you can create, copy, update, and delete registry entries and values.
 

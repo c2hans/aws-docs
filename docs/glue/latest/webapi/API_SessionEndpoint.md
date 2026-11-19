@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SessionEndpoint.h
 ---
 
 # SessionEndpoint
-<a name="API_SessionEndpoint"></a>
 
 Contains the Spark Connect endpoint details for an interactive session, including the URL and authentication credentials.
 

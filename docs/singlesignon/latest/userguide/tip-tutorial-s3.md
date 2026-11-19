@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/tip-tutori
 ---
 
 # Setting up Amazon S3 Access Grants with IAM Identity Center
-<a name="tip-tutorial-s3"></a>
 
 [Amazon S3 Access Grants](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-get-started.html) provides the flexibility to grant identity-based fine-grain access control to S3 locations. You can use Amazon S3 Access Grants to grant Amazon S3 bucket access directly to your corporate users and groups. Follow these steps to enable S3 Access Grants with IAM Identity Center and achieve trusted identity propagation.
 

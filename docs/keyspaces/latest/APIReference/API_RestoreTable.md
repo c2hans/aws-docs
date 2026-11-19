@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Restor
 ---
 
 # RestoreTable
-<a name="API_RestoreTable"></a>
 
 Restores the table to the specified point in time within the `earliest_restorable_timestamp` and the current time. For more information about restore points, see [ Time window for PITR continuous backups](https://docs.aws.amazon.com/keyspaces/latest/devguide/PointInTimeRecovery_HowItWorks.html#howitworks_backup_window) in the *Amazon Keyspaces Developer Guide*.
 

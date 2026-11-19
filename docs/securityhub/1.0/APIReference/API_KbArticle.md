@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_KbArtic
 ---
 
 # KbArticle
-<a name="API_KbArticle"></a>
 
 A knowledge base article that provides additional guidance related to the remediation target.
 

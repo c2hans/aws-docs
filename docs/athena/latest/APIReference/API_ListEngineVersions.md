@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ListEngin
 ---
 
 # ListEngineVersions
-<a name="API_ListEngineVersions"></a>
 
 Returns a list of engine versions that are available to choose from, including the Auto option.
 

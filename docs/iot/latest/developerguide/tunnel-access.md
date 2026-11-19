@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/tunnel-access.
 ---
 
 # Controlling access to tunnels
-<a name="tunnel-access"></a>
 
 Secure tunneling provides service-specific actions, resources, and condition context keys for use in IAM permissions policies.
 

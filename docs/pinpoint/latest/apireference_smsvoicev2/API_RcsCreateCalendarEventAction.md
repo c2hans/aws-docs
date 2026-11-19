@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsCreateCalendarEventAction
-<a name="API_RcsCreateCalendarEventAction"></a>
 
 A suggested action that creates a calendar event on the recipient's device.
 

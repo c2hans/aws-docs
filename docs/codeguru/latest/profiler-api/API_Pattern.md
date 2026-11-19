@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Pattern
 ---
 
 # Pattern
-<a name="API_Pattern"></a>
 
  A set of rules used to make a recommendation during an analysis.
 

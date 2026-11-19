@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_SvmActiveDir
 ---
 
 # SvmActiveDirectoryConfiguration
-<a name="API_SvmActiveDirectoryConfiguration"></a>
 
 Describes the Microsoft Active Directory (AD) directory configuration to which the FSx for ONTAP storage virtual machine (SVM) is joined. Note that account credentials are not returned in the response payload.
 

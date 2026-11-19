@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # Authorizers
-<a name="apis-apiid-authorizers"></a>
 
 Represents the collection of authorizers for an API.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-troubl
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Troubleshooting hybrid nodes
-<a name="hybrid-nodes-troubleshooting"></a>
 
 This topic covers some common errors that you might see while using Amazon EKS Hybrid Nodes and how to fix them. For other troubleshooting information, see [Troubleshoot problems with Amazon EKS clusters and nodes](troubleshooting.md) and [Knowledge Center tag for Amazon EKS](https://repost.aws/tags/knowledge-center/TA4IvCeWI1TE66q4jEj4Z9zg/amazon-elastic-kubernetes-service) on * AWS re:Post*. If you cannot resolve the issue, contact AWS Support.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3outposts_Delet
 ---
 
 # DeleteEndpoint
-<a name="API_s3outposts_DeleteEndpoint"></a>
 
 Deletes an endpoint.
 

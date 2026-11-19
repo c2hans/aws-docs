@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/coh-cos
 ---
 
 # Understanding your cost efficiency metric
-<a name="coh-cost-efficiency"></a>
 
 Cost efficiency is a metric that measures how effectively you're optimizing your AWS cloud resources. It is automatically generated everyday by considering resource optimization, resource utilization, and commitment savings and is applicable across multiple scopes—from individual regions to entire organizations.
 

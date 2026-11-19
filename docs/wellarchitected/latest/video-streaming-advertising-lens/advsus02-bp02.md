@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVSUS02-BP02 Apply rate limiting to control inbound request volume per partner
-<a name="advsus02-bp02"></a>
 
  Without rate limits, partner spikes drive unplanned infrastructure scaling and energy draw. Rate limiting caps queries per second per partner connection, which stabilizes resource demand and reduces energy consumption in downstream systems.
 

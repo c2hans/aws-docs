@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_Create
 ---
 
 # CreateSchedule
-<a name="API_CreateSchedule"></a>
 
 Creates the specified schedule.
 

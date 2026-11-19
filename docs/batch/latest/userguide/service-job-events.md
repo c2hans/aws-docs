@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/service-job-event
 ---
 
 # Service job state change events
-<a name="service-job-events"></a>
 
 Anytime that an existing service job changes states, an event is created. For more information about service job states, see [Mapping AWS Batch service job status to SageMaker AI status](service-job-status.md).
 

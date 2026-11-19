@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Reco
 ---
 
 # RecommendationRelatedCloudWatchMetricsSourceDetail
-<a name="API_RecommendationRelatedCloudWatchMetricsSourceDetail"></a>
 
  Information about an Amazon CloudWatch metric that is analyzed by DevOps Guru. It is one of many analyzed metrics that are used to generate insights.
 

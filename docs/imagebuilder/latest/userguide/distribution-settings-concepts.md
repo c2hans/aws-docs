@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/distributi
 ---
 
 # How distribution settings work
-<a name="distribution-settings-concepts"></a>
 
 A distribution configuration contains a list of *distributions*. Each distribution applies to exactly one target Region and defines the outputs for that Region.
 

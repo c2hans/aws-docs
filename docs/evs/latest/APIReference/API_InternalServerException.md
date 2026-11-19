@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_InternalServ
 ---
 
 # InternalServerException
-<a name="API_InternalServerException"></a>
 
 An internal server error occurred. Retry your request.
 

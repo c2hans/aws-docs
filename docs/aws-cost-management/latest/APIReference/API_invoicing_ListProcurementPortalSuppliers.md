@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListProcurementPortalSuppliers
-<a name="API_invoicing_ListProcurementPortalSuppliers"></a>
 
 Returns the suppliers configured for a specified procurement portal, including supplier identifiers and associated metadata. For faster, more reliable responses, use pagination.
 

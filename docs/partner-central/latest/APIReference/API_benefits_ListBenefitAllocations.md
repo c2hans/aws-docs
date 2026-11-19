@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListBenefitAllocations
-<a name="API_benefits_ListBenefitAllocations"></a>
 
 Retrieves a paginated list of benefit allocations based on specified filter criteria.
 

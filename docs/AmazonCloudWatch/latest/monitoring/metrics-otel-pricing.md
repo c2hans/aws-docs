@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metri
 ---
 
 # OTel metrics pricing and storage
-<a name="metrics-otel-pricing"></a>
 
 OpenTelemetry metrics in CloudWatch use a per-GB ingestion model with included storage and query access. There are no per-metric, per-API-call, or separate storage charges. For current pricing details, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/).
 

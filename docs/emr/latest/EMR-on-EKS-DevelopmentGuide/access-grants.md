@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/a
 ---
 
 # Using Amazon S3 Access Grants with Amazon EMR on EKS
-<a name="access-grants"></a>
 
 ## S3 Access Grants overview for Amazon EMR on EKS
 <a name="access-grants-overview"></a>

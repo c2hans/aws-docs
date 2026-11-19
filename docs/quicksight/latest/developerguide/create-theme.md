@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/create-
 ---
 
 # CreateTheme
-<a name="create-theme"></a>
 
 Use the `CreateTheme` operation to create a theme. The `base-theme-id` is the ID of the theme that you want to base the new theme off of. You can use the `ListThemes` operation to list all themes and their corresponding theme IDs.
 

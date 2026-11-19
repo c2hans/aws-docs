@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Attachm
 ---
 
 # AttachmentsConfiguration
-<a name="API_AttachmentsConfiguration"></a>
 
 Configuration information for the file upload during chat feature.
 

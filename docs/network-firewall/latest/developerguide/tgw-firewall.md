@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/t
 ---
 
 # Transit gateway-attached firewalls in Network Firewall
-<a name="tgw-firewall"></a>
 
 With the AWS Network Firewall integration with AWS Transit Gateway, you can create and centrally manage firewall protective coverage without provisioning multiple firewall endpoints.
 

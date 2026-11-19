@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/sinh.html
 ---
 
 # $sinh
-<a name="sinh"></a>
 
 New from version 8.0.1.
 

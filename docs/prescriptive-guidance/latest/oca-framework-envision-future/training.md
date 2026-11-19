@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 3.4 Training strategy and plan
-<a name="training"></a>
 
 ## Overview
 <a name="training-overview"></a>

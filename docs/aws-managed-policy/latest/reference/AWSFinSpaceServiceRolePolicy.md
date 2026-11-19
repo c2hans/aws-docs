@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSF
 ---
 
 # AWSFinSpaceServiceRolePolicy
-<a name="AWSFinSpaceServiceRolePolicy"></a>
 
 **Description**: Policy to enable access to AWS service and Resources used or managed by Amazon FinSpace
 

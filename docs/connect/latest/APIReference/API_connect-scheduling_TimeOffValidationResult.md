@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # TimeOffValidationResult
-<a name="API_connect-scheduling_TimeOffValidationResult"></a>
 
 A warning or failure produced while processing the time off request.
 

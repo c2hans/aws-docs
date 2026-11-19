@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_ReplicationIns
 ---
 
 # Public and private replication instances
-<a name="CHAP_ReplicationInstance.PublicPrivate"></a>
 
 You can specify if a replication instance has a public or private IP address that the instance uses to connect to the source and target databases.
 

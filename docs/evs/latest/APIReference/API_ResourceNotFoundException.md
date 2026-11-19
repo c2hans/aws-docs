@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_ResourceNotF
 ---
 
 # ResourceNotFoundException
-<a name="API_ResourceNotFoundException"></a>
 
 A service resource associated with the request could not be found. The resource might not be specified correctly, or it may have a `state` of `DELETED`.
 

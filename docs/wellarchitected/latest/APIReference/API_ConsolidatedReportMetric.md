@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ConsolidatedReportMetric
-<a name="API_ConsolidatedReportMetric"></a>
 
 A metric that contributes to the consolidated report.
 

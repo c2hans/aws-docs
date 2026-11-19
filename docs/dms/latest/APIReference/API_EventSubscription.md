@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_EventSubscri
 ---
 
 # EventSubscription
-<a name="API_EventSubscription"></a>
 
 Describes an event notification subscription created by the `CreateEventSubscription` operation.
 

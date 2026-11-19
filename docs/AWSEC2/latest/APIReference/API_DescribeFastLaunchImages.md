@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeF
 ---
 
 # DescribeFastLaunchImages
-<a name="API_DescribeFastLaunchImages"></a>
 
 Describe details for Windows AMIs that are configured for Windows fast launch.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/view-subs
 ---
 
 # Viewing AWS Data Exchange subscriptions
-<a name="view-subscriptions-for-product"></a>
 
 You can view all of the subscriptions for any of your products through the **Product overview **page. You can also view subscriptions for each of your offers.
 

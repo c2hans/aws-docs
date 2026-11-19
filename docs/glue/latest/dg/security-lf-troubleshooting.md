@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/security-lf-troubleshooti
 ---
 
 # Troubleshooting
-<a name="security-lf-troubleshooting"></a>
 
 See the following sections for troubleshooting solutions.
 

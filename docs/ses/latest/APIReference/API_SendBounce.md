@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_SendBounce.h
 ---
 
 # SendBounce
-<a name="API_SendBounce"></a>
 
 Generates and sends a bounce message to the sender of an email you received through Amazon SES. You can only use this operation on an email up to 24 hours after you receive it.
 

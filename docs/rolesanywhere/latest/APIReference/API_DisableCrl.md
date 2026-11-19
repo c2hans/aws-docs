@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Di
 ---
 
 # DisableCrl
-<a name="API_DisableCrl"></a>
 
 Disables a certificate revocation list (CRL).
 

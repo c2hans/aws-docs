@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_S
 ---
 
 # S3Object
-<a name="API_S3Object"></a>
 
 Object stored in Amazon S3 containing ephemeris data.
 

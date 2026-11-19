@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Delete a model evaluation job in Amazon Bedrock
-<a name="model-evaluation-jobs-management-human-delete"></a>
 
 You can delete a model evaluation job by using the Amazon Bedrock console, or by using the [BatchDeleteEvaluationJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_BatchDeleteEvaluationJob.html) operation with the AWS CLI, or a supported AWS SDK.
 

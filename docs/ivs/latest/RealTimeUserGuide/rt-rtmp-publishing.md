@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-rtmp-pub
 ---
 
 # IVS RTMP Publishing \| Real-Time Streaming
-<a name="rt-rtmp-publishing"></a>
 
 This document outlines the process of publishing to an IVS stage using RTMP. For additional details on various ingest options, refer to the [Stream Ingest](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-stream-ingest.html) documentation
 

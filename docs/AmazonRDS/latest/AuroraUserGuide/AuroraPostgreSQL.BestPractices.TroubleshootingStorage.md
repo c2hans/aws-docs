@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Troubleshooting storage issues in Aurora PostgreSQL
-<a name="AuroraPostgreSQL.BestPractices.TroubleshootingStorage"></a>
 
 If the amount of working memory needed for sort or index-creation operations exceeds the amount allocated by the `work_mem` parameter, Aurora PostgreSQL writes the excess data to temporary disk files. When it writes the data, Aurora PostgreSQL uses the same storage space that it uses for storing error and message logs, that is, *local storage*. Each instance in your Aurora PostgreSQL DB cluster has an amount of local storage available. The amount of storage is based on its DB instance class. To increase the amount of local storage, you need to modify the instance to use a larger DB instance class. For DB instance class specifications, see [Hardware specifications for DB instance classes for Aurora](Concepts.DBInstanceClass.Summary.md).
 

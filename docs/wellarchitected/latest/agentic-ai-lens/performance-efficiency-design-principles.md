@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/p
 ---
 
 # Design principles
-<a name="performance-efficiency-design-principles"></a>
 
 In addition to the lens-level design principles, the performance efficiency best practices in this lens are represented by at least one of the following principles:
 + **Set targets per agent class, not per platform:** Streaming, task-oriented, and batch agents have different primary KPIs (time-to-first-token, completion time, throughput). Commit to the right ones for each class instead of a single platform-wide SLA.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStart
 ---
 
 # Create a Redis OSS serverless cache
-<a name="GettingStarted.serverless-redis.step1"></a>
 
 In this step, you create a new cache in Amazon ElastiCache.
 

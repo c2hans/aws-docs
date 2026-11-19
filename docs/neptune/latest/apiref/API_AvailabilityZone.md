@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_AvailabilityZo
 ---
 
 # AvailabilityZone
-<a name="API_AvailabilityZone"></a>
 
 Specifies an Availability Zone.
 

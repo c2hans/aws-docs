@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-arc-zo
 ---
 
 # AWS ARC - Zonal Shift events
-<a name="events-ref-arc-zonal-shift"></a>
 
 AWS ARC - Zonal Shift sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

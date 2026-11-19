@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # DataTransfer Cost Analysis Dashboard
-<a name="datatransfer-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

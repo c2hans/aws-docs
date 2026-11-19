@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/getting-starte
 ---
 
 # Prepare to attach a VPC Lattice target group to your Auto Scaling group
-<a name="getting-started-vpc-lattice"></a>
 
 Before you attach a VPC Lattice target group to your Auto Scaling group, you must complete the following prerequisites:
 + You must have already created a VPC Lattice service network, service, listener, and target group. For more information, see the following topics in the *VPC Lattice User Guide*:

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guar
 ---
 
 # Runtime Monitoring Troubleshooting
-<a name="ecs-guard-duty-troubleshooting"></a>
 
 You might need to troubleshoot or verify that Runtime Monitoring is enabled and running on your tasks and containers.
 

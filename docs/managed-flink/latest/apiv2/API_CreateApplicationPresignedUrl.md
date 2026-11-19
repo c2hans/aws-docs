@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CreateApp
 ---
 
 # CreateApplicationPresignedUrl
-<a name="API_CreateApplicationPresignedUrl"></a>
 
 Creates and returns a URL that you can use to connect to an application's extension.
 

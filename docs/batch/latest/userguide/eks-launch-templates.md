@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/eks-launch-templa
 ---
 
 # Customize Amazon EKS launch templates
-<a name="eks-launch-templates"></a>
 
 AWS Batch on Amazon EKS supports launch templates. There are constraints on what your launch template can do.
 

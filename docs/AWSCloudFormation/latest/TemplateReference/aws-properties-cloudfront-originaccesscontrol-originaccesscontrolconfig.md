@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::OriginAccessControl OriginAccessControlConfig
-<a name="aws-properties-cloudfront-originaccesscontrol-originaccesscontrolconfig"></a>
 
 Creates a new origin access control in CloudFront. After you create an origin access control, you can add it to an origin in a CloudFront distribution so that CloudFront sends authenticated (signed) requests to the origin.
 
@@ -61,7 +60,7 @@ A name to identify the origin access control. You can specify up to 64 character
 The type of origin that this origin access control is for.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^(s3|mediastore|lambda|mediapackagev2|execute-api)$`
+*Pattern*: `^(s3|mediastore|lambda|mediapackagev2)$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SigningBehavior`  <a name="cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-signingbehavior"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Job
 ---
 
 # Job
-<a name="API_Job"></a>
 
 Represents information about a job.
 

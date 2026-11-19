@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pagerduty-reading-from-en
 ---
 
 # Reading from PagerDuty entities
-<a name="pagerduty-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Region.h
 ---
 
 # Region
-<a name="API_control_Region"></a>
 
 A Region that supports a Multi-Region Access Point as well as the associated bucket for the Region.
 

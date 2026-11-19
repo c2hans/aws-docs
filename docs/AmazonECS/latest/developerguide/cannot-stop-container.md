@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cannot-s
 ---
 
 # Troubleshooting Amazon ECS CannotStopContainerError errors
-<a name="cannot-stop-container"></a>
 
 The following are some CannotStopContainerError error messages and actions that you can take to fix the errors.
 

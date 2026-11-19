@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Log strategy
-<a name="log-strategy"></a>
 
 Each type of log that is being collected may require a different log storage strategy. The strategy will vary depending on the type of log, frequency, retention, size, quantity, compliance, and access that may be required. Some examples of common log types are: network logs, access logs, financial logs, DNS logs, inventory records, and change management records. A common lifecycle pattern for logs is keeping them for a period of time in: standard storage, cold storage option, archival storage, and then deleted.
 

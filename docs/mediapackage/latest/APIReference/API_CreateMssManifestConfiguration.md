@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Cre
 ---
 
 # CreateMssManifestConfiguration
-<a name="API_CreateMssManifestConfiguration"></a>
 
 Configuration parameters for creating a Microsoft Smooth Streaming (MSS) manifest. MSS is a streaming media format developed by Microsoft that delivers adaptive bitrate streaming content to compatible players and devices.
 

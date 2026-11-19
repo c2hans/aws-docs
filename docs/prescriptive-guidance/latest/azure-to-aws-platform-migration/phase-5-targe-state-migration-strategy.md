@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/azure-to-aw
 ---
 
 # Phase 5 - Target State Design and Migration Strategy
-<a name="phase-5-targe-state-migration-strategy"></a>
 
 After you validate and assemble all current-state context — raw inventories, AI-generated relationships, enriched inventory CSVs, meeting transcripts with indexes, and accurate acceptance criteria documents — the AI assistant generates target-state migration documents.
 

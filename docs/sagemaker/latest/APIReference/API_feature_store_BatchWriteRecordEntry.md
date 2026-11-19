@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_featur
 ---
 
 # BatchWriteRecordEntry
-<a name="API_feature_store_BatchWriteRecordEntry"></a>
 
 An entry to write as part of a `BatchWriteRecord` request.
 

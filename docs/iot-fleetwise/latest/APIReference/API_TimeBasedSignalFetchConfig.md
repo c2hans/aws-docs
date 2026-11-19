@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ti
 ---
 
 # TimeBasedSignalFetchConfig
-<a name="API_TimeBasedSignalFetchConfig"></a>
 
 Used to configure a frequency-based vehicle signal fetch.
 

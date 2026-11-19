@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/accelerate-
 ---
 
 # Implementation
-<a name="implementation"></a>
 
 ## Prerequisites
 <a name="prerequisites.1ce0aeeb-ca94-5ac3-8996-7923b7581a1e"></a>

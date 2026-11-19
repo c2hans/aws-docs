@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/disassociate-faces
 ---
 
 # Disassociating faces from a user
-<a name="disassociate-faces"></a>
 
 You can use the [DisassociateFaces](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DisassociateFaces.html) operation to remove the association between a user ID and a face ID.
 

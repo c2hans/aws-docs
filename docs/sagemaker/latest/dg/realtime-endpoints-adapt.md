@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints-a
 ---
 
 # Fine-tune models with adapter inference components
-<a name="realtime-endpoints-adapt"></a>
 
 With Amazon SageMaker AI, you can host pre-trained foundation models without needing to create your own models from scratch. However, to tailor a general-purpose foundation model for the unique needs of your business, you must create a fine-tuned version of it. One cost-effective fine-tuning technique is Low-Rank Adaptation (LoRA). The principle behind LoRA is that only a small part of a large foundation model needs updating to adapt it to new tasks or domains. A LoRA adapter augments the inference from a base foundation model with just a few extra adapter layers.
 

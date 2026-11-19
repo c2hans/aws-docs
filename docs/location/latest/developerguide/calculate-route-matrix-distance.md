@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/calculate
 ---
 
 # How to calculate a route matrix of distance and time for multiple origins and destinations
-<a name="calculate-route-matrix-distance"></a>
 
 The CalculateRouteMatrix API calculates routes and provides travel time and travel distance for each combination of origins and destinations. This capability is useful for applications requiring route planning and optimization across multiple locations.
 

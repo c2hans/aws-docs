@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::Campaign DataPartition
-<a name="aws-properties-iotfleetwise-campaign-datapartition"></a>
 
 The configuration for signal data storage and upload options. You can only specify these options when the campaign's spooling mode is `TO_DISK`.
 

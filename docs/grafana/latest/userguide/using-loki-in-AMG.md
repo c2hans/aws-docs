@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/using-loki-in-A
 ---
 
 # Connect to a Loki data source
-<a name="using-loki-in-AMG"></a>
 
  The Loki data source provides access to Loki, Grafana’s log aggregation system.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EMRSer
 ---
 
 # EMRServerlessStepMetadata
-<a name="API_EMRServerlessStepMetadata"></a>
 
 The configurations and outcomes of an Amazon EMR Serverless step execution.
 

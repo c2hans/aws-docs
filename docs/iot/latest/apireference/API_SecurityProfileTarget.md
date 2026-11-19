@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_SecurityProf
 ---
 
 # SecurityProfileTarget
-<a name="API_SecurityProfileTarget"></a>
 
 A target to which an alert is sent when a security profile behavior is violated.
 

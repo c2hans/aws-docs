@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workmail/latest/adminguide/building_cap.
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkMail. After March 31, 2027, you will no longer be able to access the Amazon WorkMail console or Amazon WorkMail resources. For more information, see [Amazon WorkMail end of support](https://docs.aws.amazon.com/workmail/latest/adminguide/workmail-end-of-support.html).
 
 # Building a Custom Availability Provider Lambda function
-<a name="building_cap"></a>
 
 Custom Availability Providers (CAPs) are configured with a JSON-based request and response protocol that is written in a well defined JSON schema. A Lambda function will parse the request and provide a valid response.
 

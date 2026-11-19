@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-in-canvas
 ---
 
 # Flow traffic
-<a name="acxd-in-canvas-analytics"></a>
 
 Flow traffic shows how conversations move through a deployed flow — where users continue, drop off, retry, or escalate — with usage displayed on each node directly in the flow's Canvas.
 

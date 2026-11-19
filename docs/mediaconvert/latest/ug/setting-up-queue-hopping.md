@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/setting-up-queue-
 ---
 
 # Setting up queue hopping
-<a name="setting-up-queue-hopping"></a>
 
 When you set up queue hopping, you specify the *submission queue*, the *wait time*, and the *destination queue*. Typically, the submission queue is a reserved queue and the destination queue is an on-demand queue. The following tabs show different options for setting up queue hopping.
 

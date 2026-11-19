@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SnapshotT
 ---
 
 # SnapshotTierStatus
-<a name="API_SnapshotTierStatus"></a>
 
 Provides information about a snapshot's storage tier.
 

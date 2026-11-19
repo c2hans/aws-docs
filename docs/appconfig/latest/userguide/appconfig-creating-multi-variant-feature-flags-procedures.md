@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cre
 ---
 
 # Creating a multi-variant feature flag
-<a name="appconfig-creating-multi-variant-feature-flags-procedures"></a>
 
 Use the procedures in this section to create variants of a feature flag.
 

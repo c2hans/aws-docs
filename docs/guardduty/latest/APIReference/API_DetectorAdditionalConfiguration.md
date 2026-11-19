@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Detect
 ---
 
 # DetectorAdditionalConfiguration
-<a name="API_DetectorAdditionalConfiguration"></a>
 
 Information about the additional configuration for a feature in your GuardDuty account.
 

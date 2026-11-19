@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-emr-
 ---
 
 # Estimating Amazon EMR cluster capacity
-<a name="capacity"></a>
 
 Although Amazon EMR is a resizable platform, it's important to right-size the clusters. Right-sizing avoids a slow cluster, if undersized, or higher costs, if the cluster is oversized. To anticipate these issues, you can calculate the number and type of nodes that will be needed for the workloads.
 

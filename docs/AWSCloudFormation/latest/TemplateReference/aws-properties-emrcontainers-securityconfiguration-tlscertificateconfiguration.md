@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::SecurityConfiguration TLSCertificateConfiguration
-<a name="aws-properties-emrcontainers-securityconfiguration-tlscertificateconfiguration"></a>
 
 Configurations related to the TLS certificate for the security configuration.
 

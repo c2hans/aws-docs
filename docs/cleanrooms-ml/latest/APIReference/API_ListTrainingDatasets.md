@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Li
 ---
 
 # ListTrainingDatasets
-<a name="API_ListTrainingDatasets"></a>
 
 Returns a list of training datasets.
 

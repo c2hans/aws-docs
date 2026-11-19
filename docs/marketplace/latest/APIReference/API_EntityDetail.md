@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Enti
 ---
 
 # EntityDetail
-<a name="API_EntityDetail"></a>
 
 An object that contains metadata and details about the entity.
 

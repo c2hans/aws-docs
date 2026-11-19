@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/mnp-ce.html
 ---
 
 # Compute environment considerations for MNP with AWS Batch
-<a name="mnp-ce"></a>
 
 There are several things to consider when configuring compute environments to run multi-node parallel jobs with AWS Batch.
 + Multi-node parallel jobs aren't supported on `UNMANAGED` compute environments.

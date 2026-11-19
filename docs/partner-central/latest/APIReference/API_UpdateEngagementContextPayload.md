@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # UpdateEngagementContextPayload
-<a name="API_UpdateEngagementContextPayload"></a>
 
 Represents the updated payload of an engagement context. The structure of this payload varies based on the context type being updated.
 

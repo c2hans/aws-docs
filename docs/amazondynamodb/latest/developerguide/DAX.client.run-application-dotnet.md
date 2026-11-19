@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # .NET and DAX
-<a name="DAX.client.run-application-dotnet"></a>
 
 Follow these steps to run the .NET sample on your Amazon EC2 instance.
 

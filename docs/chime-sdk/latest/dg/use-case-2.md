@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/use-case-2.html
 ---
 
 # Specifying actions in response to telephony events for the Amazon Chime SDK PSTN audio service
-<a name="use-case-2"></a>
 
 In the Audio Service, SIP media applications invoke AWS Lambda functions. In turn, a Lambda function can return a list of instructions known as *actions*. An action is an item that you want to run on a leg of a phone call, such as sending or receiving digits, joining a meeting, and so on. For more information about the actions invoked by the PSTN audio service, see [Understanding telephony events for Amazon Chime SDK PSTN audio service](pstn-invocations.md).
 

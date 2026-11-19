@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dateSubtract.
 ---
 
 # $dateSubtract
-<a name="dateSubtract"></a>
 
 New from version 5.0
 

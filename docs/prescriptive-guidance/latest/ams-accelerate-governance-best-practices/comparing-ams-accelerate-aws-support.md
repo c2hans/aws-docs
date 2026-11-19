@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ams-acceler
 ---
 
 # Comparing AMS Accelerate and AWS Support
-<a name="comparing-ams-accelerate-aws-support"></a>
 
 ## Comparing AMS Accelerate and AWS Support
 <a name="key-differences"></a>

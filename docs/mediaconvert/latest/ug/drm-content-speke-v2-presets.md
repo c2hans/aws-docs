@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/drm-content-speke
 ---
 
 # SPEKE v2.0 presets
-<a name="drm-content-speke-v2-presets"></a>
 
 SPEKE Version 2.0 supports the use of multiple, distinct encryption keys for audio and video tracks. MediaConvert uses **presets** to configure the encryption. The MediaConvert API defines these presets. The presets map encryption keys to specific audio or video tracks, based on the number of channels for audio tracks, and based on the video resolution for video tracks. MediaConvert uses specific combinations of audio and video encryption presets to support three different encryption scenarios:
 + [Scenario 1: Unencrypted tracks and encrypted tracks](#drm-content-speke-v2-presets-unencrypted-and-encrypted-tracks)

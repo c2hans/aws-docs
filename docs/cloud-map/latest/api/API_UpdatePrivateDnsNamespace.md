@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_UpdatePrivateDn
 ---
 
 # UpdatePrivateDnsNamespace
-<a name="API_UpdatePrivateDnsNamespace"></a>
 
 Updates a private DNS namespace.
 

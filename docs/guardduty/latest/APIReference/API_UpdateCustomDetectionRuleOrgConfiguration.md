@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Update
 ---
 
 # UpdateCustomDetectionRuleOrgConfiguration
-<a name="API_UpdateCustomDetectionRuleOrgConfiguration"></a>
 
 Replaces the include and exclude account lists of an existing organization-level configuration for a custom detection rule. Updating a dry run configuration restarts its 14-day expiry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # ListCoreNetworkPolicyVersions
-<a name="API_ListCoreNetworkPolicyVersions"></a>
 
 Returns a list of core network policy versions.
 

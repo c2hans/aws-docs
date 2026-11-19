@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ApiKe
 ---
 
 # ApiKeyRestrictions
-<a name="API_ApiKeyRestrictions"></a>
 
 API Restrictions on the allowed actions, resources, and referers for an API key resource.
 

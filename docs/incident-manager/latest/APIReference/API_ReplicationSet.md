@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # ReplicationSet
-<a name="API_ReplicationSet"></a>
 
 The set of AWS Region that your Incident Manager data will be replicated to and the AWS KMS key used to encrypt the data.
 

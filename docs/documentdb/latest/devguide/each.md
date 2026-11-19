@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/each.html
 ---
 
 # $each
-<a name="each"></a>
 
 The `$each` operator is used in conjunction with other update operators, such as `$push` and `$addToSet`, to add multiple values to an array field. It allows adding multiple elements to an array in a single operation, rather than having to execute multiple update operations.
 

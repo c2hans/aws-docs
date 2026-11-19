@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedAutoScaling
-<a name="API_ManagedAutoScaling"></a>
 
 The auto scaling configuration created by Amazon ECS for an Express service.
 

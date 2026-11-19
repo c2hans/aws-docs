@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Business discovery
-<a name="business-discovery"></a>
 
 To perform business interviews effectively, it is important to understand your** **company's goals that depend on data at a high level. For example, these goals might include:
 + Improving business agility

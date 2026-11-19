@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataInstanceRequirementsDetails
-<a name="API_AwsEc2LaunchTemplateDataInstanceRequirementsDetails"></a>
 
  The attributes for the Amazon EC2 instance types.
 

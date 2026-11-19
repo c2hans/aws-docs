@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchR
 ---
 
 # BatchReplaceClusterNodesError
-<a name="API_BatchReplaceClusterNodesError"></a>
 
 Represents an error encountered when replacing a node in a SageMaker HyperPod cluster.
 

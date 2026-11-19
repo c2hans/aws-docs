@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_ListR
 ---
 
 # ListRuleGroupsNamespaces
-<a name="API_ListRuleGroupsNamespaces"></a>
 
 Returns a list of rule groups namespaces in a workspace.
 

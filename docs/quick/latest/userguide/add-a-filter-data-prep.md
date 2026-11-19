@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/add-a-filter-data
 ---
 
 # Adding filters
-<a name="add-a-filter-data-prep"></a>
 
 You can add filters to a dataset or an analysis. Use the following procedures to learn how.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Conf
 ---
 
 # ConfiguredTableAssociationAnalysisRuleCustom
-<a name="API_ConfiguredTableAssociationAnalysisRuleCustom"></a>
 
  The configured table association analysis rule applied to a configured table with the custom analysis rule.
 

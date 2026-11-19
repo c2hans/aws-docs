@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Platforms supported by the AWS SDK for .NET
-<a name="net-dg-supported-platforms"></a>
 
 With the AWS SDK for .NET, you can target different platforms using distinct groups of assemblies. However, not all SDK functionality is the same on each of these platforms. This topic describes the differences in support for each platform.
 

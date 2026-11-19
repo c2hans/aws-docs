@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FastLaunc
 ---
 
 # FastLaunchLaunchTemplateSpecificationRequest
-<a name="API_FastLaunchLaunchTemplateSpecificationRequest"></a>
 
 Request to create a launch template for a Windows fast launch enabled AMI.
 

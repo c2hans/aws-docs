@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Security foundations
-<a name="security-foundations"></a>
 
 | DRHCSEC01: Have you updated and validated your control objectives to address data residency compliance requirements? |
 | --- |

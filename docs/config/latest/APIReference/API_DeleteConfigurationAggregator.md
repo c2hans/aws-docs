@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteCon
 ---
 
 # DeleteConfigurationAggregator
-<a name="API_DeleteConfigurationAggregator"></a>
 
 Deletes the specified configuration aggregator and the aggregated data associated with the aggregator.
 

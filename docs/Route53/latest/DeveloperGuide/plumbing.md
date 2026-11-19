@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/plumbing.h
 ---
 
 # .plumbing
-<a name="plumbing"></a>
 
 Used by those in the plumbing industry.
 

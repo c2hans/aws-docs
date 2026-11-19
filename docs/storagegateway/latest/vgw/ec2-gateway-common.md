@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/ec2-gateway-co
 ---
 
 # Deploy a customized Amazon EC2 instance for Volume Gateway
-<a name="ec2-gateway-common"></a>
 
 You can deploy and activate a Volume Gateway on an Amazon Elastic Compute Cloud (Amazon EC2) instance. The AWS Storage Gateway Amazon Machine Image (AMI) is available as a community AMI.
 

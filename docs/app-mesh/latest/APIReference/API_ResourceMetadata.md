@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Resourc
 ---
 
 # ResourceMetadata
-<a name="API_ResourceMetadata"></a>
 
 An object that represents metadata for a resource.
 

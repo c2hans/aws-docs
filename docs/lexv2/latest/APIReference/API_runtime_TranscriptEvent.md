@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Tr
 ---
 
 # TranscriptEvent
-<a name="API_runtime_TranscriptEvent"></a>
 
 Event sent from Amazon Lex to your client application that contains a transcript of voice audio.
 

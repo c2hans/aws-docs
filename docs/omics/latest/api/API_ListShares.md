@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListShares.html
 ---
 
 # ListShares
-<a name="API_ListShares"></a>
 
 Retrieves the resource shares associated with an account. Use the filter parameter to retrieve a specific subset of the shares.
 

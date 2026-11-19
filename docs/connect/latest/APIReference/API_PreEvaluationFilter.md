@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PreEvalu
 ---
 
 # PreEvaluationFilter
-<a name="API_PreEvaluationFilter"></a>
 
 A single pre-evaluation filter condition. Specifies a resource type, filter type, key, value, and operator to match against a resource attribute.
 

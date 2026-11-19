@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/inference-opena
 ---
 
 # Submit a batch of prompts with the OpenAI Batch API
-<a name="inference-openai-batch"></a>
 
 You can run a batch inference job using the [OpenAI Create batch API](https://platform.openai.com/docs/api-reference/batch) with Amazon Bedrock OpenAI models.
 

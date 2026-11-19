@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_RawMessage.h
 ---
 
 # RawMessage
-<a name="API_RawMessage"></a>
 
 Represents the raw data of the message.
 

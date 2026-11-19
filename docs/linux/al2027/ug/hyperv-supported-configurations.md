@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/hyperv-supported-configu
 ---
 
 # Requirements for running Amazon Linux 2027 on Hyper-V
-<a name="hyperv-supported-configurations"></a>
 
  This section covers the requirements for running Amazon Linux 2027 on Hyper-V. The Hyper-V images of AL2027 are available only for the `x86-64` architecture. Hyper-V images for `aarch64` are not available or supported.
 

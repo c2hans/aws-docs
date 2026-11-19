@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Time
 ---
 
 # TimeShiftConfiguration
-<a name="API_TimeShiftConfiguration"></a>
 
  The configuration for time-shifted viewing.
 

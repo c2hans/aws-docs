@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-slot-types.
 ---
 
 # Slot types
-<a name="acxd-slot-types"></a>
 
 Custom entity types for extracting structured data from user input. A slot type defines a list of values (with optional synonyms) that the NLP engine uses to identify entities in conversation.
 

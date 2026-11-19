@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # WhatsAppChannelSubtypeConfig
-<a name="API_connect-outbound-campaigns-v2_WhatsAppChannelSubtypeConfig"></a>
 
 The configuration for the WhatsApp channel subtype.
 

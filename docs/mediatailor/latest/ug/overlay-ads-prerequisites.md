@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/overlay-ads-prereq
 ---
 
 # Prerequisites for using overlay ads with MediaTailor
-<a name="overlay-ads-prerequisites"></a>
 
 The following prerequisites apply when using overlay ads with MediaTailor:
 + The workflow must be live, not video on demand (VOD).

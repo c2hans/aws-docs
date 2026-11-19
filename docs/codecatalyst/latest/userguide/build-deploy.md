@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/build-depl
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Tutorial: Upload artifacts to Amazon S3
-<a name="build-deploy"></a>
 
 In this tutorial, you learn how to upload artifacts to an Amazon S3 bucket using an Amazon CodeCatalyst [workflow](workflows-concepts.md#workflows-concepts-workflows) that includes a couple of [build actions](workflows-concepts.md#workflows-concepts-actions). These actions run in series when the workflow starts. The first build action generates two files, `Hello.txt` and `Goodbye.txt`, and bundles them into a build artifact. The second build action uploads the artifact to Amazon S3. You'll configure the workflow to run every time you push a commit to your source repository.
 

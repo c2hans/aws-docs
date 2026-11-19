@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/lineage-tracking-aut
 ---
 
 # Amazon SageMaker AI–Created Tracking Entities
-<a name="lineage-tracking-auto-creation"></a>
 
 Amazon SageMaker AI automatically creates tracking entities for SageMaker AI jobs, models, model packages, and endpoints if the data is available. There is no limit to the number of lineage entities created by SageMaker AI.
 

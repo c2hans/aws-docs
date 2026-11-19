@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Clini
 ---
 
 # ClinicalNoteGenerationSettings
-<a name="API_ClinicalNoteGenerationSettings"></a>
 
 The output configuration for clinical note generation.
 

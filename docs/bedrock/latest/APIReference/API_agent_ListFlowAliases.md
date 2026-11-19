@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Li
 ---
 
 # ListFlowAliases
-<a name="API_agent_ListFlowAliases"></a>
 
 Returns a list of aliases for a flow.
 

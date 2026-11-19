@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetInventorySchema
-<a name="API_GetInventorySchema"></a>
 
 Return a list of inventory type names for the account, or return a list of attribute names for a specific Inventory item type.
 

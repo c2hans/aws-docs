@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Insig
 ---
 
 # InsightVisual
-<a name="API_InsightVisual"></a>
 
 An insight visual.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # Setting Up Members of a Redundancy Group
-<a name="set-up-members-redundancy-group"></a>
 
 **Topics**
 + [POST: Add a Node to a Redundancy Group](set-up-members-redundancy-group-add-node.md)

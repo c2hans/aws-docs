@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-remove-null-ro
 ---
 
 # Removing null rows
-<a name="transforms-remove-null-rows"></a>
 
 This transform removes from the dataset rows that have all columns as null. In addition, you can extend this criteria to include empty fields, so as to keep rows where at least one column is non empty.
 

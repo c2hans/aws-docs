@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 ---
 
 # Test environment for iOS devices
-<a name="custom-test-environments-hosts-ios"></a>
 
  For the full list of available test hosts and how to select one, see [Hosts for custom test environments](custom-test-environments-hosts.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/best-practice
 ---
 
 # Best practices for working with indexes
-<a name="best-practices-indexes"></a>
 
 ## Building indexes
 <a name="best-practices-building-indexes"></a>

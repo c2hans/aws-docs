@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ScoringStrat
 ---
 
 # ScoringStrategyConstraints
-<a name="API_ScoringStrategyConstraints"></a>
 
 Constraints for the scoring strategy configuration.
 

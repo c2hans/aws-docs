@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/servi
 ---
 
 # AWS services that support related telemetry
-<a name="services-with-related-telemetry"></a>
 
 The following table lists the AWS services that support related entity information in their CloudWatch telemetry. Services or resources that are not listed in the table do not have related entity information exposed in CloudWatch.
 

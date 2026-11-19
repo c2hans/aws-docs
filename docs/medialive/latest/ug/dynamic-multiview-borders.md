@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/dynamic-multiview-bo
 ---
 
 # Dynamic Multiview: Borders
-<a name="dynamic-multiview-borders"></a>
 
 AWS Elemental MediaLive adds a black border around every video output that participates in Dynamic Multiview. This section explains why the border is needed, how MediaLive sizes it, and when you might want to change it.
 

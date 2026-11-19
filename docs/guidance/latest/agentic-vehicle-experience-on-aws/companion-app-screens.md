@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Screens
-<a name="companion-app-screens"></a>
 
 | Tab | Contents |
 | --- | --- |

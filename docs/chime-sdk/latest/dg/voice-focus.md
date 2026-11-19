@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/voice-focus.html
 ---
 
 # Understanding VoiceFocus for the Amazon Chime SDK PTSN audio service
-<a name="voice-focus"></a>
 
 Enables you to apply Amazon Voice Focus noise suppression to inbound and outbound call legs on a public switched telephony network (PSTN) call. When you apply Amazon Voice Focus, it reduces background noise without impacting human speech. This can make the current speaker easier to hear.
 

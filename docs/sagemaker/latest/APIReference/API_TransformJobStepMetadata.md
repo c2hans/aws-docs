@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Transf
 ---
 
 # TransformJobStepMetadata
-<a name="API_TransformJobStepMetadata"></a>
 
 Metadata for a transform job step.
 

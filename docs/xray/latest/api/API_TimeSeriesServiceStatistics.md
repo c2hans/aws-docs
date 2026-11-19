@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_TimeSeriesServiceSta
 ---
 
 # TimeSeriesServiceStatistics
-<a name="API_TimeSeriesServiceStatistics"></a>
 
 A list of TimeSeriesStatistic structures.
 

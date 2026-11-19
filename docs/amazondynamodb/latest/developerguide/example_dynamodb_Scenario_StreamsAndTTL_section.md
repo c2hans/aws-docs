@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Work with DynamoDB Streams and Time-to-Live using AWS Command Line Interface v2
-<a name="example_dynamodb_Scenario_StreamsAndTTL_section"></a>
 
 The following code example shows how to manage DynamoDB Streams and Time-to-Live features.
 + Create a table with Streams enabled.

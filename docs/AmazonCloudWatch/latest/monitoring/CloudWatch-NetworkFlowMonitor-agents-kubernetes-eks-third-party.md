@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Configure add-on for third party monitoring tools
-<a name="CloudWatch-NetworkFlowMonitor-agents-kubernetes-eks-third-party"></a>
 
 You can configure the Network Flow Monitor add-on to expose an OpenMetrics server during installation. This enables integration with third-party monitoring tools such as Prometheus, allowing you to collect and analyze network flow metrics alongside your existing monitoring infrastructure. [Learn more about about OpenMetrics](https://openmetrics.io/). This feature is available from add-on version v1.1.0.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/azure-to-aw
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 ## Next Steps
 <a name="next-steps.f088d312-6b53-5656-a257-16dba786dd48"></a>

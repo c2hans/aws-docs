@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/type-aggregat
 ---
 
 # $type
-<a name="type-aggregation"></a>
 
 The `$type` aggregation operator returns the BSON data type of a specified field. This is useful for identifying the data type of field values during aggregation operations.
 

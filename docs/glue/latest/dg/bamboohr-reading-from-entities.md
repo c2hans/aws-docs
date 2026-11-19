@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/bamboohr-reading-from-ent
 ---
 
 # Reading from BambooHR entities
-<a name="bamboohr-reading-from-entities"></a>
 
 **Prerequisites**
 

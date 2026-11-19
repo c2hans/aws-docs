@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_No
 ---
 
 # NotificationEventAttachment
-<a name="API_NotificationEventAttachment"></a>
 
 A file attached to a notification event.
 

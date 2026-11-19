@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-au
 ---
 
 # Choose your authentication approach
-<a name="cognito-authentication-approach"></a>
 
 When you authenticate users with an Amazon Cognito user pools, you choose how the sign-in experience is presented. The following three approaches differ in how much of the interface Amazon Cognito provides versus how much you build, and they are not mutually exclusive—you can combine them. They all authenticate against the same user pool and produce the same tokens. The difference is where the sign-in pages live and how much control you have.
 

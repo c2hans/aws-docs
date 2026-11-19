@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/userguide/tutorial-runtime-mf.
 **AWS Mainframe Modernization Service (Managed Runtime Environment experience)** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization Service (Managed Runtime Environment experience) explore AWS Mainframe Modernization Service (Self-Managed Experience). Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
 
 # Tutorial: Set up managed runtime for Rocket Software (formerly Micro Focus)
-<a name="tutorial-runtime-mf"></a>
 
 You can deploy and run an application in AWS Mainframe Modernization managed runtime environment with the Rocket Software runtime engine. This tutorial shows how to deploy and run the CardDemo sample application in an AWS Mainframe Modernization managed runtime environment with the Rocket Software runtime engine. The CardDemo sample application is a simplified credit card application developed to test and showcase AWS and partner technology for mainframe modernization use cases.
 

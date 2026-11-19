@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector-ssm-plug
 ---
 
 # Amazon Inspector SSM plugin for Linux and Windows
-<a name="inspector-ssm-plugin"></a>
 
  This topic describes the Amazon Inspector SSM plugin for Linux and Windows instances.
 

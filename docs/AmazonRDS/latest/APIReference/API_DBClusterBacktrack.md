@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBClus
 ---
 
 # DBClusterBacktrack
-<a name="API_DBClusterBacktrack"></a>
 
 This data type is used as a response element in the `DescribeDBClusterBacktracks` action.
 

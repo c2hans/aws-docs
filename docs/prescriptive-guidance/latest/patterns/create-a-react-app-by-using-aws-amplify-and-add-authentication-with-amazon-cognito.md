@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create a React app by using AWS Amplify and add authentication with Amazon Cognito
-<a name="create-a-react-app-by-using-aws-amplify-and-add-authentication-with-amazon-cognito"></a>
 
 *Rishi Singla, Amazon Web Services*
 

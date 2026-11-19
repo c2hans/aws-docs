@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DebugR
 ---
 
 # DebugRuleEvaluationStatus
-<a name="API_DebugRuleEvaluationStatus"></a>
 
 Information about the status of the rule evaluation.
 

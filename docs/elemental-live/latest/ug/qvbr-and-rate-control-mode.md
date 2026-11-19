@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/qvbr-and-rate-c
 ---
 
 # Setting up QVBR and rate control mode
-<a name="qvbr-and-rate-control-mode"></a>
 
 The Rate Control Mode fields in the Video section of each output on the Elemental Live web interface let you control the quality and bitrate of the video.
 

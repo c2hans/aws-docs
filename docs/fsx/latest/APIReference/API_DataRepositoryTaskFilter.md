@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DataReposito
 ---
 
 # DataRepositoryTaskFilter
-<a name="API_DataRepositoryTaskFilter"></a>
 
 (Optional) An array of filter objects you can use to filter the response of data repository tasks you will see in the response. You can filter the tasks returned in the response by one or more file system IDs, task lifecycles, and by task type. A filter object consists of a filter `Name`, and one or more `Values` for the filter.
 

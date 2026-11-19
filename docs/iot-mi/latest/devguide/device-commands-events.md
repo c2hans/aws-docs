@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/device-commands-e
 ---
 
 # Manage IoT device commands and events
-<a name="device-commands-events"></a>
 
 Device commands provide the ability to remotely manage a physical device ensuring complete control over the device in addition to performing critical security, software, and hardware updates. With a large fleet of devices, knowing when a device performs a command provides oversight over your entire device implementation. A device command or an automatic update will trigger a device state change, which in turn will create a new device event. This device event will trigger a notification automatically sent to a customer-managed destination.
 

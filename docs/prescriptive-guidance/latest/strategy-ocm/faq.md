@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-oc
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## Is the 6-Point Framework only for new customers or new migrations?
 <a name="faq-1"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AutoScaling-
 ---
 
 # Auto Scaling policies
-<a name="AutoScaling-Policies"></a>
 
 A scaling policy has the following components:
 + A target metric – The CloudWatch metric that ElastiCache for Valkey and Redis OSS Auto Scaling uses to determine when and how much to scale.

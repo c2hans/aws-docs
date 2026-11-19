@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CreateSubsc
 ---
 
 # (Only if using an organization) Create an IAM role
-<a name="CreateSubscriptionFilterFirehose-IAMrole"></a>
 
 If you created the destination by using an access policy that grants permissions to an organization instead of directly to account `111111111111`, follow the steps in this section. Otherwise, skip to [Step 4: Create a subscription filter](CreateSubscriptionFilterFirehose.md).
 

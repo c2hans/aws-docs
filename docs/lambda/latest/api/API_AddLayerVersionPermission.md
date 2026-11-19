@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_AddLayerVersionPer
 ---
 
 # AddLayerVersionPermission
-<a name="API_AddLayerVersionPermission"></a>
 
 Adds permissions to the resource-based policy of a version of an [AWS Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html). Use this action to grant layer usage permission to other accounts. You can grant permission to a single account, all accounts in an organization, or all AWS accounts.
 

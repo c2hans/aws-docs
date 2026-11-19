@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicRefreshDetails
-<a name="API_TopicRefreshDetails"></a>
 
 The details about the refresh of a topic.
 

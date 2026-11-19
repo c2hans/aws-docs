@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kinesis-fis-provision
 ---
 
 # Provisioned throughput exception errors
-<a name="kinesis-fis-provisioned-throughput"></a>
 
 Provisioned throughput exceeded exception errors (HTTP 400) occur when the request rate for a Kinesis stream surpasses the throughput limits of one or more shards. Each shard has specific read, and write capacity limits, and exceeding those limits triggers this exception. Scenarios leading to this exception include: sudden spikes in data ingestion or consumption, insufficient shard capacity for the data volume being processed, or uneven distribution of partition keys.
 

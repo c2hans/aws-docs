@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-database.html
 ---
 
 # CREATE DATABASE
-<a name="create-database"></a>
 
 Creates a database. The use of `DATABASE` and `SCHEMA` is interchangeable. They mean the same thing.
 

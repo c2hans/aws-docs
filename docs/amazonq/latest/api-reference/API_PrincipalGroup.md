@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Princip
 ---
 
 # PrincipalGroup
-<a name="API_PrincipalGroup"></a>
 
 Provides information about a group associated with the principal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Water
 ---
 
 # WaterfallChartAggregatedFieldWells
-<a name="API_WaterfallChartAggregatedFieldWells"></a>
 
 The field well configuration of a waterfall visual.
 

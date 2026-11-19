@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/PerfAppGateway
 ---
 
 # Measuring Performance Between Your Application and Gateway
-<a name="PerfAppGateway-common"></a>
 
 Data throughput, data latency, and operations per second are three measures that you can use to understand how your application storage that is using your gateway is performing. When you use the correct aggregation statistic, you can use Storage Gateway metrics to measure these values.
 

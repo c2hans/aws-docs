@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/find-build.html
 ---
 
 # Finding your client's build number
-<a name="find-build"></a>
 
 Support technicians sometimes ask for the build number of your Amazon Chime client.
 

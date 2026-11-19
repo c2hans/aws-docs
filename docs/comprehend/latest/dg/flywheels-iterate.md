@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-iterate.h
 ---
 
 # Flywheel iterations
-<a name="flywheels-iterate"></a>
 
 Use flywheel iterations to help you create and manage new model versions.
 

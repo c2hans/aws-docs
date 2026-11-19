@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ml-workload-taints.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Prevent Pods from being scheduled on accelerated nodes
-<a name="ml-workload-taints"></a>
 
 ## Overview
 <a name="_overview"></a>

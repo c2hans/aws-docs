@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_Schedu
 ---
 
 # ScheduleSummary
-<a name="API_ScheduleSummary"></a>
 
 The details of a schedule.
 

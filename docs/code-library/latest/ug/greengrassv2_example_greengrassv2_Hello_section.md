@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/greengrassv2_exam
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Hello AWS IoT Greengrass V2
-<a name="greengrassv2_example_greengrassv2_Hello_section"></a>
 
 The following code example shows how to get started using AWS IoT Greengrass V2.
 

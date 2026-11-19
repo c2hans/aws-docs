@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/working-with-stor
 ---
 
 # Creating a data story with Generative BI
-<a name="working-with-stories-create"></a>
 
 Use the following procedure to create a data story with Generative BI.
 

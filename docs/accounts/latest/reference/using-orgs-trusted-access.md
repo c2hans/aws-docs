@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-tru
 ---
 
 # Enable trusted access for AWS Account Management
-<a name="using-orgs-trusted-access"></a>
 
 These instructions are for how to enable trusted access for AWS Account Management if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
 

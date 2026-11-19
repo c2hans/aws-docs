@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Applicat
 ---
 
 # ApplicationVersionDescription
-<a name="API_ApplicationVersionDescription"></a>
 
 Describes the properties of an application version.
 

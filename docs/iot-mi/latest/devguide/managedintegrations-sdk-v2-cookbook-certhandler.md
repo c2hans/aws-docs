@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Create a custom certificate handler for secure storage
-<a name="managedintegrations-sdk-v2-cookbook-certhandler"></a>
 
 Device certificate management is crucial when onboarding the Managed Integrations hub. While certificates are stored in the file system by default, you can create a custom certificate handler for enhanced security and flexible credential management.
 

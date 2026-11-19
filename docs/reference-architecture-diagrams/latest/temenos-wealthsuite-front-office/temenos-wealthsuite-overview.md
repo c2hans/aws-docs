@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/t
 ---
 
 # Temenos WealthSuite Front Office on AWS: Overview
-<a name="temenos-wealthsuite-overview"></a>
 
 Publication date: **January 6, 2023 ([Diagram history](#tw-ov-history))**
 

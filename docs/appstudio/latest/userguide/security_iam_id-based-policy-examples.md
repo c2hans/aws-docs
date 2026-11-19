@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/security_iam_
 ---
 
 # Identity-based policy examples for AWS App Studio
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify App Studio resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AssociateMemberToFleet
-<a name="API_AssociateMemberToFleet"></a>
 
 Assigns a fleet membership level to a member.
 

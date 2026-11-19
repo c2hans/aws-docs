@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/managing
 ---
 
 # Tagging secrets in AWS Secrets Manager
-<a name="managing-secrets_tagging"></a>
 
 In AWS Secrets Manager, you can assign metadata to your secrets using tags. A tag is a key-value pair that you define for a secret. Tags help you manage AWS resources and organize data, including billing information.
 

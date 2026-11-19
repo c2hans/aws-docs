@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_JobCommand.html
 ---
 
 # JobCommand
-<a name="API_JobCommand"></a>
 
 Specifies code that runs when a job is run.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # TermTemplate
-<a name="API_marketplace-discovery_TermTemplate"></a>
 
 A structural template defining how a specific term type is reshaped on each renewal cycle. Exactly one variant is present.
 

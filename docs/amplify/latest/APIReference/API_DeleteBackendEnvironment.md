@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_DeleteBa
 ---
 
 # DeleteBackendEnvironment
-<a name="API_DeleteBackendEnvironment"></a>
 
 Deletes a backend environment for an Amplify app.
 

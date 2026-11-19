@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/channel-assembly-a
 ---
 
 # Integrating with MediaPackage endpoints that use CDN authorization
-<a name="channel-assembly-access-configuration-access-token-integrating-emp-cdn-auth"></a>
 
 If you use AWS Elemental MediaPackage as your source location origin, MediaTailor can integrate with MediaPackage endpoints that use CDN authorization.
 

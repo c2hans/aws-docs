@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Trend.
 ---
 
 # Trend
-<a name="API_Trend"></a>
 
 Contains information about the number of findings over time.
 

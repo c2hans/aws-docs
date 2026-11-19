@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/a
 ---
 
 # AWS CloudFormation templates
-<a name="aws-cloudformation-templates"></a>
 
 This solution includes the following CloudFormation templates, which you can download before deployment:
 

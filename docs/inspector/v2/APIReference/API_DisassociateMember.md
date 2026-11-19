@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Disassocia
 ---
 
 # DisassociateMember
-<a name="API_DisassociateMember"></a>
 
 Disassociates a member account from an Amazon Inspector delegated administrator.
 

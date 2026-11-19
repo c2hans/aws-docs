@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloud
 ---
 
 # Specify existing resources at runtime with CloudFormation-supplied parameter types
-<a name="cloudformation-supplied-parameter-types"></a>
 
 When creating your template, you can create parameters that require users to input identifiers of existing AWS resources or Systems Manager parameters by using specialized parameter types provided by CloudFormation.
 

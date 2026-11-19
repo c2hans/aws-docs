@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Theme
 ---
 
 # ThemeConfiguration
-<a name="API_ThemeConfiguration"></a>
 
 The theme configuration. This configuration contains all of the display properties for a theme.
 

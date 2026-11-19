@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeRedshiftIdcApplications
-<a name="API_DescribeRedshiftIdcApplications"></a>
 
 Lists the Amazon Redshift IAM Identity Center applications.
 

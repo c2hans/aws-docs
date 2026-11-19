@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Supported Regions and availability
-<a name="next-gen-supported-regions"></a>
 
 Next generation Resilience Hub is available in the following AWS Regions.
 

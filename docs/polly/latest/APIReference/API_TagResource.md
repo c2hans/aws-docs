@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_TagResourc
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds specified tags to a resource with the specified ARN. Existing tags on a resource are not changed if they are not specified in the request parameters. If you specify a tag key that already exists on the resource, the value in the request replaces the existing value.
 

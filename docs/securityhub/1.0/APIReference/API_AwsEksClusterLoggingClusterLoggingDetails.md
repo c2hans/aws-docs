@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEksC
 ---
 
 # AwsEksClusterLoggingClusterLoggingDetails
-<a name="API_AwsEksClusterLoggingClusterLoggingDetails"></a>
 
 Details for a cluster logging configuration.
 

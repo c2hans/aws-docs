@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/h
 ---
 
 # What is AWS SDK for SAP ABAP?
-<a name="home"></a>
 
 AWS SDK for SAP ABAP provides an interface to the services offered by AWS in the ABAP language. Using the SDK, you can implement ABAP BADIs, reports, transactions, OData services, and other ABAP artifacts on AWS services, such as Amazon Simple Storage Service (Amazon S3), Amazon DynamoDB, Amazon Translate, and more. You can also develop for ABAP-based systems, starting from SAP NetWeaver 7.4 and in an SAP Business Technology Platform environment. For more information, see [Installing AWS SDK for SAP ABAP - BTP edition](https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/installation-btp.html) .
 

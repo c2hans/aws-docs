@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # CloudWatch metrics in AWS Cloud WAN
-<a name="cloudwan-metrics"></a>
 
 You can use the following features to monitor your Cloud WAN network, analyze traffic patterns, and troubleshoot issues with your Cloud WAN global network.
 

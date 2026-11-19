@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # EventInvokeDestinationConfiguration
-<a name="sam-property-function-eventinvokedestinationconfiguration"></a>
 
 A configuration object that specifies the destination of an event after Lambda processes it.
 

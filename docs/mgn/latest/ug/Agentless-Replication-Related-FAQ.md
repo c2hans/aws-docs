@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/Agentless-Replication-Rela
 ---
 
 # Agentless replication questions
-<a name="Agentless-Replication-Related-FAQ"></a>
 
 **Important**
 Agentless replication is no longer available for new deployments. We recommend agent-based replication for all migrations. To learn more, see [Why we recommend agent-based replication](installing-vcenter-overview-mgn.md#why-agent-based).

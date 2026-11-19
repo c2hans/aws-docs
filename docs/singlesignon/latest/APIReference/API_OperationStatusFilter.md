@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Ope
 ---
 
 # OperationStatusFilter
-<a name="API_OperationStatusFilter"></a>
 
 Filters the operation status list based on the passed attribute value.
 

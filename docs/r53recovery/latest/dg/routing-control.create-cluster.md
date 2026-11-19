@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.cr
 ---
 
 # Creating a cluster in ARC
-<a name="routing-control.create-cluster"></a>
 
 You must create a cluster to host routing controls and control panels in ARC.
 

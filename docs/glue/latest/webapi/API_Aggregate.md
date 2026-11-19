@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Aggregate.html
 ---
 
 # Aggregate
-<a name="API_Aggregate"></a>
 
 Specifies a transform that groups rows by chosen fields and computes the aggregated value by specified function.
 

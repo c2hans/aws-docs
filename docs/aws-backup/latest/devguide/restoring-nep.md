@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-nep
 ---
 
 # Restore a Neptune cluster
-<a name="restoring-nep"></a>
 
 ## Use the AWS Backup console to restore Amazon Neptune recovery points
 <a name="nep-restore-console"></a>

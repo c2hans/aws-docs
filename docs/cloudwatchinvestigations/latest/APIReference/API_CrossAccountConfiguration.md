@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchinvestigations/latest/APIRefer
 ---
 
 # CrossAccountConfiguration
-<a name="API_CrossAccountConfiguration"></a>
 
 This structure contains information about the cross-account configuration in the account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/deepar_hyperparamete
 ---
 
 # DeepAR Hyperparameters
-<a name="deepar_hyperparameters"></a>
 
 The following table lists the hyperparameters that you can set when training with the Amazon SageMaker AI DeepAR forecasting algorithm.
 

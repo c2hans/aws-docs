@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_FsxProt
 ---
 
 # FsxProtocolNfs
-<a name="API_FsxProtocolNfs"></a>
 
 Specifies the Network File System (NFS) protocol configuration that DataSync uses to access your FSx for OpenZFS file system or FSx for ONTAP file system's storage virtual machine (SVM).
 

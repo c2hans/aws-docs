@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/ca-data-model-querie
 ---
 
 # Extracting data in your AWS Glue data catalog for Amazon Chime SDK call analytics
-<a name="ca-data-model-queries"></a>
 
 Use these sample queries to extract and organize the data in your Amazon Chime SDK call analytics Glue data catalog.
 

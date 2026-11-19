@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/attributes
 ---
 
 # Define static data (attributes)
-<a name="attributes"></a>
 
 *Asset attributes* represent information that is generally static, such as device manufacturer or geographic location. Each asset that you create from an asset model contains the attributes of that model.
 

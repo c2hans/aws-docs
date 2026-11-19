@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_PortMap
 ---
 
 # PortMapping
-<a name="API_PortMapping"></a>
 
 An object that represents a port mapping.
 

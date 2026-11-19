@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # FAST\_REGEX\_LOG\_PARSER
-<a name="sql-reference-fast-regex-log-parser"></a>
 
 ```
 FAST_REGEX_LOG_PARSE('input_string', 'fast_regex_pattern')

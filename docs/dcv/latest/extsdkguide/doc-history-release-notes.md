@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/extsdkguide/doc-history-relea
 ---
 
 # Release Notes and Document History for Amazon DCV Extension SDK
-<a name="doc-history-release-notes"></a>
 
 This page provides the release notes and document history for Amazon DCV Extension SDK.
 

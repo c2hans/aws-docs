@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/enable-acc
 ---
 
 # Enable AWS account access for customer managed applications
-<a name="enable-account-access-customer-managed-apps"></a>
 
 You can enable AWS account access for customer managed applications in IAM Identity Center by configuring a [trusted token issuer](https://docs.aws.amazon.com/singlesignon/latest/userguide/using-apps-with-trusted-token-issuer.html). A trusted token issuer is an OAuth 2.0 authorization server that issues signed tokens on behalf of authenticated users. IAM Identity Center exchanges these tokens for credentials that allow your application to programmatically access AWS accounts and roles assigned to those users. Trusted token issuers can also be used for access to AWS managed applications. For more information, see [Using applications with a trusted token issuer](using-apps-with-trusted-token-issuer.md).
 

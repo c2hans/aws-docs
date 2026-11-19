@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_IntegerRange
 ---
 
 # IntegerRangeConstraint
-<a name="API_IntegerRangeConstraint"></a>
 
 An integer range constraint specifying minimum and maximum allowed values.
 

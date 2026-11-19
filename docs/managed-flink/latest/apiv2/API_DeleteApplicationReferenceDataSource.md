@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApp
 ---
 
 # DeleteApplicationReferenceDataSource
-<a name="API_DeleteApplicationReferenceDataSource"></a>
 
 Deletes a reference data source configuration from the specified SQL-based Kinesis Data Analytics application's configuration.
 

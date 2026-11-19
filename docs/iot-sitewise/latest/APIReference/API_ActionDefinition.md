@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Act
 ---
 
 # ActionDefinition
-<a name="API_ActionDefinition"></a>
 
 Contains a definition for an action.
 

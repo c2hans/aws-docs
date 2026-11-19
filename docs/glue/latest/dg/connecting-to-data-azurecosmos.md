@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-azurec
 ---
 
 # Connecting to Azure Cosmos DB in AWS Glue Studio
-<a name="connecting-to-data-azurecosmos"></a>
 
  AWS Glue provides built-in support for Azure Cosmos DB. AWS Glue Studio provides a visual interface to connect to Azure Cosmos DB for NoSQL, author data integration jobs, and run them on the AWS Glue Studio serverless Spark runtime.
 

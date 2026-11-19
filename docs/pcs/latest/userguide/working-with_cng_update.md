@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cng_up
 ---
 
 # Updating a compute node group in AWS PCS
-<a name="working-with_cng_update"></a>
 
 This topic describes how to update a compute node group in AWS Parallel Computing Service (AWS PCS). It also describes which changes cause AWS PCS to replace compute nodes. For information about custom Slurm settings, see [Custom Slurm settings for AWS PCS compute node groups](slurm-custom-settings-cng.md).
 

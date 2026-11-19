@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/sigv4-Usi
 ---
 
 # Browser-Based Uploads Using POST (AWS Signature Version 4)
-<a name="sigv4-UsingHTTPPOST"></a>
 
 This section discusses how to upload files directly to Amazon S3 through a browser using HTTP POST requests. It also contains information about how to use the AWS Amplify JavaScript library for browser-based file uploads to Amazon S3.
 

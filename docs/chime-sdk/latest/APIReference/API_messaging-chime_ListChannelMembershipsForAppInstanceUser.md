@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ListChannelMembershipsForAppInstanceUser
-<a name="API_messaging-chime_ListChannelMembershipsForAppInstanceUser"></a>
 
  Lists all channels that an `AppInstanceUser` or `AppInstanceBot` is a part of. Only an `AppInstanceAdmin` can call the API with a user ARN that is not their own.
 

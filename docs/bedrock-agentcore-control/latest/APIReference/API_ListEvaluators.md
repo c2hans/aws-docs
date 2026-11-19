@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListEvaluators
-<a name="API_ListEvaluators"></a>
 
  Lists all available evaluators, including both builtin evaluators provided by the service and custom evaluators created by the user.
 

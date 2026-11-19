@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # FirewallDomainListMetadata
-<a name="API_route53resolver_FirewallDomainListMetadata"></a>
 
 Minimal high-level information for a firewall domain list. The action [ListFirewallDomainLists](API_route53resolver_ListFirewallDomainLists.md) returns an array of these objects.
 

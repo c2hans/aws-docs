@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecycleExecutionResourceAction
-<a name="API_LifecycleExecutionResourceAction"></a>
 
 The lifecycle policy action that was identified for the impacted resource.
 

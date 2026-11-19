@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Targeted business outcomes
-<a name="targeted-business-outcomes"></a>
 
 When planning and running a large migration, the project management team must ensure that effective communication mechanisms are established. This promotes high-level visibility of the project, especially if there are multiple ongoing organizational divestiture activities. This guide helps you answer the following questions:
 + How do you make sure the application owners are aligned and focused?

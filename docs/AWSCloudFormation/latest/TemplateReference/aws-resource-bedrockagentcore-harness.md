@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Harness
-<a name="aws-resource-bedrockagentcore-harness"></a>
 
 Specifies a harness for Amazon Bedrock AgentCore. A harness is a managed agent loop that lets you define and invoke AI agents with a single API call. Specify a model, system prompt, and tools inline — the harness handles orchestration, tool execution, memory management, and response generation. Each session runs in an isolated microVM with filesystem and shell access, supporting use cases like code generation, data analysis, and deep research.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/userguide/bedrock-map-tagging
 ---
 
 # Amazon Bedrock MAP Tagging using the AWS CLI
-<a name="bedrock-map-tagging"></a>
 
  This guide explains how to tag Amazon Bedrock and Amazon Bedrock AgentCore workloads to report MAP spend and generate any appropriate incentives using the AWS CLI.
 

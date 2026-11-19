@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-a
 ---
 
 # Agent identity for domain-joined fleets
-<a name="agent-access-agent-identity-dj"></a>
 
 On a domain-joined fleet, Windows must log the user on to the Active Directory domain, and an agent can't type a password. Instead, certificate-based authentication logs the user on with a short-lived certificate that WorkSpaces Applications issues for the session. To issue that certificate, WorkSpaces Applications needs the user's Active Directory identity, which your identity provider (IdP) supplies in a SAML assertion.
 

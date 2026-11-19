@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DocumentRequires
-<a name="API_DocumentRequires"></a>
 
 An SSM document required by the current document.
 

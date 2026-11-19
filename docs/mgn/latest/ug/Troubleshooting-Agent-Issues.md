@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/Troubleshooting-Agent-Issu
 ---
 
 # Troubleshooting agent issues
-<a name="Troubleshooting-Agent-Issues"></a>
 
 Use the information in this section to troubleshoot issues with installing the replication agent.
 

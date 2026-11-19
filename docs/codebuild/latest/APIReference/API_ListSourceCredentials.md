@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ListSo
 ---
 
 # ListSourceCredentials
-<a name="API_ListSourceCredentials"></a>
 
  Returns a list of `SourceCredentialsInfo` objects.
 

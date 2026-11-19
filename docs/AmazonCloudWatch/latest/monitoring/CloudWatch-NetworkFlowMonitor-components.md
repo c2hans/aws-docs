@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Components and features of Network Flow Monitor
-<a name="CloudWatch-NetworkFlowMonitor-components"></a>
 
 Network Flow Monitor uses or references the following concepts.
 

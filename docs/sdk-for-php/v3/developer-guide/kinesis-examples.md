@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/kinesis-e
 ---
 
 # Amazon Kinesis examples using the AWS SDK for PHP Version 3
-<a name="kinesis-examples"></a>
 
 Amazon Kinesis is an AWS service that collects, processes, and analyzes data in real time. Configure your data streams with Amazon Kinesis Data Streams or use Amazon Data Firehose to send data to Amazon S3, OpenSearch Service, Amazon Redshift, or Splunk.
 

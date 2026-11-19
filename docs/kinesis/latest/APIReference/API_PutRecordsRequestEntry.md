@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecor
 ---
 
 # PutRecordsRequestEntry
-<a name="API_PutRecordsRequestEntry"></a>
 
 Represents the output for `PutRecords`.
 

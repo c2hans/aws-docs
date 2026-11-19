@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_T
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Information about a tag. A tag is a key-value pair. Tags are propagated to the resources created when provisioning a product.
 

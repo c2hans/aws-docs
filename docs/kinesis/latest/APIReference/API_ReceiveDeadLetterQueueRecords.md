@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ReceiveD
 ---
 
 # ReceiveDeadLetterQueueRecords
-<a name="API_ReceiveDeadLetterQueueRecords"></a>
 
 Receives up to 10 dead-letter records from the specified queue. Each queue has built-in dead-letter handling: when a record has been received `MaxReceiveCount` times without being acknowledged, it becomes a dead-letter record, which usually means your queue consumer could not process it. The dead-letter record stays in the same queue, and [ReceiveQueueRecords](API_ReceiveQueueRecords.md) no longer returns it.
 

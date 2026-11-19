@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ToolUseResultData
-<a name="API_amazon-q-connect_ToolUseResultData"></a>
 
 Data about the result of tool usage.
 

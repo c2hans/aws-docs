@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_I
 ---
 
 # ImageConfigurationInput
-<a name="API_ImageConfigurationInput"></a>
 
 The image configuration.
 

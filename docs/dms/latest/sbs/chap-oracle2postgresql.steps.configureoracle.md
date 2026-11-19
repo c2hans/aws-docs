@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-oracle2postgresql.st
 ---
 
 # Step 2: Configure Your Oracle Source Database
-<a name="chap-oracle2postgresql.steps.configureoracle"></a>
 
 To use Oracle as a source for AWS Database Migration Service (AWS DMS), you must first ensure that ARCHIVELOG MODE is on to provide information to LogMiner. AWS DMS uses LogMiner to read information from the archive logs so that AWS DMS can capture changes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_SnapshotO
 ---
 
 # SnapshotOperationS3PrefixLocation
-<a name="API_SnapshotOperationS3PrefixLocation"></a>
 
 Describes an Amazon S3 bucket and key prefix for a snapshot operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/fund.html
 ---
 
 # .fund
-<a name="fund"></a>
 
 Used as a general extension for anything related to funding.
 

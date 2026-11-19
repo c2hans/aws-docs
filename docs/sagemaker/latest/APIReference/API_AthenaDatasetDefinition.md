@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Athena
 ---
 
 # AthenaDatasetDefinition
-<a name="API_AthenaDatasetDefinition"></a>
 
 Configuration for Athena Dataset Definition input.
 

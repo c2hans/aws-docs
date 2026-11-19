@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBackupRestoreAccessForSAPHANA
-<a name="AWSBackupRestoreAccessForSAPHANA"></a>
 
 **Description**: Provides AWS Backup permission to restore a backup of SAP HANA on Amazon EC2
 

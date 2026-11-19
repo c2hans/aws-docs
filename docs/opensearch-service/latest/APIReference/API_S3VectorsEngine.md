@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # S3VectorsEngine
-<a name="API_S3VectorsEngine"></a>
 
 Options for enabling S3 vectors engine features on the specified domain.
 

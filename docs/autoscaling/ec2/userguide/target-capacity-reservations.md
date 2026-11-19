@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/target-capacit
 ---
 
 # Target Capacity Reservations from your Auto Scaling group
-<a name="target-capacity-reservations"></a>
 
 To target Amazon EC2 Capacity Reservations and Capacity Blocks for ML from your Auto Scaling group, you can configure a Capacity Reservation preference and target on the group itself, or set a market type on your launch template alongside a Capacity Reservation target on the group. To choose between these mechanisms, see [Use Capacity Reservations in your Auto Scaling group](use-ec2-capacity-reservations.md). For step-by-step procedures, see [Configure your Auto Scaling group to launch instances with Capacity Reservations](capacity-reservation-create-asg-procedure.md).
 

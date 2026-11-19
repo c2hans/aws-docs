@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Option
 ---
 
 # OptionGroupMembership
-<a name="API_OptionGroupMembership"></a>
 
 Provides information on the option groups the DB instance is a member of.
 

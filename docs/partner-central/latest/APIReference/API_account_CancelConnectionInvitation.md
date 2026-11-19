@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CancelConnectionInvitation
-<a name="API_account_CancelConnectionInvitation"></a>
 
 Cancels a pending connection invitation before it has been accepted or rejected.
 

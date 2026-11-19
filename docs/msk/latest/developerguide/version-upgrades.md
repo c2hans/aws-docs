@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/version-upgrad
 ---
 
 # Upgrade the Apache Kafka version
-<a name="version-upgrades"></a>
 
 You can upgrade an existing MSK cluster to a newer version of Apache Kafka. Before upgrading your cluster's Kafka version, verify that your client-side software's version supports the features in the new Kafka version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_C
 ---
 
 # CreateLakeFormationOptIn
-<a name="API_CreateLakeFormationOptIn"></a>
 
 Enforce Lake Formation permissions for the given databases, tables, and principals.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_TestInvokeAu
 ---
 
 # TestInvokeAuthorizer
-<a name="API_TestInvokeAuthorizer"></a>
 
 Tests a custom authorization behavior by invoking a specified custom authorizer. Use this to test and debug the custom authorization behavior of devices that connect to the AWS IoT device gateway.
 

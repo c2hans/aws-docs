@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeF
 ---
 
 # DescribeFleetInstances
-<a name="API_DescribeFleetInstances"></a>
 
 Describes the running instances for the specified EC2 Fleet.
 

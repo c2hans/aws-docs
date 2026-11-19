@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DnsPrevalida
 ---
 
 # DnsPrevalidationOptions
-<a name="API_DnsPrevalidationOptions"></a>
 
 DNS prevalidation options for domain validation.
 

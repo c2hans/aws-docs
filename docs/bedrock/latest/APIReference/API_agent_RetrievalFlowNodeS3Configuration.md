@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Re
 ---
 
 # RetrievalFlowNodeS3Configuration
-<a name="API_agent_RetrievalFlowNodeS3Configuration"></a>
 
 Contains configurations for the Amazon S3 location from which to retrieve data to return as the output from the node.
 

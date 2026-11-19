@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_AddApplic
 ---
 
 # AddApplicationReferenceDataSource
-<a name="API_AddApplicationReferenceDataSource"></a>
 
 Adds a reference data source to an existing SQL-based Kinesis Data Analytics application.
 

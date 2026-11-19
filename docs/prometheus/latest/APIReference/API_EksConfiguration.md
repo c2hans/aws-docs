@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_EksCo
 ---
 
 # EksConfiguration
-<a name="API_EksConfiguration"></a>
 
 The `EksConfiguration` structure describes the connection to the Amazon EKS cluster from which a scraper collects metrics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/reachability/manage-role-depl
 ---
 
 # IAM role deployments in Reachability Analyzer
-<a name="manage-role-deployments"></a>
 
 When you enable trusted access, the following roles are deployed in your organization:
 + [AWSServiceRoleForReachabilityAnalyzer ](using-service-linked-roles.md#slr-permissions) – The service-linked role for Reachability Analyzer.

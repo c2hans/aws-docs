@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-cloudtrail-table
 ---
 
 # Create the table for CloudTrail logs in Athena using partition projection
-<a name="create-cloudtrail-table-partition-projection"></a>
 
 Because CloudTrail logs have a known structure whose partition scheme you can specify in advance, you can reduce query runtime and automate partition management by using the Athena partition projection feature. Partition projection automatically adds new partitions as new data is added. This removes the need for you to manually add partitions by using `ALTER TABLE ADD PARTITION`.
 

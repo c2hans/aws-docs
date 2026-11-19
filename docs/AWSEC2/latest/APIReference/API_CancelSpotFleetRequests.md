@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelSpo
 ---
 
 # CancelSpotFleetRequests
-<a name="API_CancelSpotFleetRequests"></a>
 
 Cancels the specified Spot Fleet requests.
 

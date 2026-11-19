@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 ---
 
 # Identity and access management
-<a name="identity-and-access-management"></a>
 
 | SEC 1: How do you control access to your serverless API? |
 | --- |

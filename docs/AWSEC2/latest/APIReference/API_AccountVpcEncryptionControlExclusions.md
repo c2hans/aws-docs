@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AccountVp
 ---
 
 # AccountVpcEncryptionControlExclusions
-<a name="API_AccountVpcEncryptionControlExclusions"></a>
 
 Describes the exclusion configurations for the various resource types in the account-level VPC Encryption Control configuration.
 

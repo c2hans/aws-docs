@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-exampl
 ---
 
 # Working with Amazon S3 bucket policies with the AWS SDK for PHP Version 3
-<a name="s3-examples-bucket-policies"></a>
 
 You can use a bucket policy to grant permission to your Amazon S3 resources. To learn more, see [Using Bucket Policies and User Policies](https://docs.aws.amazon.com/AmazonS3/latest/dev/using-iam-policies.html).
 

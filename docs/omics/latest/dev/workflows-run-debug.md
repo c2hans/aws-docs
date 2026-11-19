@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-run-debug.htm
 ---
 
 # Debugging a HealthOmics workflow run
-<a name="workflows-run-debug"></a>
 
 HealthOmics reports a run's behavior through several sources, each of which answers a different question. For a run that failed, read them in this order instead of starting with the logs:
 

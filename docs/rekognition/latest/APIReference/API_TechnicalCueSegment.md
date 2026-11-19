@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Tech
 ---
 
 # TechnicalCueSegment
-<a name="API_TechnicalCueSegment"></a>
 
 Information about a technical cue segment. For more information, see [SegmentDetection](API_SegmentDetection.md).
 

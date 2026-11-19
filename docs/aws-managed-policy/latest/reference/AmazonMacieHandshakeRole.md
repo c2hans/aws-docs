@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMacieHandshakeRole
-<a name="AmazonMacieHandshakeRole"></a>
 
 **Description**: Grants permission to create the service-linked role of Amazon Macie.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-
 ---
 
 # View pipelines (console)
-<a name="pipelines-view-console"></a>
 
 You can view status, transitions, and artifact updates for a pipeline.
 

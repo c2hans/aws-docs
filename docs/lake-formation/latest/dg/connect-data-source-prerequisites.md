@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/connect-data-so
 ---
 
 # Prerequisites for connecting the Data Catalog to external data sources
-<a name="connect-data-source-prerequisites"></a>
 
 To connect the AWS Glue Data Catalog to external data sources, register the connection with Lake Formation, and set up federated catalogs, you need to complete the following requirements:
 **Note**

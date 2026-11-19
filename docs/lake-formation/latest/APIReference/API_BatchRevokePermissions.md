@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_B
 ---
 
 # BatchRevokePermissions
-<a name="API_BatchRevokePermissions"></a>
 
 Batch operation to revoke permissions from the principal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/cache-configura
 ---
 
 # How Amplify applies cache configuration to an app
-<a name="cache-configuration-type"></a>
 
 To manage caching for your app, Amplify determines the type of content that is being served by examining the app's platform type and rewrite rules. For `Compute` apps, Amplify also examines the routing rules in the deployment manifest.
 

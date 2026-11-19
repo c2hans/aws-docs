@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # PutOutboundRequestBatch
-<a name="API_connect-outbound-campaigns-v2_PutOutboundRequestBatch"></a>
 
 Takes in a list of outbound requests to be placed as part of an outbound campaign.
 

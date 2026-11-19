@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_CancelZon
 ---
 
 # CancelZonalShift
-<a name="API_CancelZonalShift"></a>
 
 Cancel a zonal shift in Amazon Application Recovery Controller. To cancel the zonal shift, specify the zonal shift ID.
 

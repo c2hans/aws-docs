@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # SapHanaHA
-<a name="launch-wizard-specifications-sap-hana-ha"></a>
 
 The following is an example of the specifications required to create a SAP HANA high-availability deployment with HANA database software installed:
 

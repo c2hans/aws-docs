@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 **Note**
 Infrastructure resources that maintain data (for example, S3 buckets, RDS instances, DynamoDB tables) are configured with a `RETAIN` removal policy. Running `mdaa destroy` will not remove these resources, so your data is preserved.

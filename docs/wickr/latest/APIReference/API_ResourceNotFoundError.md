@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_ResourceNo
 ---
 
 # ResourceNotFoundError
-<a name="API_ResourceNotFoundError"></a>
 
 The requested resource could not be found. This error occurs when you try to access or modify a network, user, bot, security group, or other resource that doesn't exist or has been deleted.
 

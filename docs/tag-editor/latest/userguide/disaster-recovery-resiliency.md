@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/disaster-rec
 ---
 
 # Resilience in Tag Editor
-<a name="disaster-recovery-resiliency"></a>
 
 Tag Editor performs automated backups to internal service resources. These backups are not user-configurable. Backups are encrypted, both at rest and in transit. Tag Editor stores customer data in Amazon DynamoDB.
 

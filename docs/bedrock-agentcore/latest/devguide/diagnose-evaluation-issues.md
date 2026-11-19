@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/diagno
 ---
 
 # Diagnose AgentCore Evaluation issues with an AI coding assistant
-<a name="diagnose-evaluation-issues"></a>
 
 If your AgentCore Evaluation configuration isn’t producing results — or if you’re seeing errors like `LogEventMissingException`, `AgentSpanMappingException`, or empty evaluation scores — you can use the **AgentCore Evaluation Diagnostic Skill** to troubleshoot the issue yourself.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/trick-play-i-frames.
 ---
 
 # Trick-play track via I-frames
-<a name="trick-play-i-frames"></a>
 
 In a MediaLive HLS output group, you can support trick-play track by providing an I-frame-only manifest.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_ModifyDBCluste
 ---
 
 # ModifyDBClusterSnapshotAttribute
-<a name="API_ModifyDBClusterSnapshotAttribute"></a>
 
 Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot.
 
@@ -46,7 +45,7 @@ The following element is returned by the service.
 
  ** DBClusterSnapshotAttributesResult **
 Contains the results of a successful call to the [DescribeDBClusterSnapshotAttributes](API_DescribeDBClusterSnapshotAttributes.md) API action.
-Manual DB cluster snapshot attributes are used to authorize other Amazon accounts to copy or restore a manual DB cluster snapshot. For more information, see the [ModifyDBClusterSnapshotAttribute](#API_ModifyDBClusterSnapshotAttribute) API action.
+Manual DB cluster snapshot attributes are used to authorize other Amazon accounts to copy or restore a manual DB cluster snapshot. For more information, see the [ModifyDBClusterSnapshotAttribute](API_ModifyDBClusterSnapshotAttribute.md) API action.
 Type: [DBClusterSnapshotAttributesResult](API_DBClusterSnapshotAttributesResult.md) object
 
 ## Errors

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Amendment
-<a name="API_benefits_Amendment"></a>
 
 Represents a specific change to be made to a benefit application field.
 

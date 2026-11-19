@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ci
 ---
 
 # CiCdConfiguration
-<a name="API_CiCdConfiguration"></a>
 
 The configuration that enables a pentest to run as part of a CI/CD pipeline, scoped to the code changes in each pipeline run.
 

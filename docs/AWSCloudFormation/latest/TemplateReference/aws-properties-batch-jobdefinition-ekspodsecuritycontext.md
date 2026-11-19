@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::JobDefinition EksPodSecurityContext
-<a name="aws-properties-batch-jobdefinition-ekspodsecuritycontext"></a>
 
 The security context for the pod. The settings apply to all containers in the pod when the container does not specify an overriding value. For more information, see [Set the security context for a Pod](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod) in the *Kubernetes documentation*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Linear Digital Convergence resilience
-<a name="advrel10"></a>
 
  Linear and digital advertising pipelines have historically operated as independent systems with their own failure domains. Converging these into unified ad sales, fulfillment, and measurement introduces new reliability challenges: correlated failures across previously independent systems, data consistency issues between batch linear logs and streaming digital events pipelines, and measurement accuracy degradation when one source becomes unavailable.
 

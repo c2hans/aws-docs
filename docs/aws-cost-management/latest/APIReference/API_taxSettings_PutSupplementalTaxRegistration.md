@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # PutSupplementalTaxRegistration
-<a name="API_taxSettings_PutSupplementalTaxRegistration"></a>
 
  Stores supplemental tax registration for a single account.
 

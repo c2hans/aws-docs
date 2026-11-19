@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNREL06-BP01 Use multiple data centers for physical location redundancy
-<a name="hnrel06-bp01"></a>
 
  Connect from multiple geographically separate data centers or colocation sites to cloud for true physical location redundancy. Use dynamically routed, Active/Active connections across these sites to enable automatic load balancing and failover.
 

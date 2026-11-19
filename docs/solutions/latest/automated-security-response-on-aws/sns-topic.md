@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Amazon SNS topic - Remediation Progress
-<a name="sns-topic"></a>
 
 Automated Security Response on AWS creates an Amazon SNS topic, SO0111-ASR\_Topic. This topic is used to post updates about remediation progress. Following are the three possible notifications sent to this topic.
 

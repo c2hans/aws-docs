@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/protect-confi
 ---
 
 # Rename a protect configuration in AWS End User Messaging SMS
-<a name="protect-configuration-change-name"></a>
 
 To help manage your protect configurations you should give them descriptive names. You can add or edit the name of a protect configuration at any time. You need to add a tag with the **Key** set to **Name** and the **Value** set to the name to use.
 

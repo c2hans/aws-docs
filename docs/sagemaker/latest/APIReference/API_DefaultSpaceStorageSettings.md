@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Defaul
 ---
 
 # DefaultSpaceStorageSettings
-<a name="API_DefaultSpaceStorageSettings"></a>
 
 The default storage settings for a space.
 

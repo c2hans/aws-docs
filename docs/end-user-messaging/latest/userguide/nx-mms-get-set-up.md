@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-m
 ---
 
 # How to get set up
-<a name="nx-mms-get-set-up"></a>
 
 This topic takes you from a new AWS account to sending your first MMS (multimedia) message with AWS End User Messaging. Complete the following steps.
 

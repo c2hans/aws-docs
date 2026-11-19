@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_ListSubCh
 ---
 
 # ListSubCheckRuleResults
-<a name="API_ListSubCheckRuleResults"></a>
 
 Lists the rules of a specified sub-check belonging to a configuration check operation.
 

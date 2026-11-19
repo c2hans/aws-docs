@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/iam-examp
 ---
 
 # Working with IAM server certificates with AWS SDK for PHP Version 3
-<a name="iam-examples-working-with-certs"></a>
 
 To enable HTTPS connections to your website or application on AWS, you need an SSL/TLS server certificate. To use a certificate that you obtained from an external provider with your website or application on AWS, you must upload the certificate to IAM or import it into AWS Certificate Manager.
 

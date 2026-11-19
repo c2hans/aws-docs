@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetErrorDetails
-<a name="API_AssetErrorDetails"></a>
 
 Contains error details for the requested associate project asset action.
 

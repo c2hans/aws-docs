@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ma
 ---
 
 # ManagedNotificationEventOverview
-<a name="API_ManagedNotificationEventOverview"></a>
 
 Describes an overview and metadata for a ManagedNotificationEvent.
 

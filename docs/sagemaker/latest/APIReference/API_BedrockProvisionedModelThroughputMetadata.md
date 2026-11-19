@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Bedroc
 ---
 
 # BedrockProvisionedModelThroughputMetadata
-<a name="API_BedrockProvisionedModelThroughputMetadata"></a>
 
  The metadata of the Amazon Bedrock provisioned model throughput.
 

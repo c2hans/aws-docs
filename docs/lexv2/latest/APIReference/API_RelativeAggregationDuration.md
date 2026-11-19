@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_RelativeAg
 ---
 
 # RelativeAggregationDuration
-<a name="API_RelativeAggregationDuration"></a>
 
 Specifies the time window that utterance statistics are returned for. The time window is always relative to the last time that the that utterances were aggregated. For example, if the `ListAggregatedUtterances` operation is called at 1600, the time window is set to 1 hour, and the last refresh time was 1530, only utterances made between 1430 and 1530 are returned.
 

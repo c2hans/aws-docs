@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_LambdaFun
 ---
 
 # LambdaFunctionRecipeSource
-<a name="API_LambdaFunctionRecipeSource"></a>
 
 Contains information about an AWS Lambda function to import to create a component.
 

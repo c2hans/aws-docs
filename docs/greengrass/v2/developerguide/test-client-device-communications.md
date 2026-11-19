@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/test-client
 ---
 
 # Test client device communications
-<a name="test-client-device-communications"></a>
 
 Client devices can use the AWS IoT Device SDK to discover, connect, and communicate with a core device. You can use the Greengrass discovery client in the AWS IoT Device SDK to use the [Greengrass discovery API](greengrass-discover-api.md), which returns information about core devices to which a client device can connect. The API response includes MQTT broker endpoints to connect and certificates to use to verify the identity of each core device. Then, the client device can try each endpoint until it successfully connects to a core device.
 

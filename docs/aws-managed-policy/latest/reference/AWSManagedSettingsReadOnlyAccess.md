@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSManagedSettingsReadOnlyAccess
-<a name="AWSManagedSettingsReadOnlyAccess"></a>
 
 **Description**: Grants team members read-only access to AWS Settings, including workspace and owner information, team membership, plan and spend summary. It does not grant permissions to modify workspace configuration or to manage billing and payments.
 

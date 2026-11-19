@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # Deployment Pattern 5 - Amazon EC2 (Persistent Server)
-<a name="deployment-pattern-5-amazon-ec2-persistent-server"></a>
 
 Amazon EC2 provides virtual server instances where MCP servers run traditional long-running processes. You have full control over the operating system, installed software, and runtime environment. This pattern suits scenarios that require persistent connections, custom runtime configurations, or migrations from on-premises infrastructure. The trade-off is higher operational overhead for managing instances, patching, and scaling.
 

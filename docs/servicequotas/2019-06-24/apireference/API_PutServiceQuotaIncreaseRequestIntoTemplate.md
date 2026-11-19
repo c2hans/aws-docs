@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # PutServiceQuotaIncreaseRequestIntoTemplate
-<a name="API_PutServiceQuotaIncreaseRequestIntoTemplate"></a>
 
 Adds a quota increase request to your quota request template.
 

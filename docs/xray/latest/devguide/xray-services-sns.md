@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/xray-services-sns.h
 ---
 
 # Amazon SNS and AWS X-Ray
-<a name="xray-services-sns"></a>
 
 You can use AWS X-Ray with Amazon Simple Notification Service (Amazon SNS) to trace and analyze requests as they travel through your SNS topics to your [SNS-supported subscription services](https://docs.aws.amazon.com/sns/latest/dg/sns-active-tracing.html). Use X-Ray tracing with Amazon SNS to analyze latencies in your messages and their back-end services, such as how long a request spends in a topic, and how long it takes to deliver the message to each of the topic’s subscriptions. Amazon SNS supports X-Ray tracing for both standard and FIFO topics.
 

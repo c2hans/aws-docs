@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_X12Envelope
 ---
 
 # X12Envelope
-<a name="API_X12Envelope"></a>
 
 A wrapper structure for an X12 definition object.
 

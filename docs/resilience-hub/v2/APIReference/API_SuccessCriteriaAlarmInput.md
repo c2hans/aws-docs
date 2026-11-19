@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Succe
 ---
 
 # SuccessCriteriaAlarmInput
-<a name="API_SuccessCriteriaAlarmInput"></a>
 
 Identifies a success criteria alarm by its ARN.
 

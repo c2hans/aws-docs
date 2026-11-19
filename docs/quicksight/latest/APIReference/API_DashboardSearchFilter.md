@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Dashb
 ---
 
 # DashboardSearchFilter
-<a name="API_DashboardSearchFilter"></a>
 
 A filter that you apply when searching for dashboards.
 

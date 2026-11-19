@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetR
 ---
 
 # GetResourceConfiguration
-<a name="API_GetResourceConfiguration"></a>
 
 Retrieves information about the specified resource configuration.
 

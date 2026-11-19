@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetCatalog.html
 ---
 
 # GetCatalog
-<a name="API_GetCatalog"></a>
 
 The name of the Catalog to retrieve. This should be all lowercase.
 

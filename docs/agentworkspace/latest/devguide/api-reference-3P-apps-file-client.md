@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/api-refer
 ---
 
 # Connect Customer SDK File API
-<a name="api-reference-3P-apps-file-client"></a>
 
 The Connect Customer SDK provides a `FileClient` which serves as an interface that you can use to make file requests to upload, retrieve, and delete attached files.
 

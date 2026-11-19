@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Upgrading Amazon Aurora PostgreSQL Limitless Database
-<a name="limitless-upg"></a>
 
 The following apply to upgrading Aurora PostgreSQL Limitless Database:
 + Minor version upgrades are supported.

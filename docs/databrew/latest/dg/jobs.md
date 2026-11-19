@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/jobs.html
 ---
 
 # Creating, running, and scheduling AWS Glue DataBrew jobs
-<a name="jobs"></a>
 
 AWS Glue DataBrew has a job subsystem that serves two purposes:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ListTemplateSnapshots
-<a name="API_ListTemplateSnapshots"></a>
 
 Lists the snapshots of the specified template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # CreateEndpointAccess
-<a name="API_CreateEndpointAccess"></a>
 
 Creates an Amazon Redshift Serverless managed VPC endpoint.
 

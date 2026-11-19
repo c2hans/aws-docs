@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityR
 ---
 
 # CapacityReservationGroup
-<a name="API_CapacityReservationGroup"></a>
 
 Describes a resource group to which a Capacity Reservation has been added.
 

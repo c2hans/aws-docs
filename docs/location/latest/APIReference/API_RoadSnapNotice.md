@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoadSna
 ---
 
 # RoadSnapNotice
-<a name="API_RoadSnapNotice"></a>
 
 Notices provide information around factors that may have influenced snapping in a manner atypical to the standard use cases.
 

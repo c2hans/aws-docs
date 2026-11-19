@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateCo
 ---
 
 # UpdateContactFlowAlias
-<a name="API_UpdateContactFlowAlias"></a>
 
 Updates the name, description, or flow version associated with an alias.
 

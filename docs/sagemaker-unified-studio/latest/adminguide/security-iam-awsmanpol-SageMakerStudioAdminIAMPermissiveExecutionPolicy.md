@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # AWS policy: SageMakerStudioAdminIAMPermissiveExecutionPolicy
-<a name="security-iam-awsmanpol-SageMakerStudioAdminIAMPermissiveExecutionPolicy"></a>
 
 This is an administrative execution policy for using IAM roles with Amazon SageMaker Unified Studio. This policy grants administrative access to provision, manage, and access resources in your account. This includes broad access to data resources.
 

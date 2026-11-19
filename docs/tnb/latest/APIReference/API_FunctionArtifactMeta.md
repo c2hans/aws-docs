@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_FunctionArti
 ---
 
 # FunctionArtifactMeta
-<a name="API_FunctionArtifactMeta"></a>
 
 Metadata for function package artifacts.
 

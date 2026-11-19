@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_QueryStringKey
 ---
 
 # QueryStringKeyValuePair
-<a name="API_QueryStringKeyValuePair"></a>
 
 A key-value pair for query string matching in a routing rule condition.
 

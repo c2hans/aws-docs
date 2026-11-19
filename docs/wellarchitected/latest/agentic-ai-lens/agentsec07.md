@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # Human oversight protection and agent containment
-<a name="agentsec07"></a>
 
  Human oversight is a key control in agentic systems, but it is only effective if reviewers can make informed decisions without being overwhelmed or misled. At the same time, you must detect and contain agents that deviate from their intended behavior before they can affect other parts of the system. This capability covers both sides: protecting the quality of human review, and implementing detection and containment mechanisms for agents that operate outside their defined boundaries.
 

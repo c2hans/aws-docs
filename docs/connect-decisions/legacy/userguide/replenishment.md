@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/reple
 ---
 
 # Inbound
-<a name="replenishment"></a>
 
 This section lists the data entities within the inbound category.
 

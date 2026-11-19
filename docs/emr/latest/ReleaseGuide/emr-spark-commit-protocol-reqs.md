@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-commit
 ---
 
 # Requirements for the EMRFS S3-optimized commit protocol
-<a name="emr-spark-commit-protocol-reqs"></a>
 
 The EMRFS S3-optimized commit protocol is used when the following conditions are met:
 + You run Spark jobs that use Spark, DataFrames, or Datasets to overwrite partitioned tables.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Automatic semantic enrichment for Amazon OpenSearch Service
-<a name="opensearch-semantic-enrichment"></a>
 
 ## Introduction
 <a name="semantic-enrichment-intro"></a>

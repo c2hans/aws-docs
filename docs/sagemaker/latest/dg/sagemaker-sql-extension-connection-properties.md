@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # Connection parameters
-<a name="sagemaker-sql-extension-connection-properties"></a>
 
 The following tables detail the supported Python properties for AWS Glue connections per data store.
 

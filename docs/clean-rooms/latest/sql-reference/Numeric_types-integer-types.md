@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Numeric
 ---
 
 # Integer types
-<a name="Numeric_types-integer-types"></a>
 
 Use the following data types to store whole numbers of various ranges. You can't store values outside of the allowed range for each type.
 

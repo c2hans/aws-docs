@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hive-metasto
 ---
 
 # Using the AWS Glue Data Catalog as the metastore for Hive
-<a name="emr-hive-metastore-glue"></a>
 
 Using Amazon EMR release 5.8.0 or later, you can configure Hive to use the AWS Glue Data Catalog as its metastore. We recommend this configuration when you require a persistent metastore or a metastore shared by different clusters, services, applications, or AWS accounts.
 

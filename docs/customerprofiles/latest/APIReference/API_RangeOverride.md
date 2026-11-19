@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # RangeOverride
-<a name="API_connect-customer-profiles_RangeOverride"></a>
 
 Overrides the original range on a calculated attribute definition.
 

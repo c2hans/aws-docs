@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/anal
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Amazon Mobile Analytics
-<a name="analytics"></a>
 
  [Amazon Mobile Analytics](https://aws.amazon.com/mobileanalytics/) is a service for collecting, visualizing, understanding and extracting app usage data at scale. Mobile Analytics easily captures both standard device data and custom events and automatically calculates reports on your behalf. In addition to the aggregated reports listed below, you can also setup your data to be exported to Redshift and S3 automatically for further analysis.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/doc-history-ipam.html
 ---
 
 # Document history for IPAM
-<a name="doc-history-ipam"></a>
 
 The following table describes the releases for IPAM.
 

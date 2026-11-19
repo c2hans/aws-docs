@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/considerati
 ---
 
 # Considerations for synthetic data generation
-<a name="considerations-for-data-generation"></a>
 
 With AWS Clean Rooms ML, collaboration members can create a synthetic dataset that irreversibly de-identifies the subjects of the original dataset from their collective datasets to train a custom machine learning model. When creating the collaboration, you must configure payment information to specify who pays for synthetic data generation. Here are the high-level steps to generate a synthetic dataset and train a custom machine learning model:
 

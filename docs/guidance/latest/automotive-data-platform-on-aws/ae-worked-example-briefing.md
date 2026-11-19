@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Example 3: Proactive executive briefings, not dashboards
-<a name="ae-worked-example-briefing"></a>
 
 The natural-language query pattern above is pull: an executive opens Amazon Quick Desktop and asks a question when they think of it. This pattern is push: a scheduled agent assembles the answer to the questions an OEM executive or director asks every day or every week, and delivers it before they ask — a standing morning or Monday-morning briefing rather than a dashboard someone has to remember to open.
 

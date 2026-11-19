@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::Membership MembershipJobComputePaymentConfig
-<a name="aws-properties-cleanrooms-membership-membershipjobcomputepaymentconfig"></a>
 
 An object representing the payment responsibilities accepted by the collaboration member for query and job compute costs.
 

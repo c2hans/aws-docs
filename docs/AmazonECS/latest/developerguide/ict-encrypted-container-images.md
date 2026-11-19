@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ict-encr
 ---
 
 # Encrypted container images
-<a name="ict-encrypted-container-images"></a>
 
 ## Overview
 <a name="ict-encrypted-container-images-overview"></a>

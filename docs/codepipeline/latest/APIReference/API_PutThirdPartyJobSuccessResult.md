@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Put
 ---
 
 # PutThirdPartyJobSuccessResult
-<a name="API_PutThirdPartyJobSuccessResult"></a>
 
 Represents the success of a third party job as returned to the pipeline by a job worker. Used for partner actions only.
 

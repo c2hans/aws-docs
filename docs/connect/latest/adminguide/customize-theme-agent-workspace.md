@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customize-them
 ---
 
 # Customize the theme of the agent workspace
-<a name="customize-theme-agent-workspace"></a>
 
 By default, the agent workspace uses a Connect Customer theme, which includes the logo, favicon, font family, and color palette. You can use themes to customize the visual appearance of the agent workspace so it aligns with the brand identity of your organization. To customize the visual appearance of the agent workspace, [create a workspace](amazon-connect-workspaces.md), [customize its theme](custom-theme.md), and assign it to your agents.
 

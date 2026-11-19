@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSRS.Enabling
 ---
 
 # Turning on SSRS or PBIRS
-<a name="SSRS.Enabling"></a>
 
 Use the following process to turn on SSRS or PBIRS for your DB instance:
 

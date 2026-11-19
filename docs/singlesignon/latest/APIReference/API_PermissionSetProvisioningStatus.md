@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Per
 ---
 
 # PermissionSetProvisioningStatus
-<a name="API_PermissionSetProvisioningStatus"></a>
 
 A structure that is used to provide the status of the provisioning operation for a specified permission set.
 

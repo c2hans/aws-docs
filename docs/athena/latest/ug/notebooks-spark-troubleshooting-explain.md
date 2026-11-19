@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-trouble
 ---
 
 # Use the Spark EXPLAIN statement to troubleshoot Spark SQL
-<a name="notebooks-spark-troubleshooting-explain"></a>
 
 You can use the Spark `EXPLAIN` statement with Spark SQL to troubleshoot your Spark code. The following code and output examples show this usage.
 

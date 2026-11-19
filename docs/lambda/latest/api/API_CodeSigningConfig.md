@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CodeSigningConfig.
 ---
 
 # CodeSigningConfig
-<a name="API_CodeSigningConfig"></a>
 
 Details about a [Code signing configuration](https://docs.aws.amazon.com/lambda/latest/dg/configuration-codesigning.html).
 

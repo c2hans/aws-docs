@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simp
 ---
 
 # Understanding your Simple AD directory status
-<a name="simple_ad_directory_status"></a>
 
 The following are the various statuses for a directory.
 

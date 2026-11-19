@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_G
 ---
 
 # GetIngressPoint
-<a name="API_GetIngressPoint"></a>
 
 Fetch ingress endpoint resource attributes.
 

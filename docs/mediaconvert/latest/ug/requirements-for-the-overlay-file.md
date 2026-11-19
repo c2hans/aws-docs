@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/requirements-for-
 ---
 
 # Requirements for the overlay file
-<a name="requirements-for-the-overlay-file"></a>
 
 Set up the image files that you want to insert over your video as follows:
 + **File type**: Use .png or .tga.

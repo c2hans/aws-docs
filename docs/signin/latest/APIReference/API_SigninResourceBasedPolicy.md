@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_SigninRes
 ---
 
 # SigninResourceBasedPolicy
-<a name="API_SigninResourceBasedPolicy"></a>
 
 The consolidated AWS Sign-In resource-based policy document for an account.
 

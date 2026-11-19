@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/organ
 ---
 
 # trading\_partner
-<a name="organization-trading-partner-entity"></a>
 
 **Primary key (PK)**
 

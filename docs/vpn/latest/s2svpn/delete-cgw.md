@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/delete-cgw.html
 ---
 
 # Delete an AWS Site-to-Site VPN customer gateway
-<a name="delete-cgw"></a>
 
 If you no longer need a customer gateway, you can delete it. You can't delete a customer gateway that's being used in a Site-to-Site VPN connection.
 

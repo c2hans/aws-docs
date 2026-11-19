@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/portal
 ---
 
 # Preview
-<a name="portals-portalid-preview"></a>
 
 Represents a portal preview.
 

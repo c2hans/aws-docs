@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetCo
 ---
 
 # GetCommentsForComparedCommit
-<a name="API_GetCommentsForComparedCommit"></a>
 
 Returns information about comments made on the comparison between two commits.
 

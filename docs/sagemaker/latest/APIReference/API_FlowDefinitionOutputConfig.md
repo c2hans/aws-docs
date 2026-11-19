@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_FlowDe
 ---
 
 # FlowDefinitionOutputConfig
-<a name="API_FlowDefinitionOutputConfig"></a>
 
 Contains information about where human output will be stored.
 

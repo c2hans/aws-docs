@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_B
 ---
 
 # BatchResourceRequirement
-<a name="API_BatchResourceRequirement"></a>
 
 The type and amount of a resource to assign to a container. The supported resources include `GPU`, `MEMORY`, and `VCPU`.
 

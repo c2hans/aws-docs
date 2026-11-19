@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/quick-start-guide-g
 ---
 
 # Elastic Disaster Recovery quick start guide
-<a name="quick-start-guide-gs"></a>
 
 This section guides you through your initial Elastic Disaster Recovery setup, including:
 

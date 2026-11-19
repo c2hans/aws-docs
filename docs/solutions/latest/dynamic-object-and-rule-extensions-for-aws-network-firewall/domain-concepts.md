@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 ---
 
 # Domain concepts
-<a name="domain-concepts"></a>
 
 ## Roles
 <a name="roles"></a>

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Further reading
-<a name="further-reading"></a>
 
  For additional information, refer to:
 +  [Database Migration Service Step-by-Step Walkthroughs](https://docs.aws.amazon.com/dms/latest/sbs/DMS-SBS-Welcome.html)

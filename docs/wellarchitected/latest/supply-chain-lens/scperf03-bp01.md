@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCPERF03-BP01 Select your database architecture based on workload
-<a name="scperf03-bp01"></a>
 
  Purpose-built data storage for your workloads can help increase the performance efficiency of the overall system, as well to be more resilient in case of failures.
 

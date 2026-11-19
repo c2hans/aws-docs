@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Start
 ---
 
 # StartCallAnalyticsJob
-<a name="API_StartCallAnalyticsJob"></a>
 
 Transcribes the audio from a customer service call and applies any additional Request Parameters you choose to include in your request.
 
@@ -112,7 +111,7 @@ Required: Yes
 The Amazon Resource Name (ARN) of a KMS key that you want to use to encrypt your Call Analytics output.
 KMS key ARNs have the format `arn:partition:kms:region:account:key/key-id`. For example: `arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab`. For more information, see [ KMS key ARNs](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN).
 If you do not specify an encryption key, your output is encrypted with the default Amazon S3 key (SSE-S3).
-Note that the role making the [StartCallAnalyticsJob](#API_StartCallAnalyticsJob) request and the role specified in the `DataAccessRoleArn` request parameter (if present) must have permission to use the specified KMS key.
+Note that the role making the [StartCallAnalyticsJob](API_StartCallAnalyticsJob.md) request and the role specified in the `DataAccessRoleArn` request parameter (if present) must have permission to use the specified KMS key.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `^[A-Za-z0-9][A-Za-z0-9:_/+=,@.-]{0,2048}$`
@@ -135,7 +134,7 @@ Pattern: `(s3://|http(s*)://).+`
 Required: No
 
  ** [Settings](#API_StartCallAnalyticsJob_RequestSyntax) **   <a name="transcribe-StartCallAnalyticsJob-request-Settings"></a>
-Specify additional optional settings in your [StartCallAnalyticsJob](#API_StartCallAnalyticsJob) request, including content redaction; allows you to apply custom language models, vocabulary filters, and custom vocabularies to your Call Analytics job.
+Specify additional optional settings in your [StartCallAnalyticsJob](API_StartCallAnalyticsJob.md) request, including content redaction; allows you to apply custom language models, vocabulary filters, and custom vocabularies to your Call Analytics job.
 Type: [CallAnalyticsJobSettings](API_CallAnalyticsJobSettings.md) object
 Required: No
 

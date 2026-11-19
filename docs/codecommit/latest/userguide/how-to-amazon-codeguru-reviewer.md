@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-amazo
 ---
 
 # Amazon CodeGuru Reviewer and AWS CodeCommit
-<a name="how-to-amazon-codeguru-reviewer"></a>
 
 **Important**
 As of November 7, 2025, Amazon CodeGuru Reviewer is in maintenance mode. You cannot create new repository associations with CodeGuru Reviewer. Existing associations continue to function, but AWS will not enhance or add functionality to the service.

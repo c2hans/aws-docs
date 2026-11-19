@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-compiler-en
 ---
 
 # Run TensorFlow Training Jobs with SageMaker Training Compiler
-<a name="training-compiler-enable-tensorflow"></a>
 
 **Important**
 **Deprecation notice:** SageMaker Training Compiler is not supported in SageMaker Python SDK v3. If you are currently using Training Compiler, continue using SageMaker Python SDK v2. For new projects, consider using the unified `ModelTrainer` class with supported frameworks. See [SageMaker Python SDK documentation](https://sagemaker.readthedocs.io/en/stable/) for migration guidance.

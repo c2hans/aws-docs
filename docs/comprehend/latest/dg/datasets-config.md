@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/datasets-config.htm
 ---
 
 # Configuring datasets
-<a name="datasets-config"></a>
 
 To add labeled training or test data to a flywheel, use the Amazon Comprehend console or API to create a dataset.
 

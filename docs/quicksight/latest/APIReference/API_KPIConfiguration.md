@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KPICo
 ---
 
 # KPIConfiguration
-<a name="API_KPIConfiguration"></a>
 
 The configuration of a KPI visual.
 

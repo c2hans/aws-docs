@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/hyperpod-gpu-slurm-d
 ---
 
 # HyperPod Slurm cluster DPO tutorial (GPU)
-<a name="hyperpod-gpu-slurm-dpo-tutorial"></a>
 
 The following tutorial sets up a Slurm environment and starts a direct preference optimization (DPO) job on a Llama 8 billion parameter model.
 

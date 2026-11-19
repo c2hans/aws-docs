@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/accessing-fs-nfs-permissio
 ---
 
 # Network File System (NFS) level users, groups, and permissions
-<a name="accessing-fs-nfs-permissions"></a>
 
 After creating a file system, by default only the root user (UID 0) has read, write, and execute permissions. For other users to modify the file system, the root user must explicitly grant them access. You can use access points to automate the creation of directories that a nonroot user can write from. For more information, see [Working with access points](efs-access-points.md).
 

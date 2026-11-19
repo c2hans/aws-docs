@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference/templates-t
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Push Notification Template
-<a name="templates-template-name-push"></a>
 
 A *push notification template* is a type of message template that contains content and settings that you can define, save, and reuse in messages that you send through a push notification channel for any of your Amazon Pinpoint applications. You can use push notification templates in push notifications that you send from campaigns, or to a limited audience as direct or test messages.
 

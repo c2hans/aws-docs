@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/associate-m
 ---
 
 # Associating the configured model algorithm in AWS Clean Rooms ML
-<a name="associate-model-algorithm"></a>
 
 After you have configured the model algorithm, you are ready to associate the model algorithm to a collaboration. Associating a model algorithm makes the model algorithm available to all members of the collaboration.
 

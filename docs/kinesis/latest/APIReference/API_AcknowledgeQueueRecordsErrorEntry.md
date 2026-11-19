@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Acknowle
 ---
 
 # AcknowledgeQueueRecordsErrorEntry
-<a name="API_AcknowledgeQueueRecordsErrorEntry"></a>
 
 A record that was not acknowledged, and why.
 

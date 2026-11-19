@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ABTestEvaluationConfig
-<a name="API_ABTestEvaluationConfig"></a>
 
 The evaluation configuration for an A/B test, specifying which online evaluation configurations to use for measuring variant performance.
 

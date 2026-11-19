@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/conditions
 ---
 
 # Optional conditions for your role trust relationships
-<a name="conditions-for-role-trust"></a>
 
 To add additional layers of security to your AWS Control Tower environment, you can impose conditions in your role trust policies, to restrict the accounts and resources that interact with certain roles in AWS Control Tower. For example, you can further restrict access to the `AWSControlTowerAdmin` role, because it allows wide access permissions.
 

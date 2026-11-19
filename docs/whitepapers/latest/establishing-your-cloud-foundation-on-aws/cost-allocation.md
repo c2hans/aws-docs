@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Cost allocation
-<a name="cost-allocation"></a>
 
 Leveraging metadata across your environment, helps you to accurately allocate cost for workloads and applications. Using a showback approach you can identify the costs incurred by a business unit, product, or team. However, material spends, may not be accounted for due to the lack of enforcing tagging mechanisms. Grouping your different resource and establishing boundaries between them can help you identify how those groups of resources are using the budget assigned to a specific business unit or across different stages software development lifecycle of a workload.
 

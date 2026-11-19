@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Cop
 ---
 
 # CopyPackageVersions
-<a name="API_CopyPackageVersions"></a>
 
  Copies package versions from one repository to another repository in the same domain.
 

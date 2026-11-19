@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppRunner::AutoScalingConfiguration Tag
-<a name="aws-properties-apprunner-autoscalingconfiguration-tag"></a>
 
 Describes a tag that is applied to an AWS App Runner resource. A tag is a metadata item consisting of a key-value pair.
 

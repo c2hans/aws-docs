@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/delete-voicecon.html
 ---
 
 # Deleting an Amazon Chime SDK Voice Connector
-<a name="delete-voicecon"></a>
 
 Before you can delete an Amazon Chime SDK Voice Connector, you must unassign all phone numbers from it. For more information on unassigning phone numbers from a Voice Connector, see the previous topic.
 

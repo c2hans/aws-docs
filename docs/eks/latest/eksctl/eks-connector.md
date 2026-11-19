@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/eks-connector.html
 ---
 
 # Registering non-EKS clusters with EKS Connector
-<a name="eks-connector"></a>
 
 You can use the [EKS Connector](https://docs.aws.amazon.com/eks/latest/userguide/eks-connector.html) to view clusters outside of AWS in the EKS Console. This process requires registering the cluster with EKS and running the EKS Connector agent on the external Kubernetes cluster.
 

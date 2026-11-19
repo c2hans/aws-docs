@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/monitor-c
 ---
 
 # Monitoring CloudTrail Log Files with Amazon CloudWatch Logs
-<a name="monitor-cloudtrail-log-files-with-cloudwatch-logs"></a>
 
 You can use [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) to monitor, store, and access your log files from CloudTrail.
 

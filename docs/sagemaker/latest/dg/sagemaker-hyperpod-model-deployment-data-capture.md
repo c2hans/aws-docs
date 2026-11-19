@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Data capture for inference on HyperPod
-<a name="sagemaker-hyperpod-model-deployment-data-capture"></a>
 
 Amazon SageMaker HyperPod inference data capture enables you to record inference request and response data for model monitoring, debugging, and model improvement. Inference requests flow from the SageMaker AI endpoint to the Application Load Balancer and then to the model pod. You can enable capture independently at each level, from the outermost layer (Tier 1, SageMaker AI endpoint) to the deepest layer (Tier 3, model pod):
 

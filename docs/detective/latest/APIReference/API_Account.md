@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Accoun
 ---
 
 # Account
-<a name="API_Account"></a>
 
 An AWS account that is the administrator account of or a member of a behavior graph.
 

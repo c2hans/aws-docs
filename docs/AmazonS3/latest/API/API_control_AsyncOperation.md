@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_AsyncOpe
 ---
 
 # AsyncOperation
-<a name="API_control_AsyncOperation"></a>
 
 A container for the information about an asynchronous operation.
 

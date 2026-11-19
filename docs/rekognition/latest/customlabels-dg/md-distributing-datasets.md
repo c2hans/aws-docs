@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-di
 ---
 
 # Distributing a training dataset (SDK)
-<a name="md-distributing-datasets"></a>
 
 Amazon Rekognition Custom Labels requires a training dataset and a test dataset to train your model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Pu
 ---
 
 # PutConfiguredAudienceModelPolicy
-<a name="API_PutConfiguredAudienceModelPolicy"></a>
 
 Create or update the resource policy for a configured audience model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveResultEvent
-<a name="API_agent-runtime_AgenticRetrieveResultEvent"></a>
 
 An event containing agentic retrieval results.
 

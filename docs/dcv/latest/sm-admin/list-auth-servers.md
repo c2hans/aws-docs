@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/list-auth-servers.ht
 ---
 
 # list-auth-servers
-<a name="list-auth-servers"></a>
 
 Lists the external authentication servers that have been registered.
 

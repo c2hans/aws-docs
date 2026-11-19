@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/assume-ro
 ---
 
 # `assumeRoleWithWebIdentityCredentialProvider` provider in the SDK for PHP
-<a name="assume-role-with-web-identity-provider"></a>
 
  `Aws\Credentials\CredentialProvider::assumeRoleWithWebIdentityCredentialProvider` attempts to load credentials by assuming a role. If the environment variables `AWS_ROLE_ARN` and `AWS_WEB_IDENTITY_TOKEN_FILE` are present, the provider will attempt to assume the role specified at `AWS_ROLE_ARN` using the token on disk at the full path specified in `AWS_WEB_IDENTITY_TOKEN_FILE`. If environment variables are used, the provider will attempt to set the session from the `AWS_ROLE_SESSION_NAME` environment variable.
 

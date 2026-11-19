@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/iam-roles-data
 ---
 
 # IAM roles for Amazon DataZone
-<a name="iam-roles-datazone"></a>
 
 **Topics**
 + [AmazonDataZoneProvisioningRole-<domainAccountId>](bootstraprole.md)

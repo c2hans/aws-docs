@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_EyeD
 ---
 
 # EyeDirection
-<a name="API_EyeDirection"></a>
 
 Indicates the direction the eyes are gazing in (independent of the head pose) as determined by its pitch and yaw.
 

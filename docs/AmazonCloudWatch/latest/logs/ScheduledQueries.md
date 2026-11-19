@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/ScheduledQu
 ---
 
 # Automating log analysis with scheduled queries
-<a name="ScheduledQueries"></a>
 
 Scheduled queries enable you to automate the execution of log queries on a regular schedule. Instead of manually running queries to analyze your log data, you can configure scheduled queries to run automatically and deliver results to destinations such as Amazon S3 buckets, Amazon EventBridge event buses, or lookup tables. This automation is ideal for generating regular reports, monitoring trends, keeping lookup tables current with your latest log data, or triggering downstream processes based on log analysis results.
 

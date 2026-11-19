@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Registration form (console)
-<a name="nx-rcs-launch-br-console"></a>
 
 The Brazil launch registration uses a custom form with additional fields beyond the standard baseline. The registration form collects the following information:
 + **Brand information** – Auto-populated from your testing agent configuration. You can review and adjust the brand name, description, website URL, and contact information.

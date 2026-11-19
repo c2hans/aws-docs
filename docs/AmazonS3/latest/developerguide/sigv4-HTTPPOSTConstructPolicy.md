@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/sigv4-HTT
 ---
 
 # POST Policy
-<a name="sigv4-HTTPPOSTConstructPolicy"></a>
 
 **Topics**
 + [Expiration](#sigv4-HTTPPOSTExpiration)

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/dg/listing-objec
 We are no longer updating the Amazon Machine Learning service or accepting new users for it. This documentation is available for existing users, but we are no longer updating it. For more information, see [ What is Amazon Machine Learning](https://docs.aws.amazon.com/machine-learning/latest/dg/what-is-amazon-machine-learning.html).
 
 # Listing Objects
-<a name="listing-objects"></a>
 
  For in-depth information about your Amazon Machine Learning (Amazon ML) datasources, ML models, evaluations, and batch predictions, list them. For each object, you will see its name, type, ID, status code, and creation time. You can also see details that are specific to a particular object type. For example, you can see the Data insights for a datasource.
 

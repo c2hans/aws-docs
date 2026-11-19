@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/routes-pr
 ---
 
 # Routes pricing
-<a name="routes-pricing"></a>
 
 Please see below for pricing buckets for each API:
 

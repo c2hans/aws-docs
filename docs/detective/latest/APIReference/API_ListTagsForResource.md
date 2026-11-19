@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_ListTa
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Returns the tag values that are assigned to a behavior graph.
 

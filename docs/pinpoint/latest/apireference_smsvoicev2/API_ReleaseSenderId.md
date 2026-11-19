@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # ReleaseSenderId
-<a name="API_ReleaseSenderId"></a>
 
 Releases an existing sender ID in your account.
 

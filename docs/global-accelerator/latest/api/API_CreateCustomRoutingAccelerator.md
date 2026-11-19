@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Create
 ---
 
 # CreateCustomRoutingAccelerator
-<a name="API_CreateCustomRoutingAccelerator"></a>
 
 Create a custom routing accelerator. A custom routing accelerator directs traffic to one of possibly thousands of Amazon EC2 instance destinations running in a single or multiple virtual private clouds (VPC) subnet endpoints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Creat
 ---
 
 # CreateMedicalVocabulary
-<a name="API_CreateMedicalVocabulary"></a>
 
 Creates a new custom medical vocabulary.
 

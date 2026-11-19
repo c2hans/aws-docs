@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Un
 ---
 
 # UniversalTargetParameters
-<a name="API_UniversalTargetParameters"></a>
 
 Parameters for USI (Universal Service Integration) targets. Used when TargetArn is in the format arn:aws:events:::aws-sdk:{service}:{apiAction}
 

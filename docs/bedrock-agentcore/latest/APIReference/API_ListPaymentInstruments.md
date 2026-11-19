@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ListPaymentInstruments
-<a name="API_ListPaymentInstruments"></a>
 
 List payment instruments for a manager.
 

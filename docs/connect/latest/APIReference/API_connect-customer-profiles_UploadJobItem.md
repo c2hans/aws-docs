@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # UploadJobItem
-<a name="API_connect-customer-profiles_UploadJobItem"></a>
 
 The summary information for an individual upload job.
 

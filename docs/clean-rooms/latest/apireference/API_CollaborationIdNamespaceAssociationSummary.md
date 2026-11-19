@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Coll
 ---
 
 # CollaborationIdNamespaceAssociationSummary
-<a name="API_CollaborationIdNamespaceAssociationSummary"></a>
 
 Provides summary information about the collaboration ID namespace association.
 

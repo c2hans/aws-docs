@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ModifyWorkspac
 ---
 
 # ModifyWorkspaceState
-<a name="API_ModifyWorkspaceState"></a>
 
 Sets the state of the specified WorkSpace.
 

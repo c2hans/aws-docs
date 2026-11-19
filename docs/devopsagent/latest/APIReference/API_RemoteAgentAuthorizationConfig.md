@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Remo
 ---
 
 # RemoteAgentAuthorizationConfig
-<a name="API_RemoteAgentAuthorizationConfig"></a>
 
 Authorization configuration for remote A2A agents with token-based auth (API key, OAuth, bearer token).
 

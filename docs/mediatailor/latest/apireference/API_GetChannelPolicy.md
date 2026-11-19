@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_GetC
 ---
 
 # GetChannelPolicy
-<a name="API_GetChannelPolicy"></a>
 
 Returns the channel's IAM policy. IAM policies are used to control access to your channel.
 

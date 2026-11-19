@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/idp-images-bp.html
 ---
 
 # Best practices for images
-<a name="idp-images-bp"></a>
 
 When you use image files for custom classification or custom entity recognition, use the following guidelines to achieve the best results:
 + Provide a high quality image, ideally at least 150 DPI.

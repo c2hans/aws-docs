@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.REPLAC
 ---
 
 # REPLACE\_WITH\_CUSTOM
-<a name="recipe-actions.REPLACE_WITH_CUSTOM"></a>
 
 Replace detected entities with a custom value.
 

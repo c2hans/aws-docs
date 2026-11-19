@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/semantic-cac
 ---
 
 # Multi-turn conversation caching
-<a name="semantic-caching-multi-turn"></a>
 
 For applications with multi-turn conversations, the same user message can mean different things depending on context. For example, "Tell me more" in a conversation about Valkey means something different from "Tell me more" in a conversation about Python.
 

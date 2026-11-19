@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ad
 ---
 
 # New to AWS
-<a name="govcloud-additional-resources"></a>
 
 The following table lists additional resources for users new to AWS:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/G
 ---
 
 # Get started with CloudFront
-<a name="GettingStarted"></a>
 
 The topics in this section show you how to get started delivering your content with Amazon CloudFront.
 

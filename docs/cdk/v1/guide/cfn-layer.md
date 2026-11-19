@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cdk/v1/guide/cfn-layer.html
 This is the AWS CDK v1 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and will now only receive critical bug fixes and security patches. New features will be developed for CDK v2 exclusively. Support for CDK v1 will end entirely on June 1, 2023. [Migrate to CDK v2](work-with-cdk-v2.md) to have access to the latest features and fixes.
 
 # Abstractions and escape hatches
-<a name="cfn-layer"></a>
 
 The AWS CDK lets you describe AWS resources using constructs that operate at varying levels of abstraction.
 + *Layer 1 (L1)* constructs directly represent CloudFormation resources as defined by the CloudFormation specification. These constructs can be identified via a name beginning with "Cfn," so they are also referred to as "Cfn constructs." If a resource exists in CloudFormation, it exists in the CDK as a L1 construct.

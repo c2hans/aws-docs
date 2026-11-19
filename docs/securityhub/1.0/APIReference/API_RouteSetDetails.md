@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RouteSe
 ---
 
 # RouteSetDetails
-<a name="API_RouteSetDetails"></a>
 
  Provides details about the routes in the route table.
 

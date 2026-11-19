@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_EventResult.html
 ---
 
 # EventResult
-<a name="API_EventResult"></a>
 
 Result information for an event.
 

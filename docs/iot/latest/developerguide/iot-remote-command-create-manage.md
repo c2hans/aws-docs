@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-remote-com
 ---
 
 # Create and manage commands
-<a name="iot-remote-command-create-manage"></a>
 
 Use AWS IoT Device Management Commands to configure reusable remote actions or send immediate instructions to devices. Create and manage Commands from the AWS IoT console or using the AWS CLI.
 

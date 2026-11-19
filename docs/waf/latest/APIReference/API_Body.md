@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Body.html
 ---
 
 # Body
-<a name="API_Body"></a>
 
 Inspect the body of the web request. The body immediately follows the request headers.
 

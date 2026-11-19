@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/data-encryptio
 ---
 
 # Data encryption and secrets management
-<a name="data-encryption-and-secrets-management"></a>
 
 ## Encryption at rest
 <a name="_encryption_at_rest"></a>

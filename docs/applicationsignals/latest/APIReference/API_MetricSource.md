@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # MetricSource
-<a name="API_MetricSource"></a>
 
 Identifies the metric source for SLOs on resources other than Application Signals services.
 

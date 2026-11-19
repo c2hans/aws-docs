@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_Custom
 ---
 
 # CustomExtension
-<a name="API_CustomExtension"></a>
 
 Specifies the X.509 extension information for a certificate.
 

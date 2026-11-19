@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `DescribeActivations` with a CLI
-<a name="example_ssm_DescribeActivations_section"></a>
 
 The following code examples show how to use `DescribeActivations`.
 

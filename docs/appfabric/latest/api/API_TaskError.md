@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_TaskError.html
 ---
 
 # TaskError
-<a name="API_TaskError"></a>
 
 Contains information about an error returned from a user access task.
 

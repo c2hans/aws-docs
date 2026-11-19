@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-v
 ---
 
 # Country support
-<a name="nx-voice-scale-country-support"></a>
 
 Voice availability, supported origination options, and calling requirements vary by country. Review the countries where voice is supported and the options for each before you request a number or send to a new destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceE
 ---
 
 # InstanceEventWindowAssociationTarget
-<a name="API_InstanceEventWindowAssociationTarget"></a>
 
 One or more targets associated with the event window.
 

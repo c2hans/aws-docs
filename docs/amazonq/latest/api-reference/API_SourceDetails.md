@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_SourceD
 ---
 
 # SourceDetails
-<a name="API_SourceDetails"></a>
 
 Container for details about different types of media sources (image, audio, or video).
 

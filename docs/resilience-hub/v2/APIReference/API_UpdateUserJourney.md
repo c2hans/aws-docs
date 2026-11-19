@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Updat
 ---
 
 # UpdateUserJourney
-<a name="API_UpdateUserJourney"></a>
 
 Updates an existing user journey.
 

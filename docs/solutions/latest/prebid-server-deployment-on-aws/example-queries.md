@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Example queries
-<a name="example-queries"></a>
 
 The behavior of metric collection depends on the metric type. `counter` type metrics are flushed each time they are reported on and must be calculated across an entire time range for each container. For `histogram`, `timer`, and `meter` type metrics, the values are a snapshot of the container’s lifetime at that particular timestamp. Athena views can be created to simplify pulling these tables in order to get the most up-to-date metrics across all containers. For more information about the various metrics types, see the [Metrics project](https://metrics.dropwizard.io/4.2.0/manual/core.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Deleting Aurora PostgreSQL query plans
-<a name="AuroraPostgreSQL.Optimize.Deleting"></a>
 
 Delete execution plans that you aren't using or plans that aren't valid. For more information about deleting plans, see the following sections.
 

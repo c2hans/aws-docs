@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/r-guide.html
 ---
 
 # Resources for using R with Amazon SageMaker AI
-<a name="r-guide"></a>
 
 This document lists resources that can help you learn how to use Amazon SageMaker AI features with the R software environment. The following sections introduce SageMaker AI's built-in R kernel, explain how to get started with R on SageMaker AI, and provide several example notebooks.
 

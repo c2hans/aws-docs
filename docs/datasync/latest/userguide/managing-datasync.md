@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/managing-datas
 ---
 
 # Managing AWS DataSync resources
-<a name="managing-datasync"></a>
 
 Learn how to manage your AWS DataSync resources, such as agents, locations, and tasks.
 

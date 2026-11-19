@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_TextOut
 ---
 
 # TextOutputEvent
-<a name="API_TextOutputEvent"></a>
 
 An output event for an AI-generated response in an Amazon Q Business web experience.
 

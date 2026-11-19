@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Consume sustainable data processing and storage services
-<a name="gensus02"></a>
 
 | GENSUS02: How can you optimize data processing and storage to minimize energy consumption and maximize efficiency? |
 | --- |

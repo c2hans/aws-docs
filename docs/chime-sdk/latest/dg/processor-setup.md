@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/processor-setup.html
 ---
 
 # Setting up a Channel Processor for Amazon Chime SDK messaging
-<a name="processor-setup"></a>
 
 To start using channel flows, you first create a processor Lambda function to handle preprocessing for your use case. For example, you can update message content or metadata, deny messages and prevent them from being sent, or let the original message through.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/split-cost-allocati
 ---
 
 # Understanding split cost allocation data
-<a name="split-cost-allocation-data"></a>
 
 Split cost allocation data splits the cost of a shared AWS resource across the workloads and resources that use it. The shared resource's own line item keeps its total usage and cost, and additional line items show how the usage and cost are allocated in your Cost and Usage Reports (AWS CUR).
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/import-fr
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Importing manual evidence files from Amazon S3
-<a name="import-from-s3"></a>
 
 You can manually import evidence files from an Amazon S3 bucket into your assessment. This enables you to supplement the automatically collected evidence with additional supporting materials.
 

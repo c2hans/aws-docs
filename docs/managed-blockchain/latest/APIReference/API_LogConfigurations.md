@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # LogConfigurations
-<a name="API_LogConfigurations"></a>
 
 A collection of log configurations.
 

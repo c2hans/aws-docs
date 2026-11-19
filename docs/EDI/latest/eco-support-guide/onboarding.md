@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/onboarding.
 ---
 
 # Onboarding to EDI Cloud Operations
-<a name="onboarding"></a>
 
 After you sign up for EDI and accept the terms of agreement, your E-SDM guides you through the onboarding process and checklist.
 

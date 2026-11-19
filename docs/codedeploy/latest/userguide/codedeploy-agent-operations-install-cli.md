@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 ---
 
 # Install the CodeDeploy agent using the command line
-<a name="codedeploy-agent-operations-install-cli"></a>
 
 Use the following topics to install and run the CodeDeploy agent using the command line.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGe
 ---
 
 # BatchGetConfigurationPolicyAssociations
-<a name="API_BatchGetConfigurationPolicyAssociations"></a>
 
  Returns associations between an AWS Security Hub CSPM configuration and a batch of target accounts, organizational units, or the root. Only the Security Hub CSPM delegated administrator can invoke this operation from the home Region. A configuration can refer to a configuration policy or to a self-managed configuration.
 

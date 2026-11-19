@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # LegalTerm
-<a name="API_marketplace-agreements_LegalTerm"></a>
 
 Defines the list of text agreements proposed to the acceptors. An example is the end user license agreement (EULA).
 
@@ -19,7 +18,7 @@ Type: Array of [DocumentItem](API_marketplace-agreements_DocumentItem.md) object
 Required: No
 
  ** id **   <a name="AWSMarketplaceService-Type-marketplace-agreements_LegalTerm-id"></a>
-The unique identifer for the term.
+The unique identifier for the term.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[A-Za-z0-9+=;,.@\-_]+`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-goog
 ---
 
 # Set up OAuth 2.0 authentication for Google Drive
-<a name="kb-managed-googledrive-oauth2-setup"></a>
 
 OAuth 2.0 authentication (`OAUTH2`) authenticates with an OAuth 2.0 client ID and secret together with a refresh token that you obtain from a single Google user's sign-in. The connector accesses only the content that user can access — their own drive, files shared with them, and any shared drives they belong to.
 

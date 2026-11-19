@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ActivateReadSetFilt
 ---
 
 # ActivateReadSetFilter
-<a name="API_ActivateReadSetFilter"></a>
 
 A read set activation job filter.
 

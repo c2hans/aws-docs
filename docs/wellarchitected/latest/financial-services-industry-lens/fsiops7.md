@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSIOPS7: Have you developed a continuous improvement model?
-<a name="fsiops7"></a>
 
  Financial institutions should continually assess and optimize their operational processes.
 

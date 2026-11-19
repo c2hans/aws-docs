@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Delet
 ---
 
 # DeleteResponseHeadersPolicy
-<a name="API_DeleteResponseHeadersPolicy"></a>
 
 Deletes a response headers policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Ident
 ---
 
 # IdentityCenterConfiguration
-<a name="API_IdentityCenterConfiguration"></a>
 
 Contains the IAM Identity Center settings for a security configuration, including instance ARN, application assignment requirements, and application ARN.
 

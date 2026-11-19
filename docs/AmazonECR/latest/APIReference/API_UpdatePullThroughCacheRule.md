@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Update
 ---
 
 # UpdatePullThroughCacheRule
-<a name="API_UpdatePullThroughCacheRule"></a>
 
 Updates an existing pull through cache rule.
 

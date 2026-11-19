@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/ec2.html
 ---
 
 # AL2 on Amazon EC2
-<a name="ec2"></a>
 
 **Note**
  AL2 is no longer the current version of Amazon Linux. AL2023 is the successor to AL2. For more information, see [Comparing AL2 and AL2023](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html) and the list of [Package changes in AL2023](https://docs.aws.amazon.com/linux/al2023/release-notes/compare-packages.html) in the [AL2023 User Guide](https://docs.aws.amazon.com/linux/al2023/ug/).

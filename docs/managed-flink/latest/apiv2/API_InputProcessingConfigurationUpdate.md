@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_InputProc
 ---
 
 # InputProcessingConfigurationUpdate
-<a name="API_InputProcessingConfigurationUpdate"></a>
 
 For a SQL-based Kinesis Data Analytics application, describes updates to an [InputProcessingConfiguration](API_InputProcessingConfiguration.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/idt-state-mach
 ---
 
 # Configure the IDT state machine
-<a name="idt-state-machine"></a>
 
 **Important**
 Starting in IDT v4.5.2, this state machine is deprecated. We strongly recommend that you use the new test orchestrator. For more information, see [Configure the IDT test orchestrator](idt-test-orchestrator.md).

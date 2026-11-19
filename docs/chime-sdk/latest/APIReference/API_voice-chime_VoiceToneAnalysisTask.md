@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # VoiceToneAnalysisTask
-<a name="API_voice-chime_VoiceToneAnalysisTask"></a>
 
 A representation of an asynchronous request to perform voice tone analysis on a Voice Connector call.
 

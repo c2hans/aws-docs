@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # StartCluster
-<a name="API_elastic_StartCluster"></a>
 
 Restarts the stopped elastic cluster that is specified by `clusterARN`.
 

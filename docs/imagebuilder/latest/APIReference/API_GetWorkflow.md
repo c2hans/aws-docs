@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 ---
 
 # GetWorkflow
-<a name="API_GetWorkflow"></a>
 
 Retrieves a workflow resource object.
 

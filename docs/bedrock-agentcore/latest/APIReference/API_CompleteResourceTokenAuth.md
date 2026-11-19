@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # CompleteResourceTokenAuth
-<a name="API_CompleteResourceTokenAuth"></a>
 
 Confirms the user authentication session for obtaining OAuth2.0 tokens for a resource.
 

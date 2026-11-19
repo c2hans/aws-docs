@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_UpdateL
 ---
 
 # UpdateLocationNfs
-<a name="API_UpdateLocationNfs"></a>
 
 Modifies the following configuration parameters of the Network File System (NFS) transfer location that you're using with AWS DataSync.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Head
 ---
 
 # HeaderMatch
-<a name="API_HeaderMatch"></a>
 
 Describes the constraints for a header match. Matches incoming requests with rule based on request header value before applying rule action.
 

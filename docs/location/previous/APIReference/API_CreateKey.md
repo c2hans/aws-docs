@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Creat
 ---
 
 # CreateKey
-<a name="API_CreateKey"></a>
 
 Creates an API key resource in your AWS account, which lets you grant actions for Amazon Location resources to the API key bearer.
 

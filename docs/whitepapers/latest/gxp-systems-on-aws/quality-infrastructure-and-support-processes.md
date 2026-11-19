@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/qu
 ---
 
 # Quality infrastructure and support processes
-<a name="quality-infrastructure-and-support-processes"></a>
 
 ## Quality management system certification
 <a name="quality-management-system-certification"></a>

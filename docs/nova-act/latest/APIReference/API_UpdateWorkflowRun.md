@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_UpdateW
 ---
 
 # UpdateWorkflowRun
-<a name="API_UpdateWorkflowRun"></a>
 
 Updates the configuration or state of an active workflow run.
 

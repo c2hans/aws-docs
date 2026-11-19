@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_SelfManagedA
 ---
 
 # SelfManagedActiveDirectoryAttributes
-<a name="API_SelfManagedActiveDirectoryAttributes"></a>
 
 The configuration of the self-managed Microsoft Active Directory (AD) directory to which the Windows File Server or ONTAP storage virtual machine (SVM) instance is joined.
 

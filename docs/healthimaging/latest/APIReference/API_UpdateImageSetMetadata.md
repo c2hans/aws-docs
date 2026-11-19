@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Up
 ---
 
 # UpdateImageSetMetadata
-<a name="API_UpdateImageSetMetadata"></a>
 
 Update image set metadata attributes.
 

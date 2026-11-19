@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceGrou
 ---
 
 # InstanceGroupTimeline
-<a name="API_InstanceGroupTimeline"></a>
 
 The timeline of the instance group lifecycle.
 

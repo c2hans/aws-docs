@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CreateNot
 ---
 
 # CreateNotificationConfiguration
-<a name="API_CreateNotificationConfiguration"></a>
 
 Creates a notification configuration. A configuration is a connection between an event type and a destination that you have already created.
 

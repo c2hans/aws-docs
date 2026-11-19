@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateTopic
-<a name="API_UpdateTopic"></a>
 
 Updates a topic.
 

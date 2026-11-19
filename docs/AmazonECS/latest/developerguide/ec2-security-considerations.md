@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ec2-secu
 ---
 
 # Amazon EC2 container instance security considerations for Amazon ECS
-<a name="ec2-security-considerations"></a>
 
 You should consider a single container instance and its access within your threat model. For example, a single affected task might be able to leverage the IAM permissions of a non-infected task on the same instance.
 

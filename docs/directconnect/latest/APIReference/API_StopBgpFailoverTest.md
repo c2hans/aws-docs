@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_St
 ---
 
 # StopBgpFailoverTest
-<a name="API_StopBgpFailoverTest"></a>
 
 Stops the virtual interface failover test.
 

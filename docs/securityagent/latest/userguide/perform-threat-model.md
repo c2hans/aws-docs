@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/perform-t
 ---
 
 # Create a threat model
-<a name="perform-threat-model"></a>
 
 Create threat models in the AWS Security Agent web application to analyze your application’s architecture and identify security threats. A threat model produces two main outputs: a **system overview** that describes how your system is built and behaves, and a set of **threats** that describe how the system could be attacked, each with a severity level, STRIDE classification, and actionable recommendations.
 

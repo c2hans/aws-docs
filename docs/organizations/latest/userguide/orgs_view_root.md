@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_view
 ---
 
 # Viewing details of the root with AWS Organizations
-<a name="orgs_view_root"></a>
 
 When you sign in to the organization's management account in the [AWS Organizations console](https://console.aws.amazon.com/organizations/v2), you can view details of the administrative root.
 

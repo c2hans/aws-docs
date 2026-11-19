@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/sap-bobi-
 ---
 
 # SAP BusinessObjects BI Platform on AWS: HA/DR Guide for Windows
-<a name="sap-bobi-ha-dr-win"></a>
 
  *SAP specialists, Amazon Web Services (AWS)*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_HostedZo
 ---
 
 # HostedZoneFeatures
-<a name="API_HostedZoneFeatures"></a>
 
 Represents the features configuration for a hosted zone, including the status of various features and any associated failure reasons.
 

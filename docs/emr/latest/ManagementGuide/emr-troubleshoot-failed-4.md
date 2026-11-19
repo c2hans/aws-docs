@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-troublesh
 ---
 
 # Step 4: Examine the Amazon EMR log files
-<a name="emr-troubleshoot-failed-4"></a>
 
  The next step is to examine the log files in order to locate an error code or other indication of the issue that your cluster experienced. For information on the log files available, where to find them, and how to view them, see [View Amazon EMR log files](emr-manage-view-web-log-files.md).
 

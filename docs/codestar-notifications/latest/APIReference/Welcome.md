@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This AWS CodeStar Notifications API Reference provides descriptions and usage examples of the operations and data types for the AWS CodeStar Notifications API. You can use the AWS CodeStar Notifications API to work with the following objects:
 
@@ -30,4 +29,4 @@ Tags, by calling the following:
 
 For information about how to use AWS CodeStar Notifications, see the [AWS Developer Tools Console User Guide](https://docs.aws.amazon.com/dtconsole/latest/userguide/what-is-dtconsole.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

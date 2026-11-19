@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # Deployment Pattern 3 - Amazon ECS (Containerized)
-<a name="deployment-pattern-3-amazon-ecs-containerized"></a>
 
 Amazon ECS with API Gateway orchestrates Docker containers that run MCP server applications. Amazon ECS supports both AWS Fargate for serverless container execution and Amazon EC2 launch types for more control. The architecture diagram illustrates the "Public front door \+ private MCP runtime" pattern, where API Gateway is the only internet-facing endpoint and enforces OAuth authorization. API Gateway then reaches into the VPC by using VPC link v2 to call an internal Application Load Balancer. The private ALB forwards requests to an Amazon ECS service that runs the remote MCP server. This implementation uses OAuth authentication. OAuth provides broad MCP-client compatibility but isn't an Amazon ECS requirement. When the clients are AWS workloads, you can use IAM with SigV4.
 

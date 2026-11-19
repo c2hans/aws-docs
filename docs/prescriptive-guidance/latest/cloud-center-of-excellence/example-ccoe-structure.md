@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-cente
 ---
 
 # Example CCoE structure
-<a name="example-ccoe-structure"></a>
 
 The following diagram shows an example CCoE organizational structure.
 

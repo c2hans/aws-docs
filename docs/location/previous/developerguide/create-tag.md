@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/create-
 ---
 
 # Add a tag to an Amazon Location Service resource
-<a name="create-tag"></a>
 
 You can add tags when creating your resources using the Amazon Location console, the AWS CLI, or the Amazon Location APIs:
 + [Create a map resource ](map-prerequisites.md#create-map-resource)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DeleteSessionLogger
-<a name="API_DeleteSessionLogger"></a>
 
 Deletes a session logger resource.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::ConfigurationPolicy SecurityControlsConfiguration
-<a name="aws-properties-securityhub-configurationpolicy-securitycontrolsconfiguration"></a>
 
  An object that defines which security controls are enabled in an AWS Security Hub CSPM configuration policy. The enablement status of a control is aligned across all of the enabled standards in an account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/view-edit-package
 ---
 
 # View or edit a package group
-<a name="view-edit-package-group"></a>
 
 You can view a list of all package groups, view details of a specific package group, or edit a package group's details or configuration using the CodeArtifact console or the AWS Command Line Interface (AWS CLI).
 

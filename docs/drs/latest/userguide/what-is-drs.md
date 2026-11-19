@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html
 ---
 
 # What is Elastic Disaster Recovery?
-<a name="what-is-drs"></a>
 
 AWS Elastic Disaster Recovery minimizes downtime and data loss with fast, reliable recovery of on-premises and cloud-based applications using affordable storage, minimal compute, and point-in-time recovery.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_LifecycleRuleAnd
 ---
 
 # LifecycleRuleAndOperator
-<a name="API_LifecycleRuleAndOperator"></a>
 
 This is used in a Lifecycle Rule Filter to apply a logical AND to two or more predicates. The Lifecycle Rule will apply to any object matching all of the predicates configured inside the And operator.
 

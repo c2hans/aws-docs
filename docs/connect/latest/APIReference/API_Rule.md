@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Rule.htm
 ---
 
 # Rule
-<a name="API_Rule"></a>
 
 Information about a rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Setting Launch Permissions on an Amazon Machine Image
-<a name="tkv-set-ami-launch-perms"></a>
 
 You can set launch permissions on your Amazon Machine Images (AMIs) from the **AMIs** view in AWS Explorer. You can use the **Set AMI Permissions** dialog box to copy permissions from AMIs.
 

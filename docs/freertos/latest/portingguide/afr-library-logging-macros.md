@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/afr-library
 ---
 
 # Implementing the library logging macros
-<a name="afr-library-logging-macros"></a>
 
 The FreeRTOS libraries use the following logging macros, listed in increasing order of verbosity.
 + `LogError`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 Publication date: *January 2024*.
 

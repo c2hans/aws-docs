@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Secu
 ---
 
 # SecurityLakeResourceManagementServiceRolePolicy
-<a name="SecurityLakeResourceManagementServiceRolePolicy"></a>
 
 **Description**: Provides access to manage resources created by Security Lake.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/re
 ---
 
 # Rehost on-premises workloads in the AWS Cloud: migration checklist
-<a name="rehost-on-premises-workloads-in-the-aws-cloud-migration-checklist"></a>
 
 *Srikanth Rangavajhala, Amazon Web Services*
 

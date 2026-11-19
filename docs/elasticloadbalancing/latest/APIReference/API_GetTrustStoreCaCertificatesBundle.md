@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # GetTrustStoreCaCertificatesBundle
-<a name="API_GetTrustStoreCaCertificatesBundle"></a>
 
 Retrieves the ca certificate bundle.
 

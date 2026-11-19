@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-ConfigureDNSQueryLogging`
-<a name="automation-aws-configure-dns-query-logging"></a>
 
  **Description**
 

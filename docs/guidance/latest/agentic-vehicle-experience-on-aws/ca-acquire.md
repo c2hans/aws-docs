@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # The Acquire journey
-<a name="ca-acquire"></a>
 
 Acquire is the app’s second major surface and the largest single body of view code in it. It is gated on tenant segment: a tenant whose configuration does not enable the Buy tab does not get one. The journey design, its personas and its commercial framing are documented in [The Customer Journey](the-customer-journey.md); this section covers what the client implements.
 

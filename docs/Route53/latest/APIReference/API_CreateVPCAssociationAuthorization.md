@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateVP
 ---
 
 # CreateVPCAssociationAuthorization
-<a name="API_CreateVPCAssociationAuthorization"></a>
 
 Authorizes the AWS account that created a specified VPC to submit an `AssociateVPCWithHostedZone` request to associate the VPC with a specified hosted zone that was created by a different account. To submit a `CreateVPCAssociationAuthorization` request, you must use the account that created the hosted zone. After you authorize the association, use the account that created the VPC to submit an `AssociateVPCWithHostedZone` request.
 

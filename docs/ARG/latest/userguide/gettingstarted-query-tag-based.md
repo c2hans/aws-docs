@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-quer
 ---
 
 # Build a tag-based query and create a group
-<a name="gettingstarted-query-tag-based"></a>
 
 The following procedures show you how to build a tag-based query and use it to create a resource group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # The EXPLAIN query plan
-<a name="explain-query-plan"></a>
 
 PostgreSQL provides the `EXPLAIN` and `EXPLAIN ANALYZE` options for returning query plans with details about how the query will be run.
 

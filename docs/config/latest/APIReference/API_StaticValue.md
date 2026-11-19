@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_StaticVal
 ---
 
 # StaticValue
-<a name="API_StaticValue"></a>
 
 The static value of the resource.
 

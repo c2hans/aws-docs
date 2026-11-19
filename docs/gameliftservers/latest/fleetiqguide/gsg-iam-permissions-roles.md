@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/fleetiqguide/gsg-
 ---
 
 # Create IAM roles for cross-service interaction
-<a name="gsg-iam-permissions-roles"></a>
 
 In order for Amazon GameLift Servers FleetIQ to work with your Amazon EC2 instances and Auto Scaling groups, you must allow the services to interact with each other. This is done by creating IAM roles in your AWS account and assigning a set of limited permissions. Each role also specifies which services can assume the role.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # Attendee
-<a name="API_meeting-chime_Attendee"></a>
 
 An Amazon Chime SDK meeting attendee. Includes a unique `AttendeeId` and `JoinToken`. The `JoinToken` allows a client to authenticate and join as the specified attendee. The `JoinToken` expires when the meeting ends, or when [DeleteAttendee](API_meeting-chime_DeleteAttendee.md) is called. After that, the attendee is unable to join the meeting.
 

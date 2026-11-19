@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/example_firehose_Sce
 ---
 
 # Use Amazon Data Firehose to process individual and batch records
-<a name="example_firehose_Scenario_PutRecords_section"></a>
 
 The following code examples show how to use Firehose to process individual and batch records.
 

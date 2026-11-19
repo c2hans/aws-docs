@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-send-mess
 ---
 
 # Sending RCS messages
-<a name="rcs-send-message"></a>
 
 AWS End User Messaging uses the same `SendTextMessage` API for both RCS and SMS delivery. How the service routes your message depends on the origination identity you specify in the request. You can send messages through a phone pool (recommended), at the account level, or directly through an AWS RCS Agent ARN.
 

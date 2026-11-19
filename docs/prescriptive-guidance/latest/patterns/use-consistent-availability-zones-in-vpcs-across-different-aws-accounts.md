@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/us
 ---
 
 # Use consistent Availability Zones in VPCs across different AWS accounts
-<a name="use-consistent-availability-zones-in-vpcs-across-different-aws-accounts"></a>
 
 *Adam Spicer, Amazon Web Services*
 

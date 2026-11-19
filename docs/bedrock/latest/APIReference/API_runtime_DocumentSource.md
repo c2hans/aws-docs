@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # DocumentSource
-<a name="API_runtime_DocumentSource"></a>
 
 Contains the content of a document.
 

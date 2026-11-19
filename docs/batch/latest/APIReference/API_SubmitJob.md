@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitJob.
 ---
 
 # SubmitJob
-<a name="API_SubmitJob"></a>
 
-Submits an AWS Batch job from a job definition. Parameters that are specified during [SubmitJob](#API_SubmitJob) override parameters defined in the job definition. vCPU and memory requirements that are specified in the `resourceRequirements` objects in the job definition are the exception. They can't be overridden this way using the `memory` and `vcpus` parameters. Rather, you must specify updates to job definition parameters in a `resourceRequirements` object that's included in the `containerOverrides` parameter.
+Submits an AWS Batch job from a job definition. Parameters that are specified during [SubmitJob](API_SubmitJob.md) override parameters defined in the job definition. vCPU and memory requirements that are specified in the `resourceRequirements` objects in the job definition are the exception. They can't be overridden this way using the `memory` and `vcpus` parameters. Rather, you must specify updates to job definition parameters in a `resourceRequirements` object that's included in the `containerOverrides` parameter.
 
 **Note**
 Job queues with a scheduling policy are limited to 500 active share identifiers at a time.
@@ -355,7 +354,7 @@ Type: Boolean
 Required: No
 
  ** [retryStrategy](#API_SubmitJob_RequestSyntax) **   <a name="Batch-SubmitJob-request-retryStrategy"></a>
-The retry strategy to use for failed jobs from this [SubmitJob](#API_SubmitJob) operation. When a retry strategy is specified here, it overrides the retry strategy defined in the job definition.
+The retry strategy to use for failed jobs from this [SubmitJob](API_SubmitJob.md) operation. When a retry strategy is specified here, it overrides the retry strategy defined in the job definition.
 Type: [RetryStrategy](API_RetryStrategy.md) object
 Required: No
 
@@ -380,7 +379,7 @@ Value Length Constraints: Maximum length of 256.
 Required: No
 
  ** [timeout](#API_SubmitJob_RequestSyntax) **   <a name="Batch-SubmitJob-request-timeout"></a>
-The timeout configuration for this [SubmitJob](#API_SubmitJob) operation. You can specify a timeout duration after which AWS Batch terminates your jobs if they haven't finished. If a job is terminated due to a timeout, it isn't retried. The minimum value for the timeout is 60 seconds. This configuration overrides any timeout configuration specified in the job definition. For array jobs, child jobs have the same timeout configuration as the parent job. For more information, see [Job Timeouts](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/job_timeouts.html) in the *Amazon Elastic Container Service Developer Guide*.
+The timeout configuration for this [SubmitJob](API_SubmitJob.md) operation. You can specify a timeout duration after which AWS Batch terminates your jobs if they haven't finished. If a job is terminated due to a timeout, it isn't retried. The minimum value for the timeout is 60 seconds. This configuration overrides any timeout configuration specified in the job definition. For array jobs, child jobs have the same timeout configuration as the parent job. For more information, see [Job Timeouts](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/job_timeouts.html) in the *Amazon Elastic Container Service Developer Guide*.
 Type: [JobTimeout](API_JobTimeout.md) object
 Required: No
 

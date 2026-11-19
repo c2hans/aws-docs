@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # SessionKeyMastercard
-<a name="API_SessionKeyMastercard"></a>
 
 Parameters to derive session key for Mastercard payment card for ARQC verification.
 

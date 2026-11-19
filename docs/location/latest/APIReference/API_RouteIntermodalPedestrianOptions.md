@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteIn
 ---
 
 # RouteIntermodalPedestrianOptions
-<a name="API_RouteIntermodalPedestrianOptions"></a>
 
 Options for the pedestrian leg of the intermodal route.
 

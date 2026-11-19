@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # UpdateResourceMetricsConfiguration
-<a name="API_UpdateResourceMetricsConfiguration"></a>
 
 Updates the resource metrics configuration for an AWS resource. The `MetricSelections` value that you provide replaces any existing metric selections for the resource; it is not merged with them.
 

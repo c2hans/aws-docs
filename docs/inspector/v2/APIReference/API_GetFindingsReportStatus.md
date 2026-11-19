@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetFinding
 ---
 
 # GetFindingsReportStatus
-<a name="API_GetFindingsReportStatus"></a>
 
 Gets the status of a findings report.
 

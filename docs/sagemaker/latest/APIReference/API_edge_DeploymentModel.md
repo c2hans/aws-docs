@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_edge_D
 ---
 
 # DeploymentModel
-<a name="API_edge_DeploymentModel"></a>
 
 Information about a model deployed on an edge device that is registered with SageMaker Edge Manager.
 

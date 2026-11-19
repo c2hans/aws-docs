@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Enviro
 ---
 
 # EnvironmentConfigDetails
-<a name="API_EnvironmentConfigDetails"></a>
 
 The configuration details for the restricted instance groups (RIG) environment.
 

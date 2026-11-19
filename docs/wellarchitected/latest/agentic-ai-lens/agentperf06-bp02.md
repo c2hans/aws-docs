@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTPERF06-BP02 Implement efficient tool invocation patterns
-<a name="agentperf06-bp02"></a>
 
  Well-tuned tool invocation patterns help the agent's responsiveness reflect the tool's actual processing time, not infrastructure overhead. Each tool invocation involves connection establishment, serialization, network transfer, processing, and deserialization, trimming each component compounds across the many tool calls in a typical agent task.
 

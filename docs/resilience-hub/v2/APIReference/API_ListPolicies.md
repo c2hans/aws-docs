@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListP
 ---
 
 # ListPolicies
-<a name="API_ListPolicies"></a>
 
 Lists resilience policies.
 

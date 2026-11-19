@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableConfiguration
-<a name="API_PivotTableConfiguration"></a>
 
 The configuration for a `PivotTableVisual`.
 

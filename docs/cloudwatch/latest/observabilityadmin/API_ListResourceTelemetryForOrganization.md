@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # ListResourceTelemetryForOrganization
-<a name="API_ListResourceTelemetryForOrganization"></a>
 
  Returns a list of telemetry configurations for AWS resources supported by telemetry config in the organization.
 

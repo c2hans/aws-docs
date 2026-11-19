@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/outbound-call-restri
 ---
 
 # Outbound calling restrictions
-<a name="outbound-call-restrictions"></a>
 
 ## China
 <a name="china-restrictions"></a>

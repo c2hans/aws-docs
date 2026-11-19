@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeP
 ---
 
 # DescribePrincipalIdFormat
-<a name="API_DescribePrincipalIdFormat"></a>
 
 Describes the ID format settings for the root user and all IAM roles and IAM users that have explicitly specified a longer ID (17-character ID) preference.
 

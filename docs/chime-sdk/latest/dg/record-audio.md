@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/record-audio.html
 ---
 
 # RecordAudio
-<a name="record-audio"></a>
 
 Allows the SIP media application to record media from a given call ID. For example, a voice mail application and meeting-participant announcements. The application records until it reaches the duration that you set, or when a user presses one of the `RecordingTerminators`, or when the application detects silence. In those cases, the action tells your application to put the resulting media file into the specified S3 bucket. The S3 bucket must belong to the same AWS account as the SIP media application. In addition, the action must give `s3:PutObject` and `s3:PutObjectAcl` permission to the Amazon Chime SDK Voice Connector service principal, [Amazon Chime SDK Voice Connector service principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html), `voiceconnector.chime.amazonaws.com`.
 

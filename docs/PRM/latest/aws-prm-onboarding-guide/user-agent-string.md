@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/user
 ---
 
 # User Agent String
-<a name="user-agent-string"></a>
 
 This guide provides step-by-step instructions for AWS Partners to implement User Agent strings for Partner Revenue Measurement revenue attribution using AWS APIs and SDKs.
 

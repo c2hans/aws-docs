@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/us
 The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
 
 # Using JavaScript Promises
-<a name="using-promises"></a>
 
 The `AWS.Request.promise` method provides a way to call a service operation and manage asynchronous flow instead of using callbacks. In Node.js and browser scripts, an `AWS.Request` object is returned when a service operation is called without a callback function. You can call the request's `send` method to make the service call.
 

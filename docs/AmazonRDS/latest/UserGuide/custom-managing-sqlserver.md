@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-managi
 ---
 
 # Managing an Amazon RDS Custom for SQL Server DB instance
-<a name="custom-managing-sqlserver"></a>
 
 Amazon RDS Custom for SQL Server supports a subset of the usual management tasks for Amazon RDS DB instances. Following, you can find instructions for the supported RDS Custom for SQL Server management tasks using the AWS Management Console and the AWS CLI.
 

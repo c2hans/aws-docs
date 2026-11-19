@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Connectivity options
-<a name="connectivity-options"></a>
 
 There are two supported connectivity options for connecting to Teradata VantageCloud Lake:
 + AWS PrivateLink (recommended) – Connect from cloud to cloud. You can use this option to connect your AWS account to VantageCloud Lake.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Add DevOps Agent permissions to the invoker role
-<a name="next-gen-devops-agent-invoker-role"></a>
 
 Resilience Hub connects to your Agent Space by assuming your existing invoker role – the same cross-account role that resource discovery uses. You do *not* create a new role or change its trust policy. You only add the following DevOps Agent (`aidevops`) permissions to it.
 

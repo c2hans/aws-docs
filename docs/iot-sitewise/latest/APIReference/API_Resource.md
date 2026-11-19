@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Res
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
 Contains an AWS IoT SiteWise Monitor resource ID for a portal or project.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTo
 ---
 
 # RouteTollRate
-<a name="API_RouteTollRate"></a>
 
 The toll rate.
 

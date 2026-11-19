@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/references-lega
 ---
 
 # Legacy pages
-<a name="references-legacy-pages"></a>
 
 Legacy reference pages retained for backward compatibility. The content has moved or been superseded.
 

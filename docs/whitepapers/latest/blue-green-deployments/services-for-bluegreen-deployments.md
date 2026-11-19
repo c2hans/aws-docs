@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Services for blue/green deployments
-<a name="services-for-bluegreen-deployments"></a>
 
  AWS provides a number of tools and services to help you automate and streamline your deployments and infrastructure.You can access these tools using the web console, [CLI tools, SDKs, and IDEs.](https://aws.amazon.com/tools/).
 

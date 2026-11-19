@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/create-databases-tables-s
 ---
 
 # Adding databases and tables to the S3 Tables catalog
-<a name="create-databases-tables-s3-catalog"></a>
 
 Ensure that you have the necessary permissions to list and create catalogs, databases, and tables in the Data Catalog in your Region. Ensure that S3 Tables integration is enabled in your AWS account and Region.
 

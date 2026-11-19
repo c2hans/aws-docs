@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/data-entities
 ---
 
 # Configuring or editing an entity in an App Studio app
-<a name="data-entities-edit"></a>
 
 Use the following topics to configure an entity in an App Studio application.
 

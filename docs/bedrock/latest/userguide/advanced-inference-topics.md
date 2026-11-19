@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-infere
 ---
 
 # Advanced inference topics
-<a name="advanced-inference-topics"></a>
 
 **Topics**
 + [Inference request parameters and response fields for foundation models](model-parameters.md)

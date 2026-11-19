@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/clone-model-dis
 ---
 
 # Clone a distillation job
-<a name="clone-model-distillation-job"></a>
 
 You can use the Amazon Bedrock console to clone your distillation job. Clone your distillation job to run multiple jobs with similar settings. Use cloning to try again with a job that you stopped or had an issue. The new job inherits all settings except Service access configuration, any VPC settings, and any Tags.
 

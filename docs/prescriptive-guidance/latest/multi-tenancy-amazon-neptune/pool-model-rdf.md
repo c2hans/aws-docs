@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenan
 ---
 
 # Pool model for RDF
-<a name="pool-model-rdf"></a>
 
 The Resource Description Framework (RDF) has a concept of named graphs, which provides a logical way of separating data. In Amazon Neptune, you have a default named graph and user-defined named graphs. You can create as many named graphs as you want. Collectively, they are called the RDF dataset. All named graphs, default or user-defined, are defined by an Internationalized Resource Identifier(IRI) within the RDF dataset. In Neptune, unless a user declared a named graph when writing data, all [triples](https://www.w3.org/TR/PR-rdf-syntax/#model) are considered part of the default named graph.
 

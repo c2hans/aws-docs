@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # CutoverOptions
-<a name="API_CutoverOptions"></a>
 
 The cutover target and status for a cloned blue/green upgrade.
 

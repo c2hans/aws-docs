@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/datastores-hive-cli.htm
 ---
 
 # Use the AWS CLI with Hive metastores
-<a name="datastores-hive-cli"></a>
 
 You can use `aws athena` CLI commands to manage the Hive metastore data catalogs that you use with Athena. After you have defined one or more catalogs to use with Athena, you can reference those catalogs in your `aws athena` DDL and DML commands.
 

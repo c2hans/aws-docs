@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/nova-reel/overview.htm
 ---
 
 # Amazon Nova Reel
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/nova-reel/images/card-background.jpg)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcop
 ---
 
 # Architecture selection
-<a name="telcoperf01"></a>
 
 |  TELCOPERF01: How do you determine which geographic regions to host your telco infrastructure in?  |
 | --- |

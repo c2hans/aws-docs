@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-managed
 ---
 
 # Managed Domain Lists for Route 53 Global Resolver
-<a name="gr-managed-domain-lists"></a>
 
 Managed Domain Lists contain domain names that are associated with malicious activity or other potential threats. AWS maintains these lists to enable Route 53 Global Resolver customers to check internet-bound DNS queries against them when using DNS Firewall.
 

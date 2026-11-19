@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate Amazon RDS for Oracle to Amazon RDS for PostgreSQL in SSL mode by using AWS DMS
-<a name="migrate-amazon-rds-for-oracle-to-amazon-rds-for-postgresql-in-ssl-mode-by-using-aws-dms"></a>
 
 *Pinesh Singal, Amazon Web Services*
 

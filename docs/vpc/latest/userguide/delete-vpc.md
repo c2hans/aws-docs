@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/delete-vpc.html
 ---
 
 # Delete your VPC
-<a name="delete-vpc"></a>
 
 When you are finished with a VPC, you can delete it.
 

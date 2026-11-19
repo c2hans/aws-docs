@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeGatewayCapabilityConfiguration
-<a name="API_DescribeGatewayCapabilityConfiguration"></a>
 
 Each gateway capability defines data sources for a gateway. This is the namespace of the gateway capability.
 

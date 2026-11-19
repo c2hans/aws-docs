@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Generative AI use cases for operation and maintenance
-<a name="generative-ai-capabilities-ops-maintenance"></a>
 
 After software is deployed, the focus shifts to operation and maintenance. Generative AI can enhance traditional approaches by providing more proactive and efficient system management. AI-powered operations tools continuously monitor system performance and predict potential issues before they affect users. They perform automated root cause analysis when problems occur, which significantly reduces the mean time to resolution. AI also optimizes system performance in near real time. It automatically adjusts configurations based on changing load patterns and user behaviors. For example, an operations team might use an AI assistant to generate predictive maintenance schedules, automatically identify components that are likely to fail, and suggest preemptive actions. The AI could also help with capacity planning by analyzing usage trends and predicting future resource needs with high accuracy.
 

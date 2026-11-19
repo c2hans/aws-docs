@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/scheduled-q
 ---
 
 # Understanding scheduled queries concepts
-<a name="scheduled-queries-concepts"></a>
 
 Before creating scheduled queries, understand these key concepts that affect how your queries run and where results are delivered.
 

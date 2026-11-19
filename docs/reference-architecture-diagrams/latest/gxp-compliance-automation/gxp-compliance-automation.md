@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/g
 ---
 
 # GxP Compliance Automation
-<a name="gxp-compliance-automation"></a>
 
 Publication date: **May 6, 2021 ([Diagram history](#gxp-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-anyw
 ---
 
 # Troubleshoot Amazon ECS Anywhere issues
-<a name="ecs-anywhere-troubleshooting"></a>
 
 Amazon ECS Anywhere provides support for registering an *external instance* such as an on-premises server or virtual machine (VM) to your Amazon ECS cluster. The following are common issues that you might encounter and general troubleshooting recommendations for them.
 

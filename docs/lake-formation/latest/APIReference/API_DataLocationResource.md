@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DataLocationResource
-<a name="API_DataLocationResource"></a>
 
 A structure for a data location object where permissions are granted or revoked.
 

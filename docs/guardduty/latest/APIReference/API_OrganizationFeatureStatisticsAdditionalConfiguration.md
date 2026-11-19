@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationFeatureStatisticsAdditionalConfiguration
-<a name="API_OrganizationFeatureStatisticsAdditionalConfiguration"></a>
 
 Information about the coverage statistic for the additional configuration of the feature.
 

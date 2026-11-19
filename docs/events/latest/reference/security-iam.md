@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/reference/security-iam.htm
 ---
 
 # Identity and Access Management for Bill to AWS
-<a name="security-iam"></a>
 
  Bill to AWS uses AWS Identity and Access Management (IAM) to control access to billing approval actions. You must attach the IAM policy `ReInventTicketApprovalAccess` to the approver's identity before they can view or approve charges.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetG
 ---
 
 # GetGraph
-<a name="API_GetGraph"></a>
 
 Gets information about a specified graph.
 

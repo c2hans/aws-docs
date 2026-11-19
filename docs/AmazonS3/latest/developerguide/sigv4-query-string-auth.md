@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/sigv4-que
 ---
 
 # Authenticating Requests: Using Query Parameters (AWS Signature Version 4)
-<a name="sigv4-query-string-auth"></a>
 
 As described in the authentication overview (see [Authentication Methods](sig-v4-authenticating-requests.md#auth-methods-intro)), you can provide authentication information using query string parameters. Using query parameters to authenticate requests is useful when you want to express a request entirely in a URL. This method is also referred as presigning a URL.
 

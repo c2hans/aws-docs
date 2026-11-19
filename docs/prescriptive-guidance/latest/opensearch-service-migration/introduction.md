@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Migrating to Amazon OpenSearch Service
-<a name="introduction"></a>
 
 *Muhammad Ali, Prashant Agrawal (SSA), Kevin Fallis, Vivek Gautam, Aneri Modi, Bharav Patel, and Brian Presley, Amazon Web Services*
 

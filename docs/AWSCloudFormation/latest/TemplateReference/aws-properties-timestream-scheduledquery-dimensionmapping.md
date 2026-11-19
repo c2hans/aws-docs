@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Timestream::ScheduledQuery DimensionMapping
-<a name="aws-properties-timestream-scheduledquery-dimensionmapping"></a>
 
 This type is used to map column(s) from the query result to a dimension in the destination table.
 

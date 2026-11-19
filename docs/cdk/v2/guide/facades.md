@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/facades.html
 ---
 
 # Facades
-<a name="facades"></a>
 
 Facades are classes that connect a resource with other parts of your application. Each Facade targets one resource type. For example, the class is named `BucketGrants` because it grants access to Amazon S3 buckets. Facades work with both L1 (CloudFormation-level) and L2 (intent-based) constructs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hostname-types.h
 ---
 
 # Hostname types
-<a name="hostname-types"></a>
 
 AWS provides two types of hostnames: **private** and **public**. The following table compares the key differences between private and public hostnames, including how they resolve, how they're configured, and when to use each type.
 

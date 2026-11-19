@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/hosting-wordpress-aml-20
 ---
 
 # Tutorial: Host a WordPress blog on AL2023
-<a name="hosting-wordpress-aml-2023"></a>
 
 The following procedures will help you install, configure, and secure a WordPress blog on your AL2023 instance. This tutorial is a good introduction to using Amazon EC2 in that you have full control over a web server that hosts your WordPress blog, which is not typical with a traditional hosting service.
 

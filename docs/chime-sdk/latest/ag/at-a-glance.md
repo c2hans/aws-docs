@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/at-a-glance.html
 ---
 
 # At a glance
-<a name="at-a-glance"></a>
 
 | Category | Amazon Chime SDK Voice Connector | Amazon Connect Customer |
 | --- | --- | --- |

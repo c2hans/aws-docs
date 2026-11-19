@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCap
 ---
 
 # CreateCapacityReservationCancellationQuote
-<a name="API_CreateCapacityReservationCancellationQuote"></a>
 
 Generates a cancellation quote for a future-dated Capacity Reservation that is within its commitment duration. The quote includes the cancellation terms and a quote ID that you can pass to the `CancelCapacityReservation` action. Cancellation quotes are valid for 24 hours.
 

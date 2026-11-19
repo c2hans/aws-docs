@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OpsEntityItem
-<a name="API_OpsEntityItem"></a>
 
 The OpsData summary.
 

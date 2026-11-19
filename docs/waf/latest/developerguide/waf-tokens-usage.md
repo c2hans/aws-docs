@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-tokens-usa
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # How AWS WAF uses tokens
-<a name="waf-tokens-usage"></a>
 
 This section explains how AWS WAF uses tokens.
 

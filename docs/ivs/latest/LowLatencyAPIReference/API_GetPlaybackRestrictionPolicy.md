@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ge
 ---
 
 # GetPlaybackRestrictionPolicy
-<a name="API_GetPlaybackRestrictionPolicy"></a>
 
 Gets the specified playback restriction policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to get the time zone for a PlaceId
-<a name="how-to-get-timezone-by-place-id"></a>
 
 The GetPlace API allows retrieval of contact information associated with a specific PlaceId, providing you with details such as phone numbers, time zones, and website URLs.
 

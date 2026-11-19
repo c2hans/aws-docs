@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/aggregated-
 ---
 
 # Viewing Aggregators for AWS Config
-<a name="aggregated-view"></a>
 
 You can use the AWS Config console or the AWS CLI to view your aggregators.
 

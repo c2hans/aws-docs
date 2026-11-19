@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/aem-server-c
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Connecting Amazon Q Business to AEM (Server) using the console
-<a name="aem-server-console"></a>
 
 The following procedure outlines how to connect Amazon Q Business to AEM (Server) using the AWS Management Console.
 

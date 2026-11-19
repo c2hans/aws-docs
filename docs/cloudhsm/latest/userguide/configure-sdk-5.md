@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/configure-sdk-
 ---
 
 # AWS CloudHSM Client SDK 5 configure tool
-<a name="configure-sdk-5"></a>
 
 Use the AWS CloudHSM Client SDK 5 configure tool to update client-side configuration files.
 

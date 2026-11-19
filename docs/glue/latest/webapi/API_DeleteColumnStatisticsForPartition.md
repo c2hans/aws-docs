@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteColumnStati
 ---
 
 # DeleteColumnStatisticsForPartition
-<a name="API_DeleteColumnStatisticsForPartition"></a>
 
 Delete the partition column statistics of a column.
 

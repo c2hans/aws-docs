@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/api-revokes
 ---
 
 # RevokeSigningProfile
-<a name="api-revokesigningprofile"></a>
 
 The following Java example shows how to use the [`RevokeSigningProfile`](https://docs.aws.amazon.com/signer/latest/api/API_RevokeSigningProfile.html) operation.
 

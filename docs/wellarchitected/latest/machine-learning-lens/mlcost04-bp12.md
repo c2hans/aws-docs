@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # MLCOST04-BP12 Set up a budget and use resource tagging to track costs
-<a name="mlcost04-bp12"></a>
 
  Setting up budgets and implementing resource tagging for machine learning workloads provides clear visibility into your ML-related expenses and optimizes costs across your organization. By tracking costs effectively, you can make data-driven decisions about resource allocation and identify opportunities for cost optimization.
 

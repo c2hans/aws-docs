@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # AWS policy: SageMakerStudioUserIAMDefaultExecutionPolicy
-<a name="security-iam-awsmanpol-SageMakerStudioUserIAMDefaultExecutionPolicy"></a>
 
 This is the default execution policy for using IAM roles with Amazon SageMaker Unified Studio. This policy grants access to users to access resources. This does not grant access to data resources.
 + Amazon DataZone permissions are required to access DataZone resources such as Project and Asset.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteInt
 ---
 
 # DeleteInternetGateway
-<a name="API_DeleteInternetGateway"></a>
 
 Deletes the specified internet gateway. You must detach the internet gateway from the VPC before you can delete it.
 

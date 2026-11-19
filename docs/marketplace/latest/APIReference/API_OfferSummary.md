@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferSummary
-<a name="API_OfferSummary"></a>
 
 Summarized information about an offer.
 

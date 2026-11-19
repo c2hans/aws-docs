@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListFindin
 ---
 
 # ListFindingAggregations
-<a name="API_ListFindingAggregations"></a>
 
 Lists aggregated finding data for your environment based on specific criteria.
 

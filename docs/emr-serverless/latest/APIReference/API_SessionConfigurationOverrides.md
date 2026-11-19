@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_S
 ---
 
 # SessionConfigurationOverrides
-<a name="API_SessionConfigurationOverrides"></a>
 
 The configuration overrides for a session.
 

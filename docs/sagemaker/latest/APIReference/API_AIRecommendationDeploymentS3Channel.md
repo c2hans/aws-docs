@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIReco
 ---
 
 # AIRecommendationDeploymentS3Channel
-<a name="API_AIRecommendationDeploymentS3Channel"></a>
 
 An Amazon S3 data channel for a recommended deployment configuration, containing model artifacts or optimized model outputs.
 

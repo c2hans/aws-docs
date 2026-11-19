@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Quotas
-<a name="solution-quotas"></a>
 
 ## Scaling limitations
 <a name="scaling-limitations"></a>

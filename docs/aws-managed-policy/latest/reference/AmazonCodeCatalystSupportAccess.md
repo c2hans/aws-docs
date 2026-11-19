@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCodeCatalystSupportAccess
-<a name="AmazonCodeCatalystSupportAccess"></a>
 
 **Description**: Allows Amazon CodeCatalyst to create, update, and resolve AWS Support cases on your behalf.
 

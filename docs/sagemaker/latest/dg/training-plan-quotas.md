@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-plan-quotas
 ---
 
 # View SageMaker training plans quotas using the AWS management console
-<a name="training-plan-quotas"></a>
 
 **Important**
 For pricing information about SageMaker training plans, see the [Amazon SageMaker Pricing](https://aws.amazon.com/sagemaker/ai/pricing/) page. Navigate to the **Amazon SageMaker HyperPod flexible training plans** section under **On-Demand Pricing**. Choose your desired Region to view available instance types and their corresponding prices.

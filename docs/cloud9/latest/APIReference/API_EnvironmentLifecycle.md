@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_Environme
 ---
 
 # EnvironmentLifecycle
-<a name="API_EnvironmentLifecycle"></a>
 
 Information about the current creation or deletion lifecycle state of an AWS Cloud9 development environment.
 

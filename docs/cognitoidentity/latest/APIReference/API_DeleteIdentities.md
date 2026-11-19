@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # DeleteIdentities
-<a name="API_DeleteIdentities"></a>
 
 Deletes identities from an identity pool. You can specify a list of 1-60 identities that you want to delete.
 

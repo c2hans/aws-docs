@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeExtractionDefinition
-<a name="API_DescribeExtractionDefinition"></a>
 
 Describes an extraction definition in the specified Connect Customer instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/restore-phone.html
 ---
 
 # Restoring deleted phone numbers
-<a name="restore-phone"></a>
 
 You can restore deleted phone numbers from the **Deletion queue** for up to 7 days after they are deleted. Restoring a phone number moves it back into your **Inventory**.
 

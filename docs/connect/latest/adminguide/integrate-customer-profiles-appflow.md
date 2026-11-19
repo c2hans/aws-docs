@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/integrate-cust
 ---
 
 # Set up integration for featured applications in Connect Customer
-<a name="integrate-customer-profiles-appflow"></a>
 
 These integrations use Connect Customer featured applications to provide periodic updates to Connect Customer Customer Profiles.
 

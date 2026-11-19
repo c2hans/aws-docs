@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_ML
 ---
 
 # MLInputChannelSummary
-<a name="API_MLInputChannelSummary"></a>
 
 Provides summary information about the ML input channel.
 

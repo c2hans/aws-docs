@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/industries
 ---
 
 # .industries
-<a name="industries"></a>
 
 Used by any business or commercial enterprise that wants to identify as an industry.
 

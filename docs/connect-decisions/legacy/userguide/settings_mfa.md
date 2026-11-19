@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/setti
 ---
 
 # Sustainability settings
-<a name="settings_mfa"></a>
 
 To enhance your account security, you can use multifactor authentication.
 

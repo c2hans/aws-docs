@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_StatisticSet.html
 ---
 
 # StatisticSet
-<a name="API_StatisticSet"></a>
 
  *This data type has been deprecated.*
 

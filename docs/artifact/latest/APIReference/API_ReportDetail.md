@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_ReportD
 ---
 
 # ReportDetail
-<a name="API_ReportDetail"></a>
 
 Full detail for report resource metadata.
 

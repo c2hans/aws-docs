@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_SortCriter
 ---
 
 # SortCriteria
-<a name="API_SortCriteria"></a>
 
 Details about the criteria used to sort finding results.
 

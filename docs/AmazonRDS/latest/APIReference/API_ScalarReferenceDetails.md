@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Scalar
 ---
 
 # ScalarReferenceDetails
-<a name="API_ScalarReferenceDetails"></a>
 
 The metric reference details when the reference is a scalar.
 

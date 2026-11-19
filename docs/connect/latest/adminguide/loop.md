@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/loop.html
 ---
 
 # Flow block in Connect Customer: Loop
-<a name="loop"></a>
 
 This topic defines the flow block for counting the number of times that customers are looped through the **Looping** branch.
 

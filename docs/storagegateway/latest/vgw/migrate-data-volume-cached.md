@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/migrate-data-v
 ---
 
 # Moving cached volumes to a new gateway virtual machine
-<a name="migrate-data-volume-cached"></a>
 
 **To move your cached volumes to a new cached Volume Gateway virtual machine (VM)**
 

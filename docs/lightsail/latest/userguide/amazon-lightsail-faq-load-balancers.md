@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Load balancers
-<a name="amazon-lightsail-faq-load-balancers"></a>
 
 ## What can I do with Lightsail load balancers?
 <a name="what-can-i-do-with-load-balancers"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Secure Windows Server Amazon EC2 instances launched from Lightsail snapshots
-<a name="amazon-lightsail-securing-windows-server-amazon-ec2-instances"></a>
 
 To improve the security of a Windows Server instance in Amazon Elastic Compute Cloud (Amazon EC2) created from an Amazon Lightsail snapshot, we recommend that you change the default administrator password. This removes the association between your Lightsail key pairs and your new Windows Server instance in Amazon EC2.
 

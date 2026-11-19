@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceCurrentRevisionSummary
-<a name="API_ServiceCurrentRevisionSummary"></a>
 
 The summary of the current service revision configuration
 

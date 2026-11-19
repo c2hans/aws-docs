@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # AMS self-service reports dashboards
-<a name="ssr-dashboards"></a>
 
 AMS self-service reports offers two dashboards: [Resource Tagger dashboard](#resource-tagger-dashboard) and [Security Config Rules dashboard](#sec-config-dashboard).
 

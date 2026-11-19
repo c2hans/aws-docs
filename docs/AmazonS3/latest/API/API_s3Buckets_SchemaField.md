@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Schema
 ---
 
 # SchemaField
-<a name="API_s3Buckets_SchemaField"></a>
 
 Contains details about a schema field.
 

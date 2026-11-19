@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Mult
 ---
 
 # MultiRegionProperties
-<a name="API_MultiRegionProperties"></a>
 
 Defines the structure for multi-Region cluster configurations, containing the witness region and linked cluster settings.
 

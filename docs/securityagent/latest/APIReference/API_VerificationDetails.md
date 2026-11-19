@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ve
 ---
 
 # VerificationDetails
-<a name="API_VerificationDetails"></a>
 
 Contains the verification details for a target domain, including the verification method and provider-specific details.
 

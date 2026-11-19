@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_JiraConfi
 ---
 
 # JiraConfiguration
-<a name="API_JiraConfiguration"></a>
 
 Provides the configuration information to connect to Jira as your data source.
 

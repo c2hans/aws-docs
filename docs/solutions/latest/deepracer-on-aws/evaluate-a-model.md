@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/evalua
 ---
 
 # Evaluate a model
-<a name="evaluate-a-model"></a>
 
  **Overview**
 

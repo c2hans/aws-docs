@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_RevokeS
 ---
 
 # RevokeSnapshotAccess
-<a name="API_RevokeSnapshotAccess"></a>
 
 Removes the ability of the specified AWS account to restore the specified snapshot. If the account is currently restoring the snapshot, the restore will run to completion.
 

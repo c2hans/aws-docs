@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-detai
 ---
 
 # Update an evaluation job (Studio)
-<a name="model-registry-details-studio-evaluate-update"></a>
 
 Complete the following steps to update the details of an evaluation job, created externally or with SageMaker AI, associated with your model.
 

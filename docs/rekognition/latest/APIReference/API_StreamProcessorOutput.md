@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Stre
 ---
 
 # StreamProcessorOutput
-<a name="API_StreamProcessorOutput"></a>
 
 Information about the Amazon Kinesis Data Streams stream to which a Amazon Rekognition Video stream processor streams the results of a video analysis. For more information, see [CreateStreamProcessor](API_CreateStreamProcessor.md).
 

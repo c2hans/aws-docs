@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # RedshiftDatabaseCredentials
-<a name="API_RedshiftDatabaseCredentials"></a>
 
 Describes the database credentials for connecting to a database on an Amazon Redshift cluster.
 

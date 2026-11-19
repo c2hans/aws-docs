@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Stateful
 ---
 
 # StatefulRuleGroup
-<a name="API_StatefulRuleGroup"></a>
 
  AWS Network Firewall stateful rule group, used in a [NetworkFirewallPolicyDescription](API_NetworkFirewallPolicyDescription.md).
 

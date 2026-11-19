@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Obser
 ---
 
 # ObservabilityAlarmSummary
-<a name="API_ObservabilityAlarmSummary"></a>
 
 Summary information about a configured observability alarm.
 

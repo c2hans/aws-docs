@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_Networking.h
 ---
 
 # Networking
-<a name="API_Networking"></a>
 
 The networking configuration for the cluster's control plane.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-open
 ---
 
 # Open weight model customization
-<a name="model-customize-open-weight"></a>
 
 This section walks you through the process to get started with open weight model customization.
 

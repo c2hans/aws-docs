@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/tutorial-efa-e
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Creating a cluster with an EFA-enabled FSx Lustre
-<a name="tutorial-efa-enabled-fsx-lustre"></a>
 
 In this tutorial, you will create a cluster that uses an EFA-enabled FSx Lustre file system as shared storage. Using an FSx Lustre file system with EFA enabled can provide a boost in performance up to 8x. To verify if an EFA-enabled file system is what you need, look at [Working with EFA-enabled file systems](https://docs.aws.amazon.com/fsx/latest/LustreGuide/efa-file-systems.html) in the *FSx for Lustre User Guide*.
 

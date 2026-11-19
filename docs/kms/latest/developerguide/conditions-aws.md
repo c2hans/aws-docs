@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/conditions-aws
 ---
 
 # AWS global condition keys
-<a name="conditions-aws"></a>
 
 AWS defines [global condition keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#AvailableKeys), a set of policy conditions keys for all AWS services that use IAM for access control. AWS KMS supports all global condition keys. You can use them in AWS KMS key policies and IAM policies.
 

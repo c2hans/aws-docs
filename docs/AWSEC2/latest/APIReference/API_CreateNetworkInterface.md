@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNet
 ---
 
 # CreateNetworkInterface
-<a name="API_CreateNetworkInterface"></a>
 
 Creates a network interface in the specified subnet.
 

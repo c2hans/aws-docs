@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/se
 ---
 
 # Set up the AWS SDK for Kotlin
-<a name="setup"></a>
 
 To make requests to AWS services using the AWS SDK for Kotlin, you need the following:
 + The ability to sign-in to the AWS access portal

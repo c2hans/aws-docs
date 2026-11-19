@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Searc
 ---
 
 # SearchDashboards
-<a name="API_SearchDashboards"></a>
 
 Searches for dashboards that belong to a user.
 

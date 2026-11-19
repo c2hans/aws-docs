@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # HandOffTime
-<a name="API_SSMContacts_HandOffTime"></a>
 
 Details about when an on-call rotation shift begins or ends.
 

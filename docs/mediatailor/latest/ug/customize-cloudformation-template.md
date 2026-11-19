@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/customize-cloudfor
 ---
 
 # Customize the CloudFormation template for CDN and MediaTailor integrations
-<a name="customize-cloudformation-template"></a>
 
 AWS Elemental MediaTailor template customization allows broadcast professionals to adapt the AWS CloudFormation template to fit specific workflow requirements. Although the basic template works for many scenarios, these customizations can help you address more complex needs.
 

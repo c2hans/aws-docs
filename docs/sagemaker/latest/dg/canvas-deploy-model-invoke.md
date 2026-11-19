@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-deploy-model-
 ---
 
 # Invoke your endpoint
-<a name="canvas-deploy-model-invoke"></a>
 
 **Note**
 We recommend that you [test your model deployment in Amazon SageMaker Canvas](canvas-deploy-model-test.md) before invoking a SageMaker AI endpoint programmatically.

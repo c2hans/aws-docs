@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_SVL_STATEMENTTEXT.h
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # SVL\_STATEMENTTEXT
-<a name="r_SVL_STATEMENTTEXT"></a>
 
 Use the SVL\_STATEMENTTEXT view to get a complete record of all of the SQL commands that have been run on the system.
 

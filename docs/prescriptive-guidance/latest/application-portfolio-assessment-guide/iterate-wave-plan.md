@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Iterating the wave plan
-<a name="iterate-wave-plan"></a>
 
 As the migration program moves forward and more waves are migrated, it is key to evolve the migration wave plan based on lessons learned and changing business priorities. In particular, for long-running migration programs, it is important to reassess business drivers and organizational change, and to ensure that the migration wave plan is still valid.
 

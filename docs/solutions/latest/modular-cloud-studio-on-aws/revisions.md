@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 |  **Date**  |  **Change**  |
 | --- | --- |

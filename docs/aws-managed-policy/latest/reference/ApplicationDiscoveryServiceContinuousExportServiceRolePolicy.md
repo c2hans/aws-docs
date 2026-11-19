@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Appl
 ---
 
 # ApplicationDiscoveryServiceContinuousExportServiceRolePolicy
-<a name="ApplicationDiscoveryServiceContinuousExportServiceRolePolicy"></a>
 
 **Description**: Enables access to AWS services and Resources used or managed by Application Discovery Service Continuous Export feature
 

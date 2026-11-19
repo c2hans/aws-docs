@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Distr
 ---
 
 # DistributionTenantSummary
-<a name="API_DistributionTenantSummary"></a>
 
 A summary of the information about a distribution tenant.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListS
 ---
 
 # ListSpaces
-<a name="API_ListSpaces"></a>
 
 Lists all Amazon QuickSight spaces in an AWS account.
 

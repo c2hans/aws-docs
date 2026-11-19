@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Image
 ---
 
 # ImageBuilder
-<a name="API_ImageBuilder"></a>
 
 Describes a virtual machine that is used to create an image.
 

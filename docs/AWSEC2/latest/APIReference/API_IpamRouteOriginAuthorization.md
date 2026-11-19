@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamRoute
 ---
 
 # IpamRouteOriginAuthorization
-<a name="API_IpamRouteOriginAuthorization"></a>
 
 Contains information about a Route Origin Authorization (ROA) published in the RPKI. A ROA cryptographically attests that a specific ASN is authorized to originate a specific IP address prefix.
 

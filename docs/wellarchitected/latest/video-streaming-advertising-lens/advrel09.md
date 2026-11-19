@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Prebid Server resilience
-<a name="advrel09"></a>
 
  Prebid Server acts as the server-side header bidding orchestrator, sending bid requests to multiple SSPs and DSPs simultaneously. A failure in one adapter should not cascade to other demand partners or halt publisher monetization. Design Prebid Server deployments to maintain auction capability even when individual adapters, Availability Zones, or demand partners become unavailable.
 

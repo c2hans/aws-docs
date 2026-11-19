@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # emr-6.9.0-20221108
-<a name="emr-eks-6.9.0-20221108"></a>
 
 **Release notes**: `emr-6.9.0-20221108` was released on December 08, 2022. This is the initial release of Amazon EMR 6.9.0.
 

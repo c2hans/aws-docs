@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # BatchGetEventError
-<a name="API_BatchGetEventError"></a>
 
 A requested event that the call didn't return, and the reason.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-moni
 ---
 
 # Advanced logging with Amazon Braket
-<a name="braket-monitor-logging"></a>
 
 You can record the whole task-processing process using a logger. These advanced logging techniques allow you to see the background polling and create a record for later debugging.
 

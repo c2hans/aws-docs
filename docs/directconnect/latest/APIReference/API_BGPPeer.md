@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_BG
 ---
 
 # BGPPeer
-<a name="API_BGPPeer"></a>
 
 Information about a BGP peer.
 

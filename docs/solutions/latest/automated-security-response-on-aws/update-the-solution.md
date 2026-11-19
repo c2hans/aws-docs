@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Update the solution
-<a name="update-the-solution"></a>
 
 **Important**
  **Upgrading to v4.0.0 or later:** The solution preserves your existing auto-remediation settings across the upgrade. If you are upgrading from **v2.x**, the solution automatically migrates the auto-remediation settings from your v2 EventBridge rules to the new DynamoDB-backed configuration during the stack update. Controls that you had auto-remediation enabled for in v2 stay enabled in v4, and controls without a v3\+ equivalent are skipped and listed in the migration AWS Lambda function’s Amazon CloudWatch logs. If you are upgrading from **v3.x**, your auto-remediation settings already reside in the DynamoDB-backed configuration and carry over unchanged, so no migration is required. If the migration encounters a per-control failure or aborts before any controls are written, the `SO0111-ASR-MigrationAutoRemediation` Lambda function publishes an Amazon SNS notification to the existing `SO0111-ASR_Topic`. **To receive that notification, you must have a confirmed subscription on `SO0111-ASR_Topic` before starting the v4 stack update.** Refer to [Upgrading from v2.x to v4.0.0 or later](#upgrading-from-v2-to-v4).

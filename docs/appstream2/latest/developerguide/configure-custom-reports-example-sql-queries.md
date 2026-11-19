@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/configu
 ---
 
 # Working with Athena Queries
-<a name="configure-custom-reports-example-sql-queries"></a>
 
 This section provides SQL queries that you can run in Athena to analyze the usage reports data in your Amazon S3 bucket.
 

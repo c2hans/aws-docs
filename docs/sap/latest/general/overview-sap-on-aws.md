@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/overview-sap-on-aws.h
 ---
 
 # SAP on AWS Overview
-<a name="overview-sap-on-aws"></a>
 
  AWS has been working with SAP since 2011 to help customers deploy and migrate their SAP applications to AWS, and SAP supports running the vast majority of available SAP applications on AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-ap
 ---
 
 # Custom domain names for HTTP APIs in API Gateway
-<a name="http-api-custom-domain-names"></a>
 
 *Custom domain names* are simpler and more intuitive URLs that you can provide to your API users.
 

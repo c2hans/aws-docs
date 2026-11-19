@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Moving to a unified experience
-<a name="moving-to-a-unified-experience"></a>
 
  To address the needs of this classic software dilemma, organizations turn to a model that allows them to create a single, unified experience that allows customers to be managed and operated collectively.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Deployment troubleshooting
-<a name="deployment-troubleshooting"></a>
 
 ## Problem: MSK cluster deployment timeout
 <a name="problem-msk-deployment-timeout"></a>

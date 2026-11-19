@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/logging-using-cloudtr
 ---
 
 # Logging Amazon Textract API Calls with AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Amazon Textract is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Amazon Textract. CloudTrail captures all API calls for Amazon Textract as events. The calls captured include calls from the Amazon Textract console and code calls to the Amazon Textract API operations.
 

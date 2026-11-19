@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicColumn
-<a name="API_TopicColumn"></a>
 
 Represents a column in a dataset.
 

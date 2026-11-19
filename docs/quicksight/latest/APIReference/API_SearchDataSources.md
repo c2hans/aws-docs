@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Searc
 ---
 
 # SearchDataSources
-<a name="API_SearchDataSources"></a>
 
 Use the `SearchDataSources` operation to search for data sources that belong to an account.
 

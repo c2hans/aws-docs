@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # ListTemplateGroupAccessControlEntries
-<a name="API_ListTemplateGroupAccessControlEntries"></a>
 
 Lists group access control entries you created.
 

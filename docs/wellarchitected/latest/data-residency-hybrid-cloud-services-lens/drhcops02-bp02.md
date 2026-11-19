@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCOPS02-BP02 Consider AWS Local Zones for low-latency access from specific geographic locations while evaluating data residency requirements around latency and access from specific geographic locations
-<a name="drhcops02-bp02"></a>
 
  Consider AWS Local Zones for applications with low latency requirements and data residency requirements.
 

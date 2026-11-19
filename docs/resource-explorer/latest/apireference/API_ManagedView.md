@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # ManagedView
-<a name="API_ManagedView"></a>
 
 An AWS-managed view is how other AWS services can access resource information indexed by Resource Explorer for your AWS account or organization with your consent. For more information, see [Managed views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/aws-managed-views.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHealt
 ---
 
 # GetHealthCheckLastFailureReason
-<a name="API_GetHealthCheckLastFailureReason"></a>
 
 Gets the reason that a specified health check failed most recently.
 

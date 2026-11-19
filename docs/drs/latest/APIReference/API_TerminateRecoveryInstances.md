@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_TerminateRec
 ---
 
 # TerminateRecoveryInstances
-<a name="API_TerminateRecoveryInstances"></a>
 
 Initiates a Job for terminating the EC2 resources associated with the specified Recovery Instances, and then will delete the Recovery Instances from the Elastic Disaster Recovery service.
 

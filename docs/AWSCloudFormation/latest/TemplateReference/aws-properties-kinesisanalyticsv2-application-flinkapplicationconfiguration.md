@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application FlinkApplicationConfiguration
-<a name="aws-properties-kinesisanalyticsv2-application-flinkapplicationconfiguration"></a>
 
 Describes configuration parameters for a Managed Service for Apache Flink application or a Studio notebook.
 

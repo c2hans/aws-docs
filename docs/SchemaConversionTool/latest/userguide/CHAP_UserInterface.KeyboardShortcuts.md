@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Using Keyboard Shortcuts in the AWS Schema Conversion Tool
-<a name="CHAP_UserInterface.KeyboardShortcuts"></a>
 
 The following are the keyboard shortcuts that you can use with AWS SCT.
 

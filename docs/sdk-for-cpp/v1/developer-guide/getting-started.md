@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/getting-s
 ---
 
 # Getting started with the AWS SDK for C\+\+
-<a name="getting-started"></a>
 
 AWS SDK for C\+\+ is a modularized, cross-platform, open-source library you can use to connect to Amazon Web Services.
 

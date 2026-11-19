@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeScheduledActions
-<a name="API_DescribeScheduledActions"></a>
 
 Describes properties of scheduled actions.
 
@@ -28,7 +27,7 @@ Type: Array of [ScheduledActionFilter](API_ScheduledActionFilter.md) objects
 Required: No
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeScheduledActions](#API_DescribeScheduledActions) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeScheduledActions](API_DescribeScheduledActions.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 Required: No
@@ -63,7 +62,7 @@ Required: No
 The following elements are returned by the service.
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeScheduledActions](#API_DescribeScheduledActions) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeScheduledActions](API_DescribeScheduledActions.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 

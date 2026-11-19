@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-open
 ---
 
 # What OpenQASM features does Braket support?
-<a name="braket-openqasm-supported-features"></a>
 
 The following section lists the OpenQASM 3.0 data types, statements, and pragma instructions supported by Braket.
 

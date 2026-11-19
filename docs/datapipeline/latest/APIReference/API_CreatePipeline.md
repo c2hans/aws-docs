@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Cre
 ---
 
 # CreatePipeline
-<a name="API_CreatePipeline"></a>
 
 Creates a new, empty pipeline. Use [PutPipelineDefinition](API_PutPipelineDefinition.md) to populate the pipeline.
 

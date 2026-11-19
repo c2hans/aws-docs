@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/intercom-new-account-crea
 ---
 
 # Creating a new Intercom account and configuring the client app
-<a name="intercom-new-account-creation"></a>
 
 **Creating a Intercom account**
 

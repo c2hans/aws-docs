@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # GetDataSource
-<a name="API_GetDataSource"></a>
 
 Returns a `DataSource` that includes metadata and data file information, as well as the current status of the `DataSource`.
 

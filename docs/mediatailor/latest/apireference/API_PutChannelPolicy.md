@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PutC
 ---
 
 # PutChannelPolicy
-<a name="API_PutChannelPolicy"></a>
 
 Creates an IAM policy for the channel. IAM policies are used to control access to your channel.
 

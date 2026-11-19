@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListSu
 ---
 
 # ListSubscribedWorkteams
-<a name="API_ListSubscribedWorkteams"></a>
 
 Gets a list of the work teams that you are subscribed to in the AWS Marketplace. The list may be empty if no work team satisfies the filter specified in the `NameContains` parameter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Ge
 ---
 
 # GetImageFrame
-<a name="API_GetImageFrame"></a>
 
 Get an image frame (pixel data) for an image set.
 

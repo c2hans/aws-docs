@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-example-most-dow
 ---
 
 # Example for an HTTP or HTTPS server
-<a name="hls-example-most-downstreamsystems"></a>
 
 This example shows how to set up the destination fields if the downstream system is an HTTPS server that uses basic PUT.
 

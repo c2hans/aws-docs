@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Create a DynamoDB table with warm throughput setting using an AWS SDK
-<a name="example_dynamodb_CreateTableWarmThroughput_section"></a>
 
 The following code examples show how to create a table with warm throughput enabled.
 

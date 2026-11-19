@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Evaluate
 ---
 
 # EvaluateCodeErrorDetail
-<a name="API_EvaluateCodeErrorDetail"></a>
 
 Contains the list of errors from a code evaluation response.
 

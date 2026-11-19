@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_C
 ---
 
 # CopyProduct
-<a name="API_CopyProduct"></a>
 
 Copies the specified source product to the specified target product or a new product.
 

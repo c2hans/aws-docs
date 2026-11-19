@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-arrlen.
 ---
 
 # JSON.ARRLEN
-<a name="json-arrlen"></a>
 
 Gets the length of the array values at the path.
 

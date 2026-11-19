@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_X12InboundE
 ---
 
 # X12InboundEdiOptions
-<a name="API_X12InboundEdiOptions"></a>
 
 Contains options specific to processing inbound X12 EDI files.
 

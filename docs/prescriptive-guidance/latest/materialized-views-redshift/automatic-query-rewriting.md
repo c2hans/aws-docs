@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/materialize
 ---
 
 # Automatic query rewriting
-<a name="automatic-query-rewriting"></a>
 
 Amazon Redshift can automatically rewrite SQL queries that don't explicitly reference existing materialized views that are used for performance improvements. Directly querying a materialized view reduces the query processing time, but the query statement must be modified. If you use materialized views to accelerate queries, it's important to consider how to systematically and automatically use materialized views to respond to queries. You can use transparent rewriting to add or delete materialized views in the same way as an index, without affecting existing SQL statements. Amazon Redshift uses only up-to-date materialized views when it automatically rewrites queries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleExportJobRefreshScheduleOverrideProperties
-<a name="API_AssetBundleExportJobRefreshScheduleOverrideProperties"></a>
 
 Controls how a specific `RefreshSchedule` resource is parameterized in the returned CloudFormation template.
 

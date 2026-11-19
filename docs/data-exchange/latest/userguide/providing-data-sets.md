@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/providing
 ---
 
 # Providing AWS Data Exchange data products on AWS Marketplace
-<a name="providing-data-sets"></a>
 
 At a high level, this is how to list AWS Data Exchange data products on AWS Marketplace:
 

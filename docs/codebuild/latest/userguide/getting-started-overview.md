@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/getting-start
 ---
 
 # Getting started with CodeBuild
-<a name="getting-started-overview"></a>
 
 In the following tutorials, you use AWS CodeBuild to build a collection of sample source code input files into a deployable version of the source code.
 

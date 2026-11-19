@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/file-group-with-f
 ---
 
 # File group with a frame capture output
-<a name="file-group-with-frame-capture-output"></a>
 
 This guide provides an Amazon EventBridge example event for a job with a `COMPLETE` status. It also shows output file path information for a file group with a frame capture output.
 

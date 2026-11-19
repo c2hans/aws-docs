@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/basic-policy-v
 ---
 
 # Basic AWS IoT Core policy variables
-<a name="basic-policy-variables"></a>
 
 AWS IoT Core defines the following basic policy variables:
 + `aws:SourceIp`: The IP address of the client connected to the AWS IoT Core message broker.

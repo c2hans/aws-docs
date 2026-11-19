@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Example
 ---
 
 # Example EXCEPT query
-<a name="Example_EXCEPT_query"></a>
 
 The CATEGORY table in the database contains the following 11 rows:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetGatewayRule
-<a name="API_GetGatewayRule"></a>
 
 Retrieves detailed information about a specific gateway rule.
 

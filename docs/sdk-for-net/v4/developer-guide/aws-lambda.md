@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Using AWS Lambda for compute service
-<a name="aws-lambda"></a>
 
 The AWS SDK for .NET supports AWS Lambda, which lets you run code without provisioning or managing servers. For more information, see the [AWS Lambda product page](https://aws.amazon.com/lambda/) and the [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/), particularly the section for [Working with C\#](https://docs.aws.amazon.com/lambda/latest/dg/lambda-csharp.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Recen
 ---
 
 # RecentSnapshotsConfigurations
-<a name="API_RecentSnapshotsConfigurations"></a>
 
 The recent snapshots configuration for an embedded Quick Sight dashboard.
 

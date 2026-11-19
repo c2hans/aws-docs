@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mc
 ---
 
 # Deploy real-time coding security validation by using an MCP server with Kiro
-<a name="mcp-security-scanner-kiro"></a>
 
 *Ivan Girardi and Iker Reina Fuente, Amazon Web Services*
 

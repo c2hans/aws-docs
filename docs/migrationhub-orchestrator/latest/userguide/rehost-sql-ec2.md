@@ -5,12 +5,11 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/usergui
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Rehost SQL Server on Amazon EC2 template
-<a name="rehost-sql-ec2"></a>
 
 With **Rehost SQL server on Amazon EC2** template, you can rehost your SQL Server databases on an instance to Amazon EC2 using automated SQL Server backup and restore. You can also migrate databases that are encrypted with transparent data encryption (TDE). This template migrates User database items, Certificates, Logins and Agent Jobs that are associated with your SQL Server.
 
 **Topics**
-+ [Prerequisites](#rehost-sql-ec2)
++ [Prerequisites](rehost-sql-ec2.md)
 + [Creating the migration workflow](#w2aac16c15b9)
 + [Running the migration workflow](#w2aac16c15c11)
 + [FAQ](#w2aac16c15c13)

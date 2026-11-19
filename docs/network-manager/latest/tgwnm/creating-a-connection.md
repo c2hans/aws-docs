@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/creating-a-
 ---
 
 # Create a connection using AWS Network Manager
-<a name="creating-a-connection"></a>
 
 Create a connection between two existing devices in your global network.
 

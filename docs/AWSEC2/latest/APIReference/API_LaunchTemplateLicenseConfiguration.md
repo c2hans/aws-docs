@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateLicenseConfiguration
-<a name="API_LaunchTemplateLicenseConfiguration"></a>
 
 Describes a license configuration.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/userguide/chat.h
 AWS Systems Manager Incident Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Systems Manager Incident Manager availability change](https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-manager-availability-change.html).
 
 # Creating and integrating chat channels for responders in Incident Manager
-<a name="chat"></a>
 
 Incident Manager, a tool in AWS Systems Manager, gives incident responders the ability to communicate directly through *chat channels* during an incident. A *chat channel* is a chat room that you set up in [Amazon Q Developer in chat applications](https://docs.aws.amazon.com/chatbot/latest/adminguide/). You then connect this channel to a response plan in Incident Manager.
 

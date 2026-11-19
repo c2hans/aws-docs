@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_IamRole.html
 ---
 
 # IamRole
-<a name="API_IamRole"></a>
 
 Information about an AWS Identity and Access Management (IAM) service role associated with a resource.
 

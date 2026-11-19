@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/context-sto
 ---
 
 # Context sharing with security services
-<a name="context-stores"></a>
 
 Context sharing with security services lets you use Amazon Virtual Private Clouds (VPCs), subnets, security groups, and transit gateway attachments alongside IP addresses in policies enforced by security services such as firewalls. AWS Transit Gateway adds this resource context to traffic sent to the security service, which resolves the context and enforces your policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # BatchDeleteError
-<a name="API_BatchDeleteError"></a>
 
 Represents an error that occurred when attempting to delete a configuration.
 

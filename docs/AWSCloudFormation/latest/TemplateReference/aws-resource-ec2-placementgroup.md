@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::PlacementGroup
-<a name="aws-resource-ec2-placementgroup"></a>
 
 Specifies a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.
 

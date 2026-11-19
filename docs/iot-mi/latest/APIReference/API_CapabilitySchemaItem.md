@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Capabilit
 ---
 
 # CapabilitySchemaItem
-<a name="API_CapabilitySchemaItem"></a>
 
 Structure representing a capability schema item that defines the functionality and features supported by a managed thing.
 

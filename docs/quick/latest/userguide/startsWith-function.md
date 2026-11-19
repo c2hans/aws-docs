@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/startsWith-functi
 ---
 
 # startsWith
-<a name="startsWith-function"></a>
 
 `startsWith` evaluates if the expression starts with a substring that you specify. If the expression starts with the substring, `startsWith` returns true, and otherwise it returns false.
 

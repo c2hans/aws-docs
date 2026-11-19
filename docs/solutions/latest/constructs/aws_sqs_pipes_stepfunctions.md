@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_sqs_pipe
 ---
 
 # aws-sqs-pipes-stepfunctions
-<a name="aws_sqs_pipes_stepfunctions"></a>
 
 ![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
 

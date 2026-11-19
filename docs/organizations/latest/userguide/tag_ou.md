@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/tag_ou.ht
 ---
 
 # Tagging an organizational unit (OU) with AWS Organizations
-<a name="tag_ou"></a>
 
 When you sign in to your organization's management account, you can add or remove the tags attached to an OU. To do this, complete the following steps.
 

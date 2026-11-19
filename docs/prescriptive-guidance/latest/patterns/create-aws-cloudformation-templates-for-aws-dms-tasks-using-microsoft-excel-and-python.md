@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create AWS CloudFormation templates for AWS DMS tasks using Microsoft Excel and Python
-<a name="create-aws-cloudformation-templates-for-aws-dms-tasks-using-microsoft-excel-and-python"></a>
 
 *Venkata Naveen Koppula, Amazon Web Services*
 

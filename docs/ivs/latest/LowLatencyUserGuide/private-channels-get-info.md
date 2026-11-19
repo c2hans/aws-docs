@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/private-c
 ---
 
 # Get Information about IVS Playback Keys
-<a name="private-channels-get-info"></a>
 
 Amazon IVS customers can get information about their playback key resources. It is important to note that the associated private key will not be available, even in the case that the playback key was created by Amazon IVS via the console.
 

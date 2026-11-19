@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Proces
 ---
 
 # ProcessingInstancePreference
-<a name="API_ProcessingInstancePreference"></a>
 
 A candidate instance type preference in a processing `InstancePreferences` list.
 

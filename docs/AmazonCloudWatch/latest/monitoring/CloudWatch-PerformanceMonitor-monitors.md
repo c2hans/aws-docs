@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Create and work with monitors
-<a name="CloudWatch-PerformanceMonitor-monitors"></a>
 
 This section describes how to create, edit, and delete monitors, and how to manage your scope.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Publishing events to a Custom Event Bus
-<a name="eb-custom-bus-publish"></a>
 
 You publish events to a Custom Event Bus with one of two API operations, `PutEvents` or `PutRawEvents`. The operation that you choose fixes the shape of the delivered event, and that shape determines how you write every filter, transformer, and target parameter for the bus. Choose before you write your first subscriber. For the two shapes, see [Event structure: data, metadata, and system metadata](eb-custom-bus-addressing.md).
 

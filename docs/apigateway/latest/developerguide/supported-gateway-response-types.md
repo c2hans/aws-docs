@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/support
 ---
 
 # Gateway response types for API Gateway
-<a name="supported-gateway-response-types"></a>
 
  API Gateway exposes the following gateway responses for customization by API developers.
 

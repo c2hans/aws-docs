@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/s
 ---
 
 # SAP system authentication on AWS
-<a name="system-authentication"></a>
 
 Before an SAP system can make calls to AWS on behalf of SAP users, the SAP system must authenticate itself to AWS. AWS SDK for SAP ABAP supports the following three base authentication methods that are selected in the SDK profile settings in `IMG`.
 

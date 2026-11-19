@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chime-requirements.html
 ---
 
 # 1. Know the system requirements
-<a name="chime-requirements"></a>
 
 Before you set up Amazon Chime, first verify that your computer or mobile device meets the following requirements.
 

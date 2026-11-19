@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/highchart.html
 ---
 
 # Using Highcharts
-<a name="highchart"></a>
 
 Use Highcharts visuals to create custom chart types and visuals that use the [Highcharts Core library](https://www.highcharts.com/blog/products/highcharts/). Highcharts visuals provide Quick authors direct access to the [Highcharts API](https://api.highcharts.com/highcharts/).
 

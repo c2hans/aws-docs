@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ModifyVnfInf
 ---
 
 # ModifyVnfInfoMetadata
-<a name="API_ModifyVnfInfoMetadata"></a>
 
 Metadata related to the configuration properties used during update of a specific network function in a network instance.
 

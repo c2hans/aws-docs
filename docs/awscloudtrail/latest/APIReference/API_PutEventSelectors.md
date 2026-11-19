@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Pu
 ---
 
 # PutEventSelectors
-<a name="API_PutEventSelectors"></a>
 
 Configures event selectors (also referred to as *basic event selectors*) or advanced event selectors for your trail. You can use either `AdvancedEventSelectors` or `EventSelectors`, but not both. If you apply `AdvancedEventSelectors` to a trail, any existing `EventSelectors` are overwritten.
 

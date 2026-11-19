@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-p
 ---
 
 # Setting up an agile program to accelerate cloud migrations
-<a name="introduction"></a>
 
 *Ashish Ameta, Amazon Web Services*
 

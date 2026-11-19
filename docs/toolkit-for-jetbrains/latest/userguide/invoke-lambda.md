@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/i
 ---
 
 # Running (invoking) or debugging the local version of an AWS Lambda function by using the AWS Toolkit for JetBrains
-<a name="invoke-lambda"></a>
 
 To complete this procedure, you must create the AWS Lambda function that you want to run (invoke) or debug, if you have not created it already.
 **Note**

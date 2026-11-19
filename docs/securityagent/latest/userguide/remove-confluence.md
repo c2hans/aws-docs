@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/remove-co
 ---
 
 # Remove a Confluence integration
-<a name="remove-confluence"></a>
 
 Remove a Confluence integration when you no longer need AWS Security Agent to access documentation from a specific Confluence site.
 

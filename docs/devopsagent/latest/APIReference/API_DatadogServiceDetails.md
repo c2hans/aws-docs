@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Data
 ---
 
 # DatadogServiceDetails
-<a name="API_DatadogServiceDetails"></a>
 
 Complete service details for Datadog MCP server integration.
 

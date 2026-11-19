@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # TrackingFilterGeometry
-<a name="API_WaypointTracking_TrackingFilterGeometry"></a>
 
 The geometry used to filter device positions.
 

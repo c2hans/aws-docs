@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeRepl
 ---
 
 # DescribeReplicationTasks
-<a name="API_DescribeReplicationTasks"></a>
 
 Returns information about replication tasks for your account in the current region.
 

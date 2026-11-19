@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_GetMicrovm
 ---
 
 # GetMicrovmImageVersion
-<a name="API_GetMicrovmImageVersion"></a>
 
 Retrieves the details of a specific version of a MicroVM image, including its configuration, state, and build information.
 

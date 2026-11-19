@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/delete-records.htm
 ---
 
 # Deleting users and their data with a data deletion job
-<a name="delete-records"></a>
 
  After you import data, you can delete users and their data, including their metadata and interactions data, from a dataset group. You might delete user data as part of a compliance program, or to address user deletion requests, or to keep your data current as your user base changes.
 

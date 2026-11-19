@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_InitialRes
 ---
 
 # InitialResponseSetting
-<a name="API_InitialResponseSetting"></a>
 
 Configuration setting for a response sent to the user before Amazon Lex starts eliciting slots.
 

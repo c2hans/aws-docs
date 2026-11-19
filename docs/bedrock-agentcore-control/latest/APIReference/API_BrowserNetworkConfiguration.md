@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # BrowserNetworkConfiguration
-<a name="API_BrowserNetworkConfiguration"></a>
 
 The network configuration for a browser. This structure defines how the browser connects to the network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/reschedule-meeting.html
 ---
 
 # Rescheduling a meeting when the host leaves
-<a name="reschedule-meeting"></a>
 
 When meeting hosts leave their organizations, an administrator or a system such as Active Directory suspends their accounts and their meetings become inactive.
 

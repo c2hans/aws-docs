@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/elink-setup-device.h
 ---
 
 # Deploying the Link hardware
-<a name="elink-setup-device"></a>
 
 You must deploy the Link device into the AWS cloud.
 

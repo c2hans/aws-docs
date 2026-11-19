@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/beanstalk-clu
 ---
 
 # Permissions for Beanstalk Cluster
-<a name="beanstalk-cluster-permissions"></a>
 
 A Beanstalk Cluster environment does not use the Amazon Elastic Compute Cloud (Amazon EC2) instance profile from Beanstalk Standard. You provide the IAM roles that Amazon EKS requires for its cluster and nodes, and the role that Elastic Beanstalk uses to publish the environment's metrics, logs, and traces. You can optionally provide an application role for the running application. Elastic Beanstalk uses a service-linked role for its own operation of the environment.
 

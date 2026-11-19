@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetRelationalDatabaseLogStreams
-<a name="API_GetRelationalDatabaseLogStreams"></a>
 
 Returns a list of available log streams for a specific database in Amazon Lightsail.
 

@@ -2,17 +2,16 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/cases-rules-integration-onboarding.html
 ---
 
-# Allow Connect Customer Cases to send updates to conversational analytics rules
-<a name="cases-rules-integration-onboarding"></a>
+# Allow Connect Customer Cases to send updates to conversational analytics rules using the CLI
 
 **Note**
-To perform the instructions in this procedure, you need to have developer skills, or be experienced with Connect Customer CLI.
+This guide walks through adding the conversational analytics rules integration via the CLI. For a simpler configuration experience covering all current and future case fields and related item content, see [Enable Cases integrations](enable-cases.md#configure-cases-integrations).
 
 Complete this one-time procedure so your users can set up rules that run when a case is created or updated.
 
 1. Verify Connect Customer Cases is [enabled](enable-cases.md) for your Connect Customer instance.
 
-1. Complete the steps to enable Connect Customer Cases event streams. For more information see [Set up Connect Customer Cases event streams](case-event-streams-enable.md). Note the following changes to the procedure:
+1. Complete the steps to enable Connect Customer Cases event streams. For more information see [Set up Connect Customer Cases event streams using the CLI](case-event-streams-enable.md). Note the following changes to the procedure:
 
    1. You can skip the part that asks you to create a SQS queue, as it is not required.
 

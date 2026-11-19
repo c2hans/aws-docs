@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/monit
 ---
 
 # Logging AWS Resource Explorer API calls using AWS CloudTrail
-<a name="monitoring-cloudtrail"></a>
 
 AWS Resource Explorer is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Resource Explorer. CloudTrail captures all API calls for Resource Explorer as events. The calls captured include calls from the Resource Explorer console and code calls to the Resource Explorer API operations.
 

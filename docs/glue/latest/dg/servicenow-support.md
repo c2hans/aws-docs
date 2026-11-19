@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/servicenow-support.html
 ---
 
 # AWS Glue support for ServiceNow
-<a name="servicenow-support"></a>
 
 AWS Glue supports ServiceNow as follows:
 

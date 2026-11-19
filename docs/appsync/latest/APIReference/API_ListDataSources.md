@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListData
 ---
 
 # ListDataSources
-<a name="API_ListDataSources"></a>
 
 Lists the data sources for a given API.
 

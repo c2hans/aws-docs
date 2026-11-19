@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/initia
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Initial network configuration
-<a name="initial-network-configuration"></a>
 
 Once the **bot-enterprise** container is running and have a working deployment of Wickr Enterprise you can begin adding a bot user and completing the setup process. Setup is comprised of four steps:
 

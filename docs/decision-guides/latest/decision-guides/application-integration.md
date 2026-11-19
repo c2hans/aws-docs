@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/a
 ---
 
 # Serverless & Application Integration
-<a name="application-integration"></a>
 
 The following decision guides help you choose AWS serverless services and application integration services for queues, events, and workflows.
 

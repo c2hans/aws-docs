@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_access
 ---
 
 # Troubleshoot access denied error messages with authorization ID
-<a name="troubleshoot_access-denied-authorization-id"></a>
 
 ## Overview
 <a name="access-troubleshooter-overview"></a>
@@ -19,9 +18,9 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_access
 ```
 User: arn:aws:iam::000111222333:user/janedoe is not authorized to perform: iam:CreateInstanceProfile
 on resource: arn:aws:iam::000111222333:instance-profile/my-instance-profile
-with an explicit deny in an identity-based policy: arn:aws:iam::000111222333:policy/ExampleDenyPolicy.
-Go to https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/authorization-details/EXAMPLE1a2b3c4d5e6f7g8h9i0j for complete details,
-or call the GetRequestAuthorizationDetails API with the following authorization id: EXAMPLE1a2b3c4d5e6f7g8h9i0j
+with an explicit deny in a service control policy: arn:aws:organizations::111111111111:policy/o-exampleorgid/service_control_policy/p-examplepolicyid111.
+Go to https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/authorization-details/a0b1c2d3e4f5g6h7i8j9k0l1m for complete details,
+or call the GetRequestAuthorizationDetails API with the following authorization id: a0b1c2d3e4f5g6h7i8j9k0l1m
 ```
 
 **Note**
@@ -43,8 +42,8 @@ or call the GetRequestAuthorizationDetails API with the following authorization 
 <a name="access-troubleshooter-console"></a>
 
  Choose the link in the access denied error message to open the authorization details in the IAM console.
-+  **What to look for.** The IAM console shows the evaluation for each action/resource pair in the request, the result of each one (`ALLOW`, `EXPLICIT_DENY`, or `IMPLICIT_DENY`), and the policies that were considered. Find the pair that was denied and the policy that caused the denial. In the following example, the console shows two evaluations. The evaluation for `iam:CreateInstanceProfile` is an explicit deny. Under the relevant policies, the `Principal` check is an explicit deny because an inline identity-based policy for the IAM role contains a `Deny` statement named `DenyCreateInstanceProfile`. The evaluation for `iam:TagInstanceProfile` is an allow:
-![IAM console with an explicit deny for iam:CreateInstanceProfile and an allow for iam:TagInstanceProfile.](https://docs.aws.amazon.com/IAM/latest/UserGuide/images/AccessTroubleshooterConsoleExample.jpg)
++  **What to look for.** The IAM console shows the evaluation for each action/resource pair in the request, the result of each one (`ALLOW`, `EXPLICIT_DENY`, or `IMPLICIT_DENY`), and the policies that were considered. Find the pairs that were denied and the policies that caused the denial. In the following example, the console shows two evaluations. The evaluation for `iam:CreateInstanceProfile` is an explicit deny. Under the relevant policies, the `Service control policies for 000111222333` check is an explicit deny because an SCP attached to the account contains a `Deny` statement named `DenyCreateInstanceProfile`. The evaluation for `iam:TagInstanceProfile` is an implicit deny:
+![IAM console with an explicit deny for iam:CreateInstanceProfile and an implicit deny for iam:TagInstanceProfile.](https://docs.aws.amazon.com/IAM/latest/UserGuide/images/AccessTroubleshooterConsoleExample.png)
 +  **Determine whether the denial was intended.** Review the evaluation before changing a policy. A denial can be correct, and the cause is sometimes the request context rather than the policy. For example, a request might be missing an expected session tag or coming from an unexpected network path.
 +  **How to resolve the denial.** Locate the corresponding policy and update it to resolve the access issue. For an explicit deny, remove or narrow the `Deny` statement for the action. For an implicit deny, add an `Allow` statement for the action. For more information, see [Edit IAM policies](access_policies_manage-edit.md).
 
@@ -62,7 +61,7 @@ or call the GetRequestAuthorizationDetails API with the following authorization 
    ```
    aws iam-toolbox get-request-authorization-details \
        --region us-east-1 \
-       --authorization-id EXAMPLE1a2b3c4d5e6f7g8h9i0j
+       --authorization-id a0b1c2d3e4f5g6h7i8j9k0l1m
    ```
 
 1.  Review each evaluation whose `evaluatedEffect` is `EXPLICIT_DENY` or `IMPLICIT_DENY`. Within the evaluation, find each denied check. Use `relevantPolicyTypes` to identify the policy types to review. For an explicit deny, use the check's `matchedPolicies` to find the policy and statement that denied the action. The evaluation-level `matchedPolicies` field is deprecated. Use `checks` instead. For an implicit deny, add an `Allow` to a relevant policy type. For an explicit deny, remove or narrow the `Deny`. For more information, see [How checks work](#access-troubleshooter-policy-checks).
@@ -78,13 +77,13 @@ or call the GetRequestAuthorizationDetails API with the following authorization 
 
  Pass the authorization ID as `authorizationId` and the `uri` value of an entry in the `policies` list returned by `GetRequestAuthorizationDetails` as `policyUri`. Both calls must use the same authorization ID.
 
- In the example error, the policy URI is `arn:aws:iam::000111222333:policy/InstanceProfilePermissions`. The following AWS CLI command retrieves the recorded policy document:
+ In the example error, the policy URI is `arn:aws:organizations::111111111111:policy/o-exampleorgid/service_control_policy/p-examplepolicyid111`. The following AWS CLI command retrieves the recorded policy document:
 
 ```
 aws iam-toolbox get-request-authorization-policy \
     --region us-east-1 \
-    --authorization-id EXAMPLE1a2b3c4d5e6f7g8h9i0j \
-    --policy-uri arn:aws:iam::000111222333:policy/InstanceProfilePermissions
+    --authorization-id a0b1c2d3e4f5g6h7i8j9k0l1m \
+    --policy-uri arn:aws:organizations::111111111111:policy/o-exampleorgid/service_control_policy/p-examplepolicyid111
 ```
 
  The response contains the captured policy document as a JSON object in `policyDocument`. For this example, the response is:
@@ -98,7 +97,7 @@ aws iam-toolbox get-request-authorization-policy \
                 "Sid": "DenyCreateInstanceProfile",
                 "Effect": "Deny",
                 "Action": "iam:CreateInstanceProfile",
-                "Resource": "arn:aws:iam::000111222333:instance-profile/my-instance-profile"
+                "Resource": "*"
             }
         ]
     }
@@ -124,7 +123,7 @@ aws iam-toolbox get-request-authorization-policy \
 + **Explicit deny** – A policy in the check explicitly denied the action.
 + **No impact** – The check neither allowed nor denied the action. None of its deny statements matched, and it didn't need to allow the action because access was granted elsewhere.
 
- In the response, checks are returned in this order: resource control policies (RCPs) from the root to the account, SCPs from the root to the account, VPC endpoint, resource-based policies, principal, permissions boundary, and session.
+ In the response, checks are returned in this order: resource control policies (RCPs) from the root to the account, SCPs from the root to the account, VPC endpoint, resource, principal, permissions boundary, and session.
 
  Not every check appears in every response. The `PRINCIPAL`, `PERMISSIONS_BOUNDARY`, and `SESSION` checks appear whenever they apply to the principal that made the request, even if none of their policies matched. Other checks appear only when at least one of their policies is among the policies evaluated during authorization. You can view the checks only when your organization matches the principal organization recorded for the denied request. If no principal organization was recorded, your account must match the recorded principal account. If you can't view the checks, that doesn't mean that no checks applied.
 
@@ -166,12 +165,12 @@ aws iam-toolbox get-request-authorization-policy \
 
  **Regional APIs.** `GetRequestAuthorizationDetails` and `GetRequestAuthorizationPolicy` are regional APIs. You must call them in the same AWS Region where you received the access denied error.
 
- If you get an access denied error from a service or Region that does not yet include an authorization ID, see [Troubleshoot access denied error messages](troubleshoot_access-denied.md).
+ If you get an access denied error from a service or AWS Region that does not yet include an authorization ID, see [Troubleshoot access denied error messages](troubleshoot_access-denied.md).
 
 ## Supported services
 <a name="access-troubleshooter-supported-services"></a>
 
- Support for Access Troubleshooter is rolling out gradually across AWS services and AWS Region. Some of the APIs for the following services support Access Troubleshooter:
+ Support for Access Troubleshooter is rolling out gradually across AWS services and AWS Regions. Some of the APIs for the following services support Access Troubleshooter:
 + AWS CodeDeploy
 + AWS Identity and Access Management
 + AWS Key Management Service

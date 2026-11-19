@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Lightsail
-<a name="amazonlightsail"></a>
 
 Amazon Lightsail provides the following APIs for data retrieval.
 

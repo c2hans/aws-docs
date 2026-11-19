@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeClientVpnTargetNetworks
-<a name="API_DescribeClientVpnTargetNetworks"></a>
 
 Describes the target networks associated with the specified Client VPN endpoint.
 

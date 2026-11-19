@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/running-bu
 ---
 
 # Run a bulk import job
-<a name="running-bulk-operations-import"></a>
 
  Bulk import is the action of moving metadata into an AWS IoT SiteWise workspace. For example, bulk import can move metadata from a local file, or a file in an Amazon S3 bucket, to an AWS IoT SiteWise workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessReasoningContentBlockDelta
-<a name="API_HarnessReasoningContentBlockDelta"></a>
 
 A delta update to a reasoning content block.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/data-r
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Compliance bot (Data retention)
-<a name="data-retention"></a>
 
 The data retention service uses the Compliance bot, which is an additional service available within Wickr Enterprise.
 

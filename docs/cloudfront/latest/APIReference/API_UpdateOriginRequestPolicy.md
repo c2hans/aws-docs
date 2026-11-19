@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateOriginRequestPolicy
-<a name="API_UpdateOriginRequestPolicy"></a>
 
 Updates an origin request policy configuration.
 

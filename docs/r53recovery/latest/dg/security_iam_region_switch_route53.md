@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_regio
 ---
 
 # Route 53 health check execution block sample policy
-<a name="security_iam_region_switch_route53"></a>
 
  The following is a sample policy to attach if you add execution blocks to a Region switch plan for Route 53 health checks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # UpdateMLModel
-<a name="API_UpdateMLModel"></a>
 
 Updates the `MLModelName` and the `ScoreThreshold` of an `MLModel`.
 

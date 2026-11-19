@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # CreateRegistrationAssociation
-<a name="API_CreateRegistrationAssociation"></a>
 
 Associate the registration with an origination identity such as a phone number or sender ID.
 

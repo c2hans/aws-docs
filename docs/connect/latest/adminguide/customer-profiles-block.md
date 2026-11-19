@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-profi
 ---
 
 # Flow block in Connect Customer: Customer profiles
-<a name="customer-profiles-block"></a>
 
 This topic defines the flow block for retrieving, creating, and updating a customer profile.
 

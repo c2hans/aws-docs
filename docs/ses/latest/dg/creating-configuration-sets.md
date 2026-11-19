@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/creating-configuration-set
 ---
 
 # Creating configuration sets in SES
-<a name="creating-configuration-sets"></a>
 
 You can use the SES console, the `CreateConfigurationSet` action in the Amazon SES API v2, or the `aws sesv2 create-configuration-set` command in the Amazon SES CLI v2 to create a new configuration set. This section shows how to create configuration sets using the SES console and the Amazon SES CLI v2.
 

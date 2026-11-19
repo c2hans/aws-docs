@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Updat
 ---
 
 # UpdateProblem
-<a name="API_UpdateProblem"></a>
 
 Updates the visibility of the problem or specifies the problem as `RESOLVED`.
 

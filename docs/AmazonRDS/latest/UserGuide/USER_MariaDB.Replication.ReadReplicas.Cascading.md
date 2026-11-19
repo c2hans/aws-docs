@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_MariaDB.
 ---
 
 # Using cascading read replicas with RDS for MariaDB
-<a name="USER_MariaDB.Replication.ReadReplicas.Cascading"></a>
 
 RDS for MariaDB supports cascading read replicas. With *cascading read replicas*, you can scale reads without adding overhead to your source RDS for MariaDB DB instance.
 

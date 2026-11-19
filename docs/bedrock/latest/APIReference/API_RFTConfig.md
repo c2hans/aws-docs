@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_RFTConfi
 ---
 
 # RFTConfig
-<a name="API_RFTConfig"></a>
 
  Configuration settings for reinforcement fine-tuning (RFT), including grader configuration and training hyperparameters.
 

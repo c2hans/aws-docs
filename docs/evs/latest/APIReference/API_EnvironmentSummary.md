@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_EnvironmentS
 ---
 
 # EnvironmentSummary
-<a name="API_EnvironmentSummary"></a>
 
 A list of environments with summarized environment details.
 

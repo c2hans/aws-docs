@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_BillingGroup
 ---
 
 # BillingGroupProperties
-<a name="API_BillingGroupProperties"></a>
 
 The properties of a billing group.
 

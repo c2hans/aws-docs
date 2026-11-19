@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Ge
 ---
 
 # GetMetadataTransferJob
-<a name="API_GetMetadataTransferJob"></a>
 
 Retrieves information about a metadata transfer job.
 

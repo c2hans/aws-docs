@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 10.1 – Agree on SAP workload availability goals that align with your business requirements
-<a name="best-practice-10-1"></a>
 
 Understanding your availability goals is the first step to help ensure that you focus on the factors important to your organization. This helps you to define criteria that can be used to evaluate your architectural patterns.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-statmux/latest/installguide/in
 This is version 2.20 of the AWS Elemental Statmux documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Statmux and AWS Elemental Live Documentation](https://docs.aws.amazon.com/elemental-live).
 
 # Installing AWS Elemental Statmux Node-locked Licenses on Qualified Hardware
-<a name="install-sm-ig"></a>
 
 This section is for IT administrators who perform the first-time installation of AWS Elemental Statmux software on a hardware unit that is considered qualified hardware.
 

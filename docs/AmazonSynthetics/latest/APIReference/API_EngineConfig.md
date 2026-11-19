@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # EngineConfig
-<a name="API_EngineConfig"></a>
 
 A structure of engine configurations for the canary, one for each browser type that the canary is configured to run on.
 

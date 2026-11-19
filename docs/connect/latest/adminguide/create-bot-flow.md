@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-bot-flo
 ---
 
 # Create a flow and add your conversational AI bot
-<a name="create-bot-flow"></a>
 
 This topic explains how to add a previously created conversational AI bot to a flow.
 

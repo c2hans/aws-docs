@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Patch report (daily)
-<a name="daily-patch-report"></a>
 
 **Topics**
 + [Instance details summary for AMS patching](#instance-details-summary-po)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops02-b
 ---
 
 # OPS02-BP02 Create actionable insights with dashboards
-<a name="ops02-bp02"></a>
 
  Use dashboards to give operators and stakeholders a shared, real-time view of system and business health. Dashboards complement alerts: alerts tell you when something breaks, and dashboards show you what is happening and why.
 

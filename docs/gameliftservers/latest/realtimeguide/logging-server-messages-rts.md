@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/realtimeguide/log
 ---
 
 # Logging server messages for Amazon GameLift Servers Realtime
-<a name="logging-server-messages-rts"></a>
 
 You can capture a variety of custom server messages from your Amazon GameLift Servers Realtime servers and save them to game session log files. When a game session ends, Amazon GameLift Servers automatically uploads the session logs to Amazon Simple Storage Service (Amazon S3). This topic provides instructions on how to add log messaging to your server scripts and then access game session logs from Amazon S3 storage. You can also configure logging levels to manage the volume of log messages that your servers generate.
 

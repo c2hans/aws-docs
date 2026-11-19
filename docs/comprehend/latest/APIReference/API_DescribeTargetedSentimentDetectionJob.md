@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Descr
 ---
 
 # DescribeTargetedSentimentDetectionJob
-<a name="API_DescribeTargetedSentimentDetectionJob"></a>
 
 Gets the properties associated with a targeted sentiment detection job. Use this operation to get the status of the job.
 

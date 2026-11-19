@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/dg-ota-update-
 ---
 
 # Update the version of your firmware
-<a name="dg-ota-update-firmware"></a>
 
 The OTA Agent included with FreeRTOS checks the version of any update and installs it only if it is more recent than the existing firmware version. The following steps show you how to increment the firmware version of the OTA demo application.
 

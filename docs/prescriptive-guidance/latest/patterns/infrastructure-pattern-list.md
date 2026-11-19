@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/in
 ---
 
 # Infrastructure
-<a name="infrastructure-pattern-list"></a>
 
 **Topics**
 + [Access a bastion host by using Session Manager and Amazon EC2 Instance Connect](access-a-bastion-host-by-using-session-manager-and-amazon-ec2-instance-connect.md)

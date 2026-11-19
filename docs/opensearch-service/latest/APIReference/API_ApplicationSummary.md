@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ApplicationSummary
-<a name="API_ApplicationSummary"></a>
 
 Basic details of an OpenSearch application.
 

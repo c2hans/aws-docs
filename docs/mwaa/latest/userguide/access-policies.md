@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/access-policies.ht
 ---
 
 # Accessing an Amazon MWAA environment
-<a name="access-policies"></a>
 
 To use Amazon Managed Workflows for Apache Airflow, you must use an account and IAM entities with the necessary permissions. This topic describes the access policies you can attach to your Apache Airflow development team and Apache Airflow users for your Amazon Managed Workflows for Apache Airflow environment.
 

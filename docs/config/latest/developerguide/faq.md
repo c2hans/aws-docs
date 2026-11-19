@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/faq.html
 ---
 
 # Frequently Asked Questions
-<a name="faq"></a>
 
 ## Unable to see my latest configuration changes
 <a name="config-delays"></a>

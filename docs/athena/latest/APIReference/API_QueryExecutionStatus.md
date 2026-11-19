@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryExec
 ---
 
 # QueryExecutionStatus
-<a name="API_QueryExecutionStatus"></a>
 
 The completion date, current state, submission time, and state change reason (if applicable) for the query execution.
 

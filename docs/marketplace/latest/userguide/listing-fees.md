@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/listing-fee
 ---
 
 # Understanding listing fees for AWS Marketplace sellers
-<a name="listing-fees"></a>
 
 AWS Marketplace offers standard and regional listing fees for AWS Marketplace sellers. Listing fees appear as a single line item in the listing fee invoice issued by AWS. The fee is calculated based on the pre-tax Total Contract Value (TCV). This applies to all uplifts, including [Regional offer listing fees](#regional-offer-listing-fees).
 

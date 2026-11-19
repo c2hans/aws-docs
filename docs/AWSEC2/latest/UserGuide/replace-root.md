@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/replace-root.htm
 ---
 
 # Replace the root volume for an Amazon EC2 instance without stopping it
-<a name="replace-root"></a>
 
 Amazon EC2 enables you to replace the root Amazon EBS volume for a running instance while retaining the following:
 + Data stored on instance store volumes — Instance store volumes remain attached to the instance after the root volume has been restored.

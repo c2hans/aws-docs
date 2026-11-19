@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-active-di
 ---
 
 # Working with Active Directory with RDS for Db2
-<a name="db2-active-directory"></a>
 
 You can join an RDS for Db2 DB instance to a Microsoft Active Directory (AD) domain. Your AD domain can be hosted on AWS Managed AD within AWS, or on a self-managed AD in a location of your choice, including your corporate data centers, on AWS EC2, or with other cloud providers.
 

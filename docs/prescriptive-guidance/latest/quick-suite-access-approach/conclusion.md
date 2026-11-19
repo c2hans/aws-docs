@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 This guide reviews a number of different approaches that you can use to provision user access to AWS Quick. In some cases, you can even combine more than one approach to support different use cases. However, each additional approach adds complexity.
 

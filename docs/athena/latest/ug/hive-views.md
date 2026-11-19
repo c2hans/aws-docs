@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/hive-views.html
 ---
 
 # Work with Hive views
-<a name="hive-views"></a>
 
 You can use Athena to query existing views in your external Apache Hive metastores. Athena translates your views for you on-the-fly at runtime without changing the original view or storing the translation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElementalMediaPackageV2ReadOnly
-<a name="AWSElementalMediaPackageV2ReadOnly"></a>
 
 **Description**: Provides read-only access to AWS Elemental MediaPackageV2 resources.
 

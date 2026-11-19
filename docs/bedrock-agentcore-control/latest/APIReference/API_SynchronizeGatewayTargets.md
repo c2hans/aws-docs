@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SynchronizeGatewayTargets
-<a name="API_SynchronizeGatewayTargets"></a>
 
 Synchronizes the gateway targets by fetching the latest tool definitions from the target endpoints.
 

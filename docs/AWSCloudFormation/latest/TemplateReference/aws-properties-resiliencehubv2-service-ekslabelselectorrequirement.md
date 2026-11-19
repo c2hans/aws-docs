@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ResilienceHubV2::Service EksLabelSelectorRequirement
-<a name="aws-properties-resiliencehubv2-service-ekslabelselectorrequirement"></a>
 
 A single label requirement in a label selector, expressed as a key, an operator, and an optional list of values.
 

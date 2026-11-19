@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ex
 ---
 
 # ExperimentRunSummary
-<a name="API_ExperimentRunSummary"></a>
 
 Summary information about an experiment run.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Mout
 ---
 
 # MouthOpen
-<a name="API_MouthOpen"></a>
 
 Indicates whether or not the mouth on the face is open, and the confidence level in the determination.
 

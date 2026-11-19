@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyAnnotatedChunk
-<a name="API_AutomatedReasoningPolicyAnnotatedChunk"></a>
 
 Represents a portion of a source document with line number annotations. Chunks help organize document content for easier navigation and reference.
 

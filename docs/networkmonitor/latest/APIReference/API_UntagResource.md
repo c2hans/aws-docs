@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_U
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes a key-value pair from a monitor or probe.
 

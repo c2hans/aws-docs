@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_A
 ---
 
 # AddWorkingStorage
-<a name="API_AddWorkingStorage"></a>
 
 Configures one or more gateway local disks as working storage for a gateway. This operation is only supported in the stored volume gateway type. This operation is deprecated in cached volume API version 20120630. Use [AddUploadBuffer](API_AddUploadBuffer.md) instead.
 

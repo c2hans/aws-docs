@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-transfor
 ---
 
 # Configuring an input transformer when creating a rule in EventBridge
-<a name="eb-transform-input-rule"></a>
 
 As part of creating a rule, you can specify an input transformer for EventBridge to use to process matching events prior to sending those event to the specified target. You can configure input transformers for targets that are AWS services or API destinations.
 

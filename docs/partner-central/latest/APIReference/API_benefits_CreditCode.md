@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreditCode
-<a name="API_benefits_CreditCode"></a>
 
 Represents an AWS credit code that can be applied to an AWS account for billing purposes.
 

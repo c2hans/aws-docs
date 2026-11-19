@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # SendMessageBatchResultEntry
-<a name="API_SendMessageBatchResultEntry"></a>
 
 Encloses a `MessageId` for a successfully-enqueued message in a ` SendMessageBatch.`
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # Multi-agent orchestration
-<a name="agentrel04"></a>
 
  Multi-agent systems that implement centralized coordination, capability-based routing, and pre-defined fallback chains execute tasks reliably even when individual agents fail. Multi-agent workflows must be highly orchestrated and controlled to help prevent unreliable agent executions from disrupting an entire workflow.
 

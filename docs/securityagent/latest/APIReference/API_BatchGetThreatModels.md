@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchGetThreatModels
-<a name="API_BatchGetThreatModels"></a>
 
 Retrieves information about one or more threat models in an agent space.
 

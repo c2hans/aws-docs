@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrievalResultSalesforceLocation
-<a name="API_agent-runtime_RetrievalResultSalesforceLocation"></a>
 
 The Salesforce data source location.
 

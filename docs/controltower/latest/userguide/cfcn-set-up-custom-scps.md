@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/cfcn-set-u
 ---
 
 # Set up a configuration package for SCPs or RCPs
-<a name="cfcn-set-up-custom-scps"></a>
 
 This section explains how to create a configuration package for service control policies (SCPs) or resource control policies (RCPs). The two main parts of this process are (1) prepare the CfCT manifest file, and (2) prepare your folder structure.
 

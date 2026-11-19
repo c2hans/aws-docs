@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/create-con
 ---
 
 # Create a new version of a container recipe
-<a name="create-container-recipes"></a>
 
 This section shows you how to create a container recipe or a new version of an existing recipe. A container recipe defines three key elements: the base image, the build components, and the target repository. Use this recipe to produce Docker container images that Image Builder stores in Amazon ECR.
 

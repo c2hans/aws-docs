@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/body-c
 ---
 
 # Body Content
-<a name="body-content"></a>
 
 The body, if required, consists of XML content. The body is:
 + Required for most POST requests.

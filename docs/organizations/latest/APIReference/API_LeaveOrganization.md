@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Le
 ---
 
 # LeaveOrganization
-<a name="API_LeaveOrganization"></a>
 
 Removes a member account from its parent organization. This version of the operation is performed by the account that wants to leave. To remove a member account as a user in the management account, use [RemoveAccountFromOrganization](API_RemoveAccountFromOrganization.md) instead.
 

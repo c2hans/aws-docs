@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkDocsReadOnlyAccess
-<a name="AmazonWorkDocsReadOnlyAccess"></a>
 
 **Description**: Provides read only access to Amazon WorkDocs via the AWS Management Console
 

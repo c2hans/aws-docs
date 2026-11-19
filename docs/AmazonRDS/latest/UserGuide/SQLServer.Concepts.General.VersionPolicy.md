@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Con
 ---
 
 # Version policy for Amazon RDS for Microsoft SQL Server
-<a name="SQLServer.Concepts.General.VersionPolicy"></a>
 
 This topic describes the version policy for Amazon RDS for SQL Server, including supported major and minor versions, release timelines, deprecation procedures, and upgrade guidance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/u
 ---
 
 # User interface reference for the AWS Toolkit for JetBrains
-<a name="ui-reference"></a>
 
 For help working with the AWS Toolkit for JetBrains user interface, see the following topics.
 

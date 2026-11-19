@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-inst
 ---
 
 # Configure the Instance Metadata Service options
-<a name="configuring-instance-metadata-options"></a>
 
 The Instance Metadata Service (IMDS) runs locally on every EC2 instance. The *instance metadata options* refer to a set of configurations that control the accessibility and behavior of the IMDS on an EC2 instance.
 

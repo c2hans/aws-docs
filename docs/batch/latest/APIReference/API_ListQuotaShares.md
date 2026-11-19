@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ListQuotaS
 ---
 
 # ListQuotaShares
-<a name="API_ListQuotaShares"></a>
 
 Returns a list of AWS Batch quota shares associated with a job queue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zon
 ---
 
 # Considerations when working with a private hosted zone
-<a name="hosted-zone-private-considerations"></a>
 
 When using private hosted zones, note the following considerations.
 + [Amazon VPC settings](#hosted-zone-private-considerations-vpc-settings)

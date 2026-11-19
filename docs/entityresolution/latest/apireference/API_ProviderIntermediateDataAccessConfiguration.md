@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ProviderIntermediateDataAccessConfiguration
-<a name="API_ProviderIntermediateDataAccessConfiguration"></a>
 
 The required configuration fields to give intermediate access to a provider service.
 

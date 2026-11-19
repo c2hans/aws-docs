@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/scheduler_example
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `CreateSchedule` with an AWS SDK
-<a name="scheduler_example_scheduler_CreateSchedule_section"></a>
 
 The following code examples show how to use `CreateSchedule`.
 

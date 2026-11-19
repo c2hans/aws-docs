@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/test-enhanced-ne
 ---
 
 # Test whether enhanced networking is enabled
-<a name="test-enhanced-networking-ena"></a>
 
 You can test whether enhanced networking is enabled in your instances or your AMIs.
 

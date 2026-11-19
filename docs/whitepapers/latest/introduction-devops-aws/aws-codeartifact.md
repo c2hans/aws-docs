@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # AWS CodeArtifact
-<a name="aws-codeartifact"></a>
 
 [AWS CodeArtifact](https://aws.amazon.com/codeartifact) is a fully managed artifact repository service that can be used by organizations to securely store, publish, and share software packages used in their software development process. CodeArtifact can be configured to automatically fetch software packages and dependencies from public artifact repositories so developers have access to the latest versions.
 

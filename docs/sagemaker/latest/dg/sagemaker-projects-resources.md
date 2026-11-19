@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-projects-r
 ---
 
 # View Project Resources
-<a name="sagemaker-projects-resources"></a>
 
 After you create a project, view the resources associated with the project in Amazon SageMaker Studio Classic.
 

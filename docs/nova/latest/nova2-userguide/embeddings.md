@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/embeddings.h
 ---
 
 # Using Amazon Nova embeddings
-<a name="embeddings"></a>
 
 Amazon Nova Multimodal Embeddings is a multimodal embeddings model for agentic RAG and semantic search applications. It supports text, documents, images, video and audio through a single model, enabling cross-modal retrieval. Nova Multimodal Embeddings maps each of these content types into a unified semantic space, enabling you to conduct unimodal, cross-modal and multimodal vector operations.
 

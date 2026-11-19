@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # DeleteChannelModerator
-<a name="API_messaging-chime_DeleteChannelModerator"></a>
 
 Deletes a channel moderator.
 

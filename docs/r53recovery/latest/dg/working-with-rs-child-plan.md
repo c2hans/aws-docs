@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/working-with-rs-ch
 ---
 
 # Create child plans
-<a name="working-with-rs-child-plan"></a>
 
 To support more complex recovery scenarios, you can create child plans by adding them with Region switch plan execution blocks. The hierarchy is limited to two levels, but one parent plan can include multiple child plans.
 

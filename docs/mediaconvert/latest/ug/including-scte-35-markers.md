@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/including-scte-35
 ---
 
 # Including SCTE-35 markers
-<a name="including-scte-35-markers"></a>
 
 SCTE-35 markers indicate where downstream systems can insert other content (usually advertisements or local programs). You can include SCTE-35 markers in transport stream (TS), DASH, HLS, and CMAF outputs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/userguide/modify-c
 ---
 
 # Modify your charts
-<a name="modify-charts"></a>
 
 You can modify your charts using the **Parameters** panel on the right hand side of the console.
 

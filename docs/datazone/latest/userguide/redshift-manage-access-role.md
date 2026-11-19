@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/redshift-manag
 ---
 
 # AmazonDataZoneRedshiftAccess-<region>-<domainId>
-<a name="redshift-manage-access-role"></a>
 
 The `AmazonDataZoneRedshiftAccess-<region>-<domainId>` role has the `AmazonDataZoneRedshiftManageAccessRolePolicy` attached. This role grants Amazon DataZone permissions to publish Amazon Redshift data to the catalog. It also gives Amazon DataZone permissions to grant access or revoke access to Amazon Redshift or Amazon Redshift Serverless published assets in the catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Indexing data in Amazon OpenSearch Service
-<a name="indexing"></a>
 
 Because Amazon OpenSearch Service uses a REST API, numerous methods exist for indexing documents. You can use standard clients like [curl](https://curl.haxx.se/) or any programming language that can send HTTP requests. To further simplify the process of interacting with it, OpenSearch Service has clients for many programming languages. Advanced users can skip directly to [Loading streaming data into Amazon OpenSearch Service](integrations.md).
 

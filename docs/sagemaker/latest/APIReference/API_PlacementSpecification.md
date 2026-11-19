@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Placem
 ---
 
 # PlacementSpecification
-<a name="API_PlacementSpecification"></a>
 
 Specifies how instances should be placed on a specific UltraServer.
 

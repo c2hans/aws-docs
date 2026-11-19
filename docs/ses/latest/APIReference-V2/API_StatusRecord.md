@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_StatusRec
 ---
 
 # StatusRecord
-<a name="API_StatusRecord"></a>
 
 An object that contains status information for a reputation entity, including the current status, cause description, and timestamp.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_LambdaU
 ---
 
 # LambdaUngraceful
-<a name="API_LambdaUngraceful"></a>
 
 Configuration for handling failures when invoking Lambda functions.
 

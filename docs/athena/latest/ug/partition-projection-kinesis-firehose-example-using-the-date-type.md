@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/partition-projection-ki
 ---
 
 # How to use the `date` type
-<a name="partition-projection-kinesis-firehose-example-using-the-date-type"></a>
 
 When you use the `date` type for a projected partition key, you must specify a range. Because you have no data for dates before the Firehose delivery stream was created, you can use the date of creation as the start. And because you do not have data for dates in the future, you can use the special token `NOW` as the end.
 

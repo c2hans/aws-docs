@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/best_practices_drs.
 ---
 
 # Best practices for Elastic Disaster Recovery
-<a name="best_practices_drs"></a>
 
 For a more complete discussion of best practices for planning, implementing, and maintaining disaster recovery for on-premises applications using AWS, [see this white paper](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-of-on-premises-applications-to-aws/disaster-recovery-of-on-premises-applications-to-aws.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Account creation and enrollment
-<a name="account-creation-and-drift-detection"></a>
 
 The following diagram shows how the solution creates new accounts, optionally quarantines them, and enrolls them with AWS Control Tower.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/vpc-peering
 ---
 
 # vpc-peering-dns-resolution-check
-<a name="vpc-peering-dns-resolution-check"></a>
 
 Checks if DNS resolution from accepter/requester VPC to private IP is enabled. The rule is NON\_COMPLIANT if DNS resolution from accepter/requester VPC to private IP is not enabled.
 

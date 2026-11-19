@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/reassign-numbers.htm
 ---
 
 # Reassigning phone numbers
-<a name="reassign-numbers"></a>
 
 After you assign a phone number to an Amazon Chime SDK Voice Connector or Voice Connector Group, you can reassign that number to another Voice Connector or group without having to unassign the number.
 

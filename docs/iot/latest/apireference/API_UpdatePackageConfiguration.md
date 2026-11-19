@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdatePackag
 ---
 
 # UpdatePackageConfiguration
-<a name="API_UpdatePackageConfiguration"></a>
 
 Updates the software package configuration.
 

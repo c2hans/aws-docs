@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Descr
 ---
 
 # DescribeApplications
-<a name="API_DescribeApplications"></a>
 
 Retrieves a list that describes one or more applications.
 

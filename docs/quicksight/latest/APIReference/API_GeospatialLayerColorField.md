@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialLayerColorField
-<a name="API_GeospatialLayerColorField"></a>
 
 The color field that defines a gradient or categorical style.
 

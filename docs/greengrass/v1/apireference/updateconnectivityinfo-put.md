@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/apireference/updateconnect
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # UpdateConnectivityInfo
-<a name="updateconnectivityinfo-put"></a>
 
 Updates the connectivity information for the core. Client devices that belong to the group that has this core receive this information to find the location of the core and connect to it.
 

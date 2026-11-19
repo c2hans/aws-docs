@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_SendBulkTemp
 ---
 
 # SendBulkTemplatedEmail
-<a name="API_SendBulkTemplatedEmail"></a>
 
 Composes an email message to multiple destinations. The message body is created using an email template.
 

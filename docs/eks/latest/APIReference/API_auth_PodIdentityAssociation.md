@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_auth_PodIden
 ---
 
 # PodIdentityAssociation
-<a name="API_auth_PodIdentityAssociation"></a>
 
 Amazon EKS Pod Identity associations provide the ability to manage credentials for your applications, similar to the way that Amazon EC2 instance profiles provide credentials to Amazon EC2 instances.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/userguide/ams-ami
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # AMS AMI notifications with SNS
-<a name="ams-ami-notifications"></a>
 
 AMS provides an AMI notification service. You can use it to subscribe to an Amazon Simple Notification Service (SNS) topic that notifies you when AMS AMI updates have been released. You can choose to receive notifications for only the AMS AMIs you use, or you can sign up to receive update notifications for all AMS AMIs. For more information on SNS topics, see [What is Amazon Simple Notification Service?](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)
 

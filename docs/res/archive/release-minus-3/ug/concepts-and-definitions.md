@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/concepts-
 ---
 
 # Concepts and definitions
-<a name="concepts-and-definitions"></a>
 
 This section describes key concepts and defines terminology specific to Research and Engineering Studio on AWS:
 

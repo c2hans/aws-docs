@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Pac
 ---
 
 # PackageGroupOriginConfiguration
-<a name="API_PackageGroupOriginConfiguration"></a>
 
 The package group origin configuration that determines how package versions can enter repositories.
 

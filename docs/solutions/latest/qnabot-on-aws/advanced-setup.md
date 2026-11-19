@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/advanced-
 ---
 
 # Advanced setup
-<a name="advanced-setup"></a>
 
 This section provides detailed instructions on how to set up QnABot to perform the following tasks:
 +  [Adding images to your answers](adding-images-to-your-answers.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/connect-repo.html
 ---
 
 # Connect to a repository
-<a name="connect-repo"></a>
 
 After you have configured your profile and credentials to authenticate to your AWS account, decide which repository to use in CodeArtifact. You have the following options:
 + Create a repository. For more information, see [Creating a Repository](create-repo.md).

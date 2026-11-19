@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/get-image-
 ---
 
 # Getting image set metadata
-<a name="get-image-set-metadata"></a>
 
 Use the `GetImageSetMetadata` action to retrieve [metadata](getting-started-concepts.md#concept-metadata) for a given [image set](getting-started-concepts.md#concept-image-set) in HealthImaging. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`GetImageSetMetadata`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageSetMetadata.html) in the *AWS HealthImaging API Reference*.
 

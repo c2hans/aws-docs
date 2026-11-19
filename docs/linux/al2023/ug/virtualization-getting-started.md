@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/virtualization-getting-s
 ---
 
 # Get started with virtualization on Amazon Linux 2023
-<a name="virtualization-getting-started"></a>
 
 This page covers what an instance needs before it can run virtual machines, how to install and enable the virtualization packages, and an example that runs a virtual machine with QEMU. To manage guests with libvirt instead of running QEMU by hand, see [Manage virtual machines with virsh on Amazon Linux 2023](virtualization-virsh.md). For what the stack does and does not support, see [Virtualization on Amazon Linux 2023](virtualization.md).
 

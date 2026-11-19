@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Connect your LoRaWAN gateway and verify its connection status
-<a name="lorawan-gateway-connection-status"></a>
 
 Before you can check the gateway connection status, you must have already added your gateway and connected it to AWS IoT Core for LoRaWAN. For information about how to add your gateway, see [Add a gateway to AWS IoT Core for LoRaWAN](lorawan-onboard-gateway-add.md).
 

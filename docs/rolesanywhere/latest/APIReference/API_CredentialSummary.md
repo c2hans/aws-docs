@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Cr
 ---
 
 # CredentialSummary
-<a name="API_CredentialSummary"></a>
 
 A record of a presented X509 credential from a temporary credential request.
 

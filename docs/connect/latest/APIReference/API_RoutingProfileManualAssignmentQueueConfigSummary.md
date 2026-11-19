@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RoutingP
 ---
 
 # RoutingProfileManualAssignmentQueueConfigSummary
-<a name="API_RoutingProfileManualAssignmentQueueConfigSummary"></a>
 
 Contains summary information about a routing profile manual assignment queue.
 

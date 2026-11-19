@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Funct
 ---
 
 # FunctionAssociation
-<a name="API_FunctionAssociation"></a>
 
 A CloudFront function that is associated with a cache behavior in a CloudFront distribution.
 

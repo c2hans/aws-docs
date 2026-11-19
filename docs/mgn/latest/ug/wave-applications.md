@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/wave-applications.html
 ---
 
 # Applications
-<a name="wave-applications"></a>
 
 The **Applications** tab shows migration metrics aggregating statuses as well as a list of all the wave associated applications.
 

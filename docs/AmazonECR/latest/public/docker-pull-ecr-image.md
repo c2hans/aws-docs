@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/public/docker-pull-ecr-
 ---
 
 # Pulling an image from the Amazon ECR Public Gallery
-<a name="docker-pull-ecr-image"></a>
 
 If you would like to run a Docker image that is available in Amazon ECR Public, you can pull it to your local environment with the **docker pull** command. You can do this from any public repository. Every public repository created on Amazon ECR Public is available on the Amazon ECR Public Gallery. Visit the Amazon ECR Public Gallery at [https://gallery.ecr.aws](https://gallery.ecr.aws). For more information, see [Amazon ECR Public Gallery](public-gallery.md).
 

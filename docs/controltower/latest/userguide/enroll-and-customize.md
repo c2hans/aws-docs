@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/enroll-and
 ---
 
 # Customize accounts with AFC as you enroll them
-<a name="enroll-and-customize"></a>
 
 To enroll and customize accounts in the AWS Control Tower console.
 

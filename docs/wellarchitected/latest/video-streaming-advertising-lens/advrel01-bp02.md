@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVREL01-BP02 Architect your system with appropriate recovery objectives
-<a name="advrel01-bp02"></a>
 
  Avoid over- or under-architecting your services by working backward from your service's recovery objectives, and balance them against adjacent pillars such as cost optimization and operational excellence. Use KPIs from the operational excellence pillar to inform your reliability approach.
 

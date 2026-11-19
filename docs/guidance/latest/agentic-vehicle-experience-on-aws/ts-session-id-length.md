@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Text chat returns HTTP 500 with `ParamValidationError` on every request
-<a name="ts-session-id-length"></a>
 
  **Symptom.** The web UI’s text chat route (`/assistant/chat`) returns HTTP 500 on every request. CloudWatch Logs for the assistant-chat Lambda show `botocore.exceptions.ParamValidationError` referencing `runtimeSessionId`: the value fails the `Length Constraints: Minimum length of 33` check. The error is deterministic — every browser session from this client fails, while sessions from a different client or a direct API call with a longer session ID succeed.
 

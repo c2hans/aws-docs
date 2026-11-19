@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_ListMicrov
 ---
 
 # ListMicrovmImages
-<a name="API_ListMicrovmImages"></a>
 
 Lists MicroVM images in the account with optional name filtering. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot Slot
-<a name="aws-properties-lex-bot-slot"></a>
 
 Specifies the definition of a slot. Amazon Lex elicits slot values from uses to fulfill the user's intent.
 

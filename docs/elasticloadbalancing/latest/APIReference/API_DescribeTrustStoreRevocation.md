@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DescribeTrustStoreRevocation
-<a name="API_DescribeTrustStoreRevocation"></a>
 
 Information about the revocations used by a trust store.
 

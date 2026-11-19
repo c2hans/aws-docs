@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena-improve-netw
 ---
 
 # Improve network latency for Linux based EC2 instances
-<a name="ena-improve-network-latency-linux"></a>
 
 Network latency is the amount of time it takes for a packet of data to travel from its source to its destination. Applications that send data across the network depend on timely responses to provide a positive user experience. High network latency can lead to various issues, such as the following:
 + Slow load times for web pages

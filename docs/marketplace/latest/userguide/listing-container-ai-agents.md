@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/listing-con
 ---
 
 # Listing Container-based AI agent products
-<a name="listing-container-ai-agents"></a>
 
 ## Managing container-based AI agents and tools
 <a name="managing-container-ai-agents"></a>

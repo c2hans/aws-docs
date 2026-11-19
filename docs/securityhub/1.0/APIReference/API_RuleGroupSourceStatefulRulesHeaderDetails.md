@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RuleGro
 ---
 
 # RuleGroupSourceStatefulRulesHeaderDetails
-<a name="API_RuleGroupSourceStatefulRulesHeaderDetails"></a>
 
 The inspection criteria for a stateful rule.
 

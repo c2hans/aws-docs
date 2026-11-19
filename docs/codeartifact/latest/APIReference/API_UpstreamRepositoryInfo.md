@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Ups
 ---
 
 # UpstreamRepositoryInfo
-<a name="API_UpstreamRepositoryInfo"></a>
 
  Information about an upstream repository.
 

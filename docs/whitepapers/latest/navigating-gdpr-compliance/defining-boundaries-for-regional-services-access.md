@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Defining Boundaries for Regional Services Access
-<a name="defining-boundaries-for-regional-services-access"></a>
 
 As a customer, you maintain ownership of your content, and you select which AWS services can process, store, and host your content. You can choose to store your customer data in any one or more of our European Regions, including EU Regions in France, Germany, Ireland, Italy, Spain, and Sweden. You can also choose to store your customer data in our Regions in Switzerland and in the United Kingdom. Both Switzerland and the United Kingdom have current adequacy decisions under the GDPR permitting the transfer of personal data. You can also use AWS services with the confidence that customer data stays in the AWS Region you select. AWS prohibits – and our systems are designed to prevent – remote access by AWS personnel to customer data for any purpose, including service maintenance, unless that access is requested by you or unless access is required to prevent fraud and abuse, or to comply with law.
 

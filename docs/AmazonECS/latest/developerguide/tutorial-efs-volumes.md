@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial
 ---
 
 # Configuring Amazon EFS file systems for Amazon ECS using the console
-<a name="tutorial-efs-volumes"></a>
 
 Learn how to use Amazon Elastic File System (Amazon EFS) file systems with Amazon ECS.
 

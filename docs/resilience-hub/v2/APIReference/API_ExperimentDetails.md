@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Exper
 ---
 
 # ExperimentDetails
-<a name="API_ExperimentDetails"></a>
 
 Details about an AWS Fault Injection Service (AWS FIS) experiment run as part of a test run.
 

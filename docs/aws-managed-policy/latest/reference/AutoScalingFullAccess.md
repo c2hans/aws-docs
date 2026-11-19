@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Auto
 ---
 
 # AutoScalingFullAccess
-<a name="AutoScalingFullAccess"></a>
 
 **Description**: Provides full access to Auto Scaling.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_UpdateExperi
 ---
 
 # UpdateExperimentTemplateStopConditionInput
-<a name="API_UpdateExperimentTemplateStopConditionInput"></a>
 
 Specifies a stop condition for an experiment. You can define a stop condition as a CloudWatch alarm.
 

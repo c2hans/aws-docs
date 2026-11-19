@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DeploymentStrategyOptionsStatus
-<a name="API_DeploymentStrategyOptionsStatus"></a>
 
 The status of deployment strategy options for the domain.
 

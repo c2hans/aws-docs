@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/apache-iceberg-metri
 ---
 
 # Monitor metrics
-<a name="apache-iceberg-metric"></a>
 
 For data delivery to Apache Iceberg Tables, Firehose emits the following CloudWatch metrics at a stream level.
 

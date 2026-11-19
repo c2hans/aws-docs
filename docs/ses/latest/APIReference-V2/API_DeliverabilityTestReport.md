@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Deliverab
 ---
 
 # DeliverabilityTestReport
-<a name="API_DeliverabilityTestReport"></a>
 
 An object that contains metadata related to a predictive inbox placement test.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/semantic-cac
 ---
 
 # Best practices
-<a name="semantic-caching-best-practices"></a>
 
 ## Choosing data that can be cached
 <a name="semantic-caching-bp-choosing-data"></a>

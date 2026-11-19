@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/setu
 ---
 
 # Configuring your toolchain
-<a name="setup-toolchain"></a>
 
 The AWS Toolkit for Visual Studio Code supports multiple languages across all the AWS services. The following sections describe how to configure your toolchain for different languages.
 

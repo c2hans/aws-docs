@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_TaskExe
 ---
 
 # TaskExecutionFoldersListedDetail
-<a name="API_TaskExecutionFoldersListedDetail"></a>
 
 The number of directories that DataSync finds at your locations.
 

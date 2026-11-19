@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessGroup
-<a name="API_VerifiedAccessGroup"></a>
 
 Describes a Verified Access group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-hosti
 ---
 
 # Deploy a Compiled Model Using the AWS CLI
-<a name="neo-deployment-hosting-services-cli"></a>
 
 You must satisfy the [ prerequisites](https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-hosting-services-prerequisites) section if the model was compiled using AWS SDK for Python (Boto3), AWS CLI, or the Amazon SageMaker AI console. Follow the steps below to create and deploy a SageMaker Neo-compiled model using the [AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/).
 

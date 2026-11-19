@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Update
 ---
 
 # UpdateCodeConfiguration
-<a name="API_UpdateCodeConfiguration"></a>
 
 The update Code Configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 ---
 
 # GetLifecyclePolicy
-<a name="API_GetLifecyclePolicy"></a>
 
 Retrieves details for the specified image lifecycle policy.
 

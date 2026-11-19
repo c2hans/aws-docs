@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DatadogConn
 ---
 
 # DatadogConnectorProfileProperties
-<a name="API_DatadogConnectorProfileProperties"></a>
 
  The connector-specific profile properties required by Datadog.
 

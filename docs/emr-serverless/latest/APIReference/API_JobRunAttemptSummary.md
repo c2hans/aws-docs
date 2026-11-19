@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_J
 ---
 
 # JobRunAttemptSummary
-<a name="API_JobRunAttemptSummary"></a>
 
 The summary of attributes associated with a job run attempt.
 

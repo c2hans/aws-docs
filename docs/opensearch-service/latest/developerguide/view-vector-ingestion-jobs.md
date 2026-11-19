@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # View vector ingestion jobs and import history
-<a name="view-vector-ingestion-jobs"></a>
 
 Vector ingestion jobs create a pipeline for vectorizing data sets, automating vector index tuning and accelerating large-scale index builds.
 

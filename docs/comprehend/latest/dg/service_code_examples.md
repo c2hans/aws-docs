@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/service_code_exampl
 ---
 
 # Code examples for Amazon Comprehend using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Amazon Comprehend with an AWS software development kit (SDK).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # View AWS Client VPN endpoint routes
-<a name="cvpn-working-routes-view"></a>
 
 You can view the routes for a specific Client VPN endpoint by using the console or the AWS CLI.
 

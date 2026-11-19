@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_GetCertificate
 ---
 
 # GetCertificateAssociation
-<a name="API_GetCertificateAssociation"></a>
 
 Retrieves the details of a certificate association with a responder gateway.
 

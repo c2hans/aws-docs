@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Severit
 ---
 
 # SeverityUpdate
-<a name="API_SeverityUpdate"></a>
 
 Updates to the severity information for a finding.
 

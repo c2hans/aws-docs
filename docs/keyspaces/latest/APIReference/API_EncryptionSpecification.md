@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Encryp
 ---
 
 # EncryptionSpecification
-<a name="API_EncryptionSpecification"></a>
 
 Amazon Keyspaces encrypts and decrypts the table data at rest transparently and integrates with AWS Key Management Service for storing and managing the encryption key. You can choose one of the following AWS KMS keys (KMS keys):
 +  AWS owned key - This is the default encryption type. The key is owned by Amazon Keyspaces (no additional charge).

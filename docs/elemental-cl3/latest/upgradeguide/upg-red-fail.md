@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-re
 ---
 
 # Step F: Fail over an active node
-<a name="upg-red-fail"></a>
 
 Fail over the running channels from the first active worker node that you're upgrading to a backup node. To reduce impact on your worker nodes, perform this step through [Step K: Re-designate the backup worker node](upg-red-redesignate.md) all for the same active worker node before moving on to the next node.
 

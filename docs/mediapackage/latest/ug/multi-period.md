@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/multi-period.html
 ---
 
 # Multi-period DASH in AWS Elemental MediaPackage
-<a name="multi-period"></a>
 
 The ability to insert multiple periods in DASH manifests for both VOD and live is available in AWS Elemental MediaPackage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ListThemes
-<a name="API_ListThemes"></a>
 
 Retrieves a list of themes for a specified Amplify app and backend environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/stepfunctions-bat
 ---
 
 # AWS Step Functions
-<a name="stepfunctions-batch-console"></a>
 
 You can use the AWS Batch console to view details about your Step Functions state machines and the functions that they use.
 

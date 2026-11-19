@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/prepare-enviro
 ---
 
 # Step 1: Prepare the environment
-<a name="prepare-environment"></a>
 
 The Amazon DCV Access Console has three components Handler, Web Client, and Authentication Server. To streamline the setup process, you can install the components on the same host. See Amazon DCV Access Console [Requirements](requirements.md) to ensure your setup meets the requirements for setup on a single host.
 

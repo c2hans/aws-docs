@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SUS03-BP04 Optimize impact on customer devices and equipment
-<a name="sus_sus_software_a5"></a>
 
  Understand the devices and equipment your customers use to consume your services, their expected lifecycle, and the financial and sustainability impact of replacing those components. Implement software patterns and architectures to minimize the need for customers to replace devices and upgrade equipment. For example, implement new features using code that is backward compatible with older hardware and operating system versions, or manage the size of payloads so they don’t exceed the storage capacity of the target device.
 

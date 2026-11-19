@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # CheckNoNewAccess
-<a name="API_CheckNoNewAccess"></a>
 
 Checks whether new access is allowed for an updated policy when compared to the existing policy.
 

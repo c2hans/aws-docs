@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/event
 ---
 
 # Drift Detection Status Change event detail
-<a name="event-detail-stack-drift-detection-change"></a>
 
 Below are the detail fields for stack drift detection events.
 

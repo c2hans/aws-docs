@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-storage
 ---
 
 # rds-storage-encrypted
-<a name="rds-storage-encrypted"></a>
 
 Checks if storage encryption is enabled for your Amazon Relational Database Service (Amazon RDS) DB instances. The rule is NON\_COMPLIANT if storage encryption is not enabled.
 

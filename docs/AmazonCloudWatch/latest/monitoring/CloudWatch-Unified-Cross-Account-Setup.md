@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Link monitoring accounts with source accounts
-<a name="CloudWatch-Unified-Cross-Account-Setup"></a>
 
 The topics in this section explain how to set up links between monitoring accounts and source accounts.
 

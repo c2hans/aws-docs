@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetBa
 ---
 
 # GetBackupPlanFromJSON
-<a name="API_GetBackupPlanFromJSON"></a>
 
 Returns a valid JSON document specifying a backup plan or an error.
 

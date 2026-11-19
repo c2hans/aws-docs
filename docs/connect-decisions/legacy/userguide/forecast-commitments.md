@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/forec
 ---
 
 # Forecast Commits
-<a name="forecast-commitments"></a>
 
 You can view the forecast commit data requests that are published to your partners. These data requests are triggered from AWS Supply Chain supply planning. For more information, see [Supply Planning](supply-planning.md).
 

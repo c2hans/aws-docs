@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/quota-pl
 ---
 
 # Plan quota increases as you scale your farm
-<a name="quota-planning"></a>
 
 Scaling up a farm can require increases to several related quotas. Review these quotas as a set and request any needed increases together. Quota limits fall into two groups: limits that block fleet creation or updates, and limits that appear only when jobs run. The second group includes license session limits, which are easy to miss because fleet setup can succeed even when a job can't get a license.
 

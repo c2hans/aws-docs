@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebsapi-elements.htm
 ---
 
 # Concepts for EBS direct APIs
-<a name="ebsapi-elements"></a>
 
 The following are the key concepts that you should understand before getting started with the EBS direct APIs.
 

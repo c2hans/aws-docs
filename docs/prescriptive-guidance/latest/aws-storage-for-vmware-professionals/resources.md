@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-storage
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS documentation
 <a name="9999999999999999aws--documentation.67fcca0b-c70f-5671-9321-4441251f2c3f"></a>

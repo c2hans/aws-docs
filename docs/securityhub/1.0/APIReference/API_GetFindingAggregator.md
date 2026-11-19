@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFind
 ---
 
 # GetFindingAggregator
-<a name="API_GetFindingAggregator"></a>
 
 **Note**
 The *aggregation Region* is now called the *home Region*.

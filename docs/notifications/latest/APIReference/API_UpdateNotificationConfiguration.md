@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Up
 ---
 
 # UpdateNotificationConfiguration
-<a name="API_UpdateNotificationConfiguration"></a>
 
 Updates a `NotificationConfiguration`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ReferenceStoreDetai
 ---
 
 # ReferenceStoreDetail
-<a name="API_ReferenceStoreDetail"></a>
 
 Details about a reference store.
 

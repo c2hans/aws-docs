@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateReplic
 ---
 
 # UpdateReplicationConfigurationTemplate
-<a name="API_UpdateReplicationConfigurationTemplate"></a>
 
 Updates a ReplicationConfigurationTemplate by ID.
 

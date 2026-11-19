@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AcceptI
 ---
 
 # AcceptInvitation
-<a name="API_AcceptInvitation"></a>
 
 This method is deprecated. Instead, use `AcceptAdministratorInvitation`.
 

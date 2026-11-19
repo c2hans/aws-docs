@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StateReas
 ---
 
 # StateReason
-<a name="API_StateReason"></a>
 
 Describes a state change.
 

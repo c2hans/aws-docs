@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/whatsa
 ---
 
 # Send call events
-<a name="whatsapp-calling-events"></a>
 
 You send WhatsApp call events, such as connecting or ending a call, using the `SendWhatsAppCallEvent` operation. AWS End User Messaging Social passes the call event through to Meta's calling API. The operation returns the call identifier that Meta assigns to the call.
 

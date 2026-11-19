@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # SUBSTRING
-<a name="recipe-actions.functions.SUBSTRING"></a>
 
 Returns in a new column some or all of the specified strings in the source column, based on the user-defined starting and ending index values.
 

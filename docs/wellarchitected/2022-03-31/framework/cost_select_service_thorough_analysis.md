@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST05-BP03 Perform a thorough analysis of each component
-<a name="cost_select_service_thorough_analysis"></a>
 
  Look at overall cost to the organization of each component. Look at total cost of ownership by factoring in cost of operations and management, especially when using managed services. The review effort should reflect potential benefit, for example, time spent analyzing is proportional to component cost.
 

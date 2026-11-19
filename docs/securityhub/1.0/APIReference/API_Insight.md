@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Insight
 ---
 
 # Insight
-<a name="API_Insight"></a>
 
 Contains information about a Security Hub CSPM insight.
 

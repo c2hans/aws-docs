@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateCi
 ---
 
 # CreateCidrCollection
-<a name="API_CreateCidrCollection"></a>
 
 Creates a CIDR collection in the current AWS account.
 

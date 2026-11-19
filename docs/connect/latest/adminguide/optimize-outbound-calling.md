@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/optimize-outbo
 ---
 
 # Optimize your reputation for outbound calling in Connect Customer
-<a name="optimize-outbound-calling"></a>
 
 In the contact center industry one of the most difficult tasks is understanding why customers don't answer calls when you dial out. Is the customer deliberately not answering, or are they busy on a work call or answering the door? For contact centers it's impossible to know but there are things you can do about it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_CreateGroup.html
 ---
 
 # CreateGroup
-<a name="API_CreateGroup"></a>
 
 Creates a group resource with a name and a filter expression.
 

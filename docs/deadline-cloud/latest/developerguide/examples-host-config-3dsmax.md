@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Install Autodesk 3ds Max on Deadline Cloud Windows workers
-<a name="examples-host-config-3dsmax"></a>
 
 The [3dsmax](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/3dsmax) host configuration scripts on the GitHub website install 3ds Max with renderer plugins such as V-Ray, Corona, tyFlow, and AEC plugins on Windows service-managed fleet workers. Because 3ds Max runs only on Windows and requires administrative access to install, the recommended approach is to install it on the worker host through a host configuration script.
 

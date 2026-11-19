@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Accele
 ---
 
 # AcceleratorCountRequest
-<a name="API_AcceleratorCountRequest"></a>
 
 The minimum and maximum number of accelerators (such as GPUs) for instance type selection. This is used for workloads that require specific numbers of accelerators.
 

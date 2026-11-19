@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-overview.html
 ---
 
 # Plan
-<a name="plan-overview"></a>
 
 Some choices, such as the instance type and the storage model, decide which deployment path you follow. Work through the topics in this chapter in order, and record your values in the [deployment prerequisite checklist](evs-deployment-prereq-checklist.md).
 

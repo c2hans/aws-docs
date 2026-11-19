@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/metr
 ---
 
 # Metrics export schema
-<a name="metrics-export-json-schema"></a>
 
 See the following schema for batched metrics export data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # CloudFormation Hooks stack level filters
-<a name="hooks-stack-level-filtering"></a>
 
 You can add stack level filters to your CloudFormation Hooks to target specific stacks based on stack names and roles. This is useful in cases where you have multiple stacks with the same resource types, but the Hook is intended for specific stacks.
 

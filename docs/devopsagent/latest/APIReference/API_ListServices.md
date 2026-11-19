@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListServices
-<a name="API_ListServices"></a>
 
 List a list of registered service on the account level.
 

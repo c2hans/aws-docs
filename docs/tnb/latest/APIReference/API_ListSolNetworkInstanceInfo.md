@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ListSolNetwo
 ---
 
 # ListSolNetworkInstanceInfo
-<a name="API_ListSolNetworkInstanceInfo"></a>
 
 Info about the specific network instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_C
 ---
 
 # CardInput
-<a name="API_qapps_CardInput"></a>
 
 The properties defining an input card in an Amazon Q App.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # UpdateMediaInsightsPipelineStatus
-<a name="API_media-pipelines-chime_UpdateMediaInsightsPipelineStatus"></a>
 
 Updates the status of a media insights pipeline.
 

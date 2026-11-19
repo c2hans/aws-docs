@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_KinesisFi
 ---
 
 # KinesisFirehoseOutputDescription
-<a name="API_KinesisFirehoseOutputDescription"></a>
 
 For a SQL-based Kinesis Data Analytics application's output, describes the Kinesis Data Firehose delivery stream that is configured as its destination.
 

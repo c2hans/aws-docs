@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # S3 Encryption Client Migration (V1 to V2)
-<a name="s3-encryption-migration-v1-v2"></a>
 
 **Note**
 If you are using V2 and want to migrate to V4, see [S3 Encryption Client Migration (V2 to V4)](s3-encryption-migration-v2-v4.md).

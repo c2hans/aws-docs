@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/firewall-p
 ---
 
 # Subscribe to Palo Alto Networks Advanced DNS Security
-<a name="firewall-partner-panw-subscribe"></a>
 
 You can subscribe to Palo Alto Networks Advanced DNS Security directly from the DNS Firewall console during the rule creation flow, or from AWS Marketplace. When you subscribe, you authorize AWS to share DNS query metadata with Palo Alto Networks.
 

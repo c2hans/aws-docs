@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Obfuscatio
 ---
 
 # ObfuscationSetting
-<a name="API_ObfuscationSetting"></a>
 
 Determines whether Amazon Lex obscures slot values in conversation logs.
 

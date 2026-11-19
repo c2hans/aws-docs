@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Establish preventive controls across your environment
-<a name="establish-preventive-controls-across-your-environment"></a>
 
 Only granting permissions does not guarantee that our environment is fully secured. To ensure that only the services that are intended to be used by the assigned roles, you need to limit what actions can be performed in your overall environment. For example, to limit the modification of the logs that are being stored in your log storage.
 

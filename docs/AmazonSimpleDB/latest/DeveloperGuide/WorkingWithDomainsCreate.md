@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Wor
 ---
 
 # Creating a Domain
-<a name="WorkingWithDomainsCreate"></a>
 
 The following is an example of creating a domain using REST.
 

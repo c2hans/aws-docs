@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CustomP
 ---
 
 # CustomParameter
-<a name="API_CustomParameter"></a>
 
 The details of user parameters of an environment blueprint.
 

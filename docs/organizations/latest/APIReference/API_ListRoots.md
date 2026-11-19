@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Li
 ---
 
 # ListRoots
-<a name="API_ListRoots"></a>
 
 Lists the roots that are defined in the current organization.
 

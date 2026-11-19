@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_ScheduleKeyD
 ---
 
 # ScheduleKeyDeletion
-<a name="API_ScheduleKeyDeletion"></a>
 
 Schedules the deletion of a KMS key. By default, AWS KMS applies a waiting period of 30 days, but you can specify a waiting period of 7-30 days. When this operation is successful, the key state of the KMS key changes to `PendingDeletion` and the key can't be used in any cryptographic operations. It remains in this state for the duration of the waiting period. Before the waiting period ends, you can use [CancelKeyDeletion](API_CancelKeyDeletion.md) to cancel the deletion of the KMS key. After the waiting period ends, AWS KMS deletes the KMS key, its key material, and all AWS KMS data associated with it, including all aliases that refer to it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/release-alloc-ipam.html
 ---
 
 # Release an allocation
-<a name="release-alloc-ipam"></a>
 
 If you are planning to delete a pool, you might need to release a pool allocation. An allocation is a CIDR assignment from an IPAM pool to another resource or IPAM pool.
 

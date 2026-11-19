@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ListTemplates
-<a name="API_ListTemplates"></a>
 
 Lists the templates in the account. You can filter the results by status and page through them using `maxResults` and `nextToken`.
 

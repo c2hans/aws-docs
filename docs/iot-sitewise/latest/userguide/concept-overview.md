@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/concept-ov
 ---
 
 # AWS IoT SiteWise concepts
-<a name="concept-overview"></a>
 
 The following are the core concepts of AWS IoT SiteWise:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Match.h
 ---
 
 # Match
-<a name="API_Match"></a>
 
 The part of a profile that contains a recommendation found during analysis.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/about-xks-conn
 ---
 
 # Connect an external key store
-<a name="about-xks-connecting"></a>
 
 When your external key store is connected to its external key store proxy, you can [create KMS keys in your external key store](create-cmk-keystore.md) and use its existing KMS keys in [cryptographic operations](manage-cmk-keystore.md#use-cmk-keystore).
 

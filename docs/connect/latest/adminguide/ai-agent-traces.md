@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ai-agent-trace
 ---
 
 # AI agent traces using Contact search and Contact details
-<a name="ai-agent-traces"></a>
 
 You can use AI agent traces to review, investigate, and improve your automated customer interactions. Drill down into AI agent trace details from the Connect Customer analytics dashboards, or directly through Contact search. The AI agent trace details appear on the **Contact details** page and include the following information:
 + Flow, Lex bot, and AI agent invocation and span details alongside the self-service transcript. This experience is powered by the Automated Interaction Log. For more details, see [Monitor automated interactions (IVR) in Connect Customer](monitor-automated-interaction-logs.md).

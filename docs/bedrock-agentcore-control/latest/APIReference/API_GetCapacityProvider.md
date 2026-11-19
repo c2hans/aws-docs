@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetCapacityProvider
-<a name="API_GetCapacityProvider"></a>
 
 Retrieves information about a capacity provider, including its status, permissions configuration, and compute configuration.
 

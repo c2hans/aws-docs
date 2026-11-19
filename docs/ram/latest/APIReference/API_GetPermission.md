@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_GetPermissio
 ---
 
 # GetPermission
-<a name="API_GetPermission"></a>
 
 Retrieves the contents of a managed permission in JSON format.
 

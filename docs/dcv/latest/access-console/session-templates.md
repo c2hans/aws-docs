@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/session-templa
 ---
 
 # Session templates
-<a name="session-templates"></a>
 
 A Amazon DCV session template is created by admins to define the details of the session to be created.
 

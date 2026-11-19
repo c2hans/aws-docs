@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/vpc-endpoi
 ---
 
 # API operations for VPC endpoints in AWS IoT SiteWise
-<a name="vpc-endpoint-considerations"></a>
 
 AWS IoT SiteWise supports making calls to the following AWS IoT SiteWise API operations from your VPC:
 + For all the **data plane** API operations, use the following endpoint: Replace `{{region}}` with your AWS Region

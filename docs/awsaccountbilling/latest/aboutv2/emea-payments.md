@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/emea-pa
 ---
 
 # Managing your payments in AWS Europe
-<a name="emea-payments"></a>
 
 If your account is with AWS Europe, follow the procedures in this section to manage your payment methods and payments.
 

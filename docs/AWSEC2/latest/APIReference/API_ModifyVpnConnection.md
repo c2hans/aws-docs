@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpn
 ---
 
 # ModifyVpnConnection
-<a name="API_ModifyVpnConnection"></a>
 
 Modifies the customer gateway or the target gateway of an AWS Site-to-Site VPN connection. To modify the target gateway, the following migration options are available:
 + An existing virtual private gateway to a new virtual private gateway

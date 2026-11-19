@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # TagDescription
-<a name="API_TagDescription"></a>
 
 The tags associated with a load balancer.
 

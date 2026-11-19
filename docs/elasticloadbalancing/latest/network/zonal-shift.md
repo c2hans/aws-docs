@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/zona
 ---
 
 # Zonal shift for your Network Load Balancer
-<a name="zonal-shift"></a>
 
 Zonal shift is a capability in Amazon Application Recovery Controller (ARC). With zonal shift, you can shift a Network Load Balancer resource away from an impaired Availability Zone with a single action. This way, you can continue operating from other healthy Availability Zones in an AWS Region.
 

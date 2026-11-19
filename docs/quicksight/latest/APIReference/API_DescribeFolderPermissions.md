@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeFolderPermissions
-<a name="API_DescribeFolderPermissions"></a>
 
 Describes permissions for a folder.
 

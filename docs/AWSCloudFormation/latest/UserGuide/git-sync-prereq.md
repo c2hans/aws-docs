@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/git-s
 ---
 
 # Prerequisites for syncing stacks to a Git repository using Git sync
-<a name="git-sync-prereq"></a>
 
 Before you sync a CloudFormation stack to your Git repository, verify that the following requirements are met.
 

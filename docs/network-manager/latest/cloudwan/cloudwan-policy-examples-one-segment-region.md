@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # AWS Cloud WAN example: One segment, one AWS Region
-<a name="cloudwan-policy-examples-one-segment-region"></a>
 
 This policy sets up one network in `us-east-1` with the name **my-network**. Any attachment is automatically added to the network without requiring approval.
 

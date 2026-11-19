@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/vpc-connectivi
 ---
 
 # Configure VPC endpoint service connectivity
-<a name="vpc-connectivity"></a>
 
 Use the guidance in this section to create and configure the AWS resources and related components that are required for an external key store that uses [VPC endpoint service connectivity](choose-xks-connectivity.md#xks-vpc-connectivity). The resources listed for this connectivity option are a supplement to the [resources required for all external key stores](create-xks-keystore.md#xks-requirements). After you create and configure the required resources, you can [create your external key store](create-xks-keystore.md).
 

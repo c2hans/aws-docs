@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-smart-sifting-
 ---
 
 # Security in SageMaker smart sifting
-<a name="train-smart-sifting-security"></a>
 
 Because the SageMaker smart sifting library runs processes of removing less valuable training samples, it requires full access to training datasets as they are produced by the data loader. This access is not different than the access already provided to PyTorch in normal training scenario.
 

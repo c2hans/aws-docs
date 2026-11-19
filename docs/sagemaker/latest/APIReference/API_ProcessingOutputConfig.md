@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Proces
 ---
 
 # ProcessingOutputConfig
-<a name="API_ProcessingOutputConfig"></a>
 
 Configuration for uploading output from the processing container.
 

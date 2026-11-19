@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_S3SignedObject.htm
 ---
 
 # S3SignedObject
-<a name="API_S3SignedObject"></a>
 
 The Amazon S3 bucket name and key where Signer saved your signed code image.
 

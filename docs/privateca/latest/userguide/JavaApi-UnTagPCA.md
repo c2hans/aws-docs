@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-UnTag
 ---
 
 # UntagCertificateAuthority
-<a name="JavaApi-UnTagPCA"></a>
 
 The following Java sample shows how to use the [UntagCertificateAuthority](https://docs.aws.amazon.com/privateca/latest/APIReference/API_UntagCertificateAuthority.html) operation.
 

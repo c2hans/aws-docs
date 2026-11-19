@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-stop-me
 ---
 
 # Methods for stopping an instance
-<a name="instance-stop-methods"></a>
 
 There are four ways to perform a user-initiated stop: default stop, stop with skip OS shutdown, force stop, and force stop with skip OS shutdown. The following table compares the key differences between the stop methods:
 

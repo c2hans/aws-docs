@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Action
-<a name="API_Action"></a>
 
 An action to take when a gateway rule's conditions are met.
 

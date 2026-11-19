@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/security-be
 ---
 
 # Security Best Practices for AWS CloudTrail
-<a name="security-best-practices-for-CloudTrail"></a>
 
  This conformance pack contains AWS Config rules based on AWS CloudTrail. For a list of all managed rules supported by AWS Config, see [List of AWS Config Managed Rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Migrating on-premises Teradata environments to Teradata VantageCloud Lake on AWS
-<a name="introduction"></a>
 
 *Battulga Purevragchaa, Shirin Ali, and Doug Mbaya, Amazon Web Services*
 

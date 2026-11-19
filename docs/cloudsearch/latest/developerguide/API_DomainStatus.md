@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Do
 ---
 
 # DomainStatus
-<a name="API_DomainStatus"></a>
 
 ## Description
 <a name="API_DomainStatus_Description"></a>

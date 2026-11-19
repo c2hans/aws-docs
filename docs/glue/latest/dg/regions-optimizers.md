@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.html
 ---
 
 # Supported Regions for table optimizers
-<a name="regions-optimizers"></a>
 
 The table optimization features (compaction, snapshot retention, and orphan file deletion) for AWS Glue Data Catalog are available in the following AWS Regions:
 + Asia Pacific (Tokyo)

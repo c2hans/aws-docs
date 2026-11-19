@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/approver.html
 ---
 
 # Approver tasks for Multi-party approval
-<a name="approver"></a>
 
 As an approver, you play a key role in reviewing and responding to requested operations that require team approval. When you have accepted the team invitation and the team is active, you'll receive email notifications whenever there are pending requests that need your attention.
 

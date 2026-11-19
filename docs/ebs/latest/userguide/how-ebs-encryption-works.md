@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/how-ebs-encryption-
 ---
 
 # How Amazon EBS encryption works
-<a name="how-ebs-encryption-works"></a>
 
 You can encrypt both the boot and data volumes of an EC2 instance.
 

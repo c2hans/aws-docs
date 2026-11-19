@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ParameterGro
 ---
 
 # Listing ElastiCache parameter groups by name
-<a name="ParameterGroups.ListingGroups"></a>
 
 You can list the parameter groups using the ElastiCache console, the AWS CLI, or the ElastiCache API.
 

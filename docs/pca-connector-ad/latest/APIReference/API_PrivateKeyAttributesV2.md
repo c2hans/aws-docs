@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # PrivateKeyAttributesV2
-<a name="API_PrivateKeyAttributesV2"></a>
 
 Defines the attributes of the private key.
 

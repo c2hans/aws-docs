@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Create the role and attach it to your test
-<a name="next-gen-resilience-testing-iam-sa-create"></a>
 
 Save the trust policy as `trust-policy.json` and the permissions policy as `permissions-policy.json`, then create the role with the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/monitor
 ---
 
 # Use a maintenance window to send a command that returns status notifications
-<a name="monitoring-sns-mw-register"></a>
 
 The following procedures show how to register a Run Command task with your maintenance window using the AWS Systems Manager console or the AWS Command Line Interface (AWS CLI). Run Command is a tool in AWS Systems Manager. The procedures also describe how to configure the Run Command task to return status notifications.
 

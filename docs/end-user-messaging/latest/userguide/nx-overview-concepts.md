@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-o
 ---
 
 # Concepts
-<a name="nx-overview-concepts"></a>
 
 AWS End User Messaging provides a set of features that you use to send messages, manage the identities you send from, register to send in each country, and track delivery. The following table introduces each feature and links to where it is documented. For the full details of any feature, see its page under Messaging features.
 

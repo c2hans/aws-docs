@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # EnvironmentVpc
-<a name="API_EnvironmentVpc"></a>
 
 Provides summary information for the `EnvironmentVpc` resource as a response to `ListEnvironmentVpc`.
 

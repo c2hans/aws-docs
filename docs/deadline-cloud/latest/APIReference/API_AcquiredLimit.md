@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AcquiredLimit
-<a name="API_AcquiredLimit"></a>
 
 Provides information about the number of resources used.
 

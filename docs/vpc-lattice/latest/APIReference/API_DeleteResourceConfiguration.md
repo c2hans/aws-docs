@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Dele
 ---
 
 # DeleteResourceConfiguration
-<a name="API_DeleteResourceConfiguration"></a>
 
 Deletes the specified resource configuration.
 

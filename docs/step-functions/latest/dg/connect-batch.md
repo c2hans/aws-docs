@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-batch.h
 ---
 
 # Run AWS Batch workloads with Step Functions
-<a name="connect-batch"></a>
 
 You can integrate Step Functions with AWS Batch to run batch computing workloads in the AWS cloud. This page lists the supported AWS Batch APIs and provides an example `Task` state to perform a batch-processing task.
 

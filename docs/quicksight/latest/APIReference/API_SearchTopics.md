@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Searc
 ---
 
 # SearchTopics
-<a name="API_SearchTopics"></a>
 
 Searches for any Q topic that exists in an Quick account.
 

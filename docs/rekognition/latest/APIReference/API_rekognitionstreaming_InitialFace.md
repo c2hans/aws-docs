@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # InitialFace
-<a name="API_rekognitionstreaming_InitialFace"></a>
 
  Contains bounding box of initial face position of the user on the device screen. Contains an epoch timestamp of when the user was detected in this position. Used for Face Liveness detection.
 

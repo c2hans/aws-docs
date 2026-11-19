@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferBuyerAccountsFilter
-<a name="API_OfferBuyerAccountsFilter"></a>
 
 Allows filtering on the `BuyerAccounts` of an offer.
 

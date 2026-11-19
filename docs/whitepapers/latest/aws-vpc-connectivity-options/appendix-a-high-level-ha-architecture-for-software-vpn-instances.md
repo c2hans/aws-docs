@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 ---
 
 # Appendix A: High-Level HA architecture for software VPN instances
-<a name="appendix-a-high-level-ha-architecture-for-software-vpn-instances"></a>
 
  Creating a fully resilient VPC connection for software VPN instances requires the setup and configuration of multiple VPN instances and a monitoring instance to monitor the health of the VPN connections.
 

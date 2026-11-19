@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # CompliantSummary
-<a name="API_CompliantSummary"></a>
 
 A summary of resources that are compliant. The summary is organized according to the resource count for each compliance type.
 

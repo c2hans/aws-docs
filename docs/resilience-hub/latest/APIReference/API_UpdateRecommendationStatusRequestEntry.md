@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_U
 ---
 
 # UpdateRecommendationStatusRequestEntry
-<a name="API_UpdateRecommendationStatusRequestEntry"></a>
 
 Defines the operational recommendation item that is to be included or excluded.
 

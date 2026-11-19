@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_R
 ---
 
 # ReplicaGlobalSecondaryIndexAutoScalingDescription
-<a name="API_ReplicaGlobalSecondaryIndexAutoScalingDescription"></a>
 
 Represents the auto scaling configuration for a replica global secondary index.
 

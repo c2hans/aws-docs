@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Suggestio
 ---
 
 # SuggestionValue
-<a name="API_SuggestionValue"></a>
 
 The `SuggestionTextWithHighlights` structure information.
 

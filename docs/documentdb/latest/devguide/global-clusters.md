@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/global-cluste
 ---
 
 # Overview of Amazon DocumentDB global clusters
-<a name="global-clusters"></a>
 
 ## What is a global cluster?
 <a name="w2aac31b9b3"></a>

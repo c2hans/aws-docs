@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Snapsho
 ---
 
 # SnapshotSortingEntity
-<a name="API_SnapshotSortingEntity"></a>
 
 Describes a sorting entity
 

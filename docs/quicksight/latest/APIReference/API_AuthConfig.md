@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AuthC
 ---
 
 # AuthConfig
-<a name="API_AuthConfig"></a>
 
 Authentication configuration for connecting to external services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DescribeCopyProductStatus
-<a name="API_DescribeCopyProductStatus"></a>
 
 Gets the status of the specified copy product operation.
 

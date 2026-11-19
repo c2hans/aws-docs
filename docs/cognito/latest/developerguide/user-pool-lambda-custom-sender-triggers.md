@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-
 ---
 
 # Custom sender Lambda triggers
-<a name="user-pool-lambda-custom-sender-triggers"></a>
 
 The Lambda triggers `CustomEmailSender` and `CustomSMSSender` support third-party email and SMS notifications in user pools. You can choose SMS and email providers to send notifications to users from within your Lambda function code. When Amazon Cognito sends invitations, MFA codes, confirmation codes, verification codes, and temporary passwords to users, the events activate your configured Lambda functions. Amazon Cognito sends the code and temporary passwords (secrets) to your activated Lambda functions. Amazon Cognito encrypts these secrets with an AWS KMS customer managed key and the AWS Encryption SDK. The AWS Encryption SDK is a client-side encryption library that helps you to encrypt and decrypt generic data.
 

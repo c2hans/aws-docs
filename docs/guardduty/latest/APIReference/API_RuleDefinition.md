@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_RuleDe
 ---
 
 # RuleDefinition
-<a name="API_RuleDefinition"></a>
 
 Contains the detection logic for a custom detection rule.
 

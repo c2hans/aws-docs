@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CoreNetworkChangeValues
-<a name="API_CoreNetworkChangeValues"></a>
 
 Describes a core network change.
 

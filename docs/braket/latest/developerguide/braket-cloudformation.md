@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-clou
 ---
 
 # Create a Braket notebook instance using CloudFormation
-<a name="braket-cloudformation"></a>
 
 **Tip**
 **Learn the foundations of quantum computing with AWS\!** Enroll in the [Amazon Braket Digital Learning Plan](https://skillbuilder.aws/learning-plan/EH35DWGU3R/amazon-braket--knowledge-badge-readiness-path-includes-labs) and earn your own Digital badge after completing a series of learning courses and a digital assessment.

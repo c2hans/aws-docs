@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # EffectivePreferredResource
-<a name="API_EffectivePreferredResource"></a>
 
  Describes the effective preferred resources that Compute Optimizer considers as rightsizing recommendation candidates.
 

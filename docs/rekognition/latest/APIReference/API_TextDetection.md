@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Text
 ---
 
 # TextDetection
-<a name="API_TextDetection"></a>
 
 Information about a word or line of text detected by [DetectText](API_DetectText.md).
 

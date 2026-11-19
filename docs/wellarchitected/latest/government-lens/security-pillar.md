@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/s
 ---
 
 # Security pillar
-<a name="security-pillar"></a>
 
  The security pillar encompasses the ability to protect data, services, and systems by taking advantage of cloud technologies to improve your security, including practices for understanding the threat and risks, empowering end users to control how their data is used, and shifting to real time monitoring and escalation models for security.
 

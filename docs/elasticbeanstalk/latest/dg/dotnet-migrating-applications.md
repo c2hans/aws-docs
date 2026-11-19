@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-migrat
 ---
 
 # Migrating IIS applications to Elastic Beanstalk
-<a name="dotnet-migrating-applications"></a>
 
 AWS Elastic Beanstalk provides a streamlined migration path for your Windows applications running on Internet Information Services (IIS). The migration capability described in this chapter significantly reduces the time and complexity that’s typically associated with cloud migrations, helping you to maintain application functionality and configuration integrity during the transition to AWS.
 

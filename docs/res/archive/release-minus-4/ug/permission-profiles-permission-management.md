@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/permissio
 ---
 
 # Managing permission profiles
-<a name="permission-profiles-permission-management"></a>
 
 As a RES administrator, you can perform the following actions to manage permission profiles.
 

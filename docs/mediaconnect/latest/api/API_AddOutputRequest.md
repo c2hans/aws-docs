@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AddOutputReq
 ---
 
 # AddOutputRequest
-<a name="API_AddOutputRequest"></a>
 
  A request to add an output to a flow.
 

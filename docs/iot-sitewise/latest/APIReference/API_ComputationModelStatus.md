@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 ---
 
 # ComputationModelStatus
-<a name="API_ComputationModelStatus"></a>
 
 Contains current status information for a computation model.
 

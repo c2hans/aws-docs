@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/alb-tagged.
 ---
 
 # alb-tagged
-<a name="alb-tagged"></a>
 
 Checks if Application Load Balancers have tags. Optionally, you can specify tag keys. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.
 

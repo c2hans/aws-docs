@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_Autoshift
 ---
 
 # AutoshiftSummary
-<a name="API_AutoshiftSummary"></a>
 
 Information about an autoshift. AWS starts an autoshift to temporarily move traffic for a resource away from an Availability Zone in an AWS Region when AWS determines that there's an issue in the Availability Zone that could potentially affect customers. You can configure zonal autoshift in ARC for managed resources in your AWS account in a Region. Supported AWS resources are automatically registered with ARC.
 

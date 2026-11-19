@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppMesh::VirtualNode Backend
-<a name="aws-properties-appmesh-virtualnode-backend"></a>
 
 An object that represents the backends that a virtual node is expected to send outbound traffic to.
 

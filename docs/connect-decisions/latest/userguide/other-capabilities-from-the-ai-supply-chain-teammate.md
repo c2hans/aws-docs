@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/other
 ---
 
 # Other Capabilities from the AI Supply Chain Teammate
-<a name="other-capabilities-from-the-ai-supply-chain-teammate"></a>
 
 The AI supply chain teammate, located at the chat interface (right panel) in Plans, goes beyond basic forecast explanations and edits. It provides advanced analytical capabilities to help you understand your demand patterns, identify issues, and make data-driven decisions.
 

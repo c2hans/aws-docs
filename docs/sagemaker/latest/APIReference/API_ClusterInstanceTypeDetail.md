@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterInstanceTypeDetail
-<a name="API_ClusterInstanceTypeDetail"></a>
 
 Details about a specific instance type within a flexible instance group, including the count and configuration.
 

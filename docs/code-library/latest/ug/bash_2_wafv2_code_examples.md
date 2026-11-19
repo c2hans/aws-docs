@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/bash_2_wafv2_code
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # AWS WAFV2 examples using AWS CLI with Bash script
-<a name="bash_2_wafv2_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS Command Line Interface with Bash script with AWS WAFV2.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_H
 ---
 
 # HostKeyAttributes
-<a name="API_HostKeyAttributes"></a>
 
 Describes the public SSH host keys or the RDP certificate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-resilience.htm
 ---
 
 # Plan for resilience and recovery
-<a name="plan-resilience"></a>
 
 An Amazon Elastic VMware Service environment runs in one AWS Availability Zone, so your design must handle host failures inside that zone and plan recovery outside it. You configure most of the VMware availability features yourself, and you’re responsible for the high availability of your virtual machines.
 

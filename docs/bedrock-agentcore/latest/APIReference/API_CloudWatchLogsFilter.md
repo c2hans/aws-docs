@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # CloudWatchLogsFilter
-<a name="API_CloudWatchLogsFilter"></a>
 
 A filter for narrowing down agent traces from CloudWatch Logs based on key-value comparisons.
 

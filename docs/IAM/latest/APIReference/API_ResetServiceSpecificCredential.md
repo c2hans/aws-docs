@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ResetService
 ---
 
 # ResetServiceSpecificCredential
-<a name="API_ResetServiceSpecificCredential"></a>
 
 Resets the password for a service-specific credential. The new password is AWS generated and cryptographically strong. It cannot be configured by the user. Resetting the password immediately invalidates the previous password associated with this user.
 

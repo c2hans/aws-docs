@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribeAccountAttributes
-<a name="API_DescribeAccountAttributes"></a>
 
 Describes attributes of your AWS account. The supported account attributes include account tier, which indicates whether your account is in the sandbox or production environment. When you're ready to move your account out of the sandbox, create an AWS Support case for a service limit increase request.
 

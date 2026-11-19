@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRServerless::Application SchedulerConfiguration
-<a name="aws-properties-emrserverless-application-schedulerconfiguration"></a>
 
 The scheduler configuration for batch and streaming jobs running on this application. Supported with release labels emr-7.0.0 and above.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # ListDataIntegrationEvents
-<a name="API_ListDataIntegrationEvents"></a>
 
 Enables you to programmatically list all data integration events for the provided AWS Supply Chain instance. Data integration events older than 30 days are not returned in the response.
 

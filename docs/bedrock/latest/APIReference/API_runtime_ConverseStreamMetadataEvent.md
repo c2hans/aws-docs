@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ConverseStreamMetadataEvent
-<a name="API_runtime_ConverseStreamMetadataEvent"></a>
 
 A conversation stream metadata event.
 

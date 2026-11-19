@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failov
 ---
 
 # Task list for configuring DNS failover
-<a name="dns-failover-how-to"></a>
 
 To use Route 53 to configure DNS failover, perform the following tasks:
 

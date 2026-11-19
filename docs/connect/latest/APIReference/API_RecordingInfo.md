@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Recordin
 ---
 
 # RecordingInfo
-<a name="API_RecordingInfo"></a>
 
 Information about a voice recording, chat transcript, or screen recording.
 

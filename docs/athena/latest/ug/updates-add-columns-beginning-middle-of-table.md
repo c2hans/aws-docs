@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/updates-add-columns-beg
 ---
 
 # Add columns at the beginning or in the middle of the table
-<a name="updates-add-columns-beginning-middle-of-table"></a>
 
 Adding columns is one of the most frequent schema changes. For example, you may add a new column to enrich the table with new data. Or, you may add a new column if the source for an existing column has changed, and keep the previous version of this column, to adjust applications that depend on them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafv
 ---
 
 # AwsWafv2WebAclActionDetails
-<a name="API_AwsWafv2WebAclActionDetails"></a>
 
  Specifies the action that Amazon CloudFront or AWS WAF takes when a web request matches the conditions in the rule.
 

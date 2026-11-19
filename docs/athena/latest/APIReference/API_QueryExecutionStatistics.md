@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryExec
 ---
 
 # QueryExecutionStatistics
-<a name="API_QueryExecutionStatistics"></a>
 
 The amount of data scanned during the query execution and the amount of time that it took to execute, and the type of statement that was run.
 

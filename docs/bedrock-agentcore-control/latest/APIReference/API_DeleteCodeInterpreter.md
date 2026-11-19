@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DeleteCodeInterpreter
-<a name="API_DeleteCodeInterpreter"></a>
 
 Deletes a custom code interpreter.
 

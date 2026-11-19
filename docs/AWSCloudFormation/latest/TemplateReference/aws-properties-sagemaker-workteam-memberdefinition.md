@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Workteam MemberDefinition
-<a name="aws-properties-sagemaker-workteam-memberdefinition"></a>
 
 Defines an Amazon Cognito or your own OIDC IdP user group that is part of a work team.
 

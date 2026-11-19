@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/net.au.htm
 ---
 
 # .net.au (Australia)
-<a name="net.au"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/local-zones/latest/ug/local-zones-connec
 ---
 
 # Internet gateway connection in Local Zones
-<a name="local-zones-connectivity-igw"></a>
 
 Internet gateways provide two-way public connectivity to applications running in AWS Regions and/or in Local Zones. For more information, see [Internet gateways](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html) in the *Amazon VPC User Guide*.
 

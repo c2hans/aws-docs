@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisParameter
-<a name="API_AnalysisParameter"></a>
 
 Optional. The member who can query can provide this placeholder for a literal data value in an analysis template.
 

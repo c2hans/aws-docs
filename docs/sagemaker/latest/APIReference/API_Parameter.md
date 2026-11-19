@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Parame
 ---
 
 # Parameter
-<a name="API_Parameter"></a>
 
 Assigns a value to a named Pipeline parameter.
 

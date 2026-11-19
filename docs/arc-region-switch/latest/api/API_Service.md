@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Service
 ---
 
 # Service
-<a name="API_Service"></a>
 
 The service for a cross account role.
 

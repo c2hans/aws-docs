@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Targeted business outcomes
-<a name="targeted-business-outcomes"></a>
 
 Using AWS automations for SAP, you can use features that are native to the cloud to simplify tasks and improve agility, performance, and scalability. For example, you can:
 + Build once and deploy a solution globally

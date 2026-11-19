@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/xacct-fed-query-enable.
 ---
 
 # Enable cross-account federated queries
-<a name="xacct-fed-query-enable"></a>
 
 Federated query allows you to query data sources other than Amazon S3 using data source connectors deployed on AWS Lambda. The cross-account federated query feature allows the Lambda function and the data sources that are to be queried to be located in different accounts.
 

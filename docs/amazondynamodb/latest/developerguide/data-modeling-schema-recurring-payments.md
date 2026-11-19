@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dat
 ---
 
 # Recurring payments schema design in DynamoDB
-<a name="data-modeling-schema-recurring-payments"></a>
 
 ## Recurring payments business use case
 <a name="data-modeling-schema-recurring-payments-use-case"></a>

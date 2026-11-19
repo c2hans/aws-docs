@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ReflectionConfiguration
-<a name="API_ReflectionConfiguration"></a>
 
 Contains reflection configuration information for a memory strategy.
 

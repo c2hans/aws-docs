@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_InforNexusS
 ---
 
 # InforNexusSourceProperties
-<a name="API_InforNexusSourceProperties"></a>
 
  The properties that are applied when Infor Nexus is being used as a source.
 

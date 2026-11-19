@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 17.1 – Evaluate your use of SAP managed service offerings
-<a name="best-practice-17-1"></a>
 
 Per the AWS shared responsibility model, the customer has the responsibility of managing their SAP workloads on AWS. Optionally, a service provider can be used to manage your SAP workloads on AWS. When evaluating a service provider, the responsibility of both upfront and ongoing cost management should be delegated appropriately and should be treated as an ongoing process.
 

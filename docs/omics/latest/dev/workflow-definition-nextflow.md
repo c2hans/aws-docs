@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflow-definition-nex
 ---
 
 # Nextflow workflow definition specifics
-<a name="workflow-definition-nextflow"></a>
 
 HealthOmics supports Nextflow DSL1 and DSL2. For details, see [Nextflow version support](workflows-lang-versions.md#workflows-lang-versions-nextflow).
 

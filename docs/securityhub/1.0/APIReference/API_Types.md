@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Types.h
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The AWS Security Hub CSPM API contains several data types that the various actions use. This section describes each data type in detail.
 

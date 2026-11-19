@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/enable-aba
 ---
 
 # Enable attributes for access control
-<a name="enable-abac"></a>
 
 Use the following procedure to enable the attributes for access (ABAC) control feature using the IAM Identity Center console.
 

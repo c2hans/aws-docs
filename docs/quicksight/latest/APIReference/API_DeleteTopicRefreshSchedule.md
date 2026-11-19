@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteTopicRefreshSchedule
-<a name="API_DeleteTopicRefreshSchedule"></a>
 
 Deletes a topic refresh schedule.
 

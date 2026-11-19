@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Disassoci
 ---
 
 # DisassociateAddress
-<a name="API_DisassociateAddress"></a>
 
 Disassociates an Elastic IP address from the instance or network interface it's associated with.
 

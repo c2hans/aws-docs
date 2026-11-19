@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/managing-upgrade-
 ---
 
 # Managing upgrade requests
-<a name="managing-upgrade-requests"></a>
 
 |  |
 | --- |

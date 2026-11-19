@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/decommissi
 ---
 
 # Decommission an AWS Control Tower landing zone
-<a name="decommission-landing-zone"></a>
 
 AWS Control Tower allows you to set up and govern secure multi-account AWS environments, known as landing zones. The process of cleaning up all of the resources allocated by AWS Control Tower is referred to as *decommissioning* a landing zone.
 

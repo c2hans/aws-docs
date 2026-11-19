@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_PutSigningProfile.
 ---
 
 # PutSigningProfile
-<a name="API_PutSigningProfile"></a>
 
 Creates a signing profile. A signing profile is a code-signing template that can be used to carry out a pre-defined signing job.
 

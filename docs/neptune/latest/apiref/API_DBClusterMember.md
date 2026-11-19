@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DBClusterMembe
 ---
 
 # DBClusterMember
-<a name="API_DBClusterMember"></a>
 
 Contains information about an instance that is part of a DB cluster.
 

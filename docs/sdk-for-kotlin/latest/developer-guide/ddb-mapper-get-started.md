@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 ---
 
 # Get started with DynamoDB Mapper
-<a name="ddb-mapper-get-started"></a>
 
 This tutorial introduces the basic components of DynamoDB Mapper and shows how to use it in your code. The examples use an online store domain whose flagship type is an `Order`.
 

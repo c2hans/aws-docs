@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Dep
 ---
 
 # DeploymentPatternVersionDataSummary
-<a name="API_DeploymentPatternVersionDataSummary"></a>
 
 Describes a deployment pattern version summary.
 

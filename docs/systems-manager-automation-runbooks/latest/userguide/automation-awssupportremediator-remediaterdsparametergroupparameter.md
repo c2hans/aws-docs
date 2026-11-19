@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-RemediateRdsParameterGroupParameter`
-<a name="automation-awssupportremediator-remediaterdsparametergroupparameter"></a>
 
 **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListView
 ---
 
 # ListViews
-<a name="API_ListViews"></a>
 
 Returns views in the given instance.
 

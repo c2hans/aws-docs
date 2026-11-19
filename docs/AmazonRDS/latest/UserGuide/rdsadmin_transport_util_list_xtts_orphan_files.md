@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rdsadmin_tran
 ---
 
 # Listing orphaned files after a tablespace import
-<a name="rdsadmin_transport_util_list_xtts_orphan_files"></a>
 
 Use the `rdsadmin.rdsadmin_transport_util.list_xtts_orphan_files` procedure to list data files that were orphaned after a tablespace import. After you identify the data files, you can delete them by calling `rdsadmin.rdsadmin_transport_util.cleanup_incomplete_xtts_import`.
 

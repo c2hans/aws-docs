@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_MountTargetD
 ---
 
 # MountTargetDescription
-<a name="API_MountTargetDescription"></a>
 
 Provides a description of a mount target.
 

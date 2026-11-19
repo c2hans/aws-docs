@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityRuleRe
 ---
 
 # DataQualityRuleRecommendationRunDescription
-<a name="API_DataQualityRuleRecommendationRunDescription"></a>
 
 Describes the result of a data quality rule recommendation run.
 

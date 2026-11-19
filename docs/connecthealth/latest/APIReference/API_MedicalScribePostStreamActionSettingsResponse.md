@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalScribePostStreamActionSettingsResponse
-<a name="API_MedicalScribePostStreamActionSettingsResponse"></a>
 
 Response containing settings for post-stream actions
 

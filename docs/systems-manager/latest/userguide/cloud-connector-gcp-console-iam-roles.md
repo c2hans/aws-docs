@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/cloud-c
 ---
 
 # IAM roles created by the Systems Manager console
-<a name="cloud-connector-gcp-console-iam-roles"></a>
 
 When you create a Cloud Connector in the Systems Manager AWS Management Console, Systems Manager creates and configures three IAM roles in your AWS account on your behalf. It also assigns a managed instance role to the GCP virtual machines registered through the connector. The roles establish the trust chain between Systems Manager, State Manager, Automation, and GCP through OIDC federation. This trust chain lets Systems Manager run Automation runbooks against your GCP virtual machines without long-lived secrets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-tra
 ---
 
 # Choose your Route 53 transfer type
-<a name="domain-transfer-decision-guide"></a>
 
 When you want to use Amazon Route 53 with your domain, you have two options. Understanding the difference will help you choose the right approach for your needs:
 

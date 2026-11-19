@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-securit
 ---
 
 # About the AWS SRA library
-<a name="targeted-business-outcomes"></a>
 
 This guide is part of a library that provides architectural blueprints and technical guidance for designing and building security architectures on AWS. The library consists of implementation code ([AWS SRA code library](https://github.com/aws-samples/aws-security-reference-architecture-examples)), a validation tool ([SRA Verify](https://github.com/awslabs/sra-verify)), and two complementary categories of guides that cover the core architecture and deep dive architectures.
 

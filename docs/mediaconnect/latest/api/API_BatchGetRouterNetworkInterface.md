@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BatchGetRout
 ---
 
 # BatchGetRouterNetworkInterface
-<a name="API_BatchGetRouterNetworkInterface"></a>
 
 Retrieves information about multiple router network interfaces in AWS Elemental MediaConnect.
 

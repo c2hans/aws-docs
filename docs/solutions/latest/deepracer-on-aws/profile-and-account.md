@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/profil
 ---
 
 # Profile and account
-<a name="profile-and-account"></a>
 
 ## Profile
 <a name="profile"></a>

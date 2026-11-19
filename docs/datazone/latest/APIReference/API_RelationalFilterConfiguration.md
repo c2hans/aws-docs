@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Relatio
 ---
 
 # RelationalFilterConfiguration
-<a name="API_RelationalFilterConfiguration"></a>
 
 The relational filter configuration for the data source.
 

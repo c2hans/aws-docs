@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/personalize_exampl
 ---
 
 # Use `DescribeCampaign` with an AWS SDK
-<a name="personalize_example_personalize_DescribeCampaign_section"></a>
 
 The following code example shows how to use `DescribeCampaign`.
 

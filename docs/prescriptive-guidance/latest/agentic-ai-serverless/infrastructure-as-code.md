@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Infrastructure as code
-<a name="infrastructure-as-code"></a>
 
 As serverless AI systems scale, the complexity of provisioning, managing, and evolving cloud infrastructure increases rapidly. Manual setup of APIs, AWS Lambda functions, Amazon Bedrock agents, IAM roles, and state machines is error-prone, non-repeatable, and not compliant at scale.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ad
 ---
 
 # How to add a line to a static map
-<a name="how-to-add-line-static"></a>
 
  In this topic, you'll learn how to add a line to a static map using Amazon Location Service. We'll cover the supported styling options, how to define a line using GeoJSON, and how to apply custom styles such as color, width, and outline. We'll also explore how to use different measurement units for properties like line width.
 
@@ -13,9 +12,9 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ad
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `color` | Color | style-dependent | The line color. |
-| `width` | Integer/String | 2 | The line width. For more information, see [How to add a line to a static map](#how-to-add-line-static). |
+| `width` | Integer/String | 2 | The line width. For more information, see [How to add a line to a static map](how-to-add-line-static.md). |
 | `outline-color` | Color | style-dependent | The line outline color. |
-| `outline-width` | Integer/String | 0 (turned off) | The width of the outline. For more information, see [How to add a line to a static map](#how-to-add-line-static). |
+| `outline-width` | Integer/String | 0 (turned off) | The width of the outline. For more information, see [How to add a line to a static map](how-to-add-line-static.md). |
 
 ## Supported unit
 <a name="supported-unit"></a>

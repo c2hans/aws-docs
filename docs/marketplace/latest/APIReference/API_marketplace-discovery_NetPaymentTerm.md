@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # NetPaymentTerm
-<a name="API_marketplace-discovery_NetPaymentTerm"></a>
 
 Defines a net payment term that sets how many days after the invoice date the payment is due.
 

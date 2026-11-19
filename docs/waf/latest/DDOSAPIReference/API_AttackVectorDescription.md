@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_AttackVe
 ---
 
 # AttackVectorDescription
-<a name="API_AttackVectorDescription"></a>
 
 Describes the attack.
 

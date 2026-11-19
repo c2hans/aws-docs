@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDeadlineCloud-FleetWorker
-<a name="AWSDeadlineCloud-FleetWorker"></a>
 
 **Description**: Provides AWS Deadline Cloud workers with access to run tasks on a farm.
 

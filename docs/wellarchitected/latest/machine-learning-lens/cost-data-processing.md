@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Data processing
-<a name="cost-data-processing"></a>
 
 **Topics**
 + [MLCOST03-BP01 Use managed data labeling](mlcost03-bp01.md)

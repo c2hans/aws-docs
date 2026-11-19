@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notificationscontacts/latest/APIReferenc
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Detaches a key-value pair from a resource, as identified by its Amazon Resource Name (ARN). Taggable resources in AWS User Notifications Contacts include email contacts..
 

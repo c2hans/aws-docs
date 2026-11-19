@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-detailed-
 ---
 
 # Manage detailed monitoring for your EC2 instances
-<a name="manage-detailed-monitoring"></a>
 
 Amazon CloudWatch provides two categories of monitoring: *basic monitoring* and *detailed monitoring*. By default, your instance is configured for basic monitoring. You can enable detailed monitoring to receive the default instance metrics in 1-minute periods. You can also associate metric categories with an instance to publish additional metrics. You can manage detailed monitoring and metric categories at launch or when the instance is running or stopped.
 

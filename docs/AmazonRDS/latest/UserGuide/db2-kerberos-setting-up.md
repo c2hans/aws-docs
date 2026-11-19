@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-kerberos-
 ---
 
 # Setting up Kerberos authentication for Amazon RDS for Db2 DB instances
-<a name="db2-kerberos-setting-up"></a>
 
 You use AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD) to set up Kerberos authentication for an RDS for Db2 DB instance. To set up Kerberos authentication, follow these steps:
 

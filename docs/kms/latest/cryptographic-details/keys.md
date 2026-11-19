@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/cryptographic-details/keys.ht
 ---
 
 # Keys
-<a name="keys"></a>
 
 The following list defines the keys referenced in this document.
 

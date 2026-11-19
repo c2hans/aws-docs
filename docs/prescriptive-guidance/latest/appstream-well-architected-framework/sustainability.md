@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/appstream-w
 ---
 
 # Sustainability pillar
-<a name="sustainability"></a>
 
 The [sustainability pillar](https://docs.aws.amazon.com/wellarchitected/latest/framework/sustainability.html) of the AWS Well-Architected Framework emphasizes minimizing your environmental footprint and optimizing energy usage and efficiency. It guides architects to make environmentally conscious decisions in their system designs and resource allocation strategies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSN
 ---
 
 # AWSNATGatewayServiceRolePolicy
-<a name="AWSNATGatewayServiceRolePolicy"></a>
 
 **Description**: Provides permissions to manage VPC resources for the configuration and management of NAT Gateways.
 

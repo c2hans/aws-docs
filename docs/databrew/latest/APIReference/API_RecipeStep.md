@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_RecipeS
 ---
 
 # RecipeStep
-<a name="API_RecipeStep"></a>
 
 Represents a single step from a DataBrew recipe to be performed.
 

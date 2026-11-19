@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListHu
 ---
 
 # ListHumanTaskUis
-<a name="API_ListHumanTaskUis"></a>
 
 Returns information about the human task user interfaces in your account.
 

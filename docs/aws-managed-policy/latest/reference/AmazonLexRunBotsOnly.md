@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonLexRunBotsOnly
-<a name="AmazonLexRunBotsOnly"></a>
 
 **Description**: Provides access to Amazon Lex conversational APIs.
 

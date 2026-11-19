@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CreateIPSet.
 ---
 
 # CreateIPSet
-<a name="API_CreateIPSet"></a>
 
 Creates an [IPSet](API_IPSet.md), which you use to identify web requests that originate from specific IP addresses or ranges of IP addresses. For example, if you're receiving a lot of requests from a ranges of IP addresses, you can configure AWS WAF to block them using an IPSet that lists those IP addresses.
 

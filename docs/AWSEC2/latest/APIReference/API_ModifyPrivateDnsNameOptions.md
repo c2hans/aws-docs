@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyPri
 ---
 
 # ModifyPrivateDnsNameOptions
-<a name="API_ModifyPrivateDnsNameOptions"></a>
 
 Modifies the options for instance hostnames for the specified instance.
 

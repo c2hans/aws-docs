@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Radar
 ---
 
 # RadarChartConfiguration
-<a name="API_RadarChartConfiguration"></a>
 
 The configuration of a `RadarChartVisual`.
 

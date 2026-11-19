@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-destroy.html
 ---
 
 # `cdk destroy`
-<a name="ref-cli-cmd-destroy"></a>
 
 Delete one or more AWS CDK stacks from your AWS environment.
 

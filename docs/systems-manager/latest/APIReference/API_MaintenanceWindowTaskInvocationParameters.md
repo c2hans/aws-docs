@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # MaintenanceWindowTaskInvocationParameters
-<a name="API_MaintenanceWindowTaskInvocationParameters"></a>
 
 The parameters for task execution.
 

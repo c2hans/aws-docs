@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-home-region/latest/APIRefer
 ---
 
 # Target
-<a name="API_Target"></a>
 
 The target parameter specifies the identifier to which the home region is applied, which is always an `ACCOUNT`. It applies the home region to the current `ACCOUNT`.
 

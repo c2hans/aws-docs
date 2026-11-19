@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sd-export-
 ---
 
 # CreateDatasetExportJob for Scenario Discovery
-<a name="sd-export-job"></a>
 
 ## Prerequisites
 <a name="sd-export-job-prereqs"></a>

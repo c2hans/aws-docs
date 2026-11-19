@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Limitations and considerations
-<a name="nx-features-whatsapp-flows-limitations"></a>
 
 Consider the following limitations when working with WhatsApp Flows:
 + **Flow name uniqueness** — Flow names must be unique within a WABA.

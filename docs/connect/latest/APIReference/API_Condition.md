@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Conditio
 ---
 
 # Condition
-<a name="API_Condition"></a>
 
 A leaf node condition which can be used to specify a ProficiencyName, ProficiencyValue and ProficiencyLimit.
 

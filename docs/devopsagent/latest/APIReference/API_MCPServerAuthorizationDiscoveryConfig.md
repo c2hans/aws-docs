@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerAuthorizationDiscoveryConfig
-<a name="API_MCPServerAuthorizationDiscoveryConfig"></a>
 
 Authorization discovery configuration for MCP server.
 

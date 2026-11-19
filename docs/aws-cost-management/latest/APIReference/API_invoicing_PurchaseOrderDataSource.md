@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # PurchaseOrderDataSource
-<a name="API_invoicing_PurchaseOrderDataSource"></a>
 
 Specifies the source configuration for retrieving purchase order data.
 

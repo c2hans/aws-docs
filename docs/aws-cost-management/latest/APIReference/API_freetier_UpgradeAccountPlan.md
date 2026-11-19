@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UpgradeAccountPlan
-<a name="API_freetier_UpgradeAccountPlan"></a>
 
  The account plan type for the AWS account.
 

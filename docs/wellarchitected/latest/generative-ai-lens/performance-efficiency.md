@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Performance efficiency
-<a name="performance-efficiency"></a>
 
  Performance efficiency in the context of generative AI systems refers to the ability to consistently deliver high-quality responses and maintain optimal resource utilization. This includes evaluating and optimizing model inference, managing compute resources, and retrieving data efficiently, all while meeting the specific performance requirements of your generative AI workload. Some key performance metrics to track for generative AI systems include:
 +  **Inference latency:** The time it takes for a model to generate a response to a given prompt. This is critical for real-time applications that require low-latency responses.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/custom-auth-tr
 ---
 
 # Troubleshooting your authorizers
-<a name="custom-auth-troubleshooting"></a>
 
  This topic walks through common issues that can cause problems in custom authentication workflows and steps for resolving them. To troubleshoot issues most effectively, enable CloudWatch logs for AWS IoT Core and set the log level to **DEBUG**. You can enable CloudWatch logs in the AWS IoT Core console ([https://console.aws.amazon.com/iot/](https://console.aws.amazon.com/iot/)). For more information about enabling and configuring logs for AWS IoT Core, see [Configure AWS IoT logging](configure-logging.md).
 

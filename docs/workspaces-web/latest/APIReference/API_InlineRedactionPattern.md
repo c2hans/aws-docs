@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_I
 ---
 
 # InlineRedactionPattern
-<a name="API_InlineRedactionPattern"></a>
 
 The set of patterns that determine the data types redacted in session.
 

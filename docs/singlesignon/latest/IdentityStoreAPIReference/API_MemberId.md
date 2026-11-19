@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # MemberId
-<a name="API_MemberId"></a>
 
 An object containing the identifier of a group member.
 

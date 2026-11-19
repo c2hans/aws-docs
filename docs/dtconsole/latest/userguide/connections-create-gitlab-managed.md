@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-c
 ---
 
 # Create a connection to GitLab self-managed
-<a name="connections-create-gitlab-managed"></a>
 
 You can create connections for GitLab Enterprise Edition or GitLab Community Edition with a self-managed installation.
 

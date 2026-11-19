@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Con
 ---
 
 # ControlOperationFilter
-<a name="API_ControlOperationFilter"></a>
 
 A filter object that lets you call `ListControlOperations` with a specific filter.
 

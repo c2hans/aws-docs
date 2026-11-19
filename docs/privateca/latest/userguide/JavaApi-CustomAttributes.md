@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-Custo
 ---
 
 # Create CAs and certificates with custom subject names
-<a name="JavaApi-CustomAttributes"></a>
 
 The [CustomAttribute](https://docs.aws.amazon.com/privateca/latest/APIReference/API_CustomAttribute.html) object allows administrators to pass custom object identifiers (OIDs) to private CAs and certificates. Custom OIDs can be used to create specialized subject-name hierarchies that reflect the structure and needs of your organization. Customized certificates must be created using one of the `ApiPassthrough` templates. For more information about templates, see [AWS Private CA template varieties](template-varieties.md). For more information about using custom attrributes, see [Issue private end-entity certificates](PcaIssueCert.md) and [Create a private CA in AWS Private CA](create-CA.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-version
 ---
 
 # Amazon DocumentDB engine version support dates
-<a name="docdb-version-support-dates"></a>
 
 You can use the following dates to plan your testing and upgrade cycles.
 

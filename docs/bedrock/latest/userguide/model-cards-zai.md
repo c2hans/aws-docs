@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-zai
 ---
 
 # Z.AI
-<a name="model-cards-zai"></a>
 
 The following Z.AI models are available in Amazon Bedrock:
 

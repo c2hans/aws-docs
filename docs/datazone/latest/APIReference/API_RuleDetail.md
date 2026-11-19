@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_RuleDet
 ---
 
 # RuleDetail
-<a name="API_RuleDetail"></a>
 
 The details of a rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Publi
 ---
 
 # PublishDataTransformationProfile
-<a name="API_PublishDataTransformationProfile"></a>
 
 Promotes the current DRAFT version of a data transformation profile to a new immutable published version. Also supports rollback by publishing from a previously published version.
 

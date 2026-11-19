@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_AssociationSta
 ---
 
 # AssociationStateReason
-<a name="API_AssociationStateReason"></a>
 
 Indicates the reason that the association deployment failed, including the error code and error message.
 

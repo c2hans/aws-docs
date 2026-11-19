@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # GetDataIntegrationFlowExecution
-<a name="API_GetDataIntegrationFlowExecution"></a>
 
 Get the flow execution. Flow execution older than 1 year is not returned in the response.
 

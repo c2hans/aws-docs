@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ListAutomationRulePreview
-<a name="API_automation_ListAutomationRulePreview"></a>
 
 Returns a preview of the recommended actions that match your Automation rule's configuration and criteria.
 

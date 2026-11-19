@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_VdmOption
 ---
 
 # VdmOptions
-<a name="API_VdmOptions"></a>
 
 An object that defines the VDM settings that apply to emails that you send using the configuration set.
 

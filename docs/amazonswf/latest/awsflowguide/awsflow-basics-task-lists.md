@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/awsflow-ba
 ---
 
 # AWS Flow Framework Basic Concepts: Task Lists and Task Execution
-<a name="awsflow-basics-task-lists"></a>
 
  Amazon SWF manages workflow and activity tasks by posting them to named lists. Amazon SWF maintains at least two task lists, one for workflow workers and one for activity workers.
 

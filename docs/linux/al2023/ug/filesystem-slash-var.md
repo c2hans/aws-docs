@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/filesystem-slash-var.htm
 ---
 
 # `/var` (Persistent Variable System Data)
-<a name="filesystem-slash-var"></a>
 
 ## `/var/cache` (Cache)
 <a name="filesystem-slash-var-cache"></a>

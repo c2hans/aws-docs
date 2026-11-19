@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/go_sns_cod
 ---
 
 # Amazon SNS examples using SDK for Go V2
-<a name="go_sns_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Go V2 with Amazon SNS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/create-cwe
 ---
 
 # Create an EventBridge rule for an Amazon ECR source (CLI)
-<a name="create-cwe-ecr-source-cli"></a>
 
 Call the **put-rule** command, specifying:
 + A name that uniquely identifies the rule you are creating. This name must be unique across all of the pipelines you create with CodePipeline associated with your AWS account.

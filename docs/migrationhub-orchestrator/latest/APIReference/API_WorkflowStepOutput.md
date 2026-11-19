@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIRefe
 ---
 
 # WorkflowStepOutput
-<a name="API_WorkflowStepOutput"></a>
 
 The output of a step.
 

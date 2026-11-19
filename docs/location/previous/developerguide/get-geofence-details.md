@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/get-geo
 ---
 
 # Tutorial: Get geofence details
-<a name="get-geofence-details"></a>
 
 You can get the details of a specific geofence, such as the create time, update time, geometry, and status, from a geofence collection using the Amazon Location console, AWS CLI, or the Amazon Location APIs.
 

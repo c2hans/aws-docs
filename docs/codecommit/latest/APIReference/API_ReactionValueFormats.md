@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_React
 ---
 
 # ReactionValueFormats
-<a name="API_ReactionValueFormats"></a>
 
 Information about the values for reactions to a comment. AWS CodeCommit supports a limited set of reactions.
 

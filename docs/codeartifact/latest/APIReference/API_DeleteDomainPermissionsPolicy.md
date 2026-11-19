@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Del
 ---
 
 # DeleteDomainPermissionsPolicy
-<a name="API_DeleteDomainPermissionsPolicy"></a>
 
  Deletes the resource policy set on a domain.
 

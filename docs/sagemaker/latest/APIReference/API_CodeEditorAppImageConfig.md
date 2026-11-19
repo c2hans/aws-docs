@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CodeEd
 ---
 
 # CodeEditorAppImageConfig
-<a name="API_CodeEditorAppImageConfig"></a>
 
 The configuration for the file system and kernels in a SageMaker image running as a Code Editor app. The `FileSystemConfig` object is not supported.
 

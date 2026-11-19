@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/security-iam-awsman
 ---
 
 # AWS managed policy: AWSElasticDisasterRecoveryAgentInstallationPolicy
-<a name="security-iam-awsmanpol-AWSElasticDisasterRecoveryAgentInstallationPolicy"></a>
 
 This policy allows installing the AWS Replication Agent, which is used with AWS Elastic Disaster Recovery (AWS DRS) to recover external servers to AWS. Attach this policy to your users or roles whose credentials you provide during the installation step of the AWS Replication Agent.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-rule-a
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # How AWS WAF handles rule and rule group actions
-<a name="web-acl-rule-actions"></a>
 
 This section explains how AWS WAF uses rules and rule groups to handle actions.
 

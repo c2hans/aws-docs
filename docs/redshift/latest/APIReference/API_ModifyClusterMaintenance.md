@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyC
 ---
 
 # ModifyClusterMaintenance
-<a name="API_ModifyClusterMaintenance"></a>
 
 Modifies the maintenance settings of a cluster.
 

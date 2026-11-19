@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshoot-ena
 ---
 
 # Troubleshoot the Elastic Network Adapter Windows driver
-<a name="troubleshoot-ena-driver"></a>
 
 The Elastic Network Adapter (ENA) is designed to improve operating system health and to reduce unexpected hardware behavior or failures that can disrupt the operation of your Windows instance. The ENA architecture keeps device or driver failures as transparent to the operating system as possible.
 

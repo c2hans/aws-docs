@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateDa
 ---
 
 # CreateDataSource
-<a name="API_CreateDataSource"></a>
 
 Creates a `DataSource` object.
 

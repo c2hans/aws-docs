@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/sql-prepare.html
 ---
 
 # PREPARE
-<a name="sql-prepare"></a>
 
 Creates a SQL statement with the name `statement_name` to be run at a later time. The statement can include parameters represented by question marks. To supply values for the parameters and run the prepared statement, use [EXECUTE](sql-execute.md).
 

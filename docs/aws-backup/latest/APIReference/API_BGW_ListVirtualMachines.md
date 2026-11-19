@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_L
 ---
 
 # ListVirtualMachines
-<a name="API_BGW_ListVirtualMachines"></a>
 
 Lists your virtual machines.
 

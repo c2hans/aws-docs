@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/userguide/datasets-m2-definiti
 **AWS Mainframe Modernization Service (Managed Runtime Environment experience)** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization Service (Managed Runtime Environment experience) explore AWS Mainframe Modernization Service (Self-Managed Experience). Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
 
 # AWS Mainframe Modernization data set definition reference
-<a name="datasets-m2-definition"></a>
 
 If your application requires more than a few data sets for processing, entering them one by one in the AWS Mainframe Modernization console is inefficient. Instead, we recommend that you create a JSON file to specify each data set. Different data set types are specified differently in the JSON, although many parameters are common. This document describes the details of the JSON required to import different types of data sets.
 

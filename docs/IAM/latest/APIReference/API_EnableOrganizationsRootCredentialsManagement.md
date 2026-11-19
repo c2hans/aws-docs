@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableOrgani
 ---
 
 # EnableOrganizationsRootCredentialsManagement
-<a name="API_EnableOrganizationsRootCredentialsManagement"></a>
 
 Enables the management of privileged root user credentials across member accounts in your organization. When you enable root credentials management for [centralized root access](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user-access-management), the management account and the delegated administrator for IAM can manage root user credentials for member accounts in your organization.
 

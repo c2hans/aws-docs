@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/key_mgmt_util-
 ---
 
 # Export a plaintext copy of an AWS CloudHSM key using KMU
-<a name="key_mgmt_util-exSymKey"></a>
 
 Use the **exSymKey** command in the AWS CloudHSM key\_mgmt\_util tool to export a plaintext copy of a symmetric key from the hardware security module (HSM) and saves it in a file on disk. To export an encrypted (wrapped) copy of a key, use [wrapKey](key_mgmt_util-wrapKey.md). To import a plaintext key, like the ones that `exSymKey` exports, use [imSymKey](key_mgmt_util-imSymKey.md).
 

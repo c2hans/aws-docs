@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-ec2-nt
 ---
 
 # Set the time reference on your EC2 instance to use the local Amazon Time Sync Service
-<a name="configure-ec2-ntp"></a>
 
  The Amazon Time Sync Service provides several methods for your Amazon EC2 instance to synchronize to a local time source. First, any Amazon EC2 instance can reach a local time source over the Network Time Protocol (NTP). In addition, the enhanced Amazon Time Sync Service offers higher-accuracy local time sources to [supported Amazon EC2 instances](#ptp-hardware-clock-requirements). Launch your supported instance in a placement group with the `precision-time` strategy to reach a higher-accuracy NTP source. Finally, Linux instances launched in a precision time placement group have access to a PTP Hardware Clock (PHC) device and the ability to retrieve hardware packet timestamps.
 

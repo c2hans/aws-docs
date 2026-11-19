@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourcesTrendsValues
-<a name="API_ResourcesTrendsValues"></a>
 
 Contains the aggregated resource count values for a specific point in the resources trend timeline.
 

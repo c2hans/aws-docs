@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Generative AI data handling
-<a name="next-gen-genai-data-handling"></a>
 
 Failure mode assessments use Amazon Bedrock for AI inference. The following data handling practices apply:
 + Customer data is processed in the same AWS Region as the service

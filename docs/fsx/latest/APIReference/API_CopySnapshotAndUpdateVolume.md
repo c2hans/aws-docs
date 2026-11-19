@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CopySnapshot
 ---
 
 # CopySnapshotAndUpdateVolume
-<a name="API_CopySnapshotAndUpdateVolume"></a>
 
 Updates an existing volume by using a snapshot from another Amazon FSx for OpenZFS file system. For more information, see [on-demand data replication](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/on-demand-replication.html) in the Amazon FSx for OpenZFS User Guide.
 

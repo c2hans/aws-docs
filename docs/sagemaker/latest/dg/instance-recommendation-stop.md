@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/instance-recommendat
 ---
 
 # Stop your inference recommendation
-<a name="instance-recommendation-stop"></a>
 
 You might want to stop a job that is currently running if you began a job by mistake or no longer need to run the job. Stop your Inference Recommender inference recommendation jobs programmatically with the `StopInferenceRecommendationsJob` API or with Studio Classic.
 

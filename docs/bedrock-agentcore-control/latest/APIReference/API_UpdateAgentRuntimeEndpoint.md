@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdateAgentRuntimeEndpoint
-<a name="API_UpdateAgentRuntimeEndpoint"></a>
 
 Updates an existing Amazon Bedrock AgentCore Runtime endpoint.
 

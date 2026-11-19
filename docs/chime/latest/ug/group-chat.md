@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/group-chat.html
 ---
 
 # Chatting with a group
-<a name="group-chat"></a>
 
 You can start a group chat with up to 50 users in Amazon Chime. While you're in a group chat, you can do the following:
 + Start an instant meeting with some or all of the contacts in the group.

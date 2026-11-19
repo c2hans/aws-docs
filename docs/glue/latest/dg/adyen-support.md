@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/adyen-support.html
 ---
 
 # AWS Glue support for Adyen
-<a name="adyen-support"></a>
 
 AWS Glue supports Adyen as follows:
 

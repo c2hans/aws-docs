@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Outp
 ---
 
 # OutputConfig
-<a name="API_OutputConfig"></a>
 
 The S3 bucket and folder location where training output is placed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateQu
 ---
 
 # UpdateQueueOutboundEmailConfig
-<a name="API_UpdateQueueOutboundEmailConfig"></a>
 
 Updates the outbound email address Id for a specified queue.
 

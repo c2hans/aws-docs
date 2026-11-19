@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-
 ---
 
 # Live supported codecs and input types
-<a name="supported-inputs-live"></a>
 
 The following sections describe supported input types, input codecs, and output codecs for live streaming content.
 

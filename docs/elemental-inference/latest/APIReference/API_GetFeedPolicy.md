@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # GetFeedPolicy
-<a name="API_GetFeedPolicy"></a>
 
 Retrieves the resource-based policy attached to the specified feed.
 

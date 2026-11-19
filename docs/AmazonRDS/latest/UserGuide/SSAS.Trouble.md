@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSAS.Trouble.
 ---
 
 # Troubleshooting SSAS issues
-<a name="SSAS.Trouble"></a>
 
 You might encounter the following issues when using SSAS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEPERF01-BP01 Evaluate game server resource requirements and scalability needs
-<a name="gameperf01-bp01"></a>
 
  Evaluate server requirements against your scalability needs to verify that you are selecting a hosting option that both meets your requirements and provides optimal performance.
 

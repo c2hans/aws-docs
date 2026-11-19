@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_AmiP
 ---
 
 # AmiProductEntityIdFilter
-<a name="API_AmiProductEntityIdFilter"></a>
 
 Object that allows filtering on entity id of an AMI product.
 

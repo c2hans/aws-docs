@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Tagging collections (console)
-<a name="tag-collection-console"></a>
 
 The console is the simplest way to tag a collection.
 

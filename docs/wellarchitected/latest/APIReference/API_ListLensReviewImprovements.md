@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListLensReviewImprovements
-<a name="API_ListLensReviewImprovements"></a>
 
 List the improvements of a particular lens review.
 

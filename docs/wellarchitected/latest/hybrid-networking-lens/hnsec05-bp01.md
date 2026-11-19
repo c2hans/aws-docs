@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNSEC05-BP01 Use IPSec VPN over Internet
-<a name="hnsec05-bp01"></a>
 
  For hybrid network connectivity over the internet, IPSec VPN services can be used to create encrypted tunnels between cloud and on-premises environments.
 

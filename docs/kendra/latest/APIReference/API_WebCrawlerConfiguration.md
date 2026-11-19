@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_WebCrawle
 ---
 
 # WebCrawlerConfiguration
-<a name="API_WebCrawlerConfiguration"></a>
 
 Provides the configuration information required for Amazon Kendra Web Crawler.
 

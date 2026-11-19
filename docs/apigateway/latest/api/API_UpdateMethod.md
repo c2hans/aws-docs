@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateMethod.h
 ---
 
 # UpdateMethod
-<a name="API_UpdateMethod"></a>
 
 Updates an existing Method resource.
 

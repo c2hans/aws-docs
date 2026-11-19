@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/view_fail
 ---
 
 # View AWS Direct Connect Resiliency Toolkit virtual interface failover test history
-<a name="view_failover_test"></a>
 
 You can view the virtual interface failover test history using the Direct Connect console, or the AWS CLI.
 

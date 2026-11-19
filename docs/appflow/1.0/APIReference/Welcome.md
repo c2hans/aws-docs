@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Welcome to the Amazon AppFlow API reference. This guide is for developers who need detailed information about the Amazon AppFlow API operations, data types, and errors.
 
@@ -19,4 +18,4 @@ If you're new to Amazon AppFlow, we recommend that you review the [Amazon AppFlo
 
 Amazon AppFlow API users can use vendor-specific mechanisms for OAuth, and include applicable OAuth attributes (such as `auth-code` and `redirecturi`) with the connector-specific `ConnectorProfileProperties` when creating a new connector profile using Amazon AppFlow API operations. For example, Salesforce users can refer to the [*Authorize Apps with OAuth*](https://help.salesforce.com/articleView?id=remoteaccess_authenticate.htm) documentation.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetManage
 ---
 
 # GetManagedThingCapabilities
-<a name="API_GetManagedThingCapabilities"></a>
 
 Get the capabilities for a managed thing using the device ID.
 

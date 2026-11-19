@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-620-release.
 ---
 
 # Amazon EMR release 6.2.0
-<a name="emr-620-release"></a>
 
 ## 6.2.0 application versions
 <a name="emr-620-app-versions"></a>

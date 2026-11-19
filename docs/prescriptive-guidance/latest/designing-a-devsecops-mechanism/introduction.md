@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-a
 ---
 
 # Designing a DevSecOps mechanism
-<a name="introduction"></a>
 
 *Ryan Griffin, Amazon Web Services*
 

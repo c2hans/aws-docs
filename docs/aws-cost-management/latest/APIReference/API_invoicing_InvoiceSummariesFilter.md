@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InvoiceSummariesFilter
-<a name="API_invoicing_InvoiceSummariesFilter"></a>
 
  Filters for your invoice summaries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hu
 ---
 
 # Access curated model hubs in Amazon SageMaker JumpStart
-<a name="jumpstart-curated-hubs-access-hubs"></a>
 
 You can access a private model hub either through Studio or through the SageMaker Python SDK.
 

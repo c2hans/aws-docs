@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Publish a portal in API Gateway
-<a name="apigateway-portals-publish-portal"></a>
 
 For API consumers to access your portal, you must publish it. A portal URL can be discovered by anyone on the internet. We recommend that you preview and secure your portal before publishing it.
 

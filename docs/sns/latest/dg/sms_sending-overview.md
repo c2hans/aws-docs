@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sms_sending-overview.html
 ---
 
 # Sending SMS messages using Amazon SNS
-<a name="sms_sending-overview"></a>
 
 This section describes how to send SMS messages with Amazon SNS. You can publish to a topic, subscribe phone numbers to topics, set attributes on messages, or publish directly to mobile phones.
 

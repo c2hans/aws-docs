@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # AuthorizationData
-<a name="API_AuthorizationData"></a>
 
 Contains the authorization data that is returned when a gateway target is configured with a credential provider with authorization code grant type and requires user federation.
 

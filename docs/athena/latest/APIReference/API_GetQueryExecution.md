@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetQueryE
 ---
 
 # GetQueryExecution
-<a name="API_GetQueryExecution"></a>
 
 Returns information about a single execution of a query if you have access to the workgroup in which the query ran. Each time a query executes, information about the query execution is saved with a unique ID.
 

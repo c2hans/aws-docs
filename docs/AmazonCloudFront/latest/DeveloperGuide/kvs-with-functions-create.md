@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/k
 ---
 
 # Create a key value store
-<a name="kvs-with-functions-create"></a>
 
 You can create a key value store and its key-value pairs at the same time. You can also create an empty key value store now and then add the key-value pairs later.
 

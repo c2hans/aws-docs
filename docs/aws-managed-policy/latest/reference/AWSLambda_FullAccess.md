@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLambda\_FullAccess
-<a name="AWSLambda_FullAccess"></a>
 
 **Description**: Grants full access to AWS Lambda service, AWS Lambda console features, and other related AWS services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-InstallAmazonECSAgent`
-<a name="automation-aws-install-ecs-agent"></a>
 
  **Description**
 

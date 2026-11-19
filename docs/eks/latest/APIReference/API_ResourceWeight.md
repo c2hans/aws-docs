@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ResourceWeig
 ---
 
 # ResourceWeight
-<a name="API_ResourceWeight"></a>
 
 A resource weight entry for the scheduler scoring strategy.
 

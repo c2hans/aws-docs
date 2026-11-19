@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # RevokePipelineEndpointConnections
-<a name="API_osis_RevokePipelineEndpointConnections"></a>
 
 Revokes pipeline endpoints from specified endpoint IDs.
 

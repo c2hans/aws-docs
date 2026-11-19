@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_
 ---
 
 # Supported Regions and DB engines for IAM database authentication in Amazon RDS
-<a name="Concepts.RDS_Fea_Regions_DB-eng.Feature.IamDatabaseAuthentication"></a>
 
 By using IAM database authentication in Amazon RDS, you can authenticate without a password when you connect to a DB instance. Instead, you use an authentication token. For more information, see [IAM database authentication for MariaDB, MySQL, and PostgreSQL](UsingWithRDS.IAMDBAuth.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_VpcCo
 ---
 
 # VpcConnectionProperties
-<a name="API_VpcConnectionProperties"></a>
 
 VPC connection properties.
 

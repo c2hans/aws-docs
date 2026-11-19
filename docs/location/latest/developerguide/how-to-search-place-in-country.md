@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to search for a place within a country
-<a name="how-to-search-place-in-country"></a>
 
 The `SearchText` API enables you limit search results to within one or more countries. This feature useful for searching in border areas or smaller countries that neighbour each other.
 

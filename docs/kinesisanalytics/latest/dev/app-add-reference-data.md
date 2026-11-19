@@ -11,7 +11,6 @@ After careful consideration, we have decided to discontinue Amazon Kinesis Data 
 3. We will delete your applications starting **January 27, 2026**. You will not be able to start or operate your Amazon Kinesis Data Analytics for SQL applications. Support will no longer be available for Amazon Kinesis Data Analytics for SQL from that time. For more information, see [Amazon Kinesis Data Analytics for SQL Applications discontinuation](discontinuation.md).
 
 # Example: Adding Reference Data to a Kinesis Data Analytics Application
-<a name="app-add-reference-data"></a>
 
 In this exercise, you add reference data to an existing Kinesis Data Analytics application. For information about reference data, see the following topics:
 + [Amazon Kinesis Data Analytics for SQL Applications: How It Works](how-it-works.md)

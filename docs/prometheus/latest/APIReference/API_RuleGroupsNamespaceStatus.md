@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_RuleG
 ---
 
 # RuleGroupsNamespaceStatus
-<a name="API_RuleGroupsNamespaceStatus"></a>
 
 The status information about a rule groups namespace.
 

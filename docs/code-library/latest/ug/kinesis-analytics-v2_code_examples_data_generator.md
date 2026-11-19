@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/kinesis-analytics
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Data generator for Managed Service for Apache Flink
-<a name="kinesis-analytics-v2_code_examples_data_generator"></a>
 
 The following code examples show how to use Managed Service for Apache Flink with AWS SDKs.
 

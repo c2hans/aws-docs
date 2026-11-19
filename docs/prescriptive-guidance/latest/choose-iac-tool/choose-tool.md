@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choose-iac-
 ---
 
 # Choosing an IaC tool
-<a name="choose-tool"></a>
 
 So, which tool should you choose?
 

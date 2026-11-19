@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/preload-file-cont
 ---
 
 # Preloading files into your file system
-<a name="preload-file-contents-hsm-dra"></a>
 
 You can optionally preload contents individual files or directories into your file system.
 

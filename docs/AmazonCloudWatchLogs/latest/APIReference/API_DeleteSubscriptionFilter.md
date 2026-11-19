@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteSubscriptionFilter
-<a name="API_DeleteSubscriptionFilter"></a>
 
 Deletes the specified subscription filter.
 

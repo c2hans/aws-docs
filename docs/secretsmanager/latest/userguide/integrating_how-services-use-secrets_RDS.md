@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrat
 ---
 
 # How Amazon RDS uses AWS Secrets Manager
-<a name="integrating_how-services-use-secrets_RDS"></a>
 
 Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the AWS Cloud.
 

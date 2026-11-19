@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Can
 ---
 
 # CancelQuery
-<a name="API_CancelQuery"></a>
 
 Cancels a running query.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # FindingDetails
-<a name="API_FindingDetails"></a>
 
 Contains information about an external access or unused access finding. Only one parameter can be used in a `FindingDetails` object.
 

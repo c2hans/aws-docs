@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Replic
 ---
 
 # ReplicaAutoScalingSpecification
-<a name="API_ReplicaAutoScalingSpecification"></a>
 
 The auto scaling settings of a multi-Region table in the specified AWS Region.
 

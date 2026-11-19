@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost10-
 ---
 
 # COST10-BP01 Perform automation for operations
-<a name="cost10-bp01"></a>
 
  Repetitive tasks such as provisioning, configuration, patching, monitoring, and cleanup consume engineering time and introduce errors that raise cost. Automate them to lower operational overhead, make cost control repeatable, and free your teams for higher-value work.
 

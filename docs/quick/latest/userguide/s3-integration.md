@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/s3-integration.ht
 ---
 
 # Amazon S3 integration
-<a name="s3-integration"></a>
 
 With Amazon S3 integration in AWS Quick, you can create knowledge bases from documents stored in S3 buckets. This integration supports data ingestion capabilities for indexing and searching S3 content.
 

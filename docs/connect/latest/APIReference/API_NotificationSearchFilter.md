@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Notifica
 ---
 
 # NotificationSearchFilter
-<a name="API_NotificationSearchFilter"></a>
 
 Filters to apply when searching for notifications.
 

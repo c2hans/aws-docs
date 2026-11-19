@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Using functions in Elemental Inference
-<a name="functions"></a>
 
 The other Elemental Inference features — smart crop, event clipping, smart subtitles, and contextual metadata — produce a fixed set of metadata. For information about configuring them, see [Configuring each feature](create-feed-outputs.md). With a *function*, you can add your own analysis to the same feed, and read the result from the same metadata timeline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Delet
 ---
 
 # DeleteDirectoryConfig
-<a name="API_DeleteDirectoryConfig"></a>
 
 Deletes the specified Directory Config object from WorkSpaces Applications. This object includes the information required to join streaming instances to an Active Directory domain.
 

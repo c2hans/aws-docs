@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/connector-pipe-confi
 ---
 
 # Creating media live connector pipelines for Amazon Chime SDK meetings
-<a name="connector-pipe-config"></a>
 
 The following sections list and describe the Real-Time Messaging Protocol (RTMP), audio, and video settings for a media live connector pipeline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/events-integratio
 ---
 
 # AWS Quick Sight events integration
-<a name="events-integration"></a>
 
 With Amazon EventBridge, you can respond automatically to events in AWS Quick Sight such as new dashboard creation or updates. These events are delivered to EventBridge in near real time. As a developer, you can write simple rules to indicate which events are of interest, and what actions to take when an event matches a rule. By using events, you can complete use cases such as continuous backup and deployment.
 

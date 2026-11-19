@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # DeletedUniqueId
-<a name="API_DeletedUniqueId"></a>
 
 The deleted unique ID.
 

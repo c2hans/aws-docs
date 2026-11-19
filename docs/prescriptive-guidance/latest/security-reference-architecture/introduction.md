@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # AWS Security Reference Architecture (AWS SRA) – core architecture
-<a name="introduction"></a>
 
 *Avik Mukherjee, Amazon Web Services*
 

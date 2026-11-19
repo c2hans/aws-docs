@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Severit
 ---
 
 # SeverityTrendsCount
-<a name="API_SeverityTrendsCount"></a>
 
 Contains counts of findings grouped by severity level for trend analysis.
 

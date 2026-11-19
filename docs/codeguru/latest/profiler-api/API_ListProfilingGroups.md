@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListPro
 ---
 
 # ListProfilingGroups
-<a name="API_ListProfilingGroups"></a>
 
  Returns a list of profiling groups. The profiling groups are returned as [`ProfilingGroupDescription`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html) objects.
 

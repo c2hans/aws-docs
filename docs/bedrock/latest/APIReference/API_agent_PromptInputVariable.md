@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Pr
 ---
 
 # PromptInputVariable
-<a name="API_agent_PromptInputVariable"></a>
 
 Contains information about a variable in the prompt.
 

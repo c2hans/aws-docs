@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Scatt
 ---
 
 # ScatterPlotConfiguration
-<a name="API_ScatterPlotConfiguration"></a>
 
 The configuration of a scatter plot.
 

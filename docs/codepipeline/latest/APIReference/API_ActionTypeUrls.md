@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionTypeUrls
-<a name="API_ActionTypeUrls"></a>
 
 Returns information about URLs for web pages that display to customers as links on the pipeline view, such as an external configuration page for the action type.
 

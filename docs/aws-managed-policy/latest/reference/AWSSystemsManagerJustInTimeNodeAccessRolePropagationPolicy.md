@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSystemsManagerJustInTimeNodeAccessRolePropagationPolicy
-<a name="AWSSystemsManagerJustInTimeNodeAccessRolePropagationPolicy"></a>
 
 **Description**: This policy allows Systems Manager to share a deny-access policy for just-in-time node access from the delegated administrator account to member accounts, and replicate the policy to multiple Regions.
 

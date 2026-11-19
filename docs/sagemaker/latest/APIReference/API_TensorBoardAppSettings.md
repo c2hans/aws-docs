@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Tensor
 ---
 
 # TensorBoardAppSettings
-<a name="API_TensorBoardAppSettings"></a>
 
 The TensorBoard app settings.
 

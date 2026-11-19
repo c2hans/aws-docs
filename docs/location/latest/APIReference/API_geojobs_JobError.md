@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geojobs
 ---
 
 # JobError
-<a name="API_geojobs_JobError"></a>
 
 Error information for failed jobs.
 

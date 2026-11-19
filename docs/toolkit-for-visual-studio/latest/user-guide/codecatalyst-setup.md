@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Getting Started with Amazon CodeCatalyst and the AWS Toolkit for Visual Studio with Amazon Q
-<a name="codecatalyst-setup"></a>
 
 To get started working with Amazon CodeCatalyst from the AWS Toolkit for Visual Studio with Amazon Q, complete the following.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # EventStreamSummary
-<a name="API_connect-customer-profiles_EventStreamSummary"></a>
 
 An instance of EventStream in a list of EventStreams.
 

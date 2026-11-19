@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/monitoring-run-metrics.
 ---
 
 # Run metrics for Private Workflows
-<a name="monitoring-run-metrics"></a>
 
 HealthOmics publishes near real-time resource-utilization metrics for your runs and tasks to Amazon CloudWatch. These metrics give you visibility into how your runs are progressing while they execute. You can use these metrics to:
 + Identify Central Processing Unit (CPU) or Graphics Processing Unit (GPU) bottlenecks while tasks are still running.

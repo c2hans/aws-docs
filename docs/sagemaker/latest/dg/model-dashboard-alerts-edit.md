@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-dashboard-aler
 ---
 
 # Edit alert criteria
-<a name="model-dashboard-alerts-edit"></a>
 
 **To edit an alert in the Model Dashboard, complete the following steps:**
 

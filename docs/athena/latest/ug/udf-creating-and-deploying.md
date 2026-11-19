@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/udf-creating-and-deploy
 ---
 
 # Create and deploy a UDF using Lambda
-<a name="udf-creating-and-deploying"></a>
 
 To create a custom UDF, you create a new Java class by extending the `UserDefinedFunctionHandler` class. The source code for the [UserDefinedFunctionHandler.java](https://github.com/awslabs/aws-athena-query-federation/blob/master/athena-federation-sdk/src/main/java/com/amazonaws/athena/connector/lambda/handlers/UserDefinedFunctionHandler.java) in the SDK is available on GitHub in the awslabs/aws-athena-query-federation/athena-federation-sdk [repository](https://github.com/awslabs/aws-athena-query-federation/tree/master/athena-federation-sdk), along with [example UDF implementations](https://github.com/awslabs/aws-athena-query-federation/tree/master/athena-udfs) that you can examine and modify to create a custom UDF.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateStreamingDistribution
-<a name="API_UpdateStreamingDistribution"></a>
 
 Update a streaming distribution.
 

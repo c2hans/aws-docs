@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # AssistantAssociationInputData
-<a name="API_amazon-q-connect_AssistantAssociationInputData"></a>
 
 The data that is input into Amazon Q in Connect as a result of the assistant association.
 

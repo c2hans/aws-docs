@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/monitor-cl
 ---
 
 # Monitor with Amazon CloudWatch Logs
-<a name="monitor-cloudwatch-logs"></a>
 
 Configure AWS IoT SiteWise to log information to CloudWatch Logs to monitor and troubleshoot the service.
 

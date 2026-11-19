@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # FunctionCode
-<a name="sam-property-function-functioncode"></a>
 
 The [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/deployment-package-v2.html) for a Lambda Event Function.
 

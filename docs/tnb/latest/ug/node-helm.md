@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-helm.html
 ---
 
 # AWS.Artifacts.Helm
-<a name="node-helm"></a>
 
 Defines an AWS Helm Node.
 

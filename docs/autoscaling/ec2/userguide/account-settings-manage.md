@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/account-settin
 ---
 
 # Manage account settings
-<a name="account-settings-manage"></a>
 
 You can view and change your account settings using the Amazon EC2 console or the AWS CLI. Account settings are specific to each AWS Region. For the available account settings, see [Available account setting](ec2-auto-scaling-account-settings.md#account-settings-available).
 

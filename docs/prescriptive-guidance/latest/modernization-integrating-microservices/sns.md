@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Amazon SNS
-<a name="sns"></a>
 
 [Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) allows you to create both standard and FIFO topics. Topics are used to implement a publish/subscribe (pub/sub) architecture. Amazon SNS supports a variety of subscription types, including email, SMS (assuming that you've configured an origination identity, such as a toll-free number or 10-digit long code), HTTP(S) endpoints, and SQS queues. End-user subscriptions, such as email messages and SMS messages, to an SNS topic **must be confirmed by the subscriber**. Amazon SNS enables services to *fan out* widely, which means that a single message can be delivered to a potentially large number of subscribers. An SNS standard topic has a default limit of 12.5 million subscriptions.
 

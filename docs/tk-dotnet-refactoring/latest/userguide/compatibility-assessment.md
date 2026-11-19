@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/c
 AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container (A2C), AWS Toolkit for .NET Refactoring (TR), and AWS Microservice Extractor (ME) for .NET is no longer open to new customers. If you would like to use the service, sign up prior to November 7, 2025. Alternatively use [AWS Transform](https://aws.amazon.com/transform/), which is an agentic AI service developed to accelerate enterprise modernization of .NET.
 
 # Run a compatibility assessment
-<a name="compatibility-assessment"></a>
 
 After the extension is installed, you can run a compatibility assessment with Toolkit for .NET Refactoring to find Microsoft Windows dependencies and incompatibilities between your application and newer .NET Core versions. Perform the following steps to run the assessment:
 

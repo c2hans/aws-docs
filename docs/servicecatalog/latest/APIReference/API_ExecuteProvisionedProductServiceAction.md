@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_E
 ---
 
 # ExecuteProvisionedProductServiceAction
-<a name="API_ExecuteProvisionedProductServiceAction"></a>
 
 Executes a self-service action against a provisioned product.
 

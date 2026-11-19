@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hbase.html
 ---
 
 # Apache HBase
-<a name="emr-hbase"></a>
 
 [HBase](https://aws.amazon.com/elasticmapreduce/details/hbase/) is an open source, non-relational, distributed database developed as part of the Apache Software Foundation's Hadoop project. HBase runs on top of Hadoop Distributed File System (HDFS) to provide non-relational database capabilities for the Hadoop ecosystem. HBase is included with Amazon EMR release version 4.6.0 and later.
 

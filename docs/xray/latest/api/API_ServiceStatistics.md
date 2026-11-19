@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_ServiceStatistics.ht
 ---
 
 # ServiceStatistics
-<a name="API_ServiceStatistics"></a>
 
 Response statistics for a service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/example_healt
 ---
 
 # Use `StartFHIRImportJob` with an AWS SDK or CLI
-<a name="example_healthlake_StartFHIRImportJob_section"></a>
 
 The following code examples show how to use `StartFHIRImportJob`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ac
 ---
 
 # Access container applications privately on Amazon ECS by using AWS PrivateLink and a Network Load Balancer
-<a name="access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer"></a>
 
 *Kirankumar Chandrashekar, Amazon Web Services*
 

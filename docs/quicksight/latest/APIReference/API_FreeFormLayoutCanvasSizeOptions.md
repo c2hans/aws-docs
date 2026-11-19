@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_FreeF
 ---
 
 # FreeFormLayoutCanvasSizeOptions
-<a name="API_FreeFormLayoutCanvasSizeOptions"></a>
 
 Configuration options for the canvas of a free-form layout.
 

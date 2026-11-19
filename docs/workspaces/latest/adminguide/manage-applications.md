@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/manage-appl
 ---
 
 # Manage applications in WorkSpaces Personal
-<a name="manage-applications"></a>
 
 After you launch a WorkSpace, you can see the list of all of the application bundles that are associated with your WorkSpace on the WorkSpaces console.
 

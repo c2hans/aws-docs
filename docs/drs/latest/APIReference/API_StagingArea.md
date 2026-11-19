@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_StagingArea.
 ---
 
 # StagingArea
-<a name="API_StagingArea"></a>
 
 Staging information related to source server.
 

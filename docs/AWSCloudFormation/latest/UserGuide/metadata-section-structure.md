@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metad
 ---
 
 # CloudFormation template Metadata syntax
-<a name="metadata-section-structure"></a>
 
 `Metadata` stores additional information using JSON or YAML objects. The types of template-level metadata you can use in your template include:
 

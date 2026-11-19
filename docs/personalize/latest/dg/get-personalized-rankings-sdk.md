@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/get-personalized-r
 ---
 
 # Getting a personalized ranking (AWS SDKs)
-<a name="get-personalized-rankings-sdk"></a>
 
 The following code samples show how different variations of how to get a personalized ranking with the AWS SDKs.
 

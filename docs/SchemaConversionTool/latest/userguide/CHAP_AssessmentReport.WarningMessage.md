@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Assessment report warning message
-<a name="CHAP_AssessmentReport.WarningMessage"></a>
 
 To assess the complexity of converting to another database engine, AWS SCT requires access to objects in your source database. When SCT can’t perform an assessment because problems were encountered during scanning, a warning message is issued that indicates overall conversion percentage is reduced.
 

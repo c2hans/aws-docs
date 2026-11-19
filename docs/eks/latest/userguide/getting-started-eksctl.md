@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eks
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Get started with Amazon EKS – `eksctl`
-<a name="getting-started-eksctl"></a>
 
 **Note**
 This topic covers getting started **without** EKS Auto Mode.

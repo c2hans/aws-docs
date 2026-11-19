@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListBusinessSupportAccountCharges
-<a name="API_billing_ListBusinessSupportAccountCharges"></a>
 
 Returns Business Support charges broken down at the linked account level for a given billing month.
 

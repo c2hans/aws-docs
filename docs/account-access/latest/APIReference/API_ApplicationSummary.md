@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_A
 ---
 
 # ApplicationSummary
-<a name="API_ApplicationSummary"></a>
 
 Contains summary information about an account access manager application.
 

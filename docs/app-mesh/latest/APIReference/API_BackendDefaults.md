@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Backend
 ---
 
 # BackendDefaults
-<a name="API_BackendDefaults"></a>
 
 An object that represents the default properties for a backend.
 

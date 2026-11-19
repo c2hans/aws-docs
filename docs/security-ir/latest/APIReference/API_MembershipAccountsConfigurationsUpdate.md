@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Memb
 ---
 
 # MembershipAccountsConfigurationsUpdate
-<a name="API_MembershipAccountsConfigurationsUpdate"></a>
 
 The `MembershipAccountsConfigurationsUpdate`structure represents the configuration updates for member accounts within an AWS organization.
 

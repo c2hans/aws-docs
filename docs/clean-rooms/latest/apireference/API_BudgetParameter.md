@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Budg
 ---
 
 # BudgetParameter
-<a name="API_BudgetParameter"></a>
 
 Individual budget parameter configuration that defines specific budget allocation settings for access budgets.
 

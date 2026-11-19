@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/thresholds-collect
 ---
 
 # Using similarity thresholds for associating and matching faces
-<a name="thresholds-collections"></a>
 
 Similarity thresholds are used for both associating and matching faces. What follows is guidance for using similarity thresholds for both use cases.
 

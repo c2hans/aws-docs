@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # CreateStackSet
-<a name="API_CreateStackSet"></a>
 
 Creates a StackSet.
 

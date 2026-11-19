@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/c
 ---
 
 # Deleting an AWS CloudFormation stack by using the AWS Toolkit for JetBrains
-<a name="cloudformation-delete"></a>
 
 1. Open AWS Explorer, if it isn't already open. If you need to switch to a different AWS Region that contains the stack, do that now.
 

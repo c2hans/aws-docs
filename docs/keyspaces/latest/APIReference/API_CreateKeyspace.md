@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Create
 ---
 
 # CreateKeyspace
-<a name="API_CreateKeyspace"></a>
 
 The `CreateKeyspace` operation adds a new keyspace to your account. In an AWS account, keyspace names must be unique within each Region.
 

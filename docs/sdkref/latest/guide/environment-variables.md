@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/environment-variable
 ---
 
 # Using environment variables to globally configure AWS SDKs and tools
-<a name="environment-variables"></a>
 
 Environment variables provide another way to specify configuration options and credentials when using AWS SDKs and tools. Environment variables can be useful for scripting or temporarily setting a named profile as the default. For the list of environment variables supported by most SDKs, see [Environment variables list](settings-reference.md#EVarSettings).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # GetPolicy
-<a name="API_GetPolicy"></a>
 
 Returns the resource-based policy.
 

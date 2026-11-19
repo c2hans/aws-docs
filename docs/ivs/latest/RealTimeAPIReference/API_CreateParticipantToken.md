@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Crea
 ---
 
 # CreateParticipantToken
-<a name="API_CreateParticipantToken"></a>
 
 Creates an additional token for a specified stage. This can be done after stage creation or when tokens expire. Tokens always are scoped to the stage for which they are created.
 

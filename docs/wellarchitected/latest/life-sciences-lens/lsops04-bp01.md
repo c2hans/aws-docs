@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSOPS04-BP01 Establish IT quality oversight
-<a name="lsops04-bp01"></a>
 
  It is important to distinguish between IT and product quality. A dedicated IT quality management team (separate from pharma quality) should define control objectives and provide quality oversight. They will act as a liaison to product quality and determine which additional IT controls are required and which IT records can be used as evidence of computer systems assurance.
 

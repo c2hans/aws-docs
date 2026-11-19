@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenan
 ---
 
 # Operational best practices for ISVs
-<a name="best-practices"></a>
 
 Many of the guidelines in this section are best practices for all customers, but they have added significance for ISVs.
 

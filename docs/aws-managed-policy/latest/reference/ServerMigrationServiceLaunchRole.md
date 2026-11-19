@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Serv
 ---
 
 # ServerMigrationServiceLaunchRole
-<a name="ServerMigrationServiceLaunchRole"></a>
 
 **Description**: Permissions to allow the AWS Server Migration Service to create and update relevant AWS resources into the customer's AWS account for launching migrated servers and applications.
 

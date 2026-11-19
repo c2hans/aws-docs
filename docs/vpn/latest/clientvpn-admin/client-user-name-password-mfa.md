@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/client-user-n
 ---
 
 # Troubleshooting AWS Client VPN: Client software returns user name and password errors — Active Directory authentication
-<a name="client-user-name-password-mfa"></a>
 
 **Problem**
 I use Active Directory authentication for my Client VPN endpoint and I used to be able to connect my clients to the Client VPN successfully. But now, clients are getting invalid user name and password errors.

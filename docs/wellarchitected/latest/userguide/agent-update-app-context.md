@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-u
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Updating application context
-<a name="agent-update-app-context"></a>
 
 Application context tells AWS WA Agent what your applications are, what they do, and what infrastructure they run on. AWS WA Agent uses this information to scope recommendations to the resources that belong to each application and to personalize guidance based on your architecture, criticality, and constraints.
 

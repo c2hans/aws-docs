@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/filesystem-slash-var.htm
 ---
 
 # `/var` (persistent variable system data)
-<a name="filesystem-slash-var"></a>
 
 The `/var` directory stores persistent variable system data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/sc-data-providers-m
 ---
 
 # Using a MySQL database as a source in DMS Schema Conversion
-<a name="sc-data-providers-mysql"></a>
 
 You can use MySQL databases as a migration source in DMS Schema Conversion.
 

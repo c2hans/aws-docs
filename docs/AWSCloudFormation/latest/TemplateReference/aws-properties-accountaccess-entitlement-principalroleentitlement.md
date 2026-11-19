@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AccountAccess::Entitlement PrincipalRoleEntitlement
-<a name="aws-properties-accountaccess-entitlement-principalroleentitlement"></a>
 
 Specifies a principal-to-role entitlement that grants an IAM Identity Center principal permission to assume an IAM role.
 

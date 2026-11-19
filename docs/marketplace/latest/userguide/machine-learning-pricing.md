@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/machine-lea
 ---
 
 # Machine learning product pricing for AWS Marketplace
-<a name="machine-learning-pricing"></a>
 
 You can choose from several available pricing models for your Amazon SageMaker AI products in AWS Marketplace. Buyers who subscribe to your product run it in SageMaker AI within their own AWS account. The price for your buyers is a combination of the infrastructure costs for the resources running in their AWS account and the product pricing that you set. The following sections provide information about pricing models for SageMaker AI products in AWS Marketplace
 

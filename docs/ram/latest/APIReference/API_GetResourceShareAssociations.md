@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_GetResourceS
 ---
 
 # GetResourceShareAssociations
-<a name="API_GetResourceShareAssociations"></a>
 
 Retrieves the lists of resources and principals that associated for resource shares that you own.
 

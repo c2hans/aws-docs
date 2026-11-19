@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/hosted-vi
 ---
 
 # Hosted Direct Connect virtual interfaces
-<a name="hosted-vif"></a>
 
 To use your Direct Connect connection with another account, you can create a hosted virtual interface for that account. The owner of the other account must accept the hosted virtual interface to begin using it. A hosted virtual interface works the same as a standard virtual interface and can connect to public resources or a VPC.
 

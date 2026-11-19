@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/cl3-general.html
 ---
 
 # General information
-<a name="cl3-general"></a>
 
 **Assumptions**
 

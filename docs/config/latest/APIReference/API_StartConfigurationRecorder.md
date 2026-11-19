@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_StartConf
 ---
 
 # StartConfigurationRecorder
-<a name="API_StartConfigurationRecorder"></a>
 
 Starts the customer managed configuration recorder. The customer managed configuration recorder will begin recording configuration changes for the resource types you specify.
 

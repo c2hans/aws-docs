@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/quot
 ---
 
 # Quotas
-<a name="quotas"></a>
 
  Service quotas, also referred to as limits, are the maximum number of service resources or operations for your AWS account.
 

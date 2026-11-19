@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ad-behavior-prerol
 ---
 
 # MediaTailor pre-roll ad insertion
-<a name="ad-behavior-preroll"></a>
 
 **Note**
 Configurable pre-roll ads are only available for live workflows. For details about how ad insertion (including pre roll) works for VOD, see [Ad stitching behavior for VOD](ad-behavior.md#ad-behavior-vod).

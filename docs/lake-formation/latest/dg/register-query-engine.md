@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/register-query-
 ---
 
 # Registering a third-party query engine
-<a name="register-query-engine"></a>
 
 Before a third-party query engine can use the application integration API operations, you need to explicitly enable permissions for the query engine to call the API operations on your behalf. This is done in a few steps:
 

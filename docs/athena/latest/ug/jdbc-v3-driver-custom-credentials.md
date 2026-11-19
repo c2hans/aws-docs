@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/jdbc-v3-driver-custom-c
 ---
 
 # Custom credentials
-<a name="jdbc-v3-driver-custom-credentials"></a>
 
 You can use this authentication type to provide your own credentials by using a Java class that implements the [AwsCredentialsProvider](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/auth/credentials/AwsCredentialsProvider.html) interface.
 

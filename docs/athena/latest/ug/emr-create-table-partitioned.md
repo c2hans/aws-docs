@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/emr-create-table-partit
 ---
 
 # Create and query a partitioned table based on Amazon EMR logs
-<a name="emr-create-table-partitioned"></a>
 
 These examples use the same log location to create an Athena table, but the table is partitioned, and a partition is then created for each log location. For more information, see [Partition your data](partitions.md).
 

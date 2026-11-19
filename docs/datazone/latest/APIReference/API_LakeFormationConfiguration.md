@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_LakeFor
 ---
 
 # LakeFormationConfiguration
-<a name="API_LakeFormationConfiguration"></a>
 
 The Lake Formation configuration of the Data Lake blueprint.
 

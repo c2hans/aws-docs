@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Advanced
-<a name="dashboard-advanced"></a>
 
 Advanced Dashboards require [CID Data Collection Stack](data-collection.md). This section covers the following dashboards:
 

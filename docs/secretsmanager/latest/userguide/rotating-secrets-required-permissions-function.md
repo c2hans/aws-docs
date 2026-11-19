@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating
 ---
 
 # Lambda rotation function execution role permissions for AWS Secrets Manager
-<a name="rotating-secrets-required-permissions-function"></a>
 
 For [Rotation by Lambda function](rotate-secrets_lambda.md), when Secrets Manager uses a Lambda function to rotate a secret, Lambda assumes an [IAM execution role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) and provides those credentials to the Lambda function code. For instructions about how to set up automatic rotation, see:
 + [Automatic rotation for database secrets (console)](rotate-secrets_turn-on-for-db.md)

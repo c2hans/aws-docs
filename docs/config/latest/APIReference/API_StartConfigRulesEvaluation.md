@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_StartConf
 ---
 
 # StartConfigRulesEvaluation
-<a name="API_StartConfigRulesEvaluation"></a>
 
 Runs an on-demand evaluation for the specified AWS Config rules against the last known configuration state of the resources. Use `StartConfigRulesEvaluation` when you want to test that a rule you updated is working as expected. `StartConfigRulesEvaluation` does not re-record the latest configuration state for your resources. It re-runs an evaluation against the last known state of your resources.
 
@@ -66,7 +65,7 @@ HTTP Status Code: 400
 
  ** LimitExceededException **
 For `PutServiceLinkedConfigurationRecorder` API, this exception is thrown if the number of service-linked roles in the account exceeds the limit.
-For `StartConfigRulesEvaluation` API, this exception is thrown if an evaluation is in progress or if you call the [StartConfigRulesEvaluation](#API_StartConfigRulesEvaluation) API more than once per minute.
+For `StartConfigRulesEvaluation` API, this exception is thrown if an evaluation is in progress or if you call the [StartConfigRulesEvaluation](API_StartConfigRulesEvaluation.md) API more than once per minute.
 For `PutConfigurationAggregator` API, this exception is thrown if the number of accounts and aggregators exceeds the limit.
 HTTP Status Code: 400
 

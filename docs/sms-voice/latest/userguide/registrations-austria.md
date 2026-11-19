@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # Austria sender ID registration in AWS End User Messaging SMS
-<a name="registrations-austria"></a>
 
 All alphanumeric sender IDs used to send SMS messages to Austrian mobile numbers (\+43) must be registered with the RTR (Rundfunk und Telekom Regulierungs-GmbH), the Austrian telecommunications regulator. Starting October 1, 2026, unregistered alphanumeric sender IDs will be blocked by Austrian mobile operators and will not deliver messages to Austrian recipients.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # AgentlessDialerConfig
-<a name="API_connect-outbound-campaigns_AgentlessDialerConfig"></a>
 
 Contains agentless dialer configuration for an outbound campaign.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Aggregate
 ---
 
 # AggregateConformancePackComplianceCount
-<a name="API_AggregateConformancePackComplianceCount"></a>
 
 The number of conformance packs that are compliant and noncompliant.
 

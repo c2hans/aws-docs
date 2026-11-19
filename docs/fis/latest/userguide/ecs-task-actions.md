@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/ecs-task-actions.ht
 ---
 
 # Use the AWS FIS aws:ecs:task actions
-<a name="ecs-task-actions"></a>
 
  You can use the **aws:ecs:task** actions to inject faults into your Amazon ECS tasks. Amazon EC2 and Fargate capacity types are supported.
 

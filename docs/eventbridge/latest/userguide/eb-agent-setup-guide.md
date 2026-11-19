@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-agent-se
 ---
 
 # Agent setup guide
-<a name="eb-agent-setup-guide"></a>
 
 AI coding agents can accelerate serverless development by providing intelligent assistance for application scaffolding, deployment configuration, debugging, and infrastructure-as-code generation. Configure your agent with the right combination of plugins and skills. This equips it with the expertise it needs to build and manage serverless applications.
 

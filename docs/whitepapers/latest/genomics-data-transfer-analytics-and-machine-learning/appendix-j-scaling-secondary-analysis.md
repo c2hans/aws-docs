@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Appendix J: Scaling secondary analysis
-<a name="appendix-j-scaling-secondary-analysis"></a>
 
  To scale secondary analysis in your account using AWS Step Functions and AWS Batch, there are a few optimizations that can be made and service limits that may need to be increased.
 

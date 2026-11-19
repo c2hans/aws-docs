@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Cache
 ---
 
 # CacheBehavior
-<a name="API_CacheBehavior"></a>
 
 A complex type that describes how CloudFront processes requests.
 

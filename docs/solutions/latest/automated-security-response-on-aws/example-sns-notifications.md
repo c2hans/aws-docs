@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Example SNS notifications
-<a name="example-sns-notifications"></a>
 
 When a remediation is initiated
 

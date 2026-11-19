@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/ECOMMERCE-interact
 ---
 
 # Item interactions dataset requirements (ECOMMERCE domain)
-<a name="ECOMMERCE-interactions-dataset"></a>
 
  An *Item interactions dataset* stores historical and real-time data from interactions between users and items in your ECOMMERCE catalog. For more information about the types of data you can store in an interactions dataset, see [Item interaction data](interactions-datasets.md). For information about general Amazon Personalize schema requirements, such as formatting requirements and available field data types, see [Creating schema JSON files for Amazon Personalize schemas](how-it-works-dataset-schema.md). These requirements apply to all schemas, regardless of domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSetupEnableDHMCExecutionPolicy
-<a name="AWSQuickSetupEnableDHMCExecutionPolicy"></a>
 
 **Description**: This policy grants permissions that allow principals to run the AWSQuickSetupType-EnableDHMC Automation runbook, which enables Default Host Management Configuration.
 

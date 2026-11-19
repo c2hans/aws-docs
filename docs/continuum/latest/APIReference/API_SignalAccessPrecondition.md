@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Signal
 ---
 
 # SignalAccessPrecondition
-<a name="API_SignalAccessPrecondition"></a>
 
 The assessed access-level precondition with the basis behind it.
 

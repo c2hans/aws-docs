@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Networking connectivity options on AWS for SaaS offerings
-<a name="introduction"></a>
 
 *Tomas Sykora and Luca Schumann, Amazon Web Services*
 

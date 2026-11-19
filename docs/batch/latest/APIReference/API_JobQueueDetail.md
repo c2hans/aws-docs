@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_JobQueueDe
 ---
 
 # JobQueueDetail
-<a name="API_JobQueueDetail"></a>
 
 An object that represents the details for an AWS Batch job queue.
 

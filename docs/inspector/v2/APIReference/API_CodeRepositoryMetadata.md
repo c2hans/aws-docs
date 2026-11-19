@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CodeReposi
 ---
 
 # CodeRepositoryMetadata
-<a name="API_CodeRepositoryMetadata"></a>
 
 Contains metadata information about a code repository that is being scanned by Amazon Inspector.
 

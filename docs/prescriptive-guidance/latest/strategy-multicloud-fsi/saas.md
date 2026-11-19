@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mu
 ---
 
 # Accelerate and optimize operations with SaaS applications
-<a name="saas"></a>
 
 Most FIs have adopted software as as service (SaaS) applications for key parts of their business. Common SaaS applications include productivity applications such as word processing and email. SaaS options also exist for many mission-critical workloads, including payments processing, treasury, trading, anti-money laundering (AML), know your customer (KYC), learning management systems (LMS), and customer relationship management (CRM) workloads. When your FI adopts a SaaS offering, your IT team doesn't have to maintain the service or manage the infrastructure―your users consume the service without any IT involvement. Even if you have the resources to host the application yourself, it might be more cost-effective to adopt a SaaS solution and invest in other projects instead.
 

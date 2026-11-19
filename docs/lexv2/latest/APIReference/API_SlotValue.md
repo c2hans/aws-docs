@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotValue.
 ---
 
 # SlotValue
-<a name="API_SlotValue"></a>
 
 The value to set in a slot.
 

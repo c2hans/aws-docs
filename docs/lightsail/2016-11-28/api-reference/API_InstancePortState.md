@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_I
 ---
 
 # InstancePortState
-<a name="API_InstancePortState"></a>
 
 Describes open ports on an instance, the IP addresses allowed to connect to the instance through the ports, and the protocol.
 

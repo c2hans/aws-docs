@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_AuditLogProcess
 ---
 
 # AuditLogProcessingConfiguration
-<a name="API_AuditLogProcessingConfiguration"></a>
 
 Contains information about an audit log processing configuration.
 

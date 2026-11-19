@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Alarm
 ---
 
 # Alarm use cases and examples
-<a name="Alarm-Use-Cases"></a>
 
 The following sections provides examples and tutorials for alarms for common use cases.
 

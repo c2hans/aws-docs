@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Dimen
 ---
 
 # DimensionField
-<a name="API_DimensionField"></a>
 
 The dimension type field.
 

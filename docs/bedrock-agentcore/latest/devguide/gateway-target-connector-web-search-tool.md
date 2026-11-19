@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Web Search Tool
-<a name="gateway-target-connector-web-search-tool"></a>
 
 AI agents are transforming how organizations interact with information, but they face a fundamental limitation: their knowledge is frozen at training time. When a user asks about today’s stock prices or a software release that shipped an hour ago, an agent relying solely on its training data cannot provide accurate answers.
 

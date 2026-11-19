@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Threat
 ---
 
 # ThreatDetectedByName
-<a name="API_ThreatDetectedByName"></a>
 
 Contains details about identified threats organized by threat name.
 

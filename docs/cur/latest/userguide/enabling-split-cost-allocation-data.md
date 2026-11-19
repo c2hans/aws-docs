@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/enabling-split-cost
 ---
 
 # Enabling split cost allocation data
-<a name="enabling-split-cost-allocation-data"></a>
 
 **Note**
 Split cost allocation data is not available in Cost Explorer. It is available in legacy Cost and Usage Reports (CUR) and Cost and Usage Report 2.0 (CUR 2.0) with Data Exports.

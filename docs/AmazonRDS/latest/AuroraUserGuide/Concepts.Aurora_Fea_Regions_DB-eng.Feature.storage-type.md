@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concept
 ---
 
 # Supported Regions and Aurora DB engines for cluster storage configurations
-<a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.storage-type"></a>
 
 Amazon Aurora has two DB cluster storage configurations, Aurora I/O-Optimized and Aurora Standard. For more information, see [Storage configurations for Amazon Aurora DB clusters](Aurora.Overview.StorageReliability.md#aurora-storage-type).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/example_io
 ---
 
 # Hello AWS IoT SiteWise
-<a name="example_iotsitewise_Hello_section"></a>
 
 The following code examples show how to get started using AWS IoT SiteWise.
 

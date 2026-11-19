@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Slot.
 ---
 
 # Slot
-<a name="API_Slot"></a>
 
 The definition for the slot.
 

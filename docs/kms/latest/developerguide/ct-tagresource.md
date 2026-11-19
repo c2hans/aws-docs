@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-tagresource
 ---
 
 # TagResource
-<a name="ct-tagresource"></a>
 
 The following example shows an AWS CloudTrail log entry of a call to the [TagResource](https://docs.aws.amazon.com/kms/latest/APIReference/API_TagResource.html) operation to add a tag with a tag key of `Department` and a tag value of `IT`.
 

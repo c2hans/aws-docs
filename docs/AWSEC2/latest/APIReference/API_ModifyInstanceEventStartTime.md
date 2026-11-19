@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIns
 ---
 
 # ModifyInstanceEventStartTime
-<a name="API_ModifyInstanceEventStartTime"></a>
 
 Modifies the start time for a scheduled Amazon EC2 instance event.
 

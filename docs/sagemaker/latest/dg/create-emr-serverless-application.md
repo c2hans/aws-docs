@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/create-emr-serverles
 ---
 
 # Create EMR Serverless applications from Studio
-<a name="create-emr-serverless-application"></a>
 
 Data scientists and data engineers can create EMR Serverless applications directly from the Studio user interface. Before you begin, ensure that you have configured the necessary permissions as described in the [Set up the permissions to enable listing and launching Amazon EMR applications from SageMaker Studio](studio-emr-serverless-permissions.md) section. These permissions grant Studio the ability to create, start, view, access, and terminate the applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # AWS::Serverless::StateMachine
-<a name="sam-resource-statemachine"></a>
 
 Creates an AWS Step Functions state machine, which you can use to orchestrate AWS Lambda Event Functions and other AWS resources to form complex and robust workflows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ReferenceSets
-<a name="API_ReferenceSets"></a>
 
 Contains a set of IP set references.
 

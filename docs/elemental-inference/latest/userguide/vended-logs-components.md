@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/ven
 ---
 
 # Components of a log
-<a name="vended-logs-components"></a>
 
 Each Elemental Inference application log record is a JSON object with the following fields:
 

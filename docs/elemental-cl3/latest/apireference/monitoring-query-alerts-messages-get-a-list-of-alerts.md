@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/monito
 ---
 
 # GET Alerts: Get a List of Alerts
-<a name="monitoring-query-alerts-messages-get-a-list-of-alerts"></a>
 
 Get a list of alerts on one or more nodes in the cluster.
 
@@ -65,7 +64,7 @@ The response is XML content consisting of one **alerts** element that holds the 
 | last\_set | Time | The time that the alert was last set (either when it appeared for the first time or when it changed back to set after previously being cleared).<br />Some alerts are set and cleared repeatedly, so the time for these alerts may change. <br />Some are not set and cleared repeatedly, so the time will never change. |
 | message | String | A longer description. |
 | name | String | A short description. |
-| node\_id | Integer | The ID that identifies the same piece of data as the origin filter in the request; see [GET Alerts: Get a List of Alerts](#monitoring-query-alerts-messages-get-a-list-of-alerts). |
+| node\_id | Integer | The ID that identifies the same piece of data as the origin filter in the request; see [GET Alerts: Get a List of Alerts](monitoring-query-alerts-messages-get-a-list-of-alerts.md). |
 | notes | String | A section that shows whether the web interface user has added a note to the alert (Status > Notifications): it appears here. |
 | output\_id | Integer | The unique ID for the entity in output\_type.  |
 | output\_type | String | The type of the output in the channel (event) that this alert specifically applies to. Otherwise, null. |

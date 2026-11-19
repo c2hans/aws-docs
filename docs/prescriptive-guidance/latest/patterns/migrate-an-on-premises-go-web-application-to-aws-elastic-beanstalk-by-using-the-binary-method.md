@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises Go web application to AWS Elastic Beanstalk by using the binary method
-<a name="migrate-an-on-premises-go-web-application-to-aws-elastic-beanstalk-by-using-the-binary-method"></a>
 
 *Suhas Basavaraj and Shumaz Mukhtar Kazi, Amazon Web Services*
 

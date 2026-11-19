@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/cleaning.h
 ---
 
 # .cleaning
-<a name="cleaning"></a>
 
 Used by businesses or individuals that provide cleaning services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-kendra
 ---
 
 # Amazon Kendra events
-<a name="events-ref-kendra"></a>
 
 Amazon Kendra sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

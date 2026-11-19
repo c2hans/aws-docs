@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/monito
 ---
 
 # Example
-<a name="monitoring-query-alerts-messages-get-a-list-of-system-details-example"></a>
 
 ```
 GET http://198.51.100.0/system_info

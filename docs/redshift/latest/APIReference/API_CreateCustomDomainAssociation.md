@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateC
 ---
 
 # CreateCustomDomainAssociation
-<a name="API_CreateCustomDomainAssociation"></a>
 
 Used to create a custom domain name for a cluster. Properties include the custom domain name, the cluster the custom domain is associated with, and the certificate Amazon Resource Name (ARN).
 

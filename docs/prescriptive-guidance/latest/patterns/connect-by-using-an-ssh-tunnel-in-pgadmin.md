@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Connect by using an SSH tunnel in pgAdmin
-<a name="connect-by-using-an-ssh-tunnel-in-pgadmin"></a>
 
 *Jeevan Shetty and Bhanu Ganesh Gudivada, Amazon Web Services*
 

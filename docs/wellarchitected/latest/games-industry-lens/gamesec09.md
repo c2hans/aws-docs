@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Automate security
-<a name="gamesec09"></a>
 
 |  GAMESEC09: How do you automate security within your CI/CD pipeline?  |
 | --- |

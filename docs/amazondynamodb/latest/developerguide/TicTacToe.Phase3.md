@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tic
 ---
 
 # Step 3: Deploy in production using the DynamoDB service
-<a name="TicTacToe.Phase3"></a>
 
 **Topics**
 + [3.1: Create an IAM role for Amazon EC2](#TicTacToe.DeployInProd.IAMCreateRole)

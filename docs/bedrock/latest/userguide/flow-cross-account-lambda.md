@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flow-cross-acco
 ---
 
 # Invoke an AWS Lambda function from an Amazon Bedrock flow in a different AWS account
-<a name="flow-cross-account-lambda"></a>
 
 An Amazon Bedrock flow can invoke a AWS Lambda function that is in a different AWS account from the flow. Use the following procedure to configure the Lambda function (*Account A*) and the flow (*Account B*).
 

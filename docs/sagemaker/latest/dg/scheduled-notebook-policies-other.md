@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/scheduled-notebook-p
 ---
 
 # Install policies and permissions for local Jupyter environments
-<a name="scheduled-notebook-policies-other"></a>
 
 You will need to set up the necessary permissions and policies to schedule notebook jobs in a local Jupyter environment. The IAM user needs permissions to submit jobs to SageMaker AI and the IAM role that the notebook job itself assumes needs permissions to access resources, depending on the job tasks. The following will provide instructions on how to set up the necessary permissions and policies.
 

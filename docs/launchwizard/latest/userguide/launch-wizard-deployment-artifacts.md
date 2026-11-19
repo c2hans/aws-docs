@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Repeat SAP application deployments using deployment artifacts created with AWS Launch Wizard
-<a name="launch-wizard-deployment-artifacts"></a>
 
 This section contains information about how to repeat deployments using deployment artifacts created with Launch Wizard. The artifacts include AWS Service Catalog products and AWS CloudFormation templates.
 

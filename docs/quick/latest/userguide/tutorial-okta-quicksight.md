@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/tutorial-okta-qui
 ---
 
 # Tutorial: AWS Quick and IAM identity federation
-<a name="tutorial-okta-quicksight"></a>
 
 |  |
 | --- |

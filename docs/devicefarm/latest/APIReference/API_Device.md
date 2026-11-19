@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Devic
 ---
 
 # Device
-<a name="API_Device"></a>
 
 Represents a device type that an app is tested against.
 

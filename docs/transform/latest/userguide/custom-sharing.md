@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-sharin
 ---
 
 # Sharing transformation definitions across AWS accounts
-<a name="custom-sharing"></a>
 
 You can share a transformation definition (TD) that your AWS account published, and optionally its lessons, with other AWS accounts, with organizational units (OUs), or with your entire organization in AWS Organizations. Accounts that you share with can run the TD without publishing their own copy. You keep one TD with one identity, one version history, and one set of lessons.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateAppImageConfig
-<a name="API_UpdateAppImageConfig"></a>
 
 Updates the properties of an AppImageConfig.
 

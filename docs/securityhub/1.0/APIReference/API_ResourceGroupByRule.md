@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourceGroupByRule
-<a name="API_ResourceGroupByRule"></a>
 
 Defines the configuration for organizing and categorizing AWS resources based on associated security findings.
 

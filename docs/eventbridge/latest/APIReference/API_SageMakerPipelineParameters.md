@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Sage
 ---
 
 # SageMakerPipelineParameters
-<a name="API_SageMakerPipelineParameters"></a>
 
 These are custom parameters to use when the target is a SageMaker AI Model Building Pipeline that starts based on EventBridge events.
 

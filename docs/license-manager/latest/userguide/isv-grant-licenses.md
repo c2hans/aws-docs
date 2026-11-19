@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/isv-gra
 ---
 
 # Grant License Manager seller issued licenses to ISV customers
-<a name="isv-grant-licenses"></a>
 
 After you add the new license, you can grant the license to a customer with an AWS account using the AWS Management Console. The recipient must accept the grant before using the license. For more information, see [Granted licenses in License Manager](granted-licenses.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cre
 ---
 
 # Using predefined deployment strategies
-<a name="appconfig-creating-deployment-strategy-predefined"></a>
 
 AWS AppConfig includes predefined deployment strategies to help you quickly deploy a configuration. Instead of creating your own strategies, you can choose one of the following when you deploy a configuration.
 

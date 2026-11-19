@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EKS::IdentityProviderConfig RequiredClaim
-<a name="aws-properties-eks-identityproviderconfig-requiredclaim"></a>
 
 A key-value pair that describes a required claim in the identity token. If set, each claim is verified to be present in the token with a matching value.
 

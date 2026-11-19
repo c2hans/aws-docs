@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hadoop-release-h
 ---
 
 # Amazon EMR 7.3.0 - Hadoop release notes
-<a name="Hadoop-release-history-730"></a>
 
 ## Amazon EMR 7.3.0 - Hadoop changes
 <a name="Hadoop-release-history-730-changes"></a>

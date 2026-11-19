@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # FirewallAdvancedContentCategoryConfig
-<a name="API_route53resolver_FirewallAdvancedContentCategoryConfig"></a>
 
 The configuration for a content category-based filtering rule. This specifies which content category to use for DNS query evaluation.
 

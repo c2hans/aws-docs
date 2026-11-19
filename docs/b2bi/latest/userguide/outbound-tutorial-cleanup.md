@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/outbound-tutorial-
 ---
 
 # Cleanup steps
-<a name="outbound-tutorial-cleanup"></a>
 
 Proper cleanup prevents ongoing charges for unused resources and maintains a clean AWS environment. This section ensures you remove all outbound tutorial resources while preserving any configurations you want to keep.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/postman-connection-option
 ---
 
 # Postman connection options
-<a name="postman-connection-options"></a>
 
 The following are connection options for Postman:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Postman object to read. For a parent-scoped entity, append a forward slash and the parent identifier, as described in [Reading from Postman entities](postman-reading-from-entities.md).

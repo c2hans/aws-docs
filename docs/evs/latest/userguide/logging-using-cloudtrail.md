@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/logging-using-cloud
 ---
 
 # Log API calls with CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Amazon Elastic VMware Service is integrated with AWS CloudTrail, a service that records the actions that an IAM user, an IAM role, or an AWS service takes in Amazon EVS. With the information that CloudTrail collects, you can find the request that was made to Amazon EVS, who made it, when, and from which IP address.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_GetClus
 ---
 
 # GetClusterCredentialsWithIAM
-<a name="API_GetClusterCredentialsWithIAM"></a>
 
 Returns a database user name and temporary password with temporary authorization to log in to an Amazon Redshift database. The database user is mapped 1:1 to the source AWS Identity and Access Management (IAM) identity. For more information about IAM identities, see [IAM Identities (users, user groups, and roles)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html) in the AWS Identity and Access Management User Guide.
 

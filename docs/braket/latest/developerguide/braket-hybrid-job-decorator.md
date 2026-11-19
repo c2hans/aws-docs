@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-hybr
 ---
 
 # Run your local code as a hybrid job
-<a name="braket-hybrid-job-decorator"></a>
 
 Amazon Braket Hybrid Jobs provides a fully managed orchestration of hybrid quantum-classical algorithms, combining Amazon EC2 compute resources with Amazon Braket Quantum Processing Unit (QPU) access. Quantum tasks created in a hybrid job have priority queueing over individual quantum tasks so that your algorithms won't be interrupted by fluctuations in the quantum task queue. Each QPU maintains a separate hybrid jobs queue, ensuring that only one hybrid job can run at any given time.
 

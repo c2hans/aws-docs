@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/seller-acco
 ---
 
 # Managing your seller account
-<a name="seller-account-management"></a>
 
 After creating your seller account, you'll need to manage various aspects of your account to ensure smooth operations. This section covers account settings, user management, permissions, and preferences that help you effectively manage your seller account in AWS Marketplace.
 

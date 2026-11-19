@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetReservationUtilization
-<a name="API_GetReservationUtilization"></a>
 
 Retrieves the reservation utilization for your account. Management account in an organization have access to member accounts. You can filter data by dimensions in a time period. You can use `GetDimensionValues` to determine the possible dimension values. Currently, you can group only by `SUBSCRIPTION_ID`.
 
@@ -80,11 +79,16 @@ Filters utilization data by dimensions. You can filter by the following dimensio
 **Note**
 If not specified, the `SERVICE` filter defaults to Amazon Elastic Compute Cloud - Compute. Supported values for `SERVICE` are Amazon Elastic Compute Cloud - Compute, Amazon Relational Database Service, Amazon ElastiCache, Amazon MemoryDB, Amazon Redshift, Amazon Elasticsearch Service, and Amazon OpenSearch Service.
 + SCOPE
+
+  The valid values for `SCOPE` are the following. Use them exactly as shown, including capitalization.
+  +  `Region` - Matches reservations that aren't tied to an Availability Zone.
+  +  `Availability Zone` - Matches reservations for a specific Availability Zone.
 + SUBSCRIPTION\_ID
 **Note**
 Values for `SUBSCRIPTION_ID` must contain only digits.
 + TENANCY
- `GetReservationUtilization` uses the same [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object as the other operations, but only `AND` is supported among each dimension, and nesting is supported up to only one level deep. If there are multiple values for a dimension, they are OR'd together.
+ `GetReservationUtilization` uses the same [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object as the other operations, with the following limits. `Filter` accepts one `Dimensions` expression, a `Not` of one `Dimensions` expression, or one `And` of two or more of these. The operation doesn't support `Or`, an `And` inside an `And`, a `Not` around any other expression, `Tags`, or `CostCategories`.
+Each dimension can appear only once in a filter, including inside a `Not`. To filter on several values of a dimension, put them in one expression. The operation ORs multiple values for a dimension together.
 Type: [Expression](API_Expression.md) object
 Required: No
 
@@ -133,7 +137,8 @@ The following values are supported for `Key`:
 +  `RICostForUnusedHours`
 +  `RealizedSavings`
 +  `UnrealizedSavings`
-The supported values for `SortOrder` are `ASCENDING` and `DESCENDING`.
+ `SortBy` applies only when you set `GroupBy`. If you don't set `GroupBy`, the operation ignores `SortBy`, including its `Key`.
+If you specify `SortBy` with `GroupBy`, you must also specify `SortOrder`. There is no default. The supported values for `SortOrder` are `ASCENDING` and `DESCENDING`.
 Type: [SortDefinition](API_SortDefinition.md) object
 Required: No
 

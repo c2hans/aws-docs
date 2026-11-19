@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateCsvClassifi
 ---
 
 # CreateCsvClassifierRequest
-<a name="API_CreateCsvClassifierRequest"></a>
 
 Specifies a custom CSV classifier for `CreateClassifier` to create.
 

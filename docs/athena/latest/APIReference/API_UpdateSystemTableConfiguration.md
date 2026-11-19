@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateSys
 ---
 
 # UpdateSystemTableConfiguration
-<a name="API_UpdateSystemTableConfiguration"></a>
 
 Updates the account-level system tables configuration. If no configuration exists, use [CreateSystemTableConfiguration](API_CreateSystemTableConfiguration.md) to create one. Fields that you omit retain their current values.
 

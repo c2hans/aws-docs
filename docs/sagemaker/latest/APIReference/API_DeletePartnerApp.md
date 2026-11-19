@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeletePartnerApp
-<a name="API_DeletePartnerApp"></a>
 
 Deletes a SageMaker Partner AI App.
 

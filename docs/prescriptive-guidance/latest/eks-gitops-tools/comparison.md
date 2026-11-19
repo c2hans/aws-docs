@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # GitOps tools comparison
-<a name="comparison"></a>
 
 Here's a comparison of the nine GitOps tools that were discussed in the previous sections. When you choose a tool, consider your specific requirements, existing infrastructure, team expertise, and desired level of control and customization.
 

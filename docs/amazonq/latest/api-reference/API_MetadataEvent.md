@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Metadat
 ---
 
 # MetadataEvent
-<a name="API_MetadataEvent"></a>
 
 A metadata event for a AI-generated text output message in a Amazon Q Business conversation, containing associated metadata generated.
 

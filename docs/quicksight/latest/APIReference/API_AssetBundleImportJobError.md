@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobError
-<a name="API_AssetBundleImportJobError"></a>
 
 Describes an error that occurred within an Asset Bundle import execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Deployment
-<a name="data-collection-deployment"></a>
 
 Deployment of the stack consists of 2 steps. First step is in Management Account and the 2nd in Data Collection Account. If you do not have access to Management Account please follow this [guide](data-collection-without-org.md).
 

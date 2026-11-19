@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateDestin
 ---
 
 # UpdateDestinationEndpoint
-<a name="API_UpdateDestinationEndpoint"></a>
 
 Updates the configuration of a destination endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_lambda_GetAlias
 ---
 
 # Use `GetAlias` with a CLI
-<a name="example_lambda_GetAlias_section"></a>
 
 The following code examples show how to use `GetAlias`.
 

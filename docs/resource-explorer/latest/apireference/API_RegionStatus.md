@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # RegionStatus
-<a name="API_RegionStatus"></a>
 
 Contains information about the status of Resource Explorer configuration in a specific AWS Region.
 

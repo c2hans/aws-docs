@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/index-managem
 ---
 
 # Index management in Amazon DocumentDB with Java
-<a name="index-management-java"></a>
 
 Indexes allow efficient retrieval of data from an Amazon DocumentDB collection. Without indexes, DocumentDB must scan every document in the collection to return results that satisfy a given query. This topic provides information on how to create, drop, and list indexes using the MongoDB Java drivers. It also discusses how to determine if a particular index is being used in the query and how to give hints to Amazon DocumentDB to use a specific index.
 

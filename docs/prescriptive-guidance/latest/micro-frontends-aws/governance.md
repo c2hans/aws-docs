@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Governance
-<a name="governance"></a>
 
 Multiple personas typically work on micro-frontends, and each one works under different constraints toward common business goals. While communication and collaboration between people are key to success, overcommunicating and implementing overly complicated processes slow the development cycle. This decreases morale and lowers quality.
 

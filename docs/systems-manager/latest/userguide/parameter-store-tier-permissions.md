@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 ---
 
 # Configuring permissions to specify a Parameter Store default tier
-<a name="parameter-store-tier-permissions"></a>
 
 Verify that you have permission in AWS Identity and Access Management (IAM) to change the default parameter tier in Parameter Store by doing one of the following:
 + Make sure that you attach the `AdministratorAccess` policy to your IAM entity (such as user, group, or role).

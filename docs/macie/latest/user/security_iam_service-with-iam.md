@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/security_iam_service-w
 ---
 
 # How Macie works with AWS Identity and Access Management
-<a name="security_iam_service-with-iam"></a>
 
 Before you use AWS Identity and Access Management (IAM) to manage access to Amazon Macie, learn which IAM features are available to use with Macie.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CapacityProviderPe
 ---
 
 # CapacityProviderPermissionsConfig
-<a name="API_CapacityProviderPermissionsConfig"></a>
 
 Configuration that specifies the permissions required for the capacity provider to manage compute resources.
 

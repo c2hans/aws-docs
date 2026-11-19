@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/private-off
 ---
 
 # Supported product types for AWS Marketplace private offers
-<a name="private-offers-supported-product-types"></a>
 
 As an AWS Marketplace seller, you can use private offers to sell the following product types: Amazon Machine Images (AMIs), container, professional services, machine learning (ML), and software as a service (SaaS) products. Private offers are negotiated terms used to purchase a product from AWS Marketplace. This topic provides information about private offers for AMI, container, SaaS, ML, and professional services products.
 

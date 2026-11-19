@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/latest/userguide/reference
 ---
 
 # Service quotas for Service Quotas
-<a name="reference_limits"></a>
 
 The following tables list the maximum values for Service Quotas resources for your AWS account.
 

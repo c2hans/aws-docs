@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSEC2SpotServiceRolePolicy
-<a name="AWSEC2SpotServiceRolePolicy"></a>
 
 **Description**: Allows EC2 Spot to launch and manage spot instances
 

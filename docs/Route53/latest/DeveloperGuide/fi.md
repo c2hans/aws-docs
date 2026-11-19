@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/fi.html
 ---
 
 # .fi (Finland)
-<a name="fi"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

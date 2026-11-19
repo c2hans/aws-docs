@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Timeout parameter changes
-<a name="migration-timeout-parameters"></a>
 
 In version 1, timeout values were specified as integer values representing milliseconds. In version 2, timeout parameters use `java.time.Duration` objects for better type safety and clarity.
 

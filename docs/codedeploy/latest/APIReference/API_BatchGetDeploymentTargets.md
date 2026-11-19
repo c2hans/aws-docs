@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Batch
 ---
 
 # BatchGetDeploymentTargets
-<a name="API_BatchGetDeploymentTargets"></a>
 
  Returns an array of one or more targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated `BatchGetDeploymentInstances`. The maximum number of targets that can be returned is 25.
 

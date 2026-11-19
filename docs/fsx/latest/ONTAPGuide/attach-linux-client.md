@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/attach-linux-clien
 ---
 
 # Mounting volumes on Linux clients
-<a name="attach-linux-client"></a>
 
 We recommend that the volumes you want to mount with Linux clients have a security style setting of `UNIX`. For more information, see [Managing FSx for ONTAP volumes](managing-volumes.md).
 

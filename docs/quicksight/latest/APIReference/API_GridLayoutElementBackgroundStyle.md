@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GridL
 ---
 
 # GridLayoutElementBackgroundStyle
-<a name="API_GridLayoutElementBackgroundStyle"></a>
 
 The background style configuration of a grid layout element.
 

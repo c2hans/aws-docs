@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # ImageExtractionCategory
-<a name="API_data-automation_ImageExtractionCategory"></a>
 
 Settings for generating categorical data from images.
 

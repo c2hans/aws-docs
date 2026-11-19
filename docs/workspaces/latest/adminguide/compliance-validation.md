@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/compliance-
 ---
 
 # Compliance validation for Amazon WorkSpaces
-<a name="compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of Amazon WorkSpaces as part of multiple AWS compliance programs. These include SOC, PCI, FedRAMP, HIPAA, and others.
 

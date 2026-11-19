@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_LinkApplicatio
 ---
 
 # LinkApplicationLogConfiguration
-<a name="API_LinkApplicationLogConfiguration"></a>
 
 Describes the configuration of a link application log.
 

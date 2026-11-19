@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Migration approach
-<a name="migration-approach"></a>
 
 This section describes an approach for containerizing traditional Java EE applications in the AWS Cloud. For more general migration guidelines, see [Mobilize your organization to accelerate large-scale migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration/welcome.html) in the AWS Prescriptive Guidance documentation.
 

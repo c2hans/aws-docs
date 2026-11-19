@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Classic alerting with monitors
-<a name="observability-alerting-monitors"></a>
 
 Monitors are the original alerting mechanism for Amazon OpenSearch Service. A monitor is a job that runs on a defined schedule. It queries your data using OpenSearch DSL, PPL, or Painless scripts, and evaluates trigger conditions that generate alerts. When a trigger condition is met, the monitor runs actions that send notifications through configured channels.
 

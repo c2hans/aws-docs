@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Oracl
 ---
 
 # OracleParameters
-<a name="API_OracleParameters"></a>
 
 The parameters for Oracle.
 

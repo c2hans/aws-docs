@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/view-wor
 ---
 
 # View worker details in the worker dashboard
-<a name="view-worker-dashboard"></a>
 
 The *worker dashboard* provides details for the worker that processes a task. You can see:
 + Metadata, such as the instance type, for the worker.

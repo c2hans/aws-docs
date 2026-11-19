@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Ac
 ---
 
 # Account
-<a name="API_Account"></a>
 
 Contains information about an AWS account that is a member of an organization.
 

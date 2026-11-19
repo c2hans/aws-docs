@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/troubleshooting
 ---
 
 # Troubleshooting caching
-<a name="troubleshooting-caching"></a>
 
 If you encounter caching issues for an Amplify application, consult the topics in this section for help.
 

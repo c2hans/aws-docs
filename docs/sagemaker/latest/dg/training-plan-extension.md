@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-plan-extens
 ---
 
 # Training plans extension
-<a name="training-plan-extension"></a>
 
 SageMaker training plans allow you to extend your existing training plans to avoid workload interruptions. When a training plan is approaching expiration, you can extend it directly through the SageMaker AI console or programmatically using the API or AWS CLI. This eliminates the need to create a new plan and reconfigure your workload with a new training plan ARN.
 

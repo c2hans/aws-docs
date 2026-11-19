@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DeleteEventStream
-<a name="API_connect-customer-profiles_DeleteEventStream"></a>
 
 Disables and deletes the specified event stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_DocumentM
 ---
 
 # DocumentMetadataConfiguration
-<a name="API_DocumentMetadataConfiguration"></a>
 
 Specifies the properties, such as relevance tuning and searchability, of an index field.
 

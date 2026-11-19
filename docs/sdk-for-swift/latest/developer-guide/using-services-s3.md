@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/usi
 ---
 
 # Working with Amazon S3 using the AWS SDK for Swift
-<a name="using-services-s3"></a>
 
 Your main interface to the Amazon Simple Storage Service for the SDK for Swift is the [`S3Client`](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client). Use the `S3Client` like other service clients in the SDK to make [requests](making-requests.md) to Amazon S3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/interpreting-r
 ---
 
 # Interpret the IDT for FreeRTOS results
-<a name="interpreting-results-frq"></a>
 
 The report section in `awsiotdevicetester_report.xml` or `FRQ_Report.xml` lists the results of the tests that are executed.
 

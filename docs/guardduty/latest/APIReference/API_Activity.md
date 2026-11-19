@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Activi
 ---
 
 # Activity
-<a name="API_Activity"></a>
 
 Contains information about an activity, such as an API call, that was observed for a signal.
 

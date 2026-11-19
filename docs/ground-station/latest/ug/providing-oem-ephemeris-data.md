@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/providing-oem-e
 ---
 
 # Provide OEM ephemeris data
-<a name="providing-oem-ephemeris-data"></a>
 
 **Important**
  The ephemeris API is currently in a Preview state

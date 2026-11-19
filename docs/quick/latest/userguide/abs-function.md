@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/abs-function.html
 ---
 
 # Abs
-<a name="abs-function"></a>
 
 `abs` returns the absolute value of a given expression.
 

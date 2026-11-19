@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Compute
-<a name="compute-pattern-list"></a>
 
 **Topics**
 + [Containers & microservices](containersandmicroservices-pattern-list.md)

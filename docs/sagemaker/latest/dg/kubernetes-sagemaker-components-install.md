@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/kubernetes-sagemaker
 ---
 
 # Install Kubeflow Pipelines
-<a name="kubernetes-sagemaker-components-install"></a>
 
 [Kubeflow Pipelines (KFP)](https://www.kubeflow.org/docs/components/pipelines/v2/introduction/) is the pipeline orchestration component of Kubeflow.
 

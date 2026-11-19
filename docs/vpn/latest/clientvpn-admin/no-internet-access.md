@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/no-internet-a
 ---
 
 # Troubleshooting AWS Client VPN: Clients can't access a peered VPC, Amazon S3, or the internet
-<a name="no-internet-access"></a>
 
 **Problem**
 I have properly configured my Client VPN endpoint routes, but my clients can't access a peered VPC, Amazon S3, or the internet.

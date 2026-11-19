@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_C
 ---
 
 # CreateGlobalSecondaryIndexAction
-<a name="API_CreateGlobalSecondaryIndexAction"></a>
 
 Represents a new global secondary index to be added to an existing table.
 

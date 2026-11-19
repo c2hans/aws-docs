@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/network-userguide/region
 ---
 
 # AWS Outposts connectivity to AWS Regions
-<a name="region-connectivity"></a>
 
 AWS Outposts supports wide area network (WAN) connectivity through the service link connection.
 

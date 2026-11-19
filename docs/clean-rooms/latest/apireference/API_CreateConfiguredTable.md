@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Crea
 ---
 
 # CreateConfiguredTable
-<a name="API_CreateConfiguredTable"></a>
 
 Creates a new configured table resource.
 

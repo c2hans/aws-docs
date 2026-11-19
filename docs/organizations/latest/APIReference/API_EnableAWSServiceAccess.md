@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_En
 ---
 
 # EnableAWSServiceAccess
-<a name="API_EnableAWSServiceAccess"></a>
 
 Provides an AWS service (the service that is specified by `ServicePrincipal`) with permissions to view the structure of an organization, create a [service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html) in all the accounts in the organization, and allow the service to perform operations on behalf of the organization and its accounts. Establishing these permissions can be a first step in enabling the integration of an AWS service with AWS Organizations.
 

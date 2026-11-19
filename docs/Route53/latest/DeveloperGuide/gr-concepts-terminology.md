@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-concept
 ---
 
 # Key concepts and components for Route 53 Global Resolver
-<a name="gr-concepts-terminology"></a>
 
 Route 53 Global Resolver uses several key components that work together to provide split-traffic DNS resolution, high availability through global anycast architecture, and comprehensive DNS security for your organization. Understanding these Route 53 Global Resolver concepts helps you design and deploy solutions that enable seamless access to both private and public resources, help ensure service continuity across multiple Regions, and protect against DNS-based threats.
 

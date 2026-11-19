@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegisterI
 ---
 
 # RegisterInstanceEventNotificationAttributes
-<a name="API_RegisterInstanceEventNotificationAttributes"></a>
 
 Registers a set of tag keys to include in scheduled event notifications for your resources.
 

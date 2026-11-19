@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/linkedin-configuring.html
 ---
 
 # Configuring LinkedIn
-<a name="linkedin-configuring"></a>
 
 Before you can use AWS Glue to transfer from LinkedIn, you must meet the following requirements:
 

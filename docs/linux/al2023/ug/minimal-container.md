@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/minimal-container.html
 ---
 
 # AL2023 Minimal container image
-<a name="minimal-container"></a>
 
 **Note**
  The standard AL2023 container images are suitable for most use cases, and adapting to the minimal container image is likely to be more work than adapting to the AL2023 base container image.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/configure-access.html
 ---
 
 # Configure security credentials for the AWS CDK CLI
-<a name="configure-access"></a>
 
 When you use the AWS Cloud Development Kit (AWS CDK) to develop applications in your local environment, you will primarily use the AWS CDK Command Line Interface (AWS CDK CLI) to interact with AWS. For example, you can use the CDK CLI to deploy your application or to delete your resources from your AWS environment.
 

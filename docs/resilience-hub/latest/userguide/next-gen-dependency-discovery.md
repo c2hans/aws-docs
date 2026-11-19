@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Dependency discovery
-<a name="next-gen-dependency-discovery"></a>
 
 Dependency discovery in the next generation of Resilience Hub automatically identifies all AWS services, internal endpoints, and third-party endpoints that your services depend on and assesses their location and frequency. It uses DNS query log analysis to surface dependencies you may not know about – including unexpected cross-region calls, critical third-party dependencies, and infrequently accessed services that could cause failures during incidents.
 

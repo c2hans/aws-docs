@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create a CI/CD pipeline to validate Terraform configurations by using AWS CodePipeline
-<a name="create-a-ci-cd-pipeline-to-validate-terraform-configurations-by-using-aws-codepipeline"></a>
 
 *Aromal Raj Jayarajan and Vijesh Vijayakumaran Nair, Amazon Web Services*
 

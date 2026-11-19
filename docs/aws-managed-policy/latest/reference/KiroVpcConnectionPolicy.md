@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Kiro
 ---
 
 # KiroVpcConnectionPolicy
-<a name="KiroVpcConnectionPolicy"></a>
 
 **Description**: Provides Kiro access to read your Amazon VPC configuration and to create and manage the network interfaces that connect Kiro environments to your VPC.
 

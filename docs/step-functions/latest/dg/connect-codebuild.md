@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-codebui
 ---
 
 # Manage AWS CodeBuild builds with Step Functions
-<a name="connect-codebuild"></a>
 
 You can integrate Step Functions with AWS CodeBuild to start, stop, and manage builds. This page lists the supported CodeBuild APIs you can use with Step Functions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/slr-permissions.h
 ---
 
 # Service-linked role permissions for MediaConnect
-<a name="slr-permissions"></a>
 
 MediaConnect uses the service-linked role named **AWSServiceRoleForMediaConnect**. This is the default Service-Linked Role that enables access to AWS services and resources used or managed by MediaConnect.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/key_mgmt_util-
 ---
 
 # Describe an AWS CloudHSM error using KMU
-<a name="key_mgmt_util-Error2String"></a>
 
 Use the **Error2String** helper command in the AWS CloudHSM key\_mgmt\_util to return the error that corresponds to a key\_mgmt\_util hexadecimal error code. You can use this command when troubleshooting your commands and scripts.
 

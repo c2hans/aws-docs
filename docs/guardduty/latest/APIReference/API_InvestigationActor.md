@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationActor
-<a name="API_InvestigationActor"></a>
 
 Contains information about the identity that performed an activity.
 

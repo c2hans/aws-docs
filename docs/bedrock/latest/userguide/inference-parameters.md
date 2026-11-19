@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/inference-param
 ---
 
 # Influence response generation with inference parameters
-<a name="inference-parameters"></a>
 
 When running model inference, you can adjust inference parameters to influence the model response. Inference parameters can change the pool of possible outputs that the model considers during generation, or they can limit the final response.
 

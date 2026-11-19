@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_T
 ---
 
 # TaskSearchSummary
-<a name="API_TaskSearchSummary"></a>
 
 The details of a task search.
 

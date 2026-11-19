@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Desc
 ---
 
 # DescribeEntity
-<a name="API_DescribeEntity"></a>
 
 Returns the metadata and content of the entity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-s
 ---
 
 # Deployments on an Amazon ECS Compute Platform
-<a name="deployment-steps-ecs"></a>
 
 This topic provides information about the components and workflow of CodeDeploy deployments that use the Amazon ECS compute platform.
 

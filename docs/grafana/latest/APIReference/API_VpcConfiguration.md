@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_VpcConfi
 ---
 
 # VpcConfiguration
-<a name="API_VpcConfiguration"></a>
 
 The configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to.
 

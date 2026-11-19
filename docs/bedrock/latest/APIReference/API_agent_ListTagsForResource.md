@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Li
 ---
 
 # ListTagsForResource
-<a name="API_agent_ListTagsForResource"></a>
 
 List all the tags for the resource you specify.
 

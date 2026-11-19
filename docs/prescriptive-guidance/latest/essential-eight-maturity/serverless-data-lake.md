@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Workload example: Serverless data lake
-<a name="serverless-data-lake"></a>
 
 This workload is an example of [Theme 1: Use managed services](theme-1.md).
 

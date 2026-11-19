@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Setting up custom domain names for Gateway endpoints
-<a name="gateway-custom-domains"></a>
 
 By default, Gateway endpoints are provided with an AWS-managed domain name in the format `<gateway-id>.gateway.bedrock-agentcore.<region>.amazonaws.com` . For production environments or to create a more user-friendly experience, you may want to use a custom domain name for your gateway endpoint. This section guides you through setting up a custom domain name using Amazon CloudFront as a reverse proxy.
 

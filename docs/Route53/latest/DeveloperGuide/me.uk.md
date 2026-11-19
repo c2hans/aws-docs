@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/me.uk.html
 ---
 
 # .me.uk (United Kingdom)
-<a name="me.uk"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

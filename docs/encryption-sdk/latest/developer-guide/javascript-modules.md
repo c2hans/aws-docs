@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/ja
 ---
 
 # Modules in the AWS Encryption SDK for JavaScript
-<a name="javascript-modules"></a>
 
 The modules in the AWS Encryption SDK for JavaScript make it easy to install the code that you need for your projects.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Clusters.Vie
 ---
 
 # Viewing an ElastiCache cluster's details
-<a name="Clusters.ViewDetails"></a>
 
 You can view detail information about one or more clusters using the ElastiCache console, AWS CLI, or ElastiCache API.
 

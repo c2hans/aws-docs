@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetP
 ---
 
 # GetPrivacyBudgetTemplate
-<a name="API_GetPrivacyBudgetTemplate"></a>
 
 Returns details for a specified privacy budget template.
 

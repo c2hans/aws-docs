@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cre
 ---
 
 # Configuring each feature
-<a name="create-feed-outputs"></a>
 
 Following are details about how to configure each feature (output) that you include in a Elemental Inference feed.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/developerguide/event-str
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # App event data stream from Amazon Pinpoint
-<a name="event-streams-data-app"></a>
 
 After you integrate your application (app) with Amazon Pinpoint and set up event streaming, Amazon Pinpoint retrieves your app's user activity, custom events, and message delivery data from the destination that you specified during setup for you to view. For information about how to set up event streaming so you can view your event data, see [Set up Amazon Pinpoint to stream app event data through Amazon Kinesis or Amazon Data Firehose](event-streams-setup.md).
 

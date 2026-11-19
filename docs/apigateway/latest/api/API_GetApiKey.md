@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetApiKey.html
 ---
 
 # GetApiKey
-<a name="API_GetApiKey"></a>
 
 Gets information about the current ApiKey resource.
 

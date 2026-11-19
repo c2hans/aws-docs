@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonFISServiceRolePolicy
-<a name="AmazonFISServiceRolePolicy"></a>
 
 **Description**: Policy to enable AWS FIS to manage monitoring and resource selection for experiments.
 

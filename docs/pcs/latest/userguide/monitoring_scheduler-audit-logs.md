@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/monitoring_schedule
 ---
 
 # Scheduler audit logs in AWS PCS
-<a name="monitoring_scheduler-audit-logs"></a>
 
 Scheduler audit logs record Remote Procedure Call (RPC) operations processed by your cluster's Slurm controller (`slurmctld`) and database daemon (`slurmdbd`). The `AUDIT_RPCS:` prefix in the log message identifies these logs. They support security auditing and compliance use cases.
 

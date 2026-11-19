@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # United Arab Emirates sender ID registration in AWS End User Messaging SMS
-<a name="registrations-united-arab-emirates"></a>
 
 Follow these directions to register your sender ID in United Arab Emirates.
 

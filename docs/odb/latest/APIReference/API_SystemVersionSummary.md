@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_SystemVersio
 ---
 
 # SystemVersionSummary
-<a name="API_SystemVersionSummary"></a>
 
 Information about the compatible system versions that can be used with a specific Exadata shape and Grid Infrastructure (GI) version.
 

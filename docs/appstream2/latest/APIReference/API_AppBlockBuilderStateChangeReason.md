@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_AppBl
 ---
 
 # AppBlockBuilderStateChangeReason
-<a name="API_AppBlockBuilderStateChangeReason"></a>
 
 Describes the reason why the last app block builder state change occurred.
 

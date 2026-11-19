@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-troubles
 ---
 
 # Model Parallel Troubleshooting
-<a name="distributed-troubleshooting-model-parallel"></a>
 
 If you run into an error, you can use the following list to try to troubleshoot your training job. If the problem persists, contact [AWS Support](https://aws.amazon.com/premiumsupport).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Det
 ---
 
 # DetachManagedPolicyFromPermissionSet
-<a name="API_DetachManagedPolicyFromPermissionSet"></a>
 
 Detaches the attached AWS managed policy ARN from the specified permission set.
 

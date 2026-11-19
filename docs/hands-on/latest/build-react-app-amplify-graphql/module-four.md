@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-react-app-amplify-
 ---
 
 # Task 4: Clean up resources
-<a name="module-four"></a>
 
 |  |  |
 | --- |--- |

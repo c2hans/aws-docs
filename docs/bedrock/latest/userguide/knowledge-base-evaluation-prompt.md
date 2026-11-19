@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Create a prompt dataset for a RAG evaluation in Amazon Bedrock
-<a name="knowledge-base-evaluation-prompt"></a>
 
 To evaluate retrieval and generation for an Amazon Bedrock Knowledge Base or for your own Retrieval Augmented Generation (RAG) system, you provide a prompt dataset. When you provide response data from your own RAG system, Amazon Bedrock skips the Knowledge Base invoke step and performs the evaluation job directly on your data.
 

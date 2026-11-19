@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Enabling MSDTC
-<a name="Appendix.SQLServer.Options.MSDTC.Enabling"></a>
 
 Use the following process to enable MSDTC for your DB instance:
 

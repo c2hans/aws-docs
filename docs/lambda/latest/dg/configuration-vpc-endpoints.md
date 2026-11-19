@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/configuration-vpc-endpo
 ---
 
 # Connecting inbound interface VPC endpoints for Lambda
-<a name="configuration-vpc-endpoints"></a>
 
 If you use Amazon Virtual Private Cloud (Amazon VPC) to host your AWS resources, you can establish a connection between your VPC and Lambda. You can use this connection to invoke your Lambda function without crossing the public internet.
 

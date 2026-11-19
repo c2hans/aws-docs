@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # UpdateProgramManagementAccountDetail
-<a name="API_channel_UpdateProgramManagementAccountDetail"></a>
 
 Contains details about an updated program management account.
 

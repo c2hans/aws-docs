@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/datasources-s3
 ---
 
 # Data Sources - Amazon S3 Statistics
-<a name="datasources-s3-statistics"></a>
 
 The Amazon S3 Data Source Statistics resource provides aggregated statistical data for all the Amazon Simple Storage Service (Amazon S3) buckets that Amazon Macie monitors and analyzes for your account. If you're the Macie administrator for an organization, this includes S3 buckets that your member accounts own.
 

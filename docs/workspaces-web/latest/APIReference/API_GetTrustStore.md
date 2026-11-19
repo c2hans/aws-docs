@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_G
 ---
 
 # GetTrustStore
-<a name="API_GetTrustStore"></a>
 
 Gets the trust store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # TimestreamDestination
-<a name="API_query_TimestreamDestination"></a>
 
 Destination for scheduled query.
 

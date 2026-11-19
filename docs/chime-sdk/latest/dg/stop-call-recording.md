@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/stop-call-recording.
 ---
 
 # StopCallRecording
-<a name="stop-call-recording"></a>
 
 The `StopCallRecording` action stops the recording of a call leg. Recording stops automatically when a call ends, and your application doesn't need to explicitly return the `StopCallRecording` action. Once recording for a call leg stops, it can’t start again, and the recording is delivered to the destination specified in the `StartCallRecording` action.
 

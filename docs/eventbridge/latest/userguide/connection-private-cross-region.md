@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/connection-
 ---
 
 # Connecting to private APIs in other AWS accounts
-<a name="connection-private-cross-region"></a>
 
 EventBridge supports connections to private APIs across accounts in the same Region.
 

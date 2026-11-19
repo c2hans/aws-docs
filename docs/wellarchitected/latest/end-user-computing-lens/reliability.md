@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Reliability
-<a name="reliability"></a>
 
  The reliability pillar for end-user computing encompasses the ability of your user-facing workloads and services to perform their intended functions consistently and correctly. This pillar provides in-depth, best-practice guidance for implementing reliable and resilient end-user computing environments on AWS.
 

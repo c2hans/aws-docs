@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/what-is-amazon-linux.html
 ---
 
 # What is Amazon Linux 2?
-<a name="what-is-amazon-linux"></a>
 
 Amazon Linux 2 (AL2) is a Linux operating system from Amazon Web Services (AWS). AL2 is designed to provide a stable, secure, and high-performing environment for applications running on Amazon EC2. It also includes packages that enable efficient integration with AWS, including launch configuration tools and many popular AWS libraries and tools. AWS provides ongoing security and maintenance updates for all instances running AL2. Many applications developed on CentOS, and similar distributions, run on AL2. AL2 is provided at no additional charge.
 

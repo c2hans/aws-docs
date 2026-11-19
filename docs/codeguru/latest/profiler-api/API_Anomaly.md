@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Anomaly
 ---
 
 # Anomaly
-<a name="API_Anomaly"></a>
 
  Details about an anomaly in a specific metric of application profile. The anomaly is detected using analysis of the metric data over a period of time.
 

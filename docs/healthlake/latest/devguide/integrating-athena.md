@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/integrating-a
 ---
 
 # Querying HealthLake data with Amazon Athena
-<a name="integrating-athena"></a>
 
 During a HealthLake import job, nested FHIR JSON data undergoes an ETL process and is stored in [Apache Iceberg open table format](https://iceberg.apache.org/), where each FHIR resource type is represented as an individual table in Athena. This enables users to query the FHIR data using SQL, but without having to export it first. This is valuable, as it empowers clinicians and scientists to query FHIR data to validate their decisions or advance their research. For more information about how Apache Iceberg tables function in Athena, see [Query Apache Iceberg tables](https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg.html) in the *Athena User Guide*.
 

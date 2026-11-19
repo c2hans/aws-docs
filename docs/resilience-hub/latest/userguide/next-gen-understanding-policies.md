@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Understanding resilience policies
-<a name="next-gen-understanding-policies"></a>
 
 Resilience policies define the resilience requirements for your application. Each policy specifies targets that Next generation Resilience Hub evaluates during failure mode assessments to determine whether your application meets your resilience goals.
 

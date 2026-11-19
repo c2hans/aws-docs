@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-andr
 ---
 
 # Create an Android app to use Amazon Location Service
-<a name="qs-android"></a>
 
 In this section, you will create an Android application with a map, the ability to search at a location and tracking in the foreground. First, you will create your Amazon Location resources, an Amazon Cognito identity and an API key for your application.
 

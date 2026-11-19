@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ListPipelineEndpoints
-<a name="API_osis_ListPipelineEndpoints"></a>
 
 Lists all pipeline endpoints in your account.
 

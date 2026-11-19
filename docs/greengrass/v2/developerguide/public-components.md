@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/public-comp
 ---
 
 # AWS-provided components
-<a name="public-components"></a>
 
 AWS IoT Greengrass provides and maintains prebuilt components that you can deploy to your devices. These components include features (such as stream manager), AWS IoT Greengrass V1 connectors (such as CloudWatch metrics), and local development tools (such as the AWS IoT Greengrass CLI). You can [deploy these components](manage-deployments.md) to your devices for their standalone functionality, or you can use them as dependencies in your [custom Greengrass components](develop-greengrass-components.md).
 

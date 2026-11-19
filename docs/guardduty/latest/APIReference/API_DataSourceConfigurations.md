@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DataSo
 ---
 
 # DataSourceConfigurations
-<a name="API_DataSourceConfigurations"></a>
 
 Contains information about which data sources are enabled.
 

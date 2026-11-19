@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/device-claim.html
 ---
 
 # Claiming a Link device
-<a name="device-claim"></a>
 
 If you purchase a device from an AWS reseller, you must claim the device.
 

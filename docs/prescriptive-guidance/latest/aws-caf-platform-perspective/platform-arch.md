@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-pla
 ---
 
 # Platform architecture
-<a name="platform-arch"></a>
 
 **Establish and maintain guidelines, principles, patterns, and guardrails for your cloud environment.**
 

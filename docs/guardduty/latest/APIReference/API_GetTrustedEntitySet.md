@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetTru
 ---
 
 # GetTrustedEntitySet
-<a name="API_GetTrustedEntitySet"></a>
 
 Retrieves the trusted entity set associated with the specified `trustedEntitySetId`.
 

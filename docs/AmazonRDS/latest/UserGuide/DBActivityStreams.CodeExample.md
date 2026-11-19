@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/DBActivityStr
 ---
 
 # Processing a database activity stream using the AWS SDK
-<a name="DBActivityStreams.CodeExample"></a>
 
 You can programmatically process an activity stream by using the AWS SDK. The following are fully functioning Java and Python examples of using Database Activity Streams records for instance based enablement.
 

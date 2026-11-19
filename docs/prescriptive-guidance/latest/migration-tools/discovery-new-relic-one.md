@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # New Relic One
-<a name="discovery-new-relic-one"></a>
 
 *Last update: May 15, 2023*
 

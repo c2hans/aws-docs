@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DisallowedFe
 ---
 
 # DisallowedFeature
-<a name="API_DisallowedFeature"></a>
 
 A AWS WAF feature that is not supported by the CloudFront pricing plan associated with the web ACL.
 

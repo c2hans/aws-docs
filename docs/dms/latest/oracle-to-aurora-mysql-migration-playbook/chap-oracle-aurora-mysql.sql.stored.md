@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle procedures and functions and MySQL stored procedures
-<a name="chap-oracle-aurora-mysql.sql.stored"></a>
 
 By migrating procedures, functions, and stored procedures, you can preserve existing business logic and functionality in the new database. The following sections provide detailed steps for migrating these database objects using AWS DMS, ensuring a smooth transition while maintaining data integrity and application compatibility.
 

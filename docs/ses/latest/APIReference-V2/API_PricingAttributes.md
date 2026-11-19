@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PricingAt
 ---
 
 # PricingAttributes
-<a name="API_PricingAttributes"></a>
 
 The pricing attributes that apply to your Amazon SES account, including the currently active pricing plan and any scheduled change.
 

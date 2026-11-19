@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/manage-faa.html
 ---
 
 # Managing file access auditing
-<a name="manage-faa"></a>
 
 **SACLs required to record activity**
 On its own, turning on file access auditing does not record any accesses. Amazon FSx for Windows File Server records accesses only for files, folders, and file shares that have audit controls (also known as SACLs) configured. For instructions on configuring audit controls, see [Setting file and folder auditing controls](faa-audit-controls.md).

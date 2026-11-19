@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/managing-gdu-agent-b
 ---
 
 # Managing GuardDuty security agent on Bottlerocket (Amazon ECS on Amazon EC2)
-<a name="managing-gdu-agent-bottlerocket-ecs-ec2"></a>
 
 **Important**
 This page applies only to *Bottlerocket ECS-optimized AMIs* version `v1.62.1` and later, including the following variants:

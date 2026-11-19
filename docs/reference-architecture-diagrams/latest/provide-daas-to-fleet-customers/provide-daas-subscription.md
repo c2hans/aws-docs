@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/p
 ---
 
 # Provide DaaS to Fleet Customers: Subscription flow
-<a name="provide-daas-subscription"></a>
 
 Publication date: **February 16, 2023 ([Diagram history](#daas-sub-history))**
 

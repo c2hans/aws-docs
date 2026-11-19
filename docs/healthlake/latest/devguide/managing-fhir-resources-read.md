@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 ---
 
 # Reading a FHIR resource
-<a name="managing-fhir-resources-read"></a>
 
 The FHIR `read` interaction reads the current state of a resource in a HealthLake data store. For additional information, see [`read`](https://hl7.org/fhir/R4/http.html#read) in the **FHIR R4 RESTful API documentation**.
 

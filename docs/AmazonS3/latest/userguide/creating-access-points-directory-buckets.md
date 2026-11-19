@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-acces
 ---
 
 # Creating access points for directory buckets
-<a name="creating-access-points-directory-buckets"></a>
 
 Like Directory buckets, access points can be created in Availability Zones or in Dedicated Local Zones. The access point must be created in the same zone as the directory bucket associated with it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetDataS
 ---
 
 # GetDataSourceIntrospection
-<a name="API_GetDataSourceIntrospection"></a>
 
 Retrieves the record of an existing introspection. If the retrieval is successful, the result of the instrospection will also be returned. If the retrieval fails the operation, an error message will be returned instead.
 

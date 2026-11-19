@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Loggi
 ---
 
 # LoggingDestination
-<a name="API_LoggingDestination"></a>
 
 Defines a destination and its associated filtering criteria for query logging.
 

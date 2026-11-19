@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/sto
 ---
 
 # Configure storage profiles for queues
-<a name="storage-profiles-for-queues"></a>
 
  A queue's configuration includes a list of case-sensitive names of the shared file system locations that jobs submitted to the queue require access to. for example, jobs submitted to queue `Q1` require file system locations `FSCommon` and `FS1`. Jobs submitted to queue `Q2` require file system locations `FSCommon` and `FS2`.
 

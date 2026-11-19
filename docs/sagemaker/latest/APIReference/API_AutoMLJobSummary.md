@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLJobSummary
-<a name="API_AutoMLJobSummary"></a>
 
 Provides a summary about an AutoML job.
 

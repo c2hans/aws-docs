@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DisconnectParticipant
-<a name="API_connect-participant_DisconnectParticipant"></a>
 
 Disconnects a participant.
 

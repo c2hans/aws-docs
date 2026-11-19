@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/security_iam_i
 ---
 
 # Identity-based policies for Amazon S3
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify Amazon S3 resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

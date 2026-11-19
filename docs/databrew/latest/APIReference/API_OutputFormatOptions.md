@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_OutputF
 ---
 
 # OutputFormatOptions
-<a name="API_OutputFormatOptions"></a>
 
 Represents a set of options that define the structure of comma-separated (CSV) job output.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Remote
 ---
 
 # RemoteAccountDetails
-<a name="API_RemoteAccountDetails"></a>
 
 Contains details about the remote AWS account that made the API call.
 

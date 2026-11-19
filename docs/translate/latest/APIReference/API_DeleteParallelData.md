@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Delete
 ---
 
 # DeleteParallelData
-<a name="API_DeleteParallelData"></a>
 
 Deletes a parallel data resource in Amazon Translate.
 

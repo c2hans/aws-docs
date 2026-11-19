@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/glossary.htm
 ---
 
 # AWS RTB Fabric Glossary
-<a name="glossary"></a>
 
 ## Application
 <a name="application-definition"></a>

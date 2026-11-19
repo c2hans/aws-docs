@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # OrganizationDomain
-<a name="API_OrganizationDomain"></a>
 
 Detailed information about an organization domain.
 

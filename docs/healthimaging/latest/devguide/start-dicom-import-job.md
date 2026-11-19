@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/start-dico
 ---
 
 # Starting an import job
-<a name="start-dicom-import-job"></a>
 
 Use the `StartDICOMImportJob` action to start a [pixel data verification check](pixel-data-verification.md) and bulk data import into an AWS HealthImaging [data store](getting-started-concepts.md#concept-data-store). The import job imports DICOM P10 files or enhances existing DICOM files with JSON metadata. The `inputS3Uri` parameter specifies the Amazon S3 input bucket containing the source files. The import job processing results are stored in the Amazon S3 output bucket specified by the `outputS3Uri` parameter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Operational procedures
-<a name="smops04"></a>
 
 Streaming systems are susceptible to encoding failures, delivery issues, and quality degradation. Documented, repeatable response procedures reduce resolution time and limit viewer impact during incidents.
 

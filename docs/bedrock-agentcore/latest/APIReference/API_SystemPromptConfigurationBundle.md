@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # SystemPromptConfigurationBundle
-<a name="API_SystemPromptConfigurationBundle"></a>
 
 A system prompt sourced from a configuration bundle version.
 

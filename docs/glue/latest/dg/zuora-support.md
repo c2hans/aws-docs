@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zuora-support.html
 ---
 
 # AWS Glue support for Zuora
-<a name="zuora-support"></a>
 
 AWS Glue supports Zuora as follows:
 

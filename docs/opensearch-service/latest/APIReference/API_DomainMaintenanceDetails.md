@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DomainMaintenanceDetails
-<a name="API_DomainMaintenanceDetails"></a>
 
 Container for the domain maintenance details.
 

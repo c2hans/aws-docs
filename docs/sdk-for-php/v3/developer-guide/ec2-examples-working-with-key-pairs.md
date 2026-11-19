@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ec2-examp
 ---
 
 # Working with Amazon EC2 key pairs with AWS SDK for PHP Version 3
-<a name="ec2-examples-working-with-key-pairs"></a>
 
 Amazon EC2 uses public–key cryptography to encrypt and decrypt login information. Public–key cryptography uses a public key to encrypt data. Then the recipient uses the private key to decrypt the data. The public and private keys are known as a key pair.
 

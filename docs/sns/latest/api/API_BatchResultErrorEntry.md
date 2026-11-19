@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_BatchResultErrorEntry
 ---
 
 # BatchResultErrorEntry
-<a name="API_BatchResultErrorEntry"></a>
 
 Gives a detailed description of failed messages in the batch.
 

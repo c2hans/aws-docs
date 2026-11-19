@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/general/latest/gr/aws-marketplace.html
 ---
 
 # AWS Marketplace endpoints and quotas
-<a name="aws-marketplace"></a>
 
 AWS Marketplace is a curated digital catalog that makes it easy for customers to find, buy, deploy, and manage third-party software and services that customers need to build solutions and run their businesses.
 

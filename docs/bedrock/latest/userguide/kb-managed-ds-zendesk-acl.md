@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-z
 ---
 
 # Document-level access controls
-<a name="kb-managed-ds-zendesk-acl"></a>
 
 **ACL awareness is not authorization**
 Bedrock Managed Knowledge Base provides ACL-aware filtering (it filters results by access permissions) but this is not a security boundary. Bedrock Managed Knowledge Base does not authenticate end users. Your application is responsible for authenticating users and passing verified identity context. Bedrock Managed Knowledge Base cannot verify the authenticity of the user context you provide. As a result, this feature filters results based on the identity you supply, but it does not constitute true authorization. You must not rely on this feature as your only access control mechanism — always pair it with upstream authentication.

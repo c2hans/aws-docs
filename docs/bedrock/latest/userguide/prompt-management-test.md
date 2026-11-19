@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-manageme
 ---
 
 # Test a prompt using Prompt management
-<a name="prompt-management-test"></a>
 
 To learn how to test a prompt you created in Prompt management, choose the tab for your preferred method, and then follow the steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/azure-to-aw
 ---
 
 # AI Driven Assessment Phases
-<a name="ai-driven-assessment-methodology"></a>
 
 ## Assessment Phases
 <a name="assessment-phases.a20b8f33-eb45-5c96-841c-7e34e2519460"></a>

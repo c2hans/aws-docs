@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # Common rule group settings in AWS Network Firewall
-<a name="rule-group-settings"></a>
 
 Every Network Firewall rule group has the following top-level settings:
 + **Type** – Whether the rule group is stateless or stateful.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Guidance for Driver-based Demand Planning with o9
-<a name="driver-based-demand-planning-o9"></a>
 
 Publication date: **April 25, 2022 ([Diagram history](#o9-driver-history))**
 

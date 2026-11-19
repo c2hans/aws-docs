@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_InstanceConfigu
 ---
 
 # InstanceConfiguration
-<a name="API_InstanceConfiguration"></a>
 
 Describes the runtime configuration of an AWS App Runner service instance (scaling unit).
 

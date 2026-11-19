@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteEm
 ---
 
 # DeleteEmailAddress
-<a name="API_DeleteEmailAddress"></a>
 
 Deletes email address from the specified Connect Customer instance.
 

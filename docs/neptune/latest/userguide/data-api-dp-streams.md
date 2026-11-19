@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/data-api-dp-str
 ---
 
 # Neptune streams dataplane API
-<a name="data-api-dp-streams"></a>
 
 **Stream access actions:**
 + [GetPropertygraphStream (action)](#GetPropertygraphStream)

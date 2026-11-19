@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Upd
 ---
 
 # UpdateDistributionConfiguration
-<a name="API_UpdateDistributionConfiguration"></a>
 
 Updates a distribution configuration. Distribution configurations define and configure the outputs for your images, including the target Regions, accounts, and settings for each Region.
 

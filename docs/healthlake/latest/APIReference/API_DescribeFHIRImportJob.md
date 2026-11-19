@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Descr
 ---
 
 # DescribeFHIRImportJob
-<a name="API_DescribeFHIRImportJob"></a>
 
 Get the import job properties to learn more about the job or job progress.
 

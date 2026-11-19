@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ContextStartedDeta
 ---
 
 # ContextStartedDetails
-<a name="API_ContextStartedDetails"></a>
 
 Details about a context that has started.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRDSPerformanceInsightsFullAccess
-<a name="AmazonRDSPerformanceInsightsFullAccess"></a>
 
 **Description**: Provides full access to RDS Performance Insights via the AWS Management Console
 

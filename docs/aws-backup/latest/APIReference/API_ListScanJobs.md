@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListS
 ---
 
 # ListScanJobs
-<a name="API_ListScanJobs"></a>
 
 Returns a list of existing scan jobs for an authenticated account for the last 30 days.
 

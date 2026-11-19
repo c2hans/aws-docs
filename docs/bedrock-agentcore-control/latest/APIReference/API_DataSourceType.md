@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DataSourceType
-<a name="API_DataSourceType"></a>
 
  Source of examples to add to the dataset.
 

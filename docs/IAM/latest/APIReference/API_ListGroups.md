@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListGroups.h
 ---
 
 # ListGroups
-<a name="API_ListGroups"></a>
 
 Lists the IAM groups that have the specified path prefix.
 

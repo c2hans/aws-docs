@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/s
 ---
 
 # AWS IAM credentials
-<a name="setup-credentials"></a>
 
 AWS Identity and Access Management (AWS IAM) Credentials authenticate with your AWS account through locally-stored access keys.
 

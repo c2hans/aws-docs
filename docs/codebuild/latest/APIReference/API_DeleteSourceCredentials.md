@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Delete
 ---
 
 # DeleteSourceCredentials
-<a name="API_DeleteSourceCredentials"></a>
 
  Deletes a set of GitHub, GitHub Enterprise, or Bitbucket source credentials.
 

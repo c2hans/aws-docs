@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DetachAndDel
 ---
 
 # DetachAndDeleteS3AccessPoint
-<a name="API_DetachAndDeleteS3AccessPoint"></a>
 
 Detaches an S3 access point from an Amazon FSx volume and deletes the S3 access point.
 

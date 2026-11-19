@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_lambda_Hello_se
 ---
 
 # Hello Lambda
-<a name="example_lambda_Hello_section"></a>
 
 The following code examples show how to get started using Lambda.
 

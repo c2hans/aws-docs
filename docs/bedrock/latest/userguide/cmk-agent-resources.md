@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/cmk-agent-resou
 ---
 
 # Encryption of agent resources with customer managed keys (CMK)
-<a name="cmk-agent-resources"></a>
 
 You can at any time create a customer managed key to encrypt your agent’s information using the following agent information provided when building your agent.
 

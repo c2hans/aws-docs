@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # ReplicationStatus
-<a name="API_ReplicationStatus"></a>
 
 A structure that contains information about the replication status of a canary replica.
 

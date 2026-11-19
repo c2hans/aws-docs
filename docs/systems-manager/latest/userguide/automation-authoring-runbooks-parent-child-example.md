@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # Example 1: Creating parent-child runbooks
-<a name="automation-authoring-runbooks-parent-child-example"></a>
 
 The following example demonstrates how to create two runbooks that patch tagged groups of Amazon Elastic Compute Cloud (Amazon EC2) instances in stages. These runbooks are used in a parent-child relationship with the parent runbook used to initiate a rate control automation of the child runbook. For more information about rate control automations, see [Run automated operations at scale](running-automations-scale.md). For more information about the automation actions used in this example, see the [Systems Manager Automation actions reference](automation-actions.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/sidew
 ---
 
 # Create an IAM role and IoT rule for your destination
-<a name="sidewalk-destination-rule-role"></a>
 
 Your destination can be an MQTT topic or an AWS IoT rule. In this example, you configure an AWS IoT rule as a destination.
 

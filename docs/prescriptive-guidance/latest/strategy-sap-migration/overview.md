@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Overview
-<a name="overview"></a>
 
 The AWS migration approach for SAP workloads consists of four phases: assess, mobilize, migrate, and optimize. The methodology has been tailored to meet AWS customers' needs and contains specific actions with predefined inputs and outputs. The following diagram illustrates these phases, which are discussed in detail in subsequent sections.
 

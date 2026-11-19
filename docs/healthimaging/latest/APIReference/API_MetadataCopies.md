@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Me
 ---
 
 # MetadataCopies
-<a name="API_MetadataCopies"></a>
 
 Contains copiable `Attributes` structure and wraps information related to specific copy use cases. For example, when copying subsets.
 

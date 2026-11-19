@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_GetMa
 ---
 
 # GetMapStyleDescriptor
-<a name="API_GetMapStyleDescriptor"></a>
 
 **Important**
 This operation is no longer current and may be deprecated in the future. We recommend upgrading to [`GetStyleDescriptor`](https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps_GetStyleDescriptor.html) unless you require `Grab` data.

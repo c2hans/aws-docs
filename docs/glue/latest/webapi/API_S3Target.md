@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3Target.html
 ---
 
 # S3Target
-<a name="API_S3Target"></a>
 
 Specifies a data store in Amazon Simple Storage Service (Amazon S3).
 

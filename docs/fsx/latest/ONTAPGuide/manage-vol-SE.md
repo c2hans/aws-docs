@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/manage-vol-SE.html
 ---
 
 # Managing storage efficiencies
-<a name="manage-vol-SE"></a>
 
 By enabling storage efficiencies on your FSx for ONTAP volumes, you can optimize storage utilization, reduce storage costs, and improve your file system's performance overall.
 

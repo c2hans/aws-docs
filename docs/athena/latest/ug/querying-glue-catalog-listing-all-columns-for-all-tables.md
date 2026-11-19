@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-glue-catalog-l
 ---
 
 # List all columns for all tables
-<a name="querying-glue-catalog-listing-all-columns-for-all-tables"></a>
 
 You can list all columns for all tables in `AwsDataCatalog` or for all tables in a specific database in `AwsDataCatalog`.
 + To list all columns for all databases in `AwsDataCatalog`, use the query `SELECT * FROM information_schema.columns`.

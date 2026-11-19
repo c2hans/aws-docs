@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/upgradeguide/upgra
 ---
 
 # Upgrades in Elemental Live
-<a name="upgrades-lv-upg"></a>
 
 This section describes how to upgrade to AWS Elemental Live software version to a higher version.
 

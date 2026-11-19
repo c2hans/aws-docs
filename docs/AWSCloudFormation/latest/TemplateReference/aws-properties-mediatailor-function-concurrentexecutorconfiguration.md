@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::Function ConcurrentExecutorConfiguration
-<a name="aws-properties-mediatailor-function-concurrentexecutorconfiguration"></a>
 
 The configuration for a `CONCURRENT_EXECUTOR` function. A `CONCURRENT_EXECUTOR` runs a set of child functions in parallel, up to a maximum concurrency, and combines their output when all functions complete. For more information about functions, see [Working with functions](https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-functions.html) in the *MediaTailor User Guide*.
 

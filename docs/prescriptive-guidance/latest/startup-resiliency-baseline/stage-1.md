@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/startup-res
 ---
 
 # Stage 1: Set objectives
-<a name="stage-1"></a>
 
 Imagine that your team is in the final sprint before a major product launch. The new features are groundbreaking, and investor excitement is building. Then, during a routine deployment, your core service goes down. As customer complaints flood your email, two questions become painfully clear: How long can you afford to be offline? What data can you afford to lose?
 

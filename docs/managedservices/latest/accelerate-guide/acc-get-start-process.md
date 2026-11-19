@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Account onboarding process for Accelerate
-<a name="acc-get-start-process"></a>
 
 Onboarding an account into AMS Accelerate has four stages.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Anyca
 ---
 
 # AnycastIpListCollection
-<a name="API_AnycastIpListCollection"></a>
 
 The Anycast static IP list collection.
 

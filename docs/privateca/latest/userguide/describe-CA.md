@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/describe-CA.h
 ---
 
 # View a private CA
-<a name="describe-CA"></a>
 
 You can use the ACM console or the AWS CLI to view detailed metadata about a private CA and change several of the values as needed. For detailed information about updating CAs, see [Update a private CA in AWS Private Certificate Authority](PCAUpdateCA.md).
 

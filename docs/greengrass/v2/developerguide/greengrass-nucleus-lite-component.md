@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # Greengrass nucleus lite
-<a name="greengrass-nucleus-lite-component"></a>
 
 The Greengrass nucleus lite (`aws.greengrass.NucleusLite`) is a device runtime for constrained edge devices optimized for minimal memory footprint (uses less than 15MB RAM). It has been introduced with AWS IoT Greengrass version 2.14.0 release and is backward compatible with AWS IoT Greengrass generic components, Greengrass V2 API, and SDK.
 

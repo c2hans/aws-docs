@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteThingG
 ---
 
 # DeleteThingGroup
-<a name="API_DeleteThingGroup"></a>
 
 Deletes a thing group.
 

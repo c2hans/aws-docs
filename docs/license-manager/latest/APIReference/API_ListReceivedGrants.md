@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ListReceivedGrants
-<a name="API_ListReceivedGrants"></a>
 
 Lists grants that are received. Received grants are grants created while specifying the recipient as this AWS account, your organization, or an organizational unit (OU) to which this member account belongs.
 

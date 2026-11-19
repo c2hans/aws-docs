@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/policy.
 ---
 
 # Policy
-<a name="policy"></a>
 
 ## URI
 <a name="policy-url"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-eval
 ---
 
 # Getting Started
-<a name="model-customize-evaluation-getting-started"></a>
 
 ## Submit an Evaluation Job Through SageMaker Studio
 <a name="model-customize-evaluation-studio"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/networking-flex-cos
 ---
 
 # How Networking Flexible Cost Allocation works
-<a name="networking-flex-cost-allocation-basics"></a>
 
 Before you start: Networking Flexible Cost Allocation (FCA) writes its cost breakdown to your AWS Cost and Usage Report. Make sure your AWS Cost and Usage Report includes [split cost allocation data](https://docs.aws.amazon.com/cur/latest/userguide/enabling-split-cost-allocation-data.html), and that the management account or a standalone account has turned on **Networking flexible cost allocation** in Cost Management preferences. You then create a policy and associate it with your resources in the Amazon VPC console, with the AWS CLI, or with AWS CloudFormation. For how to turn on the preference, see [Turning on the data in your Cost and Usage Reports](networking-flex-cost-allocation-work-with.md#networking-flex-cost-allocation-turn-on). This section describes the concepts. To create and apply a policy, see [Working with Networking Flexible Cost Allocation](networking-flex-cost-allocation-work-with.md).
 

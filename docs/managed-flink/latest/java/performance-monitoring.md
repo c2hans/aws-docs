@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/performance-mo
 ---
 
 # Monitor performance
-<a name="performance-monitoring"></a>
 
 This section describes tools for monitoring an application's performance.
 

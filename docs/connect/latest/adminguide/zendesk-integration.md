@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/zendesk-integr
 ---
 
 # Embed the Connect Customer Contact Control Panel (CCP) into Zendesk
-<a name="zendesk-integration"></a>
 
 To integrate Connect Customer and Zendesk, you need:
 + An Connect Customer instance.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/using-servi
 ---
 
 # Using service-linked roles
-<a name="using-service-linked-roles"></a>
 
  ***Service-linked roles for AWS Security Incident Response***
 

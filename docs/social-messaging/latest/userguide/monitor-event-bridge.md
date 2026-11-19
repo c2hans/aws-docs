@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/monito
 ---
 
 # Monitoring with Amazon EventBridge
-<a name="monitor-event-bridge"></a>
 
 AWS End User Messaging Social sends events to EventBridge for WhatsApp events. You can use EventBridge to write rules that take actions, such as notifying you, when specific event types are received. For more information, see the following topics in the Amazon EventBridge User Guide:
 + [What is Amazon EventBridge?](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html)

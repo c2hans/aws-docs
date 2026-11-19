@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Technical-requirements assessment template
-<a name="template-tech-req"></a>
 
 Provide information about data ingestion types:
 

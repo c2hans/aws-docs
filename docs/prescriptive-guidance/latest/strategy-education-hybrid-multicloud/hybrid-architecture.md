@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Implement hybrid architectures when existing, on-premises investments incentivize continued use
-<a name="hybrid-architecture"></a>
 
 Most educational institutions have invested in on-premises data centers of varying scale to host enterprise applications, data storage solutions, end-user computing (EUC) environments, and shared computing resources. All the resources in these data centers are subject to different refresh cycles, where you must consider future growth and provision enough capacity to accommodate peak scale, which might be necessary only a few times a year. As a result, resources often sit idle until the next refresh cycle. Planning for, budgeting, procuring, and deploying new hardware can take weeks, if not months or longer. This lengthy process stifles innovation and can delay learning and research.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/ipa-monito
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Monitoring events and API calls using logging
-<a name="ipa-monitoring"></a>
 
 In Amazon CodeCatalyst, management events for the space are collected by AWS CloudTrail and are logged in the trail for the billing account for the space. CloudTrail logging is the primary method to manage logging for CodeCatalyst events, and a secondary method is viewing event logging in CodeCatalyst.
 

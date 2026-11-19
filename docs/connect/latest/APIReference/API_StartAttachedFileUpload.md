@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StartAtt
 ---
 
 # StartAttachedFileUpload
-<a name="API_StartAttachedFileUpload"></a>
 
 Provides a pre-signed Amazon S3 URL in response for uploading your content.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Orchestration models: From rule-based to AI-native
-<a name="orchestration-models"></a>
 
 In event-driven serverless AI systems, orchestration is the connective logic that determines how events trigger and shape the behavior of the system. In AWS, orchestration can follow two primary models:
 + **Rule-based orchestration** is defined by developers using workflows and state machines.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/780-common-vulne
 ---
 
 # 7.8.0 common vulnerabilities and exposures
-<a name="780-common-vulnerabilities-exposures"></a>
 
 The following table lists all CVEs that don't impact EMR clusters that run on recommended configurations of Amazon EMR 7.8.0. Amazon EMR is dependent on upstream open-source for availability of fixes and will provide the latest stable version as part of the Core Engine components within 90 days of Amazon EMR verifying the fixes.
 

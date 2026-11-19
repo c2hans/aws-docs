@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteComman
 ---
 
 # DeleteCommand
-<a name="API_DeleteCommand"></a>
 
 Delete a command resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # OriginRequestPolicyList
-<a name="API_OriginRequestPolicyList"></a>
 
 A list of origin request policies.
 

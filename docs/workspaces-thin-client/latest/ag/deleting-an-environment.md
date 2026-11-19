@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/deletin
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/workspacesthinclient-end-of-support.html).
 
 # Deleting an environment
-<a name="deleting-an-environment"></a>
 
 **Note**
 You cannot delete an environment if it has any devices registered to it. First, you must [deregister](resetting-and-deregsitering-a-device.md) and [delete](deleting-a-device.md) all devices in an environment.

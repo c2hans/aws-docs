@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/getting-ready-s
 ---
 
 # Getting ready: Setting the ad avail mode
-<a name="getting-ready-setting-the-ad-avail-mode"></a>
 
 Read this section if you want to support any of the following features:
 + Manifest decoration for all outputs.

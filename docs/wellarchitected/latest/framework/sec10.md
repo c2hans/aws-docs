@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec10.h
 ---
 
 # Incident response
-<a name="sec10"></a>
 
  Even with strong preventive and detective controls, incidents happen. Incident response is the organization's ability to anticipate, respond to, and recover from security events with minimal disruption. It rests on preparation done well before an event: knowing who responds, how they coordinate, and the procedures they follow.
 

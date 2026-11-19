@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/mkc-eventbridg
 ---
 
 # Set up EventBridge Kafka sink connector for MSK Connect
-<a name="mkc-eventbridge-kafka-connector"></a>
 
 This topic shows you how to set up the [EventBridge Kafka sink connector](https://github.com/awslabs/eventbridge-kafka-connector) for MSK Connect. This connector lets you send events from your MSK cluster to EventBridge [event buses](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-bus.html). This topic describes the process for creating the required resources and configuring the connector to enable seamless data flow between Kafka and EventBridge.
 

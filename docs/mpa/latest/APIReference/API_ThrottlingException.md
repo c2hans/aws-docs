@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_ThrottlingEx
 ---
 
 # ThrottlingException
-<a name="API_ThrottlingException"></a>
 
 The request was denied due to request throttling.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS08-BP05 Learn expected patterns of activity for workload
-<a name="ops_workload_health_learn_workload_usage_patterns"></a>
 
  Establish patterns of workload activity to identify anomalous behavior so that you can respond appropriately if required.
 

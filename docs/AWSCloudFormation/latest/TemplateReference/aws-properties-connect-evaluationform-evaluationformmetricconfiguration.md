@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::EvaluationForm EvaluationFormMetricConfiguration
-<a name="aws-properties-connect-evaluationform-evaluationformmetricconfiguration"></a>
 
 Information about the metric configuration for an evaluation form question. Use this to associate a business outcome metric with a question.
 

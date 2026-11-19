@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EKS::Cluster GatewayApiCrds
-<a name="aws-properties-eks-cluster-gatewayapicrds"></a>
 
 Indicates the current configuration of Gateway API custom resource definition (CRD) management on your EKS Auto Mode cluster. For example, if CRD management is enabled or disabled. For more information, see EKS Auto Mode load balancing capability in the *Amazon EKS User Guide*.
 

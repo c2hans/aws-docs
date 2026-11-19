@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/info.html
 ---
 
 # .info
-<a name="info"></a>
 
 Used for the dissemination of information.
 

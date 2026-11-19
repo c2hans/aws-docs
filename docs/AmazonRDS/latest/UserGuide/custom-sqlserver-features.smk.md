@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-sqlser
 ---
 
 # Using a Service Master Key with RDS Custom for SQL Server
-<a name="custom-sqlserver-features.smk"></a>
 
 RDS Custom for SQL Server supports using a Service Master Key (SMK). RDS Custom retains the same SMK throughout the lifespan of your RDS Custom for SQL Server DB instance. By retaining the same SMK, your DB instance can use objects that are encrypted with the SMK, such as linked server passwords and credentials. If you use a Multi-AZ deployment, RDS Custom also synchronizes and maintains the SMK between primary and secondary DB instances.
 

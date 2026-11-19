@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_IpAddress
 ---
 
 # IpAddressMember
-<a name="API_IpAddressMember"></a>
 
 Provides information of the IP address.
 

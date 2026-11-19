@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Configure HTTPS encryption for Oracle JD Edwards EnterpriseOne on Oracle WebLogic by using an Application Load Balancer
-<a name="configure-https-encryption-for-oracle-jd-edwards-enterpriseone-on-oracle-weblogic-by-using-an-application-load-balancer"></a>
 
 *Thanigaivel Thirumalai, Amazon Web Services*
 

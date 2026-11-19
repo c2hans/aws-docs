@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-e
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Editing goals
-<a name="agent-edit-goals"></a>
 
 **Important**
 Each profile requires at least one goal. If you delete all goals from a profile, scheduled recommendations are not generated until you add a new goal.

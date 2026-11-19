@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_
 ---
 
 # Supported Regions and DB engines for Amazon RDS Proxy
-<a name="Concepts.RDS_Fea_Regions_DB-eng.Feature.RDSProxy"></a>
 
 Amazon RDS Proxy is a fully managed, highly available database proxy that makes applications more scalable by pooling and sharing established database connections. For more information, see [Amazon RDS Proxy](rds-proxy.md).
 

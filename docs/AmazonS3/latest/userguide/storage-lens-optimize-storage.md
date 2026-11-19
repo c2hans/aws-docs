@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-lens-o
 ---
 
 # Using Amazon S3 Storage Lens to optimize your storage costs
-<a name="storage-lens-optimize-storage"></a>
 
 You can use S3 Storage Lens cost-optimization metrics to reduce the overall cost of your S3 storage. Cost-optimization metrics can help you confirm that you've configured Amazon S3 cost effectively and according to best practices. For example, you can identify the following cost-optimization opportunities:
 + Buckets with incomplete multipart uploads older than 7 days

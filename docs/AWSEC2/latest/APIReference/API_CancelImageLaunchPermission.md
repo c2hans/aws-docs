@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelIma
 ---
 
 # CancelImageLaunchPermission
-<a name="API_CancelImageLaunchPermission"></a>
 
 Removes your AWS account from the launch permissions for the specified AMI. For more information, see [Cancel having an AMI shared with your AWS account](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cancel-sharing-an-AMI.html) in the *Amazon EC2 User Guide*.
 

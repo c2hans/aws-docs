@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # GET: Get an SPTS Program
-<a name="working-with-members-of-mpts-get-spts-program"></a>
 
 Get the specified SPTS program from the specified MPTS output.
 

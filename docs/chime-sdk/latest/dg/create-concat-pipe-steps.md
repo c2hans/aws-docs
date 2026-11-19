@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-concat-pipe-s
 ---
 
 # Building an Amazon Chime SDK media concatenation pipeline
-<a name="create-concat-pipe-steps"></a>
 
 You follow a multi-step process to create an Amazon Chime SDK media concatenation pipeline. The following steps describe the process.
 

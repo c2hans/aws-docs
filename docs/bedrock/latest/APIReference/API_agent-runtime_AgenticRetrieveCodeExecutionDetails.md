@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveCodeExecutionDetails
-<a name="API_agent-runtime_AgenticRetrieveCodeExecutionDetails"></a>
 
 The details of code that the agent chose to run in an isolated sandbox. The record includes the documents that the code reads. The corresponding CodeExecution step reports the outcome.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-clouds
 ---
 
 # Amazon CloudSearch events
-<a name="events-ref-cloudsearch"></a>
 
 Amazon CloudSearch sends service events to EventBridge via AWS CloudTrail.
 

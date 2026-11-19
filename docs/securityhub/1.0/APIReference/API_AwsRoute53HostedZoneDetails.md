@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRout
 ---
 
 # AwsRoute53HostedZoneDetails
-<a name="API_AwsRoute53HostedZoneDetails"></a>
 
  Provides details about a specified Amazon Route 53 hosted zone, including the four name servers assigned to the hosted zone. A hosted zone represents a collection of records that can be managed together, belonging to a single parent domain name.
 

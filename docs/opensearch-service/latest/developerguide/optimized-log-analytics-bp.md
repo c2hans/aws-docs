@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Best practices
-<a name="optimized-log-analytics-bp"></a>
 
 Follow these best practices to optimize performance and cost when running domains with the Optimized engine.
 

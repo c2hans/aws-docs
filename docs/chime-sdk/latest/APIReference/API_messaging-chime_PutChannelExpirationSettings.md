@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # PutChannelExpirationSettings
-<a name="API_messaging-chime_PutChannelExpirationSettings"></a>
 
 Sets the number of days before the channel is automatically deleted.
 

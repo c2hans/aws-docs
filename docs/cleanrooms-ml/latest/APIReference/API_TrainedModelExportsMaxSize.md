@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Tr
 ---
 
 # TrainedModelExportsMaxSize
-<a name="API_TrainedModelExportsMaxSize"></a>
 
 The maximum size of the trained model metrics that can be exported. If the trained model metrics dataset is larger than this value, it will not be exported.
 

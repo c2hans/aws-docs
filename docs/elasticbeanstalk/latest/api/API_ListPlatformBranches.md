@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_ListPlat
 ---
 
 # ListPlatformBranches
-<a name="API_ListPlatformBranches"></a>
 
 Lists the platform branches available for your account in an AWS Region. Provides summary information about each platform branch.
 

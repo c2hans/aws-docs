@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/example_sns_CreatePlatform
 ---
 
 # Create a platform endpoint for Amazon SNS push notifications using an AWS SDK
-<a name="example_sns_CreatePlatformEndpoint_section"></a>
 
 The following code examples show how to create a platform endpoint for Amazon SNS push notifications.
 

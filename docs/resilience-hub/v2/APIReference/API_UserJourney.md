@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_UserJ
 ---
 
 # UserJourney
-<a name="API_UserJourney"></a>
 
 Represents a user journey that defines a critical path through a system.
 

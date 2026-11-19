@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/co
 ---
 
 # Configuring the AWS Encryption SDK
-<a name="configure"></a>
 
 The AWS Encryption SDK is designed to be easy to use. Although the AWS Encryption SDK has several configuration options, the default values are carefully chosen to be practical and secure for most applications. However, you might need to adjust your configuration to improve performance or include a custom feature in your design.
 

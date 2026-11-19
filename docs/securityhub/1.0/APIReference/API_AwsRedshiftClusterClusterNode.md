@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsReds
 ---
 
 # AwsRedshiftClusterClusterNode
-<a name="API_AwsRedshiftClusterClusterNode"></a>
 
 A node in an Amazon Redshift cluster.
 

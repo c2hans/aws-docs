@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Timestream::InfluxDBCluster
-<a name="aws-resource-timestream-influxdbcluster"></a>
 
 The `AWS::Timestream::InfluxDBCluster` resource specifies an Amazon Timestream for InfluxDB cluster. A cluster supports InfluxDB v2 with multi-node read replicas for high availability and read scaling, with a primary node and one or more read replicas distributed across availability zones. A cluster also supports InfluxDB v3 deployments in either Core (single-node for near real-time workloads) or Enterprise (multi-node with compaction for high-cardinality data and long-term analytics) configurations. You can configure instance types, storage, networking, failover behavior, and deployment type for your cluster.
 

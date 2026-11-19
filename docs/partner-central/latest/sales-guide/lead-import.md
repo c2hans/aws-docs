@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/sales-guide/lead-
 ---
 
 # Importing leads
-<a name="lead-import"></a>
 
 The **Import leads** feature in AWS Partner Central lets you create multiple partner-originated leads at once. Upload a CSV file to import your leads. Each valid row in the file creates one lead through the APN Customer Engagements (ACE) program. You can import up to 100 leads per file.
 

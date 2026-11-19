@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticBeanstalk::Environment OptionSetting
-<a name="aws-properties-elasticbeanstalk-environment-optionsetting"></a>
 
 The `OptionSetting` property type specifies an option for an AWS Elastic Beanstalk environment.
 

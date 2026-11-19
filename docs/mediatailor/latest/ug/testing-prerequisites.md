@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/testing-prerequisi
 ---
 
 # Testing prerequisites and setup for CDN and MediaTailor integrations
-<a name="testing-prerequisites"></a>
 
 AWS Elemental MediaTailor content delivery network (CDN) integration testing requires proper preparation and resource allocation. Before beginning systematic testing, ensure you have the necessary resources and tools in place.
 

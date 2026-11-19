@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/scheduled-notebook-p
 ---
 
 # Set up policies and permissions for Studio
-<a name="scheduled-notebook-policies-studio"></a>
 
 You will need to install the proper policies and permissions before you schedule your first notebook run. The following provides instructions on setting up the following permissions:
 + Job execution role trust relationships

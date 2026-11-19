@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/custom-permission
 ---
 
 # Deny by Default
-<a name="custom-permissions-governance"></a>
 
 **Important**
 Test Deny by Default configurations in a development or staging account before applying them to production users. Verify that the behavior matches your expectations before broad deployment.

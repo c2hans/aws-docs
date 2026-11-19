@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/ec2-local-cons
 ---
 
 # Performing tasks on the Amazon EC2 gateway local console
-<a name="ec2-local-console-fgw"></a>
 
 Some maintenance tasks require that you log in to the local console when running a gateway deployed on an Amazon EC2 instance. This section describes how to log in to the local console and perform maintenance tasks.
 

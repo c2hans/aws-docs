@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-in-back
 ---
 
 # rds-in-backup-plan
-<a name="rds-in-backup-plan"></a>
 
 Checks if Amazon Relational Database Service (Amazon RDS) databases are present in AWS Backup plans. The rule is NON\_COMPLIANT if Amazon RDS databases are not included in any AWS Backup plan.
 

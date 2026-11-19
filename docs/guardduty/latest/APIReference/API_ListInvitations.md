@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListIn
 ---
 
 # ListInvitations
-<a name="API_ListInvitations"></a>
 
 Lists all GuardDuty membership invitations that were sent to the current AWS account.
 

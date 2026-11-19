@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ag
 ---
 
 # AgentAliasRoutingConfigurationListItem
-<a name="API_agent_AgentAliasRoutingConfigurationListItem"></a>
 
 Contains details about the routing configuration of the alias.
 

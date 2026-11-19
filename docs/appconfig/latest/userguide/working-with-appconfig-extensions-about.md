@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/working-with-
 ---
 
 # Understanding AWS AppConfig extensions
-<a name="working-with-appconfig-extensions-about"></a>
 
 This topic introduces AWS AppConfig extension concepts and terminology. The information is discussed in the context of each step required to set up and use AWS AppConfig extensions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/google-search-console-con
 ---
 
 # Configuring Google Search Console
-<a name="google-search-console-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Google Search Console, you must meet these requirements:
 

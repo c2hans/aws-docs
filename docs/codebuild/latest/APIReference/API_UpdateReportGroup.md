@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Update
 ---
 
 # UpdateReportGroup
-<a name="API_UpdateReportGroup"></a>
 
  Updates a report group.
 

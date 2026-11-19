@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_M
 ---
 
 # MultipathResilienceChangeValues
-<a name="API_MultipathResilienceChangeValues"></a>
 
 Information about a change in multipath resilience.
 

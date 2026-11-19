@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListDesti
 ---
 
 # ListDestinations
-<a name="API_ListDestinations"></a>
 
  List all notification destinations.
 

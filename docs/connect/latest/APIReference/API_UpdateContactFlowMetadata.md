@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateCo
 ---
 
 # UpdateContactFlowMetadata
-<a name="API_UpdateContactFlowMetadata"></a>
 
 Updates metadata about specified flow.
 

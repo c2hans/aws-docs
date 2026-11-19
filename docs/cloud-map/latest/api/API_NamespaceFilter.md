@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_NamespaceFilter
 ---
 
 # NamespaceFilter
-<a name="API_NamespaceFilter"></a>
 
 A complex type that identifies the namespaces that you want to list. You can choose to list public or private namespaces.
 

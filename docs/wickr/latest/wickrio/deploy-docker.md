@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/wickrio/deploy-docker.html
 This guide provides documentation for Wickr IO Integrations. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Step 3: Deploy and configure the Docker container
-<a name="deploy-docker"></a>
 
 Complete the following procedure to deploy and configure the Docker container.
 

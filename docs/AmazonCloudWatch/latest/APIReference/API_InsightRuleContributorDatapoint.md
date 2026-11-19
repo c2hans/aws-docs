@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # InsightRuleContributorDatapoint
-<a name="API_InsightRuleContributorDatapoint"></a>
 
 One data point related to one contributor.
 

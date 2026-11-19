@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geojobs
 ---
 
 # StartJob
-<a name="API_geojobs_StartJob"></a>
 
  `StartJob` starts a new asynchronous bulk processing job. You specify the input data location in Amazon S3, the action to perform, and the output location where results are written. Currently, the Jobs APIs support bulk address validation.
 

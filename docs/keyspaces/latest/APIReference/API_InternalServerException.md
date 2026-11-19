@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Intern
 ---
 
 # InternalServerException
-<a name="API_InternalServerException"></a>
 
 Amazon Keyspaces was unable to fully process this request because of an internal server error.
 

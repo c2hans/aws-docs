@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/io-scheduler.html
 ---
 
 # I/O scheduler for AL2
-<a name="io-scheduler"></a>
 
 The I/O scheduler is a part of the Linux operating system that sorts and merges I/O requests and determines the order in which they are processed.
 

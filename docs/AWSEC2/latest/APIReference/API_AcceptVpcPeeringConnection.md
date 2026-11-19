@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptVpc
 ---
 
 # AcceptVpcPeeringConnection
-<a name="API_AcceptVpcPeeringConnection"></a>
 
 Accept a VPC peering connection request. To accept a request, the VPC peering connection must be in the `pending-acceptance` state, and you must be the owner of the peer VPC. Use [DescribeVpcPeeringConnections](API_DescribeVpcPeeringConnections.md) to view your outstanding VPC peering connection requests.
 

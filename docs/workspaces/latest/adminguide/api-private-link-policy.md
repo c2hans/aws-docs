@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/api-private
 ---
 
 # Create a VPC endpoint policy for Amazon WorkSpaces
-<a name="api-private-link-policy"></a>
 
 You can create a policy for Amazon VPC endpoints for Amazon WorkSpaces to specify the following:
 + The principal that can perform actions.

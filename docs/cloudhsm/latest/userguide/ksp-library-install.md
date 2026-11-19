@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-in
 ---
 
 # Install the Key storage provider (KSP) for AWS CloudHSM Client SDK 5
-<a name="ksp-library-install"></a>
 
 Use the following sections to install the Key storage provider (KSP) for AWS CloudHSM Client SDK 5.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Workload architecture
-<a name="workload-architecture"></a>
 
 | DRHCREL03: What strategies should you implement to provide reliable data access and processing across on-premises, edge, and cloud environments? |
 | --- |

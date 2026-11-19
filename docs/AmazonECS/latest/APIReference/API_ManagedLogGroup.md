@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedLogGroup
-<a name="API_ManagedLogGroup"></a>
 
 The Cloudwatch Log Group created by Amazon ECS for an Express service.
 

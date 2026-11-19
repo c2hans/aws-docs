@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/fsx-host-scaleout.ht
 ---
 
 # SAP HANA scale-out
-<a name="fsx-host-scaleout"></a>
 
 The following section is an example host setup for SAP HANA scale-out with standby node on AWS using FSx for ONTAP as the primary storage solution. You can use SAP HANA host auto failover, an automated solution provided by SAP, for recovering from a failure on your SAP HANA host. For more information, see [SAP HANA - Host Auto-Failover](https://www.sap.com/documents/2016/06/f6b3861d-767c-0010-82c7-eda71af511fa.html).
 

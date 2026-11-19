@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ExchangeCodeForToken
-<a name="API_ExchangeCodeForToken"></a>
 
 **Note**
 This is for internal use.

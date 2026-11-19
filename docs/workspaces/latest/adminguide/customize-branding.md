@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/customize-b
 ---
 
 # Customize branding in WorkSpaces Personal
-<a name="customize-branding"></a>
 
 Amazon WorkSpaces allows you to create a familiar WorkSpaces experience for your users by using APIs to customize the appearance of your WorkSpace's login page with your own branding logo, IT support information, forgot password link, and login message. Your branding will be displayed to your users in their WorkSpace login page rather than the default WorkSpaces branding.
 

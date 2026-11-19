@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DataReplicat
 ---
 
 # DataReplicationError
-<a name="API_DataReplicationError"></a>
 
 Error in data replication.
 

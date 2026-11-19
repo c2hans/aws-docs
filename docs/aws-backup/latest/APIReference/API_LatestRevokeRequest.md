@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Lates
 ---
 
 # LatestRevokeRequest
-<a name="API_LatestRevokeRequest"></a>
 
 Contains information about the latest request to revoke access to a backup vault.
 

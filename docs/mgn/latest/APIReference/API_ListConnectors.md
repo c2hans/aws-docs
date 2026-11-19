@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListConnecto
 ---
 
 # ListConnectors
-<a name="API_ListConnectors"></a>
 
 List Connectors.
 

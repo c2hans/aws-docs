@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/encrypt
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/workspacesthinclient-end-of-support.html).
 
 # Data encryption at rest for Amazon WorkSpaces Thin Client
-<a name="encryption-rest"></a>
 
 Amazon WorkSpaces Thin Client provides encryption by default to protect sensitive customer data at rest by using AWS owned encryption keys.
 + **AWS owned keys ** — Amazon WorkSpaces Thin Client uses these keys by default to automatically encrypt personally identifiable data. You cannot view, manage, or use AWS owned keys or audit their use. However, you don't have to take any action or change any programs to protect the keys that encrypt your data. For more information, see [AWS owned keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk) in the *AWS Key Management Service Developer Guide*.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Resources
-<a name="resources"></a>
 
 AWS Prescriptive Guidance publications:
 + [Strategies for overcoming common cloud transformation challenges](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cloud-transformation/introduction.html)

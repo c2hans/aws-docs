@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLOutputDataConfig
-<a name="API_AutoMLOutputDataConfig"></a>
 
 The output data configuration.
 

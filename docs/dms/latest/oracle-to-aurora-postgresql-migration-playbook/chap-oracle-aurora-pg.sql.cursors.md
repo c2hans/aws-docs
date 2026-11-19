@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle and PostgreSQL cursors
-<a name="chap-oracle-aurora-pg.sql.cursors"></a>
 
 With AWS DMS, you can migrate data from Oracle and PostgreSQL databases that use cursors. Cursors are database objects that enable traversal over rows from a result set in a database. They facilitate processing individual rows or row segments from a SQL statement’s result set.
 

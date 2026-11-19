@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # Prepare genomic, clinical, mutation, expression, and imaging data for large-scale analysis and perform interactive queries against a data lake
-<a name="solution-overview"></a>
 
 Publication date: *July 2020 ([last update](revisions.md): January 2023)*
 

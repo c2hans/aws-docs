@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/reward-function
 ---
 
 # Setting up reward functions for open-weight models
-<a name="reward-functions-open-weight"></a>
 
 Reward functions evaluate response quality and provide feedback signals for model training. You can set up reward functions using custom Lambda functions. Choose the approach that matches your task requirements.
 

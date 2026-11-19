@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mo
 ---
 
 # Monitor IAM root user activity
-<a name="monitor-iam-root-user-activity"></a>
 
 *JJ Sung and Mostefa Brougui, Amazon Web Services*
 

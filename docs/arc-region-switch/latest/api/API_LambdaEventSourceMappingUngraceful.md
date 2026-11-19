@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_LambdaE
 ---
 
 # LambdaEventSourceMappingUngraceful
-<a name="API_LambdaEventSourceMappingUngraceful"></a>
 
 Specifies whether to skip enabling or disabling an event source mapping during an ungraceful execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/permissions-for-
 ---
 
 # IAM permissions required for Amazon EC2 launch templates
-<a name="permissions-for-launch-templates"></a>
 
 You can use IAM permissions to control whether users can list, view, create, or delete launch templates or launch template versions.
 

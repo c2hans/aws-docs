@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/error-notifica
 ---
 
 # Error notifications when a Connect Customer rule fails to run
-<a name="error-notifications-rule-fails-to-run"></a>
 
 It's important to know when a specific rule action has failed in a production environment, and what caused the failure. Then you can proactively mitigate such failures in future.
 

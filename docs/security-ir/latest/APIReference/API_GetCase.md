@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_GetC
 ---
 
 # GetCase
-<a name="API_GetCase"></a>
 
 Returns the attributes of a case.
 

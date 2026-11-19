@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingGro
 ---
 
 # ListThingGroupsForThing
-<a name="API_ListThingGroupsForThing"></a>
 
 List the thing groups to which the specified thing belongs.
 

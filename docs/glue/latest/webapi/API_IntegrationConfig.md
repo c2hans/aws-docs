@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IntegrationConfig
 ---
 
 # IntegrationConfig
-<a name="API_IntegrationConfig"></a>
 
 Properties associated with the integration.
 

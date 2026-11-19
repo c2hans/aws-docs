@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Aliases in the Amazon GameLift Servers console
-<a name="gamelift-console-aliases"></a>
 
 The alias resource represents a pointer to a fleet or terminal destination. They are used to direct player traffic to specific hosting destinations. Use an alias to abstract a destination so that you can more easily redirect traffic when you update your hosting fleets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/routing-control/latest/APIReference/API_
 ---
 
 # RoutingControl
-<a name="API_RoutingControl"></a>
 
 A routing control, which is a simple on/off switch that you can use to route traffic to cells. When a routing control state is set to ON, traffic flows to a cell. When the state is set to OFF, traffic does not flow.
 

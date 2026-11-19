@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateAutono
 ---
 
 # CreateAutonomousDatabaseBackup
-<a name="API_CreateAutonomousDatabaseBackup"></a>
 
 Creates a new backup of the specified Autonomous Database.
 

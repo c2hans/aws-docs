@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-granting-
 ---
 
 # Granting and revoking privileges for RDS for Db2
-<a name="db2-granting-revoking-privileges"></a>
 
 Users gain access to databases through membership in groups that are attached to databases.
 

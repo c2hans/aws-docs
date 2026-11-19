@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_CreateJob
 ---
 
 # CreateJob
-<a name="API_CreateJob"></a>
 
 Creates an Amazon Braket hybrid job.
 

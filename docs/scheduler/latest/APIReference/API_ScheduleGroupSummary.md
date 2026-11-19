@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_Schedu
 ---
 
 # ScheduleGroupSummary
-<a name="API_ScheduleGroupSummary"></a>
 
 The details of a schedule group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_R
 ---
 
 # ResourceError
-<a name="API_ResourceError"></a>
 
  Defines application resource errors.
 

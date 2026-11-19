@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Stream processing
-<a name="flink-stack"></a>
 
 The stream processing layer deploys ten independent Flink applications on Amazon Managed Service for Apache Flink for real-time telemetry processing, plus two additional applications for FleetWise Edge integration. Each application consumes from a dedicated Kafka topic and writes to its own DynamoDB table, ensuring separation of concerns and independent scaling.
 

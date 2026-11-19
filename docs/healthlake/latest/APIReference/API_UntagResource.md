@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Untag
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Remove a user-specifed key and value tag from a data store.
 

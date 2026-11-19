@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_RedshiftDes
 ---
 
 # RedshiftDestinationProperties
-<a name="API_RedshiftDestinationProperties"></a>
 
  The properties that are applied when Amazon Redshift is being used as a destination.
 

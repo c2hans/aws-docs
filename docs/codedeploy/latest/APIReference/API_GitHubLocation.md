@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_GitHu
 ---
 
 # GitHubLocation
-<a name="API_GitHubLocation"></a>
 
 Information about the location of application artifacts stored in GitHub.
 

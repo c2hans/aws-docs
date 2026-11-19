@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeApplication
-<a name="API_DescribeApplication"></a>
 
 Retrieves Application details based on the ID
 

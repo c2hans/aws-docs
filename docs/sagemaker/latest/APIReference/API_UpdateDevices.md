@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateDevices
-<a name="API_UpdateDevices"></a>
 
 Updates one or more devices in a fleet.
 

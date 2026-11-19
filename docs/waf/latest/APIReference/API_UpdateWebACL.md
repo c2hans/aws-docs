@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_UpdateWebACL
 ---
 
 # UpdateWebACL
-<a name="API_UpdateWebACL"></a>
 
 Updates the specified [WebACL](API_WebACL.md). While updating a web ACL, AWS WAF provides continuous coverage to the resources that you have associated with the web ACL.
 

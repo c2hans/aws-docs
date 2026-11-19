@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_DeleteServiceAt
 ---
 
 # DeleteServiceAttributes
-<a name="API_DeleteServiceAttributes"></a>
 
 Deletes specific attributes associated with a service.
 

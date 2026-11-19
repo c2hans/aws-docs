@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Customiz
 ---
 
 # Transformation rules and actions
-<a name="CHAP_Tasks.CustomizingTasks.TableMapping.SelectionTransformation.Transformations"></a>
 
 You use the transformation actions to specify any transformations you want to apply to the selected schema, table, or view. Transformation rules are optional.
 

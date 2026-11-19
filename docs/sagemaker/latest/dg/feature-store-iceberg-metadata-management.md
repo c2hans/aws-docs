@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-iceber
 ---
 
 # Iceberg metadata management
-<a name="feature-store-iceberg-metadata-management"></a>
 
 When you create a feature group with the Iceberg table format, Amazon SageMaker Feature Store creates and manages the underlying Iceberg table on your behalf using default configuration values. You can configure Iceberg table properties at feature group creation, update properties on an existing feature group, and view the properties currently set on the table. These settings give you control over configuration parameters such as snapshot retention, metadata file management, and write behavior to manage the overall size and performance of your offline store table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Microsoft licensing on AWS
-<a name="licensing-microsoft-workloads"></a>
 
 This section describes how Microsoft licensing works on AWS, provides licensing best practices and strategies for deployment of Microsoft workloads on AWS, and helps you remain compliant with Microsoft's licensing terms while optimizing costs. Due to the impact of licensing on the cost of a migration, Microsoft licensing and Bring Your Own License (BYOL) options often influence the deployment options available. That's why it's important to understand how licensing works before you start the migration process.
 

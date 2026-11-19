@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateCrawler.htm
 ---
 
 # UpdateCrawler
-<a name="API_UpdateCrawler"></a>
 
 Updates a crawler. If a crawler is running, you must stop it using `StopCrawler` before updating it.
 

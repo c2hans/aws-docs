@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Enabled
 ---
 
 # EnabledMetric
-<a name="API_EnabledMetric"></a>
 
 Describes an enabled Auto Scaling group metric.
 

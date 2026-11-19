@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelSpo
 ---
 
 # CancelSpotFleetRequestsError
-<a name="API_CancelSpotFleetRequestsError"></a>
 
 Describes a Spot Fleet error.
 

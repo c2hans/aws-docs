@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Gns
 ---
 
 # Gnss
-<a name="API_Gnss"></a>
 
 Global navigation satellite system (GNSS) object used for positioning.
 

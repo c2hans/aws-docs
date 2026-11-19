@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Da
 ---
 
 # DataPrivacyScores
-<a name="API_DataPrivacyScores"></a>
 
 Privacy evaluation scores that measure the privacy characteristics of the generated synthetic data, including assessments of potential privacy risks such as membership inference attacks.
 

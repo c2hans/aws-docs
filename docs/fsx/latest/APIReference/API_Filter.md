@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_Filter.html
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 A filter used to restrict the results of describe calls. You can use multiple filters to return results that meet all applied filter requirements.
 

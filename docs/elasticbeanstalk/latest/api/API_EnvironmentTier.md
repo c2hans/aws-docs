@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Environm
 ---
 
 # EnvironmentTier
-<a name="API_EnvironmentTier"></a>
 
 Describes the properties of an environment tier
 

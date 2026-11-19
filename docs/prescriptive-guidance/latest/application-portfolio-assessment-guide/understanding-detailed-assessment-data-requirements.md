@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Understanding detailed assessment data requirements
-<a name="understanding-detailed-assessment-data-requirements"></a>
 
 The following table describes the information required to obtain a complete portfolio view of the applications in the migration and their associated infrastructure.
 

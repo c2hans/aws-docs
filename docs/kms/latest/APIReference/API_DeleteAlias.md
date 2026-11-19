@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_DeleteAlias.
 ---
 
 # DeleteAlias
-<a name="API_DeleteAlias"></a>
 
 Deletes the specified alias.
 
@@ -12,7 +11,7 @@ Adding, deleting, or updating an alias can allow or deny permission to the KMS k
 
 Because an alias is not a property of a KMS key, you can delete and change the aliases of a KMS key without affecting the KMS key. Also, aliases do not appear in the response from the [DescribeKey](API_DescribeKey.md) operation. To get the aliases of all KMS keys, use the [ListAliases](API_ListAliases.md) operation.
 
-Each KMS key can have multiple aliases. To change the alias of a KMS key, use [DeleteAlias](#API_DeleteAlias) to delete the current alias and [CreateAlias](API_CreateAlias.md) to create a new alias. To associate an existing alias with a different KMS key, call [UpdateAlias](API_UpdateAlias.md).
+Each KMS key can have multiple aliases. To change the alias of a KMS key, use [DeleteAlias](API_DeleteAlias.md) to delete the current alias and [CreateAlias](API_CreateAlias.md) to create a new alias. To associate an existing alias with a different KMS key, call [UpdateAlias](API_UpdateAlias.md).
 
  **Cross-account use**: No. You cannot perform this operation on an alias in a different AWS account.
 

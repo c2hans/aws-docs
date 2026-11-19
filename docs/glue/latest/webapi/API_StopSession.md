@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StopSession.html
 ---
 
 # StopSession
-<a name="API_StopSession"></a>
 
 Stops the session.
 

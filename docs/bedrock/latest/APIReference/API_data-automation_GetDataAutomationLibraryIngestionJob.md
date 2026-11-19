@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # GetDataAutomationLibraryIngestionJob
-<a name="API_data-automation_GetDataAutomationLibraryIngestionJob"></a>
 
 Gets details about a data automation library ingestion job.
 

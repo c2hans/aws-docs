@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Standard controls in AMS Accelerate
-<a name="acc-sec-stand-controls"></a>
 
 The following are the standard controls in AMS:
 

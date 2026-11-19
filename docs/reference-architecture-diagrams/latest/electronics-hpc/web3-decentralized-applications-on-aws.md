@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # Web3 Decentralized Applications on AWS
-<a name="web3-decentralized-applications-on-aws"></a>
 
 Publication date: **August 3, 2023 ([Diagram history](diagram-history.md))**
 

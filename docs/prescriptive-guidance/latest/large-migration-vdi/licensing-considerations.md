@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Licensing considerations for large VDI migrations
-<a name="licensing-considerations"></a>
 
 When planning a large VDI migration to AWS, validate your licensing agreements for the operating system and software that you plan to use on the target VDI.
 

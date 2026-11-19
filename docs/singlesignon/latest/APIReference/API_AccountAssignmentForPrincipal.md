@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Acc
 ---
 
 # AccountAssignmentForPrincipal
-<a name="API_AccountAssignmentForPrincipal"></a>
 
 A structure that describes an assignment of an AWS account to a principal and the permissions that principal has in the account.
 

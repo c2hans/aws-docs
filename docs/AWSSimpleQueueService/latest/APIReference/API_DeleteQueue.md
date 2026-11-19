@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # DeleteQueue
-<a name="API_DeleteQueue"></a>
 
 Deletes the queue specified by the `QueueUrl`, regardless of the queue's contents.
 

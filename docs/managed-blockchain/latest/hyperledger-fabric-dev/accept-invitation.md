@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fa
 End of support notice: Amazon Managed Blockchain (AMB) will stop accepting new customers on October 29, 2026. Existing customers can continue using Amazon Managed Blockchain (AMB) until September 29, 2027. After September 29, 2027 you will no longer be able to access Amazon Managed Blockchain (AMB). For more information, see [Amazon Managed Blockchain (AMB) end of support](https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fabric-dev/managed-blockchain-end-of-support.html).
 
 # Work with Invitations
-<a name="accept-invitation"></a>
 
 If you are invited to join a Hyperledger Fabric network on Amazon Managed Blockchain (AMB), you can accept the invitation by creating a member using the invitation ID. You can also reject the invitation. After you reject an invitation, the invitation ID is no longer valid. A new invitation proposal must be approved, and a new invitation ID is required to create a member. If don't accept or reject an invitation before it expires, the invitation lapses. As with a rejected invitation, a new invitation ID is required.
 

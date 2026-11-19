@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/parse
 ---
 
 # Parser processors
-<a name="parser-processors"></a>
 
 Parser processors convert raw or semi-structured log data into structured formats. Each pipeline can have at most one primary parser processor, which must be the first processor in the pipeline. The XML parser is an exception: it operates on fields produced by a primary parser and you can add at most 5 instances to a single pipeline.
 

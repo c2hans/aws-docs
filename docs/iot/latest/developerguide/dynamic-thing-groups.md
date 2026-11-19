@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/dynamic-thing-
 ---
 
 # Dynamic thing groups
-<a name="dynamic-thing-groups"></a>
 
 Dynamic thing groups are created from specific search queries in the registry. Search query parameters such as device connectivity, device shadow creation, and AWS IoT Device Defender violations data support this. Dynamic thing groups require fleet indexing enabled to index, search, and aggregate your devices' data. You can preview the things in a dynamic thing group using a fleet indexing search query before creating it. For more information, see [Fleet indexing](iot-indexing.md) and [Query syntax](query-syntax.md).
 

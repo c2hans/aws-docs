@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEfsA
 ---
 
 # AwsEfsAccessPointRootDirectoryDetails
-<a name="API_AwsEfsAccessPointRootDirectoryDetails"></a>
 
 Provides information about the directory on the Amazon EFS file system that the access point exposes as the root directory to NFS clients using the access point.
 

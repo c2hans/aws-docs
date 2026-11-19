@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/action-l
 ---
 
 # Monitor Amazon ECS operations with Action Logs
-<a name="action-logs"></a>
 
 ## Amazon ECS Action Logs overview
 <a name="action-logs-overview"></a>

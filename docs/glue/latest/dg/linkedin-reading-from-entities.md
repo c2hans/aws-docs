@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/linkedin-reading-from-ent
 ---
 
 # Reading from LinkedIn entities
-<a name="linkedin-reading-from-entities"></a>
 
 **Prerequisites**
 

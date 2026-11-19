@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/definition-rea
 ---
 
 # Real-time Schedule Adherence in Connect Customer
-<a name="definition-real-time-schedule-adherence"></a>
 
 **Note**
 The real-time adherence data might take up to 4 minutes to refresh. It captures the complete duration of adherence or non-adherence.

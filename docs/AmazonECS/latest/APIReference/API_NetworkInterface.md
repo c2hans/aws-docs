@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Networ
 ---
 
 # NetworkInterface
-<a name="API_NetworkInterface"></a>
 
 An object representing the elastic network interface for tasks that use the `awsvpc` network mode.
 

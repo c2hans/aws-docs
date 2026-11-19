@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Inci
 ---
 
 # IncidentResponder
-<a name="API_IncidentResponder"></a>
 
 ## Contents
 <a name="API_IncidentResponder_Contents"></a>

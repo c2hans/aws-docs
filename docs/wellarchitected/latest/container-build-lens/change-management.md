@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Change management
-<a name="change-management"></a>
 
 | CONTAINER\_BUILD\_REL\_04: How do I cascade updates to a parent or base image? |
 | --- |

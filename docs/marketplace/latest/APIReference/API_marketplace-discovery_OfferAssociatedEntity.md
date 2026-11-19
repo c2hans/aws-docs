@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # OfferAssociatedEntity
-<a name="API_marketplace-discovery_OfferAssociatedEntity"></a>
 
 A product and optional offer set associated with an offer.
 

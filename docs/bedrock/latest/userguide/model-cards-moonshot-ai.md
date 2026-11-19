@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-moo
 ---
 
 # Moonshot AI
-<a name="model-cards-moonshot-ai"></a>
 
 The following Moonshot AI models are available in Amazon Bedrock:
 

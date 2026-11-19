@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateArtifact
-<a name="API_UpdateArtifact"></a>
 
 Updates an artifact.
 

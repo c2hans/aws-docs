@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/appconfig-e
 ---
 
 # appconfig-extension-association-tagged
-<a name="appconfig-extension-association-tagged"></a>
 
 Checks if AWS AppConfig extension associations have tags. Optionally, you can specify tag keys. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.
 

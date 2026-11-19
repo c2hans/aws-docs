@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/dm-data-providers-t
 ---
 
 # Using a PostgreSQL database as a target for homogeneous data migrations in AWS DMS
-<a name="dm-data-providers-target-postgresql"></a>
 
 You can use a PostgreSQL database as a migration target for homogeneous data migrations in AWS DMS.
 

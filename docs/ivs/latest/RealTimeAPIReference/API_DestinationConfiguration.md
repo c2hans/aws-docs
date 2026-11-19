@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Dest
 ---
 
 # DestinationConfiguration
-<a name="API_DestinationConfiguration"></a>
 
 Complex data type that defines destination-configuration objects.
 

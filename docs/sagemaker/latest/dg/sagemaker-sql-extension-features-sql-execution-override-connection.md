@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # Override connection properties
-<a name="sagemaker-sql-extension-features-sql-execution-override-connection"></a>
 
 Your administrator's predefined connection definitions may not have the exact parameters you need to connect to a specific data store. You can add or override parameters in the connection string by using the `--connection-properties` argument.
 

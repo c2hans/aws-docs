@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_AdvancedOpt
 ---
 
 # AdvancedOptions
-<a name="API_AdvancedOptions"></a>
 
 A structure that contains advanced options for EDI processing. Currently, only X12 advanced options are supported.
 

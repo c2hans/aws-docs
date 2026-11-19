@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/examples-launc
 ---
 
 # Examples for creating and managing launch templates with the AWS CLI
-<a name="examples-launch-templates-aws-cli"></a>
 
 You can create and manage launch templates through the AWS Management Console, AWS Command Line Interface (AWS CLI), or SDKs. This section shows you examples of creating and managing launch templates for Amazon EC2 Auto Scaling from the AWS CLI.
 

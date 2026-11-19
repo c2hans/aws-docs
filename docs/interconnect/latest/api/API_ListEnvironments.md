@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_ListEnvironm
 ---
 
 # ListEnvironments
-<a name="API_ListEnvironments"></a>
 
 Provides the list of all [Environment](API_Environment.md) objects known to the service.
 

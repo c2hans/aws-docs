@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/idr-gs-ingest-apm-s
 ---
 
 # Ingest Alarms from APMs with direct Amazon SNS integration
-<a name="idr-gs-ingest-apm-sns"></a>
 
 If your APM supports sending alarms to Amazon SNS topics you can follow this guide to ingest your APM alarms to AWS Incident Detection and Response.
 

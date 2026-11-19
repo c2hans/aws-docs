@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Monitoring Aurora PostgreSQL Limitless Database with Amazon CloudWatch Logs
-<a name="limitless-monitoring.cwl"></a>
 
 Exporting PostgreSQL logs to CloudWatch Logs is required as part of enabling Aurora PostgreSQL Limitless Database. You can access and analyze these logs in CloudWatch Logs Insights, similar to accessing PostgreSQL logs for a standard Aurora PostgreSQL DB cluster. For more information, see [Analyzing PostgreSQL logs using CloudWatch Logs Insights](AuroraPostgreSQL.CloudWatch.Analyzing.md).
 

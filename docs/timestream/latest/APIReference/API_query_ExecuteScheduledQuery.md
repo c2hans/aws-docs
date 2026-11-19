@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # ExecuteScheduledQuery
-<a name="API_query_ExecuteScheduledQuery"></a>
 
  You can use this API to run a scheduled query manually.
 

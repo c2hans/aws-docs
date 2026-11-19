@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 4. Identify the technical requirements
-<a name="step4"></a>
 
 ## Objective
 <a name="objective.68b7a615-7ac2-5f40-86f9-bab062c26c90"></a>

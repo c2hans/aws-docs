@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # GetPhoneNumber
-<a name="API_voice-chime_GetPhoneNumber"></a>
 
 Retrieves details for the specified phone number ID, such as associations, capabilities, and product type.
 

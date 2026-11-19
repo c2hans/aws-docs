@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetPackage.h
 ---
 
 # GetPackage
-<a name="API_GetPackage"></a>
 
 Gets information about the specified software package.
 

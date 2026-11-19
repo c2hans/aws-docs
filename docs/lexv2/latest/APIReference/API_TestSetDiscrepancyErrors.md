@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestSetDis
 ---
 
 # TestSetDiscrepancyErrors
-<a name="API_TestSetDiscrepancyErrors"></a>
 
 Contains details about the errors in the test set discrepancy report
 

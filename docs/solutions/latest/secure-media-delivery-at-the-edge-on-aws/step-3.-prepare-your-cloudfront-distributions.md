@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Step 3. Prepare your CloudFront distributions
-<a name="step-3.-prepare-your-cloudfront-distributions"></a>
 
  After deploying the CloudFormation stack and configuring DynamoDB table with inputs needed to generate the token, follow the additional steps below to integrate the Secure Media Delivery at the Edge on AWS solution with the existing CloudFront distributions used to deliver video streams.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-foundation-m
 ---
 
 # Understand the results of a human evaluation job
-<a name="clarify-foundation-model-evaluate-results-human"></a>
 
 When you created a model evaluation job that uses human workers you selected one or more *metric types*. When members of the workteam evaluate a response in the worker portal their responses are saved in the `humanAnswers` json object. How those responses are stored change based on the metric type selected when the job was created.
 

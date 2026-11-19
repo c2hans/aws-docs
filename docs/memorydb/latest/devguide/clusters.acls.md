@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/clusters.acls.h
 ---
 
 # Authenticating users with Access Control Lists (ACLs)
-<a name="clusters.acls"></a>
 
 You can authenticate users with Access control lists (ACLs).
 

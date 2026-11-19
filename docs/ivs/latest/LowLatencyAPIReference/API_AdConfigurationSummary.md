@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ad
 ---
 
 # AdConfigurationSummary
-<a name="API_AdConfigurationSummary"></a>
 
 Summary information about an ad configuration.
 

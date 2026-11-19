@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteAgg
 ---
 
 # DeleteAggregationAuthorization
-<a name="API_DeleteAggregationAuthorization"></a>
 
 Deletes the authorization granted to the specified configuration aggregator account in a specified region.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/source-get
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Getting started with CodeCatalyst source repositories and the Single-page application blueprint
-<a name="source-getting-started"></a>
 
 Follow the steps in this tutorial to learn how to work with source repositories in Amazon CodeCatalyst.
 

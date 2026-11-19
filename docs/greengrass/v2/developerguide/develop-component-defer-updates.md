@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/develop-com
 ---
 
 # Step 2: Develop a component that defers updates
-<a name="develop-component-defer-updates"></a>
 
 In this section, you develop a Hello World component in Python that defers component updates when the core device's battery level is below a threshold that you configure when you deploy the component. In this component, you use the [interprocess communication (IPC) interface](interprocess-communication.md) in the AWS IoT Device SDK v2 for Python. You use the [SubscribeToComponentUpdates](ipc-component-lifecycle.md#ipc-operation-subscribetocomponentupdates) IPC operation to receive notifications when the core device receives a deployment. Then, you use the [DeferComponentUpdate](ipc-component-lifecycle.md#ipc-operation-defercomponentupdate) IPC operation to defer or acknowledge the update based on the device's battery level.
 

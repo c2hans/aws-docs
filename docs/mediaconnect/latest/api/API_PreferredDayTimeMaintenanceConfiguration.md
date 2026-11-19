@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_PreferredDay
 ---
 
 # PreferredDayTimeMaintenanceConfiguration
-<a name="API_PreferredDayTimeMaintenanceConfiguration"></a>
 
 Configuration for preferred day and time maintenance settings.
 

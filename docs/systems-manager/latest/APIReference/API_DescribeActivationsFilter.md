@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeActivationsFilter
-<a name="API_DescribeActivationsFilter"></a>
 
 Filter for the DescribeActivation API.
 

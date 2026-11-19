@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Categ
 ---
 
 # Category
-<a name="API_Category"></a>
 
 A JSON-formatted name/value pair that represents the category name and category code of the problem, selected from the [DescribeServices](API_DescribeServices.md) response for each AWS service.
 

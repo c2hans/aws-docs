@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifySec
 ---
 
 # ModifySecurityGroupRules
-<a name="API_ModifySecurityGroupRules"></a>
 
 Modifies the rules of a security group.
 

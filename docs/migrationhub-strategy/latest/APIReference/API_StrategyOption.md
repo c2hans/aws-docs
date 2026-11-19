@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # StrategyOption
-<a name="API_StrategyOption"></a>
 
  Information about all the available strategy options for migrating and modernizing an application component.
 

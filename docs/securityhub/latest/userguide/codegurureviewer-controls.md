@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/codegururev
 ---
 
 # Security Hub CSPM controls for Amazon CodeGuru Reviewer
-<a name="codegurureviewer-controls"></a>
 
 These Security Hub CSPM controls evaluate the Amazon CodeGuru Reviewer service and resources.
 

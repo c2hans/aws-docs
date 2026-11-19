@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-s3a-cse-kms.
 ---
 
 # Setup CSE-KMS
-<a name="emr-s3a-cse-kms"></a>
 
 You can enable client-side encryption using AWS KMS (CSE-KMS) in two primary scopes:
 + The first is cluster-wide configuration:

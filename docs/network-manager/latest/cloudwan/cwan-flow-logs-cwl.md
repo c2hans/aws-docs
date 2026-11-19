@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cwan-flo
 ---
 
 # AWS Cloud WAN Flow Logs records in Amazon CloudWatch Logs
-<a name="cwan-flow-logs-cwl"></a>
 
 Flow logs can publish flow log data directly to Amazon CloudWatch.
 

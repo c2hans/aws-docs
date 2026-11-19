@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/openSearch-ze
 ---
 
 # Zero-ETL integration with Amazon OpenSearch Service
-<a name="openSearch-zero-etl"></a>
 
 **Topics**
 + [Amazon OpenSearch Service as a destination](#openSearch-0etl-destination)

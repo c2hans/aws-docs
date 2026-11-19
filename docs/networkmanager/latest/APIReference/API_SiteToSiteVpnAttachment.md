@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_S
 ---
 
 # SiteToSiteVpnAttachment
-<a name="API_SiteToSiteVpnAttachment"></a>
 
 Creates a site-to-site VPN attachment.
 

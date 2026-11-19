@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Reducing the Scope of Impact with Cell-Based Architecture
-<a name="reducing-scope-of-impact-with-cell-based-architecture"></a>
 
 Publication date: **September 20, 2023** ([Document history](document-revisions.md))
 

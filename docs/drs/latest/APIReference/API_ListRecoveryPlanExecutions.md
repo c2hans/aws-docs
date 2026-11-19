@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_ListRecovery
 ---
 
 # ListRecoveryPlanExecutions
-<a name="API_ListRecoveryPlanExecutions"></a>
 
 Lists executions of Recovery Plans, optionally filtered by plan or status.
 

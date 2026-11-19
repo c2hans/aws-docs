@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # SegmentDefinitionItem
-<a name="API_connect-customer-profiles_SegmentDefinitionItem"></a>
 
 Object holding the segment definition fields.
 

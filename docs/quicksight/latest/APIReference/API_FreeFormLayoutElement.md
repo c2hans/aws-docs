@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_FreeF
 ---
 
 # FreeFormLayoutElement
-<a name="API_FreeFormLayoutElement"></a>
 
 An element within a free-form layout.
 

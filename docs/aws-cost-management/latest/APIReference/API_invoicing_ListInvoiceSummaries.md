@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListInvoiceSummaries
-<a name="API_invoicing_ListInvoiceSummaries"></a>
 
 Retrieves your invoice details programmatically, without line item details.
 

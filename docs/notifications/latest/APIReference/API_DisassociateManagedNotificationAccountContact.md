@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Di
 ---
 
 # DisassociateManagedNotificationAccountContact
-<a name="API_DisassociateManagedNotificationAccountContact"></a>
 
 Disassociates an Account Contact with a particular `ManagedNotificationConfiguration`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdateConfigurationBundle
-<a name="API_UpdateConfigurationBundle"></a>
 
 Updates a configuration bundle by creating a new version with the specified changes. Each update creates a new version in the version history.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Workspac
 ---
 
 # WorkspaceThemeTypography
-<a name="API_WorkspaceThemeTypography"></a>
 
 Contains typography configuration for a workspace theme.
 

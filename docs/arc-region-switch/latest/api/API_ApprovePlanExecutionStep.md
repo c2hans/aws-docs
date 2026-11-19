@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Approve
 ---
 
 # ApprovePlanExecutionStep
-<a name="API_ApprovePlanExecutionStep"></a>
 
 Approves a step in a plan execution that requires manual approval. When you create a plan, you can include approval steps that require manual intervention before the execution can proceed. This operation allows you to provide that approval.
 

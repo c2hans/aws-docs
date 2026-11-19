@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/htt
 ---
 
 # Configuring HTTP-level settings within the AWS SDK for Swift
-<a name="http"></a>
 
 ## Configuring HTTP timeouts
 <a name="configuring-http-timeouts"></a>

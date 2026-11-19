@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/waves-list.html
 ---
 
 # Manage migration waves
-<a name="waves-list"></a>
 
 The **Waves** page lists all the waves that have been added to AWS Transform MGN. The **Waves** page allows you to manage your waves and perform a variety of commands for one or more waves (such as controlling replication and launching test and cutover instances).
 

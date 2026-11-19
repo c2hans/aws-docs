@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/create-server-
 ---
 
 # Create a server in a virtual private cloud
-<a name="create-server-in-vpc"></a>
 
 You can host your server's endpoint inside a virtual private cloud (VPC) to use for transferring data to and from an Amazon S3 bucket or Amazon EFS file system without going over the public internet.
 

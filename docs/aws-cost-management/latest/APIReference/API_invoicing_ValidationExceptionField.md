@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ValidationExceptionField
-<a name="API_invoicing_ValidationExceptionField"></a>
 
  The input fails to satisfy the constraints specified by an AWS service.
 

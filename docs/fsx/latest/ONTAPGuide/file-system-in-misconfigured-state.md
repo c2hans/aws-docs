@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/file-system-in-mis
 ---
 
 # Your file system is in a `MISCONFIGURED` state
-<a name="file-system-in-misconfigured-state"></a>
 
 There are a number of potential causes for a file system to be in a `MISCONFIGURED` state, each with their own resolution, as follows.
 

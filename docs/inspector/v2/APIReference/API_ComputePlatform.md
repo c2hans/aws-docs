@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ComputePla
 ---
 
 # ComputePlatform
-<a name="API_ComputePlatform"></a>
 
 A compute platform.
 

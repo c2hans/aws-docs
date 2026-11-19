@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Lo
 ---
 
 # Aurora PostgreSQL database log files
-<a name="USER_LogAccess.Concepts.PostgreSQL"></a>
 
 You can monitor the following types of Aurora PostgreSQL log files:
 + PostgreSQL log

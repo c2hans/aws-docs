@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Configure Workflows on Amazon OpenSearch Serverless
-<a name="serverless-configure-workflows"></a>
 
 ## Workflows
 <a name="serverless-configure-workflows-what-is"></a>

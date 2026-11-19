@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/addf-securi
 ---
 
 # ADDF architecture and terminology
-<a name="addf-architecture-terminology"></a>
 
 To understand the security and operational topics in this guide, you need a high-level understanding of the terminology, components, and architecture of the Autonomous Driving Data Framework (ADDF). This section includes the following topics:
 + [ADDF terminology](#addf-terminology)

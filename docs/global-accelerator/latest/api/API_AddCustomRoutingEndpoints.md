@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_AddCus
 ---
 
 # AddCustomRoutingEndpoints
-<a name="API_AddCustomRoutingEndpoints"></a>
 
 Associate a virtual private cloud (VPC) subnet endpoint with your custom routing accelerator.
 

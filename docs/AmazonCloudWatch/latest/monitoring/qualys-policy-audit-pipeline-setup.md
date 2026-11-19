@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/qualy
 ---
 
 # CloudWatch pipelines configuration for Qualys Policy Audit
-<a name="qualys-policy-audit-pipeline-setup"></a>
 
 Collects compliance posture findings from Qualys Policy Audit by using the PCRS streaming API with OAuth 2.0 authentication and a JWT exchange.
 

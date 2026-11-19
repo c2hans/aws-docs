@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_UntagResou
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from a Lambda MicroVM resource.
 

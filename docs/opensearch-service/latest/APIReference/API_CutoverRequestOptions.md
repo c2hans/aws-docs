@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # CutoverRequestOptions
-<a name="API_CutoverRequestOptions"></a>
 
 The cutover to perform for a cloned blue/green upgrade.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Acc
 ---
 
 # AccessControlAttributeValue
-<a name="API_AccessControlAttributeValue"></a>
 
 The value used for mapping a specified attribute to an identity source. For more information, see [Attribute mappings](https://docs.aws.amazon.com/singlesignon/latest/userguide/attributemappingsconcept.html) in the *IAM Identity Center User Guide*.
 

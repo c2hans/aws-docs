@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 ---
 
 # Capacity providers
-<a name="lambda-managed-instances-capacity-providers"></a>
 
 A capacity provider is the foundation for running Lambda Managed Instances. It acts as the security boundary for your Lambda Event Functions and defines the compute resources that Lambda provisions and manages on your behalf.
 

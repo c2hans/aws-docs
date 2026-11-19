@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/c4scep-consid
 ---
 
 # Understand Connector for SCEP considerations and limitations
-<a name="c4scep-considerations-limitations"></a>
 
 Keep in mind the following considerations and limitations when using Connector for SCEP.
 

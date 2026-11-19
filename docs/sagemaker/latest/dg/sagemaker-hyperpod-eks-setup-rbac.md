@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Setting up Kubernetes role-based access control
-<a name="sagemaker-hyperpod-eks-setup-rbac"></a>
 
 Cluster admin users also need to set up [Kubernetes role-based access control (RBAC)](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) for data scientist users to use the [SageMaker HyperPod CLI](https://github.com/aws/sagemaker-hyperpod-cli) to run workloads on HyperPod clusters orchestrated with Amazon EKS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_LexiconDes
 ---
 
 # LexiconDescription
-<a name="API_LexiconDescription"></a>
 
 Describes the content of the lexicon.
 

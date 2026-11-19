@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Styling and CSS
-<a name="styling-css"></a>
 
 Cascading Style Sheets (CSS) is a language for centrally determining the presentation of a document instead of hard-coding formatting for text and objects. The cascading feature of the language controls priorities between styles by using inheritance. When you work on micro-frontends and create a strategy to manage dependencies, the cascading feature can be a challenge.
 

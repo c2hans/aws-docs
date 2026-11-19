@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/str
 ---
 
 # Example 1: Allow stream read access using aws:ResourceTag
-<a name="streams-abac-example-1"></a>
 
 Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-value pair specified in an IAM policy with the key-value pair attached to a DynamoDB stream. For example, you can allow stream `GetRecords` operations if the tag conditions match.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AccountReference
-<a name="API_AccountReference"></a>
 
 A reference to an AWS account, with optional display metadata.
 

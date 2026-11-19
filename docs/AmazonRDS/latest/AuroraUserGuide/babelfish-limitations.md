@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Babelfish limitations
-<a name="babelfish-limitations"></a>
 
  The following limitations currently apply to Babelfish for Aurora PostgreSQL:
 +  Babelfish doesn't support the following Aurora features:

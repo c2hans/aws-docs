@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
 ---
 
 # Channels: start
-<a name="channels-channelid-start"></a>
 
 ## URI
 <a name="channels-channelid-start-url"></a>

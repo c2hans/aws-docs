@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Targ
 ---
 
 # TargetFailure
-<a name="API_TargetFailure"></a>
 
 Describes a target failure.
 

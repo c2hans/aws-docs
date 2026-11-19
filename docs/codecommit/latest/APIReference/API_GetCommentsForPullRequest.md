@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetCo
 ---
 
 # GetCommentsForPullRequest
-<a name="API_GetCommentsForPullRequest"></a>
 
 Returns comments made on a pull request.
 

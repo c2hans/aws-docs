@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # RequiredField
-<a name="API_connect-cases_RequiredField"></a>
 
 List of fields that must have a value provided to create a case.
 

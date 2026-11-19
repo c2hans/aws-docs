@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/cli-mon-vers
 ---
 
 # mon-version
-<a name="cli-mon-version"></a>
 
 ## Description
 <a name="w2aab9c59b3"></a>

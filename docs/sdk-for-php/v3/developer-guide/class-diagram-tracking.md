@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/class-dia
 ---
 
 # Class diagram: S3 Transfer Manager tracking components
-<a name="class-diagram-tracking"></a>
 
 The following class diagram shows how the tracking components work together in the S3 Transfer Manager. Understanding these relationships helps you implement [custom listeners](s3-tm-transfer-listener.md) and [progress tracking](progress-tracking.md#customize-built-in-progress-tracker).
 

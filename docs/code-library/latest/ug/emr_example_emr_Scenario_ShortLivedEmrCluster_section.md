@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/emr_example_emr_S
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create a short-lived Amazon EMR cluster and run a step using an AWS SDK
-<a name="emr_example_emr_Scenario_ShortLivedEmrCluster_section"></a>
 
 The following code example shows how to create a short-lived Amazon EMR cluster that runs a step and automatically terminates after the step completes.
 

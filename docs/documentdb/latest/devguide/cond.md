@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/cond.html
 ---
 
 # $cond
-<a name="cond"></a>
 
 The `$cond` operator in Amazon DocumentDB is used to evaluate a conditional expression and return one of two possible result expressions.
 

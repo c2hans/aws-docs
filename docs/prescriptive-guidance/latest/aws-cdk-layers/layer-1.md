@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-cdk-lay
 ---
 
 # Layer 1 constructs
-<a name="layer-1"></a>
 
 [L1 constructs](https://docs.aws.amazon.com/cdk/v2/guide/constructs.html#constructs_l1_using) are the building blocks of the AWS CDK and are easily distinguished from other constructs by the prefix  `Cfn`. For example, the Amazon DynamoDB package in the AWS CDK contains a `Table` construct, which is an L2 construct. The corresponding L1 construct is called `CfnTable`, and it directly represents a CloudFormation DynamoDB `Table`. It's impossible to use the AWS CDK without accessing this first layer, although an AWS CDK application typically never uses an L1 construct directly. However, in the majority of cases,  the L2 and L3 constructs that developers are accustomed to using rely heavily on L1 constructs. So you can think of L1 constructs as the bridge between CloudFormation and the AWS CDK.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestR
 ---
 
 # TestRunReportConfiguration
-<a name="API_TestRunReportConfiguration"></a>
 
 A snapshot of the report configuration captured onto a test run from the service when the run was started.
 

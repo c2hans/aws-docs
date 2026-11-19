@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootRDSIAMAuthentication`
-<a name="automation-aws-troubleshoot-rds-iam-authentication"></a>
 
  **Description**
 

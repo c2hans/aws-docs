@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Operations_A
 ---
 
 # AWS WAF Classic
-<a name="API_Operations_AWS_WAF"></a>
 
 The following actions are supported by AWS WAF Classic:
 +  [CreateByteMatchSet](API_waf_CreateByteMatchSet.md)

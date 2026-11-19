@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deploy-to-done/deployme
 ---
 
 # Deployment Frameworks
-<a name="deployment-frameworks"></a>
 
 Once your application runs on Elastic Beanstalk, integrate deployment into your existing engineering workflows.
 

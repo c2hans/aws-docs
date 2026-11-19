@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/
 ---
 
 # StartPosition
-<a name="API_connect-participant_StartPosition"></a>
 
 A filtering option for where to start. For example, if you sent 100 messages, start with message 50.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMSKReplicatorExecutionRole
-<a name="AWSMSKReplicatorExecutionRole"></a>
 
 **Description**: Grants permissions to Amazon MSK Replicator to replicate data between MSK Clusters.
 

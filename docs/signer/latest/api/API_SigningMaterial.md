@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_SigningMaterial.ht
 ---
 
 # SigningMaterial
-<a name="API_SigningMaterial"></a>
 
 The ACM certificate that is used to sign your code.
 

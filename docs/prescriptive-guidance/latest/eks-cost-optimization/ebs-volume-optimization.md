@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # EBS volume optimization
-<a name="ebs-volume-optimization"></a>
 
 Storage costs accumulate silently — orphaned volumes, oversized PVCs, and legacy gp2 volumes all add up without triggering any alerts.
 

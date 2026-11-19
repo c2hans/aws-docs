@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_P
 ---
 
 # PermissionsErrorContext
-<a name="API_PermissionsErrorContext"></a>
 
 Describes additional information about missing permissions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Applicat
 ---
 
 # ApplicationDescription
-<a name="API_ApplicationDescription"></a>
 
 Describes the properties of an application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-delete-static-route.h
 ---
 
 # Delete a static route in AWS Transit Gateway
-<a name="tgw-delete-static-route"></a>
 
 Delete static routes from a transit gateway route table.
 

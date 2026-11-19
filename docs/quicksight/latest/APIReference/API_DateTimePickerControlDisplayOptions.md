@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DateT
 ---
 
 # DateTimePickerControlDisplayOptions
-<a name="API_DateTimePickerControlDisplayOptions"></a>
 
 The display options of a control.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec01-b
 ---
 
 # SEC01-BP06 Identify threats and prioritize mitigations using a threat model
-<a name="sec01-bp06"></a>
 
  A *threat model* is a structured way to find what can go wrong in a system and decide what to do about it before an unauthorized user does. Complex systems can obscure issues, and manual reviews might sometimes miss these threats. Model threats early in design, when fixes are cheap.
 

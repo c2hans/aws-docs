@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Notific
 ---
 
 # NotificationOutput
-<a name="API_NotificationOutput"></a>
 
 The details of a notification generated in Amazon DataZone.
 

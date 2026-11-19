@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Do
 ---
 
 # DocumentSuggesterOptions
-<a name="API_DocumentSuggesterOptions"></a>
 
 ## Description
 <a name="API_DocumentSuggesterOptions_Description"></a>

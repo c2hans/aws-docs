@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Form FieldInputConfig
-<a name="aws-properties-amplifyuibuilder-form-fieldinputconfig"></a>
 
 The `FieldInputConfig` property specifies the configuration for the default input values to display for a field.
 

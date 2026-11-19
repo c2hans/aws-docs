@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # GetDataset
-<a name="API_GetDataset"></a>
 
 Returns information about the specified dataset. This includes its identifier, Amazon Resource Name (ARN), and any customer managed AWS Key Management Service (AWS KMS) key that is currently associated with it.
 

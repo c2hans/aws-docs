@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/vended-logs.html
 ---
 
 # Using vended logs to send AWS Elemental MediaTailor logs
-<a name="vended-logs"></a>
 
 You can use vended logs for greater flexibility and control over where to deliver logs that MediaTailor emits from your playback configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/ev-event
 ---
 
 # EventBridge for Amazon SWF execution status changes
-<a name="ev-events"></a>
 
 You use Amazon EventBridge to respond to state changes or events in an AWS resource. When Amazon SWF emits an event, it always goes to the default EventBridge event bus for your account. You can create a rule for events, associate it with the default event bus, and specify a target action to take when EventBridge receives an event that matches the rule. In this way, you can monitor your workflows without having to constantly poll using the [`GetWorkflowExecutionHistory`](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_GetWorkflowExecutionHistory.html) API. Based on changes in workflow executions, you can use an EventBridge target to call AWS Lambda functions, publish messages to Amazon Simple Notification Service (Amazon SNS) topics, and more.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PricingPlanManager/latest/UserGuide/unde
 ---
 
 # Understanding Your Bill
-<a name="understanding-bill"></a>
 
 ## AWS Invoice
 <a name="aws-invoice"></a>

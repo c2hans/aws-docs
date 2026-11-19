@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Iceberg
 ---
 
 # IcebergDestinationUpdate
-<a name="API_IcebergDestinationUpdate"></a>
 
  Describes an update for a destination in Apache Iceberg Tables.
 

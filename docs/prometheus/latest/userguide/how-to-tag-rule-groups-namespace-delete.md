@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/how-to-tag-r
 ---
 
 # Remove a tag from a rule groups namespace
-<a name="how-to-tag-rule-groups-namespace-delete"></a>
 
 You can remove one or more tags associated with a rule groups namespace. Removing a tag does not delete the tag from other AWS resources that are associated with that tag.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-work
 ---
 
 # Configure a VPC for WorkSpaces Personal
-<a name="amazon-workspaces-vpc"></a>
 
 WorkSpaces launches your WorkSpaces in a virtual private cloud (VPC).
 

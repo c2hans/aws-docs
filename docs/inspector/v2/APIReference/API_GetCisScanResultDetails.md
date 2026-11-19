@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetCisScan
 ---
 
 # GetCisScanResultDetails
-<a name="API_GetCisScanResultDetails"></a>
 
 Retrieves CIS scan result details.
 

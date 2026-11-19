@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/configuration
 ---
 
 # View all configuration sets in AWS End User Messaging SMS
-<a name="configuration-set-view"></a>
 
 Use the AWS CLI to view your configuration sets.
 

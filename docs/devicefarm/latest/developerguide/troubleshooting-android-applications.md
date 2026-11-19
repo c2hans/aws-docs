@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 ---
 
 # Troubleshooting Android application tests in AWS Device Farm
-<a name="troubleshooting-android-applications"></a>
 
 The following topic lists error messages that occur during the upload of Android application tests and recommends workarounds to resolve each error.
 

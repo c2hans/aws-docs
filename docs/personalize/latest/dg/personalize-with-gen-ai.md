@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/personalize-with-g
 ---
 
 # Amazon Personalize and generative AI
-<a name="personalize-with-gen-ai"></a>
 
  Amazon Personalize works well with generative artificial intelligence (generative AI). Amazon Personalize Content Generator, with the help of generative AI, can add engaging themes to batch recommendations for related items. *Content Generator* is a generative AI capability managed by Amazon Personalize.
 

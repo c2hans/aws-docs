@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-get-st
 ---
 
 # Getting started with AWS Transform custom
-<a name="custom-get-started"></a>
 
 This section describes how to choose an interface, set up AWS Transform custom, and run your first transformation.
 

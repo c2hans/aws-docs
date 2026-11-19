@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIRefer
 ---
 
 # ListRules
-<a name="AMP-APIReference-ListRules"></a>
 
 The `ListRules` operation retrieves information about the rules configured in the workspace.
 

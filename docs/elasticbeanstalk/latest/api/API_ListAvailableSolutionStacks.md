@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_ListAvai
 ---
 
 # ListAvailableSolutionStacks
-<a name="API_ListAvailableSolutionStacks"></a>
 
 Returns a list of the available solution stack names, with the public version first and then in reverse chronological order.
 

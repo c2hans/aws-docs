@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Configure Neural Search and Hybrid Search on OpenSearch Serverless
-<a name="serverless-configure-neural-search"></a>
 
 ## Neural Search
 <a name="serverless-configure-neural-search-what-is"></a>

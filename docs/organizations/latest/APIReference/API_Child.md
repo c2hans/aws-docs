@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Ch
 ---
 
 # Child
-<a name="API_Child"></a>
 
 Contains a list of child entities, either OUs or accounts.
 

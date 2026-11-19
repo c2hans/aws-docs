@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-active-
 ---
 
 # Adding a DB instance to an active-active cluster
-<a name="mysql-active-active-clusters-adding"></a>
 
 You can add a DB instance to an Amazon RDS for MySQL active-active cluster by restoring a DB snapshot or by restoring a DB instance to a point in time. An active-active cluster can include up to nine DB instances.
 

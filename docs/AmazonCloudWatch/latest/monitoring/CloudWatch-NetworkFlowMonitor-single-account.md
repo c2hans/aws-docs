@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Initialize Network Flow Monitor for single account monitoring
-<a name="CloudWatch-NetworkFlowMonitor-single-account"></a>
 
 To initialize Network Flow Monitor to monitor network performance metrics, you must grant permissions and Network Flow Monitor must create the initial topology for your account. When you monitor resources in just one account, Network Flow Monitor sets your account and current Region as the scope for network monitoring and creates a topology for that scope.
 

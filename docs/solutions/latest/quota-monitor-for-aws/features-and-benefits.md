@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/f
 ---
 
 # Features and benefits
-<a name="features-and-benefits"></a>
 
 The Quota Monitor for AWS solution provides the following features:
 

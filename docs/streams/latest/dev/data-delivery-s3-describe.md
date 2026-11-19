@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-s3-desc
 ---
 
 # Describe an Amazon S3 delivery
-<a name="data-delivery-s3-describe"></a>
 
  Retrieve the configuration and current status of an Amazon S3 delivery, including its state (`ChannelStatus`) and status reason (`ChannelStatusReason`). Use this to verify that a delivery reached the ACTIVE state after creation, or to diagnose a delivery in the FAILED state.
 

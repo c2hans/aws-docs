@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 Review your existing and required capabilities for data historians. Contact [AWS Professional Services](https://pages.awscloud.com/AWS-Professional-Services.html) for support with identifying or building your business use cases or with implementing your modernized historian architecture. We recommend that you do the following on your historian modernization journey:
 

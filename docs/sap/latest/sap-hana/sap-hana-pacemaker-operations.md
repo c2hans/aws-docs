@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-o
 ---
 
 # Operations
-<a name="sap-hana-pacemaker-operations"></a>
 
 **Topics**
 + [Viewing the cluster state](sap-hana-pacemaker-sles-ops-cluster-state.md)

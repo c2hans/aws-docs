@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Prepare
-<a name="prepare"></a>
 
  To prepare for operational excellence, you must understand your workloads and their expected behaviors. You can then design them to provide insight to their status and build the procedures to support them.
 

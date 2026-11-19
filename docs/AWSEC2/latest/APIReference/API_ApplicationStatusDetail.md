@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Applicati
 ---
 
 # ApplicationStatusDetail
-<a name="API_ApplicationStatusDetail"></a>
 
 Describes the details of an application status check for an instance.
 

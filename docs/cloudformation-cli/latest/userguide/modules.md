@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/modu
 ---
 
 # Developing modules using the CFN-CLI
-<a name="modules"></a>
 
 *Module*s are a way for you to package resource configurations for inclusion across stack templates, in a transparent, manageable, and repeatable way. Use modules to encapsulate common service configurations and best practices as modular, customizable building blocks that users can then take and include in their stack templates. Modules enable you to capture and disseminate resource configurations that incorporate best practices, expert domain knowledge, and accepted guidelines (for areas such as security, compliance, governance, and industry regulations). Users can then include the module in their template without having to acquire deep knowledge of the intricacies of the resource implementation.
 

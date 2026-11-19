@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourceOwner
-<a name="API_ResourceOwner"></a>
 
 Information about the owner of a resource, including the account and organization that the resource belongs to.
 

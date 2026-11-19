@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/create
 ---
 
 # Match input data using a matching workflow
-<a name="create-matching-workflow"></a>
 
 A *matching workflow* is a data processing job that combines and compares data from different input sources and determines which records match based on different matching techniques. AWS Entity Resolution reads your data from your specified locations, finds matches between records, and assigns a [Match ID](glossary.md#match-id-defin) to each matched set of data.
 

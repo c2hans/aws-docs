@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SpaceS
 ---
 
 # SpaceSharingSettingsSummary
-<a name="API_SpaceSharingSettingsSummary"></a>
 
 Specifies summary information about the space sharing settings.
 

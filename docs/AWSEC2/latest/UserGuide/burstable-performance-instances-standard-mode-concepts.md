@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-perfor
 ---
 
 # Standard mode concepts for burstable instances
-<a name="burstable-performance-instances-standard-mode-concepts"></a>
 
 The `standard` mode is a configuration option for burstable performance instances. It can be enabled or disabled at any time for a running or stopped instance. You can [set `standard` as the default credit option](burstable-performance-instances-how-to.md#burstable-performance-instance-set-default-credit-specification-for-account) at the account level per AWS Region, per burstable performance instance family, so that all new burstable performance instances in the account launch using the default credit option.
 

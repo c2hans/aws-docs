@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/data-api.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Using the Amazon Redshift Data API
-<a name="data-api"></a>
 
 The Amazon Redshift Data API simplifies access to your Amazon Redshift data warehouse by removing the need to manage database drivers, connections, network configurations, data buffering, credentials, and more. You can run SQL statements using the Data API operations with the AWS SDK. For more information about the Data API operations, see the [Amazon Redshift Data API Reference](https://docs.aws.amazon.com/redshift-data/latest/APIReference/).
 
@@ -36,7 +35,7 @@ Before you use the Amazon Redshift Data API, review the following steps:
 Consider the following when calling the Data API:
 + The Amazon Redshift Data API can access databases in Amazon Redshift provisioned clusters and Redshift Serverless workgroups. For a list of AWS Regions where the Redshift Data API is available, see the endpoints listed for [Redshift Data API](https://docs.aws.amazon.com/general/latest/gr/redshift-service.html) in the *Amazon Web Services General Reference*.
 + The maximum duration of a query is 24 hours.
-+ The maximum number of active queries (`STARTED` and `SUBMITTED` queries) per Amazon Redshift cluster is 500.
++ The maximum number of active queries (`STARTED` and `SUBMITTED` queries) per Amazon Redshift cluster is 2000.
 + The maximum query result size is 500 MB (after gzip compression). If a call returns more than 500 MB of response data, the call is ended.
 + The maximum retention time for query results is 24 hours.
 + The maximum query statement size is 200 KB.

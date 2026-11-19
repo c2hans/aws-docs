@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_PluginC
 ---
 
 # PluginConfiguration
-<a name="API_PluginConfiguration"></a>
 
 Configuration information required to invoke chat in `PLUGIN_MODE`.
 

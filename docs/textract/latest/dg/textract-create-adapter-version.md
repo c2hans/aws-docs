@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-create-adapt
 ---
 
 # Create adapter version
-<a name="textract-create-adapter-version"></a>
 
 To customize the Amazon Textract base model to fit your specific use cases, create an adapter. After you create an adapter, you need to train the adapter. You can start training an adapter by calling the [CreateAdapterVersion](https://docs.aws.amazon.com/textract/latest/APIReference/API_CreateAdapterVersion.html) operation. You provide the operation with an AdapterId and use the DatasetConfig to specify an Amazon S3 bucket containing the dataset you want to train the adapter on. The manifest file you provide must follow a specific format. For more information, see [Preparing training and testing datasets](textract-preparing-training-testing.md). You can also provide the operation with an optional KMSKeyId, optional ClientRequestToken, or any Tags to add to the adapter version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AutoAcce
 ---
 
 # AutoAcceptConfig
-<a name="API_AutoAcceptConfig"></a>
 
 Configuration settings for auto-accept for a specific channel.
 

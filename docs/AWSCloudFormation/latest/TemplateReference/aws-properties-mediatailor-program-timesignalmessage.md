@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::Program TimeSignalMessage
-<a name="aws-properties-mediatailor-program-timesignalmessage"></a>
 
 The SCTE-35 `time_signal` message can be sent with one or more `segmentation_descriptor` messages. A `time_signal` message can be sent only if a single `segmentation_descriptor` message is sent.
 

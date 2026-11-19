@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_FontS
 ---
 
 # FontSize
-<a name="API_FontSize"></a>
 
 The option that determines the text display size.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-que
 ---
 
 # Querying with full-text and vector search
-<a name="s3-vectors-querying-full-text-and-vector-search"></a>
 
 You run full-text, vector, and hybrid queries with the `QueryVectors` API operation (using the AWS SDK or AWS CLI). Specify `topK`, and then provide the query vector, query text strings, or both. S3 Vectors selects the behavior from the inputs you provide:
 + A `queryVector` and no `queryTexts` runs a vector-only search.

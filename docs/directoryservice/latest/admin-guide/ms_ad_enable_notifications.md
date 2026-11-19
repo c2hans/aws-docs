@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Enabling AWS Managed Microsoft AD directory status notifications with Amazon Simple Notification Service
-<a name="ms_ad_enable_notifications"></a>
 
 Using Amazon Simple Notification Service (Amazon SNS), you can receive email or text (SMS) messages when the status of your directory changes. You get notified if your directory goes from an Active status to an [Impaired status](ms_ad_directory_status.md). You also receive a notification when the directory returns to an Active status.
 

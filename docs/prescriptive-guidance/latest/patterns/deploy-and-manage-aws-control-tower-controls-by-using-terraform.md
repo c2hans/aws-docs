@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 ---
 
 # Deploy and manage AWS Control Tower controls by using Terraform
-<a name="deploy-and-manage-aws-control-tower-controls-by-using-terraform"></a>
 
 *Iker Reina Fuente and Ivan Girardi, Amazon Web Services*
 

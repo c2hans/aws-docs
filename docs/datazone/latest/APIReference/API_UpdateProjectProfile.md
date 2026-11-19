@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateP
 ---
 
 # UpdateProjectProfile
-<a name="API_UpdateProjectProfile"></a>
 
 Updates a project profile.
 

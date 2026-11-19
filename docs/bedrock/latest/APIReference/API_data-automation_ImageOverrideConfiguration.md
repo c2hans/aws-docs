@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # ImageOverrideConfiguration
-<a name="API_data-automation_ImageOverrideConfiguration"></a>
 
 Sets whether your project will process images or not.
 

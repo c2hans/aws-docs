@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_T
 ---
 
 # TaskParameterValue
-<a name="API_TaskParameterValue"></a>
 
 The data types for the task parameters.
 

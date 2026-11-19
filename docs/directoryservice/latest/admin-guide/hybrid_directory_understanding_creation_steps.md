@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/hybr
 ---
 
 # Understanding the hybrid directory creation process
-<a name="hybrid_directory_understanding_creation_steps"></a>
 
 When you create a hybrid directory, Directory Service deploys two domain controllers in your VPC and joins them to your self-managed Active Directory domain. The service completes several phases to establish the connection between your self-managed AD and AWS. During this process, the directory status displays as *Creating*. The following sections describe each phase of the workflow.
 

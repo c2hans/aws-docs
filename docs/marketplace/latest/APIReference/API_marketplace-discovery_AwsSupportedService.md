@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # AwsSupportedService
-<a name="API_marketplace-discovery_AwsSupportedService"></a>
 
 Describes an AWS service supported by a fulfillment option.
 

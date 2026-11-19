@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # WorkloadProfile
-<a name="API_WorkloadProfile"></a>
 
 The profile associated with a workload.
 

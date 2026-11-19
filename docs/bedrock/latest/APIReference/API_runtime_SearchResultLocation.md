@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # SearchResultLocation
-<a name="API_runtime_SearchResultLocation"></a>
 
 Specifies a search result location within the content array, providing positioning information for cited content using search result index and block positions.
 

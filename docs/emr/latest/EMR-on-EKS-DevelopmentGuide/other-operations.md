@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/o
 ---
 
 # Getting information about interactive endpoints with CLI commands
-<a name="other-operations"></a>
 
 This topic covers the supported operations on an interactive endpoint other than [`create-managed-endpoint`](create-managed-endpoint.md).
 

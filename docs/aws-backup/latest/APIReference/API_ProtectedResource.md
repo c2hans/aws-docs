@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Prote
 ---
 
 # ProtectedResource
-<a name="API_ProtectedResource"></a>
 
 A structure that contains information about a backed-up resource.
 

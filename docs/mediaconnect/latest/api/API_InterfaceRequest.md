@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_InterfaceReq
 ---
 
 # InterfaceRequest
-<a name="API_InterfaceRequest"></a>
 
  The VPC interface that you want to designate where the media stream is coming from or going to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Cost
-<a name="cost1"></a>
 
 You are responsible for the cost of the AWS services used while running this solution. As of November 2026, the cost for running this solution with the default settings with no incoming bidding traffic to the solution in the US East (N. Virginia) Region is approximately **USD $291.09 per month**.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # UpdateUser
-<a name="API_UpdateUser"></a>
 
  Updates user information.
 

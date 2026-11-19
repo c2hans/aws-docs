@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Update the health check settings of an Application Load Balancer target group
-<a name="modify-health-check-settings"></a>
 
 You can update the health check settings for your target group at any time. For the list of health check settings, see [Health check settings](target-group-health-checks.md#health-check-settings).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/logging-using
 ---
 
 # Log Connector for SCEP API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail-c4scep"></a>
 
 Connector for Simple Certificate Enrollment Protocol (SCEP) is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, client, or an AWS service. CloudTrail captures all API calls for Connector for SCEP as events. The calls captured include calls from the Connector for SCEP console and code calls to the Connector for SCEP API operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for Connector for SCEP. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine the request that was made to Connector for SCEP, the IP address from which the request was made, who made the request, when it was made, and additional details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/encryption.cus
 ---
 
 # Encryption at rest: How to use customer managed keys to encrypt tables in Amazon Keyspaces
-<a name="encryption.customermanaged"></a>
 
 You can use the console or CQL statements to specify the AWS KMS key for new tables and update the encryption keys of existing tables in Amazon Keyspaces. The following topic outlines how to implement customer managed keys for new and existing tables.
 

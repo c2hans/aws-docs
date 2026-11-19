@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # EKS control plane upgrade cost savings
-<a name="eks-control-plane-upgrade-cost-savings"></a>
 
 Why upgrades save money
 

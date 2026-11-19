@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_A
 ---
 
 # AssociateTrustStore
-<a name="API_AssociateTrustStore"></a>
 
 Associates a trust store with a web portal.
 

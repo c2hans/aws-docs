@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostAllocationTag
-<a name="API_CostAllocationTag"></a>
 
 The cost allocation tag structure. This includes detailed metadata for the `CostAllocationTag` object.
 

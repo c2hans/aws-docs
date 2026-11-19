@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws
 ---
 
 # AWS Availability Zones
-<a name="aws-availability-zones"></a>
 
 Each Region has at least three Availability Zones. This helps you to design highly available applications on AWS.
 

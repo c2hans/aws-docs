@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # Alarm
-<a name="API_Alarm"></a>
 
 Indicates the Amazon CloudWatch alarm detected while running an assessment.
 

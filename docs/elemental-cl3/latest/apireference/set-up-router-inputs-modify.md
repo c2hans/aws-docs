@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # PUT: Modify a Router Input
-<a name="set-up-router-inputs-modify"></a>
 
 Modify the attributes of the specified input on the specified router. If, after the initial setup, you ever change the cabling on the input side of your router, you must use PUT Router Input to reflect these changes.
 

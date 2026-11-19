@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/traffic-fl
 ---
 
 # Using Traffic Flow to route DNS traffic
-<a name="traffic-flow"></a>
 
 Traffic Flow greatly simplifies the process of creating and maintaining records in large and complex configurations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DeletePermis
 ---
 
 # DeletePermissionPolicy
-<a name="API_DeletePermissionPolicy"></a>
 
 Permanently deletes an IAM policy from the specified rule group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Cr
 ---
 
 # CreateDataLakeOrganizationConfiguration
-<a name="API_CreateDataLakeOrganizationConfiguration"></a>
 
 Automatically enables Amazon Security Lake for new member accounts in your organization. Security Lake is not automatically enabled for any existing member accounts in your organization.
 

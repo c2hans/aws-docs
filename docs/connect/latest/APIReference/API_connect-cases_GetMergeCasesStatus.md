@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetMergeCasesStatus
-<a name="API_connect-cases_GetMergeCasesStatus"></a>
 
 Returns the merge status of a case. Use this operation to track a merge that you started with [StartMergeCases](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_StartMergeCases.html), or to check whether a case is part of a merge before you modify it.
 

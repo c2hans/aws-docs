@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/social.htm
 ---
 
 # .social
-<a name="social"></a>
 
 Used for information about social media, forums, and online conversations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ActionR
 ---
 
 # ActionRemoteIpDetails
-<a name="API_ActionRemoteIpDetails"></a>
 
 For `AwsApiAction`, `NetworkConnectionAction`, and `PortProbeAction`, `RemoteIpDetails` provides information about the remote IP address that was involved in the action.
 

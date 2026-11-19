@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Authent
 ---
 
 # AuthenticationConfigurationInput
-<a name="API_AuthenticationConfigurationInput"></a>
 
 The authentication configuration of a connection.
 

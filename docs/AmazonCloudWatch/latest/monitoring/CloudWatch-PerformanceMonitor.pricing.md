@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Pricing for Performance Monitor
-<a name="CloudWatch-PerformanceMonitor.pricing"></a>
 
 With Performance Monitor, there are no upfront costs or long-term commitments. Pricing for Performance Monitor has two components:
 + **Monthly charge**: A fixed monthly charge that includes a set volume of network flows across all of your monitored VPCs.

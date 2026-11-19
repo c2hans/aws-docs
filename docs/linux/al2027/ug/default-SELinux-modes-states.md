@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/default-SELinux-modes-st
 ---
 
 # Default SELinux status and modes for AL2027
-<a name="default-SELinux-modes-states"></a>
 
 For AL2027, SELinux is `enabled` and set to `enforcing` mode by default. In `enforcing` mode, SELinux actively enforces the loaded security policy on the entire system.
 

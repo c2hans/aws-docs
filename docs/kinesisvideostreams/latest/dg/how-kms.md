@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-kms.ht
 ---
 
 # Data protection in Kinesis Video Streams
-<a name="how-kms"></a>
 
 You can use server-side encryption (SSE) using AWS Key Management Service (AWS KMS) keys to meet strict data management requirements by encrypting your data at rest in Amazon Kinesis Video Streams.
 

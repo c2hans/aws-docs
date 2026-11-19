@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/pub.html
 ---
 
 # .pub
-<a name="pub"></a>
 
 Used by those in the publication, advertising, or brewing business.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnSalesforceCase
 ---
 
 # OnSalesforceCaseCreate
-<a name="OnSalesforceCaseCreate"></a>
 
 ## AccountId condition
 <a name="AccountId-condition"></a>

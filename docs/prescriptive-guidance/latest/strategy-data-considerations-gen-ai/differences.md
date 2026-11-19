@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Data differences between generative AI and traditional ML
-<a name="differences"></a>
 
 The landscape of artificial intelligence is marked by a fundamental distinction between traditional machine learning approaches and modern generative AI systems, particularly in how they process and utilize data. This comprehensive analysis explores three key dimensions of this technological evolution: the structural differences between data types, their processing requirements, and the diverse modalities of data that modern AI systems can handle. It also highlights how synthetic data that is created by generative AI is emerging as a new source of training data. Synthetic data makes it possible to implement traditional ML use cases that were previously limited by data scarcity and data privacy constraints. Understanding these distinctions is crucial for organizations because it helps you navigate the complexities of data management, model training, and practical applications across various industries.
 

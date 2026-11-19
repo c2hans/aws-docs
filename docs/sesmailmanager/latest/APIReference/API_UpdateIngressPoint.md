@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_U
 ---
 
 # UpdateIngressPoint
-<a name="API_UpdateIngressPoint"></a>
 
 Update attributes of a provisioned ingress endpoint resource.
 

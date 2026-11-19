@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CancelBenefitApplication
-<a name="API_benefits_CancelBenefitApplication"></a>
 
 Cancels a benefit application that is currently in progress, preventing further processing.
 

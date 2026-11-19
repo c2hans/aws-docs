@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/turn-on-o
 ---
 
 # Turning subscription auto-renewal on or off in AWS Data Exchange
-<a name="turn-on-off-auto-renewal"></a>
 
 Manage your subscription auto-renewals through the AWS Data Exchange console.
 

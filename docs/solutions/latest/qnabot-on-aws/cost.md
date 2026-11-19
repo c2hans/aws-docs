@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/cost.html
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used while running this guidance. As of this latest revision, the cost for running the default basic implementation of this guidance in the US East (N. Virginia) Region is approximately **$547.33 per month**.
 

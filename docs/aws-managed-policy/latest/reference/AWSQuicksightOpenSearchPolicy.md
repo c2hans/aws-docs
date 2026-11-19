@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuicksightOpenSearchPolicy
-<a name="AWSQuicksightOpenSearchPolicy"></a>
 
 **Description**: Provides access to Amazon OpenSearch resources from Amazon QuickSight
 

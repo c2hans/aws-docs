@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Pu
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
 Creates or updates a resource policy.
 

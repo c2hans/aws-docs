@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Repos
 ---
 
 # RepositoryMetadata
-<a name="API_RepositoryMetadata"></a>
 
 Information about a repository.
 

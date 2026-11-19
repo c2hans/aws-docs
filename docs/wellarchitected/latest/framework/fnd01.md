@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd01.h
 ---
 
 # Multi-account environment
-<a name="fnd01"></a>
 
  A well-structured multi-account environment is the starting point for a secure, well-governed cloud. Accounts are the strongest isolation boundary AWS provides, so how you structure them shapes your security posture, your ability to apply policy at scale, and how clearly costs and ownership map to the people responsible. This capability covers the best practices for setting up and managing that structure.
 

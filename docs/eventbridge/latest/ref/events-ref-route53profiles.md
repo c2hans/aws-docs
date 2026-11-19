@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-route5
 ---
 
 # Amazon Route 53 Profiles events
-<a name="events-ref-route53profiles"></a>
 
 Route 53 Profiles sends service events to EventBridge via AWS CloudTrail.
 

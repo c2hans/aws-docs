@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/custom-auth-cr
 ---
 
 # Creating an authorizer
-<a name="custom-auth-create-authorizer"></a>
 
  You can create an authorizer by using the [CreateAuthorizer API](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateAuthorizer.html). The following example describes the command.
 

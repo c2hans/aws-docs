@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_Resource.html
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
 Represents an API resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Using Babelfish product version parameter
-<a name="babelfish-guc-version"></a>
 
  A new Grand Unified Configuration (GUC) parameter called `babelfishpg_tds.product_version` is introduced from Babelfish 2.4.0 and 3.1.0 versions. This parameter allows you to set the SQL Server product version number as the output of Babelfish.
 

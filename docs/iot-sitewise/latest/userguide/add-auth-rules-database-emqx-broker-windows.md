@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/add-auth-r
 ---
 
 # Configure authorization using the built-in database with Windows
-<a name="add-auth-rules-database-emqx-broker-windows"></a>
 
 This section covers configuring authorization rules using the built-in database for Windows deployments.
 

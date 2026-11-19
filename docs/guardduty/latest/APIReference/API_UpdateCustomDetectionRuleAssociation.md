@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Update
 ---
 
 # UpdateCustomDetectionRuleAssociation
-<a name="API_UpdateCustomDetectionRuleAssociation"></a>
 
 Updates the mode of an existing custom detection rule association.
 

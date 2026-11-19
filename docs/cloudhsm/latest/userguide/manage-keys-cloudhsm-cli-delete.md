@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/manage-keys-cl
 ---
 
 # Delete keys using CloudHSM CLI
-<a name="manage-keys-cloudhsm-cli-delete"></a>
 
 Use the example in this topic to delete a key with [CloudHSM CLI](cloudhsm_cli.md). Only key owners can delete keys.
 

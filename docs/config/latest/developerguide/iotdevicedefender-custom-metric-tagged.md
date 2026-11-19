@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/iotdevicede
 ---
 
 # iotdevicedefender-custom-metric-tagged
-<a name="iotdevicedefender-custom-metric-tagged"></a>
 
 AWS IoT Device Defender custom metrics have tags. Optionally, you can specify tag keys. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.
 

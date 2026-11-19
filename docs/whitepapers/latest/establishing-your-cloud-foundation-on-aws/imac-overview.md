@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Overview
-<a name="imac-overview"></a>
 
 When you are building your environment, access to your platform, your resources, and your applications needs to be established. First to build the environment, and second, to operate the environment through the established capabilities and services you build on it.
 

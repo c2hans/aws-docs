@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Upda
 ---
 
 # UpdateMembershipPaymentConfiguration
-<a name="API_UpdateMembershipPaymentConfiguration"></a>
 
 An object representing the payment responsibilities to update for the membership.
 

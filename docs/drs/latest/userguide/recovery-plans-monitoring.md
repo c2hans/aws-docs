@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans-moni
 ---
 
 # Monitoring an execution
-<a name="recovery-plans-monitoring"></a>
 
 To follow an execution in the console, open the plan and choose the execution from its execution history. The execution details show the status of the execution, the status of each step, and the status of each server within a step, including the recovery job that AWS Elastic Disaster Recovery created for it.
 

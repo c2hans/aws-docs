@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/c
 ---
 
 # View CloudFront cache statistics reports
-<a name="cache-statistics"></a>
 
 The Amazon CloudFront cache statistics report shows the following information:
 + **Total requests** – The total number of requests for all HTTP status codes (for example, 200 or 404) and all methods (for example, GET, HEAD, or POST)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # S3SourceProperties
-<a name="API_connect-customer-profiles_S3SourceProperties"></a>
 
 The properties that are applied when Amazon S3 is being used as the flow source.
 

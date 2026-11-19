@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_E
 ---
 
 # EksSource
-<a name="API_EksSource"></a>
 
 The input source of the Amazon Elastic Kubernetes Service cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # Reference: ec2messages, ssmmessages, and other API operations
-<a name="systems-manager-setting-up-messageAPIs"></a>
 
 If you monitor API operations, you might see calls to the following operations:
 + `ec2messages:AcknowledgeMessage`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/best-prac
 ---
 
 # Best practices for Amazon Location Service
-<a name="best-practices"></a>
 
 This topic provides best practices to help you use Amazon Location Service. While these best practices can help you take full advantage of the Amazon Location Service, they do not represent a complete solution. You should follow only the recommendations that are applicable for your environment.
 

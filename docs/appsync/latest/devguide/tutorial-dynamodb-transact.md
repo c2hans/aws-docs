@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-dynamod
 ---
 
 # Performing DynamoDB transactions in AWS AppSync
-<a name="tutorial-dynamodb-transact"></a>
 
 **Note**
 We now primarily support the APPSYNC\_JS runtime and its documentation. Please consider using the APPSYNC\_JS runtime and its guides [here](https://docs.aws.amazon.com/appsync/latest/devguide/tutorials-js.html).

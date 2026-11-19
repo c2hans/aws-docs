@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkSecurityManager::Policy
-<a name="aws-resource-networksecuritymanager-policy"></a>
 
 The `AWS::NetworkSecurityManager::Policy` resource specifies an AWS Network Security Manager policy. A policy combines templates and rules with enforcement settings for a single firewall type, such as AWS WAF or AWS Shield Advanced.
 

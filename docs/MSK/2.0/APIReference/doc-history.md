@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSK/2.0/APIReference/doc-history.html
 ---
 
 # Document History for API Reference 2.0
-<a name="doc-history"></a>
 
 The following table describes the documentation for this release of ServiceName.
 + **API version: 2019-05-30**

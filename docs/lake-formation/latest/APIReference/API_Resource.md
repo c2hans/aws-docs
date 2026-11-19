@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_R
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
 A structure for the resource.
 

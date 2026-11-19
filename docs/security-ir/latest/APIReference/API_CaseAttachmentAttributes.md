@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Case
 ---
 
 # CaseAttachmentAttributes
-<a name="API_CaseAttachmentAttributes"></a>
 
 ## Contents
 <a name="API_CaseAttachmentAttributes_Contents"></a>

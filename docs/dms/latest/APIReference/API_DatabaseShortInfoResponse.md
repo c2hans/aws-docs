@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DatabaseShor
 ---
 
 # DatabaseShortInfoResponse
-<a name="API_DatabaseShortInfoResponse"></a>
 
 Describes a database in a Fleet Advisor collector inventory.
 

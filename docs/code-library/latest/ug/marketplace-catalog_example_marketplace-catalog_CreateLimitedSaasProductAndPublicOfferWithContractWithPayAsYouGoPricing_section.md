@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create a public or limited SaaS product and public offer with contract with Pay-As-You-Go pricing using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_CreateLimitedSaasProductAndPublicOfferWithContractWithPayAsYouGoPricing_section"></a>
 
 The following code examples show how to create a public or limited SaaS product and public offer with a contract with Pay-As-You-Go pricing. This example creates either a standard or custom EULA.
 

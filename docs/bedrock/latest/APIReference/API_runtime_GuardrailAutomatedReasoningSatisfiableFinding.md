@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailAutomatedReasoningSatisfiableFinding
-<a name="API_runtime_GuardrailAutomatedReasoningSatisfiableFinding"></a>
 
 Indicates that the claims could be either true or false depending on additional assumptions not provided in the input.
 

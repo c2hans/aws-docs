@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeClus
 ---
 
 # DescribeCluster
-<a name="API_DescribeCluster"></a>
 
 Describes an Amazon EKS cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/cu
 ---
 
 # Running custom code with Python, Bash, and custom operators
-<a name="custom-code-operators"></a>
 
 In addition to the AWS service operators that Amazon MWAA Serverless supports out of the box, you can run your own code as workflow tasks by providing a code package when you create or update a workflow. You can run the following kinds of code-based tasks:
 + `PythonOperator` runs a Python callable. You can specify this operator as `airflow.providers.standard.operators.python.PythonOperator` (the current form in Apache Airflow 3) or `airflow.operators.python.PythonOperator` (also supported). This operator requires the `python_callable` task parameter.

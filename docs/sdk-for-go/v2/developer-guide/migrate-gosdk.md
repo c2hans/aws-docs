@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/migrate-go
 ---
 
 # Migrate to the AWS SDK for Go v2
-<a name="migrate-gosdk"></a>
 
 ## Minimum Go Version
 <a name="minimum-go-version"></a>

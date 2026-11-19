@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_TestCa
 ---
 
 # TestCase
-<a name="API_TestCase"></a>
 
  Information about a test case created using a framework such as NUnit or Cucumber. A test case might be a unit test or a configuration test.
 

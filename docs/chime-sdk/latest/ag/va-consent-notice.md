@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/va-consent-notice.ht
 ---
 
 # Understanding the voice analytics consent notice
-<a name="va-consent-notice"></a>
 
 When you create a voice profile domain or call analytics configuration that uses voice analytics, you see this consent acknowledgement:
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityAgent::TargetDomain HttpVerification
-<a name="aws-properties-securityagent-targetdomain-httpverification"></a>
 
 Contains HTTP route verification details for a target domain, including the route path and token to serve for domain ownership verification.
 

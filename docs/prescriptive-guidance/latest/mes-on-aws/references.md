@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/
 ---
 
 # References
-<a name="references"></a>
 
 ## AWS services
 <a name="9999999999999999aws--services.a3b59c55-731a-5102-bc0a-2eca69ecff45"></a>

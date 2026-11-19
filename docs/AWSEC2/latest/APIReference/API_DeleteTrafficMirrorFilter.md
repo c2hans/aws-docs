@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTra
 ---
 
 # DeleteTrafficMirrorFilter
-<a name="API_DeleteTrafficMirrorFilter"></a>
 
 Deletes the specified Traffic Mirror filter.
 

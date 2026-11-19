@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetCo
 ---
 
 # GetCommentReactions
-<a name="API_GetCommentReactions"></a>
 
 Returns information about reactions to a specified comment ID. Reactions from users who have been deleted will not be included in the count.
 

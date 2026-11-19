@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DataPro
 ---
 
 # DataProductListingItemAdditionalAttributes
-<a name="API_DataProductListingItemAdditionalAttributes"></a>
 
 The additional attributes of the asset of the data product.
 

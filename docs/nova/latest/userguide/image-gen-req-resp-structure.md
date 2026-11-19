@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/image-gen-req-resp
 ---
 
 # Request and response structure for image generation
-<a name="image-gen-req-resp-structure"></a>
 
 **Image generation**
 The following examples present different image generation use cases. Each example provides an explanation of the fields that are used for the image generation.

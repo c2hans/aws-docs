@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-
 ---
 
 # PartiQL arithmetic, comparison, and logical operators for DynamoDB
-<a name="ql-operators"></a>
 
 PartiQL in Amazon DynamoDB supports the following [SQL standard operators](https://www.w3schools.com/sql/sql_operators.asp).
 

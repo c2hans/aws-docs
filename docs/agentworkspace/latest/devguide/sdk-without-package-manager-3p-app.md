@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/sdk-witho
 ---
 
 # Using the SDK in a 3P app
-<a name="sdk-without-package-manager-3p-app"></a>
 
 This section explains how to use the prebuilt bundle in a third-party application that runs within the Connect Customer agent workspace.
 

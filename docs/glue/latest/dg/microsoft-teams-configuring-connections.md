@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/microsoft-teams-configuri
 ---
 
 # Configuring Microsoft Teams connections
-<a name="microsoft-teams-configuring-connections"></a>
 
 Microsoft Teams supports following two types for authentication mechanism:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost07-
 ---
 
 # COST07-BP01 Perform pricing model analysis
-<a name="cost07-bp01"></a>
 
  Workload components differ in how long they run, how predictable their usage is, and whether they tolerate interruption. Match each component to the pricing model that suits its usage pattern, and revisit the match as demand changes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/approval-review.h
 ---
 
 # Approval review
-<a name="approval-review"></a>
 
 When approval review is enabled, users must submit their flows for review before they can be shared. This gives administrators oversight of what flows are available in the organization.
 

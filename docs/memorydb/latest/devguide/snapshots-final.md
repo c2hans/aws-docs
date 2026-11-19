@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/snapshots-final
 ---
 
 # Creating a final snapshot
-<a name="snapshots-final"></a>
 
 You can create a final snapshot using the MemoryDB console, the AWS CLI, or the MemoryDB API.
 

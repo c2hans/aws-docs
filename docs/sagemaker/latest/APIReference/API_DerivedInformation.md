@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Derive
 ---
 
 # DerivedInformation
-<a name="API_DerivedInformation"></a>
 
 Information that SageMaker Neo automatically derived about the model.
 

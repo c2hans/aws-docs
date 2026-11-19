@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/breath-tag.html
 ---
 
 # Adding the sound of breathing
-<a name="breath-tag"></a>
 
 *<amazon:breath> and <amazon:auto-breaths>*
 

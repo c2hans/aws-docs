@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-export-route-tables.h
 ---
 
 # Export route tables to Amazon S3 in AWS Transit Gateway
-<a name="tgw-export-route-tables"></a>
 
 You can export the routes in your transit gateway route tables to an Amazon S3 bucket. The routes are saved to the specified Amazon S3 bucket in a JSON file.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # Data Types
-<a name="structures"></a>
 
 The IVS Multitrack Video Broadcast Integration API contains several data types that various actions use. This section doescribes each data type in detail.
 

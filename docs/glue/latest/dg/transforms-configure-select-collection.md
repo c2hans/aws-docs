@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-configure-sele
 ---
 
 # Using SelectFromCollection to choose which dataset to keep
-<a name="transforms-configure-select-collection"></a>
 
 Use the *SelectFromCollection* transform to convert a collection of `DynamicFrames` into a single `DynamicFrame`.
 

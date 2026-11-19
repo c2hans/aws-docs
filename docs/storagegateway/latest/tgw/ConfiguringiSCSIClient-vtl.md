@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/ConfiguringiSC
 ---
 
 # Connecting your VTL devices to a Windows client
-<a name="ConfiguringiSCSIClient-vtl"></a>
 
 A Tape Gateway exposes several tape drives and a media changer, referred to collectively as VTL devices, as iSCSI targets. For more information, see [Requirements for setting up Tape Gateway](Requirements.md).
 

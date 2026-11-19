@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVREL10-BP02 Implement resilient cross-system measurement pipelines with data reconciliation guarantees
-<a name="advrel10-bp02"></a>
 
  Cross-system measurement combines linear TV panel data with digital impression-level data. If pipelines lose data, produce duplicates, or fail to reconcile, advertisers lose confidence in the measurement.
 

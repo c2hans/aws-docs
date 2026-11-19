@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Sy
 ---
 
 # SyncResourceSummary
-<a name="API_SyncResourceSummary"></a>
 
 The sync resource summary.
 

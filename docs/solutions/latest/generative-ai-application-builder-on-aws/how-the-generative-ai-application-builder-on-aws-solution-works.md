@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # How the Generative AI Application Builder on AWS solution works
-<a name="how-the-generative-ai-application-builder-on-aws-solution-works"></a>
 
 The admin user primarily interfaces with the Deployment dashboard to view, create, and manage new and existing use case deployments. Through this dashboard, the admin user has access to the following actions:
 + View list of deployments

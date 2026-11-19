@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIReco
 ---
 
 # AIRecommendationInferenceSpecification
-<a name="API_AIRecommendationInferenceSpecification"></a>
 
 The inference framework for an AI recommendation job.
 

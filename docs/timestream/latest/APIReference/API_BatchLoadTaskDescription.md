@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Batch
 ---
 
 # BatchLoadTaskDescription
-<a name="API_BatchLoadTaskDescription"></a>
 
 Details about a batch load task.
 

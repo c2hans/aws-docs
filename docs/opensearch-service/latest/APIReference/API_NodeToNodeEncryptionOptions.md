@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # NodeToNodeEncryptionOptions
-<a name="API_NodeToNodeEncryptionOptions"></a>
 
 Enables or disables node-to-node encryption. For more information, see [Node-to-node encryption for Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ntn.html).
 

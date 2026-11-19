@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-revoke-eab
 ---
 
 # Revoking an ACME external account binding
-<a name="sdk-acme-revoke-eab"></a>
 
 The following example shows how to use the [RevokeAcmeExternalAccountBinding](https://docs.aws.amazon.com/acm/latest/APIReference/API_RevokeAcmeExternalAccountBinding.html) function.
 

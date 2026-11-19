@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/list-training-plans.
 ---
 
 # List training plans
-<a name="list-training-plans"></a>
 
 To view your training plans:
 

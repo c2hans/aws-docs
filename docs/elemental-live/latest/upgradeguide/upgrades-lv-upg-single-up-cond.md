@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/upgradeguide/upgra
 ---
 
 # Step D: Upgrade the Elemental Live software
-<a name="upgrades-lv-upg-single-up-cond"></a>
 
 These steps must be performed on the Elemental Live hardware unit.
 

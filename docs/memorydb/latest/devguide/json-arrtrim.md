@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-arrtrim.ht
 ---
 
 # JSON.ARRTRIM
-<a name="json-arrtrim"></a>
 
 Trim arrays at the path so that it becomes subarray [start, end], both inclusive.
 + If the array is empty, do nothing, return 0.

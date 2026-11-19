@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # x-amazon-apigateway-api-key-source property
-<a name="api-gateway-swagger-extensions-api-key-source"></a>
 
  Specify the source to receive an API key to throttle API methods that require a key. This API-level property is a `String` type. For more information about configuring a method to require an API key, see [Configure a method to use API keys with an OpenAPI definition](api-key-usage-plan-oas.md).
 

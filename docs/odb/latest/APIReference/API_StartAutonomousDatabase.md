@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_StartAutonom
 ---
 
 # StartAutonomousDatabase
-<a name="API_StartAutonomousDatabase"></a>
 
 Starts the specified Autonomous Database.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # DeleteUser
-<a name="API_DeleteUser"></a>
 
 Deletes the profile of the currently signed-in user. A deleted user profile can no longer be used to sign in and can't be restored.
 

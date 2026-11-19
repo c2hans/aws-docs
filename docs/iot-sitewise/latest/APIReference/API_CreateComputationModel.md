@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Cre
 ---
 
 # CreateComputationModel
-<a name="API_CreateComputationModel"></a>
 
 Create a computation model with a configuration and data binding.
 

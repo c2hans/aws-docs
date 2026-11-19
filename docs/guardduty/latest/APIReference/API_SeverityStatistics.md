@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Severi
 ---
 
 # SeverityStatistics
-<a name="API_SeverityStatistics"></a>
 
 Information about severity level for each finding type.
 

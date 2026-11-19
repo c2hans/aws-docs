@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/custom-auth-tu
 ---
 
 # Tutorial: Creating a custom authorizer for AWS IoT Core
-<a name="custom-auth-tutorial"></a>
 
 This tutorial demonstrates the steps to create, validate, and use Custom Authentication by using the AWS CLI. Optionally, using this tutorial, you can use Postman to send data to AWS IoT Core by using the HTTP Publish API.
 

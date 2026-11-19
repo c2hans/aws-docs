@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/actions.zonalautos
 ---
 
 # Zonal autoshift API operations
-<a name="actions.zonalautoshift"></a>
 
 The following table lists ARC API operations that you can use with zonal autoshift. For examples of using zonal autoshift API operations with the AWS CLI, see .
 

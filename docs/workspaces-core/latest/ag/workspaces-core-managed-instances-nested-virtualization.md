@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-core/latest/ag/workspaces-cor
 ---
 
 # Enable nested virtualization on Amazon WorkSpaces Core Managed Instances
-<a name="workspaces-core-managed-instances-nested-virtualization"></a>
 
 With nested virtualization, you can run hypervisors such as KVM and Hyper-V inside your Amazon WorkSpaces Core Managed Instance. Use these hypervisors to create and manage virtual machines within the instance. You can use nested virtualization for development tools such as Docker Desktop, Windows Subsystem for Linux 2 (WSL2), Android Studio emulators, and QEMU.
 

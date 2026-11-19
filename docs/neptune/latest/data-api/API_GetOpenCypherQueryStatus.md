@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_GetOpenCyphe
 ---
 
 # GetOpenCypherQueryStatus
-<a name="API_GetOpenCypherQueryStatus"></a>
 
 Retrieves the status of a specified openCypher query.
 

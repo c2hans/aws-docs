@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/native-recipe-new-
 ---
 
 # User-Personalization recipe
-<a name="native-recipe-new-item-USER_PERSONALIZATION"></a>
 
 **Important**
 We recommend using the [User-Personalization-v2](native-recipe-user-personalization-v2.md) recipe. It can consider up to 5 million items with faster training, and generate more relevant recommendations with lower latency.

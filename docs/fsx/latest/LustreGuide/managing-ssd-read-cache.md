@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/managing-ssd-read
 ---
 
 # Managing provisioned SSD read cache
-<a name="managing-ssd-read-cache"></a>
 
 When you create a file system with the Intelligent-Tiering storage class, you have the option to also provision an SSD-based read cache which provides SSD latencies for reads of your frequently-accessed data, up to 3 IOPS per GiB.
 

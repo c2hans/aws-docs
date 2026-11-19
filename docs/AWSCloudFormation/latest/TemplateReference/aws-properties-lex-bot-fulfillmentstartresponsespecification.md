@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot FulfillmentStartResponseSpecification
-<a name="aws-properties-lex-bot-fulfillmentstartresponsespecification"></a>
 
 Provides settings for a message that is sent to the user when a fulfillment Lambda function starts running.
 

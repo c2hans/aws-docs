@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/api-subnets.htm
 ---
 
 # Neptune Subnet API
-<a name="api-subnets"></a>
 
 **Actions:**
 + [CreateDBSubnetGroup (action)](#CreateDBSubnetGroup)

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/cni-network-policy-
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Restrict Pod network traffic with Kubernetes network policies
-<a name="cni-network-policy-configure"></a>
 
 You can use a Kubernetes network policy to restrict network traffic to and from your Pods. For more information, see [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/) in the Kubernetes documentation.
 

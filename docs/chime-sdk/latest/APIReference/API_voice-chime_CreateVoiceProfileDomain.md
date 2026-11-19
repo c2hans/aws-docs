@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # CreateVoiceProfileDomain
-<a name="API_voice-chime_CreateVoiceProfileDomain"></a>
 
 Creates a voice profile domain, a collection of voice profiles, their voice prints, and encrypted enrollment audio.
 

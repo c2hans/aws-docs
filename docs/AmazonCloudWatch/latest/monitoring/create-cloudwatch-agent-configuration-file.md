@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/creat
 ---
 
 # Create the CloudWatch agent configuration file
-<a name="create-cloudwatch-agent-configuration-file"></a>
 
 Before running the CloudWatch agent on any servers, you must create one or more CloudWatch agent configuration files.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kcl-migration-rollbac
 ---
 
 # Roll back to the previous KCL version
-<a name="kcl-migration-rollback"></a>
 
 This topic explains the steps to roll back your KCL 3.5.x consumer to the previous version. The rollback process depends on which migration phase your application is currently in.
 

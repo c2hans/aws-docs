@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelC
 ---
 
 # ModelCardSecurityConfig
-<a name="API_ModelCardSecurityConfig"></a>
 
 Configure the security settings to protect model card data.
 

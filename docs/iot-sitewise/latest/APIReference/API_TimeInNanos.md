@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Tim
 ---
 
 # TimeInNanos
-<a name="API_TimeInNanos"></a>
 
 Contains a timestamp with optional nanosecond granularity.
 

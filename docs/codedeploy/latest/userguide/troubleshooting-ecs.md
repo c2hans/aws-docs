@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshoot
 ---
 
 # Troubleshoot Amazon ECS deployment issues
-<a name="troubleshooting-ecs"></a>
 
 **Topics**
 + [A timeout occurs while waiting for replacement task set](#troubleshooting-ecs-timeout)

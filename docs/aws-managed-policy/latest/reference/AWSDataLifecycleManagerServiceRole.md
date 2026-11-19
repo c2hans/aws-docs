@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDataLifecycleManagerServiceRole
-<a name="AWSDataLifecycleManagerServiceRole"></a>
 
 **Description**: Provides appropriate permissions to AWS Data Lifecycle Manager to take actions on AWS resources
 

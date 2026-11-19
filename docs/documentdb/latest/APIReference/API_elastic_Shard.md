@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # Shard
-<a name="API_elastic_Shard"></a>
 
 The name of the shard.
 

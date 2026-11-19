@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_IntentSumm
 ---
 
 # IntentSummary
-<a name="API_IntentSummary"></a>
 
 Summary information about an intent returned by the `ListIntents` operation.
 

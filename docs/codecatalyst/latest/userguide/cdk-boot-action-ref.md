@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/cdk-boot-a
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # 'AWS CDK bootstrap' action YAML
-<a name="cdk-boot-action-ref"></a>
 
 The following is the YAML definition of the **AWS CDK bootstrap** action. To learn how to use this action, see [Bootstrapping an AWS CDK app with a workflow](cdk-boot-action.md).
 

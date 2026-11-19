@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeleteDefaultMessageType
-<a name="API_DeleteDefaultMessageType"></a>
 
 Deletes an existing default message type on a configuration set.
 

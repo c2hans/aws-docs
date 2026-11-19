@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CloudWat
 ---
 
 # CloudWatchConfig
-<a name="API_CloudWatchConfig"></a>
 
 CloudWatch logging configuration.
 

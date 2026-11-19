@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ki-jce-sdk.htm
 ---
 
 # Known issues for the JCE SDK for AWS CloudHSM
-<a name="ki-jce-sdk"></a>
 
 The following issues impact the JCE SDK for AWS CloudHSM.
 

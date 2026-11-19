@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/publish-websocke
 ---
 
 # Publish events via WebSocket
-<a name="publish-websocket"></a>
 
 AWS AppSync Events allows you to publish events via your API’s WebSocket endpoint after you connect to it.
 

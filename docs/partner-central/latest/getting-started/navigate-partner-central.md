@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/n
 ---
 
 # Navigating AWS Partner Central
-<a name="navigate-partner-central"></a>
 
 The AWS Partner Central dashboard features a navigation bar on the left side of the screen. This menu serves as your primary control center, providing quick access to key partner resources including AWS Partner benefits, training materials, and business growth tools. Additionally, partners who sell on the AWS Marketplace can use this navigation bar to manage their product listings and monitor sales performance.
 

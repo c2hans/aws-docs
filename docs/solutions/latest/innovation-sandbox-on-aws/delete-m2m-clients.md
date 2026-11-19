@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Delete machine-to-machine client stacks
-<a name="delete-m2m-clients"></a>
 
 If you deployed any machine-to-machine (M2M) client stacks to grant programmatic API access, delete them before uninstalling the solution stacks. Each M2M client stack is a separate AWS CloudFormation stack that creates a dedicated IAM role trusted by an external principal. If you leave these stacks in place, they orphan IAM roles that reference the removed API.
 

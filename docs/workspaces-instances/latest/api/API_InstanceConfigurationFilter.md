@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Inst
 ---
 
 # InstanceConfigurationFilter
-<a name="API_InstanceConfigurationFilter"></a>
 
 Defines filtering criteria for WorkSpace Instance type searches. Combines multiple filter conditions including billing mode, platform type, and tenancy to help customers find instance types that meet their specific requirements.
 

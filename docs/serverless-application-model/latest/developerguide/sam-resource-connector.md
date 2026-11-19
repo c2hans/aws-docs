@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # AWS::Serverless::Connector
-<a name="sam-resource-connector"></a>
 
 Configures permissions between two resources. For an introduction to connectors, see [Managing resource permissions with AWS SAM connectors](managing-permissions-connectors.md).
 
@@ -150,7 +149,7 @@ Resources:
 ### AWS::Serverless::Connector
 <a name="sam-resource-connector--examples-connector"></a>
 
-The following example uses the [AWS::Serverless::Connector](#sam-resource-connector) resource to have an AWS Lambda function read from, and write to an Amazon DynamoDB table:
+The following example uses the [AWS::Serverless::Connector](sam-resource-connector.md) resource to have an AWS Lambda function read from, and write to an Amazon DynamoDB table:
 
 ```
 MyConnector:
@@ -165,7 +164,7 @@ MyConnector:
       - Write
 ```
 
-The following example uses the [AWS::Serverless::Connector](#sam-resource-connector) resource to have a Lambda function write to an Amazon SNS topic, with both resources in the same template:
+The following example uses the [AWS::Serverless::Connector](sam-resource-connector.md) resource to have a Lambda function write to an Amazon SNS topic, with both resources in the same template:
 
 ```
 MyConnector:
@@ -179,7 +178,7 @@ MyConnector:
       - Write
 ```
 
-The following example uses the [AWS::Serverless::Connector](#sam-resource-connector) resource to have an Amazon SNS topic write to a Lambda function, which then writes to an Amazon DynamoDB table, with all resources in the same template:
+The following example uses the [AWS::Serverless::Connector](sam-resource-connector.md) resource to have an Amazon SNS topic write to a Lambda function, which then writes to an Amazon DynamoDB table, with all resources in the same template:
 
 ```
 Transform: AWS::Serverless-2016-10-31

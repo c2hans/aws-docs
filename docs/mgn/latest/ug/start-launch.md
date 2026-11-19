@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/start-launch.html
 ---
 
 # Start instance upon launching
-<a name="start-launch"></a>
 
 Choose whether you want to start your test and cutover instances automatically upon launch or whether you want to launch them in a stopped state.
 

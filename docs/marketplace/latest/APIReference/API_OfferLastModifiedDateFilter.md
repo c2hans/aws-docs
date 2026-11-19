@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferLastModifiedDateFilter
-<a name="API_OfferLastModifiedDateFilter"></a>
 
 Allows filtering on the `LastModifiedDate` of an offer.
 

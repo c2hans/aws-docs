@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_ListCu
 ---
 
 # ListCustomRoutingListeners
-<a name="API_ListCustomRoutingListeners"></a>
 
 List the listeners for a custom routing accelerator.
 

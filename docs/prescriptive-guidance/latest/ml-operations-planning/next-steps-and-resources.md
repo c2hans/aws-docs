@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-operatio
 ---
 
 # Next steps and resources
-<a name="next-steps-and-resources"></a>
 
 This guide walks you through on a few considerations when planning the lifecycle of the machine learning models you want to bring to production. It discusses challenges and best practices in four areas—data, training, deployment, and monitoring—and includes additional relevant resources.
 

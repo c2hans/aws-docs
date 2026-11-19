@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgentCollaboratorOutputPayload
-<a name="API_agent-runtime_AgentCollaboratorOutputPayload"></a>
 
 Output from an agent collaborator. The output can be text or an action invocation result.
 

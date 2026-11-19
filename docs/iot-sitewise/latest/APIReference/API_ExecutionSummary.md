@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Exe
 ---
 
 # ExecutionSummary
-<a name="API_ExecutionSummary"></a>
 
 Contains the execution summary of the computation model.
 

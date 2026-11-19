@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_JsonBody.htm
 ---
 
 # JsonBody
-<a name="API_JsonBody"></a>
 
 Inspect the body of the web request as JSON. The body immediately follows the request headers.
 

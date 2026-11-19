@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/security_
 ---
 
 # Troubleshooting AWS MCP Server identity and access
-<a name="security_iam_troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues when working with AWS MCP Server and IAM.
 

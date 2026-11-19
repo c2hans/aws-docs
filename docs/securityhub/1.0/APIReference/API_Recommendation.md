@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Recomme
 ---
 
 # Recommendation
-<a name="API_Recommendation"></a>
 
 A recommendation on how to remediate the issue identified in a finding.
 

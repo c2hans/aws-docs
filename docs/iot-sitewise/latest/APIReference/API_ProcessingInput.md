@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Pro
 ---
 
 # ProcessingInput
-<a name="API_ProcessingInput"></a>
 
 Input source for processing. Specify exactly one option.
 

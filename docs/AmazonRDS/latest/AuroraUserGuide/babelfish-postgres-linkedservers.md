@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Babelfish supports linked servers
-<a name="babelfish-postgres-linkedservers"></a>
 
 Babelfish for Aurora PostgreSQL supports linked servers by using the PostgreSQL `tds_fdw` extension in version 3.1.0. To work with linked servers, you must install the `tds_fdw` extension. For more information about the `tds_fdw` extension, see [Working with the supported foreign data wrappers for Amazon Aurora PostgreSQL](Appendix.PostgreSQL.CommonDBATasks.Extensions.foreign-data-wrappers.md).
 

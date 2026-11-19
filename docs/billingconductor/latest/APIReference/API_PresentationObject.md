@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # PresentationObject
-<a name="API_PresentationObject"></a>
 
  An object that defines how custom line item charges are presented in the bill, containing specifications for service presentation.
 

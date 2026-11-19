@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/private-off
 ---
 
 # Amending agreements in AWS Marketplace
-<a name="private-offers-upgrades-and-renewals"></a>
 
 AWS Marketplace sellers, Channel Partners, and ISVs can offer upgrades, renewals, and amendments to replace active agreements. For example, you can grant new entitlements, offer pricing discounts, adjust payment schedules, or change the end user license agreement (EULA) to use [standardized license terms](standardized-license-terms.md). You can also change the number of units and payment schedule and add a custom end date.
 

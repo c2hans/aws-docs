@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sender-support.html
 ---
 
 # AWS Glue support for Sender
-<a name="sender-support"></a>
 
 AWS Glue supports Sender as follows:
 

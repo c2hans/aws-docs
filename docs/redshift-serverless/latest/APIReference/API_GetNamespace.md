@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # GetNamespace
-<a name="API_GetNamespace"></a>
 
 Returns information about a namespace in Amazon Redshift Serverless.
 

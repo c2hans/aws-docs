@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Managing member account onboarding
-<a name="next-gen-member-onboarding"></a>
 
 Member account onboarding is handled automatically through SLRs:
 + **New accounts** – When a new account joins the organization, an SLR is automatically created in the new account, the account appears in the DA's organization view, and services created in the new account are visible to the DA.

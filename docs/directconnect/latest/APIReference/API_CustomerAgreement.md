@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Cu
 ---
 
 # CustomerAgreement
-<a name="API_CustomerAgreement"></a>
 
 The name and status of a customer agreement.
 

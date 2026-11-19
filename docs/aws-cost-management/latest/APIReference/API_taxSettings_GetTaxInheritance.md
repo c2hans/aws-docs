@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetTaxInheritance
-<a name="API_taxSettings_GetTaxInheritance"></a>
 
 The get account tax inheritance status.
 

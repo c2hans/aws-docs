@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # PostWhatsAppMessageMedia
-<a name="API_PostWhatsAppMessageMedia"></a>
 
 Upload a media file to the WhatsApp service. Only the specified `originationPhoneNumberId` has the permissions to send the media file when using [SendWhatsAppMessage](https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_SendWhatsAppMessage.html). You must use either `sourceS3File` or `sourceS3PresignedUrl` for the source. If both or neither are specified then an `InvalidParameterException` is returned.
 

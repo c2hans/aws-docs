@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CodeSigningPolicie
 ---
 
 # CodeSigningPolicies
-<a name="API_CodeSigningPolicies"></a>
 
 Code signing configuration [policies](https://docs.aws.amazon.com/lambda/latest/dg/configuration-codesigning.html#config-codesigning-policies) specify the validation failure action for signature mismatch or expiry.
 

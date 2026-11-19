@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/mkc-S3sink-con
 ---
 
 # Set up Amazon S3 sink connector
-<a name="mkc-S3sink-connector-example"></a>
 
 This example shows how to use the Confluent [Amazon S3 sink connector](https://www.confluent.io/hub/confluentinc/kafka-connect-s3) and the AWS CLI to create an Amazon S3 sink connector in MSK Connect.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-wickr.
 ---
 
 # AWS Wickr events
-<a name="events-ref-wickr"></a>
 
 Wickr sends service events to EventBridge via AWS CloudTrail.
 

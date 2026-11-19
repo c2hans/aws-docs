@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTraf
 ---
 
 # ListTrafficPolicyInstances
-<a name="API_ListTrafficPolicyInstances"></a>
 
 Gets information about the traffic policy instances that you created by using the current AWS account.
 

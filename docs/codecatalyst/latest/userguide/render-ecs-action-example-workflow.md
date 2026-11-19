@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/render-ecs
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Example: Modify an Amazon ECS taskdef
-<a name="render-ecs-action-example-workflow"></a>
 
 The following is an example of a full workflow that includes the **Render Amazon ECS task definition** action, along with build and deploy actions. The workflow’s purpose is to build and deploy a Docker image into your Amazon ECS cluster. The workflow consists of the following building blocks that run sequentially:
 + A **trigger** – This trigger starts the workflow run automatically when you push a change to your source repository. For more information about triggers, see [Starting a workflow run automatically using triggers](workflows-add-trigger.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/develop-cus
 ---
 
 # Develop custom provisioning plugins
-<a name="develop-custom-provisioning-plugins"></a>
 
 To develop a custom provisioning plugin, create a Java class that implements the `com.aws.greengrass.provisioning.DeviceIdentityInterface` interface. You can include the Greengrass nucleus JAR file in your project to access this interface and its classes. This interface defines a method that inputs a plugin configuration and outputs a provisioning configuration. The provisioning configuration defines configurations for the system and the [Greengrass nucleus component](greengrass-nucleus-component.md). The AWS IoT Greengrass Core software installer uses this provisioning configuration to configure the AWS IoT Greengrass Core software on a device.
 

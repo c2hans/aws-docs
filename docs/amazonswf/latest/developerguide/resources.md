@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/resource
 ---
 
 # Additional resources and reference info for Amazon SWF
-<a name="resources"></a>
 
 This chapter provides additional resources and reference information that is useful when developing workflows with Amazon SWF.
 

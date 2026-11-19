@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # SSL certificates for your Application Load Balancer
-<a name="https-listener-certificates"></a>
 
 When you create a secure listener for your Application Load Balancer, you must deploy at least one certificate on the load balancer. The load balancer requires X.509 certificates (SSL/TLS server certificates). Certificates are a digital form of identification issued by a certificate authority (CA). A certificate contains identification information, a validity period, a public key, a serial number, and the digital signature of the issuer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_cwet
 ---
 
 # Configuring Amazon ECS to listen for CloudWatch Events events
-<a name="ecs_cwet"></a>
 
 Learn how to set up a simple Lambda function that listens for task events and writes them out to a CloudWatch Logs log stream.
 

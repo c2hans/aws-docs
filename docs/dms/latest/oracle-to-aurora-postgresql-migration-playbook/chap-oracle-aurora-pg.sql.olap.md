@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle OLAP functions and PostgreSQL window functions
-<a name="chap-oracle-aurora-pg.sql.olap"></a>
 
 The following sections outline the steps to configure and utilize Oracle OLAP functions and PostgreSQL window functions with AWS Database Migration Service.
 

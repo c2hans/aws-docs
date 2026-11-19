@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Supported environments, languages, and frameworks
-<a name="omni-supported-environments-languages-and-frameworks"></a>
 
 The environments, languages, and frameworks with a documented path for sending telemetry to CloudWatch Omni.
 

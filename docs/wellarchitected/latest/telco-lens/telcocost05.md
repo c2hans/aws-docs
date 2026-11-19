@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoc
 ---
 
 # Interoperability
-<a name="telcocost05"></a>
 
 |  TELCOCOST05: How are you handling the interoperability of your radio access network?  |
 | --- |

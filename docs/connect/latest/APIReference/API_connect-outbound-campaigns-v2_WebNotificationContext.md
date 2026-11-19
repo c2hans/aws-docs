@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # WebNotificationContext
-<a name="API_connect-outbound-campaigns-v2_WebNotificationContext"></a>
 
 Contains metadata for a web notification channel event trigger.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/example_cross_Dete
 ---
 
 # Save EXIF and other image information using an AWS SDK
-<a name="example_cross_DetectLabels_section"></a>
 
 The following code example shows how to:
 + Get EXIF information from a a JPG, JPEG, or PNG file.

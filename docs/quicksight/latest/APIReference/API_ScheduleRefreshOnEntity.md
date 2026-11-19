@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sched
 ---
 
 # ScheduleRefreshOnEntity
-<a name="API_ScheduleRefreshOnEntity"></a>
 
 The refresh on entity for weekly or monthly schedules.
 

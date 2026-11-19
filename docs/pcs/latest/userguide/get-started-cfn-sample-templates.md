@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/get-started-cfn-sam
 ---
 
 # CloudFormation templates to create a sample AWS PCS cluster
-<a name="get-started-cfn-sample-templates"></a>
 
 | AWS Region name | AWS Region | View source | Launch stack |
 | --- | --- | --- | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-
 ---
 
 # Traces and metrics
-<a name="configure-observability"></a>
 
  The AWS SDK for Go is instrumented to record trace spans and client-side metrics for SDK operations. By default, clients use no-op implementations for both tracing and metrics, meaning no data is collected unless you configure a provider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_WebExpe
 ---
 
 # WebExperienceAuthConfiguration
-<a name="API_WebExperienceAuthConfiguration"></a>
 
 Provides the authorization configuration information needed to deploy a Amazon Q Business web experience to end users.
 

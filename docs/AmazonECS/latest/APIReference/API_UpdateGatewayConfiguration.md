@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Update
 ---
 
 # UpdateGatewayConfiguration
-<a name="API_UpdateGatewayConfiguration"></a>
 
 The type-specific configuration to change on a gateway. The variant must match the gateway's existing type.
 

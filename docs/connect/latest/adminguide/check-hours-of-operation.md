@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/check-hours-of
 ---
 
 # Flow block in Connect Customer: Check hours of operation
-<a name="check-hours-of-operation"></a>
 
 This topic defines the flow block to checks whether a contact occurs within or outside of the defined hours of operation.
 

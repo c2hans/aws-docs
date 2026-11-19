@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_EksSo
 ---
 
 # EksSource
-<a name="API_EksSource"></a>
 
 Defines an Amazon EKS cluster and its namespaces as an input source for resource discovery.
 

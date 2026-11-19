@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-m
 ---
 
 # Step 1: Get an MMS-capable phone number
-<a name="nx-mms-get-set-up-identities"></a>
 
 To send MMS messages, you need an origination identity that supports the MMS channel in the destination country. MMS is currently supported in the United States and Canada. The following origination identity types support MMS:
 + **Short codes** – Supported for MMS in the United States and Canada.

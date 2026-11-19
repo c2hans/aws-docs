@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Conclusion
-<a name="conclusion"></a>
 
  The goal of this document is to outline fundamental SaaS architecture concepts, providing some clarification around the models and terminology that are used to characterize SaaS patterns and strategies. The hope is that this will equip organizations with a clearer view of the overall SaaS landscape.
 

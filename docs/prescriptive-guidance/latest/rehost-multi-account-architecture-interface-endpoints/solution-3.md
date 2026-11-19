@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-mult
 ---
 
 # Solution 3: Sharing VPC interface endpoints
-<a name="solution-3"></a>
 
 ## Use case
 <a name="use-case.e4273b04-ec58-5883-a509-c93ee1d30cdc"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Key AWS services
-<a name="key-aws-services-5"></a>
 
  There are a number of key AWS features that support sustainability in the cloud. The following services and features are an important part of the sustainability journey:
 

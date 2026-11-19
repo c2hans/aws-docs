@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/describ
 ---
 
 # DescribeDataSet
-<a name="describe-data-set"></a>
 
 Use the `DescribeDataSet` API operation to describe a dataset. To use this operation, you need the ID of the dataset that you want to describe. The dataset ID is part of the dataset URL in Quick Sight. You can also use the `ListDataSets` API operation to get the ID.
 

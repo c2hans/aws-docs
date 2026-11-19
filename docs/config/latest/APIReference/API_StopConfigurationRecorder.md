@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_StopConfi
 ---
 
 # StopConfigurationRecorder
-<a name="API_StopConfigurationRecorder"></a>
 
 Stops the customer managed configuration recorder. The customer managed configuration recorder will stop recording configuration changes for the resource types you have specified.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 ---
 
 # Appendix 1: Key aspects of APRA CPS234
-<a name="appendix-1-key-aspects-of-apra-cps234"></a>
 
 ## Roles and responsibilities
 <a name="roles-and-responsibilities"></a>

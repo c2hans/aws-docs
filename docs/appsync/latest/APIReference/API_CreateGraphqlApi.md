@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateGr
 ---
 
 # CreateGraphqlApi
-<a name="API_CreateGraphqlApi"></a>
 
 Creates a `GraphqlApi` object.
 

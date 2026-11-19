@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # Log analytics workloads
-<a name="log-analytics-workloads"></a>
 
  Log analytics focuses on analyzing machine-generated time series data for insights into operations, security, and user behavior.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/ip-detector
 ---
 
 # IP detector
-<a name="ip-detector-component"></a>
 
 The IP detector component (`aws.greengrass.clientdevices.IPDetector`) does the following:
 + Monitors the Greengrass core device's network connectivity information. This information includes the core device's network endpoints and the port where an MQTT broker operates.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/mpts-passthrough
 ---
 
 # Including passthrough programs
-<a name="mpts-passthrough-program"></a>
 
 In any MPTS, you can include any number of *passthrough program*s. A passthrough program is a source program that doesn't come from an Elemental Live node that is in the Conductor Live cluster. The program could be either of the following:
 + An MPTS produced by another encoder. That MPTS could include one or more SPTSes. Elemental Statmux lets you extract only the SPTSes that you want.

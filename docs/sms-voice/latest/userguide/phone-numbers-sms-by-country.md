@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers
 ---
 
 # Supported countries and regions for SMS messaging with AWS End User Messaging SMS
-<a name="phone-numbers-sms-by-country"></a>
 
 You can use AWS End User Messaging SMS to send SMS messages to the countries, regions, and territories listed in the following table. This table also lists the countries and regions that support Sender IDs and two-way SMS messaging.
 

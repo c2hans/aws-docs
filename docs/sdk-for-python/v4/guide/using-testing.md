@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/using-testing.ht
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Testing applications that use the SDK
-<a name="using-testing"></a>
 
 Tests for an application that uses the SDK should verify the behavior that the application owns. They check that application code sends the right requests, interprets responses correctly, and recovers from expected errors. They don't need to test serialization, signing, or transport, because the SDK handles those. This page describes three testing patterns. Operation mocks are the fastest and most isolated. Integration tests are the most realistic.
 

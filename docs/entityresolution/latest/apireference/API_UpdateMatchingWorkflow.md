@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # UpdateMatchingWorkflow
-<a name="API_UpdateMatchingWorkflow"></a>
 
 Updates an existing matching workflow. The workflow must already exist for this operation to succeed.
 

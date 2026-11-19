@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/afr-porting
 ---
 
 # Configuring a FreeRTOS kernel port
-<a name="afr-porting-kernel"></a>
 
 This section provides instructions for integrating a port of the FreeRTOS kernel into a FreeRTOS port-testing project. For a list of available kernel ports, see [FreeRTOS kernel ports](https://freertos.org/RTOS_ports.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/S3-tutorial-pr
 ---
 
 # Prerequisites for exporting data from Amazon Keyspaces to Amazon S3
-<a name="S3-tutorial-prerequisites"></a>
 
 **Confirm the following prerequisites and create the Amazon Keyspaces resources before you begin with the tutorial**
 

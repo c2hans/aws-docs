@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/uefi-variables.h
 ---
 
 # UEFI variables for Amazon EC2 instances
-<a name="uefi-variables"></a>
 
 When you launch an instance where the boot mode is set to UEFI, a key-value store for variables is created. The store can be used by UEFI and the instance operating system for storing UEFI variables.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactE
 ---
 
 # ContactEvaluation
-<a name="API_ContactEvaluation"></a>
 
 Information about the contact evaluations where the key is the FormId, which is a unique identifier for the form.
 

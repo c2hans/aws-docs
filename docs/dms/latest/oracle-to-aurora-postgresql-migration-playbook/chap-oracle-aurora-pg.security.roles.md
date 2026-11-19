@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle and PostgreSQL roles
-<a name="chap-oracle-aurora-pg.security.roles"></a>
 
 With AWS DMS, you can manage database user roles and permissions when migrating data from Oracle or PostgreSQL databases. Database roles define the privileges and access control for database users, specifying which operations they can perform on database objects like tables, views, and stored procedures.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aw
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 +  J.D. Bean, Principal Security Architect, Amazon EC2

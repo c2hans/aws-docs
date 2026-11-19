@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/dg/sharing-share.html
 ---
 
 # Sharing an AWS Cloud Map namespace
-<a name="sharing-share"></a>
 
  When you share an AWS Cloud Map namespace that you own with other AWS accounts (consumers), you enable these accounts to discover the up-to-date network locations of services in the namespace without the need for temporary credentials.
 

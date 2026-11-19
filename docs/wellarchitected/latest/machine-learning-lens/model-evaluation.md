@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Model evaluation
-<a name="model-evaluation"></a>
 
  After the model has been trained, evaluate it for its performance and success metrics. You might want to generate multiple models using different methods and evaluate the effectiveness of each model. You also might evaluate whether your model must be [more sensitive than specific, or more specific than sensitive](https://en.wikipedia.org/wiki/Sensitivity_and_specificity). For multiclass models, determine error rates for each class separately.
 

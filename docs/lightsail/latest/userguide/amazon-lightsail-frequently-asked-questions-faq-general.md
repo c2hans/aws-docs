@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Learn about Lightsail and its global availability
-<a name="amazon-lightsail-frequently-asked-questions-faq-general"></a>
 
 ## What is Amazon Lightsail?
 <a name="what-is-lightsail"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # LastSync
-<a name="API_LastSync"></a>
 
 Provides details about the product's connection sync and contains the following sub-fields.
 +  `LastSyncTime`

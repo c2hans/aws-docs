@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetPatchBaselineForPatchGroup
-<a name="API_GetPatchBaselineForPatchGroup"></a>
 
 Retrieves the patch baseline that should be used for the specified patch group.
 

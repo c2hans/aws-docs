@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Amazon DynamoDB connector
-<a name="connector-dynamodb"></a>
 
 The Amazon DynamoDB connector performs single-record lookups by partition key and writes the result as metadata attributes on matched files or assets. It can also serve values from a DynamoDB table as selectable field values during template authoring and metadata entry.
 

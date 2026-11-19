@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Using the NAT gateway with AWS Network Firewall for centralized IPv4 egress
-<a name="using-nat-gateway-with-firewall"></a>
 
 If you want to inspect and filter your outbound traffic, you can incorporate AWS Network Firewall with NAT gateway in your centralized egress architecture. AWS Network Firewall is a managed service that makes it easy to deploy essential network protections for all of your VPCs. It provides control and visibility to Layer 3-7 network traffic for your entire VPC. You can do URL/domain name, IP address, and content-based outbound traffic filtering to stop possible data loss, help meet compliance requirements, and block known malware communications. AWS Network Firewall supports thousands of rules that can filter out network traffic destined for known bad IP addresses or bad domain names. You can also use Suricata IPS rules as part of the AWS Network Firewall service by importing open-source rulesets or authoring your own Intrusion Prevention System (IPS) rules using Suricata rule syntax. AWS Network Firewall also allows you to import compatible rules sourced from AWS partners.
 

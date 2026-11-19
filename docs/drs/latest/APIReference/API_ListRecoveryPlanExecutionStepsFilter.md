@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_ListRecovery
 ---
 
 # ListRecoveryPlanExecutionStepsFilter
-<a name="API_ListRecoveryPlanExecutionStepsFilter"></a>
 
 Filters for listing Recovery Plan execution steps.
 

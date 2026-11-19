@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactS
 ---
 
 # ContactSearchSummaryQueueInfo
-<a name="API_ContactSearchSummaryQueueInfo"></a>
 
 If this contact was queued, this contains information about the queue.
 

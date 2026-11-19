@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/getting
 ---
 
 # Getting started with Device Farm
-<a name="getting-started"></a>
 
 This walkthrough shows you how to use Device Farm to test a native Android or iOS app. You use the Device Farm console to create a project, upload an .apk or .ipa file, run a suite of standard tests, and then view the results.
 

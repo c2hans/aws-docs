@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/create-S3-
 ---
 
 # Create pipelines with an S3 source enabled for events (CLI)
-<a name="create-S3-source-events-cli"></a>
 
 Follow these steps to create a pipeline with an S3 source that uses an event in EventBridge for change detection. For the full steps to create a pipeline with the CLI, see [Create a pipeline, stages, and actions](pipelines-create.md).
 

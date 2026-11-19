@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AutomationExecutionInputs
-<a name="API_AutomationExecutionInputs"></a>
 
 Information about the optional inputs that can be specified for an automation execution preview.
 

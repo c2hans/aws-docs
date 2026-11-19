@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-co
 ---
 
 # Direct Connect gateways
-<a name="direct-connect-gateways"></a>
 
 You can work with Direct Connect gateways using the Amazon VPC console or the AWS CLI.
 + [Direct Connect gateways](direct-connect-gateways-intro.md)

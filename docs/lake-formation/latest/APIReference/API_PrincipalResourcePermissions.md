@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_P
 ---
 
 # PrincipalResourcePermissions
-<a name="API_PrincipalResourcePermissions"></a>
 
 The permissions granted or revoked on a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CodeReposi
 ---
 
 # CodeRepositoryAggregation
-<a name="API_CodeRepositoryAggregation"></a>
 
 The details that define an aggregation based on code repositories.
 

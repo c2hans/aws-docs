@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEven
 ---
 
 # AwsEventsEndpointEventBusesDetails
-<a name="API_AwsEventsEndpointEventBusesDetails"></a>
 
  Provides details about the Amazon EventBridge event buses that the endpoint is associated with.
 

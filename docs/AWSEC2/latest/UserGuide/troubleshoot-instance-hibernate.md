@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshoot-ins
 ---
 
 # Troubleshoot Amazon EC2 instance hibernation
-<a name="troubleshoot-instance-hibernate"></a>
 
 Use this information to help diagnose and fix issues that you might encounter when hibernating an instance.
 

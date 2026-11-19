@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/deleting-sessi
 ---
 
 # Deleting a session template
-<a name="deleting-session-template"></a>
 
 You can delete a session template when you're completely done with it.
 

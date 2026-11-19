@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/S3OutpostsNe
 ---
 
 # Networking for S3 on Outposts
-<a name="S3OutpostsNetworking"></a>
 
 You can use Amazon S3 on Outposts to store and retrieve objects on-premises for applications that require local data access, data processing, and data residency. This section describes the networking requirements for accessing S3 on Outposts.
 

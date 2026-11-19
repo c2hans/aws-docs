@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Environ
 ---
 
 # EnvironmentConfig
-<a name="API_EnvironmentConfig"></a>
 
 The environment configuration for a notebook run in Amazon SageMaker Unified Studio.
 

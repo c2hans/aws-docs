@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ReadSetFilter.html
 ---
 
 # ReadSetFilter
-<a name="API_ReadSetFilter"></a>
 
 A filter for read sets.
 

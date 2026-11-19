@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/integrate
 ---
 
 # Integrate application with Connect Customer agent workspace contact data
-<a name="integrate-with-contact-data"></a>
 
 To integrate your application with contact data from the Connect Customer agent workspace, instantiate the contact client as follows:
 

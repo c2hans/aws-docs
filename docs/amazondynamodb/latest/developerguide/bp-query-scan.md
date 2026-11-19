@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 ---
 
 # Best practices for querying and scanning data in DynamoDB
-<a name="bp-query-scan"></a>
 
 This section covers some best practices for using `Query` and `Scan` operations in Amazon DynamoDB.
 

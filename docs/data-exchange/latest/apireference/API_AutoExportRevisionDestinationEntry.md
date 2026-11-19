@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Au
 ---
 
 # AutoExportRevisionDestinationEntry
-<a name="API_AutoExportRevisionDestinationEntry"></a>
 
 A revision destination is the Amazon S3 bucket folder destination to where the export will be sent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Priv
 ---
 
 # PrivacyBudgetTemplateParametersInput
-<a name="API_PrivacyBudgetTemplateParametersInput"></a>
 
 The epsilon and noise parameters that you want to use for the privacy budget template.
 

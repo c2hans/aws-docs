@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Remov
 ---
 
 # RemoveSourceIdentifierFromSubscription
-<a name="API_RemoveSourceIdentifierFromSubscription"></a>
 
 Removes a source identifier from an existing Amazon DocumentDB event notification subscription.
 

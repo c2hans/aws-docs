@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dete
 ---
 
 # DetectTextFilters
-<a name="API_DetectTextFilters"></a>
 
 A set of optional parameters that you can use to set the criteria that the text must meet to be included in your response. `WordFilter` looks at a word’s height, width, and minimum confidence. `RegionOfInterest` lets you set a specific region of the image to look for text in.
 

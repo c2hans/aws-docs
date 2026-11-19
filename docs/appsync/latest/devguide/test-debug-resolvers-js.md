@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/test-debug-resol
 ---
 
 # Testing and debugging resolvers in AWS AppSync (JavaScript)
-<a name="test-debug-resolvers-js"></a>
 
 AWS AppSync executes resolvers on a GraphQL field against a data source. When working with pipeline resolvers, functions interact with your data sources. As described in the [JavaScript resolvers overview](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-overview-js.html), functions communicate with data sources by using request and response handlers written in JavaScript and running on the `APPSYNC_JS` runtime. This enables you to provide custom logic and conditions before and after communicating with the data source.
 

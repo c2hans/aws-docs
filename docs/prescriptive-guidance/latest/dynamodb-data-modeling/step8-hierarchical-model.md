@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 8: Review the cost estimation
-<a name="step8-hierarchical-model"></a>
 
 Review and refine the cost estimation again. Additionally, it's a good practice to validate it with business stakeholders and get approval to move to the next step.
 

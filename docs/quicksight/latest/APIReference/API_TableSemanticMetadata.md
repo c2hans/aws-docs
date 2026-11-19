@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableSemanticMetadata
-<a name="API_TableSemanticMetadata"></a>
 
 Column-level semantic metadata for a semantic table.
 

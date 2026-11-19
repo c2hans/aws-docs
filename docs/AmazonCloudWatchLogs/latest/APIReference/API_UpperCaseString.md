@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # UpperCaseString
-<a name="API_UpperCaseString"></a>
 
 This processor converts a string field to uppercase.
 

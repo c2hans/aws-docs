@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/transitioni
 ---
 
 # On-premises operational analysis
-<a name="on-premises-operational-analysis"></a>
 
 On-premises VMware environments encompass multiple components and can be broadly classified as virtualization, storage, networking, security, and operations. VMware environments require management of several key functions including:
 + Provisioning and managing virtual machines (VMs)

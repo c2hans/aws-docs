@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/clouddirectory/latest/APIReference/API_C
 Amazon Cloud Directory is no longer open to new customers, and will reach end of support on July 24, 2027. For alternatives to Cloud Directory, explore [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) and [Amazon Neptune](https://aws.amazon.com/neptune/). If you need help choosing the right alternative for your use case, or for any other questions, contact [AWS Support](https://aws.amazon.com/support/).
 
 # CreateSchema
-<a name="API_CreateSchema"></a>
 
 Creates a new schema in a development state. A schema can exist in three phases:
 +  *Development:* This is a mutable phase of the schema. All new schemas are in the development phase. Once the schema is finalized, it can be published.

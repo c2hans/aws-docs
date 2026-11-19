@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StartDataQualityR
 ---
 
 # StartDataQualityRuleRecommendationRun
-<a name="API_StartDataQualityRuleRecommendationRun"></a>
 
 Starts a recommendation run that is used to generate rules when you don't know what rules to write. AWS Glue Data Quality analyzes the data and comes up with recommendations for a potential ruleset. You can then triage the ruleset and modify the generated ruleset to your liking.
 

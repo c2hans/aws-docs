@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # PasswordPolicyType
-<a name="API_PasswordPolicyType"></a>
 
 The password policy settings for a user pool, including complexity, history, and length requirements.
 

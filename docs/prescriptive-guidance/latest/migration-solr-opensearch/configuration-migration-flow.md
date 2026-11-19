@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Migration flow
-<a name="configuration-migration-flow"></a>
 
 This section describes an iterative approach to migrating your Solr configuration to Amazon OpenSearch Service. We recommend that you approach the process systematically by organizing your migration into three focus areas:
 

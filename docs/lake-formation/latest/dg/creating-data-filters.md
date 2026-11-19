@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/creating-data-f
 ---
 
 # Creating a data filter
-<a name="creating-data-filters"></a>
 
 You can create one or more data filters for each Data Catalog table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Monitoring your savings
-<a name="monitoring-your-savings"></a>
 
 ## Monitoring Your Savings
 <a name="monitoring-your-savings.02871ebe-92ba-5968-b8e0-19a05715bc25"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateRestApi.
 ---
 
 # UpdateRestApi
-<a name="API_UpdateRestApi"></a>
 
 Changes information about the specified API.
 

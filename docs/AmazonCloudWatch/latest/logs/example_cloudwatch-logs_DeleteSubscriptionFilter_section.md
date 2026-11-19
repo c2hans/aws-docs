@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/example_clo
 ---
 
 # Use `DeleteSubscriptionFilter` with an AWS SDK
-<a name="example_cloudwatch-logs_DeleteSubscriptionFilter_section"></a>
 
 The following code examples show how to use `DeleteSubscriptionFilter`.
 

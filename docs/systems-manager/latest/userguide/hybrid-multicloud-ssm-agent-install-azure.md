@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/hybrid-
 ---
 
 # Set up Systems Manager for Microsoft Azure virtual machines
-<a name="hybrid-multicloud-ssm-agent-install-azure"></a>
 
 You can register Azure virtual machines (VMs) as Systems Manager managed nodes using the hybrid activation process with native Azure Instance Metadata Service (IMDS) integration. When you specify the `-provider Azure` parameter during registration, SSM Agent reads Azure VM identity data directly from the Azure IMDS endpoint and associates the managed node with the source Azure VM.
 

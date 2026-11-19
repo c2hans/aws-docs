@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkUpdateAccount
-<a name="API_SidewalkUpdateAccount"></a>
 
 Sidewalk update.
 

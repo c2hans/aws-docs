@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/commen
 ---
 
 # Commentator view
-<a name="commentator-view"></a>
 
 Before you begin, confirm that an event and track are set up. **Commentator view** provides read-only, real-time data for a physical race. From the navigation pane, choose **Commentator view**. Select an **Event** and a **Track**, then choose **Subscribe**.
 

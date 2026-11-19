@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/team-workflows-
 ---
 
 # Team workflows with fullstack Amplify Gen 1 apps
-<a name="team-workflows-with-amplify-cli-backend-environments"></a>
 
 A feature branch deployment consists of a **frontend**, and an optional **backend** environment. The frontend is built and deployed to a global content delivery network (CDN), while the backend is deployed by Amplify Studio or the Amplify CLI to AWS. To learn how to set up this deployment scenario, see [Building a backend for an application](deploy-backend.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/environment-variables.
 ---
 
 # Environment variables
-<a name="environment-variables"></a>
 
 Environment variables provide another way to specify some configuration options and credentials.
 

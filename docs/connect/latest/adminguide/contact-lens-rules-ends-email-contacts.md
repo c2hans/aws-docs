@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-r
 ---
 
 # Create a rule in conversational analytics that ends associated email contacts from a case
-<a name="contact-lens-rules-ends-email-contacts"></a>
 
 **To create a rule that ends associated email contacts**
 

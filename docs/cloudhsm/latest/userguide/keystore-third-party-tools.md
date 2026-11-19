@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/keystore-third
 ---
 
 # Use Client SDK 3 to integrate AWS CloudHSM with Java Keytool and Jarsigner
-<a name="keystore-third-party-tools"></a>
 
 AWS CloudHSM key store is a special-purpose JCE key store that utilizes certificates associated with keys on your hardware security module (HSM) through third-party tools such as `keytool` and `jarsigner`. AWS CloudHSM does not store certificates on the HSM, as certificates are public, non-confidential data. The AWS CloudHSM key store stores the certificates in a local file and maps the certificates to corresponding keys on your HSM.
 

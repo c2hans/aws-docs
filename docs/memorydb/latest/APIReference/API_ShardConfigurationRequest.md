@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_ShardCo
 ---
 
 # ShardConfigurationRequest
-<a name="API_ShardConfigurationRequest"></a>
 
 A request to configure the sharding properties of a cluster
 

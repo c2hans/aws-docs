@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBugBustFullAccess
-<a name="AWSBugBustFullAccess"></a>
 
 **Description**: This IAM policy grants users full access to the AWS BugBust console
 

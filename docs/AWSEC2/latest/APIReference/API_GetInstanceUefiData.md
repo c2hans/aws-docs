@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetInstan
 ---
 
 # GetInstanceUefiData
-<a name="API_GetInstanceUefiData"></a>
 
 A binary representation of the UEFI variable store. Only non-volatile variables are stored. This is a base64 encoded and zlib compressed binary value that must be properly encoded.
 

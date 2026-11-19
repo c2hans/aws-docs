@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/fifo-message-delivery.html
 ---
 
 # Amazon SNS message delivery for FIFO topics
-<a name="fifo-message-delivery"></a>
 
 Amazon SNS FIFO (first in, first out) topics support delivery to both Amazon SQS standard and FIFO queues to provide customers with flexibility and control when integrating distributed applications that require data consistency in near real-time.
 

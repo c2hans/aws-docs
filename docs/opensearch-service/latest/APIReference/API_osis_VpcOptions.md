@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # VpcOptions
-<a name="API_osis_VpcOptions"></a>
 
 Options that specify the subnets and security groups for an OpenSearch Ingestion VPC endpoint.
 

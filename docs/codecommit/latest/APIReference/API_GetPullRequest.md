@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetPu
 ---
 
 # GetPullRequest
-<a name="API_GetPullRequest"></a>
 
 Gets information about a pull request in a specified repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Installing and setting up the AWS Toolkit for Visual Studio
-<a name="setup"></a>
 
 The following topics describe how to download, install, set up, and uninstall the AWS Toolkit for Visual Studio.
 

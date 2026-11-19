@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/mountpoint-tro
 ---
 
 # Troubleshooting Mountpoint
-<a name="mountpoint-troubleshooting"></a>
 
 Mountpoint for Amazon S3 is backed by Support. If you need assistance, contact the [AWS Support Center](https://console.aws.amazon.com/support/home#/).
 

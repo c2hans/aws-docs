@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf03-
 ---
 
 # PERF03-BP04 Implement strategies to improve query performance in data store
-<a name="perf03-bp04"></a>
 
  To keep a data store efficient and scalable as demand grows, optimize both data layout and query execution.
 

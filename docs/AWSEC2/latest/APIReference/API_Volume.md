@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Volume.ht
 ---
 
 # Volume
-<a name="API_Volume"></a>
 
 Describes a volume.
 

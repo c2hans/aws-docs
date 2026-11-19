@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Hung job detection
-<a name="sagemaker-hyperpod-resiliency-slurm-hang-detection"></a>
 
 A training job can hang without exiting, for example because of an NVIDIA Collective Communications Library (NCCL) timeout, a data pipeline stall, or a process deadlock. The job keeps its GPUs but makes no progress. Hung job detection finds these jobs and writes an event to Amazon CloudWatch, and can optionally cancel the job.
 

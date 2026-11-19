@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-ai-traffic
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # How AI traffic monetization works
-<a name="waf-ai-traffic-monetization-how-it-works"></a>
 
 AI traffic monetization uses the [x402](https://docs.x402.org/introduction) open protocol for machine-to-machine payments. The following describes the request lifecycle for a monetized resource:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Associa
 ---
 
 # AssociateDataShareConsumer
-<a name="API_AssociateDataShareConsumer"></a>
 
 From a datashare consumer account, associates a datashare with the account (AssociateEntireAccount) or the specified namespace (ConsumerArn). If you make this association, the consumer can consume the datashare.
 

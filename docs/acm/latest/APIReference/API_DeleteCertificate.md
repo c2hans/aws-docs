@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DeleteCertif
 ---
 
 # DeleteCertificate
-<a name="API_DeleteCertificate"></a>
 
 Deletes a certificate and its associated private key. If this action succeeds, the certificate is not available for use by AWS services integrated with ACM. Deleting a certificate is eventually consistent. The may be a short delay before the certificate no longer appears in the list that can be displayed by calling the [ListCertificates](API_ListCertificates.md) action or be retrieved by calling the [GetCertificate](API_GetCertificate.md) action.
 

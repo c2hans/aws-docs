@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/secrets-manager_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `BatchGetSecretValue` with an AWS SDK or CLI
-<a name="secrets-manager_example_secrets-manager_BatchGetSecretValue_section"></a>
 
 The following code examples show how to use `BatchGetSecretValue`.
 

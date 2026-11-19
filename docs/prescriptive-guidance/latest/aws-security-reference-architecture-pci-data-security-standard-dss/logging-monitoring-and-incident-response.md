@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-securit
 ---
 
 # Logging, Monitoring, and Incident Response
-<a name="logging-monitoring-and-incident-response"></a>
 
 Logging and monitoring capabilities are essential for detecting, investigating, and responding to security incidents in cardholder data environments. PCI DSS Requirement 10 mandates comprehensive audit logging of all access to system components and cardholder data, enabling organizations to reconstruct events, identify anomalies, and demonstrate compliance through verifiable audit trails. Without adequate logging, it becomes impossible to determine the scope of a compromise, identify the root cause of security incidents, or prove that security controls are operating effectively. In cloud environments, native logging services and centralized log management capabilities provide opportunities to implement comprehensive audit trails with greater automation, retention, and analysis capabilities than traditional on-premises approaches.
 

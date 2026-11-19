@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/userguide/cv-adding-con
 ---
 
 # Adding AWS context
-<a name="cv-adding-context"></a>
 
 AWS Continuum uses context about your code, infrastructure, and application business to calibrate the severity of the vulnerabilities that it detects. AWS Continuum uses this context to answer questions such as the following:
 + Is this vulnerability reachable over the network?

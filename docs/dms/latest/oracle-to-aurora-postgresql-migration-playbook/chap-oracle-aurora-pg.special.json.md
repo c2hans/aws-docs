@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle JSON document support and PostgreSQL JSON support
-<a name="chap-oracle-aurora-pg.special.json"></a>
 
 With AWS DMS, you can migrate data between different database platforms, including Oracle and PostgreSQL, while preserving the JSON document structure. Oracle JSON document support and PostgreSQL JSON provide a way to store and query JSON data within the database.
 

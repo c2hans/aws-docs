@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_GetGovC
 ---
 
 # GetGovCloudAccountInformation
-<a name="API_GetGovCloudAccountInformation"></a>
 
 Retrieves information about the GovCloud account linked to the specified standard account (if it exists) including the GovCloud account ID and state. To use this API, an IAM user or role must have the `account:GetGovCloudAccountInformation` IAM permission.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_U
 ---
 
 # UpdatePipeSourceParameters
-<a name="API_UpdatePipeSourceParameters"></a>
 
 The parameters required to set up a source for your pipe.
 

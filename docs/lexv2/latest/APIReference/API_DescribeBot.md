@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeBo
 ---
 
 # DescribeBot
-<a name="API_DescribeBot"></a>
 
 Provides metadata information about a bot.
 

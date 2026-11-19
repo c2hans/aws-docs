@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataIamInstanceProfileDetails
-<a name="API_AwsEc2LaunchTemplateDataIamInstanceProfileDetails"></a>
 
  Provides details for an AWS Identity and Access Management (IAM) instance profile, which is a container for an IAM role for your instance.
 

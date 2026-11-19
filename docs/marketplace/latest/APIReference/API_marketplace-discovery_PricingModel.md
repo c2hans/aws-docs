@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PricingModel
-<a name="API_marketplace-discovery_PricingModel"></a>
 
 A pricing model that determines how buyers are charged for a listing, such as usage-based, contract, BYOL, or free.
 

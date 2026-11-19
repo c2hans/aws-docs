@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/tagging-iot.html
 ---
 
 # Tagging your managed integrations resources
-<a name="tagging-iot"></a>
 
 To help you manage and organize your resources, you can optionally assign your own metadata to each of these resources in the form of tags. This section describes tags and shows you how to create them.
 

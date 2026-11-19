@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_App
 ---
 
 # ApplicationProvider
-<a name="API_ApplicationProvider"></a>
 
 A structure that describes a provider that can be used to connect an AWS managed application or customer managed application to IAM Identity Center.
 

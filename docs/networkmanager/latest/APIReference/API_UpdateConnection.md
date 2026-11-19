@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_U
 ---
 
 # UpdateConnection
-<a name="API_UpdateConnection"></a>
 
 Updates the information for an existing connection. To remove information for any of the parameters, specify an empty string.
 

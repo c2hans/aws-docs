@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Setting up ingestion for a Security Analytics detector
-<a name="sa-ingestion-setup"></a>
 
 A Security Analytics detector reads from an index or an index alias. When you ingest logs into time-based indexes (for example, one index for each day), you must make sure of two things. Your detector must follow the current write index. Every new index must contain the fields and field aliases that the detector's rules reference. If either condition isn't met, the detector silently skips rules or stops producing findings after you create a new index.
 

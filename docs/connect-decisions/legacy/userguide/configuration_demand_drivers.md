@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/confi
 ---
 
 # Demand driver configuration
-<a name="configuration_demand_drivers"></a>
 
 To use demand drivers, you must configure them. You can configure demand drivers only when you've ingested data in the *supplementary\_time\_series* data entity.
 

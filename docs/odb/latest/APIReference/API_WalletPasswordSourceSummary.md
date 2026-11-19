@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_WalletPasswo
 ---
 
 # WalletPasswordSourceSummary
-<a name="API_WalletPasswordSourceSummary"></a>
 
 A summary of the password source configuration for an Autonomous Database wallet.
 

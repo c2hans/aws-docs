@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/drop-view.html
 ---
 
 # DROP VIEW
-<a name="drop-view"></a>
 
 Drops (deletes) an existing Athena or AWS Glue Data Catalog view. The optional `IF EXISTS` clause causes the error to be suppressed if the view does not exist.
 

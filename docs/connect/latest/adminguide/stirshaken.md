@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/stirshaken.htm
 ---
 
 # Stir/Shaken attestation in Connect Customer
-<a name="stirshaken"></a>
 
 Connect Customer supports STIR/SHAKEN attestation for outbound calls to help prevent caller ID spoofing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/allow-lists-status-che
 ---
 
 # Checking the status of an allow list
-<a name="allow-lists-status-check"></a>
 
 If you create an allow list, it's important to check its status periodically. Otherwise, errors might cause Amazon Macie to produce unexpected analysis results for your Amazon Simple Storage Service (Amazon S3) data. For example, Macie might create sensitive data findings for text that you specified in an allow list.
 

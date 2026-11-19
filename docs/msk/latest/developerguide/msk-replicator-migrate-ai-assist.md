@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator
 ---
 
 # Assess migration readiness with AI tools
-<a name="msk-replicator-migrate-ai-assist"></a>
 
 Before you begin a migration, you can use AI-assisted tooling to evaluate your source Apache Kafka cluster and plan your target Amazon MSK deployment. Two options are available:
 + **AWS Transform migration assessments** — Build a total cost of ownership (TCO) business case for moving Apache Kafka workloads to Amazon MSK. Start here if you need cost projections and a migration business case for stakeholders.

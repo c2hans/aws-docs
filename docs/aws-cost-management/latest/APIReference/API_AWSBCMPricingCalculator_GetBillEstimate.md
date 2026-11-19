@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetBillEstimate
-<a name="API_AWSBCMPricingCalculator_GetBillEstimate"></a>
 
  Retrieves details of a specific bill estimate.
 

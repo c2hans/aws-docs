@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_EventCon
 ---
 
 # EventConfig
-<a name="API_EventConfig"></a>
 
 Describes the authorization configuration for connections, message publishing, message subscriptions, and logging for an Event API.
 

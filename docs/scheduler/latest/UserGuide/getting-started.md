@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/getting-start
 ---
 
 # Getting started with EventBridge Scheduler
-<a name="getting-started"></a>
 
 This topic describes creating a new EventBridge Scheduler schedule. You use the EventBridge Scheduler console, AWS Command Line Interface (AWS CLI), or AWS SDKs to create a schedule with a templated Amazon SQS target. Then, you'll set up logging, configure retries, and set a maximum retention time for failed tasks. After you create the schedule, you'll verify that your schedule successfully invokes the target and sends a message to the target queue.
 

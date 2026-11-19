@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ad-buffet.html
 ---
 
 # Ad buffet
-<a name="ad-buffet"></a>
 
 The Interactive Advertising Bureau (IAB) Video Ad Serving Template (VAST) specification defines ad pods and ad buffet. This mechanism supports ordered ad insertion with automatic fallback on ad insertion failure. In an ad pod, sequenced ads play in order. Standalone ads serve as a buffet from which MediaTailor selects replacement ads when a sequenced ad fails.
 

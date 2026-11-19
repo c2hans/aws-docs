@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/programmatic.d
 ---
 
 # Using a Cassandra client driver to access Amazon Keyspaces programmatically
-<a name="programmatic.drivers"></a>
 
 You can use many third-party, open-source Cassandra drivers to connect to Amazon Keyspaces. Amazon Keyspaces is compatible with Cassandra drivers that support Apache Cassandra version 3.11.2. These are the drivers and latest versions that we’ve tested and recommend to use with Amazon Keyspaces:
 + `Java v3.3`

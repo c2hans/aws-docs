@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/detect-analyze-compare-f
 ---
 
 # Detect, Analyze, and Compare Faces with Amazon Rekognition
-<a name="detect-analyze-compare-faces-rekognition"></a>
 
 |  |  |
 | --- |--- |

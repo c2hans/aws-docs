@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetI
 ---
 
 # GetIdNamespaceAssociation
-<a name="API_GetIdNamespaceAssociation"></a>
 
 Retrieves an ID namespace association.
 

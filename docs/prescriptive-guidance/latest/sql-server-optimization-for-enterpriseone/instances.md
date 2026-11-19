@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # EC2 instances and layout
-<a name="instances"></a>
 
 SQL Server databases that support EnterpriseOne typically require:
 + x86/x64 CPUs

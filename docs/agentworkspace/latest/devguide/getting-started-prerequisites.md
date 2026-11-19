@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/getting-s
 ---
 
 # Prerequisites for developing third-party applications for Connect Customer agent workspace
-<a name="getting-started-prerequisites"></a>
 
 To develop and test an application for use in Connect Customer agent workspace, you must have the following:
 + An Connect Customer instance

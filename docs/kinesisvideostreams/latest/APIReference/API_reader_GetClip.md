@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # GetClip
-<a name="API_reader_GetClip"></a>
 
 Downloads an MP4 file (clip) containing the archived, on-demand media from the specified video stream over the specified time range.
 

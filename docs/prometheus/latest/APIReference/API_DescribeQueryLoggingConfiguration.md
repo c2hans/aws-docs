@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Descr
 ---
 
 # DescribeQueryLoggingConfiguration
-<a name="API_DescribeQueryLoggingConfiguration"></a>
 
 Retrieves the details of the query logging configuration for the specified workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # PutSipMediaApplicationLoggingConfiguration
-<a name="API_voice-chime_PutSipMediaApplicationLoggingConfiguration"></a>
 
 Updates the logging configuration for the specified SIP media application.
 

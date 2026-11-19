@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # HTTP passthrough targets
-<a name="gateway-target-http-passthrough"></a>
 
 You can add an HTTP passthrough target to route traffic through the gateway to any HTTP endpoint. The gateway forwards requests to the target endpoint without protocol translation, acting as a secure proxy layer. This makes passthrough targets ideal for fronting agent URLs, external APIs, or any HTTP service that you want to access through the gateway’s centralized authentication, policy enforcement, and observability.
 

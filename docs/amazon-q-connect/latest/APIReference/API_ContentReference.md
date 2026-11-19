@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ContentReference
-<a name="API_amazon-q-connect_ContentReference"></a>
 
 Reference information about the content.
 

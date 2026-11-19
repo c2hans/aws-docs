@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateCo
 ---
 
 # CreateContactFlow
-<a name="API_CreateContactFlow"></a>
 
 Creates a flow for the specified Connect Customer instance.
 

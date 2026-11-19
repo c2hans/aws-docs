@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Fai
 ---
 
 # FailedDataSegmentDeletion
-<a name="API_FailedDataSegmentDeletion"></a>
 
 Contains error information for a data segment deletion that failed.
 

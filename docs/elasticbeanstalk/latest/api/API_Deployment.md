@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Deployme
 ---
 
 # Deployment
-<a name="API_Deployment"></a>
 
 Information about an application version deployment.
 

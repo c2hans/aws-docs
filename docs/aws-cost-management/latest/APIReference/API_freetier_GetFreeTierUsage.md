@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetFreeTierUsage
-<a name="API_freetier_GetFreeTierUsage"></a>
 
 Returns a list of all Free Tier usage objects that match your filters.
 

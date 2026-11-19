@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/VALIDATION_ER
 ---
 
 # VALIDATION\_ERROR\_SUBNET\_NOT\_FROM\_ONE\_VPC
-<a name="VALIDATION_ERROR_SUBNET_NOT_FROM_ONE_VPC"></a>
 
 ## Overview
 <a name="VALIDATION_ERROR_SUBNET_NOT_FROM_ONE_VPC_overview"></a>

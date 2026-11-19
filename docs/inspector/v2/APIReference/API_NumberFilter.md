@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_NumberFilt
 ---
 
 # NumberFilter
-<a name="API_NumberFilter"></a>
 
 An object that describes the details of a number filter.
 

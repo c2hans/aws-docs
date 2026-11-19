@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Deletes a tag from an AWS Payment Cryptography key.
 

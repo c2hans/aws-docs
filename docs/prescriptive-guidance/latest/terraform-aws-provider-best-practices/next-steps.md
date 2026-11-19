@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-a
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 Consider the following next steps after reading this guide:
 + If you have an existing Terraform code base, review your configuration and identify areas for improvement based on the recommendations in this guide. For example, review best practices for implementing remote backends, separating code into modules, and using version pinning, and validate these in your configuration.

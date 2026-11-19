@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/tagging-api.htm
 ---
 
 # Tagging in Neptune using the API
-<a name="tagging-api"></a>
 
 You can add, list, or remove tags for a DB instance using the Neptune API.
 + To add a tag to a Neptune resource, use the [`AddTagsToResource`](API_AddTagsToResource.html) operation.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_NeptuneSetti
 ---
 
 # NeptuneSettings
-<a name="API_NeptuneSettings"></a>
 
 Provides information that defines an Amazon Neptune endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PeeringCo
 ---
 
 # PeeringConnectionOptionsRequest
-<a name="API_PeeringConnectionOptionsRequest"></a>
 
 The VPC peering connection options.
 

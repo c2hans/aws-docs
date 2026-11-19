@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Integr
 ---
 
 # IntegrationSummary
-<a name="API_IntegrationSummary"></a>
 
 A summary of an integration returned in list responses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceT
 ---
 
 # InstanceTypeOffering
-<a name="API_InstanceTypeOffering"></a>
 
 The instance types offered.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Compute and hardware
-<a name="compute-and-hardware"></a>
 
 |  LSPERF05: How do you choose compute for life science workloads like molecular modeling, genomics, bioinformatics, and AI drug discovery?  |
 | --- |

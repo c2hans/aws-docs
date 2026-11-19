@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ap
 ---
 
 # ApplicationSummary
-<a name="API_ApplicationSummary"></a>
 
 Contains summary information about an application.
 

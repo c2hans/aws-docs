@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # Inter-network traffic privacy
-<a name="nx-security-inter-network-traffic-privacy"></a>
 
 *Inter-network traffic privacy* refers to securing connections and traffic between AWS End User Messaging and your on-premises clients and applications, and between AWS End User Messaging and other AWS resources in the same AWS Region. The following features and practices can help you secure inter-network traffic privacy for AWS End User Messaging.
 

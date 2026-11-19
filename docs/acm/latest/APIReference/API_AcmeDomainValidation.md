@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_AcmeDomainVa
 ---
 
 # AcmeDomainValidation
-<a name="API_AcmeDomainValidation"></a>
 
 Contains detailed information about an ACME domain validation.
 

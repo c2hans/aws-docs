@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_AccountUsage.html
 ---
 
 # AccountUsage
-<a name="API_AccountUsage"></a>
 
 The number of functions and amount of storage in use.
 

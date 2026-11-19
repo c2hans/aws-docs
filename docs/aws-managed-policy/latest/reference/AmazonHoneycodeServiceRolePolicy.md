@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonHoneycodeServiceRolePolicy
-<a name="AmazonHoneycodeServiceRolePolicy"></a>
 
 **Description**: A service-linked role required for Amazon Honeycode to access your resources.
 

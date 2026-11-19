@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-lookou
 ---
 
 # Amazon Lookout for Vision events
-<a name="events-ref-lookoutvision"></a>
 
 Lookout for Vision sends service events to EventBridge via AWS CloudTrail.
 

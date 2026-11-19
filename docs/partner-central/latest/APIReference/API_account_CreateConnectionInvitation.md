@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreateConnectionInvitation
-<a name="API_account_CreateConnectionInvitation"></a>
 
 Creates a new connection invitation to establish a partnership with another organization.
 

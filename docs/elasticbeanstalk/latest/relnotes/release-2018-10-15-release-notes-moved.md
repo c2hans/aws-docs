@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Attention: AWS Elastic Beanstalk release notes moved on October 15, 2018
-<a name="release-2018-10-15-release-notes-moved"></a>
 
 Elastic Beanstalk release notes moved to a new location. Platform lists moved out of the developer guide and are in a new, separate location.
 

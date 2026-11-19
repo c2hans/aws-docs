@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/running.ht
 ---
 
 # Running Programs Written with the AWS Flow Framework for Java
-<a name="running"></a>
 
 **Topics**
 + [WorkflowWorker](#running.workflowworker)

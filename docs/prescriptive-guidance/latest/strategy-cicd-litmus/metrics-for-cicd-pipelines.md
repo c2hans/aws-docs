@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ci
 ---
 
 # Metrics for CI/CD pipelines
-<a name="metrics-for-cicd-pipelines"></a>
 
 According to the [AWS Deployment Pipeline Reference Architecture](https://pipelines.devops.aws.dev/application-pipeline/), you should, at a minimum, track the following four metrics for CI/CD pipelines:
 + **Lead time** – The average amount of time it takes for a single commit to get all the way into production. We recommend targeting a lead time between 1 hour and 1 day, as appropriate for your use case.

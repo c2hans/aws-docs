@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_St
 ---
 
 # StorageMinimumTimeToLive
-<a name="API_StorageMinimumTimeToLive"></a>
 
 Information about the minimum amount of time that data will be kept.
 

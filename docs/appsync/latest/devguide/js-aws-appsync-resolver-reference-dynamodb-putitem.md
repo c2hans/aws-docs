@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/js-aws-appsync-r
 ---
 
 # PutItem
-<a name="js-aws-appsync-resolver-reference-dynamodb-putitem"></a>
 
 The `PutItem` request mapping document lets you tell the AWS AppSync DynamoDB function to make a `PutItem` request to DynamoDB, and enables you to specify the following:
 + The key of the item in DynamoDB

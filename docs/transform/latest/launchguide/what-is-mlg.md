@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/launchguide/what-is-mlg
 ---
 
 # Migration Launch Guide
-<a name="what-is-mlg"></a>
 
 This guide offers guidance on the resources that customers commonly use when [migrating to or modernizing on ](https://aws.amazon.com/cloud-migration/?nc=sn&loc=0) AWS. The guide is not intended to be a prescriptive implementation guide for cloud migration or modernization, after all ‘*There is no compression algorithm for experience’* (Andy Jassy, Amazon CEO). The guide has been prepared by an experienced team of AWS Customer Solutions Managers that actively support customers in their AWS migration journey.
 

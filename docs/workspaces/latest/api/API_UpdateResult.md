@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_UpdateResult.h
 ---
 
 # UpdateResult
-<a name="API_UpdateResult"></a>
 
 Describes whether a WorkSpace image needs to be updated with the latest drivers and other components required by Amazon WorkSpaces.
 

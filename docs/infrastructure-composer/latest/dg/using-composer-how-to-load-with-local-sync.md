@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Load an existing Infrastructure Composer project with local sync activated
-<a name="using-composer-how-to-load-with-local-sync"></a>
 
 To load an existing project with local sync activated, complete the following steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AssociateC
 ---
 
 # AssociateConfigurationRequest
-<a name="API_AssociateConfigurationRequest"></a>
 
 Contains details about a request to associate a code repository with a scan configuration.
 

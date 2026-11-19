@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourcesTrendsCompositeFilter
-<a name="API_ResourcesTrendsCompositeFilter"></a>
 
 A filter structure that contains a logical combination of string filters and nested composite filters for resources trend data.
 
@@ -12,7 +11,7 @@ A filter structure that contains a logical combination of string filters and nes
 
  ** NestedCompositeFilters **   <a name="securityhub-Type-ResourcesTrendsCompositeFilter-NestedCompositeFilters"></a>
 A list of nested composite filters that you can use to create complex filter conditions for resources trend data.
-Type: Array of [ResourcesTrendsCompositeFilter](#API_ResourcesTrendsCompositeFilter) objects
+Type: Array of [ResourcesTrendsCompositeFilter](API_ResourcesTrendsCompositeFilter.md) objects
 Required: No
 
  ** Operator **   <a name="securityhub-Type-ResourcesTrendsCompositeFilter-Operator"></a>

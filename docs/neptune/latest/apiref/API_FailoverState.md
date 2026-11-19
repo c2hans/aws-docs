@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_FailoverState.
 ---
 
 # FailoverState
-<a name="API_FailoverState"></a>
 
 Contains the state of scheduled or in-process operations on a global cluster (Neptune global database). This data type is empty unless a switchover or failover operation is scheduled or is in progress on the Neptune global database.
 

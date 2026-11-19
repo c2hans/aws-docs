@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ConnectorS
 ---
 
 # ConnectorScanConfigurationItem
-<a name="API_ConnectorScanConfigurationItem"></a>
 
 Represents a scan configuration and the connectors it applies to. Returned in the results of a `ListConnectorScanConfigurations` request.
 

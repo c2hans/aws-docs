@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/egress-only-interne
 ---
 
 # Add egress-only internet access to a subnet
-<a name="egress-only-internet-gateway-working-with"></a>
 
 The following tasks describe how to create an egress-only (outbound) internet gateway for your private subnet and to configure routing for the subnet.
 

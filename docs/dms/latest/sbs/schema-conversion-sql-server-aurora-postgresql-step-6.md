@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/schema-conversion-sql-ser
 ---
 
 # Step 6: Configure Data Providers
-<a name="schema-conversion-sql-server-aurora-postgresql-step-6"></a>
 
 In this step, you create data providers that describe your source and target databases. A data provider stores a data store type and the location information about your database. Data providers don’t include database credentials. You store database credentials in AWS Secrets Manager. Make sure that you include data providers and database secrets in your DMS Schema Conversion migration project.
 

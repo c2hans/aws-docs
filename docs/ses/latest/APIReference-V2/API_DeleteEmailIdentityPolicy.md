@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteEma
 ---
 
 # DeleteEmailIdentityPolicy
-<a name="API_DeleteEmailIdentityPolicy"></a>
 
 Deletes the specified sending authorization policy for the given identity (an email address or a domain). This API returns successfully even if a policy with the specified name does not exist.
 

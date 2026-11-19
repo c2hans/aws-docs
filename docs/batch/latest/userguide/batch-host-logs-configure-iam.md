@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-host-logs-c
 ---
 
 # Step 2: Configure IAM permissions on your instance role
-<a name="batch-host-logs-configure-iam"></a>
 
 Fluent Bit runs on the Amazon EC2 instance and uses the instance role to authenticate with Amazon S3. By default, this role does not include Amazon S3 permissions, so you must create and attach a policy that grants Fluent Bit permission to write logs to the `ecs-logs/` prefix, read configuration from the `fluent-bit/` prefix, and list the bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-reg
 ---
 
 # Registering new domains
-<a name="domain-register-update"></a>
 
 This section covers the following topics related to registering new domains with Amazon Route 53:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DnsPrevalida
 ---
 
 # DnsPrevalidationDetails
-<a name="API_DnsPrevalidationDetails"></a>
 
 DNS prevalidation details including the resource record for validation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/security-profi
 ---
 
 # List of security profile permissions in Connect Customer
-<a name="security-profile-list"></a>
 
 This topic is for administrators and contact center managers who assign and manage security profile permissions in Connect Customer.
 

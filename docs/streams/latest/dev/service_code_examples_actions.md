@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service_code_examples
 ---
 
 # Actions for Kinesis using AWS SDKs
-<a name="service_code_examples_actions"></a>
 
 The following code examples demonstrate how to perform individual Kinesis actions with AWS SDKs. Each example includes a link to GitHub, where you can find instructions for setting up and running the code.
 

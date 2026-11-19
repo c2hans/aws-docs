@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/api/API_GetExternal
 Amazon Fraud Detector is no longer be open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker AI, AutoGluon, and AWS WAF.
 
 # GetExternalModels
-<a name="API_GetExternalModels"></a>
 
 Gets the details for one or more Amazon SageMaker models that have been imported into the service. This is a paginated API. If you provide a null `maxResults`, this actions retrieves a maximum of 10 records per page. If you provide a `maxResults`, the value must be between 5 and 10. To get the next page results, provide the pagination token from the `GetExternalModelsResult` as part of your request. A null pagination token fetches the records from the beginning.
 

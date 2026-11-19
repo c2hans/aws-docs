@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Snapsho
 ---
 
 # Snapshot
-<a name="API_Snapshot"></a>
 
 Describes a snapshot.
 

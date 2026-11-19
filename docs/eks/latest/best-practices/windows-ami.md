@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/windows-ami.ht
 ---
 
 # Amazon EKS optimized Windows AMI management
-<a name="windows-ami"></a>
 
 Windows Amazon EKS optimized AMIs are built on top of Windows Server 2019 and Windows Server 2022. They are configured to serve as the base image for Amazon EKS nodes. By default, the AMIs include the following components:
 +  [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/)

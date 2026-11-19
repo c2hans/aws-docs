@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/example_transcribe_
 ---
 
 # Transcribe audio and get job data with Amazon Transcribe using an AWS SDK
-<a name="example_transcribe_Scenario_GettingStartedTranscriptionJobs_section"></a>
 
 The following code examples show how to:
 + Start a transcription job with Amazon Transcribe.

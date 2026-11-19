@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_SigningConfigurati
 ---
 
 # SigningConfigurationOverrides
-<a name="API_SigningConfigurationOverrides"></a>
 
 A signing configuration that overrides the default encryption or hash algorithm of a signing job.
 

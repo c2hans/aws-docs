@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateSchema.html
 ---
 
 # UpdateSchema
-<a name="API_UpdateSchema"></a>
 
 Updates the description, compatibility setting, or version checkpoint for a schema set.
 

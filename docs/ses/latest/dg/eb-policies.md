@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-policies.html
 ---
 
 # Permission policies for Mail Manager
-<a name="eb-policies"></a>
 
 The policies in this chapter are provided as a single point of reference for the policies necessary to utilize all the different features of Mail Manager.
 

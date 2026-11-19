@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ChannelMessageStatusStructure
-<a name="API_messaging-chime_ChannelMessageStatusStructure"></a>
 
 Stores information about a message status.
 

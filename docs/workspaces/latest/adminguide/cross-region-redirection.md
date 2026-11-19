@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/cross-regio
 ---
 
 # Cross-Region redirection for WorkSpaces Personal
-<a name="cross-region-redirection"></a>
 
 With the cross-Region redirection feature in Amazon WorkSpaces, you can use a fully qualified domain name (FQDN) as the registration code for your WorkSpaces. Cross-Region redirection works with your Domain Name System (DNS) routing policies to redirect your WorkSpaces users to alternative WorkSpaces when their primary WorkSpaces aren't available. For example, by using DNS failover routing policies, you can connect your users to WorkSpaces in your specified failover AWS Region when they can't access their WorkSpaces in the primary Region.
 

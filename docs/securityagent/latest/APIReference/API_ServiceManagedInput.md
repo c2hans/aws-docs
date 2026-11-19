@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Se
 ---
 
 # ServiceManagedInput
-<a name="API_ServiceManagedInput"></a>
 
 The configuration for a service-managed private connection.
 

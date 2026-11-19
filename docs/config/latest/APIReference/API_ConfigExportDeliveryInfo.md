@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ConfigExp
 ---
 
 # ConfigExportDeliveryInfo
-<a name="API_ConfigExportDeliveryInfo"></a>
 
 Provides status of the delivery of the snapshot or the configuration history to the specified Amazon S3 bucket. Also provides the status of notifications about the Amazon S3 delivery to the specified Amazon SNS topic.
 

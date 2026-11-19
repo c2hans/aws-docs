@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/pricing-ove
 ---
 
 # Pricing overview
-<a name="pricing-overview"></a>
 
 In AWS Marketplace, you can offer products for free, or you can charge for them. The charge becomes part of the buyer's AWS bill, and after the buyer pays, AWS pays the seller.
 

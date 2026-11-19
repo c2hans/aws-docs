@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSSEC04-BP02 Detect sovereignty-specific threats through telemetry and analysis
-<a name="dssec04-bp02"></a>
 
  Effective threat detection capability needs broad telemetry from multiple sources, the ability to correlate and contextualize data points, and centralized visibility of security events.
 

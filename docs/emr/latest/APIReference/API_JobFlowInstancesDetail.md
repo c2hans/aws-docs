@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_JobFlowInsta
 ---
 
 # JobFlowInstancesDetail
-<a name="API_JobFlowInstancesDetail"></a>
 
 Specify the type of Amazon EC2 instances that the cluster (job flow) runs on.
 

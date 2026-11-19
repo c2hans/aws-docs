@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/parallel-test
 ---
 
 # Use the `codebuild-glob-search` CLI command
-<a name="parallel-test-glob-search"></a>
 
 AWS CodeBuild provides a built-in CLI tool called `codebuild-glob-search` that allows you to search for files in your working directory based on one or more glob patterns. This tool can be particularly useful when you want to run tests on specific files or directories within your project.
 

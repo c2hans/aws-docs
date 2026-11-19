@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteInte
 ---
 
 # DeleteIntent
-<a name="API_DeleteIntent"></a>
 
 Removes the specified intent.
 

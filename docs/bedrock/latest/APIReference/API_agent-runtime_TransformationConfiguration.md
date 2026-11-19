@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # TransformationConfiguration
-<a name="API_agent-runtime_TransformationConfiguration"></a>
 
 Contains configurations for transforming the natural language query into SQL.
 

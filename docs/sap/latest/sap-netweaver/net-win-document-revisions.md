@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-documen
 ---
 
 # Document Revisions
-<a name="net-win-document-revisions"></a>
 
 | Date | Change |
 | --- | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # FieldAttributes
-<a name="API_connect-cases_FieldAttributes"></a>
 
 Union of field attributes.
 

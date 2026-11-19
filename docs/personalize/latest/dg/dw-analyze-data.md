@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/dw-analyze-data.ht
 ---
 
 # Generating visualizations and data insights
-<a name="dw-analyze-data"></a>
 
 After you import your data into Data Wrangler, you can use it to generate visualizations and data insights.
 +  **[Visualizations](#dw-visualizing-data)**: Data Wrangler can generate different types of graphs, such as histograms and scatter plots. For example, you can generate a histogram to identify outliers in your data.

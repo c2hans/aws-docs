@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartNetwork
 ---
 
 # StartNetworkMigrationMappingUpdate
-<a name="API_StartNetworkMigrationMappingUpdate"></a>
 
 Starts a job to apply customer modifications to network migration mappings, such as changing properties.
 

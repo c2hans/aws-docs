@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-insta
 ---
 
 # Monitor the status of your Amazon EC2 instances
-<a name="monitoring-instances-status-check"></a>
 
 You can monitor the status of your instances by viewing status checks and scheduled events for your instances.
 

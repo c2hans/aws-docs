@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/security-best-practices
 ---
 
 # Security best practices for AWS Health
-<a name="security-best-practices"></a>
 
 See the following best practices for working with AWS Health.
 

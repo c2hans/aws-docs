@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/interface-
 ---
 
 # Create an interface
-<a name="interface-create"></a>
 
 You can create interfaces using either the AWS IoT SiteWise console or the AWS CLI.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/reserved-field-names.
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # Reserved Field Names
-<a name="reserved-field-names"></a>
 
 Amazon Forecast reserves the following names. You can't use these names for your schema fields or dataset headers.
 

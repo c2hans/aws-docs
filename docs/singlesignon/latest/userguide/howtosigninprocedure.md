@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/howtosigni
 ---
 
 # Confirm users can sign in to the AWS access portal
-<a name="howtosigninprocedure"></a>
 
 The following steps are for IAM Identity Center administrator to confirm that the IAM Identity Center user can sign in to the AWS access portal and access the AWS account.
 

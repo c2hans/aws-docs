@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 ---
 
 # Reservations: describe reservation
-<a name="reservations-reservationid"></a>
 
 ## URI
 <a name="reservations-reservationid-url"></a>

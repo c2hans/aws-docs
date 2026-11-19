@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # GetBillingTransferPreference
-<a name="API_GetBillingTransferPreference"></a>
 
 Retrieves the auto billing group creation preference for a billing transfer.
 

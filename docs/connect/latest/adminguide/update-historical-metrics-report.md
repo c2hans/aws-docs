@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/update-histori
 ---
 
 # Update a historical metrics report
-<a name="update-historical-metrics-report"></a>
 
 After you save a report, you can update it at any time.
 

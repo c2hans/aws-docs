@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/migration-provi
 ---
 
 # Provisioning infrastructure when migrating from Neo4j to Neptune
-<a name="migration-provisioning-infrastructure"></a>
 
 Amazon Neptune clusters are built to scale in three dimensions: storage, write capacity, and read capacity. The sections below discuss specific options to consider when migrating.
 

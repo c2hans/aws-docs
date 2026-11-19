@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterKubernetesTaint
-<a name="API_ClusterKubernetesTaint"></a>
 
 A Kubernetes taint that can be applied to cluster nodes.
 

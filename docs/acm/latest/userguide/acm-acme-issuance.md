@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/acm-acme-issuance.h
 ---
 
 # Issuing certificates through ACME
-<a name="acm-acme-issuance"></a>
 
 After your PKI administrator sets up an ACME endpoint with domain validations and external account bindings, application owners can use ACME clients to issue certificates. This section describes the issuance flow, provides a brief example using Certbot, and explains how ACME-issued certificates appear in ACM.
 

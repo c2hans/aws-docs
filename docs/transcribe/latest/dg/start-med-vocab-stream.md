@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/start-med-vocab-str
 ---
 
 # Transcribing a real-time stream using a medical custom vocabulary
-<a name="start-med-vocab-stream"></a>
 
 To improve transcription accuracy in a real-time stream, you can use a custom vocabulary using either HTTP/2 or WebSocket streams. To start an HTTP/2 request, use the [`StartMedicalStreamTranscription`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartMedicalStreamTranscription.html) API. You can use a custom vocabulary in real-time using either the AWS Management Console, the [`StartMedicalStreamTranscription`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_StartMedicalStreamTranscription.html) API, or by using the WebSocket protocol.
 

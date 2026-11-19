@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIRefer
 ---
 
 # DeleteAlertManagerSilence
-<a name="AMP-APIReference-DeleteSilence"></a>
 
 The `DeleteSilence` deletes one alert silence.
 

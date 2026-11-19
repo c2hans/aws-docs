@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-ma
 ---
 
 # Enhance kernels with magic commands in EMR Studio
-<a name="emr-studio-magics"></a>
 
 ## Overview
 <a name="overview-magics"></a>

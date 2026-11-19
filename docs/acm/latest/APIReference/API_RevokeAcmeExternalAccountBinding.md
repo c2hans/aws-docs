@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_RevokeAcmeEx
 ---
 
 # RevokeAcmeExternalAccountBinding
-<a name="API_RevokeAcmeExternalAccountBinding"></a>
 
 Revokes an external account binding, preventing new ACME accounts from being registered using this binding. Existing ACME accounts that were previously registered using the binding are not affected and must be revoked separately.
 

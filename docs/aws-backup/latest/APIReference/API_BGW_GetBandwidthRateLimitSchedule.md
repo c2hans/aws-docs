@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_G
 ---
 
 # GetBandwidthRateLimitSchedule
-<a name="API_BGW_GetBandwidthRateLimitSchedule"></a>
 
 Retrieves the bandwidth rate limit schedule for a specified gateway. By default, gateways do not have bandwidth rate limit schedules, which means no bandwidth rate limiting is in effect. Use this to get a gateway's bandwidth rate limit schedule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Sh
 ---
 
 # SharePointDataSourceConfiguration
-<a name="API_agent_SharePointDataSourceConfiguration"></a>
 
 The configuration information to connect to SharePoint as your data source for self-managed knowledge bases.
 

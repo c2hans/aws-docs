@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # VotingPolicy
-<a name="API_VotingPolicy"></a>
 
  The voting rules for the network to decide if a proposal is accepted
 

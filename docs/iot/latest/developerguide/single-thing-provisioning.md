@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/single-thing-p
 ---
 
 # Single thing provisioning
-<a name="single-thing-provisioning"></a>
 
 To provision a thing, use the [RegisterThing](https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterThing.html) API or the `register-thing` CLI command. The `register-thing` CLI command takes the following arguments:
 

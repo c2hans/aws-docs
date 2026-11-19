@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowExecutionInputEvent
-<a name="API_agent-runtime_FlowExecutionInputEvent"></a>
 
 Contains information about the inputs provided to the flow at the start of a flow execution.
 

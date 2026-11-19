@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ApplyPending
 ---
 
 # ApplyPendingMaintenanceAction
-<a name="API_ApplyPendingMaintenanceAction"></a>
 
 Applies a pending maintenance action to a resource (for example, to a replication instance).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 ---
 
 # Data retrieval APIs for AWS Management Console Mobile App
-<a name="awsconsolemobileapp"></a>
 
 AWS Management Console Mobile App provides the following APIs for data retrieval.
 

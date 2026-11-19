@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/example_clo
 ---
 
 # Use `DescribeLogGroups` with an AWS SDK or CLI
-<a name="example_cloudwatch-logs_DescribeLogGroups_section"></a>
 
 The following code examples show how to use `DescribeLogGroups`.
 

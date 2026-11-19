@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferSetEntityIdFilter
-<a name="API_OfferSetEntityIdFilter"></a>
 
 Allows filtering on the entity id of an offer set.
 

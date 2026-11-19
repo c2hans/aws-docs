@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Support for Linked Servers with Oracle OLEDB in Amazon RDS for SQL Server
-<a name="Appendix.SQLServer.Options.LinkedServers_Oracle_OLEDB"></a>
 
 Linked servers with the Oracle Provider for OLEDB on RDS for SQL Server lets you access external data sources on an Oracle database. You can read data from remote Oracle data sources and run commands against remote Oracle database servers outside of your RDS for SQL Server DB instance. Using linked servers with Oracle OLEDB, you can:
 + Directly access data sources other than SQL Server

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnforceHTTPSOnOpenSearchDomain`
-<a name="automation-aws-enforce-https-opensearch"></a>
 
  **Description**
 

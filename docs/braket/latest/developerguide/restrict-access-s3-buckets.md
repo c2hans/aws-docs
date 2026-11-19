@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/restrict-ac
 ---
 
 # Restrict user access to certain S3 buckets
-<a name="restrict-access-s3-buckets"></a>
 
 To restrict access for certain users to specific Amazon S3 buckets, you can add a deny policy to a specific role, user, or group.
 

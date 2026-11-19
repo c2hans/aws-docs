@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetDeployment.
 ---
 
 # GetDeployment
-<a name="API_GetDeployment"></a>
 
 Gets information about a Deployment resource.
 

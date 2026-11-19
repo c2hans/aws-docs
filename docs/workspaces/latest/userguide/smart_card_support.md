@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/smart_card_s
 ---
 
 # Smart card authentication for WorkSpaces client
-<a name="smart_card_support"></a>
 
 Smart cards are supported using the DCV for Windows and Linux WorkSpaces, on Windows, macOS, and Ubuntu 22.04 or later clients. WorkSpaces using the PCoIP protocol do not support smart cards.
 

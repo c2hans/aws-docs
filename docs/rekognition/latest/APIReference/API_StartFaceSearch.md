@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Star
 ---
 
 # StartFaceSearch
-<a name="API_StartFaceSearch"></a>
 
 Starts the asynchronous search for faces in a collection that match the faces of persons detected in a stored video.
 

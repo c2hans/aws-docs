@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/install-server/authorize
 ---
 
 # Verify the NSK LEDs for your Outposts server
-<a name="authorize-5"></a>
 
 After the provisioning process completes, check the NSK LEDs.
 

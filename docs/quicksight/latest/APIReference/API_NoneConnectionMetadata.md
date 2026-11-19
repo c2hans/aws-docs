@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_NoneC
 ---
 
 # NoneConnectionMetadata
-<a name="API_NoneConnectionMetadata"></a>
 
 Authentication metadata for connections that do not require authentication credentials.
 

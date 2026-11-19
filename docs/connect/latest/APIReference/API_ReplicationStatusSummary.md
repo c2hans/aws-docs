@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Replicat
 ---
 
 # ReplicationStatusSummary
-<a name="API_ReplicationStatusSummary"></a>
 
 Status information about the replication process, where you use the [ReplicateInstance](https://docs.aws.amazon.com/connect/latest/APIReference/API_ReplicateInstance.html) API to create a replica of your Connect Customer instance in another AWS Region. For more information, see [Set up Connect Customer Global Resiliency](https://docs.aws.amazon.com/connect/latest/adminguide/setup-connect-global-resiliency.html) in the *Connect Customer Administrator Guide*.
 

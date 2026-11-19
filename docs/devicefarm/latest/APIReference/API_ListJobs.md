@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListJ
 ---
 
 # ListJobs
-<a name="API_ListJobs"></a>
 
 Gets information about jobs for a given test run.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 ---
 
 # GetContainerRecipePolicy
-<a name="API_GetContainerRecipePolicy"></a>
 
 Retrieves the policy for a container recipe.
 

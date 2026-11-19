@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # DocumentCharLocation
-<a name="API_runtime_DocumentCharLocation"></a>
 
 Specifies a character-level location within a document, providing precise positioning information for cited content using start and end character indices.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Suggestio
 ---
 
 # SuggestionHighlight
-<a name="API_SuggestionHighlight"></a>
 
 The text highlights for a single query suggestion.
 

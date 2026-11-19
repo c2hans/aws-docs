@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Co
 ---
 
 # Connection
-<a name="API_Connection"></a>
 
 Information about an Direct Connect connection.
 

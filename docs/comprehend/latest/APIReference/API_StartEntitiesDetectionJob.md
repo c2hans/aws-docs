@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Start
 ---
 
 # StartEntitiesDetectionJob
-<a name="API_StartEntitiesDetectionJob"></a>
 
 Starts an asynchronous entity detection job for a collection of documents. Use the [DescribeEntitiesDetectionJob](API_DescribeEntitiesDetectionJob.md) operation to track the status of a job.
 

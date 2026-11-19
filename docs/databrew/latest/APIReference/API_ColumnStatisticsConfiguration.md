@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_ColumnS
 ---
 
 # ColumnStatisticsConfiguration
-<a name="API_ColumnStatisticsConfiguration"></a>
 
 Configuration for column evaluations for a profile job. ColumnStatisticsConfiguration can be used to select evaluations and override parameters of evaluations for particular columns.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # AWS services used in this Guidance
-<a name="aws-services-used-in-this-solution"></a>
 
 | Name | Description |
 | --- | --- |

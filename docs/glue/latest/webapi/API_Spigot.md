@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Spigot.html
 ---
 
 # Spigot
-<a name="API_Spigot"></a>
 
 Specifies a transform that writes samples of the data to an Amazon S3 bucket.
 

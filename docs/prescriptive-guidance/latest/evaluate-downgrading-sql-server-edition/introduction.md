@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 ---
 
 # Evaluate downgrading Microsoft SQL Server from Enterprise edition to Standard edition on AWS
-<a name="introduction"></a>
 
 *Marcelo Fernandes and Paurav Chudasama, Amazon Web Services*
 

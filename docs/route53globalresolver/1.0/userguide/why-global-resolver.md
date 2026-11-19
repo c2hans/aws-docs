@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/why-
 ---
 
 # Why Amazon Route 53 Global Resolver?
-<a name="why-global-resolver"></a>
 
 Amazon Route 53 Global Resolver provides uniform DNS resolution and security for remote and hybrid clients across multiple customer locations. Regardless of the location of your workloads, applications, or users, Amazon Route 53 Global Resolver ensures consistent DNS protection without requiring complex on-premises infrastructure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf01-
 ---
 
 # PERF01-BP02 Evaluate the trade-offs between performance and other non-functional requirements
-<a name="perf01-bp02"></a>
 
  Every performance improvement has a cost in another dimension: consistency, durability, cost, operational simplicity, or security. Weigh each trade-off against business priorities and record the reasoning.
 

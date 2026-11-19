@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/encryption-
 ---
 
 # Encrypting EventBridge archives with AWS KMS keys
-<a name="encryption-archives"></a>
 
 You can specify that EventBridge use a customer managed key to encrypt events stored in an archive, rather than use an AWS owned key as is the default. You can specify a customer managed key when you create or update an archive. For more information about key types, see [KMS key options](eb-encryption-at-rest-key-options.md).
 

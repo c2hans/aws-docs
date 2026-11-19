@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/deploy-options-
 ---
 
 # Deployment options
-<a name="deploy-options-orc-sap-nw-lx"></a>
 
 To install Oracle for SAP NetWeaver, you have four deployment options:
 

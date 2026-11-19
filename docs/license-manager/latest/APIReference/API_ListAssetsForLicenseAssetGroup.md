@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ListAssetsForLicenseAssetGroup
-<a name="API_ListAssetsForLicenseAssetGroup"></a>
 
 Lists assets for a license asset group.
 

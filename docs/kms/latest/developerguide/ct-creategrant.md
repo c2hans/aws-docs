@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-creategrant
 ---
 
 # CreateGrant
-<a name="ct-creategrant"></a>
 
 The following example shows an AWS CloudTrail log entry for the [CreateGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) operation. For information about creating grants in AWS KMS, see [Grants in AWS KMS](grants.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-kb-view.
 ---
 
 # View information about an agent-knowledge base association
-<a name="agents-kb-view"></a>
 
 To learn how to view information about a knowledge base, choose the tab for your preferred method, and then follow the steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Create an AgentCore gateway using the AWS Management Console
-<a name="gateway-create-console"></a>
 
  **To create a gateway using the console**
 

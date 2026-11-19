@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Dele
 ---
 
 # DeleteConfiguredTableAssociation
-<a name="API_DeleteConfiguredTableAssociation"></a>
 
 Deletes a configured table association.
 

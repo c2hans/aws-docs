@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_D
 ---
 
 # DbInstanceForClusterSummary
-<a name="API_DbInstanceForClusterSummary"></a>
 
 Contains a summary of a DB instance belonging to a DB cluster.
 

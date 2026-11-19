@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # TargetDescription
-<a name="API_TargetDescription"></a>
 
 Information about a target.
 

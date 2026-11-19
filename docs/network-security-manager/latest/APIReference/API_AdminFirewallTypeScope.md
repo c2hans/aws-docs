@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AdminFirewallTypeScope
-<a name="API_AdminFirewallTypeScope"></a>
 
 Defines the firewall types that an administrator can create and manage.
 

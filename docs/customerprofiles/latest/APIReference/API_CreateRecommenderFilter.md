@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # CreateRecommenderFilter
-<a name="API_connect-customer-profiles_CreateRecommenderFilter"></a>
 
 Creates a recommender filter. A recommender filter specifies which items to include or exclude from recommendations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/g-core
 ---
 
 # 5G core deployment on AWS
-<a name="g-core-deployment-on-aws"></a>
 
  This scenario explores deploying 5G core networks in the AWS Cloud. The 5G core is the center of 5G networks, providing key functionalities such as session management, user authentication, and policy control. As telecommunications providers transition to 5G, migrating the 5G core to the cloud can offer significant benefits. This scenario covers topics such as virtualizing and containerizing 5G network functions and using AWS infrastructure services like AWS Outposts and AWS Local Zones to address performance and data residency requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-pipeline.html
 ---
 
 # Understanding Amazon Chime SDK media pipeline creation
-<a name="create-pipeline"></a>
 
 You follow a multi-step process to create an Amazon Chime SDK media pipeline, and you can create several types of pipelines. The following list outlines the creation process and provide links to more information about creating the various types of pipelines.
 + Create an Amazon S3 bucket. You must create the bucket in the same AWS Region as the meeting. For more information, refer to [Creating an Amazon S3 bucket for Amazon Chime SDK media capture pipelines](create-s3-bucket.md).

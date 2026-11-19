@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # SourceContentDataDetails
-<a name="API_amazon-q-connect_SourceContentDataDetails"></a>
 
 Details about the source content data.
 

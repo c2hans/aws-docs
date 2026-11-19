@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Tools
-<a name="tune-and-measure-tools"></a>
 
 After you establish specialized teams for different security domains, align the teams with each other. [AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) can help you achieve this. Security Hub CSPM provides a centralized, unified dashboard to monitor progress against frameworks. It also integrates with AWS security services any many third-party tools.
 

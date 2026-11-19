@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Deregis
 ---
 
 # DeregisterNamespace
-<a name="API_DeregisterNamespace"></a>
 
 Deregisters a cluster or serverless namespace from the AWS Glue Data Catalog.
 

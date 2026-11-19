@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ManagedIns
 ---
 
 # ManagedInstancesProvider
-<a name="API_ManagedInstancesProvider"></a>
 
 The configuration for an Amazon ECS Managed Instances capacity provider. This object is required when creating a compute environment with `computeResources.type` set to `ECS_MANAGED_INSTANCES`.
 

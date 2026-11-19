@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # CreateResolverEndpoint
-<a name="API_route53resolver_CreateResolverEndpoint"></a>
 
 Creates a Resolver endpoint. There are two types of Resolver endpoints, inbound and outbound:
 + An *inbound Resolver endpoint* forwards DNS queries to the DNS service for a VPC from your network.

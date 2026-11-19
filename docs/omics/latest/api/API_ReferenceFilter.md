@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ReferenceFilter.htm
 ---
 
 # ReferenceFilter
-<a name="API_ReferenceFilter"></a>
 
 A filter for references.
 

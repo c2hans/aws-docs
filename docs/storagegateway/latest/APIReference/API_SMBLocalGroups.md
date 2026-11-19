@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_S
 ---
 
 # SMBLocalGroups
-<a name="API_SMBLocalGroups"></a>
 
 A list of Active Directory users and groups that have special permissions for SMB file shares on the gateway.
 

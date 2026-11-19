@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # LifeCycle
-<a name="API_LifeCycle"></a>
 
 An object that contains the `Opportunity` lifecycle's details.
 

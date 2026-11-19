@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Built-in connectors as targets
-<a name="gateway-target-connectors"></a>
 
 Amazon Bedrock AgentCore lets you add the following built-in connectors as targets in your gateway:
 + Amazon Bedrock Managed Knowledge Bases

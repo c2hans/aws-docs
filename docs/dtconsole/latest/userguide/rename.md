@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/rename.html
 ---
 
 # Connections rename - Summary of changes
-<a name="rename"></a>
 
 The connections feature in the Developer Tools console allows you to connect your AWS resources to third-party source repositories. On March 29, 2024, AWS CodeStar Connections was renamed to AWS CodeConnections. The following sections describe the different parts of the feature that changed with the rename, and what actions you need to take to ensure that your resources continue to function properly.
 

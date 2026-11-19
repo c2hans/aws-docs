@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/kubernetes_sca
 ---
 
 # Kubernetes Scaling Theory
-<a name="kubernetes_scaling_theory"></a>
 
 ## Nodes vs. Churn Rate
 <a name="_nodes_vs_churn_rate"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfig
 ---
 
 # PutConfigurationSetArchivingOptions
-<a name="API_PutConfigurationSetArchivingOptions"></a>
 
 Associate the configuration set with a MailManager archive. When you send email using the `SendEmail` or `SendBulkEmail` operations the message as it will be given to the receiving SMTP server will be archived, along with the recipient information.
 

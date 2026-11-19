@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # DescribeExecution
-<a name="API_devicemanagement_DescribeExecution"></a>
 
 Checks the status of a remote task running on one or more target devices.
 

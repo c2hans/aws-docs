@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 ---
 
 # More patterns
-<a name="devops-more-patterns-pattern-list"></a>
 
 **Topics**
 + [Access container applications privately on Amazon EKS using AWS PrivateLink and a Network Load Balancer](access-container-applications-privately-on-amazon-eks-using-aws-privatelink-and-a-network-load-balancer.md)

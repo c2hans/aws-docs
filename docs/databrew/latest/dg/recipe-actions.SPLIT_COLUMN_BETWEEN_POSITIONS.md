@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.SPLIT_
 ---
 
 # SPLIT\_COLUMN\_BETWEEN\_POSITIONS
-<a name="recipe-actions.SPLIT_COLUMN_BETWEEN_POSITIONS"></a>
 
 Splits a column into three new columns, according to offsets that you specify.
 

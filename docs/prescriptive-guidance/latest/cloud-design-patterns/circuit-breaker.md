@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-desig
 ---
 
 # Circuit breaker pattern
-<a name="circuit-breaker"></a>
 
 ## Intent
 <a name="circuit-breaker-intent"></a>

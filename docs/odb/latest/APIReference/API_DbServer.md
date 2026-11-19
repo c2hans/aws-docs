@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DbServer.htm
 ---
 
 # DbServer
-<a name="API_DbServer"></a>
 
 Information about a database server.
 

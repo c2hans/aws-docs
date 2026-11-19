@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-ec2-fleet
 ---
 
 # Work with EC2 Fleet
-<a name="manage-ec2-fleet"></a>
 
 To start using an EC2 Fleet, create a request that includes the total target capacity, On-Demand capacity, Spot capacity, and a launch template specifying the configuration for the instances in the fleet. You can optionally specify additional parameters, or let the fleet use default values. You can also tag the fleet request, and its instances and volumes, when you create the fleet.
 

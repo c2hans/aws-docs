@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Add an origin header to a CloudFront Functions viewer request event
-<a name="example_cloudfront_functions_add_origin_header_section"></a>
 
 The following code example shows how to add an origin header to a CloudFront Functions viewer request event.
 

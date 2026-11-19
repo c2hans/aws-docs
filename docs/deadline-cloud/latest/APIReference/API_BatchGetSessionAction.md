@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetSessionAction
-<a name="API_BatchGetSessionAction"></a>
 
 Retrieves multiple session actions in a single request. This is a batch version of the `GetSessionAction` API.
 

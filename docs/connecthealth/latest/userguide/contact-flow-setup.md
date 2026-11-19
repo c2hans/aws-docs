@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/contact-f
 ---
 
 # Sample contact flow
-<a name="contact-flow-setup"></a>
 
 Amazon Connect Health provides a pre-built sample contact flow that routes patient calls to your agent. You can use it to test the agentic capabilities for patient access end to end before you move to production.
 
@@ -29,17 +28,27 @@ The following image shows the sample inbound contact flow in the Amazon Connect 
 ## Provisioned resources
 <a name="cf-provisioned-resources"></a>
 
-Amazon Connect Health provisions the following resources as part of the sample contact flow deployment. Each resource name ends with a unique suffix.
+When you create a domain, Amazon Connect Health deploys the sample contact flow and provisions the following resources in your account, so you can find and manage them later. In the naming patterns, `{DOMAIN_ID}` is your Amazon Connect Health domain identifier and `{SUFFIX}` is the unique suffix of the deployment. Except for the instance and the phone number, each resource name includes the same `{SUFFIX}`.
+
+The following resources are the sample contact flow and the Amazon Connect agent-to-agent (A2A) collaboration it uses to hand the voice call off to the Amazon Connect Health agent.
 
 | Resource | Naming pattern |
 | --- | --- |
+| AWS CloudFormation stack (contains the resources on this page, except the session role) |  `connect-health-{DOMAIN_ID}-{SUFFIX}`  |
 | Amazon Connect Customer instance (if created by Amazon Connect Health) |  `connect-health-{DOMAIN_ID}`  |
+| Phone number (claimed in your instance and assigned to the sample contact flow) | Tagged `DomainId` = `{DOMAIN_ID}`  |
 | Sample contact flow (handles inbound calls) |  `connect-health-{DOMAIN_ID}-a2a-inbound-flow-{SUFFIX}`  |
 | Show view flow (shows the escalation view to the staff member) |  `connect-health-{DOMAIN_ID}-a2a-show-view-flow-{SUFFIX}`  |
-| Lambda function |  `connect-health-{DOMAIN_ID}-lambda`  |
-| Lambda function role |  `connect-health-{DOMAIN_ID}-lambda-role`  |
-| Amazon Lex bot |  `connect-health-{DOMAIN_ID}-bot`  |
-| Amazon Lex bot role |  `connect-health-{DOMAIN_ID}-lex-bot-role`  |
+| Agent workspace views (show the escalation context) |  `connect-health-{DOMAIN_ID}-verified-{SUFFIX}` and `connect-health-{DOMAIN_ID}-unverified-{SUFFIX}`  |
+| Amazon Connect AI agents domain (assistant), if your instance doesn’t already have one |  `connect-health-{DOMAIN_ID}-assistant-{SUFFIX}`  |
+| Orchestration AI agent (hands the call to Amazon Connect Health) |  `connect-health-{DOMAIN_ID}-orchestration-{SUFFIX}`  |
+| Amazon AppIntegrations application (the Amazon Connect Health endpoint that the orchestration AI agent hands off to) |  `connect-health-a2a-{SUFFIX}`  |
+| Security profile (authorizes the orchestration AI agent to hand off to the application) |  `connect-health-a2a-{SUFFIX}`  |
+| Amazon Lex bot for Connect AI agents |  `connect-health-{DOMAIN_ID}-qic-bot-{SUFFIX}`  |
+| Amazon Lex bot alias for Connect AI agents |  `connect-health-{DOMAIN_ID}-qic-alias-{SUFFIX}`  |
+| Amazon Lex bot role for Connect AI agents |  `connect-health-{DOMAIN_ID}-qic-bot-role-{SUFFIX}`  |
+| Session role (IAM role that Amazon Connect Health assumes to start the agent session for a call; created by the console, outside the stack) |  `connect-health-{DOMAIN_ID}-session-role-{SUFFIX}`  |
+| Supporting AWS Lambda functions and their roles (views, queue lookup, and Connect AI agents setup) |  `connect-health-{DOMAIN_ID}-{SUFFIX}-` followed by a name that AWS CloudFormation generates |
 
 ## Contact attributes and handoff context
 <a name="cf-contact-attributes-and-handoff-context"></a>
@@ -72,7 +81,7 @@ The flow sets the example visit type ID `1004` in the `connect-health-appointmen
 ## Amazon Lex bot
 <a name="cf-lex-bot"></a>
 
-The Amazon Lex bot for Amazon Q in Connect connects the call’s audio to the agent. The agent handles language understanding, the greeting, and intent routing.
+The Amazon Lex bot for Connect AI agents connects the call’s audio to the agent. The agent handles language understanding, the greeting, and intent routing.
 
 ## Customize the contact flow
 <a name="cf-customization"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # UpdateOmniDashboard
-<a name="API_UpdateOmniDashboard"></a>
 
 Updates an existing dashboard within a space.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # SnapshotOptionsStatus
-<a name="API_SnapshotOptionsStatus"></a>
 
 Container for information about a daily automated snapshot for an OpenSearch Service domain.
 

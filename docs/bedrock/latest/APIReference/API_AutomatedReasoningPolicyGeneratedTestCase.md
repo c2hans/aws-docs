@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyGeneratedTestCase
-<a name="API_AutomatedReasoningPolicyGeneratedTestCase"></a>
 
 Represents a generated test case, consisting of query content, guard content, and expected results.
 

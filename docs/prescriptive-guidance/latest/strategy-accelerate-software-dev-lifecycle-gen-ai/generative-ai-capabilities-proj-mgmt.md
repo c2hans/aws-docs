@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Generative AI use cases for project management
-<a name="generative-ai-capabilities-proj-mgmt"></a>
 
 Effective project management is at the heart of successful software development. In the context of generative AI, project management takes on new dimensions. It can become more predictive, adaptive, and data-driven. AI-powered project management tools analyze historical project data to generate more accurate time and resource estimates. They can automatically prioritize tasks based on business objectives and team capacity, and they can even predict potential roadblocks before they occur. For instance, a project manager might use generative AI to create a preliminary project plan based on the project's requirements and historical data from similar projects. The AI could then suggest optimal team compositions that account for skills, workloads, and project needs. Throughout the project, AI-driven dashboards provide near real-time insights into the project status by automatically generating reports and highlighting areas that require attention.
 

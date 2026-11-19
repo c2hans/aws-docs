@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec10-b
 ---
 
 # SEC10-BP02 Develop incident management plans
-<a name="sec10-bp02"></a>
 
  An incident management plan gives your team a known way to act when a security event occurs. It defines roles, communication paths, severity levels, and the phases of response, so decisions are made ahead of time. Build a plan that fits your workload and connects to your organization's broader response program.
 

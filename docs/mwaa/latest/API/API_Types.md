@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_Types.html
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The AmazonMWAA API contains several data types that various actions use. This section describes each data type in detail.
 

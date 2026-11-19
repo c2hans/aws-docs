@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/ap
 ---
 
 # Prepare an application in Amazon GameLift Streams
-<a name="applications"></a>
 
 To set up streaming with Amazon GameLift Streams, first you upload the game or other application that you want to stream, then you configure an application resource within Amazon GameLift Streams to define metadata about your game. An Amazon GameLift Streams application consists of the files you uploaded (executable and any supporting files) and a configuration that instructs Amazon GameLift Streams what executable to run when streaming.
 

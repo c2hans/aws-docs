@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchDeleteTaxRegistrationError
-<a name="API_taxSettings_BatchDeleteTaxRegistrationError"></a>
 
  The error object for representing failures in the `BatchDeleteTaxRegistration` operation.
 

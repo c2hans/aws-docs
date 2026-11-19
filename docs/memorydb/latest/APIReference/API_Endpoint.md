@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Endpoin
 ---
 
 # Endpoint
-<a name="API_Endpoint"></a>
 
 Represents the information required for client programs to connect to the cluster and its nodes.
 

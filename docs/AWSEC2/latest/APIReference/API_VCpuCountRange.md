@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VCpuCount
 ---
 
 # VCpuCountRange
-<a name="API_VCpuCountRange"></a>
 
 The minimum and maximum number of vCPUs.
 

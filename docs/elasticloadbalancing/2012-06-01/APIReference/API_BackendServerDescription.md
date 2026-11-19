@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # BackendServerDescription
-<a name="API_BackendServerDescription"></a>
 
 Information about the configuration of an EC2 instance.
 

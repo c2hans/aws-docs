@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/trouble
 ---
 
 # General Troubleshooting
-<a name="troubleshooting-general"></a>
 
 The following are general issues that might occur when you use Amazon WorkSpaces Applications.
 

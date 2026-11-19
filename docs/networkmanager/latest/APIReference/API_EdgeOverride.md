@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_E
 ---
 
 # EdgeOverride
-<a name="API_EdgeOverride"></a>
 
 Describes the edge that's used for the override.
 

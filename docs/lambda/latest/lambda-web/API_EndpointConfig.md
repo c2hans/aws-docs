@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_EndpointCon
 ---
 
 # EndpointConfig
-<a name="API_EndpointConfig"></a>
 
 The configuration for a web function endpoint.
 

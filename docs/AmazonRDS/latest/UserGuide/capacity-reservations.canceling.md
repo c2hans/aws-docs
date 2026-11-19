@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/capacity-rese
 ---
 
 # Canceling a Capacity Reservation
-<a name="capacity-reservations.canceling"></a>
 
 Canceling a reservation releases the reserved capacity and stops the associated charges. Any DB instances currently running in the reservation continue to run as normal On-Demand instances.
 

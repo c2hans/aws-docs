@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Asset and Project Operations
-<a name="asset-project-operations"></a>
 
 <a name="search"></a>===Search You can serach Files and Assets from the search functionality
 

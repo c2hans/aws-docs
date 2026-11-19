@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/deleting-tags
 ---
 
 # Deleting tags from a private repository in Amazon ECR
-<a name="deleting-tags-repositories"></a>
 
 You can delete tags from a private repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/apple-messages
 ---
 
 # Enable Apple Messages for Business with Connect Customer
-<a name="apple-messages-for-business"></a>
 
 Your customers can engage directly with your contact center from within their Messages application on their iPhone, iPad, and Mac.
 

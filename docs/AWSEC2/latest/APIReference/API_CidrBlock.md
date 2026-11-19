@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CidrBlock
 ---
 
 # CidrBlock
-<a name="API_CidrBlock"></a>
 
 Describes an IPv4 CIDR block.
 

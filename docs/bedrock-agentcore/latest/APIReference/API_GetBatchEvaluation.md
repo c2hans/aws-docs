@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GetBatchEvaluation
-<a name="API_GetBatchEvaluation"></a>
 
 Retrieves detailed information about a batch evaluation, including its status, configuration, results, and any error details.
 

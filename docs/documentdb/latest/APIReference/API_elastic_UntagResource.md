@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # UntagResource
-<a name="API_elastic_UntagResource"></a>
 
 Removes metadata tags from an elastic cluster resource
 

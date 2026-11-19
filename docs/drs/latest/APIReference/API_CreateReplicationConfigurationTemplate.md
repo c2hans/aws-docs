@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_CreateReplic
 ---
 
 # CreateReplicationConfigurationTemplate
-<a name="API_CreateReplicationConfigurationTemplate"></a>
 
 Creates a new ReplicationConfigurationTemplate.
 

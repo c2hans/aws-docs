@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/twinmaker-add-t
 ---
 
 # Manually adding the AWS IoT TwinMaker data source
-<a name="twinmaker-add-the-data-source"></a>
 
 ## Prerequisites
 <a name="twinmaker-prerequisites"></a>

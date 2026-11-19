@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/bu
 ---
 
 # Build and test iOS apps with AWS CodeCommit, AWS CodePipeline, and AWS Device Farm
-<a name="build-and-test-ios-apps-with-aws-codecommit-aws-codepipeline-and-aws-device-farm"></a>
 
 *Abdullahi Olaoye, Amazon Web Services*
 

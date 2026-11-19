@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeDataSetRefreshProperties
-<a name="API_DescribeDataSetRefreshProperties"></a>
 
 Describes the refresh properties of a dataset.
 

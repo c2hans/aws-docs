@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListGeneratedTemplates
-<a name="API_ListGeneratedTemplates"></a>
 
 Lists your generated templates in this Region.
 

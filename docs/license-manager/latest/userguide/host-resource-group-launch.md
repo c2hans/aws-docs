@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/host-re
 ---
 
 # Launch an instance in a host resource group in License Manager
-<a name="host-resource-group-launch"></a>
 
 When you launch an instance, you can specify a host resource group. The launch requirements depend on the host resource group's instance launch option:
 + **License configuration required** – You must associate one or more core- or socket-based self-managed licenses with the AMI that match the license configurations configured in the host resource group, or provide the license configurations in the instance launch request.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # DynamoDb
-<a name="sam-property-graphqlapi-datasource-dynamodb"></a>
 
 Configure an Amazon DynamoDB table as a data source for your GraphQL API resolver.
 

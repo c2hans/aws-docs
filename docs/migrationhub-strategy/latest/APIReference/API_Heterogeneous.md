@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # Heterogeneous
-<a name="API_Heterogeneous"></a>
 
  The object containing details about heterogeneous database preferences.
 

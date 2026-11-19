@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd05-b
 ---
 
 # FND05-BP07 Implement threat detection mechanisms
-<a name="fnd05-bp07"></a>
 
  As security risks continue to evolve, establish detection mechanisms that identify security issues, misconfigurations, and unexpected activity in your environment so you can respond quickly.
 

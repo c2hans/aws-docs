@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/touchtone-buff
 ---
 
 # Touchtone buffering in Connect Customer
-<a name="touchtone-buffering"></a>
 
 Touchtone buffering in Connect Customer eliminates a common frustration in IVR systems by allowing customers to enter their complete menu path immediately (such as pressing 1-2-3 in rapid succession) or input identification numbers (such as account IDs or order numbers) without waiting for each prompt to finish or losing their inputs. This "type-ahead" capability reduces call handling time and improves self-service containment.
 

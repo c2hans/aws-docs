@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # GetTrack
-<a name="API_GetTrack"></a>
 
 Get the Redshift Serverless version for a specified track.
 

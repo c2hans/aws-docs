@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # EC2InstanceLimit
-<a name="API_EC2InstanceLimit"></a>
 
 The Amazon GameLift Servers service limits for an Amazon EC2 instance type and current utilization. Amazon GameLift Servers allows AWS accounts a maximum number of instances, per instance type, per AWS Region or location, for use with Amazon GameLift Servers. You can request a limit increase for your account by using the **Service limits** page in the Amazon GameLift Servers console.
 

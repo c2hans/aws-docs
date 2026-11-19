@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # GetView
-<a name="API_GetView"></a>
 
 Returns the definition and metadata of the specified view.
 

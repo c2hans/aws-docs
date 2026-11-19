@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/templ
 ---
 
 # Working with CloudFormation templates
-<a name="template-guide"></a>
 
 An AWS CloudFormation template defines the AWS resources you want to create, update, or delete as part of a stack. It consists of several sections, but the only required section is the [Resources](resources-section-structure.md) section, which must declare at least one resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Lis
 ---
 
 # ListProjects
-<a name="API_ListProjects"></a>
 
 Retrieves a list of projects.
 

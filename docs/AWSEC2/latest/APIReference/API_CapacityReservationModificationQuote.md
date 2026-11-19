@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityR
 ---
 
 # CapacityReservationModificationQuote
-<a name="API_CapacityReservationModificationQuote"></a>
 
 Describes a Capacity Reservation modification quote, which provides the terms for changing the start date or the commitment of a future-dated Capacity Reservation.
 

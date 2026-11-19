@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Enco
 ---
 
 # EncoderConfiguration
-<a name="API_EncoderConfiguration"></a>
 
 Settings for transcoding.
 

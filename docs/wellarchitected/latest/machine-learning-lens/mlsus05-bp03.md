@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # MLSUS05-BP03 Optimize models for inference
-<a name="mlsus05-bp03"></a>
 
  Optimize machine learning models for inference to achieve higher performance with lower computational resources, reducing both costs and environmental impact.
 

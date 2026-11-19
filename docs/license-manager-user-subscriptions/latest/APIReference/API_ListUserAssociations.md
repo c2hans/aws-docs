@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # ListUserAssociations
-<a name="API_ListUserAssociations"></a>
 
 Lists user associations for an identity provider.
 

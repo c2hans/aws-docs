@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServe
 ---
 
 # Microsoft SQL Server Multi-AZ deployment limitations, notes, and recommendations
-<a name="USER_SQLServerMultiAZ.Recommendations"></a>
 
 The following are some limitations when working with Multi-AZ deployments on RDS for SQL Server DB instances:
 + Cross-Region Multi-AZ isn't supported.

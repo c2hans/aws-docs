@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/performance-cpu
 ---
 
 # CPU usage
-<a name="performance-cpu-usage"></a>
 
 CPU usage is the percentage of CPU power being used. CPU usage is affected primarily by the complexity of the output encode.
 

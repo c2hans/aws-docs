@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SubSlotTyp
 ---
 
 # SubSlotTypeComposition
-<a name="API_SubSlotTypeComposition"></a>
 
 Subslot type composition.
 

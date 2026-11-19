@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-crea
 ---
 
 # Creating a bill scenario
-<a name="pc-create-bill-scenario"></a>
 
 This section outlines how to generate a bill scenario.
 

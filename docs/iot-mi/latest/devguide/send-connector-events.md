@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/send-connector-ev
 ---
 
 # Send device events with the SendConnectorEvent API
-<a name="send-connector-events"></a>
 
 ## Device initiated events overview
 <a name="device-initiated-events-overview"></a>

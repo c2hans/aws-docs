@@ -7,7 +7,6 @@ AWS Tools for PowerShell V4 has reached end of support.
 We recommend that you migrate to [AWS Tools for PowerShell V5](https://docs.aws.amazon.com/powershell/v5/userguide/). For additional details and information on how to migrate, please refer to our [end of support announcement](https://aws.amazon.com/blogs/developer/aws-tools-for-powershell-v4-end-of-support-announcement/).
 
 # Specify AWS Regions
-<a name="pstools-installing-specifying-region"></a>
 
 There are two ways to specify the AWS Region to use when running AWS Tools for PowerShell commands:
 + Use the `-Region` common parameter on individual commands.

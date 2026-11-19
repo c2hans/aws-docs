@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # `ValidationException`, `ConflictException`, and `ServiceQuotaExceededException` errors
-<a name="functions-troubleshooting-validation"></a>
 
 Elemental Inference returns `ValidationException`, `ConflictException`, or `ServiceQuotaExceededException` when it rejects a request to create, update, or delete a function, or to create or update a feed that has a function output. The following tables list the causes of each error and what to do about them.
 

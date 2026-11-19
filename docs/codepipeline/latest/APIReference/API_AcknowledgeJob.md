@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Ack
 ---
 
 # AcknowledgeJob
-<a name="API_AcknowledgeJob"></a>
 
 Returns information about a specified job and whether that job has been received by the job worker. Used for custom actions only.
 

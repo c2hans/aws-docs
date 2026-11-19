@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Workfl
 ---
 
 # WorkflowExecutionCompletedEventAttributes
-<a name="API_WorkflowExecutionCompletedEventAttributes"></a>
 
 Provides the details of the `WorkflowExecutionCompleted` event.
 

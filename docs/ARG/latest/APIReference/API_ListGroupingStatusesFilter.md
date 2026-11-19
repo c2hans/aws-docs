@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_ListGrouping
 ---
 
 # ListGroupingStatusesFilter
-<a name="API_ListGroupingStatusesFilter"></a>
 
 A filter name and value pair that is used to obtain more specific results from the list of grouping statuses.
 

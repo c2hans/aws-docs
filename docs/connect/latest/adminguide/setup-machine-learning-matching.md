@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/setup-machine-
 ---
 
 # Set up machine learning for Identity Resolution in Connect Customer
-<a name="setup-machine-learning-matching"></a>
 
 ## Edit machine learning matching run schedule
 <a name="machine-learning-matching-edit-run-schedule"></a>

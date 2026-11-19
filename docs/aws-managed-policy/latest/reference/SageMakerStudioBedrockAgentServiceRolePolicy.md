@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioBedrockAgentServiceRolePolicy
-<a name="SageMakerStudioBedrockAgentServiceRolePolicy"></a>
 
 **Description**: Allows Amazon Bedrock Agents to access Amazon Bedrock models and other resources attached to an agent in SageMaker Studio.
 

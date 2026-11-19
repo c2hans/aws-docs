@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribePartnerApp
-<a name="API_DescribePartnerApp"></a>
 
 Gets information about a SageMaker Partner AI App.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-
 ---
 
 # Proactive troubleshooting for your WorkSpaces users (Preview)
-<a name="workspaces-advisor-users"></a>
 
 **Important**
 Proactive troubleshooting for your WorkSpaces users is in preview release and is subject to change.

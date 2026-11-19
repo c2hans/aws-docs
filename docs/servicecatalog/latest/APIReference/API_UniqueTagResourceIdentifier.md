@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_U
 ---
 
 # UniqueTagResourceIdentifier
-<a name="API_UniqueTagResourceIdentifier"></a>
 
  The unique key-value pair for a tag that identifies provisioned product resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/submit-job-quota-
 ---
 
 # Submitting jobs to a quota share
-<a name="submit-job-quota-share"></a>
 
 Quota management job queues require that all jobs specify a quota share at job submission. To submit jobs to a quota share, specify the `quotaShareName` in [SubmitServiceJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitServiceJob.html). A `preemptionConfiguration` can optionally be supplied to limit the number of preemption attempts before a job attempt enters `FAILED`. To limit the number of preemptions a job experiences, set `preemptionRetriesBeforeTermination` within [ServiceJobPreemptionConfiguration](https://docs.aws.amazon.com/batch/latest/APIReference/API_ServiceJobPreemptionConfiguration.html) on job submission.
 

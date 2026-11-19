@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/github-repo-mi
 ---
 
 # Amazon-FreeRTOS Github Repository Migration Guide
-<a name="github-repo-migration"></a>
 
  If you have an existing FreeRTOS project based on the now deprecated amazon-freertos repository, follow these steps:
 

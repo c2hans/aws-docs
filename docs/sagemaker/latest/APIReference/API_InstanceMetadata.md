@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Instan
 ---
 
 # InstanceMetadata
-<a name="API_InstanceMetadata"></a>
 
 Metadata information about an instance in a HyperPod cluster.
 

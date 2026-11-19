@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RecommendationPreferencesDetail
-<a name="API_RecommendationPreferencesDetail"></a>
 
 Describes a recommendation preference.
 

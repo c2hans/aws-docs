@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Edit a listener rule for your Application Load Balancer
-<a name="edit-rule"></a>
 
 You can edit the action and conditions for a listener rule at any time. Rule updates do not take effect immediately, so requests could be routed using the previous rule configuration for a short time after you update a rule. Any in-flight requests are completed.
 

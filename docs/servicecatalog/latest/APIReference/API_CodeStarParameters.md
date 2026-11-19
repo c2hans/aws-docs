@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_C
 ---
 
 # CodeStarParameters
-<a name="API_CodeStarParameters"></a>
 
 The subtype containing details about the Codestar connection `Type`.
 

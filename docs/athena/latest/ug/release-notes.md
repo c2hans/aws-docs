@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/release-notes.html
 ---
 
 # Release notes
-<a name="release-notes"></a>
 
 Describes Amazon Athena features, improvements, and bug fixes by release date.
 

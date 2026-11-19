@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Checkpoin
 ---
 
 # CheckpointConfigurationUpdate
-<a name="API_CheckpointConfigurationUpdate"></a>
 
 Describes updates to the checkpointing parameters for a Managed Service for Apache Flink application.
 

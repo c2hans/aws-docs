@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/pvdrivers-troubl
 ---
 
 # Troubleshoot PV drivers on Windows instances
-<a name="pvdrivers-troubleshooting"></a>
 
 The following are solutions to issues that you might encounter with older Amazon EC2 images and PV drivers.
 

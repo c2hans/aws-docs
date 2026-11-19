@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Testing attribute-based access control in Amazon SQS
-<a name="sqs-abac-testing-access-control"></a>
 
 The following examples show you how to test attribute-based access control in Amazon SQS.
 

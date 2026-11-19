@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_DeleteCustomPlugin.
 ---
 
 # DeleteCustomPlugin
-<a name="API_DeleteCustomPlugin"></a>
 
 Deletes a custom plugin.
 

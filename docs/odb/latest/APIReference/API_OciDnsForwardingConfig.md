@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_OciDnsForwar
 ---
 
 # OciDnsForwardingConfig
-<a name="API_OciDnsForwardingConfig"></a>
 
 DNS configuration to forward DNS resolver endpoints to your OCI Private Zone.
 

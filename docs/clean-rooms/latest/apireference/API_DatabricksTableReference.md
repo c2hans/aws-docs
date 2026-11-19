@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Data
 ---
 
 # DatabricksTableReference
-<a name="API_DatabricksTableReference"></a>
 
  A reference to a table within Databricks.
 

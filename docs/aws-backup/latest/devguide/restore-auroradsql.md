@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restore-auror
 ---
 
 # Amazon Aurora DSQL restore
-<a name="restore-auroradsql"></a>
 
 **Topics**
 + [Overview](#restore-auroradsql-overview)

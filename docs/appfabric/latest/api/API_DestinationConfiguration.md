@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_DestinationConf
 ---
 
 # DestinationConfiguration
-<a name="API_DestinationConfiguration"></a>
 
 Contains information about the destination of ingested data.
 

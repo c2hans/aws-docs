@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_stat\_plans
-<a name="aurora_stat_plans"></a>
 
 Returns a row for every tracked execution plan.
 

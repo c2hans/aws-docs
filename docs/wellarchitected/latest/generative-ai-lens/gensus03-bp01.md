@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENSUS03-BP01 Leverage smaller models and optimized inference techniques to reduce carbon footprint
-<a name="gensus03-bp01"></a>
 
  To manage computational demands and costs of deploying large language models, implement model optimization techniques. This best practice aims to increase AI operational efficiency by reducing resource consumption while meeting performance goals. Strategies like quantization, pruning, and model distillation help lower operational expenses, improve response times, and promote environmental sustainability. This approach enables you to deploy efficient, cost-effective, and eco-friendly AI solutions, allowing for application scaling without excessive costs or environmental impact.
 

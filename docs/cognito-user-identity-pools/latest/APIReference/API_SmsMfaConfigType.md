@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # SmsMfaConfigType
-<a name="API_SmsMfaConfigType"></a>
 
 The configuration of multi-factor authentication (MFA) with SMS messages in a user pool.
 

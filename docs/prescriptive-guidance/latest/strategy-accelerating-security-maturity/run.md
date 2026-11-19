@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Run stage: Optimizing your cloud security operations
-<a name="run"></a>
 
 ![Icon of running person](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerating-security-maturity/images/guide-img/2162f372-44e6-4f4b-80cc-427f9fca7a33/images/2ff8f77d-b39b-42d7-8186-2993825db1fd.png)
 

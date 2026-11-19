@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an Oracle database to Aurora PostgreSQL using AWS DMS and AWS SCT
-<a name="migrate-an-oracle-database-to-aurora-postgresql-using-aws-dms-and-aws-sct"></a>
 
 *Senthil Ramasamy, Amazon Web Services*
 

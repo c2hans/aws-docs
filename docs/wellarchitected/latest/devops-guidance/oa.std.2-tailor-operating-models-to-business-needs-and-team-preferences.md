@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.STD.2] Tailor operating models to business needs and team preferences
-<a name="oa.std.2-tailor-operating-models-to-business-needs-and-team-preferences"></a>
 
  **Category:** FOUNDATIONAL
 

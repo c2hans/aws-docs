@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Get
 ---
 
 # GetProject
-<a name="API_GetProject"></a>
 
 Returns information about a project.
 

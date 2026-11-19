@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_EventParamet
 ---
 
 # EventParameters
-<a name="API_EventParameters"></a>
 
  **[Event-based policies only]** Specifies an event that activates an event-based policy.
 

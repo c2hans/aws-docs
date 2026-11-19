@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_GetMonit
 ---
 
 # GetMonitor
-<a name="API_GetMonitor"></a>
 
 Gets information about a monitor in Internet Monitor based on a monitor name. The information returned includes the Amazon Resource Name (ARN), create time, modified time, resources included in the monitor, and status information.
 

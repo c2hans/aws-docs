@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/co
 ---
 
 # Coroutines
-<a name="coroutines"></a>
 
 The AWS SDK for Kotlin is asynchronous by default. The SDK for Kotlin uses `suspend` functions for all operations, which are meant to be called from a coroutine.
 

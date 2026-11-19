@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automatically encrypt existing and new Amazon EBS volumes
-<a name="automatically-encrypt-existing-and-new-amazon-ebs-volumes"></a>
 
 *Tony DeMarco and Josh Joy, Amazon Web Services*
 

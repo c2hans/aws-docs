@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/update-iam-
 ---
 
 # Updating the IAM Role for the customer managed configuration recorder
-<a name="update-iam-role"></a>
 
 You can update the IAM role used by the customer managed configuration recorder. Before you update the IAM role, ensure that you have created a new role to replace the old one. You must attach policies to the new role that grant permissions to AWS Config to record configurations and deliver them to your delivery channel.
 

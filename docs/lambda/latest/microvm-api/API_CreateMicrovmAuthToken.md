@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_CreateMicr
 ---
 
 # CreateMicrovmAuthToken
-<a name="API_CreateMicrovmAuthToken"></a>
 
 Creates an authentication token for accessing a running MicroVM. The token grants access to the specified ports on the MicroVM endpoint.
 

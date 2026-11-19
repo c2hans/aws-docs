@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_GetTestExe
 ---
 
 # GetTestExecutionArtifactsUrl
-<a name="API_GetTestExecutionArtifactsUrl"></a>
 
 The pre-signed Amazon S3 URL to download the test execution result artifacts.
 

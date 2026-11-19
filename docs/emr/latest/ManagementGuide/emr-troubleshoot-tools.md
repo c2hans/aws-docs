@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-troublesh
 ---
 
 # What tools are available for troubleshooting an Amazon EMR cluster?
-<a name="emr-troubleshoot-tools"></a>
 
 To identify and fix cluster errors, you can use the tools described on this page. You might need to initialize some of the tools when you launch the cluster. Other tools are available for every cluster by default.
 

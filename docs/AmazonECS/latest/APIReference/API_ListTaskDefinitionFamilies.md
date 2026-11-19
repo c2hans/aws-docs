@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListTa
 ---
 
 # ListTaskDefinitionFamilies
-<a name="API_ListTaskDefinitionFamilies"></a>
 
 Returns a list of task definition families that are registered to your account. This list includes task definition families that no longer have any `ACTIVE` task definition revisions.
 

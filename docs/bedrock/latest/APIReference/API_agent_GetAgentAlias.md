@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ge
 ---
 
 # GetAgentAlias
-<a name="API_agent_GetAgentAlias"></a>
 
 Gets information about an alias of an agent.
 

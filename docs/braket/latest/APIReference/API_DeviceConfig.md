@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_DeviceCon
 ---
 
 # DeviceConfig
-<a name="API_DeviceConfig"></a>
 
 Configures the primary device used to create and run an Amazon Braket hybrid job.
 

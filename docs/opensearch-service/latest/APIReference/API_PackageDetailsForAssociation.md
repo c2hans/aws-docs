@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PackageDetailsForAssociation
-<a name="API_PackageDetailsForAssociation"></a>
 
  Details of a package that is associated with a domain.
 

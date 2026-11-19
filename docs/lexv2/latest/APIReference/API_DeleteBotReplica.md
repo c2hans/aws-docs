@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteBotR
 ---
 
 # DeleteBotReplica
-<a name="API_DeleteBotReplica"></a>
 
 The action to delete the replicated bot in the secondary region.
 

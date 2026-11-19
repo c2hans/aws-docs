@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-format
 ---
 
 # Tagging APIs
-<a name="aws-lake-formation-api-tagging-api"></a>
 
 The Tagging API section describes the operations and data types related to an authorization strategy that defines a permissions model on attributes or key-value pair tags.
 

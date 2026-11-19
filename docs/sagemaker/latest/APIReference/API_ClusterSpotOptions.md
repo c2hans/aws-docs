@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterSpotOptions
-<a name="API_ClusterSpotOptions"></a>
 
 Configuration options specific to Spot instances.
 

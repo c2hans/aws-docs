@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Planni
 ---
 
 # PlanningStats
-<a name="API_s3Buckets_PlanningStats"></a>
 
 Statistics about the source and the partitions in a migration.
 

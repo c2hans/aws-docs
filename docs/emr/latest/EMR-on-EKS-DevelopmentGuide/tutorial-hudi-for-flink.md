@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/t
 ---
 
 # Using Apache Hudi with Apache Flink
-<a name="tutorial-hudi-for-flink"></a>
 
 Apache Hudi is an open-source data management framework with record-level operations such as insert, update, upsert, and delete that you can use to simplify data management and data pipeline development. When combined with efficient data management in Amazon S3, Hudi lets you ingest and update data in real time. Hudi maintains metadata of all of the operations that you run on the dataset, so all of the actions remain atomic and consistent.
 

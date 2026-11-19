@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ex
 ---
 
 # ExperimentDefinitionSnapshot
-<a name="API_ExperimentDefinitionSnapshot"></a>
 
 A snapshot of the experiment definition captured at the time an experiment run was started. This preserves the configuration that was active during the run.
 

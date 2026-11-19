@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/route53-res
 ---
 
 # route53-resolver-firewall-rule-group-association-tagged
-<a name="route53-resolver-firewall-rule-group-association-tagged"></a>
 
 Checks if Amazon Route 53 Resolver firewall rule group associations have tags. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.
 

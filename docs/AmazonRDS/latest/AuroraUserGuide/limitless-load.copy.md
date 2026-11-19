@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Using the COPY command with Aurora PostgreSQL Limitless Database
-<a name="limitless-load.copy"></a>
 
 You can use the [\\copy](https://www.postgresql.org/docs/current/app-psql.html#APP-PSQL-META-COMMANDS-COPY) functionality in the `psql` utility for importing data into and exporting data from Aurora PostgreSQL Limitless Database
 

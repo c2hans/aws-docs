@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PricingPlanManager/latest/UserGuide/supp
 ---
 
 # Support and Resources
-<a name="support-resources"></a>
 
 ## Getting Help
 <a name="getting-help"></a>

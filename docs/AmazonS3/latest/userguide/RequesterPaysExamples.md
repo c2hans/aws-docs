@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysE
 ---
 
 # Configuring Requester Pays on a bucket
-<a name="RequesterPaysExamples"></a>
 
 You can configure an Amazon S3 bucket to be a *Requester Pays* bucket so that the requester pays the cost of the request and data download instead of the bucket owner.
 

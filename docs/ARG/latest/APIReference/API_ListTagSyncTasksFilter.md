@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_ListTagSyncT
 ---
 
 # ListTagSyncTasksFilter
-<a name="API_ListTagSyncTasksFilter"></a>
 
 Returns tag-sync tasks filtered by the Amazon resource name (ARN) or name of a specified application group.
 

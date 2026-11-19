@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/refresh-cache.
 ---
 
 # Refreshing Amazon S3 bucket object cache
-<a name="refresh-cache"></a>
 
 As your NFS or SMB client performs file system operations, your gateway maintains an inventory of the objects in the Amazon S3 object cache associated with your file share. Your gateway uses this cached inventory to reduce the latency and frequency of Amazon S3 requests. This operation does not import files into the S3 File Gateway cache storage. It only updates the cached inventory to reflect changes in the inventory of the objects in the Amazon S3 object cache.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs
 ---
 
 # Configure your hybrid job instance
-<a name="braket-jobs-configure-job-instance-for-script"></a>
 
 Depending on your algorithm, you may have different requirements. By default, Amazon Braket runs your algorithm script on an `ml.m5.large` instance. However, you can customize this instance type when you create a hybrid job using the following import and configuration argument.
 

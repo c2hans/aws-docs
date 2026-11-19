@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_CreateEn
 ---
 
 # CreateEnvironment
-<a name="API_CreateEnvironment"></a>
 
 Launches an AWS Elastic Beanstalk environment for the specified application using the specified configuration.
 

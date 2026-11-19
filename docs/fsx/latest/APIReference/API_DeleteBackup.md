@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteBackup
 ---
 
 # DeleteBackup
-<a name="API_DeleteBackup"></a>
 
 Deletes an Amazon FSx backup. After deletion, the backup no longer exists, and its data is gone.
 

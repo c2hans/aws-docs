@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Double
 ---
 
 # DoubleRange
-<a name="API_DoubleRange"></a>
 
 A range of double values.
 

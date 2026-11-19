@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/tams-input-use.ht
 ---
 
 # Configuring a job with TAMS inputs
-<a name="tams-input-use"></a>
 
 To process content from a TAMS server, you configure your job input settings with the TAMS server URL and specify the content you want to process.
 

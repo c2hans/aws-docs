@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/ami-release-notes.h
 ---
 
 # Release notes for AWS PCS sample AMIs
-<a name="ami-release-notes"></a>
 
 AMIs for the latest supported major versions of the scheduler receive security updates and critical bug fixes. These incremental security patches aren't included in official release notes.
 

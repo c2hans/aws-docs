@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohe
 ---
 
 # Rerank 3.5
-<a name="model-card-cohere-rerank-3-5"></a>
 
 ## ![Cohere logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/cohere.png) Cohere — Rerank 3.5
 <a name="model-card-cohere-rerank-3-5-header"></a>

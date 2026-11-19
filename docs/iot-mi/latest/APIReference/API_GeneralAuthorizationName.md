@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GeneralAu
 ---
 
 # GeneralAuthorizationName
-<a name="API_GeneralAuthorizationName"></a>
 
 The General Authorization reference by authorization material name.
 

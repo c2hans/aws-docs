@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-expla
 ---
 
 # Invoke the endpoint
-<a name="clarify-online-explainability-invoke-endpoint"></a>
 
 After the endpoint is running, use the SageMaker AI Runtime [InvokeEndpoint ](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html) API in the SageMaker AI Runtime service to send requests to, or invoke the endpoint. In response, the requests are handled as explainability requests by the SageMaker Clarify explainer.
 

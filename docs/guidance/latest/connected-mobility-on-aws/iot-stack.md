@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Vehicle connectivity
-<a name="iot-stack"></a>
 
 The vehicle connectivity layer configures AWS IoT Core for secure vehicle connectivity.
 

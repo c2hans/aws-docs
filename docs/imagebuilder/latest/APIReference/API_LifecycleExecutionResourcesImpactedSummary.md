@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecycleExecutionResourcesImpactedSummary
-<a name="API_LifecycleExecutionResourcesImpactedSummary"></a>
 
 Contains an indicator that shows whether the lifecycle execution identified any resources to take lifecycle actions on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/getting-starte
 ---
 
 # Prepare to attach an Elastic Load Balancing load balancer
-<a name="getting-started-elastic-load-balancing"></a>
 
 Before you attach an Elastic Load Balancing load balancer to your Auto Scaling group, you must complete the following prerequisites:
 + You must have already created the load balancer and target group that is used to route traffic to your Auto Scaling group.

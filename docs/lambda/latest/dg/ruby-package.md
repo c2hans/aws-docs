@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/ruby-package.html
 ---
 
 # Deploy Ruby Lambda Event Functions with .zip file archives
-<a name="ruby-package"></a>
 
  Your AWS Lambda function’s code comprises a .rb file containing your function’s handler code, together with any additional dependencies (gems) your code depends on. To deploy this function code to Lambda, you use a *deployment package*. This package may either be a .zip file archive or a container image. For more information about using container images with Ruby, see [Deploy Ruby Lambda Event Functions with container images](https://docs.aws.amazon.com/lambda/latest/dg/ruby-image.html).
 
@@ -34,7 +33,7 @@ The Ruby runtime includes the AWS SDK for Ruby. If your function uses the SDK, y
 
 You can either include the SDK in your .zip file, or add it using a Lambda layer. Dependencies in your .zip file or in Lambda layers take precedence over versions included in the runtime. To find out which version of the SDK for Ruby is included in your runtime version, see [Runtime-included SDK versions](lambda-ruby.md#ruby-sdk-included).
 
- Under the [AWS shared responsibility model](lambda-runtimes.md#runtimes-shared-responsibility), you are responsible for the management of any dependencies in your functions' deployment packages. This includes applying updates and security patches. To update dependencies in your function's deployment package, first create a new .zip file and then upload it to Lambda. See [Creating a .zip deployment package with dependencies](#ruby-package-dependencies) and [Creating and updating Ruby Lambda Event Functions using .zip files](#ruby-package-create-functions) for more information.
+ Under the [AWS shared responsibility model](runtime-support-policy.md#runtimes-shared-responsibility), you are responsible for the management of any dependencies in your functions' deployment packages. This includes applying updates and security patches. To update dependencies in your function's deployment package, first create a new .zip file and then upload it to Lambda. See [Creating a .zip deployment package with dependencies](#ruby-package-dependencies) and [Creating and updating Ruby Lambda Event Functions using .zip files](#ruby-package-create-functions) for more information.
 
 ## Creating a .zip deployment package with no dependencies
 <a name="ruby-package-codeonly"></a>

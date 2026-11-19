@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage_lens_w
 ---
 
 # What is an S3 Storage Lens export manifest?
-<a name="storage_lens_whatis_metrics_export_manifest"></a>
 
 S3 Storage Lens daily metrics exports in general-purpose buckets may be split into multiple files due to the large amount of data aggregated. The manifest file `manifest.json` describes where the metrics export files for that day are located. Whenever a new export is delivered, it's accompanied by a new manifest. Each manifest contained in the `manifest.json` file provides metadata and other basic information about the export.
 

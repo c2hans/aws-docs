@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ListT
 ---
 
 # ListTrackersResponseEntry
-<a name="API_ListTrackersResponseEntry"></a>
 
 Contains the tracker resource details.
 

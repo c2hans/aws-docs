@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/assistant/latest/userguide/support.html
 ---
 
 # Contacting AWS Support with the AWS assistant
-<a name="support"></a>
 
 You can create an AWS Support case from anywhere in the AWS Management Console, including AWS Support Center. The AWS assistant uses the context of your conversation to draft the case and includes the recent conversation in the description. After you submit the case, you can transfer to a support agent using an available contact method, including live chat in the same panel.
 

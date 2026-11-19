@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # BatchIsAuthorizedOutputItem
-<a name="API_BatchIsAuthorizedOutputItem"></a>
 
 The decision, based on policy evaluation, from an individual authorization request in a `BatchIsAuthorized` API request.
 

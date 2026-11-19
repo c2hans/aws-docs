@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-pipes.
 ---
 
 # Amazon EventBridge Pipes events
-<a name="events-ref-pipes"></a>
 
 EventBridge Pipes sends service events to EventBridge via AWS CloudTrail.
 

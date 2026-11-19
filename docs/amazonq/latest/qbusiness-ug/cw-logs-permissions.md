@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/cw-logs-perm
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Permissions for monitoring Amazon Q Business with Amazon CloudWatch Logs
-<a name="cw-logs-permissions"></a>
 
 To set up Amazon CloudWatch Logs for Amazon Q Business, use the following IAM policy to grant the necessary permissions.
 

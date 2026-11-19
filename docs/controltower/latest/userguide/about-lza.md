@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/about-lza.
 ---
 
 # AWS Control Tower and Landing zone accelerator
-<a name="about-lza"></a>
 
 This section describes the benefits of working with AWS Control Tower and the **Landing Zone Accelerator** (LZA) solution, together.
 

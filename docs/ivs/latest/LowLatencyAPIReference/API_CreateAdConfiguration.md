@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Cr
 ---
 
 # CreateAdConfiguration
-<a name="API_CreateAdConfiguration"></a>
 
 Creates a new ad configuration to be used for server-side ad insertion.
 

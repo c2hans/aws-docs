@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Pl
 ---
 
 # PlaybackRestrictionPolicy
-<a name="API_PlaybackRestrictionPolicy"></a>
 
 An object representing a policy to constrain playback by country and/or origin sites.
 

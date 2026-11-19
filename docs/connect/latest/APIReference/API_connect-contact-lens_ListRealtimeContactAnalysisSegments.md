@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListRealtimeContactAnalysisSegments
-<a name="API_connect-contact-lens_ListRealtimeContactAnalysisSegments"></a>
 
 Provides a list of analysis segments for a real-time analysis session for voice.
 

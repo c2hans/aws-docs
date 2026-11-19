@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-resource-optim
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Rightsize workloads with resource optimization
-<a name="auto-resource-optimization"></a>
 
 **Preview release**
 EKS Auto Mode resource optimization is in preview release for Amazon EKS and is subject to change.

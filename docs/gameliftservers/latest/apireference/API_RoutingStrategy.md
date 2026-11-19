@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # RoutingStrategy
-<a name="API_RoutingStrategy"></a>
 
 The routing configuration for a fleet alias.
 

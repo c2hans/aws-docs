@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ge
 ---
 
 # GetTrainedModelInferenceJob
-<a name="API_GetTrainedModelInferenceJob"></a>
 
 Returns information about a trained model inference job.
 

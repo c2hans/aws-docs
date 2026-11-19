@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/security-overvi
 ---
 
 # Security
-<a name="security-overview"></a>
 
 Security in Amazon Bedrock encompasses multiple layers of protection for your data, applications, and infrastructure.
 

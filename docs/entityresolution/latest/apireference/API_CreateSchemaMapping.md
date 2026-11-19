@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # CreateSchemaMapping
-<a name="API_CreateSchemaMapping"></a>
 
 Creates a schema mapping, which defines the schema of the input customer records table. The `SchemaMapping` also provides AWS Entity Resolution with some metadata about the table, such as the attribute types of the columns and which columns to match on.
 

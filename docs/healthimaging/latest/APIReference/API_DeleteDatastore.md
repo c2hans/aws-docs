@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_De
 ---
 
 # DeleteDatastore
-<a name="API_DeleteDatastore"></a>
 
 Delete a data store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Update
 ---
 
 # UpdateContainerInstancesState
-<a name="API_UpdateContainerInstancesState"></a>
 
 Modifies the status of an Amazon ECS container instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/US_SingleMetricP
 ---
 
 # Aggregate statistics by AMI
-<a name="US_SingleMetricPerAMI"></a>
 
 You can aggregate statistics by AMI for your instances that have detailed monitoring enabled. Instances that use basic monitoring are not included in the aggregates. Before you can get statistics aggregated across instances, you must [enable detailed monitoring](manage-detailed-monitoring.md#enable-detailed-monitoring) (at an additional charge), which provides data in 1-minute periods.
 

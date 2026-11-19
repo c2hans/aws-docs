@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_SearchAllR
 ---
 
 # SearchAllRelatedItemsResponseItem
-<a name="API_connect-cases_SearchAllRelatedItemsResponseItem"></a>
 
 A list of items that represent RelatedItems. This data type is similar to [SearchRelatedItemsResponseItem](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_SearchRelatedItemsResponseItem.html) except Search**All**RelatedItemsResponseItem has a caseId field.
 

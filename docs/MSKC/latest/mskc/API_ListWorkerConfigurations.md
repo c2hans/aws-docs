@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_ListWorkerConfigura
 ---
 
 # ListWorkerConfigurations
-<a name="API_ListWorkerConfigurations"></a>
 
 Returns a list of all of the worker configurations in this account and Region.
 

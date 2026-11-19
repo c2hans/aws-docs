@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/troubleshooting-dat
 ---
 
 # General troubleshooting
-<a name="troubleshooting-data-exports"></a>
 
 **Topics**
 + [Why is my export unhealthy?](#dataexports-unhealthy-export)

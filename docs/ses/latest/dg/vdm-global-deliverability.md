@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/vdm-global-deliverability.
 ---
 
 # Global deliverability
-<a name="vdm-global-deliverability"></a>
 
 Global deliverability extends your visibility beyond Amazon SES. It provides analytics based on a representative sample of your sending—across every provider your domains send through, not just Amazon SES.
 

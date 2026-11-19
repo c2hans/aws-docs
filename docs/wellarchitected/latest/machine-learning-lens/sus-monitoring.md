@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Monitoring
-<a name="sus-monitoring"></a>
 
 **Topics**
 + [MLSUS06-BP01 Measure material efficiency](mlsus06-bp01.md)

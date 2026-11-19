@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-basics.ht
 ---
 
 # How VPC peering connections work
-<a name="vpc-peering-basics"></a>
 
 The following steps describe the VPC peering process:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_FailedAsso
 ---
 
 # FailedAssociationResult
-<a name="API_FailedAssociationResult"></a>
 
 Details about a failed attempt to associate or disassociate a code repository with a scan configuration.
 

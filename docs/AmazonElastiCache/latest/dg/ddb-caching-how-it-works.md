@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ddb-caching-
 ---
 
 # How DynamoDB caching works
-<a name="ddb-caching-how-it-works"></a>
 
 DynamoDB caching uses the [ElastiCache integration client library](https://github.com/awslabs/elasticache-integration-client) on the GitHub website to intercept your application's requests to Amazon DynamoDB, redirecting those requests to an Amazon ElastiCache Serverless for Valkey cache.
 

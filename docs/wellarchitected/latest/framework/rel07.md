@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel07.h
 ---
 
 # Design your workload to adapt to changes in demand
-<a name="rel07"></a>
 
  Demand on a workload rarely holds steady. Traffic grows over months, spikes during a sales event, and falls away overnight, and a component can degrade at any point along the way. Provisioning a fixed amount of capacity to cover the highest expected peak wastes money during quiet periods and still runs short when a peak exceeds the estimate. An elastic workload adds and removes resources automatically so that capacity tracks demand, but that elasticity only holds up when the scaling is automated, the signals reflect real load, and the limits have been proven under test.
 

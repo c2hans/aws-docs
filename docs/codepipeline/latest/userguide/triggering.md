@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/triggering
 ---
 
 # CodeCommit source actions and EventBridge
-<a name="triggering"></a>
 
 To add a CodeCommit source action in CodePipeline, you can choose either to:
 + Use the CodePipeline console **Create pipeline** wizard ([Create a custom pipeline (console)](pipelines-create.md#pipelines-create-console)) or **Edit action** page to choose the **CodeCommit** provider option. The console creates an EventBridge rule that starts your pipeline when the source changes.

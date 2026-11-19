@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/dynamodb_example_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Work with DynamoDB global tables and multi-Region replication with eventual consistency (MREC) using AWS Command Line Interface v2
-<a name="dynamodb_example_dynamodb_Scenario_MultiRegionReplication_section"></a>
 
 The following code example shows how to manage DynamoDB global tables with multi-Region replication with eventual consistency (MREC).
 + Create a table with multi-Region replication (MREC).

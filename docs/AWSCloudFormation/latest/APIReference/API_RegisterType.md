@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # RegisterType
-<a name="API_RegisterType"></a>
 
 Registers an extension with the CloudFormation service. Registering an extension makes it available for use in CloudFormation templates in your AWS account, and includes:
 + Validating the extension schema.
@@ -14,7 +13,7 @@ For more information about how to develop extensions and ready them for registra
 
 You can have a maximum of 50 resource extension versions registered at a time. This maximum is per account and per Region. Use [DeregisterType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeregisterType.html) to deregister specific extension versions if necessary.
 
-Once you have initiated a registration request using [RegisterType](#API_RegisterType), you can use [DescribeTypeRegistration](API_DescribeTypeRegistration.md) to monitor the progress of the registration request.
+Once you have initiated a registration request using [RegisterType](API_RegisterType.md), you can use [DescribeTypeRegistration](API_DescribeTypeRegistration.md) to monitor the progress of the registration request.
 
 Once you have registered a private extension in your account and Region, use [SetTypeConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetTypeConfiguration.html) to specify configuration properties for the extension. For more information, see [Edit configuration data for extensions in your account](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/registry-set-configuration.html) in the * AWS CloudFormation User Guide*.
 

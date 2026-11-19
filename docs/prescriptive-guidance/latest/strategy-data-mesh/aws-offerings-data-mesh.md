@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # AWS offerings for data mesh
-<a name="aws-offerings-data-mesh"></a>
 
 Use the capabilities of [analytics on AWS](https://aws.amazon.com/big-data/datalakes-and-analytics/) to the build the data mesh–based data solution for your organization. The analytics on AWS resource recommends several AWS services to build data mesh at low cost without compromising on performance. Customers have adopted the following options for building a data mesh–based solution:
 + Implement data mesh by using Amazon DataZone

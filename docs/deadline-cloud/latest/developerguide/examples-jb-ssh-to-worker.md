@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # SSH or RDP to a Deadline Cloud worker through Session Manager
-<a name="examples-jb-ssh-to-worker"></a>
 
 The [ssh\_to\_smf](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/ssh_to_smf) (Linux) and [ssh\_to\_smf\_windows](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/ssh_to_smf_windows) (Windows) job bundles on the GitHub website give SSH, RDP, or PowerShell access to Deadline Cloud workers. Each bundle registers the worker as an SSM hybrid managed node through Session Manager during the job. Use these bundles to debug a job on the worker. You can also forward ports for web UIs and Jupyter notebooks.
 

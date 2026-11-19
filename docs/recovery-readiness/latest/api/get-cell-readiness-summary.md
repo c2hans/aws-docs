@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/get-cell-r
 ---
 
 # Check the readiness of a cell
-<a name="get-cell-readiness-summary"></a>
 
 The following is an example of a request to check cell readiness, and the response.
 

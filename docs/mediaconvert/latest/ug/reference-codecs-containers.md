@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-
 ---
 
 # Supported output formats
-<a name="reference-codecs-containers"></a>
 
 MediaConvert supports the following combinations of output containers and codecs.
 

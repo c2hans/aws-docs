@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/u
 ---
 
 # Managing service-linked roles for business plans
-<a name="using-roles-for-partner-central-account"></a>
 
 AWS Partner Central uses AWS Identity and Access Management (IAM) [service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role). A service-linked role is a unique type of IAM role that links directly to AWS Partner Central. AWS Partner Central predefines its service-linked roles, and they include all the permissions that the service requires to update your business plans on your behalf.
 

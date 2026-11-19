@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Platfo
 ---
 
 # PlatformDevice
-<a name="API_PlatformDevice"></a>
 
 The devices that are available on the container instance. The supported device types are GPUs and Neuron devices.
 

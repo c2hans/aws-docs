@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-de
 ---
 
 # Describing a project (SDK)
-<a name="md-describing-project-sdk"></a>
 
 You can use the `DescribeProjects` API to get information about your projects.
 

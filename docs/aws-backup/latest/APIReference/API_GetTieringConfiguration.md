@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetTi
 ---
 
 # GetTieringConfiguration
-<a name="API_GetTieringConfiguration"></a>
 
 Returns `TieringConfiguration` details for the specified `TieringConfigurationName`. The details are the body of a tiering configuration in JSON format, in addition to configuration metadata.
 

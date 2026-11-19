@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterNetwor
 ---
 
 # RouterNetworkInterface
-<a name="API_RouterNetworkInterface"></a>
 
 A router network interface in AWS Elemental MediaConnect. A router network interface is a network interface that can be associated with one or more router inputs and outputs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataP
 ---
 
 # DataPathSort
-<a name="API_DataPathSort"></a>
 
 Allows data paths to be sorted by a specific data value.
 

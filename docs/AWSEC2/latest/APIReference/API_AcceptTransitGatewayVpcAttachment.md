@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptTra
 ---
 
 # AcceptTransitGatewayVpcAttachment
-<a name="API_AcceptTransitGatewayVpcAttachment"></a>
 
 Accepts a request to attach a VPC to a transit gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/connectin
 ---
 
 # Connecting QnABot on AWS to Genesys Cloud
-<a name="connecting-qnabot-on-aws-to-genesys-cloud"></a>
 
 **Note**
 While QnABot on AWS provides integration with Genesys Cloud CX, you are responsible for integration testing and ensuring QnABot connectivity to Genesys Cloud works as expected. Work with a specialist if you have further questions.

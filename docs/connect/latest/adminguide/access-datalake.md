@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/access-datalak
 ---
 
 # Access Connect Customer data lake
-<a name="access-datalake"></a>
 
 To access the data lake, you can use the AWS console, the [AWS Command Line Interface](https://aws.amazon.com/cli/) or [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html). AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console.
 

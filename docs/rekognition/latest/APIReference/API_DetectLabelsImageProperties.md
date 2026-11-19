@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dete
 ---
 
 # DetectLabelsImageProperties
-<a name="API_DetectLabelsImageProperties"></a>
 
 Information about the quality and dominant colors of an input image. Quality and color information is returned for the entire image, foreground, and background.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Prot
 ---
 
 # ProtectiveEquipmentBodyPart
-<a name="API_ProtectiveEquipmentBodyPart"></a>
 
 Information about a body part detected by [DetectProtectiveEquipment](API_DetectProtectiveEquipment.md) that contains PPE. An array of `ProtectiveEquipmentBodyPart` objects is returned for each person detected by `DetectProtectiveEquipment`.
 

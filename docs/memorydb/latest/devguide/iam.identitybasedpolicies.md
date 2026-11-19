@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/iam.identitybas
 ---
 
 # Using identity-based policies (IAM policies) for MemoryDB
-<a name="iam.identitybasedpolicies"></a>
 
 This topic provides examples of identity-based policies in which an account administrator can attach permissions policies to IAM identities (that is, users, groups, and roles).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # AWS CloudFormation template
-<a name="aws-cloudformation-template"></a>
 
 You can download the CloudFormation templates for this solution before deploying it. This solution uses AWS CloudFormation to automate the deployment of Distributed Load Testing on AWS. It includes the following AWS CloudFormation templates, which you can download before deployment:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator
 ---
 
 # Prerequisites
-<a name="msk-replicator-prerequisites"></a>
 
 Before you create an MSK Replicator, ensure that you have the following prerequisites in place.
 

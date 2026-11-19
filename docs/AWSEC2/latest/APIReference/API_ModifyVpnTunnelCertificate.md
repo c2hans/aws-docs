@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpn
 ---
 
 # ModifyVpnTunnelCertificate
-<a name="API_ModifyVpnTunnelCertificate"></a>
 
 Modifies the VPN tunnel endpoint certificate.
 

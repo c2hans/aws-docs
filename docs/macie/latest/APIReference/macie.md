@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/macie.html
 ---
 
 # Account Administration
-<a name="macie"></a>
 
 The Account Administration resource provides access to the status of your Amazon Macie account, and certain configuration settings for the account.
 

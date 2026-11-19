@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-redis.html
 ---
 
 # Amazon Athena Redis OSS connector
-<a name="connectors-redis"></a>
 
 The Amazon Athena Redis OSS connector enables Amazon Athena to communicate with your Redis OSS instances so that you can query your Redis OSS data with SQL. You can use the AWS Glue Data Catalog to map your Redis OSS key-value pairs into virtual tables.
 

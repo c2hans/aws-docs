@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Upd
 ---
 
 # UpdateInstance
-<a name="API_UpdateInstance"></a>
 
 Update the details for the instance of IAM Identity Center that is owned by the AWS account.
 

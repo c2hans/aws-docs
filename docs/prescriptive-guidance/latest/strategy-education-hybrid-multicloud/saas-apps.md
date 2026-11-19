@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Differentiate between SaaS applications and foundational cloud services
-<a name="saas-apps"></a>
 
 Most educational institutions have already adopted software as a service (SaaS) applications. SaaS provides your institution with a complete solution that is run and managed by the service provider. Common SaaS applications include productivity applications such as word processing and email, but SaaS options also exist for many mission-critical workloads such as enterprise resource planning (ERP), student information systems (SIS), and learning management systems (LMS). When your institution adopts a SaaS offering, your IT team doesn't have to think about how the service is maintained or how the infrastructure is managed―your users simply consume the service. This delivery model reduces the management burden on your IT staff. Many institutions choose to adopt a "SaaS first" approach in their IT strategy, especially if their IT teams lack the time, resources, or skill sets to sufficiently self-host the same application. Even if you have the resources to self-host, it might still be more cost-effective to adopt a SaaS solution and invest in other projects instead.
 

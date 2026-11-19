@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/view-con
 ---
 
 # Viewing Amazon ECS container health
-<a name="view-container-health"></a>
 
 You can view the container health in the console, and using the API in the `DescribeTasks` response. For more information, see [DescribeTasks](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeTasks.html) in the *Amazon Elastic Container Service API Reference*.
 

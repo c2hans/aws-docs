@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.1.1/programme
 ---
 
 # 8 AWS IoT Services
-<a name="elpg-iot-services"></a>
 
 ## 8.1 AWS IoT Device Defender
 <a name="elpg-device-defender"></a>

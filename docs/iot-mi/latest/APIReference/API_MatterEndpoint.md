@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_MatterEnd
 ---
 
 # MatterEndpoint
-<a name="API_MatterEndpoint"></a>
 
 Structure describing a managed thing.
 

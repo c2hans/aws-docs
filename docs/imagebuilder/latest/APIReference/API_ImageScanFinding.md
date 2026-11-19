@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 ---
 
 # ImageScanFinding
-<a name="API_ImageScanFinding"></a>
 
 Contains details about a vulnerability scan finding that Amazon Inspector generated for an image.
 

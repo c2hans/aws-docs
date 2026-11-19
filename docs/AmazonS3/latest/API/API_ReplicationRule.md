@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ReplicationRule.
 ---
 
 # ReplicationRule
-<a name="API_ReplicationRule"></a>
 
 Specifies which Amazon S3 objects to replicate and where to store the replicas.
 

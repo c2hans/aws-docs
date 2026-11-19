@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/license-view
 ---
 
 # Accessing commercial software license recommendations and details
-<a name="license-view-recommendations"></a>
 
 You can use one of the following procedures to access either the **Recommendations for commercial software licenses** or the **License details** pages in AWS Compute Optimizer. Use these pages to review license optimization recommendations that can help you reduce licensing costs.
 

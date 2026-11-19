@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafR
 ---
 
 # AwsWafRegionalWebAclRulesListOverrideActionDetails
-<a name="API_AwsWafRegionalWebAclRulesListOverrideActionDetails"></a>
 
 Provides details about the action to use in the place of the action that results from the rule group evaluation.
 

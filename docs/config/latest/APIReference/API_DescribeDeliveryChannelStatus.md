@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeD
 ---
 
 # DescribeDeliveryChannelStatus
-<a name="API_DescribeDeliveryChannelStatus"></a>
 
 Returns the current status of the specified delivery channel. If a delivery channel is not specified, this operation returns the current status of all delivery channels associated with the account.
 

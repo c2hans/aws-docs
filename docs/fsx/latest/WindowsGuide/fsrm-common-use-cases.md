@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/fsrm-common-use-
 ---
 
 # Common Use Cases
-<a name="fsrm-common-use-cases"></a>
 
 This topic provides step-by-step examples for common File Server Resource Manager tasks. These examples demonstrate how to use and implement FSRM features to solve typical file management challenges.
 

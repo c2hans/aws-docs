@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DeleteVolume
-<a name="API_DeleteVolume"></a>
 
 Deletes the specified storage volume that you previously created using the [CreateCachediSCSIVolume](API_CreateCachediSCSIVolume.md) or [CreateStorediSCSIVolume](API_CreateStorediSCSIVolume.md) API. This operation is only supported in the cached volume and stored volume types. For stored volume gateways, the local disk that was configured as the storage volume is not deleted. You can reuse the local disk to create another storage volume.
 

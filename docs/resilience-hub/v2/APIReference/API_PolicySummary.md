@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Polic
 ---
 
 # PolicySummary
-<a name="API_PolicySummary"></a>
 
 Contains summary information about a resilience policy.
 

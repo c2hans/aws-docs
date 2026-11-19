@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 ---
 
 # AWS Fault Isolation Boundaries
-<a name="abstract-and-introduction"></a>
 
 Publication date: **October 29, 2026** ([Document revisions](document-revisions.md))
 

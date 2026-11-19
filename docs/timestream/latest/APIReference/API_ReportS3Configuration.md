@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Repor
 ---
 
 # ReportS3Configuration
-<a name="API_ReportS3Configuration"></a>
 
 ## Contents
 <a name="API_ReportS3Configuration_Contents"></a>

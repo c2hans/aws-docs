@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-standard-sup
 ---
 
 # Amazon EMR standard support
-<a name="emr-standard-support"></a>
 
 ## Understanding Amazon EMR releases
 <a name="emr-standard-support-understanding"></a>

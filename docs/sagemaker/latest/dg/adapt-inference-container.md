@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/adapt-inference-cont
 ---
 
 # Adapt your own inference container for Amazon SageMaker AI
-<a name="adapt-inference-container"></a>
 
 If you can't use any of the images listed in [Pre-built SageMaker AI Docker images](docker-containers-prebuilt.md) Amazon SageMaker AI for your use case, you can build your own Docker container and use it inside SageMaker AI for training and inference. To be compatible with SageMaker AI, your container must have the following characteristics:
 + Your container must have a web server listing on port `8080`.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Browser OS action
-<a name="browser-invoke"></a>
 
 The InvokeBrowser API provides direct operating system-level control over Amazon Bedrock AgentCore Browser sessions. While the WebSocket-based automation endpoint uses Chrome DevTools Protocol (CDP) for browser interaction, InvokeBrowser operates at the OS level, enabling actions that CDP cannot handle — such as interacting with print dialogs, keyboard shortcuts, right-click context menus, JavaScript alerts, and capturing full-screen screenshots.
 

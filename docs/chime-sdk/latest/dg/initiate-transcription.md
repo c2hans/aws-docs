@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/initiate-transcripti
 ---
 
 # Starting and stopping Amazon Chime SDK live transcription
-<a name="initiate-transcription"></a>
 
 You use the Amazon Chime SDK [StartMeetingTranscription](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_StartMeetingTranscription.html) API to initiate meeting transcription by applying a `TranscriptionConfiguration` to the meeting. The Amazon Chime SDK controller forwards the configuration to the meeting asynchronously. The success or failure of initiating meeting transcription is signaled through a message via Amazon Simple Notification Service (Amazon SNS) and Amazon EventBridge.
 

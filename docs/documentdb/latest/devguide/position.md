@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/position.html
 ---
 
 # $position
-<a name="position"></a>
 
 The `$position` modifier in Amazon DocumentDB specifies the location in the array at which the `$push` operator inserts elements. Without the `$position` modifier, the `$push` operator inserts elements to the end of the array.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayVpcAttachment
-<a name="API_TransitGatewayVpcAttachment"></a>
 
 Describes a VPC attachment.
 

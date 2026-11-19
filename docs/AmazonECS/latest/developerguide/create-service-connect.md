@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-s
 ---
 
 # Configuring Amazon ECS Service Connect with the AWS CLI
-<a name="create-service-connect"></a>
 
 You can create an Amazon ECS service for a Fargate task that uses Service Connect with the AWS CLI.
 

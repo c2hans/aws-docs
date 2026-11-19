@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_OutputNotebo
 ---
 
 # OutputNotebookS3LocationFromInput
-<a name="API_OutputNotebookS3LocationFromInput"></a>
 
 The Amazon S3 location that stores the notebook execution output.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # `AWS::CloudFormation::Authentication`
-<a name="aws-resource-authentication"></a>
 
 Use the `AWS::CloudFormation::Authentication` metadata type to specify authentication credentials for files or sources that you specify with the [`AWS::CloudFormation::Init`](aws-resource-init.md) metadata type.
 

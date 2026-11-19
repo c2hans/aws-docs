@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Simpl
 ---
 
 # SimpleClusterMarker
-<a name="API_SimpleClusterMarker"></a>
 
 The simple cluster marker of the cluster marker.
 

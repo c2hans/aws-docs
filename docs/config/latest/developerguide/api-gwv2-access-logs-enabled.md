@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/api-gwv2-ac
 ---
 
 # api-gwv2-access-logs-enabled
-<a name="api-gwv2-access-logs-enabled"></a>
 
 Checks if Amazon API Gateway V2 stages have access logging enabled. The rule is NON\_COMPLIANT if 'accessLogSettings' is not present in Stage configuration.
 

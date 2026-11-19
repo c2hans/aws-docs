@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Location.html
 ---
 
 # Location
-<a name="API_Location"></a>
 
 The location of resources.
 

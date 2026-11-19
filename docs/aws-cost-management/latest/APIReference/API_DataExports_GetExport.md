@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetExport
-<a name="API_DataExports_GetExport"></a>
 
 Views the definition of an existing data export.
 

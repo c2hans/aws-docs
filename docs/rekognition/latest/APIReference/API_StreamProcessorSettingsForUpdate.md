@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Stre
 ---
 
 # StreamProcessorSettingsForUpdate
-<a name="API_StreamProcessorSettingsForUpdate"></a>
 
  The stream processor settings that you want to update. `ConnectedHome` settings can be updated to detect different labels with a different minimum confidence.
 

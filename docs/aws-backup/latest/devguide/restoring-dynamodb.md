@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-dyn
 ---
 
 # Restore a Amazon DynamoDB table
-<a name="restoring-dynamodb"></a>
 
 ## Use the AWS Backup console to restore DynamoDB recovery points
 <a name="ddb-restore-console"></a>

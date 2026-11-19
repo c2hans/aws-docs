@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # EntityReference
-<a name="API_EntityReference"></a>
 
 Contains information about a principal or resource that can be referenced in a Cedar policy.
 

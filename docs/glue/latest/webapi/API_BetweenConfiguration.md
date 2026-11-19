@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BetweenConfigurat
 ---
 
 # BetweenConfiguration
-<a name="API_BetweenConfiguration"></a>
 
 Configuration that defines how BETWEEN range filter operations are translated into REST API request parameters.
 

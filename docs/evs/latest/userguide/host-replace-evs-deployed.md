@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/host-replace-evs-de
 ---
 
 # Replace a host (EVS-deployed)
-<a name="host-replace-evs-deployed"></a>
 
 This page applies to EVS-deployed environments (VCF 5.2.x). For Self-deployed environments that run VCF 9.x, see [Manage hosts](host-management.md).
 

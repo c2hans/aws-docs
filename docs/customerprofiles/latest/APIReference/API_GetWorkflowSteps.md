@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetWorkflowSteps
-<a name="API_connect-customer-profiles_GetWorkflowSteps"></a>
 
 Get granular list of steps in workflow.
 

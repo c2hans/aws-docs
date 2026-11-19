@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Built-in transformation behavior
-<a name="tstk-builtin-behavior"></a>
 
 Migration Assistant chooses the target type from the original `index` property on each `string` field:
 

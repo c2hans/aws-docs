@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/sso-idc.h
 ---
 
 # Setting up single sign-on (SSO) with IAM Identity Center
-<a name="sso-idc"></a>
 
 If you do not already have an identity center connected to the managed Active Directory, start with [Step 1: Set up an identity center](#set-up-identity-center). If you already have an identity center connected with the managed Active Directory, start with [Step 2: Connect to an identity center](#connect-identity-center).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html
 ---
 
 # Clusters
-<a name="clusters"></a>
 
 Use this resource to create an Amazon MSK cluster and to get a list of existing clusters.
 

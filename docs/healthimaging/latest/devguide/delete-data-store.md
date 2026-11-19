@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/delete-dat
 ---
 
 # Deleting a data store
-<a name="delete-data-store"></a>
 
 Use the `DeleteDatastore` action to delete an AWS HealthImaging [data store](getting-started-concepts.md#concept-data-store). The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`DeleteDatastore`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DeleteDatastore.html) in the *AWS HealthImaging API Reference*.
 

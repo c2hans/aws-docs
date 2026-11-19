@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding
 ---
 
 # Amazon Titan Text Embeddings models
-<a name="titan-embedding-models"></a>
 
 Amazon Titan Embeddings models include Amazon Titan Text Embeddings V2 and Titan Text Embeddings G1 model.
 

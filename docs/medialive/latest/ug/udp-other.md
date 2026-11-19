@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/udp-other.html
 ---
 
 # Fields for other UDP features
-<a name="udp-other"></a>
 
 The following field relates to implementing resiliency in a UDP output:
 + **UDP settings** – **Input loss action** – For details about a field on the MediaLive console, choose the **Info** link next to the field. For more information, see [Handling loss of video input](feature-input-loss.md).

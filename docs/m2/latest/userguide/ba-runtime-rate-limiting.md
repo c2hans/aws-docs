@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/userguide/ba-runtime-rate-limi
 **AWS Mainframe Modernization Service (Managed Runtime Environment experience)** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization Service (Managed Runtime Environment experience) explore AWS Mainframe Modernization Service (Self-Managed Experience). Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
 
 # Configure rate limiting for AWS Transform for mainframe Runtime
-<a name="ba-runtime-rate-limiting"></a>
 
 AWS Transform for mainframe Runtime includes built-in rate limiting functionality to protect gapwalk application from excessive requests and potential abuse. The rate limiting system uses the Token Bucket algorithm to provide both burst capacity and sustained rate limiting.
 

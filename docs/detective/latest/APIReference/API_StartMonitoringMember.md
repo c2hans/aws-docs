@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_StartM
 ---
 
 # StartMonitoringMember
-<a name="API_StartMonitoringMember"></a>
 
 Sends a request to enable data ingest for a member account that has a status of `ACCEPTED_BUT_DISABLED`.
 

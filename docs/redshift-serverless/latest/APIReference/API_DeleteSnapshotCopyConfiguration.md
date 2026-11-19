@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # DeleteSnapshotCopyConfiguration
-<a name="API_DeleteSnapshotCopyConfiguration"></a>
 
 Deletes a snapshot copy configuration
 

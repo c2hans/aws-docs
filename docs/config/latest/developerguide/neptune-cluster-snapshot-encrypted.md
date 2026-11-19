@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/neptune-clu
 ---
 
 # neptune-cluster-snapshot-encrypted
-<a name="neptune-cluster-snapshot-encrypted"></a>
 
 Checks if an Amazon Neptune DB cluster has snapshots encrypted. The rule is NON\_COMPLIANT if a Neptune cluster does not have snapshots encrypted.
 

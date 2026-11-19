@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Connect your collection to Migration Assistant
-<a name="mts-connect"></a>
 
 Migration Assistant authenticates to an Amazon OpenSearch Serverless NextGen collection with [AWS Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) (SigV4) using the credentials of the migration IAM role created during deployment. Before the workflow can write to your collection, you grant that role access through the collection’s data access policy and point the target configuration at the collection endpoint.
 

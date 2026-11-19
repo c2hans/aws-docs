@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SearchR
 ---
 
 # SearchResultItem
-<a name="API_SearchResultItem"></a>
 
 The details of the results of the `SearchListings` action.
 

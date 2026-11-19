@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetWorker
-<a name="API_GetWorker"></a>
 
 Gets a worker.
 

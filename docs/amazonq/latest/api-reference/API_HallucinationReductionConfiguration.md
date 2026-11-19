@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Halluci
 ---
 
 # HallucinationReductionConfiguration
-<a name="API_HallucinationReductionConfiguration"></a>
 
 Configuration information required to setup hallucination reduction. For more information, see [ hallucination reduction](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/hallucination-reduction.html).
 

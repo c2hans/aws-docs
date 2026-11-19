@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dg-c
 ---
 
 # Creating a workflow in Amazon SWF
-<a name="swf-dg-create-workflow"></a>
 
 Creating a basic sequential workflow involves the following stages.
 + Modeling a workflow, registering its type, and registering its activity types

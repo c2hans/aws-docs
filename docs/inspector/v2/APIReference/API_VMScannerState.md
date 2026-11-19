@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_VMScannerS
 ---
 
 # VMScannerState
-<a name="API_VMScannerState"></a>
 
 The state of the Amazon Inspector VM scanner.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetDe
 ---
 
 # GetDeviceInstance
-<a name="API_GetDeviceInstance"></a>
 
 Returns information about a device instance that belongs to a private device fleet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-model-in
 ---
 
 # Machine learning model interpretability with AWS
-<a name="introduction"></a>
 
 *Matthew Chasse, Wale Akinfaderin, Michele Donini, and Ben Fenker, Amazon Web Services*
 

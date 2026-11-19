@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/linux-s
 ---
 
 # License Manager – Linux subscriptions role
-<a name="linux-subscriptions-role"></a>
 
 License Manager requires a service-linked role to manage AWS resources that provide Linux subscriptions.
 

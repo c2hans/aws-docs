@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQL
 ---
 
 # Differences between a relational (SQL) database and DynamoDB when modifying data in a table
-<a name="SQLtoNoSQL.UpdateData"></a>
 
 The SQL language provides the `UPDATE` statement for modifying data. Amazon DynamoDB uses the `UpdateItem` operation to accomplish similar tasks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/regions-limit
 ---
 
 # Amazon Detective Regions and quotas
-<a name="regions-limitations"></a>
 
 When using Amazon Detective, be aware of these quotas.
 

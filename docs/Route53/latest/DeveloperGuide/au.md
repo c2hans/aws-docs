@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/au.html
 ---
 
 # .au (Australia)
-<a name="au"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

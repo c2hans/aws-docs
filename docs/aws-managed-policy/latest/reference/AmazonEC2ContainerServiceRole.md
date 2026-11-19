@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEC2ContainerServiceRole
-<a name="AmazonEC2ContainerServiceRole"></a>
 
 **Description**: Default policy for Amazon ECS service role.
 

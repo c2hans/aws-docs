@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_ValidationEx
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Stores information about a field in a request that caused an exception.
 

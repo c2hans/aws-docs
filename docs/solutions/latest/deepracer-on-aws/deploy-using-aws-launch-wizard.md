@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/deploy
 ---
 
 # Deploy using AWS Launch Wizard
-<a name="deploy-using-aws-launch-wizard"></a>
 
 This solution features a guided deployment process using AWS Launch Wizard. Follow these steps to deploy DeepRacer on AWS into your account.
 

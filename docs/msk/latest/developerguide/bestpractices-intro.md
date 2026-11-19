@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/bestpractices-
 ---
 
 # Best practices for Standard and Express brokers
-<a name="bestpractices-intro"></a>
 
 This section describes best practices to follow for Standard brokers and Express brokers. For information about Amazon MSK Replicator best practices, see [Best practices](msk-replicator-best-practices.md).
 

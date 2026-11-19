@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListProgramManagementAccountsSortBase
-<a name="API_channel_ListProgramManagementAccountsSortBase"></a>
 
 Base sorting configuration for program management accounts.
 

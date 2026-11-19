@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # ChannelTargetInfo
-<a name="API_SSMContacts_ChannelTargetInfo"></a>
 
 Information about the contact channel that Incident Manager uses to engage the contact.
 

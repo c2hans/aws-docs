@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/auth-acces
 ---
 
 # Identity and access management in AWS Control Tower
-<a name="auth-access"></a>
 
 To perform any operation in your landing zone, such as provisioning accounts in Account Factory or creating new organizational units (OUs) in the AWS Control Tower console, either AWS Identity and Access Management (IAM) or AWS IAM Identity Center require you to authenticate that you're an approved AWS user. For example, if you're using the AWS Control Tower console, you authenticate your identity by providing your AWS credentials, as provided by your administrator.
 

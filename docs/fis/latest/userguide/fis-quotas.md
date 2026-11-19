@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/fis-quotas.html
 ---
 
 # Quotas and limitations for AWS Fault Injection Service
-<a name="fis-quotas"></a>
 
 Your AWS account has default quotas, formerly referred to as limits, for each AWS service. Unless otherwise noted, each quota is region-specific. You can request increases for the quotas marked as adjustable in the table below.
 

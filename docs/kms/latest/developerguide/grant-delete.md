@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/grant-delete.h
 ---
 
 # Retiring and revoking grants
-<a name="grant-delete"></a>
 
 To delete a grant, retire or revoke it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Monitor costs using AWS tools
-<a name="monitor-costs"></a>
 
 ## Overview
 <a name="monitor-costs-overview"></a>

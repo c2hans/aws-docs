@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/unders
 ---
 
 # Understanding your AWS Billing Conductor dashboard
-<a name="understanding-abc"></a>
 
 The AWS Billing Conductor dashboard provides a high-level summary of the key metrics to help you understand the impact of your custom pricing dimensions.
 

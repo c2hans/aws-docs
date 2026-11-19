@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Remediati
 ---
 
 # RemediationExecutionStep
-<a name="API_RemediationExecutionStep"></a>
 
 Name of the step from the SSM document.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # LogDeliveryConfigurationRequest
-<a name="API_LogDeliveryConfigurationRequest"></a>
 
 Specifies the destination, format and type of the logs.
 

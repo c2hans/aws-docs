@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/troubleshootin
 ---
 
 # Troubleshooting: File Gateway issues
-<a name="troubleshooting-file-gateway-issues"></a>
 
 You can configure your File Gateway to write log entries to a Amazon CloudWatch log group. If you do, you receive notifications about gateway health status and about any errors that the gateway encounters. You can find information about these error and health notifications in CloudWatch Logs.
 

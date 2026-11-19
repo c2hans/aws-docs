@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-end-
 ---
 
 # What happens at the end of your reservation
-<a name="braket-end-of-reservation"></a>
 
 After your reservation ends, you no longer have dedicated access to the device. Any remaining workloads that are queued with this reservation are automatically canceled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/connectors.ht
 ---
 
 # Connect App Studio to other services with connectors
-<a name="connectors"></a>
 
 A **connector** is a connection between App Studio and other AWS services, such as AWS Lambda and Amazon Redshift, or third-party services. Once a connector is created and configured, builders can use it and the resources it connects to App Studio in their applications.
 

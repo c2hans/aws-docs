@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/troubleshooting
 ---
 
 # Troubleshooting custom domains
-<a name="troubleshooting-custom-domains"></a>
 
 If you encounter issues when connecting a custom domain to your Amplify application, consult the topics in this section for help.
 

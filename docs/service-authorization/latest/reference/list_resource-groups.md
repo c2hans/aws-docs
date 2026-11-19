@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Resource Groups
-<a name="list_resource-groups"></a>
 
 AWS Resource Groups (service prefix: `resource-groups`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

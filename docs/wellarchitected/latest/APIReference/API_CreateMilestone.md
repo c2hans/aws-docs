@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CreateMilestone
-<a name="API_CreateMilestone"></a>
 
 Create a milestone for an existing workload.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowMultiTurnInputRequestEvent
-<a name="API_agent-runtime_FlowMultiTurnInputRequestEvent"></a>
 
 Response object from the flow multi-turn node requesting additional information.
 

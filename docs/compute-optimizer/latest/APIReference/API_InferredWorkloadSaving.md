@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # InferredWorkloadSaving
-<a name="API_InferredWorkloadSaving"></a>
 
  The estimated monthly savings after you adjust the configurations of your instances running on the inferred workload types to the recommended configurations. If the `inferredWorkloadTypes` list contains multiple entries, then the savings are the sum of the monthly savings from instances that run the exact combination of the inferred workload types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/creating-tables-based-o
 ---
 
 # Create tables based on encrypted datasets in Amazon S3
-<a name="creating-tables-based-on-encrypted-datasets-in-s3"></a>
 
 Athena can read and write to tables whose underlying datasets are SSE-S3, SSE-KMS, or CSE-KMS encrypted. Depending on the encryption option used for the table data and the type of queries ran, you will possibly have to specify some additional table properties in order to read and write encrypted data.
 

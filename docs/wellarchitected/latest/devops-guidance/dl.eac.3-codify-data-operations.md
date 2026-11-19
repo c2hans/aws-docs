@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.EAC.3] Codify data operations
-<a name="dl.eac.3-codify-data-operations"></a>
 
  **Category:** FOUNDATIONAL
 

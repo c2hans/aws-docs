@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/vpc-out-setup-steps.
 ---
 
 # Setting up for VPC delivery
-<a name="vpc-out-setup-steps"></a>
 
 **Note**
 The information in this section assumes that you are familiar with the general steps for [creating a channel](creating-channel-scratch.md). It also assumes that you have read [Planning a MediaLive workflow](container-planning-workflow.md) and have planned the workflow for the MediaLive channel.

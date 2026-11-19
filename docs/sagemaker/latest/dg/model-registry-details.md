@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-detai
 ---
 
 # Update the Details of a Model Version
-<a name="model-registry-details"></a>
 
 You can view and update details of a specific model version by using either the AWS SDK for Python (Boto3) or the Amazon SageMaker Studio console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/inf
 ---
 
 # Service availability and API metrics
-<a name="inference-metrics-global"></a>
 
 ## API Latency
 <a name="inference-metrics-api-latency"></a>

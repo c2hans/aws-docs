@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/kendra-integrati
 ---
 
 # Using FSx for Windows File Server with Amazon Kendra
-<a name="kendra-integration"></a>
 
 Amazon Kendra is a highly accurate and intelligent search service. FSx for Windows File Server file systems can be used as data sources for Amazon Kendra, allowing you to index and intelligently search for information contained in documents stored on your file system.
 + For more information about Amazon Kendra, see [ What is Amazon Kendra](https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html) in the *Amazon Kendra Developer's Guide*.

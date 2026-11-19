@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetTe
 ---
 
 # GetTestTemplate
-<a name="API_GetTestTemplate"></a>
 
 Retrieves a resilience test template by ARN, including the parameters it accepts and the fault actions it runs.
 

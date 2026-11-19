@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/disaster-recov
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Building for resilience in AWS WAF
-<a name="disaster-recovery-resiliency"></a>
 
 This section explains how AWS architecture supports data redundancy for AWS WAF.
 

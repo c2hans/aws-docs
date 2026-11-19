@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/mixed-instance
 ---
 
 # Setup overview for creating a mixed instances group
-<a name="mixed-instances-groups-set-up-overview"></a>
 
 This topic provides an overview and best practices for creating an Auto Scaling mixed instances group.
 

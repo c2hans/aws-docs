@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # GetRecommendationSummaries
-<a name="API_GetRecommendationSummaries"></a>
 
 Returns the optimization findings for an account.
 

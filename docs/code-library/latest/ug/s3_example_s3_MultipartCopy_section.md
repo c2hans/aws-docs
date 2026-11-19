@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/s3_example_s3_Mul
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Perform a multipart copy of an Amazon S3 object using an AWS SDK
-<a name="s3_example_s3_MultipartCopy_section"></a>
 
 The following code example shows how to perform a multipart copy of an Amazon S3 object.
 

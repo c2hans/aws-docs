@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms-cont
 ---
 
 # Use a Private Docker Registry for Real-Time Inference Containers
-<a name="your-algorithms-containers-inference-private"></a>
 
 Amazon SageMaker AI hosting enables you to use images stored in Amazon ECR to build your containers for real-time inference by default. Optionally, you can build containers for real-time inference from images in a private Docker registry. The private registry must be accessible from an Amazon VPC in your account. Models that you create based on the images stored in your private Docker registry must be configured to connect to the same VPC where the private Docker registry is accessible. For information about connecting your model to a VPC, see [Give SageMaker AI Hosted Endpoints Access to Resources in Your Amazon VPC](host-vpc.md).
 

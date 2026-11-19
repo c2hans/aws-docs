@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Compil
 ---
 
 # CompilationJobSummary
-<a name="API_CompilationJobSummary"></a>
 
 A summary of a model compilation job.
 

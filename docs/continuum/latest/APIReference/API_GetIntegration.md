@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_GetInt
 ---
 
 # GetIntegration
-<a name="API_GetIntegration"></a>
 
 Retrieves information about an integration.
 

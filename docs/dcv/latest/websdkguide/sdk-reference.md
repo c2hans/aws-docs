@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/websdkguide/sdk-reference.htm
 ---
 
 # SDK reference
-<a name="sdk-reference"></a>
 
 This section provides descriptions, syntax, and usage examples for the Amazon DCV Web Client SDK.
 

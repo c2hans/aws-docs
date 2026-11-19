@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # CedarTagValue
-<a name="API_CedarTagValue"></a>
 
 The value of an entity's Cedar tag.
 
@@ -71,13 +70,13 @@ Required: No
  ** record **   <a name="verifiedpermissions-Type-CedarTagValue-record"></a>
 A Cedar tag value of [Record](https://docs.cedarpolicy.com/policies/syntax-datatypes.html#datatype-record) type.
 Example: `{"record": { "keyName": {} } }`
-Type: String to [CedarTagValue](#API_CedarTagValue) object map
+Type: String to [CedarTagValue](API_CedarTagValue.md) object map
 Required: No
 
  ** set **   <a name="verifiedpermissions-Type-CedarTagValue-set"></a>
 A Cedar tag value of [Set](https://docs.cedarpolicy.com/policies/syntax-datatypes.html#datatype-set) type.
 Example: `{"set": [ { "string": "abc" } ] }`
-Type: Array of [CedarTagValue](#API_CedarTagValue) objects
+Type: Array of [CedarTagValue](API_CedarTagValue.md) objects
 Required: No
 
  ** string **   <a name="verifiedpermissions-Type-CedarTagValue-string"></a>

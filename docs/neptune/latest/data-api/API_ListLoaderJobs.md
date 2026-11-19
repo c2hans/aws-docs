@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_ListLoaderJo
 ---
 
 # ListLoaderJobs
-<a name="API_ListLoaderJobs"></a>
 
 Retrieves a list of the `loadIds` for all active loader jobs.
 

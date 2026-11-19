@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/user-personas.htm
 ---
 
 # User personas
-<a name="user-personas"></a>
 
 AWS Quick Flows serves three types of users:
 

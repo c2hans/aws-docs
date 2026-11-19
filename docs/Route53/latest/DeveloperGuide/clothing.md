@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/clothing.h
 ---
 
 # .clothing
-<a name="clothing"></a>
 
 Used by those in the fashion industry, including retailers, department stores, designers, tailors, and outlets.
 

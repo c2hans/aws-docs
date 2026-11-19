@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/metrics-defini
 ---
 
 # Metric definitions in Connect Customer
-<a name="metrics-definitions"></a>
 
 This topic lists all metrics in alphabetical order. For lists of metrics that apply only to a specific feature area, see these topics:
 + [Custom metric primitives](metric-primitive-definitions.md)

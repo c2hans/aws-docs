@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/understanding-ri.ht
 ---
 
 # Understanding your reservations
-<a name="understanding-ri"></a>
 
 You can use the AWS Cost and Usage Reports (AWS CUR) to track your Reserved Instance (RI) utilization, charges, and allocations. This section is an in-depth description to understand your reservations.
 

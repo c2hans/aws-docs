@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/use-training-plan-fo
 ---
 
 # Create a training job using the API, AWS CLI, SageMaker SDK
-<a name="use-training-plan-for-training-jobs-using-api-cli-sdk"></a>
 
 To use SageMaker training plans for your SageMaker training job, specify the `TrainingPlanArn` parameter of the desired plan in the `ResourceConfig` when calling the [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) API operation. You can use exactly one plan per job.
 

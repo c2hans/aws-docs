@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Proj
 ---
 
 # ProjectVersionDescription
-<a name="API_ProjectVersionDescription"></a>
 
 A description of a version of a Amazon Rekognition project version.
 

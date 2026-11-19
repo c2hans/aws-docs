@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetQueueFleetAssociation
-<a name="API_GetQueueFleetAssociation"></a>
 
 Gets a queue-fleet association.
 

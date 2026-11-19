@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Regist
 ---
 
 # RegistryScanningConfiguration
-<a name="API_RegistryScanningConfiguration"></a>
 
 The scanning configuration for a private registry.
 

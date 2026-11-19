@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/export-
 ---
 
 # Troubleshooting DB cluster exports
-<a name="export-cluster-data.Troubleshooting"></a>
 
 Use the following sections to help troubleshoot failure messages and PostgreSQL permission errors for DB cluster export tasks to Amazon S3.
 

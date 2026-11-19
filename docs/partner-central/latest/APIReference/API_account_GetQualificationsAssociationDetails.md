@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetQualificationsAssociationDetails
-<a name="API_account_GetQualificationsAssociationDetails"></a>
 
 Returns your current qualifications association status, the primary partner, and the full list of partners associated under the primary partner.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_GetViola
 ---
 
 # GetViolationDetails
-<a name="API_GetViolationDetails"></a>
 
 Retrieves violations for a resource based on the specified AWS Firewall Manager policy and AWS account.
 

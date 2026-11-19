@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_FilterCriteria.htm
 ---
 
 # FilterCriteria
-<a name="API_FilterCriteria"></a>
 
  An object that contains the filters for an event source.
 

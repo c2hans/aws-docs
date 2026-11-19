@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_SelectAgg
 ---
 
 # SelectAggregateResourceConfig
-<a name="API_SelectAggregateResourceConfig"></a>
 
 Accepts a structured query language (SQL) SELECT command and an aggregator to query configuration state of AWS resources across multiple accounts and regions, performs the corresponding search, and returns resource configurations matching the properties.
 

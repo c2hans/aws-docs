@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html
 ---
 
 # Working with Amazon S3 Files
-<a name="s3-files"></a>
 
 **Topics**
 + [What is S3 Files?](#s3-files-what-is)

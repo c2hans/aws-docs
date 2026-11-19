@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/ja
 ---
 
 # AWS Encryption SDK for JavaScript
-<a name="javascript"></a>
 
 The AWS Encryption SDK for JavaScript is designed to provide a client-side encryption library for developers who are writing web browser applications in JavaScript or web server applications in Node.js.
 

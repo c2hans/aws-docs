@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/home-fo
 ---
 
 # Amazon S3 Bucket Storage
-<a name="home-folders-s3"></a>
 
 WorkSpaces Applications manages user content stored in home folders by using Amazon S3 buckets created in your account. For every AWS Region, WorkSpaces Applications creates a bucket in your account. All user content generated from streaming sessions of stacks in that Region is stored in that bucket. The buckets are fully managed by the service without any input or configuration from an administrator.
 

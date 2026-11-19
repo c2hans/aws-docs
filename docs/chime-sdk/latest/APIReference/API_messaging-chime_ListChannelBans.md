@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ListChannelBans
-<a name="API_messaging-chime_ListChannelBans"></a>
 
 Lists all the users and bots banned from a particular channel.
 

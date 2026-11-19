@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/performance-tuning-serv
 ---
 
 # Optimize service use
-<a name="performance-tuning-service-level-considerations"></a>
 
 Service level considerations include the number of workloads you run per account, service quotas not only for Athena, but across services, and thinking about how to reduce 'out of resource' errors.
 

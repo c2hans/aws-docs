@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iot-greengr
 ---
 
 # Golden image anatomy
-<a name="anatomy"></a>
 
 AWS IoT Greengrass core devices that are manufactured at scale are generally embedded Linux devices that have a Linux distribution that's constructed by using tools such as [Yocto](https://www.yoctoproject.org/). Typically, the Greengrass edge runtime is baked into the distribution, as demonstrated by the [Meta AWS](https://github.com/aws4embeddedlinux/meta-aws) project.
 

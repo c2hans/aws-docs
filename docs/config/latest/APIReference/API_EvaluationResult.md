@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Evaluatio
 ---
 
 # EvaluationResult
-<a name="API_EvaluationResult"></a>
 
 The details of an AWS Config evaluation. Provides the AWS resource that was evaluated, the compliance of the resource, related time stamps, and supplementary information.
 

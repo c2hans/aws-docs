@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ebs-resourc
 ---
 
 # ebs-resources-in-logically-air-gapped-vault
-<a name="ebs-resources-in-logically-air-gapped-vault"></a>
 
 Checks if Amazon Elastic Block Store (Amazon EBS) volumes are in a logically air-gapped vault. The rule is NON\_COMPLIANT if an Amazon EBS volume is not in a logically air-gapped vault within the specified time period.
 

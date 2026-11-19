@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/snowflake-integra
 ---
 
 # Snowflake Cortex Agent integration
-<a name="snowflake-integration"></a>
 
 **Note**
 This guide covers an integration validated with a third-party MCP server. Snowflake manages the setup and availability of the Cortex Agent MCP server.

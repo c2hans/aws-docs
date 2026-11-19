@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/map.html
 ---
 
 # $map
-<a name="map"></a>
 
 The `$map` operator in Amazon DocumentDB allows you to apply a specified expression to each element in an array and return a new array with the transformed elements. This operator is particularly useful for manipulating and transforming data within arrays, which can help simplify your application code and improve query performance by pushing the array processing to the database level.
 

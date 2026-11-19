@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-download-f
 ---
 
 # Download FreeRTOS with the OTA library
-<a name="ota-download-freertos"></a>
 
 You can clone or download FreeRTOS from [GitHub](https://github.com/freertos/freertos). See the [README.md](https://github.com/freertos/freertos/blob/main/README.md) file for instructions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS IoT Jobs DataPlane
-<a name="list_iot-jobs-data"></a>
 
 AWS IoT Jobs DataPlane (service prefix: `iotjobsdata`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

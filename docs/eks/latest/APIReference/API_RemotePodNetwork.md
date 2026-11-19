@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_RemotePodNet
 ---
 
 # RemotePodNetwork
-<a name="API_RemotePodNetwork"></a>
 
 A network CIDR that can contain pods that run Kubernetes webhooks on hybrid nodes.
 

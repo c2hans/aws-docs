@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Exe
 ---
 
 # ExecutorConfiguration
-<a name="API_ExecutorConfiguration"></a>
 
 The action engine, or executor, related to the supported integration model used to create and update the action type. The available executor types are `Lambda` and `JobWorker`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Types_Da
 ---
 
 # Data Automation for Amazon Bedrock
-<a name="API_Types_Data_Automation_for_Amazon_Bedrock"></a>
 
 The following data types are supported by Data Automation for Amazon Bedrock:
 +  [AudioExtractionCategory](API_data-automation_AudioExtractionCategory.md)

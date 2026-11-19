@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListThreats
-<a name="API_ListThreats"></a>
 
 Returns a paginated list of threats for a threat model job.
 

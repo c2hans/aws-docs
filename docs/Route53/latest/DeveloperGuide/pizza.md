@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/pizza.html
 ---
 
 # .pizza
-<a name="pizza"></a>
 
 Used by pizza restaurants and pizza lovers.
 

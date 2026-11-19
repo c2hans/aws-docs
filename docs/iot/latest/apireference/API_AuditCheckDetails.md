@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AuditCheckDe
 ---
 
 # AuditCheckDetails
-<a name="API_AuditCheckDetails"></a>
 
 Information about the audit check.
 

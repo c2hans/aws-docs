@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_AW
 ---
 
 # AWSAccount
-<a name="API_AWSAccount"></a>
 
  The wrapper of AWS account details, such as account ID or email address.
 

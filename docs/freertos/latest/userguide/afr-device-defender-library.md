@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/afr-device-def
 ---
 
 # AWS IoT Device Defender library
-<a name="afr-device-defender-library"></a>
 
 **Note**  <a name="out-of-date-message"></a>
 The content on this page may not be up-to-date. Please refer to the [FreeRTOS.org library page](https://www.freertos.org/Documentation/03-Libraries/01-Library-overview/01-All-libraries) for the latest update.

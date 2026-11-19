@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-coll
 ---
 
 # Creating a collaboration for queries and jobs
-<a name="create-collab-queries-and-jobs"></a>
 
 In this procedure, you as the [collaboration creator](glossary.md#glossary-collaboration-creator) perform the following tasks:
 + [Create a collaboration](create-collaboration.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/chapter
 ---
 
 # Amazon MQ for ActiveMQ Throughput benchmarks
-<a name="chapter-benchmarks"></a>
 
  Benchmarking can help you choose the correct instance type and size for your workload messaging requirements. Scenarios for benchmarking include:
 +  **Cluster Stability**: understanding how stable your cluster is during increasing, fluctuating, and stable load types.

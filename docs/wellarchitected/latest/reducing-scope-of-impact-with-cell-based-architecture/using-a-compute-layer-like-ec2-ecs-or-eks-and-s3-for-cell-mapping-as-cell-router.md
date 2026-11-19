@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Using a compute layer like Amazon EC2, Amazon ECS or Amazon EKS and Amazon S3 for cell mapping as cell router
-<a name="using-a-compute-layer-like-ec2-ecs-or-eks-and-s3-for-cell-mapping-as-cell-router"></a>
 
  Another approach to designing your cell router is to have the control plane write the cell mapping to an S3 bucket and a computer layer, whatever it is, it could be an EC2 instance, an Amazon ECS or Amazon EKS cluster, or AWS Lambda, whichever fits best. It is worth emphasizing that at this cellular router layer, the only responsibility should be to inspect the request data and identify which cell the request should be forwarded to.
 

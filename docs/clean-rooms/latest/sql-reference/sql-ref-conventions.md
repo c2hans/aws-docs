@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-ref
 ---
 
 # SQL reference conventions
-<a name="sql-ref-conventions"></a>
 
 This section explains the conventions that are used to write the syntax for the SQL expressions, commands, and functions.
 

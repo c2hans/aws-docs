@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concept
 ---
 
 # Supported Regions and Aurora DB engines for zero-ETL integrations
-<a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.Zero-ETL"></a>
 
 Amazon Aurora zero-ETL integrations is a fully managed solution for making transactional data available in Amazon Redshift or Amazon SageMaker after it's written to an Aurora cluster. For more information, see [Aurora zero-ETL integrations](zero-etl.md).
 

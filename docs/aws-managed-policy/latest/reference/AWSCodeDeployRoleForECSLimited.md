@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCodeDeployRoleForECSLimited
-<a name="AWSCodeDeployRoleForECSLimited"></a>
 
 **Description**: Provides CodeDeploy service limited access to perform an ECS blue/green deployment on your behalf.
 

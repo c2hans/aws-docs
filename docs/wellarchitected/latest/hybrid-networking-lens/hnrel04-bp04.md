@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNREL04-BP04 Provision sufficient network capacity
-<a name="hnrel04-bp04"></a>
 
  Provision enough network capacity so that the failure of a single network connection does not overwhelm or degrade the remaining redundant connections.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/manage-qs-account
 ---
 
 # Account details in AWS Quick
-<a name="manage-qs-account-settings"></a>
 
 Use this section to change the account-wide settings in AWS Quick. To open your account settings, choose the profile icon, and then select **Manage Quick**. Then, click on **Account settings**.
 

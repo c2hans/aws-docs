@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeTheme
-<a name="API_DescribeTheme"></a>
 
 Describes a theme.
 

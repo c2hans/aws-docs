@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_R
 ---
 
 # RotationRulesType
-<a name="API_RotationRulesType"></a>
 
 A structure that defines the rotation configuration for the secret.
 

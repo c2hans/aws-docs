@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # CloudFormation resource specification
-<a name="cfn-resource-specification"></a>
 
 The CloudFormation resource specification is a JSON-formatted text file that defines the resources and properties that CloudFormation supports. The document is a machine-readable, strongly typed specification that you can use to build tools for creating CloudFormation templates. For example, you can use the specification to build auto completion and validation functionality for CloudFormation templates in your IDE (integrated development environment).
 

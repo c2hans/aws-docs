@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_De
 ---
 
 # DefineIndexFieldResult
-<a name="API_DefineIndexFieldResult"></a>
 
 ## Description
 <a name="API_DefineIndexFieldResult_Description"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootEC2InstanceConnect`
-<a name="automation-troubleshoot-ec2-instance-connect"></a>
 
  **Description**
 

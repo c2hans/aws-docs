@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Domain Consistency in Event-Driven Architectures
-<a name="domain-consistency-event-driven"></a>
 
 Publication date: **March 8, 2022 ([Diagram history](#diagram-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Cell partition
-<a name="cell-partition"></a>
 
  Cell partition is related to how you will divide your traffic between cells, since each cell is an independent replica of your workload. This division is done using a partition key, which can be simple or composite according to your workload requirements.
 

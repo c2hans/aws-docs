@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/step-two.h
 ---
 
 # Step 2. Configure and launch your landing zone
-<a name="step-two"></a>
 
 Before you launch your AWS Control Tower landing zone, determine the most appropriate home Region. For more information, see [Administrative tips for landing zone setup](tips-for-admin-setup.md).
 

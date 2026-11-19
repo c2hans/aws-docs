@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/creating-
 ---
 
 # Creating a data grant on AWS Data Exchange containing APIs
-<a name="creating-a-data-grant-api"></a>
 
 The following topics describe the process of creating a REST API data set and adding it to a data grant that contains APIs on AWS Data Exchange. You can complete the process by using either the AWS Data Exchange console or the AWS Command Line Interface.
 

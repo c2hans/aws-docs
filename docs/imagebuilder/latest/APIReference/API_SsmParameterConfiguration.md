@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ssm
 ---
 
 # SsmParameterConfiguration
-<a name="API_SsmParameterConfiguration"></a>
 
 Configuration for a single Parameter in the AWS Systems Manager (SSM) Parameter Store in a given Region.
 

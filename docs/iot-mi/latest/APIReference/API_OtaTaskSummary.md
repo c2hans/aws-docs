@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_OtaTaskSu
 ---
 
 # OtaTaskSummary
-<a name="API_OtaTaskSummary"></a>
 
 Structure representing one over-the-air (OTA) task.
 

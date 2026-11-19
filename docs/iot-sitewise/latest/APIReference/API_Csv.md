@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Csv
 ---
 
 # Csv
-<a name="API_Csv"></a>
 
 A .CSV file.
 

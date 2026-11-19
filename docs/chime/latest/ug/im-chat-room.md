@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/im-chat-room.html
 ---
 
 # Calling the members of a chat room
-<a name="im-chat-room"></a>
 
 You can call one or more members of a chat room. You can also call the entire chat room.
 

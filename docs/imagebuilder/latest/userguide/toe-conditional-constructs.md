@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/toe-condit
 ---
 
 # Use conditional constructs in AWSTOE
-<a name="toe-conditional-constructs"></a>
 
 Conditional constructs perform different actions in your component document based on whether the specified conditional expression evaluates to `true` or `false`. You can use the `if` construct to control the flow of execution in your component document.
 

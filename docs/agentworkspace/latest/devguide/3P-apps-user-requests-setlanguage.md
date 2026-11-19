@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-u
 ---
 
 # Set the language of a user in Connect Customer agent workspace
-<a name="3P-apps-user-requests-setlanguage"></a>
 
 Sets the language preference for the user that's currently logged in to the Connect Customer agent workspace. The promise resolves once the language change has been persisted, with the resulting language echoed back in the result.
 

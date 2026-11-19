@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/lease.html
 ---
 
 # .lease
-<a name="lease"></a>
 
 Used by realtors, landlords, and renters.
 

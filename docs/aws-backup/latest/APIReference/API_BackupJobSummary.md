@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Backu
 ---
 
 # BackupJobSummary
-<a name="API_BackupJobSummary"></a>
 
 This is a summary of jobs created or running within the most recent 14 days.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-applic
 ---
 
 # Application Auto Scaling events
-<a name="events-ref-application-autoscaling"></a>
 
 Application Auto Scaling sends service events directly to EventBridge.
 

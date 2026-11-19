@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeBuild::Project DockerServer
-<a name="aws-properties-codebuild-project-dockerserver"></a>
 
 Contains the configuration details for the dedicated Docker server associated with this build project, including the compute type and network security settings. For more information, see [Docker image build server sample for CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/sample-docker-server.html) in the *AWS CodeBuild User Guide*.
 

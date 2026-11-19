@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # UpdateResolverConfig
-<a name="API_route53resolver_UpdateResolverConfig"></a>
 
 Updates the behavior configuration of Amazon Route 53 Resolver behavior for a single VPC from Amazon Virtual Private Cloud.
 

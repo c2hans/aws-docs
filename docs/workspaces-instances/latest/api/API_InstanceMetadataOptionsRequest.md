@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Inst
 ---
 
 # InstanceMetadataOptionsRequest
-<a name="API_InstanceMetadataOptionsRequest"></a>
 
 Defines instance metadata service configuration.
 

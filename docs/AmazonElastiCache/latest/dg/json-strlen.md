@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-strlen.
 ---
 
 # JSON.STRLEN
-<a name="json-strlen"></a>
 
 Gets the lengths of the JSON string values at the path.
 

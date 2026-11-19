@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_CreateT
 ---
 
 # CreateTask
-<a name="API_CreateTask"></a>
 
 Configures a *task*, which defines where and how AWS DataSync transfers your data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelB
 ---
 
 # ModelBiasAppSpecification
-<a name="API_ModelBiasAppSpecification"></a>
 
 Docker container image configuration object for the model bias job.
 

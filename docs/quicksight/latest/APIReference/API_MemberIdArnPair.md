@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Membe
 ---
 
 # MemberIdArnPair
-<a name="API_MemberIdArnPair"></a>
 
 An object that consists of a member Amazon Resource Name (ARN) and a member ID.
 

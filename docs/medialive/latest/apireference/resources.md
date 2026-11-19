@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/resources.
 ---
 
 # Resources
-<a name="resources"></a>
 
 The AWS Elemental MediaLive REST API includes the following resources.
 

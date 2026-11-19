@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/a
 ---
 
 # Additional topics
-<a name="additional-topics"></a>
 
 This section covers the following topics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/manage-console-
 ---
 
 # Deleting a DB Instance in Amazon Neptune
-<a name="manage-console-instances-delete"></a>
 
 You can delete an Amazon Neptune DB instance in any state and at any time, as long the instance has been started.
 

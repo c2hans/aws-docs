@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/redshift_example_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `ListDatabases` with an AWS SDK
-<a name="redshift_example_redshift_ListDatabases_section"></a>
 
 The following code examples show how to use `ListDatabases`.
 

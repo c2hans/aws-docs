@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging-reso
 ---
 
 # Managing tags with Tag Editor
-<a name="tagging-resources"></a>
 
 After you [find resources](find-resources-to-tag.md) that you want to tag, you can add, remove, and edit the tags for some or all of your search results. Tag Editor shows you any tags that are attached to resources. It also shows you whether those tags were added in Tag Editor, by the resource's service console, or by using the API.
 

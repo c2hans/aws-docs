@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeIn
 ---
 
 # ChangeInfo
-<a name="API_ChangeInfo"></a>
 
 A complex type that describes change information about changes made to your hosted zone.
 

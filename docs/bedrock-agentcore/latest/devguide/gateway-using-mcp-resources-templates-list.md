@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # List resource templates in an AgentCore gateway
-<a name="gateway-using-mcp-resources-templates-list"></a>
 
 To list all available resource templates that an AgentCore gateway provides, make a POST request to the gateway’s MCP endpoint and specify `resources/templates/list` as the method in the request body:
 

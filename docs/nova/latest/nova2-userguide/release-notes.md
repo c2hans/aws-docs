@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/release-note
 ---
 
 # Release notes for Amazon Nova 2
-<a name="release-notes"></a>
 
 Subscribe to the RSS feed so updates to these notes are delivered to your inbox.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/source-post-launch-setting
 ---
 
 # Review post-launch settings
-<a name="source-post-launch-settings"></a>
 
 Post-launch settings allow you to control and automate actions performed after the server has been launched in AWS. These settings are created automatically based on the **Post-launch settings template.**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.MongoDB
 ---
 
 # Using MongoDB as a source for AWS DMS
-<a name="CHAP_Source.MongoDB"></a>
 
  For information about versions of MongoDB that AWS DMS supports as a source, see [Sources for AWS DMS](CHAP_Introduction.Sources.md).
 

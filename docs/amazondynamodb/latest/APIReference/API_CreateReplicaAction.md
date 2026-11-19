@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_C
 ---
 
 # CreateReplicaAction
-<a name="API_CreateReplicaAction"></a>
 
 Represents a replica to be added.
 

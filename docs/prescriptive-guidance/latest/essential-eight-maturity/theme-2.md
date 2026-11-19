@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Theme 2: Manage immutable infrastructure through secure pipelines
-<a name="theme-2"></a>
 
 **Essential Eight strategies covered**: Application control, patch applications, patch operating systems
 

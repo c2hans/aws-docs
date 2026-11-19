@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListMemberships
-<a name="API_ListMemberships"></a>
 
 Lists all memberships resources within the caller's account.
 

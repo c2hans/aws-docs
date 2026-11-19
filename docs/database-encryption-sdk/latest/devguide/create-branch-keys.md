@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Create an active branch key
-<a name="create-branch-keys"></a>
 
 A *branch key* is a data key derived from an AWS KMS key that the AWS KMS Hierarchical keyring uses to reduce the number of calls made to AWS KMS. The *active* branch key is the most recent branch key version. The Hierarchical keyring generates a unique data key for every encrypt request and encrypts each data key with a unique wrapping key derived from the active branch key.
 

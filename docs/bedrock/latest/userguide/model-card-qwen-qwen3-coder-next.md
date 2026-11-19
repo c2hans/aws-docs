@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen
 ---
 
 # Qwen3 Coder Next
-<a name="model-card-qwen-qwen3-coder-next"></a>
 
 ## ![Qwen logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/qwen.png) Qwen — Qwen3 Coder Next
 <a name="model-card-qwen-qwen3-coder-next-header"></a>

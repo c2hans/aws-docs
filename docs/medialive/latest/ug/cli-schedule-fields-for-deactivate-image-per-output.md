@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/cli-schedule-fields-
 ---
 
 # Deactivate per-outputs overlay action – payload
-<a name="cli-schedule-fields-for-deactivate-image-per-output"></a>
 
 For information about the meaning and values for the fields in the following JSON, see [Fields for deactivating a per-outputs image overlay](schedule-fields-deactivate-image-per-output.md).
 

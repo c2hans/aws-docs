@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # RequestServiceQuotaIncrease
-<a name="API_RequestServiceQuotaIncrease"></a>
 
 Submits a quota increase request for the specified quota at the account or resource level.
 

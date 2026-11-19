@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # CreateLicenseAssetGroup
-<a name="API_CreateLicenseAssetGroup"></a>
 
 Creates a license asset group.
 

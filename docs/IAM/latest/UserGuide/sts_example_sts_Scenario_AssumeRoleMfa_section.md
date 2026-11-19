@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/sts_example_sts_Sce
 ---
 
 # Assume an IAM role that requires an MFA token with AWS STS using an AWS SDK
-<a name="sts_example_sts_Scenario_AssumeRoleMfa_section"></a>
 
 The following code example shows how to assume a role that requires an MFA token.
 

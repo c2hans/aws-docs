@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html
 ---
 
 # Model Registration Deployment with Model Registry
-<a name="model-registry"></a>
 
 With the Amazon SageMaker Model Registry you can do the following:
 + Catalog models for production.

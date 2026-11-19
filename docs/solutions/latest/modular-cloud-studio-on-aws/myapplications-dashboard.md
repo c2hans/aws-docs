@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # myApplications Dashboard
-<a name="myapplications-dashboard"></a>
 
 The solution also registers resources under an application on the AWS myApplications dashboard. From this centralized dashboard, you can view further cost insights and configure and view further metrics for your solution by using services such as Security Hub, CloudWatch, and Cost Explorer.
 

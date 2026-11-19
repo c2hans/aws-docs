@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.outlie
 ---
 
 # Outlier detection and handling recipe steps
-<a name="recipe-actions.outliers"></a>
 
 Use these recipe steps to work with outliers in your data and perform advanced transformations on them..
 

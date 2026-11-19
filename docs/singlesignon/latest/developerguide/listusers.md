@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/developerguide/listu
 ---
 
 # ListUsers
-<a name="listusers"></a>
 
 This endpoint provides the ability to perform filter queries on an existing list of users through a `GET` request to `/Users` by inserting additional filters. A maximum of 100 results can be returned per page. See the **Constraints** section for more information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/materialize
 ---
 
 # Using materialized views in Amazon Redshift
-<a name="introduction"></a>
 
 *Ethan Stark, Srinivasan Krishnasamy, and Kelly Ragan, Amazon Web Services*
 

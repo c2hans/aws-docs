@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # CloudConnectorFilter
-<a name="API_CloudConnectorFilter"></a>
 
 A filter for listing cloud connectors.
 

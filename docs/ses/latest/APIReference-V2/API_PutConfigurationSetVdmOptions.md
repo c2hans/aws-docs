@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfig
 ---
 
 # PutConfigurationSetVdmOptions
-<a name="API_PutConfigurationSetVdmOptions"></a>
 
 Specify VDM preferences for email that you send using the configuration set.
 

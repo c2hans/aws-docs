@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-
 ---
 
 # Reduce the amount of data scan
-<a name="reduce-data-scan"></a>
 
 To begin, consider loading only the data that you need. You can improve performance just by reducing the amount of data loaded into your Spark cluster for each data source. To assess whether this approach is appropriate, use the following metrics.
 

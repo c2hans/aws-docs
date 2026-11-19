@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DestinationC
 ---
 
 # DestinationConfiguration
-<a name="API_DestinationConfiguration"></a>
 
  The transport parameters that you want to associate with an outbound media stream.
 

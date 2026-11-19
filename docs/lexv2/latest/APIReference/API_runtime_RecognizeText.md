@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Re
 ---
 
 # RecognizeText
-<a name="API_runtime_RecognizeText"></a>
 
 Sends user input to Amazon Lex. Client applications use this API to send requests to Amazon Lex at runtime. Amazon Lex then interprets the user input using the machine learning model that it build for the bot.
 

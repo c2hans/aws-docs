@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/tattoo.htm
 ---
 
 # .tattoo
-<a name="tattoo"></a>
 
 Used by tattoo enthusiasts and the tattoo industry.
 

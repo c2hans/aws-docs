@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-alter-
 ---
 
 # ALTER TABLE SET TBLPROPERTIES
-<a name="querying-iceberg-alter-table-set-properties"></a>
 
 Adds properties to an Iceberg table and sets their assigned values.
 

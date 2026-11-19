@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime
 ---
 
 # Hello Amazon Bedrock Runtime
-<a name="bedrock-runtime_example_bedrock-runtime_Hello_section"></a>
 
 The following code examples show how to get started using Amazon Bedrock Runtime.
 

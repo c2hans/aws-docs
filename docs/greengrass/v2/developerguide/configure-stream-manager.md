@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/configure-s
 ---
 
 # Configure AWS IoT Greengrass stream manager
-<a name="configure-stream-manager"></a>
 
 On Greengrass core devices, stream manager can store, process, and export IoT device data. Stream manager provides parameters that you use to configure runtime settings. These settings apply to all streams on the Greengrass core device. You can use the AWS IoT Greengrass console or API to configure stream manager settings when you deploy the component. Changes take effect after the deployment completes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_TimerS
 ---
 
 # TimerStartedEventAttributes
-<a name="API_TimerStartedEventAttributes"></a>
 
 Provides the details of the `TimerStarted` event.
 

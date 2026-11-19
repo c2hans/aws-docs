@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF01-BP02 Use guidance from your cloud provider or an appropriate partner to learn about architecture patterns and best practices
-<a name="perf_architecture_guidance_architecture_patterns_best_practices"></a>
 
  Use cloud company resources such as documentation, solutions architects, professional services, or appropriate partners to guide your architectural decisions. These resources help you review and improve your architecture for optimal performance.
 

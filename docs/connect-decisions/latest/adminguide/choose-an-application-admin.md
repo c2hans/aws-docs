@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/choo
 ---
 
 # Choose an application admin
-<a name="choose-an-application-admin"></a>
 
 As an AWS console administrator, you choose an Amazon Connect Decisions application admin to manage the Amazon Connect Decisions web application access. The Amazon Connect Decisions application admin can add or remove user permission roles to the Amazon Connect Decisions web application.
 

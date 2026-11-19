@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateKnowledgeBase
-<a name="API_UpdateKnowledgeBase"></a>
 
 Updates the properties of an existing knowledge base.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # CreateChannelMembership
-<a name="API_messaging-chime_CreateChannelMembership"></a>
 
 Adds a member to a channel. The `InvitedBy` field in `ChannelMembership` is derived from the request header. A channel member can:
 + List messages

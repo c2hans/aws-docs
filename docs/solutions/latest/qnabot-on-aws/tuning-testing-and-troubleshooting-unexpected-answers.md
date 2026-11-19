@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/tuning-te
 ---
 
 # Tuning, testing, and troubleshooting unexpected answers
-<a name="tuning-testing-and-troubleshooting-unexpected-answers"></a>
 
 You can use the content designer to tune, test, and troubleshoot answers to fix problems.
 

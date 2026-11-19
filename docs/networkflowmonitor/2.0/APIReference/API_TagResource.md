@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds a tag to a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Device
 ---
 
 # DeviceStats
-<a name="API_DeviceStats"></a>
 
 Status of devices.
 

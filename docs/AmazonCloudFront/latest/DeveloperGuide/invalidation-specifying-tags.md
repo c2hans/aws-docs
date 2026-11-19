@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/i
 ---
 
 # What you need to know when invalidating tags
-<a name="invalidation-specifying-tags"></a>
 
 When you specify a tag to invalidate, refer to the following information:
 

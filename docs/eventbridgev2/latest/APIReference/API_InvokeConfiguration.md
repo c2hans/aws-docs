@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_In
 ---
 
 # InvokeConfiguration
-<a name="API_InvokeConfiguration"></a>
 
 Configuration for how the subscriber invokes its target.
 

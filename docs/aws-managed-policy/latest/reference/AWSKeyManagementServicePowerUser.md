@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSK
 ---
 
 # AWSKeyManagementServicePowerUser
-<a name="AWSKeyManagementServicePowerUser"></a>
 
 **Description**: Provides access to AWS Key Management Service (KMS).
 

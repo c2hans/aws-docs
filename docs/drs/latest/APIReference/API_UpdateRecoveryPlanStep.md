@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateRecove
 ---
 
 # UpdateRecoveryPlanStep
-<a name="API_UpdateRecoveryPlanStep"></a>
 
 Updates a Recovery Plan step's name or configuration. Step type is immutable.
 

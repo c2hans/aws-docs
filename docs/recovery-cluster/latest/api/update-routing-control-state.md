@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/update-routi
 ---
 
 # Update state for one routing control
-<a name="update-routing-control-state"></a>
 
 The following is an example of a request to update a routing control state to be ON. Updating a routing control state doesn't return a response.
 

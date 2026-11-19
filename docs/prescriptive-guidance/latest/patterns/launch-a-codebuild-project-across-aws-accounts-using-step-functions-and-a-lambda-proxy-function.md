@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/la
 ---
 
 # Launch a CodeBuild project across AWS accounts using Step Functions and a Lambda proxy function
-<a name="launch-a-codebuild-project-across-aws-accounts-using-step-functions-and-a-lambda-proxy-function"></a>
 
 *Richard Milner-Watts and Amit Anjarlekar, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Unsupported code patterns of the migration tool
-<a name="migration-tool-unsupported-patterns"></a>
 
 The migration tool automatically converts most v1 code to v2. However, some code patterns require manual migration. This topic provides detailed examples of the most common unsupported patterns and shows you how to manually convert them.
 

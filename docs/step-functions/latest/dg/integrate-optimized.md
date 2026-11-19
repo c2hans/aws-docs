@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/integrate-optim
 ---
 
 # Integrating optimized services with Step Functions
-<a name="integrate-optimized"></a>
 
 Your workflow can call optimized services directly using the `Resource` field of a `Task` state. The following topics explain the supported APIs, parameters, and request/response syntax in Amazon States Language for coordinating AWS services.
 

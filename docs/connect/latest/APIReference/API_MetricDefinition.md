@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricDe
 ---
 
 # MetricDefinition
-<a name="API_MetricDefinition"></a>
 
 Contains the full definition of a metric, including its calculation, unit, status, and trend indicator.
 

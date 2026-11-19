@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/cdn-advanced-optim
 ---
 
 # Advanced optimization techniques for CDN and MediaTailor integrations
-<a name="cdn-advanced-optimization"></a>
 
 After implementing basic caching and routing optimizations, consider these advanced techniques to further enhance performance:
 

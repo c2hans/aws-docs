@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/slack-connection-options.
 ---
 
 # Slack connection options
-<a name="slack-connection-options"></a>
 
 The following are connection options for Slack:
 +  `ENTITY_NAME`(String) - (Required) Used for Read. Supported entity name. Example: `conversations/C058W38R5J8`.

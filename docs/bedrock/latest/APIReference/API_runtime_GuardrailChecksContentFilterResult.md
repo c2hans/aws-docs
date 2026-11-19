@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailChecksContentFilterResult
-<a name="API_runtime_GuardrailChecksContentFilterResult"></a>
 
 The content filter check results.
 

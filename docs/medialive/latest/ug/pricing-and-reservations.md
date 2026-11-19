@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/pricing-and-reservat
 ---
 
 # Pricing and reservations in MediaLive
-<a name="pricing-and-reservations"></a>
 
 This section contains information about two related topics: pricing for using AWS Elemental MediaLive, and creating reservations to obtain special pricing on your AWS Elemental MediaLive activities.
 

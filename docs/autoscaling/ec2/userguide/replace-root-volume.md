@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/replace-root-v
 ---
 
 # Replace root volumes during instance refresh
-<a name="replace-root-volume"></a>
 
 **Topics**
 + [How it works](#start-instance-refresh-replace-root-volume-how-it-works)

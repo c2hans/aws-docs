@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Common mitigation strategies
-<a name="mitigation-strategies"></a>
 
 To start, think about using *preventative* mitigations to prevent the failure mode from impacting the user story. Then you should think about *corrective* mitigations. Corrective mitigations help the system self-heal or adapt to changing conditions. Here's a list of common mitigations for each failure category that align to the resilience properties.
 

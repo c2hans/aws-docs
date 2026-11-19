@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_IdentityC
 ---
 
 # IdentityCertificate
-<a name="API_IdentityCertificate"></a>
 
 An object that contains information about an S/MIME certificate that's associated with an email identity.
 

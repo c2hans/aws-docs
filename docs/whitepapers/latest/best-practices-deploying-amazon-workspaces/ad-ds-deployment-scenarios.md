@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # AD DS deployment scenarios
-<a name="ad-ds-deployment-scenarios"></a>
 
  Backing Amazon WorkSpaces is the AWS Directory Service, and the proper design and deployment of the directory service is critical. The following six scenarios build on the [Active Directory Domain Services](https://docs.aws.amazon.com/quickstart/latest/active-directory-ds/architecture.html) *in the AWS Quick Start guide*, and describe the best practice deployment options for AD DS when used with Amazon WorkSpaces. The [Design Considerations](using-multi-region-aws-managed-active-directory-with-amazon-workspaces.md) section of this document details the specific requirements and best practices of using AD Connector for WorkSpaces, which is an integral part of the overall WorkSpaces design concept.
 +  **Scenario 1: Using AD Connector to proxy authentication to on-premises AD DS** — In this scenario, network connectivity (VPN/Direct Connect) is in place to the customer, with all authentication proxied via AWS Directory Service (AD Connector) to the customer on-premises AD DS.

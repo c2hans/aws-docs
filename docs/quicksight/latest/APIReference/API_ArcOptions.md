@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ArcOp
 ---
 
 # ArcOptions
-<a name="API_ArcOptions"></a>
 
 The options that determine the arc thickness of a `GaugeChartVisual`.
 

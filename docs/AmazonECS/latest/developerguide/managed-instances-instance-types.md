@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-
 ---
 
 # Amazon ECS Managed Instances instance types
-<a name="managed-instances-instance-types"></a>
 
 When you create an Amazon ECS Managed Instances capacity provider, you choose how Amazon ECS selects EC2 instance types for your tasks. You can let Amazon ECS choose automatically, specify exact instance types or families, or define hardware attributes that instances must meet.
 

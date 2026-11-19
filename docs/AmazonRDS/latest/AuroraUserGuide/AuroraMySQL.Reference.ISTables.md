@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Aurora MySQL–specific information\_schema tables
-<a name="AuroraMySQL.Reference.ISTables"></a>
 
 Aurora MySQL has certain `information_schema` tables that are specific to Aurora.
 

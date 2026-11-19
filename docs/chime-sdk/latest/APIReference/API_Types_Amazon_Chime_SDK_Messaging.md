@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Types_
 ---
 
 # Amazon Chime SDK Messaging
-<a name="API_Types_Amazon_Chime_SDK_Messaging"></a>
 
 The following data types are supported by Amazon Chime SDK Messaging:
 +  [AppInstanceUserMembershipSummary](API_messaging-chime_AppInstanceUserMembershipSummary.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_B
 ---
 
 # BucketState
-<a name="API_BucketState"></a>
 
 Describes the state of an Amazon Lightsail bucket.
 

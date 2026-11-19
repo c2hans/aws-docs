@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormItemEnablementExpression
-<a name="API_EvaluationFormItemEnablementExpression"></a>
 
 An expression that defines a basic building block of conditional enablement.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Allowed
 ---
 
 # AllowedStatistics
-<a name="API_AllowedStatistics"></a>
 
 Configuration of statistics that are allowed to be run on columns that contain detected entities. When undefined, no statistics will be computed on columns that contain detected entities.
 

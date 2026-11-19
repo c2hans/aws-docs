@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Design principles
-<a name="design-principles-perf"></a>
 
 Core capabilities
 + Vehicle provisioning

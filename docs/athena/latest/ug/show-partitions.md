@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/show-partitions.html
 ---
 
 # SHOW PARTITIONS
-<a name="show-partitions"></a>
 
 Lists all the partitions in an Athena table in unsorted order.
 

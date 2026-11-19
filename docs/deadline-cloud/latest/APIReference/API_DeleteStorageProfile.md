@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DeleteStorageProfile
-<a name="API_DeleteStorageProfile"></a>
 
 Deletes a storage profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMREL01-BP01 Implement redundant live contribution paths with resilient protocols
-<a name="smrel01-bp01"></a>
 
 Design your live contribution architecture with multiple redundant paths using protocols that provide automatic error recovery and packet retransmission capabilities.
 

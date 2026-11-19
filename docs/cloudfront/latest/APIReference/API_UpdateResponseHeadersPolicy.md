@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateResponseHeadersPolicy
-<a name="API_UpdateResponseHeadersPolicy"></a>
 
 Updates a response headers policy.
 

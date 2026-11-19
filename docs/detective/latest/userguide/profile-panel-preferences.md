@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/profile-panel
 ---
 
 # Setting the preferences for a profile panel
-<a name="profile-panel-preferences"></a>
 
 For profile panels, you can customize the number of rows that appear on each page on profile panels by and configure the timestamp format preference.
 

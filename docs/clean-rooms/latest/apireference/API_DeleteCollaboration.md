@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Dele
 ---
 
 # DeleteCollaboration
-<a name="API_DeleteCollaboration"></a>
 
 Deletes a collaboration. It can only be called by the collaboration owner.
 

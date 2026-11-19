@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Monitoring and Metrics
-<a name="aurora-faq-monitoring-and-metrics"></a>
 
 **Topics**
 + [What is CloudWatch Database Insights?](#aurora-faq-what-is-cloudwatch-database-insights)

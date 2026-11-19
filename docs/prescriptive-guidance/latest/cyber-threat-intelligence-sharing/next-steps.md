@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threa
 ---
 
 # Next steps and resources
-<a name="next-steps"></a>
 
 Consider your organization's assets, sector, and threat environment. These factors should inform the trust communities that you choose to join for cyber threat intelligence sharing. Many cyber authorities around the world offer threat intelligence feeds. Consider what is on offer and choose the best for your organization's use case. Use this guide as a modular approach, and tailor it accordingly for your organization.
 

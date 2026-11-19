@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Li
 ---
 
 # ListRumMetricsDestinations
-<a name="API_ListRumMetricsDestinations"></a>
 
 Returns a list of destinations that you have created to receive RUM extended metrics, for the specified app monitor.
 

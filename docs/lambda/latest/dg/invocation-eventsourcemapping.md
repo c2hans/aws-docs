@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventsourcem
 ---
 
 # How Lambda processes records from stream and queue-based event sources
-<a name="invocation-eventsourcemapping"></a>
 
 An *event source mapping* is a Lambda resource that reads items from stream and queue-based services and invokes a function with batches of records. Within an event source mapping, resources called *event pollers* actively poll for new messages and invoke functions. By default, Lambda automatically scales event pollers, but for certain event source types, you can use [ provisioned mode](#invocation-eventsourcemapping-provisioned-mode) to control the minimum and maximum number of event pollers dedicated to your event source mapping.
 

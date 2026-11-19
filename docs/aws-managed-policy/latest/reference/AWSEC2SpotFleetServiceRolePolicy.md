@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSEC2SpotFleetServiceRolePolicy
-<a name="AWSEC2SpotFleetServiceRolePolicy"></a>
 
 **Description**: Allows EC2 Spot Fleet to launch and manage spot fleet instances
 

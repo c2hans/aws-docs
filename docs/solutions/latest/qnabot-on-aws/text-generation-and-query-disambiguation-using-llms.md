@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/text-gene
 ---
 
 # Text generation and query disambiguation using LLMs
-<a name="text-generation-and-query-disambiguation-using-llms"></a>
 
 **Note**
 These are optional features available as of v5.4.0. We encourage you to try it out on non-production instances initially to validate expected accuracy improvements and to test for any regression issues. See the [Cost](cost.md) section to see estimates of how these features affect pricing.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Im
 ---
 
 # ImportAssetFromSignedUrlJobErrorDetails
-<a name="API_ImportAssetFromSignedUrlJobErrorDetails"></a>
 
 Details about the job error.
 

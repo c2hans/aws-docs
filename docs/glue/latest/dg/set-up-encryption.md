@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/set-up-encryption.html
 ---
 
 # Setting up encryption in AWS Glue
-<a name="set-up-encryption"></a>
 
 The following example workflow highlights the options to configure when you use encryption with AWS Glue. The example demonstrates the use of specific AWS Key Management Service (AWS KMS) keys, but you might choose other settings based on your particular needs. This workflow highlights only the options that pertain to encryption when setting up AWS Glue.
 

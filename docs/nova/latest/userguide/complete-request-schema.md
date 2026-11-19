@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/complete-request-s
 ---
 
 # Complete request schema
-<a name="complete-request-schema"></a>
 
 The request schema is nearly identical between the Invoke API (streaming and non-streaming) and the Converse API. There are subtle differences related to image and video payload encoding. Because Amazon Nova Micro does not support images or videos as input, those parts of the request schema do not apply to Amazon Nova Micro. Otherwise, the request schema is the same for all Amazon Nova understanding models.
 

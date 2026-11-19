@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialPointLayer
-<a name="API_GeospatialPointLayer"></a>
 
 The geospatial Point layer.
 

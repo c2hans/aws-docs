@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/enter-tex
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Entering free-form text responses as manual evidence
-<a name="enter-text-response"></a>
 
 You can provide additional context and supporting information for an assessment control by entering free-form text and saving that text as evidence. This allows you to manually document details that aren’t captured through automatic evidence collection.
 

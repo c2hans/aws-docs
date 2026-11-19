@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_EksReso
 ---
 
 # EksResourceScalingUngraceful
-<a name="API_EksResourceScalingUngraceful"></a>
 
 The ungraceful settings for AWS EKS resource scaling.
 

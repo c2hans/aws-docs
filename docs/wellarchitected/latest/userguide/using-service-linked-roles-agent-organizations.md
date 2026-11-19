@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/using-s
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Service-linked role permissions for AWS Well-Architected Agent Organizations access
-<a name="using-service-linked-roles-agent-organizations"></a>
 
 AWS Well-Architected Agent uses the service-linked role named ``. AWS WA Agent uses this service-linked role to read your organization structure and delegated administrator information in AWS Organizations when you enable the agent's organization integration. This role exists in the management account only.
 

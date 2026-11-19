@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CustomA
 ---
 
 # CustomAccountPoolHandler
-<a name="API_CustomAccountPoolHandler"></a>
 
 The custom AWS Lambda handler within an account pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/trans
 ---
 
 # CloudFormation template Transform section
-<a name="transform-section-structure"></a>
 
 The optional `Transform` section specifies one or more macros that CloudFormation uses to process your template in some way.
 

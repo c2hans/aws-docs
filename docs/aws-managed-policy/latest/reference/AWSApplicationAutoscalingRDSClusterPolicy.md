@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationAutoscalingRDSClusterPolicy
-<a name="AWSApplicationAutoscalingRDSClusterPolicy"></a>
 
 **Description**: Policy granting permissions to Application Auto Scaling to access RDS and CloudWatch.
 

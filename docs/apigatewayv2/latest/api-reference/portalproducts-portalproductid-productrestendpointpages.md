@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/portal
 ---
 
 # Product REST endpoint pages
-<a name="portalproducts-portalproductid-productrestendpointpages"></a>
 
 Represents the collection of product REST endpoint pages for a portal product.
 

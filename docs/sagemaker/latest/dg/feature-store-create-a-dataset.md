@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-create
 ---
 
 # Create a dataset from your feature groups
-<a name="feature-store-create-a-dataset"></a>
 
  After a Feature Store feature group has been created in an offline store, you can choose to use the following methods to get your data:
 + Using the Amazon SageMaker Python SDK

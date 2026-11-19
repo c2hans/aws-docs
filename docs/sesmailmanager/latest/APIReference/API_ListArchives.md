@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_L
 ---
 
 # ListArchives
-<a name="API_ListArchives"></a>
 
 Returns a list of all email archives in your account.
 

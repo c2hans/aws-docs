@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Fi
 ---
 
 # FilterByComponentType
-<a name="API_FilterByComponentType"></a>
 
 Filter by component type.
 

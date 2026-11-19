@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html
 ---
 
 # Deprecated in AL2023
-<a name="deprecated-al2023"></a>
 
  This section describes functionality that was deprecated in AL2023. Most deprecated functionality is removed in AL2027 as of the Preview release. Some functionality will be present in AL2027 Preview but will be removed prior to GA. For information on the current AL2027 Preview release, see the [AL2027 User Guide](https://docs.aws.amazon.com/linux/al2027/ug/) and [AL2027 Release Notes](https://docs.aws.amazon.com/linux/al2027/release-notes/).
 

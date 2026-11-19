@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/vpc-endpoints-
 ---
 
 # Step 2: Configure your Amazon EC2 instance
-<a name="vpc-endpoints-tutorial.configure-ec2-instance"></a>
 
 When your Amazon EC2 instance is available, you can log into it and prepare it for first use.
 

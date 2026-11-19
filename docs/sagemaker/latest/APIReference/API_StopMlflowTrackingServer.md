@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopMl
 ---
 
 # StopMlflowTrackingServer
-<a name="API_StopMlflowTrackingServer"></a>
 
 Programmatically stop an MLflow Tracking Server.
 

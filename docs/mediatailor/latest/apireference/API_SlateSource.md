@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Slat
 ---
 
 # SlateSource
-<a name="API_SlateSource"></a>
 
 Slate VOD source configuration.
 

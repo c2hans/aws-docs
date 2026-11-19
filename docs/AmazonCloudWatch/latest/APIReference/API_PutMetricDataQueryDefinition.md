@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # PutMetricDataQueryDefinition
-<a name="API_PutMetricDataQueryDefinition"></a>
 
 Creates or updates a metric data query definition.
 

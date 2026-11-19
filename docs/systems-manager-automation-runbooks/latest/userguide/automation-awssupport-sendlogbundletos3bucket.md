@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-SendLogBundleToS3Bucket`
-<a name="automation-awssupport-sendlogbundletos3bucket"></a>
 
  **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Updating your data model
-<a name="ddb-update-data-model"></a>
 
 |  |
 | --- |
@@ -27,7 +26,7 @@ Before you update your data model, carefully consider how your updates might imp
 By default, the partition and sort keys are the only attribute included in the encryption context. You might consider defining additional fields as `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` so that the branch key ID supplier for your [AWS KMS Hierarchical keyring](use-hierarchical-keyring.md) can identify which branch key is required for decryption from the encryption context. For more information, see [branch key ID supplier](use-hierarchical-keyring.md#branch-key-id-supplier). If you specify any `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` attributes, then the partition and sort attributes must also be `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`.
 
 **Note**
-To use the `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` cryptographic action, you must use version 3.3 or later of the AWS Database Encryption SDK. Deploy the new version to all readers before [updating your data model](#ddb-update-data-model) to include `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`.
+To use the `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` cryptographic action, you must use version 3.3 or later of the AWS Database Encryption SDK. Deploy the new version to all readers before [updating your data model](ddb-update-data-model.md) to include `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT`.
 
 ## Add new `ENCRYPT_AND_SIGN`, `SIGN_ONLY`, and `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` attributes
 <a name="ddb-add-auth-attribute"></a>

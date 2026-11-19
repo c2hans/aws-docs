@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Contr
 ---
 
 # CloudWatch Contributor Insights rule examples
-<a name="ContributorInsights-Rule-Examples"></a>
 
 This section contains examples that illustrate use cases for Contributor Insights rules.
 

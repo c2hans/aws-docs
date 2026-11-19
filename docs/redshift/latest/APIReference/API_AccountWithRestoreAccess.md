@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Account
 ---
 
 # AccountWithRestoreAccess
-<a name="API_AccountWithRestoreAccess"></a>
 
 Describes an AWS account authorized to restore a snapshot.
 

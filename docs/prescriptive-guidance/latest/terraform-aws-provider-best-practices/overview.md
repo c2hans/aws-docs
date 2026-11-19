@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-a
 ---
 
 # Overview
-<a name="overview"></a>
 
 Terraform providers are plugins that let Terraform interact with APIs. The Terraform AWS Provider is the official plugin for managing AWS infrastructure as code with Terraform. It handles authentication and translates Terraform configuration into AWS API calls that create, read, update, and delete AWS resources.
 

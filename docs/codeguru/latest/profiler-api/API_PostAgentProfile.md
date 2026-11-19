@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_PostAge
 ---
 
 # PostAgentProfile
-<a name="API_PostAgentProfile"></a>
 
  Submits profiling data to an aggregated profile of a profiling group. To get an aggregated profile that is created with this profiling data, use [`GetProfile`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetProfile.html).
 

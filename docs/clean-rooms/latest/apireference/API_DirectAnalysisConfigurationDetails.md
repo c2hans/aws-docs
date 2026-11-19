@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Dire
 ---
 
 # DirectAnalysisConfigurationDetails
-<a name="API_DirectAnalysisConfigurationDetails"></a>
 
  The direct analysis configuration details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEPERF06-BP02 Categorize and store game data based on access patterns
-<a name="gameperf06-bp02"></a>
 
  Categorize your game data into different types based on their access patterns and storage requirements.
 

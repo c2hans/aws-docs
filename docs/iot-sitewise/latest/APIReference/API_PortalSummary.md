@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Por
 ---
 
 # PortalSummary
-<a name="API_PortalSummary"></a>
 
 Contains a portal summary.
 

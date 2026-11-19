@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/eco-monitor
 ---
 
 # Monitoring and event management for EDI
-<a name="eco-monitoring-mgmt"></a>
 
 The ECO monitors your EDI resources, including Amazon EKS resources for failures, performance degradation, and security issues.
 

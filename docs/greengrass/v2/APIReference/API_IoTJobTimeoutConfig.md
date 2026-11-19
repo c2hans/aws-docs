@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_IoTJobTim
 ---
 
 # IoTJobTimeoutConfig
-<a name="API_IoTJobTimeoutConfig"></a>
 
 Contains information about the timeout configuration for a job.
 

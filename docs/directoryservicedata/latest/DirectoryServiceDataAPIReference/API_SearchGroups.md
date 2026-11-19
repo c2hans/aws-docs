@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # SearchGroups
-<a name="API_SearchGroups"></a>
 
  Searches the specified directory for a group. You can find groups that match the `SearchString` parameter with the value of their attributes included in the `SearchString` parameter.
 

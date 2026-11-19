@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # GetHostedZoneAssociation
-<a name="API_route53globalresolver_GetHostedZoneAssociation"></a>
 
 Retrieves information about a hosted zone association.
 

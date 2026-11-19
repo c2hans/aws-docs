@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCloudWatchRUMFullAccess
-<a name="AmazonCloudWatchRUMFullAccess"></a>
 
 **Description**: Grants full access permissions for the Amazon CloudWatch RUM service
 

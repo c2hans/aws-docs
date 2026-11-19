@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/run
 ---
 
 # Run the Deadline Cloud worker agent
-<a name="run-worker"></a>
 
 Before you can run the jobs you submit to the queue on your developer farm, you must run the AWS Deadline Cloud worker agent in developer mode on a worker host.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Restoring license-terminated DB instances for Amazon RDS for SQL Server
-<a name="Appendix.SQLServer.CommonDBATasks.RestoreLTI"></a>
 
 Microsoft has requested that some Amazon RDS customers who did not report their Microsoft License Mobility information terminate their DB instance. Amazon RDS takes snapshots of these DB instances, and you can restore from the snapshot to a new DB instance that has the License Included model.
 

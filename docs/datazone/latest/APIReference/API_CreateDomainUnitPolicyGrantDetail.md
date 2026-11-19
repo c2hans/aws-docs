@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateD
 ---
 
 # CreateDomainUnitPolicyGrantDetail
-<a name="API_CreateDomainUnitPolicyGrantDetail"></a>
 
 The details of the policy grant.
 

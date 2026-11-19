@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zohoinvoice-reading-from-
 ---
 
 # Reading from Zoho Invoice entities
-<a name="zohoinvoice-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/opensearch-plugin-
 ---
 
 # Creating a pipeline in open source OpenSearch
-<a name="opensearch-plugin-pipeline-example"></a>
 
 After you install the plugin on your cluster, you're ready to configure it by creating an OpenSearch search pipeline.
 

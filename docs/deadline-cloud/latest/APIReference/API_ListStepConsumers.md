@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListStepConsumers
-<a name="API_ListStepConsumers"></a>
 
 Lists step consumers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Overview of AWS networking services for SaaS offerings
-<a name="services"></a>
 
 This section discusses the AWS networking services that are referenced in this guide. It also compares their capabilities and describes security considerations for each service.
 

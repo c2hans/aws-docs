@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-library-cha
 ---
 
 # Character Sets
-<a name="bda-library-character-sets"></a>
 
 **Topics**
 + [English character set](#char-english)

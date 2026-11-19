@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Choose the right SMB file storage
-<a name="storage-fsx-smb"></a>
 
 ## Overview
 <a name="storage-fsx-smb-overview"></a>

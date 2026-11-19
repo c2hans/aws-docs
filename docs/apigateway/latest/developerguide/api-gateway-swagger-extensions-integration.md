@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # x-amazon-apigateway-integration object
-<a name="api-gateway-swagger-extensions-integration"></a>
 
  Specifies details of the backend integration used for this method. This extension is an extended property of the [OpenAPI Operation](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#operation-object) object. The result is an [API Gateway integration](https://docs.aws.amazon.com/apigateway/latest/api/API_Integration.html) object.
 

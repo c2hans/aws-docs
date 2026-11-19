@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Promot
 ---
 
 # PromoteReadReplica
-<a name="API_PromoteReadReplica"></a>
 
 Promotes a read replica DB instance to a standalone DB instance.
 

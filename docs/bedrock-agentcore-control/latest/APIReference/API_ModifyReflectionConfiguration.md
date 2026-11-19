@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ModifyReflectionConfiguration
-<a name="API_ModifyReflectionConfiguration"></a>
 
 Contains information for modifying a reflection configuration.
 

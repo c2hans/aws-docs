@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Gi
 ---
 
 # GitHubRepositoryMetadata
-<a name="API_GitHubRepositoryMetadata"></a>
 
 Contains metadata about a GitHub repository that is integrated with the service.
 

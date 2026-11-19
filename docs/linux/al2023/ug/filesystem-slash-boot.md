@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/filesystem-slash-boot.ht
 ---
 
 # `/boot` (Kernel, initramfs, etc.)
-<a name="filesystem-slash-boot"></a>
 
  By default, bootable AL2023 images are configured with `/boot` being on the root file system. The `/boot` path is only relevant for bootable images, so is unused in AL2023 container images.
 

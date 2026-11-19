@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/configuration-va
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Configuration variables
-<a name="configuration-variables"></a>
 
 This page lists the configuration fields that the AWS SDK for Python v4 supports, with their default values and examples. Synchronous and asynchronous config classes have the same fields. Some fields exist only on clients for services that support the feature.
 

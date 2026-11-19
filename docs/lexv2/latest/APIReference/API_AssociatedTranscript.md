@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Associated
 ---
 
 # AssociatedTranscript
-<a name="API_AssociatedTranscript"></a>
 
 The object containing information that associates the recommended intent/slot type with a conversation.
 

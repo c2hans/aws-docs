@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_Amazo
 ---
 
 # Amazon S3
-<a name="API_Operations_Amazon_Simple_Storage_Service"></a>
 
 The following actions are supported by Amazon S3:
 +  [AbortMultipartUpload](API_AbortMultipartUpload.md)

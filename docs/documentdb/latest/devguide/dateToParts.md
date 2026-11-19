@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dateToParts.h
 ---
 
 # $dateToParts
-<a name="dateToParts"></a>
 
 New from version 5.0.1 and 8.0
 

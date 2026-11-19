@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # TranslationPinDataAs2805Format0
-<a name="API_TranslationPinDataAs2805Format0"></a>
 
 Parameters that are required for translation between AS2805 PIN format 0 translation.
 

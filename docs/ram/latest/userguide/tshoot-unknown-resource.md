@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/tshoot-unknown-reso
 ---
 
 # Error: "UnknownResourceException"
-<a name="tshoot-unknown-resource"></a>
 
 ## Scenario
 <a name="tshoot-unknown-resource-scenario"></a>

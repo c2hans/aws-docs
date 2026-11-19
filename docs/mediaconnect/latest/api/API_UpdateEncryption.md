@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateEncryp
 ---
 
 # UpdateEncryption
-<a name="API_UpdateEncryption"></a>
 
  Information about the encryption of the flow.
 

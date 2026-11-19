@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Publishing to STAC with the REST API connector
-<a name="connector-stac"></a>
 
 This guide shows how to use the REST API connector to publish SDMA asset metadata as [STAC (SpatioTemporal Asset Catalog)](https://stacspec.org/) Items to a STAC-compliant API. STAC connectors are not a separate connector type — they are REST API connectors configured with field mappings that construct STAC Items and triggers that target STAC collection endpoints.
 

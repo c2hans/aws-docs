@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_PortRangePar
 ---
 
 # PortRangeParameterConfig
-<a name="API_PortRangeParameterConfig"></a>
 
 A port range parameter configuration with default value and constraints.
 

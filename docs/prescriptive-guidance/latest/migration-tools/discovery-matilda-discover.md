@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Matilda Discover
-<a name="discovery-matilda-discover"></a>
 
 *Last update: May 15, 2023*
 

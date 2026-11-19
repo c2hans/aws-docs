@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Co
 ---
 
 # ConfiguredModelAlgorithmSummary
-<a name="API_ConfiguredModelAlgorithmSummary"></a>
 
 Provides summary information about a configured model algorithm.
 

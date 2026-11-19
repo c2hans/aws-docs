@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow PrefixConfig
-<a name="aws-properties-appflow-flow-prefixconfig"></a>
 
 Specifies elements that Amazon AppFlow includes in the file and folder names in the flow destination.
 

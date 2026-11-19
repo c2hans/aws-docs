@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/TO_CHAR
 ---
 
 # TO\_CHAR
-<a name="TO_CHAR"></a>
 
 TO\_CHAR converts a timestamp or numeric expression to a character-string data format.
 

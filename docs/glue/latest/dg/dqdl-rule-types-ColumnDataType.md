@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-ColumnDat
 ---
 
 # ColumnDataType
-<a name="dqdl-rule-types-ColumnDataType"></a>
 
  Checks if the values in a given column can be cast in Apache Spark to the provided type. Accepts a `with threshold` expression to check for a subset of the values in the column.
 

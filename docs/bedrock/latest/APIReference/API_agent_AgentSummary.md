@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ag
 ---
 
 # AgentSummary
-<a name="API_agent_AgentSummary"></a>
 
 Contains details about an agent.
 

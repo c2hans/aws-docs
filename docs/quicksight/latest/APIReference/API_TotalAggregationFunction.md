@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Total
 ---
 
 # TotalAggregationFunction
-<a name="API_TotalAggregationFunction"></a>
 
 An aggregation function that aggregates the total values of a measure.
 

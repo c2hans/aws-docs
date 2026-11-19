@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialSolidColor
-<a name="API_GeospatialSolidColor"></a>
 
 The definition for a solid color.
 

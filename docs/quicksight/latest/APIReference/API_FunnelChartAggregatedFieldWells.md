@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Funne
 ---
 
 # FunnelChartAggregatedFieldWells
-<a name="API_FunnelChartAggregatedFieldWells"></a>
 
 The field well configuration of a `FunnelChartVisual`.
 

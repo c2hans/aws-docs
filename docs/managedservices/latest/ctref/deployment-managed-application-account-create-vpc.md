@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # Application Account \| Create VPC
-<a name="deployment-managed-application-account-create-vpc"></a>
 
 Create a VPC with up to 10 private subnets and up to 5 optional public subnets per availability zone (AZ) for two or three AZ's.
 

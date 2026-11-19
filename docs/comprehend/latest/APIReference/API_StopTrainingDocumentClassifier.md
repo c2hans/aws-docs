@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_StopT
 ---
 
 # StopTrainingDocumentClassifier
-<a name="API_StopTrainingDocumentClassifier"></a>
 
 Stops a document classifier training job while in progress.
 

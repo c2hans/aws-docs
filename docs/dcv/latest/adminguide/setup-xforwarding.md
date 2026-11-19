@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/setup-xforwarding.
 ---
 
 # Enable Remote X connections to the X Server for virtual sessions
-<a name="setup-xforwarding"></a>
 
 **Note**
 This configuration is not needed on Linux with Wayland.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Elas
 ---
 
 # ElasticLoadBalancingFullAccess
-<a name="ElasticLoadBalancingFullAccess"></a>
 
 **Description**: Provides full access to Amazon ElasticLoadBalancing, and limited access to other services necessary to provide ElasticLoadBalancing features.
 

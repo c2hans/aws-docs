@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_GetAcmeExter
 ---
 
 # GetAcmeExternalAccountBindingCredentials
-<a name="API_GetAcmeExternalAccountBindingCredentials"></a>
 
 Retrieves the key ID and MAC key credentials for an external account binding. These credentials are used by ACME clients during account registration to bind to the endpoint.
 

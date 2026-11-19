@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Fulfillmen
 ---
 
 # FulfillmentUpdateResponseSpecification
-<a name="API_FulfillmentUpdateResponseSpecification"></a>
 
 Provides settings for a message that is sent periodically to the user while a fulfillment Lambda function is running.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-vec
 ---
 
 # Vectors
-<a name="s3-vectors-vectors"></a>
 
 Each vector consists of a key, which uniquely identifies each vector in a vector index. Additionally, you can attach metadata (for example, year, author, genre, location) as key value pairs to each vector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ListScheduledActions
-<a name="API_ListScheduledActions"></a>
 
 Returns a list of scheduled actions. You can use the flags to filter the list of returned scheduled actions.
 

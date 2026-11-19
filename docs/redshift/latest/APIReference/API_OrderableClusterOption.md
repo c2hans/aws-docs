@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Orderab
 ---
 
 # OrderableClusterOption
-<a name="API_OrderableClusterOption"></a>
 
 Describes an orderable cluster option.
 

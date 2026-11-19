@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/vpc.html
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Connecting to Amazon Q Developer in chat applications with interface VPC endpoints
-<a name="vpc"></a>
 
 You can use AWS PrivateLink to create a private connection between your virtual private cloud (VPC) and Amazon Q Developer in chat applications so that you can access the service as if it were in your own VPC. This doesn't require the use of an internet gateway, network address translation (NAT) device, virtual private network (VPN) connection, or Direct Connect connection. You establish this private connection by creating an interface endpoint that is powered by AWS PrivateLink. An interface endpoint is an elastic network interface with a private IP address that serves as an entry point for traffic destined to a supported AWS service. The endpoint provides reliable and scalable connectivity to Amazon Q Developer in chat applications, without requiring an internet gateway, NAT instance, or VPN connection. Instances in your VPC don't need public IP addresses to access Amazon Q Developer in chat applications. For more information, see [Amazon Virtual Private Cloud](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html) and [Interface VPC Endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#create-interface-endpoint).
 

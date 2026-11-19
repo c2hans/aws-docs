@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/shared-de
 ---
 
 # Shared desktops
-<a name="shared-desktops"></a>
 
 On Shared Desktops, you can see the desktops that have been shared with you. In order to connect to a desktop, the session owner must be connected as well unless you are an Admin or Owner.
 

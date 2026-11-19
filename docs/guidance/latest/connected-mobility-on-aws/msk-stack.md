@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Message streaming
-<a name="msk-stack"></a>
 
 The message streaming layer creates an Amazon MSK cluster for real-time telemetry streaming.
 

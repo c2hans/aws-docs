@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-
 ---
 
 # Do not use named path (unless it is required)
-<a name="best-practices-content-10"></a>
 
  Named path in a query always comes at an additional cost, which can add penalties in terms of higher latency and memory usage. Consider the following query:
 

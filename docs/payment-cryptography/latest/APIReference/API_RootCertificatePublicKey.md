@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # RootCertificatePublicKey
-<a name="API_RootCertificatePublicKey"></a>
 
 Parameter information for root public key certificate import.
 

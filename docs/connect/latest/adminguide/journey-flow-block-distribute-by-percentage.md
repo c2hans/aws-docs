@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/journey-flow-b
 ---
 
 # Distribute by percentage
-<a name="journey-flow-block-distribute-by-percentage"></a>
 
 ## Description
 <a name="journey-flow-block-distribute-by-percentage-description"></a>

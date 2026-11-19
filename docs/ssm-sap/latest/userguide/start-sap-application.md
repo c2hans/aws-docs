@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/start-sap-appli
 ---
 
 # Start SAP application
-<a name="start-sap-application"></a>
 
 You can perform a start operation on a single-node, multi-node (scale-out), or HA (high availability) SAP HANA application, or on a single node or distributed setup of an SAP ABAP application which is registered with AWS Systems Manager for SAP.
 

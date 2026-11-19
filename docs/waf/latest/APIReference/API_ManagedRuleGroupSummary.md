@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ManagedRuleG
 ---
 
 # ManagedRuleGroupSummary
-<a name="API_ManagedRuleGroupSummary"></a>
 
 High-level information about a managed rule group, returned by [ListAvailableManagedRuleGroups](API_ListAvailableManagedRuleGroups.md). This provides information like the name and vendor name, that you provide when you add a [ManagedRuleGroupStatement](API_ManagedRuleGroupStatement.md) to a web ACL. Managed rule groups include AWS Managed Rules rule groups and AWS Marketplace managed rule groups. To use any AWS Marketplace managed rule group, first subscribe to the rule group through AWS Marketplace.
 

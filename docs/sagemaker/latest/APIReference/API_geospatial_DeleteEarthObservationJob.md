@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # DeleteEarthObservationJob
-<a name="API_geospatial_DeleteEarthObservationJob"></a>
 
 Use this operation to delete an Earth Observation job.
 

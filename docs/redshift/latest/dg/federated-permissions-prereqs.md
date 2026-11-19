@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/federated-permissions
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Prerequisites
-<a name="federated-permissions-prereqs"></a>
 
 ## IAM policy requirements for Amazon Redshift federated permissions setup
 <a name="federated-permissions-prereqs-iam"></a>
@@ -22,7 +21,7 @@ For Redshift Serverless warehouse to enable Redshift federated permissions:
 + `redshift-serverless:UpdateLakehouseConfiguration`
 + `redshift:RegisterNamespace`
 
-If you register with the AWS Glue Data Catalog instead of Amazon Redshift multi-warehouse, additional IAM permissions and setup are required. See [AWS Glue Data Catalog Prerequisites](federated-permissions-prereqs-glue.md).
+If you register with the AWS Glue Data Catalog instead of Amazon Redshift multi-warehouse, additional IAM permissions and setup are required. See [AWS Glue Data Catalog prerequisites](federated-permissions-prereqs-glue.md).
 
 ## IAM Identity Center application configuration for Redshift warehouse with federated permissions
 <a name="federated-permissions-prereqs-configuration"></a>
@@ -190,7 +189,7 @@ aws redshift modify-redshift-idc-application \
 
 ------
 
-If you register with the AWS Glue Data Catalog instead of Amazon Redshift multi-warehouse, you must also create or update a Lake Formation identity center configuration. See [AWS Glue Data Catalog Prerequisites](federated-permissions-prereqs-glue.md).
+If you register with the AWS Glue Data Catalog instead of Amazon Redshift multi-warehouse, you must also create or update a Lake Formation identity center configuration. See [AWS Glue Data Catalog prerequisites](federated-permissions-prereqs-glue.md).
 
 ## Network configuration for enhanced VPC routing
 <a name="federated-permissions-prereqs-network"></a>

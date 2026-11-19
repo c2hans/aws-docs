@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_QuickCon
 ---
 
 # QuickConnectSearchFilter
-<a name="API_QuickConnectSearchFilter"></a>
 
 Filters to be applied to search results.
 

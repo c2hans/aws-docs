@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteMa
 ---
 
 # DeleteMarketplaceModelEndpoint
-<a name="API_DeleteMarketplaceModelEndpoint"></a>
 
 Deletes an endpoint for a model from Amazon Bedrock Marketplace.
 

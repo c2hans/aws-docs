@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/s3-example
 AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [AWS SDK for Go V2](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-go-v1-on-july-31-2025/).
 
 # Requiring Encryption on the Server to Upload Amazon S3 Bucket Objects
-<a name="s3-example-enforce-server-side-encryption"></a>
 
 The following example uses the [PutBucketPolicy](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutBucketPolicy) method to require that objects uploaded to an Amazon S3 bucket have Amazon S3 encrypt the object with an AWS KMS key. Attempts to upload an object without specifying that Amazon S3 encrypt the object with an AWS KMS key raise an `Aws::S3::Errors::AccessDenied` exception.
 

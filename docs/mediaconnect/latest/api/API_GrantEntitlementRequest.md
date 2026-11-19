@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_GrantEntitle
 ---
 
 # GrantEntitlementRequest
-<a name="API_GrantEntitlementRequest"></a>
 
  The entitlements that you want to grant on a flow.
 

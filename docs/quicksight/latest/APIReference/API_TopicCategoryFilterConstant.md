@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicCategoryFilterConstant
-<a name="API_TopicCategoryFilterConstant"></a>
 
 A constant used in a category filter.
 

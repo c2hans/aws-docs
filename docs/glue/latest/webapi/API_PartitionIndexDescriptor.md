@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PartitionIndexDes
 ---
 
 # PartitionIndexDescriptor
-<a name="API_PartitionIndexDescriptor"></a>
 
 A descriptor for a partition index in a table.
 

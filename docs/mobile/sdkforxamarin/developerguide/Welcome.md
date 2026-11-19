@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/Welc
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # What is the AWS Mobile SDK for .NET and Xamarin?
-<a name="Welcome"></a>
 
 The AWS Mobile SDK for Xamarin is included in the SDK for .NET. For more information, see the [*AWS SDK for .NET Developer Guide*](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/welcome.html).
 

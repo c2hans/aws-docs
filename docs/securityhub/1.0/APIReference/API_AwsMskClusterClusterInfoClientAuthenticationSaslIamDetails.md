@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsMskC
 ---
 
 # AwsMskClusterClusterInfoClientAuthenticationSaslIamDetails
-<a name="API_AwsMskClusterClusterInfoClientAuthenticationSaslIamDetails"></a>
 
  Details for SASL/IAM client authentication.
 

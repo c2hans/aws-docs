@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
 ---
 
 # Job settings file
-<a name="job-settings-file"></a>
 
  By default, this solution creates an `assets01` folder in the root of the S3 bucket with a `job-settings.json` file*.* Video uploads to this folder invoke a workflow to apply job settings to the job created in MediaConvert.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/doc-history.html
 ---
 
 # Document history for the AWS Events API
-<a name="doc-history"></a>
 
  The following table describes the documentation releases for the AWS Events API Developer Guide.
 

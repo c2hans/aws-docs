@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/code-sa
 For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Run UNLOAD query
-<a name="code-samples.run-query-unload"></a>
 
 The following code examples call an UNLOAD query. For information about `UNLOAD`, see [Using UNLOAD to export query results to S3 from Timestream for LiveAnalytics](export-unload.md). For examples of `UNLOAD` queries, see [Example use case for UNLOAD from Timestream for LiveAnalytics](export-unload-example-use-case.md).
 

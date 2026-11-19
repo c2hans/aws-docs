@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Lambda authorizer examples for AWS SAM
-<a name="serverless-controlling-access-to-apis-lambda-authorizer"></a>
 
 The `AWS::Serverless::Api` resource type supports two types of Lambda authorizers: `TOKEN` authorizers and `REQUEST` authorizers. The `AWS::Serverless::HttpApi` resource type supports only `REQUEST` authorizers. The following are examples of each type.
 

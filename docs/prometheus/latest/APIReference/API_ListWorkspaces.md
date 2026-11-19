@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_ListW
 ---
 
 # ListWorkspaces
-<a name="API_ListWorkspaces"></a>
 
 Lists all of the Amazon Managed Service for Prometheus workspaces in your account. This includes workspaces being created or deleted.
 

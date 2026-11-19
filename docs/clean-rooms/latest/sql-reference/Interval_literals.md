@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Interva
 ---
 
 # Interval literals
-<a name="Interval_literals"></a>
 
 Following are rules for working with interval literals that are supported by AWS Clean Rooms Spark SQL.
 

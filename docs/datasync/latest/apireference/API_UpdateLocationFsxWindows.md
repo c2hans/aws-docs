@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_UpdateL
 ---
 
 # UpdateLocationFsxWindows
-<a name="API_UpdateLocationFsxWindows"></a>
 
 Modifies the following configuration parameters of the Amazon FSx for Windows File Server transfer location that you're using with AWS DataSync.
 

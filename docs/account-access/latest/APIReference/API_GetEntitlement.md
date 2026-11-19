@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_G
 ---
 
 # GetEntitlement
-<a name="API_GetEntitlement"></a>
 
 Retrieves details about a specific entitlement for an account access manager application, including the principal, IAM role, and target account.
 

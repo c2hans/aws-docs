@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ex
 ---
 
 # ExportServerSideEncryption
-<a name="API_ExportServerSideEncryption"></a>
 
 Encryption configuration of the export job. Includes the encryption type in addition to the AWS KMS key. The KMS key is only necessary if you chose the KMS encryption type.
 

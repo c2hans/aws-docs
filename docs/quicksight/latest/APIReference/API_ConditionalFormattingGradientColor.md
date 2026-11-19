@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Condi
 ---
 
 # ConditionalFormattingGradientColor
-<a name="API_ConditionalFormattingGradientColor"></a>
 
 Formatting configuration for gradient color.
 

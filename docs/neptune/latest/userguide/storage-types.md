@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/storage-types.h
 ---
 
 # Choosing storage types for Amazon Neptune
-<a name="storage-types"></a>
 
 Neptune offers two types of storage with a different pricing model:
 + **Standard storage**   –   Standard storage provides cost-effective database storage for applications with moderate to low I/O usage.

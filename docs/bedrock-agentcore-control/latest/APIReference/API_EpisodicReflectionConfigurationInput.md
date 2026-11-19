@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # EpisodicReflectionConfigurationInput
-<a name="API_EpisodicReflectionConfigurationInput"></a>
 
 An episodic reflection configuration input.
 

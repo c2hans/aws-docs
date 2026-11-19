@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Viewe
 ---
 
 # ViewerMtlsConfig
-<a name="API_ViewerMtlsConfig"></a>
 
 A viewer mTLS configuration.
 

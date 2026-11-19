@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # SYS\_LOG\_PARSE
-<a name="sql-reference-sys-log-parse"></a>
 
 Parses the standard syslog format:
 

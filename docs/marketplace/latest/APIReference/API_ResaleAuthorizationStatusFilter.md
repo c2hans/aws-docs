@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Resa
 ---
 
 # ResaleAuthorizationStatusFilter
-<a name="API_ResaleAuthorizationStatusFilter"></a>
 
 Allows filtering on the `Status` of a ResaleAuthorization.
 

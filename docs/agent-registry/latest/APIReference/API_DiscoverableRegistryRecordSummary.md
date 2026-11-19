@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_D
 ---
 
 # DiscoverableRegistryRecordSummary
-<a name="API_DiscoverableRegistryRecordSummary"></a>
 
  Summary information about a discoverable registry record returned by ` ListDiscoverableRegistryRecords`. This summary does not include descriptors.
 

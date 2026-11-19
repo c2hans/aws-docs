@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/show-tables.html
 ---
 
 # SHOW TABLES
-<a name="show-tables"></a>
 
 Lists all the base tables and views in a database.
 

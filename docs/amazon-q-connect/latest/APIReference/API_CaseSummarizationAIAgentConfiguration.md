@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # CaseSummarizationAIAgentConfiguration
-<a name="API_amazon-q-connect_CaseSummarizationAIAgentConfiguration"></a>
 
 The configuration for AI Agents of type `CASE_SUMMARIZATION`.
 

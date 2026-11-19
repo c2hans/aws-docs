@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListCustomEntityT
 ---
 
 # ListCustomEntityTypes
-<a name="API_ListCustomEntityTypes"></a>
 
 Lists all the custom patterns that have been created.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::ApplicationOutput DestinationSchema
-<a name="aws-properties-kinesisanalyticsv2-applicationoutput-destinationschema"></a>
 
 Describes the data format when records are written to the destination in a SQL-based Kinesis Data Analytics application.
 

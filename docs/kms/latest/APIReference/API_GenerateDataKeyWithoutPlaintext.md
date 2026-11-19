@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateData
 ---
 
 # GenerateDataKeyWithoutPlaintext
-<a name="API_GenerateDataKeyWithoutPlaintext"></a>
 
 Returns a unique symmetric data key for use outside of AWS KMS. This operation returns a data key that is encrypted under a symmetric encryption KMS key that you specify. The bytes in the key are random; they are not related to the caller or to the KMS key.
 

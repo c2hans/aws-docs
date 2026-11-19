@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/deploy-event-replay-pipeli
 ---
 
 # Deploying the Event Replay Pipeline with Amazon SNS integration
-<a name="deploy-event-replay-pipeline"></a>
 
 This page shows how to deploy the [Event Replay Pipeline](sns-fork-pipeline-as-subscriber.md#sns-fork-event-replay-pipeline) and subscribe it to an Amazon SNS topic. This process automatically turns the AWS SAM template associated with the pipeline into an CloudFormation stack, and then deploys the stack into your AWS account. This process also creates and configures the set of resources that comprise the Event Replay Pipeline, including an Amazon SQS queue and a Lambda function.
 

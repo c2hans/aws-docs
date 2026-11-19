@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ScheduledReportInput
-<a name="API_bcmDashboards_ScheduledReportInput"></a>
 
 Defines the configuration for creating a new scheduled report, including the dashboard, schedule, execution role, and optional widget settings.
 

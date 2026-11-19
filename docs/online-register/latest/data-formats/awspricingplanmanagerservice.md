@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsp
 ---
 
 # Data retrieval APIs for AWS PricingPlanManager Service
-<a name="awspricingplanmanagerservice"></a>
 
 AWS PricingPlanManager Service provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Regis
 ---
 
 # RegisteredUserQuickChatEmbeddingConfiguration
-<a name="API_RegisteredUserQuickChatEmbeddingConfiguration"></a>
 
 An object that provides information about the configuration of a chat agent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # AD Connector
-<a name="active-directory-connector"></a>
 
 ## Overview
 <a name="active-directory-connector-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon EC2
-<a name="amazonec2"></a>
 
 Amazon EC2 provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Accele
 ---
 
 # AcceleratorTotalMemoryMiBRequest
-<a name="API_AcceleratorTotalMemoryMiBRequest"></a>
 
 The minimum and maximum total accelerator memory in mebibytes (MiB) for instance type selection. This is important for GPU workloads that require specific amounts of video memory.
 

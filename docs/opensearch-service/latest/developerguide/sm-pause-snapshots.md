@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Pausing automated snapshots
-<a name="sm-pause-snapshots"></a>
 
 OpenSearch Service lets you temporarily pause automated snapshots on your domain. This is useful when you need to perform data migrations, run maintenance operations, or avoid snapshot overhead during peak traffic periods.
 

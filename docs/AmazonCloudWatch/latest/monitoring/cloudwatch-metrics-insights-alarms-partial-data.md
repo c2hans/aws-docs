@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 ---
 
 # How partial data is handled
-<a name="cloudwatch-metrics-insights-alarms-partial-data"></a>
 
 ## How partial data from a Metrics Insights query is evaluated
 <a name="cloudwatch-metrics-insights-query-evaluation"></a>

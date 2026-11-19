@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-configure-ap
 ---
 
 # Configure applications when you create a cluster
-<a name="emr-configure-apps-create-cluster"></a>
 
 When you create a cluster, you can override the default configurations for applications using the Amazon EMR console, the AWS Command Line Interface (AWS CLI), or the AWS SDK.
 

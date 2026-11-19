@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/wa
 ---
 
 # Waiters
-<a name="waiters"></a>
 
 Waiters are a client-side abstraction used to poll a resource until a desired state is reached, or until it is determined that the resource will not enter the desired state. This is a common task when working with services that are eventually consistent, like Amazon Simple Storage Service (Amazon S3), or services that asynchronously create resources, like Amazon EC2.
 

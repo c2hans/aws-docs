@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsDialPhoneAction
-<a name="API_RcsDialPhoneAction"></a>
 
 A suggested action that initiates a phone call to a specified number when tapped by the recipient.
 

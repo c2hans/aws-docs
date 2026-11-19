@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/creating-a-ba
 ---
 
 # Create a backup plan
-<a name="creating-a-backup-plan"></a>
 
 You can create a backup plan using the AWS Backup console, API, CLI, SDK, or an AWS CloudFormation template.
 

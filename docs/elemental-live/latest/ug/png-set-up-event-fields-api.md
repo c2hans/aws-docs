@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/png-set-up-even
 ---
 
 # Using the REST API
-<a name="png-set-up-event-fields-api"></a>
 
 This description assumes that you are familiar with using the REST API and with the XML body for a `live_event`.
 

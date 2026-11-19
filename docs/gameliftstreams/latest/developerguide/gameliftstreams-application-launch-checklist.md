@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/ga
 ---
 
 # Amazon GameLift Streams launch checklist
-<a name="gameliftstreams-application-launch-checklist"></a>
 
 Preparing for a successful launch on Amazon GameLift Streams involves planning and coordination. Follow this detailed checklist to ensure a smooth experience in the weeks leading up to your event.
 

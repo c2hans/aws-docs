@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_Upda
 ---
 
 # UpdateServiceSettings
-<a name="API_UpdateServiceSettings"></a>
 
 Updates settings configured for Quick Setup.
 

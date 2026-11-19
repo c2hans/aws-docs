@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListAssetModelCompositeModels
-<a name="API_ListAssetModelCompositeModels"></a>
 
 Retrieves a paginated list of composite models associated with the asset model
 

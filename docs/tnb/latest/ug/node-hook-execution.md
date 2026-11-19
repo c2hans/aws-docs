@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-hook-execution.html
 ---
 
 # AWS.HookExecution
-<a name="node-hook-execution"></a>
 
 A lifecycle hook provides you with the ability to run your own scripts as part of your infrastructure and network instantiation.
 

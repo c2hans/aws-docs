@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Resources
-<a name="resources-sus"></a>
 
  **Related documents:**
 +  [Manage the running mode in WorkSpaces Personal](https://docs.aws.amazon.com/workspaces/latest/adminguide/running-mode.html)

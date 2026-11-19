@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ExportD
 ---
 
 # ExportDestination
-<a name="API_ExportDestination"></a>
 
 Specifies where Security Hub writes the export output. This is a union: you must specify exactly one member. Currently, the only supported member is `S3`.
 

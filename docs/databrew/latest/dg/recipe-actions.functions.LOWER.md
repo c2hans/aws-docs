@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # LOWER
-<a name="recipe-actions.functions.LOWER"></a>
 
 Converts all alphabetical characters from the strings in the source column or custom strings to lowercase, and returns the result in a new column.
 

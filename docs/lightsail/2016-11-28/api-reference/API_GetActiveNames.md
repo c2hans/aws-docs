@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetActiveNames
-<a name="API_GetActiveNames"></a>
 
 Returns the names of all active (not deleted) resources.
 

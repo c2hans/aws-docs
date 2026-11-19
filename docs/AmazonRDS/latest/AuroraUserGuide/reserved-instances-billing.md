@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/reserve
 ---
 
 # Viewing the billing for reserved DB instances for Amazon Aurora
-<a name="reserved-instances-billing"></a>
 
 You can view the billing for your reserved DB instances in the Billing Dashboard in the AWS Management Console.
 

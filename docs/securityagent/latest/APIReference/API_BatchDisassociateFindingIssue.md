@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchDisassociateFindingIssue
-<a name="API_BatchDisassociateFindingIssue"></a>
 
 Disassociates a batch of findings from their linked issues.
 

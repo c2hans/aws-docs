@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_List
 ---
 
 # ListGraphSnapshots
-<a name="API_ListGraphSnapshots"></a>
 
 Lists available snapshots of a specified Neptune Analytics graph.
 

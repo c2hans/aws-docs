@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bul
 ---
 
 # Phase 4: Validate
-<a name="phase4"></a>
 
 ## Step 1: Check tablespaces for corruption
 <a name="step-1--check-tablespaces-for-corruption.54856f81-03d4-5555-a587-2f048c06f914"></a>

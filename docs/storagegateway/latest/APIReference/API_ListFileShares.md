@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_L
 ---
 
 # ListFileShares
-<a name="API_ListFileShares"></a>
 
 Gets a list of the file shares for a specific S3 File Gateway, or the list of file shares that belong to the calling AWS account. This operation is only supported for S3 File Gateways.
 

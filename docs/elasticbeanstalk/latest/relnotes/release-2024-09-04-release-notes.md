@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk adds support for Internet Protocol Version 6 (IPv6) inbound traffic on September 4, 2024
-<a name="release-2024-09-04-release-notes"></a>
 
 AWS Elastic Beanstalk adds support for inbound Internet Protocol Version 6 (IPv6) traffic.
 

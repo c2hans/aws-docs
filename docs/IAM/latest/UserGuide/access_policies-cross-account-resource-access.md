@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-cro
 ---
 
 # Cross account resource access in IAM
-<a name="access_policies-cross-account-resource-access"></a>
 
 For some AWS services, you can grant cross-account access to your resources using IAM. To do this, you can attach a resource policy directly to the resource that you want to share, or use a role as a proxy.
 

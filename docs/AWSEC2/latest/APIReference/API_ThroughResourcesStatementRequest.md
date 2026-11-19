@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ThroughRe
 ---
 
 # ThroughResourcesStatementRequest
-<a name="API_ThroughResourcesStatementRequest"></a>
 
 Describes a through resource statement.
 

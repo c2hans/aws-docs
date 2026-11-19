@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # IngestionAlert
-<a name="API_IngestionAlert"></a>
 
 An alert about an operational issue that currently affects a running ingestion. Alerts are cleared when the issue is resolved.
 

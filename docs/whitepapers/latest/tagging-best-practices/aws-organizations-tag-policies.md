@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # AWS Organizations – Tag policies
-<a name="aws-organizations-tag-policies"></a>
 
  Policies in AWS Organizations allow you to apply additional types of governance to AWS accounts in your organization. A [*tag policy*](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_tag-policies.html) is how you can express your tagging schema in JSON form so that the platform can report and optionally enforce the schema within your AWS environment. The tag policy defines the values that are acceptable for a tag key on specific resource types. This policy can be in the form of a list of values, or a prefix followed by a wildcard character (`*`). The simple prefix approach is less rigorous than a discrete list of values but requires less maintenance.
 

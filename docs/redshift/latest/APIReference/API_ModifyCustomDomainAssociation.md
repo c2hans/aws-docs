@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyC
 ---
 
 # ModifyCustomDomainAssociation
-<a name="API_ModifyCustomDomainAssociation"></a>
 
 Contains information for changing a custom domain association.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ListMemoryExtractionJobs
-<a name="API_ListMemoryExtractionJobs"></a>
 
 Lists all long-term memory extraction jobs that are eligible to be started with optional filtering.
 

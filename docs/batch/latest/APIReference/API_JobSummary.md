@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_JobSummary
 ---
 
 # JobSummary
-<a name="API_JobSummary"></a>
 
 An object that represents summary details of a job.
 

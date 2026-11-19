@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-efs-in
 ---
 
 # Removing the EFS\_INTEGRATION option
-<a name="oracle-efs-integration.removing"></a>
 
 The steps for removing the `EFS_INTEGRATION` option depend on whether you're removing the option from multiple DB instances or a single instance.
 

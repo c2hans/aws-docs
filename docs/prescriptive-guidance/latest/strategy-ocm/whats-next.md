@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-oc
 ---
 
 # Next steps
-<a name="whats-next"></a>
 
 Preparing your organization for success in the cloud requires a dedicated focus on culture and change leadership acceleration. After you read this article and understand the benefits of programmatic change acceleration, you can follow these key steps to accelerate your organization's cloud transformation and adoption journey:
 

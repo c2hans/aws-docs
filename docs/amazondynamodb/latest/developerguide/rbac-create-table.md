@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rba
 ---
 
 # Create a table with a resource-based policy
-<a name="rbac-create-table"></a>
 
 You can add a resource-based policy while you create a table by using the DynamoDB console, [CreateTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_CreateTable.html) API, AWS CLI, [AWS SDK](rbac-attach-resource-based-policy.md#rbac-attach-policy-java-sdk), or an CloudFormation template.
 

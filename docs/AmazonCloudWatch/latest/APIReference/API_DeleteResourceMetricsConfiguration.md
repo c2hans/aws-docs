@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # DeleteResourceMetricsConfiguration
-<a name="API_DeleteResourceMetricsConfiguration"></a>
 
 Deletes the resource metrics configuration for an AWS resource. After you delete the configuration, Amazon CloudWatch stops collecting detailed metrics for the resource. Metric data that Amazon CloudWatch already collected for the resource is not deleted.
 

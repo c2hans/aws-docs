@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/start-serv
 ---
 
 # Getting started with a service in the AWS Management Console
-<a name="start-service"></a>
 
 The [AWS Management Console](https://console.aws.amazon.com/) provides multiple ways for navigating to individual service consoles.
 

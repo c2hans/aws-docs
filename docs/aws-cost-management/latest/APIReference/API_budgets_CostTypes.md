@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostTypes
-<a name="API_budgets_CostTypes"></a>
 
 The types of cost that are included in a `COST` budget, such as tax and subscriptions.
 

@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Amazon S3 and Tools for Windows PowerShell
-<a name="pstools-s3"></a>
 
 In this section, we create a static website using the AWS Tools for Windows PowerShell using Amazon S3 and CloudFront. In the process, we demonstrate a number of common tasks with these services. This walkthrough is modeled after the Getting Started Guide for [Host a Static Website](https://aws.amazon.com/getting-started/projects/host-static-website/), which describes a similar process using the [AWS Management Console](https://console.aws.amazon.com/s3/home).
 

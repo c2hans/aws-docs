@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Databas
 ---
 
 # DatabaseSourceDescription
-<a name="API_DatabaseSourceDescription"></a>
 
  The top level object for database source description.
 

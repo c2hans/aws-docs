@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ge
 ---
 
 # GetRecordingConfiguration
-<a name="API_GetRecordingConfiguration"></a>
 
 Gets the recording configuration for the specified ARN.
 

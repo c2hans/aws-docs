@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/update-
 ---
 
 # UpdateThemePermissions
-<a name="update-theme-permissions"></a>
 
 Use the `UpdateThemePermissions` operation to update the resource permissions for a template. You can grant or revoke permissions in the same command. To use this operation, you need the ID of the theme that you want to update. You can use the `ListThemes` operation to list all themes and their corresponding theme IDs.
 

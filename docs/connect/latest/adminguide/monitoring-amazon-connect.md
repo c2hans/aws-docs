@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/monitoring-ama
 ---
 
 # Monitor live and recorded conversations using Connect Customer conversational analytics
-<a name="monitoring-amazon-connect"></a>
 
 Managers can monitor or listen-in to live conversations between agents and contacts. They can also review and download recordings of past interactions for both automated interactions (IVR) and agent interactions.
 

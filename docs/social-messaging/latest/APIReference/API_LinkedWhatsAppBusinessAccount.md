@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # LinkedWhatsAppBusinessAccount
-<a name="API_LinkedWhatsAppBusinessAccount"></a>
 
 The details of your linked WhatsApp Business Account.
 

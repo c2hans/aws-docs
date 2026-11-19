@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Up
 ---
 
 # UpdateEventAction
-<a name="API_UpdateEventAction"></a>
 
 This operation updates the event action.
 

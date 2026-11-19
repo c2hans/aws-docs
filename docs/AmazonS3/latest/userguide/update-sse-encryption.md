@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/update-sse-enc
 ---
 
 # Updating server-side encryption for existing data
-<a name="update-sse-encryption"></a>
 
 All Amazon S3 buckets have encryption configured by default, and objects are automatically encrypted by using server-side encryption with Amazon S3 managed keys (SSE-S3). This default encryption setting applies to all new objects in your Amazon S3 buckets.
 

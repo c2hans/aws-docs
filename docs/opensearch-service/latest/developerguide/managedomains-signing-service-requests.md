@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Making and signing OpenSearch Service requests
-<a name="managedomains-signing-service-requests"></a>
 
 Even if you configure a completely open resource-based access policy, *all* requests to the OpenSearch Service configuration API must be signed. If your policies specify IAM roles or users, requests to the OpenSearch APIs also must be signed using AWS Signature Version 4. The signing method differs by API:
 + To make calls to the OpenSearch Service configuration API, we recommend that you use one of the [AWS SDKs](https://docs.aws.amazon.com/sdkref/latest/guide/overview.html). The SDKs greatly simplify the process and can save you a significant amount of time compared to creating and signing your own requests. The configuration API endpoints use the following format:

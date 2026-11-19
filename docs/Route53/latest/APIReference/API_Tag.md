@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Tag.html
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A complex type that contains information about a tag that you want to add or edit for the specified health check or hosted zone.
 

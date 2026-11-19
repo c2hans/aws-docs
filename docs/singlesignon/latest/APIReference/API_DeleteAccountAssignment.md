@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Del
 ---
 
 # DeleteAccountAssignment
-<a name="API_DeleteAccountAssignment"></a>
 
 Deletes a principal's access from a specified AWS account using a specified permission set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSn
 ---
 
 # Exporting DB snapshot data to Amazon S3 for Amazon RDS
-<a name="USER_ExportSnapshot"></a>
 
 You can export DB snapshot data to an Amazon S3 bucket. The export process runs in the background and doesn't affect the performance of your active database.
 

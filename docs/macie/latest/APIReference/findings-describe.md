@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/findings-descr
 ---
 
 # Findings
-<a name="findings-describe"></a>
 
 The Findings resource represents the repository of findings for your Amazon Macie account. A *finding* is a detailed report of a potential issue with the security or privacy of an Amazon Simple Storage Service (Amazon S3) general purpose bucket or sensitive data in an S3 object. Each finding provides details such as a severity rating, information about the affected resource, and when and how Macie found the issue. The severity and details of each finding vary depending on the type and nature of the finding. For information about the types of findings that Macie can generate, see [Types of findings](https://docs.aws.amazon.com/macie/latest/user/findings-types.html) in the *Amazon Macie User Guide*.
 

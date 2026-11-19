@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Reques
 ---
 
 # RequestCancelActivityTaskFailedEventAttributes
-<a name="API_RequestCancelActivityTaskFailedEventAttributes"></a>
 
 Provides the details of the `RequestCancelActivityTaskFailed` event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/data-api-dp-loa
 ---
 
 # Neptune data plane bulk loader APIs
-<a name="data-api-dp-loader"></a>
 
 **Bulk-load actions:**
 + [StartLoaderJob (action)](#StartLoaderJob)

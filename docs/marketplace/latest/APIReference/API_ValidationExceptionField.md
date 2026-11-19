@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Vali
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Detailed information about a single request field that failed validation, including the field's location, the reason it failed, and a human-readable message.
 

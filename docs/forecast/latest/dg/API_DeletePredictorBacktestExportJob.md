@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/API_DeletePredictorBa
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # DeletePredictorBacktestExportJob
-<a name="API_DeletePredictorBacktestExportJob"></a>
 
 Deletes a predictor backtest export job.
 

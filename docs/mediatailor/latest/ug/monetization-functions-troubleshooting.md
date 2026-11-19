@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Troubleshooting and monitoring Functions
-<a name="monetization-functions-troubleshooting"></a>
 
 This page helps you diagnose common function errors and monitor function performance in production. The troubleshooting section is organized by symptom — start with what you observe, then follow the cause and fix.
 

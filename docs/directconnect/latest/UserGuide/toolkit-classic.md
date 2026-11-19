@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/toolkit-c
 ---
 
 # Configure a Direct Connect Classic connection
-<a name="toolkit-classic"></a>
 
 Configure a Classic connection when you have existing Direct Connect connections.
 

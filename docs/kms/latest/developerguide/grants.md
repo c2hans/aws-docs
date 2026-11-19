@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/grants.html
 ---
 
 # Grants in AWS KMS
-<a name="grants"></a>
 
 A *grant* is a policy instrument that allows [AWS principals](https://docs.aws.amazon.com/IAM/latest/UserGuide/intro-structure.html#intro-structure-principal) or AWS [service principals](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html#principal-services) to use KMS keys in cryptographic operations. It also can let them view a KMS key (`DescribeKey`) and create and manage grants. When authorizing access to a KMS key, grants are considered along with [key policies](key-policies.md) and [IAM policies](iam-policies.md). Grants are often used for temporary permissions because you can create one, use its permissions, and delete it without changing your key policies or IAM policies.
 

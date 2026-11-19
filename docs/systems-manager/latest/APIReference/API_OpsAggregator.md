@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OpsAggregator
-<a name="API_OpsAggregator"></a>
 
 One or more aggregators for viewing counts of OpsData using different dimensions such as `Source`, `CreatedTime`, or `Source and CreatedTime`, to name a few.
 
@@ -12,7 +11,7 @@ One or more aggregators for viewing counts of OpsData using different dimensions
 
  ** Aggregators **   <a name="systemsmanager-Type-OpsAggregator-Aggregators"></a>
 A nested aggregator for viewing counts of OpsData.
-Type: Array of [OpsAggregator](#API_OpsAggregator) objects
+Type: Array of [OpsAggregator](API_OpsAggregator.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 12 items.
 Required: No
 

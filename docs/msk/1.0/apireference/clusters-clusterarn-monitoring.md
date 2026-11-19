@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # Monitoring Properties
-<a name="clusters-clusterarn-monitoring"></a>
 
 The options for monitoring an Amazon MSK cluster. You can specify which Apache Kafka metrics you want Amazon MSK to gather and send to Amazon CloudWatch. You can also configure open monitoring to gather metrics with Prometheus or Prometheus-compatible tools.
 

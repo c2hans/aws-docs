@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_DisableKeyRo
 ---
 
 # DisableKeyRotation
-<a name="API_DisableKeyRotation"></a>
 
 Disables [automatic rotation of the key material](https://docs.aws.amazon.com/kms/latest/developerguide/rotating-keys-enable-disable.html) of the specified symmetric encryption KMS key.
 

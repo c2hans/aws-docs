@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Configure solution settings in the web application
-<a name="updating-the-global-config"></a>
 
 Innovation Sandbox on AWS stores its global configuration settings in an Amazon DynamoDB table. You manage the settings on the **Settings** page of the solution web UI. The solution no longer manages these settings through the AWS AppConfig console.
 

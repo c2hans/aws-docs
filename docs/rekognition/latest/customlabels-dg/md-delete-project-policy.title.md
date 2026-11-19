@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-de
 ---
 
 # Deleting a project policy (SDK)
-<a name="md-delete-project-policy.title"></a>
 
 You can use the [DeleteProjectPolicy](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteProjectPolicy) operation to delete a revision of an existing project policy from an Amazon Rekognition Custom Labels project. If you want to delete all revisions of a project policy that are attached to a project, use [ListProjectPolicies](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListProjectPolicies) to get the revision IDs of each project policy attached to the project. Then call `DeletePolicy` for each policy name.
 

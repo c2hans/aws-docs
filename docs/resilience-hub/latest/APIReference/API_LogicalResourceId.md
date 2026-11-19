@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # LogicalResourceId
-<a name="API_LogicalResourceId"></a>
 
 Defines a logical resource identifier.
 

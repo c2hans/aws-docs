@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Pr
 ---
 
 # ProtectedQuerySQLParameters
-<a name="API_ProtectedQuerySQLParameters"></a>
 
 The parameters for the SQL type Protected Query.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # DataArtifact
-<a name="API_marketplace-discovery_DataArtifact"></a>
 
 Describes a data artifact within a Data Exchange fulfillment option.
 

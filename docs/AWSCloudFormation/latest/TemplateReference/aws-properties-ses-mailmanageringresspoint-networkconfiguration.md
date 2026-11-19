@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerIngressPoint NetworkConfiguration
-<a name="aws-properties-ses-mailmanageringresspoint-networkconfiguration"></a>
 
 The network type (IPv4-only, Dual-Stack, PrivateLink) of the ingress endpoint resource.
 

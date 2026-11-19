@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/SMPTE-ST-2110.h
 ---
 
 # Working with SMPTE 2110
-<a name="SMPTE-ST-2110"></a>
 
 Elemental Live supports both inputs and outputs that are compliant with the SMPTE 2110 suite of standards.
 

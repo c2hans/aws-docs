@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # ServiceManagedEc2FleetConfiguration
-<a name="API_ServiceManagedEc2FleetConfiguration"></a>
 
 The configuration details for a service managed EC2 fleet.
 

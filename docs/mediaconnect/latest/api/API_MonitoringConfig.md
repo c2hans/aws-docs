@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MonitoringCo
 ---
 
 # MonitoringConfig
-<a name="API_MonitoringConfig"></a>
 
  The settings for source monitoring.
 

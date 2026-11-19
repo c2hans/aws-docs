@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_DeleteLink.h
 ---
 
 # DeleteLink
-<a name="API_DeleteLink"></a>
 
 Deletes a link between a monitoring account sink and a source account. You must run this operation in the source account.
 

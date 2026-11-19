@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # AWS services used in ECS architecture
-<a name="aws-services-in-this-solution"></a>
 
 | AWS service | Description |
 | --- | --- |

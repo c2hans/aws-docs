@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # DeleteLocation
-<a name="API_DeleteLocation"></a>
 
  **This API works with the following fleet types:** Anywhere
 

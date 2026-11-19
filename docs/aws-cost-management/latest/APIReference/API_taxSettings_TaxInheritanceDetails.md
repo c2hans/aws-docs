@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TaxInheritanceDetails
-<a name="API_taxSettings_TaxInheritanceDetails"></a>
 
  Tax inheritance information associated with the account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-mget.ht
 ---
 
 # JSON.MGET
-<a name="json-mget"></a>
 
 Gets serialized JSONs at the path from multiple document keys. It returns null for a nonexistent key or JSON path.
 

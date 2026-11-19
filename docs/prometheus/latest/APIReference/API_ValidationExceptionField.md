@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Valid
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Information about a field passed into a request that resulted in an exception.
 

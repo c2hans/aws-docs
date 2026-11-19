@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/granting-filter
 ---
 
 # Granting data filter permissions
-<a name="granting-filter-perms"></a>
 
 You can grant the `SELECT`, `DESCRIBE` and `DROP` Lake Formation permissions on data filters to principals.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_S
 ---
 
 # StopPipe
-<a name="API_StopPipe"></a>
 
 Stop an existing pipe.
 

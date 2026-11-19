@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/asm_acce
 ---
 
 # Access AWS Secrets Manager
-<a name="asm_access"></a>
 
 **Topics**
 + [Secrets Manager console](#asm-console)

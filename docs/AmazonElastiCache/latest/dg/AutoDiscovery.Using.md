@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AutoDiscover
 ---
 
 # Using Auto Discovery
-<a name="AutoDiscovery.Using"></a>
 
 To begin using Auto Discovery with ElastiCache for Memcached, follow these steps:
 + [Obtain the Configuration Endpoint](#AutoDiscovery.Using.ConfigEndpoint)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Embed the Honeypot link in your web application (optional)
-<a name="embed-the-honeypot-link-in-your-web-application-optional"></a>
 
 If you chose `yes` for the **Activate Bad Bot Protection** parameter in [Step 1. Launch the stack](step-1.-launch-the-stack.md), the CloudFormation template creates a trap endpoint to a low-interaction production honeypot. This trap is intended to detect and divert inbound requests from content scrapers and bad bots. Valid users won’t attempt to access this endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # S3DataSpec
-<a name="API_S3DataSpec"></a>
 
  Describes the data specification of a `DataSource`.
 

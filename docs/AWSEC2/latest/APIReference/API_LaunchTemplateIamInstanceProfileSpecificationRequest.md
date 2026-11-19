@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateIamInstanceProfileSpecificationRequest
-<a name="API_LaunchTemplateIamInstanceProfileSpecificationRequest"></a>
 
 An IAM instance profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ContractAccount
-<a name="API_billing_ContractAccount"></a>
 
 An account that is covered by the Enterprise Support contract.
 

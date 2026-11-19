@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/se
 ---
 
 # Security
-<a name="security"></a>
 
  The security pillar encompasses the protection of data, systems, and assets to take advantage of cloud technologies to improve your security.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/create-tabl
 ---
 
 # `CREATE TABLE`
-<a name="create-table-syntax-support"></a>
 
 `CREATE TABLE` defines a new table.
 

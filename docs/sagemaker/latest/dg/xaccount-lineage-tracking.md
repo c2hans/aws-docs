@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/xaccount-lineage-tra
 ---
 
 # Tracking Cross-Account Lineage
-<a name="xaccount-lineage-tracking"></a>
 
 Amazon SageMaker AI supports tracking lineage entities from a different AWS account. Other AWS accounts can share their lineage entities with you and you can access these lineage entities through direct API calls or SageMaker AI lineage queries.
 

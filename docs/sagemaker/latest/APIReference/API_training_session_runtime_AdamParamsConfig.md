@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # AdamParamsConfig
-<a name="API_training_session_runtime_AdamParamsConfig"></a>
 
 The Adam optimizer hyperparameters used during an optimizer step.
 

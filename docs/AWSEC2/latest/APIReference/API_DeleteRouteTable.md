@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteRou
 ---
 
 # DeleteRouteTable
-<a name="API_DeleteRouteTable"></a>
 
 Deletes the specified route table. You must disassociate the route table from any subnets before you can delete it. You can't delete the main route table.
 

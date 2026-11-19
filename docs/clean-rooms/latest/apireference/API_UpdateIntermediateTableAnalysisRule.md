@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Upda
 ---
 
 # UpdateIntermediateTableAnalysisRule
-<a name="API_UpdateIntermediateTableAnalysisRule"></a>
 
 Updates the analysis rule policy for an intermediate table. Only the intermediate table owner can call this operation.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::CodeSigningConfig Tag
-<a name="aws-properties-lambda-codesigningconfig-tag"></a>
 
 A [tag](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html) to apply to the code signing configuration.
 

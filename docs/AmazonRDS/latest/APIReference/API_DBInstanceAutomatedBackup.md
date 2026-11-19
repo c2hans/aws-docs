@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBInst
 ---
 
 # DBInstanceAutomatedBackup
-<a name="API_DBInstanceAutomatedBackup"></a>
 
 An automated backup of a DB instance. It consists of system backups, transaction logs, and the database instance properties that existed at the time you deleted the source instance.
 

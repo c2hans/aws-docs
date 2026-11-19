@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/cql.dml.select
 ---
 
 # SELECT
-<a name="cql.dml.select"></a>
 
 Use a SELECT statement to query data.
 

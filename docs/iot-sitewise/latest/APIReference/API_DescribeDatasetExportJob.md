@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeDatasetExportJob
-<a name="API_DescribeDatasetExportJob"></a>
 
 Retrieves information about a dataset export job.
 

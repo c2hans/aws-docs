@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/subscription-filter-policy
 ---
 
 # Filter policy constraints in Amazon SNS
-<a name="subscription-filter-policy-constraints"></a>
 
 When you’re setting up filter policies in Amazon SNS, there are a few important rules to keep in mind. These rules help make sure the effective application of filter policies while maintaining system performance and compatibility.
 

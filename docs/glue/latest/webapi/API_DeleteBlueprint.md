@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteBlueprint.h
 ---
 
 # DeleteBlueprint
-<a name="API_DeleteBlueprint"></a>
 
 Deletes an existing blueprint.
 

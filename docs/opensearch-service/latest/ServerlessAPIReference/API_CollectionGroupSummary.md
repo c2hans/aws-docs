@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # CollectionGroupSummary
-<a name="API_CollectionGroupSummary"></a>
 
 Summary information about a collection group.
 

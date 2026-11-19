@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.NT.7] Verify service integrations through contract testing
-<a name="qa.nt.7-verify-service-integrations-through-contract-testing"></a>
 
  **Category:** RECOMMENDED
 

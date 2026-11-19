@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Sce
 ---
 
 # Create read-only and read-write IAM users using an AWS SDK
-<a name="iam_example_iam_Scenario_UserPolicies_section"></a>
 
 The following code example shows how to create users and attach policies to them.
 

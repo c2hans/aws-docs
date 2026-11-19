@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/as
 ---
 
 # Assess query performance for migrating SQL Server databases to MongoDB Atlas on AWS
-<a name="assess-query-performance-for-migrating-sql-server-databases-to-mongodb-atlas-on-aws"></a>
 
 *Battulga Purevragchaa, Amazon Web Services*
 

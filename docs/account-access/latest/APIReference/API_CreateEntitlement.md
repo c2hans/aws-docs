@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_C
 ---
 
 # CreateEntitlement
-<a name="API_CreateEntitlement"></a>
 
 Creates an entitlement (assignment) in account access manager. An entitlement (assignment) grants a principal (IAM Identity Center user or group) permission to assume a specified IAM role in an AWS account. This operation is idempotent.
 

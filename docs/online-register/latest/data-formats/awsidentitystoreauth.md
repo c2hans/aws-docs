@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 ---
 
 # Data retrieval APIs for AWS Identity Store Auth
-<a name="awsidentitystoreauth"></a>
 
 AWS Identity Store Auth provides the following APIs for data retrieval.
 

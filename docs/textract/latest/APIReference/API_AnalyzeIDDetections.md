@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Analyze
 ---
 
 # AnalyzeIDDetections
-<a name="API_AnalyzeIDDetections"></a>
 
 Used to contain the information detected by an AnalyzeID operation.
 

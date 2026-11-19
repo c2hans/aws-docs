@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_SecurityGr
 ---
 
 # SecurityGroupSettings
-<a name="API_SecurityGroupSettings"></a>
 
 Comprehensive configuration settings that define all user capabilities, restrictions, and features for members of a security group. These settings control everything from calling permissions to federation settings to security policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessEndpointCidrOptions
-<a name="API_VerifiedAccessEndpointCidrOptions"></a>
 
 Describes the CIDR options for a Verified Access endpoint.
 

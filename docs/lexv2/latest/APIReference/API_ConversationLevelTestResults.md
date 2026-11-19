@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Conversati
 ---
 
 # ConversationLevelTestResults
-<a name="API_ConversationLevelTestResults"></a>
 
 The test set results data at the conversation level.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-bottle
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Connect hybrid nodes with Bottlerocket
-<a name="hybrid-nodes-bottlerocket"></a>
 
 This topic describes how to connect hybrid nodes running Bottlerocket to an Amazon EKS cluster. [Bottlerocket](https://aws.amazon.com/bottlerocket/) is an open source Linux distribution that is sponsored and supported by AWS. Bottlerocket is purpose-built for hosting container workloads. With Bottlerocket, you can improve the availability of containerized deployments and reduce operational costs by automating updates to your container infrastructure. Bottlerocket includes only the essential software to run containers, which improves resource usage, reduces security threats, and lowers management overhead.
 

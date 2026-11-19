@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaKubernetes
 ---
 
 # Considerations
-<a name="PcaKubernetes-considerations"></a>
 
 When using AWS Private Certificate Authority with Kubernetes, keep the following considerations in mind.
 

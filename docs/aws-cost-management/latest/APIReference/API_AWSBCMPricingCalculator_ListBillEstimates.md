@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListBillEstimates
-<a name="API_AWSBCMPricingCalculator_ListBillEstimates"></a>
 
  Lists all bill estimates for the account.
 

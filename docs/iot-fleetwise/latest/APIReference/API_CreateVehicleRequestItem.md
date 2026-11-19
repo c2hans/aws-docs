@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Cr
 ---
 
 # CreateVehicleRequestItem
-<a name="API_CreateVehicleRequestItem"></a>
 
 Information about the vehicle to create.
 

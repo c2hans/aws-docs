@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_QuotaShare
 ---
 
 # QuotaSharePreemptionConfiguration
-<a name="API_QuotaSharePreemptionConfiguration"></a>
 
 Specifies the preemption behavior for jobs in a quota share.
 

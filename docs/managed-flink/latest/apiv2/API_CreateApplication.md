@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CreateApp
 ---
 
 # CreateApplication
-<a name="API_CreateApplication"></a>
 
 Creates a Managed Service for Apache Flink application. For information about creating a Managed Service for Apache Flink application, see [Creating an Application](https://docs.aws.amazon.com/kinesisanalytics/latest/java/getting-started.html).
 

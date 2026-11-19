@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/view-column-stats.html
 ---
 
 # Viewing column statistics
-<a name="view-column-stats"></a>
 
 After generating the statistics successfully, Data Catalog stores this information for the cost-based optimizers in Amazon Athena and Amazon Redshift to make optimal choices when running queries. The statistics varies based on the type of the column.
 

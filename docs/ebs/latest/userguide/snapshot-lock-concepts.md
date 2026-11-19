@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-lock-conce
 ---
 
 # Amazon EBS snapshot lock concepts
-<a name="snapshot-lock-concepts"></a>
 
 The following are important concepts to understand as you get started using snapshot lock.
 

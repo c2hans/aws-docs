@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/custom-visual-transform-g
 ---
 
 # Getting started with custom visual transforms
-<a name="custom-visual-transform-getting-started"></a>
 
  To create a custom visual transform, you go through the following steps.
 +  Step 1. Create a JSON config file

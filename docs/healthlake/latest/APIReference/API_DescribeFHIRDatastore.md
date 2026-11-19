@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Descr
 ---
 
 # DescribeFHIRDatastore
-<a name="API_DescribeFHIRDatastore"></a>
 
 Get properties for a FHIR-enabled data store.
 

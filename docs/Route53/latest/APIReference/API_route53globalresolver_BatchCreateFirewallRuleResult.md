@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # BatchCreateFirewallRuleResult
-<a name="API_route53globalresolver_BatchCreateFirewallRuleResult"></a>
 
 The result of creating a firewall rule in a batch operation.
 

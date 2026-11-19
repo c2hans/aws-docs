@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # GLOE stage 3: Production, deployment, and continuous operation of generative AI applications
-<a name="prod"></a>
 
 Moving a generative AI application into production marks a critical transition to real-world value delivery. This stage requires robust systems for deployment, monitoring, and continuous improvement to ensure the application remains reliable, secure, and aligned with business objectives. Rather than viewing production deployment as a destination, organizations must approach it as the beginning of an ongoing optimization journey that includes continuous monitoring. The goal is to make sure that the AI system stays relevant and produces valid results, even as user behaviors evolve, new data patterns emerge, and underlying data distributions gradually drift over time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_SNSDestinati
 ---
 
 # SNSDestination
-<a name="API_SNSDestination"></a>
 
 Contains the topic ARN associated with an Amazon Simple Notification Service (Amazon SNS) event destination.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS08-BP06 Alert when workload outcomes are at risk
-<a name="ops_workload_health_workload_outcome_alerts"></a>
 
  Raise an alert when workload outcomes are at risk so that you can respond appropriately if necessary.
 

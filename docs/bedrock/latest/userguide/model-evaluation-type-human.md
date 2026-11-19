@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Creating your first model evaluation that uses human workers
-<a name="model-evaluation-type-human"></a>
 
 A model evaluation job that uses human workers requires access to the following service level resources. Use the linked topics to learn more about getting setting up.
 

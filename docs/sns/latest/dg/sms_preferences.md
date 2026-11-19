@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sms_preferences.html
 ---
 
 # Setting SMS messaging preferences in Amazon SNS
-<a name="sms_preferences"></a>
 
 Use Amazon SNS to specify preferences for SMS messaging. For example, you can specify whether to optimize deliveries for cost or reliability, your monthly spending limit, how deliveries are logged, and whether to subscribe to daily SMS usage reports.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # Create a Control-M connection profile for AWS Mainframe Modernization
-<a name="connection-profile"></a>
 
 Connection profiles define connection attributes and security credentials for a specific instance of an application. Each connection profile can be referenced by multiple jobs. You can have separate profiles for each unique combination of an application and credentials.
 

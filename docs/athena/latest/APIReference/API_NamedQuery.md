@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_NamedQuer
 ---
 
 # NamedQuery
-<a name="API_NamedQuery"></a>
 
 A query, where `QueryString` contains the SQL statements that make up the query.
 

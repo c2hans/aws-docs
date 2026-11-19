@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/recycle-bin-working
 ---
 
 # Recover deleted AMIs from the Recycle Bin
-<a name="recycle-bin-working-with-amis"></a>
 
 This topic explains how to recover Amazon EBS-backed AMIs from the Recycle Bin.
 

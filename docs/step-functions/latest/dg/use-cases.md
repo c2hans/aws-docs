@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/use-cases.html
 ---
 
 # Discover use cases for Step Functions workflows
-<a name="use-cases"></a>
 
 With AWS Step Functions, you can build workflows that manage state over time, make decisions based on incoming data, and handle errors and exceptions.
 

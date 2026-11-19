@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataLicenseSetDetails
-<a name="API_AwsEc2LaunchTemplateDataLicenseSetDetails"></a>
 
  Provides details about the license configuration for an Amazon EC2 instance.
 

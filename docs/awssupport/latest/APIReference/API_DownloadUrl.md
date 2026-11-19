@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Downl
 ---
 
 # DownloadUrl
-<a name="API_DownloadUrl"></a>
 
 A presigned URL for downloading an attachment, along with the date and time the URL expires. Returned by [GetAttachmentDownloadLink](API_GetAttachmentDownloadLink.md).
 

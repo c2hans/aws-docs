@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BedrockKno
 ---
 
 # BedrockKnowledgeStoreExactResponseFields
-<a name="API_BedrockKnowledgeStoreExactResponseFields"></a>
 
 The exact response fields given by the Bedrock knowledge store.
 

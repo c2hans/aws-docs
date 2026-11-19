@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetCapaci
 ---
 
 # GetCapacityManagerAttributes
-<a name="API_GetCapacityManagerAttributes"></a>
 
  Retrieves the current configuration and status of EC2 Capacity Manager for your account, including enablement status, Organizations access settings, and data ingestion status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/gs-okta.ht
 ---
 
 # Configure SAML and SCIM with Okta and IAM Identity Center
-<a name="gs-okta"></a>
 
 You can automatically provision or synchronize user and group information from Okta into IAM Identity Center using the [System for Cross-domain Identity Management (SCIM) 2.0 protocol](scim-profile-saml.md#scim-profile). For more information, see [Using SAML and SCIM identity federation with external identity providers](other-idps.md).
 

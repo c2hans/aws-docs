@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AssociatedAc
 ---
 
 # AssociatedAccessPolicy
-<a name="API_AssociatedAccessPolicy"></a>
 
 An access policy association.
 

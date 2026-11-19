@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/custo
 ---
 
 # Property graph information
-<a name="custom-algorithms-property-graph"></a>
 
  Property Graph Information (graph.pg\_info) summarizes some of the basic metrics of the graph, such as the number of vertices, the number of edges, the number of edge properties, the number of vertex properties, the number of edge labels, and the number of vertex labels.
 

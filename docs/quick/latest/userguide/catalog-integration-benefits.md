@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/catalog-integrati
 ---
 
 # Benefits of data catalog integration
-<a name="catalog-integration-benefits"></a>
 
 Data catalog integration provides the following benefits:
 + **Accelerated asset curation** – Data curators (authors) use a conversational AI agent to discover tables that match their business needs, create datasets in bulk, and build multi-dataset topics in a single flow. These datasets are DirectQuery representations of your catalog assets, not copies of your data. The upstream catalog remains the source of truth. This significantly reduces the time required to deliver governed analytics to business users.

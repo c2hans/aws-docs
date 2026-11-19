@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/welcome.ht
 ---
 
 # Welcome to the Amazon Chime SDK API Reference
-<a name="welcome"></a>
 
 The Amazon Chime SDK application programming interface (API) is designed for developers to build real-time media applications that can send and receive audio and video and allow content sharing. The Amazon Chime SDK works independently of any Amazon Chime administrator accounts and does not affect meetings hosted on Amazon Chime. Instead, the Amazon Chime SDK provides builder tools that you can use to build your own meeting applications. This API reference provides detailed information about the actions, data types, parameters, and errors included in the Amazon Chime SDK service.
 

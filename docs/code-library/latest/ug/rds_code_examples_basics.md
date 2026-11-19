@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/rds_code_examples
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Basic examples for Amazon RDS using AWS SDKs
-<a name="rds_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Amazon Relational Database Service with AWS SDKs.
 

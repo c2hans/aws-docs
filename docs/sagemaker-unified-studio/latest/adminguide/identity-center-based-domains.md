@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Identity Center-based domains
-<a name="identity-center-based-domains"></a>
 
 Identity Center-based domains use AWS IAM Identity Center for user authentication and management. These domains support single sign-on (SSO) through identity providers, and also support IAM credentials. They provide centralized user management capabilities. You can use the Amazon SageMaker management console to create either Amazon SageMaker unified domains or Amazon DataZone domains by using either quick setup or manual setup options.
 

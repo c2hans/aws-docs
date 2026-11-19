@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/contact-actions-
 ---
 
 # ResumeContact
-<a name="contact-actions-updatecontactresumecontact"></a>
 
 Resumes a contact from a paused state.
 

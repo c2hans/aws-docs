@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceDeploymentAlarms
-<a name="API_ServiceDeploymentAlarms"></a>
 
 The CloudWatch alarms used to determine a service deployment failed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RdsDbInstanceConfiguration
-<a name="API_CostOptimizationHub_RdsDbInstanceConfiguration"></a>
 
 The Amazon RDS DB instance configuration used for recommendations.
 

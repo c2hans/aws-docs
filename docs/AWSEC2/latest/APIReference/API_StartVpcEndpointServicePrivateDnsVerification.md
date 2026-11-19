@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartVpcE
 ---
 
 # StartVpcEndpointServicePrivateDnsVerification
-<a name="API_StartVpcEndpointServicePrivateDnsVerification"></a>
 
 Initiates the verification process to prove that the service provider owns the private DNS name domain for the endpoint service.
 

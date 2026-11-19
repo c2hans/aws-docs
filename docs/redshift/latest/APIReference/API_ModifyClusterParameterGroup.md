@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyC
 ---
 
 # ModifyClusterParameterGroup
-<a name="API_ModifyClusterParameterGroup"></a>
 
 Modifies the parameters of a parameter group. For the parameters parameter, it can't contain ASCII characters.
 

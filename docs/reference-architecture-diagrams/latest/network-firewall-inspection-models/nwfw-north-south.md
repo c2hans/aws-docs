@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/n
 ---
 
 # North-South Inspection with AWS Network Firewall and AWS Transit Gateway
-<a name="nwfw-north-south"></a>
 
 Publication date: **March 16, 2022 ([Diagram history](#nwfw4-diagram-history))**
 

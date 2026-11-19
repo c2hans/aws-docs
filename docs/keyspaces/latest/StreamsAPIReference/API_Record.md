@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # Record
-<a name="API_Record"></a>
 
 Represents a change data capture record for a row in an Amazon Keyspaces table, containing both the new and old states of the row.
 

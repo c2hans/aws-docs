@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-struct
 ---
 
 # Using the Spark structured streaming Amazon Kinesis Data Streams connector
-<a name="emr-spark-structured-streaming-kinesis"></a>
 
 Amazon EMR releases 7.1.0 and higher include a spark structured streaming Amazon Kinesis Data Streams connector in the release image. With this connector, you can use Spark on Amazon EMR to process data that's stored in Amazon Kinesis Data Streams. The connector supports both consumer types of `GetRecords` (shared throughput) and `SubscribeToShard` (enhanced fan-out). This integration is based on the [` spark-sql-kinesis-connector`](https://github.com/awslabs/spark-sql-kinesis-connector). For details about how to get started using the connector, see the [README](https://github.com/awslabs/spark-sql-kinesis-connector/blob/main/README.md).
 

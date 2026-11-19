@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateAc
 ---
 
 # UpdateAccountSettings
-<a name="API_UpdateAccountSettings"></a>
 
 Updates the account-level settings for Amazon Kinesis Data Streams.
 

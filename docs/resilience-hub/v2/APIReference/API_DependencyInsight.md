@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Depen
 ---
 
 # DependencyInsight
-<a name="API_DependencyInsight"></a>
 
 Contains a single insight about a service's dependencies.
 

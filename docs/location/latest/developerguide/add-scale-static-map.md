@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/add-scale
 ---
 
 # How to add scale for a static map
-<a name="add-scale-static-map"></a>
 
 In this topic, you will learn how to display a scale on the bottom-right corner of a static map generated with Amazon Location Service. The scale can show a single unit, such as `Miles` or `Kilometers`, or both units, such as `KilometersMiles` or `MilesKilometers`, with one unit displayed at the top and the other at the bottom.
 

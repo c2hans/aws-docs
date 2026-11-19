@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileCa
 ---
 
 # UpdateFileCacheLustreConfiguration
-<a name="API_UpdateFileCacheLustreConfiguration"></a>
 
 The configuration update for an Amazon File Cache resource.
 

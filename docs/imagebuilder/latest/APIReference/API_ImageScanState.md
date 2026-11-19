@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 ---
 
 # ImageScanState
-<a name="API_ImageScanState"></a>
 
 Shows the vulnerability scan status for a specific image, and the reason for that status.
 

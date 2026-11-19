@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_CertificateAss
 ---
 
 # CertificateAssociationSummary
-<a name="API_CertificateAssociationSummary"></a>
 
 Describes a summary of a certificate association.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-vonage
 ---
 
 # Connecting to Vonage in AWS Glue Studio
-<a name="connecting-to-data-vonage"></a>
 
 Vonage (formerly Nexmo) is a cloud communications platform (CPaaS). Because you are a Vonage user, you can connect AWS Glue to your Vonage account. You can then use Vonage as a data source in your AWS Glue ETL jobs to transfer data between Vonage and AWS services or other supported applications.
 

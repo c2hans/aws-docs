@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_QuoteCo
 ---
 
 # QuoteConstraint
-<a name="API_QuoteConstraint"></a>
 
 A physical constraint for a quote.
 

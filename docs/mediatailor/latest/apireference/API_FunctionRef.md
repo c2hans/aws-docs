@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Func
 ---
 
 # FunctionRef
-<a name="API_FunctionRef"></a>
 
 A reference to a child function within a `SEQUENTIAL_EXECUTOR` function.
 

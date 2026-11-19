@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileCa
 ---
 
 # CreateFileCacheLustreConfiguration
-<a name="API_CreateFileCacheLustreConfiguration"></a>
 
 The Amazon File Cache configuration for the cache that you are creating.
 

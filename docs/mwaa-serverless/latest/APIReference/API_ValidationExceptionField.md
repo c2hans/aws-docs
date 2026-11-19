@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Contains information about a field that failed validation, including the field name and a descriptive error message.
 

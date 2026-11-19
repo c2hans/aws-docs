@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootMSKClusterConnection`
-<a name="automation-awssupport-troubleshootmskclusterconnection"></a>
 
 ## Description
 <a name="automation-awssupport-troubleshootmskclusterconnection-description"></a>

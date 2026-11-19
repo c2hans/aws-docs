@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RouteToTargetAction
-<a name="API_RouteToTargetAction"></a>
 
 An action that routes requests to a gateway target, either statically or with weighted traffic splitting.
 

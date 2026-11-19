@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ci
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## What are some key indicators that my deployment process is not fully CI/CD?
 <a name="faq-key-indicators"></a>

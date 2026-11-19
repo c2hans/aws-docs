@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pagerduty-configuring.htm
 ---
 
 # Configuring PagerDuty
-<a name="pagerduty-configuring"></a>
 
 Before you can use AWS Glue to transfer data from PagerDuty, you must meet the following requirements:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Reac
 ---
 
 # ReactiveAnomalySummary
-<a name="API_ReactiveAnomalySummary"></a>
 
 Details about a reactive anomaly. This object is returned by `DescribeAnomaly.`
 

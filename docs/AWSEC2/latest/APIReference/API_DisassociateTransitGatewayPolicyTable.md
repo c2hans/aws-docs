@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Disassoci
 ---
 
 # DisassociateTransitGatewayPolicyTable
-<a name="API_DisassociateTransitGatewayPolicyTable"></a>
 
 Removes the association between an an attachment and a policy table.
 

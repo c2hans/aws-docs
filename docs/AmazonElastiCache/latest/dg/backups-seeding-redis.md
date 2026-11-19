@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/backups-seed
 ---
 
 # Tutorial: Seeding a new node-based cluster with an externally created backup
-<a name="backups-seeding-redis"></a>
 
 When you create a new Valkey or Redis OSS node-based cluster, you can seed it with data from a Valkey or Redis OSS .rdb backup file. Seeding the cluster is useful if you currently manage a Valkey or Redis OSS instance outside of ElastiCache and want to populate your new ElastiCache for Redis OSS node-based cluster with your existing Valkey or Redis OSS data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CustomPayl
 ---
 
 # CustomPayload
-<a name="API_CustomPayload"></a>
 
 A custom response string that Amazon Lex sends to your application. You define the content and structure the string.
 

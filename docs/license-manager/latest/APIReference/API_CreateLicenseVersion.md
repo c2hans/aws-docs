@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # CreateLicenseVersion
-<a name="API_CreateLicenseVersion"></a>
 
 Creates a new version of the specified license.
 

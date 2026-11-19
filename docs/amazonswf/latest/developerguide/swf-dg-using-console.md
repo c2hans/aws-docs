@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dg-u
 ---
 
 # Working in the Amazon SWF console
-<a name="swf-dg-using-console"></a>
 
 The Amazon SWF console provides options to configure, initiate, and manage workflow executions.
 

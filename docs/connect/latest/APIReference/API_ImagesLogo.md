@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ImagesLo
 ---
 
 # ImagesLogo
-<a name="API_ImagesLogo"></a>
 
 Contains logo image configuration for workspace themes.
 

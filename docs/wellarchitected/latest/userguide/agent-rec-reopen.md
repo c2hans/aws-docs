@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-r
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Reopening recommendations in AWS Well-Architected Agent
-<a name="agent-rec-reopen"></a>
 
 You can reopen recommendations that are marked as complete or suppressed. Reopened recommendations return to your recommendations list and follow the regularly scheduled refresh cycle.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Secti
 ---
 
 # SectionStyle
-<a name="API_SectionStyle"></a>
 
 The options that style a section.
 

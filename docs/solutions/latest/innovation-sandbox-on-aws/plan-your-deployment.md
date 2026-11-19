@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes the [Regions](#supported-aws-regions), [cost](cost.md), [security](security-1.md), and other considerations prior to deploying the solution.
 

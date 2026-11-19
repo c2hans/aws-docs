@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Additional resources
-<a name="additional-resources"></a>
 
 ## Grafana
 <a name="grafana"></a>

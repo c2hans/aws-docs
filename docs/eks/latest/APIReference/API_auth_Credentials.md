@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_auth_Credent
 ---
 
 # Credentials
-<a name="API_auth_Credentials"></a>
 
 The * AWS Signature Version 4* type of temporary credentials.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/document-response.htm
 ---
 
 # Interpreting Amazon Textract Responses
-<a name="document-response"></a>
 
 Amazon Textract operations return different types of objects depending on the operations run. Response objects are structured JSON outputs, with various elements that can be searched for within a response. For more information about these response objects, see the following sections:
 

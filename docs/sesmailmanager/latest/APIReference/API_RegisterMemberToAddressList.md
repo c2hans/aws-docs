@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RegisterMemberToAddressList
-<a name="API_RegisterMemberToAddressList"></a>
 
 Adds a member to an address list.
 

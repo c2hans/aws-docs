@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
 ---
 
 # Monitoring jobs using the Apache Spark web UI
-<a name="monitor-spark-ui"></a>
 
 You can use the Apache Spark web UI to monitor and debug AWS Glue ETL jobs running on the AWS Glue job system, and also Spark applications running on AWS Glue development endpoints. The Spark UI enables you to check the following for each job:
 + The event timeline of each Spark stage

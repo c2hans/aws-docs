@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # ContainerMountPoint
-<a name="API_ContainerMountPoint"></a>
 
 A mount point that binds a container to a file or directory on the host system.
 

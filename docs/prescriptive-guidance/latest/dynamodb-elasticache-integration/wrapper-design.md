@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-el
 ---
 
 # API-compatible read-through wrapper design
-<a name="wrapper-design"></a>
 
 When you introduce a caching layer to a DynamoDB database, you typically want to avoid extensive client-side code modifications. One way to do this is to introduce a client-side shim class that wraps the DynamoDB client and presents the same interface to its callers. All the caching logic is included in the wrapper class and performed implicitly and invisibly to the caller.
 

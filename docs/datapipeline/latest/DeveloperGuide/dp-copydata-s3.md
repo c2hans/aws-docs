@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-co
 AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
 
 # Copy CSV Data Between Amazon S3 Buckets Using AWS Data Pipeline
-<a name="dp-copydata-s3"></a>
 
 After you read [What is AWS Data Pipeline?](what-is-datapipeline.md) and decide you want to use AWS Data Pipeline to automate the movement and transformation of your data, it is time to get started with creating data pipelines. To help you make sense of how AWS Data Pipeline works, let’s walk through a simple task.
 

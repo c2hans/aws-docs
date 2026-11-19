@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # FileDetail
-<a name="API_benefits_FileDetail"></a>
 
 Represents detailed information about a file attached to a benefit application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DbServerSumm
 ---
 
 # DbServerSummary
-<a name="API_DbServerSummary"></a>
 
 Information about a database server.
 

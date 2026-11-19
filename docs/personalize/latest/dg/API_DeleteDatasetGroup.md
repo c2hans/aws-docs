@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DeleteDatasetG
 ---
 
 # DeleteDatasetGroup
-<a name="API_DeleteDatasetGroup"></a>
 
 Deletes a dataset group. Before you delete a dataset group, you must delete the following:
 + All associated event trackers.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-
 ---
 
 # Start a pipeline in CodePipeline
-<a name="pipelines-about-starting"></a>
 
 Each pipeline execution can be started based on a different trigger. Each pipeline execution can have a different type of trigger, depending on how the pipeline is started. The trigger type for each execution is shown in the execution history for a pipeline. Trigger types can depend on the source action provider as follows:
 

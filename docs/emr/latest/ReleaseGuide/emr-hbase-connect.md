@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hbase-connec
 ---
 
 # Using the HBase shell
-<a name="emr-hbase-connect"></a>
 
 After you create an HBase cluster, the next step is to connect to HBase so you can begin reading and writing data (data writes are not supported on a read-replica cluster). You can use the [HBase shell](https://hbase.apache.org/book.html#shell) to test commands.
 

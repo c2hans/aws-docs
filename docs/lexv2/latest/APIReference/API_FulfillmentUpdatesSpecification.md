@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Fulfillmen
 ---
 
 # FulfillmentUpdatesSpecification
-<a name="API_FulfillmentUpdatesSpecification"></a>
 
 Provides information for updating the user on the progress of fulfilling an intent.
 

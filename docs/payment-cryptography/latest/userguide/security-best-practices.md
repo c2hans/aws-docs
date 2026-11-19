@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/se
 ---
 
 # Security best practices for AWS Payment Cryptography
-<a name="security-best-practices"></a>
 
 AWS Payment Cryptography supports many security features that are either built-in or that you can optionally implement to enhance the protection of your encryption keys and ensure that they are used for their intended purpose, including [IAM policies](security_iam_service-with-iam.md), an extensive set of policy condition keys to refine your key policies and IAM policies and built-in enforcement of PCI PIN rules regarding key blocks.
 

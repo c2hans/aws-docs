@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/secrets-manager-how.
 ---
 
 # Use the secret
-<a name="secrets-manager-how"></a>
 
 We recommend that you use AWS Secrets Manager to store your credentials or keys to connect to streaming destinations such as Amazon Redshift, HTTP endpoint, Snowflake, Splunk, Coralogix, Datadog, Dynatrace, Elastic, Honeycomb, LogicMonitor, Logz.io, MongoDB Cloud, and New Relic.
 

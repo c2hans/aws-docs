@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-remote-decorat
 ---
 
 # Container image compatibility
-<a name="train-remote-decorator-container"></a>
 
 The following table shows a list of SageMaker training images that are compatible with the @remote decorator.
 

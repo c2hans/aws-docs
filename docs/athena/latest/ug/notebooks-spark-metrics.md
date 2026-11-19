@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-metrics
 ---
 
 # Monitor Apache Spark with CloudWatch metrics
-<a name="notebooks-spark-metrics"></a>
 
 Athena publishes calculation-related metrics to Amazon CloudWatch when the **[Publish CloudWatch metrics](notebooks-spark-getting-started.md#notebook-gs-metrics)** option for your Spark-enabled workgroup is selected. You can create custom dashboards, set alarms and triggers on metrics in the CloudWatch console.
 

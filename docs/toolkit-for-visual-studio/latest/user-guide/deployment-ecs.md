@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Deploying to Amazon EC2 Container Service
-<a name="deployment-ecs"></a>
 
 **Important**
 The new **Publish to AWS** feature is designed to simplify how you publish .NET applications to AWS. You may be asked if you want to switch to this publishing experience after you choose **Publish Container to AWS**. For more information, see [Working with Publish to AWS in Visual Studio](publish-experience.md).

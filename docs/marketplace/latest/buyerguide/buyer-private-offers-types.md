@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-priv
 ---
 
 # Product types eligible for private offers
-<a name="buyer-private-offers-types"></a>
 
 You can get private offers for the following product types.
 

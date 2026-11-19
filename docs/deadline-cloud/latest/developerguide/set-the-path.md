@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/set
 ---
 
 # Set the path in a queue environment
-<a name="set-the-path"></a>
 
 Use OpenJD environments to provide new commands in an environment. First you create a directory containing script files, and then add that directory to the `PATH` environment variables so that executables in your script can run them without needing to specify the directory path each time. The list of variables in an environment definition doesn't provide a way to modify the variable, so you do this by running a script instead. After the script sets things up and modifies the `PATH`, it exports the variable to the OpenJD runtime with the command `echo "openjd_env: PATH=$PATH"`.
 

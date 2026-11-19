@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec11-b
 ---
 
 # SEC11-BP02 Follow established secure coding guidelines
-<a name="sec11-bp02"></a>
 
  Most software vulnerabilities come from a small set of recurring coding mistakes. Established secure coding standards capture how to avoid these mistakes so that each team does not have to rediscover them. Adopt a recognized standard, tailor it to your technology stack, and build it into how your teams write and review code.
 

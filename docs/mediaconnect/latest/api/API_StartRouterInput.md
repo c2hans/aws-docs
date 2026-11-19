@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StartRouterI
 ---
 
 # StartRouterInput
-<a name="API_StartRouterInput"></a>
 
 Starts a router input in AWS Elemental MediaConnect.
 

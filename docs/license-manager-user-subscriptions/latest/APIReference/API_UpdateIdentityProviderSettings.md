@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # UpdateIdentityProviderSettings
-<a name="API_UpdateIdentityProviderSettings"></a>
 
 Updates additional product configuration settings for the registered identity provider.
 

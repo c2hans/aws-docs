@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/llm-prompt-
 ---
 
 # New RAG template (with guardrails)
-<a name="enhanced-template"></a>
 
 In this template, `{RANDOM}` denotes the randomized salted sequence tag.
 

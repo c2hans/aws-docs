@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # United States 10DLC registration
-<a name="registrations-10dlc"></a>
 
 **Important**
 The following table has the expected times for each 10DLC registration step based on if your business is located in the United States or internationally.

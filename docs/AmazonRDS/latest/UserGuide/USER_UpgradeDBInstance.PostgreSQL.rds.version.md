@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # RDS version numbers in RDS for PostgreSQL
-<a name="USER_UpgradeDBInstance.PostgreSQL.rds.version"></a>
 
 RDS version numbers use the `{{major}}.{{minor}}.{{patch}}` naming scheme. An RDS patch version includes important bug fixes added to a minor version after its release. For information about RDS Extended Support version numbering, see [Amazon RDS Extended Support version naming](extended-support-versions.md#extended-support-naming).
 

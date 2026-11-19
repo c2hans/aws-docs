@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 6: Configure the pilot workflow
-<a name="pb-es68-pilot-config"></a>
 
 Load the version-matched sample and then edit it down to a minimal pilot configuration:
 

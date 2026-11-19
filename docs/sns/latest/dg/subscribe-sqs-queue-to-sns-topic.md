@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/subscribe-sqs-queue-to-sns
 ---
 
 # Subscribing an Amazon SQS queue to an Amazon SNS topic
-<a name="subscribe-sqs-queue-to-sns-topic"></a>
 
 To enable an Amazon SNS topic to send messages to an Amazon SQS queue, choose one of the following:
 + Use the [Amazon SQS console](https://console.aws.amazon.com/sqs/), which simplifies the process. For more information, see [Subscribing an Amazon SQS queue to an Amazon SNS topic](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-subscribe-queue-sns-topic.html) in the *Amazon Simple Queue Service Developer Guide*.

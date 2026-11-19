@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Pa
 ---
 
 # PatternObjectFilter
-<a name="API_agent_PatternObjectFilter"></a>
 
 The specific filters applied to your data source content. You can filter out or include certain content.
 

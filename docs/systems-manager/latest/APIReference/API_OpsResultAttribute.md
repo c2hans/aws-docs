@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OpsResultAttribute
-<a name="API_OpsResultAttribute"></a>
 
 The OpsItem data type to return.
 

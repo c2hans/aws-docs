@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/v1-r
 ---
 
 # Get Code Binding Source
-<a name="v1-registries-name-registryname-schemas-name-schemaname-language-language-source"></a>
 
 ## URI
 <a name="v1-registries-name-registryname-schemas-name-schemaname-language-language-source-url"></a>

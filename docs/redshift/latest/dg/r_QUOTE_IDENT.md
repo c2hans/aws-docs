@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_QUOTE_IDENT.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # QUOTE\_IDENT function
-<a name="r_QUOTE_IDENT"></a>
 
 The QUOTE\_IDENT function returns the specified string as a string with a leading double quotation mark and a trailing double quotation mark. The function output can be used as an identifier in a SQL statement. The function appropriately doubles any embedded double quotation marks.
 

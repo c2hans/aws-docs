@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Anthropic Claude Opus 4.7
-<a name="model-evaluation-type-kb-prompt-claude-opus-4-7"></a>
 
 Prompts used with Anthropic Claude Opus 4.7.
 

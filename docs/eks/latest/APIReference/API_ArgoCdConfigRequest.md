@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ArgoCdConfig
 ---
 
 # ArgoCdConfigRequest
-<a name="API_ArgoCdConfigRequest"></a>
 
 Configuration settings for an Argo CD capability. This includes the Kubernetes namespace, IAM Identity CenterIAM; Identity Center integration, RBAC role mappings, and network access configuration.
 

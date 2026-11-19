@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/gett
 ---
 
 # Getting started with Gateway Load Balancers using the AWS CLI
-<a name="getting-started-cli"></a>
 
 Gateway Load Balancers make it easy to deploy, scale, and manage third-party virtual appliances, such as security appliances.
 

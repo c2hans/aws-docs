@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Data storage
-<a name="storage-stack"></a>
 
 The data storage layer deploys all storage resources including DynamoDB tables and S3 buckets.
 

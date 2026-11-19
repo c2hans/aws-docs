@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ips-overview.html
 ---
 
 # About multiple-input channels and input switching
-<a name="ips-overview"></a>
 
 You set up input switching in a MediaLive channel in order to ingest the inputs in a multiple-input channel.
 

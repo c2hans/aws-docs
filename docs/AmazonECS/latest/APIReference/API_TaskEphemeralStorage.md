@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TaskEp
 ---
 
 # TaskEphemeralStorage
-<a name="API_TaskEphemeralStorage"></a>
 
 The amount of ephemeral storage to allocate for the task.
 

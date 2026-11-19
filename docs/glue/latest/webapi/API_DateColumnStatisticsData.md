@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DateColumnStatist
 ---
 
 # DateColumnStatisticsData
-<a name="API_DateColumnStatisticsData"></a>
 
 Defines column statistics supported for timestamp data columns.
 

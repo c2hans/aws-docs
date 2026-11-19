@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/getting-start
 ---
 
 # Create a notification rule for a pipeline
-<a name="getting-started-pipeline"></a>
 
 You can create notification rules to send notifications about the events on your pipeline that are important to you. The following steps show you how to set up a notification rule on a single pipeline event. These steps are written with the assumption that you have a pipeline configured in your AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/update-
 ---
 
 # UpdateTheme
-<a name="update-theme"></a>
 
 Use the `UpdateTheme` operation to update a theme.
 

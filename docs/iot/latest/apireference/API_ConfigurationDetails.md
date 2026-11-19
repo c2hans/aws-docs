@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Configuratio
 ---
 
 # ConfigurationDetails
-<a name="API_ConfigurationDetails"></a>
 
 The encryption configuration details that include the status information of the AWS Key Management Service (AWS KMS) key and the AWS KMS access role.
 

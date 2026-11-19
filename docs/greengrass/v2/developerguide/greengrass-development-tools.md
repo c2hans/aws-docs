@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # AWS IoT Greengrass development tools
-<a name="greengrass-development-tools"></a>
 
 Use AWS IoT Greengrass development tools to create, test, build, publish, and deploy custom Greengrass components.
 + **[Greengrass Development Kit CLI](greengrass-development-kit-cli.md)**

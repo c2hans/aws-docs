@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds metadata tags to the Amazon RDS Performance Insights resource.
 

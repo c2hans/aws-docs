@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard
 ---
 
 # FAQ
-<a name="faq"></a>
 
 Find answers to frequently raised questions about disaster recovery (DR) solutions for standard editions of Amazon RDS for Oracle and Amazon RDS for SQL Server.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationQuestionAnswerAnalysisDetails
-<a name="API_EvaluationQuestionAnswerAnalysisDetails"></a>
 
 Detailed analysis results of the automated answer to the evaluation question.
 

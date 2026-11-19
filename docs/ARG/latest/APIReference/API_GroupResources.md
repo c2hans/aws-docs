@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_GroupResourc
 ---
 
 # GroupResources
-<a name="API_GroupResources"></a>
 
 Adds the specified resources to the specified group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDe
 ---
 
 # ListDetectors
-<a name="API_ListDetectors"></a>
 
 Lists detectorIds of all the existing Amazon GuardDuty detector resources.
 

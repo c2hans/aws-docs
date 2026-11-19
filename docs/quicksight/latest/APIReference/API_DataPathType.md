@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataP
 ---
 
 # DataPathType
-<a name="API_DataPathType"></a>
 
 The type of the data path value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeletePackag
 ---
 
 # DeletePackageVersion
-<a name="API_DeletePackageVersion"></a>
 
 Deletes a specific version from a software package.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/doc-history.html
 ---
 
 # Document history for DLAMI
-<a name="doc-history"></a>
 
 The following table provides a history of recent DLAMI releases and related changes to the AWS Deep Learning AMIs Developer Guide.
 

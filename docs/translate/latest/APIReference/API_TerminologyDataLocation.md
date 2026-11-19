@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Termin
 ---
 
 # TerminologyDataLocation
-<a name="API_TerminologyDataLocation"></a>
 
 The location of the custom terminology data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/websdkguide/getting-started.h
 ---
 
 # Getting started with the Amazon DCV Web Client SDK
-<a name="getting-started"></a>
 
  The Amazon DCV Web Client SDK comprises of a main `dcv.js` file and some auxiliary components. All the files are distributed inside a compressed archive that can be downloaded from the [Amazon DCV website](https://download.nice-dcv.com/webclientsdk.html) .
 

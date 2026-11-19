@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ContactHandling
-<a name="API_connect-app-integrations_ContactHandling"></a>
 
 The contact handling configuration for the application.
 

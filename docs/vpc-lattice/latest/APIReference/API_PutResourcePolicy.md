@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_PutR
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
 Attaches a resource-based permission policy to a service or service network. The policy must contain the same actions and condition statements as the AWS Resource Access Manager permission for sharing services and service networks.
 

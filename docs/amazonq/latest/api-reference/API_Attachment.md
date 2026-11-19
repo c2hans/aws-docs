@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Attachm
 ---
 
 # Attachment
-<a name="API_Attachment"></a>
 
 An attachment in an Amazon Q Business conversation.
 

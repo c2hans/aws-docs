@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Remo
 ---
 
 # RemoteAgentBearerTokenConfig
-<a name="API_RemoteAgentBearerTokenConfig"></a>
 
 Bearer token configuration for remote A2A agent (RFC 6750).
 

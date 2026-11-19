@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-detai
 ---
 
 # Update training job details (Studio)
-<a name="model-registry-details-studio-training-update"></a>
 
 Complete the following steps to update the details of a training job, created externally or with SageMaker AI, associated with your model.
 

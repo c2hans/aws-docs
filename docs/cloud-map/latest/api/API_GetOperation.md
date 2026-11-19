@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_GetOperation.ht
 ---
 
 # GetOperation
-<a name="API_GetOperation"></a>
 
 Gets information about any operation that returns an operation ID in the response, such as a `CreateHttpNamespace` request.
 

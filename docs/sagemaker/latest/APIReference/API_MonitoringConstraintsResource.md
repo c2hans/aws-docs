@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringConstraintsResource
-<a name="API_MonitoringConstraintsResource"></a>
 
 The constraints resource for a monitoring job.
 

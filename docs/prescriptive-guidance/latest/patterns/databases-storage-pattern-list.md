@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 ---
 
 # Databases & storage
-<a name="databases-storage-pattern-list"></a>
 
 **Topics**
 + [Databases](databases-pattern-list.md)

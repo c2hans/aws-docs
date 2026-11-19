@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.cr
 ---
 
 # Creating routing control components in ARC
-<a name="routing-control.create"></a>
 
 This section explains how to create a cluster, routing controls, health checks, and control panels for working with routing control in Amazon Application Recovery Controller (ARC).
 

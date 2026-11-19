@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-byo
 ---
 
 # Upgrading a BYOM DB instance for RDS for SQL Server
-<a name="sqlserver-byom-upgrade"></a>
 
 You can apply minor engine version upgrades to your BYOM DB instances on RDS for SQL Server. Minor version upgrades include Microsoft cumulative updates that contain security patches, bug fixes, and performance improvements.
 

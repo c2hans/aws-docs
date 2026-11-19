@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::GlobalTable Tag
-<a name="aws-properties-dynamodb-globaltable-tag"></a>
 
 Describes a tag. A tag is a key-value pair. You can add up to 50 tags to a single DynamoDB table.
 

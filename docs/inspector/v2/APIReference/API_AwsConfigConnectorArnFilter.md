@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AwsConfigC
 ---
 
 # AwsConfigConnectorArnFilter
-<a name="API_AwsConfigConnectorArnFilter"></a>
 
 A filter that matches connectors by the ARN of the associated AWS Config connector.
 

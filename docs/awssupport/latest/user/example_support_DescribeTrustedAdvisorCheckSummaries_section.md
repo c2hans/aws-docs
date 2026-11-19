@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/example_support_D
 ---
 
 # Use `DescribeTrustedAdvisorCheckSummaries` with a CLI
-<a name="example_support_DescribeTrustedAdvisorCheckSummaries_section"></a>
 
 The following code examples show how to use `DescribeTrustedAdvisorCheckSummaries`.
 

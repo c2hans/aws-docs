@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/streaming-labels-s
 ---
 
 # Setting up your Amazon Rekognition Video and Amazon Kinesis resources
-<a name="streaming-labels-setting-up"></a>
 
 **Note**
 Streaming Video and Bulk Image Analysis is no longer available to new customers. For more information, see [Amazon Rekognition feature availability changes](rekognition-availability-changes.md).

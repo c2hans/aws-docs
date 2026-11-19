@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Pricing
-<a name="next-gen-dependency-discovery-pricing"></a>
 
 Dependency discovery is an optional add-on:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Configuring multi-type behavior
-<a name="ttm-multitype-behavior"></a>
 
 For most migrations, you do not need to configure anything. By default, Migration Assistant applies a built-in transformer that unions all mapping types of a multi-type index into a single target index on the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection. This default is applied automatically to every multi-type index it encounters, with no workflow configuration field required.
 

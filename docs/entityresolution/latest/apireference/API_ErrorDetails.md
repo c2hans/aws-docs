@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ErrorDetails
-<a name="API_ErrorDetails"></a>
 
 An object containing an error message, if there was an error.
 

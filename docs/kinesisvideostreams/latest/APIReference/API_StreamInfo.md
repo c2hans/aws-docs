@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # StreamInfo
-<a name="API_StreamInfo"></a>
 
 An object describing a Kinesis video stream.
 

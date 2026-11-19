@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Resource Tagger Configuration Profiles in AMS Accelerate
-<a name="acc-tag-tools-profiles"></a>
 
 Configuration profiles help ensure that tags are applied uniformly to resources throughout the lifetime of the resources.
 

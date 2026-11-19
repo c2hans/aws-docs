@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KPIPr
 ---
 
 # KPIProgressBarConditionalFormatting
-<a name="API_KPIProgressBarConditionalFormatting"></a>
 
 The conditional formatting for the progress bar of a KPI visual.
 

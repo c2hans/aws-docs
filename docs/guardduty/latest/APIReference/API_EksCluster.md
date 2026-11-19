@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_EksClu
 ---
 
 # EksCluster
-<a name="API_EksCluster"></a>
 
 Contains information about the Amazon EKS cluster involved in a GuardDuty finding, including cluster identification, status, and network configuration.
 

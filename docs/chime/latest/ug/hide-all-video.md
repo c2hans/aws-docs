@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/hide-all-video.html
 ---
 
 # Hiding attendee video tiles during a meeting
-<a name="hide-all-video"></a>
 
 If you need more room for a screen share, or if you find attendee video tiles distracting, you can hide them during a meeting.
 

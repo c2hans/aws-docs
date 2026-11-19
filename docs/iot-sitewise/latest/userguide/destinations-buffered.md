@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/destinatio
 ---
 
 # Add an AWS IoT SiteWise buffered destination using Amazon S3
-<a name="destinations-buffered"></a>
 
 The buffered destination type allows you to save on ingestion costs into AWS IoT SiteWise if you don't need the data in real-time. It enables you to temporarily store your IoT data in an Amazon S3 bucket before importing it into AWS IoT SiteWise. Or, you can simply upload your data to S3 for storage, regardless of whether you plan to import it to AWS IoT SiteWise. This is useful for batching and buffering data from your devices and gateways before ingesting it into AWS IoT SiteWise. With this option, data is uploaded to the specified S3 bucket in Parquet format at a configured frequency. You can then import this data into AWS IoT SiteWise storage for further analysis and processing.
 

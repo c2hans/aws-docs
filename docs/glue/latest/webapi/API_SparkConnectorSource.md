@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SparkConnectorSou
 ---
 
 # SparkConnectorSource
-<a name="API_SparkConnectorSource"></a>
 
 Specifies a connector to an Apache Spark data source.
 

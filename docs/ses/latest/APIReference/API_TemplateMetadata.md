@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_TemplateMeta
 ---
 
 # TemplateMetadata
-<a name="API_TemplateMetadata"></a>
 
 Contains information about an email template.
 

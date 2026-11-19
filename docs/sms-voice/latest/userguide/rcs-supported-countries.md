@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-supported
 ---
 
 # Supported countries for RCS
-<a name="rcs-supported-countries"></a>
 
 AWS End User Messaging supports RCS country launches in the following countries. Each country has a specific registration type that you use when submitting a country launch registration. Some countries have additional requirements beyond the standard registration form — see the country-specific sections for details.
 

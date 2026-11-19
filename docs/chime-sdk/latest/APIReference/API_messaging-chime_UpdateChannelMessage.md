@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # UpdateChannelMessage
-<a name="API_messaging-chime_UpdateChannelMessage"></a>
 
 Updates the content of a message.
 

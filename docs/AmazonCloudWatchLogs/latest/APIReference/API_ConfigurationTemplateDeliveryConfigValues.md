@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ConfigurationTemplateDeliveryConfigValues
-<a name="API_ConfigurationTemplateDeliveryConfigValues"></a>
 
 This structure contains the default values that are used for each configuration parameter when you use [CreateDelivery](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html) to create a deliver under the current service type, resource type, and log type.
 

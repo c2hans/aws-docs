@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Crea
 ---
 
 # CreateStage
-<a name="API_CreateStage"></a>
 
 Creates a new stage (and optionally participant tokens).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Cvss3.html
 ---
 
 # Cvss3
-<a name="API_Cvss3"></a>
 
 The Common Vulnerability Scoring System (CVSS) version 3 details for the vulnerability.
 

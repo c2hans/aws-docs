@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/w
 ---
 
 # WebSphere Commerce on AWS
-<a name="websphere-commerce-on-aws"></a>
 
 Publication date: **May 20, 2021 ([Diagram history](#wcs-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Authenticate and authorize with Inbound Auth and Outbound Auth
-<a name="runtime-oauth"></a>
 
 This section shows you how to implement authentication and authorization for your agent runtime using OAuth and JWT bearer tokens with [AgentCore Identity](identity.md) . You’ll learn how to set up Cognito user pools, configure your agent runtime for JWT authentication (Inbound Auth), and implement OAuth-based access to third-party resources (outbound Auth).
 

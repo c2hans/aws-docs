@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/applications-
 ---
 
 # Previewing, publishing, and sharing applications
-<a name="applications-preview-publish-share"></a>
 
 **Topics**
 + [Previewing applications](applications-preview.md)

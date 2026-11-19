@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeMigr
 ---
 
 # DescribeMigrationProjects
-<a name="API_DescribeMigrationProjects"></a>
 
 Returns a paginated list of migration projects for your account in the current region.
 

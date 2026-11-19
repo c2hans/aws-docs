@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard
 ---
 
 # Native transaction log backup replication
-<a name="native-transaction-log-backup"></a>
 
 Amazon RDS for SQL Server takes periodic transaction log backups. It provides [access to transaction log backups](https://aws.amazon.com/about-aws/whats-new/2022/11/amazon-rds-sql-server-supports-access-transaction-log-backups/) in an AWS managed [Amazon Simple Storage Service (Amazon S3)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) bucket. With this feature, you can access these transaction log backup files and copy them to an S3 bucket in your own account.
 

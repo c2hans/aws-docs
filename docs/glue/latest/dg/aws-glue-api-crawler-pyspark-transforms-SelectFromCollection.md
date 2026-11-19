@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # SelectFromCollection class
-<a name="aws-glue-api-crawler-pyspark-transforms-SelectFromCollection"></a>
 
 Selects one `DynamicFrame` in a `DynamicFrameCollection`.
 

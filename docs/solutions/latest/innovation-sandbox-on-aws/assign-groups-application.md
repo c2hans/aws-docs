@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Assign groups to your application
-<a name="assign-groups-application"></a>
 
 **Note**
 If you have configured your IAM Identity Center instance to use an external identity provider, you will need to manage user groups through that external provider instead of creating them directly in IAM Identity Center.

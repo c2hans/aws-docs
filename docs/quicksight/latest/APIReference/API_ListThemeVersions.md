@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListT
 ---
 
 # ListThemeVersions
-<a name="API_ListThemeVersions"></a>
 
 Lists all the versions of the themes in the current AWS account.
 

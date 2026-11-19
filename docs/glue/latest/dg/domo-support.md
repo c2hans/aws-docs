@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/domo-support.html
 ---
 
 # AWS Glue support for Domo
-<a name="domo-support"></a>
 
 AWS Glue supports Domo as follows:
 

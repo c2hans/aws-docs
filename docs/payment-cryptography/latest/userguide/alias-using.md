@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/al
 ---
 
 # Using aliases in your applications
-<a name="alias-using"></a>
 
 You can use an alias to represent an AWS Payment Cryptography key in your application code. The `key-identifier` parameter in AWS Payment Cryptography [data operations](data-operations.md) as well as other operations like List Keys accepts an alias name or alias ARN.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAc
 ---
 
 # CreateAccessGrantsInstance
-<a name="API_control_CreateAccessGrantsInstance"></a>
 
 Creates an S3 Access Grants instance, which serves as a logical grouping for access grants. You can create one S3 Access Grants instance per Region per account.
 

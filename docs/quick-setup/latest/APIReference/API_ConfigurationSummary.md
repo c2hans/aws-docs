@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_Conf
 ---
 
 # ConfigurationSummary
-<a name="API_ConfigurationSummary"></a>
 
 Details for a Quick Setup configuration.
 

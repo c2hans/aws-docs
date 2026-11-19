@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-update.html
 ---
 
 # Modify an Amazon Bedrock knowledge base
-<a name="kb-update"></a>
 
 You can update a knowledge base, such as changing knowledge base configurations.
 

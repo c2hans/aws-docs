@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportapp/latest/APIReference/API_GetAc
 ---
 
 # GetAccountAlias
-<a name="API_GetAccountAlias"></a>
 
 Retrieves the alias from an AWS account ID. The alias appears in the Support App page of the AWS Support Center. The alias also appears in Slack messages from the Support App.
 

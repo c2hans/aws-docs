@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Enable your applications on Amazon EKS clusters
-<a name="CloudWatch-Application-Signals-Enable-EKS"></a>
 
 CloudWatch Application Signals is supported for Java, Python, Node.js, and .NET applications. To enable Application Signals for your applications on an existing Amazon EKS cluster, you can use the AWS Management Console, AWS CDK, or CloudWatch Observability add-on Auto monitor advanced configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StartCon
 ---
 
 # StartContactMediaProcessing
-<a name="API_StartContactMediaProcessing"></a>
 
  Enables in-flight message processing for an ongoing chat session. Message processing will stay active for the rest of the chat, even if an individual contact segment ends.
 

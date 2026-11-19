@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/weights-spot-p
 ---
 
 # Spot price per unit hour example
-<a name="weights-spot-price-per-unit-hour-example"></a>
 
 The following table compares the hourly price for Spot Instances in different Availability Zones in US East (Northern Virginia) with the price for On-Demand Instances in the same Region. The prices shown are example pricing and not current pricing. These are your costs per *instance* hour.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Up
 ---
 
 # UpdateAssessmentFrameworkControlSet
-<a name="API_UpdateAssessmentFrameworkControlSet"></a>
 
  A `controlSet` entity that represents a collection of controls in AWS Audit Manager. This doesn't contain the control set ID.
 

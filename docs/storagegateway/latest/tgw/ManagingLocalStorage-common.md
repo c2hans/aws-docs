@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/ManagingLocalS
 ---
 
 # Managing local disks for your Storage Gateway
-<a name="ManagingLocalStorage-common"></a>
 
 The gateway virtual machine (VM) uses the local disks that you allocate on-premises for buffering and storage. Gateways created on Amazon EC2 instances use Amazon EBS volumes as local disks.
 

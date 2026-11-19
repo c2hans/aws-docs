@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_pol
 ---
 
 # Examples of policies for delegating access
-<a name="id_roles_create_policy-examples"></a>
 
 The following examples show how you can allow or grant an AWS account access to the resources in another AWS account. To learn how to create an IAM policy using these example JSON policy documents, see [Creating policies using the JSON editor](access_policies_create-console.md#access_policies_create-json-editor).
 

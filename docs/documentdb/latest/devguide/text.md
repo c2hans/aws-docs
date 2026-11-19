@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/text.html
 ---
 
 # $text
-<a name="text"></a>
 
 The `$text` operator is used to perform full-text search on text-indexed fields within a document collection. This operator allows you to search for documents that contain specific words or phrases, and can be combined with other query operators to filter results based on additional criteria.
 

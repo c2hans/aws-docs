@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WhatsAppTimeOfDay
-<a name="API_WhatsAppTimeOfDay"></a>
 
 A time of day, expressed as an hour and minute.
 

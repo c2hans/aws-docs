@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Launch with Amazon Cognito User Pool
-<a name="launch-with-amazon-cognito-user-pool"></a>
 
  **Time to deploy**: Approximately 15 minutes
 

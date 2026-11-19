@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Configuring Oracle Rest Data Services (ORDS)
-<a name="Appendix.Oracle.Options.APEX.ORDSConf"></a>
 
 The following topic lists the configuration options for ORDS 21 and 22:
 

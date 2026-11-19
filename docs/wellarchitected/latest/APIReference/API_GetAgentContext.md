@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GetAgentContext
-<a name="API_GetAgentContext"></a>
 
 Retrieves detailed information about a specific context associated with a profile.
 

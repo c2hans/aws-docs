@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-kerberos-
 ---
 
 # Configuration examples
-<a name="emr-kerberos-config-examples"></a>
 
 The following examples demonstrate security configurations and cluster configurations for common scenarios. AWS CLI commands are shown for brevity.
 

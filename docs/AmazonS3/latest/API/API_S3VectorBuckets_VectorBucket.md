@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # VectorBucket
-<a name="API_S3VectorBuckets_VectorBucket"></a>
 
 The attributes of a vector bucket.
 

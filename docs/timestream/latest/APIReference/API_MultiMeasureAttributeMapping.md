@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Multi
 ---
 
 # MultiMeasureAttributeMapping
-<a name="API_MultiMeasureAttributeMapping"></a>
 
 ## Contents
 <a name="API_MultiMeasureAttributeMapping_Contents"></a>

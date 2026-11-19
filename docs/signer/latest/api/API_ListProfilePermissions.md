@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_ListProfilePermiss
 ---
 
 # ListProfilePermissions
-<a name="API_ListProfilePermissions"></a>
 
 Lists the cross-account permissions associated with a signing profile.
 

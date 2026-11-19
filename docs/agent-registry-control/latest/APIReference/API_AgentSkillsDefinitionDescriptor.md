@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # AgentSkillsDefinitionDescriptor
-<a name="API_AgentSkillsDefinitionDescriptor"></a>
 
 Descriptor that defines an agent skills registry record and its associated content.
 

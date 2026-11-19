@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetEmailT
 ---
 
 # GetEmailTemplate
-<a name="API_GetEmailTemplate"></a>
 
 Displays the template object (which includes the subject line, HTML part and text part) for the template you specify.
 

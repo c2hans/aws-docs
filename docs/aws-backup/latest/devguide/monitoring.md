@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/monitoring.ht
 ---
 
 # Monitoring AWS Backup
-<a name="monitoring"></a>
 
 AWS Backup works with other AWS tools to empower you to monitor its workloads. These tools include the following:
 + [AWS Backup console dashboards](backup-dashboards.md)

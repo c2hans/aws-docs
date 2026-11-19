@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/monitor-event
 ---
 
 # Monitoring with EventBridge
-<a name="monitor-event-bridge"></a>
 
 AWS End User Messaging SMS sends events to EventBridge for Registration, SMS, MMS, and voice events. You can use EventBridge to write rules that take actions, such as notifying you, when specific event types are received. For more information, see the following topics in the Amazon EventBridge User Guide:
 + [What is Amazon EventBridge?](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html)

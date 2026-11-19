@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Prerequisites
-<a name="msk-data-delivery-iceberg-prerequisites"></a>
 
 1. An Amazon MSK Provisioned cluster with Express brokers.
 

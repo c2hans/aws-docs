@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Using foreign tables with Aurora Global Database
-<a name="aurora-analytics-global-database"></a>
 
 Aurora Global Database supports running analytical queries with per-Region setup. This section describes how to configure analytical queries across Regions, which resources replicate automatically, and how to plan for disaster recovery scenarios.
 

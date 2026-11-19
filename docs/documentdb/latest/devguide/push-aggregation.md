@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/push-aggregat
 ---
 
 # $push
-<a name="push-aggregation"></a>
 
 The `$push` aggregation operator returns an array of all values from a specified expression for each group. It is typically used within the `$group` stage to accumulate values into an array.
 

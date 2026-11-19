@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-esti
 ---
 
 # Understanding your estimated monthly usage summary
-<a name="ce-estimated-monthly-usage-summary"></a>
 
 When you enable granular data in Cost Explorer, it increases the number of usage records Cost Explorer needs to host for your organization. To ensure Cost Explorer can respond to queries as quickly as possible, Cost Explorer limits the amount of granular data stored for your organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElas
 ---
 
 # AwsElasticsearchDomainElasticsearchClusterConfigDetails
-<a name="API_AwsElasticsearchDomainElasticsearchClusterConfigDetails"></a>
 
 details about the configuration of an OpenSearch cluster.
 

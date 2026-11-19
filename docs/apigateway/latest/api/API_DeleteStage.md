@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteStage.ht
 ---
 
 # DeleteStage
-<a name="API_DeleteStage"></a>
 
 Deletes a Stage resource.
 

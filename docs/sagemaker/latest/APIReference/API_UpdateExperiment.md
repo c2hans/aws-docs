@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateExperiment
-<a name="API_UpdateExperiment"></a>
 
 Adds, updates, or removes the description of an experiment. Updates the display name of an experiment.
 

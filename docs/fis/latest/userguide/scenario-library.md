@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/scenario-library.ht
 ---
 
 # Working with the AWS FIS scenario library
-<a name="scenario-library"></a>
 
 Scenarios define events or conditions that customers can apply to test the resiliency of their applications, such as the interruption of compute resources on which the application is running. Scenarios are created and owned by AWS, and minimize undifferentiated heavy lifting by providing you with a group of pre-defined targets and fault actions (e.g., stopping 30% of instances in an autoscaling group) for common application impairments.
 

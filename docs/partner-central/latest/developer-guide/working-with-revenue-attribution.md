@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/w
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
 # Working with your Revenue Attribution IDs
-<a name="working-with-revenue-attribution"></a>
 
 A Revenue Attribution ID is a deal-level identifier that maps your AWS Marketplace product revenue to specific AWS Marketplace Offers and/or AWS Partner Central Opportunities. It builds on top of product-level Partner Revenue Measurement (PRM) implementation: PRM captures total attributed revenue for a Marketplace product, and a Revenue Attribution ID maps that revenue to specific deals according to the monthly cost allocation percentages you specify.
 

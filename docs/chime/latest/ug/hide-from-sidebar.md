@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/hide-from-sidebar.html
 ---
 
 # Hiding a chat room from the sidebar
-<a name="hide-from-sidebar"></a>
 
 Chat rooms often become inactive, usually when a project ends. You can manage your list of chat rooms by hiding them from the side bar.
 

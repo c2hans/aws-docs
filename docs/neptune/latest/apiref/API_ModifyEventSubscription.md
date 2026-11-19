@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_ModifyEventSub
 ---
 
 # ModifyEventSubscription
-<a name="API_ModifyEventSubscription"></a>
 
 Modifies an existing event notification subscription. Note that you can't modify the source identifiers using this call; to change source identifiers for a subscription, use the [AddSourceIdentifierToSubscription](API_AddSourceIdentifierToSubscription.md) and [RemoveSourceIdentifierFromSubscription](API_RemoveSourceIdentifierFromSubscription.md) calls.
 

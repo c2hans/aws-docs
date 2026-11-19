@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/sdk.html
 ---
 
 # AWS SDK code examples for EBS direct APIs
-<a name="sdk"></a>
 
 The following code examples show how to use EBS direct APIs with an AWS software development kit (SDK).
 

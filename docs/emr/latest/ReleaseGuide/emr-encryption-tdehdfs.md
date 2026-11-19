@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-encryption-t
 ---
 
 # Transparent encryption in HDFS on Amazon EMR
-<a name="emr-encryption-tdehdfs"></a>
 
 Transparent encryption is implemented through the use of HDFS *encryption zones*, which are HDFS paths that you define. Each encryption zone has its own key, which is stored in the key server specified using the `hdfs-site` configuration classification.
 
@@ -108,7 +107,7 @@ A best practice is to create an encryption zone for each application where they 
 ## Hadoop key management server
 <a name="emr-hadoop-kms"></a>
 
-[Hadoop KMS](http://hadoop.apache.org/docs/current/hadoop-kms/index.html) is a key management server that provides the ability to implement cryptographic services for Hadoop clusters, and can serve as the key vendor for [Transparent encryption in HDFS on Amazon EMR](#emr-encryption-tdehdfs). Hadoop KMS in Amazon EMR is installed and enabled by default when you select the Hadoop application while launching an EMR cluster. The Hadoop KMS does not store the keys itself except in the case of temporary caching. Hadoop KMS acts as a proxy between the key provider and the client trustee to a backing keystore—it is not a keystore. The default keystore that is created for Hadoop KMS is the Java Cryptography Extension KeyStore (JCEKS). The JCE unlimited strength policy is also included, so you can create keys with the desired length. Hadoop KMS also supports a range of ACLs that control access to keys and key operations independently of other client applications such as HDFS. The default key length in Amazon EMR is 256 bit.
+[Hadoop KMS](http://hadoop.apache.org/docs/current/hadoop-kms/index.html) is a key management server that provides the ability to implement cryptographic services for Hadoop clusters, and can serve as the key vendor for [Transparent encryption in HDFS on Amazon EMR](emr-encryption-tdehdfs.md). Hadoop KMS in Amazon EMR is installed and enabled by default when you select the Hadoop application while launching an EMR cluster. The Hadoop KMS does not store the keys itself except in the case of temporary caching. Hadoop KMS acts as a proxy between the key provider and the client trustee to a backing keystore—it is not a keystore. The default keystore that is created for Hadoop KMS is the Java Cryptography Extension KeyStore (JCEKS). The JCE unlimited strength policy is also included, so you can create keys with the desired length. Hadoop KMS also supports a range of ACLs that control access to keys and key operations independently of other client applications such as HDFS. The default key length in Amazon EMR is 256 bit.
 
 To configure Hadoop KMS, use the hadoop-kms-site classification to change settings. To configure ACLs, you use the classification kms-acls.
 

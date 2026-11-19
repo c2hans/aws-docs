@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/create-new-
 ---
 
 # Step 1: Create a new listing
-<a name="create-new-listing"></a>
 
  To get started with a machine learning product, you'll initiate the listing process by setting the product name, adding optional resource tags for organization, and generating the product ID. The product ID is used to track your product throughout its lifecycle.
 

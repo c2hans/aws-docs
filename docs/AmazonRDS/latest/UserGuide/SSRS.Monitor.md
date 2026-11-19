@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSRS.Monitor.
 ---
 
 # Monitoring the status of a task
-<a name="SSRS.Monitor"></a>
 
 To track the status of your granting or revoking task, call the `rds_fn_task_status` function. It takes two parameters. The first parameter should always be `NULL` because it doesn't apply to SSRS. The second parameter accepts a task ID.
 

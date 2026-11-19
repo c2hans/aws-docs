@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteDataSetRefreshProperties
-<a name="API_DeleteDataSetRefreshProperties"></a>
 
 Deletes the dataset refresh properties of the dataset.
 

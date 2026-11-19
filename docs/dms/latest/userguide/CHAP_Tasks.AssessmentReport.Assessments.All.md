@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Assessme
 ---
 
 # Assessments for all endpoint types
-<a name="CHAP_Tasks.AssessmentReport.Assessments.All"></a>
 
 This section describes individual premigration assessments for all endpoint types.
 

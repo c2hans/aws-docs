@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/planning-the-deploym
 ---
 
 # Plan the deployment
-<a name="planning-the-deployment"></a>
 
 Consider the following when planning your SAP HANA deployment.
 

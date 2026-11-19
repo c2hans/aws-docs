@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/tr
 ---
 
 # Transform Easytrieve to modern languages by using AWS Transform custom
-<a name="transform-easytrieve-modern-languages"></a>
 
 *Shubham Roy, Subramanyam Malisetty, and Harshitha Shashidhar, Amazon Web Services*
 

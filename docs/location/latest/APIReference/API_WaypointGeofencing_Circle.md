@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # Circle
-<a name="API_WaypointGeofencing_Circle"></a>
 
 ## Contents
 <a name="API_WaypointGeofencing_Circle_Contents"></a>

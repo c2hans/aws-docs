@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-update-end
 ---
 
 # Updating an ACME endpoint
-<a name="sdk-acme-update-endpoint"></a>
 
 The following example shows how to use the [UpdateAcmeEndpoint](https://docs.aws.amazon.com/acm/latest/APIReference/API_UpdateAcmeEndpoint.html) function.
 

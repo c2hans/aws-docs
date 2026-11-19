@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/jira-cloud-reading-from-e
 ---
 
 # Reading from Jira Cloud entities
-<a name="jira-cloud-reading-from-entities"></a>
 
 **Prerequisite**
 

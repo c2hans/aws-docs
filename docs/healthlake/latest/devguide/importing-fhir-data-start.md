@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/importing-fhi
 ---
 
 # Starting a FHIR import job
-<a name="importing-fhir-data-start"></a>
 
 Use `StartFHIRImportJob` to start a FHIR import job into a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`StartFHIRImportJob`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_StartFHIRImportJob.html) in the *AWS HealthLake API Reference*.
 

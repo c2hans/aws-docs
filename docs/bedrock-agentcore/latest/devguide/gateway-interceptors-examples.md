@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Examples
-<a name="gateway-interceptors-examples"></a>
 
 The following examples show Python AWS Lambda functions for common interceptor use cases.
 

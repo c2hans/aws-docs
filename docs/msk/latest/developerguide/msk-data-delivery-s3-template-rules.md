@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Rules
-<a name="msk-data-delivery-s3-template-rules"></a>
 
 If you provide a template, it must satisfy all of the following.
 

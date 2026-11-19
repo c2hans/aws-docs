@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-ml-s
 ---
 
 # Exporting a lookalike segment
-<a name="create-ml-segment-export"></a>
 
 After you have created a lookalike segment, you can export that data to an Amazon S3 bucket.
 

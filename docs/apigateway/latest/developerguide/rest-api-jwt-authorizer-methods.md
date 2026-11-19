@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Attach a JWT authorizer to methods and require scopes
-<a name="rest-api-jwt-authorizer-methods"></a>
 
 After you create a JWT authorizer, you attach it to the methods that it protects. You set the authorization type to `JWT`, reference the authorizer, and optionally require authorization scopes for the method. One authorizer can serve many methods, and each method can require its own scopes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-
 ---
 
 # Inbound federation Lambda trigger
-<a name="user-pool-lambda-inbound-federation"></a>
 
 The inbound federation trigger transforms federated user attributes during the authentication process with external identity providers. When users authenticate through configured identity providers, this trigger allows you to modify responses from external SAML and OIDC providers by intercepting and transforming data in the authentication process, providing programmatic control over how Amazon Cognito user pools handle federated users and their attributes.
 

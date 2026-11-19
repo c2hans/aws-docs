@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GetMemoryRecord
-<a name="API_GetMemoryRecord"></a>
 
 Retrieves a specific memory record from an AgentCore Memory resource.
 

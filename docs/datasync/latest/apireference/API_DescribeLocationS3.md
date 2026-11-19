@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Describ
 ---
 
 # DescribeLocationS3
-<a name="API_DescribeLocationS3"></a>
 
 Provides details about how an AWS DataSync transfer location for an S3 bucket is configured.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # ResourceTypeDetails
-<a name="API_ResourceTypeDetails"></a>
 
 Contains information about the total number of active cross-account and public findings for a resource type of an external access analyzer.
 

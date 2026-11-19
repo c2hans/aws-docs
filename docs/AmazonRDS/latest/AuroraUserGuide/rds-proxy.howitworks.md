@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-pro
 ---
 
 # RDS Proxy concepts and terminology
-<a name="rds-proxy.howitworks"></a>
 
  You can simplify connection management for your Amazon Aurora DB clusters by using RDS Proxy.
 

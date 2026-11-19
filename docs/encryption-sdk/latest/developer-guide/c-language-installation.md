@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/c-
 ---
 
 # Installing the AWS Encryption SDK for C
-<a name="c-language-installation"></a>
 
 Install the latest version of the AWS Encryption SDK for C.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-ter
 ---
 
 # Key terminology for scheduling your agents in Connect Customer
-<a name="scheduling-terminology"></a>
 
 This topic provides important terms to know when scheduling agents in your contact center.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel10-b
 ---
 
 # REL10-BP03 Use bulkhead architectures to limit scope of impact
-<a name="rel10-bp03"></a>
 
  A failure in a shared component can spread to every request a workload handles. Bulkhead architectures, also called cell-based architectures, divide a workload into independent instances that each serve a subset of requests. Because the instances share no state, a failure is confined to one of them, so most requests continue unaffected. This containment works even for faults that would otherwise be hard to isolate.
 

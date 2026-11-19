@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/sharing-customer-ma
 ---
 
 # Sharing and using customer managed permissions across accounts in AWS RAM
-<a name="sharing-customer-managed-permissions"></a>
 
 You can share a customer managed permission that you own the same way that you share other resources: add it to a resource share as a resource of type `ram:Permission`. You can share it with other AWS accounts, organizational units (OUs), your entire organization, or IAM roles and users in other accounts. Each account can then use your customer managed permission in its own resource shares instead of creating its own copy.
 

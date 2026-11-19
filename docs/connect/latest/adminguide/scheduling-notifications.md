@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-not
 ---
 
 # Set up scheduling notifications in Connect Customer
-<a name="scheduling-notifications"></a>
 
 You can create rules that automatically send notifications when schedule changes occur. These rules use the Rules engine and are configured under the **Scheduling** category. You can set up notifications for three types of scheduling events.
 

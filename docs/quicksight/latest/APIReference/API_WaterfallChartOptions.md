@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Water
 ---
 
 # WaterfallChartOptions
-<a name="API_WaterfallChartOptions"></a>
 
 The options that determine the presentation of a waterfall visual.
 

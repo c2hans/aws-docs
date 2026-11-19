@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/indexes-singl
 ---
 
 # Single field indexes
-<a name="indexes-single-field"></a>
 
 Single field indexes store information from any single field in a collection of documents. By default, all collections have an index on the `_id` field. You can add additional indexes to speed up important queries and operations.
 

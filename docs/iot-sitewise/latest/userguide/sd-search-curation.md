@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sd-search-
 ---
 
 # Scenario Discovery search and curation of datasets
-<a name="sd-search-curation"></a>
 
 ## Overview
 <a name="sd-search-curation-overview"></a>

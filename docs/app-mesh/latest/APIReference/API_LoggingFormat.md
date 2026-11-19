@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Logging
 ---
 
 # LoggingFormat
-<a name="API_LoggingFormat"></a>
 
 An object that represents the format for the logs.
 

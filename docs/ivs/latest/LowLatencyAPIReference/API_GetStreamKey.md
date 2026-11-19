@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ge
 ---
 
 # GetStreamKey
-<a name="API_GetStreamKey"></a>
 
 Gets stream-key information for a specified ARN.
 

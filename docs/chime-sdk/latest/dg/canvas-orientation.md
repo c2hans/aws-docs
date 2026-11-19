@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/canvas-orientation.h
 ---
 
 # Setting canvas orientation for compositing in Amazon Chime SDK meetings
-<a name="canvas-orientation"></a>
 
 In compositing, the *canvas* contains all your video streams. You can specify a `Landscape` or `Portrait` orientation for the canvas. Landscape provides a 16:9 aspect ratio. Portrait provides a 9:16 aspect ratio.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeDefaultEncryptionConfiguration
-<a name="API_DescribeDefaultEncryptionConfiguration"></a>
 
 Retrieves information about the default encryption configuration for the AWS account in the default or specified Region. For more information, see [Key management](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/key-management.html) in the * AWS IoT SiteWise User Guide*.
 

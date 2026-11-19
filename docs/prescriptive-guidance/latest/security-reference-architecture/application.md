@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Workloads OU – Application account
-<a name="application"></a>
 
 The following diagram illustrates the AWS security services that are configured in the Application account (along with the application itself).
 

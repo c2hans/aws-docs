@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Implementation phases for FMEA
-<a name="implementation-phases"></a>
 
 Rolling out Failure Mode and Effects Analysis (FMEA) across your development organization is a six-week process separated into three phases. Each phase builds on the previous one: you start by training teams and establishing tooling, then embed risk analysis into the sprint cycle with a pilot group, and finally scale the process organization-wide with automated integrations and continuous improvement loops.
 

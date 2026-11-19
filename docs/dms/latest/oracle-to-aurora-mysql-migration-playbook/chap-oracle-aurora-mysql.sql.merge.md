@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle MERGE statement and MySQL equivalent
-<a name="chap-oracle-aurora-mysql.sql.merge"></a>
 
 With AWS DMS, you can perform Oracle `MERGE` statements and the MySQL equivalent to conditionally insert, update, or delete rows in a target table based on the results of a join with a source table.
 

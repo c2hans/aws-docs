@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Color
 ---
 
 # ColorScale
-<a name="API_ColorScale"></a>
 
 Determines the color scale that is applied to the visual.
 

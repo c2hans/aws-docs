@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/webrtc-media.html
 ---
 
 # How Amazon Chime SDK meetings use WebRTC media
-<a name="webrtc-media"></a>
 
 The Amazon Chime SDK supports two types of WebRTC sessions, standard and high-definition. The following topics describe the media available in each type of session when using the Amazon Chime SDK client libraries for JavaScript, React, iOS, and Android.
 

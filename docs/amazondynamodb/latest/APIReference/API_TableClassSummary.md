@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_T
 ---
 
 # TableClassSummary
-<a name="API_TableClassSummary"></a>
 
 Contains details of the table class.
 

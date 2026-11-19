@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # AgentSkillsMdDescriptor
-<a name="API_AgentSkillsMdDescriptor"></a>
 
 Markdown-format descriptor containing an agent skills document.
 

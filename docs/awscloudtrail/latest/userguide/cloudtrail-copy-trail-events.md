@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # Copy trail events to an existing event data store using the CloudTrail console
-<a name="cloudtrail-copy-trail-events"></a>
 
 Use the following procedure to copy trail events to an existing event data store. For information about how to create a new event data store, see [Create an event data store for CloudTrail events with the console](query-event-data-store-cloudtrail.md).
 

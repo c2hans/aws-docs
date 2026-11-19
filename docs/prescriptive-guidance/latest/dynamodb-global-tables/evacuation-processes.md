@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-gl
 ---
 
 # Evacuation processes
-<a name="evacuation-processes"></a>
 
 Evacuating a Region is the process of migrating activity―usually write activity, possibly read activity―away from that Region.
 

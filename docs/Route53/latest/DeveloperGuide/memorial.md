@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/memorial.h
 ---
 
 # .memorial
-<a name="memorial"></a>
 
 Used by commemorative organizations dedicated to honoring events and people.
 

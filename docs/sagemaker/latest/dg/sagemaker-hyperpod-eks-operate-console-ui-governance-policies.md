@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Policies
-<a name="sagemaker-hyperpod-eks-operate-console-ui-governance-policies"></a>
 
 Amazon SageMaker HyperPod task governance simplifies how your Amazon EKS cluster resources are allocated and how tasks are prioritized. The following provides information on HyperPod EKS cluster policies. For information on how to set up task governance, see [Task governance setup](sagemaker-hyperpod-eks-operate-console-ui-governance-setup-task-governance.md).
 

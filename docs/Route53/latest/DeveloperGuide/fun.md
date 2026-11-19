@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/fun.html
 ---
 
 # .fun
-<a name="fun"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

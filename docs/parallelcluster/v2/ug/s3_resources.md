@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/s3_resources.html
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Working with Amazon S3
-<a name="s3_resources"></a>
 
 To provide cluster resources permission to access to Amazon S3 buckets, specify the bucket ARNs in the [`s3_read_resource`](cluster-definition.md#s3-read-resource) and [`s3_read_write_resource`](cluster-definition.md#s3-read-write-resource) parameters in the AWS ParallelCluster configuration. For more information about controlling access with AWS ParallelCluster, see [AWS Identity and Access Management roles in AWS ParallelCluster](iam.md).
 

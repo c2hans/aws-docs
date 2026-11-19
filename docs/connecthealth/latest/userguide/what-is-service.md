@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/what-is-s
 ---
 
 # What is Amazon Connect Health?
-<a name="what-is-service"></a>
 
 Amazon Connect Health is an AI-powered healthcare service that helps healthcare organizations reduce administrative and documentation burden across the patient journey. Its agents are pre-built and fully managed. You don’t train models or manage infrastructure.
 

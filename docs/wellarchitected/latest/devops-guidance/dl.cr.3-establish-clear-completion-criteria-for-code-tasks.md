@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CR.3] Establish clear completion criteria for code tasks
-<a name="dl.cr.3-establish-clear-completion-criteria-for-code-tasks"></a>
 
  **Category:** FOUNDATIONAL
 

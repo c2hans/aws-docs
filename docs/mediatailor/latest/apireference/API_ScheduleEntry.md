@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Sche
 ---
 
 # ScheduleEntry
-<a name="API_ScheduleEntry"></a>
 
 The properties for a schedule.
 

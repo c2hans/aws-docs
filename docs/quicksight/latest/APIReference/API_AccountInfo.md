@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Accou
 ---
 
 # AccountInfo
-<a name="API_AccountInfo"></a>
 
 A structure that contains the following account information elements:
 + Your Quick Sight account name.

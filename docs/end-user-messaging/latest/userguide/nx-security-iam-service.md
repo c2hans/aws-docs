@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # How AWS End User Messaging works with IAM
-<a name="nx-security-iam-service"></a>
 
 Before you use IAM to manage access to AWS End User Messaging, learn what IAM features are available to use with AWS End User Messaging.
 

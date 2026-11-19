@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # AutoAllowlistConfig
-<a name="API_route53resolver_AutoAllowlistConfig"></a>
 
 The configuration for an AutoAllowlist firewall rule, which observes the DNS traffic of the VPCs that use the rule group, through a rule group association or a Route 53 Profile. The rule allows the domains on its managed domain list. When you create the rule, DNS Firewall seeds the observed domains from the look-back window of each VPC. After that, a domain is listed as observed when any DNS Firewall rule blocks a query for it from a VPC that uses the rule group, including rules in other rule groups, so place a rule that blocks the domains you haven't approved after the AutoAllowlist rule. To review the observed domains, call [ListFirewallRuleDomains](API_route53resolver_ListFirewallRuleDomains.md). To approve or deny them, call [UpdateFirewallDomains](API_route53resolver_UpdateFirewallDomains.md) on the rule's managed domain list.
 

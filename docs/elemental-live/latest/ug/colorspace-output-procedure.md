@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/colorspace-outp
 ---
 
 # Converting color space: Procedure A
-<a name="colorspace-output-procedure"></a>
 
 Follow this procedure to convert to one of these color spaces:
 + 601

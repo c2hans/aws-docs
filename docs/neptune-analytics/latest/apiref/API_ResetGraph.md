@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Rese
 ---
 
 # ResetGraph
-<a name="API_ResetGraph"></a>
 
 Empties the data from a specified Neptune Analytics graph.
 

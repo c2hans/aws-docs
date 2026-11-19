@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Security Hub CSPM event types in EventBridge
-<a name="securityhub-cwe-integration-types"></a>
 
 Security Hub CSPM uses the following Amazon EventBridge event types to integrate with EventBridge.
 

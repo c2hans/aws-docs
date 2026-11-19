@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-d
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Deleting an agent profile
-<a name="agent-delete-profile"></a>
 
 **Important**
  Deleting an agent profile also deletes all goals, application contexts, and recommendations in the profile. Before deleting, verify that you have saved any information you may need from the profile.

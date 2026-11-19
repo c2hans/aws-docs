@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/adk/adk-configure-th
 ---
 
 # Configuring custom actions for third-party integrations
-<a name="adk-configure-third-party"></a>
 
 This section details how to develop a custom action with source code that can be used by AWS partners to integrate third-party capabilities and publish to the CodeCatalyst actions catalog.
 

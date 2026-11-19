@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UserPol
 ---
 
 # UserPolicyGrantPrincipal
-<a name="API_UserPolicyGrantPrincipal"></a>
 
 The user policy grant principal.
 

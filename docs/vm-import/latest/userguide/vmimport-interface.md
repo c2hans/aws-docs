@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-inte
 ---
 
 # Accessing VM Import/Export
-<a name="vmimport-interface"></a>
 
 You can access VM Import/Export using the following interfaces.
 

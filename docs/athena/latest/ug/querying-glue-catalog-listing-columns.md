@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-glue-catalog-l
 ---
 
 # List or search columns for a specified table or view
-<a name="querying-glue-catalog-listing-columns"></a>
 
 You can list all columns for a table, all columns for a view, or search for a column by name in a specified database and table.
 

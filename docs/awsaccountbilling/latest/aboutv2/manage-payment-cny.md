@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-
 ---
 
 # Making payments in Chinese yuan
-<a name="manage-payment-cny"></a>
 
 If you're an AWS Inc. customer, you can make payments using the Chinese yuan currency.
 

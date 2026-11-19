@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/porting-set
 ---
 
 # Setting up your workspace and project for porting
-<a name="porting-set-up-project"></a>
 
 Follow the steps below to set up your workspace and project:
 + Use a project structure and build system of your choice to import the FreeRTOS libraries.

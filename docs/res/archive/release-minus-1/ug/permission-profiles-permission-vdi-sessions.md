@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/permissio
 ---
 
 # VDI session management permissions
-<a name="permission-profiles-permission-vdi-sessions"></a>
 
 **Create a session**
 Controls whether or not a user is allowed to launch their own VDI session from the **My Virtual Desktops** page. Disable this to deny non-admin users the ability to launch their own VDI sessions. Users can always stop and terminate their own VDI sessions.

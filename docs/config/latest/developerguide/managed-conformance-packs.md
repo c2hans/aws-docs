@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/managed-con
 ---
 
 # Managed Conformance Packs for AWS Config
-<a name="managed-conformance-packs"></a>
 
 AWS Config managed conformance packs are predefined collections of AWS Config rules that are created and maintained by AWS. Managed conformance packs help you evaluate the configuration of your AWS resources against common security, operational, and compliance requirements without having to create and maintain your own conformance pack templates.
 

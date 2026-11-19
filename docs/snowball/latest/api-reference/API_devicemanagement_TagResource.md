@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # TagResource
-<a name="API_devicemanagement_TagResource"></a>
 
 Adds or replaces tags on a device or task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/launch-work
 ---
 
 # Create an AD Connector for WorkSpaces Personal
-<a name="launch-workspace-ad-connector"></a>
 
 In this tutorial, we create an AD Connector. For tutorials that use the other options, see [Create a directory for WorkSpaces Personal](launch-workspaces-tutorials.md).
 

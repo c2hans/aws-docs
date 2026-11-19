@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Detect
 ---
 
 # DetectionRuleRuntimePlatforms
-<a name="API_DetectionRuleRuntimePlatforms"></a>
 
 The platforms on which a Runtime Monitoring custom detection rule can run. A member's presence is the support statement: when present, the rule runs on that platform and `minAgentVersion` is the minimum GuardDuty agent version required there. When absent, the rule cannot run on that platform at any agent version.
 

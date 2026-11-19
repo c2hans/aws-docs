@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/rft-prepare-dat
 ---
 
 # Prepare data for Amazon Nova models
-<a name="rft-prepare-data"></a>
 
 When you fine-tune an Amazon Nova model with reinforcement fine-tuning, you can bring your own prompts or use existing Amazon Bedrock API invocation logs as training data.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::RuleGroup BlockAction
-<a name="aws-properties-wafv2-rulegroup-blockaction"></a>
 
 Specifies that AWS WAF should block the request and optionally defines additional custom handling for the response to the web request.
 

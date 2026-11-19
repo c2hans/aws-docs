@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_AppIns
 ---
 
 # AppInstanceUser
-<a name="API_AppInstanceUser"></a>
 
 The details of an `AppInstanceUser`.
 

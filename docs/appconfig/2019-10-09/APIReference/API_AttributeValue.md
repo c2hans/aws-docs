@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_At
 ---
 
 # AttributeValue
-<a name="API_AttributeValue"></a>
 
 A value for a feature flag attribute. Only one of the members can be set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteRequestV
 ---
 
 # DeleteRequestValidator
-<a name="API_DeleteRequestValidator"></a>
 
 Deletes a RequestValidator of a given RestApi.
 

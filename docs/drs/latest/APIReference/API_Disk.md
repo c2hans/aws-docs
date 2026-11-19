@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_Disk.html
 ---
 
 # Disk
-<a name="API_Disk"></a>
 
 An object representing a data storage device on a server.
 

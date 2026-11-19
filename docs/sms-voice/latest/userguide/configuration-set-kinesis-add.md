@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/configuration
 ---
 
 # Create an Amazon Data Firehose event destination in AWS End User Messaging SMS
-<a name="configuration-set-kinesis-add"></a>
 
 Before you can create a Amazon Data Firehose event destination, you must first create a Amazon Data Firehose stream. For more inforation about creating log groups, see [Creating an Amazon Data Firehose Delivery Stream](https://docs.aws.amazon.com/firehose/latest/dev/basic-create.html) in the *Amazon Data Firehose Developer Guide*.
 

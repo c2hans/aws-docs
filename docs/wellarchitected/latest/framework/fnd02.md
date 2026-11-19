@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd02.h
 ---
 
 # Identity and access management
-<a name="fnd02"></a>
 
  Identity and access management sets who can do what across your cloud environment. Strong identity controls protect accounts and resources while letting the business move at the speed it needs. This capability covers the best practices for protecting privileged accounts, centralizing identity, enforcing least privilege, establishing data perimeters to guard your organization's boundaries, and keeping permissions tuned over time.
 

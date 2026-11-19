@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_As
 ---
 
 # Assessment
-<a name="API_Assessment"></a>
 
  An entity that defines the scope of audit evidence collected by AWS Audit Manager. An Audit Manager assessment is an implementation of an Audit Manager framework.
 

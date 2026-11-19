@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/configure.html
 ---
 
 # Configuring Amazon DCV Session Manager
-<a name="configure"></a>
 
 To provide a seamless and secure experience, it is important to properly configure Session Manager according to your organization's needs and requirements. This section walks you through the key steps involved in setting up and configuring the Session Manager, including managing user access, configuring network settings, and customizing session settings.
 

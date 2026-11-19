@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/order-port-nz.html
 ---
 
 # New Zealand
-<a name="order-port-nz"></a>
 
 The following tables list and describe the requirements for ordering and porting phone numbers in New Zealand.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/example_i
 ---
 
 # Policy to grant read-only access to Compute Optimizer Automation for a management account of an organization
-<a name="example_iam-policies.AWSMettleDocs.latest.userguide.automation.xml.6_section"></a>
 
 The following code example shows how to This permission-based policy grants read-only access to Compute Optimizer Automation for a management account of an organization
 

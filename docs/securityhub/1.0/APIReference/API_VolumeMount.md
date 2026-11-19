@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_VolumeM
 ---
 
 # VolumeMount
-<a name="API_VolumeMount"></a>
 
 Describes the mounting of a volume in a container.
 

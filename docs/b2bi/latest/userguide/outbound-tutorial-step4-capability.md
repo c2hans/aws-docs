@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/outbound-tutorial-
 ---
 
 # Step 4: Create a trading capability
-<a name="outbound-tutorial-step4-capability"></a>
 
 A trading capability connects your outbound transformer to specific Amazon S3 directories and defines the automated workflow. It monitors your input directory for new JSON files and automatically processes them using your transformer, placing EDI results in the output directory.
 

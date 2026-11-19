@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/m
 ---
 
 # Modifying PySpark session parameters
-<a name="modify-pyspark-parameters"></a>
 
 Starting with Amazon EMR on EKS release 6.9.0, in Amazon EMR Studio you can adjust the Spark configuration associated with a PySpark session by executing the `%%configure` magic command in the EMR notebook cell.
 

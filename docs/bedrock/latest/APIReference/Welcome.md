@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon Bedrock
 <a name="Welcome_Amazon_Bedrock"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-docker
 ---
 
 # 'Publish Docker image to an Amazon ECR image repository' sample for CodeBuild
-<a name="sample-docker"></a>
 
 This sample produces as build output a Docker image and then pushes the Docker image to an Amazon Elastic Container Registry (Amazon ECR) image repository. You can adapt this sample to push the Docker image to Docker Hub. For more information, see [Adapt the 'Publish Docker image to Amazon ECR' sample to push to Docker Hub](sample-docker-docker-hub.md).
 
@@ -23,7 +22,7 @@ Running this sample might result in charges to your AWS account. These include p
 ## Run the 'Publish Docker image to Amazon ECR' sample
 <a name="sample-docker-running"></a>
 
-Use the following procedure to run the sample that publishes a Docker image to Amazon ECR. For more information about this sample, see ['Publish Docker image to an Amazon ECR image repository' sample for CodeBuild](#sample-docker).
+Use the following procedure to run the sample that publishes a Docker image to Amazon ECR. For more information about this sample, see ['Publish Docker image to an Amazon ECR image repository' sample for CodeBuild](sample-docker.md).
 
 **To run this sample**
 

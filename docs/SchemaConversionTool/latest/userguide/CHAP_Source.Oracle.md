@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Connecting to Oracle Databases with the AWS Schema Conversion Tool
-<a name="CHAP_Source.Oracle"></a>
 
 You can use AWS SCT to convert schemas, database code objects, and application code from Oracle Database to the following targets:
 + Amazon RDS for MySQL

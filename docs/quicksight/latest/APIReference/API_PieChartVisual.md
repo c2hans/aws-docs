@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_PieCh
 ---
 
 # PieChartVisual
-<a name="API_PieChartVisual"></a>
 
 A pie or donut chart.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/vpc-endpoints.htm
 ---
 
 # Working with Amazon VPC endpoints
-<a name="vpc-endpoints"></a>
 
  You can configure CodeArtifact to use an interface virtual private cloud (VPC) endpoint to improve the security of your VPC.
 

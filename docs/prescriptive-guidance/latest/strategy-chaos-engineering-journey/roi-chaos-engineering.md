@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ch
 ---
 
 # Quantifying the ROI of chaos engineering
-<a name="roi-chaos-engineering"></a>
 
 Currently, very few published resources provide comprehensive methodologies or real-world data for quantifying the long-term return on investment (ROI) for chaos engineering.
 

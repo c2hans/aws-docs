@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SourceL
 ---
 
 # SourceLocation
-<a name="API_SourceLocation"></a>
 
 The source location for a notebook import in Amazon SageMaker Unified Studio.
 

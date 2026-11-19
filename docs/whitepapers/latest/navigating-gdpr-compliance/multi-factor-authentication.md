@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Multi-Factor-Authentication
-<a name="multi-factor-authentication"></a>
 
 For extra security, customers can add two-factor authentication to their AWS account and to IAM users. With multi-factor authentication (MFA) enabled, when customers sign into the [AWS Management Console](https://aws.amazon.com/console/), they are prompted for their credentials (the first factor), as well as an authentication response from their AWS MFA device (the second factor). Customers can enable MFA for their AWS account and for individual IAM users they have created in their account. Customers can also use MFA to control access to AWS service APIs.
 

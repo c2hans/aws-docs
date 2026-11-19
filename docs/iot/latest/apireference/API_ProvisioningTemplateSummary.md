@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Provisioning
 ---
 
 # ProvisioningTemplateSummary
-<a name="API_ProvisioningTemplateSummary"></a>
 
 A summary of information about a provisioning template.
 

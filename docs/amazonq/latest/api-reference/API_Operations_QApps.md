@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Operati
 ---
 
 # QApps
-<a name="API_Operations_QApps"></a>
 
 The following actions are supported by QApps:
 +  [AssociateLibraryItemReview](API_qapps_AssociateLibraryItemReview.md)

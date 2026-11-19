@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Deregiste
 ---
 
 # DeregisterTransitGatewayMulticastGroupSources
-<a name="API_DeregisterTransitGatewayMulticastGroupSources"></a>
 
 Deregisters the specified sources (network interfaces) from the transit gateway multicast group.
 

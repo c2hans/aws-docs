@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/p
 ---
 
 # Set signed cookies using a canned policy
-<a name="private-content-setting-signed-cookie-canned-policy"></a>
 
 To set a signed cookie by using a canned policy, complete the following steps. To create the signature, see [Create a signature for a signed cookie that uses a canned policy](#private-content-canned-policy-signature-cookies).<a name="private-content-setting-signed-cookie-canned-policy-procedure"></a>
 

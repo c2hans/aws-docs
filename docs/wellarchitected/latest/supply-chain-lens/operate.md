@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Operate
-<a name="operate"></a>
 
 | SCOPS10: How are operational issues managed through to resolution, ensuring corrective actions are implemented and validated?  |
 | --- |

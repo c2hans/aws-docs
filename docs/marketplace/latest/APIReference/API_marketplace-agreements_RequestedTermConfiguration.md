@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # RequestedTermConfiguration
-<a name="API_marketplace-agreements_RequestedTermConfiguration"></a>
 
 A tagged union that represents the term configuration provided by the acceptor. Only one configuration is accepted per term.
 

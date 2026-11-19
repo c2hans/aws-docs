@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sm-console-domain-re
 ---
 
 # View SageMaker AI resources in your domain
-<a name="sm-console-domain-resources-view"></a>
 
 ## Use the SageMaker AI console to view your domain resources
 <a name="sm-console-domain-resources-view-console"></a>

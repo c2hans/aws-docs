@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ConversationContext
-<a name="API_amazon-q-connect_ConversationContext"></a>
 
 The conversation context to include in SendMessage.
 

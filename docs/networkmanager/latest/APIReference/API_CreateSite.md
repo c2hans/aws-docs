@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CreateSite
-<a name="API_CreateSite"></a>
 
 Creates a new site in a global network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.
 ---
 
 # Overview of Amazon Aurora MySQL
-<a name="Aurora.AuroraMySQL.Overview"></a>
 
 The following sections provide an overview of Amazon Aurora MySQL.
 

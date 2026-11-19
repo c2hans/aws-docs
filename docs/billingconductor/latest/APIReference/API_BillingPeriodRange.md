@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # BillingPeriodRange
-<a name="API_BillingPeriodRange"></a>
 
 A time range for which the margin summary is effective. The time range can be up to 12 months.
 

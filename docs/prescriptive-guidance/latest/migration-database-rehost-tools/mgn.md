@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Migration with AWS Application Migration Service
-<a name="mgn"></a>
 
 Most large lift-and-shift migrations to AWS use [AWS Transform MGN](https://aws.amazon.com/application-migration-service/). This service works on a physical level by moving data that is stored on any directly attached block storage device (such as a hard drive or SAN drive) to the corresponding Amazon Elastic Block Store (Amazon EBS) storage device on AWS. It essentially implements a traditional backup/restore procedure (by cloning the hard drives), but also provides a recovery point objective (RPO) of near seconds and a recovery time objective (RTO) of minutes by achieving continuous data protection (CDP) synchronization mode between the source systems and the target storage devices in the staging area.
 

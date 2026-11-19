@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/common-use-cas
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Using CLI commands with Amazon Q Developer in chat applications - Common use cases
-<a name="common-use-cases"></a>
 
 Common use cases for using Amazon Q Developer in chat applications in your chat channels involve running CLI commands. This topic also includes an example use case for invoking a Lambda function in your chat channel, written in Python 3.8.
 

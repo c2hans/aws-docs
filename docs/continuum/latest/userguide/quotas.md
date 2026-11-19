@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/userguide/quotas.html
 ---
 
 # Quotas for AWS Continuum
-<a name="quotas"></a>
 
 Your AWS account has default quotas to maintain the performance of the service and to ensure appropriate usage of AWS Continuum. The default quotas for your account might change depending on regional factors, payment history, fraudulent usage, or approval of a quota increase request.
 

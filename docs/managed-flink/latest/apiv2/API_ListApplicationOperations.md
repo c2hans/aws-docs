@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ListAppli
 ---
 
 # ListApplicationOperations
-<a name="API_ListApplicationOperations"></a>
 
 Lists all the operations performed for the specified application such as UpdateApplication, StartApplication etc. The response also includes a summary of the operation.
 

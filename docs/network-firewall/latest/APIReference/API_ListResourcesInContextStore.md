@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ListResourcesInContextStore
-<a name="API_ListResourcesInContextStore"></a>
 
 Lists the resources that a context store records. The context store must be associated with a transit gateway that your firewall is attached to. You can filter the results by Region, resource type, or both.
 

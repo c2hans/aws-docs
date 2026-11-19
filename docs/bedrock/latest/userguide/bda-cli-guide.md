@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-cli-guide.h
 ---
 
 # Using Amazon Bedrock Data Automation CLI
-<a name="bda-cli-guide"></a>
 
 The Amazon Bedrock Data Automation (BDA) feature provides a streamlined CLI workflow for processing your data. For all modalities, this workflow consists of three main steps: creating a project, creating Blueprints for custom output, and processing documents. This guide walks you through the key CLI commands for working with BDA.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetDataCa
 ---
 
 # GetDataCatalog
-<a name="API_GetDataCatalog"></a>
 
 Returns the specified data catalog.
 

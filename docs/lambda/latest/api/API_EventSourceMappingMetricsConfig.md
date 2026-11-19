@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_EventSourceMapping
 ---
 
 # EventSourceMappingMetricsConfig
-<a name="API_EventSourceMappingMetricsConfig"></a>
 
 The metrics configuration for your event source. Use this configuration object to define which metrics you want your event source mapping to produce.
 

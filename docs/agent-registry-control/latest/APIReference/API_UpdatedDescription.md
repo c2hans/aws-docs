@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedDescription
-<a name="API_UpdatedDescription"></a>
 
 Wrapper for updating an optional Description field with PATCH semantics
 

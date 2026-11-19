@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/fullstory-connector-limit
 ---
 
 # Limitations and notes for the Fullstory connector
-<a name="fullstory-connector-limitations"></a>
 
 The following are limitations and notes for the Fullstory connector:
 + Fullstory is supported as a source only. Writing to Fullstory is not supported.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_S
 ---
 
 # SendAction
-<a name="API_SendAction"></a>
 
 Sends the email to the internet using the ses:SendRawEmail API.
 

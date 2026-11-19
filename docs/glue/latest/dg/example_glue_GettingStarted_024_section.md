@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/example_glue_GettingStart
 ---
 
 # Getting started with the data catalog
-<a name="example_glue_GettingStarted_024_section"></a>
 
 The following code example shows how to:
 + Create a database

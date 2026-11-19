@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/spelling-styles.html
 ---
 
 # Capturing slot values with spelling styles during the conversation
-<a name="spelling-styles"></a>
 
 Amazon Lex V2 provides built-in slots to capture user-specific information such as first name, last name, email address or alphanumeric identifiers. For example, you can use the `AMAZON.LastName` slot to capture surnames such as "Jackson" or "Garcia." However, Amazon Lex V2 may get confused with surnames that are difficult to pronounce or that are not common in a locale, such as "Xiulan." To capture such names, you can ask the user to provide input in *spell by letter* or *spell by word* style.
 

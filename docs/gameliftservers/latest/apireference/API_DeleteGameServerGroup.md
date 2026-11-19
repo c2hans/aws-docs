@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # DeleteGameServerGroup
-<a name="API_DeleteGameServerGroup"></a>
 
  **This API works with the following fleet types:** EC2 (FleetIQ)
 

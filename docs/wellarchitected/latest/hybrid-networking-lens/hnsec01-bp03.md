@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNSEC01-BP03 Implement continuous logging
-<a name="hnsec01-bp03"></a>
 
  Continuous logging provides real-time visibility across on-premises and cloud infrastructures. Implementing comprehensive logging mechanisms enables teams to quickly detect anomalies, troubleshoot connectivity issues, and maintain a consistent audit trail for security compliance.
 

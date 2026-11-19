@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Checking your data after the update of the time zone file
-<a name="Appendix.Oracle.Options.Timezone-file-autoupgrade.checking"></a>
 
 We recommend that you check your data after you update the time zone file. During the prepare step, RDS for Oracle automatically creates the following tables:
 + `rdsadmin.rds_dst_affected_tables` – Lists the tables that contain data affected by the update

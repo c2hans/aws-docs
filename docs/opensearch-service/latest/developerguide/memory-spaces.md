@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Working with spaces in Amazon OpenSearch Memory
-<a name="memory-spaces"></a>
 
 In Amazon OpenSearch Memory, a *space* is the AWS resource that stores your events and memories. A space also defines which memory strategies extract memories, how long events and memories are kept, which model does the extraction, and which key encrypts the data. You control access to events and memories by controlling access to their space.
 

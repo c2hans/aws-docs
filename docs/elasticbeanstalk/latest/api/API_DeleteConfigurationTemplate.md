@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_DeleteCo
 ---
 
 # DeleteConfigurationTemplate
-<a name="API_DeleteConfigurationTemplate"></a>
 
 Deletes the specified configuration template.
 

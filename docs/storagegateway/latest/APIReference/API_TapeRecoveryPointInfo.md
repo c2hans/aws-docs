@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_T
 ---
 
 # TapeRecoveryPointInfo
-<a name="API_TapeRecoveryPointInfo"></a>
 
 Describes a recovery point.
 

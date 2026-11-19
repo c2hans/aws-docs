@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicReviewedAnswer
-<a name="API_TopicReviewedAnswer"></a>
 
 The deinition for a `TopicReviewedAnswer`.
 

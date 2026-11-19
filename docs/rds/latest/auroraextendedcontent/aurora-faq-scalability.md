@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Scalability
-<a name="aurora-faq-scalability"></a>
 
 How does Amazon Aurora scale?
 

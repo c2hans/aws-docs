@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_TestCon
 ---
 
 # TestConnection
-<a name="API_TestConnection"></a>
 
 Tests whether your SFTP connector is set up successfully. We highly recommend that you call this operation to test your ability to transfer files between local AWS storage and a trading partner's SFTP server.
 

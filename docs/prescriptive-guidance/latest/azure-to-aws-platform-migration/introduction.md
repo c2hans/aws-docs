@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/azure-to-aw
 ---
 
 # AI-Enabled Data Platform Migration Assessment: Microsoft Azure to AWS
-<a name="introduction"></a>
 
 *Nabarun Bandyopadhyay, Breck Manwaring, and Colby Wentlandt, Amazon Web Services*
 

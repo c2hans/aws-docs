@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/manuall
 ---
 
 # Manually installing and uninstalling SSM Agent on EC2 instances for Windows Server
-<a name="manually-install-ssm-agent-windows"></a>
 
 AWS Systems Manager Agent (SSM Agent) is preinstalled, by default, on the following Amazon Machine Images (AMIs) for Windows Server provided by Amazon:
 + Windows Server 2012 R2 AMIs published in November 2016 or later

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Replication.
 ---
 
 # Creating a replication group using an existing cluster
-<a name="Replication.CreatingReplGroup.ExistingCluster"></a>
 
 The following procedure adds a replication group to your Valkey or Redis OSS (cluster mode disabled) single-node cluster, which is necessary in order to upgrade your cluster to the latest version of Valkey. This is an in-place procedure that involves zero downtime and zero data loss. When you create a replication group for your single-node cluster, the cluster's node becomes the primary node in the new cluster. If you do not have a Valkey or Redis OSS (cluster mode disabled) cluster that you can use as the new cluster's primary, see [Creating a Valkey or Redis OSS replication group from scratch](Replication.CreatingReplGroup.NoExistingCluster.md).
 

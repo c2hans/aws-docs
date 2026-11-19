@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Common tasks for getting started with Amazon SQS
-<a name="get-started"></a>
 
 Once you've created a queue and learned how to send, receive, and delete messages, you might want to try the following:
 + Trigger a [Lambda function](sqs-configure-lambda-function-trigger.md) to process incoming messages automatically, enabling event-driven workflows without the need for continuous polling.

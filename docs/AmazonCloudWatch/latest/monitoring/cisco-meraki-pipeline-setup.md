@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cisco
 ---
 
 # CloudWatch pipelines configuration for Cisco Meraki
-<a name="cisco-meraki-pipeline-setup"></a>
 
 Collects log data from the Cisco Meraki Dashboard REST API v1 using API key authentication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # API consumer: Delete your domain name access association with a private custom domain name
-<a name="apigateway-private-custom-domains-consumer-delete-domain-name-access-association"></a>
 
 If you are an API consumer, at any time, you can delete the access association resource. The API provider can't delete the domain name access association for you.
 

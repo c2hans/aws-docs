@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/firewall-p
 ---
 
 # Rule states for Palo Alto Networks rules
-<a name="firewall-partner-panw-rule-states"></a>
 
 PANW rules in DNS Firewall can have different sync states that indicate their status.
 

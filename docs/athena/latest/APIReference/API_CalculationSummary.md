@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Calculati
 ---
 
 # CalculationSummary
-<a name="API_CalculationSummary"></a>
 
 Summary information for a notebook calculation.
 

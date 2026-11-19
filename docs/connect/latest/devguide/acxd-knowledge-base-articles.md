@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-knowledge-b
 ---
 
 # Knowledge base articles
-<a name="acxd-knowledge-base-articles"></a>
 
 Manage structured Q&A content within a knowledge base. Articles contain a question and one or more response messages.
 

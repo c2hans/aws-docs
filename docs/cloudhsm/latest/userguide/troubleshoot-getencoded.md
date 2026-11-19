@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/troubleshoot-g
 ---
 
 # AWS CloudHSM extracting keys using JCE
-<a name="troubleshoot-getencoded"></a>
 
 Use the following sections to troubleshoot issues extracting AWS CloudHSM keys using JCE.
 

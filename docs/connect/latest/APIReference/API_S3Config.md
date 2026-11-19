@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_S3Config
 ---
 
 # S3Config
-<a name="API_S3Config"></a>
 
 Information about the Amazon Simple Storage Service (Amazon S3) storage type.
 

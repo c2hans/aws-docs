@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/managing-stan
 ---
 
 # Managing Beanstalk Standard environments
-<a name="managing-standard-environments"></a>
 
 **Topics**
 + [Configuration changes](environments-updating.md)

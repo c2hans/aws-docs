@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/devguide
 ---
 
 # What is AWS Network Security Manager?
-<a name="what-is"></a>
 
 With AWS Network Security Manager, you can centrally define and deploy network security protections—such as AWS WAF and AWS Shield Advanced rules—across one or more accounts and resources in your organization. Instead of working with each resource individually, you define reusable policy objects (rules, templates, and policies) once and deploy them at scale, with continual monitoring to detect and remediate policy drift.
 

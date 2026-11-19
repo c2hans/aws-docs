@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeT
 ---
 
 # DescribeTransitGateways
-<a name="API_DescribeTransitGateways"></a>
 
 Describes one or more transit gateways. By default, all transit gateways are described. Alternatively, you can filter the results.
 

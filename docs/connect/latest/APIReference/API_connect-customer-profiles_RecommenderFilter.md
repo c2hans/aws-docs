@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # RecommenderFilter
-<a name="API_connect-customer-profiles_RecommenderFilter"></a>
 
 A filter that specifies criteria for including or excluding items from recommendations.
 

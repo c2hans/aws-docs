@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeL
 ---
 
 # DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations
-<a name="API_DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations"></a>
 
 Describes the associations between virtual interface groups and local gateway route tables.
 

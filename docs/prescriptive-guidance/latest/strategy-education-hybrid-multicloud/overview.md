@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Overview
-<a name="overview"></a>
 
 As educational institutions digitally transform to deliver differentiated services and experiences to their students, parents, faculty, staff, and community, they face a multitude of technical decisions. Many organizations have already made the decision to adopt the cloud for increased agility, elasticity, resilience, security, and cost savings. Based on their existing relationships and investments across various teams, most organizations are using some combination of on-premises data centers, colocation facilities, and cloud providers. Given the availability of multiple cloud options, educational institutions must frequently decide from single, hybrid, and multicloud deployment models (defined in the section [Cloud deployment strategies](cloud-deployment-strategies.md)).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Use `ReceiveMessage` with an AWS SDK or CLI
-<a name="example_sqs_ReceiveMessage_section"></a>
 
 The following code examples show how to use `ReceiveMessage`.
 

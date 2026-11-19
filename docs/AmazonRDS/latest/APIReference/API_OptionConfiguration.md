@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Option
 ---
 
 # OptionConfiguration
-<a name="API_OptionConfiguration"></a>
 
 A list of all available options for an option group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Standar
 ---
 
 # Standard
-<a name="API_Standard"></a>
 
 Provides information about a specific security standard.
 

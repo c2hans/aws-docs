@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KPICo
 ---
 
 # KPIConditionalFormattingOption
-<a name="API_KPIConditionalFormattingOption"></a>
 
 The conditional formatting options of a KPI visual.
 

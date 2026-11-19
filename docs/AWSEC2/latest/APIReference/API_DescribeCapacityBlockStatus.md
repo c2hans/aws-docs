@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeCapacityBlockStatus
-<a name="API_DescribeCapacityBlockStatus"></a>
 
 Describes the availability of capacity for the specified Capacity blocks, or all of your Capacity Blocks.
 

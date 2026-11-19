@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # ListTagsForResource
-<a name="API_devicemanagement_ListTagsForResource"></a>
 
 Returns a list of tags for a managed device or task.
 

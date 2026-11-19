@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cre
 ---
 
 # Creating environments for your application in AWS AppConfig
-<a name="appconfig-creating-environment"></a>
 
 For each AWS AppConfig application, you define one or more environments. An environment is a logical deployment group of AppConfig targets, such as applications in a `Beta` or `Production` environment, AWS Lambda functions, or containers. You can also define environments for application subcomponents, such as the `Web`, `Mobile`, and `Back-end`. You can configure Amazon CloudWatch alarms for each environment. The system monitors alarms during a configuration deployment. If an alarm is triggered, the system rolls back the configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/getting-st
 ---
 
 # Getting started with Amazon Cognito identity pools
-<a name="getting-started-with-identity-pools"></a>
 
 With Amazon Cognito identity pools, you can create unique identities and assign permissions for users. Your identity pool can bring in identities from the following types of authentication services:
 + Users in an Amazon Cognito user pool

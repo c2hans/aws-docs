@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/api-topleve
 ---
 
 # Code examples
-<a name="api-toplevel"></a>
 
 The following code examples show how to use Signer with the Java AWS software development kit (SDK).
 

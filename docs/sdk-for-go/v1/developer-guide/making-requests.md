@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/making-req
 AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [AWS SDK for Go V2](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-go-v1-on-july-31-2025/).
 
 # Using the AWS SDK for Go with AWS Services
-<a name="making-requests"></a>
 
 To make calls to an AWS service, you must first construct a service client instance with a session. A service client provides low-level access to every API action for that service. For example, you create an Amazon S3 service client to make calls to Amazon S3.
 

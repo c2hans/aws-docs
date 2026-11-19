@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/testing-language
 ---
 
 # Message received
-<a name="testing-language-events-message-received"></a>
 
 Observes when the system plays a prompt or send any voice response to the simulated customer. This event can match messages using different criteria.
 

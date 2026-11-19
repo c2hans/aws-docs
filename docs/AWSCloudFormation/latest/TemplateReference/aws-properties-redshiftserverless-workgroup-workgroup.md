@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RedshiftServerless::Workgroup Workgroup
-<a name="aws-properties-redshiftserverless-workgroup-workgroup"></a>
 
 The collection of computing resources from which an endpoint is created.
 

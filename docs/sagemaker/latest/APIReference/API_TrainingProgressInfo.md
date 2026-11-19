@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingProgressInfo
-<a name="API_TrainingProgressInfo"></a>
 
  The serverless training job progress information.
 

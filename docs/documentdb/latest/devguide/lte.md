@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/lte.html
 ---
 
 # $lte
-<a name="lte"></a>
 
 The `$lte` operator in Amazon DocumentDB is used to match documents where the value of a specified field is less than or equal to the specified value. This operator is useful for filtering and querying data based on numerical comparisons.
 

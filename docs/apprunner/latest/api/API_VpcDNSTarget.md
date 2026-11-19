@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_VpcDNSTarget.ht
 ---
 
 # VpcDNSTarget
-<a name="API_VpcDNSTarget"></a>
 
 DNS Target record for a custom domain of this Amazon VPC.
 

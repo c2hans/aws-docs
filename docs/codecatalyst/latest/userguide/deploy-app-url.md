@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/deploy-app
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Displaying the app URL in the workflow diagram
-<a name="deploy-app-url"></a>
 
 If your workflow deploys an application, you can configure Amazon CodeCatalyst to display the application's URL as a clickable link. This link appears in the CodeCatalyst console, inside the action that deployed it. The following workflow diagram shows the **View App** URL appearing at the bottom of an action.
 

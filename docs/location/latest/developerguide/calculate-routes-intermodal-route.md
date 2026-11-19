@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/calculate
 ---
 
 # How to find an intermodal route
-<a name="calculate-routes-intermodal-route"></a>
 
 The CalculateRoutes API supports the `Intermodal` travel mode to calculate routes that combine multiple transport types in a single journey, such as driving to a park-and-ride location and then taking public transit to your destination. Pedestrian legs are always enabled to connect between other transport types.
 

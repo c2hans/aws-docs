@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/logging-manage
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Finding your protection pack (web ACL) records
-<a name="logging-management"></a>
 
 This section explains how to find your protection pack (web ACL) records.
 

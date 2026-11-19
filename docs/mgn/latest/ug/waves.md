@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/waves.html
 ---
 
 # Group Source Servers and Applications in Waves
-<a name="waves"></a>
 
 AWS Transform MGN helps users manage their migration by grouping **Source servers** and **Applications** in **Waves**. These are logical groups, describing the migration plan over time.
 

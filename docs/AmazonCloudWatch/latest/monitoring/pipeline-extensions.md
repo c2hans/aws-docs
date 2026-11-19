@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/pipel
 ---
 
 # CloudWatch pipelines extensions
-<a name="pipeline-extensions"></a>
 
 CloudWatch pipelines extensions provide additional functionality to the pipeline. You can use the AWS Secrets Manager integration for credential management.
 

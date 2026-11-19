@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_RAGConfi
 ---
 
 # RAGConfig
-<a name="API_RAGConfig"></a>
 
 Contains configuration details for retrieval of information and response generation.
 

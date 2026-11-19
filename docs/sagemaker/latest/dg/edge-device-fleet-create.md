@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-device-fleet-cr
 ---
 
 # Create a Fleet
-<a name="edge-device-fleet-create"></a>
 
 You can create a fleet programmatically with the AWS SDK for Python (Boto3) or through the SageMaker AI console [https://console.aws.amazon.com/sagemaker](https://console.aws.amazon.com/sagemaker/).
 

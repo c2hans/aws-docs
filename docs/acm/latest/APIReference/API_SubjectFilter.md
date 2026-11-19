@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_SubjectFilte
 ---
 
 # SubjectFilter
-<a name="API_SubjectFilter"></a>
 
 Filters certificates by subject attributes.
 

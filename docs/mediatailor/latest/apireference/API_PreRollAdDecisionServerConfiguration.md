@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PreR
 ---
 
 # PreRollAdDecisionServerConfiguration
-<a name="API_PreRollAdDecisionServerConfiguration"></a>
 
 The ad decision server configuration for live pre-roll ads. It contains settings that control how MediaTailor processes VAST responses for pre-roll ad breaks.
 

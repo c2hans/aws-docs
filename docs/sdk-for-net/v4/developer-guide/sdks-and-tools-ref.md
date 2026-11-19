@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # AWS SDKs and Tools Reference Guide
-<a name="sdks-and-tools-ref"></a>
 
 The [AWS SDKs and Tools Reference Guide](https://docs.aws.amazon.com/sdkref/latest/guide/overview.html) contains information that's relevant and important for many of the AWS SDKs and toolkits and the AWS CLI. The following are some examples of the information that the reference contains:
 + Information about the [shared AWS `config` and `credentials` files](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html) and their [location](https://docs.aws.amazon.com/sdkref/latest/guide/file-location.html).

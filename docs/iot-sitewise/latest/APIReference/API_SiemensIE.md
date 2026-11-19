@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Sie
 ---
 
 # SiemensIE
-<a name="API_SiemensIE"></a>
 
 Contains details for a SiteWise Edge gateway that runs on a Siemens Industrial Edge Device.
 

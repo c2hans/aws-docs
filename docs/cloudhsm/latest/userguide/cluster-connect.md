@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cluster-connec
 ---
 
 # Connect the client SDK to the AWS CloudHSM cluster
-<a name="cluster-connect"></a>
 
 To connect to the cluster with either Client SDK 5 or Client SDK 3, you must first do two things:
 + Have an issuing certificate in place on the EC2 instance

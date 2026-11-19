@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCluste
 ---
 
 # CreateCluster
-<a name="API_CreateCluster"></a>
 
 Creates an Amazon EKS control plane.
 

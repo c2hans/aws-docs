@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Troubleshooting
-<a name="codecatalyst-troubleshoot"></a>
 
 The following are troubleshooting topics for addressing known issues when working with Amazon CodeCatalyst from the AWS Toolkit for Visual Studio with Amazon Q.
 

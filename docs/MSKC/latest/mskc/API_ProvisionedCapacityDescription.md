@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_ProvisionedCapacity
 ---
 
 # ProvisionedCapacityDescription
-<a name="API_ProvisionedCapacityDescription"></a>
 
 The description of a connector's provisioned capacity.
 

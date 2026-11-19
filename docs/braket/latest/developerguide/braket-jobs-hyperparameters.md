@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs
 ---
 
 # Using hyperparameters
-<a name="braket-jobs-hyperparameters"></a>
 
 You can define hyperparameters needed by your algorithm, such as the learning rate or step size, when you create a hybrid job. Hyperparameter values are typically used to control various aspects of the algorithm, and can often be tuned to optimize the algorithm's performance. To use hyperparameters in a Braket hybrid job, you need to specify their names and values explicitly as a dictionary. Specify the hyperparameter values to test when searching for the optimal set of values. The first step to using hyperparameters is to set up and define the hyperparameters as a dictionary, which can be seen in the following code.
 

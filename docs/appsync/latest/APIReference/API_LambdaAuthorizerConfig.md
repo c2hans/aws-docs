@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_LambdaAu
 ---
 
 # LambdaAuthorizerConfig
-<a name="API_LambdaAuthorizerConfig"></a>
 
 A `LambdaAuthorizerConfig` specifies how to authorize AWS AppSync API access when using the `AWS_LAMBDA` authorizer mode. Be aware that an AWS AppSync API can have only one AWS Lambda authorizer configured at a time.
 

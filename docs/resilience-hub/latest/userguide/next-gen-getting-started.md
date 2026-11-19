@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Getting started with Next generation Resilience Hub
-<a name="next-gen-getting-started"></a>
 
 This tutorial walks you through the end-to-end workflow for using the next generation of Resilience Hub, from creating your first service to reviewing failure mode findings.
 

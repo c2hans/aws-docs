@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/s2110-nmos-obta
 ---
 
 # Obtain information from the NMOS operator
-<a name="s2110-nmos-obtain-info"></a>
 
 Speak to the NMOS operator in your organization to make sure that you are aligned on the content of the streams.
 + Obtain the number and types of the streams — video, audio, and so on.

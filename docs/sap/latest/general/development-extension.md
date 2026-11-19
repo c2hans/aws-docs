@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/development-extension
 ---
 
 # Development and extension
-<a name="development-extension"></a>
 
 ## AWS SDK for SAP ABAP
 <a name="shared_aws_sdk_for_sap_abap"></a>

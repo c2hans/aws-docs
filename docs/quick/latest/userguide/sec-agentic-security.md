@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sec-agentic-secur
 ---
 
 # AI and agent security in AWS Quick
-<a name="sec-agentic-security"></a>
 
 AWS Quick includes AI capabilities that read content, take actions, and run automated workflows. These capabilities introduce properties that differ from traditional BI features. Use this page to understand what makes these capabilities different, how to apply the available controls, and where those controls have limits. For the corresponding security checklist, see [Security in Quick](best-practices-security.md).
 
@@ -146,9 +145,9 @@ For more information about configuring an MCP integration, see [Model Context Pr
 ### Guardrail screening and blocked words
 <a name="sec-agentic-security-guardrails"></a>
 
-Built-in content safety screening checks user requests for harmful content, including hate speech, insults, sexual content, violence, and misconduct. These checks also assess user requests for prompt attacks. You can configure up to 50 blocked words and phrases that AWS Quick checks against both user requests and generated responses.
+The models that AWS Quick uses have their own safety controls, which are designed to refuse requests for harmful content. You can also block words and phrases in chat agents and flows in the AWS Quick web experience.
 
-**Limit** – These controls help reduce risk. However, they do not replace your responsibility to configure access, permissions, agents, flows, and data sources for your use case. Blocked-word checks use exact-match string comparison, not semantic analysis, and are limited to 50 entries of up to 36 characters each. Blocked-word checks apply only to chat agents and flows in the AWS Quick web experience. For more information, see [AI guardrails in AWS Quick](guardrails.md).
+**Limit** – These controls help reduce risk. However, they do not replace your responsibility to configure access, permissions, agents, flows, and data sources for your use case. Blocked-word checks match whole words and phrases, and they don't analyze meaning. For the limits on blocked words, see [Blocked words and phrases](guardrails.md#guardrails-blocked-phrases).
 
 ### Code execution isolation
 <a name="sec-agentic-security-code-execution"></a>
@@ -174,7 +173,7 @@ AWS CloudTrail records API-level activity (who did what). Vended logs record con
 <a name="sec-agentic-security-honest-limits"></a>
 
 The following limitations apply to the AI and agent capabilities in AWS Quick:
-+ **Screening reduces risk but does not replace configuration** – Built-in screening and guardrails help reduce risk. They do not replace your responsibility to configure access, permissions, agents, flows, and data sources for your use case.
++ **Screening reduces risk but does not replace configuration** – Model safety controls and guardrails help reduce risk. They do not replace your responsibility to configure access, permissions, agents, flows, and data sources for your use case.
 + **No universal human review requirement** – Human review is not a system-wide requirement for actions. Per-action confirmation is available where a tool is configured for it (on desktop, through the **Ask each time** access level), and the human-in-the-loop task center is available for workflows where you choose to add a review step. However, on-demand actions in the web experience execute immediately, and automated workflows execute without user intervention.
 + **Authentication options vary by connector type** – The authentication methods available depend on the connector type. For remote MCP servers, agent-to-agent connectors, and generic HTTP connectors, connecting without authentication is a selectable option.
 

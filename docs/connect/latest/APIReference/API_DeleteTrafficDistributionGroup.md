@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteTr
 ---
 
 # DeleteTrafficDistributionGroup
-<a name="API_DeleteTrafficDistributionGroup"></a>
 
 Deletes a traffic distribution group. This API can be called only in the Region where the traffic distribution group is created.
 

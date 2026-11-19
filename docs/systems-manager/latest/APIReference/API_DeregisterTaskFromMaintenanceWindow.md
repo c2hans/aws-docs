@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DeregisterTaskFromMaintenanceWindow
-<a name="API_DeregisterTaskFromMaintenanceWindow"></a>
 
 Removes a task from a maintenance window.
 

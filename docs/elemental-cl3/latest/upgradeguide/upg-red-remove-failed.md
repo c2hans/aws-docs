@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-re
 ---
 
 # Step G: Remove the failed worker node
-<a name="upg-red-remove-failed"></a>
 
 Remove the failed worker node from the redundancy group and then from the cluster. It can then be upgraded while the backup worker continues to encode.
 

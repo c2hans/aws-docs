@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/addToSet.html
 ---
 
 # $addToSet
-<a name="addToSet"></a>
 
 The `$addToSet` operator in Amazon DocumentDB is used to add a value to an array only if the value is not already present in the array. This is useful for ensuring that an array contains unique elements.
 

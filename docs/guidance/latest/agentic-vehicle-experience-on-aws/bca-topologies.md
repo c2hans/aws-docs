@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Same-account and split-account deployment topologies
-<a name="bca-topologies"></a>
 
 ## Same-account cross-region (current staging)
 <a name="bca-staging-topology"></a>

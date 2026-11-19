@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DateT
 ---
 
 # DateTimeFormatConfiguration
-<a name="API_DateTimeFormatConfiguration"></a>
 
 Formatting configuration for `DateTime` fields.
 

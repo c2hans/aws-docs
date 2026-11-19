@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/sh-finding-
 ---
 
 # Updating cross-Region aggregation settings
-<a name="sh-finding-aggregation-update"></a>
 
 You can update your current cross-Region aggregation settings in AWS Security Hub by changing the linked Regions or the current home Region.
 

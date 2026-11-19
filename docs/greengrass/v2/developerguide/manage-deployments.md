@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/manage-depl
 ---
 
 # Deploy AWS IoT Greengrass components to devices
-<a name="manage-deployments"></a>
 
 You can use AWS IoT Greengrass to deploy components to devices or groups of devices. You use *deployments* to define the components and configurations that are sent to the devices. AWS IoT Greengrass deploys to *targets*, AWS IoT things or thing groups that represent Greengrass core devices. AWS IoT Greengrass uses [AWS IoT Core jobs](https://docs.aws.amazon.com/iot/latest/developerguide/iot-jobs.html) to deploy to your core devices. You can configure how the job rolls out to your devices.
 

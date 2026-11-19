@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_Permissio
 ---
 
 # PermissionStatementSummary
-<a name="API_PermissionStatementSummary"></a>
 
 Summary information for a permission statement in the AWS Sign-In resource-based policy.
 

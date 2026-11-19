@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Apply security services across your AWS organization
-<a name="security-services"></a>
 
 As described in a [previous section](value.md), customers are looking for an additional way to think about and strategically organize the full set of AWS security services. The most common organizational approach today is to group security services by primary function―according to what each service *does*. The security perspective of the AWS CAF lists nine functional capabilities, including identity and access management, infrastructure protection, data protection, and threat detection. Matching AWS services with these functional capabilities is a practical way to make implementation decisions in each area. For example, when looking at identity and access management, IAM and [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/) are services to consider. When architecting your threat detection approach, GuardDuty might be your first consideration.
 

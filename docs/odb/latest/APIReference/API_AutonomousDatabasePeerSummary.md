@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AutonomousDa
 ---
 
 # AutonomousDatabasePeerSummary
-<a name="API_AutonomousDatabasePeerSummary"></a>
 
 A summary of a peer database of an Autonomous Database.
 

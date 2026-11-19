@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # CreateUserPoolClient
-<a name="API_CreateUserPoolClient"></a>
 
 Creates an app client in a user pool. This operation sets basic and advanced configuration options.
 

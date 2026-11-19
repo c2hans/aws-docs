@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceR
 ---
 
 # InstanceRequirementsRequest
-<a name="API_InstanceRequirementsRequest"></a>
 
 The attributes for the instance types. When you specify instance attributes, Amazon EC2 will identify instance types with these attributes.
 

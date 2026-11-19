@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ListExperime
 ---
 
 # ListExperimentTemplates
-<a name="API_ListExperimentTemplates"></a>
 
 Lists your experiment templates.
 

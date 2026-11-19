@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Convert JSON Oracle queries into PostgreSQL database SQL
-<a name="convert-json-oracle-queries-into-postgresql-database-sql"></a>
 
 *Pinesh Singal and Lokesh Gurram, Amazon Web Services*
 

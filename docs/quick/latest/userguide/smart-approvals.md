@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/smart-approvals.h
 ---
 
 # Smart Approvals
-<a name="smart-approvals"></a>
 
 |  |
 | --- |

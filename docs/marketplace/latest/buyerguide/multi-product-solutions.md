@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/multi-prod
 ---
 
 # Multi-product solutions
-<a name="multi-product-solutions"></a>
 
 Multi-Product Solutions in AWS Marketplace enable you to discover and purchase comprehensive, integrated solutions that combine multiple products and services from one or more sellers. You can find complete solutions tailored to specific business challenges and industry use cases. This approach eliminates the need to research, negotiate, and procure individual products separately.
 

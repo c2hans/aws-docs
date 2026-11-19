@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-exampl
 ---
 
 # Example CLI configurations for EC2 Fleet
-<a name="ec2-fleet-examples"></a>
 
 You can define your EC2 Fleet configuration in a JSON file, and then reference that file with the [create-fleet](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-fleet.html) command to create your fleet, as follows:
 

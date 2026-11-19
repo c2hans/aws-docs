@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_L
 ---
 
 # ListSecrets
-<a name="API_ListSecrets"></a>
 
 Lists the secrets that are stored by Secrets Manager in the AWS account, not including secrets that are marked for deletion. To see secrets marked for deletion, use the Secrets Manager console.
 

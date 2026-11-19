@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/findings-managing-
 ---
 
 # Exporting Amazon Inspector findings reports
-<a name="findings-managing-exporting-reports"></a>
 
  A findings report is a CSV or JSON file that provides a detailed snapshot of your findings. You can export a findings report to AWS Security Hub CSPM, Amazon EventBridge, and Amazon Simple Storage Service (Amazon S3). When you configure a findings report, you specify which findings to include in it. By default, your findings report includes data for all of your active findings. If you're the delegated administrator for an organization, your findings report includes data for all member accounts in the organization. To customize a findings report, create and apply [a filter](https://docs.aws.amazon.com/inspector/latest/user/findings-managing-filtering.html) to it.
 

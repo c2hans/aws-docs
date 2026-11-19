@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Next steps and resources
-<a name="whats-next"></a>
 
 After you choose a migration and modernization strategy for your .NET application, use the following resources to evaluate your enterprise and applications for readiness, and to begin the migration process:
 + [Strategy for modernizing applications in the AWS Cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-modernizing-applications/)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-glacie
 ---
 
 # Amazon Glacier events
-<a name="events-ref-glacier"></a>
 
 Amazon Glacier sends service events to EventBridge via AWS CloudTrail.
 

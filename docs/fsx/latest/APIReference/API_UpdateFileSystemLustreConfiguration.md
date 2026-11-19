@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSy
 ---
 
 # UpdateFileSystemLustreConfiguration
-<a name="API_UpdateFileSystemLustreConfiguration"></a>
 
 The configuration object for Amazon FSx for Lustre file systems used in the `UpdateFileSystem` operation.
 

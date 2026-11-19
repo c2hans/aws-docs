@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/releasenotes/rn-ea
 ---
 
 # Release notes for earlier versions
-<a name="rn-earlier"></a>
 
 The release notes for versions earlier than 2.21 (3.21 for Conductor Live) are available as PDF files:
 + [Release notes for version 2.20 and 3.20](https://docs.aws.amazon.com/elemental-onprem/latest/pdf/live_cl3_2.20_3.20_rn.pdf)

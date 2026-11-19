@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowNodeOutput
-<a name="API_agent_FlowNodeOutput"></a>
 
 Contains configurations for an output from a node.
 

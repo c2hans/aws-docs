@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-w
 ---
 
 # Step 3: Get a message template
-<a name="nx-whatsapp-gsu-template"></a>
 
 WhatsApp business messaging is template-first: to open a conversation with a customer you must send a message built from a template that Meta has approved. Create a template and submit it for approval before you send. After the template is approved, you can use it to open conversations with opted-in recipients, and then exchange free-form messages within the open conversation window.
 

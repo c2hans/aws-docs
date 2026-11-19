@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Onboard your devices to AWS IoT Core for LoRaWAN
-<a name="lorawan-onboard-end-devices"></a>
 
 After you have onboarded your gateway to AWS IoT Core for LoRaWAN and verified its connection status, you can onboard your wireless devices. For information about how to onboard your gateways, see [Onboard your gateways to AWS IoT Core for LoRaWAN](lorawan-onboard-gateways.md).
 

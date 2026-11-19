@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/delete-conf
 ---
 
 # Deleting the configured table analysis rule
-<a name="delete-config-table-analysis-rule"></a>
 
 **Warning**
 This action can’t be undone and impacts all related resources.

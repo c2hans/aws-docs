@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # MemorySizeConfiguration
-<a name="API_MemorySizeConfiguration"></a>
 
  The memory size configurations of a container.
 

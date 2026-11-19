@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_BulkEmailDes
 ---
 
 # BulkEmailDestinationStatus
-<a name="API_BulkEmailDestinationStatus"></a>
 
 An object that contains the response from the `SendBulkTemplatedEmail` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafW
 ---
 
 # AwsWafWebAclRule
-<a name="API_AwsWafWebAclRule"></a>
 
 Details for a rule in an AWS WAF web ACL.
 

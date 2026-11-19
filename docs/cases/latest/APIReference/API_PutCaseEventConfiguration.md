@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_PutCaseEve
 ---
 
 # PutCaseEventConfiguration
-<a name="API_connect-cases_PutCaseEventConfiguration"></a>
 
 Adds case event publishing configuration. For a complete list of fields you can add to the event message, see [Create case fields](https://docs.aws.amazon.com/connect/latest/adminguide/case-fields.html) in the *Connect Customer Administrator Guide*.
 
@@ -19,6 +18,7 @@ Content-type: application/json
       "enabled": {{boolean}},
       "includedData": {
          "caseData": {
+            "autoIncludeFields": "{{string}}",
             "fields": [
                {
                   "id": "{{string}}"
@@ -130,6 +130,29 @@ This example illustrates one use of PutCaseEventConfiguration.
     },
    "relatedItemData":{
        "includeContent":true
+    }
+  }}
+```
+
+```
+{ }
+```
+
+### Request using autoIncludeFields
+<a name="API_connect-cases_PutCaseEventConfiguration_Example_2"></a>
+
+This example publishes all fields on the case automatically, so new system or custom fields are included without another call to PutCaseEventConfiguration. The caller must be authorized for the wildcard field resource on the domain.
+
+```
+{
+  "enabled":true,
+  "includedData":{
+    "caseData":{
+      "fields":[],
+      "autoIncludeFields":"All"
+    },
+    "relatedItemData":{
+      "includeContent":true
     }
   }}
 ```

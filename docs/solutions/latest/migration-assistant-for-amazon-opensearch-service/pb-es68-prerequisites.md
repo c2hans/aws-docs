@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Prerequisites
-<a name="pb-es68-prerequisites"></a>
 
 Before you begin, confirm the following.
 

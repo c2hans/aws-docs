@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Okta OAuth Client Secret
-<a name="mes-partner-OktaOAuthClientSecret"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c45b3"></a>

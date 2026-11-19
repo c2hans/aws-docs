@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/enable-organizational-v
 ---
 
 # Enabling organizational view
-<a name="enable-organizational-view"></a>
 
 You can use the AWS Health console to get a centralized view for health events in your AWS organization.
 

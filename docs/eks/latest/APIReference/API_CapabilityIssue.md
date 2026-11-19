@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CapabilityIs
 ---
 
 # CapabilityIssue
-<a name="API_CapabilityIssue"></a>
 
 An issue affecting a capability's health or operation.
 

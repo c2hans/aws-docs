@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_mgmt_
 ---
 
 # AWS CloudHSM Management Utility (CMU)
-<a name="cloudhsm_mgmt_util"></a>
 
 The **cloudhsm\_mgmt\_util** command line tool helps crypto officers manage users in the hardware security modules (HSMs) in AWS CloudHSM clusters. The AWS CloudHSM Management Utility (CMU) includes tools that create, delete, and list users, and change user passwords.
 

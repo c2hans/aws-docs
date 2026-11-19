@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateUs
 ---
 
 # CreateUserHierarchyGroup
-<a name="API_CreateUserHierarchyGroup"></a>
 
 Creates a new user hierarchy group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # MLOps Platform Starter Package
-<a name="mlops-platform-starter-package"></a>
 
 The MLOps Platform Starter Package deploys an end-to-end ML lifecycle platform covering training, deployment, and monitoring — governed through MDAA with CDK Nag compliance (AWS Solutions, NIST 800-53, HIPAA, PCI-DSS).
 

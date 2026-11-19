@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Pro
 ---
 
 # Compressing backup files
-<a name="SQLServer.Procedural.Importing.Native.Compression"></a>
 
 To save space in your Amazon S3 bucket, you can compress your backup files. For more information about compressing backup files, see [Backup compression](https://msdn.microsoft.com/en-us/library/bb964719.aspx) in the Microsoft documentation.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/pod-id-agent-config
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Disable `IPv6` in the EKS Pod Identity Agent
-<a name="pod-id-agent-config-ipv6"></a>
 
 ## AWS Management Console
 <a name="pod-id-console"></a>

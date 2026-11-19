@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Managing collations and character sets for Amazon RDS for Microsoft SQL Server
-<a name="Appendix.SQLServer.CommonDBATasks.Collation"></a>
 
 This topic provide guidance on how to manage collations and character sets for Microsoft SQL Server in Amazon RDS. It explains how to configure collations during database creation and modify them later, ensuring proper handling of text data based on language and locale requirements. Additionally, it covers best practices for maintaining compatibility and performance in SQL Server environments in Amazon RDS.
 

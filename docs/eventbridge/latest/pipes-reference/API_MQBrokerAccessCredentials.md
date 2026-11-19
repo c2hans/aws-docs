@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_M
 ---
 
 # MQBrokerAccessCredentials
-<a name="API_MQBrokerAccessCredentials"></a>
 
 The AWS Secrets Manager secret that stores your broker credentials.
 

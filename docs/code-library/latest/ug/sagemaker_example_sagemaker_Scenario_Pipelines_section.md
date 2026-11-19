@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sagemaker_example
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Get started with SageMaker AI geospatial jobs in a pipeline using an AWS SDK
-<a name="sagemaker_example_sagemaker_Scenario_Pipelines_section"></a>
 
 The following code examples show how to:
 + Set up resources for a pipeline.

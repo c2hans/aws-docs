@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_BlockedGue
 ---
 
 # BlockedGuestUser
-<a name="API_BlockedGuestUser"></a>
 
 Represents a guest user who has been blocked from accessing a Wickr network.
 

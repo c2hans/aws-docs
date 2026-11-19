@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceFlee
 ---
 
 # InstanceFleetModifyConfig
-<a name="API_InstanceFleetModifyConfig"></a>
 
 Configuration parameters for an instance fleet modification request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # Modeling resource types to use with CloudFormation
-<a name="resource-type-model"></a>
 
 The first step in creating a resource type is *modeling* that resource, which involves crafting a schema that defines the resource, its properties, and their attributes. When you initially create your resource type project using the CloudFormation CLI `init` command, one of the files created is an example resource schema. Use this schema file as a starting point for defining the shape and semantics of your resource type.
 

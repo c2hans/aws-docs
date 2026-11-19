@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mu
 ---
 
 # Assess the viability of contiguous workloads across CSPs
-<a name="contiguous-workloads"></a>
 
 Distributing contiguous workloads across cloud providers introduces challenges and risks that require thoughtful consideration. To evaluate the viability of contiguous workloads, focus on these common considerations for financial services:
 + **Latency**.** **The physical distance between data centers affects performance, particularly for real-time applications (such as real-time payments or trading solutions) that are prevalent in financial services. Weigh geographical diversity against potential performance issues that might affect user experience and operational efficiency.

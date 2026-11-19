@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Query
-<a name="sql-reference-query"></a>
 
 ## Syntax
 <a name="sql-reference-query-syntax"></a>

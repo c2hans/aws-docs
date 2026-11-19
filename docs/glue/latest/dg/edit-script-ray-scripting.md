@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/edit-script-ray-scripting
 ---
 
 # Using Ray Core and Ray Data in AWS Glue for Ray
-<a name="edit-script-ray-scripting"></a>
 
 **Important**
 AWS Glue for Ray is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Glue for Ray end of support](https://docs.aws.amazon.com/glue/latest/dg/awsglue-ray-jobs-availability-change.html).

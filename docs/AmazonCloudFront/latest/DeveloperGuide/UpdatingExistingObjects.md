@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/U
 ---
 
 # Use file versioning to update or remove content with a CloudFront distribution
-<a name="UpdatingExistingObjects"></a>
 
 To update existing content that CloudFront is set up to distribute for you, we recommend that you use a version identifier in file names or in folder names. This helps give you control over managing the content that CloudFront serves.
 

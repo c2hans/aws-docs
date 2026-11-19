@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-ai2
 ---
 
 # AI21 Labs
-<a name="model-cards-ai21-labs"></a>
 
 The following AI21 Labs models are available in Amazon Bedrock:
 

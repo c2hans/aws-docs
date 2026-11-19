@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/tr
 ---
 
 # Testing and troubleshooting compatibility with Proton for Amazon GameLift Streams
-<a name="troubleshoot-compatibility-wp"></a>
 
  If your Amazon GameLift Streams application runs on a Proton runtime environment, this section can help you troubleshoot compatibility issues between your application and the Proton layer. These instructions include a set of scripts that installs Proton to your own machine, simulating the environment that Amazon GameLift Streams would use. By troubleshooting without the Amazon GameLift Streams service, you can focus on troubleshooting issues specific to your application and the runtime environment.
 

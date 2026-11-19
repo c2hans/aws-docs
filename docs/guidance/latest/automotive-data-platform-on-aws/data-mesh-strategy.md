@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Strategy and challenges
-<a name="data-mesh-strategy"></a>
 
 ## Modernizing Your Automotive Data Strategy
 <a name="modernizing-your-automotive-data-strategy"></a>

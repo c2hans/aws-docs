@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_List
 ---
 
 # ListEncoderConfigurations
-<a name="API_ListEncoderConfigurations"></a>
 
 Gets summary information about all EncoderConfigurations in your account, in the AWS region where the API request is processed.
 

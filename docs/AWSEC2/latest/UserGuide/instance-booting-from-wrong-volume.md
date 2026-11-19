@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-booting
 ---
 
 # Troubleshoot an Amazon EC2 Linux instance booting from wrong volume
-<a name="instance-booting-from-wrong-volume"></a>
 
 In some situations, a volume other than the volume attached to `/dev/xvda` or `/dev/sda` becomes the root volume of a Linux instance. This can happen when you have attached the root volume of another instance, or a volume created from the snapshot of a root volume, to an instance with an existing root volume.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/settings-
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Configuring your default audit owners
-<a name="settings-default-audit-owner"></a>
 
 You can use this setting to specify the default [](concepts.md#audit-owner)s who have primary access to your assessments in Audit Manager.
 

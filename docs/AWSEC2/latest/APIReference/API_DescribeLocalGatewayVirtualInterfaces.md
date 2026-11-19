@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeL
 ---
 
 # DescribeLocalGatewayVirtualInterfaces
-<a name="API_DescribeLocalGatewayVirtualInterfaces"></a>
 
 Describes the specified local gateway virtual interfaces.
 

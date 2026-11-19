@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 ---
 
 # Operations overview
-<a name="ddb-mapper-operations"></a>
 
 DynamoDB Mapper supports a subset of the operations available on the SDK’s low-level [`DynamoDbClient`](/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html). Mapper operations are named after their low-level counterparts, but they accept and return your mapped classes instead of raw attribute-value maps. This topic explains which operations exist, where they live, and the different ways you can invoke them.
 

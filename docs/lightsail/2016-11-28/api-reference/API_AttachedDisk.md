@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_A
 ---
 
 # AttachedDisk
-<a name="API_AttachedDisk"></a>
 
 Describes a block storage disk that is attached to an instance, and is included in an automatic snapshot.
 

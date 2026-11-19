@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HttpTargetConfiguration
-<a name="API_HttpTargetConfiguration"></a>
 
 The HTTP target configuration for a gateway target. Contains the configuration for HTTP-based target endpoints.
 

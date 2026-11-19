@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_EnableKeyRot
 ---
 
 # EnableKeyRotation
-<a name="API_EnableKeyRotation"></a>
 
 Enables [automatic rotation of the key material](https://docs.aws.amazon.com/kms/latest/developerguide/rotating-keys-enable-disable.html) of the specified symmetric encryption KMS key.
 

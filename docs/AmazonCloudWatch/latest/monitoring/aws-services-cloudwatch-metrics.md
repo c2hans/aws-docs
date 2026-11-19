@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-s
 ---
 
 # AWS services that publish CloudWatch metrics
-<a name="aws-services-cloudwatch-metrics"></a>
 
  You can use the following table to learn which AWS services publish metrics to CloudWatch. For information about the metrics and dimensions, see the specified documentation.
 

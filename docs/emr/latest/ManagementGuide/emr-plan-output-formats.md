@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-outp
 ---
 
 # What formats can Amazon EMR return?
-<a name="emr-plan-output-formats"></a>
 
  The default output format for a cluster is text with key, value pairs written to individual lines of the text files. This is the output format most commonly used.
 

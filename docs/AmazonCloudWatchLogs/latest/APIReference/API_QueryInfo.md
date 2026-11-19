@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # QueryInfo
-<a name="API_QueryInfo"></a>
 
 Information about one CloudWatch Logs Insights query that matches the request in a `DescribeQueries` operation.
 

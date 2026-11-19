@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/in
 ---
 
 # Ingest and migrate EC2 Windows instances into an AWS Managed Services account
-<a name="ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account"></a>
 
 *Anil Kunapareddy and Venkatramana Chintha, Amazon Web Services*
 

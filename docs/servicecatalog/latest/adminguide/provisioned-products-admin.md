@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/provisi
 ---
 
 # Managing provisioned products as the administrator
-<a name="provisioned-products-admin"></a>
 
  To manage all of the provisioned products for an account, you must have `AWSServiceCatalogAdminFullAccess` or an equivalent IAM permission to access provisioned-product write operations. For more information, see [Identity and Access Management in AWS Service Catalog](controlling_access.md).
 

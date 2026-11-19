@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # CreateVpcEndpoint
-<a name="API_CreateVpcEndpoint"></a>
 
 Creates an Amazon OpenSearch Service-managed VPC endpoint.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/compute-node-i
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # I configured on demand capacity reservations (ODCRs) or zonal Reserved Instances
-<a name="compute-node-initialization-odcr-v3"></a>
 
 ## ODCRs that include instances that have multiple network interfaces, such as P4d, P4de, and AWS Trainium (Trn)
 <a name="compute-node-initialization-odcr-multi-ni-v3"></a>

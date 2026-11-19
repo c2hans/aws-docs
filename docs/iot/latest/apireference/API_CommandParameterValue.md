@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CommandParam
 ---
 
 # CommandParameterValue
-<a name="API_CommandParameterValue"></a>
 
 The value of a command parameter used to create a command execution.
 

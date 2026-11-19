@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Projec
 ---
 
 # ProjectSource
-<a name="API_ProjectSource"></a>
 
 Information about the build input source code for the build project.
 

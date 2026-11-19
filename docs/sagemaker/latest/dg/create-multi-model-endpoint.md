@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/create-multi-model-e
 ---
 
 # Create a Multi-Model Endpoint
-<a name="create-multi-model-endpoint"></a>
 
 You can use the SageMaker AI console or the AWS SDK for Python (Boto) to create a multi-model endpoint. To create either a CPU or GPU backed endpoint through the console, see the console procedure in the following sections. If you want to create a multi-model endpoint with the AWS SDK for Python (Boto), use either the CPU or GPU procedure in the following sections. The CPU and GPU workflows are similar but have several differences, such as the container requirements.
 

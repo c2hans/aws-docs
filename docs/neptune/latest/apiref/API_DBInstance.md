@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DBInstance.htm
 ---
 
 # DBInstance
-<a name="API_DBInstance"></a>
 
 Contains the details of an Amazon Neptune DB instance.
 

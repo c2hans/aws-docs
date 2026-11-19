@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayRequestPolicyRuleMetaData
-<a name="API_TransitGatewayRequestPolicyRuleMetaData"></a>
 
 A metadata key-value pair for a transit gateway policy rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes the association between one or more provided tags and a notification rule.
 

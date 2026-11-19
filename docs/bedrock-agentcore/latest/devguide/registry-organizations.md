@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 ---
 
 # Using AWS Agent Registry with AWS Organizations
-<a name="registry-organizations"></a>
 
  AWS Agent Registry integrates with AWS Organizations so that you can automatically catalog supported resources across your organization’s member accounts in a single registry.
 

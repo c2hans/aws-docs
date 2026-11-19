@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/costs-performance.htm
 ---
 
 # Costs, Regions, and performance considerations
-<a name="costs-performance"></a>
 
 When you apply server-side encryption, you are subject to AWS KMS API usage and key costs. Unlike custom KMS master keys, the `(Default) aws/kinesis` customer master key (CMK) is offered free of charge. However, you still must pay for the API usage costs that Amazon Kinesis Data Streams incurs on your behalf.
 

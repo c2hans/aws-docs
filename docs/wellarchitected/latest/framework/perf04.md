@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf04.
 ---
 
 # Networking and content delivery
-<a name="perf04"></a>
 
  The network sits between every part of a distributed workload, so network decisions shape the latency, throughput, and reliability that users experience. The right networking solution depends on what the workload is sensitive to: latency, bandwidth, throughput, and jitter each pull the design in a different direction. Physical distance between users, data, and resources sets a floor on latency that no tuning removes, though edge locations and careful placement can offset it.
 

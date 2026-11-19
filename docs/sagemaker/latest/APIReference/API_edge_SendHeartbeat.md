@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_edge_S
 ---
 
 # SendHeartbeat
-<a name="API_edge_SendHeartbeat"></a>
 
 Use to get the current status of devices registered on SageMaker Edge Manager.
 

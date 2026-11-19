@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_OpenSear
 ---
 
 # OpenSearchServiceDataSourceConfig
-<a name="API_OpenSearchServiceDataSourceConfig"></a>
 
 Describes an OpenSearch data source configuration.
 

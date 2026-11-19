@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cl
 ---
 
 # Cloud foundations
-<a name="cloudfoundations-pattern-list"></a>
 
 **Topics**
 + [Automatically inventory AWS resources across multiple accounts and Regions](automate-aws-resource-inventory.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetT
 ---
 
 # GetTargetGroup
-<a name="API_GetTargetGroup"></a>
 
 Retrieves information about the specified target group.
 

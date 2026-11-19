@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Adjust CPU settings
-<a name="cpu"></a>
 
 The default CPU settings on a SQL Server database allow processes to consume all available resources to complete their tasks. This configuration can starve EnterpriseOne processes on the CPU resources they require, causing performance issues and timeouts. To mitigate this issue, you can adjust the maximum degree of parallelism and cost threshold settings.
 

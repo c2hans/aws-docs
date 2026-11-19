@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_QueueQui
 ---
 
 # QueueQuickConnectConfig
-<a name="API_QueueQuickConnectConfig"></a>
 
 Contains information about a queue for a quick connect. The flow must be of type Transfer to Queue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeDashboardPermissions
-<a name="API_DescribeDashboardPermissions"></a>
 
 Describes read and write permissions for a dashboard.
 

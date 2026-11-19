@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-elasti
 ---
 
 # Amazon Elastic Transcoder events
-<a name="events-ref-elastictranscoder"></a>
 
 Elastic Transcoder sends service events to EventBridge via AWS CloudTrail.
 

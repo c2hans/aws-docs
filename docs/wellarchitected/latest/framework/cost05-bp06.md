@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost05-
 ---
 
 # COST05-BP06 Perform continuous cost analysis
-<a name="cost05-bp06"></a>
 
  Usage patterns shift, workloads grow, and new service options appear, so a one-time review drifts out of date. Treat cost analysis as an ongoing practice that combines forecasts, continuous monitoring, and scheduled reviews.
 

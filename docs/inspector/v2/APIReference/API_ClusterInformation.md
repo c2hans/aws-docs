@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ClusterInf
 ---
 
 # ClusterInformation
-<a name="API_ClusterInformation"></a>
 
 Information about the cluster.
 

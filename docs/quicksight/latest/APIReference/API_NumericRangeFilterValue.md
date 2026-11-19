@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Numer
 ---
 
 # NumericRangeFilterValue
-<a name="API_NumericRangeFilterValue"></a>
 
 The value input pf the numeric range filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-core-ne
 ---
 
 # Managing core network endpoints
-<a name="gr-core-network-endpoints-managing"></a>
 
 You can create a core network endpoint, view its details, list the endpoints for a global resolver, update an endpoint, and delete an endpoint. You can manage core network endpoints with the AWS Management Console, the AWS CLI, or the Route 53 Global Resolver API.
 

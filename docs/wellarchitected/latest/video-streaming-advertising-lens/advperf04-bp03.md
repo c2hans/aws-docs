@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVPERF04-BP03 Review your distributed database setup (sharding and replication) for performance, cost, and availability needs
-<a name="advperf04-bp03"></a>
 
  Evaluate trade-offs between performance, cost, and availability when configuring sharding and replication for advertising databases. Uniform multi-AZ replication for all data categories inflates cross-AZ transfer costs. Oversized database clusters without sharding waste compute for data that doesn't require it.
 

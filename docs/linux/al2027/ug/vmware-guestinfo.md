@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/vmware-guestinfo.html
 ---
 
 # VMware guestinfo `cloud-init` configuration for AL2027 on VMware
-<a name="vmware-guestinfo"></a>
 
  VMware environments do not have the [Amazon EC2 Instance Metadata Service (IMDS)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service), so an alternate method of configuring AL2027 is required. This section describes how to use an alternative configuration mechanism to the `seed.iso` virtual CD-ROM drive that is available in VMware vSphere.
 

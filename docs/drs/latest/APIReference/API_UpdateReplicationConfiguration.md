@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateReplic
 ---
 
 # UpdateReplicationConfiguration
-<a name="API_UpdateReplicationConfiguration"></a>
 
 Allows you to update a ReplicationConfiguration by Source Server ID.
 

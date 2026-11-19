@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/metr
 ---
 
 # Publish SDK metrics from long-running applications using the AWS SDK for Java 2.x
-<a name="metric-pub-impl-cwmp"></a>
 
 Because the `[CloudWatchMetricPublisher](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/metrics/publishers/cloudwatch/CloudWatchMetricPublisher.html)` implementation aggregates and periodically uploads metrics to Amazon CloudWatch with a delay, its use is best suited for long-running applications.
 

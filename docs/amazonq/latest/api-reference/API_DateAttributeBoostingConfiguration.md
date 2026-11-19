@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DateAtt
 ---
 
 # DateAttributeBoostingConfiguration
-<a name="API_DateAttributeBoostingConfiguration"></a>
 
 Provides information on boosting `DATE` type document attributes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/athena-cloudwatch-metri
 ---
 
 # Enable CloudWatch query metrics in Athena
-<a name="athena-cloudwatch-metrics-enable"></a>
 
 When you create a workgroup in the console, the setting for publishing query metrics to CloudWatch is selected by default.
 

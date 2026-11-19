@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Disabling Security Hub
-<a name="securityhub-v2-disable"></a>
 
 ## Disabling Security Hub for a single account
 <a name="securityhub-v2-disable-single"></a>

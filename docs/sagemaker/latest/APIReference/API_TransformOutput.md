@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Transf
 ---
 
 # TransformOutput
-<a name="API_TransformOutput"></a>
 
 Describes the results of a transform job.
 

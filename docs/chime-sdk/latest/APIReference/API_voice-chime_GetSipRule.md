@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # GetSipRule
-<a name="API_voice-chime_GetSipRule"></a>
 
 Retrieves the details of a SIP rule, such as the rule ID, name, triggers, and target endpoints.
 

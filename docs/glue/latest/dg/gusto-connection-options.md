@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gusto-connection-options.
 ---
 
 # Gusto connection options
-<a name="gusto-connection-options"></a>
 
 The following are connection options for Gusto:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Gusto object to read.

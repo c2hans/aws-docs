@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/security-groups-pod
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure the Amazon VPC CNI plugin for Kubernetes for security groups for Amazon EKS Pods
-<a name="security-groups-pods-deployment"></a>
 
 If you use Pods with Amazon EC2 instances, you need to configure the Amazon VPC CNI plugin for Kubernetes for security groups
 

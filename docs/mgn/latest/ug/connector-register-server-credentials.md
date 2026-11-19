@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/connector-register-server-
 ---
 
 # Register server credentials
-<a name="connector-register-server-credentials"></a>
 
 Once you have the MGN connector set up and ready to use, you can register source servers to the MGN connector. To do so click on the MGN connector name, then click "Register servers".
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/userguide/supported
 ---
 
 # Supported Regions for User Notifications
-<a name="supported-regions"></a>
 
 User Notifications is available in the following AWS Regions:
 + US East (Ohio)

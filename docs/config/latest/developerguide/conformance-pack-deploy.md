@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/conformance
 ---
 
 # Deploying Conformance Packs for AWS Config
-<a name="conformance-pack-deploy"></a>
 
 You can use the AWS Config console or the AWS CLI to deploy your conformance packs. You deploy a custom conformance pack from a template. You deploy a managed conformance pack by choosing its source from the [managed conformance pack catalog](managed-conformance-pack-catalog.md).
 

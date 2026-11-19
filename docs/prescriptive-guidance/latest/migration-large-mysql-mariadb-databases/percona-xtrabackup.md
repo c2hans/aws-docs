@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-l
 ---
 
 # Percona XtraBackup
-<a name="percona-xtrabackup"></a>
 
 **Important**
 Percona XtraBackup is not supported for MariaDB versions 10.3 or later and is only partially supported for versions 10.1 and 10.2.

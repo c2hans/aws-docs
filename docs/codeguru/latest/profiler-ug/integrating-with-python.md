@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/integrating-
 ---
 
 # Integrating with Python
-<a name="integrating-with-python"></a>
 
 You can use Amazon CodeGuru Profiler to profile your Python application. Before you begin profiling your Python application, make sure your application is running on Python 3.6 or later.
 

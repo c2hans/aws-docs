@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/Welcome.
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon Rekognition
 <a name="Welcome_Amazon_Rekognition"></a>

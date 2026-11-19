@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/aws-support-app-f
 ---
 
 # AWS Support App in Slack
-<a name="aws-support-app-for-slack"></a>
 
 You can use the AWS Support App to manage your AWS support cases in Slack. Invite your team members to chat channels, respond to case updates, and chat directly with support agents. Use the AWS Support App to manage support cases quickly in Slack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsAgentFilter
-<a name="API_RcsAgentFilter"></a>
 
 The information for an RCS agent that meets a specified criteria.
 

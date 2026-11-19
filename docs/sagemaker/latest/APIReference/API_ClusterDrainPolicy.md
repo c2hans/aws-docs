@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterDrainPolicy
-<a name="API_ClusterDrainPolicy"></a>
 
 Specifies how pods are evicted from an instance before it is patched with the `DrainFirst` strategy. By default, evictions respect Kubernetes Pod Disruption Budgets.
 

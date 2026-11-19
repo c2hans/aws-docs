@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailContextualGroundingPolicy
-<a name="API_GuardrailContextualGroundingPolicy"></a>
 
 The details for the guardrails contextual grounding policy.
 

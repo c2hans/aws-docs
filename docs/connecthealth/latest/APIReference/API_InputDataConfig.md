@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_In
 ---
 
 # InputDataConfig
-<a name="API_InputDataConfig"></a>
 
 Configuration details for input patient data
 

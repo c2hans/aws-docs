@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Further reading
-<a name="further-reading"></a>
 
  For additional information, see:
 +  [*Amazon WorkSpaces Applications Administration Guide*](https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is-appstream.html)

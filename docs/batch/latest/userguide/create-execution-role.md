@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-execution-
 ---
 
 # Tutorial: Create the IAM execution role
-<a name="create-execution-role"></a>
 
 If your account doesn't already have an IAM execution role, use the following steps to create the role.
 

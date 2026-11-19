@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SecurityG
 ---
 
 # SecurityGroupVpcAssociation
-<a name="API_SecurityGroupVpcAssociation"></a>
 
 A security group association with a VPC that you made with [AssociateSecurityGroupVpc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateSecurityGroupVpc.html).
 

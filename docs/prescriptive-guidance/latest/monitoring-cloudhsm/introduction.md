@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/monitoring-
 ---
 
 # Monitoring AWS CloudHSM by using metrics, audit logs, and alarms
-<a name="introduction"></a>
 
 *Shubhansu Sawaria, Amazon Web Services*
 

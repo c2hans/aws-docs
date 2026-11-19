@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # CreateSyncConfiguration
-<a name="API_CreateSyncConfiguration"></a>
 
 Creates a sync configuration which allows AWS to sync content from a Git repository to update a specified AWS resource. Parameters for the sync configuration are determined by the sync type.
 

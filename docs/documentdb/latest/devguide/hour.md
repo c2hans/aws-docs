@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/hour.html
 ---
 
 # $hour
-<a name="hour"></a>
 
 The `$hour` operator extracts the hour component from a date or timestamp field.
 

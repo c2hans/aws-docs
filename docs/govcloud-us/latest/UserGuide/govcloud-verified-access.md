@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ve
 ---
 
 # AWS Verified Access in AWS GovCloud (US)
-<a name="govcloud-verified-access"></a>
 
 AWS Verified Access provides secure access to corporate applications without a VPN connection. It evaluates each request in real time and determines whether the user has access to the application.
 

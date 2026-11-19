@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_ListNetwor
 ---
 
 # ListNetworkConnectors
-<a name="API_ListNetworkConnectors"></a>
 
 Returns a paginated list of network connectors in your account for the current Region. You can optionally filter results by connector state. Use the `Marker` parameter from a previous response to retrieve the next page of results.
 

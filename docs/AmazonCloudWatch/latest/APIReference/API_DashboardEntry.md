@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # DashboardEntry
-<a name="API_DashboardEntry"></a>
 
 Represents a specific dashboard.
 

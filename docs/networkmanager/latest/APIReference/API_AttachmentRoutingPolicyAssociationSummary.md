@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_A
 ---
 
 # AttachmentRoutingPolicyAssociationSummary
-<a name="API_AttachmentRoutingPolicyAssociationSummary"></a>
 
 Summary information about routing policy associations for an attachment.
 

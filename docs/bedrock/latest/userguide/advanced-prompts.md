@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompt
 ---
 
 # Enhance agent's accuracy using advanced prompt templates in Amazon Bedrock
-<a name="advanced-prompts"></a>
 
 After creation, an agent is configured with the following four default **base prompt templates**, which outline how the agent constructs prompts to send to the foundation model at each step of the agent sequence. For details about what each step encompasses, see [Runtime process](agents-how.md#agents-rt).
 + Pre-processing

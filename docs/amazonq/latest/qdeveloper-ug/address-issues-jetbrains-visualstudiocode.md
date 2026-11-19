@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/address-iss
 ---
 
 # Address code issues in JetBrains and Visual Studio Code
-<a name="address-issues-jetbrains-visualstudiocode"></a>
 
 To address a code issue in JetBrains and Visual Studio Code, you will either have the option to generate an in-place fix or generate an explanation that you can use to manually update your code.
 

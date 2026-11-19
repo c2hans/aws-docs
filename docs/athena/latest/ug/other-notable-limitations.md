@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/other-notable-limitatio
 ---
 
 # Considerations and limitations for SQL queries in Amazon Athena
-<a name="other-notable-limitations"></a>
 
 When running queries in Athena, keep in mind the following considerations and limitations:
 + **Stored procedures** – Stored procedures are not supported.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/edit-config
 ---
 
 # Editing the configured table analysis rule
-<a name="edit-config-table-analysis-rule"></a>
 
 **To edit the configured table analysis rule**
 

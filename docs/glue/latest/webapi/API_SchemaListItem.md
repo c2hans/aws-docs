@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SchemaListItem.ht
 ---
 
 # SchemaListItem
-<a name="API_SchemaListItem"></a>
 
 An object that contains minimal details for a schema.
 

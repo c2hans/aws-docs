@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/al2023-reserved-groups-l
 ---
 
 # List of AL2023 Reserved Groups
-<a name="al2023-reserved-groups-list"></a>
 
 | Group name | GID |
 | --- | --- |

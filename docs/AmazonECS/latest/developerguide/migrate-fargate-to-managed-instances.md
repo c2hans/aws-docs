@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/migrate-
 ---
 
 # Migrate from AWS Fargate to Amazon ECS Managed Instances
-<a name="migrate-fargate-to-managed-instances"></a>
 
 You can migrate existing workloads from Fargate to Amazon ECS Managed Instances. This migration allows you to access the full range of Amazon EC2 instance types, capacity reservations, and advanced capabilities while maintaining AWS-managed infrastructure.
 

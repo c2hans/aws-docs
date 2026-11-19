@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_IosImportClien
 ---
 
 # IosImportClientBrandingAttributes
-<a name="API_IosImportClientBrandingAttributes"></a>
 
 The client branding attributes to import for iOS device types. These attributes are displayed on the iOS client login screen.
 

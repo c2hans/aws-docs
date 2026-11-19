@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Update the hub stack(s)
-<a name="update-the-hub-stack"></a>
 
 Follow the step-by-step instructions in this section to update the hub stack(s).
 

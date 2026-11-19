@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Pass JWT claims to your integration
-<a name="rest-api-jwt-authorizer-claims"></a>
 
 After a JWT authorizer validates a token, API Gateway makes the token's claims available to the integration. You reference a claim with `$context.authorizer.claims.{{property}}`, where {{property}} is the claim name. For more information about context variables, see [Variables for data transformations for API Gateway](api-gateway-mapping-template-reference.md).
 

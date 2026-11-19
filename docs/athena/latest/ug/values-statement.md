@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/values-statement.html
 ---
 
 # VALUES
-<a name="values-statement"></a>
 
 Creates a literal inline table. The table can be anonymous, or you can use the `AS` clause to specify a table name, column names, or both.
 

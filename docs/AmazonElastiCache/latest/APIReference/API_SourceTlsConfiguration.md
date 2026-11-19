@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # SourceTlsConfiguration
-<a name="API_SourceTlsConfiguration"></a>
 
 The TLS configuration for connecting to the source during migration.
 

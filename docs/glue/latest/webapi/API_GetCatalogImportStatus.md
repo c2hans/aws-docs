@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetCatalogImportS
 ---
 
 # GetCatalogImportStatus
-<a name="API_GetCatalogImportStatus"></a>
 
 Retrieves the status of a migration operation.
 

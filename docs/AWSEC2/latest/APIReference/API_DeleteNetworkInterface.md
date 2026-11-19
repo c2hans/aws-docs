@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNet
 ---
 
 # DeleteNetworkInterface
-<a name="API_DeleteNetworkInterface"></a>
 
 Deletes the specified network interface. You must detach the network interface before you can delete it.
 

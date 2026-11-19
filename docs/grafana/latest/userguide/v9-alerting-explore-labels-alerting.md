@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v9-alerting-exp
 ---
 
 # Labels in Grafana Alerting
-<a name="v9-alerting-explore-labels-alerting"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 9.x**.

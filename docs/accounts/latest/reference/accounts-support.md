@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/accounts-suppo
 ---
 
 # Support for AWS Account Management
-<a name="accounts-support"></a>
 
 You can post feedback and questions using the [AWS Account Management support forum](https://repost.aws/tags/TAORvqckH5Q6qX1CKnO_lWZg/aws-account-management). For general information about AWS forums, see [AWS re:Post](https://repost.aws/).
 

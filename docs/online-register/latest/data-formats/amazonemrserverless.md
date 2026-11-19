@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon EMR Serverless
-<a name="amazonemrserverless"></a>
 
 Amazon EMR Serverless provides the following APIs for data retrieval.
 

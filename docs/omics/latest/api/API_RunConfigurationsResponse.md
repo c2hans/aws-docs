@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_RunConfigurationsRe
 ---
 
 # RunConfigurationsResponse
-<a name="API_RunConfigurationsResponse"></a>
 
 Run-specific configuration settings with computed values.
 

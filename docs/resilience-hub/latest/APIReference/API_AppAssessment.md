@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # AppAssessment
-<a name="API_AppAssessment"></a>
 
 Defines an application assessment.
 

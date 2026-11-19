@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceGrou
 ---
 
 # InstanceGroupDetail
-<a name="API_InstanceGroupDetail"></a>
 
 Detailed information about an instance group.
 

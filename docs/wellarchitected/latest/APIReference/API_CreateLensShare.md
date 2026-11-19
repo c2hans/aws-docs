@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CreateLensShare
-<a name="API_CreateLensShare"></a>
 
 Create a lens share.
 

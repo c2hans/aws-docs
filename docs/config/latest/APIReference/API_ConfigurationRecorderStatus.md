@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Configura
 ---
 
 # ConfigurationRecorderStatus
-<a name="API_ConfigurationRecorderStatus"></a>
 
 The current status of the configuration recorder.
 

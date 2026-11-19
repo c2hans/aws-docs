@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Serverless examples for Amazon SQS
-<a name="service_code_examples_serverless_examples"></a>
 
 The following code examples show how to use Amazon SQS with AWS SDKs.
 

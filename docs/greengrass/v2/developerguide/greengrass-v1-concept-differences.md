@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # Differences between AWS IoT Greengrass V1 and AWS IoT Greengrass V2
-<a name="greengrass-v1-concept-differences"></a>
 
 AWS IoT Greengrass V2 introduces new fundamental concepts for devices, fleets, and deployable software. This section describes the V1 concepts that are different in V2.
 

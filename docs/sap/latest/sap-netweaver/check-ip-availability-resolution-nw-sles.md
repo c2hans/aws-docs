@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/check-ip-availa
 ---
 
 # Check IP availability and resolution
-<a name="check-ip-availability-resolution-nw-sles"></a>
 
 ## Add Overlay IP for SAP Installation
 <a name="add-oip-sapinst-nw-sles"></a>

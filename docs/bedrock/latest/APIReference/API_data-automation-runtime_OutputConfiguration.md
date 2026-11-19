@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # OutputConfiguration
-<a name="API_data-automation-runtime_OutputConfiguration"></a>
 
 Output settings for an invocation. The service adds a unique invocation ID to the path that you specify and stores output objects under that path.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon WorkSpaces Thin Client
-<a name="amazonworkspacesthinclient"></a>
 
 Amazon WorkSpaces Thin Client provides the following APIs for data retrieval.
 

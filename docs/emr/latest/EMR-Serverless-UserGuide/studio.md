@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/stud
 ---
 
 # Creating an EMR Serverless application from the EMR Studio console
-<a name="studio"></a>
 
 From the EMR Studio console, create, access, and manage EMR Serverless applications. To navigate to the EMR Studio console, follow the instructions in [Getting started from the console](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/getting-started.html#gs-console).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-cli-get-
 ---
 
 # get-debug-password
-<a name="gg-cli-get-debug-password"></a>
 
 Use the `get-debug-password` command to print a randomly generated password for the [local debug console component](local-debug-console-component.md) (`aws.greengrass.LocalDebugConsole`). The password expires 8 hours after it is generated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-disasso
 ---
 
 # Disassociate a transit gateway policy table in AWS Transit Gateway
-<a name="tgw-policy-tables-disassociate"></a>
 
 Disassociate a policy table from a transit gateway attachment.
 

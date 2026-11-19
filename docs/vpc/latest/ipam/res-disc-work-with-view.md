@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/res-disc-work-with-view.
 ---
 
 # View resource discovery details
-<a name="res-disc-work-with-view"></a>
 
 Viewing the details of a resource discovery in AWS IPAM can provide valuable insights, such as:
 + Identifying the specific AWS resources that have been imported and their associated IP address allocations.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-th
 ---
 
 # AWS Lambda function URLs
-<a name="function-urls"></a>
 
 With [AWS Lambda function URLs](https://docs.aws.amazon.com/lambda/latest/dg/urls-configuration.html), you can simply attach an HTTPS endpoint to a Lambda function. Although Application Load Balancer and Amazon API Gateway cover a wide range of use cases, Lambda function URLs can be more efficient for some specific use cases.
 

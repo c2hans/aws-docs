@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53DomainsReadOnlyAccess
-<a name="AmazonRoute53DomainsReadOnlyAccess"></a>
 
 **Description**: Provides access to Route53 Domains list and actions.
 

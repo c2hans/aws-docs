@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/runtime-supporte
 ---
 
 # Supported runtime features
-<a name="runtime-supported-features"></a>
 
 The APPSYNC\_JS runtime supports the features described in the following sections.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # AWS Direct Connect Traffic Flow with AWS Local Zone
-<a name="direct-connect-local-zone"></a>
 
 Publication date: **September 29, 2022 ([Diagram history](#diagram-history))**
 

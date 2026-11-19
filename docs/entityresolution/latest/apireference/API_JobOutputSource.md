@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # JobOutputSource
-<a name="API_JobOutputSource"></a>
 
 An object containing `KMSArn`, `outputS3Path`, and `roleArn`.
 

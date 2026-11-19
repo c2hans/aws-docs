@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Proper
 ---
 
 # PropertyNameSuggestion
-<a name="API_PropertyNameSuggestion"></a>
 
 A property name returned from a `GetSearchSuggestions` call that specifies a value in the `PropertyNameQuery` field.
 

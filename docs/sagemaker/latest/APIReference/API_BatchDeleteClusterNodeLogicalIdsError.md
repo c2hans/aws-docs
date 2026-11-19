@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchD
 ---
 
 # BatchDeleteClusterNodeLogicalIdsError
-<a name="API_BatchDeleteClusterNodeLogicalIdsError"></a>
 
 Information about an error that occurred when attempting to delete a node identified by its `NodeLogicalId`.
 

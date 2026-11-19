@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # AnalyzedResourceSummary
-<a name="API_AnalyzedResourceSummary"></a>
 
 Contains the ARN of the analyzed resource.
 

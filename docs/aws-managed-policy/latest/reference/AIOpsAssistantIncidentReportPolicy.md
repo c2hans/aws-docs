@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIOp
 ---
 
 # AIOpsAssistantIncidentReportPolicy
-<a name="AIOpsAssistantIncidentReportPolicy"></a>
 
 **Description**: Provides permissions required by the Amazon AI Operations Assistant to generate incident report of the investigation.
 

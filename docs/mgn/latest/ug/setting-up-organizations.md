@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/setting-up-organizations.h
 ---
 
 # Setting up your AWS Organization
-<a name="setting-up-organizations"></a>
 
 The AWS Organizations service enables you to consolidate multiple AWS accounts into a single organization that you create and manage. You can create member accounts or invite existing accounts to join your organization. [Learn more about AWS Organizations.](https://docs.aws.amazon.com/organizations/index.html)
 

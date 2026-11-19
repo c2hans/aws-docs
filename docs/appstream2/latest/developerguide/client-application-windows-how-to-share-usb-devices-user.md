@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/client-
 ---
 
 # USB Devices
-<a name="client-application-windows-how-to-share-usb-devices-user"></a>
 
 With certain exceptions, USB redirection is required for the WorkSpaces Applications client to support USB devices. When USB redirection is required for a device, you must share the device with WorkSpaces Applications every time you start a new streaming session.
 

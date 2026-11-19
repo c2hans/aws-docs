@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_ListCr
 ---
 
 # ListCrossAccountResourceAccounts
-<a name="API_ListCrossAccountResourceAccounts"></a>
 
 List the accounts that have cross-account resources.
 

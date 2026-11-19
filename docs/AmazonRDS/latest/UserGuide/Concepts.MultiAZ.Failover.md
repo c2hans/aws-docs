@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.Mult
 ---
 
 # Failing over a Multi-AZ DB instance for Amazon RDS
-<a name="Concepts.MultiAZ.Failover"></a>
 
 If a planned or unplanned outage of your Multi-AZ DB instance results from an infrastructure defect, Amazon RDS automatically switches to a standby replica in another Availability Zone.
 

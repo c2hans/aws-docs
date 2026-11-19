@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/tennis.htm
 ---
 
 # .tennis
-<a name="tennis"></a>
 
 Used for information related to the game of tennis.
 

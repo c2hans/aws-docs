@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/what-is-sm-cli.html
 ---
 
 # What is Amazon DCV Session Manager command line interface?
-<a name="what-is-sm-cli"></a>
 
 **Note**
 Amazon DCV was previously known as NICE DCV.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Runtim
 ---
 
 # RuntimePlatformOverride
-<a name="API_RuntimePlatformOverride"></a>
 
 The runtime platform that Amazon ECS applies to a service revision. This value overrides the runtime platform specified in the task definition. You can't set this value.
 

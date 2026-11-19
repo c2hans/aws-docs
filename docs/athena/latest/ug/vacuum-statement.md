@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/vacuum-statement.html
 ---
 
 # VACUUM
-<a name="vacuum-statement"></a>
 
 The `VACUUM` statement performs table maintenance on Apache Iceberg tables by performing [snapshot expiration](https://iceberg.apache.org/docs/latest/spark-procedures/#expire_snapshots) and [orphan file removal](https://iceberg.apache.org/docs/latest/spark-procedures/#remove_orphan_files).
 

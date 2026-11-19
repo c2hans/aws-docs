@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/troubleshooting
 ---
 
 # Troubleshooting Lake Formation
-<a name="troubleshooting"></a>
 
 If you encounter issues when working with AWS Lake Formation, consult the topics in this section.
 

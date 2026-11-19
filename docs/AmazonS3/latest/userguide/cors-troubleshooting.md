@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors-troublesh
 ---
 
 # Troubleshooting CORS
-<a name="cors-troubleshooting"></a>
 
 The following topics can help you troubleshoot some common CORS issues related to S3.
 

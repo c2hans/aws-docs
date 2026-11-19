@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Post-deployment configuration (ECS architecture)
-<a name="post-deployment-ecs"></a>
 
 After deploying the ECS template, additional configuration steps are required to fully utilize the advanced features:
 

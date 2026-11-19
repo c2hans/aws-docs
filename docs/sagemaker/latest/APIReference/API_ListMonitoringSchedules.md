@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListMo
 ---
 
 # ListMonitoringSchedules
-<a name="API_ListMonitoringSchedules"></a>
 
 Returns list of all monitoring schedules.
 

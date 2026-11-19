@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Get
 ---
 
 # GetWorkflow
-<a name="API_GetWorkflow"></a>
 
 Returns information about a workflow.
 

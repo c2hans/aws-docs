@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/ReadWriteCapac
 ---
 
 # View the capacity mode of a table in Amazon Keyspaces
-<a name="ReadWriteCapacityMode.ProvisionedThroughput.ManagingCapacity"></a>
 
 You can query the system table in the Amazon Keyspaces system keyspace to review capacity mode information about a table. You can also see whether a table is using on-demand or provisioned throughput capacity mode. If the table is configured with provisioned throughput capacity mode, you can see the throughput capacity provisioned for the table.
 

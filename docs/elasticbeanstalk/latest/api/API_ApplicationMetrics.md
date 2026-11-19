@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Applicat
 ---
 
 # ApplicationMetrics
-<a name="API_ApplicationMetrics"></a>
 
 Application request metrics for an AWS Elastic Beanstalk environment.
 

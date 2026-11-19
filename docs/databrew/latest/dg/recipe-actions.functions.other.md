@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # Other functions
-<a name="recipe-actions.functions.other"></a>
 
 Following, find reference topics for other functions that work with recipe actions.
 

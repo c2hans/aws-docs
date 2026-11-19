@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # Uninstall this guidance
-<a name="uninstall-this-solution"></a>
 
  You can uninstall Guidance for Multi-Omics and Multi-Modal Data Integration and Analysis on AWS using the AWS Management Console, the AWS Command Line Interface (AWS CLI), or manually.
 

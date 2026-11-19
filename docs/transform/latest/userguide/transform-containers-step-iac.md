@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-con
 ---
 
 # Step 6: Generate Infrastructure as Code
-<a name="transform-containers-step-iac"></a>
 
 In this step, AWS Transform generates AWS infrastructure templates for deploying your containerized application. You choose between Amazon Elastic Kubernetes Service and Amazon Elastic Container Service as your target platform.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Inspect the DynamoDB table (optional)
-<a name="inspect-the-dynamodb-table-optional"></a>
 
 After the DAG completes, the solution writes the application of the Spark code (business logic) to a DynamoDB table, and then forwards it OpenSearch Service.
 

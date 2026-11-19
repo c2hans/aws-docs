@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Blacklist
 ---
 
 # BlacklistEntry
-<a name="API_BlacklistEntry"></a>
 
 An object that contains information about a blacklisting event that impacts one of the dedicated IP addresses that is associated with your account.
 

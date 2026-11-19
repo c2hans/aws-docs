@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_I
 ---
 
 # InstanceNetworking
-<a name="API_InstanceNetworking"></a>
 
 Describes monthly data transfer rates and port information for an instance.
 

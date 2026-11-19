@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/describ
 ---
 
 # DescribeGroup
-<a name="describe-group"></a>
 
 Use the `DescribeGroup` API operation to view an AWS Quick Sight group's description and Amazon Resource Name (ARN). You can find a group name by calling the `ListGroups` API operation.
 

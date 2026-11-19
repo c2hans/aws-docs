@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/broadcast
 ---
 
 # IVS Broadcast SDK: Android Guide \| Low-Latency Streaming
-<a name="broadcast-android"></a>
 
 The IVS Low-Latency Streaming Android Broadcast SDK provides the interfaces required to broadcast to IVS on Android.
 

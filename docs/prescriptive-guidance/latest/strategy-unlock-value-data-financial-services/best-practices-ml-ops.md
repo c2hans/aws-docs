@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-un
 ---
 
 # Best practices
-<a name="best-practices-ml-ops"></a>
 
 This section provides an overview of AWS best practices for MLOps.
 

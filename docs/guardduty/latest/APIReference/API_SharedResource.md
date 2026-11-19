@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Shared
 ---
 
 # SharedResource
-<a name="API_SharedResource"></a>
 
 Contains information about a resource that related findings share.
 

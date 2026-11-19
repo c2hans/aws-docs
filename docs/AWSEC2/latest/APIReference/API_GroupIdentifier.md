@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GroupIden
 ---
 
 # GroupIdentifier
-<a name="API_GroupIdentifier"></a>
 
 Describes a security group.
 

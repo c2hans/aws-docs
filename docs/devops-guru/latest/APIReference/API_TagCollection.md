@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_TagC
 ---
 
 # TagCollection
-<a name="API_TagCollection"></a>
 
 A collection of AWS tags.
 

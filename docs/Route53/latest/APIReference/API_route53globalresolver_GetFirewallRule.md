@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # GetFirewallRule
-<a name="API_route53globalresolver_GetFirewallRule"></a>
 
 Retrieves information about a DNS firewall rule.
 

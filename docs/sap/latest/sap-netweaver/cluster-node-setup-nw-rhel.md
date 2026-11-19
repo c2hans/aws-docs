@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-node-se
 ---
 
 # Cluster Node Setup
-<a name="cluster-node-setup-nw-rhel"></a>
 
 Establish cluster communication between nodes using Corosync and configure required authentication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # ListFirewallRuleGroupAssociations
-<a name="API_route53resolver_ListFirewallRuleGroupAssociations"></a>
 
 Retrieves the firewall rule group associations that you have defined. Each association enables DNS filtering for a VPC with one rule group.
 

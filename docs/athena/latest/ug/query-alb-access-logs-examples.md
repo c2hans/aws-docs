@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/query-alb-access-logs-e
 ---
 
 # Example queries for ALB access logs
-<a name="query-alb-access-logs-examples"></a>
 
 The following query counts the number of HTTP GET requests received by the load balancer grouped by the client IP address:
 

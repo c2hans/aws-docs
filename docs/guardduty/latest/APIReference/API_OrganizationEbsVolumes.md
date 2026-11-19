@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationEbsVolumes
-<a name="API_OrganizationEbsVolumes"></a>
 
 Organization-wide EBS volumes scan configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-versions.ht
 ---
 
 # Versions
-<a name="acxd-versions"></a>
 
 Access version history for workspace resources. Every change to a versioned resource creates a new version that can be retrieved later.
 

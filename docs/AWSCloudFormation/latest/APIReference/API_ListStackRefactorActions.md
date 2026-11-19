@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListStackRefactorActions
-<a name="API_ListStackRefactorActions"></a>
 
 Lists the stack refactor actions that will be taken after calling the [ExecuteStackRefactor](API_ExecuteStackRefactor.md) action.
 

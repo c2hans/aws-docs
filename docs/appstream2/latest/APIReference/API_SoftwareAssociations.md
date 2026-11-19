@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Softw
 ---
 
 # SoftwareAssociations
-<a name="API_SoftwareAssociations"></a>
 
 The association between a license-included application and a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Managing brand profile attributes
-<a name="nx-features-brand-profiles-attributes"></a>
 
 Attributes hold your brand identity information on a brand profile as key/value pairs. Each attribute has a type of `TEXT`, `IMAGE`, or `DOCUMENT`, and an optional category that groups it in the attributes table. Use the attribute operations to add, view, list, update, and delete the attributes on a profile.
 

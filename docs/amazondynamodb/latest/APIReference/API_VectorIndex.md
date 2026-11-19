@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_V
 ---
 
 # VectorIndex
-<a name="API_VectorIndex"></a>
 
 Contains the configuration settings for a vector index, including the index name, vector attribute, dimensions, distance function, search schema, and projection.
 

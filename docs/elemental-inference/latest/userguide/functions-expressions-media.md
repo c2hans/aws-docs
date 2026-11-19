@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Placing media in the request
-<a name="functions-expressions-media"></a>
 
 You never encode media yourself. Reference `media.frames` where the model expects the encoded bytes, and Elemental Inference substitutes them after your expression has been evaluated. While the expression runs, those values are placeholders, so the media itself is never exposed to the expression.
 

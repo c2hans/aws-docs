@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/enc
 ---
 
 # DynamoDB encryption at rest usage notes
-<a name="encryption.usagenotes"></a>
 
 Consider the following when you are using encryption at rest in Amazon DynamoDB.
 

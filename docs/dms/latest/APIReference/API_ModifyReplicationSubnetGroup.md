@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyReplic
 ---
 
 # ModifyReplicationSubnetGroup
-<a name="API_ModifyReplicationSubnetGroup"></a>
 
 Modifies the settings for the specified replication subnet group.
 

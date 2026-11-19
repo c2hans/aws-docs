@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_NetworkMigra
 ---
 
 # NetworkMigrationFailedResourceDetails
-<a name="API_NetworkMigrationFailedResourceDetails"></a>
 
 Details about a resource that failed to deploy.
 

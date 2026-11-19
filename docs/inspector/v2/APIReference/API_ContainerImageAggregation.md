@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ContainerI
 ---
 
 # ContainerImageAggregation
-<a name="API_ContainerImageAggregation"></a>
 
 An aggregation of information about container images.
 

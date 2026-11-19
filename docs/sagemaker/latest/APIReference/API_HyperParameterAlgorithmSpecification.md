@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperP
 ---
 
 # HyperParameterAlgorithmSpecification
-<a name="API_HyperParameterAlgorithmSpecification"></a>
 
 Specifies which training algorithm to use for training jobs that a hyperparameter tuning job launches and the metrics to monitor.
 

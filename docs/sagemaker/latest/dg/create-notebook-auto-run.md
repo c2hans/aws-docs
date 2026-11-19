@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/create-notebook-auto
 ---
 
 # Where you can create a notebook job
-<a name="create-notebook-auto-run"></a>
 
 If you want to create a notebook job, you have multiple options. The following provides the SageMaker AI options for you to create a notebook job.
 

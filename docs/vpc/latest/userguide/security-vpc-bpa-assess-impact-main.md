@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/security-vpc-bpa-as
 ---
 
 # Assess impact of VPC BPA and monitor VPC BPA
-<a name="security-vpc-bpa-assess-impact-main"></a>
 
 This section contains information on you can assess the impact of VPC BPA before you turn it on and how you monitor if traffic is being blocked after you turn it on.
 

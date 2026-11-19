@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutThirdP
 ---
 
 # PutThirdPartyServiceLinkedConfigurationRecorder
-<a name="API_PutThirdPartyServiceLinkedConfigurationRecorder"></a>
 
 Creates or updates a service-linked configuration recorder that is linked to a third-party cloud service provider based on the `ConnectorArn` you specify.
 

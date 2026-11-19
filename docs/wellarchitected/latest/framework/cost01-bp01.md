@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost01-
 ---
 
 # COST01-BP01 Establish cloud budgets and forecasts
-<a name="cost01-bp01"></a>
 
  Because cloud spending changes with usage, adapt your budgeting, forecasting, and financial planning for variable, usage-based costs. Combine historical usage trends with business events to project future spend.
 

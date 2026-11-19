@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/ug/terminate-single-agre
 ---
 
 # Terminating agreements for your AWS account in AWS Artifact
-<a name="terminate-single-agreement"></a>
 
 If you used the AWS Artifact console to [accept an agreement for a single AWS account](accept-single-agreement.md), then you can use the console to terminate that agreement. Otherwise, see [Offline agreements in AWS Artifact](manage-offline-agreement.md).
 

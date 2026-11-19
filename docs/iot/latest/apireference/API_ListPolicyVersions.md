@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListPolicyVe
 ---
 
 # ListPolicyVersions
-<a name="API_ListPolicyVersions"></a>
 
 Lists the versions of the specified policy and identifies the default version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-netw
 ---
 
 # Decentralized DNS and Route 53 Profiles
-<a name="decentralized-dns"></a>
 
 In a decentralized DNS architecture, organizations create private hosted zones within their respective AWS accounts and directly associate the necessary VPCs. This approach provides the following benefits:
 + Isolation of control

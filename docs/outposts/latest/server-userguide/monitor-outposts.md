@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/server-userguide/monitor
 ---
 
 # Monitor your Outposts server
-<a name="monitor-outposts"></a>
 
 AWS Outposts integrates with the following services that offer monitoring and logging capabilities:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/log-server-man
 ---
 
 # Creating, updating, and viewing logging for servers
-<a name="log-server-manage"></a>
 
 For all AWS Transfer Family servers, we provide structured logging. We recommend that you use structured logging for all new and existing Transfer Family servers. Benefits of using structured logging include the following:
 + Receive logs in a structured JSON format.

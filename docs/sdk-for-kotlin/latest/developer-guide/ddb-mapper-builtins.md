@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 ---
 
 # Built-in features (TTL, atomic counters)
-<a name="ddb-mapper-builtins"></a>
 
 DynamoDB Mapper ships with two convenience features that you enable by annotating a property: **time-to-live (TTL)** and **atomic counters**. Both are annotation-driven and implemented by [interceptors](ddb-mapper-configuration.md) (`TtlInterceptor` and `CounterInterceptor`) that the mapper **registers by default**. You don’t wire anything up; annotating the property is enough.
 

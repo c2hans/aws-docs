@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Lis
 ---
 
 # ListDevEnvironmentSessions
-<a name="API_ListDevEnvironmentSessions"></a>
 
 Retrieves a list of active sessions for a Dev Environment in a project.
 

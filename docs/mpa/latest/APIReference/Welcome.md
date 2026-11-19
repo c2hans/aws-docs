@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Multi-party approval is a capability of [AWS Organizations](http://aws.amazon.com/organizations) that allows you to protect a predefined list of operations through a distributed approval process. Use Multi-party approval to establish approval workflows and transform security processes into team-based decisions.
 
@@ -16,4 +15,4 @@ Multi-party approval is a capability of [AWS Organizations](http://aws.amazon.co
 
 For more information, see [What is Multi-party approval](https://docs.aws.amazon.com/mpa/latest/userguide/what-is.html) in the *Multi-party approval User Guide*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

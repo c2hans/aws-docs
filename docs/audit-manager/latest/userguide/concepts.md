@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/concepts.
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Understanding AWS Audit Manager concepts and terminology
-<a name="concepts"></a>
 
 To help you get started, this page defines terms and explains some of the key concepts of AWS Audit Manager.
 

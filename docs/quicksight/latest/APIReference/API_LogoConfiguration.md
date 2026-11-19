@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_LogoC
 ---
 
 # LogoConfiguration
-<a name="API_LogoConfiguration"></a>
 
 The logo configuration.
 

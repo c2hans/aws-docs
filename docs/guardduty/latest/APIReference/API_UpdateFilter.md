@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Update
 ---
 
 # UpdateFilter
-<a name="API_UpdateFilter"></a>
 
 Updates the filter specified by the filter name.
 

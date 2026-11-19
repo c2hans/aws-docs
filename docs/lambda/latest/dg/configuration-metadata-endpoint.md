@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/configuration-metadata-
 ---
 
 # Using the Lambda metadata endpoint
-<a name="configuration-metadata-endpoint"></a>
 
 With the Lambda metadata endpoint, your functions can discover which Availability Zone (AZ) they are running in. You can use this to optimize latency by routing to same-AZ resources like Amazon ElastiCache and Amazon RDS endpoints, and to implement AZ-aware resilience patterns.
 

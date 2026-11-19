@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/fsrm-storage-rep
 ---
 
 # Storage Reports
-<a name="fsrm-storage-reports"></a>
 
 Storage reports provide detailed analysis of file system usage, helping you understand how storage is being consumed, identify files that can be archived or deleted, and monitor compliance with file management policies. You can generate multiple types of reports that analyze file ownership, file types, duplicate files, large files, file screening and quota usage.
 

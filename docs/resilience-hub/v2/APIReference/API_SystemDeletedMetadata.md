@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Syste
 ---
 
 # SystemDeletedMetadata
-<a name="API_SystemDeletedMetadata"></a>
 
 Metadata for a system deleted event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/list-resou
 ---
 
 # List resource sets
-<a name="list-resource-sets"></a>
 
 The following is an example of a request to list the resource sets in an account, and the response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bul
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 In this guide, you learned how to minimize downtime by using Oracle cross-platform transportable tablespaces and RMAN incremental backups with Snowball Edge, AWS Direct Connect, and Amazon FSx for Lustre.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Association ReleaseManagementConfiguration
-<a name="aws-properties-devopsagent-association-releasemanagementconfiguration"></a>
 
 The configuration for a release management environment. A release management environment defines how AWS DevOps Agent reaches your application. GitHub and GitLab associations reference it through `ReleaseManagementAssociationId` to run automated verification testing against that application.
 

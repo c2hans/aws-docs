@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_AccessC
 ---
 
 # AccessControl
-<a name="API_AccessControl"></a>
 
 A list of principals. Each principal can be either a `USER` or a `GROUP` and can be designated document access permissions of either `ALLOW` or `DENY`.
 

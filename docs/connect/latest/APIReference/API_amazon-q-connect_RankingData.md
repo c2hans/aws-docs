@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # RankingData
-<a name="API_amazon-q-connect_RankingData"></a>
 
 Details about the source content ranking data.
 

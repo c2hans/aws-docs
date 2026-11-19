@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/managed-entitle
 ---
 
 # Managing grants
-<a name="managed-entitlements-managing"></a>
 
 After creating grants, you may need to modify, deactivate, or delete them based on changing organizational needs.
 

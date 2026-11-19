@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/srgs-header.html
 ---
 
 # Header declarations
-<a name="srgs-header"></a>
 
 The following table shows the header declarations supported by the grammar slot type. For more information, see [ Grammar header declarations ](https://www.w3.org/TR/speech-grammar/#S4.1) in the *Speech recognition grammar specification version 1* W3C recommendation.
 

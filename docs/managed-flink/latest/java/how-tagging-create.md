@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-tagging-cr
 ---
 
 # Add tags when an application is created
-<a name="how-tagging-create"></a>
 
 You add tags when creating an application using the `tags` parameter of the [CreateApplication](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CreateApplication.html) action.
 

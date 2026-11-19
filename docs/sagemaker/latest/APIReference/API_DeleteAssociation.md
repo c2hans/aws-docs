@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteAssociation
-<a name="API_DeleteAssociation"></a>
 
 Deletes an association.
 

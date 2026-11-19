@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/opl-setup-udp.h
 ---
 
 # Setting up a UDP/TS output group
-<a name="opl-setup-udp"></a>
 
 This section shows how to set up a UDP/TS output group to implement Elemental Live output locking.
 

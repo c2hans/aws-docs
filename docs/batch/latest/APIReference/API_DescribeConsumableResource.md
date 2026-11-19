@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeCo
 ---
 
 # DescribeConsumableResource
-<a name="API_DescribeConsumableResource"></a>
 
 Returns a description of the specified consumable resource.
 

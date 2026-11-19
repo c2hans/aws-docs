@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-com
 ---
 
 # CACHE TABLE
-<a name="sql-commands-cache-table"></a>
 
 The CACHE TABLE command caches an existing table's data or creates and caches a new table containing query results.
 

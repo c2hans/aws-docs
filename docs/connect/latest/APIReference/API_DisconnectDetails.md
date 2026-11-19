@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Disconne
 ---
 
 # DisconnectDetails
-<a name="API_DisconnectDetails"></a>
 
 Information about the call disconnect experience.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/disable-login
 ---
 
 # Deactivate a client login banner for an existing AWS Client VPN endpoint
-<a name="disable-login-banner"></a>
 
 Use the following steps to deactivate a client login banner for an existing Client VPN endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fedramp/latest/userguide/aws-managed-ser
 ---
 
 # AWS Managed Services (AMS)
-<a name="aws-managed-services-ams"></a>
 
 This guide provides security configuration requirements and implementation examples for AWS Managed Services (AMS) in accordance with FedRAMP requirements.
 

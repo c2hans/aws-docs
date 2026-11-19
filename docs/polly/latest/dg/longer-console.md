@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/longer-console.html
 ---
 
 # Creating long audio files
-<a name="longer-console"></a>
 
 You can use the Amazon Polly console to create long speeches using asynchronous synthesis with the same functionality as you can use with the AWS CLI. This is done using the **Text-to-Speech** tab much like any other synthesis.
 

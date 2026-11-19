@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Implementation guidelines for FMEA
-<a name="implementation-guidelines"></a>
 
 This section provides the reference material teams need when conducting Failure Mode and Effects Analysis (FMEA) in practice. It covers how to tailor the methodology to your environment, detailed scoring scales for severity, occurrence, and detection, and guidance on choosing the right mitigation strategy for a given risk.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableOrgani
 ---
 
 # EnableOrganizationsRootSessions
-<a name="API_EnableOrganizationsRootSessions"></a>
 
 Allows the management account or delegated administrator to perform privileged tasks on member accounts in your organization. For more information, see [Centrally manage root access for member accounts](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user-access-management) in the * AWS Identity and Access Management User Guide*.
 

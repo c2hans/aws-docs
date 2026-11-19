@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aw
 ---
 
 # The Nitro System journey
-<a name="the-nitro-system-journey"></a>
 
  The Nitro System is the product of a multi-year journey of re-imagining virtualization technology for AWS Cloud infrastructure. Over the course of this journey, every component of virtualization technology was re-implemented and replaced. While customers saw improved cost, performance, and security from EC2 instances released earlier in this process, [instances based on the resulting complete Nitro System](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#ec2-nitro-instances), in which every component has been replaced, are meaningfully different from those prior instance types. The Nitro System provides enhanced security, confidentiality, and performance to customers of Amazon EC2, and provides a foundation that enables the delivery of new innovative technologies at a rapid pace.
 

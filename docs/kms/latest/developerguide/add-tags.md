@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/add-tags.html
 ---
 
 # Add tags to a KMS key
-<a name="add-tags"></a>
 
 Tags help identify and organize your AWS resources. You can add tags to a customer managed key when you [create the KMS key](create-keys.md), or add tags to existing KMS keys. You cannot tag AWS managed keys.
 

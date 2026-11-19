@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/inter-netwo
 ---
 
 # Inter-network traffic privacy
-<a name="inter-network-traffic-privacy"></a>
 
 ## Traffic between service and on-premises clients and applications
 <a name="inter-network-traffic-privacy-on-prem"></a>

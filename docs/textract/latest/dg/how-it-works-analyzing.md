@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/how-it-works-analyzin
 ---
 
 # Analyzing Documents
-<a name="how-it-works-analyzing"></a>
 
 Amazon Textract analyzes documents and forms for relationships among detected text. Amazon Textract analysis operations return 5 categories of document extraction — text, forms, tables, query responses, and signatures. The analysis of invoices and receipts is handled through a different process, for more information see [Analyzing Invoices and Receipts](invoices-receipts.md).
 

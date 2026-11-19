@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_RemoveManage
 ---
 
 # RemoveManagedScalingPolicy
-<a name="API_RemoveManagedScalingPolicy"></a>
 
  Removes a managed scaling policy from a specified Amazon EMR cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator
 ---
 
 # Sizing and partitions
-<a name="msk-replicator-bp-sizing"></a>
 
 The number of partitions on your source and target MSK clusters directly impacts replication performance. Having too few or too many partitions can impact performance.
 

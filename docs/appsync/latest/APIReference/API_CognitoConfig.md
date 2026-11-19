@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CognitoC
 ---
 
 # CognitoConfig
-<a name="API_CognitoConfig"></a>
 
 Describes an Amazon Cognito configuration.
 

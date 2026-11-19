@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListResourcesAssociatedToCustomLineItemResponseElement
-<a name="API_ListResourcesAssociatedToCustomLineItemResponseElement"></a>
 
  A representation of a resource association for a custom line item.
 

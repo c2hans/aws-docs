@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_LambdaLin
 ---
 
 # LambdaLinuxProcessParams
-<a name="API_LambdaLinuxProcessParams"></a>
 
 Contains parameters for a Linux process that contains an AWS Lambda function.
 

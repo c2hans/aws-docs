@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFil
 ---
 
 # GetFilter
-<a name="API_GetFilter"></a>
 
 Returns the details of the filter specified by the filter name.
 

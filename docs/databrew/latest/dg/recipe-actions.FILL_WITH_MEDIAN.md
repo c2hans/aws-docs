@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.FILL_W
 ---
 
 # FILL\_WITH\_MEDIAN
-<a name="recipe-actions.FILL_WITH_MEDIAN"></a>
 
 Returns a column with missing data replaced by the median of all values.
 

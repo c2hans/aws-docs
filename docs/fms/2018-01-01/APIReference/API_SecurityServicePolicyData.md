@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Security
 ---
 
 # SecurityServicePolicyData
-<a name="API_SecurityServicePolicyData"></a>
 
 Details about the security service that is being used to protect the resources.
 

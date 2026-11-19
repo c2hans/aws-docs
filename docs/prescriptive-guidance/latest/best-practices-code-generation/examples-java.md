@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Java examples
-<a name="examples-java"></a>
 
 The following Java examples show you how to get started generating inline code suggestions and how to trigger the coding assistant in your own projects. Most of these examples also apply to other languages:
 + [Generate classes and functions](#classes-java)

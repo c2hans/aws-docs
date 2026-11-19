@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Purchasing Reserved Instances (console)
-<a name="ri-console"></a>
 
 The console lets you view your existing Reserved Instances and purchase new ones.
 

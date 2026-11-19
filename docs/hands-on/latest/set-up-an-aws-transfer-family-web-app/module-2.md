@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/set-up-an-aws-transfer-f
 ---
 
 # Task 2: Set up cross-origin resource sharing (CORS)
-<a name="module-2"></a>
 
 |  |  |
 | --- |--- |

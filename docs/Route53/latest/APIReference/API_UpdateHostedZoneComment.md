@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateHo
 ---
 
 # UpdateHostedZoneComment
-<a name="API_UpdateHostedZoneComment"></a>
 
 Updates the comment for a specified hosted zone.
 

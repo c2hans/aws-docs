@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_Connection.h
 ---
 
 # Connection
-<a name="API_Connection"></a>
 
 The object describing the provided connectivity from the AWS region to the partner location.
 
@@ -11,40 +10,40 @@ The object describing the provided connectivity from the AWS region to the partn
 <a name="API_Connection_Contents"></a>
 
  ** activationKey **   <a name="interconnect-Type-Connection-activationKey"></a>
-The Activation Key associated to this conne[Connection](#API_Connection)ction.
+The Activation Key associated to this conne[Connection](API_Connection.md)ction.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: Yes
 
  ** arn **   <a name="interconnect-Type-Connection-arn"></a>
-An ARN of a [Connection](#API_Connection) object.
+An ARN of a [Connection](API_Connection.md) object.
 Type: String
 Length Constraints: Minimum length of 59. Maximum length of 150.
 Pattern: `arn:aws[a-z-]*:interconnect:[^:]+:[0-9]{12}:connection/(mcc|lmcc)-[a-z0-9]{8}`
 Required: Yes
 
  ** attachPoint **   <a name="interconnect-Type-Connection-attachPoint"></a>
-The Attach Point to which the [Connection](#API_Connection) should be associated."
+The Attach Point to which the [Connection](API_Connection.md) should be associated."
 Type: [AttachPoint](API_AttachPoint.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
 
  ** bandwidth **   <a name="interconnect-Type-Connection-bandwidth"></a>
-The specific selected bandwidth of this [Connection](#API_Connection).
+The specific selected bandwidth of this [Connection](API_Connection.md).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 8.
 Pattern: `\d+[MG]bps`
 Required: Yes
 
  ** description **   <a name="interconnect-Type-Connection-description"></a>
-A descriptive name for the [Connection](#API_Connection).
+A descriptive name for the [Connection](API_Connection.md).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[-a-zA-Z0-9_ ]+`
 Required: Yes
 
  ** environmentId **   <a name="interconnect-Type-Connection-environmentId"></a>
-The specific [Environment](API_Environment.md) this [Connection](#API_Connection) is placed upon.
+The specific [Environment](API_Environment.md) this [Connection](API_Connection.md) is placed upon.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -57,26 +56,26 @@ Pattern: `(mcc|lmcc)-[a-z0-9]{8}`
 Required: Yes
 
  ** location **   <a name="interconnect-Type-Connection-location"></a>
-The provider specific location on the remote side of this [Connection](#API_Connection)
+The provider specific location on the remote side of this [Connection](API_Connection.md)
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 255.
 Required: Yes
 
  ** ownerAccount **   <a name="interconnect-Type-Connection-ownerAccount"></a>
-The account that owns this [Connection](#API_Connection)
+The account that owns this [Connection](API_Connection.md)
 Type: String
 Length Constraints: Fixed length of 12.
 Pattern: `[0-9]{12}`
 Required: Yes
 
  ** provider **   <a name="interconnect-Type-Connection-provider"></a>
-The provider on the remote side of this [Connection](#API_Connection).
+The provider on the remote side of this [Connection](API_Connection.md).
 Type: [Provider](API_Provider.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
 
  ** sharedId **   <a name="interconnect-Type-Connection-sharedId"></a>
-An identifier used by both AWS and the remote partner to identify the specific [Connection](#API_Connection).
+An identifier used by both AWS and the remote partner to identify the specific [Connection](API_Connection.md).
 Type: String
 Length Constraints: Fixed length of 36.
 Pattern: `[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}`
@@ -95,19 +94,19 @@ Valid Values: `available | requested | pending | down | deleting | deleted | fai
 Required: Yes
 
  ** type **   <a name="interconnect-Type-Connection-type"></a>
-The specific product type of this [Connection](#API_Connection).
+The specific product type of this [Connection](API_Connection.md).
 Type: String
 Length Constraints: Minimum length of 5. Maximum length of 32.
 Required: Yes
 
  ** billingTier **   <a name="interconnect-Type-Connection-billingTier"></a>
-The billing tier this [Connection](#API_Connection) is currently assigned.
+The billing tier this [Connection](API_Connection.md) is currently assigned.
 Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 8.
 Required: No
 
  ** tags **   <a name="interconnect-Type-Connection-tags"></a>
-The tags on the [Connection](#API_Connection)
+The tags on the [Connection](API_Connection.md)
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Value Length Constraints: Minimum length of 0. Maximum length of 256.

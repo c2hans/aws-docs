@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_ListPartner
 ---
 
 # ListPartnerships
-<a name="API_ListPartnerships"></a>
 
 Lists the partnerships associated with your AWS account for your current or specified region. A partnership represents the connection between you and your trading partner. It ties together a profile and one or more trading capabilities.
 

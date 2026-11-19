@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/custo
 ---
 
 # Property graph schema
-<a name="custom-algorithms-property-graph-schema"></a>
 
  The `neptune.graph.pg_schema()` procedure provides a comprehensive overview of the graph structure. It extracts and summarizes the current schema of a Neptune Analytics graph, i.e., customers can observe the property names and types that appear on vertices and edges of particular labels within the graph. The procedure is designed for use cases such as: schema visualization, integration with third-party applications, and inclusion in open-source tools.
 

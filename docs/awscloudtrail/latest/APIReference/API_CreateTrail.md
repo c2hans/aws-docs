@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Cr
 ---
 
 # CreateTrail
-<a name="API_CreateTrail"></a>
 
 Creates a trail that specifies the settings for delivery of log data to an Amazon S3 bucket.
 

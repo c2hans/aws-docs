@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # DataSourceConfig
-<a name="API_DataSourceConfig"></a>
 
 Configuration for the data source used in evaluation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/spank_install.html
 ---
 
 # Install SPANK plugins on AWS PCS
-<a name="spank_install"></a>
 
 Follow the plugin's documentation to install SPANK plugins on your AMI.
 

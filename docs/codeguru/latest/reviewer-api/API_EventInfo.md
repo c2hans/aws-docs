@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_EventIn
 ---
 
 # EventInfo
-<a name="API_EventInfo"></a>
 
 Information about an event. The event might be a push, pull request, scheduled request, or another type of event.
 

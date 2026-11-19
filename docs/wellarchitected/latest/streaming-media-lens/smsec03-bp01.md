@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMSEC03-BP01 Implement content or sessions forensics
-<a name="smsec03-bp01"></a>
 
 If content is found outside of your normal operation workflows, you will want to can identify where or how the content was accessed to close a gap.
 

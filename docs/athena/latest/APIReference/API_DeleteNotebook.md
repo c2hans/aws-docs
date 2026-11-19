@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteNot
 ---
 
 # DeleteNotebook
-<a name="API_DeleteNotebook"></a>
 
 Deletes the specified notebook.
 

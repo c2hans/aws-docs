@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ModuleInfo
-<a name="API_ModuleInfo"></a>
 
 Contains information about the module from which the resource was created, if the resource was created from a module included in the stack template.
 

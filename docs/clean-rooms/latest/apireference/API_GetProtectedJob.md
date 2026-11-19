@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetP
 ---
 
 # GetProtectedJob
-<a name="API_GetProtectedJob"></a>
 
 Returns job processing metadata.
 

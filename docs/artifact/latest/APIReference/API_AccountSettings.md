@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_Account
 ---
 
 # AccountSettings
-<a name="API_AccountSettings"></a>
 
 Account settings for the customer.
 

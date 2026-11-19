@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/governing-a
 ---
 
 # Resources
-<a name="resources"></a>
 + [Generative AI Lens - AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html)
 + [Levels in the generative AI maturity model](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-maturity-model/overview-levels.html)
 + [Guidance for Multi-Provider Generative AI Gateway on ](https://aws.amazon.com/solutions/guidance/multi-provider-generative-ai-gateway-on-aws/)[AWS](https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html)

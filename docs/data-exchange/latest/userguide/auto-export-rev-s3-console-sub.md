@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/auto-expo
 ---
 
 # Automatically exporting AWS Data Exchange asset revisions to an S3 bucket as a subscriber
-<a name="auto-export-rev-s3-console-sub"></a>
 
 When the provider publishes new revisions, you can select to automatically export new revisions to your Amazon S3 bucket. You can export new revisions to up to five S3 buckets. New revisions will automatically appear in the S3 buckets you have selected.
 

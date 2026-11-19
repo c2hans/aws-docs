@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-publish-assets.
 ---
 
 # `cdk publish-assets`
-<a name="ref-cli-cmd-publish-assets"></a>
 
 **Important**
 The `cdk publish-assets` command is in development for the AWS CDK. The current features of this command are subject to change. Therefore, you must opt in by providing the `--unstable=publish-assets` option to use this command.

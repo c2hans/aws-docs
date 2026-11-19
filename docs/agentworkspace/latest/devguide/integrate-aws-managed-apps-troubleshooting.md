@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/integrate
 ---
 
 # Troubleshooting
-<a name="integrate-aws-managed-apps-troubleshooting"></a>
 
 This section describes common issues and resolutions when integrating AWS managed applications.
 

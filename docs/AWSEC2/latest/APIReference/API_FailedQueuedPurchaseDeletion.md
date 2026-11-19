@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FailedQue
 ---
 
 # FailedQueuedPurchaseDeletion
-<a name="API_FailedQueuedPurchaseDeletion"></a>
 
 Describes a Reserved Instance whose queued purchase was not deleted.
 

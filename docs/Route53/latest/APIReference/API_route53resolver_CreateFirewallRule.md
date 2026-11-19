@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # CreateFirewallRule
-<a name="API_route53resolver_CreateFirewallRule"></a>
 
 Creates a single DNS Firewall rule in the specified rule group. The rule can use any one of the following match sources, and the chosen source must be supplied through the matching request field — they are mutually exclusive:
 +  `FirewallDomainListId` — match a customer-managed or AWS-managed domain list.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_Associat
 ---
 
 # AssociateToConfiguration
-<a name="API_AssociateToConfiguration"></a>
 
 Links a resource (for example, a custom action) to a channel configuration.
 

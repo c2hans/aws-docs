@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/c
 ---
 
 # CloudFront continuous deployment workflow
-<a name="continuous-deployment-workflow"></a>
 
 The following high-level workflow explains how to safely test and deploy configuration changes with CloudFront continuous deployment.
 

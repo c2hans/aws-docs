@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteCertif
 ---
 
 # DeleteCertificateAuthority
-<a name="API_DeleteCertificateAuthority"></a>
 
 Deletes a certificate authority (CA) from your cluster.
 

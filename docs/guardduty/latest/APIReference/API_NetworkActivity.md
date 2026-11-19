@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Networ
 ---
 
 # NetworkActivity
-<a name="API_NetworkActivity"></a>
 
 Contains details about network activity.
 

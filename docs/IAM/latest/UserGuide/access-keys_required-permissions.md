@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-keys_require
 ---
 
 # Permissions required to manage access keys
-<a name="access-keys_required-permissions"></a>
 
 **Note**
 `iam:TagUser` is an optional permission for adding and editing descriptions for the access key. For more information, see [Tag IAM users](id_tags_users.md)

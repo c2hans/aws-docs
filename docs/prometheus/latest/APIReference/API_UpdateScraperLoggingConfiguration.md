@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Updat
 ---
 
 # UpdateScraperLoggingConfiguration
-<a name="API_UpdateScraperLoggingConfiguration"></a>
 
 Updates the logging configuration for a Amazon Managed Service for Prometheus scraper.
 

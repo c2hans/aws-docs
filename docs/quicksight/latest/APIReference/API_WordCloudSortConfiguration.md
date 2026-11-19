@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_WordC
 ---
 
 # WordCloudSortConfiguration
-<a name="API_WordCloudSortConfiguration"></a>
 
 The sort configuration of a word cloud visual.
 

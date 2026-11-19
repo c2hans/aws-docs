@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/profile-panel
 ---
 
 # Activity details for Overall API call volume
-<a name="profile-panel-drilldown-overall-api-volume"></a>
 
 The activity details for **Overall API call volume** show the API calls that were issued during a selected time range.
 

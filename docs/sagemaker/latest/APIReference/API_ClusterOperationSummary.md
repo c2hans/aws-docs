@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterOperationSummary
-<a name="API_ClusterOperationSummary"></a>
 
 A summary of an operation performed on a HyperPod cluster.
 

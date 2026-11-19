@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-warm-po
 ---
 
 # Create a warm pool for an Auto Scaling group
-<a name="create-warm-pool"></a>
 
 This topic describes how to create a warm pool for your Auto Scaling group.
 

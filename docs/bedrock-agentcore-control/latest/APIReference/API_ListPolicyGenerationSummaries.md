@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListPolicyGenerationSummaries
-<a name="API_ListPolicyGenerationSummaries"></a>
 
 Retrieves a paginated list of metadata-only policy generation summaries within a policy engine without decrypting customer content. This lightweight read operation returns resource identifiers, status, timestamps, and findings for each policy generation, but does not include status reasons. Because this operation does not require access to the customer's AWS KMS key, it is suitable for resource discovery, inventory, and integration scenarios where only metadata is needed.
 

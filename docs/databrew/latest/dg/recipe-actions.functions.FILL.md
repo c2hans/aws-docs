@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # FILL
-<a name="recipe-actions.functions.FILL"></a>
 
 Returns a new column based on a specified source column. For any missing or null values in the source column, `FILL` chooses the most recent nonblank value from a window of rows before and after the source value in question. The chosen value is then placed in the new column.
 

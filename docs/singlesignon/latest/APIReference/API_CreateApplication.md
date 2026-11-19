@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Cre
 ---
 
 # CreateApplication
-<a name="API_CreateApplication"></a>
 
 Creates an OAuth 2.0 customer managed application in IAM Identity Center for the given application provider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Phase2Enc
 ---
 
 # Phase2EncryptionAlgorithmsListValue
-<a name="API_Phase2EncryptionAlgorithmsListValue"></a>
 
 The encryption algorithm for phase 2 IKE negotiations.
 

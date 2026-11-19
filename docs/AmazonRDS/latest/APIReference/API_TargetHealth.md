@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Target
 ---
 
 # TargetHealth
-<a name="API_TargetHealth"></a>
 
 Information about the connection health of an RDS Proxy target.
 

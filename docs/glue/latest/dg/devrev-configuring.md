@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/devrev-configuring.html
 ---
 
 # Configuring DevRev
-<a name="devrev-configuring"></a>
 
 Before you can use AWS Glue to transfer data from DevRev, you must meet the following requirements:
 

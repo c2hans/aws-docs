@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Use `PurgeQueue` with a CLI
-<a name="example_sqs_PurgeQueue_section"></a>
 
 The following code examples show how to use `PurgeQueue`.
 

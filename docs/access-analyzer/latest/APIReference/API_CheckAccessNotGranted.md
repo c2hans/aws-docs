@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # CheckAccessNotGranted
-<a name="API_CheckAccessNotGranted"></a>
 
 Checks whether the specified access isn't allowed by a policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Co
 ---
 
 # ComputeConfiguration
-<a name="API_ComputeConfiguration"></a>
 
 Provides configuration information for the instances that will perform the compute work.
 

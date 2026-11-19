@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RoleGr
 ---
 
 # RoleGroupAssignment
-<a name="API_RoleGroupAssignment"></a>
 
 Defines the mapping between an in-app role and the AWS IAM Identity Center group patterns that should be assigned to that role within the SageMaker Partner AI App.
 

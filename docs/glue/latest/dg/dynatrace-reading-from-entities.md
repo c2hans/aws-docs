@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dynatrace-reading-from-en
 ---
 
 # Reading from Dynatrace entities
-<a name="dynatrace-reading-from-entities"></a>
 
 **Prerequisite**
 

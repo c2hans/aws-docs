@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Funne
 ---
 
 # FunnelChartDataLabelOptions
-<a name="API_FunnelChartDataLabelOptions"></a>
 
 The options that determine the presentation of the data labels.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/retrieve-ekpub.h
 ---
 
 # Retrieve the public endorsement key for an EC2 instance
-<a name="retrieve-ekpub"></a>
 
 You can securely retrieve the public endorsement key for an instance at any time.
 

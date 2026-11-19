@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_PolicySta
 ---
 
 # PolicyStatement
-<a name="API_PolicyStatement"></a>
 
 An individual statement within the AWS Sign-In resource-based policy.
 

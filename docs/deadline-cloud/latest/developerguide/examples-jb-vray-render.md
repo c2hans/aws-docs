@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Render V-Ray standalone scenes on Deadline Cloud
-<a name="examples-jb-vray-render"></a>
 
 The [vray\_render](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vray_render) job bundle on the GitHub website creates a V-Ray rendering job for Deadline Cloud.
 

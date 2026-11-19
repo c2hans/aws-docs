@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # ListNotificationRules
-<a name="API_ListNotificationRules"></a>
 
 Returns a list of the notification rules for an AWS account.
 

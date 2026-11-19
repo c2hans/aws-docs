@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Rout
 ---
 
 # Route53ResolverServiceRolePolicy
-<a name="Route53ResolverServiceRolePolicy"></a>
 
 **Description**: Enables access to AWS services and Resources used or managed by Route53 Resolver
 

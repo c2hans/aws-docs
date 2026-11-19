@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Creating a resilience policy
-<a name="next-gen-creating-policy"></a>
 
 You can create resilience policies from the the next generation of Resilience Hub console or AWS CLI.
 

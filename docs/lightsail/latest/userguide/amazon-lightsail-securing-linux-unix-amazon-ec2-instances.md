@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Secure Amazon EC2 instances launched from Lightsail snapshots
-<a name="amazon-lightsail-securing-linux-unix-amazon-ec2-instances"></a>
 
 Amazon Lightsail, and Amazon Elastic Compute Cloud (Amazon EC2), use public–key cryptography to encrypt and decrypt login information. Public–key cryptography uses a public key to encrypt a piece of data, such as a password, then the recipient uses the private key to decrypt the data. The public and private keys are known as a key pair.
 

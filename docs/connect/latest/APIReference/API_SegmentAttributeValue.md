@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SegmentA
 ---
 
 # SegmentAttributeValue
-<a name="API_SegmentAttributeValue"></a>
 
 A value for a segment attribute. This is structured as a map where the key is `valueString` and the value is a string.
 
@@ -23,12 +22,12 @@ Required: No
 
  ** ValueList **   <a name="connect-Type-SegmentAttributeValue-ValueList"></a>
 The value of a segment attribute. This is only supported for system-defined attributes, not for user-defined attributes.
-Type: Array of [SegmentAttributeValue](#API_SegmentAttributeValue) objects
+Type: Array of [SegmentAttributeValue](API_SegmentAttributeValue.md) objects
 Required: No
 
  ** ValueMap **   <a name="connect-Type-SegmentAttributeValue-ValueMap"></a>
 The value of a segment attribute.
-Type: String to [SegmentAttributeValue](#API_SegmentAttributeValue) object map
+Type: String to [SegmentAttributeValue](API_SegmentAttributeValue.md) object map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Required: No
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_IotEventsAct
 ---
 
 # IotEventsAction
-<a name="API_IotEventsAction"></a>
 
 Sends an input to an AWS IoT Events detector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2rw-gui.html
 ---
 
 # Troubleshoot impaired Windows instance with the EC2Rescue GUI
-<a name="ec2rw-gui"></a>
 
 EC2Rescue for Windows Server can perform the following analysis on ** offline instances**:
 

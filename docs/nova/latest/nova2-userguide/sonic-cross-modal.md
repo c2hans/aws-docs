@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-cross-
 ---
 
 # Cross-modal input
-<a name="sonic-cross-modal"></a>
 
 Amazon Nova 2 Sonic now supports cross-modal input, allowing you to send text messages in addition to voice input during a conversation session. While speech remains the primary mode of interaction, text input provides flexibility for scenarios where typing is more convenient or appropriate.
 

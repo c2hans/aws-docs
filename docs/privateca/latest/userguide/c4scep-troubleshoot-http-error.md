@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/c4scep-troubl
 ---
 
 # Troubleshoot HTTP errors from Connector for SCEP
-<a name="c4scep-troubleshoot-http-error"></a>
 
 When your client triggers a Connector for SCEP dataplane API action and it results in an error, Connector for SCEP sends a HTTP response code to the requesting client with information about the error.
 

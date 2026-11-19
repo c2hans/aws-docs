@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manage-layouts
 ---
 
 # Manage layouts
-<a name="manage-layouts"></a>
 
 Manage layouts lets administrators maintain multiple Profile Explorer layouts for a domain, choose which layout is shown to users by default, and create new layouts without disrupting the layout your users currently see. This is useful if you want to build and test a new layout before rolling it out, or if you want to keep multiple layouts on hand for different use cases.
 

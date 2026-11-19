@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/isoWeekYear.h
 ---
 
 # $isoWeekYear
-<a name="isoWeekYear"></a>
 
 The `$isoWeekYear` operator in Amazon DocumentDB returns the ISO 8601 week year number for a given date. The ISO week year number differs from the Gregorian calendar year in that the week year can be different from the calendar year, especially at the start and end of the year.
 

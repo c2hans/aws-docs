@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mcp-sap/latest/awsforsapmcp/getting-star
 ---
 
 # Getting Started
-<a name="getting-started"></a>
 
 Before you deploy the AWS for SAP Model Context Protocol (MCP) Server by using the CloudFormation template, verify that you meet the following prerequisites across your AWS environment, SAP system, and network.
 

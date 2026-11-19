@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-configurat
 ---
 
 # Get details about configuration revision
-<a name="msk-configuration-operations-describe-revision"></a>
 
 This process gets you a detailed description of the Amazon MSK configuration revision.
 

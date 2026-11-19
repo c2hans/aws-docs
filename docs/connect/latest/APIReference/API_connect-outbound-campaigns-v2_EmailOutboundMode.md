@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # EmailOutboundMode
-<a name="API_connect-outbound-campaigns-v2_EmailOutboundMode"></a>
 
 Contains information about email outbound mode.
 

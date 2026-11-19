@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/apireference/deletegroup-d
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # DeleteGroup
-<a name="deletegroup-delete"></a>
 
 Deletes a group. Before you delete a group that is deployed, we recommend that you [reset the group's deployments](resetdeployments-post.md). This step removes the group's information from the core, so you can use the core with another Greengrass group.
 

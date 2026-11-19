@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # McpServerTargetConfiguration
-<a name="API_McpServerTargetConfiguration"></a>
 
 The target configuration for the MCP server.
 

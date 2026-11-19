@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # DescribeAlarmsForMetric
-<a name="API_DescribeAlarmsForMetric"></a>
 
 Retrieves the alarms for the specified metric. To filter the results, specify a statistic, period, or unit.
 

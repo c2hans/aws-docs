@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_GetFunctionRecursi
 ---
 
 # GetFunctionRecursionConfig
-<a name="API_GetFunctionRecursionConfig"></a>
 
 Returns your function's [recursive loop detection](https://docs.aws.amazon.com/lambda/latest/dg/invocation-recursion.html) configuration.
 

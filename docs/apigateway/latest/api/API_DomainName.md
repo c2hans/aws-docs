@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DomainName.htm
 ---
 
 # DomainName
-<a name="API_DomainName"></a>
 
 Represents a custom domain name as a user-friendly host name of an API (RestApi).
 

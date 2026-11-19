@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListC
 ---
 
 # ListContinuousDeploymentPolicies
-<a name="API_ListContinuousDeploymentPolicies"></a>
 
 Gets a list of the continuous deployment policies in your AWS account.
 

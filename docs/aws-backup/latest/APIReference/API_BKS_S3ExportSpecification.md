@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_S
 ---
 
 # S3ExportSpecification
-<a name="API_BKS_S3ExportSpecification"></a>
 
 This specification contains a required string of the destination bucket; optionally, you can include the destination prefix.
 

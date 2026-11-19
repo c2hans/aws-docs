@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/recycle-bin-working
 ---
 
 # Recover deleted snapshots from the Recycle Bin
-<a name="recycle-bin-working-with-snaps"></a>
 
 This topic explains how to recover Amazon EBS snapshots from the Recycle Bin.
 

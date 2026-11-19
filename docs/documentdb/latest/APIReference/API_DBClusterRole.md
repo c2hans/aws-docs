@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_DBClu
 ---
 
 # DBClusterRole
-<a name="API_DBClusterRole"></a>
 
 Describes an AWS Identity and Access Management (IAM) role that is associated with a cluster.
 

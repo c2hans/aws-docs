@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel-und
 ---
 
 # Understanding trade-offs
-<a name="rel-understanding-tradeoffs"></a>
 
  Every architectural decision comes with trade-offs. When you design a workload for reliability, you balance availability and recoverability against cost, performance, operational simplicity, and the speed at which you can implement changes. More redundancy, tighter recovery objectives, and stronger consistency all raise reliability, and each carries a cost somewhere else. The goal is not to make a workload as available as technically possible. It is to meet the availability and recovery objectives the business actually needs, and to be deliberate about what you trade to get there.
 

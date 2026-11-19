@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Vali
 ---
 
 # ValidationData
-<a name="API_ValidationData"></a>
 
 Contains the Amazon S3 bucket location of the validation data for a model training job.
 

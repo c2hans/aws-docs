@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-library
 ---
 
 # Retry commands for PKCS \#11 library for AWS CloudHSM
-<a name="pkcs11-library-configs-retry"></a>
 
 AWS CloudHSM Client SDK 5.8.0 and later have a built-in automatic retry strategy which will retry HSM-throttled operations from the client side. When an HSM throttles operations because it is too busy performing previous operations and cannot take more requests, client SDKs will attempt to retry throttled operations up to 3 times while exponentially backing off. This automatic retry strategy can be set to one of two modes: **off** and **standard**.
 + **off**: The Client SDK will not perform any retry strategy for any throttled operations by the HSM.

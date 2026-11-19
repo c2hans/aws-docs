@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # AuthenticationMode
-<a name="API_AuthenticationMode"></a>
 
 Specifies the authentication mode to use.
 

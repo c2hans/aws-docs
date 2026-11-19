@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSPERF17-BP02 Implement data classification-based transfer assessment with region-specific regulatory validation
-<a name="lsperf17-bp02"></a>
 
  Design test frameworks simulating real clinical and research data transfers while following data sovereignty routing rules. Test transfer performance under varying network conditions and data volumes while maintaining regional adherence. Use modeling to predict transfer times and resource needs for different sovereignty scenarios, informing cross-region data sharing decisions.
 

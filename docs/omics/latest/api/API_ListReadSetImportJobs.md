@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListReadSetImportJo
 ---
 
 # ListReadSetImportJobs
-<a name="API_ListReadSetImportJobs"></a>
 
 Retrieves a list of read set import jobs and returns the data in JSON format.
 

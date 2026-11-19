@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterOutput
 ---
 
 # RouterOutputProcessors
-<a name="API_RouterOutputProcessors"></a>
 
 The processor settings for a router output. For more information, see [Using MediaConnect processors](https://docs.aws.amazon.com/mediaconnect/latest/ug/using-mediaconnect-processors.html) in the * AWS Elemental MediaConnect User Guide*.
 

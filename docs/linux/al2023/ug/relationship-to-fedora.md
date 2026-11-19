@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/relationship-to-fedora.h
 ---
 
 # Relationship to Fedora
-<a name="relationship-to-fedora"></a>
 
 AL2023 maintains its own release and support lifecycles independent of Fedora. AL2023 provides updated versions of open-source software, a larger variety of packages, and frequent releases. This preserves the familiar RPM-based operating systems.
 

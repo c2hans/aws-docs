@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Subscri
 ---
 
 # SubscriptionPrincipal
-<a name="API_SubscriptionPrincipal"></a>
 
 A user or group in the IAM Identity Center instance connected to the Amazon Q Business application.
 

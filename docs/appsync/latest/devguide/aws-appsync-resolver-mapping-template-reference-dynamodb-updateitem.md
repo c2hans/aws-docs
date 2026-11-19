@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-reso
 ---
 
 # UpdateItem
-<a name="aws-appsync-resolver-mapping-template-reference-dynamodb-updateitem"></a>
 
 The `UpdateItem` request mapping document enables you to tell the AWS AppSync DynamoDB resolver to make a `UpdateItem` request to DynamoDB and allows you to specify the following:
 + The key of the item in DynamoDB

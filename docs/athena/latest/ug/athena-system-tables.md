@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/athena-system-tables.ht
 ---
 
 # Use Athena system tables
-<a name="athena-system-tables"></a>
 
 With *system tables for Amazon Athena*, your usage data is automatically stored in tables that you can query for observability, cost analysis, auditing, and governance. Athena system tables are stored as fully managed [Amazon S3 Tables](https://aws.amazon.com/s3/features/tables/), using [Apache Iceberg](https://aws.amazon.com/what-is/apache-iceberg/) format, allowing you to query them with Athena, [DuckDB](https://duckdb.org), [Amazon Redshift](https://aws.amazon.com/redshift/), or any other engine that is compatible with Apache Iceberg. You can also use AI agent skills to get insights from your system table data by asking questions in natural language, without writing SQL. For more information, see [System table skills for AWS Agent Toolkit](https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/system-table-skills) on the GitHub website.
 

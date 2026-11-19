@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/gte-aggregati
 ---
 
 # $gte
-<a name="gte-aggregation"></a>
 
 The `$gte` aggregation operator compares two values and returns `true` if the first value is greater than or equal to the second, otherwise returns `false`.
 

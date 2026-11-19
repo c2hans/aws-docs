@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MediaLiveTra
 ---
 
 # MediaLiveTransitEncryptionKeyConfiguration
-<a name="API_MediaLiveTransitEncryptionKeyConfiguration"></a>
 
 Configuration settings for the MediaLive transit encryption key.
 

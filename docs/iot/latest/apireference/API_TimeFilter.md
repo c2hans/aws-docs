@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_TimeFilter.h
 ---
 
 # TimeFilter
-<a name="API_TimeFilter"></a>
 
 A filter that can be used to list command executions for a device that started or completed before or after a particular date and time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Organization
-<a name="organization"></a>
 
 | HPCOPS01: What factors drive operational design decisions for your HPC environment?  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Deployment architecture
-<a name="customer-360-deployment"></a>
 
 A reference implementation of this pattern is structured as a five-stage CDK deployment, each stage building on the previous to progressively compose the full Customer 360 capability.
 

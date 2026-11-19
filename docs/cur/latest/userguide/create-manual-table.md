@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/create-manual-table
 ---
 
 # Creating an Athena table
-<a name="create-manual-table"></a>
 
 AWS includes the SQL that you need to run to create this table in your AWS CUR bucket.<a name="create-manual-table-steps"></a>
 

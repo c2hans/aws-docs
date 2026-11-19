@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/rentals.ht
 ---
 
 # .rentals
-<a name="rentals"></a>
 
 Used for all types of rentals.
 

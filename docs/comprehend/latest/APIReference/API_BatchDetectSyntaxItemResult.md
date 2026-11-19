@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Batch
 ---
 
 # BatchDetectSyntaxItemResult
-<a name="API_BatchDetectSyntaxItemResult"></a>
 
 The result of calling the [BatchDetectSyntax](API_BatchDetectSyntax.md) operation. The operation returns one object that is successfully processed by the operation.
 

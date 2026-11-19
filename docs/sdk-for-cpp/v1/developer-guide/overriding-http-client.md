@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/overridin
 ---
 
 # Overriding your HTTP client in the AWS SDK for C\+\+
-<a name="overriding-http-client"></a>
 
 The default HTTP client for Windows is [WinHTTP](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382925%28v=vs.85%29.aspx). The default HTTP client for all other platforms is [curl](https://curl.haxx.se/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Feed
 ---
 
 # FeedbackItem
-<a name="API_FeedbackItem"></a>
 
 Describes a condition that was detected in the Face Liveness video and that contributed to the confidence score returned for the session.
 

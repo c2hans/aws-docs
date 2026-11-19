@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/logging
 ---
 
 # Logging and Monitoring in Amazon WorkSpaces Applications
-<a name="logging-monitoring-alerting"></a>
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of Amazon WorkSpaces Applications. This topic describes the services and tools that AWS provides for monitoring your WorkSpaces Applications resources and responding to potential incidents.
 

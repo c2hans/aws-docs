@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_G
 ---
 
 # GetOrganizationRecommendation
-<a name="API_GetOrganizationRecommendation"></a>
 
 Get a specific recommendation within an AWS Organizations organization. This API supports only prioritized recommendations and provides global priority recommendations, eliminating the need to call the API in each AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-sma
 ---
 
 # SMART on FHIR OAuth 2.0 scopes supported by HealthLake
-<a name="reference-smart-on-fhir-oauth-scopes"></a>
 
 HealthLake uses OAuth 2.0 as an authorization protocol. Using this protocol on your authorization server allows you to define HealthLake data store permissions (create, read, update, delete, and search) for FHIR resources that a client application has access to.
 

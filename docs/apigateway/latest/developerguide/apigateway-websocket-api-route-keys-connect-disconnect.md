@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Manage connected users and client apps: `$connect` and `$disconnect` routes
-<a name="apigateway-websocket-api-route-keys-connect-disconnect"></a>
 
 The following section describes how to use the `$connect` and `$disconnect` routes for your WebSocket API.
 

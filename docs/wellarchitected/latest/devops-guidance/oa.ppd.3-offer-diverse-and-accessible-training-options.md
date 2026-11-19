@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.PPD.3] Offer diverse and accessible training options
-<a name="oa.ppd.3-offer-diverse-and-accessible-training-options"></a>
 
  **Category:** FOUNDATIONAL
 

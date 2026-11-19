@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/generic-packages-
 ---
 
 # Supported commands for generic packages
-<a name="generic-packages-supported-commands"></a>
 
 You can use the AWS CLI or SDK to work with generic packages. The following CodeArtifact commands work with generic packages:
 + [copy-package-versions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codeartifact/copy-package-versions.html) (see [Copy packages between repositories](copy-package.md))

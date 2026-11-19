@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_PathStatisti
 ---
 
 # PathStatistics
-<a name="API_PathStatistics"></a>
 
 Statistics about bot traffic to a specific URI path, including the path, request count, percentage of total traffic, and the top bots accessing that path.
 

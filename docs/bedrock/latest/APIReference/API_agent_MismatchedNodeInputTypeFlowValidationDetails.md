@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Mi
 ---
 
 # MismatchedNodeInputTypeFlowValidationDetails
-<a name="API_agent_MismatchedNodeInputTypeFlowValidationDetails"></a>
 
 Details about mismatched input data types in a node.
 

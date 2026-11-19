@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 ---
 
 # Data retrieval APIs for AWS Billing Console
-<a name="awsbillingconsole"></a>
 
 AWS Billing Console provides the following APIs for data retrieval.
 

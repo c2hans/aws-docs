@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
  This section provides troubleshooting instructions for deploying and using the Guidance.
 

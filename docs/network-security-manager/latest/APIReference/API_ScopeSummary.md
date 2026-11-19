@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ScopeSummary
-<a name="API_ScopeSummary"></a>
 
 Summary information about a scope.
 

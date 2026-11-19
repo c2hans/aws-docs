@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/r
 ---
 
 # Connecting to an Amazon Redshift cluster
-<a name="redshift-connection"></a>
 
 With **AWS Explorer**, you can select an Amazon Redshift cluster, choose an authentication method, and then configure the connection settings. After you've successfully tested the connection, you can start interacting with the data source using JetBrains DataGrip.
 

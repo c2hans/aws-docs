@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # GetManagedView
-<a name="API_GetManagedView"></a>
 
 Retrieves details of the specified [AWS-managed view](https://docs.aws.amazon.com/resource-explorer/latest/userguide/aws-managed-views.html).
 

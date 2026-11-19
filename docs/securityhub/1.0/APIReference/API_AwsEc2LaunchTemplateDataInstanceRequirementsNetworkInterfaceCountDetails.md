@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataInstanceRequirementsNetworkInterfaceCountDetails
-<a name="API_AwsEc2LaunchTemplateDataInstanceRequirementsNetworkInterfaceCountDetails"></a>
 
  The minimum and maximum number of network interfaces to be attached to an Amazon EC2 instance.
 

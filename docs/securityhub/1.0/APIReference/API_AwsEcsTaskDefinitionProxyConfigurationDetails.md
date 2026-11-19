@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionProxyConfigurationDetails
-<a name="API_AwsEcsTaskDefinitionProxyConfigurationDetails"></a>
 
 The configuration details for the App Mesh proxy.
 

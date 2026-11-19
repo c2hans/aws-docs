@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/gdu-assess-coverage-
 ---
 
 # Runtime coverage and troubleshooting for ECS-EC2 Bottlerocket
-<a name="gdu-assess-coverage-bottlerocket-ecs-ec2"></a>
 
 For Bottlerocket Amazon EC2 instances in Amazon ECS clusters, GuardDuty evaluates runtime coverage at the instance level. The GuardDuty security agent runs as a host container on Bottlerocket, rather than as an installed RPM or Debian package.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # ENDS\_WITH
-<a name="recipe-actions.functions.ENDS_WITH"></a>
 
 Returns `true` in a new column if a specified number of rightmost characters, or custom string, matches a pattern.
 

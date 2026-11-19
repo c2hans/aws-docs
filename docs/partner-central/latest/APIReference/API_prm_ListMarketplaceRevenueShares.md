@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListMarketplaceRevenueShares
-<a name="API_prm_ListMarketplaceRevenueShares"></a>
 
 Returns a paginated list of marketplace revenue shares with optional filters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/wafv2-ruleg
 ---
 
 # wafv2-rulegroup-not-empty
-<a name="wafv2-rulegroup-not-empty"></a>
 
 Checks if WAFv2 Rule Groups contain rules. The rule is NON\_COMPLIANT if there are no rules in a WAFv2 Rule Group.
 

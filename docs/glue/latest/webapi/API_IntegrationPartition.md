@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IntegrationPartit
 ---
 
 # IntegrationPartition
-<a name="API_IntegrationPartition"></a>
 
 A structure that describes how data is partitioned on the target.
 

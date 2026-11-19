@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/infrastructure-secu
 ---
 
 # Infrastructure Security in Multi-party approval
-<a name="infrastructure-security"></a>
 
 As a managed service, Multi-party approval is protected by the AWS global network security procedures that are described in the [Amazon Web Services: Overview of Security Processes](https://d0.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf) whitepaper.
 

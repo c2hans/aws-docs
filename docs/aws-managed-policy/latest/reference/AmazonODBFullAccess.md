@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonODBFullAccess
-<a name="AmazonODBFullAccess"></a>
 
 **Description**: Provides full access to resources in Oracle Database@AWS
 

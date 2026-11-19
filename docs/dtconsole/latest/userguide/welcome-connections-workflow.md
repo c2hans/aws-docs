@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/welcome-conne
 ---
 
 # Workflow to create or update connections
-<a name="welcome-connections-workflow"></a>
 
 When you create a connection, you also create or use an existing connector app installation for the auth handshake with the third-party provider.
 

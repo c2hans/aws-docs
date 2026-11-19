@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Collec
 ---
 
 # CollectionConfiguration
-<a name="API_CollectionConfiguration"></a>
 
 Configuration information for the Amazon SageMaker Debugger output tensor collections.
 

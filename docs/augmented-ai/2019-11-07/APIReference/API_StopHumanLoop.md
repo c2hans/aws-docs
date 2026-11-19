@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API
 ---
 
 # StopHumanLoop
-<a name="API_StopHumanLoop"></a>
 
 Stops the specified human loop.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_StartReadSetActivat
 ---
 
 # StartReadSetActivationJobSourceItem
-<a name="API_StartReadSetActivationJobSourceItem"></a>
 
 A source for a read set activation job.
 

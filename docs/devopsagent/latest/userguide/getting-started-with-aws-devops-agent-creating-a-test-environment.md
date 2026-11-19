@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/getting-sta
 ---
 
 # Creating a test environment
-<a name="getting-started-with-aws-devops-agent-creating-a-test-environment"></a>
 
 This guide provides hands-on tests to validate AWS DevOps Agent’s incident response functionality using sample architecture. Use this supplement if you want to test DevOps Agent before connecting your production systems.
 

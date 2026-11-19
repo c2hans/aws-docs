@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDe
 ---
 
 # AIDevOpsOrganizationsAccessPolicy
-<a name="AIDevOpsOrganizationsAccessPolicy"></a>
 
 **Description**: Provides permissions required by the AWS DevOps Agent to read your organization's structure and to manage the CloudFormation StackSets it creates to deploy roles to your member accounts.
 

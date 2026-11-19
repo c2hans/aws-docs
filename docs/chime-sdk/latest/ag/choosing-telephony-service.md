@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/choosing-telephony-s
 ---
 
 # Choosing the right service for your telephony use case
-<a name="choosing-telephony-service"></a>
 
 Amazon Chime SDK Voice Connector and Amazon Connect Customer are both voice telephony services. Each is designed for a fundamentally different use case. This chapter helps you determine which is right for your solution.
 

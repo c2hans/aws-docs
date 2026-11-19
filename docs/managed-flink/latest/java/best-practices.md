@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/best-practices
 ---
 
 # Maintain best practices for Managed Service for Apache Flink applications
-<a name="best-practices"></a>
 
 This section contains information and recommendations for developing a stable, performant Managed Service for Apache Flink applications.
 

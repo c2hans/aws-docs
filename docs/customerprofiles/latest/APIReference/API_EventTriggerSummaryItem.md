@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # EventTriggerSummaryItem
-<a name="API_connect-customer-profiles_EventTriggerSummaryItem"></a>
 
 The summary of the event trigger.
 

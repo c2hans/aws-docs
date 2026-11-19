@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/chime-getting-admin-
 ---
 
 # Administrative support for the Amazon Chime SDK
-<a name="chime-getting-admin-support"></a>
 
 If you are an administrator and need to contact support for the Amazon Chime SDK, choose one of the following options:
 + If you have an AWS Support account, go to [Support Center](https://console.aws.amazon.com/support/home) and submit a ticket.

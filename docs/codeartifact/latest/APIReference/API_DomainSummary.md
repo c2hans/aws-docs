@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Dom
 ---
 
 # DomainSummary
-<a name="API_DomainSummary"></a>
 
  Information about a domain, including its name, Amazon Resource Name (ARN), and status. The [ListDomains](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_ListDomains.html) operation returns a list of `DomainSummary` objects.
 

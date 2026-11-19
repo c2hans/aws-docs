@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Use cases for generative AI assistants in software development
-<a name="generative-ai-capabilities-assistants"></a>
 
 The AI assistant capability is at the heart of the generative AI-powered development experience. This intelligent, context-aware system serves as a virtual collaborator for all team members across the entire SDLC. Imagine a developer working on a complex piece of code. They can simply ask the AI assistant for help, and it can provide relevant code snippets, explain intricate algorithms, or even suggest optimizations based on the current context and best practices. The AI assistant can help an ITOps manager understand a standard operating procedure based on internal documents. By providing instant, contextual support, AI assistants significantly reduce cognitive load on team members. This helps them focus on higher-level problem-solving and creative tasks. This capability acts as a force multiplier that enhances productivity and quality across all stages of software development.
 

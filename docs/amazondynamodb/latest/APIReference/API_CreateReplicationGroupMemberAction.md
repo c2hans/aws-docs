@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_C
 ---
 
 # CreateReplicationGroupMemberAction
-<a name="API_CreateReplicationGroupMemberAction"></a>
 
 Represents a replica to be created.
 

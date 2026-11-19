@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-conn
 ---
 
 # Connection Metadata and Preview API
-<a name="aws-glue-api-catalog-connections-connections-metadata"></a>
 
 The following connection APIs describe operations for describing connection metadata.
 

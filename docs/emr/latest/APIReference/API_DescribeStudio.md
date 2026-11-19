@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_DescribeStud
 ---
 
 # DescribeStudio
-<a name="API_DescribeStudio"></a>
 
 Returns details for the specified Amazon EMR Studio including ID, Name, VPC, Studio access URL, and so on.
 

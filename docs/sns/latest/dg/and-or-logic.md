@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/and-or-logic.html
 ---
 
 # AND/OR logic
-<a name="and-or-logic"></a>
 
 Use AND/OR logic in filter policies to match message attributes or message body properties in Amazon SNS. This enables more precise and flexible message filtering.
 

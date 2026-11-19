@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 ---
 
 # CPS 234 – Information Security
-<a name="cps-234-information-security"></a>
 
  CPS 234 outlines the measures ARIs should take to be resilient against information security incidents (including cyber-attacks). CPS 234 requires ARIs to maintain an information security capability commensurate with information security vulnerabilities and threats. CPS 234 defines an *information security incident* as an actual or potential compromise of information security.
 

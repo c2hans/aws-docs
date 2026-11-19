@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Incident response
-<a name="gamesec07"></a>
 
 |  GAMESEC07: How are you defining and enforcing policies to respond to player misconduct and abusive behavior?  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Configure read-only routing in Always On availability groups in SQL Server on AWS
-<a name="configure-read-only-routing-in-an-always-on-availability-group-in-sql-server-on-aws"></a>
 
 *Subhani Shaik, Amazon Web Services*
 

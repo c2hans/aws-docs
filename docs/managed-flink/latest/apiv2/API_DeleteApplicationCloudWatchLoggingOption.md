@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApp
 ---
 
 # DeleteApplicationCloudWatchLoggingOption
-<a name="API_DeleteApplicationCloudWatchLoggingOption"></a>
 
 Deletes an Amazon CloudWatch log stream from an SQL-based Kinesis Data Analytics application.
 

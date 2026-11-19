@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BillingConductor::PricingRule CustomTier
-<a name="aws-properties-billingconductor-pricingrule-customtier"></a>
 
  A custom tier for the pricing rule. Each custom tier applies a rate to the usage that falls within the tier's range.
 

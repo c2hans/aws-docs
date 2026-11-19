@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_Organizat
 ---
 
 # OrganizationAffectedEntitiesErrorItem
-<a name="API_OrganizationAffectedEntitiesErrorItem"></a>
 
 Error information returned when a [DescribeAffectedEntitiesForOrganization](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeAffectedEntitiesForOrganization.html) operation can't find or process a specific entity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/modify-one-dyna
 ---
 
 # Modify one dynamic playlist input
-<a name="modify-one-dynamic-playlist-input"></a>
 
 In the specified event (which must be currently running), modify the specified dynamic playlist input (which must be non-Active).
 

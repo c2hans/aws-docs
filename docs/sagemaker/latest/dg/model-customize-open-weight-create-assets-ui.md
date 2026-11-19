@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-open
 ---
 
 # Creating assets for model customization in the UI
-<a name="model-customize-open-weight-create-assets-ui"></a>
 
 You can create and manage the dataset and evaluator assets that you can use for model customization in the UI.
 

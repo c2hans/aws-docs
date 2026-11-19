@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/npm-tags.html
 ---
 
 # npm tag handling
-<a name="npm-tags"></a>
 
  npm registries support *tags*, which are string aliases for package versions. You can use tags to provide an alias instead of version numbers. For example, you might have a project with multiple streams of development and use a different tag (for example, `stable`, `beta`, `dev`, `canary`) for each stream. For more information, see [dist-tag](https://docs.npmjs.com/cli/dist-tag) on the npm website.
 

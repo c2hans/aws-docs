@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/sign-in-ev
 ---
 
 # Example events for IAM Identity Center sign-in scenarios
-<a name="sign-in-events-examples"></a>
 
 The following examples illustrate the typical CloudTrail event sequences generated during various AWS sign-in scenarios. These examples serve as reference patterns to help you interpret authentication logs, identify security issues, and verify that your authentication policies are functioning correctly.
 

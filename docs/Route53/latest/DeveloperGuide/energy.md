@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/energy.htm
 ---
 
 # .energy
-<a name="energy"></a>
 
 Used as a general extension, but ideal for those in the energy or energy conservation fields.
 

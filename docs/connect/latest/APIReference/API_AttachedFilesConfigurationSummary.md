@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Attached
 ---
 
 # AttachedFilesConfigurationSummary
-<a name="API_AttachedFilesConfigurationSummary"></a>
 
 A summary of the attached files configuration.
 

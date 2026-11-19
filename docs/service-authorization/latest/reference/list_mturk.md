@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon Mechanical Turk
-<a name="list_mturk"></a>
 
 Amazon Mechanical Turk (service prefix: `mechanicalturk`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

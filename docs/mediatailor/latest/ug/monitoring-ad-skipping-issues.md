@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monitoring-ad-skip
 ---
 
 # MediaTailor ad skipping monitoring and alerts
-<a name="monitoring-ad-skipping-issues"></a>
 
 Proactive monitoring helps you detect and resolve ad skipping issues before they significantly impact your revenue. AWS Elemental MediaTailor provides comprehensive metrics and logging capabilities that enable effective monitoring of ad insertion performance. This guide explains how to set up effective monitoring for ad skipping issues.
 

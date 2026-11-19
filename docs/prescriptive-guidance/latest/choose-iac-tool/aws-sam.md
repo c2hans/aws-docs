@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choose-iac-
 ---
 
 # AWS SAM
-<a name="aws-sam"></a>
 
 The [AWS Serverless Application Model (AWS SAM)](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html) is a toolkit that extends AWS CloudFormation. It includes additional features designed to help you create serverless applications more quickly. When you deploy an AWS SAM template, it is converted to CloudFormation in order to create the defined resources. AWS SAM consists of two parts, the [AWS SAM template specification](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html#what-is-sam-template) and the [AWS SAM Command Line Interface (AWS SAM CLI)](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html#what-is-sam-cli). Although you can use CloudFormation syntax directly in the AWS SAM template, AWS SAM offers its own unique syntax that focuses specifically on speeding up serverless development. This short-hand syntax allows for optimized definitions of IaC for serverless resources, such as Amazon API Gateway, AWS Lambda, and AWS Step Functions resources. The AWS SAM CLI is a developer tool that includes features to help you test AWS Lambda functions locally, create continuous integration and continuous delivery (CI/CD) pipelines, and run commands to deploy serverless applications.
 

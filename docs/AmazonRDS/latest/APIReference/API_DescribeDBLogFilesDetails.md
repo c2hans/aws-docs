@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBLogFilesDetails
-<a name="API_DescribeDBLogFilesDetails"></a>
 
 This data type is used as a response element to `DescribeDBLogFiles`.
 

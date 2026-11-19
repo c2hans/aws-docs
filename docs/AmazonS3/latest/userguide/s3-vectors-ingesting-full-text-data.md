@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-ing
 ---
 
 # Adding full-text searchable content to your vectors
-<a name="s3-vectors-ingesting-full-text-data"></a>
 
 You insert full-text searchable content by writing it as metadata associated with your vectors with the `PutVectors` API operation (using the AWS SDK or AWS CLI). Each vector includes a unique key, the vector values, and metadata as key-value pairs. Write the full-text searchable content as the value of a metadata field whose key matches a `textSearchConfigurations` entry on the index. S3 Vectors then indexes that field for full-text search automatically as the data is written: it breaks the text into tokens using the analyzer configured for that field (the standard analyzer by default, or the language analyzer you set), and makes those tokens searchable.
 

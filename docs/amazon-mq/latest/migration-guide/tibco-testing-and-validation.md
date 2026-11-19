@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/tibco-t
 ---
 
 # Validating your migration to Amazon MQ
-<a name="tibco-testing-and-validation"></a>
 
  In the [Which TIBCO EMS architectures are used for migrating to Amazon MQ?](tibco-ems-typical-architecture.md) section, a *Topic to Queue* bridge was used to forward messages to other EMS servers. In Amazon MQ, *App 1* would send messages directly to `Q1` because messages on a queue are forwarded in a [Network of Brokers](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/network-of-brokers).
 

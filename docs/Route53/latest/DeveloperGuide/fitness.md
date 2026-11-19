@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/fitness.ht
 ---
 
 # .fitness
-<a name="fitness"></a>
 
 Used to promote fitness and fitness services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/cross-accou
 ---
 
 # Add a cross-account BYOIP address in Global Accelerator
-<a name="cross-account-resources.add-byoip"></a>
 
 Follow the steps in this section to configure cross-account bring your own IP (BYOIP) IP addresses using the Global Accelerator console.
 

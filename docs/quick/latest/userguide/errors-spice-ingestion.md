@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/errors-spice-inge
 ---
 
 # SPICE ingestion error codes
-<a name="errors-spice-ingestion"></a>
 
 The following list of errors codes and descriptions can help you understand and troubleshoot issues with data ingestion into SPICE.
 

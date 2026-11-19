@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_VpcInfo
 ---
 
 # VpcInfoIpv6CidrBlockSetDetails
-<a name="API_VpcInfoIpv6CidrBlockSetDetails"></a>
 
 Provides details about the IPv6 CIDR blocks for the VPC.
 

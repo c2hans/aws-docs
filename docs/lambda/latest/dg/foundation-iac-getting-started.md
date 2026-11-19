@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/foundation-iac-getting-
 ---
 
 # Using Event Functions in AWS SAM and Infrastructure Composer
-<a name="foundation-iac-getting-started"></a>
 
 In this tutorial, you can get started using IaC with Lambda by creating an AWS SAM template from an existing Lambda function and then building out a serverless application in Infrastructure Composer by adding other AWS resources.
 

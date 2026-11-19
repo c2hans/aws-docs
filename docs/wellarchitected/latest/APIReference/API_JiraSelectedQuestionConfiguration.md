@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # JiraSelectedQuestionConfiguration
-<a name="API_JiraSelectedQuestionConfiguration"></a>
 
 Selected questions in the workload.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk added support for dynamic instance type selection on September 20, 2021
-<a name="release-2021-09-20-dynamic-instance-type"></a>
 
 AWS Elastic Beanstalk added support for dynamic instance type selection.
 

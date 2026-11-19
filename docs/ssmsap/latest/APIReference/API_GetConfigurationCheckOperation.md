@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_GetConfig
 ---
 
 # GetConfigurationCheckOperation
-<a name="API_GetConfigurationCheckOperation"></a>
 
 Gets the details of a configuration check operation by specifying the operation ID.
 

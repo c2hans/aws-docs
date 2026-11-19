@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/use-cfn-public-registry.htm
 ---
 
 # Use resources from the AWS CloudFormation Public Registry
-<a name="use-cfn-public-registry"></a>
 
 The AWS CloudFormation Public Registry lets you manage extensions, both public and private, such as resources, modules, and hooks that are available for use in your AWS account. You can use public resource extensions in your AWS Cloud Development Kit (AWS CDK) applications with the [`CfnResource`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.CfnResource.html) construct.
 

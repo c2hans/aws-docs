@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_LabelingSetGenera
 ---
 
 # LabelingSetGenerationTaskRunProperties
-<a name="API_LabelingSetGenerationTaskRunProperties"></a>
 
 Specifies configuration properties for a labeling set generation task run.
 

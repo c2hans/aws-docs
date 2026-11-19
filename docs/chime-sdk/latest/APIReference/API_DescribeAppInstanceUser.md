@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Descri
 ---
 
 # DescribeAppInstanceUser
-<a name="API_DescribeAppInstanceUser"></a>
 
 Returns the full details of an `AppInstanceUser`.
 

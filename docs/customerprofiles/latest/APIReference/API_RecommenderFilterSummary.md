@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # RecommenderFilterSummary
-<a name="API_connect-customer-profiles_RecommenderFilterSummary"></a>
 
 Provides a summary of a recommender filter's configuration and current state.
 

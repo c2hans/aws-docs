@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_OperationFilter
 ---
 
 # OperationFilter
-<a name="API_OperationFilter"></a>
 
 A complex type that lets you select the operations that you want to list.
 

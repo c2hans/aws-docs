@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListExadbVmC
 ---
 
 # ListExadbVmClusters
-<a name="API_ListExadbVmClusters"></a>
 
 Returns information about the Exascale VM clusters owned by your AWS account.
 

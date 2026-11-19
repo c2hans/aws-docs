@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-vers
 ---
 
 # Delete a version of a guardrail
-<a name="guardrails-versions-delete"></a>
 
 To learn how to delete a version of a guardrail, select one of the tabs below and follow the steps indicated:
 

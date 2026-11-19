@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ba
 ---
 
 # BatchStartViewerSessionRevocationViewerSession
-<a name="API_BatchStartViewerSessionRevocationViewerSession"></a>
 
 A viewer session to revoke in the call to [BatchStartViewerSessionRevocation](API_BatchStartViewerSessionRevocation.md).
 

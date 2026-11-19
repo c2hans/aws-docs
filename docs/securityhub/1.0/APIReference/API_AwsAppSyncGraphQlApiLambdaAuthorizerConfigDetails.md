@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAppS
 ---
 
 # AwsAppSyncGraphQlApiLambdaAuthorizerConfigDetails
-<a name="API_AwsAppSyncGraphQlApiLambdaAuthorizerConfigDetails"></a>
 
  Specifies the authorization configuration for using an Lambda function with your AWS AppSync GraphQL API endpoint.
 

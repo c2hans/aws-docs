@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DeletePaymentConnector
-<a name="API_DeletePaymentConnector"></a>
 
 Deletes a payment connector.
 

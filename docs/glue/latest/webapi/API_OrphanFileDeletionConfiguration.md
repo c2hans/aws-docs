@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_OrphanFileDeletio
 ---
 
 # OrphanFileDeletionConfiguration
-<a name="API_OrphanFileDeletionConfiguration"></a>
 
 The configuration for an orphan file deletion optimizer.
 

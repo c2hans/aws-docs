@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-s
 ---
 
 # Cluster Node Setup
-<a name="sap-hana-pacemaker-sles-cluster-node-setup"></a>
 
 Establish cluster communication between nodes using Corosync and configure required authentication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetSegmentSnapshot
-<a name="API_connect-customer-profiles_GetSegmentSnapshot"></a>
 
 Retrieve the latest status of a segment snapshot.
 

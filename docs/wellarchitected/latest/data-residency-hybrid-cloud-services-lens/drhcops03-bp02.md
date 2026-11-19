@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCOPS03-BP02 Understand factors that determine your data replication strategy
-<a name="drhcops03-bp02"></a>
 
  Understand the factors that determine your data replication strategy, and implement replication within the boundaries of your data residency requirements to align with disaster recovery objectives, data integrity, and compliance mandates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/getting-started-ini
 ---
 
 # Elastic Disaster Recovery initialization and permissions
-<a name="getting-started-initializing"></a>
 
 In order to use AWS Elastic Disaster Recovery, the service must first be initialized for any AWS Region in which you plan to use Elastic Disaster Recovery.
 

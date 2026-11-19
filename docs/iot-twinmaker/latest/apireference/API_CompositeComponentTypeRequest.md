@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Co
 ---
 
 # CompositeComponentTypeRequest
-<a name="API_CompositeComponentTypeRequest"></a>
 
 An object that sets information about the composite component types of a component type.
 

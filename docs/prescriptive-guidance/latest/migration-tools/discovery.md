@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Discovery, planning, and recommendation migration tools
-<a name="discovery"></a>
 
 When planning a migration to the AWS Cloud, you can use AWS services and AWS Partner tools to accelerate the discovery, assessment, and planning process. These services can help you gather detailed information about your on-premises infrastructure, application dependencies, and utilization patterns. AWS Application Discovery Service and Migration Evaluator are AWS services that provide discovery capabilities at no charge. Many AWS Partners offer tools that provide additional discovery features that can meet the specific needs of your use case.
 

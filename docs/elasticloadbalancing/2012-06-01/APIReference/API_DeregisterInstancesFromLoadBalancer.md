@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # DeregisterInstancesFromLoadBalancer
-<a name="API_DeregisterInstancesFromLoadBalancer"></a>
 
 Deregisters the specified instances from the specified load balancer. After the instance is deregistered, it no longer receives traffic from the load balancer.
 

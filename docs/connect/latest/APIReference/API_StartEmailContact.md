@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StartEma
 ---
 
 # StartEmailContact
-<a name="API_StartEmailContact"></a>
 
 Creates an inbound email contact and initiates a flow to start the email contact for the customer. Response of this API provides the ContactId of the email contact created.
 

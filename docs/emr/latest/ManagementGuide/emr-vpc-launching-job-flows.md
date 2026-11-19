@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-vpc-launc
 ---
 
 # Launch clusters into a VPC with Amazon EMR
-<a name="emr-vpc-launching-job-flows"></a>
 
 After you have a subnet that is configured to host Amazon EMR clusters, launch the cluster in that subnet by specifying the associated subnet identifier when creating the cluster.
 

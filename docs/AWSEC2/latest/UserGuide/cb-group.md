@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cb-group.html
 ---
 
 # Create a Capacity Reservation Resource Group for UltraServer Capacity Blocks
-<a name="cb-group"></a>
 
 You can use AWS Resource Groups to create logical collections of UltraServer Capacity Blocks. After you create the Capacity Reservation Resource Group, you can add UltraServer Capacity Blocks that you own in your account. After you add the UltraServer Capacity Blocks, you can target instances launches to the Capacity Reservation Resource Group instead of the individual Capacity Blocks. Instances that target a Capacity Reservation Resource Group match with any UltraServer Capacity Blocks in the group that has matching attributes and available capacity. If the Capacity Reservation Resource Group does not have an UltraServer Capacity Block with matching attributes and available capacity, the instance launch fails.
 

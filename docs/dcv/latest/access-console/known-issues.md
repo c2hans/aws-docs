@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/known-issues.h
 ---
 
 # Known issues
-<a name="known-issues"></a>
 
 The Amazon DCV Access Console has the following known issues.
 

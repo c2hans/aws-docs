@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/administer-lustre
 ---
 
 # Administering file systems
-<a name="administer-lustre-file-systems"></a>
 
 FSx for Lustre provides a set of features that simplify the performance of your administrative tasks. These include the ability to take point-in-time backups, to manage file system storage quotas, to manage your storage and throughput capacity, to manage data compression, and to set maintenance windows for performing routine software patching of the system.
 

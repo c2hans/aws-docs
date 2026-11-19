@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Algori
 ---
 
 # AlgorithmSummary
-<a name="API_AlgorithmSummary"></a>
 
 Provides summary information about an algorithm.
 

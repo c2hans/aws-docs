@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaAuditRepor
 ---
 
 # Use audit reports with your private CA
-<a name="PcaAuditReport"></a>
 
 You can create an audit report to list all of the certificates that your private CA has issued or revoked. The report is saved in a new or existing S3 bucket that you specify on input.
 

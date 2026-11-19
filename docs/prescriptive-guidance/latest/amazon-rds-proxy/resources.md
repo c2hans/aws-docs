@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Resources
-<a name="resources"></a>
 + [Amazon RDS Proxy](https://aws.amazon.com/rds/proxy/)
 + [Connection pooling](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.howitworks.html#rds-proxy-connection-pooling)
 + [IdleClientTimeout](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-managing.html#rds-proxy-connection-pooling-tuning.idleclienttimeout)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SelfManagedConfigurationInput
-<a name="API_SelfManagedConfigurationInput"></a>
 
 Input configuration for a self-managed memory strategy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-d
 ---
 
 # Agent instructions
-<a name="about-aws-devops-agent-agent-instructions"></a>
 
 Use agent instructions to provide always-on guidance that AWS DevOps Agent applies to every session. A session is a single conversation or investigation with an agent.
 
@@ -63,6 +62,7 @@ The managed agents available for agent-specific instructions are:
 + **Incident UI** – Generation of an investigation's outputs, including those posted to other platforms.
 + **Evaluation** - Agent performance scoring and policy compliance checks.
 + **Grader** – Quality assessment of a completed investigation. This is the agent behind a Review, and its instructions also apply to automatic Reviews. For more information, see [Reviewing investigations](working-with-devops-agent-reviewing-investigations.md).
++ **Code Change Risk Analysis** – Code reviews of pull requests, merge requests, and code changes. For more information, see [Reviewing code changes](code-change-risk-analysis-reviewing-code-changes.md).
 + **Release testing** – Automated UI and API testing against deployed web applications and REST APIs.
 + **Learning** - Produces and refreshes managed knowledge by reviewing your agent space's past investigations, pipelines, and dependencies. It covers skills, monitor memories, and topology understanding.
 

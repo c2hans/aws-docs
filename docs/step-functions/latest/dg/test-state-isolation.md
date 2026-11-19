@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/test-state-isol
 ---
 
 # Testing state machines with TestState API
-<a name="test-state-isolation"></a>
 
 **Note**
 Starting November 2025, the TestState API includes enhancements that enable you to build automated unit tests for your AWS Step Functions workflows. These enhancements are available through AWS CLI and SDKs. Key enhancements added:

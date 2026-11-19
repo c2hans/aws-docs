@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Installing RHEL 9
-<a name="migrate-topic-install-rhel"></a>
 
 This section provides instructions to install RHEL 9 on a Dell chassis and on an SuperMicro chassis.
 

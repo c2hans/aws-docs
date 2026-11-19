@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Finding
 ---
 
 # FindingHistoryUpdateSource
-<a name="API_FindingHistoryUpdateSource"></a>
 
  Identifies the source of the finding change event.
 

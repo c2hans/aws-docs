@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # PutResolverQueryLogConfigPolicy
-<a name="API_route53resolver_PutResolverQueryLogConfigPolicy"></a>
 
 Specifies an AWS account that you want to share a query logging configuration with, the query logging configuration that you want to share, and the operations that you want the account to be able to perform on the configuration.
 

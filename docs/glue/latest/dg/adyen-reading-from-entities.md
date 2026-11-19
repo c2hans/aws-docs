@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/adyen-reading-from-entiti
 ---
 
 # Reading from Adyen entities
-<a name="adyen-reading-from-entities"></a>
 
 **Prerequisites**
 

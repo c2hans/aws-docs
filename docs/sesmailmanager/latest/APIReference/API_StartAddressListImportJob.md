@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_S
 ---
 
 # StartAddressListImportJob
-<a name="API_StartAddressListImportJob"></a>
 
 Starts an import job for an address list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # TargetGroupStickinessConfig
-<a name="API_TargetGroupStickinessConfig"></a>
 
 Information about the target group stickiness for a rule.
 

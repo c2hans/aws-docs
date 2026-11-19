@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/deploying-cross-region-d
 ---
 
 # Installation
-<a name="installation"></a>
 
 ## Ensure Instance Profile Permissions
 <a name="ensure-instance-profile-permissions"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # InferenceOperationConfiguration
-<a name="API_InferenceOperationConfiguration"></a>
 
 The configuration for a specific inference operation, including its request path and the models that the operation supports.
 

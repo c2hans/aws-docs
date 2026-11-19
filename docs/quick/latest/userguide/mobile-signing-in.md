@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/mobile-signing-in
 ---
 
 # Signing in
-<a name="mobile-signing-in"></a>
 
 Sign in to the mobile app with your organization's AWS Quick credentials. The app supports enterprise single sign-on (SSO), including IAM Identity Center federation.
 

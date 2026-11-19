@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/building-a-
 ---
 
 # FAQ
-<a name="faq"></a>
 
 *Provide a list of anticipated questions about this domain, and answers to these questions in the fields below.*
 

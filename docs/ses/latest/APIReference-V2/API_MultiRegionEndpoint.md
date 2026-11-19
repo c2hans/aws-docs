@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MultiRegi
 ---
 
 # MultiRegionEndpoint
-<a name="API_MultiRegionEndpoint"></a>
 
 An object that contains multi-region endpoint (global-endpoint) properties.
 

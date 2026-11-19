@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CustomVoca
 ---
 
 # CustomVocabularyExportSpecification
-<a name="API_CustomVocabularyExportSpecification"></a>
 
 Provides the parameters required for exporting a custom vocabulary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyVariableReport
-<a name="API_AutomatedReasoningPolicyVariableReport"></a>
 
 Provides detailed fidelity analysis for a specific policy variable, including which source document statements support it and how accurate the variable definition is.
 

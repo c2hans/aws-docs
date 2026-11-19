@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Easy to manage
-<a name="aurora-features-easy-to-manage"></a>
 
 **Topics**
 + [Quick create and connect](#aurora-features-quick-create)

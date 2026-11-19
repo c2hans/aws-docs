@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ModelPerformanceConfiguration
-<a name="API_agent-runtime_ModelPerformanceConfiguration"></a>
 
 The performance configuration for a model called with [InvokeFlow](API_agent-runtime_InvokeFlow.md).
 

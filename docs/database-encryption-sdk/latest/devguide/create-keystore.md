@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Create a key store
-<a name="create-keystore"></a>
 
 Before you can [create branch keys](create-branch-keys.md) or use an [AWS KMS Hierarchical keyring](use-hierarchical-keyring.md), you must create your key store, a Amazon DynamoDB table that manages and protects your branch keys.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc-route-ta
 ---
 
 # Create a route table for your VPC
-<a name="create-vpc-route-table"></a>
 
 Complete the following tasks to create and configure a custom route table for your VPC. By default your new route table contains local routes that allow communication within the VPC. You can add routes to direct network traffic to specific targets based on the destination IP address range.
 

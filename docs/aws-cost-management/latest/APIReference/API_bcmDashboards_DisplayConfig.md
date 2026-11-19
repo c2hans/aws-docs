@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DisplayConfig
-<a name="API_bcmDashboards_DisplayConfig"></a>
 
 Defines how the widget's data should be visualized, including chart type, color schemes, axis configurations, and other display preferences.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Reboot
 ---
 
 # RebootDBShardGroup
-<a name="API_RebootDBShardGroup"></a>
 
 You might need to reboot your DB shard group, usually for maintenance reasons. For example, if you make certain modifications, reboot the DB shard group for the changes to take effect.
 

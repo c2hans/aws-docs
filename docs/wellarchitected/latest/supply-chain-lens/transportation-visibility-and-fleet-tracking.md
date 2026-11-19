@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Transportation visibility and fleet tracking
-<a name="transportation-visibility-and-fleet-tracking"></a>
 
  Today's complex supply chains require end-to-end visibility to manage disruptions, optimize delivery scheduling, and meet customer expectations for real-time tracking information. Transportation visibility and fleet tracking services have become essential for logistics providers to maintain competitive advantage and service levels. AWS provides a comprehensive set of services enabling organizations to achieve real-time visibility, optimize last-mile delivery operations, and enhance customer experience.
 

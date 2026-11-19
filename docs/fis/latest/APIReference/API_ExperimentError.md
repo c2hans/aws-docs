@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentEr
 ---
 
 # ExperimentError
-<a name="API_ExperimentError"></a>
 
 Describes the error when an experiment has `failed`.
 

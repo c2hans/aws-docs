@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/prepare-input-data
 ---
 
 # Preparing input data for user segments
-<a name="prepare-input-data-user-segment"></a>
 
 Batch segment jobs use a solution version to make user segments based on data that you provide in an input JSON file. Before you can get user segments, you must prepare and upload your JSON file to an Amazon S3 bucket. We recommend that you create an output folder in your Amazon S3 bucket or use a separate output Amazon S3 bucket. You can then run multiple batch inference jobs using the same input data location.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-p
 ---
 
 # Next steps and resources
-<a name="next-steps"></a>
 
 To migrate your perimeter zone applications to the AWS Cloud, we recommend that you do the following:
 

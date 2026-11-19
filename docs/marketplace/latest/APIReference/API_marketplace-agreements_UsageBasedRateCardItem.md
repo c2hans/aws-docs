@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # UsageBasedRateCardItem
-<a name="API_marketplace-agreements_UsageBasedRateCardItem"></a>
 
 Within the pay-as-you-go model defined under `UsageBasedPricingTerm`, the `UsageBasedRateCardItem` defines an individual rate for a product dimension.
 

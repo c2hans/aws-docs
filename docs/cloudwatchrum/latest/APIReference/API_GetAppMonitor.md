@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Ge
 ---
 
 # GetAppMonitor
-<a name="API_GetAppMonitor"></a>
 
 Retrieves the complete configuration information for one app monitor.
 
@@ -71,6 +70,7 @@ Content-type: application/json
       "Id": "string",
       "LastModified": "string",
       "Name": "string",
+      "Platform": "string",
       "State": "string",
       "Tags": {
          "string" : "string"

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UltraS
 ---
 
 # UltraServerInfo
-<a name="API_UltraServerInfo"></a>
 
 Contains information about the UltraServer object.
 

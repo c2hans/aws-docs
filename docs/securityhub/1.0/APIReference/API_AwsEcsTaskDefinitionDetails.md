@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionDetails
-<a name="API_AwsEcsTaskDefinitionDetails"></a>
 
 Details about a task definition. A task definition describes the container and volume definitions of an Amazon Elastic Container Service task.
 

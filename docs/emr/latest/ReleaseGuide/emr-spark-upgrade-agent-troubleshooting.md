@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-upgrad
 ---
 
 # Troubleshooting and Q&A
-<a name="emr-spark-upgrade-agent-troubleshooting"></a>
 
 ## Troubleshooting
 <a name="spark-upgrade-agent-troubleshooting-common"></a>

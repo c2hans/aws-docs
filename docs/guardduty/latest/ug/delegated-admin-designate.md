@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/delegated-admin-desi
 ---
 
 # Designating a delegated GuardDuty administrator account
-<a name="delegated-admin-designate"></a>
 
 This section provides steps to designate a delegated administrator in the GuardDuty organization.
 

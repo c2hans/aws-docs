@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/setup-sms-mess
 ---
 
 # Set up SMS messaging in Connect Customer
-<a name="setup-sms-messaging"></a>
 
 You can enable SMS messaging on Connect Customer so your customers can text you from their mobile device. With Amazon Lex V2, you can automate responses to their questions, saving agents valuable time and effort.
 

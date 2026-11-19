@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Overview
-<a name="overview"></a>
 
 ## Why you need to rethink your observability strategy
 <a name="why-observability"></a>

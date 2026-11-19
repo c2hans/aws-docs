@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-personalized-email-ma
 ---
 
 # Managing email templates
-<a name="send-personalized-email-manage-templates"></a>
 
 In addition to [creating email templates](send-personalized-email-api.md), you can also use the Amazon SES v2 API to update or delete existing templates, to list all of your existing templates, or to view the contents of a template.
 

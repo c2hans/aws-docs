@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/route-53-d
 ---
 
 # Use `ViewBilling` with an AWS SDK or CLI
-<a name="route-53-domains_example_route-53-domains_ViewBilling_section"></a>
 
 The following code examples show how to use `ViewBilling`.
 

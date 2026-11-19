@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/vecto
 ---
 
 # .vectors.topKByEmbedding algorithm (deprecated)
-<a name="vectors-topKByEmbedding"></a>
 
 The `.vectors.topKByEmbedding` algorithm finds the `topK` nearest neighbors of an embedding based on the distance of their vector embeddings.
 

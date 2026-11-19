@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudTrail::Trail DataResource
-<a name="aws-properties-cloudtrail-trail-dataresource"></a>
 
 You can configure the `DataResource` in an `EventSelector` to log data events for the following three resource types:
 +  `AWS::DynamoDB::Table`

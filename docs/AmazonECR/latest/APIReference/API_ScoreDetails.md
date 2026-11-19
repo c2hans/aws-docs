@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ScoreD
 ---
 
 # ScoreDetails
-<a name="API_ScoreDetails"></a>
 
 Information about the Amazon Inspector score given to a finding.
 

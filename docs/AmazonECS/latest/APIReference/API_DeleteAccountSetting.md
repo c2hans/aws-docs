@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Delete
 ---
 
 # DeleteAccountSetting
-<a name="API_DeleteAccountSetting"></a>
 
 Disables an account setting for a specified user, role, or the root user for an account.
 

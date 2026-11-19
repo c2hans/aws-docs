@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GatewayRateLimitDetail
-<a name="API_GatewayRateLimitDetail"></a>
 
 Contains detailed information about a gateway rate limit, including its configuration and current status.
 

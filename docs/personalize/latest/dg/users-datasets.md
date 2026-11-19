@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/users-datasets.htm
 ---
 
 # Preparing user metadata for training
-<a name="users-datasets"></a>
 
  The user data that you can import into Amazon Personalize includes numerical data, such as user age, and categorical metadata, such as gender or loyalty membership. You import metadata about your users into an Amazon Personalize *Users dataset*.
 

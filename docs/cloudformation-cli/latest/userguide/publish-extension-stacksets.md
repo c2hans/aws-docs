@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/publ
 ---
 
 # Publishing extensions in multiple Regions using StackSets
-<a name="publish-extension-stacksets"></a>
 
 Because CloudFormation is a regional service, you must repeat each required step to publish your extension to the public registry in all Regions you would like your extension to be available in. However, with the use of CloudFormation resources, you can use AWS CloudFormation StackSets to publish your extensions globally in fewer steps.
 

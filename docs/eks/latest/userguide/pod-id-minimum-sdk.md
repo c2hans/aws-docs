@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/pod-id-minimum-sdk.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Use pod identity with the AWS SDK
-<a name="pod-id-minimum-sdk"></a>
 
 ## Using EKS Pod Identity credentials
 <a name="pod-id-using-creds"></a>

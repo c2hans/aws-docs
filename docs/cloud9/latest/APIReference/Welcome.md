@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS Cloud9 is a collection of tools that you can use to code, build, run, test, debug, and release software in the cloud.
 
@@ -27,4 +26,4 @@ For more information about AWS Cloud9, see the [AWS Cloud9 User Guide](https://d
 +  `UpdateEnvironment`: Changes the settings of an existing environment.
 +  `UpdateEnvironmentMembership`: Changes the settings of an existing environment member for an environment.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

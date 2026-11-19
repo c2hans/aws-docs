@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.DataType
 ---
 
 # Starting and viewing data type assessments (Legacy)
-<a name="CHAP_Tasks.DataTypeAssessments"></a>
 
 **Note**
 This section describes legacy content. We recommend that you use premigration assessment runs, described prior in [Specifying, starting, and viewing premigration assessment runs](CHAP_Tasks.PremigrationAssessmentRuns.md).

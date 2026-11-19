@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-ext
 ---
 
 # Extending the registration period for a domain
-<a name="domain-extend"></a>
 
 When you register a domain with Amazon Route 53 or you transfer domain registration to Route 53, Route 53 configures the domain to renew automatically. The automatic renewal period is typically one year, although the registries for some top-level domains (TLDs) have longer renewal periods.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvidia-gaming-dr
 ---
 
 # Install NVIDIA gaming drivers (G7, G7e, G6, G6e, G5, and G4dn instances)
-<a name="nvidia-gaming-driver"></a>
 
 These drivers are available to AWS customers only. By downloading them, you agree to use the downloaded software only to develop AMIs for use with the RTX PRO 4500 Blackwell, RTX PRO 6000 Blackwell, NVIDIA L4, NVIDIA L40S, NVIDIA A10G, or NVIDIA Tesla T4 hardware. You can use the GRID drivers to both create and use AMIs within the AWS environment. Upon installation of the software, you are bound by the terms of the [NVIDIA GRID Cloud End User License Agreement](https://aws-nvidia-license-agreement.s3.amazonaws.com/NvidiaGridAWSUserLicenseAgreement.DOCX).
 

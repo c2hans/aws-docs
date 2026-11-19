@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_L
 ---
 
 # ListExports
-<a name="API_ListExports"></a>
 
 Lists completed exports within the past 90 days, in reverse alphanumeric order of `ExportArn`.
 

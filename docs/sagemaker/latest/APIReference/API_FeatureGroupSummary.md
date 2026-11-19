@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Featur
 ---
 
 # FeatureGroupSummary
-<a name="API_FeatureGroupSummary"></a>
 
 The name, ARN, `CreationTime`, `FeatureGroup` values, `LastUpdatedTime` and `EnableOnlineStorage` status of a `FeatureGroup`.
 

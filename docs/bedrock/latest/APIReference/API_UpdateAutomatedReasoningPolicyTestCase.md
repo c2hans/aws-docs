@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_UpdateAu
 ---
 
 # UpdateAutomatedReasoningPolicyTestCase
-<a name="API_UpdateAutomatedReasoningPolicyTestCase"></a>
 
 Updates an existing Automated Reasoning policy test. You can modify the content, query, expected result, and confidence threshold.
 

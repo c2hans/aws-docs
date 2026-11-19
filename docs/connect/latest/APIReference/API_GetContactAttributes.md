@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_GetConta
 ---
 
 # GetContactAttributes
-<a name="API_GetContactAttributes"></a>
 
 Retrieves the contact attributes for the specified contact.
 

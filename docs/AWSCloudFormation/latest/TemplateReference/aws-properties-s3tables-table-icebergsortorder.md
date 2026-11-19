@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::Table IcebergSortOrder
-<a name="aws-properties-s3tables-table-icebergsortorder"></a>
 
 Defines the sort order for data within an Iceberg table. Sorting data can improve query performance by enabling more efficient data skipping.
 

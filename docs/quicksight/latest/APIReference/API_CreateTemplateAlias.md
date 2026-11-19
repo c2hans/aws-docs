@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateTemplateAlias
-<a name="API_CreateTemplateAlias"></a>
 
 Creates a template alias for a template.
 

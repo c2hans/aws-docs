@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # Template
-<a name="API_Template"></a>
 
 An Active Directory compatible certificate template. Connectors issue certificates against these templates based on the requestor's Active Directory group membership.
 

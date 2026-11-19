@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-oc
 ---
 
 # Point 5. Enable Capacity
-<a name="enable-capacity"></a>
 
 Enable Capacity creates organizational pull for changes by rewarding and recognizing key behaviors, redesigning roles to match the needs and ongoing requirements for new capabilities, and managing stakeholder resistance that might emerge in the process. Enable Capacity contains three subpoints:
 + [5.1 Provide rewards and recognition](#capacity-rewards)

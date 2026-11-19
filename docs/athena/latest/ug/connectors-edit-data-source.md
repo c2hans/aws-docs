@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-edit-data-so
 ---
 
 # Edit or delete a data source connection
-<a name="connectors-edit-data-source"></a>
 
 You can use the Athena console to update the description, host, port, database, and other properties for an existing connection. You can also delete the data sources from Athena console.
 

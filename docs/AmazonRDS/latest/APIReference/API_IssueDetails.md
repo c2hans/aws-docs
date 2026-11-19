@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_IssueD
 ---
 
 # IssueDetails
-<a name="API_IssueDetails"></a>
 
 The details of an issue with your DB instances, DB clusters, and DB parameter groups.
 

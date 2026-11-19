@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Administrative role
-<a name="administrative-role"></a>
 
 Landing Zone Accelerator on AWS uses an IAM role with administrative privileges to manage the orchestration of resources across the environment. We recommend you activate AWS Control Tower and use the `AWSControlTowerExecution` role. You can also leverage other existing cross-account access roles such as `OrganizationAccountAccessRole`, which is the default cross-account role that’s utilized by AWS Organizations.
 

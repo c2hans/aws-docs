@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/getting
 ---
 
 # Getting started with license asset groups
-<a name="getting-started-license-asset-groups"></a>
 
 This section helps you get started with license asset groups in AWS License Manager. You'll learn how to set up the prerequisites, configure source regions, and create your first license asset group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profiles-v
 ---
 
 # Viewing VPCs associated to an Amazon Route 53 Profile
-<a name="profiles-vpcs-editing"></a>
 
 Choose the console tab to view and edit Route 53 Profile to VPC associations. Choose the CLI tab to use AWS CLI to list Profile to VPC associations, or to get information about a specific association
 + [Console](#profiles-vpcs-editing-console)

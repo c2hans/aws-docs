@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Untag
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes a specific tag associated with an Amazon Comprehend resource.
 

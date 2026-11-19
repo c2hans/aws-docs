@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeMeta
 ---
 
 # DescribeMetadataModelChildren
-<a name="API_DescribeMetadataModelChildren"></a>
 
 Gets a list of child metadata models for the specified metadata model in the database hierarchy.
 

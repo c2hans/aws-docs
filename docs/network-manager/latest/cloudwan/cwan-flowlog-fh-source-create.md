@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cwan-flo
 ---
 
 # Create the AWS Cloud WAN Flow Logs source account role for Amazon Data Firehose
-<a name="cwan-flowlog-fh-source-create"></a>
 
 From the source account, create the source role in the AWS Identity and Access Management console.
 

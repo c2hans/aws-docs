@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-GetCA
 ---
 
 # GetCertificateAuthorityCertificate
-<a name="JavaApi-GetCACertificate"></a>
 
 The following Java sample shows how to use the [GetCertificateAuthorityCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_GetCertificateAuthorityCertificate.html) operation.
 

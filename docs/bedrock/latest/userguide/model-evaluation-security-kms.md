@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Required Key policy elements to encrypt your model evaluation job using AWS KMS
-<a name="model-evaluation-security-kms"></a>
 
 Every AWS KMS key must have exactly one key policy. The statements in the key policy determine who has permission to use the AWS KMS key and how they can use it. You can also use IAM policies and grants to control access to the AWS KMS key, but every AWS KMS key must have a key policy.
 

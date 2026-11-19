@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_St
 ---
 
 # StatusDetails
-<a name="API_StatusDetails"></a>
 
 Details about the status of a resource.
 

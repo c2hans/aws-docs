@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Describ
 ---
 
 # DescribeEngineVersions
-<a name="API_DescribeEngineVersions"></a>
 
 Returns a list of the available Redis OSS engine versions.
 

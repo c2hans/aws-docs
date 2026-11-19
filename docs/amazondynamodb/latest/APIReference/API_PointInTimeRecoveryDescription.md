@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_P
 ---
 
 # PointInTimeRecoveryDescription
-<a name="API_PointInTimeRecoveryDescription"></a>
 
 The description of the point in time settings applied to the table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_We
 ---
 
 # WebDataSourceConfiguration
-<a name="API_agent_WebDataSourceConfiguration"></a>
 
 The configuration details for the web data source.
 

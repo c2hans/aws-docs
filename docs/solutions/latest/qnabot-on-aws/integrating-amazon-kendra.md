@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/integrati
 ---
 
 # Integrating Amazon Kendra
-<a name="integrating-amazon-kendra"></a>
 
 **Amazon Kendra end of new-customer availability**
 Amazon Kendra will no longer be open to new customers starting on July 30, 2026. For QnABot deployments using Kendra as a fallback data source, we suggest Amazon Bedrock Knowledge Bases as an alternative. [Amazon Kendra availability change](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).

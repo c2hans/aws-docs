@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetReme
 ---
 
 # GetRemediationsV2
-<a name="API_GetRemediationsV2"></a>
 
 Retrieves remediation targets for the account, or for all member accounts if the caller is the delegated administrator. Results are sorted by priority, highest first, and are paginated. Use `TargetUid` or `MetadataUid` to scope the request to a single target or finding.
 

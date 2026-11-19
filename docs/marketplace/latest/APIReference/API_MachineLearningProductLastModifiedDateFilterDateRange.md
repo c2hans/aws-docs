@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Mach
 ---
 
 # MachineLearningProductLastModifiedDateFilterDateRange
-<a name="API_MachineLearningProductLastModifiedDateFilterDateRange"></a>
 
 A date range for filtering machine learning products by their last modified date.
 

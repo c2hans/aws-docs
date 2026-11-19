@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteOperat
 ---
 
 # DeleteOperation
-<a name="API_DeleteOperation"></a>
 
 An operation that deletes a construct from the mapping.
 

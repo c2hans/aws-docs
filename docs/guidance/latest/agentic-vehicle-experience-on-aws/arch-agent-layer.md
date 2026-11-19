@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # The AI agent layer
-<a name="arch-agent-layer"></a>
 
 AVX’s intelligence lives in an Amazon Bedrock AgentCore runtime. The runtime hosts a Strands Agents SDK supervisor agent that receives requests from all channels (voice, chat, web, Connect), selects the appropriate tools, orchestrates cross-system data retrieval, and synthesizes a grounded, persona-aware response.
 

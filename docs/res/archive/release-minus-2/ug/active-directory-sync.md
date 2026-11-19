@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/active-di
 ---
 
 # Active Directory Synchronization
-<a name="active-directory-sync"></a>
 
 ## Runtime Configuration
 <a name="active-directory-sync-runtime"></a>

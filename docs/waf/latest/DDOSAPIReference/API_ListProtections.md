@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_ListProt
 ---
 
 # ListProtections
-<a name="API_ListProtections"></a>
 
 Retrieves [Protection](API_Protection.md) objects for the account. You can retrieve all protections or you can provide filtering criteria and retrieve just the subset of protections that match the criteria.
 

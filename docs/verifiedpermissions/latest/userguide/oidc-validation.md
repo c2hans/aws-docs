@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/oid
 ---
 
 # Client and audience validation for OIDC providers
-<a name="oidc-validation"></a>
 
 When you add an identity source to a policy store, Verified Permissions has configuration options that validate the client ID and audience of ID and access tokens. This validation happens in the processing of `IsAuthorizedWithToken` and `BatchIsAuthorizedWithToken` API requests. The behavior differs between ID and access tokens, and between Amazon Cognito and OIDC identity sources. With Amazon Cognito user pools providers, Verified Permissions can validate the client ID in both ID and access tokens. With OIDC providers, Verified Permissions can validate the client ID in ID tokens, and the audience in access tokens.
 

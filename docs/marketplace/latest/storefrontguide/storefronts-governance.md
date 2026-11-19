@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/store
 ---
 
 # Governance
-<a name="storefronts-governance"></a>
 
 Control procurement approvals and product visibility with buyer groups, policies, and segments.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ack-troubleshooting
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Troubleshoot issues with ACK capabilities
-<a name="ack-troubleshooting"></a>
 
 **Note**
 EKS Capabilities are fully managed and run outside your cluster. You do not have direct access to controller namespaces. You can configure controller log delivery for visibility into controller behavior. See [Access EKS Capabilities controller logs](capabilities-controller-logs.md). Troubleshooting focuses on capability health, resource status, and IAM configuration.

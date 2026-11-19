@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Data
 ---
 
 # DatasetMetadata
-<a name="API_DatasetMetadata"></a>
 
  Summary information for an Amazon Rekognition Custom Labels dataset. For more information, see [ProjectDescription](API_ProjectDescription.md).
 

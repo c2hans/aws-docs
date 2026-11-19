@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-setup-
 ---
 
 # Setting up your environment for Amazon RDS Custom for SQL Server
-<a name="custom-setup-sqlserver"></a>
 
 Before you create and manage a DB instance for Amazon RDS Custom for SQL Server DB instance, make sure to perform the following tasks.
 

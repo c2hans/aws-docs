@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetStep
-<a name="API_BatchGetStep"></a>
 
 Retrieves multiple steps in a single request. This is a batch version of the `GetStep` API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/tenant-isolati
 ---
 
 # Tenant Isolation
-<a name="tenant-isolation"></a>
 
 When we think of multi-tenancy, we often want to isolate a user or application from other users or applications running on a shared infrastructure.
 

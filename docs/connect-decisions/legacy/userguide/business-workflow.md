@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/busin
 ---
 
 # Business workflow
-<a name="business-workflow"></a>
 
 Auto Replenishment provides the following workflow for you to manage your inventory replenishment process.
 

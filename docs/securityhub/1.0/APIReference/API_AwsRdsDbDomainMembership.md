@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsD
 ---
 
 # AwsRdsDbDomainMembership
-<a name="API_AwsRdsDbDomainMembership"></a>
 
 Information about an Active Directory domain membership record associated with the DB instance.
 

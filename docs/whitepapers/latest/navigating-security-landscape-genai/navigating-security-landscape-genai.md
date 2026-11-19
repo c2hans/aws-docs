@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
 ---
 
 # Navigating the security landscape of generative AI
-<a name="navigating-security-landscape-genai"></a>
 
 Publication date: **April 8, 2025** ([Document history](doc-history.md))
 

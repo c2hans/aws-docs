@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Resources
-<a name="resources-perf"></a>
 
  **Related documents:**
 +  [Addressing industry-specific supply chain challenges with AWS Supply Chain](https://aws.amazon.com/blogs/supply-chain/addressing-industry-specific-supply-chain-challenges-with-aws-supply-chain/)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Tenant
 ---
 
 # TenantDatabasePendingModifiedValues
-<a name="API_TenantDatabasePendingModifiedValues"></a>
 
 A response element in the `ModifyTenantDatabase` operation that describes changes that will be applied. Specific changes are identified by subelements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/timeseries-forecasti
 ---
 
 # Real-time forecasting
-<a name="timeseries-forecasting-realtime"></a>
 
 Real-time forecasting is useful when you need to generate predictions on-the-fly, such as for applications that require immediate responses or when forecasting for individual data points.
 

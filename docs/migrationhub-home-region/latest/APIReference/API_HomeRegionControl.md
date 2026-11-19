@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-home-region/latest/APIRefer
 ---
 
 # HomeRegionControl
-<a name="API_HomeRegionControl"></a>
 
 A home region control is an object that specifies the home region for an account, with some additional information. It contains a target (always of type `ACCOUNT`), an ID, and a time at which the home region was set.
 

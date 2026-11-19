@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PriceIncrease
-<a name="API_marketplace-agreements_PriceIncrease"></a>
 
 The price increase that is applied each time the agreement renews. Exactly one of the following fields is set.
 

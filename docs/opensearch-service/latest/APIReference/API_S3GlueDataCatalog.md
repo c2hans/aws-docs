@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # S3GlueDataCatalog
-<a name="API_S3GlueDataCatalog"></a>
 
 Information about the Amazon S3 Glue Data Catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_C
 ---
 
 # CreateAddressList
-<a name="API_CreateAddressList"></a>
 
 Creates a new address list.
 

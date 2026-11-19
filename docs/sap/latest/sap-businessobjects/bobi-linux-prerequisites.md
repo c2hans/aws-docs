@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-linu
 ---
 
 # Prerequisites
-<a name="bobi-linux-prerequisites"></a>
 
 Before you start implementing your SAP BOBI Platform systems, we recommend that you review these prerequisites to ensure there are minimal interruptions and delays.
 

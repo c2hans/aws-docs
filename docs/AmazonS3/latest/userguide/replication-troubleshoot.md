@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-tr
 ---
 
 # Troubleshooting replication
-<a name="replication-troubleshoot"></a>
 
 This section lists troubleshooting tips for Amazon S3 Replication and information about S3 Batch Replication errors.
 

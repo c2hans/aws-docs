@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeInferenceExperiment
-<a name="API_DescribeInferenceExperiment"></a>
 
 Returns details about an inference experiment.
 

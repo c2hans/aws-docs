@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/freshdesk-reading-from-en
 ---
 
 # Reading from Freshdesk entities
-<a name="freshdesk-reading-from-entities"></a>
 
 **Prerequisite**
 

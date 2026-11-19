@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialCategoricalDataColor
-<a name="API_GeospatialCategoricalDataColor"></a>
 
 The categorical data color for a single category.
 

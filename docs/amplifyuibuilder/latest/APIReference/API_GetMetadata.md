@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # GetMetadata
-<a name="API_GetMetadata"></a>
 
 Returns existing metadata for an Amplify app.
 

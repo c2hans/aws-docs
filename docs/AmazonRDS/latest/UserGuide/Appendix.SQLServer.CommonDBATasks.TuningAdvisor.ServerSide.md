@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Running a server-side trace on a SQL Server DB instance
-<a name="Appendix.SQLServer.CommonDBATasks.TuningAdvisor.ServerSide"></a>
 
 Writing scripts to create a server-side trace can be complex and is beyond the scope of this document. This section contains sample scripts that you can use as examples. As with a client-side trace, the goal is to create a workload file or trace table that you can open using the Database Engine Tuning Advisor.
 

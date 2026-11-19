@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_S
 ---
 
 # SendContactMethodVerification
-<a name="API_SendContactMethodVerification"></a>
 
 Sends a verification request to an email contact method to ensure it's owned by the requester. SMS contact methods don't need to be verified.
 

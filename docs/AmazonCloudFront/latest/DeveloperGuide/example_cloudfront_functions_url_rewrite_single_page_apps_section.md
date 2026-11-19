@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Add index.html to request URLs without a file name in a CloudFront Functions viewer request event
-<a name="example_cloudfront_functions_url_rewrite_single_page_apps_section"></a>
 
 The following code example shows how to add index.html to request URLs without a file name in a CloudFront Functions viewer request event.
 

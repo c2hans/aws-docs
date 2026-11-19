@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ColumnF
 ---
 
 # ColumnFilterConfiguration
-<a name="API_ColumnFilterConfiguration"></a>
 
 The column configuration of the asset filter.
 

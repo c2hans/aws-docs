@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Operatio
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported by Amazon Route 53:
 +  [ActivateKeySigningKey](API_ActivateKeySigningKey.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ManagedTh
 ---
 
 # ManagedThingSummary
-<a name="API_ManagedThingSummary"></a>
 
 Structure representing one managed thing.
 

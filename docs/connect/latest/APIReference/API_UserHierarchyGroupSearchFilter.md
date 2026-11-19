@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserHier
 ---
 
 # UserHierarchyGroupSearchFilter
-<a name="API_UserHierarchyGroupSearchFilter"></a>
 
 Filters to be applied to search results.
 

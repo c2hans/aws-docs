@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BudgetActionToAdd
-<a name="API_BudgetActionToAdd"></a>
 
 The budget action to add.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutAcc
 ---
 
 # PutAccountSetting
-<a name="API_PutAccountSetting"></a>
 
 Allows you to change the basic scan type version or registry policy scope.
 

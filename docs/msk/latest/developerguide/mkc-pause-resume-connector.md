@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/mkc-pause-resu
 ---
 
 # Pause and resume a connector
-<a name="mkc-pause-resume-connector"></a>
 
 You can pause a running connector to stop it from processing records, and resume it later. A paused connector keeps its configuration, its capacity settings, and its committed offsets. When you resume the connector, its tasks continue processing from the offsets that they last committed.
 

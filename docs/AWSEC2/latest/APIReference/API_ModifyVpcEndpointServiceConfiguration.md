@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpc
 ---
 
 # ModifyVpcEndpointServiceConfiguration
-<a name="API_ModifyVpcEndpointServiceConfiguration"></a>
 
 Modifies the attributes of the specified VPC endpoint service configuration.
 

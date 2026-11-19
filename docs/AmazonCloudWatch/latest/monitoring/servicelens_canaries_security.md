@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/servi
 ---
 
 # Security considerations for Synthetics canaries
-<a name="servicelens_canaries_security"></a>
 
 The following sections explain security issues that you should consider when creating and running canaries in Synthetics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_St
 ---
 
 # StatementData
-<a name="API_StatementData"></a>
 
 The SQL statement to run.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/silk/latest/developerguide/html5-element
 ---
 
 # HTML5 elements and attributes support in Amazon Silk
-<a name="html5-elements"></a>
 
 Amazon Silk supports many of the HTML5 elements and attributes. Though not intended to be comprehensive, the list below describes supported elements and attributes and notes Amazon Silk-specific implementation details, if applicable.
 

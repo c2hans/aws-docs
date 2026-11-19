@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cod
 ---
 
 # Deploying a configuration profile
-<a name="appconfig-code-samples-deploying"></a>
 
 Each of the following samples includes comments about the actions performed by the code. The samples in this section call the following APIs:
 + [CreateApplication](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_CreateApplication.html)

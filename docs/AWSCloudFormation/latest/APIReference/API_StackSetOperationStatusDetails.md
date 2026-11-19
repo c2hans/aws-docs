@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackSetOperationStatusDetails
-<a name="API_StackSetOperationStatusDetails"></a>
 
 Detailed information about the StackSet operation.
 

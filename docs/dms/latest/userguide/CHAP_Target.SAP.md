@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.SAP.htm
 ---
 
 # Using a SAP ASE database as a target for AWS Database Migration Service
-<a name="CHAP_Target.SAP"></a>
 
 You can migrate data to SAP Adaptive Server Enterprise (ASE)–formerly known as Sybase–databases using AWS DMS, either from any of the supported database sources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_L
 ---
 
 # ListEphemerides
-<a name="API_ListEphemerides"></a>
 
 List your existing ephemerides.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ReviewInformation
-<a name="API_ReviewInformation"></a>
 
 Information about the result of a document review request.
 

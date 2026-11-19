@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 13.4 – Choose location to minimize latency
-<a name="best-practice-13-4"></a>
 
 Deploy your SAP instances in Regions and Availability Zones that minimize latency for key business processes impacting end users, critical interfaces, and intra-system traffic.
 

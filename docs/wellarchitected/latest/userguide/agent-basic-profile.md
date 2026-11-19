@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-b
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Basic profiles
-<a name="agent-basic-profile"></a>
 
 A basic profile is the zero-setup way to start with AWS Well-Architected Agent. Unlike a standard agent profile, a basic profile requires no configuration. You don't choose AWS accounts, create IAM roles, select pillars, or set goals. AWS WA Agent infers everything from the account you're signed in to.
 

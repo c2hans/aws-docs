@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Troubleshoot
 ---
 
 # Persistent connection issues
-<a name="TroubleshootingConnections"></a>
 
 The following items must be verified while troubleshooting persistent connectivity issues with ElastiCache:
 

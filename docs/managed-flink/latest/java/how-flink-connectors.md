@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-flink-conn
 ---
 
 # Use Apache Flink connectors with Managed Service for Apache Flink
-<a name="how-flink-connectors"></a>
 
 Apache Flink connectors are software components that move data into and out of an Amazon Managed Service for Apache Flink application. Connectors are flexible integrations that let you read from files and directories. Connectors consist of complete modules for interacting with Amazon services and third-party systems.
 

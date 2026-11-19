@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/single-job-queue.
 ---
 
 # How to add the Single job queue widget to the AWS Batch dashboard
-<a name="single-job-queue"></a>
 
 The Single job queue widget displays detailed information about a single job queue.
 

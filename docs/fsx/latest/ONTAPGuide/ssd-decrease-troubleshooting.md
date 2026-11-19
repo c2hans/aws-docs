@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/ssd-decrease-troub
 ---
 
 # Troubleshooting SSD decrease operation issues
-<a name="ssd-decrease-troubleshooting"></a>
 
 This section describes common issues and resolutions related to SSD capacity decrease operations.
 

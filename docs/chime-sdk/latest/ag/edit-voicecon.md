@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/edit-voicecon.html
 ---
 
 # Editing Amazon Chime SDK Voice Connector settings
-<a name="edit-voicecon"></a>
 
 After you create an Amazon Chime SDK Voice Connector, you must edit the termination and origination settings that allow outbound and inbound calls. You can also configure a number of other settings, such as streaming to Kinesis and using emergency call routing. You use the Amazon Chime console to edit all settings.
 

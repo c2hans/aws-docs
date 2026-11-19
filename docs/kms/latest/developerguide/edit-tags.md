@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/edit-tags.html
 ---
 
 # Edit tags associated with a KMS key
-<a name="edit-tags"></a>
 
 Tags help identify and organize your AWS resources. You can edit the tags associated with your customer managed KMS keys in the AWS KMS console or by using the [TagResource](https://docs.aws.amazon.com/kms/latest/APIReference/API_TagResource.html) operation. You cannot edit the tags of an AWS managed key.
 

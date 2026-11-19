@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media-exchange-on-aws/s
 ---
 
 # Solution overview
-<a name="solution-overview"></a>
 
 *Publication date: June 2021*
 

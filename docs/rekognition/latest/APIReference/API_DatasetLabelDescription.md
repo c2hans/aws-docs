@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Data
 ---
 
 # DatasetLabelDescription
-<a name="API_DatasetLabelDescription"></a>
 
  Describes a dataset label. For more information, see [ListDatasetLabels](API_ListDatasetLabels.md).
 

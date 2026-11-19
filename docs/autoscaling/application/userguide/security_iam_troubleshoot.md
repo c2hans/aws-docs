@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/securi
 ---
 
 # Troubleshooting access to Application Auto Scaling
-<a name="security_iam_troubleshoot"></a>
 
 If you encounter `AccessDeniedException` or similar difficulties when working with Application Auto Scaling, consult the information in this section.
 

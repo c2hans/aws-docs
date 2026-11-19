@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_GetSigningPlatform
 ---
 
 # GetSigningPlatform
-<a name="API_GetSigningPlatform"></a>
 
 Returns information on a specific signing platform.
 

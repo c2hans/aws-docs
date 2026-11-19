@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_FilePat
 ---
 
 # FilePaths
-<a name="API_FilePaths"></a>
 
 Provides information about the file paths that were affected by the threat.
 

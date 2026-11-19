@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # SpanGuardrailAssessment
-<a name="API_amazon-q-connect_SpanGuardrailAssessment"></a>
 
 Result of a single guardrail assessment, covering either the input (customer/user message) or the output (LLM response) of a Bedrock Converse call.
 

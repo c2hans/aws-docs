@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Up
 ---
 
 # UpdateResiliencyGroup
-<a name="API_UpdateResiliencyGroup"></a>
 
 Updates the name of the specified resiliency group.
 

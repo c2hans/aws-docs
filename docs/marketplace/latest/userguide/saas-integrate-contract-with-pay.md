@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-integr
 ---
 
 # Integrating your SaaS contract-based product with AWS Marketplace
-<a name="saas-integrate-contract-with-pay"></a>
 
 **Integration requirements changing June 1, 2026 for new SaaS products**
 AWS Marketplace is introducing support for Concurrent Agreements, enabling multiple purchases of the same product on a single AWS account during the same agreement period. Starting June 1, 2026, all new SaaS products will be required to support updated integration requirements. [Review the new integration for Concurrent Agreements](https://catalog.workshops.aws/mpseller/en-US/saas/integration-for-concurrent-agreements).

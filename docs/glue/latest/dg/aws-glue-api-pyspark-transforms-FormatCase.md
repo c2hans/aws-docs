@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-pyspark-tran
 ---
 
 # FormatCase class
-<a name="aws-glue-api-pyspark-transforms-FormatCase"></a>
 
 The `FormatCase` transform changes each string in a column to the specified case type.
 

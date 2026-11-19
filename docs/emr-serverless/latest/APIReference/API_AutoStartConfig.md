@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_A
 ---
 
 # AutoStartConfig
-<a name="API_AutoStartConfig"></a>
 
 The configuration for an application to automatically start on job submission.
 

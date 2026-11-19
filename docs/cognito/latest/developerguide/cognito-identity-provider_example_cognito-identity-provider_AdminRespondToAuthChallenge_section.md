@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-id
 ---
 
 # Use `AdminRespondToAuthChallenge` with an AWS SDK or CLI
-<a name="cognito-identity-provider_example_cognito-identity-provider_AdminRespondToAuthChallenge_section"></a>
 
 The following code examples show how to use `AdminRespondToAuthChallenge`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Operati
 ---
 
 # Amazon Location Service Places V2
-<a name="API_Operations_Amazon_Location_Service_Places_V2"></a>
 
 The following actions are supported by Amazon Location Service Places V2:
 +  [Autocomplete](API_geoplaces_Autocomplete.md)

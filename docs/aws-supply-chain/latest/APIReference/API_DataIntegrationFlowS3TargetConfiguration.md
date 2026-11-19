@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationFlowS3TargetConfiguration
-<a name="API_DataIntegrationFlowS3TargetConfiguration"></a>
 
 The S3 DataIntegrationFlow target configuration parameters.
 

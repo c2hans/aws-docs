@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_Placem
 ---
 
 # PlacementConstraint
-<a name="API_PlacementConstraint"></a>
 
 An object representing a constraint on task placement.
 

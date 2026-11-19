@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/get-
 ---
 
 # Creating a simple application using the AWS SDK for Java 2.x
-<a name="get-started-tutorial"></a>
 
 This tutorial shows you how to use [Apache Maven](https://maven.apache.org/) to define dependencies for the SDK for Java 2.x and then write code that connects to Amazon S3 to upload a file.
 

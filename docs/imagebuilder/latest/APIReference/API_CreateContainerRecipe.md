@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cre
 ---
 
 # CreateContainerRecipe
-<a name="API_CreateContainerRecipe"></a>
 
 Creates a new container recipe. Container recipes define how images are configured, tested, and assessed.
 

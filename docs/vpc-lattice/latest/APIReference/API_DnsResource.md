@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_DnsR
 ---
 
 # DnsResource
-<a name="API_DnsResource"></a>
 
 The DNS name of the resource.
 

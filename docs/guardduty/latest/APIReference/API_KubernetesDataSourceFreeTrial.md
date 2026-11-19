@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Kubern
 ---
 
 # KubernetesDataSourceFreeTrial
-<a name="API_KubernetesDataSourceFreeTrial"></a>
 
 Provides details about the Kubernetes resources when it is enabled as a data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_P
 ---
 
 # Principal
-<a name="API_Principal"></a>
 
 Information about a principal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/required-perm
 ---
 
 # Required permissions for VM Import/Export
-<a name="required-permissions"></a>
 
 VM Import/Export requires certain permissions for your users, groups, and roles. Additionally, a service role is required to perform certain operations on your behalf.
 

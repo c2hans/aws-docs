@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/instance
 ---
 
 # Tags for Amazon ECS Managed Instances
-<a name="instance-details-tags-managed-instances"></a>
 
 Amazon ECS Managed Instances support a combination of custom tags and tags added by AWS that can be used for cost optimization. For more information about using tags for billing, see [Use tags for billing](ecs-using-tags.md#tag-resources-for-billing).
 

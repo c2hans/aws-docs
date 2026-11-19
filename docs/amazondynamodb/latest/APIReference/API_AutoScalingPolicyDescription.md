@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_A
 ---
 
 # AutoScalingPolicyDescription
-<a name="API_AutoScalingPolicyDescription"></a>
 
 Represents the properties of the scaling policy.
 

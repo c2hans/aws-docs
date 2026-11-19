@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/w
 ---
 
 # AWS WAF or AWS Shield?
-<a name="waf-or-shield"></a>
 
 **Understand the differences and pick the one that's right for you**
 

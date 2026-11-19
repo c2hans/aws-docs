@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Forensics on AWS
-<a name="forensics-on-aws"></a>
 
  Concepts from traditional on-premises forensics apply to AWS. The [Forensic investigation environment strategies in the AWS Cloud](https://aws.amazon.com/blogs/security/forensic-investigation-environment-strategies-in-the-aws-cloud/) blog post provides you with key information to start migrating their forensic expertise to AWS.
 

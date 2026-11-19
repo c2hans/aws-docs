@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/starting-
 ---
 
 # Start a job
-<a name="starting-a-job"></a>
 
 Submit a `StartJob` request with your job configuration. Specify the action you want to perform, provide your execution role ARN, and configure input and output options with your Amazon S3 bucket locations.
 

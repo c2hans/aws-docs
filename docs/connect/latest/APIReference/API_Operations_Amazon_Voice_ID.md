@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Operatio
 ---
 
 # Amazon Voice ID
-<a name="API_Operations_Amazon_Voice_ID"></a>
 
 The following actions are supported by Amazon Voice ID:
 +  [AssociateFraudster](API_connect-voice-id_AssociateFraudster.md)

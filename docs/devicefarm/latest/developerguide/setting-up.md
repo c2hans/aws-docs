@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/setting
 ---
 
 # Setting up AWS Device Farm
-<a name="setting-up"></a>
 
 Before you use Device Farm for the first time, you must complete the following tasks:
 

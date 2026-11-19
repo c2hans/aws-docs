@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel09-b
 ---
 
 # REL09-BP04 Perform periodic recovery of the data to verify backup integrity and processes
-<a name="rel09-bp04"></a>
 
  Backups can be incomplete, corrupted, or slower to restore than your recovery targets allow, and you may only find out when you try to restore the backup. Regular recovery testing verifies you can restore a working system from backups within your recovery objectives.
 

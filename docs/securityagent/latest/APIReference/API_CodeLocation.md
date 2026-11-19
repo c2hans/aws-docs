@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Co
 ---
 
 # CodeLocation
-<a name="API_CodeLocation"></a>
 
 Represents a location in source code associated with a security finding.
 

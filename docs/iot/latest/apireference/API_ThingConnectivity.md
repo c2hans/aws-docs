@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ThingConnect
 ---
 
 # ThingConnectivity
-<a name="API_ThingConnectivity"></a>
 
 The connectivity status of the thing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_LifecycleTra
 ---
 
 # LifecycleTransitionReason
-<a name="API_LifecycleTransitionReason"></a>
 
 Describes why a resource lifecycle state changed.
 

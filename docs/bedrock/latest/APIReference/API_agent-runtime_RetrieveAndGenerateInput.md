@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrieveAndGenerateInput
-<a name="API_agent-runtime_RetrieveAndGenerateInput"></a>
 
 Contains the query made to the knowledge base.
 

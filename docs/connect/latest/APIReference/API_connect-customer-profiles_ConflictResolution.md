@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ConflictResolution
-<a name="API_connect-customer-profiles_ConflictResolution"></a>
 
 How the auto-merging process should resolve conflicts between different profiles.
 

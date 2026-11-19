@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ReasoningTextBlock
-<a name="API_runtime_ReasoningTextBlock"></a>
 
 Contains the reasoning that the model used to return the output.
 

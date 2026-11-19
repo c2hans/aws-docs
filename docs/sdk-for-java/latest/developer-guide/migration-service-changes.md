@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Service-specific changes
-<a name="migration-service-changes"></a>
 
 ## Amazon S3 changes
 <a name="s3-operations-name"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Operators
-<a name="functions-jsonata-operators"></a>
 
 The following tables list the operators that you can use in an expression.
 

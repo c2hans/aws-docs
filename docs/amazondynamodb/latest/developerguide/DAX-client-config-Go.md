@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # Default client configuration for Go
-<a name="DAX-client-config-Go"></a>
 
 This guide will walk you through the configuration options that allow you to fine-tune your DAX client's performance, connection management, and logging behavior. By understanding the default settings and how to customize them, you can optimize your Go application's interaction with DAX.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-lite-wit
 ---
 
 # Tutorial: Secure AWS IoT Greengrass Nucleus Lite with Trusted Platform Module (TPM)
-<a name="gg-lite-with-tpm-tutorial"></a>
 
 This tutorial explains how to enable and configure Trusted Platform Module (TPM) support for AWS IoT Greengrass nucleus lite. TPM provides hardware-based root of trust for secure key storage. This security feature protects cryptographic operations and sensitive credentials, enhancing device security and integrity.
 

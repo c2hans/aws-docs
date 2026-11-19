@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/iceberg-writes-sql-sy
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # SQL commands
-<a name="iceberg-writes-sql-syntax"></a>
 
 Apache Iceberg tables in Amazon Redshift provide a powerful way to manage large analytic datasets in your data lake. These tables support ACID transactions, schema evolution, and time travel capabilities while maintaining high performance for analytics workloads. Using Apache Iceberg tables, you can efficiently organize and partition your data, control file formats and compression, and seamlessly integrate with other AWS services.
 

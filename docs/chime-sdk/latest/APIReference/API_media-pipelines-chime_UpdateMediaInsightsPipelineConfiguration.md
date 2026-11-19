@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # UpdateMediaInsightsPipelineConfiguration
-<a name="API_media-pipelines-chime_UpdateMediaInsightsPipelineConfiguration"></a>
 
 Updates the media insights pipeline's configuration settings.
 

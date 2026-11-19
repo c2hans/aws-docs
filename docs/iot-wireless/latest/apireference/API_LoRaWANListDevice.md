@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANListDevice
-<a name="API_LoRaWANListDevice"></a>
 
 LoRaWAN object for list functions.
 

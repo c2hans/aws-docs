@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/mgn-connector-main.html
 ---
 
 # Manage your MGN Connectors
-<a name="mgn-connector-main"></a>
 
 The MGN Connectors page lists all the installed MGN connectors, providing a quick overview of your MGN connectors and their status and allowing you to quickly perform actions.
 

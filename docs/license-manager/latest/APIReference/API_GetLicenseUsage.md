@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # GetLicenseUsage
-<a name="API_GetLicenseUsage"></a>
 
 Gets detailed information about the usage of the specified license.
 

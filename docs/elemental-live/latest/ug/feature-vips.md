@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/feature-vips.ht
 ---
 
 # Virtual input switching
-<a name="feature-vips"></a>
 
 With the virtual input switching feature, you can set up a POIS to control switching from one AWS Elemental Live input to another. You can also switch inputs using dynamic input switching using the REST API. For more information, see [Dynamic input switching](dynamic-content-switching.md).
 

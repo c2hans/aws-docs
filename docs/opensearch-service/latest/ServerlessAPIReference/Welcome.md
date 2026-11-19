@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Use the Amazon OpenSearch Serverless API to create, configure, and manage OpenSearch Serverless collections and security policies.
 
@@ -11,4 +10,4 @@ OpenSearch Serverless is an on-demand, pre-provisioned serverless configuration 
 
 To learn more about OpenSearch Serverless, see [What is Amazon OpenSearch Serverless?](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-overview.html)
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Server
 ---
 
 # ServerlessV2PlatformVersionInfo
-<a name="API_ServerlessV2PlatformVersionInfo"></a>
 
 This data type is used as a response element in the action `DescribeServerlessV2PlatformVersions`.
 

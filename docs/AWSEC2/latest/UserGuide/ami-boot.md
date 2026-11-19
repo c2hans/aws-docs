@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-boot.html
 ---
 
 # Instance launch behavior with Amazon EC2 boot modes
-<a name="ami-boot"></a>
 
 When a computer boots, the first software that it runs is responsible for initializing the platform and providing an interface for the operating system to perform platform-specific operations.
 

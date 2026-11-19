@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_S
 ---
 
 # Subdomain
-<a name="API_Subdomain"></a>
 
 Describes a Lightsail subdomain. A subdomain is the name that you choose, such as `mysite` or `blog.mysite`. Its web address is the subdomain followed by `amazonlightsail.com`, such as `blog.mysite.amazonlightsail.com`. You can associate a subdomain with a Lightsail resource to make the resource reachable at the web address.
 
@@ -32,7 +31,7 @@ Required: No
  ** children **   <a name="Lightsail-Type-Subdomain-children"></a>
 An array of objects that describe the nested subdomains of the subdomain.
 This parameter is returned only by the `GetSubdomains` action when you don't specify a subdomain.
-Type: Array of [Subdomain](#API_Subdomain) objects
+Type: Array of [Subdomain](API_Subdomain.md) objects
 Required: No
 
  ** createdAt **   <a name="Lightsail-Type-Subdomain-createdAt"></a>

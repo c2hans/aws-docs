@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/web-
 ---
 
 # Web interface
-<a name="web-interface"></a>
 
  This solution deploys a web interface that allows you to upload, browse, search video and image files, extract metadata, and search and discover content metadata. The web interface leverages Amazon Cognito for user authentication and is powered by web assets [hosted](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html) in the web Amazon S3 bucket. Amazon CloudFront provides public access to the solution’s website bucket contents. An [Amazon API Gateway RESTful API](https://docs.aws.amazon.com/apigateway/api-reference/) is used for searching results stored in the Amazon OpenSearch Service cluster, and AWS IoT Core is used as a publish/subscribe message broker to periodically update workflow progress to connected web clients.
 

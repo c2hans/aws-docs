@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Rerankin
 ---
 
 # RerankingMetadataSelectiveModeConfiguration
-<a name="API_RerankingMetadataSelectiveModeConfiguration"></a>
 
 Configuration for selectively including or excluding metadata fields during the reranking process. This allows you to control which metadata attributes are considered when reordering search results.
 

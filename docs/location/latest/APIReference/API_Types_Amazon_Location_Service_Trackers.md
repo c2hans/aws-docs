@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Types_A
 ---
 
 # Amazon Location Service Trackers
-<a name="API_Types_Amazon_Location_Service_Trackers"></a>
 
 The following data types are supported by Amazon Location Service Trackers:
 +  [BatchDeleteDevicePositionHistoryError](API_WaypointTracking_BatchDeleteDevicePositionHistoryError.md)

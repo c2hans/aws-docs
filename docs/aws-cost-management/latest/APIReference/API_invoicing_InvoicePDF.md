@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InvoicePDF
-<a name="API_invoicing_InvoicePDF"></a>
 
  Invoice document data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/set-up-ib-
 ---
 
 # Get set up to build custom images with Image Builder
-<a name="set-up-ib-env"></a>
 
 Before you build images with EC2 Image Builder, verify that you've met the following prerequisites to create an image pipeline. Unless specifically stated otherwise, these prerequisites are required for all types of pipelines.
 

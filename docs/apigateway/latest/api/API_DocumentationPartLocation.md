@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DocumentationP
 ---
 
 # DocumentationPartLocation
-<a name="API_DocumentationPartLocation"></a>
 
 Specifies the target API entity to which the documentation applies.
 

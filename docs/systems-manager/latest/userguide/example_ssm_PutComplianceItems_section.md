@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `PutComplianceItems` with a CLI
-<a name="example_ssm_PutComplianceItems_section"></a>
 
 The following code examples show how to use `PutComplianceItems`.
 

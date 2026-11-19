@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # Amazon S3 source action reference
-<a name="action-reference-S3"></a>
 
 A source action triggers the pipeline when a new object is uploaded to the configured bucket and object key.
 

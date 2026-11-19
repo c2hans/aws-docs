@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateColumnStati
 ---
 
 # UpdateColumnStatisticsTaskSettings
-<a name="API_UpdateColumnStatisticsTaskSettings"></a>
 
 Updates settings for a column statistics task.
 

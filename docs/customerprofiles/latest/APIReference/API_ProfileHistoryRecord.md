@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ProfileHistoryRecord
-<a name="API_connect-customer-profiles_ProfileHistoryRecord"></a>
 
 Contains profile history record metadata.
 

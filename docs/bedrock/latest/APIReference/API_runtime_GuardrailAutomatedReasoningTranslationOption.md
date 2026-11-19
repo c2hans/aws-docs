@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailAutomatedReasoningTranslationOption
-<a name="API_runtime_GuardrailAutomatedReasoningTranslationOption"></a>
 
 Represents one possible logical interpretation of ambiguous input content.
 

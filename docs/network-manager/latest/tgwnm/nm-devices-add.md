@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-devices-
 ---
 
 # Add a device using AWS Network Manager
-<a name="nm-devices-add"></a>
 
 Create a device to represent a physical or virtual appliance.
 

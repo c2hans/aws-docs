@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/group-base
 ---
 
 # User group multi-tenancy best practices
-<a name="group-based-multi-tenancy"></a>
 
 Group-based multi-tenancy works best when your architecture requires Amazon Cognito user pools with identity pools.
 

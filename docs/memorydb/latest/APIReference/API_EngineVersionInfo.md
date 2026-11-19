@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_EngineV
 ---
 
 # EngineVersionInfo
-<a name="API_EngineVersionInfo"></a>
 
 Provides details of the Redis OSS engine version
 

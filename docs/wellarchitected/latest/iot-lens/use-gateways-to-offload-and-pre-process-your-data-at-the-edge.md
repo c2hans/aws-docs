@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/use-gate
 ---
 
 # Use gateways to offload and pre-process your data at the edge
-<a name="use-gateways-to-offload-and-pre-process-your-data-at-the-edge"></a>
 
  The decision to connect a device directly to the cloud or via a gateway will depend on a variety of factors, including the specific requirements of the application and the characteristics of the sensor and network.   It may be more power-efficient to use a gateway to receive and preprocess data locally, reducing the need for higher power radios on the device, reducing long-haul communications traffic and extending battery life.
 

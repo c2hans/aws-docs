@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Replic
 ---
 
 # ReplicationConfiguration
-<a name="API_ReplicationConfiguration"></a>
 
 The replication configuration for a registry.
 

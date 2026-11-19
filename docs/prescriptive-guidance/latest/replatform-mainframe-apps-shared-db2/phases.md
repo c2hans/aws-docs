@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # The transformation process
-<a name="phases"></a>
 
 Mainframe modernization is a critical step for organizations that want to leverage the benefits of cloud computing while preserving their valuable legacy applications. This transformation presents significant challenges. Mainframe applications are typically highly coupled and have intricate interdependencies that have evolved over decades of operation. This complexity necessitates a careful and methodical approach to modernization.
 

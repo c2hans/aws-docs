@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # SonarQube Token
-<a name="mes-partner-SonarQubeToken"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c57b3"></a>

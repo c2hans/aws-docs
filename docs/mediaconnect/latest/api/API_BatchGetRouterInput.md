@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BatchGetRout
 ---
 
 # BatchGetRouterInput
-<a name="API_BatchGetRouterInput"></a>
 
 Retrieves information about multiple router inputs in AWS Elemental MediaConnect.
 

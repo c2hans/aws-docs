@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RistRouterIn
 ---
 
 # RistRouterInputConfiguration
-<a name="API_RistRouterInputConfiguration"></a>
 
 The configuration settings for a router input using the RIST (Reliable Internet Stream Transport) protocol, including the port and recovery latency.
 

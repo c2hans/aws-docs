@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Centralized inbound inspection
-<a name="centralized-inbound-inspection"></a>
 
 Internet-facing applications, by their nature, have a larger attack surface and are exposed to categories of threats most other types of applications don’t have to face. Having the necessary protection from attacks on these types of applications, and minimizing the impact surface area, are a core part of any security strategy.
 

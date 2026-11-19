@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-
 ---
 
 # Set multiple properties at once using a single SET clause
-<a name="best-practices-content-0"></a>
 
  Instead of using multiple SET clauses to set individual properties, use a map to set multiple properties for an entity at once.
 

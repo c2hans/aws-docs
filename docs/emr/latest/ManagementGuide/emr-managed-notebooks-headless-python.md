@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-n
 ---
 
 # Python samples for an EMR notebook
-<a name="emr-managed-notebooks-headless-python"></a>
 
 This topic contains a sample command file. The code example is a Python file called `demo.py`. It shows the notebook execution APIs.
 

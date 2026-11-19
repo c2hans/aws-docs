@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workmail/latest/APIReference/API_message
 ---
 
 # RawMessageContent
-<a name="API_messageflow_RawMessageContent"></a>
 
 Provides the MIME content of the updated email message as an S3 object. All MIME content must meet the following criteria:
 + Each part of a multipart MIME message must be formatted properly.

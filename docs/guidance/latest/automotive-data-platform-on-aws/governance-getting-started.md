@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Getting started
-<a name="governance-getting-started"></a>
 
 This section describes the reference implementation shape for the Automotive Data Governance pattern. A concrete implementation would begin with the foundation governance stack (see [Platform foundation](platform-foundation.md)) and extend it with the multi-region components described here as the compliance requirements demand.
 

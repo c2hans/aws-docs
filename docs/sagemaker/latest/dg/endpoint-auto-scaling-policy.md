@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/endpoint-auto-scalin
 ---
 
 # Auto scaling policy overview
-<a name="endpoint-auto-scaling-policy"></a>
 
 To use auto scaling, you define a scaling policy that adds and removes the number of instances for your production variant in response to actual workloads.
 

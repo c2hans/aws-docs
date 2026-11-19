@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ota
 ---
 
 # OtaaV1\_1
-<a name="API_OtaaV1_1"></a>
 
 OTAA device object for v1.1
 

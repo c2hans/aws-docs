@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Step 9: Configure Wave Planning Manager
-<a name="configure-wave-planning-manager"></a>
 
 Wave Planning Manager (WPM) is an optional module that helps you organize and schedule your migration workloads in an optimal way. If you enabled it in [Launch the stack](launch-the-stack.md), review the following concepts.
 

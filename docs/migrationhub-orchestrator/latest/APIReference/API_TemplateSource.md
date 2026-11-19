@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIRefe
 ---
 
 # TemplateSource
-<a name="API_TemplateSource"></a>
 
 The migration workflow template used as the source for the new template.
 

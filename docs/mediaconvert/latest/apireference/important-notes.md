@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/importa
 ---
 
 # Important Notes
-<a name="important-notes"></a>
 
 ## Using the AWS CLI
 <a name="using-the-cli"></a>

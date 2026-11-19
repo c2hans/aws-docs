@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/access-vid
 ---
 
 # Access video analytics
-<a name="access-video-analytics"></a>
 
 This section contains information about how to access video analytics using the parser library and Amazon CloudWatch.
 

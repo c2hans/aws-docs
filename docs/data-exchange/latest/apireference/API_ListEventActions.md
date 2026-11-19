@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Li
 ---
 
 # ListEventActions
-<a name="API_ListEventActions"></a>
 
 This operation lists your event actions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Transf
 ---
 
 # TransformInput
-<a name="API_TransformInput"></a>
 
 Describes the input source of a transform job and the way the transform job consumes it.
 

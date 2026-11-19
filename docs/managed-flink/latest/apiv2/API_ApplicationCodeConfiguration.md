@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Applicati
 ---
 
 # ApplicationCodeConfiguration
-<a name="API_ApplicationCodeConfiguration"></a>
 
 Describes code configuration for an application.
 

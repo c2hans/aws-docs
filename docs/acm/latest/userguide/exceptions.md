@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/exceptions.html
 ---
 
 # Handling exceptions
-<a name="exceptions"></a>
 
 An AWS Certificate Manager command might fail for several reasons. For information about each exception, see the table below.
 

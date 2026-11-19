@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetProfileUpdateTask
-<a name="API_account_GetProfileUpdateTask"></a>
 
 Retrieves information about a specific profile update task.
 

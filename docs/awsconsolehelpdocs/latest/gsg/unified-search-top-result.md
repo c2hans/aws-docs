@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/unified-se
 ---
 
 # Viewing features of a service in the AWS Management Console
-<a name="unified-search-top-result"></a>
 
 You can view features of a service from within your search results.
 

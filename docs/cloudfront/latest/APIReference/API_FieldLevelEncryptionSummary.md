@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Field
 ---
 
 # FieldLevelEncryptionSummary
-<a name="API_FieldLevelEncryptionSummary"></a>
 
 A summary of a field-level encryption item.
 

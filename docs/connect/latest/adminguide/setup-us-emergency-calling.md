@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/setup-us-emerg
 ---
 
 # Set up US emergency calling in Connect Customer
-<a name="setup-us-emergency-calling"></a>
 
 By default 911 is enabled for all users in the following North America Regions: US East (N. Virginia), US West (Oregon), and AWS GovCloud (US-West). If a user calls 911, the call is routed through to emergency services.
 

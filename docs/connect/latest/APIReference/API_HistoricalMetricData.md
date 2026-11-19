@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Historic
 ---
 
 # HistoricalMetricData
-<a name="API_HistoricalMetricData"></a>
 
 Contains the data for a historical metric.
 

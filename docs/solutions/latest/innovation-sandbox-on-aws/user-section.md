@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # User Guide
-<a name="user-section"></a>
 
 This section contains all the information regarding actions available to an Innovation Sandbox user. After you log in to the web UI, the home page displays.
 

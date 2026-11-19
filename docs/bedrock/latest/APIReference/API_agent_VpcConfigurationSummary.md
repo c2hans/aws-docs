@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Vp
 ---
 
 # VpcConfigurationSummary
-<a name="API_agent_VpcConfigurationSummary"></a>
 
 A summary of a VPC configuration returned by `ListVpcConfigurations`.
 

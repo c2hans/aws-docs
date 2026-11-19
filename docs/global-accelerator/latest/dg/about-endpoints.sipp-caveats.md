@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/about-endpo
 ---
 
 # Requirements for endpoints with client IP address preservation
-<a name="about-endpoints.sipp-caveats"></a>
 
 There are specific requirements for endpoint types that you can use with client IP address preservation. You can use this feature with endpoints that are Application Load Balancers, Network Load Balancers with security groups, and Amazon EC2 instances, subject to the additional requirements described in this section. Endpoints on custom routing accelerators always have the client IP address preserved.
 

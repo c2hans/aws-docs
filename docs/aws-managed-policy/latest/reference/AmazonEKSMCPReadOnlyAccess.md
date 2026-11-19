@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEKSMCPReadOnlyAccess
-<a name="AmazonEKSMCPReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to the Amazon EKS MCP service. This policy grants permissions to use only read-only tools in the EKS MCP service meant for observability, troubleshooting, retrieving EKS resource information, and getting EKS-optimized suggestions.
 

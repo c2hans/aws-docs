@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSetupManageJITNAResourcesExecutionPolicy
-<a name="AWSQuickSetupManageJITNAResourcesExecutionPolicy"></a>
 
 **Description**: This policy provides permissions to enable just-in-time node access for Systems Manager.
 

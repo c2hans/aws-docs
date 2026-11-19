@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForAWSTransform
-<a name="AWSServiceRoleForAWSTransform"></a>
 
 **Description**: This Service-Linked Role provides AWS Transform with the ability to provide usage information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/tienda.htm
 ---
 
 # .tienda
-<a name="tienda"></a>
 
 Used by retail businesses that want to connect with Spanish-speaking consumers.
 

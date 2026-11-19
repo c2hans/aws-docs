@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon Location Service Maps
-<a name="list_geo-maps"></a>
 
 Amazon Location Service Maps (service prefix: `geo-maps`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

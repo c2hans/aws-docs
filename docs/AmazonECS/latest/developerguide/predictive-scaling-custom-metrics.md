@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/predicti
 ---
 
 # Advanced predictive scaling policy using custom metrics for Amazon ECS
-<a name="predictive-scaling-custom-metrics"></a>
 
 You can use predefined or custom metrics in a predictive scaling policy. Custom metrics are useful when the predefined metrics, such as CPU, memory, etc) aren't enough to sufficiently describe your application load.
 

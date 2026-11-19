@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate SQL Server to AWS using distributed availability groups
-<a name="migrate-sql-server-to-aws-using-distributed-availability-groups"></a>
 
 *Praveen Marthala, Amazon Web Services*
 

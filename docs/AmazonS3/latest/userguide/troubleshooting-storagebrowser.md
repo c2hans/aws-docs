@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshootin
 ---
 
 # Troubleshooting Storage Browser for S3
-<a name="troubleshooting-storagebrowser"></a>
 
 If you’re experiencing issues with Storage Browser for S3, make sure to review the following troubleshooting tips:
 + Avoid trying to use the same token (`idToken` or `accessToken`) for multiple requests. Tokens can't be reused. This will result in a request failure.

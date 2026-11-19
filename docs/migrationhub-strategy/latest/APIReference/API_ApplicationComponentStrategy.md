@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # ApplicationComponentStrategy
-<a name="API_ApplicationComponentStrategy"></a>
 
  Contains information about a strategy recommendation for an application component.
 

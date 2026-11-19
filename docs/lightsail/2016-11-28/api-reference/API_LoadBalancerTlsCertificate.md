@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_L
 ---
 
 # LoadBalancerTlsCertificate
-<a name="API_LoadBalancerTlsCertificate"></a>
 
 Describes a load balancer SSL/TLS certificate.
 

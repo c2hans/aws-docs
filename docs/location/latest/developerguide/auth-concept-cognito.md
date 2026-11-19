@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/auth-conc
 ---
 
 # Amazon Cognito concepts
-<a name="auth-concept-cognito"></a>
 
 Amazon Cognito provides temporary AWS credentials to your application users, enabling them to call Amazon Location Service APIs without requiring IAM user accounts. Amazon Cognito is particularly useful when you need access to all Amazon Location Service APIs (including Geofences and Trackers) or want to combine multiple authentication providers.
 

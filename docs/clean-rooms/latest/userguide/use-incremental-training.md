@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/use-increme
 ---
 
 # Using incremental training in AWS Clean Rooms ML
-<a name="use-incremental-training"></a>
 
 Prerequisites:
 + An AWS account with access to AWS Clean Rooms

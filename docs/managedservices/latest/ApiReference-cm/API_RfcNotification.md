@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # RfcNotification
-<a name="API_RfcNotification"></a>
 
 The RFC notification structure.
 

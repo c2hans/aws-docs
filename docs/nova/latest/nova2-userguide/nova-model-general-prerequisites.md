@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-model-g
 ---
 
 # General prerequisites
-<a name="nova-model-general-prerequisites"></a>
 
 The customization process involves several key stages including model training, evaluation, and deployment for inference, each requiring specific resources and configurations. Before beginning your Amazon Nova model customization on SageMaker, ensure you have the following general prerequisites.
 + An AWS account. If you don't have an AWS account, follow [these instructions](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-set-up.html#sign-up-for-aws) to sign up for one.

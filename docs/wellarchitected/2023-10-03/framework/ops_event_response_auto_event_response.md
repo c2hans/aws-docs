@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS10-BP07 Automate responses to events
-<a name="ops_event_response_auto_event_response"></a>
 
  Automate responses to events to reduce errors caused by manual processes, and to ensure prompt and consistent responses.
 

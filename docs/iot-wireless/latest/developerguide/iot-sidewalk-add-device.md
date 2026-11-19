@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-s
 ---
 
 # Add your device profile and Sidewalk end device
-<a name="iot-sidewalk-add-device"></a>
 
 This section shows how you can create a device profile. It also shows how you can use the AWS IoT console and the AWS CLI to add your Sidewalk end device to AWS IoT Core for Amazon Sidewalk.
 

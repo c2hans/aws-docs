@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Proposed
 ---
 
 # ProposedMultiRegionAccessPointPolicy
-<a name="API_control_ProposedMultiRegionAccessPointPolicy"></a>
 
 The proposed access control policy for the Multi-Region Access Point.
 

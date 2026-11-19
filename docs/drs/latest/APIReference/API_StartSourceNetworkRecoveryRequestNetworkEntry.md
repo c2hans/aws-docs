@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_StartSourceN
 ---
 
 # StartSourceNetworkRecoveryRequestNetworkEntry
-<a name="API_StartSourceNetworkRecoveryRequestNetworkEntry"></a>
 
 An object representing the Source Network to recover.
 

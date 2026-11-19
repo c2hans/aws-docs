@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_AppBundleSummar
 ---
 
 # AppBundleSummary
-<a name="API_AppBundleSummary"></a>
 
 Contains a summary of an app bundle.
 

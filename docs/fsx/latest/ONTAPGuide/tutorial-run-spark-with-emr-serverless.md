@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/tutorial-run-spark
 ---
 
 # Run Spark jobs using Amazon EMR Serverless
-<a name="tutorial-run-spark-with-emr-serverless"></a>
 
 Data engineering teams that run Spark workloads — for log processing, feature engineering, complex ETL, or scientific analysis — often have source data on an FSx for ONTAP volume written by on-premises ingestion pipelines, NFS or SMB data movers, or applications that mount the volume directly.
 

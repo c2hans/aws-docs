@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Wha
 ---
 
 # What Is Authentication?
-<a name="WhatIsAuthentication"></a>
 
 Authentication is a process for identifying and verifying who is sending a request. The following diagram shows a simplified version of an authentication process.
 

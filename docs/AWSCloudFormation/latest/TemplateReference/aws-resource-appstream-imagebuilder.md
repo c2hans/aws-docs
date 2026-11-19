@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::ImageBuilder
-<a name="aws-resource-appstream-imagebuilder"></a>
 
 The `AWS::AppStream::ImageBuilder` resource creates an image builder for Amazon WorkSpaces Applications. An image builder is a virtual machine that is used to create an image.
 

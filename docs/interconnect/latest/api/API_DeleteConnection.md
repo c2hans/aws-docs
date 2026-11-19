@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_DeleteConnec
 ---
 
 # DeleteConnection
-<a name="API_DeleteConnection"></a>
 
 Deletes an existing [Connection](API_Connection.md) with the supplied identifier.
 

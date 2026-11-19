@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ict-get-
 ---
 
 # Getting the CLI tools
-<a name="ict-get-cli-tools"></a>
 
 Two command line tools support isolated and confidential tasks. Run both tools on your workstation or in your build pipeline, not on the instance:
 + `ecs-nitro-sandbox-genpolicy` generates an attestation policy from an Amazon ECS task definition. For more information about attestation policies, see [Confidential policy configuration](ict-confidential-policy-configuration.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Compu
 ---
 
 # Computation
-<a name="API_Computation"></a>
 
 The computation union that is used in an insight visual.
 

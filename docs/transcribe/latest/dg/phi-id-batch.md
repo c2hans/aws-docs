@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/phi-id-batch.html
 ---
 
 # Identifying PHI in an audio file
-<a name="phi-id-batch"></a>
 
 Use a batch transcription job to transcribe audio files and identify the personal health information (PHI) within them. When you activate Personal Health Information (PHI) Identification, Amazon Transcribe Medical labels the PHI that it identified in the transcription results. For information about the PHI that Amazon Transcribe Medical can identify, see [Identifying personal health information (PHI) in a transcription](phi-id.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewayLogging
-<a name="API_VirtualGatewayLogging"></a>
 
 An object that represents logging information.
 

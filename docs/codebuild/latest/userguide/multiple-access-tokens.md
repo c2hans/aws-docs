@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/multiple-acce
 ---
 
 # Multiple access tokens in CodeBuild
-<a name="multiple-access-tokens"></a>
 
 CodeBuild supports sourcing access tokens to third party providers from your secrets in AWS Secrets Manager or through AWS CodeConnections connections. You can set your secret or connection as the default credential for interactions with a specified third party provider such as GitHub, GitHub Enterprise, or Bitbucket.
 

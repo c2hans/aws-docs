@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Wir
 ---
 
 # WirelessGatewayEventLogOption
-<a name="API_WirelessGatewayEventLogOption"></a>
 
 The log options for a wireless gateway event and can be used to set log levels for a specific wireless gateway event.
 

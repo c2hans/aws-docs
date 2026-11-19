@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime
 ---
 
 # Invoke Amazon Nova on Amazon Bedrock using Bedrock's Converse API
-<a name="bedrock-runtime_example_bedrock-runtime_Converse_AmazonNovaText_section"></a>
 
 The following code examples show how to send a text message to Amazon Nova, using Bedrock's Converse API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/graviton-rec
 ---
 
 # AWS Graviton-based instance recommendations
-<a name="graviton-recommendations"></a>
 
 When viewing Amazon EC2 instance, EC2 Auto Scaling group, and Aurora and RDS database recommendations, you can view the price and performance impact of running your workload on AWS Graviton-based instances.
 

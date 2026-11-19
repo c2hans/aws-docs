@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambd
 ---
 
 # Lambda Functions
-<a name="Lambda-Insights-metrics-lambda-functions"></a>
 
 The following metrics are available as time series aggregated data in CloudWatch Metrics in the `LambdaInsights` namespace for standard Lambda functions.
 

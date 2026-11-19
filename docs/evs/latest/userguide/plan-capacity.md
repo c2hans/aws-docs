@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-capacity.html
 ---
 
 # Reserve capacity for hosts
-<a name="plan-capacity"></a>
 
 Amazon Elastic VMware Service launches Amazon Elastic Compute Cloud (Amazon EC2) bare metal instances as the ESX hosts of your environment. To make sure that capacity is available when you add hosts, we recommend that you request an Amazon EC2 Capacity Reservation before you deploy.
 

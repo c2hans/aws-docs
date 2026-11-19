@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartInst
 ---
 
 # StartInstances
-<a name="API_StartInstances"></a>
 
 Starts an Amazon EBS-backed instance that you've previously stopped.
 

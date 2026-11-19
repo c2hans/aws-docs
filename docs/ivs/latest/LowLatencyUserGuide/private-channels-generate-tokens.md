@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/private-c
 ---
 
 # Generate and Sign IVS Playback Tokens
-<a name="private-channels-generate-tokens"></a>
 
 For details on working with JWTs and the supported libraries for signing tokens, visit [jwt.io](https://jwt.io/). On the jwt.io interface, you must enter your private key to sign tokens. The public key is needed only if you want to verify tokens.
 

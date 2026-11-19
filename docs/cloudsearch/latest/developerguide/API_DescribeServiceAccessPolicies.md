@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_De
 ---
 
 # DescribeServiceAccessPolicies
-<a name="API_DescribeServiceAccessPolicies"></a>
 
 ## Description
 <a name="API_DescribeServiceAccessPolicies_Description"></a>

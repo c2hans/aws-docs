@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/assetbu
 ---
 
 # Permissions
-<a name="assetbundle-permissions"></a>
 
 Before you begin, verify that you have an AWS Identity and Access Management role that grants the CLI user access to call the Quick Sight asset bundle API operations.
 

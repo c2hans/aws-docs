@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListPro
 ---
 
 # ListProfileTimes
-<a name="API_ListProfileTimes"></a>
 
 Lists the start times of the available aggregated profiles of a profiling group for an aggregation period within the specified time range.
 

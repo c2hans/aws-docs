@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/services-xray.html
 ---
 
 # Visualize Lambda Event Function invocations using AWS X-Ray
-<a name="services-xray"></a>
 
 You can use AWS X-Ray to visualize the components of your application, identify performance bottlenecks, and troubleshoot requests that resulted in an error. Your Lambda Event Functions send trace data to X-Ray, and X-Ray processes the data to generate a service map and searchable trace summaries.
 

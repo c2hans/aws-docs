@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ge
 ---
 
 # GetFailoverSlateConfiguration
-<a name="API_GetFailoverSlateConfiguration"></a>
 
 Gets the failover slate configuration for the specified ARN.
 

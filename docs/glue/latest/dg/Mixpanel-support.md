@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/Mixpanel-support.html
 ---
 
 # AWS Glue support for Mixpanel
-<a name="Mixpanel-support"></a>
 
 AWS Glue supports Mixpanel as follows:
 

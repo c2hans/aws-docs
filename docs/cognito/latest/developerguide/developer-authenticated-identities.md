@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/developer-
 ---
 
 # Developer-authenticated identities
-<a name="developer-authenticated-identities"></a>
 
 Amazon Cognito supports developer-authenticated identities, in addition to web identity federation through [Setting up Facebook as an identity pools IdP](facebook.md), [Setting up Google as an identity pool IdP](google.md), [Setting up Login with Amazon as an identity pools IdP](amazon.md), and [Setting up Sign in with Apple as an identity pool IdP](apple.md). With developer-authenticated identities, you can register and authenticate users through your own existing authentication process, while still using Amazon Cognito to synchronize user data and access AWS resources. Using developer-authenticated identities involves interaction between the end user device, your back end for authentication, and Amazon Cognito. For more details, see [Understanding Amazon Cognito Authentication Part 2: Developer Authenticated Identities](https://aws.amazon.com/blogs/mobile/understanding-amazon-cognito-authentication-part-2-developer-authenticated-identities/) in the AWS blog.
 

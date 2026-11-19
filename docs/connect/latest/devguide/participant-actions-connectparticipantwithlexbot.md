@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/participant-acti
 ---
 
 # ConnectParticipantWithLexBot
-<a name="participant-actions-connectparticipantwithlexbot"></a>
 
 Connects the participant with the specified Amazon Lex bot. When the interaction is over, the Intent and Slots of the bot are available to the flow during its run.
 

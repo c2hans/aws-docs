@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Lan
 ---
 
 # LandingZoneDriftStatusSummary
-<a name="API_LandingZoneDriftStatusSummary"></a>
 
 The drift status summary of the landing zone.
 

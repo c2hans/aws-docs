@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/how.html
 ---
 
 # .how
-<a name="how"></a>
 
 Used by thinkers, tinkerers, and knowledge-seekers to explore everything from "how do" to "how to."
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/edit-tags-on-reso
 ---
 
 # Editing tags on an AWS Elemental MediaConvert resource
-<a name="edit-tags-on-resource"></a>
 
 The following procedure shows you how to edit tags on existing job templates, output presets, and queues using the AWS Elemental MediaConvert console. You can't edit tags on existing jobs.
 

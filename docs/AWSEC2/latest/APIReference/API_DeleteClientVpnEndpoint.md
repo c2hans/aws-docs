@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteCli
 ---
 
 # DeleteClientVpnEndpoint
-<a name="API_DeleteClientVpnEndpoint"></a>
 
 Deletes the specified Client VPN endpoint. You must disassociate all target networks before you can delete a Client VPN endpoint.
 

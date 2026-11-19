@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_StartAut
 ---
 
 # StartAutomatedReasoningPolicyBuildWorkflow
-<a name="API_StartAutomatedReasoningPolicyBuildWorkflow"></a>
 
 Starts a new build workflow for an Automated Reasoning policy. This initiates the process of analyzing source documents and generating policy rules, variables, and types.
 

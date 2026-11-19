@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/link-see.html
 ---
 
 # Working with AWS Elemental Link devices
-<a name="link-see"></a>
 
 For an overview of AWS Elemental Link devices, see [Working with AWS Elemental Link](feature-elink.md).
 

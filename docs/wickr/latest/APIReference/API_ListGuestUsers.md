@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_ListGuestU
 ---
 
 # ListGuestUsers
-<a name="API_ListGuestUsers"></a>
 
 Retrieves a paginated list of guest users who have communicated with your Wickr network. Guest users are external users from federated networks who can communicate with network members.
 

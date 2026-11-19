@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec05-b
 ---
 
 # SEC05-BP04 Automate network protection
-<a name="sec05-bp04"></a>
 
  Automate deployment of network protections with infrastructure as code and continuous integration and delivery pipelines. With automation, you can version network changes, deploy them faster, detect drift from intended configuration, and make protections repeatable across teams and accounts.
 

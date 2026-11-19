@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel06-b
 ---
 
 # REL06-BP06 Regularly review monitoring scope and metrics
-<a name="rel06-bp06"></a>
 
  Monitoring drifts out of date as a workload and its architecture change. Review your monitoring on a regular cadence, and after significant events or changes, so it keeps pace with how the workload behaves.
 

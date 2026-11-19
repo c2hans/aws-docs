@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_OneDr
 ---
 
 # OneDriveParameters
-<a name="API_OneDriveParameters"></a>
 
 The connection parameters for an OneDrive data source. Provide these parameters in the `DataSourceParameters` object when you create or update a data source that uses OneDrive.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Data ingestion
-<a name="mfg-data-ingestion"></a>
 
 The data ingestion diagram shows how to bring data from factory floors and enterprise applications into AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Metric
 ---
 
 # MetricsSource
-<a name="API_MetricsSource"></a>
 
 Details about the metrics source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_Job.html
 ---
 
 # Job
-<a name="API_Job"></a>
 
 Job.
 

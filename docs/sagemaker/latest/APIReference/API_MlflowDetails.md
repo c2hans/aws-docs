@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Mlflow
 ---
 
 # MlflowDetails
-<a name="API_MlflowDetails"></a>
 
  The MLflow details of this job.
 

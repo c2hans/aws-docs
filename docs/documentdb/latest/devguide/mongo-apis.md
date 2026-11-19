@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/mongo-apis.ht
 ---
 
 # Supported MongoDB APIs, operations, and data types in Amazon DocumentDB
-<a name="mongo-apis"></a>
 
 Amazon DocumentDB (with MongoDB compatibility) is a fast, scalable, highly-available, and fully managed document database service that supports MongoDB workloads. Amazon DocumentDB is compatible with the MongoDB 3.6, 4.0, 5.0, and 8.0 APIs. This section lists the supported functionality. For support using MongoDB APIs and drivers, consult the MongoDB Community Forums. For support using the Amazon DocumentDB service, contact the appropriate AWS support team. For functional differences between Amazon DocumentDB and MongoDB, see [Functional differences: Amazon DocumentDB and MongoDB](functional-differences.md).
 

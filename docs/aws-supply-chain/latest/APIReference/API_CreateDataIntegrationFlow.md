@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # CreateDataIntegrationFlow
-<a name="API_CreateDataIntegrationFlow"></a>
 
 Enables you to programmatically create a data pipeline to ingest data from source systems such as Amazon S3 buckets, to a predefined AWS Supply Chain dataset (product, inbound\_order) or a temporary dataset along with the data transformation query provided with the API.
 

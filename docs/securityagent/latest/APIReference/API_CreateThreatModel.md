@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cr
 ---
 
 # CreateThreatModel
-<a name="API_CreateThreatModel"></a>
 
 Creates a new threat model configuration in an agent space. A threat model defines the parameters for automated threat analysis.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # BatchDeleteScope
-<a name="API_BatchDeleteScope"></a>
 
 Scope parameters for bulk delete by scope.
 

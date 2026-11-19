@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayAttachmentPropagation
-<a name="API_TransitGatewayAttachmentPropagation"></a>
 
 Describes a propagation route table.
 

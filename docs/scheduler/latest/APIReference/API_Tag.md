@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_Tag.ht
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Tag to associate with a schedule group.
 

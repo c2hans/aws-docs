@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpGat
 ---
 
 # HttpGatewayRouteAction
-<a name="API_HttpGatewayRouteAction"></a>
 
 An object that represents the action to take if a match is determined.
 

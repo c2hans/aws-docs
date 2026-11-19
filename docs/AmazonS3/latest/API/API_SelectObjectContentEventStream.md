@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectCont
 ---
 
 # SelectObjectContentEventStream
-<a name="API_SelectObjectContentEventStream"></a>
 
 The container for selecting objects from a content event stream.
 

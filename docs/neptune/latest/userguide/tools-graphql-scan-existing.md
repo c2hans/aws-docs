@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/tools-graphql-s
 ---
 
 # Scanning data in an existing Neptune database
-<a name="tools-graphql-scan-existing"></a>
 
 Whether you are familiar with GraphQL or not, the command below is the fastest way to create a GraphQL API. This assumes that you have installed and configured the Neptune utility for GraphQL as described in the [installation section](tools-graphql-setup.md), so that it's connected to the endpoint of your Neptune database.
 

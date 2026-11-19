@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_Filter.html
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
  A structure within a `FilterCriteria` object that defines an event filtering pattern.
 

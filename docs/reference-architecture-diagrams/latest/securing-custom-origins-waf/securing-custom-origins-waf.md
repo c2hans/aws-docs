@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Securing Custom Origins with AWS WAF
-<a name="securing-custom-origins-waf"></a>
 
 Publication date: **July 26, 2022 ([Diagram history](#diagram-history))**
 

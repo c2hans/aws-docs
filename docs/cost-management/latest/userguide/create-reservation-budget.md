@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/create-
 ---
 
 # Creating a reservation budget
-<a name="create-reservation-budget"></a>
 
 Use this procedure to create a budget for RI utilization or coverage.
 

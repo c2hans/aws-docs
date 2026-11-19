@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/telem
 ---
 
 # Telemetry enablement rules
-<a name="telemetry-config-rules"></a>
 
 You can create telemetry enablement rules to automatically configure telemetry collection for your AWS resources. Rules help you standardize telemetry collection across your organization or accounts and make sure consistent monitoring coverage.
 

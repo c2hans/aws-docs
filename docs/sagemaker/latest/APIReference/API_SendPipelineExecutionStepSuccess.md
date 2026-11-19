@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SendPi
 ---
 
 # SendPipelineExecutionStepSuccess
-<a name="API_SendPipelineExecutionStepSuccess"></a>
 
 Notifies the pipeline that the execution of a callback step succeeded and provides a list of the step's output parameters. When a callback step is run, the pipeline generates a callback token and includes the token in a message sent to Amazon Simple Queue Service (Amazon SQS).
 

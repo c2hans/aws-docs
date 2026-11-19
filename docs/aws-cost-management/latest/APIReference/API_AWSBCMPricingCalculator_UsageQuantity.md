@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UsageQuantity
-<a name="API_AWSBCMPricingCalculator_UsageQuantity"></a>
 
  Represents a usage quantity with associated unit and time period.
 

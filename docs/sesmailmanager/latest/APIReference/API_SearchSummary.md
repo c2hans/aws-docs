@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_S
 ---
 
 # SearchSummary
-<a name="API_SearchSummary"></a>
 
 Summary details of an archive search job.
 

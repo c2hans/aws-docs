@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMSEC07-BP01 Establish your plan for incident response
-<a name="smsec07-bp01"></a>
 
 To prepare for incidents, have a plan in place to educate and use your team so that incidents are quickly dealt with and don't cause undue degradation.
 

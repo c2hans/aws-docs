@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/routing-control/latest/APIReference/API_
 ---
 
 # UpdateRoutingControlStates
-<a name="API_UpdateRoutingControlStates"></a>
 
 Set multiple routing control states. You can set the value for each state to be ON or OFF. When the state is ON, traffic flows to a cell. When it's OFF, traffic does not flow.
 

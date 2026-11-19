@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Upd
 ---
 
 # UpdateFuotaTask
-<a name="API_UpdateFuotaTask"></a>
 
 Updates properties of a FUOTA task.
 

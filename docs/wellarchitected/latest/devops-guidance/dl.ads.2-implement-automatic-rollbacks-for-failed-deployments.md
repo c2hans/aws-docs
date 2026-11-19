@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.ADS.2] Implement automatic rollbacks for failed deployments
-<a name="dl.ads.2-implement-automatic-rollbacks-for-failed-deployments"></a>
 
  **Category:** FOUNDATIONAL
 

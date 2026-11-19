@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/devrev-reading-from-entit
 ---
 
 # Reading from DevRev entities
-<a name="devrev-reading-from-entities"></a>
 
 **Prerequisites**
 

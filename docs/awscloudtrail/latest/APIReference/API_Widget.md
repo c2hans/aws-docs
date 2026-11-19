@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Wi
 ---
 
 # Widget
-<a name="API_Widget"></a>
 
  A widget on a CloudTrail Lake dashboard.
 

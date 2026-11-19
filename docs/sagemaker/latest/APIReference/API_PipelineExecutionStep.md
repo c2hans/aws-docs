@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Pipeli
 ---
 
 # PipelineExecutionStep
-<a name="API_PipelineExecutionStep"></a>
 
 An execution of a step in a pipeline.
 

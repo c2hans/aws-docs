@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Descr
 ---
 
 # DescribeWorkspace
-<a name="API_DescribeWorkspace"></a>
 
 Returns information about an existing workspace.
 

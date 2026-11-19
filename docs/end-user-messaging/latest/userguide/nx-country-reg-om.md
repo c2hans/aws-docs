@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-c
 ---
 
 # Oman
-<a name="nx-country-reg-om"></a>
 
 To send messages that use a sender ID in Oman, you must complete the Oman sender ID registration.
 

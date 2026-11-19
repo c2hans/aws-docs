@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/cancel-attachment
 ---
 
 # Cancelling an in-progress upload
-<a name="cancel-attachment-upload"></a>
 
 You can cancel a file upload while it is in progress.
 

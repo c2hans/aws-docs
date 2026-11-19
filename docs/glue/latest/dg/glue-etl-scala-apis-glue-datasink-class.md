@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-etl-scala-apis-glue-
 ---
 
 # Abstract DataSink class
-<a name="glue-etl-scala-apis-glue-datasink-class"></a>
 
 **Topics**
 + [Def writeDynamicFrame](#glue-etl-scala-apis-glue-datasink-class-defs-writeDynamicFrame)

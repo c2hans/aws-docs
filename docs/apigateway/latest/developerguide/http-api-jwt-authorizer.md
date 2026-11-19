@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-ap
 ---
 
 # Control access to HTTP APIs with JWT authorizers in API Gateway
-<a name="http-api-jwt-authorizer"></a>
 
 You can use JSON Web Tokens (JWTs) as a part of [OpenID Connect (OIDC)](https://openid.net/specs/openid-connect-core-1_0.html) and [OAuth 2.0](https://oauth.net/2/) frameworks to restrict client access to your APIs.
 

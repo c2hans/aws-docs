@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/evs-env-secret-rota
 ---
 
 # Manage secrets
-<a name="evs-env-secret-rotation"></a>
 
 Amazon Elastic VMware Service stores credentials for your environment as secrets in AWS Secrets Manager in your account, and connectors read the secrets that you create. You are responsible for the lifecycle of these secrets, including rotation, because Amazon EVS doesn’t provide managed rotation.
 

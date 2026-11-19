@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/troubleshootin
 ---
 
 # Troubleshooting Microsoft Hyper-V setup
-<a name="troubleshooting-hyperv-setup"></a>
 
 The following table lists typical issues that you might encounter when deploying Storage Gateway on the Microsoft Hyper-V platform.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/connection-au
 ---
 
 # Connection authorization in AWS Client VPN
-<a name="connection-authorization"></a>
 
 You can configure a *client connect handler* for your Client VPN endpoint. The handler enables you to run custom logic that authorizes a new connection, based on device, user, and connection attributes. The client connect handler runs after the Client VPN service has authenticated the device and user.
 

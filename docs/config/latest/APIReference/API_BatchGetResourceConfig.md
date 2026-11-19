@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_BatchGetR
 ---
 
 # BatchGetResourceConfig
-<a name="API_BatchGetResourceConfig"></a>
 
 Returns the `BaseConfigurationItem` for one or more requested resources. The operation also returns a list of resources that are not processed in the current request. If there are no unprocessed resources, the operation returns an empty unprocessedResourceKeys list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Transl
 ---
 
 # TranslatedDocument
-<a name="API_TranslatedDocument"></a>
 
 The translated content.
 

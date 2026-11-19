@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompt
 ---
 
 # Create and manage optimization jobs
-<a name="advanced-prompt-optimization-jobs"></a>
 
 ## Create a job (console)
 <a name="advanced-prompt-optimization-jobs-console"></a>

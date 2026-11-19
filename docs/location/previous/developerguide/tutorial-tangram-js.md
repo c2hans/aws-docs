@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/tutoria
 ---
 
 # Using Tangram with Amazon Location Service
-<a name="tutorial-tangram-js"></a>
 
 [Tangram](https://tangrams.readthedocs.io/) is a flexible mapping engine, designed for real-time rendering of 2D and 3D maps from vector tiles. It can be used with Mapzen-designed styles and the HERE tiles provided by the Amazon Location Service Maps API. This guide describes how to integrate Tangram with Amazon Location within a basic HTML/JavaScript application, although the same libraries and techniques also apply when using frameworks like React and Angular.
 

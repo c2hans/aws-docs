@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_ListVpcIngressC
 ---
 
 # ListVpcIngressConnectionsFilter
-<a name="API_ListVpcIngressConnectionsFilter"></a>
 
 Returns a list of VPC Ingress Connections based on the filter provided. It can return either `ServiceArn` or `VpcEndpointId`, or both.
 

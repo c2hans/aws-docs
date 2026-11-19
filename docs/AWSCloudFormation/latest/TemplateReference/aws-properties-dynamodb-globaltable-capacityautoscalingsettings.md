@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::GlobalTable CapacityAutoScalingSettings
-<a name="aws-properties-dynamodb-globaltable-capacityautoscalingsettings"></a>
 
 Configures a scalable target and an autoscaling policy for a table or global secondary index's read or write capacity.
 

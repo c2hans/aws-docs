@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/permissions-user-functi
 ---
 
 # Granting users access to an Event Function
-<a name="permissions-user-function"></a>
 
 Use [identity-based policies](access-control-identity-based.md) to allow users, user groups, or roles to perform operations on Lambda Event Functions.
 

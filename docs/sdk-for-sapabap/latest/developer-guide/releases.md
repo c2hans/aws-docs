@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/r
 ---
 
 # AWS SDK for SAP ABAP releases
-<a name="releases"></a>
 
 AWS SDK for SAP ABAP is delivered in transports, and AWS SDK for SAP ABAP - BTP edition is delivered as add-ons. The mechanism to import transports and add-ons is different but the technical functionality is the same. For more information, see [Setting up](https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/setup.html).
 

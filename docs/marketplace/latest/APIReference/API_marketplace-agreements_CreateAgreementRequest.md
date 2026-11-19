@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # CreateAgreementRequest
-<a name="API_marketplace-agreements_CreateAgreementRequest"></a>
 
 Creates an agreement request that acts as a quote for the terms you want to accept. The agreement request captures the requested terms, calculates charges, and returns a summary. Use `AcceptAgreementRequest` with the returned `agreementRequestId` to finalize the agreement.
 
@@ -12,6 +11,13 @@ Creates an agreement request that acts as a quote for the terms you want to acce
 
 ```
 {
+   "acceptorContact": {
+      "companyName": "{{string}}",
+      "countryCode": "{{string}}",
+      "emailAddress": "{{string}}",
+      "firstName": "{{string}}",
+      "lastName": "{{string}}"
+   },
    "agreementProposalIdentifier": "{{string}}",
    "clientToken": "{{string}}",
    "intent": "{{string}}",
@@ -53,6 +59,12 @@ Type: Array of [RequestedTerm](API_marketplace-agreements_RequestedTerm.md) obje
 Array Members: Minimum number of 1 item. Maximum number of 30 items.
 Required: Yes
 
+ ** [acceptorContact](#API_marketplace-agreements_CreateAgreementRequest_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_CreateAgreementRequest-request-acceptorContact"></a>
+The contact information of the acceptor.
+Don't provide this parameter if the intent is `AMEND`.
+Type: [AcceptorContact](API_marketplace-agreements_AcceptorContact.md) object
+Required: No
+
  ** [agreementProposalIdentifier](#API_marketplace-agreements_CreateAgreementRequest_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_CreateAgreementRequest-request-agreementProposalIdentifier"></a>
 The agreement proposal signed by the proposer. The proposal includes the requested resources and the terms that outline an agreement outcome.
  This parameter is required if the intent is not `AMEND`.
@@ -87,6 +99,8 @@ Required: No
 ```
 {
    "agreementRequestId": "string",
+   "agreementType": "string",
+   "approvalRequirement": "string",
    "chargeSummary": {
       "currencyCode": "string",
       "estimatedTaxes": {
@@ -114,6 +128,7 @@ Required: No
                "totalAmount": "string"
             },
             "id": "string",
+            "purchaseOrderReference": "string",
             "time": number,
             "timing": "string"
          }
@@ -133,7 +148,9 @@ Required: No
       ],
       "newAgreementValue": "string",
       "newAgreementValueAfterTax": "string"
-   }
+   },
+   "createdAt": number,
+   "status": "string"
 }
 ```
 
@@ -150,9 +167,35 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `ar-[A-Za-z0-9]+`
 
+ ** [agreementType](#API_marketplace-agreements_CreateAgreementRequest_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_CreateAgreementRequest-response-agreementType"></a>
+The type of agreement (for example, `PurchaseAgreement`).
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[A-Za-z]+`
+
+ ** [approvalRequirement](#API_marketplace-agreements_CreateAgreementRequest_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_CreateAgreementRequest-response-approvalRequirement"></a>
+Indicates whether the agreement request requires approval before it can be accepted. Values are `REQUIRED` and `NOT_REQUIRED`.
+Type: String
+Valid Values: `REQUIRED | NOT_REQUIRED`
+
  ** [chargeSummary](#API_marketplace-agreements_CreateAgreementRequest_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_CreateAgreementRequest-response-chargeSummary"></a>
 Provides details of the charges associated with the agreement request. This is only applicable when a request is created for `PurchaseAgreement`.
 Type: [ChargeSummary](API_marketplace-agreements_ChargeSummary.md) object
+
+ ** [createdAt](#API_marketplace-agreements_CreateAgreementRequest_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_CreateAgreementRequest-response-createdAt"></a>
+The date and time when the agreement request was created.
+Type: Timestamp
+
+ ** [status](#API_marketplace-agreements_CreateAgreementRequest_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_CreateAgreementRequest-response-status"></a>
+The current status of the agreement request. Possible values include:
++  `DRAFT` – The agreement request has been created but not yet submitted for approval.
++  `PENDING_APPROVAL` – The agreement request is waiting for one or more approvers to decide.
++  `APPROVED` – All required approvals have been granted, but the agreement request wasn't accepted automatically. Call `AcceptAgreementRequest` to accept it. If the call fails, its error explains why.
++  `ACCEPTED` – The agreement request has been accepted and the resulting agreement has been created.
++  `REJECTED` – At least one approver rejected the agreement request. It won't proceed.
++  `CANCELLED` – The agreement request was cancelled before completion, by the acceptor or because the acceptor's account left its AWS organization.
+Type: String
+Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | ACCEPTED | REJECTED | CANCELLED`
 
 ## Errors
 <a name="API_marketplace-agreements_CreateAgreementRequest_Errors"></a>
@@ -280,7 +323,14 @@ This example illustrates one usage of CreateAgreementRequest.
             "id": "term-EXAMPLE3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f"
         }
     ],
-    "agreementProposalIdentifier": "ap-EXAMPLE6b64-0c26-8e5EXAMPLE12"
+    "agreementProposalIdentifier": "ap-EXAMPLE6b64-0c26-8e5EXAMPLE12",
+    "acceptorContact": {
+        "firstName": "FirstName",
+        "lastName": "LastName",
+        "emailAddress": "user@example.com",
+        "companyName": "AnyCompany",
+        "countryCode": "US"
+    }
 }
 ```
 
@@ -292,6 +342,7 @@ This example illustrates one usage of CreateAgreementRequest.
 ```
 {
     "agreementRequestId": "ar-EXAMPLE4a53-9b12-3d4EXAMPLE78",
+    "agreementType": "PurchaseAgreement",
     "chargeSummary": {
         "currencyCode": "USD",
         "newAgreementValue": "100",
@@ -325,7 +376,10 @@ This example illustrates one usage of CreateAgreementRequest.
                 "chargeReference": "ch-EXAMPLE4b42-9614-5c3EXAMPLE56"
             }
         ]
-    }
+    },
+    "status": "DRAFT",
+    "approvalRequirement": "REQUIRED",
+    "createdAt": 1736935800
 }
 ```
 

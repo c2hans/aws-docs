@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-instance-e
 ---
 
 # Finding an instance's endpoint
-<a name="db-instance-endpoint-find"></a>
 
 You can find the endpoint for an instance using the Amazon DocumentDB console or the AWS CLI.
 

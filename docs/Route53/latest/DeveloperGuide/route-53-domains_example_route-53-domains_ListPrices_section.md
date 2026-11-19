@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/route-53-d
 ---
 
 # Use `ListPrices` with an AWS SDK
-<a name="route-53-domains_example_route-53-domains_ListPrices_section"></a>
 
 The following code examples show how to use `ListPrices`.
 

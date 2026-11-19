@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/xray-console-servic
 ---
 
 # Using the X-Ray trace map
-<a name="xray-console-servicemap"></a>
 
 View the X-Ray trace map to identify services where errors are occurring, connections with high latency, or traces for requests that were unsuccessful.
 

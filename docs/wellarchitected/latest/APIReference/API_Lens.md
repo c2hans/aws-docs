@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # Lens
-<a name="API_Lens"></a>
 
 A lens return object.
 

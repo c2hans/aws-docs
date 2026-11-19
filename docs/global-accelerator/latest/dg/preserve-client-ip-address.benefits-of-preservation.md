@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/preserve-cl
 ---
 
 # Benefits of client IP address preservation
-<a name="preserve-client-ip-address.benefits-of-preservation"></a>
 
 You can configure client IP address preservation for specific endpoints in Global Accelerator. For some applications that you configure with AWS Global Accelerator, you might want to access the original client IP address by using endpoints with client IP address preservation.
 

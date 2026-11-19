@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # GetService
-<a name="API_GetService"></a>
 
 Returns information about a service discovered by Application Signals.
 

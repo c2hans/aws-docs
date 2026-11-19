@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-set
 ---
 
 # Setting up AWS Transform
-<a name="transform-setup"></a>
 
 ## Before you begin
 <a name="transform-prerequisites"></a>

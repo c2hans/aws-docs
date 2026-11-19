@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ec2-examp
 ---
 
 # Amazon EC2 examples using the AWS SDK for PHP Version 3
-<a name="ec2-examples"></a>
 
 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides virtual server hosting in the cloud. It’s designed to make web-scale cloud computing easier for developers by providing resizeable compute capacity.
 

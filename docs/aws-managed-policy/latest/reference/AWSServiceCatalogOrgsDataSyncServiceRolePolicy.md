@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceCatalogOrgsDataSyncServiceRolePolicy
-<a name="AWSServiceCatalogOrgsDataSyncServiceRolePolicy"></a>
 
 **Description**: A Service Linked Role Policy for AWS ServiceCatalog to sync with AWS Organizations organization structure
 

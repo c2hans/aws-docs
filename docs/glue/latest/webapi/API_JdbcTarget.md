@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_JdbcTarget.html
 ---
 
 # JdbcTarget
-<a name="API_JdbcTarget"></a>
 
 Specifies a JDBC data store to crawl.
 

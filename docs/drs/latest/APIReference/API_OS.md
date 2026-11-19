@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_OS.html
 ---
 
 # OS
-<a name="API_OS"></a>
 
 Operating System.
 

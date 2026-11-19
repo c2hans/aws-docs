@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/log4
 ---
 
 # Configure Apache Log4j2 properties for Amazon EMR Serverless
-<a name="log4j2"></a>
 
 This page describes how to configure custom [Apache Log4j 2.x](https://logging.apache.org/log4j/2.x/) properties for EMR Serverless jobs at `StartJobRun`. If you want to configure Log4j classifications at the application level, refer to [Default application configuration for EMR Serverless](default-configs.md).
 

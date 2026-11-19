@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Decomposing monoliths into microservices
-<a name="introduction"></a>
 
 *Tabby Ward and Dmitry Gulin, Amazon Web Services*
 

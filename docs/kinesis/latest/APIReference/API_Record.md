@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Record.h
 ---
 
 # Record
-<a name="API_Record"></a>
 
 The unit of data of the Kinesis data stream, which is composed of a sequence number, a partition key, and a data blob.
 

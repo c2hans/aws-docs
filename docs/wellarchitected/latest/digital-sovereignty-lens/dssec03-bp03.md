@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSSEC03-BP03 Validate resource configurations for sovereignty compliance
-<a name="dssec03-bp03"></a>
 
  Sovereignty configuration validation verifies that resources are provisioned and maintained in line with jurisdictional constraints: Region placement, key residency, replication scope, and classification tagging. Validate resource configurations against sovereignty baselines before and after deployment using rules-based evaluation.
 

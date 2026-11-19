@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/manage
 ---
 
 # Manage tracks
-<a name="manage-tracks"></a>
 
 An event runs on one or more **tracks**, up to a maximum of 10. Each track keeps its own leaderboard and can be operated independently by a different race facilitator, which lets a large venue run concurrent heats.
 

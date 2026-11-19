@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Integrating Security Hub with Google Cloud Platform
-<a name="securityhub-v2-gcp"></a>
 
 To monitor your Google Cloud Platform (GCP) resources, you can integrate GCP with AWS Security Hub. Security Hub then automatically enables posture management and vulnerability management for your GCP environment and generates findings and other data about your environment. You do not need to turn on any GCP security services—all functionality is performed by AWS. More specifically, the service provides you with the following:
 

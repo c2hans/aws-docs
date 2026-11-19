@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/bui
 ---
 
 # Asset references elements for job bundles
-<a name="build-job-bundle-assets"></a>
 
 You can use Deadline Cloud [job attachments](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/storage-job-attachments.html) to transfer files back and forth between your workstation and Deadline Cloud. The asset reference file lists input files and directories, as well as output directories for your attachments. If you don't list all of the files and directories in this file, you can select them when you submit a job with the `deadline bundle gui-submit` command.
 

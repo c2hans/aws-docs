@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-e
 ---
 
 # Error notifications: When conversational analytics can't analyze a contact
-<a name="contact-lens-error-notifications"></a>
 
 It's possible that conversational analytics can't analyze a contact file, even though analysis is enabled on the flow. When this happens, conversational analytics sends error notifications using Amazon EventBridge events.
 

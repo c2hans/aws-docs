@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Spot
 ---
 
 # SpotMarketOptions
-<a name="API_SpotMarketOptions"></a>
 
 Defines configuration for spot instance deployment.
 

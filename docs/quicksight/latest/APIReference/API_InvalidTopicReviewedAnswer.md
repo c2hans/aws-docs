@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Inval
 ---
 
 # InvalidTopicReviewedAnswer
-<a name="API_InvalidTopicReviewedAnswer"></a>
 
 The definition for a `InvalidTopicReviewedAnswer`.
 

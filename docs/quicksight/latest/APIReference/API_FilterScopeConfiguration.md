@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterScopeConfiguration
-<a name="API_FilterScopeConfiguration"></a>
 
 The scope configuration for a `FilterGroup`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/deletegrou
 ---
 
 # Delete groups in IAM Identity Center
-<a name="deletegroups"></a>
 
 When you delete a group in your IAM Identity Center directory, it removes access to AWS accounts and applications for all users who are members of this group. After a group is deleted it cannot be undone. Use the following procedure to delete a group in your Identity Center directory.
 

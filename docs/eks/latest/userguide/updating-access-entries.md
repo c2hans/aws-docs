@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/updating-access-ent
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Update access entries
-<a name="updating-access-entries"></a>
 
 You can update an access entry using the AWS Management Console or the AWS CLI.
 

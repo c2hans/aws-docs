@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/meteri
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Using the AWS Marketplace Metering API
-<a name="metering-apis"></a>
 
 This reference provides descriptions of the AWS Marketplace Metering Service API. AWS Marketplace sellers can use this API to submit data for custom usage dimensions. For more information about the necessary permissions to use this API, see [AWS Marketplace metering and entitlement API permissions](https://docs.aws.amazon.com/marketplace/latest/userguide/iam-user-policy-for-aws-marketplace-actions.html) in the *AWS Marketplace Seller Guide.*
 

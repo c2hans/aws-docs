@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetAccoun
 ---
 
 # GetAccount
-<a name="API_GetAccount"></a>
 
 Obtain information about the email-sending status and capabilities of your Amazon SES account in the current AWS Region.
 

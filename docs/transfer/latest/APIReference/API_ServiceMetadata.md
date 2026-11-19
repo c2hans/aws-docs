@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Service
 ---
 
 # ServiceMetadata
-<a name="API_ServiceMetadata"></a>
 
 A container object for the session details that are associated with a workflow.
 

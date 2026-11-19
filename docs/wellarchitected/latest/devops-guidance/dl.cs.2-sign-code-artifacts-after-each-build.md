@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CS.2] Sign code artifacts after each build
-<a name="dl.cs.2-sign-code-artifacts-after-each-build"></a>
 
  **Category:** RECOMMENDED
 

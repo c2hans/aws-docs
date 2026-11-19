@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Applicati
 ---
 
 # ApplicationVersionChangeDetails
-<a name="API_ApplicationVersionChangeDetails"></a>
 
 Contains information about the version changes that the operation applied to the application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/billing
 ---
 
 # Using identity-based policies (IAM policies) for AWS Cost Management
-<a name="billing-permissions-ref"></a>
 
 **Note**
 The following AWS Identity and Access Management (IAM) actions have reached the end of standard support on July 2023:
@@ -336,6 +335,8 @@ For more information, see [Service-linked roles for Cost Optimization Hub](https
 Managed policy name: `CostOptimizationHubReadOnlyAccess`
 
 This managed policy provides read-only access to Cost Optimization Hub.
+
+To stop idle Amazon EC2 instances from Cost Optimization Hub, you also need Amazon EC2 permissions. For more information, see [Prerequisites and permissions](coh-stop-idle-resources.md#coh-stop-idle-resources-prereqs).
 
 ------
 #### [ JSON ]

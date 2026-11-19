@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/safety-lever.html
 ---
 
 # Safety Levers for AWS FIS
-<a name="safety-lever"></a>
 
  Safety levers are used to stop all running experiments and prevent new experiments from starting. You may want to use the safety lever to prevent FIS experiments during certain time periods or in response to application health alarms. Every AWS account has a safety lever per AWS Region.
 

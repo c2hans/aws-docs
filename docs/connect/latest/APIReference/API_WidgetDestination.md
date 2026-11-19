@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_WidgetDe
 ---
 
 # WidgetDestination
-<a name="API_WidgetDestination"></a>
 
 The destination for an outbound web notification, specifying the communication widget that delivers the notification and the customer profile of the recipient.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_TagList
 ---
 
 # TagListEntry
-<a name="API_TagListEntry"></a>
 
 A key-value pair representing a single tag that's been applied to an AWS resource.
 

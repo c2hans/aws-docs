@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/config
 ---
 
 # Configuration API Reference for Amazon CloudSearch
-<a name="configuration-api"></a>
 
 You use the Amazon CloudSearch Configuration API to create, configure, and manage search domains. For more information configuring search domains, see [Creating and Managing Search Domains](creating-managing-domains.md).
 

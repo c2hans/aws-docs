@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/doc-histor
 ---
 
 # Document history
-<a name="doc-history"></a>
 
 The following table describes important additions to the AWS IAM Identity Center documentation. We also update the documentation frequently to address the feedback that you send us.
 + **Latest major documentation update: **November 13, 2026

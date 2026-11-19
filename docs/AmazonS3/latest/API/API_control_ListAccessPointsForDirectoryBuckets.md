@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAcce
 ---
 
 # ListAccessPointsForDirectoryBuckets
-<a name="API_control_ListAccessPointsForDirectoryBuckets"></a>
 
 Returns a list of the access points that are owned by the AWS account and that are associated with the specified directory bucket.
 

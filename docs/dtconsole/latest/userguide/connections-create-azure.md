@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-c
 ---
 
 # Create a connection to Azure DevOps
-<a name="connections-create-azure"></a>
 
 You can use the AWS Management Console or the AWS Command Line Interface (AWS CLI) to create a connection to a repository hosted on Azure DevOps.
 

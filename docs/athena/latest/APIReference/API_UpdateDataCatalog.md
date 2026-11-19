@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateDat
 ---
 
 # UpdateDataCatalog
-<a name="API_UpdateDataCatalog"></a>
 
 Updates the data catalog that has the specified name.
 

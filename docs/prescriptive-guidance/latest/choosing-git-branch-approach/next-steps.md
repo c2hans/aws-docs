@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 This guide explains the differences between three common Git branching strategies: GitHub Flow, Gitflow, and Trunk. It describes their workflows in detail and also provides the advantages and disadvantages of each. The next steps are to choose one of these standard workflows for your organization. To implement one of these branching strategies, see the following:
 + [Implement a Trunk branching strategy for multi-account DevOps environments](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/implement-a-trunk-branching-strategy-for-multi-account-devops-environments.html)

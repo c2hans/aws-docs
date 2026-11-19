@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_VpcCo
 ---
 
 # VpcConfig
-<a name="API_VpcConfig"></a>
 
 Contains the VPC configuration data necessary to interface with AWS Device Farm's services.
 

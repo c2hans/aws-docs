@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-
 ---
 
 # Create an encryption key for Fargate ephemeral storage for Amazon ECS
-<a name="fargate-create-storage-key"></a>
 
 Create a customer managed key to encrypt data stored on Fargate ephemeral storage.
 

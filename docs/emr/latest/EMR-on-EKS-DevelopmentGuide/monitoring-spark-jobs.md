@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/m
 ---
 
 # Monitoring Spark jobs
-<a name="monitoring-spark-jobs"></a>
 
 So that you can monitor and troubleshoot failures, configure your interactive endpoints so that the jobs initiated with the endpoint can send log information to Amazon S3, Amazon CloudWatch Logs, or both. The following sections describe how to send Spark application logs to Amazon S3 for the Spark jobs that you launch with Amazon EMR on EKS interactive endpoints.
 

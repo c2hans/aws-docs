@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # Implementation priorities
-<a name="implementation-priorities-7"></a>
 
 ## Implement a hub and spoke catalog model
 <a name="source-hub"></a>

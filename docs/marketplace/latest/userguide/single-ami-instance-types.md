@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/single-ami-
 ---
 
 # Adding and restricting AMI instances for AWS Marketplace
-<a name="single-ami-instance-types"></a>
 
 As an AWS Marketplace seller, you can manage which instances buyers can use for your single Amazon Machine Imagine (AMI) product. You can add a new instance for your single AMI product that buyers can use. Similarly, if you want to prevent new buyers from using your single AMI product from a specific instance, you can restrict the instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/editing-outbou
 ---
 
 # Editing an outbound campaign
-<a name="editing-outbound-campaign"></a>
 
 **Note**
 You can edit any outbound campaign in the Initialized state. Running or paused campaigns can be updated only if they are journey-type.

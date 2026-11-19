@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 ---
 
 # Data retrieval APIs for AWS service providing managed private networks
-<a name="awsserviceprovidingmanagedprivatenetworks"></a>
 
 AWS service providing managed private networks provides the following APIs for data retrieval.
 

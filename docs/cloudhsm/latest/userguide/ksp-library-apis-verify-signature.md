@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-ap
 ---
 
 # NCryptVerifySignature with Key storage provider (KSP)
-<a name="ksp-library-apis-verify-signature"></a>
 
 The `NCryptVerifySignature` function confirms whether a signature matches a specified hash.
 

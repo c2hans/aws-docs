@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-ecr.ht
 ---
 
 # Amazon ECR sample for CodeBuild
-<a name="sample-ecr"></a>
 
 This sample uses a Docker image in an Amazon Elastic Container Registry (Amazon ECR) image repository to build a sample Go project.
 

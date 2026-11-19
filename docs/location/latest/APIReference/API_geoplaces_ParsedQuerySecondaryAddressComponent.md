@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # ParsedQuerySecondaryAddressComponent
-<a name="API_geoplaces_ParsedQuerySecondaryAddressComponent"></a>
 
 Information about a secondary address component parsed from the query text.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RDS::DBCluster ScalingConfiguration
-<a name="aws-properties-rds-dbcluster-scalingconfiguration"></a>
 
 The `ScalingConfiguration` property type specifies the scaling configuration of an Aurora Serverless v1 DB cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-access-trainin
 ---
 
 # Use attribute-based access control (ABAC) for multi-tenancy training
-<a name="model-access-training-data-abac"></a>
 
 In a multi-tenant environment, it is crucial to ensure that each tenant's data is isolated and accessible only to authorized entities. SageMaker AI supports the use of [attribute-based access control (ABAC)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html) to achieve this isolation for training jobs. Instead of creating multiple IAM roles for each tenant, you can use the same IAM role for all tenants by configuring a session chaining configuration that uses AWS Security Token Service (AWS STS) session tags to request temporary, limited-privilege credentials for your training job to access specific tenants. For more information about session tags, see [Passing session tags in AWS STS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html).
 

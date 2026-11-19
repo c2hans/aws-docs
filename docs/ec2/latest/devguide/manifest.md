@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/manifest.html
 ---
 
 # VM Import Manifest
-<a name="manifest"></a>
 
 The import manifest is an XML file created and consumed by the Amazon EC2 API operations [ImportInstance](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportInstance.html) and [ImportVolume](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportVolume.html). Note that these operations are not supported by the AWS CLI.
 

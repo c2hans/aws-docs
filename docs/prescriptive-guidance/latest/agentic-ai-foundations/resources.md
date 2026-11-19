@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Resources
-<a name="resources"></a>
 
 For more information about the concepts discussed in this guide, see the following guides and articles.
 

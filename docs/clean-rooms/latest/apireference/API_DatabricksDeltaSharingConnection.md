@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Data
 ---
 
 # DatabricksDeltaSharingConnection
-<a name="API_DatabricksDeltaSharingConnection"></a>
 
 Details about Delta Sharing Connector for Databricks
 

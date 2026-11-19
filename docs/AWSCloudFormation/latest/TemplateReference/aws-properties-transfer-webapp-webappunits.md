@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::WebApp WebAppUnits
-<a name="aws-properties-transfer-webapp-webappunits"></a>
 
 Contains an integer value that represents the value for number of concurrent connections or the user sessions on your web app.
 

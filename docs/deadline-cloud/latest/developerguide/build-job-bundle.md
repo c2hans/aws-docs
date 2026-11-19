@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/bui
 ---
 
 # Open Job Description (OpenJD) templates for Deadline Cloud
-<a name="build-job-bundle"></a>
 
 A *job bundle* is one of the tools you use to define jobs for AWS Deadline Cloud. They group an Open Job Description (OpenJD) template with additional information such as files and directories that your jobs use with job attachments. For more information, see the [Open Job Description specification](https://github.com/OpenJobDescription/openjd-specifications) on the GitHub website. You use the Deadline Cloud command-line interface (CLI) to use a job bundle to submit jobs for a queue to run.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsD
 ---
 
 # AwsRdsDbSubnetGroupSubnet
-<a name="API_AwsRdsDbSubnetGroupSubnet"></a>
 
 Information about a subnet in a subnet group.
 

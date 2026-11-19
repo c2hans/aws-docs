@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Manage Tooling blueprint parameters
-<a name="manage-tooling-blueprint"></a>
 
 The Tooling blueprint provisions infrastructure for each project, including IAM roles, security groups, and an Amazon SageMaker Unified Studio domain. You can customize the blueprint's behavior by modifying its parameters, such as idle timeout settings, EBS volume sizes, network isolation, and permissions boundaries. Changes to blueprint parameters apply to all new projects created under the blueprint.
 

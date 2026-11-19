@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # MAX
-<a name="recipe-actions.functions.MAX"></a>
 
  Returns the maximum numerical value from the selected source columns in a new column. Any non-number is ignored.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/common-replication-errors.
 ---
 
 # Common replication errors
-<a name="common-replication-errors"></a>
 
 This section describes common replication errors, possible explanations, and potential mitigations.
 

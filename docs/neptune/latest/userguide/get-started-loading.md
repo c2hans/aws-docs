@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/get-started-loa
 ---
 
 # Loading Data into an Amazon Neptune cluster
-<a name="get-started-loading"></a>
 
 Amazon Neptune provides a process for loading data from external files directly into a Neptune DB instance. You can use this process instead of executing a large number of `INSERT` statements, `addV` and `addE` steps, or other API calls.
 

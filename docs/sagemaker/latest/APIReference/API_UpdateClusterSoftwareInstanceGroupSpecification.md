@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateClusterSoftwareInstanceGroupSpecification
-<a name="API_UpdateClusterSoftwareInstanceGroupSpecification"></a>
 
 The configuration that describes specifications of the instance groups to update.
 

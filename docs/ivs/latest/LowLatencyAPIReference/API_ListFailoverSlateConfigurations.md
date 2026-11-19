@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Li
 ---
 
 # ListFailoverSlateConfigurations
-<a name="API_ListFailoverSlateConfigurations"></a>
 
 Gets summary information about all failover slate configurations in your account, in the AWS region where the API request is processed.
 

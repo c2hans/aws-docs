@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/example
 ---
 
 # Example: Draw clustered points
-<a name="example-draw-clusters"></a>
 
 ![Map showing earthquake locations across the Pacific Ocean with varying circle sizes indicating magnitude.](https://docs.aws.amazon.com/location/previous/developerguide/images/samples/clusters_small.png)
 

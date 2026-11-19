@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_ListTa
 ---
 
 # ListTableMigrations
-<a name="API_s3Buckets_ListTableMigrations"></a>
 
 Lists the migrations whose destination is in a table bucket, a namespace or a table. Specify a `tableBucketARN` to list the migrations into a table bucket, and add a `namespace`, or a `namespace` and a `name`, to narrow the list. Or specify a `tableARN` to list the migrations into a table.
 

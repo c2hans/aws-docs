@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Li
 ---
 
 # ListChildren
-<a name="API_ListChildren"></a>
 
 Lists all of the organizational units (OUs) or accounts that are contained in the specified parent OU or root. This operation, along with [ListParents](API_ListParents.md) enables you to traverse the tree structure that makes up this root.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/network-life-cycle.html
 ---
 
 # Life cycle operations of a network instance
-<a name="network-life-cycle"></a>
 
 AWS TNB allows you to easily manage your network using standardized management operations inline with ETSI SOL003 and SOL005. You can perform the following life-cycle operations:
 + Create the network

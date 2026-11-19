@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleResourceLinkSharingConfiguration
-<a name="API_AssetBundleResourceLinkSharingConfiguration"></a>
 
 A structure that contains the configuration of a shared link to an Amazon Quick Sight dashboard.
 

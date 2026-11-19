@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Disassoc
 ---
 
 # DisassociateQueueEmailAddresses
-<a name="API_DisassociateQueueEmailAddresses"></a>
 
 Removes the association between a set of email addresses and a queue. After disassociation, agents will no longer be able to select these email addresses as "From" addresses when replying to inbound email contacts or initiating outbound email contacts in this queue.
 

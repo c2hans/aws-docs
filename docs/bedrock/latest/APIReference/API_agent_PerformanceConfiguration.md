@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Pe
 ---
 
 # PerformanceConfiguration
-<a name="API_agent_PerformanceConfiguration"></a>
 
 The performance-related configuration options for the knowledge base retrieval and generation process.
 

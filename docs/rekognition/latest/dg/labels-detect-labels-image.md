@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/labels-detect-labe
 ---
 
 # Detecting labels in an image
-<a name="labels-detect-labels-image"></a>
 
 You can use the [DetectLabels](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectLabels.html) operation to detect labels (objects and concepts) in an image and retrieve information about an image’s properties. Image properties include attributes like the color of the foreground and background and the image's sharpness, brightness, and contrast. You can retrieve just the labels in an image, just the properties of the image, or both. For an example, see [Analyzing images stored in an Amazon S3 bucket](images-s3.md).
 

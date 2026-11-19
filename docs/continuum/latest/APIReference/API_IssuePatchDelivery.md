@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_IssueP
 ---
 
 # IssuePatchDelivery
-<a name="API_IssuePatchDelivery"></a>
 
 The issue Patch Delivery.
 

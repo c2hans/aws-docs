@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Disab
 ---
 
 # Disable resource tags on telemetry
-<a name="DisableResourceTagsOnTelemetry"></a>
 
 If you don't need resource tags for telemetry, disable the feature. When disabled, CloudWatch stops enriching telemetry with tags. You can enable it again at any time. For more information, see [Enable resource tags on telemetry](EnableResourceTagsOnTelemetry.md).
 

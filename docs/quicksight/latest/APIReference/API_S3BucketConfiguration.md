@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_S3Buc
 ---
 
 # S3BucketConfiguration
-<a name="API_S3BucketConfiguration"></a>
 
 An optional structure that contains the Amazon S3 bucket configuration that the generated snapshots are stored in. If you don't provide this information, generated snapshots are stored in the default Amazon Quick Sight bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Standar
 ---
 
 # StandardsControlAssociationSummary
-<a name="API_StandardsControlAssociationSummary"></a>
 
  An array that provides the enablement status and other details for each control that applies to each enabled standard.
 

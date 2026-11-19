@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-eks-trouble
 ---
 
 # AWS Batch on Amazon EKS
-<a name="batch-eks-troubleshooting"></a>
 
 **Topics**
 + [`INVALID` compute environment](batch_eks_invalid_compute_environment.md)

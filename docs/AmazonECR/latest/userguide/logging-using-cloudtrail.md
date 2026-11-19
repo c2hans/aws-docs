@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/logging-using
 ---
 
 # Logging Amazon ECR actions with AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Amazon ECR is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, a role, or an AWS service in Amazon ECR. CloudTrail captures the following Amazon ECR actions as events:
 + All API calls, including calls from the Amazon ECR console

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/prep-classifier-dat
 ---
 
 # Multi-class mode
-<a name="prep-classifier-data-multi-class"></a>
 
 In multi-class mode, classification assigns one class for each document. The individual classes are mutually exclusive. For example, you can classify a movie as comedy or science fiction, but not both.
 

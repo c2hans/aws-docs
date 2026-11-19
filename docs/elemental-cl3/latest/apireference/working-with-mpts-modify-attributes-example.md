@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # Example
-<a name="working-with-mpts-modify-attributes-example"></a>
 
 This request changes the bitrate and video\_allocation of the MPTS with ID 3.
 

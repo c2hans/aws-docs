@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaExternalRo
 ---
 
 # Use externally signed private CA certificates
-<a name="PcaExternalRoot"></a>
 
 If your private CA hierarchy's root of trust must be a CA outside of AWS Private CA, you can create and self-sign your own root CA. Alternatively, you can obtain a private CA certificate that is signed by an external private CA operated by your organization. Whatever its source, you can use this externally obtained CA to sign a private subordinate CA certificate that AWS Private CA manages.
 

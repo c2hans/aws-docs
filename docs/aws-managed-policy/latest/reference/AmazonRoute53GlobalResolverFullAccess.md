@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53GlobalResolverFullAccess
-<a name="AmazonRoute53GlobalResolverFullAccess"></a>
 
 **Description**: Provides full access to retrieve, list, create, update, and delete all Amazon Route 53 Global Resolver resources.
 

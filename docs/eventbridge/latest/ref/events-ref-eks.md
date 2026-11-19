@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-eks.ht
 ---
 
 # Amazon Elastic Kubernetes Service events
-<a name="events-ref-eks"></a>
 
 Amazon EKS sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

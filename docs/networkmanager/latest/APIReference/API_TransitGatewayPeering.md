@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_T
 ---
 
 # TransitGatewayPeering
-<a name="API_TransitGatewayPeering"></a>
 
 Describes a transit gateway peering attachment.
 

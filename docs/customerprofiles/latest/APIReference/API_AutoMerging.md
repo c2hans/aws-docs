@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # AutoMerging
-<a name="API_connect-customer-profiles_AutoMerging"></a>
 
 Configuration settings for how to perform the auto-merging of profiles.
 

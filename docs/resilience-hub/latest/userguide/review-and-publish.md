@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/review-a
 ---
 
 # Review and publish your AWS Resilience Hub application
-<a name="review-and-publish"></a>
 
 After creating the application, you can still review the application and edit its resources. After you finish, choose **Publish** to publish the application.
 

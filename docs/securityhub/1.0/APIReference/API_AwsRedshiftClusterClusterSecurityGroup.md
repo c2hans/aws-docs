@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsReds
 ---
 
 # AwsRedshiftClusterClusterSecurityGroup
-<a name="API_AwsRedshiftClusterClusterSecurityGroup"></a>
 
 A security group that is associated with the cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSEC03-BP03 Implement least privilege with dynamic boundaries
-<a name="agentsec03-bp03"></a>
 
  Broad permissions grant an affected agent access well beyond the task it was asked to do. Scoping privilege at each identity layer, backing it with temporary credentials, and layering contextual IAM conditions limits the scope of any single compromised or misprompted call.
 

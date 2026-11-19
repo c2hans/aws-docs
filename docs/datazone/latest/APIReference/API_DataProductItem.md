@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DataPro
 ---
 
 # DataProductItem
-<a name="API_DataProductItem"></a>
 
 The data product.
 

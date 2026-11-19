@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Snowfla
 ---
 
 # SnowflakeBufferingHints
-<a name="API_SnowflakeBufferingHints"></a>
 
  Describes the buffering to perform before delivering data to the Snowflake destination. If you do not specify any value, Firehose uses the default values.
 

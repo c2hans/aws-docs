@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-sqoop.html
 ---
 
 # Apache Sqoop
-<a name="emr-sqoop"></a>
 
 **Note**
 The last release to include Apache Sqoop was Amazon EMR Release 7.4. Apache Sqoop will be removed from Amazon EMR Release 7.5 and higher releases.

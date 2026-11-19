@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListP
 ---
 
 # ListProtectedResourcesByBackupVault
-<a name="API_ListProtectedResourcesByBackupVault"></a>
 
 This request lists the protected resources corresponding to each backup vault.
 

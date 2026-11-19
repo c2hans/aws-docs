@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-exten
 ---
 
 # Run a SageMaker Distributed Model Parallel Training Job with Tensor Parallelism
-<a name="model-parallel-extended-features-pytorch-tensor-parallelism-examples"></a>
 
 In this section, you learn:
 + How to configure a SageMaker PyTorch ModelTrainer and the SageMaker model parallelism option to use tensor parallelism.

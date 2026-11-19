@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/websock
 ---
 
 # Security policy for WebSocket APIs in API Gateway
-<a name="websocket-api-ciphers"></a>
 
 API Gateway enforces a security policy of `TLS_1_2` for all WebSocket API endpoints.
 

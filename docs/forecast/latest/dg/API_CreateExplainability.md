@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/API_CreateExplainabil
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # CreateExplainability
-<a name="API_CreateExplainability"></a>
 
 **Note**
 Explainability is only available for Forecasts and Predictors generated from an AutoPredictor ([CreateAutoPredictor](API_CreateAutoPredictor.md))

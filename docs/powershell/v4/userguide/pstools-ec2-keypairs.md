@@ -7,7 +7,6 @@ AWS Tools for PowerShell V4 has reached end of support.
 We recommend that you migrate to [AWS Tools for PowerShell V5](https://docs.aws.amazon.com/powershell/v5/userguide/). For additional details and information on how to migrate, please refer to our [end of support announcement](https://aws.amazon.com/blogs/developer/aws-tools-for-powershell-v4-end-of-support-announcement/).
 
 # Creating a Key Pair
-<a name="pstools-ec2-keypairs"></a>
 
 The following `New-EC2KeyPair` example creates a key pair and stores in the PowerShell variable `$myPSKeyPair`
 

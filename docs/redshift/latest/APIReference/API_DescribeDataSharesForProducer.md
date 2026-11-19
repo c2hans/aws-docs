@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeDataSharesForProducer
-<a name="API_DescribeDataSharesForProducer"></a>
 
 Returns a list of datashares when the account identifier being called is a producer account identifier.
 
@@ -13,7 +12,7 @@ Returns a list of datashares when the account identifier being called is a produ
  For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeDataSharesForProducer](#API_DescribeDataSharesForProducer) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeDataSharesForProducer](API_DescribeDataSharesForProducer.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 Required: No
@@ -45,7 +44,7 @@ Shows the results of datashares available for producers.
 Type: Array of [DataShare](API_DataShare.md) objects
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeDataSharesForProducer](#API_DescribeDataSharesForProducer) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeDataSharesForProducer](API_DescribeDataSharesForProducer.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 

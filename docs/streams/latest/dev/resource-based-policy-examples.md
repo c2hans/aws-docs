@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/resource-based-policy
 ---
 
 # Share access using resource-based policies
-<a name="resource-based-policy-examples"></a>
 
 **Note**
 Updating an existing resource-based policy means replacing the existing one, so make sure to include all the necessary information in your new policy.

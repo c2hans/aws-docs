@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
  Lists all tags attached to the specified resource. Supports telemetry rule resources and telemetry pipeline resources.
 

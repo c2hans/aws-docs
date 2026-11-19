@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeP
 ---
 
 # DescribePendingAggregationRequests
-<a name="API_DescribePendingAggregationRequests"></a>
 
 Returns a list of all pending aggregation requests.
 

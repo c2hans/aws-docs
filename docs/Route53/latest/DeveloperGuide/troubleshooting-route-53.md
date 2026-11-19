@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/troublesho
 ---
 
 # Troubleshooting Amazon Route 53
-<a name="troubleshooting-route-53"></a>
 
 This page covers the following troubleshooting topics for Amazon Route 53:
 

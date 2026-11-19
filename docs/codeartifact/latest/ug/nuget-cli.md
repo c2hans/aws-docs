@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/nuget-cli.html
 ---
 
 # Use CodeArtifact with the nuget or dotnet CLI
-<a name="nuget-cli"></a>
 
 You can use CLI tools like `nuget` and `dotnet` to publish and consume packages from CodeArtifact. This document provides information about configuring the CLI tools and using them to publish or consume packages.
 

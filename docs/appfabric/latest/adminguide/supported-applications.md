@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/supported-ap
 ---
 
 # Supported applications in AppFabric for security
-<a name="supported-applications"></a>
 
 AWS AppFabric for security supports integration with the following applications. Choose the name of an application for more information about how to set up AppFabric for security to connect to it.
 

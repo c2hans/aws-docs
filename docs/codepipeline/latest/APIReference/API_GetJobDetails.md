@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Get
 ---
 
 # GetJobDetails
-<a name="API_GetJobDetails"></a>
 
 Returns information about a job. Used for custom actions only.
 

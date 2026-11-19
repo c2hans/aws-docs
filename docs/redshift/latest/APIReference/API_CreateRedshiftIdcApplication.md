@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateR
 ---
 
 # CreateRedshiftIdcApplication
-<a name="API_CreateRedshiftIdcApplication"></a>
 
 Creates an Amazon Redshift application for use with IAM Identity Center.
 

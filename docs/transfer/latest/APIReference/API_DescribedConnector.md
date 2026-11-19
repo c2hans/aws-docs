@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedConnector
-<a name="API_DescribedConnector"></a>
 
 Describes the parameters for the connector, as identified by the `ConnectorId`.
 

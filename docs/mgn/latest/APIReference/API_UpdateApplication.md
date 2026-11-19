@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateApplic
 ---
 
 # UpdateApplication
-<a name="API_UpdateApplication"></a>
 
 Update application.
 

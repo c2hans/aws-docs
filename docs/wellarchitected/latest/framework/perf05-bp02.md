@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf05-
 ---
 
 # PERF05-BP02 Evaluate your workload performance
-<a name="perf05-bp02"></a>
 
  Everyday performance does not predict how a workload behaves at peak traffic. Test the workload against your KPIs under realistic and stressful conditions to find where it slows or stops scaling before customers notice.
 

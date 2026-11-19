@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # Process a payment
-<a name="payments-process-payment"></a>
 
 To process a payment, you need two resources:
 +  **Payment instrument** — An embedded crypto wallet with Coinbase or Stripe. See [Create a payment instrument](payments-create-instrument.md).

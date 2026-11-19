@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_En
 ---
 
 # EntityPropertyReference
-<a name="API_EntityPropertyReference"></a>
 
 An object that uniquely identifies an entity property.
 

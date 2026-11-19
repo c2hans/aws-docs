@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_R
 ---
 
 # RouteAnalysisEndpointOptions
-<a name="API_RouteAnalysisEndpointOptions"></a>
 
 Describes a source or a destination.
 

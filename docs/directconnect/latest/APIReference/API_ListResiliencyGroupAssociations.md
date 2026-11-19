@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Li
 ---
 
 # ListResiliencyGroupAssociations
-<a name="API_ListResiliencyGroupAssociations"></a>
 
 Lists the connection associations for the specified resiliency group.
 

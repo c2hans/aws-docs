@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/launch-work
 ---
 
 # Create an AWS Managed Microsoft AD directory for WorkSpaces Personal
-<a name="launch-workspace-microsoft-ad"></a>
 
 In this tutorial, we create an AWS Managed Microsoft AD directory. For tutorials that use the other options, see [Create a directory for WorkSpaces Personal](launch-workspaces-tutorials.md).
 

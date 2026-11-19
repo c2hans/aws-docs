@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSResilienceHubAsssessmentExecutionPolicy
-<a name="AWSResilienceHubAsssessmentExecutionPolicy"></a>
 
 **Description**: Policy for AWS Resilience Hub service role which allows access to other AWS services in order to execute assessment.
 

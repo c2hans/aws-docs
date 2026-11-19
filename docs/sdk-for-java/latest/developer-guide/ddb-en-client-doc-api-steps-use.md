@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Perform CRUD operations
-<a name="ddb-en-client-doc-api-steps-use"></a>
 
 After you define an `EnhancedDocument` instance, you can save it to a DynamoDB table. The following code snippet uses the [personDocument](ddb-en-client-doc-api-steps-create-ed.md#ddb-en-client-doc-api-steps-create-ed-fromparts) that was created from individual elements.
 

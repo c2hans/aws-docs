@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mo
 ---
 
 # Modernize mainframe online printing workloads on AWS by using Micro Focus Enterprise Server and LRS VPSX/MFI
-<a name="modernize-mainframe-online-printing-workloads-on-aws-by-using-micro-focus-enterprise-server-and-lrs-vpsx-mfi"></a>
 
 *Shubham Roy and Kevin Yung, Amazon Web Services*
 

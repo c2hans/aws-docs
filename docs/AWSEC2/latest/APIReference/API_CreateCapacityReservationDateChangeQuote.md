@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCap
 ---
 
 # CreateCapacityReservationDateChangeQuote
-<a name="API_CreateCapacityReservationDateChangeQuote"></a>
 
 Generates a quote for changing the start date of a future-dated Capacity Reservation that has not yet been delivered. The quote includes the new start date, the resulting commitment end date, and a quote ID. Pass the quote ID to `ModifyCapacityReservation` to apply the change.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/jewelry.ht
 ---
 
 # .jewelry
-<a name="jewelry"></a>
 
 Used by jewelry sellers and buyers.
 

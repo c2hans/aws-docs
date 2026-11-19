@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Example: Reclaiming space by using autovacuum and VACUUM FULL
-<a name="example"></a>
 
 As an example, let's create an `emp` table table with 500,000 rows, and then update the rows with new values. Autovacuum is enabled, so it will run both `VACUUM` and `ANALYZE` commands on this table to remove bloat and reclaim space. The reclaimed space can be reused but it won't be returned to the operating system.
 

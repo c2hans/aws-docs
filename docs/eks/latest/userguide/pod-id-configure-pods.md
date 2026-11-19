@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/pod-id-configure-po
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure Pods to access AWS services with service accounts
-<a name="pod-id-configure-pods"></a>
 
 If a Pod needs to access AWS services, then you must configure it to use a Kubernetes service account. The service account must be associated to an AWS Identity and Access Management (IAM) role that has permissions to access the AWS services.
 + An existing cluster. If you don’t have one, you can create one using one of the guides in [Get started with Amazon EKS](getting-started.md).

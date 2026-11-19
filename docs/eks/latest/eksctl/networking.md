@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/networking.html
 ---
 
 # Networking
-<a name="networking"></a>
 
 This chapter includes information about how Eksctl creates Virtual Private Cloud (VPC) networks for EKS clusters.
 

@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Additional tools
-<a name="sdk-features-additional-tools"></a>
 
 The following are some additional tools that you can use to ease the work of developing, deploying, and maintaining your .NET applications.
 

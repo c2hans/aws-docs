@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # AccountLimit
-<a name="API_AccountLimit"></a>
 
 The current resource quotas associated with an AWS account.
 

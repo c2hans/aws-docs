@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Services and resource types that support enforcement
-<a name="orgs_manage_policies_supported-resources-enforcement"></a>
 
 The following services and resource types support enforcement with tag policies:
 

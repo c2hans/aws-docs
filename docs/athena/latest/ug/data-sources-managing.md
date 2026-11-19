@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/data-sources-managing.h
 ---
 
 # Manage your data sources
-<a name="data-sources-managing"></a>
 
 You can use the **Data sources and catalogs** page of the Athena console to manage the data sources that you create.
 

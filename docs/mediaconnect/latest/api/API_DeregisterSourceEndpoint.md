@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DeregisterSo
 ---
 
 # DeregisterSourceEndpoint
-<a name="API_DeregisterSourceEndpoint"></a>
 
 Deregisters a source endpoint from MediaConnect.
 

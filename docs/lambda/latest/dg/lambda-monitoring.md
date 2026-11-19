@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-monitoring.html
 ---
 
 # Monitoring, debugging, and troubleshooting Lambda Event Functions
-<a name="lambda-monitoring"></a>
 
 AWS Lambda integrates with other AWS services to help you monitor and troubleshoot your Lambda Event Functions. Lambda automatically monitors Event Functions on your behalf and reports metrics through Amazon CloudWatch. To help you monitor your code when it runs, Lambda automatically tracks the number of requests, the invocation duration per request, and the number of requests that result in an error.
 

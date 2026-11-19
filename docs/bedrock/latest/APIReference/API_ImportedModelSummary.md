@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Imported
 ---
 
 # ImportedModelSummary
-<a name="API_ImportedModelSummary"></a>
 
 Information about the imported model.
 

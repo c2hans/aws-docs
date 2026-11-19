@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/session
 ---
 
 # Enabling and disabling session logging
-<a name="session-manager-logging"></a>
 
 Session logging records information about current and completed sessions in the Systems Manager console. You can also log details about commands run during sessions in your AWS account. Session logging lets you do the following:
 + Create and store session logs for archival purposes.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Activi
 ---
 
 # ActivityWindow
-<a name="API_ActivityWindow"></a>
 
 Contains the time range during which activity was observed.
 

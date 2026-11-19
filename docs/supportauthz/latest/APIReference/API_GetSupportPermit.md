@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Get
 ---
 
 # GetSupportPermit
-<a name="API_GetSupportPermit"></a>
 
 Retrieves the details of a support permit by its ARN or name.
 

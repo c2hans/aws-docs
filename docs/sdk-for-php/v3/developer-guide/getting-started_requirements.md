@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/getting-s
 ---
 
 # Requirements and recommendations for the AWS SDK for PHP Version 3
-<a name="getting-started_requirements"></a>
 
 For best results with AWS SDK for PHP, ensure your environment supports the following requirements and recommendations.
 

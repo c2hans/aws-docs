@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/service_c
 ---
 
 # Code examples for Organizations using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Organizations with an AWS software development kit (SDK).
 

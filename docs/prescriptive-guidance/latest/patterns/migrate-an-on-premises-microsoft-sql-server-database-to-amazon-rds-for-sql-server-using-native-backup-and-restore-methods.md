@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises Microsoft SQL Server database to Amazon RDS for SQL Server using native backup and restore methods
-<a name="migrate-an-on-premises-microsoft-sql-server-database-to-amazon-rds-for-sql-server-using-native-backup-and-restore-methods"></a>
 
 *Tirumala Dasari, David Queiroz, and Vishal Singh, Amazon Web Services*
 

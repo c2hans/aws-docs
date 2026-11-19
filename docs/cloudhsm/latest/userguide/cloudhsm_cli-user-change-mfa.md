@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-u
 ---
 
 # The user change-mfa category in CloudHSM CLI
-<a name="cloudhsm_cli-user-change-mfa"></a>
 
 In the CloudHSM CLI, **user change-mfa** is a parent category for a group of commands that, when combined with the parent category, create a command specific to changing multi-factor authentication (MFA) for users.
 

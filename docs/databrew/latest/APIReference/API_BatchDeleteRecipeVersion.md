@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_BatchDe
 ---
 
 # BatchDeleteRecipeVersion
-<a name="API_BatchDeleteRecipeVersion"></a>
 
 Deletes one or more versions of a recipe at a time.
 

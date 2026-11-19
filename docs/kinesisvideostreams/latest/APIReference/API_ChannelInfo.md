@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # ChannelInfo
-<a name="API_ChannelInfo"></a>
 
 A structure that encapsulates a signaling channel's metadata and properties.
 

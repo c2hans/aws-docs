@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-elasti
 ---
 
 # Amazon EMR events
-<a name="events-ref-elasticmapreduce"></a>
 
 Amazon EMR sends service events to EventBridge via AWS CloudTrail.
 

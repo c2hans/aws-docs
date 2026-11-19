@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # Container
-<a name="API_Container"></a>
 
 Describes the settings of a container that will be launched, or that is launched, to an Amazon Lightsail container service.
 

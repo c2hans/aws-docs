@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/upgradeguide/downg
 ---
 
 # Step A: Get ready to downgrade
-<a name="downgrades-lv-upg-ready-dn"></a>
 
 The following steps prepare you for downgrading AWS Elemental Live. Perform these steps to ensure that you don't lose any data.
 

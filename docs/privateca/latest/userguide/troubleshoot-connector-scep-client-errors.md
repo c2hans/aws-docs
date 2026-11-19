@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/troubleshoot-
 ---
 
 # Troubleshoot Connector for SCEP client errors
-<a name="troubleshoot-connector-scep-client-errors"></a>
 
 Use the following guidance to troubleshoot client errors related to Connector for SCEP.
 

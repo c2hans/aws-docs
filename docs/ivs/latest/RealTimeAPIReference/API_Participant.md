@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Part
 ---
 
 # Participant
-<a name="API_Participant"></a>
 
 Object describing a participant that has joined a stage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/elasticbean
 ---
 
 # Security Hub CSPM controls for Elastic Beanstalk
-<a name="elasticbeanstalk-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the AWS Elastic Beanstalk service and resources.
 

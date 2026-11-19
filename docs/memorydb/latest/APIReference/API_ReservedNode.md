@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Reserve
 ---
 
 # ReservedNode
-<a name="API_ReservedNode"></a>
 
 Represents the output of a `PurchaseReservedNodesOffering` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/klaviyo-connection-option
 ---
 
 # Klaviyo connection options
-<a name="klaviyo-connection-options"></a>
 
 The following are connection options for Klaviyo:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Klaviyo object to read.

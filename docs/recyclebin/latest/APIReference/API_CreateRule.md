@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_Creat
 ---
 
 # CreateRule
-<a name="API_CreateRule"></a>
 
 Creates a Recycle Bin retention rule. You can create two types of retention rules:
 +  **Tag-level retention rules** - These retention rules use resource tags to identify the resources to protect. For each retention rule, you specify one or more tag key and value pairs. Resources (of the specified type) that have at least one of these tag key and value pairs are automatically retained in the Recycle Bin upon deletion. Use this type of retention rule to protect specific resources in your account based on their tags.

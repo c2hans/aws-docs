@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-versi
 ---
 
 # Register a Model Version
-<a name="model-registry-version"></a>
 
 You can register an Amazon SageMaker AI model by creating a model version that specifies the model group to which it belongs. A model version must include a model artifacts (the trained weights of a model) and optionally the inference code for the model.
 

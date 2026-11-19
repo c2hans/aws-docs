@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/sessions.h
 AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [AWS SDK for Go V2](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-go-v1-on-july-31-2025/).
 
 # Using Sessions to Configure Service Clients in the AWS SDK for Go
-<a name="sessions"></a>
 
 In the AWS SDK for Go, a session is an object that contains configuration information for [service clients](making-requests.md). which you use to interact with AWS services. For example, sessions can include information about the region where requests will be sent, which credentials to use, or additional request handlers. Whenever you create a service client, you must specify a session. For more information about sessions, see the [session](https://docs.aws.amazon.com/sdk-for-go/api/aws/session/) package in the AWS SDK for Go API Reference.
 

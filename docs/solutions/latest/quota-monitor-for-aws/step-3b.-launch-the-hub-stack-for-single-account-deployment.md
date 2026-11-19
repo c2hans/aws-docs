@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 ---
 
 # Step 3b. Launch the hub stack for single account deployment
-<a name="step-3b.-launch-the-hub-stack-for-single-account-deployment"></a>
 
 1. Sign in to the AWS Management Console and select the button to launch the `quota-monitor-hub-no-ou.template` CloudFormation template.
 

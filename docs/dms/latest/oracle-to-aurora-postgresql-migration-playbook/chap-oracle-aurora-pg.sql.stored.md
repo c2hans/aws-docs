@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle procedures and functions and PostgreSQL stored procedures
-<a name="chap-oracle-aurora-pg.sql.stored"></a>
 
 With AWS DMS, you can migrate Oracle procedures and functions, as well as PostgreSQL stored procedures, to various target databases supported by the service. Oracle procedures and functions are reusable code blocks written in PL/SQL that perform specific tasks within an Oracle database. PostgreSQL stored procedures are similar reusable code blocks for PostgreSQL databases.
 

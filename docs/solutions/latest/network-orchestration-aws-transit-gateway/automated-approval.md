@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Automated approval
-<a name="automated-approval"></a>
 
 By default, the Guidance approves network requests from spoke accounts automatically. This section provides detail about this workflow.
 

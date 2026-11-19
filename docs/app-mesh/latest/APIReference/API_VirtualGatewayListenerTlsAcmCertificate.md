@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewayListenerTlsAcmCertificate
-<a name="API_VirtualGatewayListenerTlsAcmCertificate"></a>
 
 An object that represents an AWS Certificate Manager certificate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Assessing data availability for business
-<a name="data-availability"></a>
 
 Use follow-up questions such as the following to understand the gaps between the current state of data availability and what the BU wants to achieve:
 + How does data support your projects and your current business goals?

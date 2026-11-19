@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ti
 ---
 
 # TimestreamRegistrationResponse
-<a name="API_TimestreamRegistrationResponse"></a>
 
 Information about the registered Amazon Timestream resources or errors, if any.
 

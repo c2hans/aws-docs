@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Nova 2 Sonic InvokeModelWithBidirectionalStream returns empty-message AccessDeniedException
-<a name="ts-agentcore-role-name"></a>
 
  **Symptom.** The AgentCore execution role has a policy statement granting `bedrock:InvokeModel` and `bedrock:InvokeModelWithResponseStream`, IAM policy simulation returns `allowed`, and the Bedrock model availability check shows `AUTHORIZED` and `AVAILABLE` — yet live voice sessions fail with `AccessDeniedException` where the exception `message` field is empty (rather than containing the standard ARN-and-principal detail). Standard IAM diagnostics do not identify a denial reason.
 

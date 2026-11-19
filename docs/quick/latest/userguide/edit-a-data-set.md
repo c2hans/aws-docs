@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/edit-a-data-set.h
 ---
 
 # Editing datasets
-<a name="edit-a-data-set"></a>
 
 You can edit an existing dataset to perform data preparation. For more information about Quick Sight data preparation functionality, see [Preparing data in AWS Quick Sight](preparing-data.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Get a specific attribute of a contact in Connect Customer agent workspace - Deprecated
-<a name="3P-apps-contact-requests-getattribute"></a>
 
 **Note**
 This operation is deprecated. Use [getContactAttribute()](3P-apps-contact-requests-getcontactattribute.md) instead, which returns the attribute value as a string.

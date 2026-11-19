@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Trust
 ---
 
 # TrustStoreSummary
-<a name="API_TrustStoreSummary"></a>
 
 A trust store summary.
 

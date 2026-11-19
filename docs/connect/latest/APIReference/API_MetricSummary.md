@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricSu
 ---
 
 # MetricSummary
-<a name="API_MetricSummary"></a>
 
 Contains summary information about a metric.
 

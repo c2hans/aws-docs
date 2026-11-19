@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-processing-opt
 ---
 
 # Supported features by input type
-<a name="input-processing-options"></a>
 
 SCTE 35 messages can appear only in the following types of MediaLive inputs:
 + Elemental Link inputs

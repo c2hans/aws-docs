@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # S3Statistics
-<a name="API_S3Statistics"></a>
 
 Processing statistics for the Amazon S3 objects in an ingestion source.
 

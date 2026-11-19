@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Batch
 ---
 
 # BatchDeleteDevicePositionHistory
-<a name="API_BatchDeleteDevicePositionHistory"></a>
 
 Deletes the position history of one or more devices from a tracker resource.
 

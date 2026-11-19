@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/emr-create-table.html
 ---
 
 # Create and query a basic table based on Amazon EMR log files
-<a name="emr-create-table"></a>
 
 The following example creates a basic table, `myemrlogs`, based on log files saved to `s3://aws-logs-{{123456789012}}-{{us-west-2}}/elasticmapreduce/{{j-2ABCDE34F5GH6}}/elasticmapreduce/`. The Amazon S3 location used in the examples below reflects the pattern of the default log location for an EMR cluster created by Amazon Web Services account {{123456789012}} in Region {{us-west-2}}. If you use a custom location, the pattern is s3://amzn-s3-demo-bucket/{{ClusterID}}.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/mainten
 ---
 
 # Registering maintenance window tasks without targets
-<a name="maintenance-windows-targetless-tasks"></a>
 
 For each maintenance window you create, you can specify one or more tasks to perform when the maintenance window runs. In most cases, you must specify the resources, or targets, that the task is to run on. In some cases, however, you don't need to specify targets explicitly in the task.
 

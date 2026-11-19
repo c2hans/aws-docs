@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeR
 ---
 
 # DescribeReservedInstancesListings
-<a name="API_DescribeReservedInstancesListings"></a>
 
 Describes your account's Reserved Instance listings in the Reserved Instance Marketplace.
 

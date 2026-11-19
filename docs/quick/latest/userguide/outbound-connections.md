@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/outbound-connecti
 ---
 
 # Outbound connections and data egress in AWS Quick
-<a name="outbound-connections"></a>
 
 Stored customer data in AWS Quick does not leave its AWS Region. The documented exceptions are AI inference processed within a defined geography (cross-Region inference) and the outbound paths that you or your administrator enables. Every path described on this page is either off by default or requires explicit configuration before data can leave the service boundary.
 
@@ -56,7 +55,7 @@ When web search is enabled, AWS Quick sends queries derived from user requests t
 
 For more information, see [Admin controls](admin-controls.md).
 
-For more information about cross-Region routing for web search, see [Cross-Region calls for web search](regions.md#web-search-cross-region).
+For more information about cross-Region routing for web search, see [Cross-Region web search](regions.md#web-search-cross-region).
 
 ## Third-party research providers
 <a name="outbound-connections-research-providers"></a>
@@ -120,4 +119,4 @@ Cross-Region inference is processing within a defined geography, not customer-en
 + **Who controls it** – Cross-Region inference is not a customer-configurable outbound path. Inference is processed within the Regions that make up your geography, no data reaches a third party, and stored data remains in your primary Region. Because there is no outbound destination, there is no destination for you to approve or restrict. You cannot disable cross-Region inference. Instead, verify which geography your Region belongs to. Confirm that the geography boundary satisfies your data residency requirements.
 + **Boundaries** – Cross-Region inference requests stay within the AWS Regions that are part of the geography where the data originally resides. Stored data remains only in the primary Region.
 
-For more information, see [Cross-Region inference for Australia, Japan, Europe, and the United States](regions.md#cross-region-inference).
+For more information, see [Cross-Region inference](regions.md#cross-region-inference).

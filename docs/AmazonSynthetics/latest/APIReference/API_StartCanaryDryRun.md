@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # StartCanaryDryRun
-<a name="API_StartCanaryDryRun"></a>
 
 Use this operation to start a dry run for a canary that has already been created
 

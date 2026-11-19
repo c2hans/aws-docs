@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/auth-by-role.html
 ---
 
 # Understanding authorization by role
-<a name="auth-by-role"></a>
 
 The tables in this topic list the actions that app instance users can run, depending on their role.
 

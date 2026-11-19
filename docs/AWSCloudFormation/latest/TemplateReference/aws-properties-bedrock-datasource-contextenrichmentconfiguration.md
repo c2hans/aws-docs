@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataSource ContextEnrichmentConfiguration
-<a name="aws-properties-bedrock-datasource-contextenrichmentconfiguration"></a>
 
 Context enrichment configuration is used to provide additional context to the RAG application.
 

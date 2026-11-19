@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # Anomaly
-<a name="API_Anomaly"></a>
 
 This structure represents one anomaly that has been found by a logs anomaly detector.
 

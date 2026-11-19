@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSManagedAccountManagementAccess
-<a name="AWSManagedAccountManagementAccess"></a>
 
 **Description**: Grants AWS permissions to update and maintain AWS managed roles for AWS managed accounts
 

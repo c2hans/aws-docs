@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Con
 ---
 
 # ConfigurationStatus
-<a name="API_ConfigurationStatus"></a>
 
 Contains current status information for the configuration.
 

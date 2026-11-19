@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 ---
 
 # Components of an AI inference stack
-<a name="inference-stack-components"></a>
 
 A production AI inference stack typically consists of the following three core components:
 + End user application – Serves as the entry point for user interactions and request handling

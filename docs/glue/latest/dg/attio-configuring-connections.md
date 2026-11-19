@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/attio-configuring-connect
 ---
 
 # Configuring Attio connections
-<a name="attio-configuring-connections"></a>
 
 Attio connections authenticate with an API key (or token). You store the key in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

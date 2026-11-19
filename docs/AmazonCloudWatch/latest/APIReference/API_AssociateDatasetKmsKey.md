@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # AssociateDatasetKmsKey
-<a name="API_AssociateDatasetKmsKey"></a>
 
 Associates an AWS Key Management Service (AWS KMS) customer managed key with the specified dataset. After this operation completes, all data published to the dataset is encrypted at rest using the specified KMS key. Callers must have `kms:Decrypt` permission on the key to read the encrypted data.
 

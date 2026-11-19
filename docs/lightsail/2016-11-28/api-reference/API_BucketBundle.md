@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_B
 ---
 
 # BucketBundle
-<a name="API_BucketBundle"></a>
 
 Describes the specifications of a bundle that can be applied to an Amazon Lightsail bucket.
 

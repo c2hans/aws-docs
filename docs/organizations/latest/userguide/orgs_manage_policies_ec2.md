@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # EC2 policies
-<a name="orgs_manage_policies_ec2"></a>
 
 EC2 policies allow you to centrally declare and enforce desired configurations for Amazon EC2, Amazon VPC, and Amazon EBS at scale across an organization. Once attached, the configuration is always maintained when the service adds new features or APIs.
 

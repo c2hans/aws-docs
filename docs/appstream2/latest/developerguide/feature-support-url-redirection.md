@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/feature
 ---
 
 # Host-to-client URL redirection
-<a name="feature-support-url-redirection"></a>
 
 Host-to-client URL redirection opens URLs accessed on a WorkSpaces Applications streaming session in the web browser on the user's local device instead of on the streaming instance. This offloads resource-intensive web content such as video to the local device, which reduces latency and server-side resource consumption.
 

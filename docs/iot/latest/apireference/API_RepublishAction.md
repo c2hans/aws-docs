@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_RepublishAct
 ---
 
 # RepublishAction
-<a name="API_RepublishAction"></a>
 
 Describes an action to republish to another topic.
 

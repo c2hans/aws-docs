@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/c4scep-vpc-en
 ---
 
 # Connector for SCEP VPC endpoints (AWS PrivateLink)
-<a name="c4scep-vpc-endpoints"></a>
 
 You can create a private connection between your VPC and Connector for SCEP by configuring an interface VPC endpoint. Interface endpoints are powered by [AWS PrivateLink](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-privatelink.html), a technology for privately accessing Connector for SCEP API operations. AWS PrivateLink routes all network traffic between your VPC and Connector for SCEP through the Amazon network, avoiding exposure on the open internet. Each VPC endpoint is represented by one or more [elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) with private IP addresses in your VPC subnets.
 

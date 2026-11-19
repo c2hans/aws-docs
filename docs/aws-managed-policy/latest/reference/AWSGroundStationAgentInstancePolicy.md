@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSG
 ---
 
 # AWSGroundStationAgentInstancePolicy
-<a name="AWSGroundStationAgentInstancePolicy"></a>
 
 **Description**: Provides the Dataflow Endpoint Instance permissions to use the AWS Ground Station Agent
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/i
 ---
 
 # Controlling access to job templates
-<a name="iam-job-template"></a>
 
 `StartJobRun` policy lets you enforce that a user or a role can only run jobs using job templates that you specify and cannot run `StartJobRun` operations without using the specified job templates. To achieve this, first ensure that you give the user or role a read permission to the specified job templates as shown below.
 

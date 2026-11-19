@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/common-messages.
 ---
 
 # Troubleshoot Amazon EC2 Windows instance start issues
-<a name="common-messages"></a>
 
 The following are troubleshooting tips to help you solve password and activation issues with Amazon EC2 Windows instances.
 

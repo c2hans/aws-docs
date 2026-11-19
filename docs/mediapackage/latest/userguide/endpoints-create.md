@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/endpoints-
 ---
 
 # Creating an origin endpoint in AWS Elemental MediaPackage
-<a name="endpoints-create"></a>
 
 These steps shows how to create an origin endpoint (endpoint) on a channel to define how MediaPackage prepares content for delivery. Content can't be served from a channel until it has an endpoint. If you're using input redundancy, each endpoint receives content from one ingest URL at a time. If MediaPackage performs a failover on the inputs for one ingest input URL, the endpoints automatically start receiving content from the other ingest URL. For more information about input redundancy and failover, see [Live input redundancy AWS Elemental MediaPackage processing flow](what-is-flow-ir.md).
 

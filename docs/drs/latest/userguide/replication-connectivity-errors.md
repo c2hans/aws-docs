@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/replication-connect
 ---
 
 # Replication errors: agent communication
-<a name="replication-connectivity-errors"></a>
 
 The following errors occur when network connectivity issues prevent communication between the AWS Replication Agent, replication server, and AWS Elastic Disaster Recovery service endpoints. Each section describes the error, its cause, and resolution steps.
 

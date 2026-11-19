@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/troublesho
 ---
 
 # My domain operation failed
-<a name="troubleshooting-domain-operation-failed"></a>
 
 Here are some troubleshooting tips if your domain operation fails. Operations can be registration, transfer, renewal, or contact update.
 

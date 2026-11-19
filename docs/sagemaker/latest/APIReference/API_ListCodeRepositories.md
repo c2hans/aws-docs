@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCo
 ---
 
 # ListCodeRepositories
-<a name="API_ListCodeRepositories"></a>
 
 Gets a list of the Git repositories in your account.
 

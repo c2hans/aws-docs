@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/restrict-service-ex
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Restrict external IP addresses that can be assigned to services
-<a name="restrict-service-external-ip"></a>
 
 Kubernetes services can be reached from inside of a cluster through:
 + A cluster IP address that is assigned automatically by Kubernetes

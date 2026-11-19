@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PaletteP
 ---
 
 # PalettePrimary
-<a name="API_PalettePrimary"></a>
 
 Contains primary color configuration for a workspace theme.
 

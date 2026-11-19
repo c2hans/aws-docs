@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_List
 ---
 
 # ListParticipantReplicas
-<a name="API_ListParticipantReplicas"></a>
 
 Lists all the replicas for a participant from a source stage.
 

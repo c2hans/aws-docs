@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyC
 ---
 
 # ModifyCluster
-<a name="API_ModifyCluster"></a>
 
 Modifies the settings for a cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Delet
 ---
 
 # DeleteFramework
-<a name="API_DeleteFramework"></a>
 
 Deletes the framework specified by a framework name.
 

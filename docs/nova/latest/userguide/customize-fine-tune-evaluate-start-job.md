@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/customize-fine-tun
 ---
 
 # Starting an evaluation job
-<a name="customize-fine-tune-evaluate-start-job"></a>
 
 The following provides a suggested evaluation instance type and model type configuration:
 

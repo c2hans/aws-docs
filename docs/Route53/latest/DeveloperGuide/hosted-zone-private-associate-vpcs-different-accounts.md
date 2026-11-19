@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zon
 ---
 
 # Associating an Amazon VPC and a private hosted zone that you created with different AWS accounts
-<a name="hosted-zone-private-associate-vpcs-different-accounts"></a>
 
 If you want to associate a VPC that you created with one AWS account with a private hosted zone that you created with a different account, perform the following procedure:
 

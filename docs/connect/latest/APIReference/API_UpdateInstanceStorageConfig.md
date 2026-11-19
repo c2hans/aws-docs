@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateIn
 ---
 
 # UpdateInstanceStorageConfig
-<a name="API_UpdateInstanceStorageConfig"></a>
 
 This API is in preview release for Connect Customer and is subject to change.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AuthorizationCode
 ---
 
 # AuthorizationCodeProperties
-<a name="API_AuthorizationCodeProperties"></a>
 
 The set of properties required for the the OAuth2 `AUTHORIZATION_CODE` grant type workflow.
 

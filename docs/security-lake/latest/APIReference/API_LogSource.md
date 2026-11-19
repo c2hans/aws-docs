@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Lo
 ---
 
 # LogSource
-<a name="API_LogSource"></a>
 
 Amazon Security Lake can collect logs and events from natively-supported AWS services and custom sources.
 

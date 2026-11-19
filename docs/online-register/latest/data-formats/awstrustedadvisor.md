@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awst
 ---
 
 # Data retrieval APIs for AWS Trusted Advisor
-<a name="awstrustedadvisor"></a>
 
 AWS Trusted Advisor provides the following APIs for data retrieval.
 

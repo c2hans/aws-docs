@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_De
 ---
 
 # DeleteCrl
-<a name="API_DeleteCrl"></a>
 
 Deletes a certificate revocation list (CRL).
 

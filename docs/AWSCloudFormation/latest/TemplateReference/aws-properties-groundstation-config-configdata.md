@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::Config ConfigData
-<a name="aws-properties-groundstation-config-configdata"></a>
 
  Config objects provide information to Ground Station about how to configure the antenna and how data flows during a contact.
 

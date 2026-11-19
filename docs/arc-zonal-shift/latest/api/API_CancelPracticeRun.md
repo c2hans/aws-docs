@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_CancelPra
 ---
 
 # CancelPracticeRun
-<a name="API_CancelPracticeRun"></a>
 
 Cancel an in-progress practice run zonal shift in Amazon Application Recovery Controller.
 

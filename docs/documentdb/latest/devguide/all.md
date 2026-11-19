@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/all.html
 ---
 
 # $all
-<a name="all"></a>
 
 The `$all` operator in Amazon DocumentDB is used to match documents where the value of a field is an array and contains all the specified elements, regardless of the order of the elements in the array.
 

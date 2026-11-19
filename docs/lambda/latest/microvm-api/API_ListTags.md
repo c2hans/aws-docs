@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_ListTags.h
 ---
 
 # ListTags
-<a name="API_ListTags"></a>
 
 Lists the tags associated with a Lambda MicroVM resource.
 

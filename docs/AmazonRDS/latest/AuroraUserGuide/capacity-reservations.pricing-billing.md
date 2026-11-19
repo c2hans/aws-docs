@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/capacit
 ---
 
 # Capacity Reservation pricing and billing
-<a name="capacity-reservations.pricing-billing"></a>
 
 The following topics give an overview of pricing and billing for Capacity Reservations.
 

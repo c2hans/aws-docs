@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/security-specia
 ---
 
 # Content Domain 5: Data Protection
-<a name="security-specialty-03-domain5"></a>
 
 **Topics**
 + [Task 5.1: Design and implement controls for data in transit](#security-specialty-03-domain5-task1)

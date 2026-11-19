@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mu
 ---
 
 # Establish a workload placement strategy
-<a name="workload-placement"></a>
 
 When you define your workload placement strategy for a multicloud environment, first [choose a primary CSP](recommendations.md) that meets the general needs of your organization. This provider should offer a robust set of services, security features that meet or exceed your needs, and cost efficiency. Your organization can then follow a clear process to select additional cloud providers based on specific criteria:
 + **Organizational structure**.** **Consider how your organization is structured today (for example, by departments, business lines, or geographic locations), particularly if you need to comply with data sovereignty or other regulatory requirements. Also consider enterprise architecture, communications, operating procedures, and other influences from [Conway's Law](https://www.melconway.com/Home/Committees_Paper.html) as inputs. Don't force workload placement or operations in ways that create friction with your existing culture or business operations.

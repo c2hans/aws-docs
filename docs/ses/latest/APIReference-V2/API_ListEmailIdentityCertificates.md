@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListEmail
 ---
 
 # ListEmailIdentityCertificates
-<a name="API_ListEmailIdentityCertificates"></a>
 
 Lists the S/MIME certificates that are associated with the specified email identity. The results include certificates in all states, such as `PROVISIONING`, `ACTIVE`, `INACTIVE`, `DEPROVISIONING`, and `FAILED`.
 

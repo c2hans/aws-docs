@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobDataSourceOverridePermissions
-<a name="API_AssetBundleImportJobDataSourceOverridePermissions"></a>
 
 An object that contains a list of permissions to be applied to a list of data source IDs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVOPS05-BP01 Implement manifest generation observability with SCTE-35 marker validation
-<a name="advops05-bp01"></a>
 
  Validate every generated SGAI manifest for SCTE-35 marker integrity before CDN distribution. In hybrid SGAI architectures, manifest errors move through CDN caching layers to every viewer of cached content.
 

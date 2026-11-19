@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTa
 ---
 
 # RouteTaxiSummary
-<a name="API_RouteTaxiSummary"></a>
 
 Summary of the taxi leg.
 

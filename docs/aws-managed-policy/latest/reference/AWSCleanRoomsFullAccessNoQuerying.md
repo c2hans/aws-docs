@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCleanRoomsFullAccessNoQuerying
-<a name="AWSCleanRoomsFullAccessNoQuerying"></a>
 
 **Description**: Allows full access to AWS Clean Rooms resources except for querying in a collaboration and access to related AWS services.
 

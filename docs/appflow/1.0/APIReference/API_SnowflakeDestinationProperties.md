@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SnowflakeDe
 ---
 
 # SnowflakeDestinationProperties
-<a name="API_SnowflakeDestinationProperties"></a>
 
  The properties that are applied when Snowflake is being used as a destination.
 

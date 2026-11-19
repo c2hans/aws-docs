@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Customizing model hyperparameter configurations in Neptune ML
-<a name="machine-learning-customizing-hyperparams"></a>
 
 When you start a Neptune ML model-training job, Neptune ML automatically uses the information inferred from the preceding [data-processing](machine-learning-on-graphs-processing.md) job. It uses the information to generate hyperparameter configuration ranges that are used to create a [SageMaker AI hyperparameter tuning job](https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning-how-it-works.html) to train multiple models for your task. That way, you don’t have to specify a long list of hyperparameter values for the models to be trained with. Instead, the model hyperparameter ranges and defaults are selected based on the task type, graph type, and the tuning-job settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SpendLimit
-<a name="API_SpendLimit"></a>
 
 Describes the current monthly spend limits for sending voice and text messages. For more information on increasing your monthly spend limit, see [ Requesting a spending quota increase ](https://docs.aws.amazon.com/sms-voice/latest/userguide/awssupport-spend-threshold.html) in the * AWS End User Messaging SMS User Guide*.
 

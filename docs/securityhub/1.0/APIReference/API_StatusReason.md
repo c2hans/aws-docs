@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StatusR
 ---
 
 # StatusReason
-<a name="API_StatusReason"></a>
 
 Provides additional context for the value of `Compliance.Status`.
 

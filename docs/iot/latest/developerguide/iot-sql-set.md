@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-set.ht
 ---
 
 # SET clause
-<a name="iot-sql-set"></a>
 
 Use the SET clause to define variables that store expression results. You can reuse these variables in SELECT and WHERE clauses, and in substitution templates. This helps you avoid duplicating complex expressions and reduce the number of function calls in your SQL statement.
 

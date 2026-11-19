@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/call-and-bridge.html
 ---
 
 # CallAndBridge
-<a name="call-and-bridge"></a>
 
 Creates an outbound call to a PSTN phone number, or to a SIP trunk configured as an Amazon Chime SDK Voice Connector or Amazon Chime SDK Voice Connector Group, and then bridges it with an existing call. You use `PSTN` when calling a phone number, and `AWS` when calling a SIP trunk.
 

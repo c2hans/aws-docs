@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Unt
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes a tag from an AWS IoT SiteWise resource.
 

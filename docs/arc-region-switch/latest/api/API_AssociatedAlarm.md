@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Associa
 ---
 
 # AssociatedAlarm
-<a name="API_AssociatedAlarm"></a>
 
 An Amazon CloudWatch alarm associated with a Region switch plan. These alarms can be used to trigger automatic execution of the plan.
 

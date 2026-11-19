@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_C
 ---
 
 # CloudWatchDashboard
-<a name="API_CloudWatchDashboard"></a>
 
 Information about a CloudWatch dashboard.
 

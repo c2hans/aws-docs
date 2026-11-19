@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Upda
 ---
 
 # UpdateTrigger
-<a name="API_UpdateTrigger"></a>
 
 Updates the status of an existing Trigger
 

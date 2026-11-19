@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Succe
 ---
 
 # SuccessfulKeyRegistrationEntry
-<a name="API_SuccessfulKeyRegistrationEntry"></a>
 
 A success entry that occurs when a `KeyRegistration` job is successfully applied to the Quick Sight account.
 

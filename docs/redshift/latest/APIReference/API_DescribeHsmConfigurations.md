@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeHsmConfigurations
-<a name="API_DescribeHsmConfigurations"></a>
 
 Returns information about the specified Amazon Redshift HSM configuration. If no configuration ID is specified, returns information about all the HSM configurations owned by your AWS account.
 
@@ -23,7 +22,7 @@ Length Constraints: Maximum length of 2147483647.
 Required: No
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeHsmConfigurations](#API_DescribeHsmConfigurations) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeHsmConfigurations](API_DescribeHsmConfigurations.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 Required: No

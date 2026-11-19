@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_EcrReposit
 ---
 
 # EcrRepositoryMetadata
-<a name="API_EcrRepositoryMetadata"></a>
 
 Information on the Amazon ECR repository metadata associated with a finding.
 

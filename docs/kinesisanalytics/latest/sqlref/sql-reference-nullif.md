@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # NULLIF
-<a name="sql-reference-nullif"></a>
 
 ```
 NULLIF ( <value-expression>, <value-expression> )

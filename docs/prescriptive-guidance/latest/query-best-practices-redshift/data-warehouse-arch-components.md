@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/query-best-
 ---
 
 # Architecture components of an Amazon Redshift data warehouse
-<a name="data-warehouse-arch-components"></a>
 
 We recommend that you have a basic understanding of the core architecture components in an Amazon Redshift data warehouse. This knowledge can help you better understand how to design your queries and tables for optimal performance.
 

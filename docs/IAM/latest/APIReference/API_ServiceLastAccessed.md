@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ServiceLastA
 ---
 
 # ServiceLastAccessed
-<a name="API_ServiceLastAccessed"></a>
 
 Contains details about the most recent attempt to access the service.
 

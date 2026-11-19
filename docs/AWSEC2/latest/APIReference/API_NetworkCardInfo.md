@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkCa
 ---
 
 # NetworkCardInfo
-<a name="API_NetworkCardInfo"></a>
 
 Describes the network card support of the instance type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Rest
 ---
 
 # RestoreGraphFromSnapshot
-<a name="API_RestoreGraphFromSnapshot"></a>
 
 Restores a graph from a snapshot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BuildBotLo
 ---
 
 # BuildBotLocale
-<a name="API_BuildBotLocale"></a>
 
 Builds a bot, its intents, and its slot types into a specific locale. A bot can be built into multiple locales. At runtime the locale is used to choose a specific build of the bot.
 

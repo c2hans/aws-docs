@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ReplicationGroup
-<a name="API_ReplicationGroup"></a>
 
 Contains all of the attributes of a specific Valkey or Redis OSS replication group.
 

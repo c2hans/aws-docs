@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_StartStr
 ---
 
 # StartStreamEncryption
-<a name="API_StartStreamEncryption"></a>
 
 Enables or updates server-side encryption using an AWS KMS key for a specified stream.
 

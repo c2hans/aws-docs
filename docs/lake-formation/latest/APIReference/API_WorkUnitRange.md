@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_W
 ---
 
 # WorkUnitRange
-<a name="API_WorkUnitRange"></a>
 
 Defines the valid range of work unit IDs for querying the execution service.
 

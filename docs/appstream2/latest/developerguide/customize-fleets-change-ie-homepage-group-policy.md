@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/customi
 ---
 
 # Use Group Policy to Change the Default Internet Explorer Home Page
-<a name="customize-fleets-change-ie-homepage-group-policy"></a>
 
 In Active Directory environments, you use the Group Policy Management (GPMC) MMC-snap-in to set a default home page that users can't change. If Active Directory is not in your environment, you can use Local Group Policy Editor to perform this task. To set a home page that users can change, you must use the GPMC.
 

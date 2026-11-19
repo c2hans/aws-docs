@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Attribute-based access control for Amazon SQS
-<a name="sqs-abac"></a>
 
 ## What is ABAC?
 <a name="sqs-abac-whatis"></a>

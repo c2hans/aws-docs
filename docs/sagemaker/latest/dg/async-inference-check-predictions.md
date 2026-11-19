@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/async-inference-chec
 ---
 
 # Check prediction results
-<a name="async-inference-check-predictions"></a>
 
 There are several ways you can check predictions results from your asynchronous endpoint. Some options are:
 

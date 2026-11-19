@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_TaskC
 ---
 
 # TaskConfig
-<a name="API_TaskConfig"></a>
 
 Configuration about the model associated with a flywheel.
 

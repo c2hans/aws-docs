@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to search in a specific language
-<a name="how-to-search-specific-language"></a>
 
 This feature allows the selection of a preferred response language from BCP47-compliant codes. It detects the query language based on name variants and uses the preferred language for unmatched tokens and ambiguous cases. If there is no requested language, the **Places** API provides results in the official country language, but prioritizes the regional language in regions where it differs. As a fallback strategy, if any address elements are unavailable in the requested language, **Places** APIs return addresses in the default language.
 

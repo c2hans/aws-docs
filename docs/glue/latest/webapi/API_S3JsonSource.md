@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3JsonSource.html
 ---
 
 # S3JsonSource
-<a name="API_S3JsonSource"></a>
 
 Specifies a JSON data store stored in Amazon S3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Executio
 ---
 
 # ExecutionRecord
-<a name="API_ExecutionRecord"></a>
 
 Contains information about a test case execution record.
 

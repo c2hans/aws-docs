@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/create
 ---
 
 # Creating an ID mapping workflow (rule-based)
-<a name="create-IDMW-rule-based-one-acct"></a>
 
 This topic describes the process of creating an ID mapping workflow for one AWS account that uses matching rules to translate first-party data from a source to a target.
 

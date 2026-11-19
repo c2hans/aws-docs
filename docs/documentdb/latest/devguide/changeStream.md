@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/changeStream.
 ---
 
 # $changeStream
-<a name="changeStream"></a>
 
 Not supported by Elastic cluster.
 

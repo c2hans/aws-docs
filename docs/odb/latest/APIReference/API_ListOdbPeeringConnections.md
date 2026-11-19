@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListOdbPeeri
 ---
 
 # ListOdbPeeringConnections
-<a name="API_ListOdbPeeringConnections"></a>
 
 Lists all ODB peering connections or those associated with a specific ODB network.
 

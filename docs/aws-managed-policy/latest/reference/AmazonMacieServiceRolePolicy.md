@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMacieServiceRolePolicy
-<a name="AmazonMacieServiceRolePolicy"></a>
 
 **Description**: Service linked role for Amazon Macie
 

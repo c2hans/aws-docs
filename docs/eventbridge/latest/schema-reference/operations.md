@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/oper
 ---
 
 # Operations
-<a name="operations"></a>
 
 The Amazon EventBridge Schemas REST API includes the following operations.
 + [CreateDiscoverer](v1-discoverers.md#CreateDiscoverer)

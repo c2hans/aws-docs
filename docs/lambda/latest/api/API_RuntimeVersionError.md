@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_RuntimeVersionErro
 ---
 
 # RuntimeVersionError
-<a name="API_RuntimeVersionError"></a>
 
 Any error returned when the runtime version information for the function could not be retrieved.
 

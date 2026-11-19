@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # SearchResultContentBlock
-<a name="API_runtime_SearchResultContentBlock"></a>
 
 A block within a search result that contains the content.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/edit-org-pol.h
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Editing chat applications policies in Amazon Q Developer in chat applications
-<a name="edit-org-pol"></a>
 
 If you need to make changes to your chat applications policy, you can edit it.
 

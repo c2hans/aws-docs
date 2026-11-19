@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Aggr
 ---
 
 # AggregateColumn
-<a name="API_AggregateColumn"></a>
 
 Column in configured table that can be used in aggregate function in query.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartNetwork
 ---
 
 # StartNetworkMigrationMapping
-<a name="API_StartNetworkMigrationMapping"></a>
 
 Starts the network migration mapping process for a given network migration execution.
 

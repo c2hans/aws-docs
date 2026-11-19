@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Tagging use cases
-<a name="tagging-use-cases"></a>
 
 **Topics**
 + [Tags for cost allocation and financial management](tags-for-cost-allocation-and-financial-management.md)

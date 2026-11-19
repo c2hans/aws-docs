@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/manage-hsm-use
 ---
 
 # Prerequisites for user management in CloudHSM CLI
-<a name="manage-hsm-users-chsm-cli-prereq"></a>
 
 Before you use CloudHSM CLI to manage hardware security modules (HSM) users in AWS CloudHSM, you must complete these prerequisites. The following topics describe getting started with the CloudHSM CLI.
 

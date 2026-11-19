@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/ad-avail-blanki
 ---
 
 # Ad avail blanking and blackout
-<a name="ad-avail-blanking-and-blackout"></a>
 
 You can turn on one or both of the following features to blank out the content associated with a SCTE-35 event:
 + “**Blackout**”: Blank out the content for other types of SCTE-35 messages such as chapters and programs.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/assistant/latest/userguide/service-insig
 ---
 
 # Using service-specific insights
-<a name="service-insights"></a>
 
 ## Chatting about telemetry and operations
 <a name="operations-insights"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/down
 ---
 
 # Downloading the Toolkit for VS Code
-<a name="downloads"></a>
 
 You can download, install, and set up the AWS Toolkit for Visual Studio Code through the VS Code Marketplace in your IDE. For detailed instructions, see the [Download and install](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/setup-toolkit.html#setup-install) section in the *Getting started* topic of this User Guide.
 

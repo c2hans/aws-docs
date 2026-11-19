@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationTranscriptPointOfInterest
-<a name="API_EvaluationTranscriptPointOfInterest"></a>
 
 Information about the point of interest in transcript provided to evaluation.
 

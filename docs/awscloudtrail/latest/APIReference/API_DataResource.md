@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Da
 ---
 
 # DataResource
-<a name="API_DataResource"></a>
 
 You can configure the `DataResource` in an `EventSelector` to log data events for the following three resource types:
 +  `AWS::DynamoDB::Table`

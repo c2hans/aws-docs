@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicRelativeDateFilter
-<a name="API_TopicRelativeDateFilter"></a>
 
 A structure that represents a relative date filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Triggers
-<a name="functions-triggers"></a>
 
 The trigger on the function output decides how often the function runs, and therefore how much you spend on model invocations. You set it on each attachment, not on the function, so the same function can run on a fixed cadence on one feed and once per scene on another. The following table describes the triggers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # Transaction
-<a name="API_Transaction"></a>
 
 There are two possible types of transactions used for this data type:
 + A Bitcoin transaction is a movement of BTC from one address to another.

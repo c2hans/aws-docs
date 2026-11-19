@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-e
 ---
 
 # Get the metadata for an email contact in Connect Customer agent workspace
-<a name="3P-apps-email-requests-getemaildata"></a>
 
 Returns the metadata for an email contact id while handling an active contact. The activeContactId is the id of the email contact the agent is actively viewing while contactId is the id of the email contact whose metadata should be retrieved.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Automatically copy your Amazon Glacier vault archives to an S3 bucket and storage classes
-<a name="overview"></a>
 
 Data Transfer from Amazon Glacier Vaults to Amazon S3 is a serverless Guidance that automates and optimizes the restore, copy, and transfer process of [Amazon Simple Storage Service Glacier](https://docs.aws.amazon.com/amazonglacier/latest/dev/introduction.html) (Amazon Glacier) vault archives. The Guidance copies all of the vault's archives to a defined [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3) bucket destination and [storage class](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html). Then you can attach [tags](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html) to help you categorize your data, such as with data classification or cost allocation. A prebuilt [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) dashboard provides a visualization of the copy operation progress.
 

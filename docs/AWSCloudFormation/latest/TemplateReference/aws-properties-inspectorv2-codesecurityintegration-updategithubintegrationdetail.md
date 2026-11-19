@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InspectorV2::CodeSecurityIntegration UpdateGitHubIntegrationDetail
-<a name="aws-properties-inspectorv2-codesecurityintegration-updategithubintegrationdetail"></a>
 
 Contains details required to update an integration with GitHub.
 

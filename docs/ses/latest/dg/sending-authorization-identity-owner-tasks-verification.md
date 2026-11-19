@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sending-authorization-iden
 ---
 
 # Verifying an identity for Amazon SES sending authorization
-<a name="sending-authorization-identity-owner-tasks-verification"></a>
 
 The first step in configuring sending authorization is to prove that you own the email address or domain that the delegate sender will use to send email. The verification procedure is described in [Verified identities](verify-addresses-and-domains.md).
 

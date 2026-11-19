@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/node-bootstrapping.htm
 ---
 
 # Node bootstrapping
-<a name="node-bootstrapping"></a>
 
 ## AmazonLinux2023
 <a name="_amazonlinux2023"></a>

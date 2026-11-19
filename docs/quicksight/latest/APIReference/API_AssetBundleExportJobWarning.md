@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleExportJobWarning
-<a name="API_AssetBundleExportJobWarning"></a>
 
 Describes a warning that occurred during an Asset Bundle export job.
 

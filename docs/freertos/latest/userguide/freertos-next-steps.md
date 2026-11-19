@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/freertos-next-
 ---
 
 # FreeRTOS demos
-<a name="freertos-next-steps"></a>
 
 FreeRTOS includes some demo applications in the `demos` folder, under the main FreeRTOS directory. All of the examples that can be executed by FreeRTOS appear in the `common` folder, under `demos`. There is also a folder for each FreeRTOS-qualified platform under the `demos` folder.
 

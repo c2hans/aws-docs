@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-job-
 ---
 
 # Working with job templates
-<a name="working-with-job-templates"></a>
 
 Job templates reduce the amount of time it takes to configure a job by providing pre-configured job settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # RasterDataCollectionQueryInput
-<a name="API_geospatial_RasterDataCollectionQueryInput"></a>
 
 The input structure for Raster Data Collection Query containing the Area of Interest, TimeRange Filters, and Property Filters.
 

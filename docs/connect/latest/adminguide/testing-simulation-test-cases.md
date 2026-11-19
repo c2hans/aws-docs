@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/testing-simula
 ---
 
 # Create test cases
-<a name="testing-simulation-test-cases"></a>
 
 ## Create test case
 <a name="testing-simulation-test-case-procedure"></a>

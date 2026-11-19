@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Li
 ---
 
 # ListChannels
-<a name="API_ListChannels"></a>
 
 Returns a list of Channels for a `NotificationConfiguration`.
 

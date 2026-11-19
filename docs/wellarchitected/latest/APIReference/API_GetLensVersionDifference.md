@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GetLensVersionDifference
-<a name="API_GetLensVersionDifference"></a>
 
 Get lens version differences.
 

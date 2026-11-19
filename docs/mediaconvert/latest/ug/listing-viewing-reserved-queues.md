@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/listing-viewing-r
 ---
 
 # Listing reserved queues
-<a name="listing-viewing-reserved-queues"></a>
 
 You can list the AWS Elemental MediaConvert queues that are associated with your AWS account and get details about those queues. The following tabs show two options for listing your queues.
 

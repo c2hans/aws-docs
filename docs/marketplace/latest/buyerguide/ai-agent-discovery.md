@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/ai-agent-d
 ---
 
 # Discovering AI agents and tools
-<a name="ai-agent-discovery"></a>
 
 AWS Marketplace provides multiple ways to discover AI agents and tools that match your specific business needs. The discovery experience is designed to help you quickly find the right capabilities without navigating multiple vendor platforms or complex procurement processes.
 

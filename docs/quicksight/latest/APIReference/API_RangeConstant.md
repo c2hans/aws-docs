@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Range
 ---
 
 # RangeConstant
-<a name="API_RangeConstant"></a>
 
 A structure that represents a range constant.
 

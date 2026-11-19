@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ModelImp
 ---
 
 # ModelImportJobSummary
-<a name="API_ModelImportJobSummary"></a>
 
 Information about the import job.
 

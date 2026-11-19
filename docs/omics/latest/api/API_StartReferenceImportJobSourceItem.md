@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_StartReferenceImpor
 ---
 
 # StartReferenceImportJobSourceItem
-<a name="API_StartReferenceImportJobSourceItem"></a>
 
 A source for a reference import job.
 

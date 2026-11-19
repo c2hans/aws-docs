@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Contin
 ---
 
 # ContinuousParameterRange
-<a name="API_ContinuousParameterRange"></a>
 
 A list of continuous hyperparameters to tune.
 

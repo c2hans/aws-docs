@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Co
 ---
 
 # ColumnDescription
-<a name="API_ColumnDescription"></a>
 
 A description of the column in the query results.
 

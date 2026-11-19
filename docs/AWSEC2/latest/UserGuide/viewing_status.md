@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_status.h
 ---
 
 # View status checks for Amazon EC2 instances
-<a name="viewing_status"></a>
 
 If your instance has a failed status check, you typically must address the problem yourself (for example, by rebooting the instance or by making instance configuration changes). To troubleshoot system or instance status check failures yourself, see [Troubleshoot Amazon EC2 Linux instances with failed status checks](TroubleshootingInstances.md).
 

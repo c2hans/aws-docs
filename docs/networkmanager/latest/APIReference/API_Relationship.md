@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_R
 ---
 
 # Relationship
-<a name="API_Relationship"></a>
 
 Describes a resource relationship.
 

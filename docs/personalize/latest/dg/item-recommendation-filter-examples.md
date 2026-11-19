@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/item-recommendatio
 ---
 
 # Item recommendation filter expression examples
-<a name="item-recommendation-filter-examples"></a>
 
 The following filter expressions show how to filter item recommendations based on item interactions, item metadata, and user metadata. They are organized by data type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/opting-
 ---
 
 # Opting out of Cost Anomaly Detection
-<a name="opting-out-cad"></a>
 
 You can opt out of Cost Anomaly Detection at any time. To opt out, you need to delete all cost monitors and alert subscriptions in your account. After you opt out, Cost Anomaly Detection no longer monitors your spend patterns for anomalies. You also won’t receive any further notifications.
 

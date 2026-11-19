@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/ev-mapping-tro
 ---
 
 # Amazon EventBridge mapping and troubleshooting
-<a name="ev-mapping-troubleshooting"></a>
 
 The following table describes how Amazon S3 event types are mapped to Amazon EventBridge event types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowFailureEvent
-<a name="API_agent-runtime_FlowFailureEvent"></a>
 
 Contains information about a failure that occurred at the flow level during a flow execution.
 

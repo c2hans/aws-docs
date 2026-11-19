@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/glue-irc-federated-ca
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Querying AWS Glue IRC federated catalogs with Amazon Redshift
-<a name="glue-irc-federated-catalogs"></a>
 
 With AWS Glue Iceberg REST Catalog (IRC), you can federate external data catalogs, such as Databricks Unity Catalog, into the AWS Glue Data Catalog. After the catalog is federated, Amazon Redshift can query these external tables directly without requiring data movement. This chapter describes how to access Databricks Unity Catalog tables using federation from Amazon Redshift.
 

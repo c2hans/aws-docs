@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/getting-started-cl
 ---
 
 # Start an on-demand practice run
-<a name="getting-started-cli-zonal-autoshift.start-practice-run"></a>
 
 You can start an on-demand practice run zonal shift with the CLI by using the `start-practice-run` command.
 

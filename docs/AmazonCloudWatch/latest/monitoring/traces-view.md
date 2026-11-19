@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/trace
 ---
 
 # Traces view
-<a name="traces-view"></a>
 
 Trace view lists all traces from your agents in this account. To work with traces:
 

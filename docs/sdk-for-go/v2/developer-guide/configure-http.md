@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-
 ---
 
 # Customize the HTTP Client
-<a name="configure-http"></a>
 
  The AWS SDK for Go uses a default HTTP client with default configuration values. Although you can change some of these configuration values, the default HTTP client and transport are not sufficiently configured for customers using the AWS SDK for Go in an environment with high throughput and low latency requirements. For more information, please refer to the [Frequently Asked Questions](faq-gosdk.md) as configuration recommendations vary based on specific workloads. This section describes how to configure a custom HTTP client, and use that client to create AWS SDK for Go calls.
 

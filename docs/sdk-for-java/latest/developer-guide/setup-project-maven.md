@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/setu
 ---
 
 # Set up an Apache Maven project that uses the AWS SDK for Java 2.x
-<a name="setup-project-maven"></a>
 
 You can use [Apache Maven](https://maven.apache.org/) to set up and build AWS SDK for Java 2.x projects, or to [build the SDK itself](https://github.com/aws/aws-sdk-java-v2/tree/master#building-from-source).
 

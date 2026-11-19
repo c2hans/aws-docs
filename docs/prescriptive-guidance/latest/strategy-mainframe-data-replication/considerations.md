@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Key considerations for replicating mainframe data to AWS
-<a name="considerations"></a>
 
 When enterprises undertake the journey of replicating mainframe data to the AWS Cloud, they face several critical challenges that demand careful consideration and strategic planning. Organizations must navigate through technical complexities while optimizing performance, controlling costs, and ensuring seamless integration between legacy mainframe systems and modern cloud services. Understanding and effectively addressing these challenges is fundamental to achieving a successful mainframe-to-cloud data replication strategy that meets both operational requirements and business objectives.
 

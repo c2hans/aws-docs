@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/example_iot_Ge
 ---
 
 # Getting started with internet of things messaging
-<a name="example_iot_GettingStarted_063_section"></a>
 
 The following code example shows how to:
 + Create IoT resources

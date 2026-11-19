@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/express.ht
 ---
 
 # .express
-<a name="express"></a>
 
 Used as a general extension, but ideal for those who want to emphasize the speedy delivery of good or services.
 

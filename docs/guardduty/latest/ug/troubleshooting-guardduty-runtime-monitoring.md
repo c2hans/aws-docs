@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/troubleshooting-guar
 ---
 
 # Runtime Monitoring issues
-<a name="troubleshooting-guardduty-runtime-monitoring"></a>
 
 This section lists the errors that you may experience when setting up or using Runtime Monitoring.
 

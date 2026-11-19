@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceEvent
-<a name="API_ServiceEvent"></a>
 
 The details for an event that's associated with a service.
 

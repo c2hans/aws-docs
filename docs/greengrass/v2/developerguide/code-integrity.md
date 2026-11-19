@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/code-integr
 ---
 
 # Code integrity in AWS IoT Greengrass V2
-<a name="code-integrity"></a>
 
 AWS IoT Greengrass deploys software components from the AWS Cloud to devices that run the AWS IoT Greengrass Core software. These software components include [AWS-provided components](public-components.md) and [custom components](create-components.md) that you upload to your AWS account. Every component is composed of a recipe. The recipe defines the component's metadata, and any number of artifacts, which are component binaries, such as compiled code and static resources. Component artifacts are stored in Amazon S3.
 

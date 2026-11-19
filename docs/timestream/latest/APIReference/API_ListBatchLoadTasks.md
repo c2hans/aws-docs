@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_ListB
 ---
 
 # ListBatchLoadTasks
-<a name="API_ListBatchLoadTasks"></a>
 
 Provides a list of batch load tasks, along with the name, status, when the task is resumable until, and other details. See [code sample](https://docs.aws.amazon.com/timestream/latest/developerguide/code-samples.list-batch-load-tasks.html) for details.
 

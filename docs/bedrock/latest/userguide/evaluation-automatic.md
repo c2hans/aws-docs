@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation-auto
 ---
 
 # Creating an automatic model evaluation job in Amazon Bedrock
-<a name="evaluation-automatic"></a>
 
 The topic provides detail directions for creating an automatic model evaluation job.
 

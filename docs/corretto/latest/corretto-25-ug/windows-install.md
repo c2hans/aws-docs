@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/windows-i
 ---
 
 # Amazon Corretto 25 Installation Instructions for Windows 10 or Later
-<a name="windows-install"></a>
 
  This topic describes how to install and uninstall Amazon Corretto 25 on a host or container running the Windows 10 or later Windows operating system.
 

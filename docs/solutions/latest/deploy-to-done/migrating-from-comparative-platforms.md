@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deploy-to-done/migratin
 ---
 
 # Migrating From Comparative Platforms
-<a name="migrating-from-comparative-platforms"></a>
 
 If you are moving applications from another platform, this section provides entry paths based on your current environment.
 

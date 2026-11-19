@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/scaling-overvi
 ---
 
 # Choose your scaling method
-<a name="scaling-overview"></a>
 
 Amazon EC2 Auto Scaling provides several ways for you to scale your Auto Scaling group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 ---
 
 # Data retrieval APIs for AWS CloudHSM
-<a name="awscloudhsm"></a>
 
 AWS CloudHSM provides the following APIs for data retrieval.
 

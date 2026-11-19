@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/setIsSubset.h
 ---
 
 # $setIsSubset
-<a name="setIsSubset"></a>
 
 The `$setIsSubset` operator in Amazon DocumentDB is used to determine if a set of values is a subset of another set. It is useful for performing set-based comparisons and operations on array fields.
 

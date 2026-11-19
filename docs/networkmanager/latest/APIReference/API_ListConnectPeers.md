@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # ListConnectPeers
-<a name="API_ListConnectPeers"></a>
 
 Returns a list of core network Connect peers.
 

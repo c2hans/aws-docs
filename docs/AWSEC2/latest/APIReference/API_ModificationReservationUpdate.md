@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Modificat
 ---
 
 # ModificationReservationUpdate
-<a name="API_ModificationReservationUpdate"></a>
 
 Describes the changes that a Capacity Reservation modification quote will apply to a Capacity Reservation.
 

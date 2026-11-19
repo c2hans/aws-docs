@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-creati
 ---
 
 # Creating an Activity state machine using Step Functions
-<a name="tutorial-creating-activity-state-machine"></a>
 
 This tutorial shows you how to create an activity-based state machine using Java and AWS Step Functions. Activities allow you to control worker code that runs somewhere else from your state machine. For an overview, see [Learn about Activities in Step Functions](concepts-activities.md) in [Learn about state machines in Step Functions](concepts-statemachines.md).
 

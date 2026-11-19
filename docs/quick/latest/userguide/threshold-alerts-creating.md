@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/threshold-alerts-
 ---
 
 # Creating Alerts
-<a name="threshold-alerts-creating"></a>
 
 Use the following procedure to create threshold alerts for KPI or Gauge visuals in a dashboard.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-s
 ---
 
 # Slurm log rotations
-<a name="sagemaker-hyperpod-slurm-log-rotation"></a>
 
 SageMaker HyperPod provides automatic log rotation for Slurm daemon logs to help manage disk space usage and maintain system performance. Log rotation is crucial for preventing logs from consuming excessive disk space and ensuring optimal system operation by automatically archiving and removing old log files while maintaining recent logging information. Slurm log rotations are enabled by default when you create a cluster.
 

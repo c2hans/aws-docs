@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CancelAuditM
 ---
 
 # CancelAuditMitigationActionsTask
-<a name="API_CancelAuditMitigationActionsTask"></a>
 
 Cancels a mitigation action task that is in progress. If the task is not in progress, an InvalidRequestException occurs.
 

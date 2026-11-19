@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/enable-pytho
 ---
 
 # Best practices when enabling in-transit encryption
-<a name="enable-python-best-practices"></a>
 
 ## Before enabling in-transit encryption: make sure you have proper DNS records handling
 <a name="enable-python-best-practices-before"></a>

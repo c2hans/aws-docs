@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/overview.html
 ---
 
 # What is covered in the AWS SDKs and Tools Reference Guide
-<a name="overview"></a>
 
 Many SDKs and tools share some common functionality, either through shared design specifications or through a shared library.
 

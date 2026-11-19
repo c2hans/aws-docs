@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Suppresse
 ---
 
 # SuppressedDestinationAttributes
-<a name="API_SuppressedDestinationAttributes"></a>
 
 An object that contains additional attributes that are related an email address that is on the suppression list for your account or for a specific tenant.
 

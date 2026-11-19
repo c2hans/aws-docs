@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GoalSummary
-<a name="API_GoalSummary"></a>
 
 Summary of an optimization goal associated with a profile.
 

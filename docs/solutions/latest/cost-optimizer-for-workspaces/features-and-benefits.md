@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # Features and benefits
-<a name="features-and-benefits"></a>
 
 The Cost Optimizer for Amazon WorkSpaces Solution provides the following features:
 

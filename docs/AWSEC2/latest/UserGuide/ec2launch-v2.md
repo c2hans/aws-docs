@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-v2.htm
 ---
 
 # Use the EC2Launch v2 agent to perform tasks during EC2 Windows instance launch
-<a name="ec2launch-v2"></a>
 
 All supported instances of Amazon EC2 that are launched from AWS Windows Server 2022 and Windows Server 2025 AMIs include the EC2Launch v2 launch agent (`EC2Launch.exe`) by default. We also provide Windows Server 2016 and 2019 AMIs with EC2Launch v2 installed as the default launch agent. These AMIs are provided in addition to the Windows Server 2016 and 2019 AMIs that include EC2Launch v1. You can search for Windows AMIs that include EC2Launch v2 by default by entering the following prefix in your search from the **AMIs** page in the Amazon EC2 console: `EC2LaunchV2-Windows_Server-*`.
 

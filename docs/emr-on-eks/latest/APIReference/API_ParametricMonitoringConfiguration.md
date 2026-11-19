@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Param
 ---
 
 # ParametricMonitoringConfiguration
-<a name="API_ParametricMonitoringConfiguration"></a>
 
 Configuration setting for monitoring. This data type allows job template parameters to be specified within.
 

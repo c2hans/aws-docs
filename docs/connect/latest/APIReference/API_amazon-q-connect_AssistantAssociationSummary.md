@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # AssistantAssociationSummary
-<a name="API_amazon-q-connect_AssistantAssociationSummary"></a>
 
 Summary information about the assistant association.
 

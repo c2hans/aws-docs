@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListI
 ---
 
 # ListIngestions
-<a name="API_ListIngestions"></a>
 
 Lists the history of SPICE ingestions for a dataset. Limited to 5 TPS per user and 25 TPS per account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionTypeIdentifier
-<a name="API_ActionTypeIdentifier"></a>
 
 Specifies the category, owner, provider, and version of the action type.
 

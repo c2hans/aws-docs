@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/best-practices.ht
 ---
 
 # Best practices for AWS Blocks
-<a name="best-practices"></a>
 
 This topic covers best practices for structuring, securing, testing, and scaling AWS Blocks applications.
 

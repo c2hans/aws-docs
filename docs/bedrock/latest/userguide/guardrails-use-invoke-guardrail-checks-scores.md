@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-use-
 ---
 
 # Score definitions
-<a name="guardrails-use-invoke-guardrail-checks-scores"></a>
 
 ## Severity score (for content filters and prompt attack detection)
 <a name="guardrails-use-invoke-guardrail-checks-severity-score"></a>

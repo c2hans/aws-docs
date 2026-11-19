@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/dash-manifest-segm
 ---
 
 # DASH manifest segment numbering
-<a name="dash-manifest-segment-numbering"></a>
 
 MediaTailor supports media segments in `<SegmentTemplate>` that are defined using `<SegmentTimeline>` and the `media` attribute. You can specify the media segment list in the `media` attribute using either the `$Number$` identifier or the `$Time$` identifier.
 

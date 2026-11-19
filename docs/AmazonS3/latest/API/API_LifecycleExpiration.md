@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_LifecycleExpirat
 ---
 
 # LifecycleExpiration
-<a name="API_LifecycleExpiration"></a>
 
 Container for the expiration for the lifecycle of the object.
 

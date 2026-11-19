@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-nat-configure.html
 ---
 
 # Configure 1:1 NAT in AWS Transit Gateway
-<a name="tgw-nat-configure"></a>
 
 You manage NAT for an attachment through a single operation that sets the NAT options and the full rule set together. Every parameter except the attachment ID is optional, so you can update options without changing rules, or replace rules without changing options. Changes are applied asynchronously, and the attachment stays in the `available` state throughout.
 

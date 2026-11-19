@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AddIpamOp
 ---
 
 # AddIpamOperatingRegion
-<a name="API_AddIpamOperatingRegion"></a>
 
 Add an operating Region to an IPAM. Operating Regions are AWS Regions where the IPAM is allowed to manage IP address CIDRs. IPAM only discovers and monitors resources in the AWS Regions you select as operating Regions.
 

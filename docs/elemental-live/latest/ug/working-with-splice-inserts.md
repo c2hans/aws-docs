@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/working-with-sp
 ---
 
 # Working with splice inserts
-<a name="working-with-splice-inserts"></a>
 
 Splice inserts inserted by the REST API are always of type “ad avail.”
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 ---
 
 # Site-to-Site VPN CloudHub
-<a name="aws-vpn-cloudhub"></a>
 
  Building on the AWS managed VPN options described previously, you can securely communicate from one site to another using the Site-to-Site VPN CloudHub. The Site-to-Site VPN CloudHub operates on a simple hub-and-spoke model that you can use with or without a VPC. Use this approach if you have multiple branch offices and existing internet connections and would like to implement a convenient, potentially low-cost hub-and-spoke model for primary or backup connectivity between these remote offices.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/evaluate-co
 ---
 
 # Updating AWS Config Rules
-<a name="evaluate-config_update-rules"></a>
 
 You can use the AWS Config console or the AWS SDKs to update your rules.
 

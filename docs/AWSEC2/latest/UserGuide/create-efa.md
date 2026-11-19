@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-efa.html
 ---
 
 # Create and attach an Elastic Fabric Adapter to an Amazon EC2 instance
-<a name="create-efa"></a>
 
 You can create an EFA and attach it to an Amazon EC2 instance much like any other elastic network interface in Amazon EC2. However, unlike elastic network interfaces, EFAs can't be attached to or detached from an instance in a `running` state.
 

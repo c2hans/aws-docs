@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/eks-choo
 ---
 
 # Choose between the ASCP and AWCP for Amazon EKS
-<a name="eks-choose-ascp-or-agent"></a>
 
 Secrets Manager provides two ways to deliver secrets to workloads on Amazon Elastic Kubernetes Service. Both use your workload's AWS credentials, retrieve secrets on your application's behalf, and don't require an AWS SDK in your code. They differ in how your application receives the secret.
 + The **AWS Secrets and Configuration Provider (ASCP)** mounts secrets as files in your Pods. You declare what to mount in a `SecretProviderClass`.

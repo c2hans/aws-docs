@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CancelStatement.h
 ---
 
 # CancelStatement
-<a name="API_CancelStatement"></a>
 
 Cancels the statement.
 

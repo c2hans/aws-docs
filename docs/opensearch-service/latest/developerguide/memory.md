@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # What is Amazon OpenSearch Memory?
-<a name="memory"></a>
 
 Amazon OpenSearch Memory is a fully managed memory service for AI agents. Your agent or application sends the conversations, data, and documents it works with to OpenSearch Memory as *events*. OpenSearch Memory extracts the facts, summaries, and other details worth keeping from those events and stores them as *memories*. Your agent then searches those memories to recall what it learned, across sessions and over time.
 
@@ -17,6 +16,7 @@ With OpenSearch Memory, you don't build or operate a memory system yourself. You
 + [Resilience](#memory-overview-resilience)
 + [Accessing OpenSearch Memory](#memory-accessing)
 + [Getting started with OpenSearch Memory](#memory-overview-getting-started)
++ [Related resources](#memory-related-resources)
 + [How Amazon OpenSearch Memory works](memory-how-it-works.md)
 + [Getting started with Amazon OpenSearch Memory](memory-getting-started.md)
 + [Working with spaces in Amazon OpenSearch Memory](memory-spaces.md)
@@ -114,3 +114,11 @@ If you're a first-time user, we recommend that you begin with the following topi
 + [How Amazon OpenSearch Memory works](memory-how-it-works.md) – Describes spaces, events, memories, and strategies, and what happens between writing an event and finding a memory.
 + [Getting started with Amazon OpenSearch Memory](memory-getting-started.md) – Walks you through creating a space, sending a conversation, searching the memories extracted from it, and cleaning up.
 + [Best practices for Amazon OpenSearch Memory](memory-best-practices.md) – Recommendations for choosing strategies, scoping data, and keeping memories useful.
+
+## Related resources
+<a name="memory-related-resources"></a>
+
+For more information, see the following related resources:
++ [Amazon OpenSearch Memory API Reference](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/Welcome.html)
++ [AWS CLI commands for Amazon OpenSearch Memory](https://docs.aws.amazon.com/cli/latest/reference/opensearchmemory/)
++ [SDKs & Tools](https://aws.amazon.com/tools/)

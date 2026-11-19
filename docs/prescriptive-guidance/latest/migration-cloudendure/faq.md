@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-c
 ---
 
 # FAQ
-<a name="faq"></a>
 
 This section provides answers to commonly raised questions about using CloudEndure Migration to migrate your workloads. For additional information, see the [FAQ](https://docs.cloudendure.com/Content/FAQ/FAQ/FAQ.htm) on the CloudEndure website.
 

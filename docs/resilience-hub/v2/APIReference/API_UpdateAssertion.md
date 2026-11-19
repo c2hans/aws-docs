@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Updat
 ---
 
 # UpdateAssertion
-<a name="API_UpdateAssertion"></a>
 
 Updates a resilience assertion.
 

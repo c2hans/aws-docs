@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateFolder
-<a name="API_UpdateFolder"></a>
 
 Updates the name of a folder.
 

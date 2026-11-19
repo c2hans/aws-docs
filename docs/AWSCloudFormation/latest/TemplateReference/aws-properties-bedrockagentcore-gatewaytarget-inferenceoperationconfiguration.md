@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayTarget InferenceOperationConfiguration
-<a name="aws-properties-bedrockagentcore-gatewaytarget-inferenceoperationconfiguration"></a>
 
 The configuration for a specific inference operation, including its request path and the models that the operation supports.
 

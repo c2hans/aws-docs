@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListBrowsers
-<a name="API_ListBrowsers"></a>
 
 Lists all custom browsers in your account.
 

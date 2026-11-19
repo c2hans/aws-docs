@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Universal targets for a Custom Event Bus
-<a name="eb-custom-bus-universal-targets"></a>
 
 A *universal target* invokes an AWS API action directly from a subscriber, with no function in between. Instead of naming a queue, topic, or function as the target, you name the service and the API action, and you write the API request that EventBridge sends, either as fixed JSON or as a JSONata expression that builds the request from the event. A subscriber can write an item to a DynamoDB table, put an object in an Amazon S3 bucket, publish to an Amazon SNS topic, or start a Step Functions execution without a Lambda function in the path.
 

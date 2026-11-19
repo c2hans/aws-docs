@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-create-link-de
 ---
 
 # Setting up an Elemental Link input
-<a name="input-create-link-device"></a>
 
 This section describes how to create an Elemental Link push input. The AWS Elemental Link device *pushes* the content to MediaLive.
 

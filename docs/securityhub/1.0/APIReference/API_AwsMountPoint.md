@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsMoun
 ---
 
 # AwsMountPoint
-<a name="API_AwsMountPoint"></a>
 
 Details for a volume mount point that's used in a container definition.
 

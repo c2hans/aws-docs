@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-how
 ---
 
 # Set up and configure the AWS CLI for Lightsail operations
-<a name="lightsail-how-to-set-up-and-configure-aws-cli"></a>
 
 The AWS Command Line Interface (AWS CLI) is a tool that allows advanced users and developers to control the Amazon Lightsail service by typing commands in the terminal (on Linux and Unix) or Command Prompt (on Windows). You can also control Lightsail using the Lightsail console, a graphical user interface, and the Lightsail application program interface (API).
 

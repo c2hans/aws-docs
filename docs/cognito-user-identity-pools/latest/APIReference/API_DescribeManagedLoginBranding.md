@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # DescribeManagedLoginBranding
-<a name="API_DescribeManagedLoginBranding"></a>
 
 Given the ID of a managed login branding style, returns detailed information about the style.
 

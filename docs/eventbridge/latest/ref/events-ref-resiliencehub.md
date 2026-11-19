@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-resili
 ---
 
 # AWS Resilience Hub events
-<a name="events-ref-resiliencehub"></a>
 
 Resilience Hub sends service events to EventBridge via AWS CloudTrail.
 

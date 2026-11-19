@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::DataSource RedshiftRunConfigurationInput
-<a name="aws-properties-datazone-datasource-redshiftrunconfigurationinput"></a>
 
 The relational filter configurations included in the configuration details of the Amazon Redshift data source.
 

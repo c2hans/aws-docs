@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_OracleSettin
 ---
 
 # OracleSettings
-<a name="API_OracleSettings"></a>
 
 Provides information that defines an Oracle endpoint.
 

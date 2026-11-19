@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListT
 ---
 
 # ListTrustStores
-<a name="API_ListTrustStores"></a>
 
 Lists trust stores.
 

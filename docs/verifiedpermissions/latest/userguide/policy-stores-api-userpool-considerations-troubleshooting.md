@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Troubleshooting API-linked policy stores
-<a name="policy-stores-api-userpool-considerations-troubleshooting"></a>
 
 Use the information here to help you diagnose and fix common issues when you build Amazon Verified Permissions API-linked policy stores.
 

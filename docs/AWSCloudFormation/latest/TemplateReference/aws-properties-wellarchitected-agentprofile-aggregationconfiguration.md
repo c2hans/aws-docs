@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WellArchitected::AgentProfile AggregationConfiguration
-<a name="aws-properties-wellarchitected-agentprofile-aggregationconfiguration"></a>
 
 Configuration settings that define the scope of AWS resources to analyze for optimization recommendations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/quick-acco
 ---
 
 # Enroll an existing account from the AWS Control Tower console
-<a name="quick-account-provisioning"></a>
 
 Two common ways exist to enroll an individual AWS account into AWS Control Tower.
 

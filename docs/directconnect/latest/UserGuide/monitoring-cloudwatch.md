@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/monitorin
 ---
 
 # Monitor with Amazon CloudWatch
-<a name="monitoring-cloudwatch"></a>
 
 You can monitor physical Direct Connect connections, and virtual interfaces, using CloudWatch. CloudWatch collects raw data from Direct Connect, and processes it into readable metrics. By default, CloudWatch provides Direct Connect metric data in 5-minute intervals. The metric data in every interval is an aggregation of at least two samples collected during that interval.
 

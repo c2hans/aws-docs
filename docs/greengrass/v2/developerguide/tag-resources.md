@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/tag-resourc
 ---
 
 # Tag your AWS IoT Greengrass Version 2 resources
-<a name="tag-resources"></a>
 
 With tags, you can organize and manage your resources in AWS IoT Greengrass. You can use tags to assign metadata to your resources, and you can use tags in IAM policies to define conditional access to your resources.
 

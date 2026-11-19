@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_D
 ---
 
 # DeleteDataflowEndpointGroup
-<a name="API_DeleteDataflowEndpointGroup"></a>
 
 Deletes a dataflow endpoint group.
 

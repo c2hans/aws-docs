@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_DelegatedA
 ---
 
 # DelegatedAdmin
-<a name="API_DelegatedAdmin"></a>
 
 Details of the Amazon Inspector delegated administrator for your organization.
 

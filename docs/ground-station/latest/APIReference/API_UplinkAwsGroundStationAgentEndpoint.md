@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_U
 ---
 
 # UplinkAwsGroundStationAgentEndpoint
-<a name="API_UplinkAwsGroundStationAgentEndpoint"></a>
 
 Definition for an uplink agent endpoint
 

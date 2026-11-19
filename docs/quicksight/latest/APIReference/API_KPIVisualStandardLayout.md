@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KPIVi
 ---
 
 # KPIVisualStandardLayout
-<a name="API_KPIVisualStandardLayout"></a>
 
 The standard layout of the KPI visual.
 

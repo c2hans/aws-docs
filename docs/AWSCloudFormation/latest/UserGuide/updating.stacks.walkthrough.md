@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/updat
 ---
 
 # Update a CloudFormation stack
-<a name="updating.stacks.walkthrough"></a>
 
 **Note**
 This tutorial builds on concepts from the [Deploy applications on Amazon EC2](deploying.applications.md) tutorial. If you haven't completed that tutorial, we recommend doing so first to understand EC2 bootstrapping with CloudFormation.

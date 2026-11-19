@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ne
 ---
 
 # NetworkFileDefinition
-<a name="API_NetworkFileDefinition"></a>
 
 Specifications for defining a vehicle network.
 

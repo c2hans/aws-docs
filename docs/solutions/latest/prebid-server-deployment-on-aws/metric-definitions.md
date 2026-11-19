@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Metric definitions
-<a name="metric-definitions"></a>
 
 System metrics are captured using the [Vert.x Metrics Service Provider Interface (SPI)](https://vertx.io/docs/vertx-dropwizard-metrics/java/#_the_metrics).
 

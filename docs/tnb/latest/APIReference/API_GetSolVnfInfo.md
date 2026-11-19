@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolVnfInf
 ---
 
 # GetSolVnfInfo
-<a name="API_GetSolVnfInfo"></a>
 
 Information about the network function.
 

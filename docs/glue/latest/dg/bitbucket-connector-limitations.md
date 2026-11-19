@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/bitbucket-connector-limit
 ---
 
 # Limitations and notes for the Bitbucket connector
-<a name="bitbucket-connector-limitations"></a>
 
 The following are limitations and notes for the Bitbucket connector:
 + Bitbucket is supported as a source only. Writing to Bitbucket is not supported.

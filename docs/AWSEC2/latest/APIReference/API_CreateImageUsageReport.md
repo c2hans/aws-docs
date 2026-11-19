@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIma
 ---
 
 # CreateImageUsageReport
-<a name="API_CreateImageUsageReport"></a>
 
 Creates a report that shows how your image is used across other AWS accounts. The report provides visibility into which accounts are using the specified image, and how many resources (EC2 instances, EC2 launch templates, Image Builder image recipes, or Image Builder container recipes) are referencing it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamScope
 ---
 
 # IpamScopeExternalAuthorityConfiguration
-<a name="API_IpamScopeExternalAuthorityConfiguration"></a>
 
 The configuration that links an Amazon VPC IPAM scope to an external authority system. It specifies the type of external system and the external resource identifier that identifies your account or instance in that system.
 

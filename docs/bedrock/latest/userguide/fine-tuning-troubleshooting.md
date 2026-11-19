@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/fine-tuning-tro
 ---
 
 # Troubleshooting model customization issues
-<a name="fine-tuning-troubleshooting"></a>
 
 This section summarizes errors that you might encounter and what to check if you do.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/sql-high
 ---
 
 # Getting started with Amazon EC2 High Availability for SQL Server
-<a name="sql-high-availability-get-started"></a>
 
 To get started with Amazon EC2 High Availability for SQL Server (SQL HA), perform the following steps:
 

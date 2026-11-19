@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Updating a Next Generation policy in AWS Network Firewall
-<a name="firewall-policy-v2-updating"></a>
 
 You can change your policy's settings after you create it, with the following constraints:
 + You can't change the name of the firewall policy.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DissociatePackages
-<a name="API_DissociatePackages"></a>
 
 Dissociates multiple packages from a domain simultaneously.
 

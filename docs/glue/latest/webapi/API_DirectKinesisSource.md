@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DirectKinesisSour
 ---
 
 # DirectKinesisSource
-<a name="API_DirectKinesisSource"></a>
 
 Specifies a direct Amazon Kinesis data source.
 

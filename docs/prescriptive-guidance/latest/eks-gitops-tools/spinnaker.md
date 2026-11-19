@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # Spinnaker
-<a name="spinnaker"></a>
 
 Although Spinnaker isn't exclusively designed as a GitOps tool, you can configure it to implement GitOps principles, especially when you use it for cloud-native and Kubernetes deployments.
 

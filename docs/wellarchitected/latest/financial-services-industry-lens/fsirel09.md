@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSIREL09: How are you backing up data in the cloud?
-<a name="fsirel09"></a>
 
  Not all backups are created equal, and not all have equal value. Ensure that the data you're backing up, and the way in which it is stored, is commensurate with the value of the data backup.
 

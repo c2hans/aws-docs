@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Da
 ---
 
 # DataLakeUpdateException
-<a name="API_DataLakeUpdateException"></a>
 
 The details of the last `UpdateDataLake` or `DeleteDataLake` API request which failed.
 

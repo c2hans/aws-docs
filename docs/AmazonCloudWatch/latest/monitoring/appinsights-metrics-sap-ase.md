@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # SAP ASE
-<a name="appinsights-metrics-sap-ase"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

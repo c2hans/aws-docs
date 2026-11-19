@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Aggregate results
-<a name="raier02"></a>
 
 | RAIER02: How will you aggregate the release criteria results into a responsible release decision? |
 | --- |

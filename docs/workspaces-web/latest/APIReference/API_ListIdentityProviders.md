@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_L
 ---
 
 # ListIdentityProviders
-<a name="API_ListIdentityProviders"></a>
 
 Retrieves a list of identity providers for a specific web portal.
 

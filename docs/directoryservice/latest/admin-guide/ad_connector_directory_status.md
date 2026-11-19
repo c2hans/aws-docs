@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_c
 ---
 
 # Understanding your directory status
-<a name="ad_connector_directory_status"></a>
 
 The following are the various statuses for a directory.
 

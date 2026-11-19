@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/view-log
 ---
 
 # View session and worker logs in Deadline Cloud
-<a name="view-logs"></a>
 
 Logs provide you with detailed information about the status and processing of tasks. In the AWS Deadline Cloud monitor, you can see the following two types of logs:
 + Session logs detail the timeline of actions, including:

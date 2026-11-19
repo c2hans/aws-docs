@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWi
 ---
 
 # Direct Connect dedicated and hosted connections
-<a name="WorkingWithConnections"></a>
 
 Direct Connect enables you to establish a dedicated network connection between your network and one of the Direct Connect locations.
 

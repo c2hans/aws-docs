@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/acce
 ---
 
 # Accessing your instance
-<a name="accessing-your-instance"></a>
 
  Using the console is the easiest way to manage your service resources and configurations. The console provides an intuitive web-based interface where you can view, create, modify, and monitor your resources.
 

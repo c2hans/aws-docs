@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonECSInfrastructureRolePolicyForServiceConnectTransportLayerSecurity
-<a name="AmazonECSInfrastructureRolePolicyForServiceConnectTransportLayerSecurity"></a>
 
 **Description**: Provides administrative access to Private Certificate Authority, AWS Secrets Manager and other AWS services required to manage ECS Service Connect TLS features on your behalf.
 

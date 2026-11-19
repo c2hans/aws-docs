@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/s
 ---
 
 # Scenarios
-<a name="scenarios"></a>
 
  In this section, we provide common government scenarios with guidance to inform your architectural design. Each scenario includes best practices, characteristics, considerations, and reference architectures where applicable.
 

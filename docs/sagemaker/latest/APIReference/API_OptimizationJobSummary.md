@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Optimi
 ---
 
 # OptimizationJobSummary
-<a name="API_OptimizationJobSummary"></a>
 
 Summarizes an optimization job by providing some of its key properties.
 

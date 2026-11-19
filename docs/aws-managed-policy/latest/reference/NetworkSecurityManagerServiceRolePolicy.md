@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Netw
 ---
 
 # NetworkSecurityManagerServiceRolePolicy
-<a name="NetworkSecurityManagerServiceRolePolicy"></a>
 
 **Description**: Access policy to allow NetworkSecurityManager service linked role to perform NetworkSecurityManager-related actions on NetworkSecurityManager-managed resources within a customer AWS account.
 

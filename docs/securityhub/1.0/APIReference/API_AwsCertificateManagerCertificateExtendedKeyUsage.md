@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsCert
 ---
 
 # AwsCertificateManagerCertificateExtendedKeyUsage
-<a name="API_AwsCertificateManagerCertificateExtendedKeyUsage"></a>
 
 Contains information about an extended key usage X.509 v3 extension object.
 

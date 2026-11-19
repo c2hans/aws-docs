@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon CloudWatch Observability Access Manager
-<a name="amazoncloudwatchobservabilityaccessmanager"></a>
 
 Amazon CloudWatch Observability Access Manager provides the following APIs for data retrieval.
 

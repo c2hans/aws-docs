@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/desktop-s
 ---
 
 # Desktop settings
-<a name="desktop-settings"></a>
 
 You can use the Desktop Settings page to configure resources associated with virtual desktops.
 

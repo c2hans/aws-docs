@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_VPCCo
 ---
 
 # VPCConnectionSummary
-<a name="API_VPCConnectionSummary"></a>
 
 The summary metadata that describes a VPC connection.
 

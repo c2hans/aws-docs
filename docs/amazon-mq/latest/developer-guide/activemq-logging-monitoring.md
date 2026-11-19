@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/activem
 ---
 
 # Available CloudWatch metrics Amazon MQ for ActiveMQ brokers
-<a name="activemq-logging-monitoring"></a>
 
 ## Amazon MQ for ActiveMQ metrics
 <a name="security-logging-monitoring-cloudwatch-metrics"></a>

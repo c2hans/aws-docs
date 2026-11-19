@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RStudi
 ---
 
 # RStudioServerProAppSettings
-<a name="API_RStudioServerProAppSettings"></a>
 
 A collection of settings that configure user interaction with the `RStudioServerPro` app.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_R
 ---
 
 # ReplicaUpdate
-<a name="API_ReplicaUpdate"></a>
 
 Represents one of the following:
 + A new replica to be added to an existing global table.

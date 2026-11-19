@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # AuthenticateOidcActionConfig
-<a name="API_AuthenticateOidcActionConfig"></a>
 
 Request parameters when using an identity provider (IdP) that is compliant with OpenID Connect (OIDC) to authenticate users.
 

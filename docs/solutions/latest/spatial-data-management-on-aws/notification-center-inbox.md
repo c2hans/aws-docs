@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Notification inbox
-<a name="notification-center-inbox"></a>
 
 The Spatial Data Portal displays a bell icon in the left navigation. Clicking the bell opens the notification panel, which shows recent notifications with titles, timestamps, and links to the relevant resources.
 + Clicking a notification navigates directly to the affected resource: project page, asset page, or asset page with the file pre-selected.

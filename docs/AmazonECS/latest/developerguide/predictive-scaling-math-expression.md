@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/predicti
 ---
 
 # Use metric math expressions
-<a name="predictive-scaling-math-expression"></a>
 
 The following section provides information about using metric math with predictive scaling policies in your policy.
 

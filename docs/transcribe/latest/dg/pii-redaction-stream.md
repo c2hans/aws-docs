@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/pii-redaction-strea
 ---
 
 # Redacting or identifying PII in a real-time stream
-<a name="pii-redaction-stream"></a>
 
 When redacting personally identifiable information (PII) from a streaming transcription, Amazon Transcribe replaces each identified instance of PII with `[PII]` in your transcript.
 

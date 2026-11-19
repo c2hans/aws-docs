@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_U
 ---
 
 # UpdateMonitor
-<a name="API_UpdateMonitor"></a>
 
 Updates the `aggregationPeriod` for a monitor. Monitors support an `aggregationPeriod` of either `30` or `60` seconds. This action requires the `monitorName` and `probeId` parameter. Run `ListMonitors` to get a list of monitor names.
 

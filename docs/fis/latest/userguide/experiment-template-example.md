@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/experiment-template
 ---
 
 # Example AWS FIS experiment templates
-<a name="experiment-template-example"></a>
 
 If you're using the AWS FIS API or a command line tool to create an experiment template, you can construct the template in JavaScript Object Notation (JSON). For more information about the components of an experiment template, see [AWS FIS experiment template components](experiment-templates.md).
 

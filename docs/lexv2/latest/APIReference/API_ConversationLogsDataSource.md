@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Conversati
 ---
 
 # ConversationLogsDataSource
-<a name="API_ConversationLogsDataSource"></a>
 
 The data source that uses conversation logs.
 

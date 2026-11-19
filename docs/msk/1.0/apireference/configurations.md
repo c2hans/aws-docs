@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/configurations.html
 ---
 
 # Configurations
-<a name="configurations"></a>
 
 A collection of MSK configurations.
 

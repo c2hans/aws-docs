@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateAnalysisPermissions
-<a name="API_UpdateAnalysisPermissions"></a>
 
 Updates the read and write permissions for an analysis.
 

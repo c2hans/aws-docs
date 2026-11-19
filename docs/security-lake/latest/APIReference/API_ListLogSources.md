@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Li
 ---
 
 # ListLogSources
-<a name="API_ListLogSources"></a>
 
 Retrieves the log sources.
 

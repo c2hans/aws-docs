@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/spot-int
 ---
 
 # Troubleshooting Amazon ECS SpotInterruption errors
-<a name="spot-interruption-errors"></a>
 
 The `SpotInterruption` error has different reasons for Fargate and EC2s.
 

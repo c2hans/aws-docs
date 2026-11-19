@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Predicate.html
 ---
 
 # Predicate
-<a name="API_Predicate"></a>
 
 Defines the predicate of the trigger, which determines when it fires.
 

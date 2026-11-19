@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_StartW
 ---
 
 # StartWorkflowExecution
-<a name="API_StartWorkflowExecution"></a>
 
 Starts an execution of the workflow type in the specified domain using the provided `workflowId` and input data.
 
@@ -193,7 +192,7 @@ A description that may help with diagnosing the cause of the fault.
 HTTP Status Code: 400
 
  ** WorkflowExecutionAlreadyStartedFault **
-Returned by [StartWorkflowExecution](#API_StartWorkflowExecution) when an open execution with the same workflowId is already running in the specified domain.
+Returned by [StartWorkflowExecution](API_StartWorkflowExecution.md) when an open execution with the same workflowId is already running in the specified domain.
  ** message **
 A description that may help with diagnosing the cause of the fault.
 HTTP Status Code: 400

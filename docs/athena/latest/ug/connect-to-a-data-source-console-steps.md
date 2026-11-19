@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connect-to-a-data-sourc
 ---
 
 # Use the Athena console to connect to a data source
-<a name="connect-to-a-data-source-console-steps"></a>
 
 You can use the Athena console to create and configure a data source connection.
 

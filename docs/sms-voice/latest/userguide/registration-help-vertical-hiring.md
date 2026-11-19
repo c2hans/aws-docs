@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registration-
 ---
 
 # Hiring Agencies & Job Boards
-<a name="registration-help-vertical-hiring"></a>
 
 This guide covers registration requirements for organizations that send employment-related messages. It distinguishes between direct employer messaging (allowed) and third-party job board aggregation (prohibited).
 

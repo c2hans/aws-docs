@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_GetExperimen
 ---
 
 # GetExperiment
-<a name="API_GetExperiment"></a>
 
 Gets information about the specified experiment.
 

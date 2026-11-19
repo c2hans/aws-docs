@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Related
 ---
 
 # RelatedFinding
-<a name="API_RelatedFinding"></a>
 
 Details about a related finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/subscriber-dashbo
 ---
 
 # Filtering data during your session in AWS Quick Sight
-<a name="subscriber-dashboards-filtering-your-view-of-the-data"></a>
 
 While your dashboard session is active, you can filter data in three ways:
 

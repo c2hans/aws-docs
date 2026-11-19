@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/tagging-remove.htm
 ---
 
 # Removing tags
-<a name="tagging-remove"></a>
 
  You can remove tags from Amazon Inspector resources. These resources include suppression rules and CIS scan configurations. Tags help you categorize AWS resources based on specific criteria. This topic describes how to remove tags from Amazon Inspector resources.
 

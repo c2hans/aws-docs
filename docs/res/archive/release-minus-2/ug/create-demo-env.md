@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/create-de
 ---
 
 # Create a demo environment
-<a name="create-demo-env"></a>
 
 **Note**
 This demo environment is not supported in AWS GovCloud (US).

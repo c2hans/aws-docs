@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # BatchIsAuthorizedInputItem
-<a name="API_BatchIsAuthorizedInputItem"></a>
 
 An authorization request that you include in a `BatchIsAuthorized` API request.
 

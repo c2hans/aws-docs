@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetCus
 ---
 
 # GetCustomDetectionRule
-<a name="API_GetCustomDetectionRule"></a>
 
 Returns details for a custom detection rule in GuardDuty, including its detection logic.
 

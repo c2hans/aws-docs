@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/access-
 ---
 
 # Using AWS managed views
-<a name="access-data-managed-views"></a>
 
 **To choose an AWS managed billing view**
 

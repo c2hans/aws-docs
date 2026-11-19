@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/Welcom
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Welcome to the * AWS Data Exchange API Reference*. AWS Data Exchange is a service that helps AWS customers to exchange data in the AWS Cloud. You can use the AWS Data Exchange API operations in the AWS Cloud.
 
@@ -49,4 +48,4 @@ For information about AWS Regions and endpoints that are supported for AWS Data 
 
 For information about the quotas for using AWS Data Exchange, see [AWS Data Exchange endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/dataexchange.html#quotas-dataexchange) in the * AWS General Reference *.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/copy-image-to-repos
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Copy a container image from one repository to another repository
-<a name="copy-image-to-repository"></a>
 
 This topic describes how to pull a container image from a repository that your nodes don’t have access to and push the image to a repository that your nodes have access to. You can push the image to Amazon ECR or an alternative repository that your nodes have access to.
 + The Docker engine installed and configured on your computer. For instructions, see [Install Docker Engine](https://docs.docker.com/engine/install/) in the Docker documentation.

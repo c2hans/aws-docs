@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableVgw
 ---
 
 # EnableVgwRoutePropagation
-<a name="API_EnableVgwRoutePropagation"></a>
 
 Enables a virtual private gateway (VGW) to propagate routes to the specified route table of a VPC.
 

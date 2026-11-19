@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceCatalogAppRegistryFullAccess
-<a name="AWSServiceCatalogAppRegistryFullAccess"></a>
 
 **Description**: Provides full access to Service Catalog App Registry capabilities
 

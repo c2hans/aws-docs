@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/deploy-th
 ---
 
 # Deploy the product
-<a name="deploy-the-product"></a>
 
 **Note**
 This product uses [AWS CloudFormation templates and stacks ](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html) to automate its deployment. The CloudFormation templates describe the AWS resources included in this product and their properties. The CloudFormation stack provisions the resources that are described in the templates.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/disable-sta
 ---
 
 # Disabling a security standard
-<a name="disable-standards"></a>
 
 When you disable a security standard in AWS Security Hub CSPM, the following occurs:
 + All the controls that apply to the standard are disabled, unless they're associated with another standard that's currently enabled.

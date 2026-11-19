@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/enforce-r
 ---
 
 # Enforce "Required tag key" with IaC
-<a name="enforce-required-tag-keys-iac"></a>
 
 Tag policies help you maintain consistent tagging across your infrastructure as code (IaC) deployments. With "Required tag keys", you can ensure that all resources created through IaC tools like CloudFormation, Terraform, and Pulumi include the mandatory tags defined by your organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Event
 ---
 
 # EventSubscription
-<a name="API_EventSubscription"></a>
 
 Detailed information about an event to which you have subscribed.
 

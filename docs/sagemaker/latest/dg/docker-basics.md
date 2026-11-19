@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/docker-basics.html
 ---
 
 # Docker container basics
-<a name="docker-basics"></a>
 
 The following page outlines the most significant aspects of using Docker containers with Amazon SageMaker AI.
 

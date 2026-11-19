@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Op
 ---
 
 # OptionStatus
-<a name="API_OptionStatus"></a>
 
 ## Description
 <a name="API_OptionStatus_Description"></a>

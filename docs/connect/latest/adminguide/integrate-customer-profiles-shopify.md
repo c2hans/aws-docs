@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/integrate-cust
 ---
 
 # Set up integration for Shopify to provide periodic updates to Connect Customer Customer Profiles
-<a name="integrate-customer-profiles-shopify"></a>
 
 To provide periodic updates to Connect Customer Customer Profiles, you can integrate with Shopify using Amazon AppIntegrations. You first set up the connection in Connect Customer and Shopify, and then verify the Shopify integration.
 

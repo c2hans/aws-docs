@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/va-architecture.html
 ---
 
 # Understanding voice analytics architecture for the Amazon Chime SDK
-<a name="va-architecture"></a>
 
 The topics in this section provide an overview of the Amazon Chime SDK voice analytics architecture, including the data flows for each feature.
 

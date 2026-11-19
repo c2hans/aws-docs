@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # InstanceConfig
-<a name="API_connect-outbound-campaigns-v2_InstanceConfig"></a>
 
 Contains configuration information about the Connect Customer instance.
 

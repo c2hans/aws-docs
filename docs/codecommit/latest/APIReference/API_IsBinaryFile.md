@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_IsBin
 ---
 
 # IsBinaryFile
-<a name="API_IsBinaryFile"></a>
 
 Information about whether a file is binary or textual in a merge or pull request operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-guardrail
 ---
 
 # Guardrails
-<a name="acxd-guardrails"></a>
 
 Guardrails help evaluate and control conversational behavior in agentic CX designer applications.
 

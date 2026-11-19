@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/delete-a-named-query.ht
 ---
 
 # Delete a named query
-<a name="delete-a-named-query"></a>
 
 The `DeleteNamedQueryExample` shows how to delete a named query by using the named query ID.
 

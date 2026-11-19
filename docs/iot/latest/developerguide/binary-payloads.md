@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/binary-payload
 ---
 
 # Working with binary payloads
-<a name="binary-payloads"></a>
 
 To handle your message payload as raw binary data (rather than a JSON object), you can use the \* operator to refer to it in a SELECT clause.
 

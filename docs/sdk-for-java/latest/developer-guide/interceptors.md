@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/inte
 ---
 
 # Use execution interceptors in the AWS SDK for Java 2.x
-<a name="interceptors"></a>
 
 Execution interceptors in the AWS SDK for Java 2.x hook into the request and response lifecycle to perform custom logic at various stages of API call execution. Use interceptors to implement cross-cutting concerns such as logging, metrics collection, request modification, debugging, and error handling.
 

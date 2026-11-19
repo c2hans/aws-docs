@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gripe.html
 ---
 
 # .gripe
-<a name="gripe"></a>
 
 Used for sharing complaints and criticism.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetOperations
-<a name="API_GetOperations"></a>
 
 Returns information about all operations.
 

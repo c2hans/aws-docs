@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aurora-repl
 ---
 
 # Comparing Amazon Aurora replication solutions
-<a name="compare-solutions"></a>
 
 The following table provides a comparison of the three Amazon Aurora replication solutions.
 

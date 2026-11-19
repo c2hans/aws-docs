@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/emla-setup-cl-create
 ---
 
 # Create the clusters
-<a name="emla-setup-cl-create"></a>
 
 Create the clusters after you have created the networks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/checking-objec
 ---
 
 # Checking object integrity for data uploads in Amazon S3
-<a name="checking-object-integrity-upload"></a>
 
 Amazon S3 uses checksum values to verify data integrity during upload and download operations. When you upload data, AWS SDK and the AWS Management Console use your chosen checksum algorithm to compute a checksum value before data transmission. S3 then independently calculates a checksum of your data and validates it against the provided checksum value. Objects are accepted only after confirming data integrity was maintained during transit. S3 stores both the checksum value as object metadata and the object itself.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ContextSet
-<a name="API_ContextSet"></a>
 
 A list of resource identifiers from the context store that is associated with the firewall. Use a context set to write stateful rules against AWS resources instead of IP addresses. This is part of a [RuleVariables](API_RuleVariables.md).
 

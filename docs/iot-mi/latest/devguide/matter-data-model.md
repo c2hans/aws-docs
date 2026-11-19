@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/matter-data-model
 ---
 
 # AWS implementation of the Matter data model
-<a name="matter-data-model"></a>
 
 The AWS implementation of the Matter Data Model manages all communication between Managed Integrations and third-party cloud providers.
 

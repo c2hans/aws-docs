@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateFlowOu
 ---
 
 # UpdateFlowOutput
-<a name="API_UpdateFlowOutput"></a>
 
  Updates an existing flow output.
 

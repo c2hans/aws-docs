@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AutonomousDa
 ---
 
 # AutonomousDatabaseApex
-<a name="API_AutonomousDatabaseApex"></a>
 
 The Oracle Application Express (APEX) details for an Autonomous Database.
 

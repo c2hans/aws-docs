@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Associate
 ---
 
 # AssociatedHost
-<a name="API_AssociatedHost"></a>
 
 Describes the properties of the associated host.
 

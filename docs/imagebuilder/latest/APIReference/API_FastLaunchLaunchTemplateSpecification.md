@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Fas
 ---
 
 # FastLaunchLaunchTemplateSpecification
-<a name="API_FastLaunchLaunchTemplateSpecification"></a>
 
 Identifies the launch template that the associated Windows AMI uses for launching an instance when Windows fast launch is enabled.
 

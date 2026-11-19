@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bul
 ---
 
 # Phase 1: Prepare phase
-<a name="phase1"></a>
 
 During this phase, you back up the data files of the tablespace to be transported on the source system. You transport the backup copies to the destination system and restore them by running the xttdriver.pl script.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/monitor
 ---
 
 # Configuring EventBridge for Systems Manager events
-<a name="monitoring-systems-manager-events"></a>
 
 You can use Amazon EventBridge to perform a target event when supported AWS Systems Manager status changes, state changes, or other conditions occur. You can create a rule that runs whenever there is a state or status transition, or when there is a transition to one or more states that are of interest.
 

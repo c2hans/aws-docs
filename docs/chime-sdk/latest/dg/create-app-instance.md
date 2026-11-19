@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-app-instance.
 ---
 
 # Creating an AppInstance for Amazon Chime SDK messaging
-<a name="create-app-instance"></a>
 
 To use Amazon Chime SDK messaging, you must first create an Amazon Chime SDK `AppInstance` in your AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/ide-e
 ---
 
 # CloudFormation Language Server
-<a name="ide-extension"></a>
 
 The AWS CloudFormation Language Server helps you write CloudFormation templates in an editor. As you type, it suggests resource types and properties, shows documentation, finds errors, lets you jump to definitions, and offers fixes for some problems. It uses the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) (LSP), which lets the server work with different editors. Starting and using the Language Server for these local authoring features doesn't require an AWS account or AWS credentials.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/i
 ---
 
 # Indicators for advanced deployment strategies
-<a name="indicators-for-advanced-deployment-strategies"></a>
 
 Use modern deployment methods and release practices to minimize the risk of deployment issues. Gradually deploy and release changes to improve reliability of software releases and enhance user experience.
 

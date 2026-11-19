@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_VpcLat
 ---
 
 # VpcLatticeConfiguration
-<a name="API_VpcLatticeConfiguration"></a>
 
 The VPC Lattice configuration for your service that holds the information for the target group(s) Amazon ECS tasks will be registered to.
 

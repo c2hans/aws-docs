@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/cluster-specific-con
 ---
 
 # Cluster-specific configurations
-<a name="cluster-specific-configurations"></a>
 
 SageMaker HyperPod offers flexibility in running training jobs across different cluster environments. Each environment has its own configuration requirements and setup process. This section outlines the steps and configurations needed for running training jobs in SageMaker HyperPod Slurm, SageMaker HyperPod k8s, and SageMaker training jobs. Understanding these configurations is crucial for effectively leveraging the power of distributed training in your chosen environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_ListPla
 ---
 
 # ListPlansInRegion
-<a name="API_ListPlansInRegion"></a>
 
 Lists all Region switch plans in your AWS account that are available in the current AWS Region.
 

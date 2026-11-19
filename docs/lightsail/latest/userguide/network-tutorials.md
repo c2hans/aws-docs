@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/network-tutor
 ---
 
 # Configure IPv6 networking for Lightsail instances
-<a name="network-tutorials"></a>
 
 This section covers the following topics related to configuring IPv6 on Lightsail instance blueprints:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/assistant/latest/userguide/cross-region-
 ---
 
 # Cross-Region processing in the AWS assistant
-<a name="cross-region-processing"></a>
 
 ## Request-processing Regions
 <a name="request-processing-regions"></a>

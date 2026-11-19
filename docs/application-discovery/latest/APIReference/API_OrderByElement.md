@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/APIReferenc
 ---
 
 # OrderByElement
-<a name="API_OrderByElement"></a>
 
 A field and direction for ordered output.
 

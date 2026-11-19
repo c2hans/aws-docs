@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sqrt-function.htm
 ---
 
 # Sqrt
-<a name="sqrt-function"></a>
 
 `sqrt` returns the square root of a given expression.
 

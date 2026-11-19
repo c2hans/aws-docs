@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Encrypt Data in Transit
-<a name="encrypt-data-in-transit"></a>
 
 AWS strongly recommends encrypting data in transit from one system to another, including resources within and outside of AWS.
 

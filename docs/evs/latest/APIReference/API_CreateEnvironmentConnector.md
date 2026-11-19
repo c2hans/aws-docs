@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_CreateEnviro
 ---
 
 # CreateEnvironmentConnector
-<a name="API_CreateEnvironmentConnector"></a>
 
 Creates a connector for an Amazon EVS environment. A connector allows the Amazon EVS control plane to interface with VCF appliances using a fully qualified domain name.
 

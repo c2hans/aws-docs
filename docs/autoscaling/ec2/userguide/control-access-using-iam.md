@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/control-access
 ---
 
 # How Amazon EC2 Auto Scaling works with IAM
-<a name="control-access-using-iam"></a>
 
 Before you use IAM to manage access to Amazon EC2 Auto Scaling, learn what IAM features are available to use with Amazon EC2 Auto Scaling.
 

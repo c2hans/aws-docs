@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/obs-whip-su
 ---
 
 # IVS WHIP Publishing \| Real-Time Streaming
-<a name="obs-whip-support"></a>
 
 This document explains how to use WHIP-compatible encoders like OBS to publish to IVS real-time streaming. [WHIP](https://www.ietf.org/archive/id/draft-ietf-wish-whip-01.html) (WebRTC-HTTP Ingestion Protocol) is an IETF draft developed to standardize WebRTC ingestion.
 

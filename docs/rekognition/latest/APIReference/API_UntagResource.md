@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Unta
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
  Removes one or more tags from an Amazon Rekognition collection, stream processor, or Custom Labels model.
 

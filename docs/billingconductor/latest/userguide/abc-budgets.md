@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/abc-bu
 ---
 
 # Viewing your pro forma data in AWS Budgets
-<a name="abc-budgets"></a>
 
 AWS accounts in AWS Billing Conductor billing groups can monitor pro forma spendings using AWS Budgets. Budgets created by AWS accounts in Billing Conductor billing groups capture the pro forma billing data, enabling alerts when your pro forma spending limit is exceeding. The budget forecast will also be based on the pro forma data, and you will be alerted when you are about to exceed your spending limit as well.
 

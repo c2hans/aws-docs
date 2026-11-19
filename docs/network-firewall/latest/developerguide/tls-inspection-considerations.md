@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/t
 ---
 
 # Considerations when working with TLS inspection configurations in AWS Network Firewall
-<a name="tls-inspection-considerations"></a>
 
 Before you implement TLS inspection configuration in Network Firewall, understand the following considerations and limitations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Pr
 ---
 
 # PromptVariant
-<a name="API_agent_PromptVariant"></a>
 
 Contains details about a variant of the prompt.
 

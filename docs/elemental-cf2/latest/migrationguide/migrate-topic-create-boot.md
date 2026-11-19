@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cf2/latest/migrationguide/migr
 ---
 
 # Create a boot USB drive
-<a name="migrate-topic-create-boot"></a>
 
 1. Obtain the RHEL 9 `.iso` file from [AWS Elemental Software Download page](https://us-east-1.console.aws.amazon.com/elemental-appliances-software/home?region=us-east-1#/softwaredownloads).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Predict protein structures with ESMFold on Deadline Cloud
-<a name="examples-jb-esmfold"></a>
 
 The [esmfold\_predict](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/esmfold_predict) job bundle on the GitHub website runs protein structure prediction with ESMFold (Meta's `facebook/esmfold_v1`, MIT license). The bundle takes a FASTA file as input and produces a `.pdb` file per sequence as output, along with confidence metrics and an optional validation report against experimental reference structures.
 

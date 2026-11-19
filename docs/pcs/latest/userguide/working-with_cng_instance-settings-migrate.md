@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cng_in
 ---
 
 # Migrating a compute node group from a custom launch template to instance settings in AWS PCS
-<a name="working-with_cng_instance-settings-migrate"></a>
 
 Existing compute node groups that use a custom launch template continue to work. You don't have to migrate them. To manage a compute node group without a custom launch template, switch it from launch template configuration (`CUSTOM`) to standard configuration (`MANAGED`). In the same update, specify the AMI, security groups, and SSH key pair as instance settings.
 

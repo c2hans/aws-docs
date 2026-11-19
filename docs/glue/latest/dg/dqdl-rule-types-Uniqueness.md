@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-Uniquenes
 ---
 
 # Uniqueness
-<a name="dqdl-rule-types-Uniqueness"></a>
 
 Checks the percentage of unique values in a column against a given expression. Unique values occur exactly once.
 

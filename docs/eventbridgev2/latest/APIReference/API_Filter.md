@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Fi
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 A single filter entry within a FilterConfiguration.
 

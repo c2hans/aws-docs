@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # PatchComplianceData
-<a name="API_PatchComplianceData"></a>
 
 Information about the state of a patch on a particular managed node as it relates to the patch baseline used to patch the node.
 

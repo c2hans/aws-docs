@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Business hours
-<a name="acc-biz-hours"></a>
 
 | Feature | AMS Accelerate |   | Premium Tier |
 | --- | --- | --- | --- |

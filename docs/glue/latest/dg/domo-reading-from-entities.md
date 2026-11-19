@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/domo-reading-from-entitie
 ---
 
 # Reading from Domo entities
-<a name="domo-reading-from-entities"></a>
 
 **Prerequisite**
 

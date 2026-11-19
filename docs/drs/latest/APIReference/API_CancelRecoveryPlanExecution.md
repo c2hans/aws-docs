@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_CancelRecove
 ---
 
 # CancelRecoveryPlanExecution
-<a name="API_CancelRecoveryPlanExecution"></a>
 
 Cancels an in-progress Recovery Plan execution. Remaining steps are skipped.
 

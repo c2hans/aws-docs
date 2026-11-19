@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # What is the EventBridge Custom Event Bus?
-<a name="eb-custom-bus-what-is"></a>
 
 The EventBridge Custom Event Bus is a serverless event bus that one team runs and many teams and accounts use. You publish events to it with `PutEvents` or `PutRawEvents`. It routes each event to the subscribers whose filters match it, and it keeps a copy of every event for a retention period that you set on the bus. You share the bus with other accounts through AWS Resource Access Manager (AWS RAM), and each of those accounts attaches its own subscribers. The bus owner writes no routing on their behalf.
 

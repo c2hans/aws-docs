@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/cmf
 ---
 
 # Connect customer-managed fleets to a license endpoint
-<a name="cmf-ubl"></a>
 
 The AWS Deadline Cloud usage-based license server provides on-demand licenses for select third-party products. With usage-based licenses, you can pay as you go. You are only charged for the time you use. Usage-based licensing provides licenses for your Deadline Cloud workers to render, it doesn't provide licenses for your DCC applications.
 

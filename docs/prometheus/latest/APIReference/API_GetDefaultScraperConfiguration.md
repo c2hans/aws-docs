@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_GetDe
 ---
 
 # GetDefaultScraperConfiguration
-<a name="API_GetDefaultScraperConfiguration"></a>
 
 The `GetDefaultScraperConfiguration` operation returns the default scraper configuration used when Amazon EKS creates a scraper for you.
 

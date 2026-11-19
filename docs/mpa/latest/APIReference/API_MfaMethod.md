@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_MfaMethod.ht
 ---
 
 # MfaMethod
-<a name="API_MfaMethod"></a>
 
 MFA configuration and sycnronization status for an approver
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # EBSOptionsStatus
-<a name="API_EBSOptionsStatus"></a>
 
 The status of the EBS options for the specified OpenSearch Service domain.
 

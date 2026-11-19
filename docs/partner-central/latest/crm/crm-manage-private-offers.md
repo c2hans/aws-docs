@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/crm-manage-pr
 ---
 
 # Managing private offers
-<a name="crm-manage-private-offers"></a>
 
 The following topics explain how to use Salesforce to create and manage private offers for your AWS Marketplace products. Topics include creating, modifying, and tracking private offers, creating flexible payment schedules, create future-dated agreements, and manage the entire lifecycle of your private offers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/cfigs-cmaf-manset
 ---
 
 # Manifest settings fields
-<a name="cfigs-cmaf-manset"></a>
 
 Specify the format of the manifest that AWS Elemental MediaPackage delivers from an asset that uses this packaging configuration.
 

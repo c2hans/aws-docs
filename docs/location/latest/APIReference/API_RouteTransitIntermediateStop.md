@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTransitIntermediateStop
-<a name="API_RouteTransitIntermediateStop"></a>
 
 An intermediate stop between departure and destination of the transit route.
 

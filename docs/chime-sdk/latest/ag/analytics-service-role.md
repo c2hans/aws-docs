@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/analytics-service-ro
 ---
 
 # Using the AmazonChimeSDKEvents service-linked role
-<a name="analytics-service-role"></a>
 
 The Amazon Chime SDK uses a service-linked role named `AmazonChimeSDKEvents`. The role grants access to the AWS services and resources used or managed by the Amazon Chime SDK, such as the Kinesis firehose used for data streaming.
 

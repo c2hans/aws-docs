@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Memory EpisodicMemoryStrategy
-<a name="aws-properties-bedrockagentcore-memory-episodicmemorystrategy"></a>
 
 The configuration for an episodic memory strategy. Episodic memory stores and retrieves specific interaction episodes between agents and users.
 

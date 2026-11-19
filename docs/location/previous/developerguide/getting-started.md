@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/getting
 ---
 
 # Quick start with Amazon Location Service
-<a name="getting-started"></a>
 
 The most efficient way to get started with Amazon Location Service is to use the [Amazon Location console](https://console.aws.amazon.com/location/home). You can create and manage your resources and try the Amazon Location functionality using [the Explore page](https://console.aws.amazon.com/location/explore/home).
 

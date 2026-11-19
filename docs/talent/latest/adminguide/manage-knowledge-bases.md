@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/adminguide/manage-knowledg
 ---
 
 # Manage knowledge bases
-<a name="manage-knowledge-bases"></a>
 
 A knowledge base stores your company values, principles, and mission. Amazon Connect Talent uses this information to personalize competencies and interview questions for candidates.
 

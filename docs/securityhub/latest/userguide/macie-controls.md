@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/macie-contr
 ---
 
 # Security Hub CSPM controls for Macie
-<a name="macie-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the Amazon Macie service.
 

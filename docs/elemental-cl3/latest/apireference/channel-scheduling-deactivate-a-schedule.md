@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 ---
 
 # DELETE: Deactivate a Schedule
-<a name="channel-scheduling-deactivate-a-schedule"></a>
 
 Active schedules can be deactivated as follows.
 

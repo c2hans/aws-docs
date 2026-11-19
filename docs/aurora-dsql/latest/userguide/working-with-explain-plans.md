@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/working-wit
 ---
 
 # Working with Aurora DSQL EXPLAIN plans
-<a name="working-with-explain-plans"></a>
 
 Aurora DSQL uses a similar EXPLAIN plan structure to PostgreSQL, but with key additions that reflect its distributed architecture and execution model.
 

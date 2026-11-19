@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Lambda
-<a name="list_lambda"></a>
 
 AWS Lambda (service prefix: `lambda`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 
@@ -1227,6 +1226,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [DeleteDurableExecution](https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteDurableExecution.html)  **
+  - **Description:** Grants permission to delete an AWS Lambda durable execution
+  - **Resource types (\*required):** [durable execution\*](#list_lambda-resource-durableexecution)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [DeleteEventSourceMapping](https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteEventSourceMapping.html)  **
   - **Description:** Grants permission to delete an AWS Lambda event source mapping
   - **Resource types (\*required):** [eventSourceMapping\*](#list_lambda-resource-eventSourceMapping)
@@ -1733,6 +1738,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
+- **   [PauseDurableExecution](https://docs.aws.amazon.com/lambda/latest/dg/API_PauseDurableExecution.html)  **
+  - **Description:** Grants permission to pause an AWS Lambda durable execution
+  - **Resource types (\*required):** [durable execution\*](#list_lambda-resource-durableexecution)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [PublishLayerVersion](https://docs.aws.amazon.com/lambda/latest/dg/API_PublishLayerVersion.html)  **
   - **Description:** Grants permission to create an AWS Lambda layer
   - **Resource types (\*required):** [layer\*](#list_lambda-resource-layer)
@@ -1809,6 +1820,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [RestoreRuntime](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_RestoreRuntime.html)  **
   - **Description:** Grants permission to restore an AWS Lambda customer-managed runtime
   - **Resource types (\*required):** [runtime\*](#list_lambda-resource-runtime)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [ResumeDurableExecution](https://docs.aws.amazon.com/lambda/latest/dg/API_ResumeDurableExecution.html)  **
+  - **Description:** Grants permission to resume a paused AWS Lambda durable execution
+  - **Resource types (\*required):** [durable execution\*](#list_lambda-resource-durableexecution)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 

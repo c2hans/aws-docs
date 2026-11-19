@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Instanc
 ---
 
 # InstanceRefreshLivePoolProgress
-<a name="API_InstanceRefreshLivePoolProgress"></a>
 
 Reports progress on replacing instances that are in the Auto Scaling group.
 

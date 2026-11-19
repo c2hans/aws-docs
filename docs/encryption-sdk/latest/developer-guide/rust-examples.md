@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/ru
 ---
 
 # AWS Encryption SDK for Rust example code
-<a name="rust-examples"></a>
 
 The following examples show the basic coding patterns that you use when programming with the AWS Encryption SDK for Rust. Specifically, you instantiate the AWS Encryption SDK and the material providers library. Then, before calling each method, you instantiate the object that defines the input for the method.
 

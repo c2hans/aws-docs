@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-b
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Backup storage
-<a name="backup-storage"></a>
 
  Most Oracle Database users take regular hot and cold backups. Cold backups are taken while the database is shut down, whereas hot backups are taken while the database is active. AWS native storage services offer a choice of solutions for your needs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Sto
 ---
 
 # StopExecutionTrigger
-<a name="API_StopExecutionTrigger"></a>
 
 The interaction that stopped a pipeline execution.
 

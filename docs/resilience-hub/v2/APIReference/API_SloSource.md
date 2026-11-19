@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_SloSo
 ---
 
 # SloSource
-<a name="API_SloSource"></a>
 
 Contains the effective availability SLO value and its source.
 

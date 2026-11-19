@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetDataba
 ---
 
 # GetDatabase
-<a name="API_GetDatabase"></a>
 
 Returns a database object for the specified database and data catalog.
 

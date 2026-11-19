@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Associa
 ---
 
 # AssociatedStandard
-<a name="API_AssociatedStandard"></a>
 
  Information about an enabled security standard in which a security control is enabled.
 

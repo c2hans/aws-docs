@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationTravelModeOptions
-<a name="API_WaypointOptimizationTravelModeOptions"></a>
 
 Travel mode related options for the provided travel mode.
 

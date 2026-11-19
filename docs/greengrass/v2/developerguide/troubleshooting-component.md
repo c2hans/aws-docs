@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/troubleshoo
 ---
 
 # Detailed component status codes
-<a name="troubleshooting-component"></a>
 
 Use the status codes and solutions in these sections to help resolve issues with components when using the Greengrass nucleus version 2.8.0 or later.
 

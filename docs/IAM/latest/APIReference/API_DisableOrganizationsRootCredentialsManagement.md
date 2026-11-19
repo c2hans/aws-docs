@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DisableOrgan
 ---
 
 # DisableOrganizationsRootCredentialsManagement
-<a name="API_DisableOrganizationsRootCredentialsManagement"></a>
 
 Disables the management of privileged root user credentials across member accounts in your organization. When you disable this feature, the management account and the delegated administrator for IAM can no longer manage root user credentials for member accounts in your organization.
 

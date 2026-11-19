@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteC
 ---
 
 # DeleteClusterSubnetGroup
-<a name="API_DeleteClusterSubnetGroup"></a>
 
 Deletes the specified cluster subnet group.
 

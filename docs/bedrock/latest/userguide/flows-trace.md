@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-trace.htm
 ---
 
 # Track each step in your flow by viewing its trace in Amazon Bedrock
-<a name="flows-trace"></a>
 
 When you invoke a flow, you can view the *trace* to see the inputs to and outputs from each node. The trace helps you track the path from the input to the response that it ultimately returns. You can use the trace to troubleshoot errors that occur, to identify steps that lead to an unexpected outcome or performance bottleneck, and to consider ways in which you can improve the flow.
 

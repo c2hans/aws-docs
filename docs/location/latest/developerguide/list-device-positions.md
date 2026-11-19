@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/list-devi
 ---
 
 # List your device positions
-<a name="list-device-positions"></a>
 
 You can view a list device positions for a tracker using the AWS CLI, or the Amazon Location APIs, with the ListDevicePositions API. When you call the ListDevicePositions API, a list of the latest positions for all devices associated with a given tracker is returned. By default this API returns 100 of the latest device positions per page of results for a given tracker. To only return devices within a specific region use the `FilterGeometry` parameter to create a Bounding Polygon Query. This way when you call ListDevicePositions, only devices inside the polygon will be returned.
 

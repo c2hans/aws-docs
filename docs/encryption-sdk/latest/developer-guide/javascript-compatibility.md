@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/ja
 ---
 
 # Compatibility of the AWS Encryption SDK for JavaScript
-<a name="javascript-compatibility"></a>
 
 The AWS Encryption SDK for JavaScript is designed to be interoperable with other language implementations of the AWS Encryption SDK. In most cases, you can encrypt data with the AWS Encryption SDK for JavaScript and decrypt it with any other language implementation, including the [AWS Encryption SDK Command Line Interface](crypto-cli.md). And you can use the AWS Encryption SDK for JavaScript to decrypt [encrypted messages](concepts.md#message) produced by other language implementations of the AWS Encryption SDK.
 

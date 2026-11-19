@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Data protection
-<a name="a-data-protection"></a>
 
 **Topics**
 + [SEC 7  How do you classify your data?](sec-07.md)

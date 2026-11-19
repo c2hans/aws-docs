@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-a
 ---
 
 # Using AWS Quick
-<a name="using-microsoft-power-bi-with-amazon-quicksight"></a>
 
 Customers considering using the Microsoft Power BI Suite with AWS are encouraged to evaluate [AWS Quick](https://aws.amazon.com/quicksight/) as an alternative. This fully managed cloud service natively connects to data sources in AWS, reducing the complexity and cost when compared to other BI solutions.
 

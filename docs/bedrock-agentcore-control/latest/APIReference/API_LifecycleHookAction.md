@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # LifecycleHookAction
-<a name="API_LifecycleHookAction"></a>
 
 The action that a lifecycle hook runs. Specify exactly one member. Currently, `httpPost` is the only supported action.
 

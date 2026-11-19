@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterInstanceGroupDetails
-<a name="API_ClusterInstanceGroupDetails"></a>
 
 Details of an instance group in a SageMaker HyperPod cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # CreateOpsMetadata
-<a name="API_CreateOpsMetadata"></a>
 
 If you create a new application in Application Manager, AWS Systems Manager calls this API operation to specify information about the new application, including the application type.
 

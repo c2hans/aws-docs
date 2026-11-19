@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Utilize Data
-<a name="data-collection-utilize-data"></a>
 
 ## Check execution state
 <a name="data-collection-utilize-data-check-execution"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/userguide/how-it-works
 ---
 
 # How scaling plans work
-<a name="how-it-works"></a>
 
 AWS Auto Scaling lets you use scaling plans to configure a set of instructions for scaling your resources. If you work with CloudFormation or add tags to scalable resources, you can set up scaling plans for different sets of resources, per application. The AWS Auto Scaling console provides recommendations for scaling strategies customized to each resource. After you create your scaling plan, it combines dynamic scaling and predictive scaling methods together to support your scaling strategy.
 

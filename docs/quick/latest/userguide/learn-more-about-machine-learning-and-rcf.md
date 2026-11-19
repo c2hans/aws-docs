@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/learn-more-about-
 ---
 
 # References for machine learning and RCF
-<a name="learn-more-about-machine-learning-and-rcf"></a>
 
 To learn more about machine learning and this algorithm, we suggest the following resources:
 + The article [Robust Random Cut Forest (RRCF): A No Math Explanation](https://www.linkedin.com/pulse/robust-random-cut-forest-rrcf-math-explanation-logan-wilt/) provides a lucid explanation without the mathematical equations.

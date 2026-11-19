@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-g
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Getting started with AWS Well-Architected Agent
-<a name="agent-getting-started"></a>
 
 To use AWS Well-Architected Agent, you create an agent profile that defines the scope of your infrastructure analysis. You need an agent profile before you can generate and view application-level recommendations, run architecture reviews, or use any other AWS WA Agent feature. To receive personalized, goal-aligned recommendations with cross-pillar trade-off analysis, complete the following setup steps.
 

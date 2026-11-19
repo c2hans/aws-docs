@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Example: Authorization for a gateway created with the AgentCore CLI
-<a name="gateway-using-auth-ex-starter"></a>
 
 When you add a gateway, set the inbound authorizer with `--authorizer-type`. If you omit it, the gateway uses `NONE` and accepts unauthenticated requests. To use JWT authorization, set up an identity provider first. When you add a target, configure outbound authorization if the target requires it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsGuar
 ---
 
 # AwsGuardDutyDetectorDetails
-<a name="API_AwsGuardDutyDetectorDetails"></a>
 
  Provides details about an Amazon GuardDuty detector. A detector is an object that represents the GuardDuty service. A detector is required for GuardDuty to become operational.
 

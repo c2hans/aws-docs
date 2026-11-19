@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-launch
 ---
 
 # Tutorial: Configure EC2 Fleet to launch On-Demand Instances using targeted Capacity Reservations
-<a name="ec2-fleet-launch-on-demand-instances-using-targeted-capacity-reservations-walkthrough"></a>
 
 This tutorial walks you through all the steps that you must perform so that your EC2 Fleet launches On-Demand Instances into `targeted` Capacity Reservations.
 

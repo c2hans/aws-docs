@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/timeout-nvme-ebs-vo
 ---
 
 # NVMe I/O operation timeout for Amazon EBS volumes
-<a name="timeout-nvme-ebs-volumes"></a>
 
 Most operating systems specify a timeout for I/O operations submitted to NVMe devices.
 

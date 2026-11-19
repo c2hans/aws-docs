@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Remote commands troubleshooting
-<a name="remote-commands-troubleshooting"></a>
 
 ## Problem: Command stuck in SENT status
 <a name="problem-command-stuck-in-sent"></a>

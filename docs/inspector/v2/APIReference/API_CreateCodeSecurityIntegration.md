@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CreateCode
 ---
 
 # CreateCodeSecurityIntegration
-<a name="API_CreateCodeSecurityIntegration"></a>
 
 Creates a code security integration with a source code repository provider.
 

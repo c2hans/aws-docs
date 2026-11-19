@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 ---
 
 # Distributed tracing
-<a name="distributed-tracing"></a>
 
  Microservices often work together to handle requests. AWS X-Ray uses correlation IDs to track requests across these services. X-Ray works with Amazon EC2, Amazon ECS, Lambda, and Elastic Beanstalk.
 

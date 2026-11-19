@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeReservedDBInstancesOfferings
-<a name="API_DescribeReservedDBInstancesOfferings"></a>
 
 Lists available reserved DB instance offerings.
 

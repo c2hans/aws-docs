@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateP
 ---
 
 # CreateProjectMembership
-<a name="API_CreateProjectMembership"></a>
 
 Creates a project membership in Amazon DataZone.
 

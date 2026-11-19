@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_NextCont
 ---
 
 # NextContactEntry
-<a name="API_NextContactEntry"></a>
 
  Entry representing the next contact in a sequence.
 

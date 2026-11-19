@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_C
 ---
 
 # CreateServiceAction
-<a name="API_CreateServiceAction"></a>
 
 Creates a self-service action.
 

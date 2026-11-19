@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing
 ---
 
 # What is AWS Billing and Cost Management?
-<a name="billing-what-is"></a>
 
 Welcome to the AWS Billing User Guide.
 

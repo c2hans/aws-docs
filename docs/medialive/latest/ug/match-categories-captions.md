@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/match-categories-cap
 ---
 
 # Match formats to categories
-<a name="match-categories-captions"></a>
 
 After you have made a captions outputs list, you must identify the procedure to follow to create captions encodes in each MediaLive output. The procedure to follow depends on the *category* that a captions format belongs to.
 

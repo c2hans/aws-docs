@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessSseSpecificationResponse
-<a name="API_VerifiedAccessSseSpecificationResponse"></a>
 
 The options in use for server side encryption.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManag
 ---
 
 # ListManagementOptions
-<a name="API_ListManagementOptions"></a>
 
 An object used to specify a list or topic to which an email belongs, which will be used when a contact chooses to unsubscribe.
 

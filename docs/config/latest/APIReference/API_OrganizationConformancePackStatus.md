@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Organizat
 ---
 
 # OrganizationConformancePackStatus
-<a name="API_OrganizationConformancePackStatus"></a>
 
 Returns the status for an organization conformance pack in an organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/logging-using
 ---
 
 # Logging AWS End User Messaging SMS API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 AWS End User Messaging SMS is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html), a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for AWS End User Messaging SMS as events. The calls captured include calls from the AWS End User Messaging SMS console and code calls to the AWS End User Messaging SMS API operations. Using the information collected by CloudTrail, you can determine the request that was made to AWS End User Messaging SMS, the IP address from which the request was made, when it was made, and additional details.
 

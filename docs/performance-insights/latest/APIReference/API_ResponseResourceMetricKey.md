@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # ResponseResourceMetricKey
-<a name="API_ResponseResourceMetricKey"></a>
 
 An object describing a Performance Insights metric and one or more dimensions for that metric.
 

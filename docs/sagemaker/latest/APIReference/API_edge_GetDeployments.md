@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_edge_G
 ---
 
 # GetDeployments
-<a name="API_edge_GetDeployments"></a>
 
 Use to get the active deployments from a device.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Descr
 ---
 
 # DescribeRecoveryPoint
-<a name="API_DescribeRecoveryPoint"></a>
 
 Returns metadata associated with a recovery point, including ID, status, encryption, and lifecycle.
 

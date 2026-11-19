@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ROSA
 ---
 
 # ROSAInstallerPolicy
-<a name="ROSAInstallerPolicy"></a>
 
 **Description**: Allows the Red Hat OpenShift Service on AWS (ROSA) installer to manage AWS resources that support ROSA cluster installation. This includes managing instance profiles for ROSA worker nodes.
 

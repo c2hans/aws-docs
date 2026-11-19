@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Delet
 ---
 
 # DeleteFunction
-<a name="API_DeleteFunction"></a>
 
 Deletes a CloudFront function.
 

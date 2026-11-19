@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # MLSEC02-BP01 Design data encryption and obfuscation
-<a name="mlsec02-bp01"></a>
 
  Consider how to protect personal data. Use field level encryption or obfuscation to protect personally identifiable data.
 

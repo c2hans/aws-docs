@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/wait-event.lw
 ---
 
 # LWLock:buffer\_content (BufferContent)
-<a name="wait-event.lwlockbuffercontent"></a>
 
 The `LWLock:buffer_content` event occurs when a session is waiting to read or write a data page in memory while another session has that page locked for writing. In RDS for PostgreSQL 13 and higher, this wait event is called `BufferContent`.
 

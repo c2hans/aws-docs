@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_Compre
 ---
 
 # ComprehendMedicalAsyncJobFilter
-<a name="API_ComprehendMedicalAsyncJobFilter"></a>
 
 Provides information for filtering a list of detection jobs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/getting-started-using-am
 ---
 
 # Getting started using the Amazon Glacier storage classes
-<a name="getting-started-using-amazon-s3-glacier-storage-classes"></a>
 
 |  |  |
 | --- |--- |

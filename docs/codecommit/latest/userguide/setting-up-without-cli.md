@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-w
 ---
 
 # Setup for SSH users not using the AWS CLI
-<a name="setting-up-without-cli"></a>
 
 If you want to use SSH connections for your repository, you can connect to AWS CodeCommit without installing the AWS CLI. The AWS CLI includes commands that are useful when you use and manage CodeCommit repositories, but it is not required for initial setup.
 

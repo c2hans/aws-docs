@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayMulticastDeregisteredGroupSources
-<a name="API_TransitGatewayMulticastDeregisteredGroupSources"></a>
 
 Describes the deregistered transit gateway multicast group sources.
 

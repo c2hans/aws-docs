@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListAgentRuntimeEndpoints
-<a name="API_ListAgentRuntimeEndpoints"></a>
 
 Lists all endpoints for a specific Amazon Secure Agent.
 

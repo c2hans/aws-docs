@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_P
 ---
 
 # PathComponent
-<a name="API_PathComponent"></a>
 
 Describes a path component.
 

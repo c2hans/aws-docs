@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cloud-f
 ---
 
 # Cloud Foundations
-<a name="cloud-foundations"></a>
 
  AWS Well-Architected Cloud Foundations (WA Cloud Foundations) defines the central capabilities you can employ to govern your overall cloud environment, promote and enforce standards across your workloads, and provide services that your workload teams can consume to accelerate their delivery. These capabilities are often maintained by a dedicated engineering team that is distinct from workload teams, such as a foundation team, cloud engineering team, or devops team.
 

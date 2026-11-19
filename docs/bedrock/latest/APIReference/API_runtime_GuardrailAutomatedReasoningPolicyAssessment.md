@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailAutomatedReasoningPolicyAssessment
-<a name="API_runtime_GuardrailAutomatedReasoningPolicyAssessment"></a>
 
 Contains the results of automated reasoning policy evaluation, including logical findings about the validity of claims made in the input content.
 

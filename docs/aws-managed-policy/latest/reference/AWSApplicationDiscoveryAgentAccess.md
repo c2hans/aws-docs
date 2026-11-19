@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationDiscoveryAgentAccess
-<a name="AWSApplicationDiscoveryAgentAccess"></a>
 
 **Description**: Provides access for the Discovery Agent to register with AWS Application Discovery Service.
 

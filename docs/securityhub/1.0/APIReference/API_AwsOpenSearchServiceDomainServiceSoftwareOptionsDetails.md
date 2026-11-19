@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsOpen
 ---
 
 # AwsOpenSearchServiceDomainServiceSoftwareOptionsDetails
-<a name="API_AwsOpenSearchServiceDomainServiceSoftwareOptionsDetails"></a>
 
 Provides information about the state of the domain relative to the latest service software.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_AssociateRes
 ---
 
 # AssociateResourceSharePermission
-<a name="API_AssociateResourceSharePermission"></a>
 
 Adds or replaces the AWS RAM permission for a resource type included in a resource share. You can have exactly one permission associated with each resource type in the resource share. You can add a new AWS RAM permission only if there are currently no resources of that resource type currently in the resource share.
 

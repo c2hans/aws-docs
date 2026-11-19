@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/exampl
 ---
 
 # Example of responding to a message with a read receipt and reaction
-<a name="example-response"></a>
 
 In this example, your customer, Diego, sent you a message saying "Hi" and you respond to him with a read receipt and hand wave emoji.
 

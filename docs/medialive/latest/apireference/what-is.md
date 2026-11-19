@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/what-is.ht
 ---
 
 # What Is the AWS Elemental MediaLive API?
-<a name="what-is"></a>
 
 This is the AWS Elemental MediaLive REST API Reference. It provides information on the URL, request contents, and response contents of each AWS Elemental MediaLive REST operation.
 

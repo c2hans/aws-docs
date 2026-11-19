@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Application cleanup: Removing redundant workloads
-<a name="2-redundant-application-cleanup"></a>
 
 Once idle clusters are addressed, clean up abandoned workloads within active clusters. Leftover deployments, failed jobs, and orphaned resources prevent efficient bin-packing and inflate node count.
 

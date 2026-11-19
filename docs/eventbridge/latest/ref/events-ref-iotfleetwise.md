@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-iotfle
 ---
 
 # AWS IoT FleetWise events
-<a name="events-ref-iotfleetwise"></a>
 
 AWS IoT FleetWise sends service events to EventBridge via AWS CloudTrail.
 

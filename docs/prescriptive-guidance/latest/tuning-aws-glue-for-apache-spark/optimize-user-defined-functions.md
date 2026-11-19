@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-
 ---
 
 # Optimize user-defined functions
-<a name="optimize-user-defined-functions"></a>
 
 User-defined functions (UDFs) and `RDD.map` in PySpark often degrade performance significantly. This is because of the overhead required to accurately represent your Python code in Spark's underlying Scala implementation.
 

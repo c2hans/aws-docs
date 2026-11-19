@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-multimodal-a
 ---
 
 # Adding data sources and starting ingestion
-<a name="kb-multimodal-add-data-source-and-ingest"></a>
 
 After creating your knowledge base, add data sources containing your multimodal content and start ingestion jobs to process and index the content.
 

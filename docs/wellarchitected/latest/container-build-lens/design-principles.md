@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Design principles
-<a name="design-principles"></a>
 
  The Well-Architected Framework identifies a set of general design principles to facilitate good design in the cloud for building and managing container images:
 +  **Minimize image size: **Reducing the container image size has many advantages, such as reducing the attack surface, improving scaling speed as containers start faster, and minimizing the amount of storage. One recommended way to achieve this is to reduce the number of dependencies and use multi-stage builds. In order to minimize the attack surface, only the necessary binaries to run the container should be included in the image. The same applies for data. Data should be stored in an external system and it is considered best practice to inject configuration data.

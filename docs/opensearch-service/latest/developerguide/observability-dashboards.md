@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Dashboards
-<a name="observability-dashboards"></a>
 
 Dashboards combine visualizations from logs, traces, and metrics into a single view. You can use dashboards to monitor operational health, respond to incidents, and track resource utilization across your distributed system.
 

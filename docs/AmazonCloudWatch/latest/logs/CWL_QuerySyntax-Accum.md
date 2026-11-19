@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # accum
-<a name="CWL_QuerySyntax-Accum"></a>
 
 Use the `accum` command to compute a running cumulative sum of a numeric field.
 

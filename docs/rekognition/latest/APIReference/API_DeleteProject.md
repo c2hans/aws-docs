@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dele
 ---
 
 # DeleteProject
-<a name="API_DeleteProject"></a>
 
 Deletes a Amazon Rekognition project. To delete a project you must first delete all models or adapters associated with the project. To delete a model or adapter, see [DeleteProjectVersion](API_DeleteProjectVersion.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_TraceUser.html
 ---
 
 # TraceUser
-<a name="API_TraceUser"></a>
 
 Information about a user recorded in segment documents.
 

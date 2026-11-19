@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyConver
 ---
 
 # ModifyConversionConfiguration
-<a name="API_ModifyConversionConfiguration"></a>
 
 Modifies the specified schema conversion configuration using the provided parameters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/mabl-connection-options.h
 ---
 
 # mabl connection options
-<a name="mabl-connection-options"></a>
 
 The following are connection options for mabl:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the mabl object to read.

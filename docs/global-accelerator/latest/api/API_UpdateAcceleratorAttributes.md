@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Update
 ---
 
 # UpdateAcceleratorAttributes
-<a name="API_UpdateAcceleratorAttributes"></a>
 
 Update the attributes for an accelerator.
 

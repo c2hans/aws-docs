@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDyna
 ---
 
 # AwsDynamoDbTableKeySchema
-<a name="API_AwsDynamoDbTableKeySchema"></a>
 
 A component of the key schema for the DynamoDB table, a global secondary index, or a local secondary index.
 

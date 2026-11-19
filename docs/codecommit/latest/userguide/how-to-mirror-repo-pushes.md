@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-mirro
 ---
 
 # Push commits to an additional Git repository
-<a name="how-to-mirror-repo-pushes"></a>
 
 You can configure your local repo to push changes to two remote repositories. For example, you might want to continue using your existing Git repository solution while you try out AWS CodeCommit. Follow these basic steps to push changes in your local repo to CodeCommit and a separate Git repository.
 

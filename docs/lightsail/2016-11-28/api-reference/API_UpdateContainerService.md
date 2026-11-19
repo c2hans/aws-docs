@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_U
 ---
 
 # UpdateContainerService
-<a name="API_UpdateContainerService"></a>
 
 Updates the configuration of your Amazon Lightsail container service, such as its power, scale, and public domain names.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_StorageConnect
 ---
 
 # StorageConnector
-<a name="API_StorageConnector"></a>
 
 Describes the storage connector.
 

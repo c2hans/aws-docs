@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_S3L
 ---
 
 # S3Logs
-<a name="API_S3Logs"></a>
 
 Amazon S3 logging configuration.
 

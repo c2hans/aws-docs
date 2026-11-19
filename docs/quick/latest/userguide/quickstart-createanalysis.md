@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quickstart-create
 ---
 
 # Quick start: Create an AWS Quick Sight analysis with a single visual using sample data
-<a name="quickstart-createanalysis"></a>
 
 Before you create your first analysis, make sure to complete the steps in [Setting up and signing into AWS Quick](setting-up.md).
 

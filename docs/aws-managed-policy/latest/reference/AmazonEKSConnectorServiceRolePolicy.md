@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEKSConnectorServiceRolePolicy
-<a name="AmazonEKSConnectorServiceRolePolicy"></a>
 
 **Description**: This policy allows Amazon EKS to manage AWS resources for EKS connector
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_BackendConnectionErr
 ---
 
 # BackendConnectionErrors
-<a name="API_BackendConnectionErrors"></a>
 
 ## Contents
 <a name="API_BackendConnectionErrors_Contents"></a>

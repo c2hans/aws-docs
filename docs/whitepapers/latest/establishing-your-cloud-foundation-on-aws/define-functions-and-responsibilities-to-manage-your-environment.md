@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Define functions and responsibilities to manage your environment
-<a name="define-functions-and-responsibilities-to-manage-your-environment"></a>
 
 Federated access grants you the ability to efficiently manage the access to the environment, and should be established and operated centrally. The benefits of managing your identities and controlling access to your environment centrally, allows you to quickly create, update, and delete the permissions and policies you need to meet your business requirements. From granting or revoking permissions to specific users or roles, or by establishing preventative controls on your overall environment, your security teams can manage access to the environment from one place.
 

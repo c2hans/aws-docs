@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Even
 ---
 
 # EventChannelDetails
-<a name="API_EventChannelDetails"></a>
 
 Service details for Event Channel integration.
 

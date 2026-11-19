@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Connector
 ---
 
 # ConnectorSummary
-<a name="API_ConnectorSummary"></a>
 
 A summary of a connector.
 

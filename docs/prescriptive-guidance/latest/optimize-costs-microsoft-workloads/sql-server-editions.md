@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Compare SQL Server editions
-<a name="sql-server-editions"></a>
 
 ## Overview
 <a name="sql-server-editions-overview"></a>

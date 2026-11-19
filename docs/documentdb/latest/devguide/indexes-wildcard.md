@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/indexes-wildc
 ---
 
 # Wildcard indexes
-<a name="indexes-wildcard"></a>
 
 Amazon DocumentDB supports wildcard indexes beginning with Amazon DocumentDB 8.0.3.
 

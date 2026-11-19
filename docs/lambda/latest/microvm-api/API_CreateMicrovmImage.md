@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_CreateMicr
 ---
 
 # CreateMicrovmImage
-<a name="API_CreateMicrovmImage"></a>
 
 Creates a MicroVM image from the specified code artifact and base image. The build is asynchronous — the image transitions from CREATING to CREATED on success, or CREATE\_FAILED on failure. Use GetMicrovmImage to poll for completion.
 

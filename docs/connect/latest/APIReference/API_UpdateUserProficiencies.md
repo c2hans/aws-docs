@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateUs
 ---
 
 # UpdateUserProficiencies
-<a name="API_UpdateUserProficiencies"></a>
 
 Updates the properties associated with the proficiencies of a user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeAccountSettings
-<a name="API_DescribeAccountSettings"></a>
 
 Describes the settings that were used when your Quick Sight subscription was first created in this AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_TagDesc
 ---
 
 # TagDescription
-<a name="API_TagDescription"></a>
 
 Describes a tag for an Auto Scaling group.
 

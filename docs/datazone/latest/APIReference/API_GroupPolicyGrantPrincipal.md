@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GroupPo
 ---
 
 # GroupPolicyGrantPrincipal
-<a name="API_GroupPolicyGrantPrincipal"></a>
 
 The group principal to whom the policy is granted.
 

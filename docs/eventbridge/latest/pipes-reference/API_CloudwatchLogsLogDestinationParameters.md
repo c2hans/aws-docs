@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_C
 ---
 
 # CloudwatchLogsLogDestinationParameters
-<a name="API_CloudwatchLogsLogDestinationParameters"></a>
 
 The Amazon CloudWatch Logs logging configuration settings for the pipe.
 

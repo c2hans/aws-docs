@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TaskTemp
 ---
 
 # TaskTemplateInfoV2
-<a name="API_TaskTemplateInfoV2"></a>
 
 Information about the task template used to create this contact.
 

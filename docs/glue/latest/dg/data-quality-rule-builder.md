@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-rule-builder
 ---
 
 # Data Quality rule builder
-<a name="data-quality-rule-builder"></a>
 
 With the Data Quality Definition Language (DQDL) rule builder, you can create data quality rules to evaluate your data. Start by selecting a rule type, and then specify the parameters in the rule editor. The rule editor also shows you any errors and warnings as you create rules.
 

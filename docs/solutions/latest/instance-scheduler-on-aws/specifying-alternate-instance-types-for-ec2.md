@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Handling EC2 Insufficient Capacity Errors
-<a name="specifying-alternate-instance-types-for-ec2"></a>
 
 When Instance Scheduler fails to start an instance due to insufficient capacity, its default behavior is to issue a start-failed event (see [EventBridge Events](monitor-the-solution.md#monitoring-eventbridge-events)) and try again on the next scheduling interval. Alternatively, Instance Scheduler can be configured to resize your instance to alternative instance types before retrying the start operation. This feature helps improve instance availability in capacity constrained environments.
 

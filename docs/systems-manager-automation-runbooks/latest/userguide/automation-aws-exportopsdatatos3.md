@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-ExportOpsDataToS3`
-<a name="automation-aws-exportopsdatatos3"></a>
 
  **Description**
 

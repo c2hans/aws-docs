@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetOtaTas
 ---
 
 # GetOtaTaskConfiguration
-<a name="API_GetOtaTaskConfiguration"></a>
 
 Get a configuraiton for the over-the-air (OTA) task.
 

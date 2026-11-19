@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_ThemeGeneratio
 ---
 
 # ThemeGenerationConfig
-<a name="API_ThemeGenerationConfig"></a>
 
 The configuration details for generating themes with a batch inference job.
 

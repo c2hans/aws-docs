@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/support-authoriza
 ---
 
 # AWS Support authorization concepts
-<a name="support-authorization-concepts"></a>
 
 The following concepts help you understand how AWS Support authorization works.
 

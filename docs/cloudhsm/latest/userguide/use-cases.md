@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/use-cases.html
 ---
 
 # AWS CloudHSM use cases
-<a name="use-cases"></a>
 
 AWS CloudHSM can be used to accomplish a variety of goals. The content in this topic provides an overview of what you can do with AWS CloudHSM.
 

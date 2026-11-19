@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle and MySQL tables and indexes
-<a name="chap-oracle-aurora-mysql.tables"></a>
 
 This section provides reference pages for Oracle and MySQL tables and indexes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetTab
 ---
 
 # GetTableMetadataLocation
-<a name="API_s3Buckets_GetTableMetadataLocation"></a>
 
 Gets the location of the table metadata.
 

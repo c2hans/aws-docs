@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AgentRegistry::RegistryRecord SkillMdSourceFromUrl
-<a name="aws-properties-agentregistry-registryrecord-skillmdsourcefromurl"></a>
 
 URL-based source for SkillMd content. Synchronization is skipped; content is provided inline through the descriptor data.
 

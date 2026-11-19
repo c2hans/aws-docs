@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 The field's information of a request that resulted in an exception.
 

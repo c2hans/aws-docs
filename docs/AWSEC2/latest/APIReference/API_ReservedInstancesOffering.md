@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReservedI
 ---
 
 # ReservedInstancesOffering
-<a name="API_ReservedInstancesOffering"></a>
 
 Describes a Reserved Instance offering.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # MetricReference
-<a name="API_MetricReference"></a>
 
 This structure contains information about one CloudWatch metric associated with this entity discovered by Application Signals.
 

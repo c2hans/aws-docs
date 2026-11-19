@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/microvms-integrations.h
 ---
 
 # Integrations
-<a name="microvms-integrations"></a>
 
 AWS Lambda MicroVMs provides isolated, snapshot-based compute environments that AI agent frameworks and development tools can use as sandboxes. Each integration follows the same pattern: you build a reusable MicroVM image, and the framework launches one MicroVM per session or job through the Lambda API.
 

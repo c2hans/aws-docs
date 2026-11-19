@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/gw-associat
 ---
 
 # Gateway associations in AWS Global Networks for Transit Gateways
-<a name="gw-association"></a>
 
 Create a customer gateway association with either a device or with a transit gateway Connect peer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/s3-a
 ---
 
 # Configure the Java-based S3 async client to use parallel transfers
-<a name="s3-async-client-multipart"></a>
 
 Since version 2.27.5, the standard Java-based S3 async client supports automatic parallel transfers (multipart uploads and downloads). You configure support for parallel transfers when you create the Java-based S3 async client.
 

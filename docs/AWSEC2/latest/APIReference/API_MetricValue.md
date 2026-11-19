@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MetricVal
 ---
 
 # MetricValue
-<a name="API_MetricValue"></a>
 
  Represents a single metric value with its associated statistic, such as the sum or average of unused capacity hours.
 

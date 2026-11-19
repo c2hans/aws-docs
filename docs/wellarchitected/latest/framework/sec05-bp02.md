@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec05-b
 ---
 
 # SEC05-BP02 Control traffic flow within your network layers
-<a name="sec05-bp02"></a>
 
  Within each network layer, segment traffic so that you permit only the flows required by your workload. Start with traffic between your environment and the internet or other external systems, then control the flows between internal components. Apply least privilege to network paths to limit how far an incident can spread.
 

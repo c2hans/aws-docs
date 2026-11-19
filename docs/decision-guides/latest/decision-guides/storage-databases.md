@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/s
 ---
 
 # Storage & Databases
-<a name="storage-databases"></a>
 
 The following decision guides help you choose AWS services for persisting and managing your data, including object, file, and block storage as well as purpose-built databases.
 

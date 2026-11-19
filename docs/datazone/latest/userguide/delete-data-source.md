@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/delete-data-so
 ---
 
 # Delete a data source in Amazon DataZone
-<a name="delete-data-source"></a>
 
 After you create an Amazon DataZone data source, you can modify it at any time to change the source details or the data selection criteria.
 

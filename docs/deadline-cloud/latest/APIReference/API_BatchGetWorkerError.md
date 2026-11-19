@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetWorkerError
-<a name="API_BatchGetWorkerError"></a>
 
 The error details for a worker that could not be retrieved in a batch get operation.
 

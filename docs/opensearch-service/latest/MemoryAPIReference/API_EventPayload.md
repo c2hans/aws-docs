@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # EventPayload
-<a name="API_EventPayload"></a>
 
 The event content. Exactly one member must be set.
 

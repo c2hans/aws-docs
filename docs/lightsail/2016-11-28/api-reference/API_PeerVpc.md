@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_P
 ---
 
 # PeerVpc
-<a name="API_PeerVpc"></a>
 
 Peers the Lightsail VPC with the user's default VPC.
 

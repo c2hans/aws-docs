@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DescribeConstraint
-<a name="API_DescribeConstraint"></a>
 
 Gets information about the specified constraint.
 

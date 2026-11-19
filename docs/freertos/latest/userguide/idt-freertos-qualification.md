@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/idt-freertos-q
 ---
 
 # IDT with FreeRTOS qualification suite 1.0 (FRQ 1.0)
-<a name="idt-freertos-qualification"></a>
 
 **Important**
 As of October 2022, AWS IoT Device Tester for AWS IoT FreeRTOS Qualification (FRQ) 1.0 does not generate signed qualification reports. You cannot qualify new AWS IoT FreeRTOS devices to list in the [AWS Partner Device Catalog ](https://partners.amazonaws.com/qualified-devices)through the [AWS Device Qualification Program](http://aws.amazon.com/partners/programs/dqp/) using IDT FRQ 1.0 versions. While you can't qualify FreeRTOS devices using IDT FRQ 1.0, you can continue to test your FreeRTOS devices with FRQ 1.0. We recommend that you use [IDT FRQ 2.0](https://docs.aws.amazon.com/freertos/latest/userguide/lts-idt-freertos-qualification.html) to qualify and list FreeRTOS devices in the [AWS Partner Device Catalog](https://partners.amazonaws.com/qualified-devices).

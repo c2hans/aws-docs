@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Li
 ---
 
 # ListAgents
-<a name="API_agent_ListAgents"></a>
 
 Lists the agents belonging to an account and information about each agent.
 

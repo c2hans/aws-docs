@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Conflicti
 ---
 
 # ConflictingItem
-<a name="API_ConflictingItem"></a>
 
 Information about a conflicting query used across different sets of featured results. When you create a featured results set, you must check that the queries are unique per featured results set for each index.
 

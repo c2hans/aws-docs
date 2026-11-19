@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUp
 ---
 
 # BatchUpdateAutomationRules
-<a name="API_BatchUpdateAutomationRules"></a>
 
  Updates one or more automation rules based on rule Amazon Resource Names (ARNs) and input parameters.
 

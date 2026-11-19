@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Commen
 ---
 
 # Comment
-<a name="API_Comment"></a>
 
 An optional comment that describes the table.
 

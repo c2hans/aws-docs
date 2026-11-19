@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationAutoScalingCustomResourcePolicy
-<a name="AWSApplicationAutoScalingCustomResourcePolicy"></a>
 
 **Description**: Policy granting permissions to Application Auto Scaling to access APIGateway and CloudWatch for custom resource scaling
 

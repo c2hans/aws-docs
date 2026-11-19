@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/limits-iot.htm
 ---
 
 # AWS IoT quotas
-<a name="limits-iot"></a>
 
 You can find information about AWS IoT quotas in the *AWS General Reference*.
 + For AWS IoT Core quotas information, see [AWS IoT Core Endpoints and Quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#limits_iot).

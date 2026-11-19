@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SendNotifyTextMessage
-<a name="API_SendNotifyTextMessage"></a>
 
 Sends a templated text message through a notify configuration to a recipient's phone number.
 

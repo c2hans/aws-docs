@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListReput
 ---
 
 # ListReputationEntities
-<a name="API_ListReputationEntities"></a>
 
 List reputation entities in your Amazon SES account in the current AWS Region. You can filter the results by entity type, reputation impact, sending status, or entity reference prefix.
 

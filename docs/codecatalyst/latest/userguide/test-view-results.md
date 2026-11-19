@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/test-view-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Viewing the results of a test action
-<a name="test-view-results"></a>
 
 Use the following instructions to view the results of a test action, including the generated logs, reports, and variables.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_DBIns
 ---
 
 # DBInstance
-<a name="API_DBInstance"></a>
 
 Detailed information about an instance.
 

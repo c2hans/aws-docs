@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/video-scaling-fit
 ---
 
 # Configuring fit scaling
-<a name="video-scaling-fit-ratio"></a>
 
 If you choose **Fit** for your **Scaling behavior**, MediaConvert scales your input image until it fits inside the dimensions of your output resolution, without exceeding the dimensions of your output resolution.
 

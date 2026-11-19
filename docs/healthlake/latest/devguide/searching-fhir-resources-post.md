@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/searching-fhi
 ---
 
 # Searching FHIR resources with POST
-<a name="searching-fhir-resources-post"></a>
 
 You can use the FHIR [`search`](https://hl7.org/fhir/R4/search.html) interaction with `POST` requests to search a HealthLake data store. When using `POST`, HealthLake supports search parameters in either the URL or in a request body, but you cannot use both in a single request.
 

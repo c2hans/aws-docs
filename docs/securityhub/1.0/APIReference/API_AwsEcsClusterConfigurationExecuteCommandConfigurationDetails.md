@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsC
 ---
 
 # AwsEcsClusterConfigurationExecuteCommandConfigurationDetails
-<a name="API_AwsEcsClusterConfigurationExecuteCommandConfigurationDetails"></a>
 
 Contains the run command configuration for the cluster.
 

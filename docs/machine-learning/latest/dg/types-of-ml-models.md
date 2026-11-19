@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/dg/types-of-ml-m
 We are no longer updating the Amazon Machine Learning service or accepting new users for it. This documentation is available for existing users, but we are no longer updating it. For more information, see [ What is Amazon Machine Learning](https://docs.aws.amazon.com/machine-learning/latest/dg/what-is-amazon-machine-learning.html).
 
 # Types of ML Models
-<a name="types-of-ml-models"></a>
 
  Amazon ML supports three types of ML models: binary classification, multiclass classification, and regression. The type of model you should choose depends on the type of target that you want to predict.
 

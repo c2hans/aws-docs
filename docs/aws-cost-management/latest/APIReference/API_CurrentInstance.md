@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CurrentInstance
-<a name="API_CurrentInstance"></a>
 
 Context about the current instance.
 

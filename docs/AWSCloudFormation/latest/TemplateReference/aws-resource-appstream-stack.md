@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::Stack
-<a name="aws-resource-appstream-stack"></a>
 
 The `AWS::AppStream::Stack` resource creates a stack to start streaming applications to Amazon WorkSpaces Applications users. A stack consists of an associated fleet, user access policies, and storage configurations.
 
@@ -107,7 +106,7 @@ The stack attributes to delete.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ContentRedirection`  <a name="cfn-appstream-stack-contentredirection"></a>
-Property description not available.
+Configuration for bidirectional URL redirection between the streaming session and the local client. Use HostToClient to redirect URLs from the remote desktop to the local browser.
 *Required*: No
 *Type*: [ContentRedirection](aws-properties-appstream-stack-contentredirection.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

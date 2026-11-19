@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/when-to-con
 ---
 
 # When to contact AWS Security Incident Response
-<a name="when-to-contact-security-ir"></a>
 
  You can contact AWS Security Incident Response for various purposes depending on your needs. The following table describes the different scenarios and the appropriate contact method for each.
 

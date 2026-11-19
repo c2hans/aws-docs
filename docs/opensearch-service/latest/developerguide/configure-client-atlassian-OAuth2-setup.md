@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Connecting an Amazon OpenSearch Ingestion pipeline to Atlassian Jira or Confluence using OAuth 2.0
-<a name="configure-client-atlassian-OAuth2-setup"></a>
 
 Use the information in this topic to help you configure and connect an Amazon OpenSearch Ingestion pipeline to a Jira or Confluence account using OAuth 2.0 authentication. Perform this task when are are completing the [Prerequisites](configure-client-atlassian.md#atlassian-prerequisites) for using an OpenSearch Ingestion pipeline with Atlassian Services but choose not to use API key credentials.
 

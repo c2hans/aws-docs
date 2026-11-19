@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-st
 ---
 
 # Step I: Add worker nodes
-<a name="upg-std-add-w"></a>
 
 Add the worker nodes back to the cluster and their redundancy groups. Perform these steps for all worker nodes that are supposed to be in the cluster.
 

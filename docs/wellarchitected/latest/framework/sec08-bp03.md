@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec08-b
 ---
 
 # SEC08-BP03 Automate data at rest protection
-<a name="sec08-bp03"></a>
 
  Manual data protection controls drift out of compliance as storage grows and changes. Automation enforces those controls continuously, catches misconfigurations before deployment, and remediates drift at runtime. It also creates the backups and detective coverage that protect data through operational failures and security events.
 

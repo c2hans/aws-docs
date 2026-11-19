@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_DeleteOta
 ---
 
 # DeleteOtaTask
-<a name="API_DeleteOtaTask"></a>
 
 Delete the over-the-air (OTA) task.
 

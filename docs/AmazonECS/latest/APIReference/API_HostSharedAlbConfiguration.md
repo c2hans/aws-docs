@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_HostSh
 ---
 
 # HostSharedAlbConfiguration
-<a name="API_HostSharedAlbConfiguration"></a>
 
 The configuration for a gateway that uses shared Application Load Balancers with host-based routing. Where they apply, the field names and values are kept consistent with the Elastic Load Balancing API.
 

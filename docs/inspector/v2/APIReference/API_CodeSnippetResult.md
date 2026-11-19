@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CodeSnippe
 ---
 
 # CodeSnippetResult
-<a name="API_CodeSnippetResult"></a>
 
 Contains information on a code snippet retrieved by Amazon Inspector from a code vulnerability finding.
 

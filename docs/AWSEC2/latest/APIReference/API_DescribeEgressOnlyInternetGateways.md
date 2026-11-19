@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeE
 ---
 
 # DescribeEgressOnlyInternetGateways
-<a name="API_DescribeEgressOnlyInternetGateways"></a>
 
 Describes your egress-only internet gateways. The default is to describe all your egress-only internet gateways. Alternatively, you can specify specific egress-only internet gateway IDs or filter the results to include only the egress-only internet gateways that match specific criteria.
 

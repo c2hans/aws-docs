@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # LocationalDeployment
-<a name="API_LocationalDeployment"></a>
 
 For a multi-location container fleet, describes the progress of a deployment across all fleet locations.
 

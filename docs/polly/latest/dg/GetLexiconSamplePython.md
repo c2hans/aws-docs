@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/GetLexiconSamplePython.h
 ---
 
 # GetLexicon
-<a name="GetLexiconSamplePython"></a>
 
 The following Python code uses the AWS SDK for Python (Boto) to retrieve all lexicons stored in an AWS Region. The example accepts a lexicon name as a command line parameter and fetches that lexicon only, printing out the tmp path where it has been saved locally.
 

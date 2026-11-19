@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Cost effective resources
-<a name="cost-effective-resources"></a>
 
 |  HPCCOST02: How have you evaluated the trade-offs between job completion time and cost? |
 | --- |

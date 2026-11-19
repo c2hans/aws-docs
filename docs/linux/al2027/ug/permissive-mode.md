@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/permissive-mode.html
 ---
 
 # Change to `permissive` mode
-<a name="permissive-mode"></a>
 
 When you run SELinux in `permissive` mode, SELinux policy isn't enforced. In `permissive` mode, SELinux logs AVC messages but doesn't deny operations. You can use these AVC messages for troubleshooting, debugging, and SELinux policy improvements.
 

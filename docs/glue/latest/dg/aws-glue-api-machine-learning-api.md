@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-machine-lear
 ---
 
 # Machine learning API
-<a name="aws-glue-api-machine-learning-api"></a>
 
 The Machine learning API describes the machine learning data types, and includes the API for creating, deleting, or updating a transform, or starting a machine learning task run.
 

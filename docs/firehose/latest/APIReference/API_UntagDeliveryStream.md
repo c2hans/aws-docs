@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_UntagDe
 ---
 
 # UntagDeliveryStream
-<a name="API_UntagDeliveryStream"></a>
 
 Removes tags from the specified Firehose stream. Removed tags are deleted, and you can't recover them after this operation successfully completes.
 

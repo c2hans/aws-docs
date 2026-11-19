@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Canvas
 ---
 
 # CanvasAppSettings
-<a name="API_CanvasAppSettings"></a>
 
 The SageMaker Canvas application settings.
 

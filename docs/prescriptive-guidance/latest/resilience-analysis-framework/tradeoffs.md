@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Understanding trade-offs and risks
-<a name="tradeoffs"></a>
 
 Resilient architectures should use a handful of well-tested, simple, and reliable mechanisms to respond to failures. To achieve the highest levels of resilience, workloads should automatically detect and recover from as many failure modes as possible. Doing so requires extensive investment in performing resilience analysis. This means that achieving higher levels of resilience involves making trade-offs. However, as you continue to make trade-offs, you reach a point of diminishing returns relative to your resilience objectives. Here are the most typical trade-offs:
 + **Cost** – Redundant components, enhanced observability, additional tools, or increased resource utilization will result in increased costs.

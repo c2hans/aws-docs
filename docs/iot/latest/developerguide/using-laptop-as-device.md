@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/using-laptop-a
 ---
 
 # Use your Windows or Linux PC or Mac as an AWS IoT device
-<a name="using-laptop-as-device"></a>
 
 In this tutorial, you'll configure a personal computer for use with AWS IoT. These instructions support Windows and Linux PCs and Macs. To accomplish this, you need to install some software on your computer. If you don't want to install software on your computer, you might try [Create a virtual device with Amazon EC2](creating-a-virtual-thing.md), which installs all software on a virtual machine.
 

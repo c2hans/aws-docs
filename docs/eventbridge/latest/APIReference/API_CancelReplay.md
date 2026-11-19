@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Canc
 ---
 
 # CancelReplay
-<a name="API_CancelReplay"></a>
 
 Cancels the specified replay.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ViewValidation.ht
 ---
 
 # ViewValidation
-<a name="API_ViewValidation"></a>
 
 A structure that contains information for an analytical engine to validate a view, prior to persisting the view metadata. Used in the case of direct `UpdateTable` or `CreateTable` API calls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http
 ---
 
 # Configure the URLConnection-based HTTP client
-<a name="http-configuration-url"></a>
 
 The AWS SDK for Java 2.x offers a lighter-weight `[UrlConnectionHttpClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/urlconnection/UrlConnectionHttpClient.html)` HTTP client in comparison to the default `Apache5HttpClient`. The `UrlConnectionHttpClient` is based on Java's `[URLConnection](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLConnection.html)`.
 

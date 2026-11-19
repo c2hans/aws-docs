@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/GROUP_B
 ---
 
 # Aggregation extensions
-<a name="GROUP_BY_aggregation-extensions"></a>
 
 AWS Clean Rooms supports aggregation extensions to do the work of multiple GROUP BY operations in a single statement.
 

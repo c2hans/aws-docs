@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/cw-logs-enab
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Enabling Amazon Q Business user conversation logging
-<a name="cw-logs-enable-logging"></a>
 
 You can enable Amazon Q Business user conversation logging within the Amazon Q Business console or using the Amazon CloudWatch Logs API operations.
 

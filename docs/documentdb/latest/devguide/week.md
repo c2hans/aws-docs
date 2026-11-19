@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/week.html
 ---
 
 # $week
-<a name="week"></a>
 
 The `$week` operator in Amazon DocumentDB returns the week number of a date (0-53) based on the ISO 8601 standard. The week number is calculated based on the year and the day of the week, with Monday as the first day of the week.
 

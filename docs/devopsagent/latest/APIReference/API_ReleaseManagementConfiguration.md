@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Rele
 ---
 
 # ReleaseManagementConfiguration
-<a name="API_ReleaseManagementConfiguration"></a>
 
 Configuration for a release management environment.
 

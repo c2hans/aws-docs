@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sensitive-data-managed-da
 ---
 
 # Managed Sensitive Data Types
-<a name="sensitive-data-managed-data-types"></a>
 
  **Global entities**
 

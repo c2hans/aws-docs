@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sd-trouble
 ---
 
 # Troubleshooting and FAQ
-<a name="sd-troubleshooting"></a>
 
 ## Common issues
 <a name="sd-common-issues"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Categ
 ---
 
 # CategoricalMeasureField
-<a name="API_CategoricalMeasureField"></a>
 
 The measure type field with categorical type columns.
 

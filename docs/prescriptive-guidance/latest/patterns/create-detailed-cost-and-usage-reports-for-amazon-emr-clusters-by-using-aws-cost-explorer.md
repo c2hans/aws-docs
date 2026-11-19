@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create detailed cost and usage reports for Amazon EMR clusters by using AWS Cost Explorer
-<a name="create-detailed-cost-and-usage-reports-for-amazon-emr-clusters-by-using-aws-cost-explorer"></a>
 
 *Parijat Bhide and Aromal Raj Jayarajan, Amazon Web Services*
 

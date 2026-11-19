@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/ident-os-release.html
 ---
 
 # Using the `os-release` standard
-<a name="ident-os-release"></a>
 
  Amazon Linux complies with the [`os-release` standard](https://www.freedesktop.org/software/systemd/man/latest/os-release.html) on the freedesktop.org website for identifying Linux distributions. This file provides machine-readable information about the operating system identification and version.
 

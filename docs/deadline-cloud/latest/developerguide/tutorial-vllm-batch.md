@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/tut
 ---
 
 # Run batch LLM inference with vLLM
-<a name="tutorial-vllm-batch"></a>
 
 This tutorial walks you through running high-throughput large language model (LLM) inference on a JSONL file of prompts using the [vLLM inference engine](https://github.com/vllm-project/vllm) on the GitHub website. You submit the [vLLM batch inference job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vllm_batch) on the GitHub website with a file where every line is one prompt, pick a model, and the job fans out across a GPU fleet. Every prompt gets an LLM response, and an aggregate step packages everything into a JSONL file plus a self-contained HTML viewer you can open in any browser.
 

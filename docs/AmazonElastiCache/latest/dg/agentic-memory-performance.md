@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/agentic-memo
 ---
 
 # Performance benefits
-<a name="agentic-memory-performance"></a>
 
 The following table summarizes the performance improvements observed in testing with a memory-enabled agent versus a stateless agent:
 

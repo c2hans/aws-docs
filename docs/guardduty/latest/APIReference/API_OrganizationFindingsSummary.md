@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationFindingsSummary
-<a name="API_OrganizationFindingsSummary"></a>
 
 Contains a summary of findings across an organization.
 

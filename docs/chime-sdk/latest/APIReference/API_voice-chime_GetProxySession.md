@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # GetProxySession
-<a name="API_voice-chime_GetProxySession"></a>
 
 Retrieves the specified proxy session details for the specified Amazon Chime SDK Voice Connector.
 

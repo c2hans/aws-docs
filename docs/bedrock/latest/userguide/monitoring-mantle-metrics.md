@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-mant
 ---
 
 # Monitor `bedrock-mantle` inference using CloudWatch metrics
-<a name="monitoring-mantle-metrics"></a>
 
 The Amazon Bedrock OpenAI-compatible endpoint (`bedrock-mantle.{{region}}.api.aws`) publishes customer-facing metrics to Amazon CloudWatch under the `AWS/BedrockMantle` namespace. Use these metrics to monitor inference volume, token consumption, and error rates across your AWS account, projects, and models.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 ---
 
 # Data retrieval APIs for AWS Resource Groups
-<a name="awsresourcegroups"></a>
 
 AWS Resource Groups provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ExportTaskStatus
-<a name="API_ExportTaskStatus"></a>
 
 Represents the status of an export task.
 

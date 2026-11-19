@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # MaintenanceWindowExecutionTaskInvocationIdentity
-<a name="API_MaintenanceWindowExecutionTaskInvocationIdentity"></a>
 
 Describes the information about a task invocation for a particular target as part of a task execution performed as part of a maintenance window execution.
 

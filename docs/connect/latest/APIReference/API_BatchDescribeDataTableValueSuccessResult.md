@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchDes
 ---
 
 # BatchDescribeDataTableValueSuccessResult
-<a name="API_BatchDescribeDataTableValueSuccessResult"></a>
 
 A batch describe data table value success result.
 

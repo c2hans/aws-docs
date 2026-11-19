@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # POSITION
-<a name="sql-reference-position"></a>
 
 ```
  POSITION ( <search-string> IN <source-string> )

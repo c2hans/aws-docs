@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_PricingT
 ---
 
 # PricingTerm
-<a name="API_PricingTerm"></a>
 
 Describes the usage-based pricing term.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Dis
 ---
 
 # DisableLDAPS
-<a name="API_DisableLDAPS"></a>
 
 Deactivates LDAP secure calls for the specified directory.
 

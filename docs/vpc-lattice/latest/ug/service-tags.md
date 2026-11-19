@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/service-tags.html
 ---
 
 # Manage tags for a VPC Lattice service
-<a name="service-tags"></a>
 
 Tags help you to categorize your service in different ways, for example, by purpose, owner, or environment.
 

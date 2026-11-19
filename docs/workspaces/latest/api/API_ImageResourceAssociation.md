@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ImageResourceA
 ---
 
 # ImageResourceAssociation
-<a name="API_ImageResourceAssociation"></a>
 
 Describes the association between an application and an image resource.
 

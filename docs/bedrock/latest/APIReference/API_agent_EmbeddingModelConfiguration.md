@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Em
 ---
 
 # EmbeddingModelConfiguration
-<a name="API_agent_EmbeddingModelConfiguration"></a>
 
 The configuration details for the embeddings model.
 

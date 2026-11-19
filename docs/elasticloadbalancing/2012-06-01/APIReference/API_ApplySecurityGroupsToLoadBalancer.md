@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # ApplySecurityGroupsToLoadBalancer
-<a name="API_ApplySecurityGroupsToLoadBalancer"></a>
 
 Associates one or more security groups with your load balancer in a virtual private cloud (VPC). The specified security groups override the previously associated security groups.
 

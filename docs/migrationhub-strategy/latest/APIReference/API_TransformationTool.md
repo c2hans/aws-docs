@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # TransformationTool
-<a name="API_TransformationTool"></a>
 
  Information of the transformation tool that can be used to migrate and modernize the application.
 

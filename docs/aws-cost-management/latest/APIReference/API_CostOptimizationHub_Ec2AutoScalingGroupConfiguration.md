@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Ec2AutoScalingGroupConfiguration
-<a name="API_CostOptimizationHub_Ec2AutoScalingGroupConfiguration"></a>
 
 The EC2 Auto Scaling group configuration used for recommendations.
 

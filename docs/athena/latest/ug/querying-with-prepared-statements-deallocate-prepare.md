@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-with-prepared-
 ---
 
 # DEALLOCATE PREPARE
-<a name="querying-with-prepared-statements-deallocate-prepare"></a>
 
 Removes the prepared statement with the specified name from the list of prepared statements in the current workgroup.
 

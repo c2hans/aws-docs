@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Amazon ECS Container Insights metrics
-<a name="Container-Insights-metrics-ECS"></a>
 
 Container Insights metrics provides additional network, storage, and ephemeral storage metrics. These metrics provide more information than standard Amazon ECS metrics. Container Insights integrates with CloudWatch Logs. You can correlate metric changes with log entries for easier troubleshooting. Container Insights also shows cluster, service, and daemon-wide statistics by averaging data across all tasks. This provides a higher-level view of your service and daemon health, assisting in both environment monitoring and capacity planning.
 

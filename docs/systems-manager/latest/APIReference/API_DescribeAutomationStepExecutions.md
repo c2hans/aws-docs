@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeAutomationStepExecutions
-<a name="API_DescribeAutomationStepExecutions"></a>
 
 Information about all active and terminated step executions in an Automation workflow.
 

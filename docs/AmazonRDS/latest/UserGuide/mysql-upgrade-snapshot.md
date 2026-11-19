@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-upgrade
 ---
 
 # Upgrading a MySQL DB snapshot engine version
-<a name="mysql-upgrade-snapshot"></a>
 
 With Amazon RDS, you can create a storage volume DB snapshot of your MySQL DB instance. When you create a DB snapshot, the snapshot is based on the engine version used by your DB instance. You can upgrade the engine version for your DB snapshots.
 

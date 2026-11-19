@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/welcome.html
 ---
 
 # What is AWS App Studio?
-<a name="welcome"></a>
 
 AWS App Studio is a generative AI–powered service that uses natural language to help you create enterprise-grade applications. App Studio opens up application development to technical professionals without software development skills, such as IT project managers, data engineers, and enterprise architects. With App Studio, you can quickly build applications that are secure and fully managed by AWS, without the need for operational expertise.
 

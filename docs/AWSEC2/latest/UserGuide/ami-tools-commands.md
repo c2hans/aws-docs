@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-tools-comman
 ---
 
 # Amazon EC2 AMI tools reference
-<a name="ami-tools-commands"></a>
 
 You can use the AMI tools commands to create and manage Amazon S3-backed Linux AMIs. To set up the tools, see [Set up the Amazon EC2 AMI tools](set-up-ami-tools.md).
 

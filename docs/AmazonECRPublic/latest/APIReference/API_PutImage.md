@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # PutImage
-<a name="API_PutImage"></a>
 
 Creates or updates the image manifest and tags that are associated with an image.
 

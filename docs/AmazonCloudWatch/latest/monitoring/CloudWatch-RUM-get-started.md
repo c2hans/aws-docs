@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Set up a web application to use CloudWatch RUM
-<a name="CloudWatch-RUM-get-started"></a>
 
 Use the steps in these sections to set up your web application to begin using CloudWatch RUM to collect performance data from real user sessions.
 

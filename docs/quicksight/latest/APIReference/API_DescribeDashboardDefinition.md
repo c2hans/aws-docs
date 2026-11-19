@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeDashboardDefinition
-<a name="API_DescribeDashboardDefinition"></a>
 
 Provides a detailed description of the definition of a dashboard.
 

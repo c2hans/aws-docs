@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Fi
 ---
 
 # FindingSummary
-<a name="API_FindingSummary"></a>
 
 Contains summary information about a security finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteColumnStati
 ---
 
 # DeleteColumnStatisticsTaskSettings
-<a name="API_DeleteColumnStatisticsTaskSettings"></a>
 
 Deletes settings for a column statistics task.
 

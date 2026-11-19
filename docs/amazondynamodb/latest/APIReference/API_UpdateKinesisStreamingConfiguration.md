@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_U
 ---
 
 # UpdateKinesisStreamingConfiguration
-<a name="API_UpdateKinesisStreamingConfiguration"></a>
 
 Enables updating the configuration for Kinesis Streaming.
 

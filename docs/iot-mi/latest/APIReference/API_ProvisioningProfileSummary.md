@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Provision
 ---
 
 # ProvisioningProfileSummary
-<a name="API_ProvisioningProfileSummary"></a>
 
 Structure describing a provisioning profile.
 

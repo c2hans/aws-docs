@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Descri
 ---
 
 # DescribeAccelerator
-<a name="API_DescribeAccelerator"></a>
 
 Describe an accelerator.
 

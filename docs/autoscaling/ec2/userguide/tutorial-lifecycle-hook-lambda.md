@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/tutorial-lifec
 ---
 
 # Tutorial: Configure a lifecycle hook that invokes a Lambda function
-<a name="tutorial-lifecycle-hook-lambda"></a>
 
 In this exercise, you create an Amazon EventBridge rule that includes a filter pattern that when matched, invokes an AWS Lambda function as the rule target. We provide the filter pattern and sample function code to use.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/i
 ---
 
 # Indicators for leadership sponsorship
-<a name="indicators-for-leadership-sponsorship"></a>
 
 Promote organizational commitment to DevOps adoption with clear strategy, communication, and resources.
 

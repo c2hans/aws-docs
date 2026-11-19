@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/networking-flexible
 ---
 
 # Networking Flexible Cost Allocation
-<a name="networking-flexible-cost-allocation"></a>
 
 Networking Flexible Cost Allocation (FCA) is a feature of Amazon Virtual Private Cloud (Amazon VPC). With it, you can attribute the data transfer and data processing charges of a shared networking resource to the resources, subnets, VPCs, accounts, or IP address ranges that generated the usage. For example, when several teams share a single NAT gateway, your bill shows one charge for the NAT gateway. With FCA, your AWS Cost and Usage Report also show how much of that charge each team's traffic accounts for.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/step
 ---
 
 # Step 2: Share your directory
-<a name="step2_share_directory"></a>
 
 Use the following procedures to begin the directory sharing workflow from within the directory owner account.
 

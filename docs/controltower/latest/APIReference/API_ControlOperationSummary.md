@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Con
 ---
 
 # ControlOperationSummary
-<a name="API_ControlOperationSummary"></a>
 
 A summary of information about the specified control operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Perce
 ---
 
 # PercentileAggregation
-<a name="API_PercentileAggregation"></a>
 
 An aggregation based on the percentile of values in a dimension or measure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/cred
 ---
 
 # Access credentials for interactive development work using AWS SDK for Java 2.x
-<a name="credentials-temporary"></a>
 
 For increased security, AWS recommends that you configure the SDK for Java to [use temporary credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-users-federation-idp) instead of long-lived credentials. Temporary credentials consist of access keys (access key id and secret access key) and a session token.
 

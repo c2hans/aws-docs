@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/delete-work
 ---
 
 # Delete a WorkSpace in WorkSpaces Personal
-<a name="delete-workspaces"></a>
 
 When you are finished with a WorkSpace, you can delete it. You can also delete related resources.
 

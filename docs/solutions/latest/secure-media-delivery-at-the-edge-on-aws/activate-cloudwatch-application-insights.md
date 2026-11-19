@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Activate CloudWatch Application Insights
-<a name="activate-cloudwatch-application-insights"></a>
 
 1.  Sign in to the [Systems Manager console](https://console.aws.amazon.com/systems-manager).
 

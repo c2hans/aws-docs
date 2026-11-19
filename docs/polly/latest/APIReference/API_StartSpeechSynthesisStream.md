@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_StartSpeec
 ---
 
 # StartSpeechSynthesisStream
-<a name="API_StartSpeechSynthesisStream"></a>
 
 Synthesizes UTF-8 input, plain text, or SSML over a bidirectional streaming connection. Specify synthesis parameters in HTTP/2 headers, send text incrementally as events on the input stream, and receive synthesized audio as it becomes available.
 

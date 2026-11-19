@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_Permission.html
 ---
 
 # Permission
-<a name="API_Permission"></a>
 
 A cross-account permission for a signing profile.
 

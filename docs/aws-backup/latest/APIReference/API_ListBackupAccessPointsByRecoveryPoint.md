@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListB
 ---
 
 # ListBackupAccessPointsByRecoveryPoint
-<a name="API_ListBackupAccessPointsByRecoveryPoint"></a>
 
 Returns the backup access points associated with the specified recovery point.
 

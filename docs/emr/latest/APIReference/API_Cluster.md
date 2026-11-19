@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_Cluster.html
 ---
 
 # Cluster
-<a name="API_Cluster"></a>
 
 The detailed description of the cluster.
 

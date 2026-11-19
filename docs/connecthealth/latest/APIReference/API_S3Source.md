@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_S3
 ---
 
 # S3Source
-<a name="API_S3Source"></a>
 
 S3 uri for input data source
 

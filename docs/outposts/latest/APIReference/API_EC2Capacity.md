@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_EC2Capa
 ---
 
 # EC2Capacity
-<a name="API_EC2Capacity"></a>
 
  Information about EC2 capacity.
 

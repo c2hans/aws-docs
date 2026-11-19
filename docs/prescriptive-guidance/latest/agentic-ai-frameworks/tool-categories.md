@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Tool categories
-<a name="tool-categories"></a>
 
 Building agent systems involves three main categories of tools.
 

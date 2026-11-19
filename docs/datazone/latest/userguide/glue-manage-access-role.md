@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/glue-manage-ac
 ---
 
 # AmazonDataZoneGlueAccess-<region>-<domainId>
-<a name="glue-manage-access-role"></a>
 
 The `AmazonDataZoneGlueAccess-<region>-<domainId>` role has the `AmazonDataZoneGlueManageAccessRolePolicy` attached. This role grants Amazon DataZone permissions to publish AWS Glue data to the catalog. It also gives Amazon DataZone permissions to grant access or revoke access to AWS Glue published assets in the catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_NodeRangeP
 ---
 
 # NodeRangeProperty
-<a name="API_NodeRangeProperty"></a>
 
 This is an object that represents the properties of the node range for a multi-node parallel job.
 

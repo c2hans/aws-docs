@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/acosh.html
 ---
 
 # $acosh
-<a name="acosh"></a>
 
 New from version 8.0.1.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationEc2Instance
-<a name="API_InvestigationEc2Instance"></a>
 
 Contains details about an Amazon EC2 instance.
 

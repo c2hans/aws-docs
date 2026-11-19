@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/APIReference/API
 ---
 
 # StartExecution
-<a name="API_StartExecution"></a>
 
 Triggers new execution of a specific tool.
 

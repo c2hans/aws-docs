@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_Topic.html
 ---
 
 # Topic
-<a name="API_Topic"></a>
 
 A wrapper type for the topic's Amazon Resource Name (ARN). To retrieve a topic's attributes, use `GetTopicAttributes`.
 

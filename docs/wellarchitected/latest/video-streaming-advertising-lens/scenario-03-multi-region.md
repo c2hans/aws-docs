@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Scenario 3: Multi-region advertising workloads
-<a name="scenario-03-multi-region"></a>
 
  Global advertising platforms serve publishers and demand partners across continents with different latency requirements, data residency regulations, and resilience goals. The architecture must balance performance, compliance, and cost, routing traffic to the right region while keeping data in the right jurisdiction.
 

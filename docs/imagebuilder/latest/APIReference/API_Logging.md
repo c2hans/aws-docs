@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Log
 ---
 
 # Logging
-<a name="API_Logging"></a>
 
 Logging configuration defines where Image Builder uploads your logs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/startupadvisor/latest/userguide/mcp-serv
 ---
 
 # Configure live data with the MCP server (optional)
-<a name="mcp-servers"></a>
 
  AWS Startup Advisor can use a Model Context Protocol (MCP) server for live AWS data. The MCP server is an optional enhancement, not a requirement. Skills run without it, but they cannot fetch live AWS data, such as documentation, regional service availability, and live API calls. The MCP server is independent of skills, and it does not serve the skills that you install locally.
 

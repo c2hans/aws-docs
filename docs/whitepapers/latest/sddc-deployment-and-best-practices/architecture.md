@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-b
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Architecture
-<a name="architecture"></a>
 
  This is a high-level overview architecture.
 

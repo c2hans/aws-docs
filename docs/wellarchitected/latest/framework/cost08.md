@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost08.
 ---
 
 # Manage demand and supply resources
-<a name="cost08"></a>
 
  Cloud spend follows provisioned capacity, so any gap between provisioned and consumed capacity is waste. Matching supply to demand closes that gap: it holds performance when demand rises and releases capacity when demand falls, so you no longer pay for peak-sized capacity around the clock. This capability covers the practices that align resources with real need, starting with how demand behaves over a full business cycle.
 

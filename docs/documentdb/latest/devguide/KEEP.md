@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/KEEP.html
 ---
 
 # $$KEEP
-<a name="KEEP"></a>
 
 The `$$KEEP` system variable is used with the `$redact` stage in the aggregation pipeline to keep the current document or field unchanged and include it in the output.
 

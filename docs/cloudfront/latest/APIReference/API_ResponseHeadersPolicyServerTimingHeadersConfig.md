@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Respo
 ---
 
 # ResponseHeadersPolicyServerTimingHeadersConfig
-<a name="API_ResponseHeadersPolicyServerTimingHeadersConfig"></a>
 
 A configuration for enabling the `Server-Timing` header in HTTP responses sent from CloudFront. CloudFront adds this header to HTTP responses that it sends in response to requests that match a cache behavior that's associated with this response headers policy.
 

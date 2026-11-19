@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/video-scaling-def
 ---
 
 # Configuring default scaling (Fit with padding)
-<a name="video-scaling-default"></a>
 
 If you choose **Default (Fit with padding)** for your **Scaling behavior**, MediaConvert scales your video image to your output resolution. Then, if your input resolution has a different aspect ratio than your output resolution, MediaConvert pads your video image until it matches the dimensions of your output resolution.
 

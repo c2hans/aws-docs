@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 + George Rolston, Sr. Solutions Architect, Amazon Web Services

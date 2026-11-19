@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Workload architecture
-<a name="workload-architecture"></a>
 
 |  MIDAREL02: How does your industrial data architecture maintain operational continuity when OT or IT systems fail during production?  |
 | --- |

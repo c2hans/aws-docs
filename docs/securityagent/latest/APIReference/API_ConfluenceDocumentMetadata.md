@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Co
 ---
 
 # ConfluenceDocumentMetadata
-<a name="API_ConfluenceDocumentMetadata"></a>
 
 Metadata for an integrated Confluence document.
 

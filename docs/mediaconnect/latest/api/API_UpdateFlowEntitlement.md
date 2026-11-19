@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateFlowEn
 ---
 
 # UpdateFlowEntitlement
-<a name="API_UpdateFlowEntitlement"></a>
 
  Updates an entitlement. You can change an entitlement's description, subscribers, and encryption. If you change the subscribers, the service will remove the outputs that are are used by the subscribers that are removed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowDefinition
-<a name="API_agent_FlowDefinition"></a>
 
 The definition of the nodes and connections between nodes in the flow.
 

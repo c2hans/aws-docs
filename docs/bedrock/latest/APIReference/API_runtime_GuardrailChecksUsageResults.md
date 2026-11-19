@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailChecksUsageResults
-<a name="API_runtime_GuardrailChecksUsageResults"></a>
 
 The text unit usage for the guardrail checks evaluation, organized by check type.
 

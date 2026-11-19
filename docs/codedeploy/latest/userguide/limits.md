@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/limits.html
 ---
 
 # CodeDeploy quotas
-<a name="limits"></a>
 
 The following tables describe quotas in CodeDeploy.
 

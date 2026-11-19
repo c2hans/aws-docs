@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_NodegroupRes
 ---
 
 # NodegroupResources
-<a name="API_NodegroupResources"></a>
 
 An object representing the resources associated with the node group, such as Auto Scaling groups and security groups for remote access.
 

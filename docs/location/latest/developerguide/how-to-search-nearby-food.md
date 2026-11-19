@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to search nearby places based on food type
-<a name="how-to-search-nearby-food"></a>
 
 The `SearchNearby` API enables you query nearby restaurants that serve a specific type of food. You can also exclude food types from your results.
 

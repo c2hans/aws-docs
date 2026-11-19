@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_SearchSpe
 ---
 
 # SearchSpendingLimitsFilter
-<a name="API_SearchSpendingLimitsFilter"></a>
 
 Specifies filter criteria for searching spending limits. Use filters to narrow down results based on specific attributes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DateTime
 ---
 
 # DateTimeCondition
-<a name="API_DateTimeCondition"></a>
 
 A datetime search condition for Search APIs.
 

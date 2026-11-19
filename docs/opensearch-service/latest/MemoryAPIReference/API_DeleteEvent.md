@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # DeleteEvent
-<a name="API_DeleteEvent"></a>
 
 Deletes an event. Deletion can't be undone. The event stops appearing in `SearchEvents` results shortly after you delete it. Deleting an event that doesn't exist returns `ResourceNotFoundException`.
 

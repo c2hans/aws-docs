@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qbiz-indexes-feat
 ---
 
 # Feature comparison
-<a name="qbiz-indexes-feature-comparison"></a>
 
 The following table compares key features between IDC and Amazon Q Business implementations:
 

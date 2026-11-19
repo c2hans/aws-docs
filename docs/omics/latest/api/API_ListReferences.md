@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListReferences.html
 ---
 
 # ListReferences
-<a name="API_ListReferences"></a>
 
 Retrieves the metadata of one or more reference genomes in a reference store.
 

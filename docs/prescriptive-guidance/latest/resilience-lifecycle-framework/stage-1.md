@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Stage 1: Set objectives
-<a name="stage-1"></a>
 
 Understanding what level of resilience is needed and how you will measure it is the basis for the *set objectives* stage. It's difficult to improve something if you don't have an objective and you can't measure it.
 

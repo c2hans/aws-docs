@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ListMessageTemplateVersions
-<a name="API_amazon-q-connect_ListMessageTemplateVersions"></a>
 
 Lists all the available versions for the specified Amazon Q in Connect message template.
 

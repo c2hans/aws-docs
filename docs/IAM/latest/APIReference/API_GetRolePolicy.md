@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRolePolic
 ---
 
 # GetRolePolicy
-<a name="API_GetRolePolicy"></a>
 
 Retrieves the specified inline policy document that is embedded with the specified IAM role.
 

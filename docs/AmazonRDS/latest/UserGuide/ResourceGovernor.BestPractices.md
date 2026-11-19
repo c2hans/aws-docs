@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/ResourceGover
 ---
 
 # Best practices for configuring resource governor on RDS for SQL Server
-<a name="ResourceGovernor.BestPractices"></a>
 
 To control resource consumption, RDS for SQL Server supports Microsoft SQL Server resource governor. The following best practices help you avoid common configuration issues and optimize database performance.
 

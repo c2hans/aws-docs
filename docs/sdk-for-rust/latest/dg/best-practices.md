@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/best-practices.ht
 ---
 
 # Best practices for using AWS SDK for Rust
-<a name="best-practices"></a>
 
 The following are best practices for using the AWS SDK for Rust.
 

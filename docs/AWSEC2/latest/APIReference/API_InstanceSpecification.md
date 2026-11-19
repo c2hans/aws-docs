@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceS
 ---
 
 # InstanceSpecification
-<a name="API_InstanceSpecification"></a>
 
 The instance details to specify which volumes should be snapshotted.
 

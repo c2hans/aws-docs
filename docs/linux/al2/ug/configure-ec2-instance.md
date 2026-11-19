@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/configure-ec2-instance.html
 ---
 
 # Configure AL2 instances
-<a name="configure-ec2-instance"></a>
 
 After you have successfully launched and logged into your AL2 instance, you can make changes to it. There are many different ways you can configure an instance to meet the needs of a specific application. The following are some common tasks to help get you started.
 

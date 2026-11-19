@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsf
 ---
 
 # Data retrieval APIs for AWS Firewall Manager
-<a name="awsfirewallmanager"></a>
 
 AWS Firewall Manager provides the following APIs for data retrieval.
 

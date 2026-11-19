@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Leaving an organization from a member account with AWS Organizations
-<a name="orgs_manage_accounts_leave-as-member"></a>
 
 When you sign in to a member account, you can leave an organization. The management account can't leave the organization using this technique. To remove the management account, you must [delete the organization](orgs_manage_org_delete.md).
 

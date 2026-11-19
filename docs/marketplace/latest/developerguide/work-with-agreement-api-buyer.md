@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/work-w
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Work with the Agreement API as a buyer
-<a name="work-with-agreement-api-buyer"></a>
 
 An agreement is a document that binds two parties, including the proposer and the acceptor (commonly, the buyer) and defines the terms and conditions applicable between them.
 
@@ -29,6 +28,16 @@ An acceptor can perform the following tasks using this API:
 | Task | Description | Action(s) | Intent |
 | --- | --- | --- | --- |
 | [Generate a quote](#buyer-generate-quote) | Acceptor can generate quote that includes all relevant information, such as the Charges that will be incurred over the lifetime of the agreement, which is critical for the buyer's purchase decision. | CreateAgreementRequest | NEW |
+| [Get agreement request details](#buyer-get-agreement-request) | Acceptor can view details about an agreement request, such as its status, whether it requires approval, and the expected charges. | GetAgreementRequest | N/A |
+| [Get agreement request terms](#buyer-get-agreement-request-terms) | Acceptor can obtain details about the terms in an agreement request. | GetAgreementRequestTerms | N/A |
+| [List agreement requests](#buyer-list-agreement-requests) | Acceptor can list the agreement requests that they created. The list can be filtered by status and resource. | ListAgreementRequests | N/A |
+| [Cancel an agreement request](#buyer-cancel-agreement-request) | Acceptor can cancel an agreement request. | CancelAgreementRequest | N/A |
+| [Get approval plans](#buyer-get-approval-plans) | Acceptor can get the approval plans for an agreement request that requires approval. | GetAgreementRequestApprovalPlans | N/A |
+| [Start approvals](#buyer-start-approvals) | Acceptor can start the approvals for an agreement request. | StartAgreementApprovals | N/A |
+| [List approvals](#buyer-list-approvals) | Acceptor or organization administrator can list agreement approvals. | ListAgreementApprovals | N/A |
+| [Get approval details](#buyer-get-approval) | Acceptor or organization administrator can retrieve details about an agreement approval, including its status and each approver's outcome. | GetAgreementApproval | N/A |
+| [Approve an agreement approval](#approve-agreement-approval) | Organization administrator can approve an agreement approval, as the organization administrator approver or on behalf of another approver. | AcceptAgreementApproval | N/A |
+| [Reject an agreement approval](#reject-agreement-approval) | Organization administrator can reject an agreement approval, as the organization administrator approver or on behalf of another approver. | RejectAgreementApproval | N/A |
 | [Accept an offer](#buyer-accept-offer) | The Acceptor can accept terms proposed by the proposer that creates a new agreement. This acceptance can involve passing parameters for certain terms, such as selecting the quantity or duration, adding purchase order etc. Acceptor can also create a new agreement where the product usage begins at a future date. The agreement sign date will be when the offer is accepted and when the agreement is created. The Agreement start date is future date when the product usage begins. This is the date when license/entitlement gets activated. To retrieve the latest status of your usage entitlement, refer to the [GetAgreementEntitlements](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_GetAgreementEntitlements.html) API. | CreateAgreementRequest, AcceptAgreementRequest | NEW |
 | [Replace an existing agreement](#buyer-replace-agreement) | The Acceptor can perform a mid-term upgrade on their agreement to either switch to more favorable terms or switch seller for their agreements. This action terminates the existing Agreement passed as input and creates net new Agreement. This action is logically equivalent to a CANCEL followed by a NEW agreement, but ensures entitlement continuity for the Acceptor and at no point is the Acceptor left without entitlements. | CreateAgreementRequest, AcceptAgreementRequest | REPLACE |
 | [Amend an existing agreement](#buyer-amend-agreement) | The acceptor is only permitted to modify the configuration for the accepted terms. For example, they can enable or disable auto-renewal, or modify the purchased quantity, as long as the price change post-modification does not result in refunds. We will only support amending charge if agreement has not started. Note: Proposer is allowed to modify prices for pay-as-you-go pricing term. Any increase in pay as you go prices takes 90 days to go into effect after the buyer is notified about the price increase. Any decrease in pay as you go prices takes effect immediately. | CreateAgreementRequest, AcceptAgreementRequest | AMEND |
@@ -37,6 +46,7 @@ An acceptor can perform the following tasks using this API:
 | [Search agreements](#buyer-search-agreements) | Acceptor can perform search across all agreements that they participated in as acceptor in AWS Marketplace. The search returns a list of agreements with basic agreement information. | SearchAgreements | N/A |
 | [Describe an agreement](#buyer-describe-agreement) | Acceptor can view details about an agreement, such as the proposer, acceptor, start date, and end date. | DescribeAgreement | N/A |
 | [Get agreement terms](#buyer-get-terms) | Acceptor can obtain details about the terms in an agreement that they participated in as acceptor. | GetAgreementTerms | N/A |
+| [Get agreement contacts](#buyer-get-contacts) | Acceptor can retrieve the contact information captured on an agreement that they participated in as acceptor. | GetAgreementContacts | N/A |
 | [Get agreement entitlements](#buyer-get-entitlements) | Acceptor can obtain agreement level view of status and details of entitlements tied to their agreement - for example, whether it's in the process of being granted or if it has been rejected (and if so, for what reasons), what's the entitlements being granted to customers. | GetAgreementEntitlements | N/A |
 | [Get a registration token](#buyer-get-registration-token) | Registration token is a short-lived token required by acceptors to setup account with proposers. This token is used for both externally metered and entitled dimension types. The token is only valid for 30 minutes after creation and currently only applicable for SaaS purchase agreements. | GetAgreementEntitlements | N/A |
 | [List agreement charges](#buyer-list-charges) | Acceptor can view charges and Purchase Order details associated with them for their Agreement. | ListAgreementCharges | N/A |
@@ -56,6 +66,8 @@ An acceptor can perform the following tasks using this API:
 Use `CreateAgreementRequest` to generate a quote. You must provide:
 + `agreementProposalIdentifier` — the `agreementProposalId` from the [GetOffer](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-discovery_GetOffer.html) response.
 + `requestedTerms` — constructed from the terms in the [GetOfferTerms](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-discovery_GetOfferTerms.html) response. Each term requires its `id`, and some require additional `configuration`. See [Constructing requestedTerms](#car-requested-term-overview).
+
+You can optionally provide `acceptorContact` with your contact information.
 
 ```
 response = client.create_agreement_request(
@@ -259,6 +271,158 @@ Example `RequestedTerm` payload for `VariablePaymentTerm`:
 }
 ```
 
+## Get agreement request details
+<a name="buyer-get-agreement-request"></a>
+
+Use `GetAgreementRequest` to view details about an agreement request, such as its status, intent, approval requirement, and expected charges.
+
+```
+response = client.get_agreement_request(
+    agreementRequestId='ar-abc123'
+)
+
+print(f"Status: {response['status']}")
+print(f"Approval requirement: {response['approvalRequirement']}")
+```
+
+## Get agreement request terms
+<a name="buyer-get-agreement-request-terms"></a>
+
+Use `GetAgreementRequestTerms` to obtain details about the terms in an agreement request.
+
+```
+response = client.get_agreement_request_terms(
+    agreementRequestId='ar-abc123'
+)
+
+for term in response['terms']:
+    print(f"  Term: {term}")
+```
+
+## List agreement requests
+<a name="buyer-list-agreement-requests"></a>
+
+Use `ListAgreementRequests` to list the agreement requests that you created as an acceptor. You can filter by status and resource.
+
+```
+response = client.list_agreement_requests(
+    status='PENDING_APPROVAL'
+)
+
+for req in response['items']:
+    print(f"  {req['agreementRequestId']}: {req['status']}")
+```
+
+## Cancel an agreement request
+<a name="buyer-cancel-agreement-request"></a>
+
+Use `CancelAgreementRequest` to cancel an agreement request that is pending approval, or approved but not yet accepted. Cancelling an agreement request also cancels its open approvals.
+
+```
+client.cancel_agreement_request(
+    agreementRequestId='ar-abc123'
+)
+```
+
+## Get approval for an agreement request
+<a name="buyer-agreement-approvals"></a>
+
+Your organization can require approval before an agreement request is accepted. After you generate a quote as described in [Generate a quote](#buyer-generate-quote), check `approvalRequirement` in the `CreateAgreementRequest` response, or call `GetAgreementRequest`. If the value is `REQUIRED`, get the approval plans and start the approvals.
+
+When every approval is approved, the agreement request is accepted and its status changes to `ACCEPTED`. If the status is `APPROVED` instead, the approvals are complete but the agreement request wasn't accepted, so call `AcceptAgreementRequest` to accept it. This happens when AWS Marketplace can't accept the agreement request automatically after the approvals complete, for example because the offer changed during the review. If the call fails, its error explains why. If an approval is rejected, the status changes to `REJECTED`.
+
+### Get approval plans
+<a name="buyer-get-approval-plans"></a>
+
+Use `GetAgreementRequestApprovalPlans` to get the approval plans for an agreement request that requires approval.
+
+```
+response = client.get_agreement_request_approval_plans(
+    agreementRequestId='ar-abc123'
+)
+
+for plan in response['items']:
+    print(f"  Plan: {plan['buyerAgreementApprovalPlan']['planReference']}")
+```
+
+### Start approvals
+<a name="buyer-start-approvals"></a>
+
+Use `StartAgreementApprovals` to start the approvals for an agreement request, using the plan references from `GetAgreementRequestApprovalPlans`. You can also add a note for the approvers and associate purchase order numbers with charges. You also need `AcceptAgreementRequest` permission because the agreement request is accepted when its approvals are complete.
+
+```
+response = client.start_agreement_approvals(
+    agreementRequestId='ar-abc123',
+    planInputs=[
+        {
+            'buyerAgreementApprovalPlanInput': {
+                'planReference': 'aplan-abc123',
+                'requesterNote': 'Annual subscription for the analytics team'
+            }
+        }
+    ]
+)
+
+for approval in response['approvalSummaries']:
+    print(f"  {approval['agreementApprovalId']}: {approval['status']}")
+```
+
+### List approvals
+<a name="buyer-list-approvals"></a>
+
+Use `ListAgreementApprovals` to list agreement approvals. Set `partyType` to `REQUESTER` to list agreement approvals for agreement requests that you created, or to `AWS_ORGANIZATION_ADMIN` to list agreement approvals as an AWS Organizations administrator. You can filter by agreement request, approval type, and status.
+
+```
+response = client.list_agreement_approvals(
+    partyType='REQUESTER',
+    agreementRequestId='ar-abc123'
+)
+
+for approval in response['items']:
+    print(f"  {approval['agreementApprovalId']}: {approval['status']}")
+```
+
+### Get approval details
+<a name="buyer-get-approval"></a>
+
+Use `GetAgreementApproval` to retrieve detailed information about an agreement approval, including its status and the outcome recorded for each approver.
+
+```
+response = client.get_agreement_approval(
+    agreementApprovalId='apr-abc123'
+)
+
+print(f"Status: {response['buyerAgreementApproval']['status']}")
+```
+
+### Approve an agreement approval
+<a name="approve-agreement-approval"></a>
+
+If your account is the management account or a delegated administrator of your AWS organization, use `AcceptAgreementApproval` to approve an agreement approval as the organization administrator approver. To approve on behalf of another approver, set `approverOutcomeIdToOverride`. After every level of the agreement approval is approved, its status changes to `APPROVED`.
+
+```
+client.accept_agreement_approval(
+    buyerAgreementApprovalApproverInput={
+        'agreementApprovalId': 'apr-abc123',
+        'note': 'Approved for the analytics team budget'
+    }
+)
+```
+
+### Reject an agreement approval
+<a name="reject-agreement-approval"></a>
+
+If your account is the management account or a delegated administrator of your AWS organization, use `RejectAgreementApproval` to reject an agreement approval as the organization administrator approver. To reject on behalf of another approver, set `approverOutcomeIdToOverride`. A note that explains the rejection is required. After rejection, the agreement approval and the agreement request change to `REJECTED` status.
+
+```
+client.reject_agreement_approval(
+    buyerAgreementApprovalRejectionInput={
+        'agreementApprovalId': 'apr-abc123',
+        'note': 'Use the existing enterprise agreement instead'
+    }
+)
+```
+
 ## Accept an offer
 <a name="buyer-accept-offer"></a>
 
@@ -267,7 +431,7 @@ First, generate a quote as described in [Generate a quote](#buyer-generate-quote
 ```
 # Use chargeId from CreateAgreementRequest response
 response = client.accept_agreement_request(
-    agreementRequestId='agrq-abc123',
+    agreementRequestId='ar-abc123',
     purchaseOrders=[
         {
             'chargeId': 'charge-xyz',  # From chargeSummary.expectedCharges[].id
@@ -407,6 +571,24 @@ response = client.get_agreement_terms(
 
 for term in response['acceptedTerms']:
     print(f"  Term: {term}")
+```
+
+## Get agreement contacts
+<a name="buyer-get-contacts"></a>
+
+Use `GetAgreementContacts` to retrieve the contact information captured on an agreement that you participate in as an acceptor.
+
+```
+response = client.get_agreement_contacts(
+    agreementId='agmt-abc123'
+)
+
+contact = response.get('acceptorContact')
+if contact:
+    print(f"Name: {contact['firstName']} {contact['lastName']}")
+    print(f"Email: {contact['emailAddress']}")
+    print(f"Company: {contact['companyName']}")
+    print(f"Country: {contact['countryCode']}")
 ```
 
 ## Get agreement entitlements
@@ -550,7 +732,7 @@ Use `GetAgreementPaymentRequest` to retrieve detailed information about a specif
 
 ```
 response = client.get_agreement_payment_request(
-    paymentRequestId='apr-abc123',
+    paymentRequestId='pr-abc123',
     agreementId='agmt-abc123'
 )
 
@@ -565,7 +747,7 @@ Use `AcceptAgreementPaymentRequest` to approve a payment request initiated by th
 
 ```
 client.accept_agreement_payment_request(
-    paymentRequestId='apr-abc123',
+    paymentRequestId='pr-abc123',
     agreementId='agmt-abc123'
 )
 ```
@@ -577,7 +759,7 @@ Use `RejectAgreementPaymentRequest` to reject a payment request initiated by the
 
 ```
 client.reject_agreement_payment_request(
-    paymentRequestId='apr-abc123',
+    paymentRequestId='pr-abc123',
     agreementId='agmt-abc123'
 )
 ```

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/link_
 ---
 
 # Linking graphs on a CloudWatch dashboard
-<a name="link_graphs_dashboard"></a>
 
 Link graphs on a CloudWatch dashboard so that changes in time are reflected on all graphs.
 

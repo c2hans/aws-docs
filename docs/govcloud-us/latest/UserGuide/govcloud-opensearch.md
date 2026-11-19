@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-op
 ---
 
 # Amazon OpenSearch Service in AWS GovCloud (US)
-<a name="govcloud-opensearch"></a>
 
 {eslong} is a managed service that makes it easy to deploy, operate, and scale {opensearch}, a popular open-source search and analytics engine. {es} also offers security options, high availability, data durability, and direct access to the {opensearch} API.
 

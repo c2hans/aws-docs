@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # AvailableLimits
-<a name="API_AvailableLimits"></a>
 
 The available spending limits for a payment session.
 

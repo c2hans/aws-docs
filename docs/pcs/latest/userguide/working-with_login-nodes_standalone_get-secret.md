@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_login-
 ---
 
 # Step 4 – Retrieve and store the cluster secret
-<a name="working-with_login-nodes_standalone_get-secret"></a>
 
 These instructions require the AWS CLI. For more information, see [Install or update to the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) in the *AWS Command Line Interface User Guide for Version 2*.
 

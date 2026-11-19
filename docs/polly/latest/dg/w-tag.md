@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/w-tag.html
 ---
 
 # Improving pronunciation by specifying parts of speech
-<a name="w-tag"></a>
 
 *<w>*
 

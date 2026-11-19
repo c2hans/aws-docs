@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/linux-ami-notifications.htm
 ---
 
 # AL2 AMI release notifications
-<a name="linux-ami-notifications"></a>
 
 To be notified when new Amazon Linux AMIs are released, you can subscribe using Amazon SNS.
 

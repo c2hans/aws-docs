@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_In
 ---
 
 # InsightSelector
-<a name="API_InsightSelector"></a>
 
 A JSON string that contains a list of Insights types that are logged on a trail or event data store.
 

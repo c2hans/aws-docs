@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # High-level migration steps
-<a name="steps"></a>
 
 The following table describes the steps for migrating SAS Grid to AWS, organized by epics and stories. These classifications are used in agile methodologies to help you scope and manage your work. Each epic is described in detail in subsequent sections.
 

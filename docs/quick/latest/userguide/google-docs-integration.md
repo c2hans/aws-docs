@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/google-docs-integ
 ---
 
 # Google Docs integration
-<a name="google-docs-integration"></a>
 
 With the Google Docs connector, you can access Google Docs directly in AWS Quick through natural language. You can create and edit documents, read content, insert text and images, and manage document structure without leaving AWS Quick.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_AuthorizeIpRul
 ---
 
 # AuthorizeIpRules
-<a name="API_AuthorizeIpRules"></a>
 
 Adds one or more rules to the specified IP access control group.
 

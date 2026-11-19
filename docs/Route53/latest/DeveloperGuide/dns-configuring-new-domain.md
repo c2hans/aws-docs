@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-config
 ---
 
 # Configuring DNS routing for a new domain
-<a name="dns-configuring-new-domain"></a>
 
 To route internet traffic to your website or web application, you configure DNS routing for your domain. The steps depend on whether you purchased your domain from Route 53 or from another registrar.
 

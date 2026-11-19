@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Signal
 ---
 
 # SignalPrecondition
-<a name="API_SignalPrecondition"></a>
 
 One assessed precondition with the basis behind it.
 

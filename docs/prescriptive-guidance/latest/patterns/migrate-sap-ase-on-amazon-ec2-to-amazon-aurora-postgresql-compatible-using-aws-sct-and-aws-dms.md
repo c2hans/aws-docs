@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate SAP ASE on Amazon EC2 to Amazon Aurora PostgreSQL-Compatible using AWS SCT and AWS DMS
-<a name="migrate-sap-ase-on-amazon-ec2-to-amazon-aurora-postgresql-compatible-using-aws-sct-and-aws-dms"></a>
 
 *Amit Kumar and Ankit Gupta, Amazon Web Services*
 

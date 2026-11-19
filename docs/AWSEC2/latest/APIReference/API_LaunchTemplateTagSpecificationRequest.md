@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateTagSpecificationRequest
-<a name="API_LaunchTemplateTagSpecificationRequest"></a>
 
 The tags specification for the resources that are created during instance launch.
 

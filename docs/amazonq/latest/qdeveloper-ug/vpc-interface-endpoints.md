@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/vpc-interfa
 ---
 
 # Amazon Q Developer and interface endpoints (AWS PrivateLink)
-<a name="vpc-interface-endpoints"></a>
 
 **Note**
 Amazon Q Developer supports interface endpoints for features available [in your IDE](q-in-IDE.md). Chatting with Amazon Q [on AWS apps and websites](q-on-aws.md) is not supported for VPC endpoints. Neither is the Amazon Q Developer transformation web experience.

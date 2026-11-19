@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/resource-vm-se
 ---
 
 # Deploying and configuring the gateway VM host
-<a name="resource-vm-setup"></a>
 
 The topics in this section describe how to set up and manage the virtual machine host for your Storage Gateway appliance, including on-premises appliances running on VMware, Hyper-V, or Linux KVM, and appliances running on Amazon EC2 instances in the AWS cloud.
 

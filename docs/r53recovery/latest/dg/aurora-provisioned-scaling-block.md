@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/aurora-provisioned
 ---
 
 # Aurora Provisioned Scaling execution block
-<a name="aurora-provisioned-scaling-block"></a>
 
 **Category:** Database scaling
 

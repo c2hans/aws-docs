@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Post
 ---
 
 # Understanding active-active conflicts
-<a name="Appendix.PostgreSQL.CommonDBATasks.pgactive.actact.replication"></a>
 
 When you use pgactive in active-active mode, writing to the same tables from multiple nodes can create data conflicts. While some clustering systems use distributed locks to prevent concurrent access, pgactive takes an optimistic approach that's better suited for geographically distributed applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-conf
 ---
 
 # Reviewing your subscription on the confirmation page
-<a name="buyer-confirmation-page"></a>
 
 After you subscribe to a product in AWS Marketplace, a confirmation page appears with a summary of your agreement. Use this page to verify the details of your subscription before proceeding with product setup.
 

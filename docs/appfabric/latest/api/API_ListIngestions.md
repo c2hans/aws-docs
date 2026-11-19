@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_ListIngestions.
 ---
 
 # ListIngestions
-<a name="API_ListIngestions"></a>
 
 Returns a list of all ingestions configured for an app bundle.
 

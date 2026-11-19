@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/USB-dev
 ---
 
 # Working with USB Device Filter Strings
-<a name="USB-device-filter-strings"></a>
 
 This section describes the filter strings that are available for qualifying USB devices for WorkSpaces Applications streaming sessions. It also provides guidance for working with these strings. The following filter strings are available:
 + `Name` — By default, the value for this filter string is the name of the device, but you can specify your own value.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_S3
 ---
 
 # S3Location
-<a name="API_agent_S3Location"></a>
 
 An Amazon S3 location.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Associate
 ---
 
 # AssociateNetworkingFlexCostAllocationPolicy
-<a name="API_AssociateNetworkingFlexCostAllocationPolicy"></a>
 
 Associates a flex cost allocation policy with one or more network resources. You can associate the policy directly with specific resources by resource ID, or you can associate it with a scope of resources in an account, Amazon VPC, or subnet.
 

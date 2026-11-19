@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/view-
 ---
 
 # View stack events by operation
-<a name="view-stack-events-by-operation"></a>
 
 You can view stack events grouped by operation to better understand the sequence and scope of changes made to your stack. Operation-based grouping helps you track related events together, making it easier to monitor progress and troubleshoot issues when they occur.
 

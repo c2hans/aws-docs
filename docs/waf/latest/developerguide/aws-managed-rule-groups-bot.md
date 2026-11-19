@@ -7,13 +7,10 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-ru
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # AWS WAF Bot Control rule group
-<a name="aws-managed-rule-groups-bot"></a>
 
 This section explains what the Bot Control managed rule group does.
 
-VendorName: `AWS`, Name: `AWSManagedRulesBotControlRuleSet`, WCU: 120
-
-The WCU depends on the version that you use: 120 for version 8.0 and `LATEST`, 100 for versions 2.0 through 7.0, and 50 for version 1.0.
+VendorName: `AWS`, Name: `AWSManagedRulesBotControlRuleSet`, WCU: 50
 
 **Note**
 This documentation covers the most recent static version release of this managed rule group. We report version changes in the changelog log at [AWS Managed Rules changelog](aws-managed-rule-groups-changelog.md). For information about other versions, use the API command [DescribeManagedRuleGroup](https://docs.aws.amazon.com/waf/latest/APIReference/API_DescribeManagedRuleGroup.html).

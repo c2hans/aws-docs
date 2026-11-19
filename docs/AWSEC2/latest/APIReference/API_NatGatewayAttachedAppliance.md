@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NatGatewa
 ---
 
 # NatGatewayAttachedAppliance
-<a name="API_NatGatewayAttachedAppliance"></a>
 
 Information about an appliance attached to a NAT Gateway, providing managed security solutions for traffic filtering and inspection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTCOST05-BP04 Create chargeback and ROI reporting
-<a name="agentcost05-bp04"></a>
 
  Raw token counts and execution durations are the wrong unit of measure for business stakeholders deciding whether to fund agent capabilities. Translating technical cost into business metrics like cost-per-customer-interaction and comparing against the manual processes agents replace turns agent economics into something non-technical leaders can evaluate against familiar frameworks.
 

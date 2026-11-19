@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws/r
 ---
 
 # Reference
-<a name="reference"></a>
 
 Live Streaming on AWS reference documentation
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Working with the capabilities
-<a name="working-with-the-capabilities"></a>
 
  Each organization’s cloud adoption journey is unique. To successfully build your cloud environment, you need to understand your organization’s current state, the target state, and the transition required to achieve the target state. As you work on your plan to establish your environment, these capabilities can help you drive the conversation and decisions across relevant stakeholders (identified by the functional areas for each capability).
 

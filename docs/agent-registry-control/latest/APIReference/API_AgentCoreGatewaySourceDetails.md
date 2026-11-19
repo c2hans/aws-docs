@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # AgentCoreGatewaySourceDetails
-<a name="API_AgentCoreGatewaySourceDetails"></a>
 
 The source details for a registry record that was auto-detected from an Amazon Bedrock AgentCore Gateway resource.
 

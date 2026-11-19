@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/snapshots-api-
 ---
 
 # Enhanced snapshot API examples
-<a name="snapshots-api-examples"></a>
 
 Use the following examples to call the enhanced snapshot API actions. Each snapshot action example shows the full request and response. The `CreateApplication` and `UpdateApplication` examples show only the request. For information about how to use a JSON file for input for an API action, see [Managed Service for Apache Flink API example code](api-examples.md).
 

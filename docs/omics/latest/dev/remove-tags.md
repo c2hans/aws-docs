@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/remove-tags.html
 ---
 
 # Removing tags from a data store
-<a name="remove-tags"></a>
 
  You can remove one or more tags associated with a resource. Removing a tag does not delete the tag from other AWS resources that are associated with that tag.
 

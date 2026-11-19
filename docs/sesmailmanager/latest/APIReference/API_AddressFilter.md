@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_A
 ---
 
 # AddressFilter
-<a name="API_AddressFilter"></a>
 
 Filtering options for ListMembersOfAddressList operation.
 

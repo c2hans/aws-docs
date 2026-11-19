@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory
 ---
 
 # Scenario: A customer support AI agent using AgentCore Memory
-<a name="memory-customer-scenario"></a>
 
 In this section you learn how to build a customer support AI agent that uses AgentCore Memory to provide personalized assistance by maintaining conversation history and extracting long-term insights about user preferences. The topic includes code examples for the AgentCore CLI and the AWS SDK.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_FirehoseStream.
 ---
 
 # FirehoseStream
-<a name="API_FirehoseStream"></a>
 
 Contains information about an Amazon Data Firehose delivery stream.
 

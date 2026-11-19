@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_S3Logging
 ---
 
 # S3LoggingConfiguration
-<a name="API_S3LoggingConfiguration"></a>
 
 Configuration settings for delivering logs to Amazon S3 buckets.
 

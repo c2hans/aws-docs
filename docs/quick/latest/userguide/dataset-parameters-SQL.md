@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/dataset-parameter
 ---
 
 # Creating dataset parameters in AWS Quick
-<a name="dataset-parameters-SQL"></a>
 
 Use the following procedures to get started using dataset parameters.
 

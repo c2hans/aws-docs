@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3Object
 ---
 
 # S3ObjectMetadata
-<a name="API_control_S3ObjectMetadata"></a>
 
 ## Contents
 <a name="API_control_S3ObjectMetadata_Contents"></a>

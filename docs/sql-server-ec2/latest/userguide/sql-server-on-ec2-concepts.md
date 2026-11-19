@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/sql-serv
 ---
 
 # Microsoft SQL Server on Amazon EC2 concepts and terminology
-<a name="sql-server-on-ec2-concepts"></a>
 
 The following concepts introduce you to the fundamental terminology used when working with Microsoft SQL Server on Amazon EC2 instances:
 + [Amazon Machine Images (AMIs)](#ami)

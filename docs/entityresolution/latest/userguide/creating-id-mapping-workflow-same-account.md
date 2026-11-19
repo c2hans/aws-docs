@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/creati
 ---
 
 # ID mapping workflow for one AWS account
-<a name="creating-id-mapping-workflow-same-account"></a>
 
 An *ID mapping workflow for one AWS account* enables you to perform ID mapping between two datasets on your own AWS account.
 

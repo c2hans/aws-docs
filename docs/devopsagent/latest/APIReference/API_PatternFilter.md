@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Patt
 ---
 
 # PatternFilter
-<a name="API_PatternFilter"></a>
 
 A regex-based match condition. Passes when the value matches any pattern.
 

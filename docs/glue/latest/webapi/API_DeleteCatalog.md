@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteCatalog.htm
 ---
 
 # DeleteCatalog
-<a name="API_DeleteCatalog"></a>
 
 Removes the specified catalog from the AWS Glue Data Catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioUserIAMDefaultExecutionPolicy
-<a name="SageMakerStudioUserIAMDefaultExecutionPolicy"></a>
 
 **Description**: Execution policy for using IAM roles with SageMaker Unified Studio. Allows users to access resources in the local account (excluding access to data resources) for IAM-based usage of SageMaker Unified Studio.
 
@@ -18,13 +17,13 @@ You can attach `SageMakerStudioUserIAMDefaultExecutionPolicy` to your users, gro
 <a name="SageMakerStudioUserIAMDefaultExecutionPolicy-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: August 18, 2025, 17:19 UTC
-+ **Edited time:** November 14, 2026, 00:07 UTC
++ **Edited time:** November 17, 2026, 18:07 UTC
 + **ARN**: `arn:aws:iam::aws:policy/SageMakerStudioUserIAMDefaultExecutionPolicy`
 
 ## Policy version
 <a name="SageMakerStudioUserIAMDefaultExecutionPolicy-version"></a>
 
-**Policy version:** v33 (default)
+**Policy version:** v34 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -1500,6 +1499,15 @@ The policy's default version is the version that defines the permissions for the
           "aws:ViaAWSService" : "true"
         }
       }
+    },
+    {
+      "Sid" : "S3TablesList",
+      "Effect" : "Allow",
+      "Action" : [
+        "s3tables:ListTableBuckets",
+        "s3tables:GetTableBucket"
+      ],
+      "Resource" : "*"
     }
   ]
 }

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Se
 ---
 
 # ServiceEndpoint
-<a name="API_ServiceEndpoint"></a>
 
 ## Description
 <a name="API_ServiceEndpoint_Description"></a>

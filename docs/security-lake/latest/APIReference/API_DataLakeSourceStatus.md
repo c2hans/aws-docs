@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Da
 ---
 
 # DataLakeSourceStatus
-<a name="API_DataLakeSourceStatus"></a>
 
 Retrieves the Logs status for the Amazon Security Lake account.
 

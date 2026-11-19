@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/cw-event-logging.
 ---
 
 # Logging with Amazon CloudWatch Logs
-<a name="cw-event-logging"></a>
 
 FSx for Lustre supports logging of error and warning events for data repositories associated with your file system to Amazon CloudWatch Logs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateSpace
-<a name="API_CreateSpace"></a>
 
 Creates a private space or a space used for real time collaboration in a domain.
 

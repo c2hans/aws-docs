@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # Retrieving Concept Details with `$lookup`
-<a name="reference-fhir-operations-lookup"></a>
 
 AWS HealthLake now supports the `$lookup` operation for CodeSystem resources, enabling you to retrieve details about a specific concept in a code system by providing identifying information such as its code. This operation is particularly useful when you need to:
 + Retrieve detailed information about specific medical codes

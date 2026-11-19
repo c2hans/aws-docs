@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIAgent AssociationConfigurationData
-<a name="aws-properties-wisdom-aiagent-associationconfigurationdata"></a>
 
 A typed union of the data of the configuration for an Amazon Q in Connect Assistant Association.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
  You can uninstall the Dynamic Object and Rule Extensions for AWS Network solution from the AWS Management Console or by using the AWS Command Line Interface. You must manually delete S3, Lambda, and other resources created by this solution. AWS Solutions Implementations do not automatically delete DynamoDB tables in case you have stored data to retain.
 

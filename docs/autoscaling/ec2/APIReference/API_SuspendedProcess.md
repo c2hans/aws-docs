@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Suspend
 ---
 
 # SuspendedProcess
-<a name="API_SuspendedProcess"></a>
 
 Describes an auto scaling process that has been suspended.
 

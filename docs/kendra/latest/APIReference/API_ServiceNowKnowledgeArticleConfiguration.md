@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_ServiceNo
 ---
 
 # ServiceNowKnowledgeArticleConfiguration
-<a name="API_ServiceNowKnowledgeArticleConfiguration"></a>
 
 Provides the configuration information for crawling knowledge articles in the ServiceNow site.
 

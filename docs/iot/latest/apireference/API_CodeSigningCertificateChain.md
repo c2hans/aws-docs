@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CodeSigningC
 ---
 
 # CodeSigningCertificateChain
-<a name="API_CodeSigningCertificateChain"></a>
 
 Describes the certificate chain being used when code signing a file.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 ---
 
 # Capacity provider system log event reference
-<a name="lambda-managed-instances-monitoring-system-log-events"></a>
 
 Lambda publishes system log events for your capacity provider and for the function versions, Amazon EC2 instances, and execution environments that it manages. This topic describes the format of each log entry, the metadata fields that log entries can contain, and the events that Lambda publishes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Partner Integrations
-<a name="extend-partner-integrations"></a>
 
 AVX exposes integration points across six partner domains. In each case the pattern is the same: an agent tool wraps a partner API call and returns a structured result; the supervisor synthesizes the spoken or written response from that result. The tool signature is thin and deterministic — the LLM never constructs API calls directly.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/wait-event.cl
 ---
 
 # Client:ClientWrite
-<a name="wait-event.clientwrite"></a>
 
 The `Client:ClientWrite` event occurs when RDS for PostgreSQL is waiting to write data to the client.
 

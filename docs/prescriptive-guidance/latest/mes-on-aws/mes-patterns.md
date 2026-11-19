@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/
 ---
 
 # Architecture patterns for modern, microservice-based MES
-<a name="mes-patterns"></a>
 
 To unlock valuable insight, infer patterns, predict events, and automate manual processes such as quality inspection and data collection, MES can use cloud-native technologies such as the Industrial Internet of Things (IIoT), AI/ML, and digital twins. Some of the most common use cases and their architecture patterns are discussed in the following sections:
 + [Industrial edge computing](edge.md)

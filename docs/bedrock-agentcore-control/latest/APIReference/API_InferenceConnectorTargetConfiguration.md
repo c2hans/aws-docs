@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # InferenceConnectorTargetConfiguration
-<a name="API_InferenceConnectorTargetConfiguration"></a>
 
 The configuration for a connector-based inference target. This configuration uses a built-in connector that provides predefined rules for a large language model (LLM) provider.
 

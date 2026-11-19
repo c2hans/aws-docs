@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Del
 ---
 
 # DeleteInlinePolicyFromPermissionSet
-<a name="API_DeleteInlinePolicyFromPermissionSet"></a>
 
 Deletes the inline policy from a specified permission set.
 

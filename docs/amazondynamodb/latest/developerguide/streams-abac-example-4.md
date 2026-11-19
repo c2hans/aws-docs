@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/str
 ---
 
 # Example 4: Tagging streams using CloudFormation
-<a name="streams-abac-example-4"></a>
 
 You can specify tags on DynamoDB Streams directly in your CloudFormation templates. Stream tags are defined within the `StreamSpecification` property for standard tables, and within the `ReplicaStreamSpecification` property for global tables.
 

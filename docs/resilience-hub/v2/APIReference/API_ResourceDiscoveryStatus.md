@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Resou
 ---
 
 # ResourceDiscoveryStatus
-<a name="API_ResourceDiscoveryStatus"></a>
 
 Contains the status of resource discovery for a service.
 

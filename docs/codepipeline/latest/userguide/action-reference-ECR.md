@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # Amazon ECR source action reference
-<a name="action-reference-ECR"></a>
 
 Triggers the pipeline when a new image is pushed to the Amazon ECR repository. This action provides an image definitions file referencing the URI for the image that was pushed to Amazon ECR. This source action is often used in conjunction with another source action, such as CodeCommit, to allow a source location for all other source artifacts. For more information, see [Tutorial: Create a pipeline with an Amazon ECR source and ECS-to-CodeDeploy deployment](tutorials-ecs-ecr-codedeploy.md).
 
@@ -91,7 +90,7 @@ For Amazon ECR support, add the following to your policy statement:
 },
 ```
 
-For more information about this action, see [Amazon ECR source action reference](#action-reference-ECR).
+For more information about this action, see [Amazon ECR source action reference](action-reference-ECR.md).
 
 ## Action declaration (Amazon ECR example)
 <a name="action-reference-ECR-example"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Monotonic Function
-<a name="sql-reference-monotonic"></a>
 
 ```
 MONOTONIC(<expression>)

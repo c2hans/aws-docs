@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/performance-tuning-quer
 ---
 
 # Optimize queries
-<a name="performance-tuning-query-optimization-techniques"></a>
 
 Use the query optimization techniques described in this section to make queries run faster or as workarounds for queries that exceed resource limits in Athena.
 

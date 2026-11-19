@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/activate_grid.ht
 ---
 
 # Activate NVIDIA GRID Virtual Applications on your Amazon EC2 GPU-based instances
-<a name="activate_grid"></a>
 
 To activate the GRID Virtual Applications on GPU-based instances that have NVIDIA GPUs (NVIDIA GRID Virtual Workstation is enabled by default), you must define the product type for the driver. The process that you use depends on the operating system of your instance.
 

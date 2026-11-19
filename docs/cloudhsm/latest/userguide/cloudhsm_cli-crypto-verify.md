@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-c
 ---
 
 # The crypto verify category in CloudHSM CLI
-<a name="cloudhsm_cli-crypto-verify"></a>
 
 In the CloudHSM CLI, **crypto verify** is a parent category for a group of commands that, when combined with the parent category, confirms whether a file has been signed by a given key. **crypto verify** has the following subcommands:
 + [crypto verify ecdsa](cloudhsm_cli-crypto-verify-ecdsa.md)

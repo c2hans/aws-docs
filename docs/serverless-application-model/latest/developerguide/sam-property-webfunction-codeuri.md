@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # CodeUri
-<a name="sam-property-webfunction-codeuri"></a>
 
 Specifies the Amazon S3 location of a Web Function's deployment package. You can specify the location as an object, or as a string of the form `s3://{{bucket}}/{{key}}` with an optional `?versionId={{version}}` query parameter.
 

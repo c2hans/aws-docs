@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PaymentRequestSummary
-<a name="API_marketplace-agreements_PaymentRequestSummary"></a>
 
 Summary view of a payment request.
 

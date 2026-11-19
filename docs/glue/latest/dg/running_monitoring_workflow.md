@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/running_monitoring_workfl
 ---
 
 # Running and monitoring a workflow in AWS Glue
-<a name="running_monitoring_workflow"></a>
 
 If the start trigger for a workflow is an on-demand trigger, you can start the workflow from the AWS Glue console. Complete the following steps to run and monitor a workflow. If the workflow fails, you can view the run graph to determine the node that failed. To help troubleshoot, if the workflow was created from a blueprint, you can view the blueprint run to see the blueprint parameter values that were used to create the workflow. For more information, see [Viewing blueprint runs in AWS Glue](viewing_blueprint_runs.md).
 

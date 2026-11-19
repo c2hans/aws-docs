@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/create-subnets.html
 ---
 
 # Create a subnet
-<a name="create-subnets"></a>
 
 Use the following procedure to create subnets for your virtual private cloud (VPC). Depending on the connectivity that you need, you might also need to add gateways and route tables.
 

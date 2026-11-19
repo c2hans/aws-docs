@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/object-type-ma
 ---
 
 # Object type mapping for the standard profile in Connect Customer Customer Profiles
-<a name="object-type-mapping-standard-profile"></a>
 
 The topics in this section provide the standard profile definition, and the object type mapping from external applications to the standard profile.
 

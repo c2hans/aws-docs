@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/prepare-for-li
 ---
 
 # Prepare to add a lifecycle hook to your Auto Scaling group
-<a name="prepare-for-lifecycle-notifications"></a>
 
 Before you add a lifecycle hook to your Auto Scaling group, be sure that your user data script or notification target is set up correctly.
 + To use a user data script to perform custom actions on your instances as they are launching, you do not need to configure a notification target. However, you must have already created the launch template or launch configuration that specifies your user data script and associated it with your Auto Scaling group. For more information about user data scripts, see [Run commands on your Linux instance at launch](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html) in the *Amazon EC2 User Guide*.

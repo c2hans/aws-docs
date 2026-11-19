@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Successfu
 ---
 
 # SuccessfulQueuedPurchaseDeletion
-<a name="API_SuccessfulQueuedPurchaseDeletion"></a>
 
 Describes a Reserved Instance whose queued purchase was successfully deleted.
 

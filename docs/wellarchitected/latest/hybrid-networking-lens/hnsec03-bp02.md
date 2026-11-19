@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNSEC03-BP02 Set up central logging and analytics
-<a name="hnsec03-bp02"></a>
 
  Establishing a centralized logging and analytics system is crucial for comprehensive visibility, security monitoring, and operational efficiency across both on-premises and cloud infrastructures. A central logging solution enables organizations to collect, store, analyze, and respond to events occurring throughout their distributed network environments.
 

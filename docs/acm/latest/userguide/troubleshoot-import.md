@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/troubleshoot-import
 ---
 
 # Certificate import problems
-<a name="troubleshoot-import"></a>
 
 You can import third-party certificates into ACM and associate them with [integrated services](https://docs.aws.amazon.com/acm/latest/userguide/acm-services.html). If you encounter problems, review the [prerequisites](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate-prerequisites.html) and [certificate format](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate-format.html) topics. In particular, note the following:
 + You can import only X.509 version 3 SSL/TLS certificates.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_VpcInfo
 ---
 
 # VpcInformation
-<a name="API_VpcInformation"></a>
 
 Information about a VPC used for private connectivity, including its subnets and an associated VPC endpoint.
 

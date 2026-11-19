@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/addon-id-troublesho
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Troubleshoot Pod Identities for EKS add-ons
-<a name="addon-id-troubleshoot"></a>
 
 If your add-ons are encountering errors while attempting AWS API, SDK, or CLI operations, confirm the following:
 + The Pod Identity Agent is installed in your cluster.

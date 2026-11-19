@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Descr
 ---
 
 # DescribeLanguageModel
-<a name="API_DescribeLanguageModel"></a>
 
 Provides information about the specified custom language model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # SaveStateConfig
-<a name="API_training_session_runtime_SaveStateConfig"></a>
 
 The configuration for saving full training state, including model weights and optimizer state. Use this to create resumable checkpoints.
 

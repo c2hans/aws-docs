@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-getting
 ---
 
 # Tutorial: Create your first Route 53 Global Resolver with AWS Cloud WAN
-<a name="gr-getting-started-cwan"></a>
 
 This tutorial demonstrates how to create a private-only Route 53 Global Resolver. You create a global resolver with public IP connectivity turned off, connect it to an AWS Cloud WAN core network, and allow DNS queries from a core network segment. As a result, the resolver is reachable only over your private Cloud WAN connections and not over the internet.
 

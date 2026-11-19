@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetKe
 ---
 
 # GetKeyGroupConfig
-<a name="API_GetKeyGroupConfig"></a>
 
 Gets a key group configuration.
 

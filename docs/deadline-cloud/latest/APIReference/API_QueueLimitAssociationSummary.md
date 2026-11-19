@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_Q
 ---
 
 # QueueLimitAssociationSummary
-<a name="API_QueueLimitAssociationSummary"></a>
 
 Provides information about the association between a queue and a limit.
 

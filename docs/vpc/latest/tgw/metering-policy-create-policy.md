@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/metering-policy-create-po
 ---
 
 # Create an AWS Transit Gateway metering policy
-<a name="metering-policy-create-policy"></a>
 
 To enable metering policies, you must create a metering policy for your transit gateway and configure policy entries that define how metering usage is allocated. The metering policy establishes the framework and default settings, while policy entries contain the specific rules that determine which accounts are metered based on traffic characteristics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Reco
 ---
 
 # RecommendationRelatedAnomalyResource
-<a name="API_RecommendationRelatedAnomalyResource"></a>
 
  Information about a resource in which DevOps Guru detected anomalous behavior.
 

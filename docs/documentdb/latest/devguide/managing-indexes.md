@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/managing-inde
 ---
 
 # Managing Amazon DocumentDB indexes
-<a name="managing-indexes"></a>
 
 **Topics**
 + [Amazon DocumentDB index creation](#index-creation-build)

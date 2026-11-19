@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Deployment pipelines
-<a name="deployment-pipelines"></a>
 
 The AWS CloudFormation template deploys two CodePipeline pipelines, an installer and the core deployment pipeline, along with associated dependencies. This solution uses CodeBuild to build and deploy a series of CDK-based CloudFormation stacks that are responsible for deploying supported resources in the multi-account, multi-Region environment.
 

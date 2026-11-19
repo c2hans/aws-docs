@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/example_polly_GettingSta
 ---
 
 # Getting started with text-to-speech synthesis
-<a name="example_polly_GettingStarted_082_section"></a>
 
 The following code example shows how to:
 + Clean up resources

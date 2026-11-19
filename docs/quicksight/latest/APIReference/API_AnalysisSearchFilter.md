@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Analy
 ---
 
 # AnalysisSearchFilter
-<a name="API_AnalysisSearchFilter"></a>
 
 A filter that you apply when searching for one or more analyses.
 

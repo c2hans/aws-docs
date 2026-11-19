@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Personalize::MetricAttribution S3DataDestination
-<a name="aws-properties-personalize-metricattribution-s3datadestination"></a>
 
 <a name="aws-properties-personalize-metricattribution-s3datadestination-description"></a>The `S3DataDestination` property type specifies Property description not available. for an [AWS::Personalize::MetricAttribution](aws-resource-personalize-metricattribution.md).
 

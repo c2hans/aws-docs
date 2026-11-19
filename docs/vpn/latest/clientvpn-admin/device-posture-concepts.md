@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 ---
 
 # Concepts
-<a name="device-posture-concepts"></a>
 
 The following concepts are central to how device posture works.
 

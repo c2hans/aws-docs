@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MessageDetai
 ---
 
 # MessageDetail
-<a name="API_MessageDetail"></a>
 
 The details of an error message.
 

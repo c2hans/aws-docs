@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/asking-questio
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Chatting with Amazon Q Developer in chat channels
-<a name="asking-questions"></a>
 
 |  |
 | --- |

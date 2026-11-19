@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Disassoci
 ---
 
 # DisassociateNetworkingFlexCostAllocationPolicy
-<a name="API_DisassociateNetworkingFlexCostAllocationPolicy"></a>
 
 Disassociates a flex cost allocation policy from one or more network resources.
 

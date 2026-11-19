@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_BasePathMappin
 ---
 
 # BasePathMapping
-<a name="API_BasePathMapping"></a>
 
 Represents the base path that callers of the API must provide as part of the URL after the domain name.
 

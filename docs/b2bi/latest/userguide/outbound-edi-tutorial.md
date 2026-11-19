@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/outbound-edi-tutor
 ---
 
 # Outbound EDI tutorial
-<a name="outbound-edi-tutorial"></a>
 
 This tutorial guides you through setting up an outbound B2B Data Interchange workflow using AWS B2B Data Interchange. You'll learn how to transform JSON data into X12 EDI documents (specifically 850 Purchase Orders) for sending to your trading partners.
 

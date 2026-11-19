@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-one-time-
 ---
 
 # Migrating from Linux to Linux for Amazon RDS for Db2
-<a name="db2-one-time-migration-linux"></a>
 
 With this migration approach, you back up your self-managed Db2 database to an Amazon S3 bucket. Then, you use Amazon RDS stored procedures to restore your Db2 database to an Amazon RDS for Db2 DB instance. For more information about using Amazon S3, see [Integrating an Amazon RDS for Db2 DB instance with Amazon S3](db2-s3-integration.md).
 

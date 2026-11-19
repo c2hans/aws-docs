@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/securi
 ---
 
 # Security in Amazon Bedrock AgentCore
-<a name="security"></a>
 
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from data centers and network architectures that are designed to help meet with the requirements of the most security-sensitive organizations.
 

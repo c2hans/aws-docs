@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Planning beacons
-<a name="plan-searchable-encryption"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_AmplitudeSo
 ---
 
 # AmplitudeSourceProperties
-<a name="API_AmplitudeSourceProperties"></a>
 
  The properties that are applied when Amplitude is being used as a source.
 

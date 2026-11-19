@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSManagedAccountUserEntitlementAccess
-<a name="AWSManagedAccountUserEntitlementAccess"></a>
 
 **Description**: Grants AWS permissions to manage account access entitlements for AWS managed accounts
 

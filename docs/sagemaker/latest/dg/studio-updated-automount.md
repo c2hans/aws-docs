@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-autom
 ---
 
 # Amazon EFS creation and auto-mounting in Studio
-<a name="studio-updated-automount"></a>
 
 Amazon SageMaker AI supports creating an Amazon EFS volume for a domain and automatically mounting a home directory folder for each user. Using this folder, users can share data between their own private spaces. However, users cannot share data with other users in the domain. Users only have access to their own folder.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/go-image.html
 ---
 
 # Deploy Go Lambda Event Functions with container images
-<a name="go-image"></a>
 
 There are two ways to build a container image for a Go Lambda Event Function:
 + [Using an AWS OS-only base image](#go-image-provided)

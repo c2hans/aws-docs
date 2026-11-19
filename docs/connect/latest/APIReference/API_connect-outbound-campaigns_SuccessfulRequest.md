@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # SuccessfulRequest
-<a name="API_connect-outbound-campaigns_SuccessfulRequest"></a>
 
 Success details for a [DialRequest](https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API_DialRequest.html).
 

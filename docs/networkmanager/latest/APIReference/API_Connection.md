@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # Connection
-<a name="API_Connection"></a>
 
 Describes a connection.
 

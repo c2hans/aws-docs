@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/deplo
 ---
 
 # Deploying the CloudWatch agent to collect EC2 instance-level metrics on Amazon ECS
-<a name="deploy-container-insights-ECS-instancelevel"></a>
 
 To deploy the CloudWatch agent to collect instance-level metrics from Amazon ECS clusters that are hosted on EC2 instance, use a quick start setup with a default configuration, or install the agent manually to be able to customize it.
 

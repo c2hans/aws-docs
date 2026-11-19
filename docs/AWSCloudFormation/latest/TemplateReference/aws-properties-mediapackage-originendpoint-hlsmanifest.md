@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::OriginEndpoint HlsManifest
-<a name="aws-properties-mediapackage-originendpoint-hlsmanifest"></a>
 
 An HTTP Live Streaming (HLS) manifest configuration on a CMAF endpoint.
 

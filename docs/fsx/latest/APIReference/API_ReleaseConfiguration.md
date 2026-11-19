@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_ReleaseConfi
 ---
 
 # ReleaseConfiguration
-<a name="API_ReleaseConfiguration"></a>
 
 The configuration that specifies a minimum amount of time since last access for an exported file to be eligible for release from an Amazon FSx for Lustre file system. Only files that were last accessed before this point-in-time can be released. For example, if you specify a last accessed time criteria of 9 days, only files that were last accessed 9.00001 or more days ago can be released.
 

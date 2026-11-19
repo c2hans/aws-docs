@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TopBo
 ---
 
 # TopBottomFilter
-<a name="API_TopBottomFilter"></a>
 
 A `TopBottomFilter` filters values that are at the top or the bottom.
 

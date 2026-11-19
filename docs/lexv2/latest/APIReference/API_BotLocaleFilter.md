@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotLocaleF
 ---
 
 # BotLocaleFilter
-<a name="API_BotLocaleFilter"></a>
 
 Filters responses returned by the `ListBotLocales` operation.
 

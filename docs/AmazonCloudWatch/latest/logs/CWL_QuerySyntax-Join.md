@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # join
-<a name="CWL_QuerySyntax-Join"></a>
 
 Combines log events from a source log group with events from another log group or query result based on a matching field.
 

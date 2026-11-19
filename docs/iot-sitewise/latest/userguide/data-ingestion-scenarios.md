@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/data-inges
 ---
 
 # Common scenarios
-<a name="data-ingestion-scenarios"></a>
 
 ## Move a data stream
 <a name="data-ingestion-scenario-move-data-stream"></a>

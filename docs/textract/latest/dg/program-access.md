@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/program-access.html
 ---
 
 # Granting Programmatic Access
-<a name="program-access"></a>
 
 You can run the AWS CLI and code examples in this guide on your local computer or other AWS enviroments, such as an Amazon Elastic Compute Cloud instance. To use the features in the Amazon Textract SDK, you'll need to grant your user access. This section will discuss what permissions a use might need for the Amazon Textract SDK, and assigning permissions to users.
 

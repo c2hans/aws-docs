@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityAnalyz
 ---
 
 # DataQualityAnalyzerResult
-<a name="API_DataQualityAnalyzerResult"></a>
 
 Describes the result of the evaluation of a data quality analyzer.
 

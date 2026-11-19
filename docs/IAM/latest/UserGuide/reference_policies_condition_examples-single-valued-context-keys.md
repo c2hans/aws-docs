@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_
 ---
 
 # Single-valued context key policy examples
-<a name="reference_policies_condition_examples-single-valued-context-keys"></a>
 
 The following set of policy examples demonstrate how to create policy conditions with single-valued context keys.
 

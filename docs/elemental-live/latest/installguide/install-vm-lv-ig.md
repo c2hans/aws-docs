@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/installguide/insta
 ---
 
 # Installing AWS Elemental Live on a virtual machine (VM)
-<a name="install-vm-lv-ig"></a>
 
 This section is for IT administrators who will perform the first-time installation of AWS Elemental Live software on a virtual machine (VM).
 

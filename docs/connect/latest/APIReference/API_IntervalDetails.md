@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Interval
 ---
 
 # IntervalDetails
-<a name="API_IntervalDetails"></a>
 
 Information about the interval period to use for returning results.
 

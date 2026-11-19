@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ScreenshotArguments
-<a name="API_ScreenshotArguments"></a>
 
 Arguments for a screenshot action.
 

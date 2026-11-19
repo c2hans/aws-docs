@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyDeleteVariableMutation
-<a name="API_AutomatedReasoningPolicyDeleteVariableMutation"></a>
 
 A mutation operation that removes a variable from the policy definition during the build process.
 

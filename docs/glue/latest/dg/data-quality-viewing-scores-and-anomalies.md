@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-viewing-scor
 ---
 
 # Viewing data quality scores and anomalies
-<a name="data-quality-viewing-scores-and-anomalies"></a>
 
  In this section, we will explore the data quality dashboard and different functionalities that it provides.
 

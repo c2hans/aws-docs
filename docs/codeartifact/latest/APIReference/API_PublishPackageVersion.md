@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Pub
 ---
 
 # PublishPackageVersion
-<a name="API_PublishPackageVersion"></a>
 
 Creates a new package version containing one or more assets (or files).
 

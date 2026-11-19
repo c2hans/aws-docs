@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sandbox-ssh-t
 ---
 
 # Tutorial: Connecting to a sandbox using SSH
-<a name="sandbox-ssh-tutorial"></a>
 
 This tutorial shows you how to connect to a CodeBuild sandbox using an SSH client.
 

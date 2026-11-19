@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/api-instances.h
 ---
 
 # Neptune Instances API
-<a name="api-instances"></a>
 
 **Actions:**
 + [CreateDBInstance (action)](#CreateDBInstance)

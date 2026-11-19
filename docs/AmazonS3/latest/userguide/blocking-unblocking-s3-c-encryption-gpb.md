@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/blocking-unblo
 ---
 
 # Blocking or unblocking SSE-C for a general purpose bucket
-<a name="blocking-unblocking-s3-c-encryption-gpb"></a>
 
 Starting April 2026, Amazon S3 automatically disables server-side encryption with customer-provided keys (SSE-C) for all new general purpose buckets. Amazon S3 also disabled SSE-C for existing buckets in accounts with no SSE-C encrypted objects. This means that by default, requests to upload objects using SSE-C are rejected with an HTTP 403 `AccessDenied` error.
 

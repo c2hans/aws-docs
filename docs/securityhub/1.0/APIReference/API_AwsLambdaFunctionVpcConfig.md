@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsLamb
 ---
 
 # AwsLambdaFunctionVpcConfig
-<a name="API_AwsLambdaFunctionVpcConfig"></a>
 
 The VPC security groups and subnets that are attached to a Lambda function.
 

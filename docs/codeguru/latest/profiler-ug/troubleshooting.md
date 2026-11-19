@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/troubleshoot
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
  This section helps you troubleshoot common problems you might encounter when working with Amazon CodeGuru Profiler.
 

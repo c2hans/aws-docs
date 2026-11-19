@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/API_ListMeet
 ---
 
 # ListMeetingInsights
-<a name="API_ListMeetingInsights"></a>
 
 |  |
 | --- |

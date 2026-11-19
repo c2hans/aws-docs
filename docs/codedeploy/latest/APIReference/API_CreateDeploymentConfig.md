@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Creat
 ---
 
 # CreateDeploymentConfig
-<a name="API_CreateDeploymentConfig"></a>
 
  Creates a deployment configuration.
 

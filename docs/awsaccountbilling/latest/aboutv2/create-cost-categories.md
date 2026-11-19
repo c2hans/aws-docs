@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/create-
 ---
 
 # Creating cost categories
-<a name="create-cost-categories"></a>
 
 Cost allocation helps you map and assign your AWS Cloud costs to the correct groups within your organization. To allocate these costs, create cost categories. Cost categories are available only to management accounts of AWS Organizations. When you use billing transfer, each management account (bill transfer and bill source) can configure cost categories only for accounts in its own AWS Organizations.Cost categories are composed of rules.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # PaymentSessionSummary
-<a name="API_PaymentSessionSummary"></a>
 
 Summary information about a payment session.
 

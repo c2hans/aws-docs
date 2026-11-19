@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/start-t
 ---
 
 # Start tracking with Amazon Location
-<a name="start-tracking"></a>
 
 This section guides you through building a tracking application that captures device locations.
 

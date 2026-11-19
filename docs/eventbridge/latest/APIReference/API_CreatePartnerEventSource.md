@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Crea
 ---
 
 # CreatePartnerEventSource
-<a name="API_CreatePartnerEventSource"></a>
 
 Called by an SaaS partner to create a partner event source. This operation is not used by AWS customers.
 

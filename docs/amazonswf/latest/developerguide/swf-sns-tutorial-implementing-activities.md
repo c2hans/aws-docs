@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-sns-
 ---
 
 # Subscription Workflow Tutorial Part 3: Implementing the Activities
-<a name="swf-sns-tutorial-implementing-activities"></a>
 
 We'll now implement each of the activities in our workflow, beginning with a base class that provides some common features for the activity code.
 

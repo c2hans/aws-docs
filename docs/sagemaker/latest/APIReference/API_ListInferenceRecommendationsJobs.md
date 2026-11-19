@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListIn
 ---
 
 # ListInferenceRecommendationsJobs
-<a name="API_ListInferenceRecommendationsJobs"></a>
 
 Lists recommendation jobs that satisfy various filters.
 

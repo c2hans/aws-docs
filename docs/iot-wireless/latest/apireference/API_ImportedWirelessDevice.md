@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Imp
 ---
 
 # ImportedWirelessDevice
-<a name="API_ImportedWirelessDevice"></a>
 
 Information about a wireless device that has been added to an import task.
 

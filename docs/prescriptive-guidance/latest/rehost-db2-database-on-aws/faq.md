@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-db2-
 ---
 
 # FAQ
-<a name="faq"></a>
 
 This section provides answers to frequently asked questions about migrating Db2 from on premises to Amazon EC2 on AWS.
 

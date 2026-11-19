@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Dat
 ---
 
 # Data Model
-<a name="DataModel"></a>
 
 When using Amazon SimpleDB, you organize your structured data in domains within which you can put data, get data, or run queries.
 

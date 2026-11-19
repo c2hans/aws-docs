@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/transferring-d
 ---
 
 # Transferring your data with AWS DataSync
-<a name="transferring-data-datasync"></a>
 
 With AWS DataSync, you can transfer data to or from storage that's on-premises, in AWS, or in other clouds.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-oracle-postgresql.mi
 ---
 
 # Oracle database migration testing and bug fixing
-<a name="chap-oracle-postgresql.migration-process.testing"></a>
 
 Testing can be manual or automated. We recommend that you use an automated framework for testing. During migration, you will need to run the test multiple times, so having an automated testing framework helps speed up the bug fixing and optimization cycles.
 

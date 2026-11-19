@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StartCon
 ---
 
 # StartContactStreaming
-<a name="API_StartContactStreaming"></a>
 
  Initiates real-time message streaming for a new chat contact.
 

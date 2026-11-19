@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/connections-b
 ---
 
 # Bitbucket App connections
-<a name="connections-bitbucket-app"></a>
 
 You can use Bitbucket to connect with CodeBuild. Bitbucket App connections are supported through [AWS CodeConnections](https://docs.aws.amazon.com/dtconsole/latest/userguide/welcome-connections.html).
 

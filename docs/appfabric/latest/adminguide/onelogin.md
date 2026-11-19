@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/onelogin.htm
 ---
 
 # Configure OneLogin by One Identity for AppFabric
-<a name="onelogin"></a>
 
 OneLogin by One Identity is a modern, cloud-based access management solution that seamlessly manages all digital identities for your workforce, customers and partners. OneLogin provides secure single sign-on (SSO), multi-factor authentication (MFA), adaptive authentication, desktop-level MFA, directory integration with AD, LDAP, G Suite and other external directories, identity lifecycle management and much more. With OneLogin, you can protect your organization from the most common attacks, resulting in increased security, frictionless user experiences, and compliance with regulatory requirements.
 

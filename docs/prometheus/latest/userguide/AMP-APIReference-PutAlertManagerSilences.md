@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIRefer
 ---
 
 # PutAlertManagerSilences
-<a name="AMP-APIReference-PutAlertManagerSilences"></a>
 
 The `PutAlertManagerSilences` operation creates a new alert silence or updates an existing one.
 

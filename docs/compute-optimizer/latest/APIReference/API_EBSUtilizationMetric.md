@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # EBSUtilizationMetric
-<a name="API_EBSUtilizationMetric"></a>
 
 Describes a utilization metric of an Amazon Elastic Block Store (Amazon EBS) volume.
 

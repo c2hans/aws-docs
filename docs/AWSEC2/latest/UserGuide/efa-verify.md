@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa-verify.html
 ---
 
 # Verify the EFA installer using a checksum
-<a name="efa-verify"></a>
 
 You can optionally verify the EFA tarball (`.tar.gz` file) using an MD5 or SHA256 checksum. We recommend that you do this to verify the identity of the software publisher and to check that the application has not been altered or corrupted since it was published.
 

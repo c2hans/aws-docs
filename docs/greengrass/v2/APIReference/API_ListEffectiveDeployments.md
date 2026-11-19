@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ListEffec
 ---
 
 # ListEffectiveDeployments
-<a name="API_ListEffectiveDeployments"></a>
 
 Retrieves a paginated list of deployment jobs that AWS IoT Greengrass sends to Greengrass core devices.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateSlot
 ---
 
 # CreateSlot
-<a name="API_CreateSlot"></a>
 
 Creates a slot in an intent. A slot is a variable needed to fulfill an intent. For example, an `OrderPizza` intent might need slots for size, crust, and number of pizzas. For each slot, you define one or more utterances that Amazon Lex uses to elicit a response from the user.
 

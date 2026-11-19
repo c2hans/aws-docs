@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CaptchaConfi
 ---
 
 # CaptchaConfig
-<a name="API_CaptchaConfig"></a>
 
 Specifies how AWS WAF should handle `CAPTCHA` evaluations. This is available at the web ACL level and in each rule.
 

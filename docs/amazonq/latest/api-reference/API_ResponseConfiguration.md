@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Respons
 ---
 
 # ResponseConfiguration
-<a name="API_ResponseConfiguration"></a>
 
 Configuration settings to define how Amazon Q Business generates and formats responses to user queries. This includes customization options for response style, tone, length, and other characteristics.
 

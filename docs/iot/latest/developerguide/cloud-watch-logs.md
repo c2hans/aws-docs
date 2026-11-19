@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/cloud-watch-lo
 ---
 
 # Monitor AWS IoT using CloudWatch Logs
-<a name="cloud-watch-logs"></a>
 
 When [AWS IoT logging is enabled](configure-logging.md), AWS IoT sends progress events about each message as it passes from your devices through the message broker and rules engine. In the [CloudWatch console](https://console.aws.amazon.com/cloudwatch), CloudWatch logs appear in a log group named **AWSIotLogs**.
 

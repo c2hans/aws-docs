@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Crea
 ---
 
 # CreateConfiguredTableAssociationAnalysisRule
-<a name="API_CreateConfiguredTableAssociationAnalysisRule"></a>
 
  Creates a new analysis rule for an associated configured table.
 

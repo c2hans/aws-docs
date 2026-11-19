@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Ha
 ---
 
 # HandshakeParty
-<a name="API_HandshakeParty"></a>
 
 Contains details for a participant in a handshake.
 

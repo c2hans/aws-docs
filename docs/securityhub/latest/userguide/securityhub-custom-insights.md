@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Understanding custom insights in Security Hub CSPM
-<a name="securityhub-custom-insights"></a>
 
 In addition to AWS Security Hub CSPM managed insights, you can create custom insights in Security Hub CSPM to track issues that are specific to your environment. Custom insights help you track a curated subset of issues.
 

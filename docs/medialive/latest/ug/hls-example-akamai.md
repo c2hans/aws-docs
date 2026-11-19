@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-example-akamai.h
 ---
 
 # Akamai example
-<a name="hls-example-akamai"></a>
 
 This example shows how to set up the destination fields if the downstream system is an Akamai server.
 

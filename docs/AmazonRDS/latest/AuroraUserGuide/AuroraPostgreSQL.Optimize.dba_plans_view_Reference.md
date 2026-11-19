@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Reference for the apg\_plan\_mgmt.dba\_plans view for Aurora PostgreSQL-Compatible Edition
-<a name="AuroraPostgreSQL.Optimize.dba_plans_view_Reference"></a>
 
 The columns of plan information in the `apg_plan_mgmt.dba_plans` view include the following.
 

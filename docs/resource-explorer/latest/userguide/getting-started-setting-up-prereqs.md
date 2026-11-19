@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/getti
 ---
 
 # Prerequisites to using Resource Explorer
-<a name="getting-started-setting-up-prereqs"></a>
 
 Before you use AWS Resource Explorer for the first time, complete the following tasks as required.
 

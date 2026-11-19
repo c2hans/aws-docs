@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/extensions
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Quickstart: Installing extensions, connecting providers, and linking resources in CodeCatalyst
-<a name="extensions-quickstart"></a>
 
 This tutorial provides a walkthrough of the following three tasks:
 

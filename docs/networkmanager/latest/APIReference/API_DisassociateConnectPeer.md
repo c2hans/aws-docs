@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DisassociateConnectPeer
-<a name="API_DisassociateConnectPeer"></a>
 
 Disassociates a core network Connect peer from a device and a link.
 

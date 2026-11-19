@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB
 ---
 
 # DeleteDomain
-<a name="SDB_API_DeleteDomain"></a>
 
 ## Description
 <a name="SDB_API_DeleteDomain_Description"></a>

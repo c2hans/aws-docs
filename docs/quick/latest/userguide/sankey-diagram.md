@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sankey-diagram.ht
 ---
 
 # Using Sankey diagrams
-<a name="sankey-diagram"></a>
 
 Use Sankey diagrams to show flows from one category to another, or paths from one stage to the next.
 

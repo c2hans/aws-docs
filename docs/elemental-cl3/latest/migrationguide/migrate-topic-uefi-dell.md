@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Switching to UEFI on a Dell
-<a name="migrate-topic-uefi-dell"></a>
 
 There are three ways to switch the boot mode from Legacy mode to UEFI.
 

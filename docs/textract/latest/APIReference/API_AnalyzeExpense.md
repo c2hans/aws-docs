@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Analyze
 ---
 
 # AnalyzeExpense
-<a name="API_AnalyzeExpense"></a>
 
  `AnalyzeExpense` synchronously analyzes an input document for financially related relationships between text.
 

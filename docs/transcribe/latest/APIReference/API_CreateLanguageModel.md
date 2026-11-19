@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Creat
 ---
 
 # CreateLanguageModel
-<a name="API_CreateLanguageModel"></a>
 
 Creates a new custom language model.
 

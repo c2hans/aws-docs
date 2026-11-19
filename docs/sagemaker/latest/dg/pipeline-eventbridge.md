@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipeline-eventbridge
 ---
 
 # Schedule Pipeline Runs
-<a name="pipeline-eventbridge"></a>
 
 You can schedule your Amazon SageMaker Pipelines executions using [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html). Amazon SageMaker Pipelines is supported as a target in [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html). This allows you to initiate the execution of your model building pipeline based on any event in your event bus. With EventBridge, you can automate your pipeline executions and respond automatically to events such as training job or endpoint status changes. Events include a new file being uploaded to your Amazon S3 bucket, a change in status of your Amazon SageMaker AI endpoint due to drift, and *Amazon Simple Notification Service* (SNS) topics.
 

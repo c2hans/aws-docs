@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-crea
 ---
 
 # Adding benefit sharing preference to my bill scenario
-<a name="pc-create-bill-scenario-preferences"></a>
 
 This section outlines how to add Reserved Instances and Savings Plans sharing group preference to a bill scenario. This allows you to model benefit sharing preference to evaluate the impact on your bill.
 

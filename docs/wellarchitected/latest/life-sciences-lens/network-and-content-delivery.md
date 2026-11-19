@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Network and content delivery
-<a name="network-and-content-delivery"></a>
 
 |  LSPERF12: How do you design network architectures to support secure transmission of large datasets while optimizing throughput?  |
 | --- |

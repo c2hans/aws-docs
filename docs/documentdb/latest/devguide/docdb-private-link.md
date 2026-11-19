@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-private
 ---
 
 # Amazon DocumentDB API and interface VPC endpoints (AWS PrivateLink)
-<a name="docdb-private-link"></a>
 
 **Note**
 Amazon DocumentDB elastic clusters do not support AWS PrivateLink VPC endpoints.

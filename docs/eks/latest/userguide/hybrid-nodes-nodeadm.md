@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-nodead
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Hybrid nodes `nodeadm` reference
-<a name="hybrid-nodes-nodeadm"></a>
 
 The Amazon EKS Hybrid Nodes CLI (`nodeadm`) simplifies the installation, configuration, registration, and uninstallation of the hybrid nodes components. You can include `nodeadm` in your operating system images to automate hybrid node bootstrap, see [Prepare operating system for hybrid nodes](hybrid-nodes-os.md) for more information.
 

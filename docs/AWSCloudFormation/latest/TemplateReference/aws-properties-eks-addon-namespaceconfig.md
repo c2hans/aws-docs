@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EKS::Addon NamespaceConfig
-<a name="aws-properties-eks-addon-namespaceconfig"></a>
 
 <a name="aws-properties-eks-addon-namespaceconfig-description"></a>The `NamespaceConfig` property type specifies Property description not available. for an [AWS::EKS::Addon](aws-resource-eks-addon.md).
 

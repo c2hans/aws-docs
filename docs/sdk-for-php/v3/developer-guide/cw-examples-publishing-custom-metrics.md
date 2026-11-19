@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/cw-exampl
 ---
 
 # Publishing custom metrics in Amazon CloudWatch with AWS SDK for PHP Version 3
-<a name="cw-examples-publishing-custom-metrics"></a>
 
 Metrics are data about the performance of your systems. An alarm watches a single metric over a time period you specify. It performs one or more actions based on the value of the metric, relative to a given threshold over a number of time periods.
 

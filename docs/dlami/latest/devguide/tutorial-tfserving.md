@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-tfserving
 ---
 
 # TensorFlow Serving
-<a name="tutorial-tfserving"></a>
 
 [TensorFlow Serving](https://www.tensorflow.org/tfx/guide/serving) is a flexible, high-performance serving system for machine learning models.
 

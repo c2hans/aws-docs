@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_GetConta
 ---
 
 # GetContactMetrics
-<a name="API_GetContactMetrics"></a>
 
 Retrieves contact metric data for a specified contact.
 

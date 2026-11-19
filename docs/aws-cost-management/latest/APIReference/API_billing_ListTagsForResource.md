@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListTagsForResource
-<a name="API_billing_ListTagsForResource"></a>
 
 Lists tags associated with the billing view resource.
 

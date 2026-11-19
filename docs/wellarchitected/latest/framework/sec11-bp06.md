@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec11-b
 ---
 
 # SEC11-BP06 Centralize services for packages and dependencies
-<a name="sec11-bp06"></a>
 
  Every third-party package brings its own vulnerabilities, sub-dependencies, and risk of disappearing or being tampered with. Route dependencies through a central, controlled source so you can scan them, approve them, and keep building when public repositories are unavailable.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_SnapshotS
 ---
 
 # SnapshotSourceDescription
-<a name="API_SnapshotSourceDescription"></a>
 
 Describes the source of an enhanced snapshot. For a snapshot that was created from an application, `SourceApplicationDescription` is present. For an imported snapshot, `S3PrefixLocation` is present.
 

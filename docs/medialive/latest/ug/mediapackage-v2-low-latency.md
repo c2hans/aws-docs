@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/mediapackage-v2-low-
 ---
 
 # Implementing low latency outputs
-<a name="mediapackage-v2-low-latency"></a>
 
 You can create a glass-to-glass low latency workflow that uses AWS Elemental MediaLive and AWS Elemental MediaPackage. The channel in AWS Elemental MediaPackage must use MediaPackage v2.
 

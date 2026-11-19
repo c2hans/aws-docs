@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Connecting to Babelfish via TDS endpoint
-<a name="babelfish-kerberos-securityad-connect"></a>
 
  In the following example, user1 is member of accounts-group and sales-group, user2 is member of accounts-group and dev-group.
 

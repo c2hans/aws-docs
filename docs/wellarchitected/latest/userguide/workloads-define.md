@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/workloa
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Define a workload in AWS Well-Architected Tool
-<a name="workloads-define"></a>
 
 There are two ways to define a workload. On the **Workloads** page in AWS WA Tool you can define a workload without a template. Or, on the **Review templates** page, you can use an existing review template or create a new template to define a workload.
 

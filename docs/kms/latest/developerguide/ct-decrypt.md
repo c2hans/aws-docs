@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-decrypt.htm
 ---
 
 # Decrypt
-<a name="ct-decrypt"></a>
 
 These examples show AWS CloudTrail log entries for the [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) operation.
 

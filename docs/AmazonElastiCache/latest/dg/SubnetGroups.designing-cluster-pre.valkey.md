@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/SubnetGroups
 ---
 
 # Creating a node-based ElastiCache cluster for Valkey
-<a name="SubnetGroups.designing-cluster-pre.valkey"></a>
 
 Following are the one-time actions you must take to create a node-based ElastiCache cluster for Valkey.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_KeyObs
 ---
 
 # KeyObservations
-<a name="API_KeyObservations"></a>
 
 Contains the key observations of an investigation.
 

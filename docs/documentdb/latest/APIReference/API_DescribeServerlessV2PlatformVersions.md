@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Descr
 ---
 
 # DescribeServerlessV2PlatformVersions
-<a name="API_DescribeServerlessV2PlatformVersions"></a>
 
 Describes the properties of specific platform versions for Amazon DocumentDB Serverless v2.
 

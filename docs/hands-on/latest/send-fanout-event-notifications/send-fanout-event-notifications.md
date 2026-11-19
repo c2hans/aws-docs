@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/send-fanout-event-notifi
 ---
 
 # Send Fanout Event Notifications
-<a name="send-fanout-event-notifications"></a>
 
 |  |  |
 | --- |--- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/viewing
 ---
 
 # Tutorial: List your trackers
-<a name="viewing-trackers"></a>
 
 You can view your trackers list using the Amazon Location console, the AWS CLI, or the Amazon Location APIs:
 

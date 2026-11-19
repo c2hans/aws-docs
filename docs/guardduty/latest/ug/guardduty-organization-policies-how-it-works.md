@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-organizati
 ---
 
 # How organization policies work
-<a name="guardduty-organization-policies-how-it-works"></a>
 
 A GuardDuty organization policy determines which GuardDuty features are enabled, in which Regions, and for which accounts. The following sections describe how a policy applies across Regions, how policies are inherited through your organization, how an active policy changes the way you manage GuardDuty accounts, and common ways to use a policy.
 

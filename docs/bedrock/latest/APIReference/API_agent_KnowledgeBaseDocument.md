@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Kn
 ---
 
 # KnowledgeBaseDocument
-<a name="API_agent_KnowledgeBaseDocument"></a>
 
 Contains information about a document to ingest into a knowledge base and metadata to associate with it.
 

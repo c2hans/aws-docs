@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-c
 ---
 
 # List trust anchors with CloudHSM CLI
-<a name="cloudhsm_cli-cluster-mtls-list-trust-anchors"></a>
 
 Use the **cluster mtls list-trust-anchors** command in CloudHSM CLI to list all the trust anchors which can be used for mutual TLS between client and AWS CloudHSM.
 

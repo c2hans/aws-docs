@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-allowed-inst
 ---
 
 # AMI allowed instance types
-<a name="ami-allowed-instance-types"></a>
 
 As an AMI owner, you can specify which instance types your AMI supports or does not support. This prevents launches on incompatible instance types. Amazon EC2 enforces the allowed instance types at launch time.
 

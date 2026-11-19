@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # AgentSkillsDescriptor
-<a name="API_AgentSkillsDescriptor"></a>
 
  The agent skills descriptor configuration for a registry record.
 

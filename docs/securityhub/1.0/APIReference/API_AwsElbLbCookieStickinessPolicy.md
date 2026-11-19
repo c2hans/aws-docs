@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElbL
 ---
 
 # AwsElbLbCookieStickinessPolicy
-<a name="API_AwsElbLbCookieStickinessPolicy"></a>
 
 Contains information about a stickiness policy that was created using `CreateLBCookieStickinessPolicy`.
 

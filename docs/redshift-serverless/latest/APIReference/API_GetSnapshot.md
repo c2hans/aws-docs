@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # GetSnapshot
-<a name="API_GetSnapshot"></a>
 
 Returns information about a specific snapshot.
 

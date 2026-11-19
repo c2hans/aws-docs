@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # Procedural OUs
-<a name="procedural-ous"></a>
 
 ## Exceptions OU
 <a name="exceptions-ou"></a>

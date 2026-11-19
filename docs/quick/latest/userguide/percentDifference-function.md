@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/percentDifference
 ---
 
 # percentDifference
-<a name="percentDifference-function"></a>
 
 The `percentDifference` function calculates the percentage difference between the current value and a comparison value, based on partitions, sorts, and lookup index.
 

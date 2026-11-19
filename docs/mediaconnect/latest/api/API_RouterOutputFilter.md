@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterOutput
 ---
 
 # RouterOutputFilter
-<a name="API_RouterOutputFilter"></a>
 
 A filter that can be used to retrieve a list of router outputs.
 

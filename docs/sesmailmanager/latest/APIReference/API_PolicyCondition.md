@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_P
 ---
 
 # PolicyCondition
-<a name="API_PolicyCondition"></a>
 
 The email traffic filtering conditions which are contained in a traffic policy resource.
 

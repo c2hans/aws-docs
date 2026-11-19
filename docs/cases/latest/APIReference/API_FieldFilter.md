@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_FieldFilte
 ---
 
 # FieldFilter
-<a name="API_connect-cases_FieldFilter"></a>
 
 A filter for fields. Only one value can be provided.
 

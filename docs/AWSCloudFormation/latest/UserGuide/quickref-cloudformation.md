@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # CloudFormation template snippets
-<a name="quickref-cloudformation"></a>
 
 **Topics**
 + [Nested stacks](#w2aac11c49c23b5)

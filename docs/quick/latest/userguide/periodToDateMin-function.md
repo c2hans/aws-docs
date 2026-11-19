@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/periodToDateMin-f
 ---
 
 # periodToDateMin
-<a name="periodToDateMin-function"></a>
 
 The `periodToDateMin` function returns the minimum value of the specified measure or date, or a given time granularity (for instance, a quarter) up to a point in time, relative to that period.
 

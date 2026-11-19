@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ge
 ---
 
 # GetTrainingDataset
-<a name="API_GetTrainingDataset"></a>
 
 Returns information about a training dataset.
 

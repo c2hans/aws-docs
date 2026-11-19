@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/storag
 ---
 
 # Encrypt your Amazon Bedrock AgentCore Memory
-<a name="storage-encryption"></a>
 
 When creating an AgentCore Memory, it is important to make sure your data is safe and secure. If your application handles sensitive information (such as customer details, payment data, or personal chats), you must use encryption to protect this data. Consider using a customer-managed KMS key (CMK) for encryption. The service still encrypts data using a service managed key, even if you don’t provide a CMK. Alternatively, you can also use an AWS-managed KMS key. In this case, you need to the add the following policy to the IAM user or role that you are using to setup memory.
 

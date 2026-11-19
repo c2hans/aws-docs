@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # CredentialsProvider
-<a name="API_CredentialsProvider"></a>
 
 Contains information about the credential provider for user administration.
 

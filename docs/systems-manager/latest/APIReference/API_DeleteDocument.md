@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DeleteDocument
-<a name="API_DeleteDocument"></a>
 
 Deletes the AWS Systems Manager document (SSM document) and all managed node associations to the document.
 

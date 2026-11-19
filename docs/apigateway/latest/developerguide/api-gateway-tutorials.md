@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # Amazon API Gateway tutorials and workshops
-<a name="api-gateway-tutorials"></a>
 
 The following tutorials and workshops provide hands-on exercises to help you learn about API Gateway. To get started, we recommend that you complete [Tutorial: Create a REST API with a Lambda proxy integration](api-gateway-create-api-as-simple-proxy-for-lambda.md).
 

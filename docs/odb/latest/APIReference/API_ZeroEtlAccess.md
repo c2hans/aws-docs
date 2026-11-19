@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ZeroEtlAcces
 ---
 
 # ZeroEtlAccess
-<a name="API_ZeroEtlAccess"></a>
 
 The configuration for Zero-ETL access from the ODB network.
 

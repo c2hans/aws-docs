@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # CapacityDetails
-<a name="API_CapacityDetails"></a>
 
 Capacity details for an OpenSearch Serverless collection group, including the current capacity and autoscaling status.
 

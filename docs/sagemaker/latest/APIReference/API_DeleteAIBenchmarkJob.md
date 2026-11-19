@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteAIBenchmarkJob
-<a name="API_DeleteAIBenchmarkJob"></a>
 
 Deletes the specified AI benchmark job.
 

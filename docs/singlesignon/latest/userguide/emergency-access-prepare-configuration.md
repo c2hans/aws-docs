@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/emergency-
 ---
 
 # Emergency preparation tasks
-<a name="emergency-access-prepare-configuration"></a>
 
 To prepare your emergency access configuration, we recommend that you perform the following tasks before an emergency occurs.
 

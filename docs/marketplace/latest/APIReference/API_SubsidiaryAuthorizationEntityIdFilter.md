@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Subs
 ---
 
 # SubsidiaryAuthorizationEntityIdFilter
-<a name="API_SubsidiaryAuthorizationEntityIdFilter"></a>
 
 The filter for subsidiary authorization entity IDs. Each ID begins with `subauthz-` followed by 13 alphanumeric characters.
 

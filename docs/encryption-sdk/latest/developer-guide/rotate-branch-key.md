@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/ro
 ---
 
 # Rotate your active branch key
-<a name="rotate-branch-key"></a>
 
 There can only be one active version for each branch key at a time. Typically, each active branch key version is used to satisfy multiple requests. But you control the extent to which active branch keys are reused and determine how often the active branch key is rotated.
 

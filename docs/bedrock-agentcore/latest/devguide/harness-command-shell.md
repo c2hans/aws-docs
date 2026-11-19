@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 ---
 
 # Interactive shells (terminals)
-<a name="harness-command-shell"></a>
 
 The `InvokeAgentRuntimeCommandShell` operation opens a persistent, interactive terminal inside a running AgentCore harness session over WebSocket. The API identifies this harness session with a runtime session ID. Unlike one-shot command execution, an interactive shell maintains its environment variables, working directory, command history, and running processes across inputs.
 

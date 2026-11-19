@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Questions
-<a name="questions"></a>
 
 | HCL\_REL3. How does your organization define and design for availability and reliability requirements? |
 | --- |

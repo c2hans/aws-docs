@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/full-text-searc
 ---
 
 # Updating an existing Neptune full-text search stack to support non-string indexing
-<a name="full-text-search-non-string-indexing-update"></a>
 
 If you are already using Neptune full-text search, here are the steps you need to take to support non-string indexing:
 

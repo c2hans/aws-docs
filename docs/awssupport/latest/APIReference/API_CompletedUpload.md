@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Compl
 ---
 
 # CompletedUpload
-<a name="API_CompletedUpload"></a>
 
 Identifies a single uploaded part of a multipart attachment upload. Pass a list of `CompletedUpload` objects to [CompleteAttachmentUpload](API_CompleteAttachmentUpload.md) to finalize the upload.
 

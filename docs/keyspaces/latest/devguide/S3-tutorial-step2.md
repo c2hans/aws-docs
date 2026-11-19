@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/S3-tutorial-st
 ---
 
 # Step 2: Run the export job
-<a name="S3-tutorial-step2"></a>
 
 In this step, you run the AWS Glue export job created in the previous step. After you start the export, you can monitor the job progress with the `status` and `logs` commands.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSSMAutomationRole
-<a name="AmazonSSMAutomationRole"></a>
 
 **Description**: Provides permissions for EC2 Automation service to execute activities defined within Automation documents
 

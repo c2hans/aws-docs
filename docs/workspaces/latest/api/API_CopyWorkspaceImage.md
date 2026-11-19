@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_CopyWorkspaceI
 ---
 
 # CopyWorkspaceImage
-<a name="API_CopyWorkspaceImage"></a>
 
 Copies the specified image from the specified Region to the current Region. For more information about copying images, see [ Copy a Custom WorkSpaces Image](https://docs.aws.amazon.com/workspaces/latest/adminguide/copy-custom-image.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_AliasListEnt
 ---
 
 # AliasListEntry
-<a name="API_AliasListEntry"></a>
 
 Contains information about an alias.
 

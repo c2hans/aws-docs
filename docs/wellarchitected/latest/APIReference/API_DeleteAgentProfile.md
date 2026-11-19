@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # DeleteAgentProfile
-<a name="API_DeleteAgentProfile"></a>
 
 Deletes an optimization profile and its associated configuration. This action cannot be undone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/regexMatch.ht
 ---
 
 # $regexMatch
-<a name="regexMatch"></a>
 
 New from version 5.0. Not supported by Elastic cluster.
 

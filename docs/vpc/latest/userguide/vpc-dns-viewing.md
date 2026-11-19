@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns-viewing.htm
 ---
 
 # View DNS hostnames for your EC2 instance
-<a name="vpc-dns-viewing"></a>
 
 You can view the DNS hostnames for a running instance or a network interface using the Amazon EC2 console or the command line. Knowing these hostnames is important for connecting to your resources.
 

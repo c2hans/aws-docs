@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-eks-checkp
 ---
 
 # Appendix
-<a name="sagemaker-eks-checkpointless-appendix"></a>
 
 **Monitor training results via HyperPod recipes**
 

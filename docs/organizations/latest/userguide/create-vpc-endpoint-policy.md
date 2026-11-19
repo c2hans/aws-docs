@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/create-vp
 ---
 
 # Creating a VPC endpoint policy for AWS Organizations
-<a name="create-vpc-endpoint-policy"></a>
 
 You can attach an endpoint policy to your VPC endpoint that controls access to Organizations. The policy specifies the following information:
 + The principal that can perform actions.

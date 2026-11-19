@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteAv
 ---
 
 # RouteAvoidanceAreaGeometry
-<a name="API_RouteAvoidanceAreaGeometry"></a>
 
 Geometry of the area to be avoided.
 

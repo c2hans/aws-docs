@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIAMIdentityCenterAllowListForIdentityContext
-<a name="AWSIAMIdentityCenterAllowListForIdentityContext"></a>
 
 **Description**: Provides the list of actions that are allowed for roles assumed with the IAM Identity Center identity context. AWS Security Token Service (AWS STS) automatically attaches this policy to assumed roles. The identity context is passed as ProvidedContext.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ResourceSt
 ---
 
 # ResourceStatus
-<a name="API_ResourceStatus"></a>
 
 Details the status of Amazon Inspector for each resource type Amazon Inspector scans.
 

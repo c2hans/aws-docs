@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Encrypted connections for Aurora MySQL
-<a name="chap-sql-server-aurora-mysql.security.encryptedconnections"></a>
 
 This topic provides reference information about encrypted connections in Microsoft SQL Server and MySQL, with a focus on how these concepts apply to Amazon Aurora MySQL migration. You’ll learn about the protocols and technologies used for secure data transmission in both database systems.
 

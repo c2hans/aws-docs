@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/c
 ---
 
 # Context in your network firewall logs
-<a name="context-aware-rules-logging"></a>
 
 After you associate the transit gateway for your network firewall with a context store, the firewall adds a `context` object to its flow log and alert log entries. This topic describes the fields in that object.
 

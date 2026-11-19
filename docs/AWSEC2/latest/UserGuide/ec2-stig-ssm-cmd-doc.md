@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-stig-ssm-cmd
 ---
 
 # Use AWS Systems Manager to apply STIG settings to your instance
-<a name="ec2-stig-ssm-cmd-doc"></a>
 
 You can use the `AWSEC2-ConfigureSTIG` Systems Manager command document to apply STIG settings to an existing EC2 instance. You must run the command document from the instance that it updates. The command document applies appropriate settings based on the operating system and configuration of the instance where it runs.
 

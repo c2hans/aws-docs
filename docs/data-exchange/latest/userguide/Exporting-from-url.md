@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/Exporting
 ---
 
 # Exporting AWS Data Exchange assets to a signed URL
-<a name="Exporting-from-url"></a>
 
 You can use signed URLs to export AWS Data Exchange assets that are not stored in Amazon S3.
 

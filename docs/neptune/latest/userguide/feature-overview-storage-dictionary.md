@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/feature-overvie
 ---
 
 # Dictionary of user-facing values
-<a name="feature-overview-storage-dictionary"></a>
 
 Neptune does not store most user-facing values directly in the various indexes it maintains. Instead, it stores them separately in a dictionary and replaces them in the indexes with 8-byte identifiers.
 + All user-facing values that would go in `S`, `P`, or `G` indexes are stored in the dictionary in this way.

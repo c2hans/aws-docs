@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/create-s
 ---
 
 # Deploy SQL Server on Amazon EC2
-<a name="create-sql-server-on-ec2-instance"></a>
 
 To launch Microsoft SQL Server using Amazon Elastic Compute Cloud (Amazon EC2) instances with Windows Server, perform the following steps according to your use case.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ExtractedInformation
-<a name="API_connect-contact-lens_ExtractedInformation"></a>
 
 Segment containing information extracted from the conversation. Each segment represents the results for a single extraction definition.
 

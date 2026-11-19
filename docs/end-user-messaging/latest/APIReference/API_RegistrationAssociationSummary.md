@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # RegistrationAssociationSummary
-<a name="API_RegistrationAssociationSummary"></a>
 
 Contains summary information about a registration that is associated with a brand profile.
 

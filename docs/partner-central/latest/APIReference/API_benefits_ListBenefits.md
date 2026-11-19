@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListBenefits
-<a name="API_benefits_ListBenefits"></a>
 
 Retrieves a paginated list of available benefits based on specified filter criteria.
 

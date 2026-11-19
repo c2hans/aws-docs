@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # CloudFormation Hooks concepts
-<a name="hooks-concepts"></a>
 
 The following terminology and concepts are central to your understanding and use of CloudFormation Hooks.
 

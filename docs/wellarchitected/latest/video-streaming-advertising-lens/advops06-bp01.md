@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVOPS06-BP01 Establish continual linear streaming operational readiness
-<a name="advops06-bp01"></a>
 
  FAST channels operate continuously without natural maintenance windows. Any playout interruption affects viewer experience and ad revenue with no opportunity to defer recovery. Before a FAST channel begins serving viewers, validate its operational readiness, including multi-AZ failover testing and EPG completeness validation.
 

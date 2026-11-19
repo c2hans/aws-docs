@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_launch
 ---
 
 # Create a basic launch template
-<a name="working-with_launch-templates_create"></a>
 
 You need a custom launch template only if a compute node group needs Amazon EC2 settings that aren't available as instance settings, such as network interfaces or capacity reservations. If you need only an AMI, security groups, and an SSH key pair, use standard configuration instead. For more information, see [Creating a compute node group in AWS PCS](working-with_cng_create.md).
 

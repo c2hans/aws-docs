@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SparkGl
 ---
 
 # SparkGluePropertiesInput
-<a name="API_SparkGluePropertiesInput"></a>
 
 The Spark AWS Glue properties.
 

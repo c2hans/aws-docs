@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTas
 ---
 
 # RunTask
-<a name="API_RunTask"></a>
 
 Starts a new task using the specified task definition.
 

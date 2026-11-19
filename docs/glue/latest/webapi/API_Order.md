@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Order.html
 ---
 
 # Order
-<a name="API_Order"></a>
 
 Specifies the sort order of a sorted column.
 

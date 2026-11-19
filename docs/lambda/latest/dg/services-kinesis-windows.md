@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/services-kinesis-window
 ---
 
 # Implementing stateful Kinesis Data Streams processing in Lambda
-<a name="services-kinesis-windows"></a>
 
 Lambda Event Functions can run continuous stream processing applications. A stream represents unbounded data that flows continuously through your application. To analyze information from this continuously updating input, you can bound the included records using a window defined in terms of time.
 

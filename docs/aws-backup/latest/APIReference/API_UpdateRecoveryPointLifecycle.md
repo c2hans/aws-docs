@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Updat
 ---
 
 # UpdateRecoveryPointLifecycle
-<a name="API_UpdateRecoveryPointLifecycle"></a>
 
 Sets the transition lifecycle of a recovery point.
 

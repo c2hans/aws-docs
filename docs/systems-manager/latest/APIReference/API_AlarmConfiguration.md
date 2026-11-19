@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AlarmConfiguration
-<a name="API_AlarmConfiguration"></a>
 
 The details for the CloudWatch alarm you want to apply to an automation or command.
 

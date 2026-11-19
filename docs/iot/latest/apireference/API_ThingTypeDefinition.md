@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ThingTypeDef
 ---
 
 # ThingTypeDefinition
-<a name="API_ThingTypeDefinition"></a>
 
 The definition of the thing type, including thing type name and description.
 

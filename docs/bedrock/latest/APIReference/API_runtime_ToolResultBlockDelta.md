@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ToolResultBlockDelta
-<a name="API_runtime_ToolResultBlockDelta"></a>
 
 Contains incremental updates to tool results information during streaming responses. This allows clients to build up tool results data progressively as the response is generated.
 

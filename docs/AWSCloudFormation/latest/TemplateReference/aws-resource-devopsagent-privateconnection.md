@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::PrivateConnection
-<a name="aws-resource-devopsagent-privateconnection"></a>
 
 The `AWS::DevOpsAgent::PrivateConnection` resource specifies a private connection that provides a secure network path between the AWS DevOps Agent service and a target resource in your VPC.
 

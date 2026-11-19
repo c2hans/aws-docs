@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/update-th
 ---
 
 # Update the guidance
-<a name="update-the-solution"></a>
 
 If you have previously deployed the guidance, follow this procedure to update the QnABot on AWS CloudFormation stack to get the latest version of the guidance’s framework.
 

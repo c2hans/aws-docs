@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # SELECT clause
-<a name="sql-reference-select-clause"></a>
 
  The <select-clause> uses the following items after the STREAM keyword:
 

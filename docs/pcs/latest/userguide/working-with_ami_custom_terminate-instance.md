@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_ami_cu
 ---
 
 # Step 7 – Terminate the temporary instance
-<a name="working-with_ami_custom_terminate-instance"></a>
 
 After you have confirmed that your AMI works as intended with AWS PCS, you can terminate the temporary instance to stop incurring charges for it.
 

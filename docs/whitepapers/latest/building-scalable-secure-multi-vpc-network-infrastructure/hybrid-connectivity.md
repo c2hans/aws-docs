@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Hybrid connectivity
-<a name="hybrid-connectivity"></a>
 
  This section focuses on securely connecting your cloud resources with your on-premises data centers. There are three approaches for enabling hybrid connectivity:
 +  **One-to-one connectivity** — In this setup, a VPN connection and/or Direct Connect private VIF is created for every VPC. This is accomplished by using the virtual private gateway (VGW). This option is great for small numbers of VPCs, but as a customer scales their VPCs, managing hybrid connectivity per VPC can become difficult.

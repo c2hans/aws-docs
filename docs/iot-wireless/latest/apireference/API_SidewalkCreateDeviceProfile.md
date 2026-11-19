@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkCreateDeviceProfile
-<a name="API_SidewalkCreateDeviceProfile"></a>
 
 Sidewalk object for creating a device profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_StopDBCluster.
 ---
 
 # StopDBCluster
-<a name="API_StopDBCluster"></a>
 
 Stops an Amazon Neptune DB cluster. When you stop a DB cluster, Neptune retains the DB cluster's metadata, including its endpoints and DB parameter groups.
 

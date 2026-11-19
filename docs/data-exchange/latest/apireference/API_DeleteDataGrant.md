@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_De
 ---
 
 # DeleteDataGrant
-<a name="API_DeleteDataGrant"></a>
 
 This operation deletes a data grant.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Amazon Rekognition result cache
-<a name="amazon-rekognition-result-cache"></a>
 
 **Note**
  **Supported in:** ECS architecture only (v8.1\+).

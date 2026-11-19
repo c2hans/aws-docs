@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.LD.11] Implement smart code completion with machine-learning
-<a name="dl.ld.11-implement-smart-code-completion-with-machine-learning"></a>
 
  **Category:** OPTIONAL
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/smf
 ---
 
 # Use job attachments with service-managed fleets
-<a name="smf-job-attachments"></a>
 
 Job attachments transfer files between your workstation and Deadline Cloud workers using Amazon Simple Storage Service (Amazon S3). You can use job attachments alone or together with shared storage to attach auxiliary data to jobs that isn't shared with other jobs, such as job scripts, configuration files, or project assets stored locally.
 

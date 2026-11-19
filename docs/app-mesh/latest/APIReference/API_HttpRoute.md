@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpRou
 ---
 
 # HttpRoute
-<a name="API_HttpRoute"></a>
 
 An object that represents an HTTP or HTTP/2 route type.
 

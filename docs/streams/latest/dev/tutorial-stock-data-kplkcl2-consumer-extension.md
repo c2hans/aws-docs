@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/tutorial-stock-data-k
 ---
 
 # (Optional) Extend the consumer
-<a name="tutorial-stock-data-kplkcl2-consumer-extension"></a>
 
 This optional section shows how you can extend the consumer code for a slightly more elaborate scenario.
 

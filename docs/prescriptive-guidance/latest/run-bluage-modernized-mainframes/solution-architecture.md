@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/run-bluage-
 ---
 
 # Solution architecture
-<a name="solution-architecture"></a>
 
 The solution runs the modernized application inside a [Docker](https://aws.amazon.com/docker/) container that is orchestrated by [Amazon Elastic Container Service (Amazon ECS)](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html). The wrapper shell script running within the container image manages the modernized Java application, such as the collection of inputs, the operation of the Java code, and the processing and delivery of outputs.
 

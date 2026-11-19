@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/patient-v
 ---
 
 # Patient verification
-<a name="patient-verification"></a>
 
 Patient verification confirms a patient’s identity through a conversation, using real-time EHR integration and configurable authentication factors such as date of birth and phone number. It looks up the patient’s record from the incoming phone number, so contact center staff don’t need to search for it.
 

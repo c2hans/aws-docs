@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_Targe
 ---
 
 # TargetTrackingConfiguration
-<a name="API_TargetTrackingConfiguration"></a>
 
 Describes a target tracking configuration for a scalable resource. Used with [ScalingInstruction](API_ScalingInstruction.md) and [ScalingPolicy](API_ScalingPolicy.md).
 

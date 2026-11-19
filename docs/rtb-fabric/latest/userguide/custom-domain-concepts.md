@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/custom-domai
 ---
 
 # Inbound external links with custom domains concepts
-<a name="custom-domain-concepts"></a>
 
 This section defines the core concepts you need to understand before configuring inbound external links with custom domains.
 

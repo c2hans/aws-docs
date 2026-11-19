@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds the specified tags to the specified space.
 

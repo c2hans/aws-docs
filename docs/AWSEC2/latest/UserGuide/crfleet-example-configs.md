@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/crfleet-example-
 ---
 
 # Example Capacity Reservation Fleet configurations
-<a name="crfleet-example-configs"></a>
 
 The following example creates a Capacity Reservation Fleet that uses two instance types: `m5.4xlarge` and `m5.12xlarge`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-core-
 ---
 
 # Tensor parallelism
-<a name="model-parallel-core-features-v2-tensor-parallelism"></a>
 
 *Tensor parallelism* is a type of model parallelism in which specific model weights, gradients, and optimizer states are split across devices. In contrast to pipeline parallelism, which keeps individual weights intact but partitions the *set* of weights, gradients, or optimizer across devices, tensor parallelism shards *individual* weights. This typically involves distributed computation of specific operations, modules, or layers of the model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/gitla
 ---
 
 # Source configuration for GitLab
-<a name="gitlab-source-config"></a>
 
 ## Integrating with GitLab
 <a name="gitlab-integration"></a>

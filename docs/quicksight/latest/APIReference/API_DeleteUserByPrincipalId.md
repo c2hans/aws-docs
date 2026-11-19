@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteUserByPrincipalId
-<a name="API_DeleteUserByPrincipalId"></a>
 
 Deletes a user identified by its principal ID.
 

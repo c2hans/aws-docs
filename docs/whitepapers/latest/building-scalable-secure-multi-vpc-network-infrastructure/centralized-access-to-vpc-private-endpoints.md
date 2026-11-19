@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Centralized access to VPC private endpoints
-<a name="centralized-access-to-vpc-private-endpoints"></a>
 
 A VPC endpoint allows you to privately connect your VPC to supported AWS services without requiring an internet gateway or a NAT device, VPN connection, or Direct Connect connection. Therefore, your VPC is not exposed to the public internet. Instances in your VPC do not require public IP addresses to communicate with AWS service endpoints with this interface endpoint. Traffic between your VPC and other services does not leave the AWS network backbone. VPC endpoints are virtual devices. They are horizontally scaled, redundant, and highly available VPC components. Two types of endpoints can currently be provisioned: interface endpoints (powered by [AWS PrivateLink](https://aws.amazon.com/privatelink)) and gateway endpoints. [Gateway endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-gateway.html) can be utilized to access Amazon S3 and Amazon DynamoDB services privately. There is no additional charge for using gateway endpoints. Standard charges for data transfer and resource usage apply.
 

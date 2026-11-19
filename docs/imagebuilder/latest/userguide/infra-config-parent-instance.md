@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/infra-conf
 ---
 
 # Build on an instance from an Auto Scaling group
-<a name="infra-config-parent-instance"></a>
 
 By default, Image Builder launches a new Amazon EC2 instance for every build. With a parent instance, Image Builder takes an instance that's already running in an Amazon EC2 Auto Scaling group instead, so the build doesn't wait for an instance to launch. This applies only to the build phase. For the API fields, see [ParentInstanceConfiguration](https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ParentInstanceConfiguration.html) in the *EC2 Image Builder API Reference*. To build on one specific instance instead, use the `parentInstanceId` input of the [LaunchInstance](wfdoc-step-actions.md#wfdoc-step-action-launch-instance) step action.
 

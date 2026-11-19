@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/tnb-concepts.html
 ---
 
 # AWS TNB concepts
-<a name="tnb-concepts"></a>
 
 This topic describes essential concepts to help you start using AWS TNB.
 

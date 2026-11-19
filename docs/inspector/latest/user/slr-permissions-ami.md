@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/slr-permissions-am
 ---
 
 # Service-linked role permissions for Amazon Inspector machine image scans
-<a name="slr-permissions-ami"></a>
 
 Amazon Inspector machine image scanning uses the service-linked role named `AWSServiceRoleForAmazonInspector2Ami`. This SLR allows Amazon Inspector to read the data from the existing Amazon EBS snapshots that back the machine images that your account owns. Unlike agentless Amazon EC2 scanning, machine image scanning doesn't create new snapshots. This service-linked role trusts the `ami.inspector2.amazonaws.com` service to assume the role.
 

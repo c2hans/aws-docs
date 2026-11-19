@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/res/latest/ug/first-sign-in.html
 End of development notice: AWS is discontinuing development of Research and Engineering Studio on AWS (RES). 2026.09 is the final release, supported through September 30, 2027. RES remains open source and keeps running in your account. For more information, see [RES end of support](res-end-of-support.md).
 
 # Step 2: Sign in for the first time
-<a name="first-sign-in"></a>
 
 After the product stack deploys in your account, you receive an email with your credentials. Use the URL to sign in to your account and configure the workspace for other users.
 

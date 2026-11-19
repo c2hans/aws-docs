@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeRepl
 ---
 
 # DescribeReplicationTaskAssessmentRuns
-<a name="API_DescribeReplicationTaskAssessmentRuns"></a>
 
 Returns a paginated list of premigration assessment runs based on filter settings.
 

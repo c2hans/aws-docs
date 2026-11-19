@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring
 ---
 
 # Set up a Sandbox
-<a name="configuring-integrations-and-knowledge-sandbox"></a>
 
 AWS DevOps Agent Sandbox (Sandbox) is a preview feature that gives AWS DevOps Agent a secure, isolated Linux environment where it can write and run code during investigations and chat conversations. Some problems are faster and more reliable to solve with code than through reasoning alone. With Sandbox, the agent complements its reasoning with computation—for example, to analyze a large log file, calculate statistics across a set of metrics, or parse and correlate data from multiple sources during an investigation or chat conversation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # ListContextChanges
-<a name="API_ListContextChanges"></a>
 
 Returns the context entries that were added to or removed from a context store after the specified version. The context store must be in the `AVAILABLE` state.
 

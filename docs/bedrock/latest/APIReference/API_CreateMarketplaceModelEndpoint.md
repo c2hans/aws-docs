@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateMa
 ---
 
 # CreateMarketplaceModelEndpoint
-<a name="API_CreateMarketplaceModelEndpoint"></a>
 
 Creates an endpoint for a model from Amazon Bedrock Marketplace. The endpoint is hosted by Amazon SageMaker.
 

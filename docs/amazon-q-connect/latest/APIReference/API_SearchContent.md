@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # SearchContent
-<a name="API_amazon-q-connect_SearchContent"></a>
 
 Searches for content in a specified knowledge base. Can be used to get a specific content resource by its name.
 

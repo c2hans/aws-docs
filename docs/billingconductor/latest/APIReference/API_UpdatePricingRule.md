@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # UpdatePricingRule
-<a name="API_UpdatePricingRule"></a>
 
  Updates an existing pricing rule.
 

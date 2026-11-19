@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_UpdateA
 ---
 
 # UpdateAct
-<a name="API_UpdateAct"></a>
 
 Updates an existing act's configuration, status, or error information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Conne
 ---
 
 # ConnectionGroupAssociationFilter
-<a name="API_ConnectionGroupAssociationFilter"></a>
 
 Contains information about what CloudFront resources your connection groups are associated with.
 

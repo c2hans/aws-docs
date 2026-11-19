@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_DT
 ---
 
 # DTMFInputEvent
-<a name="API_runtime_DTMFInputEvent"></a>
 
 A DTMF character sent from the client application. DTMF characters are typically sent from a phone keypad to represent numbers. For example, you can have Amazon Lex process a credit card number input from a phone.
 

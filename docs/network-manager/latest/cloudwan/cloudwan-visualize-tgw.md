@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # AWS Cloud WAN transit gateway network and transit gateways dashboards
-<a name="cloudwan-visualize-tgw"></a>
 
 ## Cloud WAN transit gateway network dashboards
 <a name="cloudwan-dashboard-tgw-network"></a>

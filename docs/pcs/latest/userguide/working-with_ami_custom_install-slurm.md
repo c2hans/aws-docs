@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_ami_cu
 ---
 
 # Step 3 – Install Slurm
-<a name="working-with_ami_custom_install-slurm"></a>
 
 Install a version of Slurm that is compatible with AWS PCS. For more information, see [Slurm versions in AWS PCS](slurm-versions.md).
 

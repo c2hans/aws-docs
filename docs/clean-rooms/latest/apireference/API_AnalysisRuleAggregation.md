@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisRuleAggregation
-<a name="API_AnalysisRuleAggregation"></a>
 
 A type of analysis rule that enables query structure and specified queries that produce aggregate statistics.
 

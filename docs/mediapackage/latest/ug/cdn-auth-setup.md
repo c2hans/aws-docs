@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/cdn-auth-setup.ht
 ---
 
 # Setting up CDN authorization
-<a name="cdn-auth-setup"></a>
 
 Complete the following steps to set up CDN authorization.
 

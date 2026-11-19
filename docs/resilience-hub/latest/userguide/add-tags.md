@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/add-tags
 ---
 
 # Add tags
-<a name="add-tags"></a>
 
 Assign a tag or label to an AWS resource to search and filter your resources, or track your AWS costs.
 

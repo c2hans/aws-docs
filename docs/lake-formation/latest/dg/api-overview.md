@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/api-overview.ht
 ---
 
 # Lake Formation workflow for application integration API operations
-<a name="api-overview"></a>
 
 The following is the work flow for application integration API operations:
 

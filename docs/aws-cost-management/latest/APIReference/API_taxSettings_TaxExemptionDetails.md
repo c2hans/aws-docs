@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TaxExemptionDetails
-<a name="API_taxSettings_TaxExemptionDetails"></a>
 
 The tax exemption details.
 

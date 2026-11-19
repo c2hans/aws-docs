@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/dataexports-quotas.
 ---
 
 # Quotas and restrictions
-<a name="dataexports-quotas"></a>
 
 The following table describes the current quotas and restrictions within Data Exports.
 

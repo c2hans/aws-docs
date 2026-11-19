@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DownloadDefaultKeyPair
-<a name="API_DownloadDefaultKeyPair"></a>
 
 Downloads the regional Amazon Lightsail default key pair.
 

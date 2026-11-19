@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/micr
 ---
 
 # Step 1: Set up your environment for trusts
-<a name="microsoftadtruststep1"></a>
 
 In this section, you set up your Amazon EC2 environment, deploy your new forest, and prepare your VPC for trusts with AWS.
 

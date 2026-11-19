@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/cro
 ---
 
 # Cross-account integration considerations with CMK
-<a name="cross-account-integration-considerations"></a>
 
 When you attempt to integrate from DynamoDB to Amazon Redshift, the initial action is launched from Amazon Redshift. Without the proper permissions, this action could result in a silent failure. The following sections detail the permissions required for this cross-account integration.
 

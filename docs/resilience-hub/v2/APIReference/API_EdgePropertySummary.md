@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_EdgeP
 ---
 
 # EdgePropertySummary
-<a name="API_EdgePropertySummary"></a>
 
 Contains property information for a service topology edge.
 

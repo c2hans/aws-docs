@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RuleGro
 ---
 
 # RuleGroupSourceStatelessRuleMatchAttributesDestinationPorts
-<a name="API_RuleGroupSourceStatelessRuleMatchAttributesDestinationPorts"></a>
 
 A port range to specify the destination ports to inspect for.
 

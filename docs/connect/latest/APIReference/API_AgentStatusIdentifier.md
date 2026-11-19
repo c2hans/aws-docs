@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AgentSta
 ---
 
 # AgentStatusIdentifier
-<a name="API_AgentStatusIdentifier"></a>
 
 Information about the agent status assigned to the user.
 

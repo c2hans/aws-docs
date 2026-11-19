@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # MessagingSessionEndpoint
-<a name="API_messaging-chime_MessagingSessionEndpoint"></a>
 
 The websocket endpoint used to connect to Amazon Chime SDK messaging.
 

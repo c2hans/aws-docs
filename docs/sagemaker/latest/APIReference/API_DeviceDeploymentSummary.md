@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Device
 ---
 
 # DeviceDeploymentSummary
-<a name="API_DeviceDeploymentSummary"></a>
 
 Contains information summarizing device details and deployment status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # DeleteVoiceConnectorExternalSystemsConfiguration
-<a name="API_voice-chime_DeleteVoiceConnectorExternalSystemsConfiguration"></a>
 
 Deletes the external systems configuration for a Voice Connector.
 

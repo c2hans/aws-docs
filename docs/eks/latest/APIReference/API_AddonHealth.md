@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AddonHealth.
 ---
 
 # AddonHealth
-<a name="API_AddonHealth"></a>
 
 The health of the add-on.
 

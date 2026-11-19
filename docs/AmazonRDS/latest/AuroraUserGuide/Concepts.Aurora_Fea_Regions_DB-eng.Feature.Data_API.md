@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concept
 ---
 
 # Supported Regions and Aurora DB engines for RDS Data API
-<a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.Data_API"></a>
 
 RDS Data API (Data API) provides a web-services interface to an Amazon Aurora DB cluster. Instead of managing database connections from client applications, you can run SQL commands against an HTTPS endpoint. For more information, see [Using the Amazon RDS Data API](data-api.md).
 

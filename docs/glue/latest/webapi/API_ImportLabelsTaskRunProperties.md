@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ImportLabelsTaskR
 ---
 
 # ImportLabelsTaskRunProperties
-<a name="API_ImportLabelsTaskRunProperties"></a>
 
 Specifies configuration properties for an importing labels task run.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_De
 ---
 
 # DeleteStreamKey
-<a name="API_DeleteStreamKey"></a>
 
 Deletes the stream key for the specified ARN, so it can no longer be used to stream.
 

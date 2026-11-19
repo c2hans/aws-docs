@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/tags-add.html
 ---
 
 # Adding tags to Macie resources
-<a name="tags-add"></a>
 
 A *tag* is a label that you can define and assign to AWS resources, including certain types of Amazon Macie resources. By using tags, you can identify, categorize, and manage resources in different ways, such as by purpose, owner, environment, or other criteria. For example, you can use tags to: apply policies, allocate costs, distinguish between versions of resources, or identify resources that support certain compliance requirements or workflows.
 

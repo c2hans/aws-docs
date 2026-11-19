@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate Microsoft SQL Server Always On availability group using AWS Transform MGN
-<a name="migrate-microsoft-sql-server-always-on-group-using-mgn"></a>
 
 *Sreenivas Nettem, Bharath Kumar Pammi Ramesh, Anantharaman Seshadri, and Gireesh Sreekantan, Amazon Web Services*
 

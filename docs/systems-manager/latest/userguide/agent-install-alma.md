@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-i
 ---
 
 # Manually install SSM Agent on AlmaLinux instances
-<a name="agent-install-alma"></a>
 
 Use the information in this section to help you manually install or reinstall SSM Agent on an AlmaLinux instance.
 

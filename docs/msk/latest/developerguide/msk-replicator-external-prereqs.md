@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator
 ---
 
 # Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters
-<a name="msk-replicator-external-prereqs"></a>
 
 ## Create an IAM execution role
 <a name="msk-replicator-external-iam-role"></a>

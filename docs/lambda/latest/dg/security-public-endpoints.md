@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/security-public-endpoin
 ---
 
 # Securing workloads with public endpoints
-<a name="security-public-endpoints"></a>
 
 For workloads that are accessible publicly, AWS provides a number of features and services that can help mitigate certain risks. This section covers authentication and authorization of application users and protecting API endpoints.
 

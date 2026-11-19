@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-qapps.
 ---
 
 # Amazon Q Apps events
-<a name="events-ref-qapps"></a>
 
 Amazon Q Apps sends service events to EventBridge via AWS CloudTrail.
 

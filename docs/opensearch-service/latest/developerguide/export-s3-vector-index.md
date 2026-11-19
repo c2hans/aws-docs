@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Export Amazon S3 vector index to OpenSearch Service vector engine
-<a name="export-s3-vector-index"></a>
 
 A point-in-time export for your selected Amazon S3 vector index to OpenSearch Service. The OpenSearch Service vector engine provides a simple and scalable vector store with advanced search functionality.
 

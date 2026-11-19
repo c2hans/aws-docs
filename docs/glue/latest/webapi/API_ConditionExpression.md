@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConditionExpressi
 ---
 
 # ConditionExpression
-<a name="API_ConditionExpression"></a>
 
 Condition expression defined in the AWS Glue Studio data preparation recipe node.
 

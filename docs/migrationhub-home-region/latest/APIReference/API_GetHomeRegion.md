@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-home-region/latest/APIRefer
 ---
 
 # GetHomeRegion
-<a name="API_GetHomeRegion"></a>
 
 **Note**
  AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Migration Hub](https://aws.amazon.com/transform).

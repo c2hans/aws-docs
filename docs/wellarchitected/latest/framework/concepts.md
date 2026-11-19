@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/concept
 ---
 
 # Concepts
-<a name="concepts"></a>
 
  This section describes key concepts referenced throughout the AWS Well-Architected Framework and pillar guides. These concepts go beyond simple definitions and include process and methodology guidance that supports well-architected workloads.
 

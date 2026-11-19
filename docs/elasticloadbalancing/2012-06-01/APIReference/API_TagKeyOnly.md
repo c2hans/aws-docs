@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # TagKeyOnly
-<a name="API_TagKeyOnly"></a>
 
 The key of a tag.
 

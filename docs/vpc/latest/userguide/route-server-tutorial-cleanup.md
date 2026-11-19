@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/route-server-tutori
 ---
 
 # Step 8: Cleanup
-<a name="route-server-tutorial-cleanup"></a>
 
 The building portion of the tutorial is complete. Complete the steps in this section to remove the VPC Route Server components that you created.
 

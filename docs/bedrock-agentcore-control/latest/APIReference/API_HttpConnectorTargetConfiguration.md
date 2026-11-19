@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HttpConnectorTargetConfiguration
-<a name="API_HttpConnectorTargetConfiguration"></a>
 
 The configuration for an HTTP connector target. Use this configuration when you want to route HTTP requests through a managed connector.
 

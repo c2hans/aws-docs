@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Cr
 ---
 
 # CreateDataGrant
-<a name="API_CreateDataGrant"></a>
 
 This operation creates a data grant.
 

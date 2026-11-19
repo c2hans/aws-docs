@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Firewal
 ---
 
 # FirewallPolicyStatelessCustomActionsDetails
-<a name="API_FirewallPolicyStatelessCustomActionsDetails"></a>
 
 A custom action that can be used for stateless packet handling.
 

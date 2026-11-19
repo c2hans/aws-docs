@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/managed-scali
 ---
 
 # Configure managed scaling for Amazon EMR
-<a name="managed-scaling-configure"></a>
 
 The following sections explain how to launch an EMR cluster that uses managed scaling with the AWS Management Console, the AWS SDK for Java, or the AWS Command Line Interface.
 

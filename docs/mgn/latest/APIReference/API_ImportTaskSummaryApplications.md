@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ImportTaskSu
 ---
 
 # ImportTaskSummaryApplications
-<a name="API_ImportTaskSummaryApplications"></a>
 
 Import task summary applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/data-portal-pe
 ---
 
 # Configure the IAM permissions required to use the Amazon DataZone data portal
-<a name="data-portal-permissions"></a>
 
 Amazon DataZone data portal (outside the AWS Management Console) is a browser-based web application where users can go to catalog, discover, govern, share, and analyze data in a self-service fashion. The data portal authenticates users with IAM credentials or existing credentials from your identity provider through AWS IAM Identity Center.
 

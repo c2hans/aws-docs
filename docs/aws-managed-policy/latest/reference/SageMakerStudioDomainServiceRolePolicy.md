@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioDomainServiceRolePolicy
-<a name="SageMakerStudioDomainServiceRolePolicy"></a>
 
 **Description**: Service role for domain level actions in the portal that are performed by Amazon SageMaker Studio.
 

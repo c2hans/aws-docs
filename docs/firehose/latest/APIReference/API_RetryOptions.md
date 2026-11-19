@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_RetryOp
 ---
 
 # RetryOptions
-<a name="API_RetryOptions"></a>
 
  The retry behavior in case Firehose is unable to deliver data to a destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk adds support for Spot Allocation Strategy configuration during environment creation on January 15, 2025
-<a name="release-2025-01-15-release-notes"></a>
 
 AWS Elastic Beanstalk adds support for Spot Allocation Strategy configuration during environment creation.
 

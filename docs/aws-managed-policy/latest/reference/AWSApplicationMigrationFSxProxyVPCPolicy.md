@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationMigrationFSxProxyVPCPolicy
-<a name="AWSApplicationMigrationFSxProxyVPCPolicy"></a>
 
 **Description**: Provides permissions to manage PrivateLink between AWS Application Migration Service and customer's FSx file system
 

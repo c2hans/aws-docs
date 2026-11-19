@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingW
 ---
 
 # Listing DB parameter groups in Amazon RDS
-<a name="USER_WorkingWithParamGroups.Listing"></a>
 
 You can list the DB parameter groups you've created for your AWS account.
 

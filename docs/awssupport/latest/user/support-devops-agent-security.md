@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/support-devops-ag
 ---
 
 # Security for AWS DevOps Agent activated from AWS Support
-<a name="support-devops-agent-security"></a>
 
 AWS DevOps Agent provides the following security controls:
 + Agent spaces are the primary security boundary. Each agent space is isolated to a single AWS account.

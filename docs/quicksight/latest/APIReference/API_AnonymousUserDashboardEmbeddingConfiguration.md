@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Anony
 ---
 
 # AnonymousUserDashboardEmbeddingConfiguration
-<a name="API_AnonymousUserDashboardEmbeddingConfiguration"></a>
 
 Information about the dashboard that you want to embed.
 

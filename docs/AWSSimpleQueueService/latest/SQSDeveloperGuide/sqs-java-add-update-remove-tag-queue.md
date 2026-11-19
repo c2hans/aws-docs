@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Configuring tags for an Amazon SQS queue
-<a name="sqs-java-add-update-remove-tag-queue"></a>
 
 Use cost-allocation tags to help organize and identify your Amazon SQS queues. The following examples show how to configure tags using the AWS SDK for Java. For more information, see [Amazon SQS cost allocation tags](sqs-queue-tags.md).
 

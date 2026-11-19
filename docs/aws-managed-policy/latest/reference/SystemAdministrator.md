@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Syst
 ---
 
 # SystemAdministrator
-<a name="SystemAdministrator"></a>
 
 **Description**: Grants full access permissions necessary for resources required for application and development operations.
 

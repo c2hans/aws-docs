@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # DescribePlayerSessions
-<a name="API_DescribePlayerSessions"></a>
 
  **This API works with the following fleet types:** EC2, Anywhere, Container
 

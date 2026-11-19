@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_JobListD
 ---
 
 # JobListDescriptor
-<a name="API_control_JobListDescriptor"></a>
 
 Contains the configuration and status information for a single job retrieved as part of a job list.
 

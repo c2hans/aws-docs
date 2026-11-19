@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2I
 ---
 
 # AwsEc2InstanceDetails
-<a name="API_AwsEc2InstanceDetails"></a>
 
 The details of an Amazon EC2 instance.
 

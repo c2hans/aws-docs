@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # NodeOutputField
-<a name="API_agent-runtime_NodeOutputField"></a>
 
 Represents an output field produced by a node during a flow execution.
 

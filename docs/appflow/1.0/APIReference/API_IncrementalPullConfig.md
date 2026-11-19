@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Incremental
 ---
 
 # IncrementalPullConfig
-<a name="API_IncrementalPullConfig"></a>
 
  Specifies the configuration used when importing incremental records from the source.
 

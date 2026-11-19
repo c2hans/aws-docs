@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Create
 ---
 
 # CreateFilter
-<a name="API_CreateFilter"></a>
 
 Creates a filter using the specified finding criteria. The maximum number of saved filters per AWS account per Region is 100. For more information, see [Quotas for GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_limits.html).
 

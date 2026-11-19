@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/amaz
 ---
 
 # Amazon SNS notifications
-<a name="amazon-sns-notifications"></a>
 
  The Media2Cloud on AWS solution sends Amazon SNS a publish notification to the subscriber when the Step Functions ingestion, analysis, and labeling state machines are completed, or when there is an error. You can automate other workflows, such as importing data to a Media Asset Management (MAM) system, by using the Amazon SNS topic subscription created by the solution. The following JSON notification messages can be customized to your needs.
 

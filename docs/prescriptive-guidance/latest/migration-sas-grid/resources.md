@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Additional resources
-<a name="resources"></a>
 
 ## SAS papers
 <a name="sas-papers.36a04bda-7b08-5ec3-9df7-ea2d86058ac6"></a>

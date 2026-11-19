@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDyna
 ---
 
 # AwsDynamoDbTableProvisionedThroughputOverride
-<a name="API_AwsDynamoDbTableProvisionedThroughputOverride"></a>
 
 Replica-specific configuration for the provisioned throughput.
 

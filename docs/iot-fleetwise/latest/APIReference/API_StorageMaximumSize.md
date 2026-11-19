@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_St
 ---
 
 # StorageMaximumSize
-<a name="API_StorageMaximumSize"></a>
 
 The maximum storage size for the data partition.
 

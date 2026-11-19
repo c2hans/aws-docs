@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerPartnerAppsFullAccess
-<a name="AmazonSageMakerPartnerAppsFullAccess"></a>
 
 **Description**: Enables Amazon SageMaker partner app users to access applications, list available applications, launch application web UIs, and connect via the application SDK.
 

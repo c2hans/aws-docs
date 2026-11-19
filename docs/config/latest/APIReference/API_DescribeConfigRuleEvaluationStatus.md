@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeC
 ---
 
 # DescribeConfigRuleEvaluationStatus
-<a name="API_DescribeConfigRuleEvaluationStatus"></a>
 
 Returns status information for each of your AWS Config managed rules. The status includes information such as the last time AWS Config invoked the rule, the last time AWS Config failed to invoke the rule, and the related error for the last failure.
 

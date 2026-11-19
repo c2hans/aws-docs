@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListExpor
 ---
 
 # ListExportJobs
-<a name="API_ListExportJobs"></a>
 
 Lists all of the export jobs.
 

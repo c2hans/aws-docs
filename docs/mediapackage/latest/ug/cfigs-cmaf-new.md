@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/cfigs-cmaf-new.ht
 ---
 
 # General settings fields
-<a name="cfigs-cmaf-new"></a>
 
 Provide general settings that apply to the entire packaging configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Post-deployment steps for AWS Launch Wizard Active Directory
-<a name="launch-wizard-ad-post-deployment-steps"></a>
 
 Post-deployment steps for AWS Launch Wizard for Active Directory.
 

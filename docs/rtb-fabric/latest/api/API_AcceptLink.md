@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_AcceptLink.htm
 ---
 
 # AcceptLink
-<a name="API_AcceptLink"></a>
 
 Accepts a link request between gateways.
 

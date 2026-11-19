@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetIdentityResolutionJob
-<a name="API_connect-customer-profiles_GetIdentityResolutionJob"></a>
 
 Returns information about an Identity Resolution Job in a specific domain.
 

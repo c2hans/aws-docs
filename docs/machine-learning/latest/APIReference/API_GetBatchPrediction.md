@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # GetBatchPrediction
-<a name="API_GetBatchPrediction"></a>
 
 Returns a `BatchPrediction` that includes detailed metadata, status, and data file information for a `Batch Prediction` request.
 

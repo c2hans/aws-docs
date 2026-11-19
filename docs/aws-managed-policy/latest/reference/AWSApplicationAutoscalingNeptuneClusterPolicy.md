@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationAutoscalingNeptuneClusterPolicy
-<a name="AWSApplicationAutoscalingNeptuneClusterPolicy"></a>
 
 **Description**: Policy granting permissions to Application Auto Scaling to access Amazon Neptune and Amazon CloudWatch.
 

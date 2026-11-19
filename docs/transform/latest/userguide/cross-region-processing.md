@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/cross-region-
 ---
 
 # Cross-region processing in AWS Transform
-<a name="cross-region-processing"></a>
 
 The following sections describe how cross-region inference and cross-region calls are used to provide the AWS Transform service.
 

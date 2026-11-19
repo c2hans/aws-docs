@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/alarms-iam
 ---
 
 # Set up permissions for event alarms in AWS IoT SiteWise
-<a name="alarms-iam-permissions"></a>
 
 When you use an AWS IoT Events alarm model to monitor an AWS IoT SiteWise asset property, you must have the following IAM permissions:
 + An AWS IoT Events service role that allows AWS IoT Events to send data to AWS IoT SiteWise. For more information, see [Identity and access management for AWS IoT Events](https://docs.aws.amazon.com/iotevents/latest/developerguide/security-iam.html) in the *AWS IoT Events Developer Guide*.

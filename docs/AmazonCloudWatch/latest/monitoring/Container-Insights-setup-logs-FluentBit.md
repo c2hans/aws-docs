@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Set up Fluent Bit as a DaemonSet to send logs to CloudWatch Logs
-<a name="Container-Insights-setup-logs-FluentBit"></a>
 
 The following sections help you deploy Fluent Bit to send logs from containers to CloudWatch Logs.
 

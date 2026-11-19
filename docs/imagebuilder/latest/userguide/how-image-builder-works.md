@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/how-image-
 ---
 
 # How EC2 Image Builder works
-<a name="how-image-builder-works"></a>
 
 When you use the EC2 Image Builder console to create a custom image pipeline, the system guides you through the following steps.
 

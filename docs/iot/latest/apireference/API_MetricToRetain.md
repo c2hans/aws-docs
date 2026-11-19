@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_MetricToReta
 ---
 
 # MetricToRetain
-<a name="API_MetricToRetain"></a>
 
 The metric you want to retain. Dimensions are optional.
 

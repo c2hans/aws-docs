@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeS
 ---
 
 # DescribeServiceLifecycle
-<a name="API_DescribeServiceLifecycle"></a>
 
 Returns lifecycle information for AWS services, including end-of-life dates, version recommendations, and lifecycle events.
 
@@ -33,7 +32,7 @@ Type: [ServiceLifecycleFilter](API_ServiceLifecycleFilter.md) object
 Required: No
 
  ** [maxResults](#API_DescribeServiceLifecycle_RequestSyntax) **   <a name="AWSHealth-DescribeServiceLifecycle-request-maxResults"></a>
-The maximum number of items to return in one batch, between 1 and 20, inclusive.
+The maximum number of items to return in one batch, between 10 and 100, inclusive.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 20.
 Required: No

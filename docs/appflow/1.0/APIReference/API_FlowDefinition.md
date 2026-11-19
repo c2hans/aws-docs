@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_FlowDefinit
 ---
 
 # FlowDefinition
-<a name="API_FlowDefinition"></a>
 
  The properties of the flow, such as its source, destination, trigger type, and so on.
 

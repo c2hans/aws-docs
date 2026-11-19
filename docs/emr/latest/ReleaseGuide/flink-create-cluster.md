@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/flink-create-clu
 ---
 
 # Creating a cluster with Flink
-<a name="flink-create-cluster"></a>
 
 You can launch a cluster with the AWS Management Console, AWS CLI, or an AWS SDK.<a name="emr-flink-create-console"></a>
 

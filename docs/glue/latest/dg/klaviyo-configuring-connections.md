@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/klaviyo-configuring-conne
 ---
 
 # Configuring Klaviyo connections
-<a name="klaviyo-configuring-connections"></a>
 
 Klaviyo connections authenticate with an API key (or token). You store the key in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

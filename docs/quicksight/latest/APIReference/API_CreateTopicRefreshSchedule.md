@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateTopicRefreshSchedule
-<a name="API_CreateTopicRefreshSchedule"></a>
 
 Creates a topic refresh schedule.
 

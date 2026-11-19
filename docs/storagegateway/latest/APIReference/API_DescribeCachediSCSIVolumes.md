@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DescribeCachediSCSIVolumes
-<a name="API_DescribeCachediSCSIVolumes"></a>
 
 Returns a description of the gateway volumes specified in the request. This operation is only supported in the cached volume gateway types.
 

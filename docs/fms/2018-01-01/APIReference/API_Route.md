@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Route.ht
 ---
 
 # Route
-<a name="API_Route"></a>
 
 Describes a route in a route table.
 

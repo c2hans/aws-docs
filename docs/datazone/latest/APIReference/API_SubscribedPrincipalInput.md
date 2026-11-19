@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Subscri
 ---
 
 # SubscribedPrincipalInput
-<a name="API_SubscribedPrincipalInput"></a>
 
 The principal that is to be given a subscriptiong grant.
 

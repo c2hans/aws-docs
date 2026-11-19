@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/color-space-eve
 ---
 
 # Step 3: Set up each input
-<a name="color-space-event-input-setup"></a>
 
 **To set up each input in the event**
 **Note**

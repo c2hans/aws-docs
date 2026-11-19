@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # RateCardItem
-<a name="API_marketplace-discovery_RateCardItem"></a>
 
 A per-unit rate within a rate card, defining the price for a specific dimension.
 

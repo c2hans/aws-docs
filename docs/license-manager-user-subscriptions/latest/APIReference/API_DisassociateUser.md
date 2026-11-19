@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # DisassociateUser
-<a name="API_DisassociateUser"></a>
 
 Disassociates the user from an EC2 instance providing user-based subscriptions.
 

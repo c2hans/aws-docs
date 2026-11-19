@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/pricing.h
 ---
 
 # Pricing and billing
-<a name="pricing"></a>
 
 With AWS Security Agent, you pay for penetration testing in *task hours*. Task hours measure the time the agent spends reasoning and acting, not the time you wait for a run to finish. This topic explains what accrues task hours so that you can predict and track what a penetration test costs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/raid
 ---
 
 # Troubleshooting Revenue Attribution IDs
-<a name="raid-troubleshooting"></a>
 
 This section describes common issues you might encounter when creating or managing Revenue Attribution IDs, and provides steps to resolve them.
 

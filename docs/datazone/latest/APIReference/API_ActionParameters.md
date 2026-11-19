@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ActionP
 ---
 
 # ActionParameters
-<a name="API_ActionParameters"></a>
 
 The parameters of the environment action.
 

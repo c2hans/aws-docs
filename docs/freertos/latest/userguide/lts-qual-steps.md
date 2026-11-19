@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/lts-qual-steps
 ---
 
 # First test of your microcontroller board
-<a name="lts-qual-steps"></a>
 
 You can use IDT for FreeRTOS to test your implementation of the FreeRTOS libraries. After you have ported the FreeRTOS libraries for your board’s device drivers, use AWS IoT Device Tester to run the qualification tests on your microcontroller board.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Palet
 ---
 
 # Palette
-<a name="API_Palette"></a>
 
 The color palette.
 

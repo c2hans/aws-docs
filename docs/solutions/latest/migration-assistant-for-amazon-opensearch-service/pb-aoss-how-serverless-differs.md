@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # How Serverless differs
-<a name="pb-aoss-how-serverless-differs"></a>
 
 Amazon OpenSearch Serverless NextGen removes the cluster-management surface you may rely on with an Amazon OpenSearch Service domain. Account for these differences before you plan the migration:
 +  **No snapshot restore.** You cannot restore a source snapshot directly into a collection. Migration Assistant still uses a snapshot as the read source for RFS, but it bulk-indexes documents through the OpenSearch API rather than restoring.

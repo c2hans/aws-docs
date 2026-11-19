@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v10-alerting-ma
 ---
 
 # View notification errors
-<a name="v10-alerting-manage-viewnotificationerrors"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 10.x**.

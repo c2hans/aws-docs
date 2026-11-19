@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/bulk-opera
 ---
 
 # Bulk operation prerequisites
-<a name="bulk-operations-prereqs"></a>
 
 This section explains bulk operation prerequisites, including AWS Identity and Access Management (IAM) permissions for exchanging resources between AWS services and your local machine. Before you start a bulk operation, complete the following prerequisite:
 + Create an Amazon S3 bucket to store resources. For more information about using Amazon S3, see [What is Amazon S3?](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)

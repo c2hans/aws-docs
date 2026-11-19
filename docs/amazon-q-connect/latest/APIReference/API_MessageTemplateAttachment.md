@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # MessageTemplateAttachment
-<a name="API_amazon-q-connect_MessageTemplateAttachment"></a>
 
 Information about the message template attachment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Troubleshooting
-<a name="security_iam_fgac-troubleshooting"></a>
 
 ## Logging
 <a name="security_iam_fgac-troubleshooting-logging"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/example_keyspa
 ---
 
 # Learn the basics of Amazon Keyspaces with an AWS SDK
-<a name="example_keyspaces_Scenario_GetStartedKeyspaces_section"></a>
 
 The following code examples show how to:
 + Create a keyspace and table. The table schema holds movie data and has point-in-time recovery enabled.

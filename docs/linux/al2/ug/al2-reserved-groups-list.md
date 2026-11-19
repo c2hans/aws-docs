@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/al2-reserved-groups-list.ht
 ---
 
 # List of Amazon Linux 2 Reserved Groups
-<a name="al2-reserved-groups-list"></a>
 
 **Listed by GID**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/vaults.html
 ---
 
 # Backup vaults
-<a name="vaults"></a>
 
 In AWS Backup, a *backup vault* is a container that stores and organizes your backups.
 

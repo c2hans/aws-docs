@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/async-using-lending.h
 ---
 
 # Using the Analyze Lending Workflow
-<a name="async-using-lending"></a>
 
  To detect text in, or analyze multipage lending documents, using the Analyze Lending workflow, you do the following:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotSummar
 ---
 
 # SlotSummary
-<a name="API_SlotSummary"></a>
 
 Summary information about a slot, a value that the bot elicits from the user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Sched
 ---
 
 # ScheduledPlanExecutionMember
-<a name="API_ScheduledPlanExecutionMember"></a>
 
 Contains information about a scheduled backup plan execution, including the execution time, rule type, and associated rule identifier.
 

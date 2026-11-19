@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Provide
 ---
 
 # ProviderDetail
-<a name="API_ProviderDetail"></a>
 
 The third-party provider detail for a service configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # 5. Data security and governance for agentic AI systems on AWS
-<a name="best-practices-data"></a>
 
 Data protection in agentic AI systems extends beyond traditional access controls. It includes model training data and inference outputs. Proper classification and handling reduce the likelihood of inadvertent exposure through model interactions or training processes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/users.html
 ---
 
 # Users
-<a name="users"></a>
 
 The Amazon DCV Access Console allows admins to manage users, their roles and their access to the Console. You cannot edit a user’s name or any of their parameters or delete a user directly from the Console.
 

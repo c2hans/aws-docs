@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-c
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 The following video covers best practices and troubleshooting tips for using CloudEndure Migration.
 

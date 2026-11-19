@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # The firewall section and the IPS section
-<a name="firewall-policy-v2-sections"></a>
 
 A Next Generation policy is organized into two *sections*, one for each inspection engine. A section is a policy setting that holds the rules the engine evaluates:
 

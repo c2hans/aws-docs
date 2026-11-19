@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_StartTa
 ---
 
 # StartTaskExecution
-<a name="API_StartTaskExecution"></a>
 
 Starts an AWS DataSync transfer task. For each task, you can only run one task execution at a time.
 

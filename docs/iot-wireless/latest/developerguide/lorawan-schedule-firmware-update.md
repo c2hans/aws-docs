@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Schedule and run gateway firmware update task
-<a name="lorawan-schedule-firmware-update"></a>
 
 If you have the firmware update file and signature, you can schedule and run the task definition to update the gateway firmware, as described in this page. If you don't have the firmware update files, see [(Optional) Generate the firmware update file and signature](lorawan-script-fwupdate-sigkey.md) for an example that you can use to adapt to your application.
 

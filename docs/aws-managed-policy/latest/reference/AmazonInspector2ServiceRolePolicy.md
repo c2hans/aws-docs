@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonInspector2ServiceRolePolicy
-<a name="AmazonInspector2ServiceRolePolicy"></a>
 
 **Description**: Grants Amazon Inspector access to AWS services needed to perform security assessments
 

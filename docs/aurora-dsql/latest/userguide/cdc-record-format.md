@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/cdc-record-
 ---
 
 # Understanding CDC records
-<a name="cdc-record-format"></a>
 
 Aurora DSQL CDC delivers each change as a JSON record. The record uses an envelope structure with operation type, before and after row images, and source metadata.
 

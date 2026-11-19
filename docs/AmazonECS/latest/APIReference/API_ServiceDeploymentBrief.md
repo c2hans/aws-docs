@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceDeploymentBrief
-<a name="API_ServiceDeploymentBrief"></a>
 
 The service deployment properties that are retured when you call `ListServiceDeployments`.
 

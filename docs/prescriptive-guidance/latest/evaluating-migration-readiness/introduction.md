@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluating-
 ---
 
 # Evaluating migration readiness
-<a name="introduction"></a>
 
 *Tatyana Yatskevich and Arushi Bhalla, Amazon Web Services*
 

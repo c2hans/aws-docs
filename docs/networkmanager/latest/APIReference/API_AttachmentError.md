@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_A
 ---
 
 # AttachmentError
-<a name="API_AttachmentError"></a>
 
 Describes the error associated with an attachment request.
 

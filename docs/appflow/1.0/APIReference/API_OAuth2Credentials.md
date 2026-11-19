@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_OAuth2Crede
 ---
 
 # OAuth2Credentials
-<a name="API_OAuth2Credentials"></a>
 
 The OAuth 2.0 credentials required for OAuth 2.0 authentication.
 

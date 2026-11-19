@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # CreateIdentityPool
-<a name="API_CreateIdentityPool"></a>
 
 Creates a new identity pool. The identity pool is a store of user identity information that is specific to your AWS account. The keys for `SupportedLoginProviders` are as follows:
 + Facebook: `graph.facebook.com`

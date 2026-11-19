@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-ru
 ---
 
 # Runs in AWS Device Farm
-<a name="test-runs"></a>
 
 The following sections contain information about runs in Device Farm.
 

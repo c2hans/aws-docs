@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/java-integr
 ---
 
 # Integrating your container product with the AWS Marketplace Metering Service using the AWS SDK for Java
-<a name="java-integration-example-registerusage"></a>
 
 You can use the AWS SDK for Java to integrate with the AWS Marketplace Metering Service. Continuous metering for software use is automatically handled by the AWS Marketplace Metering Control Plane. Your software isn't required to perform any metering specific actions except calling `RegisterUsage` once for metering of software use to commence. This topic provides an example implementation using the AWS SDK for Java to integrate with the [AWS Marketplace Metering Service](https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/Welcome.html)'s `RegisterUsage` action.
 

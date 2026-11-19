@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVer
 ---
 
 # CreateVerifiedAccessTrustProviderDeviceOptions
-<a name="API_CreateVerifiedAccessTrustProviderDeviceOptions"></a>
 
 Describes the options when creating an AWS Verified Access trust provider using the `device` type.
 

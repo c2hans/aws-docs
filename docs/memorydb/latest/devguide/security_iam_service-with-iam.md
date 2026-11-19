@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/security_iam_se
 ---
 
 # How MemoryDB works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to MemoryDB, learn what IAM features are available to use with MemoryDB.
 

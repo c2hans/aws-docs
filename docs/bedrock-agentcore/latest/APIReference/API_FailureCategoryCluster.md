@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # FailureCategoryCluster
-<a name="API_FailureCategoryCluster"></a>
 
 A top-level failure category identified by clustering similar failure patterns across sessions.
 

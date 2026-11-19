@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetConf
 ---
 
 # GetConfigurationPolicy
-<a name="API_GetConfigurationPolicy"></a>
 
  Provides information about a configuration policy. Only the AWS Security Hub CSPM delegated administrator can invoke this operation from the home Region.
 

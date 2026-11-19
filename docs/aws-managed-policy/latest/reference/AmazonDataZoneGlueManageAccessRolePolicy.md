@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDataZoneGlueManageAccessRolePolicy
-<a name="AmazonDataZoneGlueManageAccessRolePolicy"></a>
 
 **Description**: The policy grants permissions to allow Amazon DataZone to enable publishing and access grants to data.
 

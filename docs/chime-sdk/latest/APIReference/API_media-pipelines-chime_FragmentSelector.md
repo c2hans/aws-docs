@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # FragmentSelector
-<a name="API_media-pipelines-chime_FragmentSelector"></a>
 
 Describes the timestamp range and timestamp origin of a range of fragments.
 

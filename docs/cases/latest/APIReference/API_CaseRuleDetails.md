@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_CaseRuleDe
 ---
 
 # CaseRuleDetails
-<a name="API_connect-cases_CaseRuleDetails"></a>
 
 Represents what rule type should take place, under what conditions. In the Connect Customer admin website, case rules are known as *case field conditions*. For more information about case field conditions, see [Add case field conditions to a case template](https://docs.aws.amazon.com/connect/latest/adminguide/case-field-conditions.html).
 

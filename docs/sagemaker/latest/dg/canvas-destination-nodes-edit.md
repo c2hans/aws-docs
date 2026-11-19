@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-destination-n
 ---
 
 # Edit a destination node
-<a name="canvas-destination-nodes-edit"></a>
 
 A *destination node* in a Amazon SageMaker Canvas data flow specifies the Amazon S3 location where your processed and transformed data is stored, applying all the configured transformations in your data flow. You can edit the configuration of an existing destination node and then choose to re-run the job to overwrite the data in the specified Amazon S3 location. For more information about adding a new destination node, see [Add destination nodes](canvas-destination-nodes-add.md).
 

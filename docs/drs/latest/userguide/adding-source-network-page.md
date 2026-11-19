@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/adding-source-netwo
 ---
 
 # Adding source networks to Elastic Disaster Recovery
-<a name="adding-source-network-page"></a>
 
 Available source networks are presented automatically on the **Source networks** page, along with their details: replication status, pending action, CloudFormation stack name, and more.
 

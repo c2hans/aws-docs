@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteTe
 ---
 
 # DeleteTestCase
-<a name="API_DeleteTestCase"></a>
 
 Deletes the test case that has already been created for the specified Amazon Connect instance.
 

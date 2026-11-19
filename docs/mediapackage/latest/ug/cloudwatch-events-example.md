@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/cloudwatch-events
 ---
 
 # AWS Elemental MediaPackage events
-<a name="cloudwatch-events-example"></a>
 
 AWS Elemental MediaPackage integrates with Amazon CloudWatch Events to notify you of certain events that affect your channels and endpoints. Each event is represented in [JSON (JavaScript Object Notation)](http://json.org) and contains the event name, the date and time when the event occurred, the channel or endpoint affected, and more. MediaPackage emits events on a best effort basis. You can use CloudWatch Events to collect these events and set up rules that route them to one or more *targets* such as AWS Lambda functions, Amazon SNS topics, Amazon SQS queues, streams in Amazon Kinesis Data Streams, or built-in targets.
 

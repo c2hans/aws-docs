@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteSource
 ---
 
 # DeleteSourceServer
-<a name="API_DeleteSourceServer"></a>
 
 Deletes a single Source Server by ID. The Source Server must be disconnected first.
 

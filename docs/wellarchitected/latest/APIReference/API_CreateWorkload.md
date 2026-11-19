@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CreateWorkload
-<a name="API_CreateWorkload"></a>
 
 Create a new workload.
 

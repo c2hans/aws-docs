@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ExtractionJobFilterInput
-<a name="API_ExtractionJobFilterInput"></a>
 
 Filters for querying memory extraction jobs based on various criteria.
 

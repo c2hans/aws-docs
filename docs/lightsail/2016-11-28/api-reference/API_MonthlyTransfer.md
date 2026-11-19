@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_M
 ---
 
 # MonthlyTransfer
-<a name="API_MonthlyTransfer"></a>
 
 Describes the monthly data transfer in and out of your virtual private server (or *instance*).
 

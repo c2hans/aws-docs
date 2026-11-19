@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/creating-a-channel-s
 ---
 
 # Complete general settings
-<a name="creating-a-channel-step3"></a>
 
 The **General settings** section in the **Create channel** page lets you configure global settings and global features:
 + Global *settings* set behavior that applies to all inputs or all outputs in the channel. You can't configure the behavior differently for different inputs or outputs.

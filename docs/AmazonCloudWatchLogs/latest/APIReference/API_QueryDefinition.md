@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # QueryDefinition
-<a name="API_QueryDefinition"></a>
 
 This structure contains details about a saved CloudWatch Logs Insights query definition.
 

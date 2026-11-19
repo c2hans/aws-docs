@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/invoke-lambda-
 ---
 
 # Flow block in Connect Customer: AWS Lambda function
-<a name="invoke-lambda-function-block"></a>
 
 This topic defines the flow block for calling AWS Lambda. The fetched response can be used in the [Set contact attributes](set-contact-attributes.md) block.
 

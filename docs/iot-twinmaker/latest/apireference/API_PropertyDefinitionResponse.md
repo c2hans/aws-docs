@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Pr
 ---
 
 # PropertyDefinitionResponse
-<a name="API_PropertyDefinitionResponse"></a>
 
 An object that contains response data from a property definition request.
 

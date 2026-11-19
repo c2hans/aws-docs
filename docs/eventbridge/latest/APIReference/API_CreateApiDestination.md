@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Crea
 ---
 
 # CreateApiDestination
-<a name="API_CreateApiDestination"></a>
 
 Creates an API destination, which is an HTTP invocation endpoint configured as a target for events.
 

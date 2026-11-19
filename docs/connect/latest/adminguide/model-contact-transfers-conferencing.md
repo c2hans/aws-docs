@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/model-contact-
 ---
 
 # Model contact transfers and conferencing in Connect Customer
-<a name="model-contact-transfers-conferencing"></a>
 
 This topic is for developers who have integrated their external voice system with Connect Customer conversational analytics.
 

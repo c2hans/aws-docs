@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/custom-language-mod
 ---
 
 # Creating a custom language model
-<a name="custom-language-models-create"></a>
 
 Before you can create your custom language model, you must:
 + Prepare your data. Data must be saved in plain text format and can't contain any special characters.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-attendee.html
 ---
 
 # Creating an attendee for the Amazon Chime SDK
-<a name="create-attendee"></a>
 
 After you create a meeting, you create an attendee resource that represents each user trying to join the media session. The [CreateAttendee](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateAttendee.html) API takes the following:
 + The `MeetingId` of the meeting to which you're adding the user.

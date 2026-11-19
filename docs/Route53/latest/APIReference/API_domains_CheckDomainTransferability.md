@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # CheckDomainTransferability
-<a name="API_domains_CheckDomainTransferability"></a>
 
 Checks whether a domain name can be transferred to Amazon Route 53.
 

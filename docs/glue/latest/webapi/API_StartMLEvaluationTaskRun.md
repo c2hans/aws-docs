@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StartMLEvaluation
 ---
 
 # StartMLEvaluationTaskRun
-<a name="API_StartMLEvaluationTaskRun"></a>
 
 Starts a task to estimate the quality of the transform.
 

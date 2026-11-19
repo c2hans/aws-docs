@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # Deployment Pattern 1 - Amazon Bedrock AgentCore
-<a name="deployment-pattern-1-amazon-bedrock-agent-core"></a>
 
 Amazon Bedrock AgentCore provides two approaches for exposing Model Context Protocol (MCP) capabilities on AWS: AgentCore Gateway and AgentCore Runtime. AgentCore Gateway converts existing AWS Lambda functions and APIs into MCP-compatible tools without requiring a standalone MCP server. AgentCore Runtime hosts custom MCP server implementations.
 

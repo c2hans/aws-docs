@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBClus
 ---
 
 # DBClusterSnapshot
-<a name="API_DBClusterSnapshot"></a>
 
 Contains the details for an Amazon RDS DB cluster snapshot
 

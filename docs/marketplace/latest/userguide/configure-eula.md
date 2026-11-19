@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/configure-e
 ---
 
 # Step 6: Configure EULA
-<a name="configure-eula"></a>
 
  In this step, you'll choose the legal agreement that will govern how customers can use your product. You can either select AWS's standard contract terms or upload your own custom end-user license agreement (EULA).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/bestpractice2.htm
 ---
 
 # Checklist to run at scale
-<a name="bestpractice2"></a>
 
 Before you run a large workload on 50 thousand or more vCPUs, consider the following checklist.
 

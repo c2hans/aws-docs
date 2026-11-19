@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_B
 ---
 
 # BatchGetItem
-<a name="API_BatchGetItem"></a>
 
 The `BatchGetItem` operation returns the attributes of one or more items from one or more tables. You identify requested items by primary key.
 

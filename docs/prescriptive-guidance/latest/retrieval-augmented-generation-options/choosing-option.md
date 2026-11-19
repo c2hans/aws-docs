@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-a
 ---
 
 # Choosing a Retrieval Augmented Generation option on AWS
-<a name="choosing-option"></a>
 
 The [Fully managed RAG options](rag-fully-managed.md) and [Custom RAG architectures](rag-custom.md) sections of this guide describe various approaches for building a RAG-based search solution on AWS. This section describes how to select between these options based on your use case. In some situations, more than one option might work. In that scenario, the choice depends on the ease of implementation, skills available in your organization, and your company's policies and standards.
 

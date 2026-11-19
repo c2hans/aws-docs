@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_BatchG
 ---
 
 # BatchGetMembershipDatasources
-<a name="API_BatchGetMembershipDatasources"></a>
 
 Gets information on the data source package history for an account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # GetEBSVolumeRecommendations
-<a name="API_GetEBSVolumeRecommendations"></a>
 
 Returns Amazon Elastic Block Store (Amazon EBS) volume recommendations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DomainStats
-<a name="API_connect-customer-profiles_DomainStats"></a>
 
 Usage-specific statistics about the domain.
 

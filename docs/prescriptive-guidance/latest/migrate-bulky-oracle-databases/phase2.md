@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bul
 ---
 
 # Phase 2: Roll-forward phase
-<a name="phase2"></a>
 
 You can repeat the roll-forward phase as many times as necessary to catch the destination data file up to the source database.
 

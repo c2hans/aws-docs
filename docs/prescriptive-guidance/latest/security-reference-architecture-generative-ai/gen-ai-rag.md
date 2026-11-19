@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Capability 2. Providing secure access, usage, and implementation for generative AI model customization
-<a name="gen-ai-rag"></a>
 
 |  |
 | --- |

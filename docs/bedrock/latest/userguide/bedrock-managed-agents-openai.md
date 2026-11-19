@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-managed
 ---
 
 # Amazon Bedrock Managed Agents, powered by OpenAI (preview)
-<a name="bedrock-managed-agents-openai"></a>
 
 Amazon Bedrock Managed Agents, powered by OpenAI, helps you build applications that run stateful agents with OpenAI models on Amazon Bedrock. You create a session, provide instructions and an execution environment, and submit messages. The service manages the agent's conversation and model interactions. Tools execute in the compute environment that you provide.
 

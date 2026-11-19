@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_Termina
 ---
 
 # TerminateAgreement
-<a name="API_TerminateAgreement"></a>
 
 Terminate an existing customer-agreement.
 

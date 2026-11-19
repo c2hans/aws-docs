@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/addi
 ---
 
 # Related resources
-<a name="additional"></a>
 
 The following resource links are located on the Microsoft website and provide related information.
 

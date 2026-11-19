@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_VmInstance
 ---
 
 # VmInstanceMetadata
-<a name="API_VmInstanceMetadata"></a>
 
 Contains metadata about a virtual machine (VM) instance associated with a covered resource.
 

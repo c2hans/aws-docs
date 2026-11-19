@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedJobReceiverConfiguration
-<a name="API_ProtectedJobReceiverConfiguration"></a>
 
 The protected job receiver configuration.
 

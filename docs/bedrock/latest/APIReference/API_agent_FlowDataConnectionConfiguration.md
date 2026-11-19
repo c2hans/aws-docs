@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowDataConnectionConfiguration
-<a name="API_agent_FlowDataConnectionConfiguration"></a>
 
 The configuration of a connection originating from a node that isn't a Condition node.
 

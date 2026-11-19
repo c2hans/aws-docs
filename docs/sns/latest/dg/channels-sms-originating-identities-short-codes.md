@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/channels-sms-originating-i
 ---
 
 # Amazon SNS dedicated short codes
-<a name="channels-sms-originating-identities-short-codes"></a>
 
 Short codes are numeric sequences that are shorter than a regular phone number. For example, in the United States and Canada, standard phone numbers (long codes) contain 11 digits, while short codes contain five or six digits. Amazon SNS supports dedicated short codes.
 

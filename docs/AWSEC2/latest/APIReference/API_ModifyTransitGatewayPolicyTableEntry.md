@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTra
 ---
 
 # ModifyTransitGatewayPolicyTableEntry
-<a name="API_ModifyTransitGatewayPolicyTableEntry"></a>
 
 Modifies the specified transit gateway policy table entry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Branches in a Trunk strategy
-<a name="branches-in-a-trunk-strategy"></a>
 
 A Trunk branching strategy commonly has the following branches.
 

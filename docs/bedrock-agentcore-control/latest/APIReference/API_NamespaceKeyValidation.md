@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # NamespaceKeyValidation
-<a name="API_NamespaceKeyValidation"></a>
 
 The validation rules for namespace variable values. When you specify multiple rules, the service enforces a logical `AND` across all provided key-value pairs.
 

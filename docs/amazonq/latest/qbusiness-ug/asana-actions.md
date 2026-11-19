@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/asana-action
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Configuring an Asana plugin for Amazon Q Business
-<a name="asana-actions"></a>
 
 Asana is a web-based work management platform that helps teams organize, collaborate, and plan tasks. If you’re a Asana user, you can create an Amazon Q Business plugin to allow your end users to create and update tasks from within their web experience chat.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DescribeFirewallMetadata
-<a name="API_DescribeFirewallMetadata"></a>
 
 Returns the high-level information about a firewall, including the Availability Zones where the Firewall is currently in use.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateApiKey.h
 ---
 
 # UpdateApiKey
-<a name="API_UpdateApiKey"></a>
 
 Changes information about an ApiKey resource.
 

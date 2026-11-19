@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # Tag
-<a name="API_meeting-chime_Tag"></a>
 
 A key-value pair that you define.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/restricted-
 ---
 
 # restricted-ssh
-<a name="restricted-ssh"></a>
 
 **Important**
 For this rule, the rule identifier (INCOMING\_SSH\_DISABLED) and rule name (restricted-ssh) are different.

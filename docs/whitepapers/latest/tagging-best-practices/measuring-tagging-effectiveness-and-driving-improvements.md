@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Measuring tagging effectiveness and driving improvements
-<a name="measuring-tagging-effectiveness-and-driving-improvements"></a>
 
  After you have implemented a tagging strategy, it's important to measure its effectiveness against the target use cases. The measure of effectiveness will vary by use case. For example:
 +  **Cost attribution** - You could measure the tagging coverage of resources based on spend using tools such as [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) or [AWS Cost and Usage Report](https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/). For example, you could track the *percent of tagged or untagged* resources that generate charges, particularly monitoring specific tag keys.

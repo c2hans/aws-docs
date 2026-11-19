@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/smpte-2038.html
 ---
 
 # Handling SMPTE 2038 metadata
-<a name="smpte-2038"></a>
 
 You can configure MediaLive to extract specific ancillary data from a SMPTE 2038 stream contained in these inputs:
 + Elemental Link inputs

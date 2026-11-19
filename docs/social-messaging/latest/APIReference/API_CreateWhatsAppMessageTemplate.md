@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # CreateWhatsAppMessageTemplate
-<a name="API_CreateWhatsAppMessageTemplate"></a>
 
 Creates a new WhatsApp message template from a custom definition.
 

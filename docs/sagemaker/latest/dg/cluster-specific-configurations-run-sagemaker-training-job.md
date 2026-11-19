@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/cluster-specific-con
 ---
 
 # Running a SageMaker training job
-<a name="cluster-specific-configurations-run-sagemaker-training-job"></a>
 
 SageMaker HyperPod Recipes supports submitting a SageMaker training job. Before you submit the training job, you must update the cluster configuration, `sm_job.yaml`, and install corresponding environment.
 

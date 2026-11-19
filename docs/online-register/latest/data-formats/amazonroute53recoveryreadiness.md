@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Route 53 Recovery Readiness
-<a name="amazonroute53recoveryreadiness"></a>
 
 Amazon Route 53 Recovery Readiness provides the following APIs for data retrieval.
 

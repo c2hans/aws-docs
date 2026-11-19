@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
 Attaches or replaces a resource-based policy on an AWS Payment Cryptography key. A resource-based policy can grant cross-account access to your key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CatalogKafkaSourc
 ---
 
 # CatalogKafkaSource
-<a name="API_CatalogKafkaSource"></a>
 
 Specifies an Apache Kafka data store in the Data Catalog.
 

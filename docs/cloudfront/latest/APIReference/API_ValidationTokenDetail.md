@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Valid
 ---
 
 # ValidationTokenDetail
-<a name="API_ValidationTokenDetail"></a>
 
 Contains details about the validation token.
 

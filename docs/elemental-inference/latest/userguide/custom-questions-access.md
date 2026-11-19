@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Tagging and access control for question sets
-<a name="custom-questions-access"></a>
 
 You can tag question sets. To add tags when you create a question set, use `--tags` with `create-question-set`. To add or remove tags later, use the `tag-resource` and `untag-resource` commands with the ARN of the question set. To view tags, use `list-tags-for-resource`.
 

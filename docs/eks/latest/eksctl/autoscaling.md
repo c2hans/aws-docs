@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/autoscaling.html
 ---
 
 # Auto Scaling
-<a name="autoscaling"></a>
 
 ## Enable Auto Scaling
 <a name="_enable_auto_scaling"></a>

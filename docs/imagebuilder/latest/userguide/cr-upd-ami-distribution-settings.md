@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/cr-upd-ami
 ---
 
 # Create and update AMI distribution configurations
-<a name="cr-upd-ami-distribution-settings"></a>
 
 This section covers creating and updating distribution configurations for an Image Builder AMI.
 

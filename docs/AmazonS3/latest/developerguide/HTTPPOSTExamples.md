@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/HTTPPOSTE
 ---
 
 # Upload examples (AWS signature version 2)****
-<a name="HTTPPOSTExamples"></a>
 
 **Topics**
 + [File upload](#HTTPPOSTExamplesFileUpload)

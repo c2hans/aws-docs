@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNREL05-BP01 Failover testing of dedicated connections
-<a name="hnrel05-bp01"></a>
 
  Regular failover testing of dedicated connections is essential for ensuring the resilience and reliability of hybrid network environments. Simulating various scenarios by temporarily disabling BGP peering sessions between on-premises networks and cloud. By regularly exercising these tests, organizations can validate their recovery procedures, uncover latent bugs, and ensure their hybrid network architecture performs as expected during failover scenarios.
 

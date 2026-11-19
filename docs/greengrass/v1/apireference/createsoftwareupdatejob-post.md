@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/apireference/createsoftwar
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # CreateSoftwareUpdateJob
-<a name="createsoftwareupdatejob-post"></a>
 
 Creates a software update for a core or group of cores (specified as an IoT thing group.) Use this to update the OTA agent and the Greengrass core software. It uses the AWS IoT Jobs feature, which provides more commands for managing a Greengrass Core software update job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automatically remediate unencrypted Amazon RDS DB instances and clusters
-<a name="automatically-remediate-unencrypted-amazon-rds-db-instances-and-clusters"></a>
 
 *Ajay Rawat and Josh Joy, Amazon Web Services*
 

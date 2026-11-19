@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Refere
 ---
 
 # ReferenceDetails
-<a name="API_ReferenceDetails"></a>
 
 The reference details of a metric.
 

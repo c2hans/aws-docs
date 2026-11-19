@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/command-events
 ---
 
 # Command execution events
-<a name="command-events"></a>
 
 AWS IoT publishes event messages to MQTT topics when command executions change status. You can use these events to monitor command execution progress and build applications that respond to status changes.
 

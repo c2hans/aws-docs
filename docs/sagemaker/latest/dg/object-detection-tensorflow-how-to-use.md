@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/object-detection-ten
 ---
 
 # How to use the SageMaker AI Object Detection - TensorFlow algorithm
-<a name="object-detection-tensorflow-how-to-use"></a>
 
 You can use Object Detection - TensorFlow as an Amazon SageMaker AI built-in algorithm. The following section describes how to use Object Detection - TensorFlow with the SageMaker AI Python SDK. For information on how to use Object Detection - TensorFlow from the Amazon SageMaker Studio Classic UI, see [SageMaker JumpStart pretrained models](studio-jumpstart.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ListCloudConnectors
-<a name="API_ListCloudConnectors"></a>
 
 Returns a list of cloud connectors in the current AWS account and AWS Region.
 

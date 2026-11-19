@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-get
 ---
 
 # Tutorial: Getting started with S3 Vectors
-<a name="s3-vectors-getting-started"></a>
 
 In this tutorial, you create an S3 vector bucket and a vector index in an AWS Region in the Amazon S3 console. Next, you use an Amazon Bedrock embedding model to generate vector embeddings of your data and store them in your vector index to perform semantic searches.
 

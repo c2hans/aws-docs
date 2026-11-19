@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Supported Next generation Resilience Hub events
-<a name="next-gen-supported-events"></a>
 
 All Next generation Resilience Hub API actions are logged in CloudTrail, including the following.
 

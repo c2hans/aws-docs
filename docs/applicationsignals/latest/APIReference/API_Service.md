@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # Service
-<a name="API_Service"></a>
 
 This structure contains information about one of your services that was discovered by Application Signals.
 

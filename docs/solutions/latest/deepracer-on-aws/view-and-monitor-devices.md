@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/view-a
 ---
 
 # View and monitor devices
-<a name="view-and-monitor-devices"></a>
 
 The device list shows all registered cars and timers. For each device, you can see the name, device type, online or offline status, assigned fleet, and last-seen time.
 

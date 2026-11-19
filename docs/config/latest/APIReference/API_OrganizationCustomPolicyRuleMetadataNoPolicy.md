@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Organizat
 ---
 
 # OrganizationCustomPolicyRuleMetadataNoPolicy
-<a name="API_OrganizationCustomPolicyRuleMetadataNoPolicy"></a>
 
  metadata for your organization AWS Config Custom Policy rule including the runtime system in use, which accounts have debug logging enabled, and other custom rule metadata such as resource type, resource ID of AWS resource, and organization trigger types that trigger AWS Config to evaluate AWS resources against a rule.
 

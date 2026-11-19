@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-eip-pool.html
 ---
 
 # Allocate sequential Elastic IP addresses from an IPAM pool
-<a name="tutorials-eip-pool"></a>
 
 IPAM enables you to provision Amazon-owned public IPv4 blocks to IPAM pools and allocate sequential [Elastic IP addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) from those pools to AWS resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/w
 ---
 
 # What are AWS decision guides?
-<a name="what-are-decision-guides"></a>
 
 Decision guides are designed to provide you with a detailed overview of the services offered by AWS, and structured guidance on how to choose the services that might be right for your use cases. Decision guides can also help you articulate and consider the criteria that will inform your choices. AWS offers services across many technology categories, and choosing the right service for your workload can be challenging. Decision guides simplify this process by organizing services into categories and providing structured frameworks for evaluation.
 

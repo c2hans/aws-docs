@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_D
 ---
 
 # DecodeConfig
-<a name="API_DecodeConfig"></a>
 
 Information about the decode `Config`.
 

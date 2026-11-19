@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/managing-user-acc
 ---
 
 # Managing access for IAM Identity Center users
-<a name="managing-user-access-idc"></a>
 
 |  |
 | --- |

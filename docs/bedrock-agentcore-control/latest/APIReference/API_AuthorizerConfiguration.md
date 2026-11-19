@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # AuthorizerConfiguration
-<a name="API_AuthorizerConfiguration"></a>
 
 Represents inbound authorization configuration options used to authenticate incoming requests.
 

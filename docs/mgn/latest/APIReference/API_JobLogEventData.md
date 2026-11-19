@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_JobLogEventD
 ---
 
 # JobLogEventData
-<a name="API_JobLogEventData"></a>
 
 Job log data
 

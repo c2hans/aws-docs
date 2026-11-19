@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-operat
 ---
 
 # Operators
-<a name="iot-sql-operators"></a>
 
 The following operators can be used in SELECT and WHERE clauses.
 

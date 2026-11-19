@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/stage-healt
 ---
 
 # Monitoring Amazon IVS Real-Time Streaming
-<a name="stage-health"></a>
 
 This document provides details about options available for monitoring your IVS real-time streaming application.
 

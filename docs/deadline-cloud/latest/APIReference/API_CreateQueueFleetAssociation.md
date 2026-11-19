@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_C
 ---
 
 # CreateQueueFleetAssociation
-<a name="API_CreateQueueFleetAssociation"></a>
 
 Creates an association between a queue and a fleet.
 

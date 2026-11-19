@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_AccessKeyMet
 ---
 
 # AccessKeyMetadata
-<a name="API_AccessKeyMetadata"></a>
 
 Contains information about an AWS access key, without its secret key.
 

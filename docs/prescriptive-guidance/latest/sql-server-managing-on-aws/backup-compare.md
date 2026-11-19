@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Backup option comparison
-<a name="backup-compare"></a>
 
 We completed performance benchmark testing on the approaches covered in this guide. The tests were performed with an r5d.8xlarge instance and 1TB SQL Server database as the source. The source system was configured according to best practices, and the source database contained four data files (250 GB each) and one log file (50 GB) spread across separate GP3 volumes. The SQL Server native BACKUP command included writing to 10 backup files, using compression to optimize backup performance and reduce the amount of data sent across the network and written to the target. In all test cases, the source database or target backup option, storage performance was the bottleneck.
 

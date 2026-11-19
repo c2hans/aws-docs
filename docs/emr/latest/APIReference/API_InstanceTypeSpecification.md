@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceType
 ---
 
 # InstanceTypeSpecification
-<a name="API_InstanceTypeSpecification"></a>
 
 The configuration specification for each instance type in an instance fleet.
 

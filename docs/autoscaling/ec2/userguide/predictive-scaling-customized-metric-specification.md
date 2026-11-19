@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/predictive-sca
 ---
 
 # Advanced predictive scaling policy using custom metrics
-<a name="predictive-scaling-customized-metric-specification"></a>
 
 In a predictive scaling policy, you can use predefined or custom metrics. Custom metrics are useful when the predefined metrics (CPU, network I/O, and Application Load Balancer request count) do not sufficiently describe your application load.
 

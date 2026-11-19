@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeBulkImportJob
-<a name="API_DescribeBulkImportJob"></a>
 
 Retrieves information about a bulk import job request. For more information, see [Describe a bulk import job (AWS CLI)](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/DescribeBulkImportJob.html) in the *Amazon Simple Storage Service User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Amazon VPC
-<a name="appinsights-metrics-vpc"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

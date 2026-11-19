@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_E
 ---
 
 # ExportJobSummary
-<a name="API_BKS_ExportJobSummary"></a>
 
 This is the summary of an export job.
 

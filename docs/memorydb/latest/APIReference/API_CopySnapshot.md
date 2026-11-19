@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_CopySna
 ---
 
 # CopySnapshot
-<a name="API_CopySnapshot"></a>
 
 Makes a copy of an existing snapshot.
 

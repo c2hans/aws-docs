@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/cr
 ---
 
 # Create a service client
-<a name="creating-clients"></a>
 
 To make a request to an AWS service, you must first instantiate a client for that service.
 

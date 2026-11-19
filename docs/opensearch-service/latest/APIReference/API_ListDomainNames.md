@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ListDomainNames
-<a name="API_ListDomainNames"></a>
 
 Returns the names of all Amazon OpenSearch Service domains owned by the current user in the active Region.
 

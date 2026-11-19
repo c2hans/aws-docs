@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/mi
 ---
 
 # Updating AWS KMS keyrings
-<a name="migrate-keyrings-v2"></a>
 
 The AWS KMS keyrings in the [AWS Encryption SDK for C](c-language.md), the [AWS Encryption SDK for .NET](dot-net.md), and the [AWS Encryption SDK for JavaScript](javascript.md) support [best practices](best-practices.md) by allowing you to specify wrapping keys when encrypting and decrypting. If you create an [AWS KMS discovery keyring](use-kms-keyring.md#kms-keyring-discovery), you do so explicitly.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Data management
-<a name="data-management"></a>
 
 | SCSUS05: How does your data strategy support your sustainability outcomes? |
 | --- |

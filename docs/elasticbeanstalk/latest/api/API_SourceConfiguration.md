@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_SourceCo
 ---
 
 # SourceConfiguration
-<a name="API_SourceConfiguration"></a>
 
 A specification for an environment configuration.
 

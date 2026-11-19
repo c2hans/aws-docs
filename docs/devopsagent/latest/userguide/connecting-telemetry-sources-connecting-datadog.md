@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/connecting-
 ---
 
 # Connecting DataDog
-<a name="connecting-telemetry-sources-connecting-datadog"></a>
 
 ## Built-in, 1 way integration
 <a name="built-in-1-way-integration"></a>

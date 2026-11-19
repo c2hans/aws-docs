@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/secure-tunn
 ---
 
 # Secure tunneling
-<a name="secure-tunneling-component"></a>
 
 With the `aws.greengrass.SecureTunneling` component, you can establish secure bidirectional communication with a Greengrass core device located behind restricted firewalls.
 

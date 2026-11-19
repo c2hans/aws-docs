@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using-am
 ---
 
 # Using AWS assistant to provide task definition recommendations in the Amazon ECS console
-<a name="using-amazon-q"></a>
 
 When you use the JSON editor in the Amazon ECS console to create a task definition, you can use the AWS assistant to provide AI-generated code suggestions for your task definitions.
 

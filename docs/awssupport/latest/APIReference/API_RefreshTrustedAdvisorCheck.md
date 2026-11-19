@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Refre
 ---
 
 # RefreshTrustedAdvisorCheck
-<a name="API_RefreshTrustedAdvisorCheck"></a>
 
 Refreshes the AWS Trusted Advisor check that you specify using the check ID. You can get the check IDs by calling the [DescribeTrustedAdvisorChecks](API_DescribeTrustedAdvisorChecks.md) operation.
 

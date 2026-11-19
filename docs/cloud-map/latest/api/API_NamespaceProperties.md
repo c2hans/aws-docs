@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_NamespaceProper
 ---
 
 # NamespaceProperties
-<a name="API_NamespaceProperties"></a>
 
 A complex type that contains information that's specific to the namespace type.
 

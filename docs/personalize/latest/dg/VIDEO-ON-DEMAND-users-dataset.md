@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/VIDEO-ON-DEMAND-us
 ---
 
 # Users dataset requirements (VIDEO\_ON\_DEMAND domain)
-<a name="VIDEO-ON-DEMAND-users-dataset"></a>
 
  A *Users dataset* stores metadata about your users. This might include information such as age, interest, gender, and loyalty membership for each user. For information on the types of user data you can import into Amazon Personalize, see [User metadata](users-datasets.md). For information about general Amazon Personalize schema requirements see [Creating schema JSON files for Amazon Personalize schemas](how-it-works-dataset-schema.md). These requirements apply to all schemas, regardless of domain.
 

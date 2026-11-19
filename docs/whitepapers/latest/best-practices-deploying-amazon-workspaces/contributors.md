@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 + Andrew Morgan, EUC Solutions Architect, Amazon Web Services

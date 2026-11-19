@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stack
 ---
 
 # Troubleshooting CloudFormation StackSets
-<a name="stacksets-troubleshooting"></a>
 
 This topic contains some common StackSets issues, and suggested solutions for those issues.
 

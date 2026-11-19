@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_TemplateActi
 ---
 
 # TemplateActionDocument
-<a name="API_TemplateActionDocument"></a>
 
 ## Contents
 <a name="API_TemplateActionDocument_Contents"></a>

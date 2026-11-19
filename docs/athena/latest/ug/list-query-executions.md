@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/list-query-executions.h
 ---
 
 # List query executions
-<a name="list-query-executions"></a>
 
 The `ListQueryExecutionsExample` shows how to obtain a list of query execution IDs.
 

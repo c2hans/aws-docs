@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/existing-infrastr
 ---
 
 # Integrating with existing infrastructure
-<a name="existing-infrastructure"></a>
 
  AWS Blocks is designed to work with existing AWS infrastructure. Whether you have an existing CDK application, pre-deployed resources, or a mix of both, you can adopt AWS Blocks incrementally without rewriting your infrastructure.
 

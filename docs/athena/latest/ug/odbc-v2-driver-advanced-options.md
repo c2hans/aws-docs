@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-advanced
 ---
 
 # Advanced options
-<a name="odbc-v2-driver-advanced-options"></a>
 
 ## Fetch size
 <a name="odbc-v2-driver-advanced-options-fetch-size"></a>

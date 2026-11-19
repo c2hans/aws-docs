@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_AcceptShare.html
 ---
 
 # AcceptShare
-<a name="API_AcceptShare"></a>
 
 Accept a resource share request.
 

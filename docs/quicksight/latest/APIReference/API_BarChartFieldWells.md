@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BarCh
 ---
 
 # BarChartFieldWells
-<a name="API_BarChartFieldWells"></a>
 
 The field wells of a `BarChartVisual`.
 

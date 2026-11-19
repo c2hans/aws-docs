@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/xero-reading-from-entitie
 ---
 
 # Reading from Xero entities
-<a name="xero-reading-from-entities"></a>
 
 **Prerequisites**
 

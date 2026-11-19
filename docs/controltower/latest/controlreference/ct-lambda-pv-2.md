@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ct-
 ---
 
 # [CT.LAMBDA.PV.2] Require an AWS Lambda function or AWS Lambda function URL to be configured for access only to principals within your AWS account
-<a name="ct-lambda-pv-2"></a>
 
 This control requires an AWS Lambda function resource-based policy to grant access only to IAM principals that reside in your AWS account.
 

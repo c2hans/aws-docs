@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_V
 ---
 
 # VpcConfiguration
-<a name="API_VpcConfiguration"></a>
 
 The configuration options for a service managed fleet's VPC.
 

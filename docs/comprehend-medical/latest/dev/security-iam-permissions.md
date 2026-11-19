@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/dev/security-i
 ---
 
 # Using Identity-Based policies (IAM policies) for Amazon Comprehend Medical
-<a name="security-iam-permissions"></a>
 
 This topic shows example identity-based policies. The examples show how an account administrator can attach permissions policies to IAM identities. This enables users, groups, and roles to perform Amazon Comprehend Medical actions.
 

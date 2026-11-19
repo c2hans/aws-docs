@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Lightsail web addresses
-<a name="amazon-lightsail-faq-web-addresses"></a>
 
 ## What are Lightsail web addresses?
 <a name="what-are-lightsail-web-addresses"></a>

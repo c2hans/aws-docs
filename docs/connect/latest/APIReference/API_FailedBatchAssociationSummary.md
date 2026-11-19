@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_FailedBa
 ---
 
 # FailedBatchAssociationSummary
-<a name="API_FailedBatchAssociationSummary"></a>
 
 Contains information about a resource that failed to be associated with a workspace in a batch operation.
 

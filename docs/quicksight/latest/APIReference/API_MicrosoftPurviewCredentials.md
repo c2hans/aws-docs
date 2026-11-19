@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Micro
 ---
 
 # MicrosoftPurviewCredentials
-<a name="API_MicrosoftPurviewCredentials"></a>
 
 The credentials for Microsoft Purview DLP integration. The credentials are stored in AWS Secrets Manager and referenced by ARN.
 

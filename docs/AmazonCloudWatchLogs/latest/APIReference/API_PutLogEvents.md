@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # PutLogEvents
-<a name="API_PutLogEvents"></a>
 
 Uploads a batch of log events to the specified log stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RuntimeTargetConfiguration
-<a name="API_RuntimeTargetConfiguration"></a>
 
 Configuration for an AgentCore Runtime target. Specifies the agent runtime to route requests to via HTTP.
 

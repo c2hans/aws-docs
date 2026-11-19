@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost04.
 ---
 
 # Plan for data transfer
-<a name="cost04"></a>
 
  Data transfer is one of the most variable and often underestimated parts of a cloud bill. Data transfer cost depends on where the data movement originates and ends, how often it moves, and which path it takes. Those charges follow architectural choices, so controlling them starts at design time and continues as the workload grows.
 

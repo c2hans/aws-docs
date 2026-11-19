@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # NodeTraceElements
-<a name="API_agent-runtime_NodeTraceElements"></a>
 
 Contains trace elements for node execution tracking.
 

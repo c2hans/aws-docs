@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # SentimentConfiguration
-<a name="API_media-pipelines-chime_SentimentConfiguration"></a>
 
 A structure that contains the configuration settings for a sentiment analysis task.
 

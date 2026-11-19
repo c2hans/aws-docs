@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # Example
-<a name="working-with-members-of-mpts-add-spts-example"></a>
 
 This example shows the result of adding the channel with the ID 2 as an SPTS program with the program ID 5 in the MPTS output that has the ID 3.
 

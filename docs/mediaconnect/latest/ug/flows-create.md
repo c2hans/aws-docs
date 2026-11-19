@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/flows-create.html
 ---
 
 # Creating a flow
-<a name="flows-create"></a>
 
 A flow is a connection between one or more sources and one or more outputs or entitlements.
 

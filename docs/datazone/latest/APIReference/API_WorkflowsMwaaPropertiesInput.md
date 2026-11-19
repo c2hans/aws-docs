@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Workflo
 ---
 
 # WorkflowsMwaaPropertiesInput
-<a name="API_WorkflowsMwaaPropertiesInput"></a>
 
 The Amazon MWAA properties.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningCheckTranslationOption
-<a name="API_AutomatedReasoningCheckTranslationOption"></a>
 
 Represents one possible logical interpretation of ambiguous input content.
 

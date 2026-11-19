@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Scripts management
-<a name="scripts-management"></a>
 
 The Cloud Migration Factory on AWS solution allows users to fully manage the library of automation scripts or packages within the user interface. You can upload new custom scripts as well as new versions of the script using the scripts management interface. When multiple versions are available, an administrator can switch between these versions allowing the ability to test updates before making them default. The script management interface also allows administrators to download script packages to update or review the content.
 

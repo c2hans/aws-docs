@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/lambda_example_tr
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Build and test a serverless application
-<a name="lambda_example_tributary-lite_serverless-application_section"></a>
 
 The following code examples show how to build and test a serverless application using API Gateway with Lambda and DynamoDB
 

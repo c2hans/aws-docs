@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-foundation-m
 ---
 
 # Model evaluation notebook tutorials
-<a name="clarify-foundation-model-evaluate-auto-tutorial"></a>
 
 This section provides the following notebook tutorials, which include example code and explanations:
 + How to evaluate a JumpStart model for prompt stereotyping.

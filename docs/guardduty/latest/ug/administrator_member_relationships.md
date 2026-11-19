@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/administrator_member
 ---
 
 # Understanding the relationship between GuardDuty administrator account and member accounts
-<a name="administrator_member_relationships"></a>
 
 When you use GuardDuty in a multiple-account environment, the administrator account can manage certain aspects of GuardDuty on behalf of the member accounts. An administrator account can perform the following primary functions:
 + **Add and remove associated member accounts** – The process by which an administrator account can do this differs based on how you manage the accounts – through AWS Organizations or by GuardDuty invitation method.

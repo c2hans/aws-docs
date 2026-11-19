@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ag
 ---
 
 # AgentSpaceSummary
-<a name="API_AgentSpaceSummary"></a>
 
 Contains summary information about an agent space.
 

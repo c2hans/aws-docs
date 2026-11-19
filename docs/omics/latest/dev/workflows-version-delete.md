@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-version-delet
 ---
 
 # Delete a workflow version
-<a name="workflows-version-delete"></a>
 
 You can delete a user-defined workflow version using the console, CLI, or one of the SDKs. Deleting a workflow version doesn't affect any ongoing runs that are using the workflow version.
 

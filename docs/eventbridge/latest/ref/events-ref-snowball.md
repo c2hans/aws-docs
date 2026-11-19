@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-snowba
 ---
 
 # AWS Snowball events
-<a name="events-ref-snowball"></a>
 
 Snowball sends service events to EventBridge via AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 ---
 
 # Troubleshooting Appium Java JUnit tests in AWS Device Farm
-<a name="troubleshooting-appium-java-junit"></a>
 
 The following topic lists error messages that occur during the upload of Appium Java JUnit tests and recommends workarounds to resolve each error.
 

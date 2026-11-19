@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # DeleteVoiceConnectorStreamingConfiguration
-<a name="API_voice-chime_DeleteVoiceConnectorStreamingConfiguration"></a>
 
 Deletes a Voice Connector's streaming configuration.
 

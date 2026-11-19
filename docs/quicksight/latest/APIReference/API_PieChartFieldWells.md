@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_PieCh
 ---
 
 # PieChartFieldWells
-<a name="API_PieChartFieldWells"></a>
 
 The field well configuration of a pie chart.
 

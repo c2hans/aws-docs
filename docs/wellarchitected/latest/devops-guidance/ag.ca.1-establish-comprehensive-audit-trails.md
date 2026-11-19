@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.CA.1] Establish comprehensive audit trails
-<a name="ag.ca.1-establish-comprehensive-audit-trails"></a>
 
  **Category:** FOUNDATIONAL
 

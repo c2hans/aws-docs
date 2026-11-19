@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Co
 ---
 
 # ConfluenceIntegrationInput
-<a name="API_ConfluenceIntegrationInput"></a>
 
 The configuration for creating a Confluence integration.
 

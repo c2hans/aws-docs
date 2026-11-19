@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # HLSTimestampRange
-<a name="API_reader_HLSTimestampRange"></a>
 
 The start and end of the timestamp range for the requested media.
 

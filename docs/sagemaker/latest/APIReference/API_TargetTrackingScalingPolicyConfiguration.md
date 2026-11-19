@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Target
 ---
 
 # TargetTrackingScalingPolicyConfiguration
-<a name="API_TargetTrackingScalingPolicyConfiguration"></a>
 
 A target tracking scaling policy. Includes support for predefined or customized metrics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Strands Agents
-<a name="strands-agents"></a>
 
 AWS initially released Strands Agents as an open-source SDK, as described in the [AWS Open Source Blog](https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/). You can use Strands Agents to build autonomous AI agents with a model-driven approach. It provides a flexible, extensible framework that works with AWS services and remains open to integration with third-party components. Strands Agents is suited for building autonomous solutions.
 

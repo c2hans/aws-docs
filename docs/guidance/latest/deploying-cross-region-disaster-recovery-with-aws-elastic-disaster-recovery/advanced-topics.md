@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/deploying-cross-region-d
 ---
 
 # Advanced topics
-<a name="advanced-topics"></a>
 
 ## Recovery Plans: AWS Step Functions \+ Elastic Disaster Recovery API \+ AWS Lambda
 <a name="recovery-plans"></a>

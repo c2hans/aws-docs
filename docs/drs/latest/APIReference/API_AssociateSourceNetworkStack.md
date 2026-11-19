@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_AssociateSou
 ---
 
 # AssociateSourceNetworkStack
-<a name="API_AssociateSourceNetworkStack"></a>
 
 Associate a Source Network to an existing CloudFormation Stack and modify launch templates to use this network. Can be used for reverting to previously deployed CloudFormation stacks.
 

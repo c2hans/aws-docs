@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-sdk-fe
 ---
 
 # Amazon S3 features and options in the AWS SDK for PHP Version 3
-<a name="s3-sdk-features"></a>
 
 This topic discusses additional features and options provided by AWS SDK for PHP Version 3 to work with Amazon S3.
 

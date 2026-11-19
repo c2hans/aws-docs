@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CrossRegionS
 ---
 
 # CrossRegionS3RestoreSourcesAccess
-<a name="API_CrossRegionS3RestoreSourcesAccess"></a>
 
 The configuration access for the cross-Region Amazon S3 database restore source for the ODB network.
 

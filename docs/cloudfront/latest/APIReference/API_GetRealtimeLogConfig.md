@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetRe
 ---
 
 # GetRealtimeLogConfig
-<a name="API_GetRealtimeLogConfig"></a>
 
 Gets a real-time log configuration.
 

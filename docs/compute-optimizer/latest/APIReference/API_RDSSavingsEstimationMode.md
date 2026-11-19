@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RDSSavingsEstimationMode
-<a name="API_RDSSavingsEstimationMode"></a>
 
  Describes the savings estimation mode used for calculating savings opportunity for DB instances.
 

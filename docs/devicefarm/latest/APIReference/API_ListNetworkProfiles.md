@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListN
 ---
 
 # ListNetworkProfiles
-<a name="API_ListNetworkProfiles"></a>
 
 Returns the list of available network profiles.
 

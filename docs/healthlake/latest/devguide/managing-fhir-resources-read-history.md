@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 ---
 
 # Reading FHIR resource history
-<a name="managing-fhir-resources-read-history"></a>
 
 The FHIR `history` interaction retrieves the history of a particular FHIR resource in a HealthLake data store. Using this interaction, you can determine how the contents of a FHIR resource have changed over time. It is also useful in coordination with audit logs to see the state of a resource before and after modification. The FHIR interactions `create`, `update`, and `delete` result in a historical version of the resource to be saved. For additional information, see [`history`](https://hl7.org/fhir/R4/http.html#history) in the **FHIR R4 RESTful API documentation**.
 

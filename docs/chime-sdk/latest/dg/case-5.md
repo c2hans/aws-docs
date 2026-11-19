@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/case-5.html
 ---
 
 # Ending a call using the Amazon Chime SDK PSTN audio service
-<a name="case-5"></a>
 
 You can use the [CreateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html) API to end an outbound call. The API invokes the endpoint of a specified **SIP media application ID**. Customers can control the flow of the call by returning actions to the SIP media application.
 

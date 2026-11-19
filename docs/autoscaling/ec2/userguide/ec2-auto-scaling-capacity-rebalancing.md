@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scali
 ---
 
 # Capacity Rebalancing in Auto Scaling to replace at-risk Spot Instances
-<a name="ec2-auto-scaling-capacity-rebalancing"></a>
 
 Capacity Rebalancing in Auto Scaling helps you maintain your workload availability by proactively replacing Spot Instances at risk of interruption.
 

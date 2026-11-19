@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Documen
 ---
 
 # DocumentAcl
-<a name="API_DocumentAcl"></a>
 
 Represents the Access Control List (ACL) for a document, containing both allowlist and denylist conditions.
 

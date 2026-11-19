@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Unity build pipeline: iOS games on AWS Cloud
-<a name="unity-build-pipeline-ios"></a>
 
 Publication date: **November 24, 2021 ([Diagram history](diagram-history.md))**
 

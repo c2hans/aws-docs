@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Sta
 ---
 
 # StartQuery
-<a name="API_StartQuery"></a>
 
 Starts an asynchronous SQL query against workspace telemetry, annotations, data segment, and dataset data.
 

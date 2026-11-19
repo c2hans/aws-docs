@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_UpdateExperi
 ---
 
 # UpdateExperimentTemplateExperimentOptionsInput
-<a name="API_UpdateExperimentTemplateExperimentOptionsInput"></a>
 
 Specifies an experiment option for an experiment template.
 

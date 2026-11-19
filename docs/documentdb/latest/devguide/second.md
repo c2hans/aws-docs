@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/second.html
 ---
 
 # $second
-<a name="second"></a>
 
 The `$second` operator in Amazon DocumentDB extracts the seconds component from a date or timestamp. It is used to retrieve the seconds value from a date or timestamp field.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/saving-explore
 ---
 
 # Save a layout
-<a name="saving-explorer-layout"></a>
 
 How to save and manage your Profile Explorer layout configurations.
 

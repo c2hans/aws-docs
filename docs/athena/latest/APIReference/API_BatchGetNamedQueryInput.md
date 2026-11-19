@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetN
 ---
 
 # BatchGetNamedQueryInput
-<a name="API_BatchGetNamedQueryInput"></a>
 
 Contains an array of named query IDs.
 

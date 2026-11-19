@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListAutonomo
 ---
 
 # ListAutonomousDatabaseVersions
-<a name="API_ListAutonomousDatabaseVersions"></a>
 
 Lists the available Oracle Database software versions for Autonomous Databases.
 

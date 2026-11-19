@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ai-agent-initi
 ---
 
 # Initial set-up for AI agents
-<a name="ai-agent-initial-setup"></a>
 
 To start using AI agents, you first need to create a domain. As part of this process you can also optionally:
 + Create an encryption key to encrypt the excerpts that are provided in the recommendations to the agent.

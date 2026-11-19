@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/getting-recommenda
 ---
 
 # Getting item metadata with real-time recommendations
-<a name="getting-recommendations-with-metadata"></a>
 
  If you configured your campaign or recommender to return metadata for recommended items, you can specify the columns to include in your [GetRecommendations](API_RS_GetRecommendations.md) API operation. Or you can specify the columns when you test the campaign with the Amazon Personalize console.
 

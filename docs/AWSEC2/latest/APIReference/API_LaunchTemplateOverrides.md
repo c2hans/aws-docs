@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateOverrides
-<a name="API_LaunchTemplateOverrides"></a>
 
 Describes overrides for a launch template.
 

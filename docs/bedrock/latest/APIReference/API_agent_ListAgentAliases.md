@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Li
 ---
 
 # ListAgentAliases
-<a name="API_agent_ListAgentAliases"></a>
 
 Lists the aliases of an agent and information about each one.
 

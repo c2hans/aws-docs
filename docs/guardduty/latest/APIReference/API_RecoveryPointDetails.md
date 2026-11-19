@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Recove
 ---
 
 # RecoveryPointDetails
-<a name="API_RecoveryPointDetails"></a>
 
 Contains details about the backup recovery point.
 

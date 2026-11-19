@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/silk/latest/developerguide/media-handlin
 ---
 
 # Learn about media handling
-<a name="media-handling"></a>
 
 Amazon Silk supports a wide range of media types.
 

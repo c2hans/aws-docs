@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-eks-operat
 ---
 
 # Installing the training operator
-<a name="sagemaker-eks-operator-install"></a>
 
 See the following sections to learn about how to install the training operator.
 

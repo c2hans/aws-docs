@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/re
 ---
 
 # Amazon GameLift Servers release notes
-<a name="release-notes"></a>
 
 The Amazon GameLift Servers release notes provide details about new features, updates, and fixes related to the service.
 

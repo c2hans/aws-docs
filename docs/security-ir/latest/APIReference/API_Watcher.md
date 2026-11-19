@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Watc
 ---
 
 # Watcher
-<a name="API_Watcher"></a>
 
 ## Contents
 <a name="API_Watcher_Contents"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNREL03-BP02 Monitor logs and metrics for insights of hybrid networking resources
-<a name="hnrel03-bp02"></a>
 
  Monitor dedicated connection and VPN logs and metrics to gain insight into the health and status of your hybrid connectivity. Use monitoring service to create alarms and notifications when thresholds are breached or significant events occur.
 

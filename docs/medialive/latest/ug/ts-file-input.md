@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ts-file-input.html
 ---
 
 # Creating a transport stream (TS) file input
-<a name="ts-file-input"></a>
 
 This section describes how to set up to ingest transport stream (TS) content that is stored as a file.
 

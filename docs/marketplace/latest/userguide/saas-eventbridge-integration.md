@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-eventb
 ---
 
 # Managing SaaS subscription events with Amazon EventBridge
-<a name="saas-eventbridge-integration"></a>
 
 You can use Amazon EventBridge to integrate and manage SaaS products with AWS Marketplace. Events are sent for changes to customers' subscriptions and contract entitlements for your products. You receive notifications when customers subscribe, when their entitlements change, and when they cancel, so you know exactly when to grant or revoke access. These events serve two primary roles:
 + **Manufacturer** – This is the original product manufacturer of the listing in AWS Marketplace, also known as the Independent Solution Vendor (ISV).

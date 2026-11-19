@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ActiveCont
 ---
 
 # ActiveContext
-<a name="API_ActiveContext"></a>
 
 The active context used in the test execution.
 

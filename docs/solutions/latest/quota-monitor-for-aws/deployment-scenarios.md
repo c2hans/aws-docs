@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/d
 ---
 
 # Deployment scenarios
-<a name="deployment-scenarios"></a>
 
 The solution supports different deployment scenarios for:
 + Customers who use AWS Organizations

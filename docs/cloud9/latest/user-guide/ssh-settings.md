@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/ssh-settings.ht
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # SSH environment host requirements
-<a name="ssh-settings"></a>
 
 To instruct AWS Cloud9 to connect an environment to an existing cloud compute instance or your own server, you create an *AWS Cloud9 SSH development environment*. However, before you create an SSH environment, consider the benefits of creating EC2 environments instead.
 

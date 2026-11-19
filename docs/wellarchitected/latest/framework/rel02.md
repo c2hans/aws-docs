@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel02.h
 ---
 
 # Plan your network topology
-<a name="rel02"></a>
 
  Workloads rarely live in one place. They span multiple cloud environments, both public and private, and often reach back to an existing data center. The network carries every request between users, services, and those environments, so a topology with a single fragile path caps the availability of everything behind it. If the network to a healthy application fails, users cannot reach it, and if the one link between two environments drops, the systems that depend on it stop communicating.
 

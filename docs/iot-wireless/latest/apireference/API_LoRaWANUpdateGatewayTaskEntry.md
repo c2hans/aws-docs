@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANUpdateGatewayTaskEntry
-<a name="API_LoRaWANUpdateGatewayTaskEntry"></a>
 
 LoRaWANUpdateGatewayTaskEntry object.
 

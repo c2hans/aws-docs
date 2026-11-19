@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_FindingTyp
 ---
 
 # FindingTypeAggregation
-<a name="API_FindingTypeAggregation"></a>
 
 The details that define an aggregation based on finding type.
 

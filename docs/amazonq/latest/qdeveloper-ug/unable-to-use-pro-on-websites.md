@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/unable-to-u
 ---
 
 # Users unable to use their subscription on AWS websites
-<a name="unable-to-use-pro-on-websites"></a>
 
 **Problem: Users are unable to use their subscriptions on AWS websites**
 

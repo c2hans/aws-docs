@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-v
 ---
 
 # Subscribe to participant hold events in Connect Customer agent workspace
-<a name="3P-apps-voice-requests-onparticipanthold"></a>
 
 Subscribes to events when any participant is put on hold.
 

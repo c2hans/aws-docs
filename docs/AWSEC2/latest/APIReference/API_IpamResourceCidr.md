@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamResou
 ---
 
 # IpamResourceCidr
-<a name="API_IpamResourceCidr"></a>
 
 The CIDR for an IPAM resource.
 

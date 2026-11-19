@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StartOut
 ---
 
 # StartOutboundEmailContact
-<a name="API_StartOutboundEmailContact"></a>
 
 Initiates a flow to send an agent reply or outbound email contact (created from the CreateContact API) to a customer.
 

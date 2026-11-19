@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RestartA
 ---
 
 # RestartAppServer
-<a name="API_RestartAppServer"></a>
 
 Causes the environment to restart the application container server running on each Amazon EC2 instance.
 

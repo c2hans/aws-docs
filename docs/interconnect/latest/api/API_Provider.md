@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_Provider.htm
 ---
 
 # Provider
-<a name="API_Provider"></a>
 
 Describes the respective AWS Interconnect Partner organization.
 

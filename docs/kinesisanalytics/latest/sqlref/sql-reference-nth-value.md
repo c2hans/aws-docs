@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # NTH\_VALUE
-<a name="sql-reference-nth-value"></a>
 
 ```
 NTH_VALUE(x, n) [ <from first or last> ] [ <null treatment> ] over w

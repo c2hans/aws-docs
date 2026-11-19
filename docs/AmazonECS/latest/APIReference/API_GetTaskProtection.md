@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_GetTas
 ---
 
 # GetTaskProtection
-<a name="API_GetTaskProtection"></a>
 
 Retrieves the protection status of tasks in an Amazon ECS service.
 

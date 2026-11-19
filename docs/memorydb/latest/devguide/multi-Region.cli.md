@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/multi-Region.cl
 ---
 
 # Using MemoryDB Multi-Region with the CLI
-<a name="multi-Region.cli"></a>
 
 Below are ways to use MemoryDB Multi-Region with the CLI
 

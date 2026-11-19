@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/data-connecto
 ---
 
 # AWS IoT TwinMaker data connectors
-<a name="data-connector-interfaces"></a>
 
 Connectors need access to your underlying data store to resolve sent queries and to return either results or an error.
 

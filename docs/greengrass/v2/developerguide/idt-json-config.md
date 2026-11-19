@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/idt-json-co
 ---
 
 # Create IDT test suite configuration files
-<a name="idt-json-config"></a>
 
 This section describes the formats in which you create configuration files that you include when you write a custom test suite.<a name="required-json"></a>Required configuration files
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Descr
 ---
 
 # DescribeDocumentClassificationJob
-<a name="API_DescribeDocumentClassificationJob"></a>
 
 Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
 

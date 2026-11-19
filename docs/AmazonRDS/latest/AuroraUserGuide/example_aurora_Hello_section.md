@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/example
 ---
 
 # Hello Aurora
-<a name="example_aurora_Hello_section"></a>
 
 The following code examples show how to get started using Aurora.
 

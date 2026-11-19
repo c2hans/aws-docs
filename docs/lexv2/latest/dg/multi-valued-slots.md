@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/multi-valued-slots.html
 ---
 
 # Using multiple values in a slot
-<a name="multi-valued-slots"></a>
 
 **Note**
 Multiple value slots are only supported in the English (US) language.

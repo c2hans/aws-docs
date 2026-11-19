@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/windows-setup
 ---
 
 # Get started with AWS Transform for Windows modernization
-<a name="windows-setup"></a>
 
 ## Configuring AWS Transform
 <a name="dotnet-setup-configuring"></a>

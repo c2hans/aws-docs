@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Tax Settings
-<a name="API_Types_Tax_Settings"></a>
 
 The following data types are supported by Tax Settings:
 +  [AccountDetails](API_taxSettings_AccountDetails.md)

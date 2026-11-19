@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/enable-
 ---
 
 # Enable Google Drive for Your WorkSpaces Applications Users
-<a name="enable-google-drive"></a>
 
 Before enabling Google Drive, you must do the following:
 + Have an active Google Workspace account with a valid organizational domain and users in the domain to use with WorkSpaces Applications.

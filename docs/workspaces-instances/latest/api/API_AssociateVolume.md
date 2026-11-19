@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Asso
 ---
 
 # AssociateVolume
-<a name="API_AssociateVolume"></a>
 
 Attaches a volume to a WorkSpace Instance.
 

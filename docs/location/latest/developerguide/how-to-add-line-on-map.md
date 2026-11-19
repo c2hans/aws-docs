@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ad
 ---
 
 # How to add a line on the map
-<a name="how-to-add-line-on-map"></a>
 
 With Amazon Location Service, you can add both pre-recorded GPS traces as line-strings and real-time GPS traces to dynamic maps.
 

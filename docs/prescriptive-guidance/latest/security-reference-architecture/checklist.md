@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # AWS SRA best practices checklist
-<a name="checklist"></a>
 
 This section distills the AWS SRA best practices detailed throughout this guide into a checklist that you can follow as you build your version of the security architecture on AWS. Use this list as a reference point and not as a replacement for reviewing the guide. The checklist groups items by AWS service. If you want to programmatically validate your existing AWS environment against the AWS SRA best practices checklist, you can use [SRA Verify](https://github.com/awslabs/sra-verify).
 

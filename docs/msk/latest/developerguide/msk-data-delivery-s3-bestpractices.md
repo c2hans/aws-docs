@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Best practices
-<a name="msk-data-delivery-s3-bestpractices"></a>
 
 **Topics**
 + [Throughput and data freshness](msk-data-delivery-s3-bp-throughput.md)

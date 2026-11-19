@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcop
 ---
 
 # Compute and hardware
-<a name="telcoperf02"></a>
 
 |  TELCOPERF02: How do you select the appropriate compute solution for your telco workloads?  |
 | --- |

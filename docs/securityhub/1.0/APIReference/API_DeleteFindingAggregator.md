@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteF
 ---
 
 # DeleteFindingAggregator
-<a name="API_DeleteFindingAggregator"></a>
 
 **Note**
 The *aggregation Region* is now called the *home Region*.

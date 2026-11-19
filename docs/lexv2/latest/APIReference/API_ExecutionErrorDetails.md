@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ExecutionE
 ---
 
 # ExecutionErrorDetails
-<a name="API_ExecutionErrorDetails"></a>
 
 Details about an error in an execution of a test set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/exampl
 ---
 
 # Use `DeregisterScalableTarget` with a CLI
-<a name="example_application-auto-scaling_DeregisterScalableTarget_section"></a>
 
 The following code examples show how to use `DeregisterScalableTarget`.
 

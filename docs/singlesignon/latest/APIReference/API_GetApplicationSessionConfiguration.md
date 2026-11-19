@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Get
 ---
 
 # GetApplicationSessionConfiguration
-<a name="API_GetApplicationSessionConfiguration"></a>
 
 Retrieves the session configuration for an application in IAM Identity Center.
 

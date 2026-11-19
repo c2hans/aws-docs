@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # ModifyRule
-<a name="API_ModifyRule"></a>
 
 Replaces the specified properties of the specified rule. Any properties that you do not specify are unchanged.
 

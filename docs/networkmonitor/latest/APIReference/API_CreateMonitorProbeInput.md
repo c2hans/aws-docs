@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_C
 ---
 
 # CreateMonitorProbeInput
-<a name="API_CreateMonitorProbeInput"></a>
 
 Creates a monitor probe.
 

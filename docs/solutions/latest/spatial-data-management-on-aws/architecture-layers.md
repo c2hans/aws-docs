@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Architecture Layers
-<a name="architecture-layers"></a>
 
 ## Authentication Layer
 <a name="authentication-layer"></a>

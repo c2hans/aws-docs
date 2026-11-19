@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UploadSSHPub
 ---
 
 # UploadSSHPublicKey
-<a name="API_UploadSSHPublicKey"></a>
 
 Uploads an SSH public key and associates it with the specified IAM user.
 

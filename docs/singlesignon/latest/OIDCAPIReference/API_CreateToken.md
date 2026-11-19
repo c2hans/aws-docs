@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API
 ---
 
 # CreateToken
-<a name="API_CreateToken"></a>
 
 Creates and returns access and refresh tokens for clients that are authenticated using client secrets. The access token can be used to fetch short-lived credentials for the assigned AWS accounts or to access application APIs using `bearer` authentication.
 
@@ -177,7 +176,7 @@ Human-readable text providing additional information, used to assist the client 
 HTTP Status Code: 401
 
  ** InvalidGrantException **
-Indicates that a request contains an invalid grant. This can occur if a client makes a [CreateToken](#API_CreateToken) request with an invalid grant type.
+Indicates that a request contains an invalid grant. This can occur if a client makes a [CreateToken](API_CreateToken.md) request with an invalid grant type.
  ** error **
 Single error code. For this exception the value will be `invalid_grant`.
  ** error\_description **

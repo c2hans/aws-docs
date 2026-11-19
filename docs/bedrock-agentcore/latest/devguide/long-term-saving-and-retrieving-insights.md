@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/long-t
 ---
 
 # Save and retrieve insights
-<a name="long-term-saving-and-retrieving-insights"></a>
 
 Once you have configured an AgentCore Memory with at least one long-term memory strategy and the strategy is ACTIVE, the service will automatically begin processing conversational data to extract and store insights. This process involves two distinct steps: saving the raw conversation and then retrieving the structured insights after they have been processed.
 

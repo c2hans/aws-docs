@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_UpdateSecu
 ---
 
 # UpdateSecurityGroup
-<a name="API_UpdateSecurityGroup"></a>
 
 Updates the properties of an existing security group in a Wickr network, such as its name or settings.
 

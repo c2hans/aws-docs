@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # RegisterDomain
-<a name="API_domains_RegisterDomain"></a>
 
 This operation registers a domain. For some top-level domains (TLDs), this operation requires extra parameters.
 

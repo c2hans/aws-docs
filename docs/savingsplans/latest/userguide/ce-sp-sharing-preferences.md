@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/ce-sp-shar
 ---
 
 # Setting up level sharing for a Savings Plan
-<a name="ce-sp-sharing-preferences"></a>
 
 Level sharing lets you choose which accounts can use the discount from a specific Savings Plan. Use level sharing when a specific commitment was purchased for a particular team, project or business unit. You set up level sharing in the **Sharing preferences** section on the Savings Plan detail page.
 

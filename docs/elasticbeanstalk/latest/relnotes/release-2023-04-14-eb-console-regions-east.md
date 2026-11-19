@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk launches new console design in more AWS Regions on April 14, 2023
-<a name="release-2023-04-14-eb-console-regions-east"></a>
 
 AWS Elastic Beanstalk launches new console design in AWS Regions: Africa (Cape Town), Asia Pacific (Hong Kong), Asia Pacific (Jakarta), Europe (Milan), and Middle East (Bahrain).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/using-microsoft
 ---
 
 # Connect to a Microsoft SQL Server data source
-<a name="using-microsoft-sql-server-in-AMG"></a>
 
  Use the Microsoft SQL Server (MSSQL) data source to query and visualize data from any Microsoft SQL Server 2005 or newer, including Microsoft Azure SQL Database.
 

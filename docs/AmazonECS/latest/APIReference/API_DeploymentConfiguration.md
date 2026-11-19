@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Deploy
 ---
 
 # DeploymentConfiguration
-<a name="API_DeploymentConfiguration"></a>
 
 Optional deployment parameters that control how many tasks run during a deployment and the ordering of stopping and starting tasks.
 

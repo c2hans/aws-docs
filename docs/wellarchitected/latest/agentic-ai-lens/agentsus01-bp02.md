@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSUS01-BP02 Implement reusable workflow patterns
-<a name="agentsus01-bp02"></a>
 
  When every team rebuilds data retrieval, validation, and transformation workflows from scratch, each rebuild costs development time and pays for its own separate optimization cycle. A library of parameterized patterns shifts that cost into a one-time investment and makes subsequent projects compose from tested building blocks instead of starting over.
 

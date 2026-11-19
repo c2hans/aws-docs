@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/manag
 ---
 
 # Integrate Amazon OpenSearch Service
-<a name="managed-prometheus-collectors-opensearch-setup"></a>
 
 With an Amazon CloudWatch managed Prometheus collector, you can automatically collect Prometheus-compatible metrics from your Amazon OpenSearch Service domains. The managed collector connects to your VPC, collects cluster, node, and index metrics from the domain, and delivers these metrics directly to CloudWatch. With this integration, you can monitor the health and performance of your domains in CloudWatch without deploying any agents or exporters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # StopRuntimeSession
-<a name="API_StopRuntimeSession"></a>
 
 Stops a session that is running in an running AgentCore Runtime agent.
 

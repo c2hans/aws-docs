@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeDaemonRevisions
-<a name="API_DescribeDaemonRevisions"></a>
 
 Describes one or more of your daemon revisions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/service-quo
 ---
 
 # IVS Service Quotas \| Real-Time Streaming
-<a name="service-quotas"></a>
 
 The following are service quotas and limits for Amazon Interactive Video Service (IVS) real-time endpoints, resources, and other operations. Service quotas (also known as limits) are the maximum number of service resources or operations for your AWS account. That is, these limits are per AWS account, unless noted otherwise in the table. Also see [AWS Service Quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html).
 

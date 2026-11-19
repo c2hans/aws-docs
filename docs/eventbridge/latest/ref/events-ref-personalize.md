@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-person
 ---
 
 # Amazon Personalize events
-<a name="events-ref-personalize"></a>
 
 Amazon Personalize sends service events to EventBridge via AWS CloudTrail.
 

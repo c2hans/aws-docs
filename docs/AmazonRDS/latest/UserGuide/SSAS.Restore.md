@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSAS.Restore.
 ---
 
 # Restoring an SSAS database
-<a name="SSAS.Restore"></a>
 
 Use the following stored procedure to restore an SSAS database from a backup.
 

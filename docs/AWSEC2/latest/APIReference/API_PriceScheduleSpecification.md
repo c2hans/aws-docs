@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PriceSche
 ---
 
 # PriceScheduleSpecification
-<a name="API_PriceScheduleSpecification"></a>
 
 Describes the price for a Reserved Instance.
 

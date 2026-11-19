@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Future Considerations
-<a name="future-considerations"></a>
 
 As the regulatory landscape and technology continue to evolve, organizations must stay vigilant and adaptable in their GDPR compliance efforts on AWS. AWS closely monitors new developments and updates its services and assurances accordingly. Customers should regularly review AWS's compliance resources and service updates to leverage new features that can enhance their GDPR compliance posture.
 

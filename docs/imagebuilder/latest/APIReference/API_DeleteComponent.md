@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Del
 ---
 
 # DeleteComponent
-<a name="API_DeleteComponent"></a>
 
 Deletes a component build version. The request fails with `ResourceDependencyException` if an image recipe or container recipe references this component version. It also fails if the component build version is shared with other accounts.
 

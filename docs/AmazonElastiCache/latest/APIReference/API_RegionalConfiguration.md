@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # RegionalConfiguration
-<a name="API_RegionalConfiguration"></a>
 
 A list of the replication groups
 

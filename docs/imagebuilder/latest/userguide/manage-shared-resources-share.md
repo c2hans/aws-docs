@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-sha
 ---
 
 # Create an AWS RAM resource share for your Image Builder resources
-<a name="manage-shared-resources-share"></a>
 
 To share an Image Builder component, image, or recipe, you must add it to an AWS Resource Access Manager resource share. The resource share specifies the resources to share and the consumers with whom they are shared.
 

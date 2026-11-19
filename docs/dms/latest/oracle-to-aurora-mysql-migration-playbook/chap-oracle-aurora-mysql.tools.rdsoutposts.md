@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Amazon RDS on Outposts
-<a name="chap-oracle-aurora-mysql.tools.rdsoutposts"></a>
 
 **Note**
 This topic is related to Amazon Relational Database Service (Amazon RDS) and isn’t supported with Amazon Aurora.

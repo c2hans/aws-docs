@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Expor
 ---
 
 # ExporterConfiguration
-<a name="API_ExporterConfiguration"></a>
 
 Contains the configuration for an exporter managed by the scraper.
 

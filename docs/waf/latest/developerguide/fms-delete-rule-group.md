@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/fms-delete-rul
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Deleting a rule group from a Firewall Manager DNS Firewall policy
-<a name="fms-delete-rule-group"></a>
 
 **Deleting a rule group**
 To delete a rule group from a Firewall Manager DNS Firewall policy, you must perform the following steps:

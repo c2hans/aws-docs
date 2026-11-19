@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/apply_ri.html
 ---
 
 # How Reserved Instance discounts are applied
-<a name="apply_ri"></a>
 
 Reserved Instances are not physical instances, but rather a billing discount that is applied to the running On-Demand Instances in your account. The On-Demand Instances must match certain specifications of the Reserved Instances to benefit from the billing discount.
 

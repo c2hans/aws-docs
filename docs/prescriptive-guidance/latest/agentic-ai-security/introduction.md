@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Security for agentic AI on AWS
-<a name="introduction"></a>
 
 *James Schafer and Melanie Li, Amazon Web Services*
 

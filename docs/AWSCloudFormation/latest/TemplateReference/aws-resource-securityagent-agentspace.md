@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityAgent::AgentSpace
-<a name="aws-resource-securityagent-agentspace"></a>
 
 The `AWS::SecurityAgent::AgentSpace` resource specifies an agent space for security testing. An agent space defines the scope of resources, integrations, and settings available to security testing operations.
 

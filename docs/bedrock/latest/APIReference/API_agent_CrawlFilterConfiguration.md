@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Cr
 ---
 
 # CrawlFilterConfiguration
-<a name="API_agent_CrawlFilterConfiguration"></a>
 
 The configuration of filtering the data source content. For example, configuring regular expression patterns to include or exclude certain content.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/containers-workflow-cre
 ---
 
 # Adding private or third-party containers during workflow creation
-<a name="containers-workflow-creation"></a>
 
 When you create a new workflow, you can define the registry and image mappings required by your workflow. For more information, see [Create a private workflow](create-private-workflow.md). You can also update registry and image mappings when you create a new workflow version. For more information, see [Create a workflow version](workflows-version-create.md).
 

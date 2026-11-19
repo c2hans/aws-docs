@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/docusign-monitor-configur
 ---
 
 # Configuring Docusign Monitor
-<a name="docusign-monitor-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Docusign Monitor to supported destinations, you must meet these requirements:
 

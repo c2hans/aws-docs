@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/actions.routing-co
 ---
 
 # Routing control API operations
-<a name="actions.routing-control"></a>
 
 This section includes tables with lists API operations that you can use for setting up and using routing control in Amazon Application Recovery Controller (ARC), with links to relevant documentation.
 

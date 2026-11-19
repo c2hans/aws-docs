@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_F
 ---
 
 # FilterSpecification
-<a name="API_FilterSpecification"></a>
 
 Contains the filter criteria used to limit which items are included in an export. If you don't include this parameter, all items and attributes are exported.
 

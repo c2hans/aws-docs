@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DateT
 ---
 
 # DateTimeDefaultValues
-<a name="API_DateTimeDefaultValues"></a>
 
 The default values of the `DateTimeParameterDeclaration`.
 

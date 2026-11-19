@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Roles and responsibilities
-<a name="roles-responsibilities"></a>
 
 This section highlights the common business and technical personas, that contribute to the data mesh–based data solution. The alignment of these personas with the teams might differ based on the size and structure of your organization and the technology used in the data mesh solution.
 

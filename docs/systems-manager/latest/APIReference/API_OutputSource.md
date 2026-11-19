@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OutputSource
-<a name="API_OutputSource"></a>
 
 Information about the source where the association execution details are stored.
 

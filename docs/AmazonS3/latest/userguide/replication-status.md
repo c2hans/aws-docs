@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-st
 ---
 
 # Getting replication status information
-<a name="replication-status"></a>
 
 Replication status can help you determine the current state of an object being replicated. The replication status of a source object will return either `PENDING`, `COMPLETED`, or `FAILED`. The replication status of a replica will return `REPLICA`.
 

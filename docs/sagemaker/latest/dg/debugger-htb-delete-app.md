@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-htb-delete-
 ---
 
 # Delete unused TensorBoard applications
-<a name="debugger-htb-delete-app"></a>
 
 After you are done with monitoring and experimenting with jobs in TensorBoard, shut the TensorBoard application down.
 

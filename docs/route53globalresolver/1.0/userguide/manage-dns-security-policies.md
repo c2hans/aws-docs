@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/mana
 ---
 
 # Manage DNS security policies in Amazon Route 53 Global Resolver
-<a name="manage-dns-security-policies"></a>
 
 ## Managing global resolvers
 <a name="managing-resolvers"></a>

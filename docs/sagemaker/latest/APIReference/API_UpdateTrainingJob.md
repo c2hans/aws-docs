@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateTrainingJob
-<a name="API_UpdateTrainingJob"></a>
 
 Update a model training job to request a new Debugger profiling configuration or to change warm pool retention length.
 

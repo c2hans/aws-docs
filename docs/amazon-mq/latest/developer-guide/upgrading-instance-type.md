@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/upgradi
 ---
 
 # Upgrading an Amazon MQ broker instance type
-<a name="upgrading-instance-type"></a>
 
 **Important**
  `mq.m7g.x` instances are only available for Amazon MQ for RabbitMQ brokers. Amazon MQ for ActiveMQ brokers only use `mq.m5.x` instances.

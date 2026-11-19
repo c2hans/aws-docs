@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_SetDefaultPo
 ---
 
 # SetDefaultPolicyVersion
-<a name="API_SetDefaultPolicyVersion"></a>
 
 Sets the specified version of the specified policy as the policy's default (operative) version.
 

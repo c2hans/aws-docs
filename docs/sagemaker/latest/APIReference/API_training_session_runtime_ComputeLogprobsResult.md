@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # ComputeLogprobsResult
-<a name="API_training_session_runtime_ComputeLogprobsResult"></a>
 
 The result of a compute-logprobs operation.
 

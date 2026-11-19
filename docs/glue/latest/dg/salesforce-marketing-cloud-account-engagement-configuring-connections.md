@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-marketing-clou
 ---
 
 # Configuring Salesforce Marketing Cloud Account Engagement connections
-<a name="salesforce-marketing-cloud-account-engagement-configuring-connections"></a>
 
 The grant type determines how AWS Glue communicates with Salesforce Marketing Cloud Account Engagement to request access to your data. Your choice affects the requirements that you must meet before you create the connection. Salesforce Marketing Cloud Account Engagement supports only the AUTHORIZATION\_CODE grant type for OAuth 2.0.
 + This grant type is considered "three-legged" OAuth as it relies on redirecting users to a third-party authorization server to authenticate the user. It is used when creating connections via the AWS Glue console.

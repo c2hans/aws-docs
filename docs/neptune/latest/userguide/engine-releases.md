@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/engine-releases
 ---
 
 # Engine releases for Amazon Neptune
-<a name="engine-releases"></a>
 
 Amazon Neptune releases engine updates regularly.
 

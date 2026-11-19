@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/configure-sns-notification
 ---
 
 # Configuring Amazon SNS notifications for Amazon SES
-<a name="configure-sns-notifications"></a>
 
 Amazon SES can notify you of your bounces, complaints, and deliveries through [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/sns).
 

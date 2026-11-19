@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/queryi
 ---
 
 # Querying Your Search Domain for More Information in Amazon CloudSearch
-<a name="querying-for-more-info"></a>
 
 When you submit a search request, Amazon CloudSearch returns a collection of the documents that match your search criteria. You can also retrieve:
 + The contents of selected fields

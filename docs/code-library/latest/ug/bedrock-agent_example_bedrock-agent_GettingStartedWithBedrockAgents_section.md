@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/bedrock-agent_exa
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # An end-to-end example showing how to create and invoke Amazon Bedrock Agents using an AWS SDK
-<a name="bedrock-agent_example_bedrock-agent_GettingStartedWithBedrockAgents_section"></a>
 
 The following code example shows how to:
 + Create an execution role for the agent.

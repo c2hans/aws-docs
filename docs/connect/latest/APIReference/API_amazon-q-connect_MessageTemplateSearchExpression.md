@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # MessageTemplateSearchExpression
-<a name="API_amazon-q-connect_MessageTemplateSearchExpression"></a>
 
 The search expression of the message template.
 

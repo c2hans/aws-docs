@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SessionActionDefinition
-<a name="API_SessionActionDefinition"></a>
 
 The definition of the session action.
 

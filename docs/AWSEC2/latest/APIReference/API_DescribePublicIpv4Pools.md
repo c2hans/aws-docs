@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeP
 ---
 
 # DescribePublicIpv4Pools
-<a name="API_DescribePublicIpv4Pools"></a>
 
 Describes the specified IPv4 address pools.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMR::InstanceFleetConfig OnDemandCapacityReservationOptions
-<a name="aws-properties-emr-instancefleetconfig-ondemandcapacityreservationoptions"></a>
 
 Describes the strategy for using unused Capacity Reservations for fulfilling On-Demand capacity.
 

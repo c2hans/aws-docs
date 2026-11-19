@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rule-dlq
 ---
 
 # Using dead-letter queues to process undelivered events in EventBridge
-<a name="eb-rule-dlq"></a>
 
 To avoid losing events after they fail to be delivered to a target, you can configure a dead-letter queue (DLQ) and send all failed events to it for processing later.
 

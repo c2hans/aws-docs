@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Migrating indexes to Aurora PostgreSQL
-<a name="chap-sql-server-aurora-pg.indexes"></a>
 
 This topic provides reference information about migrating indexes from Microsoft SQL Server 2019 to Amazon Aurora PostgreSQL. It compares and contrasts how indexes are implemented and used in both database systems, highlighting key differences and similarities. You’ll gain insight into the types of indexes supported, their limitations, and specific features available in each platform.
 

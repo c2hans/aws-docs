@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_AppIns
 ---
 
 # AppInstance
-<a name="API_AppInstance"></a>
 
 The details of an `AppInstance`, an instance of an Amazon Chime SDK messaging application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_StartReadSetActivat
 ---
 
 # StartReadSetActivationJob
-<a name="API_StartReadSetActivationJob"></a>
 
 Activates an archived read set and returns its metadata in a JSON formatted output. AWS HealthOmics automatically archives unused read sets after 30 days. To monitor the status of your read set activation job, use the `GetReadSetActivationJob` operation.
 

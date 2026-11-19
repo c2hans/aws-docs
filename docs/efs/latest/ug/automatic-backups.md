@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/automatic-backups.html
 ---
 
 # Managing automatic backups of EFS file systems
-<a name="automatic-backups"></a>
 
 When you create a file system using the Amazon EFS console, automatic backups are turned on by default. You can turn on automatic backups after creating your file system using the AWS CLI or API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListPricingRules
-<a name="API_ListPricingRules"></a>
 
  Describes a pricing rule that can be associated to a pricing plan, or set of pricing plans.
 

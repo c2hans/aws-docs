@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactS
 ---
 
 # ContactSearchSummary
-<a name="API_ContactSearchSummary"></a>
 
 Information of returned contact.
 

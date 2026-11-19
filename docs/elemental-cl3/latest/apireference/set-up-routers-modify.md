@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # PUT: Modify a Router
-<a name="set-up-routers-modify"></a>
 
 Modify the attributes of the specified router. You cannot use this command to modify the inputs or outputs of the router; to do that, use PUT Router Input and PUT Router Output.
 

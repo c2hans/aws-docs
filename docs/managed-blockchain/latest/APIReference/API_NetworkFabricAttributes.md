@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # NetworkFabricAttributes
-<a name="API_NetworkFabricAttributes"></a>
 
 Attributes of Hyperledger Fabric for a network.
 

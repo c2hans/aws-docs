@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # CreateBillingGroup
-<a name="API_CreateBillingGroup"></a>
 
  Creates a billing group that resembles a consolidated billing family that AWS charges, based off of the predefined pricing plan computation.
 

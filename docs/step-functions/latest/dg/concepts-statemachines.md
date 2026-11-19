@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/concepts-statem
 ---
 
 # Learn about state machines in Step Functions
-<a name="concepts-statemachines"></a>
 
 Step Functions is based on *state machines*, which are also called *workflows*. Workflows are comprised of a series of event-driven steps.
 

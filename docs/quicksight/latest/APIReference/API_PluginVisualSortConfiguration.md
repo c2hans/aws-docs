@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Plugi
 ---
 
 # PluginVisualSortConfiguration
-<a name="API_PluginVisualSortConfiguration"></a>
 
 Determines how the plugin visual sorts the data during query.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_G
 ---
 
 # GlobalSecondaryIndexAutoScalingUpdate
-<a name="API_GlobalSecondaryIndexAutoScalingUpdate"></a>
 
 Represents the auto scaling settings of a global secondary index for a global table that will be modified.
 

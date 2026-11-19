@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cwan-flo
 ---
 
 # Create and manage AWS Cloud WAN Flow Logs using APIs or the CLI
-<a name="cwan-flow-logs-api-cli"></a>
 
 You can perform the tasks described on this page using the command line.
 

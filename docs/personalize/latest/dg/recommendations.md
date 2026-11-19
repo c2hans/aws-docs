@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/recommendations.ht
 ---
 
 # Real-time item recommendations in Amazon Personalize
-<a name="recommendations"></a>
 
  If your use case or recipe generates item recommendations, after you [create a recommender](creating-recommenders.md) or [create a campaign](campaigns.md), you can get real-time personalized or related item recommendations for your users.
 

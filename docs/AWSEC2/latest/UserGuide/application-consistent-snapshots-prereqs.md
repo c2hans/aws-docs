@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/application-cons
 ---
 
 # Prerequisites to create Windows VSS based EBS snapshots
-<a name="application-consistent-snapshots-prereqs"></a>
 
 You can create VSS based EBS snapshots with Systems Manager Run Command, AWS Backup, or Amazon Data Lifecycle Manager. The following prerequisites apply for all solutions.
 

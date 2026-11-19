@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListUser
 ---
 
 # ListUserHierarchyGroups
-<a name="API_ListUserHierarchyGroups"></a>
 
 Provides summary information about the hierarchy groups for the specified Connect Customer instance.
 

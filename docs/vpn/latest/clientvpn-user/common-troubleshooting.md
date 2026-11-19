@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/common-trouble
 ---
 
 # Troubleshooting common AWS Client VPN problems
-<a name="common-troubleshooting"></a>
 
 The following are common problems that you might have when using a client to connect to a Client VPN endpoint.
 

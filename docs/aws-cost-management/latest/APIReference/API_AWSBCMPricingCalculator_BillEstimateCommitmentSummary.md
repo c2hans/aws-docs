@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillEstimateCommitmentSummary
-<a name="API_AWSBCMPricingCalculator_BillEstimateCommitmentSummary"></a>
 
  Provides a summary of commitment-related information for a bill estimate.
 

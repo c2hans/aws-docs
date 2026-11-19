@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_S
 ---
 
 # SourceTableDetails
-<a name="API_SourceTableDetails"></a>
 
 Contains the details of the table when the backup was created.
 

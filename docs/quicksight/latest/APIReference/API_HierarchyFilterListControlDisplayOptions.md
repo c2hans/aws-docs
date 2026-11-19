@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Hiera
 ---
 
 # HierarchyFilterListControlDisplayOptions
-<a name="API_HierarchyFilterListControlDisplayOptions"></a>
 
 The display options of a control.
 

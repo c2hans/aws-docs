@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CapacityProviderTe
 ---
 
 # CapacityProviderTelemetryConfig
-<a name="API_CapacityProviderTelemetryConfig"></a>
 
 Configuration that specifies the telemetry collection for the capacity provider.
 

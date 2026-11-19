@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # emr-7.9.0-latest
-<a name="emr-eks-7.9.0-latest"></a>
 
 **Release notes**: `emr-7.9.0-latest` currently points to `emr-7.9.0-20250425`.
 

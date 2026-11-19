@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/t
 ---
 
 # Tutorials for Amazon EMR on EKS
-<a name="tutorials"></a>
 
  This section describes common use cases for when you work with Amazon EMR on EKS applications. Each application is specialized and can take unique steps to configure. These topics provide instructions for using each application.
 

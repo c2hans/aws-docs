@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # Enhance Existing ML Lifecycles with Amazon SageMaker AI and AWS Fargate
-<a name="enhance-ml-sagemaker-fargate"></a>
 
 Publication date: **March 28, 2022 ([Diagram history](#diagram-history))**
 

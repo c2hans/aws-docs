@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/domain-user-profile-
 ---
 
 # View user profile details
-<a name="domain-user-profile-describe"></a>
 
 The following section describes how to view the details of a user profile from the SageMaker AI console or the AWS CLI.
 

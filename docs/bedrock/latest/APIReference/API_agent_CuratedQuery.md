@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Cu
 ---
 
 # CuratedQuery
-<a name="API_agent_CuratedQuery"></a>
 
 Contains configurations for a query, each of which defines information about example queries to help the query engine generate appropriate SQL queries.
 

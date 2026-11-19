@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-
 ---
 
 # Amazon MQ broker TLS certificates
-<a name="amazon-mq-certificates"></a>
 
 Amazon MQ brokers present a server certificate that identifies the broker by its fully qualified domain name (FQDN). Your client is responsible for verifying this certificate when it establishes a TLS connection.
 

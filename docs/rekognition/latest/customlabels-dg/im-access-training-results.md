@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/im-ac
 ---
 
 # Accessing evaluation metrics (Console)
-<a name="im-access-training-results"></a>
 
 During testing, the model is evaluated for its performance against the test dataset. The labels in the test dataset are considered 'ground truth' as they represent what the actual image represents. During testing, the model makes predictions using the test dataset. The predicted labels are compared with the ground truth labels and the results are available in the console evaluation page.
 

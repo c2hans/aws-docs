@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # FailedRecord
-<a name="API_FailedRecord"></a>
 
 The record that didn't generate a Match ID.
 

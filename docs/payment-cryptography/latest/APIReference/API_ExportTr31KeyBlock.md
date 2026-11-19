@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # ExportTr31KeyBlock
-<a name="API_ExportTr31KeyBlock"></a>
 
 Parameter information for key material export using symmetric TR-31 key exchange method.
 

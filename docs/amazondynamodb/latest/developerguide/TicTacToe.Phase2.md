@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tic
 ---
 
 # Step 2: Examine the data model and implementation details
-<a name="TicTacToe.Phase2"></a>
 
 **Topics**
 + [2.1: Basic data model](#TicTacToe.Phase2.DataModel)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IterableFormItem.
 ---
 
 # IterableFormItem
-<a name="API_IterableFormItem"></a>
 
 A full iterable form item with its forms.
 

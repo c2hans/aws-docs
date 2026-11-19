@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/example-s3-
 ---
 
 # Example Configuration Snapshot from AWS Config
-<a name="example-s3-snapshot"></a>
 
 The following is an example of the information that AWS Config includes in a configuration snapshot. The snapshot describes the configuration for the resources that AWS Config is recording in the current region for your AWS account, and it describes the relationships between these resources.
 

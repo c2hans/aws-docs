@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Cons
 ---
 
 # ConsoleFullAccessFromVercel
-<a name="ConsoleFullAccessFromVercel"></a>
 
 **Description**: For use with accounts created through the Vercel Marketplace integration with AWS. Provides access to manage all resources for the services that are integrated with the Vercel Marketplace.
 

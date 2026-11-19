@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/preserving-volum
 ---
 
 # Preserve data when an instance is terminated
-<a name="preserving-volumes-on-termination"></a>
 
 When an Amazon EC2 instance is terminated, you can preserve the data on your instance store volumes or Amazon EBS volumes. This topic explains how to ensure your data persists beyond instance termination.
 

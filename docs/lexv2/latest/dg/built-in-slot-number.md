@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/built-in-slot-number.htm
 ---
 
 # AMAZON.Number
-<a name="built-in-slot-number"></a>
 
 Converts words or numbers that express a number into digits, including decimal numbers. The following table shows how the `AMAZON.Number` slot type captures numeric words.
 

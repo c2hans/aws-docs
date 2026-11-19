@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/system-log-
 ---
 
 # System log forwarder
-<a name="system-log-forwarder-component"></a>
 
 The System log forwarder (`aws.greengrass.SystemLogForwarder`) uploads active system logs directly to Amazon CloudWatch using the CloudWatch HTTPS API.
 

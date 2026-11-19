@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Application logs
-<a name="application-logs"></a>
 
 Centralized Logging with OpenSearch supports ingesting application logs from the following log sources:
 +  [Instance Group](instance-group.md): the solution automatically installs a log agent (Fluent Bit 1.9), collects application logs on EC2 instances and then sends logs into Amazon OpenSearch Service.

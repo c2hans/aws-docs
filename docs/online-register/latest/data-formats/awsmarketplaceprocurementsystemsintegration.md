@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 ---
 
 # Data retrieval APIs for AWS Marketplace Procurement Systems Integration
-<a name="awsmarketplaceprocurementsystemsintegration"></a>
 
 AWS Marketplace Procurement Systems Integration provides the following APIs for data retrieval.
 

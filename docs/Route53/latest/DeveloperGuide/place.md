@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/place.html
 ---
 
 # .place
-<a name="place"></a>
 
 Used as a general extension, but ideal for the home and travel sectors.
 

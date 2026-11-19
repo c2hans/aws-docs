@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TcpRout
 ---
 
 # TcpRoute
-<a name="API_TcpRoute"></a>
 
 An object that represents a TCP route type.
 

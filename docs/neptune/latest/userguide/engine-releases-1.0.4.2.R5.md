@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/engine-releases
 ---
 
 # Amazon Neptune Engine Version 1.0.4.2.R5 (2021-08-16)
-<a name="engine-releases-1.0.4.2.R5"></a>
 
 As of 2021-08-16, AWS deploys engine version 1.0.4.2.R5 to all Regions. It takes several days for a new release to become available in every Region.
 

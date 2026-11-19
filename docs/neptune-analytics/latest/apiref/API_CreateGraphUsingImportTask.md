@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Crea
 ---
 
 # CreateGraphUsingImportTask
-<a name="API_CreateGraphUsingImportTask"></a>
 
 Creates a new Neptune Analytics graph and imports data into it, either from Amazon Simple Storage Service (S3) or from a Neptune database or a Neptune database snapshot.
 

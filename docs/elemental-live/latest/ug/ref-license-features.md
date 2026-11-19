@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/ref-license-fea
 ---
 
 # Elemental Live features that require an add-on package
-<a name="ref-license-features"></a>
 
 Some Elemental Live features require that you purchase an add-on package. The following table lists these features in alphabetical order, and identifies the add-on package that applies to each.
 

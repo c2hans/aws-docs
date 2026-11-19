@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # Elastic Load Balancing
-<a name="component-configuration-examples-elb"></a>
 
 The following example shows a component configuration in JSON format for Elastic Load Balancing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/docume
 ---
 
 # Document History for Amazon CloudSearch
-<a name="document-history"></a>
 
 This topic describes important changes to Amazon CloudSearch.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started-acc
 ---
 
 # Setting up your AWS account
-<a name="getting-started-account-iam"></a>
 
 Before you start working with IAM, make sure you have completed the initial set up of your AWS environment.
 

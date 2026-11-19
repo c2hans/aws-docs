@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Decomissioning
-<a name="raimon03"></a>
 
 | RAIMON03: How will you decommission your AI system? |
 | --- |

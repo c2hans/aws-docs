@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## What's the difference between a data pipeline and an ML pipeline?
 <a name="what-s-the-difference-between-a-data-pipeline-and-an-ml-pipeline-.32182d21-3022-5b5a-9007-e4a3b2d6427c"></a>

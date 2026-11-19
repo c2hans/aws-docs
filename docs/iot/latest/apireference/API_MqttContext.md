@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_MqttContext.
 ---
 
 # MqttContext
-<a name="API_MqttContext"></a>
 
 Specifies the MQTT context to use for the test authorizer request
 

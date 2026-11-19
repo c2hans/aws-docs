@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/what-is-amazon-linux-202
 ---
 
 # What is Amazon Linux 2027?
-<a name="what-is-amazon-linux-2027"></a>
 
 **AL2027 Preview**
 AL2027 is currently available for preview. It is intended for evaluation and testing only and is not recommended for production workloads. We encourage preview users to migrate to the latest version of the AMI and to keep their systems updated. By default, AL2027 instances do not automatically receive any updates, including critical and important security updates.

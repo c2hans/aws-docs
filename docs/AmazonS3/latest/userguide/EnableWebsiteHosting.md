@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/EnableWebsiteH
 ---
 
 # Enabling website hosting
-<a name="EnableWebsiteHosting"></a>
 
 When you configure a bucket as a static website, you must enable static website hosting, configure an index document, and set permissions.
 

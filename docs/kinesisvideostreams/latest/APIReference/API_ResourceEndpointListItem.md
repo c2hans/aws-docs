@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # ResourceEndpointListItem
-<a name="API_ResourceEndpointListItem"></a>
 
 An object that describes the endpoint of the signaling channel returned by the `GetSignalingChannelEndpoint` API.
 

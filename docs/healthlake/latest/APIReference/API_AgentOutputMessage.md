@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Agent
 ---
 
 # AgentOutputMessage
-<a name="API_AgentOutputMessage"></a>
 
 Represents a response message from the agent during chat-based profile customization.
 

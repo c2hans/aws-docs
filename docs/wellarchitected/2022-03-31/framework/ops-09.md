@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS 9  How do you understand the health of your operations?
-<a name="ops-09"></a>
 
  Define, capture, and analyze operations metrics to gain visibility to operations events so that you can take appropriate action.
 

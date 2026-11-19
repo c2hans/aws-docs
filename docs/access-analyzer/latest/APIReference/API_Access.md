@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # Access
-<a name="API_Access"></a>
 
 Contains information about actions and resources that define permissions to check against a policy.
 

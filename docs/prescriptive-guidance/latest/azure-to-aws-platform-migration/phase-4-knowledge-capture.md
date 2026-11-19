@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/azure-to-aw
 ---
 
 # Phase 4 - Knowledge Capture
-<a name="phase-4-knowledge-capture"></a>
 
 This phase has three parts: organizing human knowledge so that the AI assistant can use it, filling out the acceptance criteria documents with all available context, and validating the result before producing deliverables.
 

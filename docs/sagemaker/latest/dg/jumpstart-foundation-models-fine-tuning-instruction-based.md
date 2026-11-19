@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation
 ---
 
 # Fine-tune a large language model (LLM) using prompt instructions
-<a name="jumpstart-foundation-models-fine-tuning-instruction-based"></a>
 
 Instruction-based fine-tuning uses labeled examples to improve the performance of a pre-trained foundation model on a specific task. The labeled examples are formatted as prompt, response pairs and phrased as instructions. This fine-tuning process modifies the weights of the model. For more information on instruction-based fine-tuning, see the papers [Introducing FLAN: More generalizable Language Models with Instruction Fine-Tuning](https://ai.googleblog.com/2021/10/introducing-flan-more-generalizable.html) and [Scaling Instruction-Finetuned Language Models](https://arxiv.org/abs/2210.11416).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Case
 ---
 
 # CaseMetadataEntry
-<a name="API_CaseMetadataEntry"></a>
 
 Represents a single metadata entry associated with a case. Each entry consists of a key-value pair that provides additional contextual information about the case, such as classification tags, custom attributes, or system-generated properties.
 

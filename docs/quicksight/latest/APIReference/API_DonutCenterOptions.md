@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Donut
 ---
 
 # DonutCenterOptions
-<a name="API_DonutCenterOptions"></a>
 
 The label options of the label that is displayed in the center of a donut chart. This option isn't available for pie charts.
 

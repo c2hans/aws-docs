@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ThingPrincip
 ---
 
 # ThingPrincipalObject
-<a name="API_ThingPrincipalObject"></a>
 
 An object that represents the principal and the type of relation it has with the thing.
 

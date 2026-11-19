@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/aws-agent-registr
 ---
 
 # AWS Agent Registry integration
-<a name="aws-agent-registry-integration"></a>
 
 With AWS Quick, you can connect to the [AWS Agent Registry](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry.html). Use this integration to surface the remote Model Context Protocol (MCP) servers registered in your Agent Registry as native Quick connectors. Your organization can maintain a single source of truth for its MCP servers in the Agent Registry while giving Quick users governed access to them.
 

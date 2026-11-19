@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Stag
 ---
 
 # StageSessionSummary
-<a name="API_StageSessionSummary"></a>
 
 Summary information about a stage session.
 

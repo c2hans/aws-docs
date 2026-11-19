@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-iceberg-use-
 ---
 
 # Use an Iceberg cluster with Spark
-<a name="emr-iceberg-use-spark-cluster"></a>
 
 Starting with Amazon EMR version 6.5.0, you can use Iceberg with your Spark cluster with no requirement to include bootstrap actions. For Amazon EMR versions 6.4.0 and earlier, you can use a bootstrap action to pre-install all necessary dependencies.
 

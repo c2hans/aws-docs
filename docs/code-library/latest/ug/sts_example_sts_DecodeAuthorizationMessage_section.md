@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sts_example_sts_D
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `DecodeAuthorizationMessage` with a CLI
-<a name="sts_example_sts_DecodeAuthorizationMessage_section"></a>
 
 The following code examples show how to use `DecodeAuthorizationMessage`.
 

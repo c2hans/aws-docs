@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-produc
 ---
 
 # SaaS-based products in AWS Marketplace
-<a name="saas-products"></a>
 
 With software as a service (SaaS) products, you can deploy software hosted on AWS infrastructure and grant AWS Marketplace buyers access to the software in your AWS environment. You are responsible for managing customer access, account creation, resource provisioning, and account management within your software. After you create your initial SaaS product, you can submit change requests and configure its properties in AWS Marketplace, including your product description, availability by country, pricing, and so on. You also configure your SaaS subscription and contract integration. The following topics provide you with information that you need to get started.
 

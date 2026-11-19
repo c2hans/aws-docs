@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # UpdateLeadContext
-<a name="API_UpdateLeadContext"></a>
 
 Updates the context information for a lead with qualification status, customer details, and interaction data.
 

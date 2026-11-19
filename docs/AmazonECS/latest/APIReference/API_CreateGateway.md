@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Create
 ---
 
 # CreateGateway
-<a name="API_CreateGateway"></a>
 
 Creates a gateway. A gateway defines and dynamically manages ingress paths for your Amazon ECS services, handling traffic routing and infrastructure across multiple services while optimizing infrastructure usage. `CreateGateway` is a synchronous operation and the gateway is returned with a status of `ACTIVE`. The load balancers and other infrastructure that a gateway manages aren't created until a service in an associated cluster begins using the gateway.
 

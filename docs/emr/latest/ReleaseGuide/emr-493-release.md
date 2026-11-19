@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-493-release.
 ---
 
 # Amazon EMR release 4.9.3
-<a name="emr-493-release"></a>
 
 ## 4.9.3 application versions
 <a name="emr-493-app-versions"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/test-throughp
 ---
 
 # Troubleshooting AWS Client VPN: Verify the bandwidth limit for a Client VPN endpoint
-<a name="test-throughput"></a>
 
 **Problem**
 I need to verify the bandwidth limit for a Client VPN endpoint.

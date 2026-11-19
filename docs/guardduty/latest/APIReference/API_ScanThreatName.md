@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ScanTh
 ---
 
 # ScanThreatName
-<a name="API_ScanThreatName"></a>
 
 Contains files infected with the given threat providing details of malware name and severity.
 

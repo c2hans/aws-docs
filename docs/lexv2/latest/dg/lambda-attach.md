@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/lambda-attach.html
 ---
 
 # Creating an AWS Lambda function for your Amazon Lex V2 bot
-<a name="lambda-attach"></a>
 
 To create a Lambda function for your Amazon Lex V2 bot, access AWS Lambda from your AWS Management Console and create a new function. You can refer to the [AWS Lambda developer guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) for more details about AWS Lambda.
 

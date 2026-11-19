@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # Dual Stack Amazon VPC Connectivity with AWS PrivateLink
-<a name="ipv6-privatelink"></a>
 
 Publication date: **June 23, 2022 ([Diagram history](#ipv6-14-diagram-history))**
 

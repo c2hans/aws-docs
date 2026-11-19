@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Lo
 ---
 
 # Parameters for logging in Aurora PostgreSQL
-<a name="USER_LogAccess.Concepts.PostgreSQL.overview.parameter-groups"></a>
 
 You can customize the logging behavior for your Aurora PostgreSQL DB cluster by modifying various parameters. In the following table you can find the parameters that affect how long the logs are stored, when to rotate the log, and whether to output the log as a CSV (comma-separated value) format. You can also find the text output sent to STDERR, among other settings. To change settings for the parameters that are modifiable, use a custom DB cluster parameter group for your Aurora PostgreSQL DB cluster. For more information, see [Parameter groups for Amazon Aurora](USER_WorkingWithParamGroups.md).
 

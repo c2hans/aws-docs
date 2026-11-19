@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Aircraft Predictive Maintenance
-<a name="aircraft-predictive-maintenance"></a>
 
 Publication date: **March 10, 2021 ([Diagram history](#predictive-maintenance-history))**
 

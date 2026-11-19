@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Organizat
 ---
 
 # OrganizationResourceDetailedStatusFilters
-<a name="API_OrganizationResourceDetailedStatusFilters"></a>
 
 Status filter object to filter results based on specific member account ID or status type for an organization conformance pack.
 

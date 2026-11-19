@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # More patterns
-<a name="migration-more-patterns-pattern-list"></a>
 
 **Topics**
 + [Assess query performance for migrating SQL Server databases to MongoDB Atlas on AWS](assess-query-performance-for-migrating-sql-server-databases-to-mongodb-atlas-on-aws.md)
@@ -30,6 +29,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 + [Modify HTTP headers when you migrate from F5 to an Application Load Balancer on AWS](modify-http-headers-when-you-migrate-from-f5-to-an-application-load-balancer-on-aws.md)
 + [Manage Multi-AZ failover for EMR clusters by using Application Recovery Controller](multi-az-failover-spark-emr-clusters-arc.md)
 + [Analyze object dependencies for partial database migrations from Oracle to PostgreSQL](multilevel-object-analysis-for-database-migration-from-oracle-to-postgresql.md)
++ [Send telemetry data from AWS Lambda to OpenSearch for real-time analytics and visualization](send-telemetry-data-from-lambda-to-opensearch-for-analytics-visualization.md)
 + [Set up disaster recovery for Oracle JD Edwards EnterpriseOne with AWS Elastic Disaster Recovery](set-up-disaster-recovery-for-oracle-jd-edwards-enterpriseone-with-aws-elastic-disaster-recovery.md)
 + [Transfer large-scale Db2 z/OS data to Amazon S3 in CSV files](transfer-large-scale-db2-z-os-data-to-amazon-s3-in-csv-files.md)
 + [Transform Easytrieve to modern languages by using AWS Transform custom](transform-easytrieve-modern-languages.md)

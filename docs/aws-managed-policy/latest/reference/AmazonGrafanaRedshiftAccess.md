@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonGrafanaRedshiftAccess
-<a name="AmazonGrafanaRedshiftAccess"></a>
 
 **Description**: This policy grants scoped access to Amazon Redshift and the dependencies needed to use the Amazon Redshift plugin in Amazon Grafana.
 

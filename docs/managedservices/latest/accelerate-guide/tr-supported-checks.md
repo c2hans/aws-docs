@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Trusted Advisor checks supported by Trusted Remediator
-<a name="tr-supported-checks"></a>
 
 The following table lists the supported Trusted Advisor checks, SSM automation documents, preconfigured parameters, and the expected outcome of the automation documents. Review the expected outcome to help you understand possible risks based on your business requirements before you enable an SSM automation document for check remediation.
 

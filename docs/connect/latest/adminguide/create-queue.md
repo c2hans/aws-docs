@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-queue.h
 ---
 
 # Create a queue using the Connect Customer admin website
-<a name="create-queue"></a>
 
 This topic explains how to create a queue using the Connect Customer admin website. To create queues programmatically, see the [create-queue](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/connect/create-queue.html) AWS CLI or [CreateQueue](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateQueue.html) in the *Connect Customer API Reference*.
 

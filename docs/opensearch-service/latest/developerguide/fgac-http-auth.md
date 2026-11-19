@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Tutorial: Configure a domain with the internal user database and HTTP basic authentication
-<a name="fgac-http-auth"></a>
 
 This tutorial covers another popular [fine-grained access control](fgac.md) use case: a master user in the internal user database and HTTP basic authentication for OpenSearch Dashboards. The master user can then sign in to OpenSearch Dashboards, create an internal user, map the user to a role, and use fine-grained access control to limit the user's permissions.
 

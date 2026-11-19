@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/e
 ---
 
 # Amazon S3 example program
-<a name="example-program"></a>
 
 This section walks you through a simple example program to list the contents of an Amazon S3 bucket by calling `ListObjectsV2`.
 

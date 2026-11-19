@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_De
 ---
 
 # DeleteImageSet
-<a name="API_DeleteImageSet"></a>
 
 Delete an image set.
 

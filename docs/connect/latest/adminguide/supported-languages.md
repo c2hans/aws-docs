@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/supported-lang
 ---
 
 # Languages supported by Connect Customer features
-<a name="supported-languages"></a>
 
 This topic lists Connect Customer features and which languages they support.
 

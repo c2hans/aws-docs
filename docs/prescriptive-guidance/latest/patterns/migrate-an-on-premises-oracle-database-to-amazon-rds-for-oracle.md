@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises Oracle database to Amazon RDS for Oracle
-<a name="migrate-an-on-premises-oracle-database-to-amazon-rds-for-oracle"></a>
 
 *Baji Shaik and Pavan Pusuluri, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTOPS04-BP03 Develop fallback behavior and error handling for tool invocations
-<a name="agentops04-bp03"></a>
 
  Tools failing is a reality in modern architectures. The question is whether the agent degrades gracefully to an alternative, falls back to a manual process, or returns an error and halts. Well-designed fallback chains and automatic cutoffs keep tool failures from becoming agent failures.
 

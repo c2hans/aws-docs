@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SparkEm
 ---
 
 # SparkEmrPropertiesInput
-<a name="API_SparkEmrPropertiesInput"></a>
 
 The Spark EMR properties.
 

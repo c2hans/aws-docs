@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Add segment actions in an AWS Cloud WAN core network policy version
-<a name="cloudwan-policy-network-actions-routes"></a>
 
 The following steps guide you through optionally setting segment actions for a core network for a policy version using the **Policy versions** link on the AWS Network Manager console. Before setting segment actions you must first configure your [network settings](cloudwan-core-network-config.md) and [add one or more segments](cloudwan-policy-segments.md). For more information, about segment actions, see [Segment actions](cloudwan-create-policy-version.md#cloudwan-policy-create-action).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/TaggingRestric
 ---
 
 # Restrictions for using tags to label resources in Amazon Keyspaces
-<a name="TaggingRestrictions"></a>
 
  Each tag consists of a key and a value, both of which you define. The following restrictions apply:
 +  Each Amazon Keyspaces keyspace, table, or stream can have only one tag with the same key. If you try to add an existing tag (same key), the existing tag value is updated to the new value.

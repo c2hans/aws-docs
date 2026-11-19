@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/prerequ
 ---
 
 # Prerequisites for Enabling Application Settings Persistence
-<a name="prerequisites-app-settings-persistence"></a>
 
 To enable application settings persistence, you must first do the following:
 + Check that you have the correct AWS Identity and Access Management (IAM) permissions for Amazon S3 actions. For more information, see the *IAM Policies and the Amazon S3 Bucket for Home Folders* section in [Identity and Access Management for Amazon WorkSpaces Applications](controlling-access.md).

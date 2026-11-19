@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/client-features.htm
 ---
 
 # Supported features
-<a name="client-features"></a>
 
 Amazon DCV offers a Windows client, Linux client, web browser client, and macOS client. The clients offer similar feature sets, but there are some differences. Choose the Amazon DCV client that meets your specific requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Automated deployment - Stacks
-<a name="deployment"></a>
 
 **Note**
 For multi-account customers, we strongly recommend [deployment with StackSets](deployment-stackset.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/security.html
 ---
 
 # Security in Amazon AppFlow
-<a name="security"></a>
 
 Amazon AppFlow provides a secure platform that enables you to move data bi-directionally between AWS services and software as a service (SaaS) applications, with availability in multiple Regions and built-in redundancy.
 

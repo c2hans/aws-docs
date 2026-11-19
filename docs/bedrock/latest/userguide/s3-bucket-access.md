@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/s3-bucket-acces
 ---
 
 # Configure access to Amazon S3 buckets
-<a name="s3-bucket-access"></a>
 
 Multiple Amazon Bedrock features require access to data that is stored in Amazon S3 buckets. To access this data, you must configure the following permissions:
 

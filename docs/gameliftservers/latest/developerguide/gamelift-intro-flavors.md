@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Amazon GameLift Servers game hosting options
-<a name="gamelift-intro-flavors"></a>
 
 Amazon GameLift Servers offers a range of options for hosting game servers for session-based multiplayer games. Whether you want to set up cloud-based hosting managed by Amazon GameLift Servers or incorporate hosting resources that you already have, you can work with Amazon GameLift Servers to build the hosting solution you need for your players. For more details about what a game hosting solution looks like, see [How hosting with Amazon GameLift Servers works](gamelift-howitworks.md).
 

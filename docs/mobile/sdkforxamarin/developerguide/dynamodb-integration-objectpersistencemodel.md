@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/dyna
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Using the Object Persistence Model
-<a name="dynamodb-integration-objectpersistencemodel"></a>
 
 The AWS Mobile SDK for .NET and Xamarin provides an Object Persistence model that enables you to map your client-side classes to a DynamoDB table. Each object instance then maps to an item in the corresponding table. To save your client-side objects to a table, the Object Persistence model provides the DynamoDBContext class, an entry point to DynamoDB. This class provides you a connection to DynamoDB and enables you to access tables, perform various CRUD operations, and execute queries.
 

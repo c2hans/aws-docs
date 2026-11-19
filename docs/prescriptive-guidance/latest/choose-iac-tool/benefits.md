@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choose-iac-
 ---
 
 # Benefits of implementing IaC
-<a name="benefits"></a>
 
 By choosing the right IaC tool for your organization, you can achieve the following benefits:
 + **Speed** –** **One goal of IaC is to make things faster by eliminating manual processes. A code-based approach makes it easier to get more done in less time. Manually setting up each IT environment is very expensive and requires dedicated engineers and architects for setting up the hardware and software. By increasing speed, organizations are better able to adapt quickly to changing customer needs and market conditions. It also allows you to write your IaC code once and deploy that same code to hundreds of environments in a fraction of the time that it would take you to create them manually.

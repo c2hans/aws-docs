@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_TagResour
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Creates tag for a resource by specifying the ARN.
 

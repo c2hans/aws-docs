@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-puls
 ---
 
 # Pulse control on Amazon Braket
-<a name="braket-pulse-control"></a>
 
 Pulses are the analog signals that control the qubits in a quantum computer. With certain devices on Amazon Braket, you can access the pulse control feature to submit circuits using pulses. You can access pulse control through the Braket SDK, using OpenQASM 3.0, or directly through the Braket APIs. First, introduce some key concepts for pulse control in Braket.
 

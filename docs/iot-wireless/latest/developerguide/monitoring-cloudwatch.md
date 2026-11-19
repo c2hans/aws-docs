@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/monit
 ---
 
 # Monitoring your AWS IoT Wireless resources using Amazon CloudWatch Logs
-<a name="monitoring-cloudwatch"></a>
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of AWS IoT Wireless and your other AWS solutions. You can use monitoring for both your LoRaWAN and Sidewalk devices and obtain informative messages and errors from when they are onboarded to AWS IoT Wireless.
 

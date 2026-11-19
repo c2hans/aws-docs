@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionInferenceAcceleratorsDetails
-<a name="API_AwsEcsTaskDefinitionInferenceAcceleratorsDetails"></a>
 
 An Elastic Inference accelerator to use for the containers in the task.
 

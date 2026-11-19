@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ClusterSumma
 ---
 
 # ClusterSummary
-<a name="API_ClusterSummary"></a>
 
 The summary description of the cluster.
 

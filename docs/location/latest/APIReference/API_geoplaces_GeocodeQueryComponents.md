@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # GeocodeQueryComponents
-<a name="API_geoplaces_GeocodeQueryComponents"></a>
 
 A structured free text query allows you to search for places by the name or text representation of specific properties of the place.
 

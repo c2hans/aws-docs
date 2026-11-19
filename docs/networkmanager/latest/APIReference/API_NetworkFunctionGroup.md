@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_N
 ---
 
 # NetworkFunctionGroup
-<a name="API_NetworkFunctionGroup"></a>
 
 Describes a network function group for service insertion.
 

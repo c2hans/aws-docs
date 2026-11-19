@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Unt
 ---
 
 # Use `UntagRole` with a CLI
-<a name="iam_example_iam_UntagRole_section"></a>
 
 The following code examples show how to use `UntagRole`.
 

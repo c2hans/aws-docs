@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Start a new project
-<a name="net-dg-start-new-project"></a>
 
 There are several techniques you can use to start a new project to access AWS services. The following are some of those techniques:
 + If you're new to .NET development on AWS or at least new to the AWS SDK for .NET, you can see complete examples in [Creating a simple application](quick-start.md). It gives you an introduction to the SDK.

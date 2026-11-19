@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListPricingRulesFilter
-<a name="API_ListPricingRulesFilter"></a>
 
  The filter that specifies criteria that the pricing rules returned by the `ListPricingRules` API will adhere to.
 

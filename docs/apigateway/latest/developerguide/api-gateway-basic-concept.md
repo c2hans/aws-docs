@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # Amazon API Gateway concepts
-<a name="api-gateway-basic-concept"></a>
 
 The following section describes introductory concepts for using API Gateway.
 

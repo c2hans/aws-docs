@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_ListCu
 ---
 
 # ListCustomRoutingAccelerators
-<a name="API_ListCustomRoutingAccelerators"></a>
 
 List the custom routing accelerators for an AWS account.
 

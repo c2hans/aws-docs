@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListHookResults
-<a name="API_ListHookResults"></a>
 
 Returns summaries of invoked Hooks. For more information, see [View invocation summaries for CloudFormation Hooks](https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguide/hooks-view-invocations.html) in the * CloudFormation Hooks User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # CalendarInterval
-<a name="API_CalendarInterval"></a>
 
 If the interval for this service level objective is a calendar interval, this structure contains the interval specifications.
 

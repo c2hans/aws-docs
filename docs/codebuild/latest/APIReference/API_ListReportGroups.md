@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ListRe
 ---
 
 # ListReportGroups
-<a name="API_ListReportGroups"></a>
 
  Gets a list ARNs for the report groups in the current AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeMaintenanceWindowTargets
-<a name="API_DescribeMaintenanceWindowTargets"></a>
 
 Lists the targets registered with the maintenance window.
 

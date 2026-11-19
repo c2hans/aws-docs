@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/managed-cpa
 ---
 
 # EU Artificial Intelligence Act (EU AI Act)
-<a name="managed-cpack-eu-ai-act"></a>
 
 This AWS Config managed conformance pack provides a curated mapping between the European Union Artificial Intelligence Act and AWS managed Config rules. It covers Article 9 (Risk Management System), Article 10 (Data Governance), Article 12 (Record-Keeping and Logging), and the network and perimeter, identity, key management, and backup and resilience controls of Article 15 (Accuracy, Robustness and Cybersecurity). Each Config rule applies to a specific AWS resource and relates to one or more EU AI Act controls. An EU AI Act control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/action-l
 ---
 
 # Getting started with Amazon ECS Action Logs
-<a name="action-logs-getting-started"></a>
 
 Amazon ECS Action Logs use the Amazon CloudWatch Logs vended log delivery mechanism to publish detailed records of service actions to your preferred destination. When you enable Action Logs, you can see every step that Amazon ECS takes during deployments and daemon operations, including infrastructure provisioning, resource registration, and failure details. This visibility helps you troubleshoot issues without contacting AWS Support and reduces the time to identify root causes. You can enable Action Logs for your clusters using the Amazon ECS console or CloudWatch Logs APIs.
 

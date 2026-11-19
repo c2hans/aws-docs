@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-device-l
 ---
 
 # Associate or disassociate a device link using AWS Network Manager
-<a name="nm-device-link-associate"></a>
 
 Associate a link with a device in your AWS global network. In order to associate a link with a device, you must first create the link. For more information on creating links, see [Add a link using AWS Network Manager](nm-site-link-add.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_StartSourceN
 ---
 
 # StartSourceNetworkRecovery
-<a name="API_StartSourceNetworkRecovery"></a>
 
 Deploy VPC for the specified Source Network and modify launch templates to use this network. The VPC will be deployed using a dedicated CloudFormation stack.
 

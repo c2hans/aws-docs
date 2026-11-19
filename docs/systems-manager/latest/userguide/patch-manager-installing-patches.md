@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # How patches are installed
-<a name="patch-manager-installing-patches"></a>
 
 Patch Manager uses the operating system built-in package manager to install updates on managed nodes. For example, it uses the Windows Update API on Windows Server and `DNF` on Amazon Linux 2023. Patch Manager respects existing package manager and repository configurations on the nodes, including settings such as repository status, mirror URLs, GPG verification, and options like `skip_if_unavailable`.
 

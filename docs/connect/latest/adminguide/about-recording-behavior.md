@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/about-recordin
 ---
 
 # When, what, and where for contact recordings in Connect Customer
-<a name="about-recording-behavior"></a>
 
 This topic explains when conversations are recorded, where recordings are stored, and how to access them. It also provides best practices for managing recordings and transcripts.
 

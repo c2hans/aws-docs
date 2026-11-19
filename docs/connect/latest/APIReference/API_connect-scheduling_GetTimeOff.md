@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetTimeOff
-<a name="API_connect-scheduling_GetTimeOff"></a>
 
 Returns a time off request, including its current status and validation results.
 

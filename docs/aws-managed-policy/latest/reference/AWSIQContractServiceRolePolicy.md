@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIQContractServiceRolePolicy
-<a name="AWSIQContractServiceRolePolicy"></a>
 
 **Description**: Used by AWS IQ to execute payment requests on behalf of a customer
 

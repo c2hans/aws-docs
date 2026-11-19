@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteAlgorithm
-<a name="API_DeleteAlgorithm"></a>
 
 Removes the specified algorithm from your account.
 

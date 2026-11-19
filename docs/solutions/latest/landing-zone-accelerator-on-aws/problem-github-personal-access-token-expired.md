@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Problem: GitHub personal access token expired
-<a name="problem-github-personal-access-token-expired"></a>
 
 The solution uses a GitHub personal access token to access the Landing Zone Accelerator on AWS code repository. If you have set an expiration date on the access token, the token’s privilege is revoked when it expires. You will see an error when trying to run the **Source** stage and action of the [Installer](deployment-pipelines.md#awsaccelerator-installerstack) or [Core](deployment-pipelines.md#awsaccelerator-pipelinestack) pipeline. For example:
 

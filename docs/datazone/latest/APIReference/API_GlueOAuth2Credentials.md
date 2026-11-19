@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GlueOAu
 ---
 
 # GlueOAuth2Credentials
-<a name="API_GlueOAuth2Credentials"></a>
 
 The GlueOAuth2 credentials of a connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactF
 ---
 
 # ContactFlowVersionSummary
-<a name="API_ContactFlowVersionSummary"></a>
 
 A summary of a flow version's metadata.
 

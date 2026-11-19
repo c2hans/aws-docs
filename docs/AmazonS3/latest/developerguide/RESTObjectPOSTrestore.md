@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/RESTObjec
 ---
 
 # POST Object restore
-<a name="RESTObjectPOSTrestore"></a>
 
 ## Description
 <a name="RESTObjectPOSTrestore-description"></a>

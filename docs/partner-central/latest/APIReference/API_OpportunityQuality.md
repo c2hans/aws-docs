@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # OpportunityQuality
-<a name="API_OpportunityQuality"></a>
 
 Opportunity quality score and trend.
 

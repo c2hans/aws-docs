@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-peering.html
 ---
 
 # Transit gateway peering attachments in AWS Transit Gateway
-<a name="tgw-peering"></a>
 
 You can peer both intra-Region and inter-Region transit gateways, and route traffic between them, which includes IPv4 and IPv6 traffic. To do this, create a peering attachment on your transit gateway, and specify a transit gateway. The peer transit gateway can either be in your account or can be from another account. You can also request a peering attachment from your own account to a transit gateway in another account.
 

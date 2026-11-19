@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/direct-connect
 ---
 
 # DataSync architecture and routing examples with Direct Connect
-<a name="direct-connect-architecture"></a>
 
 Consider the following network architectures when using [Direct Connect](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html) with your AWS DataSync transfers.
 

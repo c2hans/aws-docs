@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_
 ---
 
 # Amazon RDS: Allows restoring RDS databases, programmatically and in the console
-<a name="reference_policies_examples_rds_db-console"></a>
 
 This example shows how you might create an identity-based policy that allows restoring RDS databases. This policy defines permissions for programmatic and console access.
 

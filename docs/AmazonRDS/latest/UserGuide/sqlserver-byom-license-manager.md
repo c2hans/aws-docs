@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-byo
 ---
 
 # Integrating BYOM DB Instance with AWS License Manager
-<a name="sqlserver-byom-license-manager"></a>
 
 To make it easier to monitor SQL Server license usage in the BYOM model, [AWS License Manager](https://aws.amazon.com/license-manager/) integrates with RDS for SQL Server. License Manager supports tracking of RDS for SQL Server engine editions based on virtual cores (vCPUs). You can also use License Manager with AWS Organizations to manage all of your organizational accounts centrally.
 

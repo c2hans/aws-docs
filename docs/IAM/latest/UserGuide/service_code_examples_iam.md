@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/service_code_exampl
 ---
 
 # Code examples for IAM using AWS SDKs
-<a name="service_code_examples_iam"></a>
 
 The following code examples show how to use IAM with an AWS software development kit (SDK).
 

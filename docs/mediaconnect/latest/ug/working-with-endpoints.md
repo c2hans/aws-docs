@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/working-with-endp
 ---
 
 # Working with endpoints
-<a name="working-with-endpoints"></a>
 
 When you manage media workflows, the details of your content sources and destinations can scatter across spreadsheets, consoles, and separate tools. AWS Elemental MediaConnect provides an endpoint registry that brings together the endpoints that represent your sources and destinations, giving you a centralized place to manage them. You can see which endpoints are available and connect them as you build and adjust your workflows.
 

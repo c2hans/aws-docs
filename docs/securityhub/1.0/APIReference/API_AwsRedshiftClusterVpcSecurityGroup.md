@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsReds
 ---
 
 # AwsRedshiftClusterVpcSecurityGroup
-<a name="API_AwsRedshiftClusterVpcSecurityGroup"></a>
 
 A VPC security group that the cluster belongs to, if the cluster is in a VPC.
 

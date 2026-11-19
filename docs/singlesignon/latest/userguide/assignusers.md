@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/assignuser
 ---
 
 # Assign user or group access to AWS accounts
-<a name="assignusers"></a>
 
 Use the following procedure to assign single sign-on access to users and groups in your connected directory and use permission sets to determine their level of access.
 

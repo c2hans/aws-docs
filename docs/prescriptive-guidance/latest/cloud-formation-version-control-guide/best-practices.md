@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-forma
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 These are best practices for version control and tagging strategies. ** **
 + Use semantic versioning (MAJOR.MINOR.PATCH) consistently across all environments to maintain clear version tracking.

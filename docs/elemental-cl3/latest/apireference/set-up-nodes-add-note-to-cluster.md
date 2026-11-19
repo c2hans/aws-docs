@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # POST: Add a Node to the Cluster
-<a name="set-up-nodes-add-note-to-cluster"></a>
 
 ## HTTP Request and Response
 <a name="set-up-nodes-add-note-to-cluster-http-request-response"></a>

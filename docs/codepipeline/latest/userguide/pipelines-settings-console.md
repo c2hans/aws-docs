@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-
 ---
 
 # View the pipeline ARN and service role ARN (console)
-<a name="pipelines-settings-console"></a>
 
 You can use the console to view pipeline settings, such as the pipeline ARN, the service role ARN, and the pipeline artifact store.
 

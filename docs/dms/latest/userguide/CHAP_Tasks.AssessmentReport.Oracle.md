@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Assessme
 ---
 
 # Oracle assessments
-<a name="CHAP_Tasks.AssessmentReport.Oracle"></a>
 
 For more information about permissions when using Oracle as a source, see [User account privileges required on a self-managed Oracle source for AWS DMS](CHAP_Source.Oracle.md#CHAP_Source.Oracle.Self-Managed.Privileges) or [User account privileges required on an AWS-managed Oracle source for AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.Oracle.html#CHAP_Source.Oracle.Amazon-Managed).
 

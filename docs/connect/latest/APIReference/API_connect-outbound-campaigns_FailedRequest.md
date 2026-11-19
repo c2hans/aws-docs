@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # FailedRequest
-<a name="API_connect-outbound-campaigns_FailedRequest"></a>
 
 Failure details for a [DialRequest](https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API_DialRequest.html).
 

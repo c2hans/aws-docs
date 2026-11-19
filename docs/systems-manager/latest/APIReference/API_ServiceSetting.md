@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ServiceSetting
-<a name="API_ServiceSetting"></a>
 
 The service setting data structure.
 

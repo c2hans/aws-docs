@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyDataPr
 ---
 
 # ModifyDataProvider
-<a name="API_ModifyDataProvider"></a>
 
 Modifies the specified data provider using the provided settings.
 

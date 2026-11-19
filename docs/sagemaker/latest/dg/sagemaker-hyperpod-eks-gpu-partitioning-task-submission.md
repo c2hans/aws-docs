@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Task Submission with MIG
-<a name="sagemaker-hyperpod-eks-gpu-partitioning-task-submission"></a>
 
 **Topics**
 + [Using Kubernetes YAML](#sagemaker-hyperpod-eks-gpu-partitioning-task-submission-kubectl)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Del
 ---
 
 # DeleteSpace
-<a name="API_DeleteSpace"></a>
 
 Deletes a space.
 

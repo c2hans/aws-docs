@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Acc
 ---
 
 # Accessing DynamoDB
-<a name="AccessingDynamoDB"></a>
 
  You can access Amazon DynamoDB using the AWS Management Console, the AWS Command Line Interface (AWS CLI), or the DynamoDB API.
 

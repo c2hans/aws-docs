@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIotRoboRunnerServiceRolePolicy
-<a name="AWSIotRoboRunnerServiceRolePolicy"></a>
 
 **Description**: Allows AWS IoT RoboRunner to manage associated AWS Resources on behalf of the customer.
 

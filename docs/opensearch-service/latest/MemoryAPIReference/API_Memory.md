@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # Memory
-<a name="API_Memory"></a>
 
 A memory, as returned by `GetMemory` and `UpdateMemory`. Unlike `MemoryListSummary` it includes `content`, and unlike `MemorySearchSummary` it has no relevance score.
 

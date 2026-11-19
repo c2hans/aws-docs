@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Hiera
 ---
 
 # HierarchyFilterLevel
-<a name="API_HierarchyFilterLevel"></a>
 
 One level of the drill-down path of a `HierarchyFilter`.
 

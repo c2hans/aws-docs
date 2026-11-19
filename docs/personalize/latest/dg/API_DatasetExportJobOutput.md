@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DatasetExportJ
 ---
 
 # DatasetExportJobOutput
-<a name="API_DatasetExportJobOutput"></a>
 
 The output configuration parameters of a dataset export job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/document-history
 ---
 
 # Document History for AWS Elemental Conductor Live
-<a name="document-history"></a>
 
 The following table describes important changes to this documentation.
 + **API version:** 3.22.0 and later

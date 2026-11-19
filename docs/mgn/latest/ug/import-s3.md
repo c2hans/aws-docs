@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/import-s3.html
 ---
 
 # Importing your data inventory from an S3 bucket
-<a name="import-s3"></a>
 
 To import your inventory from an S3 bucket, take the following steps:
 

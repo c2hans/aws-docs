@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/schedul
 ---
 
 # Execution role permissions for scheduled reports
-<a name="schedule-dashboard-reports-permissions"></a>
 
 When you create a scheduled report, you must provide an IAM execution role that grants AWS Billing and Cost Management permissions to generate and deliver reports on your behalf. The execution role requires the following permissions and trust policy.
 

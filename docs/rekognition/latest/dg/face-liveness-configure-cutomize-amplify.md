@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/face-liveness-conf
 ---
 
 # Configuring and Customizing Your Application
-<a name="face-liveness-configure-cutomize-amplify"></a>
 
 ## Configuring Your Application
 <a name="face-liveness-configuring-amplify.title"></a>

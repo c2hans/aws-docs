@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/art.html
 ---
 
 # .art
-<a name="art"></a>
 
 Used for art-related websites, portfolios, galleries, and creative projects.
 

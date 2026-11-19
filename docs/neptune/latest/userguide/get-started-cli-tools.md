@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/get-started-cli
 ---
 
 # Using command-line tools to access Amazon Neptune
-<a name="get-started-cli-tools"></a>
 
 You can use the AWS CLI, AWS SDKs, and HTTP tools such as `curl` and `awscurl` to submit queries to your Neptune DB cluster. The following sections show how to set up each tool and run basic queries. You can run Gremlin and openCypher queries with all of these tools. You submit SPARQL queries to the HTTP `/sparql` endpoint using `curl` or `awscurl`.
 

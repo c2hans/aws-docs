@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Credenti
 ---
 
 # Credentials
-<a name="API_Credentials"></a>
 
 Contains credentials to use for federation.
 

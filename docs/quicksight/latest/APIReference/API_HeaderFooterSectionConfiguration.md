@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Heade
 ---
 
 # HeaderFooterSectionConfiguration
-<a name="API_HeaderFooterSectionConfiguration"></a>
 
 The configuration of a header or footer section.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS Directory Service Data is an extension of AWS Directory Service. This API reference provides detailed information about Directory Service Data operations and object types.
 
@@ -19,4 +18,4 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 
  Directory Service Data only supports the AWS Managed Microsoft AD directory type and is only available in the primary AWS Region. For more information, see [AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html) and [Primary vs additional Regions](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/multi-region-global-primary-additional.html) in the * AWS Directory Service Administration Guide*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes
 ---
 
 # Aurora MySQL database engine updates 2019-11-11 (version 1.20.0) (Deprecated)
-<a name="AuroraMySQL.Updates.1200"></a>
 
 **Version:** 1.20.0
 

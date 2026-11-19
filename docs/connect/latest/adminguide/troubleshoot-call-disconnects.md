@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/troubleshoot-c
 ---
 
 # Troubleshoot call disconnects by using DisconnectDetails in the contact record
-<a name="troubleshoot-call-disconnects"></a>
 
 ## Step 1: Observe the issue
 <a name="observations-disconnect"></a>

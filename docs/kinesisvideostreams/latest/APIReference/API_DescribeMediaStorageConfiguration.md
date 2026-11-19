@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # DescribeMediaStorageConfiguration
-<a name="API_DescribeMediaStorageConfiguration"></a>
 
 Returns the most current information about the channel. Specify the `ChannelName` or `ChannelARN` in the input.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Sev
 ---
 
 # SeverityCounts
-<a name="API_SeverityCounts"></a>
 
 Includes counts by severity level for medium severity and higher level findings, plus a total for all of the findings for the specified filter.
 

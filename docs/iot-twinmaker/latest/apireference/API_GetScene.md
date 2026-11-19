@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Ge
 ---
 
 # GetScene
-<a name="API_GetScene"></a>
 
 Retrieves information about a scene.
 

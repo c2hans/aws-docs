@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # MonetaryAmount
-<a name="API_freetier_MonetaryAmount"></a>
 
  The monetary amount of the credit.
 

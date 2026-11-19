@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-d
 ---
 
 # Getting started with Resolver DNS Firewall
-<a name="resolver-dns-firewall-getting-started"></a>
 
 The DNS Firewall console includes a wizard that guides you through the following steps for getting started with DNS Firewall:
 + Create rule groups for each set of rules that you want to use.

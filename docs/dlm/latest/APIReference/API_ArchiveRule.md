@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_ArchiveRule.
 ---
 
 # ArchiveRule
-<a name="API_ArchiveRule"></a>
 
  **[Custom snapshot policies only]** Specifies a snapshot archiving rule for a schedule.
 

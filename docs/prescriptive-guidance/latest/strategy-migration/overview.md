@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mi
 ---
 
 # Overview
-<a name="overview"></a>
 
 To optimize your cloud adoption and migration, you must first assess and evaluate your enterprise for readiness. After you assess the readiness of your organization, you can accelerate your cloud adoption and establish a foundation for migration at scale through the hands-on experience of migrating a first wave of applications in just a few weeks. We discuss these phases in more detail in the following topics.
 

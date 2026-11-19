@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/ps-rest
 ---
 
 # Restricting decryption of `SecureString` parameter values
-<a name="ps-restrict-decryption"></a>
 
 A `SecureString` parameter value is encrypted with an AWS KMS key. Any principal that retrieves the decrypted value must have `kms:Decrypt` permission on that key, whichever Parameter Store operation they call. This makes AWS KMS key permissions an effective control for `SecureString` parameters, because a single AWS KMS policy statement applies to all retrieval paths at once.
 

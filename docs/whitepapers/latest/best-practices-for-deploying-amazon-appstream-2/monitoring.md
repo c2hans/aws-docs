@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Monitoring
-<a name="monitoring"></a>
 
 ## Using dashboards
 <a name="using-dashboards"></a>

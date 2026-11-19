@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonChimeSDKMediaPipelinesServiceLinkedRolePolicy
-<a name="AmazonChimeSDKMediaPipelinesServiceLinkedRolePolicy"></a>
 
 **Description**: Managed Policy For Amazon Chime SDK MediaPipelines Service Linked Role
 

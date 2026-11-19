@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeDeviceFleet
-<a name="API_DescribeDeviceFleet"></a>
 
 A description of the fleet the device belongs to.
 

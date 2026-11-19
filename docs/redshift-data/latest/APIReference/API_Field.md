@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_Fi
 ---
 
 # Field
-<a name="API_Field"></a>
 
 A data value in a column.
 

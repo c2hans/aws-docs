@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamIn
 ---
 
 # GetIpamInternetRegistryAssociationAsns
-<a name="API_GetIpamInternetRegistryAssociationAsns"></a>
 
 Retrieves Autonomous System Numbers (ASNs) registered with an internet registry for an IPAM internet registry association. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

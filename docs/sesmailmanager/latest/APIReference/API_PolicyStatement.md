@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_P
 ---
 
 # PolicyStatement
-<a name="API_PolicyStatement"></a>
 
 The structure containing traffic policy conditions and actions.
 

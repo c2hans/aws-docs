@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/VPC-endpoints.h
 ---
 
 # Interface VPC endpoints
-<a name="VPC-endpoints"></a>
 
 We provide AWS PrivateLink support between Amazon VPC and Amazon Managed Grafana. You can control access to the Amazon Managed Grafana service from the virtual private cloud (VPC) endpoints by attaching an IAM resource policy for Amazon VPC endpoints.
 

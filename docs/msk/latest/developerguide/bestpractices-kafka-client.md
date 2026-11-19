@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/bestpractices-
 ---
 
 # Best practices for Apache Kafka clients
-<a name="bestpractices-kafka-client"></a>
 
 When working with Apache Kafka and Amazon MSK, it's important to correctly configure both the client and server for optimal performance and reliability. This guide provides recommendations of best-practice client-side configuration for Amazon MSK.
 

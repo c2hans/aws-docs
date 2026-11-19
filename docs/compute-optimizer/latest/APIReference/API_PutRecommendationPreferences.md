@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # PutRecommendationPreferences
-<a name="API_PutRecommendationPreferences"></a>
 
 Creates a new recommendation preference or updates an existing recommendation preference, such as enhanced infrastructure metrics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/opt-out-IDE
 ---
 
 # Opt out of data sharing in the IDE and command line
-<a name="opt-out-IDE"></a>
 
 This page explains how to opt out of sharing your data in the IDE or command line where you use Amazon Q, including third-party IDEs and AWS coding environments. For information on how Amazon Q uses this data, see [Amazon Q Developer service improvement](service-improvement.md).
 

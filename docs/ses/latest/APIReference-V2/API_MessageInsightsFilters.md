@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageIn
 ---
 
 # MessageInsightsFilters
-<a name="API_MessageInsightsFilters"></a>
 
 An object containing Message Insights filters.
 

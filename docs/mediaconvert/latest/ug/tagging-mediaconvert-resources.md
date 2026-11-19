@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/tagging-mediaconv
 ---
 
 # Tagging AWS Elemental MediaConvert resources
-<a name="tagging-mediaconvert-resources"></a>
 
 A *tag* is a label that you assign or that AWS assigns to an AWS resource. Each tag consists of a *key* and a *value*. For tags that you assign, you define the key and value. For example, you might define the key as "stage" and the value as "test." Tags help you to identify and organize your AWS resources. Tags that you assign to AWS Elemental MediaConvert jobs, job templates, queues, and presets are integrated with tags across AWS services.
 

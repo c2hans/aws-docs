@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/ec2-
 ---
 
 # Working with Amazon Elastic Compute Cloud
-<a name="ec2-overview"></a>
 
 The following sections describe how to work with Amazon Elastic Compute Cloud in the AWS Toolkit for Visual Studio Code.
 

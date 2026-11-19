@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Oauth2CredentialProviderItem
-<a name="API_Oauth2CredentialProviderItem"></a>
 
 Contains information about an OAuth2 credential provider.
 

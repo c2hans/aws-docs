@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Implementing an AI-powered ADM target operating model
-<a name="implement-strategy"></a>
 
 Use a structured, phased approach to implement a generative AI application development and maintenance (ADM) target operating model (TOM). The following approach balances quick wins with long-term transformative changes while minimizing disruption to current operations. Each phase addresses specific components of the TOM, highlighting their interdependencies and evolution throughout the implementation process.
 

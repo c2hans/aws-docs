@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # EventFilter
-<a name="API_EventFilter"></a>
 
 Event filter allows you to focus on specific events in an operation.
 

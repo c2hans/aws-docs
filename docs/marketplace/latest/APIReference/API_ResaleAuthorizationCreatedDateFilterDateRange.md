@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Resa
 ---
 
 # ResaleAuthorizationCreatedDateFilterDateRange
-<a name="API_ResaleAuthorizationCreatedDateFilterDateRange"></a>
 
 Allows filtering on `CreatedDate` of a ResaleAuthorization with date range as input.
 

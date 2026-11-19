@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/configure-band
 ---
 
 # Setting bandwidth limits for your AWS DataSync task
-<a name="configure-bandwidth"></a>
 
 You can configure network bandwidth limits for your AWS DataSync task and each of its executions.
 

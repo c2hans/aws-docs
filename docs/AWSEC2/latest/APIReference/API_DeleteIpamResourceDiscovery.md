@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpa
 ---
 
 # DeleteIpamResourceDiscovery
-<a name="API_DeleteIpamResourceDiscovery"></a>
 
 Deletes an IPAM resource discovery. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
 

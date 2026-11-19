@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_OpsC
 ---
 
 # OpsCenterIntegration
-<a name="API_OpsCenterIntegration"></a>
 
  Information about whether DevOps Guru is configured to create an OpsItem in AWS Systems Manager OpsCenter for each created insight.
 

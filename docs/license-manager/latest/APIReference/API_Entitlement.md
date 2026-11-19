@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # Entitlement
-<a name="API_Entitlement"></a>
 
 Describes a resource entitled for use with a license.
 

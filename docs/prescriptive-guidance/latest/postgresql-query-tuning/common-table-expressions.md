@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Use case 5 – Subqueries or CTEs
-<a name="common-table-expressions"></a>
 
 Common Table Expressions (CTEs) help break down large queries into smaller queries. This makes the whole query easier to maintain.
 

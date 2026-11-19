@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_GetDomai
 ---
 
 # GetDomainAssociation
-<a name="API_GetDomainAssociation"></a>
 
 Returns the domain information for an Amplify app.
 

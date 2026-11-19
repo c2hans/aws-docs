@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-revoke-acc
 ---
 
 # Revoking an ACME account
-<a name="sdk-acme-revoke-account"></a>
 
 The following example shows how to use the [RevokeAcmeAccount](https://docs.aws.amazon.com/acm/latest/APIReference/API_RevokeAcmeAccount.html) function.
 

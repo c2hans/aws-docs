@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/config
 ---
 
 # Verify the licenses for the cluster
-<a name="config-wrkr-lv-cg-licenses"></a>
 
 Make sure that you have the appropriate AWS Elemental Live licenses installed.
 

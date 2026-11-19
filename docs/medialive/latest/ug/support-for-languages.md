@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/support-for-language
 ---
 
 # Support for multiple captions languages
-<a name="support-for-languages"></a>
 
 Some captions sources that MediaLive supports typically include multiple languages. You can include multiple languages in the output as follows.
 

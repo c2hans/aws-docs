@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DefaultClientB
 ---
 
 # DefaultClientBrandingAttributes
-<a name="API_DefaultClientBrandingAttributes"></a>
 
 Returns default client branding attributes that were imported. These attributes display on the client login screen.
 

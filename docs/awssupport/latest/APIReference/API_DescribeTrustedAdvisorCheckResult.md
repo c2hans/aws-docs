@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Descr
 ---
 
 # DescribeTrustedAdvisorCheckResult
-<a name="API_DescribeTrustedAdvisorCheckResult"></a>
 
 Returns the results of the AWS Trusted Advisor check that has the specified check ID. You can get the check IDs by calling the [DescribeTrustedAdvisorChecks](API_DescribeTrustedAdvisorChecks.md) operation.
 

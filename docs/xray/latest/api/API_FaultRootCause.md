@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_FaultRootCause.html
 ---
 
 # FaultRootCause
-<a name="API_FaultRootCause"></a>
 
 The root cause information for a trace summary fault.
 

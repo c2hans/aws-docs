@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VPNConnection Phase1IntegrityAlgorithmsRequestListValue
-<a name="aws-properties-ec2-vpnconnection-phase1integrityalgorithmsrequestlistvalue"></a>
 
 Specifies the integrity algorithm for the VPN tunnel for phase 1 IKE negotiations.
 

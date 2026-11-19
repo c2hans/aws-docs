@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # VpcPeeringConnection
-<a name="API_VpcPeeringConnection"></a>
 
 Represents a peering connection between a VPC on one of your AWS accounts and the VPC for your Amazon GameLift Servers fleets. This record may be for an active peering connection or a pending connection that has not yet been established.
 

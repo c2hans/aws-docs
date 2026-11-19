@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/concepts-authoriz
 ---
 
 # Authorization
-<a name="concepts-authorization"></a>
 
 C2C connectors can support OAuth 2.0 authorization, General Authorization, or both. The authorization type determines how your connector authenticates with the third-party platform and manages access to end user devices.
 

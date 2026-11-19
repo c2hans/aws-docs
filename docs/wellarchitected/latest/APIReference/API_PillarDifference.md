@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # PillarDifference
-<a name="API_PillarDifference"></a>
 
 A pillar difference return object.
 

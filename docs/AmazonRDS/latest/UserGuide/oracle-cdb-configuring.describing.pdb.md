@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-cdb-co
 ---
 
 # Viewing tenant database details
-<a name="oracle-cdb-configuring.describing.pdb"></a>
 
 You can view details about a tenant database in the same way that you can for a non-CDB or CDB.
 

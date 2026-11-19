@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/troubleshooting.h
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 ## Local development issues
 <a name="ts-local-dev"></a>

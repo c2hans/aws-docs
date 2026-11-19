@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/appendix-ami-relea
 ---
 
 # Deep Learning AMIs Release Notes
-<a name="appendix-ami-release-notes"></a>
 
 Here you can find detailed release notes for all currently supported AWS Deep Learning AMIs (DLAMI) options.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeInsi
 ---
 
 # DescribeInsightsRefresh
-<a name="API_DescribeInsightsRefresh"></a>
 
 Returns the status of the latest on-demand cluster insights refresh operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Storage backendEnvironmentName Details
-<a name="backend-appid-storage-backendenvironmentname-details"></a>
 
 Get the details for a storage resource in your Amplify app backend.
 

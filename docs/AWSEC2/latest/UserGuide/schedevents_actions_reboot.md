@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/schedevents_acti
 ---
 
 # Manage Amazon EC2 instances scheduled for reboot
-<a name="schedevents_actions_reboot"></a>
 
 When AWS must perform tasks such as installing updates or maintaining the underlying host, it can schedule an instance reboot. During the scheduled reboot, the instance either stays on the same host, or migrates to a different host, depending on the event, as follows:
 + `instance-reboot` event

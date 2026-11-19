@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Ena
 ---
 
 # EnableStageTransition
-<a name="API_EnableStageTransition"></a>
 
 Enables artifacts in a pipeline to transition to a stage in a pipeline.
 

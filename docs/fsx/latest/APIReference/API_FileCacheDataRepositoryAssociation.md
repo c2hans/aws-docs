@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_FileCacheDat
 ---
 
 # FileCacheDataRepositoryAssociation
-<a name="API_FileCacheDataRepositoryAssociation"></a>
 
 The configuration for a data repository association (DRA) to be created during the Amazon File Cache resource creation. The DRA links the cache to either an Amazon S3 bucket or prefix, or a Network File System (NFS) data repository that supports the NFSv3 protocol.
 

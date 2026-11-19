@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Regis
 ---
 
 # RegisteredUserDashboardVisualEmbeddingConfiguration
-<a name="API_RegisteredUserDashboardVisualEmbeddingConfiguration"></a>
 
 The experience that you are embedding. You can use this object to generate a url that embeds a visual into your application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vq-miscellaneou
 ---
 
 # Miscellaneous video tuning parameters
-<a name="vq-miscellaneous-tuning"></a>
 
 ## Description
 <a name="description-vq-rc-tuning"></a>

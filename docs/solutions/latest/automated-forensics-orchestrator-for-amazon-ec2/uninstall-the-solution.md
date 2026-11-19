@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Uninstall the Guidance
-<a name="uninstall-the-solution"></a>
 
 ## Using the AWS Command Line Interface (CLI)
 <a name="using-the-aws-command-line-interface-cli"></a>

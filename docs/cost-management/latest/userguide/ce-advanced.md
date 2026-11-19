@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-adva
 ---
 
 # Choosing advanced options
-<a name="ce-advanced"></a>
 
 You can customize how you view your data in Cost Explorer using **Advanced options** to include or exclude specific types of data.
 

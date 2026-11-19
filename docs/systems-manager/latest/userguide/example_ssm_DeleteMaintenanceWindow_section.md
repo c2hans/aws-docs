@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `DeleteMaintenanceWindow` with an AWS SDK or CLI
-<a name="example_ssm_DeleteMaintenanceWindow_section"></a>
 
 The following code examples show how to use `DeleteMaintenanceWindow`.
 

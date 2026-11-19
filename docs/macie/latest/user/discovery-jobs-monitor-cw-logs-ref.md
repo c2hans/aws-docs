@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-monitor
 ---
 
 # Understanding log events for sensitive data discovery jobs
-<a name="discovery-jobs-monitor-cw-logs-ref"></a>
 
 To help you monitor your sensitive data discovery jobs, Amazon Macie automatically publishes logging data for jobs to Amazon CloudWatch Logs. The data in these logs provides a record of changes to a job's progress or status. For example, you can use the data to determine the exact date and time when a job started to run or finished running. The data also provides details about certain types of errors that can occur while a job runs. This data can help you identify, investigate, and address errors that prevent Macie from analyzing the data that you want.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # AttachLoadBalancerToSubnets
-<a name="API_AttachLoadBalancerToSubnets"></a>
 
 Adds one or more subnets to the set of configured subnets for the specified load balancer.
 

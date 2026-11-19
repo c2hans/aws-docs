@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_SearchQua
 ---
 
 # SearchQuantumTasksFilter
-<a name="API_SearchQuantumTasksFilter"></a>
 
 A filter used to search for quantum tasks.
 

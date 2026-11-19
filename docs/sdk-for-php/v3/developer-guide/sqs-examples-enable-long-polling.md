@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sqs-examp
 ---
 
 # Enabling long polling in Amazon SQS with AWS SDK for PHP Version 3
-<a name="sqs-examples-enable-long-polling"></a>
 
 Long polling reduces the number of empty responses by allowing Amazon SQS to wait a specified time for a message to become available in the queue before sending a response. Also, long polling eliminates false empty responses by querying all of the servers instead of a sampling of servers. To enable long polling, specify a non-zero wait time for received messages. To learn more, see [SQS Long Polling](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-long-polling.html).
 

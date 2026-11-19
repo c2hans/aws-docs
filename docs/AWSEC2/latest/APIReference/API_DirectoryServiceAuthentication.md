@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Directory
 ---
 
 # DirectoryServiceAuthentication
-<a name="API_DirectoryServiceAuthentication"></a>
 
 Describes an Active Directory.
 

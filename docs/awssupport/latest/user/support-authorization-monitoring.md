@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/support-authoriza
 ---
 
 # Monitoring AWS Support authorization with AWS CloudTrail
-<a name="support-authorization-monitoring"></a>
 
 AWS CloudTrail logs all AWS Support authorization API calls and support operations as management events. These events are logged by default without additional configuration.
 

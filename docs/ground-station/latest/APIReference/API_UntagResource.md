@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_U
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Deassigns a resource tag.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # LambdaEndpointSummary
-<a name="API_LambdaEndpointSummary"></a>
 
 The summary for the AWS Lambda endpoint type.
 

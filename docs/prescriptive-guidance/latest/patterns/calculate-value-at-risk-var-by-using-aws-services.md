@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ca
 ---
 
 # Calculate value at risk (VaR) by using AWS services
-<a name="calculate-value-at-risk-var-by-using-aws-services"></a>
 
 *Sumon Samanta, Amazon Web Services*
 

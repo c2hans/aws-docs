@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/ddos-event-det
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Shield Advanced detection logic for application layer threats (layer 7)
-<a name="ddos-event-detection-application"></a>
 
 This page explains how event detection works for the application layer.
 

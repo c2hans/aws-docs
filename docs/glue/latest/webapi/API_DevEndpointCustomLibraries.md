@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DevEndpointCustom
 ---
 
 # DevEndpointCustomLibraries
-<a name="API_DevEndpointCustomLibraries"></a>
 
 Custom libraries to be loaded into a development endpoint.
 

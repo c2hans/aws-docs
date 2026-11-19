@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # RasterDataCollectionQueryOutput
-<a name="API_geospatial_RasterDataCollectionQueryOutput"></a>
 
 The output structure contains the Raster Data Collection Query input along with some additional metadata.
 

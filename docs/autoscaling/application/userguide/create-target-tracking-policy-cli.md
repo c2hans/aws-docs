@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/create
 ---
 
 # Create a target tracking scaling policy for Application Auto Scaling using the AWS CLI
-<a name="create-target-tracking-policy-cli"></a>
 
 This example uses AWS CLI commands to create a target racking policy for an Amazon EC2 Spot Fleet. For a different scalable target, specify its namespace in `--service-namespace`, its scalable dimension in `--scalable-dimension`, and its resource ID in `--resource-id`.
 

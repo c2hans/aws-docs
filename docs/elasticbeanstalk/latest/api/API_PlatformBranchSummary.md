@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Platform
 ---
 
 # PlatformBranchSummary
-<a name="API_PlatformBranchSummary"></a>
 
 Summary information about a platform branch.
 

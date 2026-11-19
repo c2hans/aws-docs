@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/monitoring-via-cloud
 ---
 
 # Monitoring a channel or multiplex using Amazon CloudWatch Events
-<a name="monitoring-via-cloudwatch"></a>
 
 MediaLive automatically turns the following information into events in CloudWatch Events:
 + Reporting on the [state of a channel or multiplex](monitor-activity-types-channel.md).

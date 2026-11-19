@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_ListWebh
 ---
 
 # ListWebhooks
-<a name="API_ListWebhooks"></a>
 
 Returns a list of webhooks for an Amplify app.
 

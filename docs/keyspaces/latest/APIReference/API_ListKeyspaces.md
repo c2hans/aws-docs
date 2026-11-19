@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_ListKe
 ---
 
 # ListKeyspaces
-<a name="API_ListKeyspaces"></a>
 
 The `ListKeyspaces` operation returns a list of keyspaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/bui
 ---
 
 # Add expressions to a job template
-<a name="build-job-bundle-expressions-add"></a>
 
 The following procedure adds expressions to a job template that renders a Blender animation. It derives the output file pattern from the scene file name, quotes paths for bash, and requests a GPU worker and switches the render device when you select a checkbox. For background on expressions and when to use them, see [Expressions in job templates](build-job-bundle-expressions.md).
 

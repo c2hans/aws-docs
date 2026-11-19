@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/guidance-for-automotive-retail
 title: 'Guidance for Automotive Retail Operations using Agentic AI on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/guidance-for-automotive-retail-operations-using-agentic-ai/
 source: aws-documentation
-generated_on: 2026-11-17
+generated_on: 2026-11-18
 ---
 
 # Guidance for Automotive Retail Operations using Agentic AI on AWS

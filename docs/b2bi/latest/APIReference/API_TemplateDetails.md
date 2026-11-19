@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_TemplateDet
 ---
 
 # TemplateDetails
-<a name="API_TemplateDetails"></a>
 
 A data structure that contains the information to use when generating a mapping template.
 

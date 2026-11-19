@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/trello-configuring.html
 ---
 
 # Configuring Trello
-<a name="trello-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Trello, you must meet the following requirements:
 

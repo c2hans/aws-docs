@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/apireference/origin_
 ---
 
 # Origin\_endpoints
-<a name="origin_endpoints"></a>
 
 ## URI
 <a name="origin_endpoints-url"></a>

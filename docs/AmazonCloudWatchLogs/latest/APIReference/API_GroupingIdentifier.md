@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # GroupingIdentifier
-<a name="API_GroupingIdentifier"></a>
 
 A key-value pair that identifies how log groups are grouped in aggregate summaries.
 

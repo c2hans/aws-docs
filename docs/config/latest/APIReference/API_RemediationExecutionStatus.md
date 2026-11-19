@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Remediati
 ---
 
 # RemediationExecutionStatus
-<a name="API_RemediationExecutionStatus"></a>
 
 Provides details of the current status of the invoked remediation action for that resource.
 

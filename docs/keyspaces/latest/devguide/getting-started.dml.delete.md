@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/getting-starte
 ---
 
 # Delete data from a table using the CQL `DELETE` statement
-<a name="getting-started.dml.delete"></a>
 
 To delete data in your `book_awards` table, use the `DELETE` statement.
 

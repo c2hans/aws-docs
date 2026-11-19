@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ch
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 Chaos engineering is a strategic imperative for organizations. While your adoption journey might face challenges such as misconceptions, cultural resistance, and resource constraints, establishing clear, leadership-driven goals can catalyze the process. As practices mature, quantify the return on investment through a holistic approach that captures both quantitative operational improvements and qualitative organizational benefits. The holistic approach is especially important during economic pressures.
 

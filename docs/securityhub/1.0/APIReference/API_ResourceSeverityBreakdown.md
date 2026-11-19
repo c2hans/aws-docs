@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourceSeverityBreakdown
-<a name="API_ResourceSeverityBreakdown"></a>
 
 A comprehensive distribution of security findings by severity level for AWS resources.
 

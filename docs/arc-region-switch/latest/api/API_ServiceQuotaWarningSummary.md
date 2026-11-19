@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Service
 ---
 
 # ServiceQuotaWarningSummary
-<a name="API_ServiceQuotaWarningSummary"></a>
 
 A service quota warning for a plan. Region switch creates a warning when the applied quota value in one Region of a plan is lower than the value for the matching resource in another Region or account in the plan, or when it can't complete a service quota check.
 

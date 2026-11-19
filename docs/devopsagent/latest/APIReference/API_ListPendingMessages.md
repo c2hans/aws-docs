@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListPendingMessages
-<a name="API_ListPendingMessages"></a>
 
 List pending messages for a specific execution.
 

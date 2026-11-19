@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/getting-started.html
 ---
 
 # Getting started with Amazon Polly
-<a name="getting-started"></a>
 
 Amazon Polly provides several API operations that you can easily integrate with your existing applications. For a list of supported operations, see [Actions](https://docs.aws.amazon.com/polly/latest/APIReference/API_Operations.html).
 

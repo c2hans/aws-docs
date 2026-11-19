@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # LastRecorderStatus
-<a name="API_LastRecorderStatus"></a>
 
 The latest status of a stream's edge recording job.
 

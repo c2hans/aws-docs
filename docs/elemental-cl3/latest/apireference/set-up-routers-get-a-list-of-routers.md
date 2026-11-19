@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # GET List: Get a List of Routers
-<a name="set-up-routers-get-a-list-of-routers"></a>
 
 Get a list of all video SDI routers, including the data that is contained in the Router Input and Router Output entities.
 

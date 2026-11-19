@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kinesis-kpl-writing.h
 ---
 
 # Write to your Kinesis data stream using the KPL
-<a name="kinesis-kpl-writing"></a>
 
 The following sections show sample code in a progression from the most basic producer to fully asynchronous code.
 

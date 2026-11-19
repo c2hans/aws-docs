@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Support Cases Radar Dashboard
-<a name="support-cases-radar"></a>
 
 ## Introduction
 <a name="introduction"></a>

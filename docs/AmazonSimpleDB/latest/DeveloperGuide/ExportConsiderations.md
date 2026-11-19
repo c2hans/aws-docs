@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Exp
 ---
 
 # Export Considerations
-<a name="ExportConsiderations"></a>
 
 ## Exporting to a Different Region
 <a name="CrossRegionExport"></a>

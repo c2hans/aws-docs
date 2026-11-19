@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_De
 ---
 
 # DeregisterOrganizationDelegatedAdmin
-<a name="API_DeregisterOrganizationDelegatedAdmin"></a>
 
 Removes CloudTrail delegated administrator permissions from a member account in an organization.
 

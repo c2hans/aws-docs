@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_Elasticsearc
 ---
 
 # ElasticsearchSettings
-<a name="API_ElasticsearchSettings"></a>
 
 Provides information that defines an OpenSearch endpoint.
 

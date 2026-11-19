@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-sharin
 ---
 
 # Share a transformation definition
-<a name="custom-sharing-share"></a>
 
 You can share a TD with the AWS Transform CLI, the AWS RAM console, or the AWS CLI. The AWS Transform CLI is the simplest. It finds the TD's ARN, creates the AWS RAM resource share, and attaches the managed permission for you.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/color-space-con
 ---
 
 # Converting HDR10 to Dolby Vision 5.0 or 8.1
-<a name="color-space-convert-d"></a>
 
 You can convert video in the HDR10 color space to Dolby Vision 5.0 or 8.1.
 

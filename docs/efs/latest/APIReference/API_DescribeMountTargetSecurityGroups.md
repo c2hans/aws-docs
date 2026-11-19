@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_DescribeMoun
 ---
 
 # DescribeMountTargetSecurityGroups
-<a name="API_DescribeMountTargetSecurityGroups"></a>
 
 Returns the security groups currently in effect for a mount target. This operation requires that the network interface of the mount target has been created and the lifecycle state of the mount target is not `deleted`.
 

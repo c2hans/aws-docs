@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceA
 ---
 
 # InstanceApplicationStatus
-<a name="API_InstanceApplicationStatus"></a>
 
 Describes the application status for an instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # Attachments
-<a name="API_Attachments"></a>
 
 The job attachments.
 

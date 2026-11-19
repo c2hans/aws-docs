@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedEvaluationCustomMetricSource
-<a name="API_AutomatedEvaluationCustomMetricSource"></a>
 
 An array item definining a single custom metric for use in an Amazon Bedrock evaluation job.
 

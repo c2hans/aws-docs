@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/compos
 ---
 
 # Update an existing stack in Infrastructure Composer in CloudFormation console mode
-<a name="composer-cfn-mode-update"></a>
 
 Follow the instructions in this topic to update an existing CloudFormation stack.
 **Note**

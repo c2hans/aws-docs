@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ResourceSt
 ---
 
 # ResourceStringFilter
-<a name="API_ResourceStringFilter"></a>
 
 A resource string filter for a software bill of materials report.
 

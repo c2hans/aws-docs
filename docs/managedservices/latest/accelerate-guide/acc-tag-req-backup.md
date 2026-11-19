@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Managing tags for backups in Accelerate
-<a name="acc-tag-req-backup"></a>
 
 AMS Accelerate manages the backing up of supported resources. For more information about this service offering, see [Continuity management in AMS Accelerate](acc-backup.md).
 

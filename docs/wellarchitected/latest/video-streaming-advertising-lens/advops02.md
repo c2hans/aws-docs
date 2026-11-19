@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Advertising workload observability
-<a name="advops02"></a>
 
  Advertising delivery depends on distributed systems, partner connections, automated decisions, and channel-specific fulfillment paths. Operators need correlated telemetry across technical and business layers to identify whether a failure affects infrastructure, auction behavior, campaign pacing, or revenue. This capability defines the observability needed to detect, diagnose, and route those conditions.
 

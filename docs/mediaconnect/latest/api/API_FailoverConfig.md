@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_FailoverConf
 ---
 
 # FailoverConfig
-<a name="API_FailoverConfig"></a>
 
  The settings for source failover.
 

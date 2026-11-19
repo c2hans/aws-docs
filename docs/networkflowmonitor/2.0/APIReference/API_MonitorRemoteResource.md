@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_
 ---
 
 # MonitorRemoteResource
-<a name="API_MonitorRemoteResource"></a>
 
 A remote resource is the other endpoint in a network flow. That is, one endpoint is the local resource and the other is the remote resource. The values you can specify are the following:
 + For a VPC or subnet, this identifier is the VPC Amazon Resource Name (ARN) or subnet ARN.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/ami-waterm
 ---
 
 # Track AMI lineage with watermarks
-<a name="ami-watermarks"></a>
 
 AMI watermarks are simple text labels that track the history of your machine images. You add watermark names to your image recipe, and Image Builder attaches them to the output AMI during the build process.
 

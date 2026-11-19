@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-cdk-tutorial.htm
 ---
 
 # Deploying Event Functions with AWS CDK
-<a name="lambda-cdk-tutorial"></a>
 
 The AWS Cloud Development Kit (AWS CDK) is an infrastructure as code (IaC) framework that you can use to define AWS cloud infrastructure by using a programming language of your choosing. To define your own cloud infrastructure, you first write an app (in one of the CDK's supported languages) that contains one or more stacks. Then, you synthesize it to an CloudFormation template and deploy your resources to your AWS account. Follow the steps in this topic to deploy a Lambda Event Function that returns an event from an Amazon API Gateway endpoint.
 

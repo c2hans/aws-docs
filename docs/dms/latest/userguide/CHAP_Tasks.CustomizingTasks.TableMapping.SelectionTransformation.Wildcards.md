@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Customiz
 ---
 
 # Wildcards in table mapping
-<a name="CHAP_Tasks.CustomizingTasks.TableMapping.SelectionTransformation.Wildcards"></a>
 
 This section describes wildcards you can use when specifying the schema and table names for table mapping.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub/latest/ug/new-customer-setu
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # New user IAM setup for AWS Migration Hub
-<a name="new-customer-setup"></a>
 
 This section provides an overview of the AWS managed policies that can be used with AWS Migration Hub and instructions on how to use them.
 

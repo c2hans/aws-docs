@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # AWS Organizational Change Acceleration (OCA) 6-Point Framework - 3. Envision the Future
-<a name="introduction"></a>
 
 *Nicole Lenz, Melanie Gladwell, Scott Watson, and Monica Wezwick, Amazon Web Services*
 

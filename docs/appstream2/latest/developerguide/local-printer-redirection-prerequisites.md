@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/local-p
 ---
 
 # Prerequisites for Local Printer Redirection
-<a name="local-printer-redirection-prerequisites"></a>
 
 To ensure that your users can use local printer redirection, you must:
 + Use an image that uses a version of the WorkSpaces Applications agent released on or after July 30, 2020. For more information, see [WorkSpaces Applications Agent Release Notes](agent-software-versions.md).

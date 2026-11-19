@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_FlexComponen
 ---
 
 # FlexComponentSummary
-<a name="API_FlexComponentSummary"></a>
 
 Information about a flex component that's available for an Exadata infrastructure. A flex component defines the hardware resources, such as CPU cores, memory, and storage, that can be allocated to a shape.
 

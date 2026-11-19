@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/built-in-util-js
 ---
 
 # Built-in utilities
-<a name="built-in-util-js"></a>
 
 The `util` variable contains general utility methods to help you work with data. Unless otherwise specified, all utilities use the UTF-8 character set.
 

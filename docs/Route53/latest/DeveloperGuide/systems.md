@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/systems.ht
 ---
 
 # .systems
-<a name="systems"></a>
 
 Used primarily by the technology industry and those who offer technology services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/default-agent-
 ---
 
 # Default agent whisper in Connect Customer: name of the queue
-<a name="default-agent-whisper"></a>
 
 This flow uses a [Set whisper flow](set-whisper-flow.md) block to play a message for the agent when the customer and agent are joined.
 

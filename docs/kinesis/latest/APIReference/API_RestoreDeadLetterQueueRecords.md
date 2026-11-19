@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_RestoreD
 ---
 
 # RestoreDeadLetterQueueRecords
-<a name="API_RestoreDeadLetterQueueRecords"></a>
 
 Restores up to 10 dead-letter records in the specified queue. Restoring a record clears its dead-letter state and resets its receive count, so [ReceiveQueueRecords](API_ReceiveQueueRecords.md) can return it again, up to `MaxReceiveCount` times before it becomes a dead-letter record again. The result for each entry is reported individually in the response.
 

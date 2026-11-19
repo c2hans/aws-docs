@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hbase-wal-re
 ---
 
 # Restoring from Amazon EMR WAL
-<a name="emr-hbase-wal-restoring"></a>
 
 Because the Amazon EMR WAL for your original cluster is retained for 30 days, you can restore and reuse the WAL for a newly-created cluster within that 30-day period. When you launch a new cluster from the same S3 root directory, Amazon EMR keeps the WAL instances from your old cluster. If you terminate this new cluster, the 30-day clock restarts from the time of when you terminate.
 

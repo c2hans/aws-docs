@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsD
 ---
 
 # AwsRdsDbClusterMember
-<a name="API_AwsRdsDbClusterMember"></a>
 
 Information about an instance in the DB cluster.
 

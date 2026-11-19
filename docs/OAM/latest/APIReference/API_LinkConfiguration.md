@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_LinkConfigur
 ---
 
 # LinkConfiguration
-<a name="API_LinkConfiguration"></a>
 
 Use this structure to optionally create filters that specify that only some metric namespaces or log groups are to be shared from the source account to the monitoring account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/cshell-exam
 ---
 
 # Interacting with Security Incident Response using AWS CloudShell
-<a name="cshell-examples"></a>
 
 After you launch AWS CloudShell from the AWS Management Console, you can immediately start to interact with Security Incident Response using the command line interface.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # GetRecommendationPreferences
-<a name="API_GetRecommendationPreferences"></a>
 
 Returns existing recommendation preferences, such as enhanced infrastructure metrics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/dashboard-bookmar
 ---
 
 # Bookmarking views of a AWS Quick Sight dashboard
-<a name="dashboard-bookmarks"></a>
 
 When you load a dashboard as an AWS Quick reader or author, you can create bookmarks to capture specific views of your interests. For example, you can create a bookmark for a dashboard with a specific filter setting that differs from the original published dashboard. By doing this, you can quickly return to the data that's relevant to you.
 

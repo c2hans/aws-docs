@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_SettlementRe
 ---
 
 # SettlementRecord
-<a name="API_SettlementRecord"></a>
 
 A single settlement transaction record for AI bot monetization. Contains details about the payment including timestamp, amount, status, and the parties involved.
 

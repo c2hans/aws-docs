@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Endpoi
 ---
 
 # EndpointConfigStepMetadata
-<a name="API_EndpointConfigStepMetadata"></a>
 
 Metadata for an endpoint configuration step.
 

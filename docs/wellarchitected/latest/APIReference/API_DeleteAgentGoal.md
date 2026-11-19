@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # DeleteAgentGoal
-<a name="API_DeleteAgentGoal"></a>
 
 Deletes an optimization goal from a profile.
 

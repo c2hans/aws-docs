@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-config
 ---
 
 # KMS key and ZSK management in Route 53
-<a name="dns-configuring-dnssec-zsk-management"></a>
 
 This section describes the current practice Route 53 uses for your DNSSEC signing enabled zones.
 

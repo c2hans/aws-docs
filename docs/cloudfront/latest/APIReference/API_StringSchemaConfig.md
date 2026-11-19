@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Strin
 ---
 
 # StringSchemaConfig
-<a name="API_StringSchemaConfig"></a>
 
 The configuration for a string schema.
 

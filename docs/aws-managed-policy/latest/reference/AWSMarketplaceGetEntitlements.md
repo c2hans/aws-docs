@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplaceGetEntitlements
-<a name="AWSMarketplaceGetEntitlements"></a>
 
 **Description**: Provides read access to AWS Marketplace Entitlements
 

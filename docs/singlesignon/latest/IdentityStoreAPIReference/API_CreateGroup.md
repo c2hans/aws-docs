@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # CreateGroup
-<a name="API_CreateGroup"></a>
 
 Creates a group within the specified identity store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSPERF18-BP03 Create integrated dashboards showing both performance and metrics
-<a name="lsperf18-bp03"></a>
 
  The integrated dashboards combine performance and metrics into clear visualizations. Teams gain complete system visibility through real-time data, which enables direct decision-making and reduces process delays. The system enhances operations while maintaining scientific integrity and patient safety standards. Teams use this data to optimize systems while meeting medical and regulatory requirements.
 

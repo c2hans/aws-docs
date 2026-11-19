@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # FormDataTypeConfig
-<a name="API_FormDataTypeConfig"></a>
 
 Describes the data type configuration for the data source associated with a form.
 

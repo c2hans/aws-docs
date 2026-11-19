@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Selector
-<a name="API_marketplace-agreements_Selector"></a>
 
 Differentiates between the mutually exclusive rate cards in the same pricing term to be selected by the buyer.
 

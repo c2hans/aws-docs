@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_ami_pc
 ---
 
 # Using PCS-ready DLAMI with AWS PCS
-<a name="working-with_ami_pcs-ready-dlami"></a>
 
 AWS PCS-ready DLAMI Base GPU AMI (Ubuntu 24.04) is an AWS-maintained Amazon Machine Image for running AI/ML and HPC workloads on AWS PCS. It provides a production-ready foundation so you can deploy clusters in minutes instead of building and validating custom AMIs.
 

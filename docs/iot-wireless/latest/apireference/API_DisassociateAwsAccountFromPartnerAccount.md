@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Dis
 ---
 
 # DisassociateAwsAccountFromPartnerAccount
-<a name="API_DisassociateAwsAccountFromPartnerAccount"></a>
 
 Disassociates your AWS account from a partner account. If `PartnerAccountId` and `PartnerType` are `null`, disassociates your AWS account from all partner accounts.
 

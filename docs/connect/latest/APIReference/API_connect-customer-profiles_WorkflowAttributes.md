@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # WorkflowAttributes
-<a name="API_connect-customer-profiles_WorkflowAttributes"></a>
 
 Structure to hold workflow attributes.
 

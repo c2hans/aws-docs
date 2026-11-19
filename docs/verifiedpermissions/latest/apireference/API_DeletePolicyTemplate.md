@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # DeletePolicyTemplate
-<a name="API_DeletePolicyTemplate"></a>
 
 Deletes the specified policy template from the policy store.
 

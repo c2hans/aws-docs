@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateBotA
 ---
 
 # CreateBotAlias
-<a name="API_CreateBotAlias"></a>
 
 Creates an alias for the specified version of a bot. Use an alias to enable you to change the version of a bot without updating applications that use the bot.
 

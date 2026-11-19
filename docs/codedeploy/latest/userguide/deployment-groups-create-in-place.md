@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-g
 ---
 
 # Create a deployment group for an in-place deployment (console)
-<a name="deployment-groups-create-in-place"></a>
 
 To use the CodeDeploy console to create a deployment group for an in-place deployment:
 

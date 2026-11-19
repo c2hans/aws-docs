@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Cele
 ---
 
 # CelebrityRecognition
-<a name="API_CelebrityRecognition"></a>
 
 Information about a detected celebrity and the time the celebrity was detected in a stored video. For more information, see [GetCelebrityRecognition](API_GetCelebrityRecognition.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-dash
 ---
 
 # View a managed dashboard with the CloudTrail console
-<a name="lake-dashboard-managed"></a>
 
 CloudTrail Lake provides managed dashboards that show event trends for event data stores that collect management events, data events, and Insights events. These dashboards are managed by CloudTrail Lake. You cannot modify, add, or remove the widgets for these dashboards, however, you can save a managed dashboard as a custom dashboard if you want to modify the widgets or set a refresh schedule.
 

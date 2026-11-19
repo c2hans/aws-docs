@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-co
 ---
 
 # AWS CodeDeploy in AWS GovCloud (US)
-<a name="govcloud-codedeploy"></a>
 
 AWS CodeDeploy is a deployment service that enables developers to automate the deployment of applications to instances and to update the applications as required.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # DeleteCustomDomainAssociation
-<a name="API_DeleteCustomDomainAssociation"></a>
 
 Deletes a custom domain association for Amazon Redshift Serverless.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/elemental-inference-
 ---
 
 # Clipping video using AWS Elemental Inference
-<a name="elemental-inference-event-clip"></a>
 
 **Note**
 The information in this section assumes that you are familiar with the general steps for creating a channel, as described in [Creating a channel from scratch](creating-channel-scratch.md).

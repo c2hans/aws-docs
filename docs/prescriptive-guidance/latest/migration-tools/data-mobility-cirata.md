@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Cirata Data Migrator
-<a name="data-mobility-cirata"></a>
 
 *Last update: November 15, 2024*
 

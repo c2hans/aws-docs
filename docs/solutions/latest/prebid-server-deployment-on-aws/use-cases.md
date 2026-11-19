@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Move ad-supported workflows to a dedicated, server-to-server (S2S) architecture**
 

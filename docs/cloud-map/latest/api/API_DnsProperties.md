@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_DnsProperties.h
 ---
 
 # DnsProperties
-<a name="API_DnsProperties"></a>
 
 A complex type that contains the ID for the Route 53 hosted zone that AWS Cloud Map creates when you create a namespace.
 

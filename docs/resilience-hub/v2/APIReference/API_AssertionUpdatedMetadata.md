@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Asser
 ---
 
 # AssertionUpdatedMetadata
-<a name="API_AssertionUpdatedMetadata"></a>
 
 Metadata for an assertion updated event.
 

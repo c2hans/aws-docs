@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # DeleteNotifyCodeConfiguration
-<a name="API_DeleteNotifyCodeConfiguration"></a>
 
 Deletes a notify code configuration. Verifications that are already in progress are not affected, because they capture the policy at the time that the passcode was sent.
 

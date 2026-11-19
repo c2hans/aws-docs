@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Migrating Oracle SOA Suite 12c to AWS
-<a name="migrating-oracle-soa-suite-12c-to-aws"></a>
 
  When migrating Oracle SOA Suite 12c to AWS, consider the architecture described in this whitepaper, perform a trial migration and validate it, then iterate one or two times before migrating to production. Review the migration approach to ensure the least amount of downtime for the business during the production cutover. Before starting the migration, you must create an [Amazon Virtual Private Cloud](https://aws.amazon.com/vpc/) (Amazon VPC) with the required subnets on AWS. You must also set up network connectivity from on-premises to AWS using a VPN connection or [AWS Direct Connect](https://aws.amazon.com/directconnect/).
 

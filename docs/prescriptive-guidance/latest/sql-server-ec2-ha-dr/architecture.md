@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # SQL Server on Amazon EC2 architecture diagrams
-<a name="architecture"></a>
 
 This section provides architecture diagrams that illustrate the HA/DR strategies described in previous sections.
 

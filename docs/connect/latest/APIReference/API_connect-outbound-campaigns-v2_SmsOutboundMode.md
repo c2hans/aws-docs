@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # SmsOutboundMode
-<a name="API_connect-outbound-campaigns-v2_SmsOutboundMode"></a>
 
 Contains information about the SMS outbound mode.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # AvailabilityZoneMetadata
-<a name="API_AvailabilityZoneMetadata"></a>
 
 High-level information about an Availability Zone where the firewall has an endpoint defined.
 

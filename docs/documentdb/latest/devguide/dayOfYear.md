@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dayOfYear.htm
 ---
 
 # $dayOfYear
-<a name="dayOfYear"></a>
 
 The `$dayOfYear` operator in Amazon DocumentDB returns the day of the year for a date as a number between 1 and 366 (365 in non-leap years).
 

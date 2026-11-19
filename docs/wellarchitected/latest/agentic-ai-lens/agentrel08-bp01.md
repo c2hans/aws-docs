@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTREL08-BP01 Establish consistent configuration management practices
-<a name="agentrel08-bp01"></a>
 
  When different agent instances run with different configuration, the resulting reliability issues are hard to reproduce and harder to trust. Centralized configuration with versioning, validation, and automated distribution keeps every instance on the same current state and makes rollback a matter of changing a version pointer.
 

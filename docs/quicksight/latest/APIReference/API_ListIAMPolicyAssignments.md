@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListI
 ---
 
 # ListIAMPolicyAssignments
-<a name="API_ListIAMPolicyAssignments"></a>
 
 Lists the IAM policy assignments in the current Amazon Quick Sight account.
 

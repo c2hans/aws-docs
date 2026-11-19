@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AccountTakeoverActionType
-<a name="API_AccountTakeoverActionType"></a>
 
 The automated response to a risk level for adaptive authentication in full-function, or `ENFORCED`, mode. You can assign an action to each risk level that threat protection evaluates.
 

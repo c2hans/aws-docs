@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobDataSourceOverrideTags
-<a name="API_AssetBundleImportJobDataSourceOverrideTags"></a>
 
 An object that contains a list of tags to be assigned to a list of data source IDs.
 

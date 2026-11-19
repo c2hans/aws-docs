@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Types_A
 ---
 
 # Amazon Location Service Places V2
-<a name="API_Types_Amazon_Location_Service_Places_V2"></a>
 
 The following data types are supported by Amazon Location Service Places V2:
 +  [AccessPoint](API_geoplaces_AccessPoint.md)

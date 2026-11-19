@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Facet.htm
 ---
 
 # Facet
-<a name="API_Facet"></a>
 
 Information about a document attribute or field. You can use document attributes as facets.
 
@@ -25,7 +24,7 @@ Required: No
 An array of document attributes that are nested facets within a facet.
 For example, the document attribute or facet "Department" includes a value called "Engineering". In addition, the document attribute or facet "SubDepartment" includes the values "Frontend" and "Backend" for documents assigned to "Engineering". You can display nested facets in the search results so that documents can be searched not only by department but also by a sub department within a department. This helps your users further narrow their search.
 You can only have one nested facet within a facet. If you want to increase this limit, contact [Support](http://aws.amazon.com/contact-us/).
-Type: Array of [Facet](#API_Facet) objects
+Type: Array of [Facet](API_Facet.md) objects
 Required: No
 
  ** MaxResults **   <a name="kendra-Type-Facet-MaxResults"></a>

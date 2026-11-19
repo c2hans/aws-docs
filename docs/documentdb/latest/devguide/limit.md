@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/limit.html
 ---
 
 # $limit
-<a name="limit"></a>
 
 The `$limit` operator in Amazon DocumentDB is used to restrict the number of documents returned by a query. It is similar to the MongoDB `$limit` operator, but there are some specific considerations when using it with Amazon DocumentDB.
 

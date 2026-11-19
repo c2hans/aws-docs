@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/bcm-lit
 ---
 
 # Filter your data in the AWS Billing and Cost Management console
-<a name="bcm-lite-ce-filter-data"></a>
 
 **Warning**
 We're currently releasing our new experience to a limited number of customers. You might not be able to access this experience yet.
@@ -87,7 +86,7 @@ Linked account
 The member accounts in an organization.
 
 Platform
-The operating system that your RI runs on. Platform is either Linux or Windows.
+The operating system or platform of the usage, such as `Linux/UNIX`, `Windows (Amazon VPC)`, or `Red Hat Enterprise Linux`. Use this filter to compare your costs across operating systems for your cost and usage data, not only for Reserved Instances. Filter values must match exactly. To get the exact values in your account, use the `GetDimensionValues` API operation with `Dimension` set to `PLATFORM`. For more information, see the [AWS Billing and Cost Management API Reference](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_GetDimensionValues.html).
 
 Purchase option
 The method you choose to pay for your Amazon EC2 instances. This includes Reserved Instances, Spot Instances, Scheduled Reserved Instances, and On-Demand Instances.

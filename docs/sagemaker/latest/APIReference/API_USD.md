@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_USD.ht
 ---
 
 # USD
-<a name="API_USD"></a>
 
 Represents an amount of money in United States dollars.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Del
 ---
 
 # DeleteDashboard
-<a name="API_DeleteDashboard"></a>
 
 Deletes a dashboard from AWS IoT SiteWise Monitor.
 

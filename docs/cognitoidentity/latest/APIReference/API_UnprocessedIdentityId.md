@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # UnprocessedIdentityId
-<a name="API_UnprocessedIdentityId"></a>
 
 An array of UnprocessedIdentityId objects, each of which contains an ErrorCode and IdentityId.
 

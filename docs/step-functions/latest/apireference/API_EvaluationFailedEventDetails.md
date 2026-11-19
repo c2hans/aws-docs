@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_E
 ---
 
 # EvaluationFailedEventDetails
-<a name="API_EvaluationFailedEventDetails"></a>
 
 Contains details about an evaluation failure that occurred while processing a state, for example, when a JSONata expression throws an error. This event will only be present in state machines that have ** QueryLanguage** set to JSONata, or individual states set to JSONata.
 

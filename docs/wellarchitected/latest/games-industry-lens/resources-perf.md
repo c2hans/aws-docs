@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Resources
-<a name="resources-perf"></a>
 
  Learn more about our best practices related to performance efficiency.
 

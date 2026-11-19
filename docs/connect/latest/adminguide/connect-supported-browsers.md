@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/connect-suppor
 ---
 
 # Browsers supported by Connect Customer
-<a name="connect-supported-browsers"></a>
 
 **Important**
 **Trying to contact Amazon support?** See [Amazon Customer Service](https://www.amazon.com/gp/help/customer/display.html?icmpid=docs_connect_browsers_customerservice) (Amazon orders and deliveries) or [AWS Support](https://aws.amazon.com/premiumsupport/?icmpid=docs_connect_browsers_premiumsupport) (Amazon Web Services).

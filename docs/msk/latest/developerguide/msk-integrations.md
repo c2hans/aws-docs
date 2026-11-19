@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-integratio
 ---
 
 # MSK integrations
-<a name="msk-integrations"></a>
 
 This section provides references to AWS features that integrate with Amazon MSK.
 

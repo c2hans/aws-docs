@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_TsvVersionOptions.h
 ---
 
 # TsvVersionOptions
-<a name="API_TsvVersionOptions"></a>
 
  The options for a TSV file.
 

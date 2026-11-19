@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DeletePatchBaseline
-<a name="API_DeletePatchBaseline"></a>
 
 Deletes a patch baseline.
 

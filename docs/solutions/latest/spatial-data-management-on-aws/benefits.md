@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Benefits
-<a name="benefits"></a>
 
 The solution addresses these challenges by providing:
 

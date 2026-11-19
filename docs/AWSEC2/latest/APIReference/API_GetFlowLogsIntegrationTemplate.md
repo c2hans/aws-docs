@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetFlowLo
 ---
 
 # GetFlowLogsIntegrationTemplate
-<a name="API_GetFlowLogsIntegrationTemplate"></a>
 
 Generates a CloudFormation template that streamlines and automates the integration of VPC flow logs with Amazon Athena. This make it easier for you to query and gain insights from VPC flow logs data. Based on the information that you provide, we configure resources in the template to do the following:
 + Create a table in Athena that maps fields to a custom log format

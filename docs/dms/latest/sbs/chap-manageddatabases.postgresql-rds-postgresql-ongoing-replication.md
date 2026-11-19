@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-manageddatabases.pos
 ---
 
 # Migrate PostgreSQL database with AWS DMS ongoing replication
-<a name="chap-manageddatabases.postgresql-rds-postgresql-ongoing-replication"></a>
 
 After you complete the full load, make sure that you perform ongoing replication using AWS DMS to keep the source and target databases in sync. To configure the ongoing replication task, open the Database Migration Service console. On the **Create database migration task** page, follow these steps to create a migration task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Kn
 ---
 
 # KnowledgeBase
-<a name="API_agent_KnowledgeBase"></a>
 
 Contains information about a knowledge base.
 
@@ -73,6 +72,13 @@ A list of reasons that the API operation on the knowledge base failed.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 2048 items.
 Length Constraints: Minimum length of 0. Maximum length of 2048.
+Required: No
+
+ ** metadataConfigurations **   <a name="bedrock-Type-agent_KnowledgeBase-metadataConfigurations"></a>
+The custom metadata field configurations of the knowledge base. Each configuration specifies whether its field is searchable (`ENABLED` or `DISABLED`).
+If the update fails, the knowledge base status becomes `UPDATE_UNSUCCESSFUL`, the field configurations revert to their previous values, and `failureReasons` describes the cause. You can retry the update from `UPDATE_UNSUCCESSFUL`.
+Type: Array of [MetadataConfiguration](API_agent_MetadataConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 30 items.
 Required: No
 
  ** storageConfiguration **   <a name="bedrock-Type-agent_KnowledgeBase-storageConfiguration"></a>

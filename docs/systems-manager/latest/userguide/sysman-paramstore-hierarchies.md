@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-
 ---
 
 # Working with parameter hierarchies in Parameter Store
-<a name="sysman-paramstore-hierarchies"></a>
 
 Managing dozens or hundreds of parameters as a flat list is time consuming and prone to errors. It can also be difficult to identify the correct parameter for a task. This means you might accidentally use the wrong parameter, or you might create multiple parameters that use the same configuration data.
 

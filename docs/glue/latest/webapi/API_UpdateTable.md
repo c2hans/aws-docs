@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateTable.html
 ---
 
 # UpdateTable
-<a name="API_UpdateTable"></a>
 
 Updates a metadata table in the Data Catalog.
 

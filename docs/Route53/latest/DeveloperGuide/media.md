@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/media.html
 ---
 
 # .media
-<a name="media"></a>
 
 Used by the media and entertainment sectors.
 

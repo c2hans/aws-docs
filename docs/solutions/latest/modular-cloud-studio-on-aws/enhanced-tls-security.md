@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Enhanced TLS Security
-<a name="enhanced-tls-security"></a>
 
 This section provides guidance on configuring custom domains to enhance TLS security for the API Gateway endpoint.
 

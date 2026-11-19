@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Endpoin
 ---
 
 # EndpointAuthorization
-<a name="API_EndpointAuthorization"></a>
 
 Describes an endpoint authorization for authorizing Redshift-managed VPC endpoint access to a cluster across AWS accounts.
 

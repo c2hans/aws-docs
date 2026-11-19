@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/activate-dynami
 ---
 
 # Activate dynamic playlist input
-<a name="activate-dynamic-playlist-input"></a>
 
 In the specified event (which must be currently running), activate the specified dynamic playlist input either at the specified time or immediately.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # More patterns
-<a name="serverless-more-patterns-pattern-list"></a>
 
 **Topics**
 + [Access, query, and join Amazon DynamoDB tables using Athena](access-query-and-join-amazon-dynamodb-tables-using-athena.md)
@@ -15,6 +14,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Calculate value at risk (VaR) by using AWS services](calculate-value-at-risk-var-by-using-aws-services.md)
 + [Deploy an Amazon API Gateway API on an internal website using private endpoints and an Application Load Balancer](deploy-an-amazon-api-gateway-api-on-an-internal-website-using-private-endpoints-and-an-application-load-balancer.md)
 + [Dynamically generate an IAM policy with IAM Access Analyzer by using Step Functions](dynamically-generate-an-iam-policy-with-iam-access-analyzer-by-using-step-functions.md)
++ [Embed AWS Quick Sight visual components into web applications by using Amazon Cognito and IaC automation](embed-quick-sight-visual-components-into-web-apps-cognito-iac.md)
 + [Estimate the cost of a DynamoDB table for on-demand capacity](estimate-the-cost-of-a-dynamodb-table-for-on-demand-capacity.md)
 + [Launch a CodeBuild project across AWS accounts using Step Functions and a Lambda proxy function](launch-a-codebuild-project-across-aws-accounts-using-step-functions-and-a-lambda-proxy-function.md)
 + [Send custom attributes to Amazon Cognito and inject them into tokens](send-custom-attributes-cognito.md)

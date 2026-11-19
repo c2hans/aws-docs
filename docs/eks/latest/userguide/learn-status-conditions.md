@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/learn-status-condit
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # View the health status of your nodes
-<a name="learn-status-conditions"></a>
 
 This topic explains the tools and methods available for monitoring node health status in Amazon EKS clusters. The information covers node conditions, events, and detection cases that help you identify and diagnose node-level issues. Use the commands and patterns described here to inspect node health resources, interpret status conditions, and analyze node events for operational troubleshooting.
 

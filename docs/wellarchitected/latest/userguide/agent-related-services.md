@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-r
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Related services
-<a name="agent-related-services"></a>
 
 AWS Well-Architected Agent integrates with the following AWS services:
 

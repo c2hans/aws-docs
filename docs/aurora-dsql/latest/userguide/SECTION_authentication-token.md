@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/SECTION_aut
 ---
 
 # Generating an authentication token in Amazon Aurora DSQL
-<a name="SECTION_authentication-token"></a>
 
 To connect to Amazon Aurora DSQL with a SQL client, generate an authentication token to use as the password. This token is used only for authenticating the connection. After the connection is established, the connection remains valid even if the authentication token expires.
 

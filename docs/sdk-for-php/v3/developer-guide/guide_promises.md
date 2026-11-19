@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_pro
 ---
 
 # Promises in the AWS SDK for PHP Version 3
-<a name="guide_promises"></a>
 
 The AWS SDK for PHP uses **promises** to allow for asynchronous workflows, and this asynchronicity allows HTTP requests to be sent concurrently. The promise specification used by the SDK is [Promises/A\+](https://promisesaplus.com/).
 

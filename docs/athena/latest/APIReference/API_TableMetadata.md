@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_TableMeta
 ---
 
 # TableMetadata
-<a name="API_TableMetadata"></a>
 
 Contains metadata for a table.
 

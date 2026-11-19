@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Subscrib
 ---
 
 # SubscribeToShardEventStream
-<a name="API_SubscribeToShardEventStream"></a>
 
 This is a tagged union for all of the types of events an enhanced fan-out consumer can receive over HTTP/2 after a call to [SubscribeToShard](API_SubscribeToShard.md).
 

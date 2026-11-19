@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetSavingsPlansUtilization
-<a name="API_GetSavingsPlansUtilization"></a>
 
 Retrieves the Savings Plans utilization for your account across date ranges with daily or monthly granularity. Management account in an organization have access to member accounts. You can use `GetDimensionValues` in `SAVINGS_PLANS` to determine the possible dimension values.
 
@@ -71,13 +70,19 @@ Filters Savings Plans utilization coverage data for active Savings Plans dimensi
 +  `REGION`
 +  `PAYMENT_OPTION`
 +  `INSTANCE_TYPE_FAMILY`
- `GetSavingsPlansUtilization` uses the same [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object as the other operations, but only `AND` is supported among each dimension.
+ `GetSavingsPlansUtilization` uses the same [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object as the other operations. The filter must have one of the following shapes:
++ A `Dimensions` expression.
++ A `Not` expression that contains one `Dimensions` expression.
++ An `And` expression with two or more operands, where each operand has one of the two shapes above.
+ `Or`, `Tags`, and `CostCategories` expressions aren't supported. An `And` expression can't contain another `And`, and a `Not` expression can't contain an `And` or another `Not`.
+Each dimension can appear only once in the filter, including inside `Not`. To filter on several values of a dimension, put all of the values in one expression. Cost Explorer combines the values in one expression with OR.
 Type: [Expression](API_Expression.md) object
 Required: No
 
  ** [Granularity](#API_GetSavingsPlansUtilization_RequestSyntax) **   <a name="awscostmanagement-GetSavingsPlansUtilization-request-Granularity"></a>
-The granularity of the Amazon Web Services utillization data for your Savings Plans.
+The granularity of the Amazon Web Services utilization data for your Savings Plans.
 The `GetSavingsPlansUtilization` operation supports only `DAILY` and `MONTHLY` granularities.
+With `MONTHLY`, each result's `TimePeriod` shows a full calendar month, but its amounts include only the days inside the requested `TimePeriod`. If `TimePeriod` doesn't start on the first day of a month, the first result covers only part of that month. The same applies to the last result if `TimePeriod` doesn't end on the first day of a month. For the current month, the result's `End` is the first day without complete data.
 Type: String
 Valid Values: `DAILY | MONTHLY | HOURLY`
 Required: No

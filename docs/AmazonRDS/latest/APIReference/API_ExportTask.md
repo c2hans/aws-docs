@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Export
 ---
 
 # ExportTask
-<a name="API_ExportTask"></a>
 
 Contains the details of a snapshot or cluster export to Amazon S3.
 

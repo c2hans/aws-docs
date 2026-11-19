@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Cost Anomaly Dashboard
-<a name="cost-anomaly-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

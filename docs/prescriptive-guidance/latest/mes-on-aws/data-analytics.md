@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/
 ---
 
 # Data and analytics
-<a name="data-analytics"></a>
 
 Traditional monolithic MES systems had limited or no analytics capabilities. Manufacturers had to rely on expensive third-party tools or complex methods of backend data extraction into spreadsheets for basic reports such as daily production, inventory levels, quality results, and so on. There was little possibility of combining MES data with other applications and system data for analytics. Microservice-based MES on AWS can solve the typical analytics challenges for MES and provide additional analytics capabilities to give manufacturers a competitive advantage. The AWS Cloud gives manufacturers choices from a set of purpose-built analytics services and built analytics platforms, and also provides purpose-built solutions such as Industrial Data Fabric for industrial customers.
 + [AWS analytics services](https://aws.amazon.com/big-data/datalakes-and-analytics/) are purpose-built to quickly extract data insights by using the most appropriate tool for the job and are optimized to give the best performance, scale, and cost for business needs.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/viewi
 ---
 
 # Viewing the network map
-<a name="viewing-network-map"></a>
 
 After ingesting the required datasets for Insights, the network map displays the current and projected inventory for products and locations in a map view for quick understanding of your inventory health and projected health. Locations appear in clusters, and the total number of locations appear under each cluster. You can zoom in on each cluster to see individual locations. Each icon represents a location type. The colored ring shows the inventory health for each location or cluster for the selected time interval on the scroll bar at the bottom left. Inventory health status depends on the inventory policy, that is, *min\_safety\_stock* and *max\_safety\_stock* in your ingested data.
 

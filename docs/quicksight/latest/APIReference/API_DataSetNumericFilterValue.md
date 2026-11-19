@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetNumericFilterValue
-<a name="API_DataSetNumericFilterValue"></a>
 
 Represents a numeric value used in filter conditions.
 

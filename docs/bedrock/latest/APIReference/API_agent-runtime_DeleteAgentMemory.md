@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # DeleteAgentMemory
-<a name="API_agent-runtime_DeleteAgentMemory"></a>
 
 Deletes memory from the specified memory identifier.
 

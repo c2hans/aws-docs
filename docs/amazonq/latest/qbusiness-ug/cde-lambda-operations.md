@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/cde-lambda-o
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Using Lambda functions for Amazon Q Business document enrichment
-<a name="cde-lambda-operations"></a>
 
 You can use Lambda functions to prepare your document attributes for advanced data manipulation. For example, you could use Optical Character Recognition (OCR), which interprets text from images and treats each image as a textual document. Or, you could retrieve the current date-time in a specific time zone and then insert the date-time where there's an empty value for a date field.
 

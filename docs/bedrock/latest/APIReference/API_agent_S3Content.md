@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_S3
 ---
 
 # S3Content
-<a name="API_agent_S3Content"></a>
 
 Contains information about the content to ingest into a knowledge base connected to an Amazon S3 data source.
 

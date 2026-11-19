@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags_saml.html
 ---
 
 # Tag IAM SAML identity providers
-<a name="id_tags_saml"></a>
 
 You can use IAM tag key-value pairs to add custom attributes to SAML identity providers. For example, to identify a provider, you can add the tag key **okta** and the tag value **saml**. You can use tags to control access to resources or to control what tags can be attached to an object. To learn more about using tags to control access, see [Controlling access to and for IAM users and roles using tags](access_iam-tags.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceGrou
 ---
 
 # InstanceGroupConfig
-<a name="API_InstanceGroupConfig"></a>
 
 Configuration defining a new instance group.
 

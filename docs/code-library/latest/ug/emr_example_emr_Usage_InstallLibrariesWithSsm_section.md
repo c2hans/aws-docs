@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/emr_example_emr_U
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Run a shell script to install libraries on Amazon EMR instances using an AWS SDK
-<a name="emr_example_emr_Usage_InstallLibrariesWithSsm_section"></a>
 
 The following code example shows how to use AWS Systems Manager to run a shell script on Amazon EMR instances that installs additional libraries. This way, you can automate instance management instead of running commands manually through an SSH connection.
 

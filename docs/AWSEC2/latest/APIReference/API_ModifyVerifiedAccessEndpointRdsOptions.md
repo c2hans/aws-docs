@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVer
 ---
 
 # ModifyVerifiedAccessEndpointRdsOptions
-<a name="API_ModifyVerifiedAccessEndpointRdsOptions"></a>
 
 The RDS options for a Verified Access endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## AWS Marketplace Catalog Service
 <a name="Welcome_AWS_Marketplace_Catalog_Service"></a>

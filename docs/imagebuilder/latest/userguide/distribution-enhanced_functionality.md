@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/distributi
 ---
 
 # Use enhanced AMI distribution capabilities
-<a name="distribution-enhanced_functionality"></a>
 
 Image Builder gives you advanced distribution capabilities that separate distribution from the build process. You can distribute an image that you already built, retry an AMI image that failed during its test or distribution phase without rebuilding it, and define multi-stage distribution processes with custom workflows.
 

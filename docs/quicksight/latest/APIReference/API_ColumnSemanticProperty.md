@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Colum
 ---
 
 # ColumnSemanticProperty
-<a name="API_ColumnSemanticProperty"></a>
 
 A semantic property for a column.
 

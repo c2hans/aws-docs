@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Doma
 ---
 
 # DomainVerificationSummary
-<a name="API_DomainVerificationSummary"></a>
 
  Summary information about a domain verification.
 

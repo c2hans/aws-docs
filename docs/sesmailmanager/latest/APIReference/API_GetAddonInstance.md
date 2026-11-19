@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_G
 ---
 
 # GetAddonInstance
-<a name="API_GetAddonInstance"></a>
 
 Gets detailed information about an Add On instance.
 

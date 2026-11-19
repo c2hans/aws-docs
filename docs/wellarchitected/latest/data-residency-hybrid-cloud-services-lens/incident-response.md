@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Incident response
-<a name="incident-response"></a>
 
 | DRHCSEC09: Have your incident responders been trained on your data residency policies? |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/entity
 ---
 
 # IDs of Entities
-<a name="entity-ids"></a>
 
 When an entity is created, it is automatically assigned an ID that is stored in the <id></id> element.
 

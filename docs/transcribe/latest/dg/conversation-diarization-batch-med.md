@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/conversation-diariz
 ---
 
 # Enabling speaker partitioning in batch transcriptions
-<a name="conversation-diarization-batch-med"></a>
 
 You can enable speaker partitioning in a batch transcription job using either the [`StartMedicalTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMedicalTranscriptionJob.html) API or the AWS Management Console. This enables you to partition the text per speaker in a clinician-patient conversation and determine who said what in the transcription output.
 

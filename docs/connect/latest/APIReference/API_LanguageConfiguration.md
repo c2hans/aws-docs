@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Language
 ---
 
 # LanguageConfiguration
-<a name="API_LanguageConfiguration"></a>
 
 The language configuration for conversational analytics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Kn
 ---
 
 # KnowledgeBasePromptTemplate
-<a name="API_agent_KnowledgeBasePromptTemplate"></a>
 
 Defines a custom prompt template for orchestrating the retrieval and generation process.
 

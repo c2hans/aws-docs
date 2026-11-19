@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-configure-ap
 ---
 
 # Configure applications
-<a name="emr-configure-apps"></a>
 
 To override the default configurations for an application, you can supply a configuration object. You can either use a shorthand syntax to provide the configuration, or you can reference the configuration object in a JSON file. Configuration objects consist of a classification, properties, and optional nested configurations. Properties correspond to the application settings you want to change. You can specify multiple classifications for multiple applications in a single JSON object.
 

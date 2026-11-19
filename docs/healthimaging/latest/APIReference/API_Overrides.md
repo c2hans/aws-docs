@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Ov
 ---
 
 # Overrides
-<a name="API_Overrides"></a>
 
 Specifies the overrides used in image set modification calls to `CopyImageSet` and `UpdateImageSetMetadata`.
 

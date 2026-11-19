@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-large-data-pe
 ---
 
 # Grant Users Permissions to Use Large Data across the ML Lifecycle
-<a name="canvas-large-data-permissions"></a>
 
 Amazon SageMaker Canvas users working with datasets larger than 10 GB in CSV format or 2.5 GB in Parquet format require specific permissions for large data processing. These permissions are essential for managing large-scale data throughout the machine learning lifecycle. When datasets exceed the stated thresholds, or the application's local memory capacity, SageMaker Canvas uses Amazon EMR Serverless for efficient processing. This applies to:
 + Data Import: Importing large datasets with random or stratified sampling.

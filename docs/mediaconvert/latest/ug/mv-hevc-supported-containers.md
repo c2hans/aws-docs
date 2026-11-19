@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/mv-hevc-supported
 ---
 
 # Supported containers for MV-HEVC
-<a name="mv-hevc-supported-containers"></a>
 
 The following table shows the containers and video codec that AWS Elemental MediaConvert supports for MV-HEVC outputs.
 

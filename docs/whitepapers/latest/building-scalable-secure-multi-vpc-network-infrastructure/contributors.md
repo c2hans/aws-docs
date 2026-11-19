@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  The following individuals contributed to this document:
 +  Sohaib Tahir, Solutions Architect, Amazon Web Services

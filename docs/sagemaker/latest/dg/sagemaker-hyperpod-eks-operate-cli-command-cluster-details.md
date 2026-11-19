@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Retrieving SageMaker HyperPod cluster details
-<a name="sagemaker-hyperpod-eks-operate-cli-command-cluster-details"></a>
 
 Learn how to retrieve SageMaker HyperPod cluster details using the AWS CLI.
 

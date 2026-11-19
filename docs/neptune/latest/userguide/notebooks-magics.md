@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/notebooks-magic
 ---
 
 # Using magics in Amazon Neptune notebooks
-<a name="notebooks-magics"></a>
 
 The Neptune workbench provides a number of so-called *magic* commands in the notebooks that save a great deal of time and effort. They fall into two categories: *line magics* and *cell magics*.
 

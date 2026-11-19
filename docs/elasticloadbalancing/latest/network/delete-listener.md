@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/dele
 ---
 
 # Delete a listener for your Network Load Balancer
-<a name="delete-listener"></a>
 
 Before you delete a listener, consider the impact on your application:
 + [TCP and TLS listeners] The load balancer immediately stops accepting new connections on the listener. Any TLS handshakes in progress might fail. Existing connections remain open until they naturally close or time out. In-flight requests on existing connections complete successfully.

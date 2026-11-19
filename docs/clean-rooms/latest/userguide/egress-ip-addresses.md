@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/egress-ip-a
 ---
 
 # AWS Clean Rooms egress IP address ranges
-<a name="egress-ip-addresses"></a>
 
 When AWS Clean Rooms reads data from an external data source, Databricks or Snowflake, the request originates from a fixed set of AWS Clean Rooms egress IP addresses. These IP address ranges are the same for all external data sources that AWS Clean Rooms supports.
 

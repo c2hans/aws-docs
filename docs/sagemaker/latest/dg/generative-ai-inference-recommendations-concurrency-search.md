@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/generative-ai-infere
 ---
 
 # Find the maximum concurrency an endpoint can serve under an SLA
-<a name="generative-ai-inference-recommendations-concurrency-search"></a>
 
 When you benchmark a generative artificial intelligence (generative AI) endpoint, you often want to find its maximum *concurrency*. Concurrency is the number of simultaneous requests the endpoint handles while still meeting a performance target, such as a latency ceiling. You can explore concurrency in two ways in a single benchmark job:
 + **Concurrency list** – Benchmark a fixed set of concurrency levels (for example, 1, 10, and 100) in one job. Use this when you already know the levels you want to compare.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Supported configurations
-<a name="msk-data-delivery-iceberg-supported-configs"></a>
 
 | Configuration | Streaming tables for Apache Iceberg |
 | --- | --- |

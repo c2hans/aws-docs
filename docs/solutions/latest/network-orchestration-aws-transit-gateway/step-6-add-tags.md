@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Step 6: Add tags
-<a name="step-6-add-tags"></a>
 
 Follow the step-by-step instructions in this section to add tags to your VPCs and subnets to create or update transit gateway attachments to the VPC or to your transit gateway to create transit gateway peering attachments. Changing tag keys and values (if applicable) results in identifying the transit gateway route tables to create associations and enable propagations. Deleting the tags results in deleting the resources created when the tag was added.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # TagFilter
-<a name="API_connect-cases_TagFilter"></a>
 
 A filter for tags. Only one value can be provided.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # GetInsightRuleReport
-<a name="API_GetInsightRuleReport"></a>
 
 This operation returns the time series data collected by a Contributor Insights rule. The data includes the identity and number of contributors to the log group.
 

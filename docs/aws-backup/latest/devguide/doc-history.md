@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/doc-history.h
 ---
 
 # Document history for AWS Backup
-<a name="doc-history"></a>
 + **API version: **November 19, 2025
 + **Latest documentation update: **November 16, 2026
 

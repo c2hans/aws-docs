@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/encryption.how
 ---
 
 # Encryption at rest: How it works in Amazon Keyspaces
-<a name="encryption.howitworks"></a>
 
 Amazon Keyspaces (for Apache Cassandra) *encryption at rest* encrypts your data using the 256-bit Advanced Encryption Standard (AES-256). This helps secure your data from unauthorized access to the underlying storage. All customer data in Amazon Keyspaces tables is encrypted at rest by default, and server-side encryption is transparent, which means that changes to applications aren't required.
 

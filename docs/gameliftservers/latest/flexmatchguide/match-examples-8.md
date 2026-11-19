@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Example: Create a multi-team large match
-<a name="match-examples-8"></a>
 
 This example illustrates how to set up a rule set for matches with multiple teams that can exceed 40 players. This example illustrates how to create multiple identical teams with one definition and how asymmetrically sized teams are filled during match creation.
 

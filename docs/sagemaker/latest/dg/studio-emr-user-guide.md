@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-emr-user-guid
 ---
 
 # User guide
-<a name="studio-emr-user-guide"></a>
 
 This section covers how data scientist and data engineers can launch, discover, connect to, or terminate an Amazon EMR cluster from Studio or Studio Classic.
 

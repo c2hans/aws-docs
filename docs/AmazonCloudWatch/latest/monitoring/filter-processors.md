@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/filte
 ---
 
 # Filter processors
-<a name="filter-processors"></a>
 
 Filter processors let you selectively remove log entries from the pipeline based on conditions you define.
 

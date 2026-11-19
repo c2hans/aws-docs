@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/connect-widget
 ---
 
 # Add the Connect Customer widget to your website to accept chat, task, email, and web calling contacts
-<a name="connect-widget-on-website"></a>
 
 The topics in this section explain how to create and customize a communications widget for your website. You'll create a contact form that determines the behavior for contacts created through your widget, and then customize the widget's appearance and functionality.
 

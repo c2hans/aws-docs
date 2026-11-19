@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/app
 ---
 
 # Integrating with Apple platforms using the AWS SDK for Swift
-<a name="apple-integration"></a>
 
 Software running on any of Apple's platforms (macOS, iOS, iPadOS, tvOS, visionOS, or watchOS) may wish to integrate into the Apple ecosystem. This may include, for example, letting the user authenticate to access AWS services using [Sign In With Apple](https://developer.apple.com/sign-in-with-apple/).
 

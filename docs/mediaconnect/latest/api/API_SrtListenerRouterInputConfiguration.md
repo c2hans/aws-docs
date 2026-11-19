@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SrtListenerR
 ---
 
 # SrtListenerRouterInputConfiguration
-<a name="API_SrtListenerRouterInputConfiguration"></a>
 
 The configuration settings for a router input using the SRT (Secure Reliable Transport) protocol in listener mode, including the port, minimum latency, and decryption key configuration.
 

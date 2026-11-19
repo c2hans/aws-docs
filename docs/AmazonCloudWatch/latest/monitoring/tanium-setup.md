@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/taniu
 ---
 
 # Tanium integration configuration
-<a name="tanium-setup"></a>
 
 Tanium is an endpoint management and security platform that provides real-time visibility and control across enterprise endpoints. CloudWatch pipelines collect detailed telemetry from Tanium including endpoint inventory, compliance posture, vulnerability findings, threat response alerts, and audit logs covering authentication, account changes, and group management activities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resources.html
 ---
 
 # Manage your Amazon EC2 resources
-<a name="resources"></a>
 
 A *resource* is an entity that you can work with. Amazon EC2 creates resources as you use the features of the service. For example, Amazon EC2 resources include images, instances, fleets, key pairs, and security groups. All Amazon EC2 resource types include attributes that describe the resources. For example, names, descriptions, resource identifiers, and Amazon Resource Names (ARN).
 

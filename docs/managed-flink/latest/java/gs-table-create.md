@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/gs-table-creat
 ---
 
 # Create and run a Managed Service for Apache Flink application
-<a name="gs-table-create"></a>
 
 In this exercise, you create a Managed Service for Apache Flink application with Kinesis data streams as a source and sink.
 

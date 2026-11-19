@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-best-
 ---
 
 # SageMaker distributed model parallelism best practices
-<a name="model-parallel-best-practices-v2"></a>
 
 Use the following guidelines when you run a distributed training job with the SageMaker model parallel library v2 (SMP v2).
 

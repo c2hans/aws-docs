@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DisasterReco
 ---
 
 # DisasterRecoveryConfiguration
-<a name="API_DisasterRecoveryConfiguration"></a>
 
 The disaster recovery configuration for an Autonomous Database.
 

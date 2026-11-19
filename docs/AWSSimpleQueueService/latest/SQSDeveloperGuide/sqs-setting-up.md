@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Setting up Amazon SQS
-<a name="sqs-setting-up"></a>
 
 Before you can use Amazon SQS for the first time, you must complete the following steps:
 

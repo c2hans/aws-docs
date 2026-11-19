@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/instagram-ads-reading-fro
 ---
 
 # Reading from Instagram Ads entities
-<a name="instagram-ads-reading-from-entities"></a>
 
 **Prerequisite**
 

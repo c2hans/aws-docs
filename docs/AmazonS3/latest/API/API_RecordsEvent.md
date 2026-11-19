@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_RecordsEvent.htm
 ---
 
 # RecordsEvent
-<a name="API_RecordsEvent"></a>
 
 The container for the records event.
 

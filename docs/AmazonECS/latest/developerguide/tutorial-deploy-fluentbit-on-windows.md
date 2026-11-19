@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial
 ---
 
 # Deploying Fluent Bit on Amazon ECS Windows containers
-<a name="tutorial-deploy-fluentbit-on-windows"></a>
 
 Fluent Bit is a fast and flexible log processor and router supported by various operating systems. It can be used to route logs to various AWS destinations such as Amazon CloudWatch Logs, Firehose Amazon S3, and Amazon OpenSearch Service. Fluent Bit supports common partner solutions such as [Datadog](https://www.datadoghq.com/), [Splunk](https://www.splunk.com/), and custom HTTP servers. For more information about Fluent Bit, see the [Fluent Bit ](https://fluentbit.io/) website.
 

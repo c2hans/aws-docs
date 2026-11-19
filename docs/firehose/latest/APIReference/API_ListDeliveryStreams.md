@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_ListDel
 ---
 
 # ListDeliveryStreams
-<a name="API_ListDeliveryStreams"></a>
 
 Lists your Firehose streams in alphabetical order of their names.
 

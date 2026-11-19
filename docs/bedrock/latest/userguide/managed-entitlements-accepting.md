@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/managed-entitle
 ---
 
 # Accepting and activating grants
-<a name="managed-entitlements-accepting"></a>
 
 After a grant has been distributed to a member account, the grant must be accepted and activated before the third-party Bedrock model can be used. The acceptance and activation workflow differs depending on your organization configuration.
 

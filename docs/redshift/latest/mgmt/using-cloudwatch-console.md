@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/using-cloudwatch-co
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Performance metrics in the CloudWatch console
-<a name="using-cloudwatch-console"></a>
 
 When working with Amazon Redshift metrics in the CloudWatch console, keep a couple of things in mind:
 + Query and load performance data is only available in the Amazon Redshift console.

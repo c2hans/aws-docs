@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle transparent data encryption and Amazon Aurora MySQL encryption and column encryption
-<a name="chap-oracle-aurora-mysql.security.encryption"></a>
 
 With AWS DMS, you can migrate databases that use Oracle transparent data encryption or Amazon Aurora MySQL encryption and column encryption to maintain data security during and after the migration process. Oracle transparent data encryption and Aurora MySQL encryption and column encryption provide data-at-rest encryption to protect sensitive information stored in databases.
 

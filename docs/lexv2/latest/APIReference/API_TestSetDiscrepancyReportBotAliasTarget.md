@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestSetDis
 ---
 
 # TestSetDiscrepancyReportBotAliasTarget
-<a name="API_TestSetDiscrepancyReportBotAliasTarget"></a>
 
 Contains information about the bot alias used for the test set discrepancy report.
 

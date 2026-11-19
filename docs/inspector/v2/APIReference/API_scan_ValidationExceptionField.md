@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_scan_Valid
 ---
 
 # ValidationExceptionField
-<a name="API_scan_ValidationExceptionField"></a>
 
 The request has failed validation due to missing required fields or having invalid inputs.
 

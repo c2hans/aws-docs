@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Backu
 ---
 
 # BackupPlanTemplatesListMember
-<a name="API_BackupPlanTemplatesListMember"></a>
 
 An object specifying metadata associated with a backup plan template.
 

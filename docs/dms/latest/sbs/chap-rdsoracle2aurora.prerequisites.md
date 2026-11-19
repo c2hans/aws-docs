@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdsoracle2aurora.pre
 ---
 
 # Prerequisites for migrating from Amazon RDS for Oracle to Amazon Aurora MySQL
-<a name="chap-rdsoracle2aurora.prerequisites"></a>
 
 The following prerequisites are also required to complete this walkthrough:
 + Familiarity with Amazon RDS, the applicable database technologies, and SQL.

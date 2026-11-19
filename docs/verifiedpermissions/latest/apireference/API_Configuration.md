@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # Configuration
-<a name="API_Configuration"></a>
 
 Contains configuration information used when creating a new identity source.
 

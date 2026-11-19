@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreatePla
 ---
 
 # CreatePlacementGroup
-<a name="API_CreatePlacementGroup"></a>
 
 Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.
 

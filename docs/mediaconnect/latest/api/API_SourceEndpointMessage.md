@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SourceEndpoi
 ---
 
 # SourceEndpointMessage
-<a name="API_SourceEndpointMessage"></a>
 
 A status message for a source endpoint.
 

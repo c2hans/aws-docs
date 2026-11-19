@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Up
 ---
 
 # UpdatePlaybackRestrictionPolicy
-<a name="API_UpdatePlaybackRestrictionPolicy"></a>
 
 Updates a specified playback restriction policy.
 

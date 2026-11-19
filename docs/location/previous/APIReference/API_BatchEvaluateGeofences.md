@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Batch
 ---
 
 # BatchEvaluateGeofences
-<a name="API_BatchEvaluateGeofences"></a>
 
 Evaluates device positions against the geofence geometries from a given geofence collection.
 

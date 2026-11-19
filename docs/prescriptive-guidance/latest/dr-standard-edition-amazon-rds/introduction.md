@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard
 ---
 
 # Choosing a DR capability for standard editions of Amazon RDS for Oracle and SQL Server
-<a name="introduction"></a>
 
 *Gokul Gunasekaran and Sawan Saxena, Amazon Web Services*
 

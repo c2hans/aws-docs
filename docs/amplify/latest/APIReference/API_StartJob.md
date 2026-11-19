@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_StartJob
 ---
 
 # StartJob
-<a name="API_StartJob"></a>
 
 Starts a new job for a branch of an Amplify app.
 

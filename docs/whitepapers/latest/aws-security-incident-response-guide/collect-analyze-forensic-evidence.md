@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Collect and analyze forensic evidence
-<a name="collect-analyze-forensic-evidence"></a>
 
  Forensics, as mentioned in the [Preparation](preparation.md) section of this document, is the process of collecting and analyzing artifacts during incident response. On AWS, it is applicable to infrastructure domain resources such as network traffic packet captures, operating system memory dump, and for service domain resources such as AWS CloudTrail logs.
 

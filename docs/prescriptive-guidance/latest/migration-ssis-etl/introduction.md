@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Migrating SSIS ETL jobs to AWS
-<a name="introduction"></a>
 
 *Durga Prasad and Harpreet Singh, Amazon Web Services*
 

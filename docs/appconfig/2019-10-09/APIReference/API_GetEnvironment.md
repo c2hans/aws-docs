@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ge
 ---
 
 # GetEnvironment
-<a name="API_GetEnvironment"></a>
 
 Retrieves information about an environment. An environment is a deployment group of AWS AppConfig applications, such as applications in a `Production` environment or in an `EU_Region` environment. Each configuration deployment targets an environment. You can enable one or more Amazon CloudWatch alarms for an environment. If an alarm is triggered during a deployment, AWS AppConfig roles back the configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-operatio
 ---
 
 # Feature Store
-<a name="feature-store"></a>
 
 Using [SageMaker Feature Store](https://aws.amazon.com/sagemaker/feature-store/) increases team productivity, because it decouples component boundaries (for example, storage versus usage). It also provides feature reusability across different data science teams within your organization.
 

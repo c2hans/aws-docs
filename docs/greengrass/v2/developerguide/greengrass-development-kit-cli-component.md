@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # component
-<a name="greengrass-development-kit-cli-component"></a>
 
 Use the `component` command in the AWS IoT Greengrass Development Kit Command-Line Interface (GDK CLI) to create, build, and publish custom Greengrass components.
 

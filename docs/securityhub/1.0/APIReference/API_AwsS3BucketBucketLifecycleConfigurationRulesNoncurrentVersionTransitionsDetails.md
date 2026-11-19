@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetails
-<a name="API_AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetails"></a>
 
 A transition rule that describes when noncurrent objects transition to a specified storage class.
 

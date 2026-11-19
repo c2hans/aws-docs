@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_AppBundle.html
 ---
 
 # AppBundle
-<a name="API_AppBundle"></a>
 
 Contains information about an app bundle.
 

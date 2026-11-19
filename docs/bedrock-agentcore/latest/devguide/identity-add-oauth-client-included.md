@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Add OAuth client using included provider
-<a name="identity-add-oauth-client-included"></a>
 
 Built-in providers offer streamlined setup for popular services including Google, GitHub, Slack, and Salesforce. These providers have pre-configured authorization server endpoints and provider-specific parameters to reduce development effort.
 

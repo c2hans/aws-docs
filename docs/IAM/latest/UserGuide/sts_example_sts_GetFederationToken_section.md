@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/sts_example_sts_Get
 ---
 
 # Use `GetFederationToken` with a CLI
-<a name="sts_example_sts_GetFederationToken_section"></a>
 
 The following code examples show how to use `GetFederationToken`.
 

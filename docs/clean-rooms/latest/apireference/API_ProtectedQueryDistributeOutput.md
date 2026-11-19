@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedQueryDistributeOutput
-<a name="API_ProtectedQueryDistributeOutput"></a>
 
  Contains the output information for a protected query with a distribute output configuration.
 

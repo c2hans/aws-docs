@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CalculatedSpend
-<a name="API_budgets_CalculatedSpend"></a>
 
 The spend objects that are associated with this budget. The `actualSpend` tracks how much you've used, cost, usage, RI units, or Savings Plans units and the `forecastedSpend` tracks how much that you're predicted to spend based on your historical usage profile.
 

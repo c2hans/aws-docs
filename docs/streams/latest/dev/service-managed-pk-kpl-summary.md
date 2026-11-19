@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-kp
 ---
 
 # Summary
-<a name="service-managed-pk-kpl-summary"></a>
 
 **KPL and KCL compatibility summary**
 

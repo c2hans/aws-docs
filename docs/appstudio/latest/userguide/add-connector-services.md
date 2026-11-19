@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/add-connector
 ---
 
 # Connect to AWS services
-<a name="add-connector-services"></a>
 
 **Topics**
 + [Connect to Amazon Redshift](connectors-redshift.md)

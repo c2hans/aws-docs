@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-lambda-
 ---
 
 # Using AWS Lambda resolvers in AWS AppSync
-<a name="tutorial-lambda-resolvers"></a>
 
 **Note**
 We now primarily support the APPSYNC\_JS runtime and its documentation. Please consider using the APPSYNC\_JS runtime and its guides [here](https://docs.aws.amazon.com/appsync/latest/devguide/tutorials-js.html).

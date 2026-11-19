@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListedW
 ---
 
 # ListedWorkflow
-<a name="API_ListedWorkflow"></a>
 
 Contains the identifier, text description, and Amazon Resource Name (ARN) for the workflow.
 

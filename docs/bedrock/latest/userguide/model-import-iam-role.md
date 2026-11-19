@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-import-ia
 ---
 
 # Create a service role for importing pre-trained models
-<a name="model-import-iam-role"></a>
 
 To use a custom role for model import create an IAM service role and attach the following permissions. For information on how to create a service role in IAM, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/amaz
 ---
 
 # Amazon Q Developer and Amazon CodeWhisperer
-<a name="amazonq"></a>
 
 As of April 30th 2024, Amazon CodeWhisperer is now part of Amazon Q Developer, this includes inline code suggestions and Amazon Q Developer security scans. Download the [Amazon Q Developer IDE extension from the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.amazon-q-vscode) to get started.
 

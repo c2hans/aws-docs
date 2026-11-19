@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/ide
 ---
 
 # Working with Amazon Cognito identity sources
-<a name="identity-sources-cognito"></a>
 
 Verified Permissions works closely with Amazon Cognito user pools. Amazon Cognito JWTs have a predictable structure. Verified Permissions recognizes this structure and draws maximum benefit from the information that it contains. For example, you can implement a role-based access control (RBAC) authorization model with either ID tokens or access tokens.
 

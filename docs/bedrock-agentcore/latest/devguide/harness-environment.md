@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 ---
 
 # Environment and filesystem
-<a name="harness-environment"></a>
 
 Every harness session runs in an isolated microVM with its own filesystem and shell. This page covers configuring the execution environment (default or custom container), running commands directly on the VM, setting environment variables, and mounting persistent filesystems.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerMechanicalTurkAccess
-<a name="AmazonSageMakerMechanicalTurkAccess"></a>
 
 **Description**: Provides access to create Amazon Augmented AI FlowDefinition resources against any Workteam.
 

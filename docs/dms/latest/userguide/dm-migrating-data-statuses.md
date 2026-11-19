@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/dm-migrating-data-s
 ---
 
 # Statuses of homogeneous data migrations in AWS DMS
-<a name="dm-migrating-data-statuses"></a>
 
 For each data migration that you run, AWS DMS displays the **Status** in the AWS DMS console. The following list includes the available statuses.
 + `Creating` – AWS DMS is creating the data migration.

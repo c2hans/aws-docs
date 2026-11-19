@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 ---
 
 # Troubleshooting Appium Python web application tests in AWS Device Farm
-<a name="troubleshooting-appium-web-python"></a>
 
 The following topic lists error messages that can occur for Appium Python Web application tests and recommends workarounds to resolve each error.
 

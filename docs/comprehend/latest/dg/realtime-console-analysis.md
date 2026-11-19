@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/realtime-console-an
 ---
 
 # Real-time analysis using the built-in models
-<a name="realtime-console-analysis"></a>
 
 You can use the Amazon Comprehend console to run real-time analysis of a UTF-8 encoded text document. The document can be English or one of the other languages supported by Amazon Comprehend. The results are shown in the console so that you can review the analysis.
 

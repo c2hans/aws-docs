@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2V
 ---
 
 # AwsEc2VpnConnectionOptionsDetails
-<a name="API_AwsEc2VpnConnectionOptionsDetails"></a>
 
 VPN connection options.
 

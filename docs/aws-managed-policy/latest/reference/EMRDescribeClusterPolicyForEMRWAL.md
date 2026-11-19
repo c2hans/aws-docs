@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EMRD
 ---
 
 # EMRDescribeClusterPolicyForEMRWAL
-<a name="EMRDescribeClusterPolicyForEMRWAL"></a>
 
 **Description**: This policy grants read-only permissions that allow the WAL service for Amazon EMR to find and return the status of a cluster
 

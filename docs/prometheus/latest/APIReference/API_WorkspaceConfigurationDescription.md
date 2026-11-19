@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Works
 ---
 
 # WorkspaceConfigurationDescription
-<a name="API_WorkspaceConfigurationDescription"></a>
 
 This structure contains the description of the workspace configuration.
 

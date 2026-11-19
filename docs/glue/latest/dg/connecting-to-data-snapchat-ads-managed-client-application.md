@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-snapch
 ---
 
 # Creating an app in your Snapchat Ads account
-<a name="connecting-to-data-snapchat-ads-managed-client-application"></a>
 
  To activate access to Snapchat’s Marketing API, make sure you have a business account set up. Then follow the steps below.
 

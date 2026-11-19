@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ManagedAccou
 ---
 
 # ManagedAccount
-<a name="API_ManagedAccount"></a>
 
 Managed account.
 

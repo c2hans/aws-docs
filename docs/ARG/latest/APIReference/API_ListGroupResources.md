@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_ListGroupRes
 ---
 
 # ListGroupResources
-<a name="API_ListGroupResources"></a>
 
 Returns a list of Amazon resource names (ARNs) of the resources that are members of a specified resource group.
 

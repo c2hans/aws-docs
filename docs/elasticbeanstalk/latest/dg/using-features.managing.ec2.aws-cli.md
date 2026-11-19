@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-feature
 ---
 
 # Configuring Amazon EC2 security groups and instance types using the AWS CLI
-<a name="using-features.managing.ec2.aws-cli"></a>
 
 You can use the AWS Command Line Interface (AWS CLI) to configure the Amazon EC2 instances in your Elastic Beanstalk environments.
 

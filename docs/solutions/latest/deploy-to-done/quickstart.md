@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deploy-to-done/quicksta
 ---
 
 # Quickstart
-<a name="quickstart"></a>
 
 Deploy a sample application to AWS Elastic Beanstalk. The goal is to see the full deployment experience before reading about architecture, positioning, or operational philosophy.
 

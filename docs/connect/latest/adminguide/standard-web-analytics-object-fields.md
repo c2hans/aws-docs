@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-web-a
 ---
 
 # Customer Profiles standard web analytics object fields
-<a name="standard-web-analytics-object-fields"></a>
 
 **WebAnalytics Standard Object Schema**
 

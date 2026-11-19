@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_ReplicationIns
 ---
 
 # Deleting a replication instance
-<a name="CHAP_ReplicationInstance.Deleting"></a>
 
 You can delete an AWS DMS replication instance when you are finished using it. If you have migration tasks that use the replication instance, you must stop and delete the tasks before deleting the replication instance.
 

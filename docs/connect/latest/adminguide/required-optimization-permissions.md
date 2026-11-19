@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/required-optim
 ---
 
 # Security profile permissions for forecasting & agent scheduling in Connect Customer
-<a name="required-optimization-permissions"></a>
 
 Assign the following security profile permissions as needed to use forecasting & agent scheduling.
 

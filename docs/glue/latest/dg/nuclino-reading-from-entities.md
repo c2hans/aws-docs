@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/nuclino-reading-from-enti
 ---
 
 # Reading from Nuclino entities
-<a name="nuclino-reading-from-entities"></a>
 
 **Prerequisites**
 

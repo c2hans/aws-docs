@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharin
 ---
 
 # Deleting a resource share in AWS RAM
-<a name="working-with-sharing-delete"></a>
 
 You can delete a resource share at any time. When you delete a resource share, all principals that were associated with the resource share lose access to the shared resources. Deleting a resource share doesn't delete the shared resources.
 

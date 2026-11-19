@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Respo
 ---
 
 # ResponseHeadersPolicyAccessControlExposeHeaders
-<a name="API_ResponseHeadersPolicyAccessControlExposeHeaders"></a>
 
 A list of HTTP headers that CloudFront includes as values for the `Access-Control-Expose-Headers` HTTP response header.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ReceiptRule.
 ---
 
 # ReceiptRule
-<a name="API_ReceiptRule"></a>
 
 Receipt rules enable you to specify which actions Amazon SES should take when it receives mail on behalf of one or more email addresses or domains that you own.
 

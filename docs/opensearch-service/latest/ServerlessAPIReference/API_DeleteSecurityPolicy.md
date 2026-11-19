@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # DeleteSecurityPolicy
-<a name="API_DeleteSecurityPolicy"></a>
 
 Deletes an OpenSearch Serverless security policy.
 

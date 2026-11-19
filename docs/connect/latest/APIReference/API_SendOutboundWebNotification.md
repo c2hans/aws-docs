@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SendOutb
 ---
 
 # SendOutboundWebNotification
-<a name="API_SendOutboundWebNotification"></a>
 
 Sends an outbound web notification to a customer's web browser for outbound campaigns. For more information about outbound campaigns, see [Set up Connect Customer outbound campaigns](https://docs.aws.amazon.com/connect/latest/adminguide/enable-outbound-campaigns.html).
 

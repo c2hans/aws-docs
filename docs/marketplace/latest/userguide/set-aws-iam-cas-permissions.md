@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/set-aws-iam
 ---
 
 # AWS Marketplace Commerce Analytics Service account permissions
-<a name="set-aws-iam-cas-permissions"></a>
 
 Use the following IAM permissions policy to enroll in the AWS Marketplace Commerce Analytics Service.
 

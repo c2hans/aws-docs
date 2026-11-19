@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Te
 ---
 
 # TextPartValue
-<a name="API_TextPartValue"></a>
 
 Describes text information objects containing fields that determine how text part objects are composed.
 

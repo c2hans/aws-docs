@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Sort
-<a name="API_marketplace-agreements_Sort"></a>
 
 An object that contains the `SortBy` and `SortOrder` attributes.
 

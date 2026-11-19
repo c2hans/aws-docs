@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DataCa
 ---
 
 # DataCaptureConfig
-<a name="API_DataCaptureConfig"></a>
 
 Configuration to control how SageMaker AI captures inference data.
 

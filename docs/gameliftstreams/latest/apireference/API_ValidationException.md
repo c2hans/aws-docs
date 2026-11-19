@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # ValidationException
-<a name="API_ValidationException"></a>
 
 One or more parameter values in the request fail to satisfy the specified constraints. Correct the invalid parameter values before retrying the request.
 

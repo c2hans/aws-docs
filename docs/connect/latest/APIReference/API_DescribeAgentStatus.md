@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeAgentStatus
-<a name="API_DescribeAgentStatus"></a>
 
 Describes an agent status.
 

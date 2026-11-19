@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixSideOfStreetOptions
-<a name="API_RouteMatrixSideOfStreetOptions"></a>
 
 Options to configure matching the provided position to a side of the street.
 

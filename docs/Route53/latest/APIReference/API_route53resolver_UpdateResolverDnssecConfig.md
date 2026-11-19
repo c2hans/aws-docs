@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # UpdateResolverDnssecConfig
-<a name="API_route53resolver_UpdateResolverDnssecConfig"></a>
 
 Updates an existing DNSSEC validation configuration. If there is no existing DNSSEC validation configuration, one is created.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceE
 ---
 
 # InstanceEventWindowTimeRange
-<a name="API_InstanceEventWindowTimeRange"></a>
 
 The start day and time and the end day and time of the time range, in UTC.
 

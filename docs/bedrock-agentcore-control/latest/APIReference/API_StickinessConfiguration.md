@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # StickinessConfiguration
-<a name="API_StickinessConfiguration"></a>
 
 The configuration for session-sticky routing to a target. Session stickiness routes requests that share a session identifier to the same target.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/deleting-comp
 ---
 
 # Deleting components
-<a name="deleting-components"></a>
 
 1. If necessary, navigate to the Development environment of your application by editing it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/materialize
 ---
 
 # Querying materialized views
-<a name="querying-materialized-views"></a>
 
 When you query a materialized view, you directly access the precomputed data in the materialized view. You can use a materialized view in any SQL query by referencing the materialized view name as the data source, as in a table or standard view.
 

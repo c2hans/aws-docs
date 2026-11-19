@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # DeleteRepositoryLink
-<a name="API_DeleteRepositoryLink"></a>
 
 Deletes the association between your connection and a specified external Git repository.
 

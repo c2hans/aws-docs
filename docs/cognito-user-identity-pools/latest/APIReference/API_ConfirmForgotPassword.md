@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ConfirmForgotPassword
-<a name="API_ConfirmForgotPassword"></a>
 
 This public API operation accepts a confirmation code that Amazon Cognito sent to a user and accepts a new password for that user.
 

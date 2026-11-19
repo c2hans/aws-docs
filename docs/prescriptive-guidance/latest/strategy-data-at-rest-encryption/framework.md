@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Framework
-<a name="framework"></a>
 
 A *framework*, in this context, refers to a set of standard operating procedures that need to be followed when you modify the encryption standards or policy. The framework is the scaffolding that helps you implement the standards. It helps convert words into actions. The framework links the people who define standards with the people who implement them.
 

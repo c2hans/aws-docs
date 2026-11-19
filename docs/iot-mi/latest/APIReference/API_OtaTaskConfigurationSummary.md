@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_OtaTaskCo
 ---
 
 # OtaTaskConfigurationSummary
-<a name="API_OtaTaskConfigurationSummary"></a>
 
 Structure representing one over-the-air (OTA) task configuration.
 

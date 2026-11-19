@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-idc-consi
 ---
 
 # Considerations and limitations for Amazon EMR with the Identity Center integration
-<a name="emr-idc-considerations"></a>
 
 Consider the following points when you use IAM Identity Center with Amazon EMR:
 + Runtime role-based access control and Amazon EMR integration with AWS IAM Identity Center (trusted identity propagation) do not support High Availability (HA) clusters.

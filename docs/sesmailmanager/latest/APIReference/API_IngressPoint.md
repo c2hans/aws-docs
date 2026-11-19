@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # IngressPoint
-<a name="API_IngressPoint"></a>
 
 The structure of an ingress endpoint resource.
 

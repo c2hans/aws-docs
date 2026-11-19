@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Run your first failure mode assessment
-<a name="next-gen-migration-step3"></a>
 
 After migration, run a failure mode assessment to see the enhanced output.
 

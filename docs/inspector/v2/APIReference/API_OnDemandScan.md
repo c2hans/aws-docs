@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_OnDemandSc
 ---
 
 # OnDemandScan
-<a name="API_OnDemandScan"></a>
 
 Details of a single on-demand scan of a resource.
 

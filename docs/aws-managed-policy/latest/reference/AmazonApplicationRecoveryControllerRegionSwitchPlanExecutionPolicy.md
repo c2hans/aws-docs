@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonApplicationRecoveryControllerRegionSwitchPlanExecutionPolicy
-<a name="AmazonApplicationRecoveryControllerRegionSwitchPlanExecutionPolicy"></a>
 
 **Description**: Grants permissions to ARC Region switch for plan execution and plan evaluation.
 

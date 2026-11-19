@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Cross-surface Actions framework
-<a name="cross-surface-actions"></a>
 
 Findings are what Tier 2 agents write. Actions are what customers and dealers do with Findings. An owner approves a Finding on their iOS card → an Action is created → an executor dispatches to the target system → Action status propagates back to all surfaces.
 

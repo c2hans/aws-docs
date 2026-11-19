@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_SaaS
 ---
 
 # SaaSProductEntityIdFilter
-<a name="API_SaaSProductEntityIdFilter"></a>
 
 Object that allows filtering on entity id of a SaaS product.
 

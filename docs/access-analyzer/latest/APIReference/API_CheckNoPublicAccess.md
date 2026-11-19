@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # CheckNoPublicAccess
-<a name="API_CheckNoPublicAccess"></a>
 
 Checks whether a resource policy can grant public access to the specified resource type.
 

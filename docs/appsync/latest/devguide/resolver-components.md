@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/resolver-compone
 ---
 
 # Resolvers
-<a name="resolver-components"></a>
 
 From the previous sections, you learned about the components of the schema and data source. Now, we need to address how the schema and data sources interact. It all begins with the resolver.
 

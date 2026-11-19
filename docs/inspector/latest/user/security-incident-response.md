@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/security-incident-
 ---
 
 # Incident response in Amazon Inspector
-<a name="security-incident-response"></a>
 
  Security is the highest priority at AWS. As mentioned in the [AWS shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model) under "Security of the Cloud," AWS is responsible for protecting the infrastructure running all of the services in the AWS Cloud. AWS is also responsible for any incident response associated with the Amazon Inspector service.
 

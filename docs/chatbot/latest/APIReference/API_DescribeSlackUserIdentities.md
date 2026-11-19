@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_Describe
 ---
 
 # DescribeSlackUserIdentities
-<a name="API_DescribeSlackUserIdentities"></a>
 
 Lists all Slack user identities with a mapped role.
 

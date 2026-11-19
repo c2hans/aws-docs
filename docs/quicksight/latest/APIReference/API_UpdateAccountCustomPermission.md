@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateAccountCustomPermission
-<a name="API_UpdateAccountCustomPermission"></a>
 
 Applies a custom permissions profile to an account.
 

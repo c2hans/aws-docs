@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mcp-sap/latest/awsforsapmcp/deployment.h
 ---
 
 # Deployment via AWS CloudFormation
-<a name="deployment"></a>
 
 You deploy the AWS for SAP Model Context Protocol (MCP) Server onto Amazon Bedrock AgentCore Runtime by using an AWS CloudFormation template. The template creates all required resources for you, including the AgentCore runtime, Identity and Access Management (IAM) roles, and networking configuration.
 

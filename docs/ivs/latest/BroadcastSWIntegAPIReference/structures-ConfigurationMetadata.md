@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # ConfigurationMetadata
-<a name="structures-ConfigurationMetadata"></a>
 
 Object specifying the metadata for the configuration returned by [GetClientConfiguration](actions-GetClientConfiguration.md).
 

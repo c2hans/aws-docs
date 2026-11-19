@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_PutUseCa
 ---
 
 # PutUseCaseForModelAccess
-<a name="API_PutUseCaseForModelAccess"></a>
 
  Returns the use case for model access. The example shown below under *Examples* shows the form data json configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/writing-bes
 ---
 
 # Documentation best practices for RAG applications
-<a name="best-practices"></a>
 
 Developing a successful Retrieval-Augmented Generation (RAG) application requires careful consideration of various document-related factors to optimize its performance. The best practices in this section are curated based on experience building RAG systems with many organization leaders. The following are several key best practices for documents to enhance the effectiveness of your RAG application:
 + **Use headings and subheadings properly** – Organizing your content with clear headings and subheadings improves readability and helps RAG models understand the structure of your documents. This practice enables the models to better navigate and extract information from the documents, which enhances the quality of the generated responses.

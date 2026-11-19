@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # DELETE: Delete an SPTS Program
-<a name="working-with-members-of-mpts-delete-spts-program"></a>
 
 Delete the specified SPTS program from the specified MPTS output.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Requirements for the contextual metadata output
-<a name="custom-questions-output-requirements"></a>
 
 To add customer decisions, add a `customQuestions` object to a contextual metadata output. The output must meet the following requirements. Otherwise, the request fails with a `ValidationException`.
 + **Extended analysis is disabled** – You must explicitly set `extendedAnalysis` to `DISABLED` on the output. If you omit `extendedAnalysis`, Elemental Inference treats it as `ENABLED`, and the request fails. As a result, an output that has customer decisions doesn't return the `people`, `environments`, `brands`, and `onScreenTexts` labels.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSRolesAnywhereServicePolicy
-<a name="AWSRolesAnywhereServicePolicy"></a>
 
 **Description**: Allows IAM Roles Anywhere to publish service/usage metrics to CloudWatch and check the status of Private Certificate Authorities on your behalf.
 

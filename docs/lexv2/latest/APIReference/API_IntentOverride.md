@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_IntentOver
 ---
 
 # IntentOverride
-<a name="API_IntentOverride"></a>
 
 Override settings to configure the intent state.
 

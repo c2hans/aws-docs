@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonBedrockLimitedAccess
-<a name="AmazonBedrockLimitedAccess"></a>
 
 **Description**: Provides limited access to Amazon Bedrock as well as to related services that are required by it
 

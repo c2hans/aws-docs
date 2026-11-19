@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-l
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS Prescriptive Guidance
 <a name="9999999999999999aws--prescriptive-guidance.9eca7a98-2c45-5c39-a213-3c7734a1cc07"></a>

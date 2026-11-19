@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/host-static-website/host
 ---
 
 # Host a Static Website
-<a name="host-static-website"></a>
 
 |  |  |
 | --- |--- |

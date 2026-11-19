@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Delet
 ---
 
 # DeleteDBClusterParameterGroup
-<a name="API_DeleteDBClusterParameterGroup"></a>
 
 Deletes a specified cluster parameter group. The cluster parameter group to be deleted can't be associated with any clusters.
 

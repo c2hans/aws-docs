@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/queues-console.html
 ---
 
 # Manage queues in the console
-<a name="queues-console"></a>
 
 You can create and manage queues in the Kinesis console. On the **Queues** page, you can list, create, edit, and delete queues, and receive records from a queue to inspect what it delivers.
 

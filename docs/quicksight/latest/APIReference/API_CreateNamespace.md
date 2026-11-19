@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateNamespace
-<a name="API_CreateNamespace"></a>
 
 (Enterprise edition only) Creates a new namespace for you to use with Amazon Quick Sight.
 

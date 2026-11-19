@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # BlobSource
-<a name="API_BlobSource"></a>
 
 The source of a blob's content. Set exactly one member. Currently, the only member is `s3Location`.
 

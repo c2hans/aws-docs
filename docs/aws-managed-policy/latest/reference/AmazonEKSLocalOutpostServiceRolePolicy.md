@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEKSLocalOutpostServiceRolePolicy
-<a name="AmazonEKSLocalOutpostServiceRolePolicy"></a>
 
 **Description**: Allows Amazon EKS Local to call AWS services on your behalf.
 

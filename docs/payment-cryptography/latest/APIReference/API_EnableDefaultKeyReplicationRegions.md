@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # EnableDefaultKeyReplicationRegions
-<a name="API_EnableDefaultKeyReplicationRegions"></a>
 
 Enables [Multi-Region key replication](https://docs.aws.amazon.com/payment-cryptography/latest/userguide/keys-multi-region-replication.html) settings for your AWS account, causing new keys to be automatically replicated to the specified AWS Regions when created.
 

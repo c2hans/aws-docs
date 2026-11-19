@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/create-continuous-delive
 ---
 
 # Create Continuous Delivery Pipeline
-<a name="create-continuous-delivery-pipeline"></a>
 
 |  |  |
 | --- |--- |

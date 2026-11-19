@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/valida
 ---
 
 # Validating Your Generated XML
-<a name="validate-generated-xml"></a>
 
 If you have written a script to automatically generate your profiles in xml, validate your output as follows.
 

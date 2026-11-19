@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-po
 ---
 
 # Latency-based routing
-<a name="routing-policy-latency"></a>
 
 If your application is hosted in multiple AWS Regions, you can improve performance for your users by serving their requests from the AWS Region with the lowest latency.
 

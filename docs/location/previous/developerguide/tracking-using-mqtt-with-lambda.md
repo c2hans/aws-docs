@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/trackin
 ---
 
 # Tutorial: Use AWS Lambda with MQTT
-<a name="tracking-using-mqtt-with-lambda"></a>
 
 While using AWS Lambda is no longer required when sending device location data to Amazon Location for tracking, you may still want to use Lambda in some cases. For example, if you wish to process your device location data yourself, before sending it on to Amazon Location. The following topics describe how to use Lambda to process messages before sending them to your tracker. For more information about this pattern, see the [reference architecture](https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/amazon-location-service-ra.pdf).
 

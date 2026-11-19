@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/view
 ---
 
 # Viewing CloudWatch log groups and log streams by using the AWS Toolkit for Visual Studio Code
-<a name="viewing-CloudWatch-logs"></a>
 
 A *log stream* is a sequence of log events that share the same source. Each separate source of logs into CloudWatch Logs makes up a separate log stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/public-build.
 ---
 
 # Public build API
-<a name="public-build"></a>
 
 The public build API is used by the AWS CodeBuild console and public build results website to obtain information about public build projects. For more information, see [Get public build project URLs](public-builds.md).
 

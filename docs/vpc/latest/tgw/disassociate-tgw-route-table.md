@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/disassociate-tgw-route-ta
 ---
 
 # Delete an association for a transit gateway route table in AWS Transit Gateway
-<a name="disassociate-tgw-route-table"></a>
 
 You can disassociate a transit gateway route table from a transit gateway attachment.
 

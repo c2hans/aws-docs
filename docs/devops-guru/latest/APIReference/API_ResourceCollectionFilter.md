@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Reso
 ---
 
 # ResourceCollectionFilter
-<a name="API_ResourceCollectionFilter"></a>
 
  Information about a filter used to specify which AWS resources are analyzed for anomalous behavior by DevOps Guru.
 

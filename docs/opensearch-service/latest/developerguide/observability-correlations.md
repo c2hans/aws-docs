@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Correlations
-<a name="observability-correlations"></a>
 
 Correlations link a traces dataset to a logs dataset so that you can view related log entries when you investigate trace spans. By defining a correlation, you enable the Discover Traces page to display logs that occurred during a span's execution, helping you diagnose issues faster without switching between pages.
 

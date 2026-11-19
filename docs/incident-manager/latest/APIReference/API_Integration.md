@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # Integration
-<a name="API_Integration"></a>
 
 Information about third-party services integrated into a response plan.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/delete-cluster
 ---
 
 # Deleting an AWS CloudHSM cluster
-<a name="delete-cluster"></a>
 
 Before you can delete a cluster, you must remove all HSMs from the cluster. For more information, see [Removing an HSM from an AWS CloudHSM cluster](remove-hsm.md).
 

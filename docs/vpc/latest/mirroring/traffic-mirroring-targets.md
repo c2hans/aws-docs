@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-t
 ---
 
 # Understand traffic mirror target concepts
-<a name="traffic-mirroring-targets"></a>
 
 A *traffic mirror target* is the destination for mirrored traffic. In Amazon VPC, traffic mirroring allows you to copy network traffic from an elastic network interface (ENI) and send it to a traffic mirror target for monitoring and analysis purposes.
 

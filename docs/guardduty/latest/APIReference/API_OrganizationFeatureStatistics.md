@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationFeatureStatistics
-<a name="API_OrganizationFeatureStatistics"></a>
 
 Information about the number of accounts that have enabled a specific feature.
 

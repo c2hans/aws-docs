@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Minim
 ---
 
 # MinimumHealthyHostsPerZone
-<a name="API_MinimumHealthyHostsPerZone"></a>
 
 Information about the minimum number of healthy instances per Availability Zone.
 

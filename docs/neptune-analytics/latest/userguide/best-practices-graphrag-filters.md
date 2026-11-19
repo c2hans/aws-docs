@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/best-
 ---
 
 # Best practices for metadata filtering in GraphRAG
-<a name="best-practices-graphrag-filters"></a>
 
  When using Neptune Analytics as the vector store for an Amazon Bedrock Knowledge Base with GraphRAG, you can apply metadata filters during retrieval to narrow down the set of candidate nodes. Choosing the right filter type and structure can have a significant impact on query latency. This page provides guidance on how to use metadata filters effectively.
 

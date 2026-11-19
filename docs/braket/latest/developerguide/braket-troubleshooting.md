@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-trou
 ---
 
 # Troubleshooting Amazon Braket
-<a name="braket-troubleshooting"></a>
 
 Use the troubleshooting information and solutions in this section to help resolve issues with Amazon Braket.
 

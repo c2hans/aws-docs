@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # TextToSqlKnowledgeBaseConfiguration
-<a name="API_agent-runtime_TextToSqlKnowledgeBaseConfiguration"></a>
 
 Contains configurations for a knowledge base to use in transformation.
 

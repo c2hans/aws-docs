@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_Experimen
 ---
 
 # ExperimentalCapabilities
-<a name="API_ExperimentalCapabilities"></a>
 
 Enabled experimental capabilities for quantum hardware. Note that the use of these features may impact device capabilities and performance beyond its standard specifications.
 

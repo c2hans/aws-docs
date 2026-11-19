@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Infrastructure protection
-<a name="advsec03"></a>
 
  Advertising endpoints receive variable traffic from partners, viewers, devices, and operator interfaces. Infrastructure protection distinguishes expected demand from volumetric abuse and malicious requests without interrupting legitimate auctions or playback sessions.
 

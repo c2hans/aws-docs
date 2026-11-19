@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # ListInstances
-<a name="API_ListInstances"></a>
 
 Lists the EC2 instances providing user-based subscriptions.
 

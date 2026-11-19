@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/dg/data-source-web-crawler
 Amazon Kendra is no longer open to new customers. For capabilities similar to Amazon Kendra, explore Amazon Bedrock Knowledge Bases. [Learn more](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
 # Amazon Kendra Web Crawler
-<a name="data-source-web-crawler"></a>
 
 You can use Amazon Kendra Web Crawler to crawl and index web pages.
 

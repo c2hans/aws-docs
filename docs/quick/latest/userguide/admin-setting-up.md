@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/admin-setting-up.
 ---
 
 # Setting up for Quick
-<a name="admin-setting-up"></a>
 
 This section helps you understand how to configure identity and access management, and control sign-up for users when you set up an AWS Quick instance.
 

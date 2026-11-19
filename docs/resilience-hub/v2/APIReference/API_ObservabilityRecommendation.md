@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Obser
 ---
 
 # ObservabilityRecommendation
-<a name="API_ObservabilityRecommendation"></a>
 
 An observability recommendation to address a finding.
 

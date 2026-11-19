@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # DeleteTagsForDomain
-<a name="API_domains_DeleteTagsForDomain"></a>
 
 This operation deletes the specified tags for a domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_Finding
 ---
 
 # FindingsMetricsData
-<a name="API_FindingsMetricsData"></a>
 
 Contains metrics data about code analysis findings and statistics.
 

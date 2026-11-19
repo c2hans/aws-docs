@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profiles-e
 ---
 
 # Viewing and updating Amazon Route 53 Profiles
-<a name="profiles-editing"></a>
 
 Choose the console tab to view and edit Route 53 Profile. Choose the CLI tab to use AWS CLI to list Profiles you own, are shared by you, or shared to you.
 + [Console](#profile-editing-console)

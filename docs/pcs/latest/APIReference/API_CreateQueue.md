@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_CreateQueue.
 ---
 
 # CreateQueue
-<a name="API_CreateQueue"></a>
 
 Creates a job queue. You must associate 1 or more compute node groups with the queue. You can associate 1 compute node group with multiple queues.
 

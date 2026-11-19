@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_RdsConfigura
 ---
 
 # RdsConfiguration
-<a name="API_RdsConfiguration"></a>
 
 Provides information that describes the configuration of the recommended target engine on Amazon RDS.
 

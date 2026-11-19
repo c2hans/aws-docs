@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # DimensionDetail
-<a name="API_DimensionDetail"></a>
 
 The information about a dimension.
 

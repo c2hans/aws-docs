@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Asses
 ---
 
 # AssessmentSummary
-<a name="API_AssessmentSummary"></a>
 
 Contains summary information about a failure mode assessment.
 

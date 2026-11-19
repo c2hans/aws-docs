@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_
 ---
 
 # Federating AWS identities across AWS partitions
-<a name="id_roles_providers_outbound_cross_partition"></a>
 
 Cross-partition identity federation allows a workload to obtain short-lived access across [AWS partitions](https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/partitions.html). AWS partitions are hard isolation boundaries with independent instances of AWS Identity and Access Management (IAM), so a credential issued in one partition isn't valid in another. As a result, direct role assumption with the [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) API doesn't work across partition boundaries.
 

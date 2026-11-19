@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Pa
 ---
 
 # ParsingPrompt
-<a name="API_agent_ParsingPrompt"></a>
 
 Instructions for interpreting the contents of a document.
 

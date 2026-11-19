@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Ta
 ---
 
 # TabularConditions
-<a name="API_TabularConditions"></a>
 
 The tabular conditions.
 

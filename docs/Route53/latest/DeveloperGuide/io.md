@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/io.html
 ---
 
 # .io (British Indian Ocean Territory)
-<a name="io"></a>
 
 Also used as a generic TLD, often by computer-related organizations such as online services, browser-based games, and startup companies.
 

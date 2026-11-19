@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DisassociateMemberFromFarm
-<a name="API_DisassociateMemberFromFarm"></a>
 
 Disassociates a member from a farm.
 

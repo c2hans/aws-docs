@@ -3,11 +3,10 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DescribeTypeRegistration
-<a name="API_DescribeTypeRegistration"></a>
 
 Returns information about an extension's registration, including its current status and type and version identifiers.
 
-When you initiate a registration request using [RegisterType](API_RegisterType.md), you can then use [DescribeTypeRegistration](#API_DescribeTypeRegistration) to monitor the progress of that registration request.
+When you initiate a registration request using [RegisterType](API_RegisterType.md), you can then use [DescribeTypeRegistration](API_DescribeTypeRegistration.md) to monitor the progress of that registration request.
 
 Once the registration request has completed, use [DescribeType](API_DescribeType.md) to return detailed information about an extension.
 

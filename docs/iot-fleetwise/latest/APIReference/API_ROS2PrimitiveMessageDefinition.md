@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_RO
 ---
 
 # ROS2PrimitiveMessageDefinition
-<a name="API_ROS2PrimitiveMessageDefinition"></a>
 
 Represents a ROS 2 compliant primitive type message of the complex data structure.
 

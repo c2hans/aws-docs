@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdatePr
 ---
 
 # UpdatePrompt
-<a name="API_UpdatePrompt"></a>
 
 Updates a prompt.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # SystemEndpointAttributes
-<a name="API_amazon-q-connect_SystemEndpointAttributes"></a>
 
 The system endpoint attributes that are used with the message template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Managing Amazon Aurora MySQL
-<a name="AuroraMySQL.Managing"></a>
 
 The following sections discuss managing an Amazon Aurora MySQL DB cluster.
 

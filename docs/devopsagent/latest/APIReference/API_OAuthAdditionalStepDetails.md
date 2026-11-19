@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_OAut
 ---
 
 # OAuthAdditionalStepDetails
-<a name="API_OAuthAdditionalStepDetails"></a>
 
 Details for completing OAuth authorization step.
 

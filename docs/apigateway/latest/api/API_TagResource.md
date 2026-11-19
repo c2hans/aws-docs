@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_TagResource.ht
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds or updates a tag on a given resource.
 

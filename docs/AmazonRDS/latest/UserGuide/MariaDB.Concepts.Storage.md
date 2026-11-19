@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MariaDB.Conce
 ---
 
 # Supported storage engines for MariaDB on Amazon RDS
-<a name="MariaDB.Concepts.Storage"></a>
 
 RDS for MariaDB supports the following storage engines.
 

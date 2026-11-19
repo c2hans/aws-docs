@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GetA
 ---
 
 # GetAgentSpace
-<a name="API_GetAgentSpace"></a>
 
 Retrieves detailed information about a specific AgentSpace.
 

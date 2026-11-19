@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Configure the guidance
-<a name="configure-the-solution"></a>
 
 This section describes the various options that you configure for your use case while deploying Apache Druid in your AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector-azure-se
 ---
 
 # Configuring Microsoft Azure to integrate with Amazon Inspector
-<a name="inspector-azure-setup-azure"></a>
 
 The Azure setup process configures your Azure environment to allow Amazon Inspector to authenticate and receive resource change notifications. Amazon Inspector generates a customized setup script during connector creation. The script performs the following steps.
 

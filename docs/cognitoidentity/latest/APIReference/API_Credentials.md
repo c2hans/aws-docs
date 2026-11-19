@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # Credentials
-<a name="API_Credentials"></a>
 
 Credentials for the provided identity ID.
 

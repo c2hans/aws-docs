@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_PromptSpec
 ---
 
 # PromptSpecification
-<a name="API_PromptSpecification"></a>
 
 Specifies a list of message groups that Amazon Lex sends to a user to elicit a response.
 

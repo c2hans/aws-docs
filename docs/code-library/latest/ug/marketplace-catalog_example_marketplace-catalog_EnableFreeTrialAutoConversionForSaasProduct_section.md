@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Enable free trial auto-conversion for a SaaS subscription product using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_EnableFreeTrialAutoConversionForSaasProduct_section"></a>
 
 The following code examples show how to replace the standalone free trial offer of a SaaS subscription product with a free trial on its public offer. The change set sets the expiration date of the standalone free trial offer (`offer-2222222222222`) to a date in the past so that buyers no longer see that offer, and adds the free trial to the public offer (`offer-1111111111111`). Existing free trial agreements aren't changed. `UpdateAvailability` is supported on free trial offers, and the standalone free trial offer can't be made available again after it expires. `UpdatePricingTerms` replaces all pricing terms, so copy your offer's current `UsageBasedPricingTerm` from `DescribeEntity` instead of using the example rates, and grant every dimension in the free trial.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/create-serverl
 ---
 
 # Create an MSK Serverless cluster
-<a name="create-serverless-cluster"></a>
 
 In this step, you perform two tasks. First, you create an MSK Serverless cluster with default settings. Second, you gather information about the cluster. This is information that you need in later steps when you create a client that can send data to the cluster.
 

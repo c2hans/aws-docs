@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/translate_example
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Build a publish and subscription application that translates messages
-<a name="translate_example_cross_SnsPublishSubscription_section"></a>
 
 The following code examples show how to create an application that has subscription and publish functionality and translates messages.
 

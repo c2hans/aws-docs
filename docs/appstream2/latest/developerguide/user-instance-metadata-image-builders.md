@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/user-in
 ---
 
 # Instance Metadata for WorkSpaces Applications Image Builders
-<a name="user-instance-metadata-image-builders"></a>
 
 WorkSpaces Applications image builder instances have instance metadata available through Windows environment variables. You can use the following environment variables in your applications and scripts to modify your environment based on the image builder instance details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Algorithmic Trading on AWS
-<a name="algorithmic-trading-on-aws"></a>
 
 Publication date: **December 21, 2020 ([Diagram history](#algotrading-history))**
 

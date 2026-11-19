@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutor
 ---
 
 # Load Data Formats
-<a name="bulk-load-tutorial-format"></a>
 
 The Amazon Neptune `Load` API supports loading data in a variety of formats.
 

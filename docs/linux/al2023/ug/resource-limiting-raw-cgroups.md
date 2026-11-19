@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-raw-cg
 ---
 
 # Limiting process resource usage in AL2023 using cgroups
-<a name="resource-limiting-raw-cgroups"></a>
 
  While it is recommended to use [Resource control with systemd](resource-limiting-systemd.md), this section covers basic usage of the base `libcgroup-tools` utilities to limit CPU and memory usage of processes. Both methods are alternatives to using the [`cpulimit`](epel.md#cpulimit) utility, previously found in [EPEL](epel.md).
 

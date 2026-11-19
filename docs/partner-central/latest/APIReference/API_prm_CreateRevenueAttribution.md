@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreateRevenueAttribution
-<a name="API_prm_CreateRevenueAttribution"></a>
 
 Creates a new revenue attribution record in the specified catalog.
 

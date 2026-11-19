@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/Welcome.ht
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra-compatible database service. Amazon Keyspaces makes it easy to migrate, run, and scale Cassandra workloads in the AWS Cloud. With just a few clicks on the AWS Management Console or a few lines of code, you can create keyspaces and tables in Amazon Keyspaces, without deploying any infrastructure or installing software.
 
@@ -15,4 +14,4 @@ To learn how Amazon Keyspaces API actions are recorded with AWS CloudTrail, see 
 
 For more information about AWS APIs, for example how to implement retry logic or how to sign AWS API requests, see [AWS APIs](https://docs.aws.amazon.com/general/latest/gr/aws-apis.html) in the *General Reference*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

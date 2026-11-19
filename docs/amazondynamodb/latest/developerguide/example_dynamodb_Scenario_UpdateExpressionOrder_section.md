@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Understand update expression order in DynamoDB with an AWS SDK
-<a name="example_dynamodb_Scenario_UpdateExpressionOrder_section"></a>
 
 The following code examples show how to understand update expression order.
 + Learn how DynamoDB processes update expressions.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datatransferterminal/latest/userguide/se
 ---
 
 # Troubleshooting AWS Data Transfer Terminal identity and access
-<a name="security-iam-troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with Data Transfer Terminal and IAM.
 

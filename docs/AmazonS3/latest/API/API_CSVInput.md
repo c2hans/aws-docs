@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_CSVInput.html
 ---
 
 # CSVInput
-<a name="API_CSVInput"></a>
 
 Describes how an uncompressed comma-separated values (CSV)-formatted input object is formatted.
 

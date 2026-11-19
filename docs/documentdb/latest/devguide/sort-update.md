@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/sort-update.h
 ---
 
 # $sort
-<a name="sort-update"></a>
 
 The `$sort` update modifier orders array elements when used with the `$push` operator. It arranges array elements in ascending or descending order based on specified field values or the elements themselves.
 

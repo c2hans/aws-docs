@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/transforming-da
 ---
 
 # Transforming data with JSONata in Step Functions
-<a name="transforming-data"></a>
 
  With JSONata, you gain a powerful open source query and expression language to **select** and **transform** data in your workflows. For a complete JSONata language reference, see the [JSONata 2.0.6 documentation](https://docs.jsonata.org/2.0.0/overview).
 

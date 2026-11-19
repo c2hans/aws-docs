@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # EdgeTrafficStats
-<a name="API_EdgeTrafficStats"></a>
 
 Additive traffic counters accumulated over an edge's observation window. Which counters are populated depends on what produced the edge.
 

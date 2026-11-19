@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/verify-nitrotpm-
 ---
 
 # Verify that an Amazon EC2 instance is enabled for NitroTPM
-<a name="verify-nitrotpm-support-on-instance"></a>
 
 You can verify whether an Amazon EC2 instance is enabled for NitroTPM. If NitroTPM support is enabled on the instance, the command returns `"v2.0"`. Otherwise, the `TpmSupport` field is not present in the output.
 

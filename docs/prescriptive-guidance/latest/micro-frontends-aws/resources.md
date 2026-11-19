@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Resources
-<a name="resources"></a>
 + [Micro-frontends in context](https://increment.com/frontend/micro-frontends-in-context/)
 + [Domain-driven design](https://martinfowler.com/bliki/DomainDrivenDesign.html)
 + [Event-driven architecture (EDA) visuals](https://serverlessland.com/event-driven-architecture/visuals)

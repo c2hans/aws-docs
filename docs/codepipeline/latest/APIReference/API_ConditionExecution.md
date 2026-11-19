@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Con
 ---
 
 # ConditionExecution
-<a name="API_ConditionExecution"></a>
 
 The run of a condition.
 

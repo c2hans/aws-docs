@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Create
 ---
 
 # CreateType
-<a name="API_CreateType"></a>
 
  The `CreateType` operation creates a new user-defined type in the specified keyspace.
 

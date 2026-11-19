@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # x-amazon-apigateway-integration.requestParameters object
-<a name="api-gateway-swagger-extensions-integration-requestParameters"></a>
 
 For REST APIs, specifies mappings from named method request parameters to integration request parameters. The method request parameters must be defined before being referenced.
 

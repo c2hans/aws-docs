@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-sche
 ---
 
 # Deleting a schedule in EventBridge Scheduler
-<a name="managing-schedule-delete"></a>
 
 You can delete a schedule by either configuring automatic deletion, or by manually deleting an individual schedule. Use the following topics to learn how to delete a schedule using both methods, and why you might choose one method over the other.
 

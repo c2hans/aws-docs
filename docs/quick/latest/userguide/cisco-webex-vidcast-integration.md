@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/cisco-webex-vidca
 ---
 
 # Cisco Webex Video Messaging integration
-<a name="cisco-webex-vidcast-integration"></a>
 
 With the Cisco Webex Video Messaging connector, you can manage video updates, retrieve transcripts, and access video metadata from Cisco Webex (formerly known as Vidcast) directly in AWS Quick through natural language.
 

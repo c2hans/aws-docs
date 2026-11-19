@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DescribeChangeSetHooks
-<a name="API_DescribeChangeSetHooks"></a>
 
 Returns Hook-related information for the change set and a list of changes that CloudFormation makes when you run the change set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/design-p
 ---
 
 # 11 – Detect and react to failures
-<a name="design-principle-11"></a>
 
  **How do you detect and react to failures impacting your SAP workload?** Design how software or operating procedures can help ensure the health and resilience of your SAP workload. Monitor for potential and actual failures, focusing on prevention where possible. Consider whether a component is distributed or is a single point of failure and design a resiliency solution that minimizes the impact to your workload. In addition to testing periodically to understand your risk profile, examine how automation could improve your resilience.
 

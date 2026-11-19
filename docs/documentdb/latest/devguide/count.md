@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/count.html
 ---
 
 # $count (stage)
-<a name="count"></a>
 
 The `$count` aggregation stage in Amazon DocumentDB is used to count the number of documents that pass into the stage. It is often used as the final stage in an aggregation pipeline to return the total count of documents matching the previous stages.
 

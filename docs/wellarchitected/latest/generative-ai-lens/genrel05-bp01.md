@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENREL05-BP01 Load-balance inference requests across all regions of availability
-<a name="genrel05-bp01"></a>
 
  Inference to a foundation model may be available over a local or large area of availability. Verify that you have resources available across that area to service inference requests reliably regardless of where they are coming from.
 

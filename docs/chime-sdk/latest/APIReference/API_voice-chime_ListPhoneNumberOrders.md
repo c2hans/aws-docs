@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # ListPhoneNumberOrders
-<a name="API_voice-chime_ListPhoneNumberOrders"></a>
 
 Lists the phone numbers for an administrator's Amazon Chime SDK account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles-star
 ---
 
 # `StartEarthObservationJob` API: Execution role permissions
-<a name="sagemaker-roles-start-eoj-perms"></a>
 
 For an execution role that you can pass in a `StartEarthObservationJob` API request, you can attach the following minimum permissions policy to the role:
 

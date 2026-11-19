@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Workforce identity management
-<a name="workforce-identity-management"></a>
 
 |  |
 | --- |

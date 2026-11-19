@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_GetLexicon
 ---
 
 # GetLexicon
-<a name="API_GetLexicon"></a>
 
 Returns the content of the specified pronunciation lexicon stored in an AWS Region. For more information, see [Managing Lexicons](https://docs.aws.amazon.com/polly/latest/dg/managing-lexicons.html).
 

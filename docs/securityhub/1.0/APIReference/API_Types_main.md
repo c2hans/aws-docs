@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Types_m
 ---
 
 # Primary data types
-<a name="API_Types_main"></a>
 
 **Topics**
 + [AccountDetails](API_AccountDetails.md)

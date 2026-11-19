@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/r
 ---
 
 # Reference
-<a name="reference"></a>
 
 This section includes information about data collection and a list of builders who contributed to this solution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Cont
 ---
 
 # ControlError
-<a name="API_ControlError"></a>
 
 An error reported during the evaluation of a single control.
 

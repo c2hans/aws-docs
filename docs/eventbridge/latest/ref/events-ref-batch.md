@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-batch.
 ---
 
 # AWS Batch events
-<a name="events-ref-batch"></a>
 
 AWS Batch sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

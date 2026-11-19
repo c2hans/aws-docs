@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/cur-query-other.htm
 ---
 
 # Loading report data to other resources
-<a name="cur-query-other"></a>
 
 You can upload Cost and Usage Reports to Amazon Redshift and AWS Quick to analyze your AWS cost and usage.
 

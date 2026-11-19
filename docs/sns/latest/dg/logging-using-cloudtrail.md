@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/logging-using-cloudtrail.h
 ---
 
 # Logging AWS SNS API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 AWS SNS integrates with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html). CloudTrail provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for SNS as events. The calls captured include calls from the SNS console and code calls to the SNS API operations. You can use the information collected by CloudTrail to determine the request that was made to SNS. You can also find the IP address from which the request was made, when it was made, and other details.
 

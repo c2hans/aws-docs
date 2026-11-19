@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/dm-migrating-data-m
 ---
 
 # Managing data migrations in AWS DMS
-<a name="dm-migrating-data-manage"></a>
 
 After you create a data migration, AWS DMS doesn't automatically start migrating data. You start a data migration manually when needed.
 

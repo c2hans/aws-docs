@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Modern data platform using AWS and Teradata
-<a name="data-platform-aws-teradata"></a>
 
 Publication date: **November 18, 2022 ([Diagram history](diagram-history.md))**
 

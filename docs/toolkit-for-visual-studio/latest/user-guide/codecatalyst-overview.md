@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Working with Amazon CodeCatalyst resources from the AWS Toolkit for Visual Studio with Amazon Q
-<a name="codecatalyst-overview"></a>
 
 The following sections provide an overview of the Amazon Amazon CodeCatalyst resource management features that are available for the AWS Toolkit for Visual Studio with Amazon Q.
 

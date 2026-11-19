@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_S3DataReposi
 ---
 
 # S3DataRepositoryConfiguration
-<a name="API_S3DataRepositoryConfiguration"></a>
 
 The configuration for an Amazon S3 data repository linked to an Amazon FSx for Lustre file system with a data repository association. The configuration consists of an `AutoImportPolicy` that defines which file events on the data repository are automatically imported to the file system and an `AutoExportPolicy` that defines which file events on the file system are automatically exported to the data repository. File events are when files or directories are added, changed, or deleted on the file system or the data repository.
 

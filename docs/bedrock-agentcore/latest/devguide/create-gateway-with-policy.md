@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/create
 ---
 
 # Create gateway with Policy Engine
-<a name="create-gateway-with-policy"></a>
 
 This section provides examples of creating a gateway with a policy engine associated for policy enforcement.
 

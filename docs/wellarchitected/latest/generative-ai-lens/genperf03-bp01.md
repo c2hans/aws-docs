@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENPERF03-BP01 Use managed solutions for model hosting, customization, and data access where appropriate
-<a name="genperf03-bp01"></a>
 
  There are several industry-leading model providers, with new model families, sizes, and capabilities being introduced regularly. As foundation model capabilities expand, additional operational requirements are required for hosting the models, serving inference, and providing models access to data sources and external systems. Alleviate operational burden on your generative AI workload by using managed solutions where appropriate.
 

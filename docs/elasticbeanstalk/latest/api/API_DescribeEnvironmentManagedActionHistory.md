@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Describe
 ---
 
 # DescribeEnvironmentManagedActionHistory
-<a name="API_DescribeEnvironmentManagedActionHistory"></a>
 
 Lists an environment's completed and failed managed actions.
 
@@ -45,7 +44,7 @@ Type: Array of [ManagedActionHistoryItem](API_ManagedActionHistoryItem.md) objec
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 
  ** NextToken **
-A pagination token that you pass to [DescribeEnvironmentManagedActionHistory](#API_DescribeEnvironmentManagedActionHistory) to get the next page of results.
+A pagination token that you pass to [DescribeEnvironmentManagedActionHistory](API_DescribeEnvironmentManagedActionHistory.md) to get the next page of results.
 Type: String
 
 ## Errors

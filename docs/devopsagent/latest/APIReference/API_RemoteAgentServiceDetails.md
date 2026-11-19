@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Remo
 ---
 
 # RemoteAgentServiceDetails
-<a name="API_RemoteAgentServiceDetails"></a>
 
 Complete service details for token-based remote A2A agent integration.
 

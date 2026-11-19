@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Deploy a solution to protect your premium video content from unauthorized access when delivered through Amazon CloudFront
-<a name="solution-overview"></a>
 
 Publication date: *August 2022 ([last update](revisions.md): November 2024*)
 

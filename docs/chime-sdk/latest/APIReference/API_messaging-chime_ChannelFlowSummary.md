@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ChannelFlowSummary
-<a name="API_messaging-chime_ChannelFlowSummary"></a>
 
 Summary of details of a channel flow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Create
 ---
 
 # CreateAppInstanceUser
-<a name="API_CreateAppInstanceUser"></a>
 
 Creates a user under an Amazon Chime `AppInstance`. The request consists of a unique `appInstanceUserId` and `Name` for that user.
 

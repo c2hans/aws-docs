@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApiCBC-Pr
 ---
 
 # Activate an Product Attestation Intermediate (PAI)
-<a name="JavaApiCBC-ProductAttestationIntermediateActivation"></a>
 
 This Java sample shows how to use the [BlankSubordinateCACertificate\_PathLen0\_APIPassthrough/V1 definition](template-definitions.md#BlankSubordinateCACertificate_PathLen0_APIPassthrough) template to create and install a [Matter](https://buildwithmatter.com) Subordinate CA (PAI) certificate for product attestation. You must generate a Base64-encoded KeyUsage value and pass it through a CustomExtension.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # DomainDescriptionType
-<a name="API_DomainDescriptionType"></a>
 
 A container for information about the user pool domain associated with the hosted UI and OAuth endpoints.
 

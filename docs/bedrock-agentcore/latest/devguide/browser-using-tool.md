@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Using Browser Tool
-<a name="browser-using-tool"></a>
 
 ## Creating an AgentCore Browser
 <a name="browser-create"></a>

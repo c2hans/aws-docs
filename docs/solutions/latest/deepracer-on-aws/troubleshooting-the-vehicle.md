@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/troubl
 ---
 
 # Troubleshooting the vehicle
-<a name="troubleshooting-the-vehicle"></a>
 
 ## How to resolve issues connecting your computer directly to the vehicle using a USB cable
 <a name="how-to-resolve-issues-connecting-your-computer-directly-to-the-vehicle-using-a-usb-cable"></a>

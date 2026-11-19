@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cl
 ---
 
 # Implement the roadmap
-<a name="implement-roadmap"></a>
 
 When you have established the roadmap, you need to implement it. We have found that this is where customers face the next challenge: they have spent time *thinking*, and now have to move to *doing*. To connect your strategy to implementation, we recommend the following steps:
 + [Decide where and how to start](#decide)

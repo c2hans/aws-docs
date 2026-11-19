@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_P
 ---
 
 # PhysicalResourceId
-<a name="API_PhysicalResourceId"></a>
 
 Defines a physical resource identifier.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # CaptureConfiguration
-<a name="API_CaptureConfiguration"></a>
 
 A union that defines what data to capture when the instrumentation point is hit. Specify `CodeCapture` for code-level capture settings.
 

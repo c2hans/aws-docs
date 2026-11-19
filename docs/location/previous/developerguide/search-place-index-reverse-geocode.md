@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/search-
 ---
 
 # Reverse geocoding using Amazon Location
-<a name="search-place-index-reverse-geocode"></a>
 
 Reverse geocoding is a process that converts a set of coordinates into meaningful text, such as an address, a region, a business name, or point of interest. You can use place index resources to submit reverse geocoding requests and incorporate data retrieved from reverse geocoding to display data on a map for your web or mobile application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # DeleteTerms
-<a name="API_DeleteTerms"></a>
 
 Deletes the terms documents with the requested ID from your app client.
 

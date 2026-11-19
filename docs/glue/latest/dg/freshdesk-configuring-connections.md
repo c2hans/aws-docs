@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/freshdesk-configuring-con
 ---
 
 # Configuring Freshdesk connections
-<a name="freshdesk-configuring-connections"></a>
 
 Freshdesk supports custom authentication.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/writes-managing-permi
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Managing permissions for a datashares in Amazon Redshift
-<a name="writes-managing-permissions"></a>
 
 As a producer administrator, you retain control for the datasets you are sharing. You can add new objects to or remove them from the datashare. You can also grant or revoke access to datashares as a whole for the consumer clusters, AWS accounts, or AWS Regions. When permissions are revoked, consumer clusters immediately lose access to the shared objects and stop seeing them in the list of INBOUND datashares in SVV\_DATASHARES.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL-La
 ---
 
 # Lambda function error messages
-<a name="PostgreSQL-Lambda-errors"></a>
 
 In the following list you can find information about error messages, with possible causes and solutions.
 + **VPC configuration issues**

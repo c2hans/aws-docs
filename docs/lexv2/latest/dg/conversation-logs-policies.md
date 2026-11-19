@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/conversation-logs-polici
 ---
 
 # IAM Policies for Conversation Logs
-<a name="conversation-logs-policies"></a>
 
 Depending on the type of logging that you select, Amazon Lex V2 requires permission to use Amazon CloudWatch Logs and Amazon Simple Storage Service (S3) buckets to store your logs. You must create AWS Identity and Access Management roles and permissions to enable Amazon Lex V2 to access these resources.
 

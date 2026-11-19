@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_List
 ---
 
 # ListTargetGroups
-<a name="API_ListTargetGroups"></a>
 
 Lists your target groups. You can narrow your search by using the filters below in your request.
 

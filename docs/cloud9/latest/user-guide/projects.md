@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/projects.html
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Enhanced TypeScript support and features
-<a name="projects"></a>
 
 The AWS Cloud9 IDE allows you to use *language projects* to access enhanced productivity features for TypeScript. A language project is a collection of related files, folders, and settings in the IDE for an AWS Cloud9 development environment.
 

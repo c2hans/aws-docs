@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateSelfUpgrade
-<a name="API_UpdateSelfUpgrade"></a>
 
 Updates a self-upgrade request for a Quick user by approving, denying, or verifying the request.
 

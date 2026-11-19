@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/delete-phone.html
 ---
 
 # Deleting phone numbers
-<a name="delete-phone"></a>
 
 **Important**
 You must unassign phone numbers before you can delete them. Do one of the following:

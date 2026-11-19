@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-wher
 ---
 
 # How to get started with VM Import/Export
-<a name="vmimport-where-do-i-go"></a>
 
 First, you must decide whether you will import your VMs as AMIs or instances. To get started, read about how image import and instance import work. You can also read through the prerequisites and limitations of each method. For more information, see the following resources:
 + [How VM Import/Export works](how-vm-import-export-works.md)

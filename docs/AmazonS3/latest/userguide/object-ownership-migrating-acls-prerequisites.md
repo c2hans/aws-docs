@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-ownersh
 ---
 
 # Prerequisites for disabling ACLs
-<a name="object-ownership-migrating-acls-prerequisites"></a>
 
 A bucket access control list (ACL) in Amazon S3 is a mechanism that allows you to define granular permissions for individual objects within an S3 bucket, specifying which AWS accounts or groups can access and modify those objects. A majority of modern use cases in Amazon S3 no longer require the use of ACLs. We recommend that you use AWS Identity and Access Management (IAM) and bucket policies to manage access, and to keep ACLs disabled, except in circumstances where you need to control access for each object individually.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Interpreting Amazon SQS XML API responses
-<a name="sqs-xml-api-responses"></a>
 
 When you send a request to Amazon SQS, it returns an XML response containing the results of the request. To understand the structure and details of these responses, refer to the specific [API actions](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_Operations.html) in the *Amazon Simple Queue Service API Reference*.
 

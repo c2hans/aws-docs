@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # TwelveLabs Pegasus 1.2
-<a name="model-parameters-pegasus"></a>
 
 The TwelveLabs Pegasus 1.2 model provides comprehensive video understanding and analysis capabilities. It can analyze video content and generate textual descriptions, insights, and answers to questions about the video.
 

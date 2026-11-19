@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mi
 ---
 
 # Detailed business case
-<a name="detailed-business-case"></a>
 
 A detailed, multi-year business migration case that includes current on-premises costs, new AWS costs, and migration costs helps align stakeholders and executives.
 

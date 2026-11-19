@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Using an AWS SCT extension pack to emulate SQL Server Database Mail in PostgreSQL
-<a name="CHAP_Source.SQLServer.ToPostgreSQL.ExtensionPack.Mail"></a>
 
 You can use SQL Server Database Mail to send email messages to users from the SQL Server Database Engine or Azure SQL Managed Instance. These email messages can contain query results or include files from any resource on your network. For more information about SQL Server Database Mail, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/database-mail/database-mail?view=sql-server-ver15).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # emr-6.13.0-20230814
-<a name="emr-eks-6.13.0-20230814"></a>
 
 **Release notes**: `6.13.0-20230814` was released on September 7, 2023. This is the initial release of Amazon EMR 6.13.0.
 

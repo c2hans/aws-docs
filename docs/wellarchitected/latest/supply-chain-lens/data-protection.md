@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Data protection
-<a name="data-protection"></a>
 
 | SCSEC08: How do you manage and protect encryption keys used within your supply chain systems? |
 | --- |

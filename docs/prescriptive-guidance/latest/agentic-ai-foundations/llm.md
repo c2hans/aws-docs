@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # A parallel timeline: the rise of large language models
-<a name="llm"></a>
 
 While agent frameworks evolved, a parallel and convergent revolution was happening in natural language processing and machine learning:
 + **2017 – transformers**: The paper [Attention Is All You Need](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf) (Vaswani et al. 2017) introduced the transformer architecture, which dramatically improved how machines process and generate language.

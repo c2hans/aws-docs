@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/sidecar-input.htm
 ---
 
 # IMSC, SCC, SMPTE-TT, SRT, STL, TTML (sidecar) input captions
-<a name="sidecar-input"></a>
 
 IMSC, SCC, SMPTE-TT, SRT, STL, and TTML are sidecar captions formats. With these formats, you provide input captions as a separate file. Depending on your output captions settings, AWS Elemental MediaConvert passes them through to the output in the same format or converts them into another sidecar format.
 

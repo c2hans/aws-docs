@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_As
 ---
 
 # AssetSourceEntry
-<a name="API_AssetSourceEntry"></a>
 
 The source of the assets.
 

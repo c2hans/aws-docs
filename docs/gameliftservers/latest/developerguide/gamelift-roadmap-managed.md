@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Development roadmap for hosting with Amazon GameLift Servers managed EC2
-<a name="gamelift-roadmap-managed"></a>
 
 This roadmap guides you through how to develop an Amazon GameLift Servers managed EC2 hosting solution for your multiplayer game. Amazon GameLift Servers offers several game hosting options; for more information on these options, see [Amazon GameLift Servers game hosting options](gamelift-intro-flavors.md).
 

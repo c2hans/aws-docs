@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_ListEnvironm
 ---
 
 # ListEnvironments
-<a name="API_ListEnvironments"></a>
 
 Lists the Amazon EVS environments in your AWS account in the specified AWS Region.
 

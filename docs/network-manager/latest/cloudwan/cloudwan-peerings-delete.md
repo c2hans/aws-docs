@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Delete a peering from an AWS Cloud WAN core network
-<a name="cloudwan-peerings-delete"></a>
 
 Delete a transit gateway peering.
 

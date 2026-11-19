@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Incident response
-<a name="incident-response"></a>
 
 | SCSEC11: How do you prepare for and respond to potential security incidents impacting your supply chain operations? |
 | --- |

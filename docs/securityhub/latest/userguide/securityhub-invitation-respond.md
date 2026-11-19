@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Responding to an invitation to be a Security Hub CSPM member account
-<a name="securityhub-invitation-respond"></a>
 
 **Note**
 We recommend using AWS Organizations instead of Security Hub CSPM invitations to manage your member accounts. For information, see [Managing Security Hub CSPM for multiple accounts with AWS Organizations](securityhub-accounts-orgs.md).

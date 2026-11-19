@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # RepositorySyncEvent
-<a name="API_RepositorySyncEvent"></a>
 
 Information about a repository sync event.
 

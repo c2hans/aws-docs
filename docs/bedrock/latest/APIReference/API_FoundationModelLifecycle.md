@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Foundati
 ---
 
 # FoundationModelLifecycle
-<a name="API_FoundationModelLifecycle"></a>
 
 Details about whether a model version is available or deprecated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-efa-using
 ---
 
 # Using EFA on the DLAMI
-<a name="tutorial-efa-using"></a>
 
 The following section describes how to use EFA to run multi-node applications on the AWS Deep Learning AMIs.
 

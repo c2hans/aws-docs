@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Set up disaster recovery for Oracle JD Edwards EnterpriseOne with AWS Elastic Disaster Recovery
-<a name="set-up-disaster-recovery-for-oracle-jd-edwards-enterpriseone-with-aws-elastic-disaster-recovery"></a>
 
 *Thanigaivel Thirumalai, Amazon Web Services*
 

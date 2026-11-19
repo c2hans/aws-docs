@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Monitoring Microsoft workloads
-<a name="migrating-microsoft-workloads"></a>
 
 Microsoft workloads typically use SQL Server in the backend to retrieve and persist data. Often in the journey to the cloud, a rehost decision is made for such a solution by using a simple lift-and-shift approach. When such applications are hosted on a Windows on Amazon EC2 platform, you can use native Windows-based tools to monitor the health of these applications at the server level. However, getting a holistic view across the different components and servers deployed as part of the solution is a challenge, but this pain point can be addressed by [Amazon CloudWatch Application Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-application-insights.html).
 

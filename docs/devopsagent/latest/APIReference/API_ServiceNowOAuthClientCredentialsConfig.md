@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Serv
 ---
 
 # ServiceNowOAuthClientCredentialsConfig
-<a name="API_ServiceNowOAuthClientCredentialsConfig"></a>
 
 OAuth client credentials configuration for ServiceNow.
 

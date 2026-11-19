@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_S
 ---
 
 # StartRelationalDatabase
-<a name="API_StartRelationalDatabase"></a>
 
 Starts a specific database from a stopped state in Amazon Lightsail. To restart a database, use the `reboot relational database` operation.
 

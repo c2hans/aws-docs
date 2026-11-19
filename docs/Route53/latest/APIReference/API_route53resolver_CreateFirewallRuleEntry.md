@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # CreateFirewallRuleEntry
-<a name="API_route53resolver_CreateFirewallRuleEntry"></a>
 
 The details for creating a single firewall rule in a batch operation.
 

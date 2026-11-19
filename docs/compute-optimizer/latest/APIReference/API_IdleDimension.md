@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # IdleDimension
-<a name="API_IdleDimension"></a>
 
 Describes the dimension of an idle resource utilization metric.
 

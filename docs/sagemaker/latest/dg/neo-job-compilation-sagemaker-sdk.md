@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-job-compilation-
 ---
 
 # Compile a Model (Amazon SageMaker AI SDK)
-<a name="neo-job-compilation-sagemaker-sdk"></a>
 
  You can use the [`compile_model`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) API in the [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/) to compile a trained model and optimize it for specific target hardware. The API should be invoked on the estimator object used during model training.
 

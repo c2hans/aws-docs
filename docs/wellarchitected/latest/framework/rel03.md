@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel03.h
 ---
 
 # Design your workload service architecture
-<a name="rel03"></a>
 
  How you divide a workload into services shapes how it fails, scales, and changes over time. A monolith packages all functionality into one deployable unit. A service-oriented architecture (SOA) splits functionality into coarse services aligned to business functions, and a microservices architecture pushes those boundaries finer so each service owns a single capability. Smaller services can differentiate the availability each one needs and focus investment where it matters most, but they turn the workload into a distributed system with its own coordination and failure costs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Amazon Verified Permissions policies
-<a name="policies"></a>
 
 A *policy* is a statement that either permits or forbids a *principal* to take one or more *actions* on a *resource*. Each policy is evaluated independently of every other policy. For more information about how Cedar policies are structured and evaluated, see [Cedar policy validation against schema](https://docs.cedarpolicy.com/policies/validation.html) in the Cedar policy language Reference Guide.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # Best practices for database decomposition
-<a name="best-practices"></a>
 
 When decomposing a monolithic database, organizations must establish clear frameworks for tracking progress, maintaining system knowledge, and addressing emerging challenges. This section provides best practices for measuring decomposition success, maintaining crucial documentation, implementing continuous improvement processes, and navigating common challenges. Understanding and following these guidelines helps you make sure that database decomposition efforts deliver their intended benefits while minimizing operational disruptions and technical debt.
 

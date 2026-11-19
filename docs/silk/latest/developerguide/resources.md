@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/silk/latest/developerguide/resources.htm
 ---
 
 # Resources for web development
-<a name="resources"></a>
 
 Web development is a fast-moving field. The following resources provide perspectives on what's new, what's standard, and what's changing. Here you'll find suggestions and tools for developing great web sites and applications for Amazon Silk or any other browser.
 

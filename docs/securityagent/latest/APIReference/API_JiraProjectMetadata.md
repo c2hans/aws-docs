@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ji
 ---
 
 # JiraProjectMetadata
-<a name="API_JiraProjectMetadata"></a>
 
 Contains metadata about a Jira project that is integrated with the service.
 

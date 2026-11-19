@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DescribeBudgetActionHistories
-<a name="API_budgets_DescribeBudgetActionHistories"></a>
 
  Describes a budget action history detail.
 

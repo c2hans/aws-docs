@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetReservationCoverage
-<a name="API_GetReservationCoverage"></a>
 
-Retrieves the reservation coverage for your account, which you can use to see how much of your Amazon Elastic Compute Cloud, Amazon Relational Database Service, Amazon ElastiCache, Amazon MemoryDB, Amazon Redshift, Amazon Elasticsearch Service, or Amazon OpenSearch Service usage is covered by a reservation. An organization's management account can see the coverage of the associated member accounts. This supports dimensions, cost categories, and nested expressions. For any time period, you can filter data about reservation usage by the following dimensions:
+Retrieves the reservation coverage for your account, which you can use to see how much of your Amazon Elastic Compute Cloud, Amazon Relational Database Service, Amazon ElastiCache, Amazon MemoryDB, Amazon Redshift, Amazon Elasticsearch Service, or Amazon OpenSearch Service usage a reservation covers. An organization's management account can see the coverage of the associated member accounts. The filter supports dimensions, tags, and cost categories, combined with one level of `And` or `Not`. For any time period, you can filter data about reservation usage by the following dimensions:
 + AZ
 + CACHE\_ENGINE
 + DATABASE\_ENGINE
@@ -21,7 +20,7 @@ Retrieves the reservation coverage for your account, which you can use to see ho
 
 The dimensions that you can use depend on the service in the `SERVICE` filter. For details, see `Filter`.
 
-To determine valid values for a dimension, use the `GetDimensionValues` operation.
+To determine valid values for a dimension, use the `GetDimensionValues` operation with `Context` set to `COST_AND_USAGE`. Coverage filters apply to cost and usage data, so `RESERVATIONS` values such as `Windows` or `Aurora` don't match any coverage data. Use the `COST_AND_USAGE` spelling, such as `Windows (Amazon VPC)` or `Aurora MySQL`.
 
 ## Request Syntax
 <a name="API_GetReservationCoverage_RequestSyntax"></a>
@@ -102,9 +101,9 @@ Supported values for `SERVICE` are Amazon Elastic Compute Cloud - Compute, Amazo
 + TAG
 + TENANCY
 The dimensions that you can use depend on the service in the `SERVICE` filter. `CACHE_ENGINE` applies only to Amazon ElastiCache and Amazon MemoryDB. `DATABASE_ENGINE` and `DEPLOYMENT_OPTION` apply only to Amazon Relational Database Service. `INSTANCE_TYPE_FAMILY`, `PLATFORM`, and `TENANCY` apply only to Amazon Elastic Compute Cloud - Compute. If you specify two `SERVICE` values, use only dimensions that both services support.
- `GetReservationCoverage` uses the same [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object as the other operations, but only `AND` is supported among each dimension. You can nest only one level deep. If there are multiple values for a dimension, they are OR'd together.
+ `GetReservationCoverage` uses the same [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object as the other operations, with the following limits. `Filter` accepts one `Dimensions`, `Tags`, or `CostCategories` expression, a `Not` of one of these expressions, or one `And` of two or more of these. The operation doesn't support `Or`, an `And` inside an `And`, or a `Not` around any other expression.
+Each dimension can appear only once in a filter, including inside a `Not`. `Tags` is the only exception: you can filter on more than one tag key. You can use only one `CostCategories` expression. To filter on several values of a dimension, put them in one expression. The operation ORs multiple values for a dimension together.
 If you don't provide a `SERVICE` filter, Cost Explorer defaults to EC2.
-Cost category is also supported.
 Type: [Expression](API_Expression.md) object
 Required: No
 
@@ -160,7 +159,7 @@ The following values are supported for `Key`:
 +  `ReservedNormalizedUnits`
 +  `TotalRunningNormalizedUnits`
 +  `Time`
-Supported values for `SortOrder` are `ASCENDING` or `DESCENDING`.
+If you specify `SortBy`, you must also specify `SortOrder`. There is no default. Supported values for `SortOrder` are `ASCENDING` or `DESCENDING`.
 Type: [SortDefinition](API_SortDefinition.md) object
 Required: No
 

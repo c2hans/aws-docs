@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/metadata-passthro
 ---
 
 # Metadata passthrough
-<a name="metadata-passthrough"></a>
 
 AWS Elemental MediaPackage automatically passes through ID3 and key-length-value (KLV) metadata from a channel's input to the channel's output stream. You don't need to adjust your endpoint's configuration to enable metadata passthrough.
 

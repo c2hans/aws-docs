@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # TranslationPinDataIsoFormat034
-<a name="API_TranslationPinDataIsoFormat034"></a>
 
 Parameters that are required for translation between ISO9564 PIN format 0,3,4 translation.
 

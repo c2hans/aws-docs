@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/advancedda
 ---
 
 # Passing Data to Asynchronous Methods
-<a name="advanceddatapassing"></a>
 
 **Topics**
 + [Passing Collections and Maps to Asynchronous Methods](#advanceddatapassing.collections)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/create-block-
 ---
 
 # Create Lightsail block storage disk snapshots for backup or baseline
-<a name="create-block-storage-disk-snapshot"></a>
 
 You can create disk snapshots in Amazon Lightsail as backups of your additional block storage disks.
 

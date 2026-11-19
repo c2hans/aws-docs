@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/pass-contact-a
 ---
 
 # Pass contact attributes to an agent in the Contact Control Panel (CCP) when a chat starts
-<a name="pass-contact-attributes-chat"></a>
 
 You can use [contact attributes](what-is-a-contact-attribute.md) to capture information about the contact who is using the communications widget. Then, you can display that information to the agent through the Contact Control Panel (CCP), or use it elsewhere in the flow.
 

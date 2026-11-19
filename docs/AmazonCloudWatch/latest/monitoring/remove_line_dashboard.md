@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/remov
 ---
 
 # Removing a line graph widget from a CloudWatch dashboard
-<a name="remove_line_dashboard"></a>
 
 **To remove a line graph widget from a dashboard**
 

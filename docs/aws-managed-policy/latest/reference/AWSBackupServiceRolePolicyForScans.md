@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBackupServiceRolePolicyForScans
-<a name="AWSBackupServiceRolePolicyForScans"></a>
 
 **Description**: Provides AWS Backup permission to perform malware scans on your AWS Backup Recovery Points
 

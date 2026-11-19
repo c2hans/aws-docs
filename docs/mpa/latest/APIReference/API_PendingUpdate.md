@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_PendingUpdat
 ---
 
 # PendingUpdate
-<a name="API_PendingUpdate"></a>
 
 Contains details for the pending updates for an approval team, if applicable.
 

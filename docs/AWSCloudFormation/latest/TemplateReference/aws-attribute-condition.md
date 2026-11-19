@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # `Condition` attribute
-<a name="aws-attribute-condition"></a>
 
 To create resources in CloudFormation based on conditions, first declare your condition in the template's `Conditions` section. Then, use the `Condition` key along with the condition's logical ID as an attribute on the resource. CloudFormation creates the resource only when the condition evaluates to true. This lets you control resource creation based on specific criteria or parameters you define in your template.
 

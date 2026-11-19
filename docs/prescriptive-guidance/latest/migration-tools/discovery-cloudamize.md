@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Cloudamize
-<a name="discovery-cloudamize"></a>
 
 *Last update: May 15, 2023*
 

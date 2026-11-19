@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Design a FlexMatch matchmaker
-<a name="match-configuration"></a>
 
 This topic provides guidance on how to design a matchmaker that fits your game.
 

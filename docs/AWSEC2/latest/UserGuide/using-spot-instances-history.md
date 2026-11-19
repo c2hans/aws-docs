@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-insta
 ---
 
 # View Spot Instance pricing history
-<a name="using-spot-instances-history"></a>
 
 Spot Instance prices are set by Amazon EC2 and adjust gradually based on long-term trends in supply and demand for Spot Instance capacity.
 

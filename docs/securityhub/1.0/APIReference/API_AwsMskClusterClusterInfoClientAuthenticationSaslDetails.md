@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsMskC
 ---
 
 # AwsMskClusterClusterInfoClientAuthenticationSaslDetails
-<a name="API_AwsMskClusterClusterInfoClientAuthenticationSaslDetails"></a>
 
  Provides details for client authentication using SASL.
 

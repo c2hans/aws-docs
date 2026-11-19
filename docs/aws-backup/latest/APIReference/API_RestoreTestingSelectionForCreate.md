@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Resto
 ---
 
 # RestoreTestingSelectionForCreate
-<a name="API_RestoreTestingSelectionForCreate"></a>
 
 This contains metadata about a specific restore testing selection.
 

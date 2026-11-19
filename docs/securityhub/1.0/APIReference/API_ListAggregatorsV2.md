@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListAgg
 ---
 
 # ListAggregatorsV2
-<a name="API_ListAggregatorsV2"></a>
 
 Retrieves a list of V2 aggregators.
 

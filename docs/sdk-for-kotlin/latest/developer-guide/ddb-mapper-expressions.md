@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 ---
 
 # Use expressions
-<a name="ddb-mapper-expressions"></a>
 
 DynamoDB Mapper provides Kotlin DSLs for building the two kinds of [DynamoDB expressions](/amazondynamodb/latest/developerguide/Expressions.html) you use most:
 +  **Filter and condition expressions**: boolean conditions that narrow the results of a [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) or [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html), or that gate a write. You build these in a `filter { }` block.

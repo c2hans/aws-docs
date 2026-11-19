@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_CreateC
 ---
 
 # CreateCluster
-<a name="API_CreateCluster"></a>
 
 Creates a cluster. All nodes in the cluster run the same protocol-compliant engine software.
 

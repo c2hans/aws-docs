@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Deep health checks
-<a name="sagemaker-hyperpod-resiliency-slurm-deep-health-checks"></a>
 
 SageMaker HyperPod performs *deep health checks* on Slurm-orchestrated cluster instances to ensure the reliability and stability of the underlying hardware and infrastructure. Deep health checks can run automatically when instances are created or added to a cluster (*on-start*), or you can trigger them manually at any time (*on-demand*) using the [StartClusterHealthCheck](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartClusterHealthCheck.html) API. This proactive approach helps identify and mitigate potential issues throughout the cluster lifecycle.
 

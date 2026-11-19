@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ProfileAttributes
-<a name="API_connect-customer-profiles_ProfileAttributes"></a>
 
 The object used to segment on attributes within the customer profile.
 

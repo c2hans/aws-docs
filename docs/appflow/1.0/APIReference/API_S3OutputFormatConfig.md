@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_S3OutputFor
 ---
 
 # S3OutputFormatConfig
-<a name="API_S3OutputFormatConfig"></a>
 
  The configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination.
 

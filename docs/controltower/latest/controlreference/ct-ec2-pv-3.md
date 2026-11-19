@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ct-
 ---
 
 # [CT.EC2.PV.3] Require that an Amazon EBS snapshot cannot be publicly restorable
-<a name="ct-ec2-pv-3"></a>
 
 This control disallows sharing of an EBS snapshot with all AWS accounts.
 

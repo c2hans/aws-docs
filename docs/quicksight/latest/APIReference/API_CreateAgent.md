@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateAgent
-<a name="API_CreateAgent"></a>
 
 Creates an agent in Amazon QuickSight.
 

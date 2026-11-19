@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Creat
 ---
 
 # CreateTest
-<a name="API_CreateTest"></a>
 
 Creates a test for a service by configuring a test template. Each service has one test per template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/systemsmanager-run
 ---
 
 # AWS SSM Run Command Task
-<a name="systemsmanager-runcommand"></a>
 
 (AWS Systems Manager Run Command Task)
 

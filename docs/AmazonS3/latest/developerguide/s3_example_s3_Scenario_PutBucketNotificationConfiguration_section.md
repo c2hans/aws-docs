@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Send S3 event notifications to Amazon EventBridge using an AWS SDK
-<a name="s3_example_s3_Scenario_PutBucketNotificationConfiguration_section"></a>
 
 The following code example shows how to enable a bucket to send S3 event notifications to EventBridge and route notifications to an Amazon SNS topic and Amazon SQS queue.
 

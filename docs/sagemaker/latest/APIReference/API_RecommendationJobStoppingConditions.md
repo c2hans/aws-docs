@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Recomm
 ---
 
 # RecommendationJobStoppingConditions
-<a name="API_RecommendationJobStoppingConditions"></a>
 
 Specifies conditions for stopping a job. When a job reaches a stopping condition limit, SageMaker ends the job.
 

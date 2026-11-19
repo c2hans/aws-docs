@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleExportJobTopicV2OverrideProperties
-<a name="API_AssetBundleExportJobTopicV2OverrideProperties"></a>
 
 Controls how a specific `Topic` resource is parameterized in the returned CloudFormation template.
 

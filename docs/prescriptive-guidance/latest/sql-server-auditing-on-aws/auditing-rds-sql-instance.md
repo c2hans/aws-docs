@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Auditing Amazon RDS for SQL Server DB instances
-<a name="auditing-rds-sql-instance"></a>
 
 This section provides information about auditing options for SQL Server on Amazon RDS, including creating audits, viewing audit logs, and monitoring results.
 

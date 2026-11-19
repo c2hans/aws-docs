@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Strong Compliance Framework and Security Standards
-<a name="strong-compliance-framework-and-security-standards"></a>
 
 The GDPR requires both controllers and processors to implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk. These may include “…the ability to ensure the ongoing confidentiality, integrity, availability and resilience of the processing systems and services,” (Article 32(1)(b) of the GDPR) as well as reliable data restoration, testing, and overall risk management processes.
 

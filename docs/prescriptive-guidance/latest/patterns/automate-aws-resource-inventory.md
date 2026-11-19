@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automatically inventory AWS resources across multiple accounts and Regions
-<a name="automate-aws-resource-inventory"></a>
 
 *Matej Macek, Amazon Web Services*
 

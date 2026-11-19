@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-connect-se
 ---
 
 # Connect to AWS IoT Core service endpoints
-<a name="iot-connect-service"></a>
 
 You can access the features of the **AWS IoT Core - control plane** by using the AWS CLI, the AWS SDK for your preferred language, or by calling the REST API directly. We recommend using the AWS CLI or an AWS SDK to interact with AWS IoT Core because they incorporate the best practices for calling AWS services. Calling the REST APIs directly is an option, but you must provide [the necessary security credentials](https://docs.aws.amazon.com/general/latest/gr/signing_aws_api_requests.html) that enable access to the API.
 

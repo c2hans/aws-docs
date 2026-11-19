@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Regi
 ---
 
 # RegisteredRemoteAgentDetails
-<a name="API_RegisteredRemoteAgentDetails"></a>
 
 Details specific to a registered token-based remote A2A agent.
 

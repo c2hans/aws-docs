@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_GetSession.h
 ---
 
 # GetSession
-<a name="API_GetSession"></a>
 
 Returns detailed information about a session.
 

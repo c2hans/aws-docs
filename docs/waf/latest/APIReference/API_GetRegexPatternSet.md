@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_GetRegexPatt
 ---
 
 # GetRegexPatternSet
-<a name="API_GetRegexPatternSet"></a>
 
 Retrieves the specified [RegexPatternSet](API_RegexPatternSet.md).
 

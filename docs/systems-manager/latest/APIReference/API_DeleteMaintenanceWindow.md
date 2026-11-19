@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DeleteMaintenanceWindow
-<a name="API_DeleteMaintenanceWindow"></a>
 
 Deletes a maintenance window.
 

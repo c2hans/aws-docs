@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/servic
 ---
 
 # Amazon Keyspaces (for Apache Cassandra) and Application Auto Scaling
-<a name="services-that-can-integrate-keyspaces"></a>
 
 You can scale Amazon Keyspaces tables using target tracking scaling policies and scheduled scaling.
 

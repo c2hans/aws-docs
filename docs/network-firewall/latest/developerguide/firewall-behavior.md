@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Firewall behavior in AWS Network Firewall
-<a name="firewall-behavior"></a>
 
 This section describes how AWS Network Firewall virtual firewalls behave and protect your VPC from attacks. You define and create a firewall, then use it to monitor and protect your subnets. The firewall monitors incoming and outgoing traffic and allows it to pass or drops it, according to your specifications. The firewall only allows packets to pass that pass inspection.
 

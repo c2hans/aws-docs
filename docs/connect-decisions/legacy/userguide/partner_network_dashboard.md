@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/partn
 ---
 
 # Partner Network
-<a name="partner_network_dashboard"></a>
 
 You can view the partners in your scn network.
 

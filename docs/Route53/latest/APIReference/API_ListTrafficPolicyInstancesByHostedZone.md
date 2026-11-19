@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTraf
 ---
 
 # ListTrafficPolicyInstancesByHostedZone
-<a name="API_ListTrafficPolicyInstancesByHostedZone"></a>
 
 Gets information about the traffic policy instances that you created in a specified hosted zone.
 

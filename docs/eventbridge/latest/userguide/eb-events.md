@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events.h
 ---
 
 # Events in Amazon EventBridge
-<a name="eb-events"></a>
 
 An *event* indicates a change in an environment such as an AWS environment, a SaaS partner service or application, or one of your applications or services. The following are examples of events:
 + Amazon EC2 generates an event when the state of an instance changes, such as from pending to running.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_S
 ---
 
 # StreamSpecification
-<a name="API_StreamSpecification"></a>
 
 Represents the DynamoDB Streams configuration for a table in DynamoDB.
 

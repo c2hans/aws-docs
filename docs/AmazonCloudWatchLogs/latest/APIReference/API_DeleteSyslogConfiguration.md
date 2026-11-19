@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteSyslogConfiguration
-<a name="API_DeleteSyslogConfiguration"></a>
 
 Deletes a syslog configuration for a log group. After deletion, syslog data is no longer ingested through the specified VPC endpoint.
 

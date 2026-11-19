@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # CORA Dashboard
-<a name="cora-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

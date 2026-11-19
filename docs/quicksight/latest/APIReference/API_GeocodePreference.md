@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geoco
 ---
 
 # GeocodePreference
-<a name="API_GeocodePreference"></a>
 
 The geocode preference.
 

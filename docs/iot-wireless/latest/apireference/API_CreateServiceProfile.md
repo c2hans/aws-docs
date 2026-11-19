@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Cre
 ---
 
 # CreateServiceProfile
-<a name="API_CreateServiceProfile"></a>
 
 Creates a new service profile.
 

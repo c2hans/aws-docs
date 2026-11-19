@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/hybrid-
 ---
 
 # Create a hybrid activation to register nodes with Systems Manager
-<a name="hybrid-activation-managed-nodes"></a>
 
 To set up machines other than Amazon Elastic Compute Cloud (EC2) instances as managed nodes for a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment, you create and apply a *hybrid activation*. After you successfully complete the activation, you *immediately* receive an Activation Code and Activation ID at the top of the console page. You specify this Code and ID combination when you install AWS Systems Manager SSM Agent on non-EC2 machines for your hybrid and multicloud environment. The Code and ID provide secure access to the Systems Manager service from your managed nodes.
 

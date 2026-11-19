@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FailureTrace
-<a name="API_agent-runtime_FailureTrace"></a>
 
 Contains information about the failure of the interaction.
 

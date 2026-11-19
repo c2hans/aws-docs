@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # BatchDeleteFirewallRuleInputItem
-<a name="API_route53globalresolver_BatchDeleteFirewallRuleInputItem"></a>
 
 Information about a DNS Firewall rule to delete in a batch operation.
 

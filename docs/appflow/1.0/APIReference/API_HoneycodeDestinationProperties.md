@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_HoneycodeDe
 ---
 
 # HoneycodeDestinationProperties
-<a name="API_HoneycodeDestinationProperties"></a>
 
  The properties that are applied when Amazon Honeycode is used as a destination.
 

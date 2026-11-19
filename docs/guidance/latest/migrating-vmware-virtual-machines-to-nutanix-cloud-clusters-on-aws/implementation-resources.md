@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/migrating-vmware-virtual
 ---
 
 # Implementation resources
-<a name="implementation-resources"></a>
 
  **Step 1 – Prerequisites**
 

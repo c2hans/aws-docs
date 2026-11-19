@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Build an Amazon Bedrock knowledge base with an Amazon Kendra GenAI index
-<a name="knowledge-base-build-kendra-genai-index"></a>
 
 **Important**
 For optimized retrieval accuracy and a managed experience, we recommend [Amazon Bedrock Managed Knowledge Base](kb-build-managed.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/pipes-start
 ---
 
 # Starting or stopping an Amazon EventBridge pipe
-<a name="pipes-start-stop"></a>
 
 By default, a pipe is `Running` and processes events when it's created.
 

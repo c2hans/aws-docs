@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Fleet Intelligence agents
-<a name="fi-agents"></a>
 
 Five more Tier 2 agents work for fleet operators and product engineers rather than vehicle owners. Four run daily and feed the Fleet Intelligence Action Queue in the CMS Fleet Intelligence portal. The fifth runs when a product engineer asks it to, and its recommendations go to the Connected Services portal. All five use the same platform, Finding contract and executors as the owner-facing agents in [The loyalty flywheel — four autonomous agents](loyalty-flywheel.md).
 

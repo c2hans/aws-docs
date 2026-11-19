@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Del
 ---
 
 # DeleteApplicationAssignment
-<a name="API_DeleteApplicationAssignment"></a>
 
 Revoke application access to an application by deleting application assignments for a user or group.
 

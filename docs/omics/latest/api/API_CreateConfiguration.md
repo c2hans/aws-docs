@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_CreateConfiguration
 ---
 
 # CreateConfiguration
-<a name="API_CreateConfiguration"></a>
 
 Create a new configuration.
 

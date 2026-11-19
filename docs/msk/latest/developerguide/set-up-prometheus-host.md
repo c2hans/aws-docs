@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/set-up-prometh
 ---
 
 # Set up a Prometheus host on an Amazon EC2 instance
-<a name="set-up-prometheus-host"></a>
 
 This procedure describes how to set up a Prometheus host using a prometheus.yml file.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/revoke-certificate.
 ---
 
 # Revoke an AWS Certificate Manager public certificate
-<a name="revoke-certificate"></a>
 
 You can revoke an AWS Certificate Manager exportable public certificates using the ACM console, AWS CLI, or API action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # FAQ
-<a name="faq"></a>
 
 This section provides answers to commonly raised questions about migrating your SSIS ETL jobs to AWS.
 

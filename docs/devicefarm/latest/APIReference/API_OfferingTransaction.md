@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Offer
 ---
 
 # OfferingTransaction
-<a name="API_OfferingTransaction"></a>
 
 Represents the metadata of an offering transaction.
 

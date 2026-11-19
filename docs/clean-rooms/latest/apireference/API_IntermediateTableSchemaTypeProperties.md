@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Inte
 ---
 
 # IntermediateTableSchemaTypeProperties
-<a name="API_IntermediateTableSchemaTypeProperties"></a>
 
 Contains the schema type properties for an intermediate table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # SapNWOnAseSingle
-<a name="launch-wizard-specifications-sap-netweaver-ase-single"></a>
 
 The following is an example of the specifications required to create a single-node deployment with SAP software installed:
 

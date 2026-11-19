@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_list\_builtins
-<a name="aurora_list_builtins"></a>
 
 Lists all available Aurora PostgreSQL built-in functions, along with brief descriptions and function details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/aws-backup-li
 ---
 
 # AWS Backup quotas
-<a name="aws-backup-limits"></a>
 
 The following quotas apply when working with AWS Backup.
 

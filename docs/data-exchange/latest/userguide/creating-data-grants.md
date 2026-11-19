@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/creating-
 ---
 
 # Creating data grants on AWS Data Exchange
-<a name="creating-data-grants"></a>
 
 At a high level, this is how to create a data grant on AWS Data Exchange:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Analy
 ---
 
 # AnalysisSourceEntity
-<a name="API_AnalysisSourceEntity"></a>
 
 The source entity of an analysis.
 

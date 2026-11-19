@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-dc-install
 ---
 
 # Provision your Raspberry Pi in AWS IoT
-<a name="iot-dc-install-provision"></a>
 
 The procedures in this section start with the saved microSD image that has the AWS CLI and AWS IoT Device Client installed and create the AWS IoT resources and device certificates that provision your Raspberry Pi in AWS IoT.
 

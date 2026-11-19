@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IntegrationError.
 ---
 
 # IntegrationError
-<a name="API_IntegrationError"></a>
 
 An error associated with a zero-ETL integration.
 

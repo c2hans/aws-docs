@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-expla
 ---
 
 # Configure and create an endpoint
-<a name="clarify-online-explainability-create-endpoint"></a>
 
 Create a new endpoint configuration to fit your model, and use this configuration to create the endpoint. You can use the model container validated in the [pre-check step ](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-explainability-precheck.html) to create an endpoint and enable the SageMaker Clarify online explainability feature.
 

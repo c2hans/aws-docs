@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ma
 ---
 
 # ManagedNotificationEventSummary
-<a name="API_ManagedNotificationEventSummary"></a>
 
 A short summary of a `ManagedNotificationEvent`. This is only used when listing managed notification events.
 

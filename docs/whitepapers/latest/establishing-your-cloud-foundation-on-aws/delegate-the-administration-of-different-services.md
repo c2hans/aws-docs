@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Delegate the administration of different services
-<a name="delegate-the-administration-of-different-services"></a>
 
 As your environment grows, the complexity of managing your environment will increase with the amount of isolated group of resources you have. In order to effectively manage your environment, you will need to have a level of automation that matches the complexity of your environment.
 

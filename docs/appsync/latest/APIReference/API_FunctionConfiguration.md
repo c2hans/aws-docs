@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Function
 ---
 
 # FunctionConfiguration
-<a name="API_FunctionConfiguration"></a>
 
 A function is a reusable entity. You can use multiple functions to compose the resolver logic.
 

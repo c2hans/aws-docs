@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/WF_PERC
 ---
 
 # PERCENT\_RANK window function
-<a name="WF_PERCENT_RANK"></a>
 
 Calculates the percent rank of a given row. The percent rank is determined using this formula:
 

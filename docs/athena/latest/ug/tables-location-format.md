@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/tables-location-format.
 ---
 
 # Specify a table location in Amazon S3
-<a name="tables-location-format"></a>
 
 When you run a `CREATE TABLE` query in Athena, Athena registers your table with the AWS Glue Data Catalog, which is where Athena stores your metadata.
 

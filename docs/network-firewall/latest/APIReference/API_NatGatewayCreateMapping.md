@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # NatGatewayCreateMapping
-<a name="API_NatGatewayCreateMapping"></a>
 
 A NAT gateway that Network Firewall creates for a proxy mode firewall in one Availability Zone. You use this in `CreateFirewall` and `AssociateSubnets`.
 

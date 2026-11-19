@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-se
 ---
 
 # Set up an EMR Studio
-<a name="emr-studio-set-up"></a>
 
 Complete the following steps to set up an EMR Studio.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # In detail
-<a name="in-detail"></a>
 
 ## STEP 1: KNOW YOUR TRANSFERS
 <a name="step-1-know-your-transfers"></a>

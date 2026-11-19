@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElbL
 ---
 
 # AwsElbLoadBalancerSourceSecurityGroup
-<a name="API_AwsElbLoadBalancerSourceSecurityGroup"></a>
 
 Contains information about the security group for the load balancer.
 

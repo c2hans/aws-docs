@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ev
 ---
 
 # Company context
-<a name="company-context"></a>
 
 In this section, you evaluate your current control or solution to make sure that it meets your organization's business and technical requirements. If you don't have a control or solution in place, you should evaluate the AWS security service and skip directly to the [AWS security service evaluation](service-evaluation.md) section.
 

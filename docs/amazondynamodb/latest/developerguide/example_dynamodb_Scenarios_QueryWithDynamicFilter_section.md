@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Query a DynamoDB table with a dynamic filter expression with an AWS SDK
-<a name="example_dynamodb_Scenarios_QueryWithDynamicFilter_section"></a>
 
 The following code examples show how to query a table with a dynamic filter expression.
 + Build filter expressions dynamically at runtime.

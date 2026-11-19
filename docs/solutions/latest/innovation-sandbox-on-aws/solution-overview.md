@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Create temporary sandbox environments with configurable security and spend monitoring controls
-<a name="solution-overview"></a>
 
 Publication date: *May 2025. For updates, refer to [CHANGELOG.md](https://github.com/aws-solutions/innovation-sandbox-on-aws/blob/main/CHANGELOG.md) file in the GitHub repository.*
 

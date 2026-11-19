@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # CreateGeofenceCollection
-<a name="API_WaypointGeofencing_CreateGeofenceCollection"></a>
 
 Creates a geofence collection, which manages and stores geofences.
 

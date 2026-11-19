@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/create-linked-
 ---
 
 # Linking your cache to a data repository
-<a name="create-linked-data-repo"></a>
 
 You can link your Amazon File Cache to data repositories in Amazon S3 or on NFS (Network File System) file systems that support the NFSv3 protocol. The NFS file systems can be on-premises or in-cloud file systems. You create the links when you create your cache.
 

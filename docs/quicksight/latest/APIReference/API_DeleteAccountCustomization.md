@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteAccountCustomization
-<a name="API_DeleteAccountCustomization"></a>
 
 **Important**
 This API permanently deletes all Quick Sight customizations for the specified AWS account and namespace. When you delete account customizations:

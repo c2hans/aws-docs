@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/monitoring_eks
 ---
 
 # Monitoring EKS workloads for Network performance issues
-<a name="monitoring_eks_workloads_for_network_performance_issues"></a>
 
 ## Monitoring CoreDNS traffic for DNS throttling issues
 <a name="_monitoring_coredns_traffic_for_dns_throttling_issues"></a>

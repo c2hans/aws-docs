@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_PutPermissio
 ---
 
 # PutPermissionPolicy
-<a name="API_PutPermissionPolicy"></a>
 
 Use this to share a rule group with other accounts.
 

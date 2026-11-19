@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/metrics.whichsh
 ---
 
 # Which Metrics Should I Monitor?
-<a name="metrics.whichshouldimonitor"></a>
 
 The following CloudWatch metrics offer good insight into MemoryDB performance. In most cases, we recommend that you set CloudWatch alarms for these metrics so that you can take corrective action before performance issues occur.
 

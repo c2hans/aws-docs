@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SpeakerDia
 ---
 
 # SpeakerDiarizationSettings
-<a name="API_SpeakerDiarizationSettings"></a>
 
 Specifies configuration that restricts speech detection to the primary (loudest) speaker during streaming audio conversations, so that speech from background speakers does not start a turn, interrupt the bot, or reach speech recognition.
 

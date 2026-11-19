@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ContainerRegistryMa
 ---
 
 # ContainerRegistryMap
-<a name="API_ContainerRegistryMap"></a>
 
 Use a container registry map to specify mappings between the ECR private repository and one or more upstream registries. For more information, see [Container images](https://docs.aws.amazon.com/omics/latest/dev/workflows-ecr.html) in the * AWS HealthOmics User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Software dependency validation
-<a name="dsperf02"></a>
 
  Third-party software components introduce sovereignty risks that standard security scanning doesn't detect. Export controls can block the delivery of updates. Copyleft licensing can create unintended source-code disclosure obligations. A critical dependency maintained by contributors in a single jurisdiction becomes a continuity risk if that jurisdiction faces trade restrictions. These concerns require evaluation criteria that go beyond vulnerability scanning to assess sovereignty-specific risks before components are deployed.
 

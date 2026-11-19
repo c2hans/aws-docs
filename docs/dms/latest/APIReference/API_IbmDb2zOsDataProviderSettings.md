@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_IbmDb2zOsDat
 ---
 
 # IbmDb2zOsDataProviderSettings
-<a name="API_IbmDb2zOsDataProviderSettings"></a>
 
 Provides information about an IBM DB2 for z/OS data provider.
 

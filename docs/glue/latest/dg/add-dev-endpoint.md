@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/add-dev-endpoint.html
 ---
 
 # Adding a development endpoint
-<a name="add-dev-endpoint"></a>
 
 Use development endpoints to iteratively develop and test your extract, transform, and load (ETL) scripts in AWS Glue. Working with development endpoints is only available through the AWS Command Line Interface.
 

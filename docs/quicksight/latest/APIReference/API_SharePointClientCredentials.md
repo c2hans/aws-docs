@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Share
 ---
 
 # SharePointClientCredentials
-<a name="API_SharePointClientCredentials"></a>
 
 The client credentials for connecting to a Microsoft SharePoint data source using two-legged OAuth (2LO) certificate-based authentication. SharePoint connections access documents stored in SharePoint sites and libraries. The tenant ID and client ID are supplied through `SharePointParameters`.
 

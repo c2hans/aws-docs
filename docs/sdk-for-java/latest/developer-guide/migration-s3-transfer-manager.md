@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Migrate the Transfer Manager from version 1 to version 2 of the AWS SDK for Java
-<a name="migration-s3-transfer-manager"></a>
 
 This migration guide covers the key differences between Transfer Manager v1 and S3 Transfer Manager v2, including constructor changes, method mappings, and code examples for common operations. After reviewing these differences, you can successfully migrate your existing Transfer Manager code to take advantage of improved performance and asynchronous operations in v2.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 ---
 
 # Data retrieval APIs for AWS End User Messaging Social
-<a name="awsendusermessagingsocial"></a>
 
 AWS End User Messaging Social provides the following APIs for data retrieval.
 

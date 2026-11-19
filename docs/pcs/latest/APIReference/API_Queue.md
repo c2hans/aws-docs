@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_Queue.html
 ---
 
 # Queue
-<a name="API_Queue"></a>
 
 A queue resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/opl-example.htm
 ---
 
 # Example of a workflow
-<a name="opl-example"></a>
 
 This section provides an example of the design of an output lock workflow that implements distributed encoding.
 

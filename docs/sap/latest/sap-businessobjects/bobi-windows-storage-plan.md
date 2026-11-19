@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-wind
 ---
 
 # Storage
-<a name="bobi-windows-storage-plan"></a>
 
 See the [Sizing](bobi-windows-sizing.md) section for resources on SAP’s standard recommendations. If no storage performance requirements are available, AWS recommends General Purpose SSD (gp3) as the default EBS volume type for SAP workloads.
 

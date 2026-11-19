@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/voice-connectors.htm
 ---
 
 # Managing Amazon Chime SDK Voice Connectors
-<a name="voice-connectors"></a>
 
 **What is an Amazon Chime SDK Voice Connector?**
 An Amazon Chime SDK Voice Connector provides Session Initiation Protocol (SIP) trunking service for your existing phone system. You can manage your Voice Connectors from the Amazon Chime SDK console and access it over your internet connection, or you can use AWS Direct Connect. For more information, see [What is Direct Connect?](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html) in the *Direct Connect User Guide*.

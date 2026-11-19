@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # .NET
-<a name="ddb-net"></a>
 
 This topic explains how to install and use version 3.*x* of the .NET client-side encryption library for DynamoDB. For details about programming with the AWS Database Encryption SDK for DynamoDB, see the [.NET examples](https://github.com/aws/aws-database-encryption-sdk-dynamodb/tree/main/Examples/runtimes/net/src/) in the aws-database-encryption-sdk-dynamodb repository on GitHub.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_InlineD
 ---
 
 # InlineDocumentEnrichmentConfiguration
-<a name="API_InlineDocumentEnrichmentConfiguration"></a>
 
 Provides the configuration information for applying basic logic to alter document metadata and content when ingesting documents into Amazon Q Business.
 

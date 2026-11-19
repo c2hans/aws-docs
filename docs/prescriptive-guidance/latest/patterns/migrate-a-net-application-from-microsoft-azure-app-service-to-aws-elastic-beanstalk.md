@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate a .NET application from Microsoft Azure App Service to AWS Elastic Beanstalk
-<a name="migrate-a-net-application-from-microsoft-azure-app-service-to-aws-elastic-beanstalk"></a>
 
 *Raghavender Madamshitti, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAccountA
 ---
 
 # ListAccountAliases
-<a name="API_ListAccountAliases"></a>
 
 Lists the account alias associated with the AWS account (Note: you can have only one). For information about using an AWS account alias, see [Creating, deleting, and listing an AWS account alias](https://docs.aws.amazon.com/IAM/latest/UserGuide/console_account-alias.html#CreateAccountAlias) in the *IAM User Guide*.
 

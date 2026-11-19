@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/select.html
 ---
 
 # SELECT
-<a name="select"></a>
 
 Retrieves rows of data from zero or more tables.
 

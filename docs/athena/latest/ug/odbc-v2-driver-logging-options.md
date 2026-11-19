@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-logging-
 ---
 
 # Logging options
-<a name="odbc-v2-driver-logging-options"></a>
 
 **Warning**
 **Security:** When logging is enabled at verbose levels (DEBUG or TRACE), the AWS SDK used by the driver may log sensitive information such as authentication tokens and credentials in plaintext. Use verbose logging only for troubleshooting, and ensure log files are stored securely and deleted after use. Do not enable verbose logging in production environments.

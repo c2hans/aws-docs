@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_JobTemplateS
 ---
 
 # JobTemplateSummary
-<a name="API_JobTemplateSummary"></a>
 
 An object that contains information about the job template.
 

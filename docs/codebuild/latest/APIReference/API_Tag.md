@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Tag.ht
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A tag, consisting of a key and a value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_RestoreVolum
 ---
 
 # RestoreVolumeFromSnapshot
-<a name="API_RestoreVolumeFromSnapshot"></a>
 
 Returns an Amazon FSx for OpenZFS volume to the state saved by the specified snapshot.
 

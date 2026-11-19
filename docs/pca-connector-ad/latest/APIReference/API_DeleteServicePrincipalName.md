@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # DeleteServicePrincipalName
-<a name="API_DeleteServicePrincipalName"></a>
 
 Deletes the service principal name (SPN) used by a connector to authenticate with your Active Directory.
 

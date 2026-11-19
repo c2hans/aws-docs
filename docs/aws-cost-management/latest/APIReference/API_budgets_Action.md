@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Action
-<a name="API_budgets_Action"></a>
 
 A budget action resource.
 

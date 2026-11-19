@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/launch-cutover.html
 ---
 
 # Launching cutover instances
-<a name="launch-cutover"></a>
 
 Once you have finalized the testing of all of your source servers, you are ready for cutover. You should perform the cutover at a set date and time. The cutover migrates your source servers to the cutover instances on AWS.
 

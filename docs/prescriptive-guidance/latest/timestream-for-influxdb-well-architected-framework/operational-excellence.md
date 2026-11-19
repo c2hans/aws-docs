@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/timestream-
 ---
 
 # Operational excellence pillar
-<a name="operational-excellence"></a>
 
 The [operational excellence](https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence.html) pillar of the AWS Well-Architected Framework focuses on running and monitoring systems, and continually improving processes and procedures to deliver business value. The operational excellence pillar includes the ability to support development and run workloads effectively, and to gain insight into their operation.
 

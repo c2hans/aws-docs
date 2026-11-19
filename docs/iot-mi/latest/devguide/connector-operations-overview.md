@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/connector-operati
 ---
 
 # Implement C2C connector interface operations
-<a name="connector-operations-overview"></a>
 
 Managed Integrations for AWS IoT Device Management defines four operations your AWS Lambda must handle to qualify as a connector. Your C2C connector must implement each of the following operations:
 

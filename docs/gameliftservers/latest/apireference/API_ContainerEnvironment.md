@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # ContainerEnvironment
-<a name="API_ContainerEnvironment"></a>
 
 An environment variable to set inside a container, in the form of a key-value pair.
 

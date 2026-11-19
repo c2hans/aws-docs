@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # GetFeed
-<a name="API_GetFeed"></a>
 
 Retrieves information about the specified feed.
 

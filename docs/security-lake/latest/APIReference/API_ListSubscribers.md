@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Li
 ---
 
 # ListSubscribers
-<a name="API_ListSubscribers"></a>
 
 Lists all subscribers for the specific Amazon Security Lake account ID. You can retrieve a list of subscriptions associated with a specific organization or AWS account.
 

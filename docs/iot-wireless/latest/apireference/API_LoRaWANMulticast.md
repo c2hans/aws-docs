@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANMulticast
-<a name="API_LoRaWANMulticast"></a>
 
 The LoRaWAN information that is to be used with the multicast group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/example_codeb
 ---
 
 # Use `ListProjects` with an AWS SDK or CLI
-<a name="example_codebuild_ListProjects_section"></a>
 
 The following code examples show how to use `ListProjects`.
 

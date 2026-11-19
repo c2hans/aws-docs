@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Disabl
 ---
 
 # DisableOrganizationAdminAccount
-<a name="API_DisableOrganizationAdminAccount"></a>
 
 Removes the Detective administrator account in the current Region. Deletes the organization behavior graph.
 

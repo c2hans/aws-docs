@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Pro
 ---
 
 # Property
-<a name="API_Property"></a>
 
 Contains asset property information.
 

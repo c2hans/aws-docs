@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # VectorEnrichmentJobInputConfig
-<a name="API_geospatial_VectorEnrichmentJobInputConfig"></a>
 
 The input structure for the InputConfig in a VectorEnrichmentJob.
 

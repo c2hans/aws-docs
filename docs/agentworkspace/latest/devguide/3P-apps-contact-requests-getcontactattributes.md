@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Get specific attributes of a contact in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-getcontactattributes"></a>
 
 Returns the requested attributes of the contact as a map of attribute key to value. The map contains only the requested attributes that the contact has. The map includes attributes that have no value, with an empty string as the value.
 

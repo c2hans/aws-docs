@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 ---
 
 # Data retrieval APIs for AWS Import Export Disk Service
-<a name="awsimportexportdiskservice"></a>
 
 AWS Import Export Disk Service provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_HttpEnd
 ---
 
 # HttpEndpointDestinationConfiguration
-<a name="API_HttpEndpointDestinationConfiguration"></a>
 
 Describes the configuration of the HTTP endpoint destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 ---
 
 # Split line item columns
-<a name="table-dictionary-cur2-split-line-item"></a>
 
 Columns under the **split\_line\_item** header are fields that appear in Data Exports if you've opted in to the split cost allocation data feature. For more information, see [Understanding split cost allocation data](https://docs.aws.amazon.com/cur/latest/userguide/split-cost-allocation-data.html). Split cost allocation data supports Amazon ECS (including Fargate), AWS Batch, Amazon EKS, Amazon S3, and networking flexible cost allocation. For networking, it allocates supported NAT gateway, Amazon EC2 instance, and VPC peering connection charges.
 

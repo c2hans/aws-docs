@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/global-netw
 ---
 
 # View a global network using AWS Global Networks for Transit Gateways
-<a name="global-networks-viewing"></a>
 
 View the details of your global network and information about the network objects in your global network.
 

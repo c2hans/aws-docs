@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # LinkedAccountCharge
-<a name="API_billing_LinkedAccountCharge"></a>
 
 Enterprise Support charges for a linked account.
 

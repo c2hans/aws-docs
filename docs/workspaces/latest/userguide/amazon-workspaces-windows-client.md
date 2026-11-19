@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-works
 ---
 
 # WorkSpaces Windows client application
-<a name="amazon-workspaces-windows-client"></a>
 
 The following information will help you get started with the WorkSpaces Windows client application.
 

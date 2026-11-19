@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetRe
 ---
 
 # GetRecoveryPointRestoreMetadata
-<a name="API_GetRecoveryPointRestoreMetadata"></a>
 
 Returns a set of metadata key-value pairs that were used to create the backup.
 

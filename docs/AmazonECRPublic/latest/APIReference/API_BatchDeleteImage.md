@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # BatchDeleteImage
-<a name="API_BatchDeleteImage"></a>
 
 Deletes a list of specified images that are within a repository in a public registry. Images are specified with either an `imageTag` or `imageDigest`.
 

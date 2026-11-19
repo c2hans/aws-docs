@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # OrganizationalUnitReference
-<a name="API_OrganizationalUnitReference"></a>
 
 A reference to an AWS Organizations organizational unit (OU), with optional display metadata.
 

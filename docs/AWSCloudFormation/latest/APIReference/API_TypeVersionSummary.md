@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # TypeVersionSummary
-<a name="API_TypeVersionSummary"></a>
 
 Contains summary information about a specific version of a CloudFormation extension.
 

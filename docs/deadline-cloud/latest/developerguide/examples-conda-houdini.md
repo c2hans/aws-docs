@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Build a SideFX Houdini conda package for Deadline Cloud
-<a name="examples-conda-houdini"></a>
 
 The samples repository on the GitHub website includes the following Houdini conda recipes:
 + [houdini-20.5](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/houdini-20.5)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ApiRequestBody
-<a name="API_agent-runtime_ApiRequestBody"></a>
 
 The request body to provide for the API request, as the agent elicited from the user.
 

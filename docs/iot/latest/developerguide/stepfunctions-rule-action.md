@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/stepfunctions-
 ---
 
 # Step Functions
-<a name="stepfunctions-rule-action"></a>
 
 The Step Functions (`stepFunctions`) action starts an AWS Step Functions state machine.
 

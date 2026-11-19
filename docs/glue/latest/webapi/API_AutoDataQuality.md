@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AutoDataQuality.h
 ---
 
 # AutoDataQuality
-<a name="API_AutoDataQuality"></a>
 
 Specifies configuration options for automatic data quality evaluation in AWS Glue jobs. This structure enables automated data quality checks and monitoring during ETL operations, helping to ensure data integrity and reliability without manual intervention.
 

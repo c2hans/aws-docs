@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/lists-and-subscriptions.ht
 ---
 
 # Managing lists and subscriptions in Amazon Simple Email Service
-<a name="lists-and-subscriptions"></a>
 
 You can manage your own lists for mailing and subscriptions as well as for email suppression in Amazon SES. To help you maintain your sender reputation, SES offers account-level, tenant-level, and configuration set-level suppression that prevents you from sending to invalid recipients and harming your sender reputation. If you use multi-tenancy, tenant-level suppression lists give each tenant its own isolated suppression list, preventing cross-tenant contamination. As another measure against bounced emails and complaints, SES can automatically add unsubscribe links to all outgoing mail through subscription management.
 

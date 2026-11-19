@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-l
 ---
 
 # Use AWS IoT Core for LoRaWAN metrics
-<a name="iot-lorawan-metrics"></a>
 
 Use AWS IoT Core for LoRaWAN metrics to monitor the health of your LoRaWAN resources in a dashboard view. It provides information about the connectivity of your devices with the cloud, how they are functioning, and whether they are operating within specifications. These metrics can be aggregated to provide historical and up-to-the-minute view of data and trends for your resources.
 

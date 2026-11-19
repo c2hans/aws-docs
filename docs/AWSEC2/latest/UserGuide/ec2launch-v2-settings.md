@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-v2-set
 ---
 
 # Configure EC2Launch v2 settings for Windows instances
-<a name="ec2launch-v2-settings"></a>
 
 This section contains information about how to configure settings for EC2Launch v2.
 

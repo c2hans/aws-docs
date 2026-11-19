@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # CreateLicense
-<a name="API_CreateLicense"></a>
 
 Creates a license.
 

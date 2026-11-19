@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_BootstrapAct
 ---
 
 # BootstrapActionConfig
-<a name="API_BootstrapActionConfig"></a>
 
 Configuration of a bootstrap action.
 

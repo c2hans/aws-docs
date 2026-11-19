@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch-
 ---
 
 # Understanding data protection policies
-<a name="cloudwatch-logs-data-protection-policies"></a>
 
 **Topics**
 + [What are data protection policies?](#what-are-data-protection-policies)

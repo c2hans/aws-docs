@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Confl
 ---
 
 # Conflict
-<a name="API_Conflict"></a>
 
 Information about conflicts in a merge operation.
 

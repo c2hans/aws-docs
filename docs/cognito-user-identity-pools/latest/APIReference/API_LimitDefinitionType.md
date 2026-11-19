@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # LimitDefinitionType
-<a name="API_LimitDefinitionType"></a>
 
 The class and attributes that identify a specific limit at the account level.
 

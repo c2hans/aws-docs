@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-alter-
 ---
 
 # ALTER TABLE CHANGE COLUMN
-<a name="querying-iceberg-alter-table-change-column"></a>
 
 Changes the name, type, order or comment of a column in an Iceberg table.
 

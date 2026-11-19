@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_NewR
 ---
 
 # NewRelicServiceDetails
-<a name="API_NewRelicServiceDetails"></a>
 
 Complete service details for New Relic integration.
 

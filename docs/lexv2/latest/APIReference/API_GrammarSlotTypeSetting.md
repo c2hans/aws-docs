@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_GrammarSlo
 ---
 
 # GrammarSlotTypeSetting
-<a name="API_GrammarSlotTypeSetting"></a>
 
 Settings requried for a slot type based on a grammar that you provide.
 

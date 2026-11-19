@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/flows-versions
 ---
 
 # Flow versioning and aliasing in Connect Customer
-<a name="flows-versions-aliases"></a>
 
 To improve maintenance efficiency and reduce deployment risks, Connect Customer supports versioning and aliasing for flows. This lets you track changes over time, roll back to a known-good state, and control which content is live without editing the flows that reference it.
 

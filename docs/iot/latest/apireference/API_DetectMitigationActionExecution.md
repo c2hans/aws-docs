@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DetectMitiga
 ---
 
 # DetectMitigationActionExecution
-<a name="API_DetectMitigationActionExecution"></a>
 
  Describes which mitigation actions should be executed.
 

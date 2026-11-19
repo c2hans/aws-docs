@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/porting-mig
 ---
 
 # Migrating from version 1 to version 3 for OTA PAL port
-<a name="porting-migration-ota-pal"></a>
 
 The Over-the-air Updates Library introduced some changes in the folder structure and the placement of configurations required by the library and the demo applications. For OTA applications designed to work with v1.2.0 to migrate to v3.0.0 of the library, you must update the PAL port function signatures and include additional configuration files as described in this migration guide.
 

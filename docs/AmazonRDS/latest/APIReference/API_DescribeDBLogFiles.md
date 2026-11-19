@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBLogFiles
-<a name="API_DescribeDBLogFiles"></a>
 
 Returns a list of DB log files for the DB instance.
 

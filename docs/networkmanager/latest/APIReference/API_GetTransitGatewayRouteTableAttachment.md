@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetTransitGatewayRouteTableAttachment
-<a name="API_GetTransitGatewayRouteTableAttachment"></a>
 
 Returns information about a transit gateway route table attachment.
 

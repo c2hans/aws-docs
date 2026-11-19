@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Playbook: Apache Solr 8.x or 9.x to OpenSearch 3.x
-<a name="playbook-solr-to-os3"></a>
 
 This playbook is an end-to-end runbook for migrating an Apache Solr 8.x or 9.x deployment — either standalone (single-core) Solr or SolrCloud — into OpenSearch 3.x running on an [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service) domain or an [Amazon OpenSearch Serverless NextGen](https://aws.amazon.com/opensearch-service/features/serverless) collection. It strings the individual migration phases described in [Configure and run workflows](use-the-solution.md) into one ordered sequence tailored to an Apache Solr source. For the general concepts behind a Solr migration, see [Migrate from Apache Solr](migrate-from-solr.md).
 

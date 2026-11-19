@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/gateways-g
 ---
 
 # Legacy gateways (AWS IoT Greengrass Version 1)
-<a name="gateways-ggv1"></a>
 
 **Note**
 SiteWise Edge gateways running on AWS IoT Greengrass V1 are available only if you started using this feature before July 29, 2021. For more information on running an AWS IoT SiteWise gateway using AWS IoT Greengrass V2, see [Self-host an AWS IoT SiteWise Edge gateway with AWS IoT Greengrass V2](gw-self-host-gg2.md).

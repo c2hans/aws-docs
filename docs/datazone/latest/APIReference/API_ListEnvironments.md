@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListEnv
 ---
 
 # ListEnvironments
-<a name="API_ListEnvironments"></a>
 
 Lists Amazon DataZone environments.
 

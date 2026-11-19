@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AssetIn
 ---
 
 # AssetInDataProductListingItem
-<a name="API_AssetInDataProductListingItem"></a>
 
 The listing of the asset in a data product.
 

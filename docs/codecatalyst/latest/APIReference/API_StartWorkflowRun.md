@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Sta
 ---
 
 # StartWorkflowRun
-<a name="API_StartWorkflowRun"></a>
 
 Begins a run of a specified workflow.
 

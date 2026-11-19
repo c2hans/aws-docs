@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # Cluster Connectivity
-<a name="clusters-clusterarn-connectivity"></a>
 
 Use this resource to update the connectivity setting for an MSK cluster.
 

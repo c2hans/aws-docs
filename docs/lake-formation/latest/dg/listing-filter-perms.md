@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/listing-filter-
 ---
 
 # Listing data filter permissions
-<a name="listing-filter-perms"></a>
 
 You can use the Lake Formation console to view the permissions granted on data filters.
 

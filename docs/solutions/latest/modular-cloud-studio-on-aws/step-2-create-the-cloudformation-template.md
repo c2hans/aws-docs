@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Step 2: Create the CloudFormation template
-<a name="step-2-create-the-cloudformation-template"></a>
 
 The CloudFormation template defines the infrastructure that makes up the module. When you register a new module, MCS uses [ValidateTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ValidateTemplate.html) to validate the template and extract parameters. The template must be accessible so that MCS can fetch the template.
 

@@ -3,11 +3,11 @@ source_url: https://docs.aws.amazon.com/linux/al2027/release-notes/relnotes-2027
 ---
 
 # Amazon Linux 2027 2027.0 release notes
-<a name="relnotes-2027.0"></a>
 
 The following releases are updates to the 2027.0 release of AL2027.
 
 **Topics**
++ [AL2027 preview version 2027.0.20261117](relnotes-2027.0.20261117.md)
 + [AL2027 preview version 2027.0.20261112](relnotes-2027.0.20261112.md)
 + [AL2027 preview version 2027.0.20261109](relnotes-2027.0.20261109.md)
 + [AL2027 preview version 2027.0.20261102](relnotes-2027.0.20261102.md)

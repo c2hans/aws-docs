@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Multi-step carrier approval (out-of-band requirement)
-<a name="nx-rcs-launch-gb-out-of-band"></a>
 
 **Important**
 In addition to the console registration, you must complete a multi-step out-of-band approval process. Different carriers use different verification methods, and you will receive emails from multiple parties. Your registration cannot be fully approved until all carrier approvals are complete. CC `aws-end-user-messaging-rcs-approvals@amazon.com` on all emails you send as part of this process.

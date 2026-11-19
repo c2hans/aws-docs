@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeTemplate
-<a name="API_DescribeTemplate"></a>
 
 Describes a template's metadata.
 

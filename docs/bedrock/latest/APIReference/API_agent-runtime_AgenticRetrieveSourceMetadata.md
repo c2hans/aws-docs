@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveSourceMetadata
-<a name="API_agent-runtime_AgenticRetrieveSourceMetadata"></a>
 
 Metadata about a retrieval source.
 

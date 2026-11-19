@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/multicast-2022-7.htm
 ---
 
 # SMPTE 2022-7 seamless protection switching for multicast inputs
-<a name="multicast-2022-7"></a>
 
 *SMPTE 2022-7 seamless protection switching* protects a channel against the loss of one network path. The Society of Motion Picture and Television Engineers (SMPTE) defines it in the standard ST 2022-7.
 

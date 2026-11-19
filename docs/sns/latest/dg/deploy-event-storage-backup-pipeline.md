@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/deploy-event-storage-backu
 ---
 
 # Deploying and subscribing the Event Storage and Backup Pipeline to Amazon SNS
-<a name="deploy-event-storage-backup-pipeline"></a>
 
 |  |
 | --- |

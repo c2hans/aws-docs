@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/test-view-rep
 ---
 
 # View test reports for a report group
-<a name="test-view-report-group-reports"></a>
 
 **To view test reports in a report group**
 

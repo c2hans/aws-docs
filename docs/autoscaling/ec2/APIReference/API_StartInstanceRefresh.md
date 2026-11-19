@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_StartIn
 ---
 
 # StartInstanceRefresh
-<a name="API_StartInstanceRefresh"></a>
 
 Starts an instance refresh.
 

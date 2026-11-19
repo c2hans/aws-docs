@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RDS::DBProxyTargetGroup ConnectionPoolConfigurationInfoFormat
-<a name="aws-properties-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat"></a>
 
 Specifies the settings that control the size and behavior of the connection pool associated with a `DBProxyTargetGroup`.
 

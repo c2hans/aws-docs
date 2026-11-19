@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetSessio
 ---
 
 # GetSession
-<a name="API_GetSession"></a>
 
 Gets the full details of a previously created session, including the session status and configuration.
 

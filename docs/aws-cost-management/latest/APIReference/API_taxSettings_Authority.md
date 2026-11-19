@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Authority
-<a name="API_taxSettings_Authority"></a>
 
 The address domain associate with the tax information.
 

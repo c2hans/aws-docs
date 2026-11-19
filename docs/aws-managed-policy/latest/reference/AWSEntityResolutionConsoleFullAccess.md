@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSEntityResolutionConsoleFullAccess
-<a name="AWSEntityResolutionConsoleFullAccess"></a>
 
 **Description**: Provides console full access to AWS Entity Resolution and related services.
 

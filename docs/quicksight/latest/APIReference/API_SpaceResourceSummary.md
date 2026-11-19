@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Space
 ---
 
 # SpaceResourceSummary
-<a name="API_SpaceResourceSummary"></a>
 
 A summary of a resource in a space.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/s
 ---
 
 # Setting up HTTP proxy for the AWS Toolkit for JetBrains
-<a name="setup-http-proxy"></a>
 
 Setting an HTTP Proxy for the AWS Toolkit for JetBrains is handled through your JetBrains integrated development environment (IDE). To learn more about how to set an HTTP proxy, choose your JetBrains IDE from the following list.
 + **CLion** – See [Configure HTTP proxy](https://www.jetbrains.com/help/clion/configuring-http-proxy.html) on the CLion help website.

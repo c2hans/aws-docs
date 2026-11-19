@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/endpoints-dash-in
 ---
 
 # Stream selection fields
-<a name="endpoints-dash-include-streams"></a>
 
 Define the streams to include.
 

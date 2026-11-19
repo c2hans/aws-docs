@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreatedDateFilter
-<a name="API_CreatedDateFilter"></a>
 
 Filter for opportunities based on creation date range.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_QuickSi
 ---
 
 # QuickSightConfiguration
-<a name="API_QuickSightConfiguration"></a>
 
 The AWS Quick configuration for an Amazon Q Business application that uses Quick as the identity provider. For more information, see [Creating an AWS Quick integrated application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-quicksight-integrated-application.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_QueueStr
 ---
 
 # QueueStreamIdentifier
-<a name="API_QueueStreamIdentifier"></a>
 
 Identifies a data stream associated with a queue.
 

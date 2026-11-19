@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeliveryO
 ---
 
 # DeliveryOptions
-<a name="API_DeliveryOptions"></a>
 
 Used to associate a configuration set with a dedicated IP pool.
 

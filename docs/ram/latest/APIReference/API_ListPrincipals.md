@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ListPrincipa
 ---
 
 # ListPrincipals
-<a name="API_ListPrincipals"></a>
 
 Lists the principals that you are sharing resources with or that are sharing resources with you.
 

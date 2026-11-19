@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_Layer.html
 ---
 
 # Layer
-<a name="API_Layer"></a>
 
 An [AWS Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html).
 

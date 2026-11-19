@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/m
 ---
 
 # Monitor a staging distribution
-<a name="monitoring-staging-distribution"></a>
 
 To monitor the performance of a staging distribution, you can use the same [metrics, logs, and reports](reports-and-monitoring.md) that CloudFront provides for all distributions. For example:
 + You can view the [default CloudFront distribution metrics](viewing-cloudfront-metrics.md#monitoring-console.distributions) (such as total requests and error rate) in the CloudFront console, and you can [turn on additional metrics](viewing-cloudfront-metrics.md#monitoring-console.distributions-additional) (such as cache hit rate and error rate by status code) for an additional cost. You can also create alarms based on these metrics.

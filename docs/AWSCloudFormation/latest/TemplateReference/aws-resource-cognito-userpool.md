@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPool
-<a name="aws-resource-cognito-userpool"></a>
 
 The `AWS::Cognito::UserPool` resource creates an Amazon Cognito user pool. For more information on working with Amazon Cognito user pools, see [Amazon Cognito User Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html) and [CreateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPool.html).
 
@@ -28,6 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AdminCreateUserConfig](#cfn-cognito-userpool-admincreateuserconfig)" : {{AdminCreateUserConfig}},
       "[AliasAttributes](#cfn-cognito-userpool-aliasattributes)" : {{[ String, ... ]}},
       "[AutoVerifiedAttributes](#cfn-cognito-userpool-autoverifiedattributes)" : {{[ String, ... ]}},
+      "[DcrConfiguration](#cfn-cognito-userpool-dcrconfiguration)" : {{DcrConfiguration}},
       "[DeletionProtection](#cfn-cognito-userpool-deletionprotection)" : {{String}},
       "[DeviceConfiguration](#cfn-cognito-userpool-deviceconfiguration)" : {{DeviceConfiguration}},
       "[EmailAuthenticationMessage](#cfn-cognito-userpool-emailauthenticationmessage)" : {{String}},
@@ -74,6 +74,8 @@ Properties:
     - String}}
   [AutoVerifiedAttributes](#cfn-cognito-userpool-autoverifiedattributes): {{
     - String}}
+  [DcrConfiguration](#cfn-cognito-userpool-dcrconfiguration): {{
+    DcrConfiguration}}
   [DeletionProtection](#cfn-cognito-userpool-deletionprotection): {{String}}
   [DeviceConfiguration](#cfn-cognito-userpool-deviceconfiguration): {{
     DeviceConfiguration}}
@@ -144,6 +146,12 @@ Attributes supported as an alias for this user pool. For more information about 
 The attributes that you want your user pool to automatically verify. For more information, see [Verifying contact information at sign-up](https://docs.aws.amazon.com/cognito/latest/developerguide/signing-up-users-in-your-app.html#allowing-users-to-sign-up-and-confirm-themselves).
 *Required*: No
 *Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DcrConfiguration`  <a name="cfn-cognito-userpool-dcrconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [DcrConfiguration](aws-properties-cognito-userpool-dcrconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DeletionProtection`  <a name="cfn-cognito-userpool-deletionprotection"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_ServiceNo
 ---
 
 # ServiceNowServiceCatalogConfiguration
-<a name="API_ServiceNowServiceCatalogConfiguration"></a>
 
 Provides the configuration information for crawling service catalog items in the ServiceNow site
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/tag-contacts-a
 ---
 
 # Tag contacts on the Contact details page in Connect Customer
-<a name="tag-contacts-admin"></a>
 
 Tags are key-value pairs that help you categorize and organize contacts so you can find related contacts in **Contact search**. On the **Contact details** page, you can add up to 6 tags to an in-progress or completed contact that you can access.
 

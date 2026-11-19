@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Lookb
 ---
 
 # LookbackWindow
-<a name="API_LookbackWindow"></a>
 
 The lookback window setup of an incremental refresh configuration.
 

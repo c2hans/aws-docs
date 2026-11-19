@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Fa
 ---
 
 # FailoverSlateConfigurationSummary
-<a name="API_FailoverSlateConfigurationSummary"></a>
 
 Summary information about a failover slate configuration.
 

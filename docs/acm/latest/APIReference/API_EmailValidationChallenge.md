@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_EmailValidat
 ---
 
 # EmailValidationChallenge
-<a name="API_EmailValidationChallenge"></a>
 
 Contains the email addresses used for email-based domain validation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ColumnInf
 ---
 
 # ColumnInfo
-<a name="API_ColumnInfo"></a>
 
 Information about the columns in a query execution result.
 

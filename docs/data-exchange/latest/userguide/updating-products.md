@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/updating-
 ---
 
 # Updating data products in AWS Marketplace Management Portal
-<a name="updating-products"></a>
 
 The following sections describe how to update your AWS Data Exchange products in AWS Marketplace Management Portal. The instructions assume that you're a provider who is familiar with [Data in AWS Data Exchange](data-sets.md). After you publish a product, you can edit the product's details and its public offer. You can also update the underlying data sets by publishing new revisions to subscribers. For more information, see [Revisions](data-sets.md#revisions).
 

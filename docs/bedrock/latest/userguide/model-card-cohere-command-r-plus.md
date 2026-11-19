@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohe
 ---
 
 # Command R\+
-<a name="model-card-cohere-command-r-plus"></a>
 
 ## ![Cohere logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/cohere.png) Cohere — Command R\+
 <a name="model-card-cohere-command-r-plus-header"></a>

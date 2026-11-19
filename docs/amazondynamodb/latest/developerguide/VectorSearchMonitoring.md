@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Vec
 ---
 
 # Monitoring vector index capacity
-<a name="VectorSearchMonitoring"></a>
 
 To monitor capacity consumption for vector index operations, set the `ReturnConsumedCapacity` parameter to `INDEXES` or `TOTAL` in your `SearchVectors` requests, or to `INDEXES` in your write API requests.
 

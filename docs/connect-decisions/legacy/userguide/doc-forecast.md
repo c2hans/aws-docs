@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/doc-f
 ---
 
 # Days of Cover
-<a name="doc-forecast"></a>
 
 If you use Days of Cover (DoC) to manage your inventory levels, then this would be an appropriate policy setting to drive the calculation of target inventory levels and RoQ. DoC inventory policy uses the configured days of coverage. This policy doesn’t consider sourcing schedule (vendor review calendar) or vendor lead times to compute DOC. DOC is based on the *target\_doc\_limit* field in the *inventory\_policy* data entity. Note that, for weekly planning, *target\_doc\_limit* still uses unit of day. A coverage of 2 weeks translates to 14 days. DoC policy can be used with forecast (*doc\_fcst*) or demand (*doc\_dem*). The difference between *doc\_fcst* and *doc\_dem* is the forecast source. *doc\_fcst* is based on forecast, while *doc\_dem* is based on the demand history in *outbound\_order\_line*. The forecast based days of coverage uses P50 of forecast, while the demand based planning uses the last 30 days of demand history to calculate average consumption rate.
 

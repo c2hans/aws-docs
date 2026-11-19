@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/edit-input-security-
 ---
 
 # Editing an input security group
-<a name="edit-input-security-group"></a>
 
 You can edit any of the fields in an input security group. You can perform these edits at any time, even if the input security group is attached to an input that is attached to a MediaLive channel that is running.
 

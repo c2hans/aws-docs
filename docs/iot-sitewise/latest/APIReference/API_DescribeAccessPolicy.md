@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeAccessPolicy
-<a name="API_DescribeAccessPolicy"></a>
 
 Describes an access policy, which specifies an identity's access to an AWS IoT SiteWise Monitor portal or project.
 

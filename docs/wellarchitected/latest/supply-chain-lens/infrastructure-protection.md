@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Infrastructure protection
-<a name="infrastructure-protection"></a>
 
 | SCSEC06: How do you secure and isolate the different stages of your supply chain? |
 | --- |

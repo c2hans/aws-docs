@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Member
 ---
 
 # MemberDetail
-<a name="API_MemberDetail"></a>
 
 Details about a member account in a behavior graph.
 

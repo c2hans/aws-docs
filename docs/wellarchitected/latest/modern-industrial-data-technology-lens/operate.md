@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Operate
-<a name="operate"></a>
 
 |  MIDAOPS03: How do you understand the health of your industrial data workload?  |
 | --- |

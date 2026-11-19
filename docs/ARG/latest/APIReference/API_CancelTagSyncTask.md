@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_CancelTagSyn
 ---
 
 # CancelTagSyncTask
-<a name="API_CancelTagSyncTask"></a>
 
 Cancels the specified tag-sync task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-u
 ---
 
 # Change the primary key in a set of multi-Region keys
-<a name="multi-region-update"></a>
 
 Every set of related multi-Region keys must have a primary key. But you can change the primary key. This action, known as *updating the primary Region*, converts the current primary key to a replica key and converts one of the related replica keys to the primary key. You might do this if you need to delete the current primary key while maintaining the replica keys, or to locate the primary key in the same Region as your key administrators.
 

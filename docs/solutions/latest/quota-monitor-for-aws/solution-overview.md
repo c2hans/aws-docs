@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 ---
 
 # Monitor resource usage and send notifications when approaching quotas
-<a name="solution-overview"></a>
 
 Publication date: *September 2016*. Visit the [CHANGELOG.md](https://github.com/aws-solutions/automations-for-aws-firewall-manager/blob/main/CHANGELOG.md) in our GitHub repository to track version-specific improvements and fixes.
 

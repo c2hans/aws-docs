@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Descr
 ---
 
 # DescribeRestoreJob
-<a name="API_DescribeRestoreJob"></a>
 
 Returns metadata associated with a restore job that is specified by a job ID.
 

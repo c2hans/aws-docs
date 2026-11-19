@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 ---
 
 # ImagePackage
-<a name="API_ImagePackage"></a>
 
 A software package that's installed on an image, as detected by AWS Systems Manager Inventory at build time. The list includes packages that shipped with the base image.
 

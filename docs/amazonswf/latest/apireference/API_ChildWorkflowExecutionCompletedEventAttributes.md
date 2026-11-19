@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ChildW
 ---
 
 # ChildWorkflowExecutionCompletedEventAttributes
-<a name="API_ChildWorkflowExecutionCompletedEventAttributes"></a>
 
 Provides the details of the `ChildWorkflowExecutionCompleted` event.
 

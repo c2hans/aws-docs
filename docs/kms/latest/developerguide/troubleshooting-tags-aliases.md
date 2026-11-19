@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/troubleshootin
 ---
 
 # Troubleshooting ABAC for AWS KMS
-<a name="troubleshooting-tags-aliases"></a>
 
 Controlling access to KMS keys based on their tags and aliases is convenient and powerful. However, it's prone to a few predictable errors that you'll want to prevent.
 

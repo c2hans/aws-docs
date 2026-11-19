@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/use-contact-se
 ---
 
 # Use contact segment attributes
-<a name="use-contact-segment-attributes"></a>
 
 For scenarios where information for a contact varies between transfers or conferences, such as business unit names that might change as a contact moves between departments, you need to use *contact segment attributes*.
 

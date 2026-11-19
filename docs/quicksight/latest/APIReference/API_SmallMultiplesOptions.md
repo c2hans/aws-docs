@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Small
 ---
 
 # SmallMultiplesOptions
-<a name="API_SmallMultiplesOptions"></a>
 
 Options that determine the layout and display options of a chart's small multiples.
 

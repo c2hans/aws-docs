@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/deleting-keys-
 ---
 
 # Control access to key deletion
-<a name="deleting-keys-adding-permission"></a>
 
 If you use IAM policies to allow AWS KMS permissions, IAM identities that have AWS administrator access (`"Action": "*"`) or AWS KMS full access (`"Action": "kms:*"`) are already allowed to schedule and cancel key the deletion of KMS keys. To allow key administrators to schedule and cancel key deletion in the key policy, use the AWS KMS console or the AWS KMS API.
 
@@ -29,7 +28,7 @@ To give key administrators permission to schedule and cancel key deletion.
 
 1. The next step differs for the *default view* and *policy view* of your key policy. Default view is available only if you are using the default console key policy. Otherwise, only policy view is available.
 
-   When default view is available, a **Switch to policy view** or **Switch to default view** button appears on the **Key policy** tab.
+   When default view is available, a **Switch to policy view** or **Switch to default view** button appears on the **Key policy** tab. If the tab shows a **Default view** and **Policy view (JSON)** control instead, use that control to switch between the views.
    + In default view:
 
      1. Under **Key deletion**, choose **Allow key administrators to delete this key**.

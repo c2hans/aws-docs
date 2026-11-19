@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/int-actions-types
 ---
 
 # Types of actions
-<a name="int-actions-types"></a>
 
 AWS Quick supports two methods of invoking actions, each serving different use cases and authentication models.
 

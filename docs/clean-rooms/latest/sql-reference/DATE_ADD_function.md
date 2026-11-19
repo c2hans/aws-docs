@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/DATE_AD
 ---
 
 # DATE\_ADD function
-<a name="DATE_ADD_function"></a>
 
 Returns the date that is num\_days after start\_date.
 

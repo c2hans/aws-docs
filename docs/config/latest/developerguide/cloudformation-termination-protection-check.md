@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cloudformat
 ---
 
 # cloudformation-termination-protection-check
-<a name="cloudformation-termination-protection-check"></a>
 
 Checks if an AWS CloudFormation stack has termination protection enabled. This rule is NON\_COMPLIANT if termination protection is not enabled on a CloudFormation stack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EventM
 ---
 
 # EventMetadata
-<a name="API_EventMetadata"></a>
 
 Metadata associated with a cluster event, which may include details about various resource types.
 

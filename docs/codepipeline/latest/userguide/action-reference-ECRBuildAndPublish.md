@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # `ECRBuildAndPublish` build action reference
-<a name="action-reference-ECRBuildAndPublish"></a>
 
 This build action allows you to automate building and pushing a new image when a change occurs in your source. This action builds based on a specified Dockerfile location and pushes the image. This build action is not the same as the Amazon ECR source action in CodePipeline, which triggers pipeline when a change occurs in your Amazon ECR source repository. For information about that action, see [Amazon ECR source action reference](action-reference-ECR.md).
 
@@ -152,7 +151,7 @@ In addition, if not already added for the `Commands` action, add the following p
 **Note**
 Scope down the permissions to the pipeline resource level by using resource-based permissions in the service role policy statement.
 
-For more information about this action, see [`ECRBuildAndPublish` build action reference](#action-reference-ECRBuildAndPublish).
+For more information about this action, see [`ECRBuildAndPublish` build action reference](action-reference-ECRBuildAndPublish.md).
 
 ## Action declaration
 <a name="action-reference-ECRBuildAndPublish-example"></a>

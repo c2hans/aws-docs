@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_D
 ---
 
 # DeleteAddressList
-<a name="API_DeleteAddressList"></a>
 
 Deletes an address list.
 

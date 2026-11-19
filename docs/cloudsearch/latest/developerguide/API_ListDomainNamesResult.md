@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Li
 ---
 
 # ListDomainNamesResult
-<a name="API_ListDomainNamesResult"></a>
 
 ## Description
 <a name="API_ListDomainNamesResult_Description"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/al-patien
 ---
 
 # Encounter context
-<a name="al-patient-context"></a>
 
 Encounter context provides the agent with clinical history before the conversation through the `encounterContext` API parameter. The `encounterContext` object contains the field `unstructuredContext`, which accepts free-form text that gives the service background that isn’t spoken aloud during the visit. When you include encounter context, the agent uses it to enrich the generated documentation with background information that was not explicitly discussed during the visit. Encounter context is optional — if you omit it, the session still runs, but providing it helps the service generate a more accurate and complete note, because providers rarely restate a patient’s full history out loud.
 

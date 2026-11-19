@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSRS.Logs.htm
 ---
 
 # SSRS and PBIRS log files
-<a name="SSRS.Logs"></a>
 
 You can list, view, and download SSRS and PBIRS log files. Log files follow a naming convention of ReportServerService\_{{timestamp}}.log and are located in the `D:\rdsdbdata\Log\SSRS` directory. (The `D:\rdsdbdata\Log` directory is also the parent directory for error logs and SQL Server Agent logs.)
 

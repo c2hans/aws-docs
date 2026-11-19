@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # GeneratedPolicyProperties
-<a name="API_GeneratedPolicyProperties"></a>
 
 Contains the generated policy details.
 

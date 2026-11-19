@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_HealthCheckCon
 ---
 
 # HealthCheckConfig
-<a name="API_HealthCheckConfig"></a>
 
 The health check configuration for a managed endpoint. Defines how the service probes instances in the Auto Scaling group to determine their health status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DeleteCloudConnector
-<a name="API_DeleteCloudConnector"></a>
 
 Deletes a cloud connector.
 

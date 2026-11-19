@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sa-update-
 ---
 
 # Update the AWS IoT SiteWise Edge application configuration
-<a name="sa-update-config"></a>
 
 There are a few things to consider when updating an AWS IoT SiteWise Edge application configuration on **Siemens Industrial Edge**.
 

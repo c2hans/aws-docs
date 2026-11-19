@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ProfileSummary
-<a name="API_ProfileSummary"></a>
 
 Summary of a profile.
 

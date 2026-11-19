@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/limits.ht
 ---
 
 # Direct Connect quotas
-<a name="limits"></a>
 
 The following table lists the quotas related to Direct Connect.
 

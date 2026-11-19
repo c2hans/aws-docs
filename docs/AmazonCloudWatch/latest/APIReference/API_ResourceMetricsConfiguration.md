@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # ResourceMetricsConfiguration
-<a name="API_ResourceMetricsConfiguration"></a>
 
 Represents a resource metrics configuration for an AWS resource. A resource metrics configuration enables detailed metric collection for the resource that is identified by its Amazon Resource Name (ARN). Each AWS resource can have only one resource metrics configuration.
 

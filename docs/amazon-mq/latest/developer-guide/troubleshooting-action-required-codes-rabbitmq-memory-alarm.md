@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/trouble
 ---
 
 # Amazon MQ for RabbitMQ: High memory alarm
-<a name="troubleshooting-action-required-codes-rabbitmq-memory-alarm"></a>
 
 Amazon MQ for RabbitMQ will raise a high memory alarm when the broker's memory usage, identified by CloudWatch metric `RabbitMQMemUsed`, exceeds the memory limit, identified by `RabbitMQMemLimit`.
 

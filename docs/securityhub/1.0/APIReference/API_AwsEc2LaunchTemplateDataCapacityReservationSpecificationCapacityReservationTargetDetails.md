@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataCapacityReservationSpecificationCapacityReservationTargetDetails
-<a name="API_AwsEc2LaunchTemplateDataCapacityReservationSpecificationCapacityReservationTargetDetails"></a>
 
  Information about the target Capacity Reservation or Capacity Reservation group in which to run an Amazon EC2 instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Constraints
-<a name="API_marketplace-discovery_Constraints"></a>
 
 Constraints that control how a buyer can configure a rate card.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-logging.html
 ---
 
 # Mail Manager logging
-<a name="eb-logging"></a>
 
 Mail Manager logging provides detailed visibility into your Mail Manager operations. The logging functionality tracks message flow from initial receipt at ingress endpoints through message processing based on your configured rule sets and rules.
 

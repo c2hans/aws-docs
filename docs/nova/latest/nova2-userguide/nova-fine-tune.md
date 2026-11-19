@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-fine-tu
 ---
 
 # Supervised fine-tuning (SFT)
-<a name="nova-fine-tune"></a>
 
 Supervised fine-tuning (SFT) trains a model using labeled input-output pairs. The model learns from demonstration examples consisting of prompts and responses, refining its capabilities to align with specific tasks, instructions, or desired behaviors.
 

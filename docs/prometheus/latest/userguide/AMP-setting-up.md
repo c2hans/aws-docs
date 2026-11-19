@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-setting-
 ---
 
 # Set up AWS
-<a name="AMP-setting-up"></a>
 
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>

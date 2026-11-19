@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/setup-jupyter-conn
 ---
 
 # Connecting a client to the Jupyter Notebook server on a DLAMI instance
-<a name="setup-jupyter-connect"></a>
 
 After you [start the Jupyter Notebook server on your DLAMI instance](setup-jupyter-start-server.md), configure your Windows, macOS, or Linux client to connect to the server. When you connect, you can create and access Jupyter notebooks on the server in your workspace and run your deep learning code on the server.
 

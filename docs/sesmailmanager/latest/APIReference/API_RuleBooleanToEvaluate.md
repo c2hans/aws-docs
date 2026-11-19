@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RuleBooleanToEvaluate
-<a name="API_RuleBooleanToEvaluate"></a>
 
 The union type representing the allowed types of operands for a boolean condition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-list-domai
 ---
 
 # Listing ACME domain validations
-<a name="sdk-acme-list-domain-validations"></a>
 
 The following example shows how to use the [ListAcmeDomainValidations](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListAcmeDomainValidations.html) function.
 

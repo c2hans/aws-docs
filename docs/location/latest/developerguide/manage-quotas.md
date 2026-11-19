@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/manage-qu
 ---
 
 # Manage quotas with Service Quotas
-<a name="manage-quotas"></a>
 
 Service Quotas console allows you to [request quota increases or decrease quota](https://console.aws.amazon.com/servicequotas/home#!/services/geo/quotas) for adjustable quotas. Service quotas are the maximum number of API calls or resources you can have per AWS account and AWS Region. When requesting a quota increase, select the Region you require the quota increase in since most quotas are Region-specific. Amazon Location Service denies additional requests that exceed the service quota.
 

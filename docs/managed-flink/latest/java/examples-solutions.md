@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/examples-solut
 ---
 
 # Training workshops, labs, and solution implementations
-<a name="examples-solutions"></a>
 
 The following end-to-end examples demonstrate advanced Managed Service for Apache Flink solutions.
 

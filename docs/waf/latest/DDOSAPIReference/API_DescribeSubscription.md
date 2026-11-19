@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Describe
 ---
 
 # DescribeSubscription
-<a name="API_DescribeSubscription"></a>
 
 Provides details about the AWS Shield Advanced subscription for an account.
 

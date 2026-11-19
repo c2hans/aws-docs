@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsI
 ---
 
 # AnalyticsIntentStageResult
-<a name="API_AnalyticsIntentStageResult"></a>
 
 An object containing the results for the intent stage metrics you requested and the bin and/or group they refer to, if applicable.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_LDA
 ---
 
 # LDAPSSettingInfo
-<a name="API_LDAPSSettingInfo"></a>
 
 Contains general information about the LDAPS settings.
 

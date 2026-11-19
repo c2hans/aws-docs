@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CancelCertif
 ---
 
 # CancelCertificateTransfer
-<a name="API_CancelCertificateTransfer"></a>
 
 Cancels a pending transfer for the specified certificate.
 

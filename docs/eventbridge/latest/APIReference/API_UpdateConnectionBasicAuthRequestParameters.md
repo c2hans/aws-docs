@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Upda
 ---
 
 # UpdateConnectionBasicAuthRequestParameters
-<a name="API_UpdateConnectionBasicAuthRequestParameters"></a>
 
 The Basic authorization parameters for the connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeletePool
-<a name="API_DeletePool"></a>
 
 Deletes an existing pool. Deleting a pool disassociates all origination identities from that pool.
 

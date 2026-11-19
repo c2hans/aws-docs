@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Cloud
 ---
 
 # CloudWatchMonitoringConfiguration
-<a name="API_CloudWatchMonitoringConfiguration"></a>
 
 A configuration for CloudWatch monitoring. You can configure your jobs to send log information to CloudWatch Logs.
 

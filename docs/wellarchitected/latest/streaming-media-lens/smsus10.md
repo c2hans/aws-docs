@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Measurement and optimization
-<a name="smsus10"></a>
 
 Without measurement and ownership, sustainability improvements are one-time efforts that decay.
 

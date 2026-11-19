@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/cw-exampl
 ---
 
 # Working with Amazon CloudWatch alarms with AWS SDK for PHP Version 3
-<a name="cw-examples-work-with-alarms"></a>
 
 An Amazon CloudWatch alarm watches a single metric over a time period you specify. It performs one or more actions based on the value of the metric relative to a given threshold over a number of time periods.
 

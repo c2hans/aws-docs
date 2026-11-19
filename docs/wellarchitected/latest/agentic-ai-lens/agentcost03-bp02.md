@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTCOST03-BP02 Cost optimize through intelligent compression and pruning of context windows
-<a name="agentcost03-bp02"></a>
 
  In long-running agent sessions, raw conversation history can silently drive costs up, as every turn gets paid for again on every subsequent invocation. Compression, selective retrieval, and pruning keep context proportional to what the agent needs for the current decision rather than growing with session length.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Supporting table partition
-<a name="AuroraPostgreSQL.QPM.Partitiontable"></a>
 
 Aurora PostgreSQL Query Plan Management (QPM) supports declarative table partitioning in the following versions:
 + 15.3 and higher 15 versions

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Inference
 ---
 
 # InferenceAcceleratorInfo
-<a name="API_InferenceAcceleratorInfo"></a>
 
 **Note**
 Amazon Elastic Inference is no longer available.

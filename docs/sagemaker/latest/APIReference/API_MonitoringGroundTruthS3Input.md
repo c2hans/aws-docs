@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringGroundTruthS3Input
-<a name="API_MonitoringGroundTruthS3Input"></a>
 
 The ground truth labels for the dataset used for the monitoring job.
 

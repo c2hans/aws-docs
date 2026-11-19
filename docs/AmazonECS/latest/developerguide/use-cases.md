@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/use-case
 ---
 
 # Amazon ECS task definition use cases
-<a name="use-cases"></a>
 
 Learn more about how to write task definitions for various AWS services and features.
 

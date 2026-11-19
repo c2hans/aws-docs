@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # DescribeScalableTargets
-<a name="API_DescribeScalableTargets"></a>
 
 Gets information about the scalable targets in the specified namespace.
 

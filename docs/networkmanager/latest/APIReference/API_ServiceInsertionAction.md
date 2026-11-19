@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_S
 ---
 
 # ServiceInsertionAction
-<a name="API_ServiceInsertionAction"></a>
 
 Describes the action that the service insertion will take for any segments associated with it.
 

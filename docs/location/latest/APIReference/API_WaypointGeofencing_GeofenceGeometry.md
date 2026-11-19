@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # GeofenceGeometry
-<a name="API_WaypointGeofencing_GeofenceGeometry"></a>
 
 Contains the geofence geometry details.
 

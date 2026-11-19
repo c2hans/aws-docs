@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/maori-data-lens/m
 ---
 
 # MD\_OPS 3: How do you use or share Māori data back with Māori?
-<a name="md_ops-3-how-do-you-use-or-share-māori-data"></a>
 
  Organisations use data in many different ways to design and deliver products and services. They can use it to gain insight and understanding of their organisation, their industry, and the wider world around them. Organisations should assess any legal and ethical implications when making decisions relating to how data will be used and shared.
 +  **MD\_OPS03-BP01: Collecting and separating Māori data appropriately**. Organisations can consider how to collect and separate data along different dimensions such as iwi and hapū or a Māori organisation. This may make data more relevant or useful to different groups or communities. This needs to be considered when designing your initial data collection plan to verify that the right data is collected and organised early. For example, a government agency may want to report on specific agency outcomes for Māori populations. If they captured an individual's hapū affiliations, they could report information at a hapū level. However, if they only captured an individual's record, then they can only report this at an individual level.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-encrypti
 ---
 
 # Maintaining AWS KMS encryption key access in EventBridge
-<a name="eb-encryption-event-bus-key-managment"></a>
 
 To ensure EventBridge always retains access to the necessary customer managed key:
 + Do not delete a customer managed key until you are sure all resources encrypted with it have been processed.

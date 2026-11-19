@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::Gateway GatewayAlbTestTrafficRules
-<a name="aws-properties-ecs-gateway-gatewayalbtesttrafficrules"></a>
 
 The rules that route test traffic to services behind a gateway during progressive deployments.
 

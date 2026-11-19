@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Exaso
 ---
 
 # ExasolParameters
-<a name="API_ExasolParameters"></a>
 
 The required parameters for connecting to an Exasol data source.
 

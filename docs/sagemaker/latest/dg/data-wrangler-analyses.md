@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler-analys
 ---
 
 # Analyze and Visualize
-<a name="data-wrangler-analyses"></a>
 
 Amazon SageMaker Data Wrangler includes built-in analyses that help you generate visualizations and data analyses in a few clicks. You can also create custom analyses using your own code.
 

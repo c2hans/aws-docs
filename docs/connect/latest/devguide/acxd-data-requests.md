@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-data-reques
 ---
 
 # Data requests
-<a name="acxd-data-requests"></a>
 
 Configure webhook integrations for retrieving or sending data during conversations.
 

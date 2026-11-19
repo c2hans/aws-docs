@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.FLAG_O
 ---
 
 # FLAG\_OUTLIERS
-<a name="recipe-actions.FLAG_OUTLIERS"></a>
 
 Returns a new column containing a customizable value in each row that indicates if the source column value is an outlier.
 

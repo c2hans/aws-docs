@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InventoryAggregator
-<a name="API_InventoryAggregator"></a>
 
 Specifies the inventory type and attribute for the aggregation execution.
 
@@ -12,7 +11,7 @@ Specifies the inventory type and attribute for the aggregation execution.
 
  ** Aggregators **   <a name="systemsmanager-Type-InventoryAggregator-Aggregators"></a>
 Nested aggregators to further refine aggregation for an inventory type.
-Type: Array of [InventoryAggregator](#API_InventoryAggregator) objects
+Type: Array of [InventoryAggregator](API_InventoryAggregator.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Delete
 ---
 
 # DeleteTablePolicy
-<a name="API_s3Buckets_DeleteTablePolicy"></a>
 
 Deletes a table policy. For more information, see [Deleting a table policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-table-policy.html#table-policy-delete) in the *Amazon Simple Storage Service User Guide*.
 

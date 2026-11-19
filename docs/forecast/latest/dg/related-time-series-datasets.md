@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/related-time-series-d
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # Using Related Time Series Datasets
-<a name="related-time-series-datasets"></a>
 
 A related time series dataset includes time-series data that isn't included in a target time series dataset and might improve the accuracy of your predictor.
 

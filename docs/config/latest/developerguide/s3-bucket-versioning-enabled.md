@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-v
 ---
 
 # s3-bucket-versioning-enabled
-<a name="s3-bucket-versioning-enabled"></a>
 
 Checks if versioning is enabled for your S3 buckets. Optionally, the rule checks if MFA delete is enabled for your S3 buckets.
 

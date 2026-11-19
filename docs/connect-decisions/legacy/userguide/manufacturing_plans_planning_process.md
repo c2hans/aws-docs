@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/manuf
 ---
 
 # Planning process
-<a name="manufacturing_plans_planning_process"></a>
 
 Manufacturing Plans include material, transfer, and production plans. These plans are created based on the configured network topology for an item. The following illustration shows the steps involved in generating these plans. These steps are repeated for each product or site combination that is in the scope of a Manufacturing Plan.
 

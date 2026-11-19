@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/usin
 ---
 
 # Using the AWS SDK for Java 2.x
-<a name="using"></a>
 
 This chapter shows you how to use the AWS SDK for Java 2.x effectively. Learn to create service clients, make requests, handle responses, and manage errors. The chapter covers synchronous and asynchronous programming, paginated results, waiters for resource monitoring, and performance optimization.
 

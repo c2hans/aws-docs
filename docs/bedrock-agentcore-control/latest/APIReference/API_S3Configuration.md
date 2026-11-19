@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # S3Configuration
-<a name="API_S3Configuration"></a>
 
 The Amazon S3 configuration for a gateway. This structure defines how the gateway accesses files in Amazon S3.
 

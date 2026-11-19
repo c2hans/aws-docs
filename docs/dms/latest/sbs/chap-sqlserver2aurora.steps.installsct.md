@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-sqlserver2aurora.ste
 ---
 
 # Step 1: Install the SQL Drivers and AWS Schema Conversion Tool on Your Local Computer
-<a name="chap-sqlserver2aurora.steps.installsct"></a>
 
 First, install the SQL drivers and the AWS Schema Conversion Tool (AWS SCT) on your local computer. Do the following:
 

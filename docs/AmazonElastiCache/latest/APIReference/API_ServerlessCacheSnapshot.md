@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ServerlessCacheSnapshot
-<a name="API_ServerlessCacheSnapshot"></a>
 
 The resource representing a serverless cache snapshot. Available for Valkey, Redis OSS and Serverless Memcached only.
 

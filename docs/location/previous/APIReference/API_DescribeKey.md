@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Descr
 ---
 
 # DescribeKey
-<a name="API_DescribeKey"></a>
 
 Retrieves the API key resource details.
 

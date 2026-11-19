@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # AudioConfiguration
-<a name="structures-AudioConfiguration"></a>
 
 Complex type specifying the stream’s audio configuration to be used by the encoder.
 

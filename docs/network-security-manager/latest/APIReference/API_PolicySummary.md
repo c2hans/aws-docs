@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # PolicySummary
-<a name="API_PolicySummary"></a>
 
 Summary information about a policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RegistrationAssociationMetadata
-<a name="API_RegistrationAssociationMetadata"></a>
 
 Metadata for the origination identity that is associated with the registration.
 

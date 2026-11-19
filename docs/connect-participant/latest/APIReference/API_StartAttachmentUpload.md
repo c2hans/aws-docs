@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/
 ---
 
 # StartAttachmentUpload
-<a name="API_connect-participant_StartAttachmentUpload"></a>
 
 Provides a pre-signed Amazon S3 URL in response for uploading the file directly to S3.
 

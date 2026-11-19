@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Asser
 ---
 
 # Assertion
-<a name="API_Assertion"></a>
 
 Represents a resilience assertion for a service.
 

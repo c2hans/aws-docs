@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost01-
 ---
 
 # COST01-BP04 Keep up-to-date with new service releases
-<a name="cost01-bp04"></a>
 
  Cloud providers release new services, features, and price reductions constantly. Each release can make part of your architecture cheaper to run, and each price cut can change a decision you made months ago. Staying current, through your own monitoring and through experts who track the cloud provider, turns these changes into recurring savings.
 

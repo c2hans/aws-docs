@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/firewall-p
 ---
 
 # Unsubscribe from Infoblox
-<a name="firewall-partner-infoblox-unsubscribe"></a>
 
 **Important**
 To stop subscription charges, you must remove all Infoblox rules from your DNS Firewall rule groups in addition to unsubscribing from AWS Marketplace. If you unsubscribe but leave the rules in your rule groups, charges continue until you remove the rules.

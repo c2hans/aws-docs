@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BuildA
 ---
 
 # BuildArtifacts
-<a name="API_BuildArtifacts"></a>
 
 Information about build output artifacts.
 

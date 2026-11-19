@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/qu
 ---
 
 # Create a player latency policy
-<a name="queues-design-latency"></a>
 
 If your placement requests include player latency data, Amazon GameLift Servers finds game sessions in locations with the lowest average latency for all players. Placing game sessions based on average player latency prevents Amazon GameLift Servers from placing most players in games with high latency. However, Amazon GameLift Servers still places players with extreme latency. To accommodate these players, create player latency policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AddIngressGa
 ---
 
 # AddIngressGatewayBridgeRequest
-<a name="API_AddIngressGatewayBridgeRequest"></a>
 
 Create a bridge with the ingress bridge type. An ingress bridge is a ground-to-cloud bridge. The content originates at your premises and is delivered to the cloud.
 

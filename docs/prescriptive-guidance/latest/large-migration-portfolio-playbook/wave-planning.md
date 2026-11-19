@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task 5: Defining the wave planning process
-<a name="wave-planning"></a>
 
 Wave planning is a key milestone in a large migration. In a wave plan, you group similar applications together, accounting for infrastructure and application dependencies (such as a shared database), the priority of the applications, similarity of application architecture, and business functionality. You then review the wave plan with the application and infrastructure teams to confirm their availability during the specified migration and cutover window.
 

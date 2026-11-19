@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ReadN
 ---
 
 # ReadNoneConnectionMetadata
-<a name="API_ReadNoneConnectionMetadata"></a>
 
 Read-only metadata for connections that do not require authentication credentials.
 

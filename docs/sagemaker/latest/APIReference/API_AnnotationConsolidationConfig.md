@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Annota
 ---
 
 # AnnotationConsolidationConfig
-<a name="API_AnnotationConsolidationConfig"></a>
 
 Configures how labels are consolidated across human workers and processes output data.
 

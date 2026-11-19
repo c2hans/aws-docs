@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/troubleshooting-va
 ---
 
 # MediaTailor VAST parsing ad skipping troubleshooting
-<a name="troubleshooting-vast-parsing-skipping"></a>
 
 When ads are skipped with `VAST_PARSING_ERROR` or `MEDIA_FILE_UNAVAILABLE`, you have issues with your VAST responses or ad media files. AWS Elemental MediaTailor requires properly formatted VAST responses and accessible media files for successful ad insertion. This troubleshooting guide explains how to identify and resolve these issues.
 

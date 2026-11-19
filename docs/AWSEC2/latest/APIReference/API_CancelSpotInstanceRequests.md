@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelSpo
 ---
 
 # CancelSpotInstanceRequests
-<a name="API_CancelSpotInstanceRequests"></a>
 
 Cancels one or more Spot Instance requests.
 

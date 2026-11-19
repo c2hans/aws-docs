@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # PatchFilterGroup
-<a name="API_PatchFilterGroup"></a>
 
 A set of patch filters, typically used for approval rules.
 

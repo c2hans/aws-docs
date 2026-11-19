@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Scalability
-<a name="scalability"></a>
 
  When you use AWS, you can scale your application easily because of the elastic nature of the cloud. You can scale your application vertically and horizontally.
 

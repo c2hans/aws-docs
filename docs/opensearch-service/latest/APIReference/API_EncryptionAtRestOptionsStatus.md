@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # EncryptionAtRestOptionsStatus
-<a name="API_EncryptionAtRestOptionsStatus"></a>
 
 Status of the encryption at rest options for the specified OpenSearch Service domain.
 

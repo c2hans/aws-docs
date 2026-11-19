@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/github-webhoo
 ---
 
 # GitHub webhook events
-<a name="github-webhook"></a>
 
 You can use webhook filter groups to specify which GitHub webhook events trigger a build. For example, you can specify that a build is only triggered for changes to specific branches.
 

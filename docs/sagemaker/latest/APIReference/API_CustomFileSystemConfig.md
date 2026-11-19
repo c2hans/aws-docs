@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Custom
 ---
 
 # CustomFileSystemConfig
-<a name="API_CustomFileSystemConfig"></a>
 
 The settings for assigning a custom file system to a user profile or space for an Amazon SageMaker AI Domain. Permitted users can access this file system in Amazon SageMaker AI Studio.
 

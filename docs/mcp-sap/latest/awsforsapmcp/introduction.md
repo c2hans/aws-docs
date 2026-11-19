@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mcp-sap/latest/awsforsapmcp/introduction
 ---
 
 # What is the AWS for SAP MCP Server?
-<a name="introduction"></a>
 
 With AWS for SAP MCP Server ("MCP Server"), running on Amazon Bedrock AgentCore ("AgentCore"), you can give your AI agents structured, protocol-driven access to SAP S/4HANA, SAP ECC, and SAP SuccessFactors OData (Open Data Protocol) V2 and V4 services through the Model Context Protocol (MCP). The MCP Server surfaces SAP operations as discoverable MCP tools, providing you with a secure, standardized interface for AI-driven SAP interactions.
 

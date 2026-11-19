@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Delete a portal in API Gateway
-<a name="apigateway-portals-delete-portal"></a>
 
 When you delete a portal, it cannot be recovered and you must disable it first. If you want to remove your portal from the web, you can disable it. This lets you modify your portal and republish it later.
 

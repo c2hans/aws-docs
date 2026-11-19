@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Update the guidance
-<a name="update-the-solution"></a>
 
 This chapter describes how to update a previously deployed instance of the Guidance for Connected Mobility on AWS. Choose the appropriate update path based on the scope of changes you are applying.
 

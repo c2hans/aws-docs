@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/show-view-bloc
 ---
 
 # Flow block in Connect Customer: Show view
-<a name="show-view-block"></a>
 
 This topic defines the flow block to create step-by-step workflow guides to help agents provide consistent customer experiences, as well as guides to enable interactive customer experiences.
 

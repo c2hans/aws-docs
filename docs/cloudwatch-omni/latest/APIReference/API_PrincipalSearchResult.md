@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # PrincipalSearchResult
-<a name="API_PrincipalSearchResult"></a>
 
 A user or group matched by SearchPrincipals.
 

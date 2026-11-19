@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/set-up-sns.ht
 ---
 
 # Configure Amazon SNS topics for notifications
-<a name="set-up-sns"></a>
 
 The easiest way to set up notifications is to create an Amazon SNS topic when you create a notification rule. You can use an existing Amazon SNS topic if it meets the following requirements:
 + It was created in the same AWS Region as the resource (build project, deployment application, repository, or pipeline) for which you want to create notification rules.

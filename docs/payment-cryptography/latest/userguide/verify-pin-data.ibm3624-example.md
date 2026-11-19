@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/ve
 ---
 
 # Validate a PIN against previously stored IBM3624 pin offset
-<a name="verify-pin-data.ibm3624-example"></a>
 
 In this example, you validate a cardholder-provided PIN against the pin offset stored on file with the card issuer or processor. The inputs include the verification key (PVK), the encryption key (PEK), the primary account number, the encrypted PIN block from the payment terminal (or other upstream provider such as a card network), and the previously stored pin offset. If the PIN matches, the API returns an HTTP/200 response.
 

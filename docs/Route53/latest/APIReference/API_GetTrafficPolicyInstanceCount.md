@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetTraff
 ---
 
 # GetTrafficPolicyInstanceCount
-<a name="API_GetTrafficPolicyInstanceCount"></a>
 
 Gets the number of traffic policy instances that are associated with the current AWS account.
 

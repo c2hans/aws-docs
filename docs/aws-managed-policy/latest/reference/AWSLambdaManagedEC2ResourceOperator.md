@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLambdaManagedEC2ResourceOperator
-<a name="AWSLambdaManagedEC2ResourceOperator"></a>
 
 **Description**: This policy grants permissions to to create and administer EC2 resources managed by the Lambda Managed Instances, and descriptive permissions.
 

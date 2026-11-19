@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Updat
 ---
 
 # UpdateLoggingConfiguration
-<a name="API_UpdateLoggingConfiguration"></a>
 
 Updates the log group ARN or the workspace ID of the current rules and alerting logging configuration.
 

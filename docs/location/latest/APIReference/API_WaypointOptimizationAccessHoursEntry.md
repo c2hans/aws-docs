@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationAccessHoursEntry
-<a name="API_WaypointOptimizationAccessHoursEntry"></a>
 
 Hours of entry.
 

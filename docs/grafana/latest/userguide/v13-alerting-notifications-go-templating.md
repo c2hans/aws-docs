@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v13-alerting-no
 ---
 
 # Using Go's templating language
-<a name="v13-alerting-notifications-go-templating"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 13.x**.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetLayoutGroup
-<a name="API_SheetLayoutGroup"></a>
 
 A group of elements within a sheet layout.
 

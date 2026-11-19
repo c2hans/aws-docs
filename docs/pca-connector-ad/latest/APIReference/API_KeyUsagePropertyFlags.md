@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # KeyUsagePropertyFlags
-<a name="API_KeyUsagePropertyFlags"></a>
 
 Specifies key usage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CreateGateway
-<a name="API_CreateGateway"></a>
 
 Creates a gateway for Amazon Bedrock Agent. A gateway serves as an integration point between your agent and external services.
 

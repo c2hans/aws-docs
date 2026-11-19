@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceFlee
 ---
 
 # InstanceFleetStateChangeReason
-<a name="API_InstanceFleetStateChangeReason"></a>
 
 Provides status change reason details for the instance fleet.
 

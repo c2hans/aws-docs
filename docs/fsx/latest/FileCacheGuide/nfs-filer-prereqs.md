@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/nfs-filer-prer
 ---
 
 # Prerequisites for linking to on-premises NFS data repositories
-<a name="nfs-filer-prereqs"></a>
 
 Before you can link your cache to an on-premises NFS data store, verify that your resources and configurations meet the following requirements:
 + Your on-premises NFS file system must support NFSv3.

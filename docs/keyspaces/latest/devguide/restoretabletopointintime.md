@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/restoretableto
 ---
 
 # Restore a table from backup to a specified point in time in Amazon Keyspaces
-<a name="restoretabletopointintime"></a>
 
 The following section demonstrates how to restore an existing Amazon Keyspaces table to a specified point in time.
 

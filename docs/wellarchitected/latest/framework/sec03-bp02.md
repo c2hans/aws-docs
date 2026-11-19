@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec03-b
 ---
 
 # SEC03-BP02 Use scalable and centralized permissions management in your workload
-<a name="sec03-bp02"></a>
 
  When you have a workload with rich authorization needs, you must decide who can access and modify resources, often under changing conditions. When that logic lives inside application code or a custom database table, it drifts out of sync across components and becomes hard to audit or change. Manage permissions through a centralized, policy-based authorization service instead, so decisions stay consistent and reviewable as the workload grows.
 

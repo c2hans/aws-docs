@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_ListIn
 ---
 
 # ListIntegrations
-<a name="API_ListIntegrations"></a>
 
 Lists the integrations in your account in descending integrationId order.
 

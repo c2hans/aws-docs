@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/using-service-link
 ---
 
 # Using service-linked roles for Amazon VPC Lattice
-<a name="using-service-linked-roles"></a>
 
 Amazon VPC Lattice uses a service-linked role for the permissions that it requires to call other AWS services on your behalf. For more information, see [Service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html) in the *IAM User Guide*.
 

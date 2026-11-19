@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Notify configurations
-<a name="nx-features-notify-config"></a>
 
 A Notify configuration is the central resource for Notify. It defines your display name, use case, enabled channels, enabled countries, and optional settings such as a default template and an associated phone pool. You send templated SMS and voice code-verification messages against a Notify configuration without provisioning phone numbers or navigating carrier registration; AWS End User Messaging selects an appropriate identity and pre-approved template for you.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Walk stage: Operationalizing and maturing
-<a name="walk"></a>
 
 ![Icon of walking person](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerating-security-maturity/images/guide-img/2162f372-44e6-4f4b-80cc-427f9fca7a33/images/1aa742ab-df70-4536-804e-1ff40dd2f16d.png)
 

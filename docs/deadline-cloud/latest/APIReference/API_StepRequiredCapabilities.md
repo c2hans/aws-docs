@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # StepRequiredCapabilities
-<a name="API_StepRequiredCapabilities"></a>
 
 The details of required step capabilities.
 

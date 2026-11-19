@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Using multi-Region AWS Managed Active Directory with Amazon WorkSpaces
-<a name="using-multi-region-aws-managed-active-directory-with-amazon-workspaces"></a>
 
 [AWS Directory Service for Microsoft Active Directory](https://aws.amazon.com/directoryservice/active-directory/) (MAD) is a fully managed Microsoft Active Directory (AD) that can be paired with Amazon WorkSpaces. Customers choose AWS Managed Microsoft AD because it has built-in high availability, monitoring, and backups. AWS Managed Microsoft AD Enterprise edition adds the ability to configure [Multi-Region Replication](https://aws.amazon.com/blogs/aws/multi-region-replication-now-enabled-for-aws-managed-microsoft-active-directory/). This feature automatically configures inter-region networking connectivity, deploys domain controllers, and replicates all the Active Directory data across multiple regions, ensuring that Windows and Linux workloads residing in those regions can connect to and use AWS MAD with low latency and high performance. Replicated MAD regions cannot be [directly registered with WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/register-deregister-directory.html), however a replicated MAD directory can be registered with WorkSpaces by configuring an AD Connector (ADC) to point to your replicated Domain Controllers.
 

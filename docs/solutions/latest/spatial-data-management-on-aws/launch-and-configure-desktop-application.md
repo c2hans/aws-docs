@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Launch and Configure Desktop Application
-<a name="launch-and-configure-desktop-application"></a>
 
 Before you can create projects and upload assets, you need to launch the desktop application and create a profile.
 

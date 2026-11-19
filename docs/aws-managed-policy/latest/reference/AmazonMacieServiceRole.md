@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMacieServiceRole
-<a name="AmazonMacieServiceRole"></a>
 
 **Description**: Grants Macie read-only access to resource dependencies in your account in order to enable data analysis.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ctas-console.html
 ---
 
 # Create CTAS queries in the Athena console
-<a name="ctas-console"></a>
 
 In the Athena console, you can create a CTAS query from another query.<a name="ctas-create-from-query"></a>
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ProviderComponentSchema
-<a name="API_ProviderComponentSchema"></a>
 
 The input schema supported by provider service.
 

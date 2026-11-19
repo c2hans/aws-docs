@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/mixpanel-create-account.h
 ---
 
 # Creating a Mixpanel account and configuring the client app
-<a name="mixpanel-create-account"></a>
 
 **Creating a Mixpanel account**
 

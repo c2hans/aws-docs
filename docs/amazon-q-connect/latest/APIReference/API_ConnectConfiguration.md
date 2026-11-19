@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ConnectConfiguration
-<a name="API_amazon-q-connect_ConnectConfiguration"></a>
 
 The configuration information of the Connect Customer data source.
 

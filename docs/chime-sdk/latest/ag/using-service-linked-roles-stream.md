@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/using-service-linked
 ---
 
 # Using the Amazon Chime SDK Voice Connector service linked role policy
-<a name="using-service-linked-roles-stream"></a>
 
 The information in the following sections explains how to:
 + Use the Amazon Chime SDK Voice Connector service linked role policy to stream Amazon Chime SDK Voice Connector media to Kinesis.

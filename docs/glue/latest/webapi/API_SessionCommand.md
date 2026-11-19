@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SessionCommand.ht
 ---
 
 # SessionCommand
-<a name="API_SessionCommand"></a>
 
 The `SessionCommand` that runs the job.
 

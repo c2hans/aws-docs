@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnablePITRForDynamoDbTable`
-<a name="automation-aws-enable-pitr-ddb"></a>
 
  **Description**
 

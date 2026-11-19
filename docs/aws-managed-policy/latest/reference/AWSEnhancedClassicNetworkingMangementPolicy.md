@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSEnhancedClassicNetworkingMangementPolicy
-<a name="AWSEnhancedClassicNetworkingMangementPolicy"></a>
 
 **Description**: Policy to enable enhanced classic networking management feature.
 

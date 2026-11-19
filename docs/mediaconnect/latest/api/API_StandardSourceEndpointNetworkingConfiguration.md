@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StandardSour
 ---
 
 # StandardSourceEndpointNetworkingConfiguration
-<a name="API_StandardSourceEndpointNetworkingConfiguration"></a>
 
 The networking configuration for a standard source endpoint. This is a union type, so exactly one of its members is set: `public` for a publicly accessible endpoint, or `vpc` for an endpoint in a virtual private cloud (VPC).
 

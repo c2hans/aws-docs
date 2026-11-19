@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Crea
 ---
 
 # CreateCollaboration
-<a name="API_CreateCollaboration"></a>
 
 Creates a new collaboration.
 

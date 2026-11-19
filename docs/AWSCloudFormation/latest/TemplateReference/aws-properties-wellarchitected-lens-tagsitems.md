@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WellArchitected::Lens TagsItems
-<a name="aws-properties-wellarchitected-lens-tagsitems"></a>
 
 <a name="aws-properties-wellarchitected-lens-tagsitems-description"></a>The `TagsItems` property type specifies Property description not available. for an [AWS::WellArchitected::Lens](aws-resource-wellarchitected-lens.md).
 

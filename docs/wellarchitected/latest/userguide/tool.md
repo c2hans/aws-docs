@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/tool.ht
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # What is AWS Well-Architected Tool?
-<a name="tool"></a>
 
 AWS Well-Architected Tool (AWS WA Tool) is a service in the cloud that provides a consistent process for measuring your architecture using AWS best practices. AWS WA Tool helps you throughout the product lifecycle by doing the following:
 + Assisting with documenting the decisions that you make

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BuildB
 ---
 
 # BuildBatchFilter
-<a name="API_BuildBatchFilter"></a>
 
 Specifies filters when retrieving batch builds.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_G
 ---
 
 # GetAddonSubscription
-<a name="API_GetAddonSubscription"></a>
 
 Gets detailed information about an Add On subscription.
 

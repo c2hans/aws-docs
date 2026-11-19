@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-ap
 ---
 
 # Publish HTTP APIs for customers to invoke
-<a name="http-api-publish"></a>
 
 You can use stages and custom domain names to publish your API for clients to invoke.
 

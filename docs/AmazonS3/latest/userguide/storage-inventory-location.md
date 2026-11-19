@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-invent
 ---
 
 # Locating your inventory list
-<a name="storage-inventory-location"></a>
 
 When an inventory list is published, the manifest files are published to the following location in the destination bucket.
 

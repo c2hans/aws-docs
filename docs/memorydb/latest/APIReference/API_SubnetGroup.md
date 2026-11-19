@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_SubnetG
 ---
 
 # SubnetGroup
-<a name="API_SubnetGroup"></a>
 
 Represents the output of one of the following operations:
 + CreateSubnetGroup

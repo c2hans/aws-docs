@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::Resolver PipelineConfig
-<a name="aws-properties-appsync-resolver-pipelineconfig"></a>
 
 Use the `PipelineConfig` property type to specify `PipelineConfig` for an AWS AppSync resolver.
 

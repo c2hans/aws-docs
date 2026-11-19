@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Add Account Names ( Optional )
-<a name="add-account-names"></a>
 
 ## Account Map
 <a name="account-map"></a>

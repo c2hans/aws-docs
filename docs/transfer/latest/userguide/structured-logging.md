@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/structured-log
 ---
 
 # Amazon CloudWatch logging for AWS Transfer Family servers
-<a name="structured-logging"></a>
 
 Amazon CloudWatch is a powerful monitoring and observability service that provides comprehensive visibility into your AWS resources, including AWS Transfer Family.
 + Real-time monitoring: CloudWatch monitors Transfer Family resources and applications in real-time, allowing you to track and analyze their performance.

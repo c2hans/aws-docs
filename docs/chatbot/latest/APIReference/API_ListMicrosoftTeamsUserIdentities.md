@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_ListMicr
 ---
 
 # ListMicrosoftTeamsUserIdentities
-<a name="API_ListMicrosoftTeamsUserIdentities"></a>
 
 A list all Microsoft Teams user identities with a mapped role.
 

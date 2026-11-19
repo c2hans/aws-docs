@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Signal
 ---
 
 # SignalExternalWorkflowExecutionFailedEventAttributes
-<a name="API_SignalExternalWorkflowExecutionFailedEventAttributes"></a>
 
 Provides the details of the `SignalExternalWorkflowExecutionFailed` event.
 

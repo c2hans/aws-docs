@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Parall
 ---
 
 # ParallelismConfiguration
-<a name="API_ParallelismConfiguration"></a>
 
 Configuration that controls the parallelism of the pipeline. By default, the parallelism configuration specified applies to all executions of the pipeline unless overridden.
 

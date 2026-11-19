@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/viewing-vector
 ---
 
 # Viewing vector bucket tags
-<a name="viewing-vector-bucket-tags"></a>
 
 You can view or list tags applied to Amazon S3 vector buckets. For more information about tagging vector buckets, see [Using tags with S3 vector buckets](s3-vectors-tags.md).
 

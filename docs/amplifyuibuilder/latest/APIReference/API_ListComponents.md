@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ListComponents
-<a name="API_ListComponents"></a>
 
 Retrieves a list of components for a specified Amplify app and backend environment.
 

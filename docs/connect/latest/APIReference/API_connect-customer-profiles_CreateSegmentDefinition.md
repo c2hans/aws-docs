@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CreateSegmentDefinition
-<a name="API_connect-customer-profiles_CreateSegmentDefinition"></a>
 
 Creates a segment definition associated to the given domain.
 

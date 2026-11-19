@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # OpenResponsesEvaluatorModelConfig
-<a name="API_OpenResponsesEvaluatorModelConfig"></a>
 
  The configuration for using models served through the OpenResponses API in evaluator assessments, including model selection and inference parameters.
 

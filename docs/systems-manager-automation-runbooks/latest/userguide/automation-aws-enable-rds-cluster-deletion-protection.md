@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableRDSClusterDeletionProtection`
-<a name="automation-aws-enable-rds-cluster-deletion-protection"></a>
 
  **Description**
 

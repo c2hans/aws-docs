@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/encryption.ht
 ---
 
 # Encryption for backups in AWS Backup
-<a name="encryption"></a>
 
 ## Independent encryption
 <a name="independent-encryption"></a>

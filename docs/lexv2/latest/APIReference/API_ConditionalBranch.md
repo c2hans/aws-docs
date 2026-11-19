@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Conditiona
 ---
 
 # ConditionalBranch
-<a name="API_ConditionalBranch"></a>
 
 A set of actions that Amazon Lex should run if the condition is matched.
 

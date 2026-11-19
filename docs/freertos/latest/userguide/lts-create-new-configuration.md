@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/lts-create-new
 ---
 
 # Create a new configuration
-<a name="lts-create-new-configuration"></a>
 
 If you're a first-time user, you must create a new configuration to set up the JSON configuration files that IDT for FreeRTOS requires to run tests. You can then run tests or modify the created configuration.
 

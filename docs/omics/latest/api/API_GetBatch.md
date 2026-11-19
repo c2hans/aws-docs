@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetBatch.html
 ---
 
 # GetBatch
-<a name="API_GetBatch"></a>
 
 Retrieves details and current status for a specific run batch, including submission progress and run execution counts.
 

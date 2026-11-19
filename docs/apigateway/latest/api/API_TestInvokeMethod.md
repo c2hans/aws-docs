@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_TestInvokeMeth
 ---
 
 # TestInvokeMethod
-<a name="API_TestInvokeMethod"></a>
 
 Simulate the invocation of a Method in your RestApi with headers, parameters, and an incoming request body.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/websocket-messages-e
 ---
 
 # Understanding WebSocket system messages in elastic channels for Amazon Chime SDK meetings
-<a name="websocket-messages-elastic"></a>
 
 The Amazon Chime SDK sends system messages to all connected clients for events that take place in channels. The following list describes the system messages for elastic channels.
 

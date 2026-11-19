@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ReadA
 ---
 
 # ReadAuthenticationMetadata
-<a name="API_ReadAuthenticationMetadata"></a>
 
 Read-only authentication metadata union containing non-sensitive configuration details for different authentication types.
 

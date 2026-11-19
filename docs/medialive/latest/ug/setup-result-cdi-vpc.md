@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-result-cdi-vpc
 ---
 
 # Result of this procedure
-<a name="setup-result-cdi-vpc"></a>
 
 The results of this setup are illustrated in the diagram that follows. There are three main components:
 + The upstream system (purple boxes).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # MatchedRecord
-<a name="API_MatchedRecord"></a>
 
  The matched record.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_UpdateFiel
 ---
 
 # UpdateField
-<a name="API_connect-cases_UpdateField"></a>
 
 Updates the properties of an existing field.
 

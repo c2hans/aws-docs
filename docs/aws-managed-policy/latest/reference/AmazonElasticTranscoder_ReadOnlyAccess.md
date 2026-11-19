@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonElasticTranscoder\_ReadOnlyAccess
-<a name="AmazonElasticTranscoder_ReadOnlyAccess"></a>
 
 **Description**: Grants users read-only access to Elastic Transcoder and list access to related services.
 

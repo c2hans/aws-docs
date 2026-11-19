@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_FieldToProte
 ---
 
 # FieldToProtect
-<a name="API_FieldToProtect"></a>
 
 Specifies a field type and keys to protect in stored web request data. This is part of the data protection configuration for a web ACL.
 

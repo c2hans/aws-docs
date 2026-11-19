@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/architectur
 ---
 
 # Using architectural decision records to streamline decision-making during development
-<a name="introduction"></a>
 
 *Darius Kunce and Dominik Goby, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_WebAc
 ---
 
 # WebAclCustomization
-<a name="API_WebAclCustomization"></a>
 
 The AWS WAF web ACL customization specified for the distribution tenant.
 

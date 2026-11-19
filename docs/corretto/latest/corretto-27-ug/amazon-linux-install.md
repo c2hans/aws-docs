@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-27-ug/amazon-li
 ---
 
 # Amazon Corretto 27 Installation Instructions for Amazon Linux 2023 and Amazon Linux 2027
-<a name="amazon-linux-install"></a>
 
  This topic describes how to install and uninstall Amazon Corretto 27 on a host or container running the Amazon Linux 2023 or Amazon Linux 2027 operating systems.
 

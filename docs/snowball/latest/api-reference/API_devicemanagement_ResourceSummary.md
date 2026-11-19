@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # ResourceSummary
-<a name="API_devicemanagement_ResourceSummary"></a>
 
 A summary of a resource available on the device.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTra
 ---
 
 # CreateTransitGateway
-<a name="API_CreateTransitGateway"></a>
 
 Creates a transit gateway.
 

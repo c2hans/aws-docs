@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ContainerI
 ---
 
 # ContainerImageMetadata
-<a name="API_ContainerImageMetadata"></a>
 
 Contains metadata about a container image associated with a covered resource.
 

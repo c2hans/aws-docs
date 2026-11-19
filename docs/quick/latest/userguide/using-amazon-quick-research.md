@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-amazon-quic
 ---
 
 # Using AWS Quick Research
-<a name="using-amazon-quick-research"></a>
 
 AWS Quick Research is a feature of AWS Quick that enables you to conduct comprehensive research by analyzing multiple data sources and generating detailed reports. Quick Research uses artificial intelligence to help you gather, analyze, and synthesize information from various sources including web search, uploaded files, connected data spaces, knowledge bases, actions, and third-party data providers.
 

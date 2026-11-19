@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/set-up-one-hos
 ---
 
 # Setting up on a single host
-<a name="set-up-one-host"></a>
 
 This section explains how to install the Amazon DCV Access Console components on a single host. Before proceeding, you must first ensure you have completed the necessary [Prerequisites](prerequisites.md).
 

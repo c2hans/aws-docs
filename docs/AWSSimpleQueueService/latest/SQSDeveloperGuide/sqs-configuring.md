@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Configuring Amazon SQS queues using the Amazon SQS console
-<a name="sqs-configuring"></a>
 
 Use the Amazon SQS console to configure and manage Amazon SQS queues and features. You can also:
 + Enable server-side encryption for enhanced security.

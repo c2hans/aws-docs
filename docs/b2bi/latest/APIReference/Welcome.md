@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS B2B Data Interchange automates the transformation between Electronic Data Interchange (EDI) documents and JSON or XML formats, to simplify your downstream data integrations.
 +  *Inbound EDI*: the AWS customer receives an EDI file from their trading partner. AWS B2B Data Interchange converts this EDI file into a JSON or XML file with a service-defined structure. A mapping template provided by the customer, in JSONata or XSLT format, is optionally applied to this file to produce a JSON or XML file with the structure the customer requires.
@@ -31,4 +30,4 @@ To use these partnership enhancements, specify the appropriate configuration par
 New EventBridge events
  AWS B2B Data Interchange now emits additional EventBridge events to help you monitor and respond to EDI processing activities. New events include "Split Transformation Completed" and "Split Transformation Failed" to track the status of split file processing.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

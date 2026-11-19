@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_AddWo
 ---
 
 # AddWorkload
-<a name="API_AddWorkload"></a>
 
 Adds a workload to a component. Each component can have at most five workloads.
 

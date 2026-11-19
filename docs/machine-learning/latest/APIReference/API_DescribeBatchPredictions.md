@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # DescribeBatchPredictions
-<a name="API_DescribeBatchPredictions"></a>
 
 Returns a list of `BatchPrediction` operations that match the search criteria in the request.
 

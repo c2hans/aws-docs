@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/sts_example_pinpoin
 ---
 
 # Getting started with push notifications
-<a name="sts_example_pinpoint_GettingStarted_049_section"></a>
 
 The following code example shows how to:
 + Create an application

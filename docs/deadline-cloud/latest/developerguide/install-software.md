@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/ins
 ---
 
 # Install and configure software required for jobs
-<a name="install-software"></a>
 
 After you set up the Deadline Cloud worker agent, you can prepare the worker host with any software that is required to run jobs.
 

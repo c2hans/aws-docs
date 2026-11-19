@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/flows-in-browser-
 ---
 
 # Using AWS Quick Flows in the browser extension
-<a name="flows-in-browser-extension"></a>
 
 AWS Quick Flows in the browser extension enables you to run pre-defined workflows directly within your web browsing context. You can invoke flows that you've created or that have been shared with you, pass web page content as input, and execute multi-step workflows without leaving your browser.
 

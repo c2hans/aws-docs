@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/connect-service-
 ---
 
 # Programming with the Connect Customer APIs
-<a name="connect-service-api"></a>
 
 The following sections provide additional information about using the Connect Customer service APIs.
 

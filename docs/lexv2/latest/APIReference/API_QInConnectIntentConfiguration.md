@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_QInConnect
 ---
 
 # QInConnectIntentConfiguration
-<a name="API_QInConnectIntentConfiguration"></a>
 
 The configuration details of the Qinconnect intent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Resources
-<a name="resources-ops"></a>
 
  **Documents and blogs:**
 +  [The plumbing: best-practice infrastructure to facilitate HPC on AWS](https://aws.amazon.com/blogs/hpc/the-plumbing-best-practice-infrastructure-to-facilitate-hpc-on-aws/)

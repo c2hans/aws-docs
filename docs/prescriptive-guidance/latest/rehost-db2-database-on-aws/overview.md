@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-db2-
 ---
 
 # Overview
-<a name="overview"></a>
 
 The most basic way to move large amounts of data to AWS is by using database backup. However, a [Db2 for LUW](https://www.ibm.com/products/db2) database backup from one platform family can be restored only to a system within the same platform family. Db2 LUW supports the following three platform families:
 + Big-endian Linux and UNIX

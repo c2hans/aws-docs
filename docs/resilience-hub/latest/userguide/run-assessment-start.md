@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/run-asse
 ---
 
 # Run an assessment of your AWS Resilience Hub application
-<a name="run-assessment-start"></a>
 
 The application that you published is listed on the **Summary** page.
 

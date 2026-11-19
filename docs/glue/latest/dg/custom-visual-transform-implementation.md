@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/custom-visual-transform-i
 ---
 
 # Step 2. Implement the transform logic
-<a name="custom-visual-transform-implementation"></a>
 
 **Note**
  Custom visual transforms only support Python scripts. Scala is not supported.

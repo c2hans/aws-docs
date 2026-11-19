@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Query a DynamoDB table using a date range in the sort key with an AWS SDK
-<a name="example_dynamodb_Scenarios_QueryWithDateRange_section"></a>
 
 The following code examples show how to query a table using a date range in the sort key.
 + Query items within a specific date range.

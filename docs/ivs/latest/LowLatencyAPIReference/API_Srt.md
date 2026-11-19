@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Sr
 ---
 
 # Srt
-<a name="API_Srt"></a>
 
 Specifies information needed to stream using the SRT protocol.
 

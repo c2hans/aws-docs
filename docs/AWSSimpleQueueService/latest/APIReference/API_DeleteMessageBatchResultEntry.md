@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # DeleteMessageBatchResultEntry
-<a name="API_DeleteMessageBatchResultEntry"></a>
 
 Encloses the `Id` of an entry in ` DeleteMessageBatch.`
 

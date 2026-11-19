@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::ImageBuilder DomainJoinInfo
-<a name="aws-properties-appstream-imagebuilder-domainjoininfo"></a>
 
 The name of the directory and organizational unit (OU) to use to join the image builder to a Microsoft Active Directory domain.
 

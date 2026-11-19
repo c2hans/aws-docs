@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLoc
 ---
 
 # DeleteLocalGatewayVirtualInterface
-<a name="API_DeleteLocalGatewayVirtualInterface"></a>
 
 Deletes the specified local gateway virtual interface.
 

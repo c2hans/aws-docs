@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/api-reques
 ---
 
 # REST Requests
-<a name="api-requests-rest-overview"></a>
 
 Amazon Route 53 REST requests are HTTPS requests, as defined by [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). This section describes the structure of an Route 53 REST request.
 

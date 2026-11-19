@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # `aws:sleep` – Delay an automation
-<a name="automation-action-sleep"></a>
 
 Delays an automation for a specified amount of time. This action uses the International Organization for Standardization (ISO) 8601 date and time format. For more information about this date and time format, see [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).
 

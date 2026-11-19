@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-m
 ---
 
 # Conversational analytics metrics in Connect Customer
-<a name="contact-lens-metrics"></a>
 
 The following metrics are derived from conversational analytics. These metrics are available only when [conversational analytics is enabled for your instance](enable-analytics.md#enable-cl) and [conversational analytics](enable-analytics.md#enable-callrecording-speechanalytics) is enabled on the contact.
 

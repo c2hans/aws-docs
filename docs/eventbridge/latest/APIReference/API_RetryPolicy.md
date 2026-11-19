@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Retr
 ---
 
 # RetryPolicy
-<a name="API_RetryPolicy"></a>
 
 A `RetryPolicy` object that includes information about the retry policy settings.
 

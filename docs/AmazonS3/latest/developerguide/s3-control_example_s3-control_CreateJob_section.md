@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3-contro
 ---
 
 # Use `CreateJob` with an AWS SDK or CLI
-<a name="s3-control_example_s3-control_CreateJob_section"></a>
 
 The following code examples show how to use `CreateJob`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Using GPU partitions in Amazon SageMaker HyperPod
-<a name="sagemaker-hyperpod-eks-gpu-partitioning"></a>
 
 Cluster administrators can choose how to maximize GPU utilization across their organization. You can enable GPU partitioning with NVIDIA Multi-Instance GPU (MIG) technology to partition GPU resources into smaller, isolated instances for better resource utilization. This capability provides the ability to run multiple smaller sized tasks concurrently on a single GPU instead of dedicating the entire hardware to a single, often underutilized task. This eliminates wasted compute power and memory.
 

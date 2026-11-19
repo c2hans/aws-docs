@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Cluster
 ---
 
 # ClusterSnapshotCopyStatus
-<a name="API_ClusterSnapshotCopyStatus"></a>
 
 Returns the destination region and retention period that are configured for cross-region snapshot copy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Run a Monte Carlo simulation on Deadline Cloud
-<a name="examples-jb-monte-carlo"></a>
 
 The [monte\_carlo\_simulation job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/monte_carlo_simulation) on the GitHub website prices a portfolio of autocallable structured notes using Monte Carlo simulation with QuantLib's Heston stochastic volatility model. The job is a Deadline Cloud port of the [Pricing Financial Derivatives with AWS Batch](https://ec2spotworkshops.com/monte-carlo-with-batch.html) workshop.
 

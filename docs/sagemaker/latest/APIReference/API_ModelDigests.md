@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelD
 ---
 
 # ModelDigests
-<a name="API_ModelDigests"></a>
 
 Provides information to verify the integrity of stored model artifacts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Initiate Runbook on Config Findings
-<a name="initiating-runbook-on-config-findings"></a>
 
 This solution can initiate runbooks based on custom AWS Config findings. To do this, complete the following steps:
 

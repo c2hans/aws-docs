@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/doc-history.
 ---
 
 # Document History for Amazon Managed Service for Prometheus User Guide
-<a name="doc-history"></a>
 
 The following table describes important documentation updates in the Amazon Managed Service for Prometheus User Guide. For notification about updates to this documentation, you can subscribe to an RSS feed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # BatchDeleteMemoryRecords
-<a name="API_BatchDeleteMemoryRecords"></a>
 
 Deletes multiple memory records in a single batch operation from the specified memory.
 

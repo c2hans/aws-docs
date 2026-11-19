@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Why CFD on AWS?
-<a name="why-cfd-on-aws"></a>
 
  AWS is a great place to run CFD cases. CFD workloads are typically tightly coupled workloads using a Message Passing Interface (MPI) implementation and relying on a large number of cores across many nodes. Many of the AWS instance types, such as the compute family instance types, are designed to include support for this type of workload. AWS has network options that support extreme scalability and short turn-around time as necessary.
 

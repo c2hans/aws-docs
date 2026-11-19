@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_AcceptAccountL
 ---
 
 # AcceptAccountLinkInvitation
-<a name="API_AcceptAccountLinkInvitation"></a>
 
 Accepts the account link invitation.
 

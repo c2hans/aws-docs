@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/cmaf-inges
 ---
 
 # CMAF ingest in AWS Elemental MediaPackage
-<a name="cmaf-ingest"></a>
 
 AWS Elemental MediaPackage Version 2 (v2) supports CMAF ingest. CMAF ingest delivers content to viewers in multiple streaming formats from a single ingest workflow. CMAF ingest provides flexibility and features to optimize your streaming experience.
 

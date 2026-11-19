@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-c
 ---
 
 # Updating a cluster to use Amazon ECS Managed Instances
-<a name="update-cluster-managed-instances"></a>
 
 You can update an existing cluster to use Amazon ECS Managed Instances.
 

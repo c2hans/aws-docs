@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # AWS Cost Optimization
-<a name="aws-cost-optimization"></a>
 
  AWS enables you to take control of cost and continuously optimize your spend, while building modern, scalable applications to meet your needs. AWS's breadth of services and pricing options oﬀer the ﬂexibility to eﬀectively manage your costs and still keep the performance and capacity you require. AWS is dedicated to helping customers achieve the highest savings potential. Get started with the steps below that will have an immediate impact on your bill today.
 

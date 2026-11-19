@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Upd
 ---
 
 # UpdateRadius
-<a name="API_UpdateRadius"></a>
 
 Updates the Remote Authentication Dial In User Service (RADIUS) server information for an AD Connector or Microsoft AD directory.
 

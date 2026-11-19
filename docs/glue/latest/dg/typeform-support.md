@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/typeform-support.html
 ---
 
 # AWS Glue support for Typeform
-<a name="typeform-support"></a>
 
 AWS Glue supports Typeform as follows:
 

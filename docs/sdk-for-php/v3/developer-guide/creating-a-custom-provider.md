@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/creating-
 ---
 
 # Creating a custom credential provider to use with the SDK for PHP
-<a name="creating-a-custom-provider"></a>
 
 Credential providers are simply functions that when invoked return a promise (`GuzzleHttp\Promise\PromiseInterface`) that is fulfilled with an `Aws\Credentials\CredentialsInterface` object or rejected with an `Aws\Exception\CredentialsException`.
 

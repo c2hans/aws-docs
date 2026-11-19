@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iam-toolbox/latest/APIReference/API_Matc
 ---
 
 # MatchedStatement
-<a name="API_MatchedStatement"></a>
 
 A statement that matched during evaluation.
 

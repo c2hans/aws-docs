@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/scheduled-notebook-c
 ---
 
 # Connect to an Amazon EMR cluster from your notebook
-<a name="scheduled-notebook-connect-emr"></a>
 
 If you connect to an Amazon EMR cluster from your Jupyter notebook in Studio, you might need to perform additional setup. In particular, the following discussion addresses two issues:
 + **Passing parameters into your Amazon EMR connection command**. In SparkMagic kernels, parameters you pass to your Amazon EMR connection command may not work as expected due to differences in how Papermill passes parameters and how SparkMagic receives parameters. The workaround to address this limitation is to pass parameters as environment variables. For more details about the issue and workaround, see [Pass parameters to your EMR connection command](#scheduled-notebook-connect-emr-pass-param).

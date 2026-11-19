@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/resolutions-ge
 ---
 
 # Get started with Resolutions
-<a name="resolutions-get-started"></a>
 
  Use these steps to run your first process on Resolutions. You start from a standard operating procedure (SOP) for the process. The steps are in dependency order. The first procedure sets up your instance and publishes a Work plan. Steps 1 and 2 are one-time setup for your instance. The remaining steps repeat for each process that you bring onto Resolutions.
 

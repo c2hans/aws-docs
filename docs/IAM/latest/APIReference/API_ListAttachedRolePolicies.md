@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAttached
 ---
 
 # ListAttachedRolePolicies
-<a name="API_ListAttachedRolePolicies"></a>
 
 Lists all managed policies that are attached to the specified IAM role.
 

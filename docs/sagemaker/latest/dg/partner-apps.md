@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/partner-apps.html
 ---
 
 # Amazon SageMaker Partner AI Apps overview
-<a name="partner-apps"></a>
 
 With Amazon SageMaker Partner AI Apps, users get access to generative AI and machine learning (ML) development applications built, published, and distributed by industry-leading application providers. Partner AI Apps are certified to run on SageMaker AI. With Partner AI Apps, users can accelerate and improve how they build solutions based on foundation models (FM) and classic ML models without compromising the security of their sensitive data. The data stays completely within their trusted security configuration and is never shared with a third party.
 

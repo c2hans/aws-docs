@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rollbar-support.html
 ---
 
 # AWS Glue support for Rollbar
-<a name="rollbar-support"></a>
 
 AWS Glue supports Rollbar as follows:
 

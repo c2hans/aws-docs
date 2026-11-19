@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/singles.ht
 ---
 
 # .singles
-<a name="singles"></a>
 
 Used by dating services, resorts, and other businesses that cater to those who want to make a connection.
 

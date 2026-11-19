@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Installing on a SuperMicro
-<a name="migrate-topic-install-rhel-smc"></a>
 
 You install RHEL 9 on a SuperMicro chassis from the IPMI interface.
 

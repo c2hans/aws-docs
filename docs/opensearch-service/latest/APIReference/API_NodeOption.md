@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # NodeOption
-<a name="API_NodeOption"></a>
 
 Configuration settings for defining the node type within a cluster.
 

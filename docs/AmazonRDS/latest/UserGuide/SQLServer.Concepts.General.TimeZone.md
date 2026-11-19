@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Con
 ---
 
 # Local time zone for Microsoft SQL Server DB instances
-<a name="SQLServer.Concepts.General.TimeZone"></a>
 
 The time zone of an Amazon RDS DB instance running Microsoft SQL Server is set by default. The current default is Coordinated Universal Time (UTC). You can set the time zone of your DB instance to a local time zone instead, to match the time zone of your applications.
 

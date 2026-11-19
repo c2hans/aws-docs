@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateModelPackage
-<a name="API_UpdateModelPackage"></a>
 
 Updates a versioned model.
 

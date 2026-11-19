@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecyclePolicyDetailFilter
-<a name="API_LifecyclePolicyDetailFilter"></a>
 
 Defines filters that the lifecycle policy uses to determine impacted resource.
 

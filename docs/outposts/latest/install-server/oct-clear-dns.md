@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/install-server/oct-clear
 ---
 
 # clear-dns
-<a name="oct-clear-dns"></a>
 
 The **clear-dns** command deletes the DNS (Domain Name Server) IP address. You must reboot the Outposts server for the configuration to apply.
 

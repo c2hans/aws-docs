@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_AcceptP
 ---
 
 # AcceptPrimaryEmailUpdate
-<a name="API_AcceptPrimaryEmailUpdate"></a>
 
 Accepts the request that originated from [StartPrimaryEmailUpdate](API_StartPrimaryEmailUpdate.md) to update the primary email address (also known as the root user email address) for the specified account.
 

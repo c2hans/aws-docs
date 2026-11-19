@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Amazon EC2 cost breakdown
-<a name="amazon-ec2-cost-breakdown"></a>
 
  The following table shows the characteristics for Amazon EC2 used for this dynamic site in the US East (Northern Virginia) Region.
 

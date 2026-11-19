@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Cancellat
 ---
 
 # CancellationTerms
-<a name="API_CancellationTerms"></a>
 
 Describes the cancellation terms for cancelling a future-dated Capacity Reservation during its commitment duration.
 

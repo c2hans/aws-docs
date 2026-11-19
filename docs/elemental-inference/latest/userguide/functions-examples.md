@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Example functions
-<a name="functions-examples"></a>
 
 Each example below is complete: the two expressions, the function output to attach to the feed, and the metadata that results. Substitute your own model ID, function ARN, and output names. For more information about the expression language, see [JSONata reference for functions](functions-jsonata.md).
 

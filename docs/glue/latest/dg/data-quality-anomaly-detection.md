@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-anomaly-dete
 ---
 
 # Anomaly detection in AWS Glue Data Quality
-<a name="data-quality-anomaly-detection"></a>
 
 [![AWS Videos](https://img.youtube.com/vi/IWHzrupqlGM/0.jpg)](https://www.youtube.com/watch?v=IWHzrupqlGM)
 

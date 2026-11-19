@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityB
 ---
 
 # CapacityBlockOffering
-<a name="API_CapacityBlockOffering"></a>
 
 The recommended Capacity Block that fits your search requirements.
 

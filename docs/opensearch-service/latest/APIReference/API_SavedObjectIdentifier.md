@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # SavedObjectIdentifier
-<a name="API_SavedObjectIdentifier"></a>
 
 Identifies a specific saved object by its type and unique identifier.
 

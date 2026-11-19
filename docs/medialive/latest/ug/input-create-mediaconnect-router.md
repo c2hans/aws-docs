@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-create-mediaco
 ---
 
 # Setting up a MediaConnect Router input
-<a name="input-create-mediaconnect-router"></a>
 
 This section describes how to create a MediaConnect Router input. With a MediaConnect Router input, the service provider pushes content through AWS Elemental MediaConnect to MediaLive. (From the point of view of MediaLive, the upstream system is MediaConnect. The upstream system is not the service provider.)
 

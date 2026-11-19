@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/API_CreateAp
 ---
 
 # CreateAppClient
-<a name="API_CreateAppClient"></a>
 
 |  |
 | --- |

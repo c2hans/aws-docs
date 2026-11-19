@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-forecas
 ---
 
 # Create forecasts in Connect Customer
-<a name="create-forecasts"></a>
 
 Forecasts are a projection of the workload in your contact center. Connect Customer provides long-term and short-term forecasts for you to generate capacity plans and agent schedules. The forecasts include inbound, transfer, and callback contacts across voice, chat, tasks, and email channels.
 

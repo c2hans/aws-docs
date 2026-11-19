@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_comput
 ---
 
 # Finding compute node group instances in AWS PCS
-<a name="working-with_compute-instances"></a>
 
 Each AWS PCS compute node group can launch EC2 instances with shared configurations. You can use EC2 tags to find instances in a compute node group in the AWS Management Console or with the AWS CLI.
 

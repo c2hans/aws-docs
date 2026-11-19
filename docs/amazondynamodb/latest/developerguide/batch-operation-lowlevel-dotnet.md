@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bat
 ---
 
 # Example: Batch operations using the AWS SDK for .NET low-level API
-<a name="batch-operation-lowlevel-dotnet"></a>
 
 **Topics**
 + [Example: Batch write operation using the AWS SDK for .NET low-level API](#batch-write-low-level-dotnet)

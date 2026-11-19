@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Me
 ---
 
 # MetadataConfigurationForReranking
-<a name="API_agent_MetadataConfigurationForReranking"></a>
 
 Specifies how metadata fields should be handled during the reranking process.
 

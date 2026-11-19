@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InvoiceUnitRule
-<a name="API_invoicing_InvoiceUnitRule"></a>
 
  This is used to categorize the invoice unit. Values are AWS account IDs. Currently, the only supported rule is `LINKED_ACCOUNT`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Requirements and limitations
-<a name="Appendix.Oracle.Options.APEX.Requirements"></a>
 
 The following topic lists the requirements and limitations for Oracle APEX and ORDS.
 

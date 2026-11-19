@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/requirements-for-lin
 ---
 
 # Requirements for AWS Elemental Link
-<a name="requirements-for-link"></a>
 
 Your organization might deploy AWS Elemental Link hardware devices in one or both of these ways:
 + As the video source for the input that you attach to an AWS Elemental MediaLive channel.

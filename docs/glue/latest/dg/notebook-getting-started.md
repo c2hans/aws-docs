@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/notebook-getting-started.
 ---
 
 # Getting started with notebooks in AWS Glue Studio
-<a name="notebook-getting-started"></a>
 
  When you start a notebook through AWS Glue Studio, all the configuration steps are done for you so that you can explore your data and start developing your job script after only a few seconds.
 

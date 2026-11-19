@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Upd
 ---
 
 # UpdateWorkspace
-<a name="API_UpdateWorkspace"></a>
 
 Updates a workspace. You can update only workspaces in the `ACTIVE` or `FAILED` state. Fields that you omit from the request are left unchanged. To recover a workspace in the `FAILED` state, call this operation and supply its encryption configuration again.
 

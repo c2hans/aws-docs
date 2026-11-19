@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/newrelic-connection-optio
 ---
 
 # New Relic connection options
-<a name="newrelic-connection-options"></a>
 
 The following are connection options for New Relic:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the New Relic object to read.

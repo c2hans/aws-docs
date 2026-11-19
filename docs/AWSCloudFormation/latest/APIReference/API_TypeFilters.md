@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # TypeFilters
-<a name="API_TypeFilters"></a>
 
 Filter criteria to use in determining which extensions to return.
 

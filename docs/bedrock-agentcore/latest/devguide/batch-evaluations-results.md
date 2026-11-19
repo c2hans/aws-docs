@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/batch-
 ---
 
 # Understanding results and output
-<a name="batch-evaluations-results"></a>
 
 Batch evaluation results come in two layers: aggregate summaries in the API response, and per-session detail in CloudWatch Logs.
 

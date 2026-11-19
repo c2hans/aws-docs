@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/user-gu
 ---
 
 # Guidance for WorkSpaces Applications Users
-<a name="user-guidance"></a>
 
 If you are an WorkSpaces Applications administrator, you can provide your users with the guidance in this section to help them get started with using WorkSpaces Applications.
 

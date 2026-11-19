@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Making query API requests using AWS query protocol in Amazon SQS
-<a name="sqs-making-api-requests-xml"></a>
 
 This topic explains how to construct an Amazon SQS endpoint, make GET and POST requests, and interpret responses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ChannelN
 ---
 
 # ChannelNamespace
-<a name="API_ChannelNamespace"></a>
 
 Describes a channel namespace associated with an `Api`. The `ChannelNamespace` contains the definitions for code handlers for the `Api`.
 

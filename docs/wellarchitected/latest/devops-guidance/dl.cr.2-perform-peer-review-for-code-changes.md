@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CR.2] Perform peer review for code changes
-<a name="dl.cr.2-perform-peer-review-for-code-changes"></a>
 
  **Category:** FOUNDATIONAL
 

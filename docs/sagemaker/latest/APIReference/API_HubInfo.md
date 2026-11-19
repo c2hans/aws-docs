@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HubInf
 ---
 
 # HubInfo
-<a name="API_HubInfo"></a>
 
 Information about a hub.
 

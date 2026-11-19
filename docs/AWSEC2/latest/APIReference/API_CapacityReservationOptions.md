@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityR
 ---
 
 # CapacityReservationOptions
-<a name="API_CapacityReservationOptions"></a>
 
 Describes the strategy for using unused Capacity Reservations for fulfilling On-Demand capacity.
 

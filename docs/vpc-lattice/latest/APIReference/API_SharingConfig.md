@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Shar
 ---
 
 # SharingConfig
-<a name="API_SharingConfig"></a>
 
 Specifies if the service network should be enabled for sharing.
 

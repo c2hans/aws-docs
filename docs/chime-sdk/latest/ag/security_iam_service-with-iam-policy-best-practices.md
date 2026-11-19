@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/security_iam_service
 ---
 
 # Policy best practices
-<a name="security_iam_service-with-iam-policy-best-practices"></a>
 
 Identity-based policies are very powerful. They determine whether someone can create, access, or delete Amazon Chime SDK resources in your account. These actions can incur costs for your AWS account. When you create or edit identity-based policies, follow these guidelines and recommendations:
 + **Get started using AWS managed policies** – To start using the Amazon Chime SDK quickly, use AWS managed policies to give your employees the permissions they need. These policies are already available in your account and are maintained and updated by AWS. For more information, see [Get started using permissions with AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies) in the *IAM User Guide*.

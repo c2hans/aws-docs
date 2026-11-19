@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/transform-userguide/getting-s
 ---
 
 # Auto-tagging in MAP for AWS Transform
-<a name="getting-started-step2-auto-tagging"></a>
 
 ## What is auto-tagging?
 <a name="auto-tagging-what-is"></a>

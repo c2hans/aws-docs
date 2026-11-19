@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-start
 ---
 
 # Moving an image through its lifecycle in Amazon ECR
-<a name="getting-started-cli"></a>
 
 If you are using Amazon ECR for the first time, use the following steps with the Docker CLI and the AWS CLI to create a sample image, authenticate to the default registry, and create a private repository. Then push an image to and pull an image from the private repository. When you are finished with the sample image, delete the sample image and the repository.
 

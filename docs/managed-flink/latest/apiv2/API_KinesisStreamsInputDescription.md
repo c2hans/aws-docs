@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_KinesisSt
 ---
 
 # KinesisStreamsInputDescription
-<a name="API_KinesisStreamsInputDescription"></a>
 
 For a SQL-based Kinesis Data Analytics application, describes the Kinesis data stream that is configured as the streaming source in the application input configuration.
 

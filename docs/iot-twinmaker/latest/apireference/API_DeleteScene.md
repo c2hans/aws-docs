@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_De
 ---
 
 # DeleteScene
-<a name="API_DeleteScene"></a>
 
 Deletes a scene.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Recurren
 ---
 
 # RecurrenceConfig
-<a name="API_RecurrenceConfig"></a>
 
 Defines the recurrence configuration for overrides. This configuration uses a recurrence pattern to specify when and how frequently an event should repeat.
 

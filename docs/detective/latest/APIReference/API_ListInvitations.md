@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_ListIn
 ---
 
 # ListInvitations
-<a name="API_ListInvitations"></a>
 
 Retrieves the list of open and accepted behavior graph invitations for the member account. This operation can only be called by an invited member account.
 

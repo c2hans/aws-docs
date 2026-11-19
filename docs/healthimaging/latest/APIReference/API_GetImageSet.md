@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Ge
 ---
 
 # GetImageSet
-<a name="API_GetImageSet"></a>
 
 Get image set properties.
 

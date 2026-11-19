@@ -3,11 +3,10 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-
 ---
 
 # Amazon EMR Data Quality
-<a name="emr-serverless-data-quality"></a>
 
 Amazon EMR Data Quality, powered by [AWS Glue Data Quality](https://docs.aws.amazon.com/glue/latest/dg/glue-data-quality.html), lets you measure and monitor the quality of the data that your EMR Serverless Spark workloads read and write without leaving the Spark application. This page covers the EMR Serverless prerequisites and walkthrough. For concepts, APIs, monitoring, and troubleshooting, see [Amazon EMR Data Quality](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-data-quality.html) in the *Amazon EMR Management Guide*.
 
-## Prerequisites
+## Prerequisites for Amazon EMR Data Quality
 <a name="emr-serverless-dq-prerequisites"></a>
 
 Amazon EMR Data Quality is installed by default in Amazon EMR releases emr-spark-8.1.0 and later. Only Apache Spark workloads are supported.
@@ -44,7 +43,7 @@ The following inline policy grants the minimum set of permissions required to pu
 ## Run your first evaluation
 <a name="emr-serverless-dq-walkthrough"></a>
 
-1. **Create an EMR Serverless application.** Use release `emr-spark-8.1.0` or later. Create a Spark application and attach a job role that has the permissions listed in [Prerequisites](#emr-serverless-dq-prerequisites).
+1. **Create an EMR Serverless application.** Use release `emr-spark-8.1.0` or later. Create a Spark application and attach a job role that has the permissions listed in [Prerequisites for Amazon EMR Data Quality](#emr-serverless-dq-prerequisites).
 
    For example, to create a Spark application, run:
 
@@ -118,6 +117,6 @@ For the complete reference, see the following topics in the *Amazon EMR Manageme
 + [Amazon EMR Data Quality overview, concepts, and limits](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-data-quality.html)
 + [Key capabilities (DQDL, analyzers, anomaly detection, dynamic rules)](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-dq-key-capabilities.html)
 + [Fetching a saved ruleset from the AWS Glue Data Catalog](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-dq-getting-started.html#emr-dq-saved-rulesets)
-+ [Working with results](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-dq-working-with-results.html)
++ [Working with Amazon EMR Data Quality results](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-dq-working-with-results.html)
 + [Monitoring and alerting with Amazon CloudWatch](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-dq-monitoring.html)
-+ [Troubleshooting](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-dq-troubleshooting.html)
++ [Troubleshooting Amazon EMR Data Quality](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-dq-troubleshooting.html)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Ag
 ---
 
 # AggregationConfiguration
-<a name="API_AggregationConfiguration"></a>
 
 An object that contains configuration settings for aggregating events.
 

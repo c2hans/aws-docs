@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-
 ---
 
 # Set up a gateway response for a REST API using the API Gateway console
-<a name="set-up-gateway-response-using-the-console"></a>
 
 The following example shows how to set up a gateway response for a REST API using the API Gateway console
 

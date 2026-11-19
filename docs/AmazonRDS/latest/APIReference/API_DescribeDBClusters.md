@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBClusters
-<a name="API_DescribeDBClusters"></a>
 
 Describes existing Amazon Aurora DB clusters and Multi-AZ DB clusters. This API supports pagination.
 

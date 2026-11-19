@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DryRunProgressStatus
-<a name="API_DryRunProgressStatus"></a>
 
 Information about the progress of a pre-upgrade dry run analysis.
 

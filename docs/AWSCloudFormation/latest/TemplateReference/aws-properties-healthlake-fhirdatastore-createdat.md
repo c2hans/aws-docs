@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::HealthLake::FHIRDatastore CreatedAt
-<a name="aws-properties-healthlake-fhirdatastore-createdat"></a>
 
 <a name="aws-properties-healthlake-fhirdatastore-createdat-description"></a>The `CreatedAt` property type specifies Property description not available. for an [AWS::HealthLake::FHIRDatastore](aws-resource-healthlake-fhirdatastore.md).
 

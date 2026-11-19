@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # ST\_GeometryType
-<a name="access-graph-opencypher-22-spatial-functions-st-geometrytype"></a>
 
 ST\_GeometryType returns the type of the geometry as a string.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/cfct-custo
 ---
 
 # Define a custom configuration
-<a name="cfct-custom-configuration"></a>
 
 You'll define your custom AWS Control Tower configuration with the CfCT manifest file, the accompanying set of templates, and other JSON files. You'll package these files into a folder structure and place them in the Amazon S3 bucket as a `.zip` file, as shown in the following code example.
 

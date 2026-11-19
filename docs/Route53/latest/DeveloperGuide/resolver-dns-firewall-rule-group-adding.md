@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-d
 ---
 
 # Creating a rule group and rules
-<a name="resolver-dns-firewall-rule-group-adding"></a>
 
 To create a rule group and add rules to it, follow the steps in this procedure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNCOST04-BP03 Implement compression and caching for repetitive data transfers
-<a name="hncost04-bp03"></a>
 
  Reduce data transfer volumes by compressing in-transit data and caching frequently accessed content at the edge.
 

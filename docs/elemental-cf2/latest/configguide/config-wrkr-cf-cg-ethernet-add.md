@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-cf2/latest/configguide/config-
 This is version 2.18 of the AWS Elemental Conductor File documentation. This is the latest version. For prior versions, see the *Archive* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server).
 
 # Add Ethernet Devices
-<a name="config-wrkr-cf-cg-ethernet-add"></a>
 
 1. On the AWS Elemental Conductor File web interface, choose **Nodes** in the main menu.
 

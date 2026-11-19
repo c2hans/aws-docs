@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Filter
 ---
 
 # FilterCriteria
-<a name="API_FilterCriteria"></a>
 
 Details on the criteria used to define the filter for investigation results.
 

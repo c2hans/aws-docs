@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Attack surface reduction
-<a name="attack-surface-reduction"></a>
 
  Another important consideration when architecting an AWS solution is to limit the opportunities an attacker has to target your application. This concept is known as *attack surface reduction*. Resources that aren't exposed to the internet are more difficult to attack, which limits the options an attacker has to target your application's availability.
 

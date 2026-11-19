@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/devops-engineer
 ---
 
 # Content Domain 2: Configuration Management and IaC
-<a name="devops-engineer-professional-02-domain2"></a>
 
 ## Task Statement 2.1: Define cloud infrastructure and reusable components to provision and manage systems throughout their lifecycle.
 <a name="dop-02-task-2-1"></a>

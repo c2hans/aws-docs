@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-jobs
 ---
 
 # Working with jobs
-<a name="working-with-jobs"></a>
 
 A job does the work of transcoding one or more media files. In addition to creating jobs, you can duplicate, export, import, and cancel jobs. You can also view job history, and search for jobs.
 

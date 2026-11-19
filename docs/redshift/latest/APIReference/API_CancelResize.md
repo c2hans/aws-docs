@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_CancelR
 ---
 
 # CancelResize
-<a name="API_CancelResize"></a>
 
 Cancels a resize operation for a cluster.
 

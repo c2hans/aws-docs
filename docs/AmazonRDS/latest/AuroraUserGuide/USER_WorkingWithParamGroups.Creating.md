@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Wo
 ---
 
 # Creating a DB parameter group in Amazon Aurora
-<a name="USER_WorkingWithParamGroups.Creating"></a>
 
 You can create a new DB parameter group using the AWS Management Console, the AWS CLI, or the RDS API.
 

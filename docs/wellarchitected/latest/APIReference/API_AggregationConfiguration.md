@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # AggregationConfiguration
-<a name="API_AggregationConfiguration"></a>
 
 Configuration settings that define the scope of AWS resources to analyze for optimization recommendations.
 

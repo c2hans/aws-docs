@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Lex V2
-<a name="amazonlexv2"></a>
 
 Amazon Lex V2 provides the following APIs for data retrieval.
 

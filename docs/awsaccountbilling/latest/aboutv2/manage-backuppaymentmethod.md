@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-
 ---
 
 # Using backup payment methods
-<a name="manage-backuppaymentmethod"></a>
 
 You can use the backup payment method feature to avoid delays to your AWS bill payments. You can update your backup payment method settings on the **Payment Preferences** page of the AWS Billing and Cost Management console.
 

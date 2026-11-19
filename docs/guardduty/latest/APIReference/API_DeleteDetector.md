@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Delete
 ---
 
 # DeleteDetector
-<a name="API_DeleteDetector"></a>
 
 Deletes an Amazon GuardDuty detector that is specified by the detector ID.
 

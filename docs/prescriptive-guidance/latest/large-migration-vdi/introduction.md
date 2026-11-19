@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Planning large VDI migrations to the AWS Cloud
-<a name="introduction"></a>
 
 *Martin Guenthner, Amazon Web Services*
 

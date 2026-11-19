@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Trans
 ---
 
 # TranscriptFilter
-<a name="API_TranscriptFilter"></a>
 
 Flag the presence or absence of specific words or phrases detected in your Call Analytics transcription output.
 

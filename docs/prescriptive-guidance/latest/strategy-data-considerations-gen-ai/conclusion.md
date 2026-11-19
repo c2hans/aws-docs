@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Conclusion and resources
-<a name="conclusion"></a>
 
 Successfully adopting generative AI at scale requires more than just powerful models. It demands a data-first approach that makes sure that AI systems are reliable, secure, and aligned with business objectives. Enterprises that proactively assess, structure, and govern their data assets gain a competitive edge because they can move from experimentation to full-scale AI transformation faster and with confidence.
 

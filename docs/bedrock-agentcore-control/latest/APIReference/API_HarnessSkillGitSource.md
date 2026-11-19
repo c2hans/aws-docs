@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessSkillGitSource
-<a name="API_HarnessSkillGitSource"></a>
 
 A git repository source for a skill.
 

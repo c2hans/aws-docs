@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Object storage and buckets
-<a name="amazon-lightsail-faq-buckets"></a>
 
 ## What can I do with Lightsail object storage?
 <a name="object-storage-what-can-i-do"></a>

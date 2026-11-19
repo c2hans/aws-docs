@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/notific
 ---
 
 # Setting up price update notifications
-<a name="notifications-price-list-api"></a>
 
 |  |
 | --- |

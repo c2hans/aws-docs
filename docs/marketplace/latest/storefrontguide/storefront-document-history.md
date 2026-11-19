@@ -3,4 +3,3 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/store
 ---
 
 # Document history
-<a name="storefront-document-history"></a>

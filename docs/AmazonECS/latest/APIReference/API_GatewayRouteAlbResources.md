@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayRouteAlbResources
-<a name="API_GatewayRouteAlbResources"></a>
 
 The Application Load Balancer resources that a gateway manages for a route.
 

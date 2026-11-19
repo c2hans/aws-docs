@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Proced
 ---
 
 # Importing data into Oracle on Amazon RDS
-<a name="Oracle.Procedural.Importing"></a>
 
 How you import data into an Amazon RDS for Oracle DB instance depends on the following:
 + The amount of data you have

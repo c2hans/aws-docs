@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Describ
 ---
 
 # DescribeMultiRegionClusters
-<a name="API_DescribeMultiRegionClusters"></a>
 
 Returns details about one or more multi-Region clusters.
 

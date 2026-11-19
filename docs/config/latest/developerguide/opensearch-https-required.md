@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/opensearch-
 ---
 
 # opensearch-https-required
-<a name="opensearch-https-required"></a>
 
 Checks whether connections to OpenSearch domains are using HTTPS. The rule is NON\_COMPLIANT if the Amazon OpenSearch domain 'EnforceHTTPS' is not 'true' or is 'true' and 'TLSSecurityPolicy' is not in '`tlsPolicies`'.
 

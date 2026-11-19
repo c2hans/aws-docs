@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # KeyspacesCellMapDefinition
-<a name="API_KeyspacesCellMapDefinition"></a>
 
 Represents a key-value pair within a map data type in Amazon Keyspaces, including the associated metadata.
 

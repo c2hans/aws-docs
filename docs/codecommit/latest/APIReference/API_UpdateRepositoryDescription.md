@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Updat
 ---
 
 # UpdateRepositoryDescription
-<a name="API_UpdateRepositoryDescription"></a>
 
 Sets or changes the comment or description for a repository.
 

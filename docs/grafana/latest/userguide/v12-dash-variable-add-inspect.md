@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-dash-variab
 ---
 
 # Inspect Variables
-<a name="v12-dash-variable-add-inspect"></a>
 
 The variables page lets you easily identify whether a variable is being referenced (or used) in other variables or dashboard.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalScribeAudioEvent
-<a name="API_MedicalScribeAudioEvent"></a>
 
 An event containing audio data for the Medical Scribe stream
 

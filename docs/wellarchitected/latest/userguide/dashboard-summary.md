@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/dashboa
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Summary
-<a name="dashboard-summary"></a>
 
 This section shows the total number of workloads and the number of workloads with high and medium risk issues across the Well-Architected Framework lens and all other lenses. The total number of high and medium risk issues across all workloads, either owned by or shared with your AWS account, are shown.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Sq
 ---
 
 # SqsNotificationConfiguration
-<a name="API_SqsNotificationConfiguration"></a>
 
 The configurations used for EventBridge subscriber notification.
 

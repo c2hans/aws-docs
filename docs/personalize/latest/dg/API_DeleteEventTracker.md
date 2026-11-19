@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DeleteEventTra
 ---
 
 # DeleteEventTracker
-<a name="API_DeleteEventTracker"></a>
 
 Deletes the event tracker. Does not delete the dataset from the dataset group. For more information on event trackers, see [CreateEventTracker](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateEventTracker.html).
 

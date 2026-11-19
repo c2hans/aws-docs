@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/extsdkguide/getting-started.h
 ---
 
 # Getting started with the Amazon DCV Extension SDK
-<a name="getting-started"></a>
 
 The Amazon DCV Extension SDK uses Protocol Buffers (protobuf), an open-source data format designed to serialize structured data in a compact, binary form. By using Protocol Buffers, Amazon DCV components and extensions can communicate with one another in a way that is platform-independent and extensible, regardless of the selected programming language.
 

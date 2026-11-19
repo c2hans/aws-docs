@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_StartSess
 ---
 
 # StartSession
-<a name="API_StartSession"></a>
 
 Creates a session for running calculations within a workgroup. The session is ready when it reaches an `IDLE` state.
 

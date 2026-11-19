@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/cdn-emp-manifest-f
 ---
 
 # Set up manifest filtering with MediaTailor, MediaPackage, and CDN
-<a name="cdn-emp-manifest-filtering"></a>
 
 AWS Elemental MediaTailor uses manifest filtering with AWS Elemental MediaPackage to customize which audio and video streams are included in manifests delivered to different viewers through a content delivery network (CDN). This is particularly useful for implementing tiered service offerings, device-specific optimizations, or content access controls.
 

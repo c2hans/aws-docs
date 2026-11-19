@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql_rds_exe
 ---
 
 # mysql.rds\_execute\_operation
-<a name="mysql_rds_execute_operation"></a>
 
 Executes InnoDB operations to manage buffer pool states and temporary tablespace. This procedure can be used to dynamically control InnoDB operations such as dumping and loading buffer pool states or truncating temporary tablespace.
 

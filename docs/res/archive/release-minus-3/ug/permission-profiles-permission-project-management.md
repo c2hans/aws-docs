@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/permissio
 ---
 
 # Project management permissions
-<a name="permission-profiles-permission-project-management"></a>
 
 **Update project membership **
 This permission allows non-admin users who have been granted it to add and remove users or groups from a project. It also allows them to set the permission profile and decide the access level for all other users and groups for that project.

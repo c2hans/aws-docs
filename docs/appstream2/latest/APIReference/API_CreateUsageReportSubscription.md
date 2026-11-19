@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Creat
 ---
 
 # CreateUsageReportSubscription
-<a name="API_CreateUsageReportSubscription"></a>
 
 Creates a usage report subscription. Usage reports are generated daily.
 

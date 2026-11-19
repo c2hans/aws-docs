@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_TagR
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds tags to the specified resource.
 

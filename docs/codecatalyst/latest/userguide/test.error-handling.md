@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/test.error
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Skipping failed tests in an action
-<a name="test.error-handling"></a>
 
 If your action has more than one test command, you might want to allow subsequent test commands in the action to run even if a previous command fails. For example, in the following commands, you may want `test2` to run always, even if `test1` fails.
 

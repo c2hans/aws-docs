@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_QueueInf
 ---
 
 # QueueInfoInput
-<a name="API_QueueInfoInput"></a>
 
 Information about a queue.
 

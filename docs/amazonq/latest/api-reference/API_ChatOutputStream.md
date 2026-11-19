@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ChatOut
 ---
 
 # ChatOutputStream
-<a name="API_ChatOutputStream"></a>
 
 The streaming output for the `Chat` API.
 

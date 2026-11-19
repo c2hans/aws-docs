@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al1/ug/SSL-on-amazon-linux-ami.htm
 ---
 
 # Tutorial: Configure SSL/TLS on Amazon Linux AMI
-<a name="SSL-on-amazon-linux-ami"></a>
 
 **Note**
  Amazon Linux 1 (AL1, formerly Amazon Linux AMI) is no longer supported. This guide is available only for reference purposes.

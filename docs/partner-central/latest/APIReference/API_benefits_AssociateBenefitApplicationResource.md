@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AssociateBenefitApplicationResource
-<a name="API_benefits_AssociateBenefitApplicationResource"></a>
 
 Links an AWS resource to an existing benefit application for tracking and management purposes.
 

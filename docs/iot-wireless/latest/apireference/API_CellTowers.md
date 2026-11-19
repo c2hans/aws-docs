@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Cel
 ---
 
 # CellTowers
-<a name="API_CellTowers"></a>
 
 The cell towers that were used to perform the measurements.
 

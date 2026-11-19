@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/webflow-reading-from-enti
 ---
 
 # Reading from Webflow entities
-<a name="webflow-reading-from-entities"></a>
 
 **Prerequisites**
 

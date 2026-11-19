@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateMLTransform
 ---
 
 # CreateMLTransform
-<a name="API_CreateMLTransform"></a>
 
 Creates an AWS Glue machine learning transform. This operation creates the transform and all the necessary parameters to train it.
 

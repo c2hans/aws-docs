@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_De
 ---
 
 # DeprecationRequestDetails
-<a name="API_DeprecationRequestDetails"></a>
 
 Extra details specific to a deprecation type notification.
 

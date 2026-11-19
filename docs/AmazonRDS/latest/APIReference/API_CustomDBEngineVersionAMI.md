@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Custom
 ---
 
 # CustomDBEngineVersionAMI
-<a name="API_CustomDBEngineVersionAMI"></a>
 
 A value that indicates the AMI information.
 

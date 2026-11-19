@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 ---
 
 # Selection
-<a name="selection"></a>
 
 | PER 1: How have you optimized the performance of your serverless application? |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_As
 ---
 
 # AssessmentFrameworkShareRequest
-<a name="API_AssessmentFrameworkShareRequest"></a>
 
  Represents a share request for a custom framework in AWS Audit Manager.
 

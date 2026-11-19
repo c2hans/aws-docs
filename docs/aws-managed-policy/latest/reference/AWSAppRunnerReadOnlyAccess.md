@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAppRunnerReadOnlyAccess
-<a name="AWSAppRunnerReadOnlyAccess"></a>
 
 **Description**: Grants permissions to list and view details about App Runner resources.
 

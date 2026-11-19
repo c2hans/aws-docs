@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ContainerRecommendation
-<a name="API_ContainerRecommendation"></a>
 
  The CPU and memory recommendations for a container within the tasks of your Amazon ECS service.
 

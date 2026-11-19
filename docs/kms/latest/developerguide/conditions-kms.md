@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms
 ---
 
 # AWS KMS condition keys
-<a name="conditions-kms"></a>
 
 AWS KMS provides a set of condition keys that you can use in key policies and IAM policies. These condition keys are specific to AWS KMS. For example, you can use the `kms:EncryptionContext:context-key` condition key to require a particular [encryption context](encrypt_context.md) when controlling access to a symmetric encryption KMS key.
 
@@ -61,6 +60,7 @@ For detailed information about the `ForAnyValue` and `ForAllValues` set operator
 + [kms:MessageType](#conditions-kms-message-type)
 + [kms:MultiRegion](#conditions-kms-multiregion)
 + [kms:MultiRegionKeyType](#conditions-kms-multiregion-key-type)
++ [kms:PolicyName](#conditions-kms-policy-name)
 + [kms:PrimaryRegion](#conditions-kms-primary-region)
 + [kms:ReEncryptOnSameKey](#conditions-kms-reencrypt-on-same-key)
 + [kms:RequestAlias](#conditions-kms-request-alias)
@@ -87,6 +87,8 @@ For detailed information about the `ForAnyValue` and `ForAllValues` set operator
 | `kms:BypassPolicyLockoutSafetyCheck` | Boolean | Single-valued | `CreateKey`<br />`PutKeyPolicy` | IAM policies only<br />Key policies and IAM policies |
 
 The `kms:BypassPolicyLockoutSafetyCheck` condition key controls access to the [CreateKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) and [PutKeyPolicy](https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html) operations based on the value of the `BypassPolicyLockoutSafetyCheck` parameter in the request.
+
+For a KMS key that is shared through AWS Resource Access Manager (AWS RAM), the policy lockout safety check applies only to the `default` key policy. For more information about how AWS KMS evaluates the two key policies, see [How permissions are evaluated](key-sharing-ram.md#key-sharing-ram-evaluation).
 
 The following example IAM policy statement prevents users from bypassing the policy lockout safety check by denying them permission to create KMS keys when the value of the `BypassPolicyLockoutSafetyCheck` parameter in the `CreateKey` request is `true.`
 
@@ -1343,6 +1345,41 @@ For example, the following IAM policy statement uses the `kms:MultiRegionKeyType
 ```
 
 To allow or deny access to all multi-Region keys, you can use both values or a null value with `kms:MultiRegionKeyType`. However, the [kms:MultiRegion](#conditions-kms-multiregion) condition key is recommended for that purpose.
+
+## kms:PolicyName
+<a name="conditions-kms-policy-name"></a>
+
+The following table describes the `kms:PolicyName` condition key.
+
+| AWS KMS condition keys | Condition type | Value type | API operations | Policy type |
+| --- | --- | --- | --- | --- |
+| `kms:PolicyName` | String | Single-valued | `GetKeyPolicy`<br />`PutKeyPolicy` | Key policies and IAM policies |
+
+The `kms:PolicyName` condition key controls access to the `GetKeyPolicy` and `PutKeyPolicy` operations based on the value of the `PolicyName` parameter in the request. Valid values are `default` and `AWS_RAM`. If the request doesn't include the `PolicyName` parameter, the value of the condition key is `default`.
+
+A KMS key that is shared through AWS RAM has an `AWS_RAM` key policy in addition to its `default` key policy. You can use this condition key to control who can view or change each key policy. For more information about the `AWS_RAM` key policy, see [How managed permissions are shown in KMS keys](key-sharing-ram.md#key-sharing-ram-policy).
+
+When AWS KMS runs the policy lockout safety check for a CreateKey or PutKeyPolicy request, it evaluates the new key policy with the value of `kms:PolicyName` set to `default`. A policy statement that allows `kms:PutKeyPolicy` only when the value of `kms:PolicyName` is `AWS_RAM` doesn't satisfy the check.
+
+For example, the following key policy statement uses the `kms:PolicyName` condition key to deny permission to view the `AWS_RAM` key policy of the KMS key:
+
+```
+{
+  "Effect": "Deny",
+  "Principal": {
+    "AWS": "arn:aws:iam::111122223333:root"
+  },
+  "Action": "kms:GetKeyPolicy",
+  "Resource": "*",
+  "Condition": {
+    "StringEquals": {
+      "kms:PolicyName": "AWS_RAM"
+    }
+  }
+}
+```
+
+Because the principal is the account (`arn:aws:iam::{{111122223333}}:root`), the statement applies to every principal in the account. Principals that have permission to view the `default` key policy can still view it.
 
 ## kms:PrimaryRegion
 <a name="conditions-kms-primary-region"></a>

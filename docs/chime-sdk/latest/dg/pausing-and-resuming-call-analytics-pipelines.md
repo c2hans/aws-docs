@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/pausing-and-resuming
 ---
 
 # Pausing and resuming call analytics pipelines for the Amazon Chime SDK
-<a name="pausing-and-resuming-call-analytics-pipelines"></a>
 
 To pause and resume a media insights pipeline, invoke the [UpdateMediaInsightsPipelineStatus](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UpdateMediaInsightsPipelineStatus.html) API with a `Pause` or `Resume` action. To do so, you pass either the pipeline's ID or ARN in the `Identifier` field.
 

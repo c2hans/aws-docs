@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # CloudWatch subscriptions
-<a name="CloudWatch-InfrastructurePerformance-Subscriptions"></a>
 
 Infrastructure Performance subscriptions publish network performance metrics to Amazon CloudWatch in five-minute periods for each inter-Region, inter-Availability Zone, or intra-Availability Zone pair that you subscribe to. The subscription continues publishing metrics until you unsubscribe from the pair.
 

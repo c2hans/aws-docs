@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Configure a Lambda function and a VPC defined in another template with Infrastructure Composer
-<a name="using-composer-services-vpc-examples"></a>
 
 In this example, we configure a Lambda function in Infrastructure Composer with a VPC defined on another template.
 

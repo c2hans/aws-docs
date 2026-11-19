@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/export-
 ---
 
 # Export Image
-<a name="export-image"></a>
 
 You can export your images to create EC2 AMIs. Later you can [Import Image](import-image.md) those AMIs back to create WorkSpaces Applications images. This helps you to use your own AMI customization tools for customizing of your images.
 

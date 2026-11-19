@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/performance-tuning.html
 ---
 
 # Optimize Athena performance
-<a name="performance-tuning"></a>
 
 This topic provides general information and specific suggestions for improving the performance of your Athena queries, and how to work around errors related to limits and resource usage.
 

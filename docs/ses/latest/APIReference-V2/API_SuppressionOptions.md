@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Suppressi
 ---
 
 # SuppressionOptions
-<a name="API_SuppressionOptions"></a>
 
 An object that contains information about the suppression list preferences for your account or for a specific tenant.
 

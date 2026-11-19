@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sap-odata-state-managemen
 ---
 
 # Using the SAP OData state management script
-<a name="sap-odata-state-management-script"></a>
 
 To use the SAP OData state management script in your AWS Glue job, follow these steps:
 + Download the state management script: `s3://aws-blogs-artifacts-public/artifacts/BDB-4789/sap_odata_state_management.zip ` from the public Amazon S3 bucket.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Benefits of Matter certification for device makers
-<a name="manufacturer-benefits"></a>
 
 In addition to helping consumers, Matter certification provides benefits to smart device manufacturers. By adopting the Matter standard, organizations can reduce costs and expand their customer reach. Since Matter's launch in 2022 and its evolution through version 1.5 (November 2025), manufacturers across the smart-home industry have realized these benefits.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models-d
 ---
 
 # Sequence-level knowledge distillation
-<a name="customizing-models-distillation-sequence-level-knowledge-distillation"></a>
 
 Sequence-level knowledge distillation is the simplest form of distillation. You use the teacher model to generate high-quality responses for a set of prompts, then fine-tune the student on those responses with supervised fine-tuning (SFT). The teacher's output responses can be persisted as a dataset and reused to train different students without regenerating the data.
 

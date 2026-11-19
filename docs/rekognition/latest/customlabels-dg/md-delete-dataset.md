@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-de
 ---
 
 # Deleting a dataset
-<a name="md-delete-dataset"></a>
 
 You can delete the training and test datasets from a project.
 

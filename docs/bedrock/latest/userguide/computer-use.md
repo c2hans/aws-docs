@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/computer-use.ht
 ---
 
 # Use computer use tools to automate GUI tasks with Amazon Bedrock models
-<a name="computer-use"></a>
 
 Computer use lets Anthropic Claude models automate graphical user interface (GUI) tasks. The model returns `tool_use` actions such as taking a screenshot, clicking, typing, and scrolling. Your application executes those actions on a desktop or container and returns the resulting screenshot to Claude on the next turn.
 

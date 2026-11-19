@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_AwsClou
 ---
 
 # AwsCloudMapServiceDiscovery
-<a name="API_AwsCloudMapServiceDiscovery"></a>
 
 An object that represents the AWS Cloud Map service discovery information for your virtual node.
 

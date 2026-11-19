@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/DirectoryServi
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # `DirectoryService` section
-<a name="DirectoryService-v3"></a>
 
 **Note**
 Support for `DirectoryService` was added in AWS ParallelCluster version 3.1.1.
@@ -110,8 +109,8 @@ The default value is `hard`.
 `LdapAccessFilter` (**Optional**, `String`)
 Specifies a filter to limit directory access to a subset of users. This property corresponds to the SSSD-LDAP parameter that's called `ldap_access_filter`. You can use it to limit queries to an AD that supports a large number of users.
 This filter can block user access to the cluster. However, it doesn't impact the discoverability of blocked users.
-If this property is set, the SSSD parameter `access_provider` is set to `ldap` internally by AWS ParallelCluster and must not be modified by [`DirectoryService`](#DirectoryService-v3) / [`AdditionalSssdConfigs`](#yaml-DirectoryService-AdditionalSssdConfigs) settings.
-If this property is omitted and customized user access isn't specified in [`DirectoryService`](#DirectoryService-v3) / [`AdditionalSssdConfigs`](#yaml-DirectoryService-AdditionalSssdConfigs), all users in the directory can access the cluster.
+If this property is set, the SSSD parameter `access_provider` is set to `ldap` internally by AWS ParallelCluster and must not be modified by [`DirectoryService`](DirectoryService-v3.md) / [`AdditionalSssdConfigs`](#yaml-DirectoryService-AdditionalSssdConfigs) settings.
+If this property is omitted and customized user access isn't specified in [`DirectoryService`](DirectoryService-v3.md) / [`AdditionalSssdConfigs`](#yaml-DirectoryService-AdditionalSssdConfigs), all users in the directory can access the cluster.
 Examples:
 
 ```
@@ -137,9 +136,9 @@ The default is `true`.
 A dictionary of key-value pairs that contain SSSD parameters and values to write to the SSSD config file on cluster instances. For a full description of the SSSD configuration file, see the on-instance man pages for `SSSD` and related configuration files.
 The SSSD parameters and values must be compatible with AWS ParallelCluster's SSSD configuration as described in the following list.
 + `id_provider` is set to `ldap` internally by AWS ParallelCluster and must not be modified.
-+ `access_provider` is set to `ldap` internally by AWS ParallelCluster when [`DirectoryService`](#DirectoryService-v3) / [`LdapAccessFilter`](#yaml-DirectoryService-LdapAccessFilter) is specified, and this setting must not be modified.
++ `access_provider` is set to `ldap` internally by AWS ParallelCluster when [`DirectoryService`](DirectoryService-v3.md) / [`LdapAccessFilter`](#yaml-DirectoryService-LdapAccessFilter) is specified, and this setting must not be modified.
 
-  If [`DirectoryService`](#DirectoryService-v3) / [`LdapAccessFilter`](#yaml-DirectoryService-LdapAccessFilter) is omitted, its `access_provider` specification is omitted also. For example, if you set `access_provider` to `simple` in [`AdditionalSssdConfigs`](#yaml-DirectoryService-AdditionalSssdConfigs), then [`DirectoryService`](#DirectoryService-v3) / [`LdapAccessFilter`](#yaml-DirectoryService-LdapAccessFilter) must not be specified.
+  If [`DirectoryService`](DirectoryService-v3.md) / [`LdapAccessFilter`](#yaml-DirectoryService-LdapAccessFilter) is omitted, its `access_provider` specification is omitted also. For example, if you set `access_provider` to `simple` in [`AdditionalSssdConfigs`](#yaml-DirectoryService-AdditionalSssdConfigs), then [`DirectoryService`](DirectoryService-v3.md) / [`LdapAccessFilter`](#yaml-DirectoryService-LdapAccessFilter) must not be specified.
 The following configuration snippets are examples of valid configurations for `AdditionalSssdConfigs`.
 This example enables debug level for SSSD logs, restricts the search base to a specific organizational unit, and disables credentials caching.
 
@@ -151,7 +150,7 @@ DirectoryService:
     ldap_search_base: OU=Users,OU=CORP,DC=corp,DC=example,DC=com
     cache_credentials: False
 ```
-This example specifies the configuration of an SSSD [`simple`](https://www.mankier.com/5/sssd-simple) `access_provider`. Users from the `EngineeringTeam` are provided access to the directory. [`DirectoryService`](#DirectoryService-v3) / [`LdapAccessFilter`](#yaml-DirectoryService-LdapAccessFilter) must not be set in this case.
+This example specifies the configuration of an SSSD [`simple`](https://www.mankier.com/5/sssd-simple) `access_provider`. Users from the `EngineeringTeam` are provided access to the directory. [`DirectoryService`](DirectoryService-v3.md) / [`LdapAccessFilter`](#yaml-DirectoryService-LdapAccessFilter) must not be set in this case.
 
 ```
 DirectoryService:

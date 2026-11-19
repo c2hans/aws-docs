@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/s
 ---
 
 # Using Source Profile for Cross-Account Access
-<a name="source-profile"></a>
 
 Source profile enables SAP systems to access AWS resources across multiple accounts by chaining IAM role assumptions. One profile assumes a role, which then assumes another role, and so on, similar to the `source_profile` parameter in AWS CLI. This is useful for cross-account access scenarios where you need to traverse multiple AWS accounts to reach your target resources.
 

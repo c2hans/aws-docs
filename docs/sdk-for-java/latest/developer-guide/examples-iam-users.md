@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Manage IAM Users
-<a name="examples-iam-users"></a>
 
 ## Create a User
 <a name="creating-a-user"></a>

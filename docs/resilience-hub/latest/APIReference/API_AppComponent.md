@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # AppComponent
-<a name="API_AppComponent"></a>
 
 Defines an AppComponent.
 

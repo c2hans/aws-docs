@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # Integration
-<a name="API_Integration"></a>
 
 A connection between CloudWatch and an external system — such as a source of telemetry or configuration data, a messaging destination, or a model provider.
 

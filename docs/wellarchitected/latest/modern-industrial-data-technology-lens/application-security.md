@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Application security
-<a name="application-security"></a>
 
 |  **MIDASEC08:** How do you adhere to regulatory guidelines with application teams in industrial environments?  |
 | --- |

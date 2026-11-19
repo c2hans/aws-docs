@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/notes-s3-catalo
 ---
 
 # S3 Tables catalog integration limitations
-<a name="notes-s3-catalog"></a>
 
  Amazon S3 Tables integrates with AWS Glue Data Catalog (Data Catalog) and registers the catalog as a Lake Formation data location. You can set up this registration from the Lake Formation console or by using the service APIs.
 

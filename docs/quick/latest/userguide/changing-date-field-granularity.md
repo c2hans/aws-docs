@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/changing-date-fie
 ---
 
 # Changing date field granularity
-<a name="changing-date-field-granularity"></a>
 
 You can change the granularity for a date field on a visual to determine the intervals for which item values are shown. You can set the date field granularity to one of the following values:
 + Year

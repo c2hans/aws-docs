@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/mon
 ---
 
 # Monitoring AWS Elemental Inference with vended logs
-<a name="monitoring-vended-logs"></a>
 
 With AWS Elemental Inference, you can monitor the processing activity of your feeds using application logs. Elemental Inference publishes these logs as *vended logs*. You can deliver vended logs to the destination that works best for your use case.
 

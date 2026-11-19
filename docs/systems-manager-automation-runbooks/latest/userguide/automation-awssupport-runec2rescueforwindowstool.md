@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-RunEC2RescueForWindowsTool`
-<a name="automation-awssupport-runec2rescueforwindowstool"></a>
 
  **Description**
 

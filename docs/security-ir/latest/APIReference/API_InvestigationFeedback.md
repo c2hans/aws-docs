@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Inve
 ---
 
 # InvestigationFeedback
-<a name="API_InvestigationFeedback"></a>
 
 Contains user feedback about an investigation action, including ratings and comments to help improve investigation quality.
 

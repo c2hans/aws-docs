@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/speke/latest/documentation/speke-constra
 ---
 
 # SPEKE API v2.1 - Customizations and constraints to the DASH-IF specification
-<a name="speke-constraints-v2-1"></a>
 
 The DASH Industry Forum [CPIX 2.4 specification](https://dashif.org/docs/CPIX2.4/Cpix.html) on the DASH-IF website supports a number of use cases and topologies. The SPEKE API v2.1 specification defines both a CPIX Profile and an API for CPIX. To achieve these two goals, it adheres to the CPIX specification with the following customizations and constraints:
 

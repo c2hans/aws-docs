@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/test-add-a
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Adding the test action
-<a name="test-add-action"></a>
 
 Use the following procedure to add a test action to your CodeCatalyst workflow.
 

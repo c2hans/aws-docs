@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/adobe-rtmp-output.ht
 ---
 
 # RTMP output
-<a name="adobe-rtmp-output"></a>
 
 In an RTMP output, MediaLive supports SCTE 35 features as follows:
 + Passthrough of the SCTE 35 messages – Not applicable.

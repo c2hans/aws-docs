@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplaceSellerFullAccess
-<a name="AWSMarketplaceSellerFullAccess"></a>
 
 **Description**: Provides full access to all seller operations on the AWS Marketplace and other AWS services such as AMI management.
 

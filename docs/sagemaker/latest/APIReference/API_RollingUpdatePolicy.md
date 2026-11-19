@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Rollin
 ---
 
 # RollingUpdatePolicy
-<a name="API_RollingUpdatePolicy"></a>
 
 Specifies a rolling deployment strategy for updating a SageMaker endpoint.
 

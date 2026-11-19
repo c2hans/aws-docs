@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Finding
-<a name="API_Finding"></a>
 
 Represents a finding or issue discovered during policy generation or validation. Findings provide insights about potential problems, recommendations, or validation results from policy analysis operations. Finding types include: VALID (policy is ready to use), INVALID (policy has validation errors that must be fixed), NOT\_TRANSLATABLE (input couldn't be converted to policy), ALLOW\_ALL (policy would allow all actions, potential security risk), ALLOW\_NONE (policy would allow no actions, unusable), DENY\_ALL (policy would deny all actions, may be too restrictive), and DENY\_NONE (policy would deny no actions, ineffective). Review all findings before creating policies from generated assets to ensure they match your security requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/deplo
 ---
 
 # Amazon ECS
-<a name="deploy-container-insights-ECS"></a>
 
 You can use one or more of the following options to collect metrics from Amazon ECS clusters:
 + Use the AWS Management Console or the AWS CLI to turn on Container Insights. It collects cluster-level, task-level, and service-level metrics.

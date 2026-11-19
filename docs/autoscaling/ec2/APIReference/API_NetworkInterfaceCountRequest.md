@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Network
 ---
 
 # NetworkInterfaceCountRequest
-<a name="API_NetworkInterfaceCountRequest"></a>
 
 Specifies the minimum and maximum for the `NetworkInterfaceCount` object when you specify [InstanceRequirements](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_InstanceRequirements.html) for an Auto Scaling group.
 

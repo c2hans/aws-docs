@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIOp
 ---
 
 # AIOpsConsoleAdminPolicy
-<a name="AIOpsConsoleAdminPolicy"></a>
 
 **Description**: Grants full access to Amazon AI Operations service and its required permissions via AWS console. It also includes permissions to use identity-aware console sessions.
 

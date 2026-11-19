@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/working-with-
 ---
 
 # Step 3: Create a custom AWS AppConfig extension
-<a name="working-with-appconfig-extensions-creating-custom-extensions"></a>
 
 An extension defines one or more actions that it performs during an AWS AppConfig workflow. For example, the AWS authored `AWS AppConfig deployment events to Amazon SNS` extension includes an action to send a notification to an Amazon SNS topic. Each action is invoked either when you interact with AWS AppConfig or when AWS AppConfig is performing a process on your behalf. These are called *action points*. AWS AppConfig extensions support the following action points:
 

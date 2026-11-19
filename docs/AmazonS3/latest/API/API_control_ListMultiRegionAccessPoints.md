@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListMult
 ---
 
 # ListMultiRegionAccessPoints
-<a name="API_control_ListMultiRegionAccessPoints"></a>
 
 **Note**
 This operation is not supported by directory buckets.

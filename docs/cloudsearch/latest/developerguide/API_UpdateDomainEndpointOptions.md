@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Up
 ---
 
 # UpdateDomainEndpointOptions
-<a name="API_UpdateDomainEndpointOptions"></a>
 
 ## Description
 <a name="API_UpdateDomainEndpointOptions_Description"></a>

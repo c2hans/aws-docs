@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartNetwork
 ---
 
 # StartNetworkMigrationDeployment
-<a name="API_StartNetworkMigrationDeployment"></a>
 
 Starts a deployment job to create the target network infrastructure based on the generated code templates.
 

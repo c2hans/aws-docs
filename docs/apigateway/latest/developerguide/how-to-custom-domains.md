@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-
 ---
 
 # Custom domain name for public REST APIs in API Gateway
-<a name="how-to-custom-domains"></a>
 
 *Custom domain names* are simpler and more intuitive URLs that you can provide to your API users.
 

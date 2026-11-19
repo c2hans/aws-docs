@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-f
 ---
 
 # Onboarding and granting access
-<a name="onboarding-access-process-flow"></a>
 
 This guide's data lake reference architecture helps you to independently scale data producers and data consumers, in addition to defining and establishing a consistent process for onboarding and granting access to those data consumers.
 

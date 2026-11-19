@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Tutorial: Getting Started with Automated Security Response on AWS
-<a name="getting-started-with-asr"></a>
 
 This is a tutorial that will guide you through your first deployment. It will begin with the prerequisites for deploying the solution and it will end with you remediating example findings in a member account.
 

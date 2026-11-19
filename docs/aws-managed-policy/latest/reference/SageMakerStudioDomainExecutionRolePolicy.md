@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioDomainExecutionRolePolicy
-<a name="SageMakerStudioDomainExecutionRolePolicy"></a>
 
 **Description**: This policy is used by Amazon SageMaker Studio to catalog, discover, govern, share, and analyze data in the Amazon SageMaker Studio domain.
 

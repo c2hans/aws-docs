@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployme
 ---
 
 # CodeDeploy blue/green deployments for Amazon ECS
-<a name="deployment-type-bluegreen"></a>
 
 We recommend that you use the Amazon ECS blue/green deployment. For more information, see [Creating an Amazon ECS blue/green deployment](deploy-blue-green-service.md).
 

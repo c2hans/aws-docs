@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Reviewing and managing control findings in Security Hub CSPM
-<a name="securityhub-control-manage-findings"></a>
 
 The control details page displays a list of active findings for a control. The list does not include archived findings.
 

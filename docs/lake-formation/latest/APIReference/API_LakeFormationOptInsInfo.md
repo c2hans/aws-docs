@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_L
 ---
 
 # LakeFormationOptInsInfo
-<a name="API_LakeFormationOptInsInfo"></a>
 
 A single principal-resource pair that has Lake Formation permissins enforced.
 

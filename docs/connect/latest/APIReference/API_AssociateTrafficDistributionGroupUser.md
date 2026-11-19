@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Associat
 ---
 
 # AssociateTrafficDistributionGroupUser
-<a name="API_AssociateTrafficDistributionGroupUser"></a>
 
 Associates an agent with a traffic distribution group. This API can be called only in the Region where the traffic distribution group is created.
 

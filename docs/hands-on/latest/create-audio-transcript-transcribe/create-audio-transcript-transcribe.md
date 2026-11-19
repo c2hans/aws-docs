@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/create-audio-transcript-
 ---
 
 # Create an Audio Transcript with Amazon Transcribe
-<a name="create-audio-transcript-transcribe"></a>
 
 |  |  |
 | --- |--- |

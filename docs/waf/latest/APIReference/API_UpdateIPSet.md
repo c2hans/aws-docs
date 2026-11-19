@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_UpdateIPSet.
 ---
 
 # UpdateIPSet
-<a name="API_UpdateIPSet"></a>
 
 Updates the specified [IPSet](API_IPSet.md).
 

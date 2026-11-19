@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Trig
 ---
 
 # Trigger
-<a name="API_Trigger"></a>
 
 A Trigger fires on a schedule and invokes an agent
 

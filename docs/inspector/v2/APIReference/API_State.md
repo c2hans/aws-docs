@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_State.html
 ---
 
 # State
-<a name="API_State"></a>
 
 An object that described the state of Amazon Inspector scans for an account.
 

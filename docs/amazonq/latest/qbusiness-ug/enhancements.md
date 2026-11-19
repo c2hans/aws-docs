@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/enhancements
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Enhancing an Amazon Q Business application environment
-<a name="enhancements"></a>
 
 After you finish configuring your application environment, you can optionally choose to enhance it.
 

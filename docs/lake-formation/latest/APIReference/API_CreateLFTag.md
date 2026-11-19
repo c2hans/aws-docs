@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_C
 ---
 
 # CreateLFTag
-<a name="API_CreateLFTag"></a>
 
 Creates an LF-tag with the specified name and values.
 

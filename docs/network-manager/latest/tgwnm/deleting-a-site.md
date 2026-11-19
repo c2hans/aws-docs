@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/deleting-a-
 ---
 
 # Delete a site using AWS Network Manager
-<a name="deleting-a-site"></a>
 
 Delete sites from your global network if the site is no longer valid or you no longer want to return any information about the site. You must first disassociate the site from any devices and delete any links for the site.
 

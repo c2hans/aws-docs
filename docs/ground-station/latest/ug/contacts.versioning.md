@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/contacts.versio
 ---
 
 # Update contacts and contact versioning
-<a name="contacts.versioning"></a>
 
  AWS Ground Station supports updating contacts with a `SCHEDULED`, `PREPASS`, or `PASS` [contact status](contacts.lifecycle.md#contact-statuses). You can use the [UpdateContact](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_UpdateContact.html) API to specify an ephemeris override for a contact — including azimuth/elevation, OEM, or TLE tracking data — without cancelling and rescheduling it. This is useful for geosynchronous (GEO) satellite operations where you need to retask an antenna to a different satellite during a contact, or for Launch and Early Operations (LEOPs) where pointing adjustments are required.
 

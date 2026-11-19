@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gover
 ---
 
 # Governance
-<a name="API_Governance"></a>
 
 Contains the governance configuration for a custom permissions profile. When governance controls are defined for a category, any capabilities in that category not explicitly set to `ALLOW` in `Capabilities` are denied. Even newly added capabilities in the category are implicitly disabled when Amazon Quick releases them.
 

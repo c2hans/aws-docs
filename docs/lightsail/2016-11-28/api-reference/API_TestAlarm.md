@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_T
 ---
 
 # TestAlarm
-<a name="API_TestAlarm"></a>
 
 Tests an alarm by displaying a banner on the Amazon Lightsail console. If a notification trigger is configured for the specified alarm, the test also sends a notification to the notification protocol (`Email` and/or `SMS`) configured for the alarm.
 

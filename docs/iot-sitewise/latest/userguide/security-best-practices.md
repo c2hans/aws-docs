@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security-b
 ---
 
 # Security best practices for AWS IoT SiteWise
-<a name="security-best-practices"></a>
 
 This topic contains security best practices for AWS IoT SiteWise.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ContextStore
-<a name="API_ContextStore"></a>
 
 Contains details about a context store, including its unique identifier and the account that owns it.
 

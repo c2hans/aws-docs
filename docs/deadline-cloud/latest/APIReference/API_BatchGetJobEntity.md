@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetJobEntity
-<a name="API_BatchGetJobEntity"></a>
 
 Get batched job details for a worker.
 

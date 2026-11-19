@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Write and examine the code
-<a name="producersdk-javaapi-writecode"></a>
 
 In this section of the [Java producer library procedure](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producer-sdk-javaapi.html), you write and examine the Java example code that you downloaded in the previous section.
 

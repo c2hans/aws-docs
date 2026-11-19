@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateMonitoringAlert
-<a name="API_UpdateMonitoringAlert"></a>
 
 Update the parameters of a model monitor alert.
 

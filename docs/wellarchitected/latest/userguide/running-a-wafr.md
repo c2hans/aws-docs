@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/running
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Running a WAFR
-<a name="running-a-wafr"></a>
 
  After all the required preparation, it is time for you to run a Well-Architected Framework Review (WAFR). In this section, we'll explore tips and tricks to become more efficient while conducting your WAFR.
 

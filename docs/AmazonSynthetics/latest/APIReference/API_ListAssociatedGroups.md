@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # ListAssociatedGroups
-<a name="API_ListAssociatedGroups"></a>
 
 Returns a list of the groups that the specified canary is associated with. The canary that you specify must be in the current Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-manager.ht
 ---
 
 # OTA Update Manager service
-<a name="ota-manager"></a>
 
 The over-the-air (OTA) Update Manager service provides a way to:
 + Create an OTA update and the resources it uses, including an AWS IoT job, an AWS IoT stream, and code signing.

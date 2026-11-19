@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AttestationValue
-<a name="API_billing_AttestationValue"></a>
 
 The value being attested. This is a union in which exactly one member is set. Set `attestationAmount` to attest a monetary amount directly, or set `attestationQuantities` to attest one or more quantities that are converted to a value using the investment's multipliers.
 

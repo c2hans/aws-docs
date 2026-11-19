@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # PaymentTokenResponseOutput
-<a name="API_PaymentTokenResponseOutput"></a>
 
 Vendor-specific token response configuration.
 

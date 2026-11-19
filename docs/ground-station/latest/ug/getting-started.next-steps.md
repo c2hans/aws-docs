@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/getting-started
 ---
 
 # Understand next steps
-<a name="getting-started.next-steps"></a>
 
  Now that you have an onboarded satellite and a valid mission profile, you are ready to schedule contacts and communicate with your satellite with AWS Ground Station.
 

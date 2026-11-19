@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_IamIns
 ---
 
 # IamInstanceProfile
-<a name="API_IamInstanceProfile"></a>
 
 Contains information about the EC2 instance profile.
 

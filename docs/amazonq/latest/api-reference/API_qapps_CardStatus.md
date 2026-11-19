@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_C
 ---
 
 # CardStatus
-<a name="API_qapps_CardStatus"></a>
 
 The current status and value of a card in an active Amazon Q App session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Li
 ---
 
 # ListStreamSessions
-<a name="API_ListStreamSessions"></a>
 
 Gets a summary of current and previous streams for a specified channel in your account, in the AWS region where the API request is processed.
 

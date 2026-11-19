@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-cons
 ---
 
 # Constructing circuits in the SDK
-<a name="braket-constructing-circuit"></a>
 
 This section provides examples of defining a circuit, viewing available gates, extending a circuit, and viewing gates that each device supports. It also contains instructions on how to manually allocate qubits, instruct the compiler to run your circuits exactly as defined, and build noisy circuits with a noise simulator.
 

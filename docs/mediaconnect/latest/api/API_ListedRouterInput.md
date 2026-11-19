@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListedRouter
 ---
 
 # ListedRouterInput
-<a name="API_ListedRouterInput"></a>
 
 A summary of a router input, including its name, type, ARN, ID, state, and other key details. This structure is used in the response of the ListRouterInputs operation.
 

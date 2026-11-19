@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Choose a location for the matchmaker
-<a name="match-configuration-regions"></a>
 
 Decide where you want matchmaking activity to take place and create your matchmaking configuration and rule set in that location. Amazon GameLift Servers maintains ticket pools for your game's match requests where they are sorted and evaluated for viable matches. After making a match, Amazon GameLift Servers sends the match details for game session placement. You can run the matched game sessions in any location that's supported by your hosting solution.
 

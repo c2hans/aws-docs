@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/metrics-refer
 ---
 
 # Metrics reference for Amazon RDS
-<a name="metrics-reference"></a>
 
 In this reference, you can find descriptions of Amazon RDS metrics for Amazon CloudWatch, the Performance Insights API, and Enhanced Monitoring.
 

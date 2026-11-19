@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle DBMS\_SCHEDULER and MySQL events
-<a name="chap-oracle-aurora-mysql.special.scheduler"></a>
 
 With AWS DMS, you can schedule and automate database tasks using Oracle DBMS\_SCHEDULER and MySQL events. Oracle DBMS\_SCHEDULER is an enterprise job scheduler that provides a way to schedule and automate recurring database tasks. MySQL events are similar, allowing you to schedule statements or stored procedures to execute at a specific time or interval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CreateFilt
 ---
 
 # CreateFilter
-<a name="API_CreateFilter"></a>
 
 Creates a filter resource using specified filter criteria. When the filter action is set to `SUPPRESS` this action creates a suppression rule.
 

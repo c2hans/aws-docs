@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # UpdateDataIntegration
-<a name="API_connect-app-integrations_UpdateDataIntegration"></a>
 
 Updates the description of a DataIntegration.
 

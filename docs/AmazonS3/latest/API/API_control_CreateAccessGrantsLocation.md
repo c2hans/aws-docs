@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAc
 ---
 
 # CreateAccessGrantsLocation
-<a name="API_control_CreateAccessGrantsLocation"></a>
 
 The S3 data location that you would like to register in your S3 Access Grants instance. Your S3 data must be in the same Region as your S3 Access Grants instance. The location can be one of the following:
 + The default S3 location `s3://`

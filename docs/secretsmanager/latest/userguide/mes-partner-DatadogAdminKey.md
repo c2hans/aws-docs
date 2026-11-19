@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Datadog Admin Key
-<a name="mes-partner-DatadogAdminKey"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c25b3"></a>

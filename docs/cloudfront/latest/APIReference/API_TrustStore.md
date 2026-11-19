@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Trust
 ---
 
 # TrustStore
-<a name="API_TrustStore"></a>
 
 A trust store.
 

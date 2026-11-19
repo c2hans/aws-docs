@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AsyncI
 ---
 
 # AsyncInferenceNotificationConfig
-<a name="API_AsyncInferenceNotificationConfig"></a>
 
 Specifies the configuration for notifications of inference results for asynchronous inference.
 

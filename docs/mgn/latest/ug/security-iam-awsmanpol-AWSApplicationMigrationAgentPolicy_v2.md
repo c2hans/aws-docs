@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWS
 ---
 
 # AWS managed policy: AWSApplicationMigrationAgentPolicy\_v2
-<a name="security-iam-awsmanpol-AWSApplicationMigrationAgentPolicy_v2"></a>
 
 This policy allows using the AWS Replication Agent, which is used with AWS Transform MGN to migrate source servers to AWS. We do not recommend that you attach this policy to your users or roles.
 

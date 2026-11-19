@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/update-label.htm
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Update label
-<a name="update-label"></a>
 
 If your event dataset is stored with Amazon Fraud Detector, you might need to add or update labels for the stored events, such as when you perform an offline fraud investigation for an event and want to close the machine learning feed back loop.
 

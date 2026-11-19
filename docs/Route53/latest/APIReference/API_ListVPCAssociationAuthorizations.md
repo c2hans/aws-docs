@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListVPCA
 ---
 
 # ListVPCAssociationAuthorizations
-<a name="API_ListVPCAssociationAuthorizations"></a>
 
 Gets a list of the VPCs that were created by other accounts and that can be associated with a specified hosted zone because you've submitted one or more `CreateVPCAssociationAuthorization` requests.
 

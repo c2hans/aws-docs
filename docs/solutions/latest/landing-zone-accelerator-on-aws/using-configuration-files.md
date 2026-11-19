@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Using configuration files
-<a name="using-configuration-files"></a>
 
 Landing Zone Accelerator on AWS includes seven configuration files that you can use to customize the solution. Six of the files are mandatory. The `customizations-config.yaml` file is for optional extensions of the core solution. The solution orchestrates the creation of resources and configurations based on the input from the configuration files. Resources are generated using AWS CDK constructs defined in the solution’s source code.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/slack-step-5.html
 ---
 
 # Step 5: Test the integration between your Lex V2 bot and Slack
-<a name="slack-step-5"></a>
 
 Now use a browser window to test the integration of Slack with your Amazon Lex V2 bot.
 

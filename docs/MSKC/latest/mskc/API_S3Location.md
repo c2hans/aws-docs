@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_S3Location.html
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 The location of an object in Amazon S3.
 

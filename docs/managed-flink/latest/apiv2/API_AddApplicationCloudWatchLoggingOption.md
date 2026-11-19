@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_AddApplic
 ---
 
 # AddApplicationCloudWatchLoggingOption
-<a name="API_AddApplicationCloudWatchLoggingOption"></a>
 
 Adds an Amazon CloudWatch log stream to monitor application configuration errors.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/encryption.html
 ---
 
 # Data security in MemoryDB
-<a name="encryption"></a>
 
 To help keep your data secure, MemoryDB and Amazon EC2 provide mechanisms to guard against unauthorized access of your data on the server.
 

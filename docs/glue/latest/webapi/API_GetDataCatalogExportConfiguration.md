@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetDataCatalogExp
 ---
 
 # GetDataCatalogExportConfiguration
-<a name="API_GetDataCatalogExportConfiguration"></a>
 
 Retrieves the current export configuration for the AWS Glue Data Catalog. The export configuration controls whether catalog metadata is exported to S3 Tables.
 

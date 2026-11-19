@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailConverseImageSource
-<a name="API_runtime_GuardrailConverseImageSource"></a>
 
 The image source (image bytes) of the guardrail converse image source.
 

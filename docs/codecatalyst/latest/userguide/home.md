@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/home.html
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Viewing all spaces and projects for a user
-<a name="home"></a>
 
 You can view a listing of your spaces and projects on the user home page. The user home page shows a listing of each space to which the user belongs, the role for the user in that space, such as **Space administrator**, and the projects in each space where the user has membership.
 

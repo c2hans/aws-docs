@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SkewedInfo.html
 ---
 
 # SkewedInfo
-<a name="API_SkewedInfo"></a>
 
 Specifies skewed values in a table. Skewed values are those that occur with very high frequency.
 

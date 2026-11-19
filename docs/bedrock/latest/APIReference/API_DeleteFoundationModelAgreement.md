@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteFo
 ---
 
 # DeleteFoundationModelAgreement
-<a name="API_DeleteFoundationModelAgreement"></a>
 
 Delete the model access agreement for the specified model.
 

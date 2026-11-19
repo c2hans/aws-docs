@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # WKLD.05 Detect and remediate exposed secrets
-<a name="wkld-05"></a>
 
 In [WKLD.03 Use ephemeral secrets or a secrets-management service](wkld-03.md) and [WKLD.04 Prevent application secrets from being exposed](wkld-04.md), you put measures in place to protect secrets. In this control, you set up tooling to detect secrets that were accidentally committed or exposed, and take action to revoke or rotate them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # Output
-<a name="API_Output"></a>
 
 The `Output` data type.
 

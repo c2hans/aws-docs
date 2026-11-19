@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Authentication and access
-<a name="credentials"></a>
 
 You don't need to authenticate with AWS to start working with the AWS Toolkit for Visual Studio with Amazon Q. However, most AWS resources are managed through an AWS account. To access all of the AWS Toolkit for Visual Studio with Amazon Q services and features, you'll need at least 2 types of account authentication:
 

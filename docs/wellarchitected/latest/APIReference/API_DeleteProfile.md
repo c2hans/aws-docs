@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # DeleteProfile
-<a name="API_DeleteProfile"></a>
 
 Delete a profile.
 

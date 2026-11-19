@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_GetManagedSc
 ---
 
 # GetManagedScalingPolicy
-<a name="API_GetManagedScalingPolicy"></a>
 
 Fetches the attached managed scaling policy for an Amazon EMR cluster.
 

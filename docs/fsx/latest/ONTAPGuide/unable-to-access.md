@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/unable-to-access.h
 ---
 
 # You can't access your file system
-<a name="unable-to-access"></a>
 
 This section describes issues and resolutions related to being unable to access your file system.
 

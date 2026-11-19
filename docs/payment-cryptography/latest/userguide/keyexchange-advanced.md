@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/ke
 ---
 
 # Advanced Topics
-<a name="keyexchange-advanced"></a>
 
 This section covers advanced key exchange scenarios and configurations.
 

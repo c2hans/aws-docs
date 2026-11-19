@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_
 ---
 
 # WorkflowVersionSummary
-<a name="API_WorkflowVersionSummary"></a>
 
 Summary information about a workflow version, including identification and configuration details.
 

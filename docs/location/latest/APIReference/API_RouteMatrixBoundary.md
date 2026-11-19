@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixBoundary
-<a name="API_RouteMatrixBoundary"></a>
 
 Boundary within which the matrix is to be calculated. All data, origins and destinations outside the boundary are considered invalid.
 

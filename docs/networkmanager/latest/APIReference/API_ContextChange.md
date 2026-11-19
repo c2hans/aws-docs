@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # ContextChange
-<a name="API_ContextChange"></a>
 
 Describes a context entry that was added to or removed from a context store.
 

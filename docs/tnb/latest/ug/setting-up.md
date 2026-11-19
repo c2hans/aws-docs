@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/setting-up.html
 ---
 
 # Setting up AWS TNB
-<a name="setting-up"></a>
 
 Set up AWS TNB by completing the tasks described in this topic.
 

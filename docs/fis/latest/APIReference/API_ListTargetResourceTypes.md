@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ListTargetRe
 ---
 
 # ListTargetResourceTypes
-<a name="API_ListTargetResourceTypes"></a>
 
 Lists the target resource types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSArtifactServiceRolePolicy
-<a name="AWSArtifactServiceRolePolicy"></a>
 
 **Description**: Allows AWS Artifact to gather information about an organization via AWS Organizations service.
 

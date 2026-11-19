@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/putevents-example.
 ---
 
 # Recording a single item interaction event
-<a name="putevents-example"></a>
 
 After you create an *Item interactions dataset* and an [event tracker](event-get-tracker.md) for your dataset group, you are ready to record item interaction events. The following example shows a `PutEvents` operation that passes one item interaction event. The corresponding schema is shown, along with an example row from the Item interactions dataset.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::OrganizationTelemetryRule AdvancedFieldSelector
-<a name="aws-properties-observabilityadmin-organizationtelemetryrule-advancedfieldselector"></a>
 
  Defines criteria for selecting resources based on field values.
 

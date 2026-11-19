@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ProspectingResult
-<a name="API_ProspectingResult"></a>
 
 Contains the results of an autonomous prospecting job. This includes data and insights that AWS provides about a prospected customer account.
 

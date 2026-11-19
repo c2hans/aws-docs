@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/filesystem-slash-home.ht
 ---
 
 # `/home` (User home directories)
-<a name="filesystem-slash-home"></a>
 
  Normal users have their home directories under `/home`, but software should always look for the per-user `$HOME` environment variable rather than relying on a pattern such as `/home/$USER`.
 

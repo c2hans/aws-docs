@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/macos-ami-ids-pa
 ---
 
 # Retrieve macOS AMI IDs using AWS Systems Manager Parameter Store API
-<a name="macos-ami-ids-parameter-store"></a>
 
 You must specify an AMI when you launch an instance. An AMI is specific to an AWS Region, operating system, and processor architecture. You can view all of the macOS AMIs in an AWS Region and retrieve the latest macOS AMI by querying the AWS Systems Manager Parameter Store API. Using these public parameters, you don't need to manually look up macOS AMI IDs. Public parameters are available for both x86 and ARM64 macOS AMIs, and can be integrated with your existing AWS CloudFormation templates.
 

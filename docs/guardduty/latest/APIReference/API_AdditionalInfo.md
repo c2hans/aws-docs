@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Additi
 ---
 
 # AdditionalInfo
-<a name="API_AdditionalInfo"></a>
 
 Contains additional information about the detected threat.
 

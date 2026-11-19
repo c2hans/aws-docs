@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamDisco
 ---
 
 # IpamDiscoveredRoute
-<a name="API_IpamDiscoveredRoute"></a>
 
 Contains information about a BGP route discovered by IPAM resource discovery.
 

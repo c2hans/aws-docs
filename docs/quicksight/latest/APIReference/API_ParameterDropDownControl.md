@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Param
 ---
 
 # ParameterDropDownControl
-<a name="API_ParameterDropDownControl"></a>
 
 A control to display a dropdown list with buttons that are used to select a single value.
 

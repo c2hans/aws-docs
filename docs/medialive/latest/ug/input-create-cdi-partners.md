@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-create-cdi-par
 ---
 
 # Creating a partner CDI push input in Amazon VPC
-<a name="input-create-cdi-partners"></a>
 
 A partner CDI input is a specific configuration of a CDI input. If you want to support automatic input failover for the CDI source attached to the channel, you must set up the two CDI inputs as *partners*. For more information about partner CDI inputs, see [Creating CDI inputs as partner inputs](feature-cdi-partner.md).
 

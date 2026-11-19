@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_G
 ---
 
 # GetRelay
-<a name="API_GetRelay"></a>
 
 Fetch the relay resource and it's attributes.
 

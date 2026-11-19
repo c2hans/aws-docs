@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # View discovered resources
-<a name="next-gen-view-resources"></a>
 
 **To view resources (console)**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/async-analyzing-with-
 ---
 
 # Detecting or Analyzing Text in a Multipage Document
-<a name="async-analyzing-with-sqs"></a>
 
 This procedure shows you how to detect or analyze text in a multipage document by using Amazon Textract detection operations, a document stored in an Amazon S3 bucket, an Amazon SNS topic, and an Amazon SQS queue. Multipage document processing is an asynchronous operation. For more information, see [Calling Amazon Textract Asynchronous Operations](api-async.md).
 

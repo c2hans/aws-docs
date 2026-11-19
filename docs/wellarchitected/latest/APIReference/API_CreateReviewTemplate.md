@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CreateReviewTemplate
-<a name="API_CreateReviewTemplate"></a>
 
 Create a review template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIReco
 ---
 
 # AIRecommendationModelDetails
-<a name="API_AIRecommendationModelDetails"></a>
 
 Details about the model package in a recommendation.
 

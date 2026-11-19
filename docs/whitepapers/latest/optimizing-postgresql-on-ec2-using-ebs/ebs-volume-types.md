@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql
 ---
 
 # Amazon EBS volume types
-<a name="ebs-volume-types"></a>
 
 ## General Purpose SSD volumes
 <a name="general-purpose-ssd-volumes"></a>

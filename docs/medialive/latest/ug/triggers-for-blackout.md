@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/triggers-for-blackou
 ---
 
 # Triggers for blackout
-<a name="triggers-for-blackout"></a>
 
 The blackout feature is triggered only by time\_signal messages of segmentation type **Other**. It is not triggered by splice\_insert messages of any segmentation type, and is not triggered by time\_signal messages of any type except **Other**.
 

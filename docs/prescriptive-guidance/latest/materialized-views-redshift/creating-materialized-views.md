@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/materialize
 ---
 
 # Creating materialized views
-<a name="creating-materialized-views"></a>
 
 You can create a materialized view based on one or more of the following:
 + Amazon Redshift tables

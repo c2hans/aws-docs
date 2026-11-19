@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageWate
 ---
 
 # ImageWatermark
-<a name="API_ImageWatermark"></a>
 
 Describes a watermark attached to an AMI.
 

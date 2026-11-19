@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # TemplateV3
-<a name="API_TemplateV3"></a>
 
 v3 template schema that uses Key Storage Providers.
 

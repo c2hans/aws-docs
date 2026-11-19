@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/best-practices-dep
 ---
 
 # Managing Python dependencies in requirements.txt
-<a name="best-practices-dependencies"></a>
 
 This topic describes how to install and manage Python dependencies in a `requirements.txt` file for an Amazon Managed Workflows for Apache Airflow environment.
 

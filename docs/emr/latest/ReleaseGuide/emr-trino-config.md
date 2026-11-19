@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-trino-config
 ---
 
 # Configuring Trino on Amazon EMR
-<a name="emr-trino-config"></a>
 
 **Topics**
 + [Configuring connectors for Trino](#emr-trino-config-connector)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_D
 ---
 
 # DeleteEntitlement
-<a name="API_DeleteEntitlement"></a>
 
 Deletes an entitlement from an account access manager application. This operation is idempotent; deleting an entitlement that has already been deleted does not return an error.
 

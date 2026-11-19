@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/devi
 ---
 
 # AWS IoT Device Defender troubleshooting guide
-<a name="device-defender-troubleshoot"></a>
 
 **Help us improve this topic**
  [Let us know what would help make it better](https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=IoT%20Docs&topic_url=http://docs.aws.amazon.com/en_us/iot/latest/developerguide/device-defender-troubleshoot.html) General

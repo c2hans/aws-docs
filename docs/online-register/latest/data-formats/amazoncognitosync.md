@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Cognito Sync
-<a name="amazoncognitosync"></a>
 
 Amazon Cognito Sync provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/google-drive-acti
 ---
 
 # Google Drive action connector
-<a name="google-drive-action-integration"></a>
 
 With the Google Drive connector, you can access Google Drive directly in AWS Quick through natural language. You can upload and download files, manage folders, search content, and track changes without leaving AWS Quick.
 

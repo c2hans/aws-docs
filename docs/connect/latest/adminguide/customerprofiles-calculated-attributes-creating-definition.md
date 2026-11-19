@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customerprofil
 ---
 
 # Create a custom Connect Customer Customer Profiles calculated attribute definition
-<a name="customerprofiles-calculated-attributes-creating-definition"></a>
 
 Using the Customer Profiles [CreateCalculatedAttributeDefinition](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateCalculatedAttributeDefinition.html) API, you can programmatically create your own calculated attribute based on a custom object type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Operators and functions
-<a name="omni-sql-operators-and-functions"></a>
 
 This page lists the operators and functions you can use in a CloudWatch Omni query. Each table lists representative functions in the family, not every function. For more information about hashing and encoding functions, see [Hash and encoding functions](omni-sql-hash-and-encoding-functions.md). Function names are not case sensitive. Some functions need a numeric field. For more information about when to cast a field, see column types in [SQL query reference](omni-sql-query-reference.md).
 

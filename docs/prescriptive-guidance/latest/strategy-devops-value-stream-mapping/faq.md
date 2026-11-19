@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-de
 ---
 
 # Frequently asked questions
-<a name="faq"></a>
 
 ## How long does it take to complete a DVSM?
 <a name="faq-1"></a>

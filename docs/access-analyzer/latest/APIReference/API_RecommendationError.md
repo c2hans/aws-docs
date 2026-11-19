@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # RecommendationError
-<a name="API_RecommendationError"></a>
 
 Contains information about the reason that the retrieval of a recommendation for a finding failed.
 

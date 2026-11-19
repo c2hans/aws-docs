@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AcceleratorCountRange
-<a name="API_AcceleratorCountRange"></a>
 
 Defines the maximum and minimum number of GPU accelerators required for a worker instance..
 

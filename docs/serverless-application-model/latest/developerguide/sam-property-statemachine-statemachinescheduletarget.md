@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Target
-<a name="sam-property-statemachine-statemachinescheduletarget"></a>
 
 Configures the AWS resource that EventBridge invokes when a rule is triggered.
 

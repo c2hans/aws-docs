@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/determine-numbe
 ---
 
 # Determining the number of captions selectors needed
-<a name="determine-number-embedded-caption-selectors"></a>
 
 To determine the number of captions selectors you need to created in the event, follow these rules:
 + **Embedded Passthrough** – Create only one captions selector. With this scenario, all languages are automatically extracted and are automatically included in the output.

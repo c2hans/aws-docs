@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_
 ---
 
 # HookProgressEvent
-<a name="API_HookProgressEvent"></a>
 
 Represents the current status of a Hook operation request for the target resource.
 

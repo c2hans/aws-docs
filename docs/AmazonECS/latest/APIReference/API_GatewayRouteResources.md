@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayRouteResources
-<a name="API_GatewayRouteResources"></a>
 
 The service-specific infrastructure that a gateway manages for a route, keyed by gateway type.
 

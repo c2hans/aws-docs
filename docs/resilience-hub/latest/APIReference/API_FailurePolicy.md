@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_F
 ---
 
 # FailurePolicy
-<a name="API_FailurePolicy"></a>
 
 Defines a failure policy.
 

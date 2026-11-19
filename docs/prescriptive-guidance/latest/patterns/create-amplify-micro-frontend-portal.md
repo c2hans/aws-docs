@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create a portal for micro-frontends by using AWS Amplify, Angular, and Module Federation
-<a name="create-amplify-micro-frontend-portal"></a>
 
 *Milena Godau and Pedro Garcia, Amazon Web Services*
 

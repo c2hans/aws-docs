@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/security-
 ---
 
 # Manage security requirements
-<a name="security-requirements"></a>
 
 Organize the security requirements that AWS Security Agent uses to analyze your applications into security requirement packs. A pack is a collection of security requirements. You can enable AWS-managed packs, create your own custom packs, and generate requirements for a custom pack by uploading your security documentation.
 

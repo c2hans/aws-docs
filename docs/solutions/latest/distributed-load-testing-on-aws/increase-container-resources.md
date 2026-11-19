@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Increase the container resources
-<a name="increase-container-resources"></a>
 
 To increase the number of concurrent virtual users (concurrency) your load tests can simulate, you need to increase the CPU and memory resources allocated to each Amazon ECS task. This involves creating a new task definition revision with higher resource limits, then updating the solution’s DynamoDB configuration to use the new task definition for future test runs.
 

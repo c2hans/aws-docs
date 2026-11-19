@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Device Farm
-<a name="list_devicefarm"></a>
 
 AWS Device Farm (service prefix: `devicefarm`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

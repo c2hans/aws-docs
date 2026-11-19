@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/red-hat-ope
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 Follow these best practices when you set up a Red Hat OpenShift cluster on AWS:
 + List all prerequisites and make sure the installation program is set up correctly.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 ---
 
 # ImageScanningConfiguration
-<a name="API_ImageScanningConfiguration"></a>
 
 Contains settings for Image Builder image resource and container image scans.
 

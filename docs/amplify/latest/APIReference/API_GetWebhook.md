@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_GetWebho
 ---
 
 # GetWebhook
-<a name="API_GetWebhook"></a>
 
 Returns the webhook information that corresponds to a specified webhook ID.
 

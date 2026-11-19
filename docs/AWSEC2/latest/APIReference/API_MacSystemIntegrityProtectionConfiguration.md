@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MacSystem
 ---
 
 # MacSystemIntegrityProtectionConfiguration
-<a name="API_MacSystemIntegrityProtectionConfiguration"></a>
 
 Describes the configuration for a System Integrity Protection (SIP) modification task.
 

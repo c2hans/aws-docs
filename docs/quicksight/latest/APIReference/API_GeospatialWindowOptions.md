@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialWindowOptions
-<a name="API_GeospatialWindowOptions"></a>
 
 The window options of the geospatial map visual.
 

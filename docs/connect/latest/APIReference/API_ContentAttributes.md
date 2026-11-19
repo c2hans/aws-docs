@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContentA
 ---
 
 # ContentAttributes
-<a name="API_ContentAttributes"></a>
 
 Optional attributes used to populate the content of an outbound web notification, such as recommender configuration for personalized content.
 

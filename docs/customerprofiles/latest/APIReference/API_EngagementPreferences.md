@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # EngagementPreferences
-<a name="API_connect-customer-profiles_EngagementPreferences"></a>
 
 Object that defines users preferred methods of engagement.
 

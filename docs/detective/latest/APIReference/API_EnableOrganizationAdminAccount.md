@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Enable
 ---
 
 # EnableOrganizationAdminAccount
-<a name="API_EnableOrganizationAdminAccount"></a>
 
 Designates the Detective administrator account for the organization in the current Region.
 

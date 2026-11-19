@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/coh-est
 ---
 
 # Estimating monthly savings
-<a name="coh-estimated-monthly-savings"></a>
 
 Cost Optimization Hub analyzes specific pricing discounts to provide you with a measure of your cost efficiency. This is done by dividing the aggregated estimated monthly savings of your cost optimization opportunities by your amortized monthly AWS costs, exclusive of credits and refunds.
 

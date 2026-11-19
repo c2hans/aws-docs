@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/mac-instance-lau
 ---
 
 # Launch a Mac instance using the AWS Management Console or the AWS CLI
-<a name="mac-instance-launch"></a>
 
 EC2 Mac instances require a [Dedicated Host](dedicated-hosts-overview.md). You first need to allocate a host to your account, and then launch the instance onto the host.
 

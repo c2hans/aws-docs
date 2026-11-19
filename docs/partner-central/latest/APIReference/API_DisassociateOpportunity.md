@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # DisassociateOpportunity
-<a name="API_DisassociateOpportunity"></a>
 
 Allows you to remove an existing association between an `Opportunity` and related entities, such as a Partner Solution, AWS product, or an AWS Marketplace offer. This operation is the counterpart to `AssociateOpportunity`, and it provides flexibility to manage associations as business needs change.
 

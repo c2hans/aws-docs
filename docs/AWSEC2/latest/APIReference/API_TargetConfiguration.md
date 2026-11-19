@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TargetCon
 ---
 
 # TargetConfiguration
-<a name="API_TargetConfiguration"></a>
 
 Information about the Convertible Reserved Instance offering.
 

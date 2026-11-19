@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # CitationSourceContent
-<a name="API_runtime_CitationSourceContent"></a>
 
 Contains the actual text content from a source document that is being cited or referenced in the model's response.
 

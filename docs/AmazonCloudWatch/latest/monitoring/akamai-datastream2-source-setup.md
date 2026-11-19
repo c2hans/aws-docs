@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/akama
 ---
 
 # Source configuration for Akamai DataStream 2
-<a name="akamai-datastream2-source-setup"></a>
 
 ## Integrating with Akamai DataStream 2
 <a name="akamai-datastream2-integration"></a>

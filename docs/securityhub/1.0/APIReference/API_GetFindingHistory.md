@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFind
 ---
 
 # GetFindingHistory
-<a name="API_GetFindingHistory"></a>
 
  Returns the history of a Security Hub CSPM finding. The history includes changes made to any fields in the AWS Security Finding Format (ASFF) except top-level timestamp fields, such as the `CreatedAt` and `UpdatedAt` fields.
 

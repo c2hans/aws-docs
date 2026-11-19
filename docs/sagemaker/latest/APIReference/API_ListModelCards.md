@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListMo
 ---
 
 # ListModelCards
-<a name="API_ListModelCards"></a>
 
 List existing model cards.
 

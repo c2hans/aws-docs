@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_AccountAg
 ---
 
 # AccountAggregationSource
-<a name="API_AccountAggregationSource"></a>
 
 A collection of accounts and regions.
 

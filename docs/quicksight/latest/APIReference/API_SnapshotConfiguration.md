@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Snaps
 ---
 
 # SnapshotConfiguration
-<a name="API_SnapshotConfiguration"></a>
 
 Describes the configuration of the dashboard snapshot.
 

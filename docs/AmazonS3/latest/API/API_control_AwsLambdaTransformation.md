@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_AwsLambd
 ---
 
 # AwsLambdaTransformation
-<a name="API_control_AwsLambdaTransformation"></a>
 
  AWS Lambda function used to transform objects through an Object Lambda Access Point.
 

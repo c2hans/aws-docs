@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Grantee.html
 ---
 
 # Grantee
-<a name="API_Grantee"></a>
 
 Container for the person being granted permissions.
 

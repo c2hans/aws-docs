@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/pid-remapping-ter
 ---
 
 # PID remapping concepts
-<a name="pid-remapping-terminology"></a>
 
 Before you configure PID remapping, familiarize yourself with these terms.
 

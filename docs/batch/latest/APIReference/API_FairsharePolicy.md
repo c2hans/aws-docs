@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_FairshareP
 ---
 
 # FairsharePolicy
-<a name="API_FairsharePolicy"></a>
 
 The fair-share scheduling policy details.
 

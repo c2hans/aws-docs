@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/tag-resour
 ---
 
 # Tagging a resource
-<a name="tag-resource"></a>
 
 Use the [`TagResource`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_TagResource.html) action to tag [data stores](getting-started-concepts.md#concept-data-store) and [image sets](getting-started-concepts.md#concept-image-set) in AWS HealthImaging. The following code examples describe how to use the `TagResource` action with the AWS Management Console, AWS CLI, and AWS SDKs. For more information, see [ Tagging your AWS resources](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html) in the *AWS General Reference Guide*.
 

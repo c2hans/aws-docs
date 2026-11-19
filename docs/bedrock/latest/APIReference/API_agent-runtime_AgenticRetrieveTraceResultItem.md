@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveTraceResultItem
-<a name="API_agent-runtime_AgenticRetrieveTraceResultItem"></a>
 
 A result item from an agentic retrieval trace.
 

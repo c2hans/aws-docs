@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Associate
 ---
 
 # AssociateSubnetCidrBlock
-<a name="API_AssociateSubnetCidrBlock"></a>
 
 Associates a CIDR block with your subnet. You can only associate a single IPv6 CIDR block with your subnet.
 

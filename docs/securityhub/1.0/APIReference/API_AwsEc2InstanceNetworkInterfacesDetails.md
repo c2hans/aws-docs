@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2I
 ---
 
 # AwsEc2InstanceNetworkInterfacesDetails
-<a name="API_AwsEc2InstanceNetworkInterfacesDetails"></a>
 
 Identifies a network interface for the Amazon EC2 instance.
 

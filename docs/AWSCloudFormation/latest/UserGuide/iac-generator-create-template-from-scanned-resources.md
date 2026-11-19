@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/iac-g
 ---
 
 # Create a CloudFormation template from resources scanned with IaC generator
-<a name="iac-generator-create-template-from-scanned-resources"></a>
 
 This topic explains how to create a template from resources that were scanned using the IaC generator feature.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-encryption-support.ht
 ---
 
 # Encryption Support for AWS Transit Gateway
-<a name="tgw-encryption-support"></a>
 
 Encryption Controls allows you to audit the encryption status of the traffic flows in your VPC and then enforce encryption-in-transit for all traffic within the VPC. When VPC Encryption Control is in enforce mode, all Elastic Network Interfaces (ENI) in that VPC will be restricted to attach only to AWS Nitro encryption capable instances; and only AWS services that encrypt data in transit will be allowed to attach to Encryption Controls enforced VPC. For more information on VPC Encryption Controls, please refer to this [documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-encryption-controls.html).
 

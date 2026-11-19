@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Managed Integrations notifications
-<a name="managedintegrations-notifications"></a>
 
 Managed Integrations notifications deliver updates and key insights from devices. Notifications include connector events, device commands, lifecycle events, OTA (Over-the-Air) updates, and error reports. These insights provide actionable information to create automated workflows, take immediate actions, or store event data for troubleshooting.
 

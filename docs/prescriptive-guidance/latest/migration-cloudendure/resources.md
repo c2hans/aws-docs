@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-c
 ---
 
 # Additional resources
-<a name="resources"></a>
 
 ## Related guides and patterns
 <a name="related-guides-and-patterns.c259c9ba-f32c-548b-9d5b-63bbfdfe2cbf"></a>

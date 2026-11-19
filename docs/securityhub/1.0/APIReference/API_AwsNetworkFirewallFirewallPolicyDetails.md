@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsNetw
 ---
 
 # AwsNetworkFirewallFirewallPolicyDetails
-<a name="API_AwsNetworkFirewallFirewallPolicyDetails"></a>
 
 Details about a firewall policy. A firewall policy defines the behavior of a network firewall.
 

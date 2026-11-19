@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_List
 ---
 
 # ListPartnerEventSources
-<a name="API_ListPartnerEventSources"></a>
 
 An SaaS partner can use this operation to list all the partner event source names that they have created. This operation is not used by AWS customers.
 

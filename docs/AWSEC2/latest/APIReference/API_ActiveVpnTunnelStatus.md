@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ActiveVpn
 ---
 
 # ActiveVpnTunnelStatus
-<a name="API_ActiveVpnTunnelStatus"></a>
 
 Contains information about the current security configuration of an active VPN tunnel.
 

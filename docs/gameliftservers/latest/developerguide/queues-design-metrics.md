@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/qu
 ---
 
 # Evaluate queue metrics
-<a name="queues-design-metrics"></a>
 
 Use metrics to evaluate how well your queues are performing. You can view metrics related to queues in the [Amazon GameLift Servers console](https://console.aws.amazon.com/gamelift) or in Amazon CloudWatch. For a list and descriptions of queue metrics, see [Amazon GameLift Servers metrics for queues](monitoring-cloudwatch.md#gamelift-metrics-queue).
 

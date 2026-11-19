@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_Filter.html
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 Use filters to return a subset of resources. You can define filters for specific parameters, such as the resource status.
 

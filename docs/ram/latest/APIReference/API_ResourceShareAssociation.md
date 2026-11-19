@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ResourceShar
 ---
 
 # ResourceShareAssociation
-<a name="API_ResourceShareAssociation"></a>
 
 Describes an association between a resource share and either a principal or a resource.
 

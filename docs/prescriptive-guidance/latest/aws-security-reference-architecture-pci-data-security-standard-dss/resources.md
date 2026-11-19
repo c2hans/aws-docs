@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-securit
 ---
 
 # Encryption and Key Management
-<a name="resources"></a>
 
 Encryption and key management form the final defense control in protecting cardholder data from unauthorized disclosure, ensuring that even if other security controls fail, the data remains unreadable to unauthorized identities. PCI DSS Requirement 3 mandates protecting stored account data through strong cryptography, while Requirement 4 requires protecting cardholder data with strong cryptography during transmission over open, public networks. The effectiveness of encryption, however, depends entirely on proper key management—cryptographic keys must be generated, stored, distributed, rotated, and destroyed using processes that prevent unauthorized access to key material. In cloud environments, managed encryption services, and automated key lifecycle management provide opportunities to implement cryptographic controls and key management practices with greater security, operational efficiency, and compliance auditability than traditional on-premises key management approaches.
 

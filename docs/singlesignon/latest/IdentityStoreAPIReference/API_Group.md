@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # Group
-<a name="API_Group"></a>
 
 A group object that contains the metadata and attributes for a specified group.
 

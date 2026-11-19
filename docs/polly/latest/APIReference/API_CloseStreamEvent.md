@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_CloseStrea
 ---
 
 # CloseStreamEvent
-<a name="API_CloseStreamEvent"></a>
 
 Indicates the end of the input stream. After sending this event, the input stream will be closed and all audio will be returned.
 

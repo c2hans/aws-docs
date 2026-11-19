@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # CharacterOffsets
-<a name="API_streaming_CharacterOffsets"></a>
 
 Provides the location, using character count, in your transcript where a match is identified. For example, the location of an issue or a category match within a segment.
 

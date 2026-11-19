@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Disaster recovery strategy for databases on AWS
-<a name="introduction"></a>
 
 *Oliver Francis, Suhas Basavaraj, Balaji Desikachari, and Jitendra Kumar, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/findings-findi
 ---
 
 # Findings - Reveal Sensitive Data Occurrences Availability
-<a name="findings-findingid-reveal-availability"></a>
 
 The Reveal Sensitive Data Occurrences Availability resource provides an environment for determining whether you can retrieve sample occurrences of sensitive data that Amazon Macie reported in a finding. You can use this resource in all the AWS Regions where Macie is currently available except the Asia Pacific (Osaka) and Israel (Tel Aviv) Regions.
 

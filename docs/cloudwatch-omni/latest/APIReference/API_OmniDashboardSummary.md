@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # OmniDashboardSummary
-<a name="API_OmniDashboardSummary"></a>
 
 Summary of a dashboard. Call GetOmniDashboard for the full dashboard.
 

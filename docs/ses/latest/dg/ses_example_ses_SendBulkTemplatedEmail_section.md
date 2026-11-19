@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_SendBulkTe
 ---
 
 # Use `SendBulkTemplatedEmail` with an AWS SDK
-<a name="ses_example_ses_SendBulkTemplatedEmail_section"></a>
 
 The following code example shows how to use `SendBulkTemplatedEmail`.
 

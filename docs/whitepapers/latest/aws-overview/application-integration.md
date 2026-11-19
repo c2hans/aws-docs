@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/applicat
 ---
 
 # ![AWS Application Integration category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/application-integration-icon.jpg)Application integration
-<a name="application-integration"></a>
 
 Application integration on AWS is a suite of services that enable communication between decoupled components within microservices, distributed systems, and serverless applications. You don’t need to refactor your entire architecture to benefit—decoupling applications at any scale can reduce the impact of changes, making it easier to update and faster to release new features.
 

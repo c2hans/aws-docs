@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # FixedPercentage
-<a name="API_marketplace-discovery_FixedPercentage"></a>
 
 A single fixed price increase percentage applied at each renewal cycle.
 

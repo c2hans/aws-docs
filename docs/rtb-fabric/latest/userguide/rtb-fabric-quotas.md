@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/rtb-fabric-q
 ---
 
 # Quotas for AWS RTB Fabric
-<a name="rtb-fabric-quotas"></a>
 
 Your AWS account has default quotas, formerly referred to as limits, for each AWS service. Unless otherwise noted, each quota is Region-specific. You can request increases for RTB Fabric quotas.
 

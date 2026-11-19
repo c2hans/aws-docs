@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 The following best practices are drawn from the extensive experience that AWS has in guiding organizations through their cloud journeys, as well as industry research and customer success stories. These best practices help improve the pace and value of cloud transformation and should be incorporated into a programmatically applied transformation roadmap and embedded into an organization's business-as-usual operating model. These best practices are featured prominently in the AWS Enterprise Transformation program.
 

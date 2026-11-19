@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CI.2] Trigger builds automatically upon source code modifications
-<a name="dl.ci.2-trigger-builds-automatically-upon-source-code-modifications"></a>
 
  **Category:** FOUNDATIONAL
 

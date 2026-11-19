@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDeepRacerCloudFormationAccessPolicy
-<a name="AWSDeepRacerCloudFormationAccessPolicy"></a>
 
 **Description**: Allows CloudFormation to create and manage AWS stacks and resources on your behalf.
 

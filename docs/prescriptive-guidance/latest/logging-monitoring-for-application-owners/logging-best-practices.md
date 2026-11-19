@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/logging-mon
 ---
 
 # Logging best practices
-<a name="logging-best-practices"></a>
 
 ## Logging levels
 <a name="logging-levels"></a>

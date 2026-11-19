@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Image creation and management
-<a name="image-creation-and-management"></a>
 
  When launching a fleet or image builder in WorkSpaces Applications, you must select one of the WorkSpaces Applications base images. Administrators can then build on the base image to add their own applications and configuration settings.
 

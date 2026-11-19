@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_IntentSort
 ---
 
 # IntentSortBy
-<a name="API_IntentSortBy"></a>
 
 Specifies attributes for sorting a list of intents.
 

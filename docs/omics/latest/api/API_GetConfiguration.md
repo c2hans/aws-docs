@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetConfiguration.ht
 ---
 
 # GetConfiguration
-<a name="API_GetConfiguration"></a>
 
 Retrieve configuration details for specified name.
 

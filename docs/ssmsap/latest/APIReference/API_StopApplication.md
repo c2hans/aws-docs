@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_StopAppli
 ---
 
 # StopApplication
-<a name="API_StopApplication"></a>
 
 Request is an operation to stop an application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_EcrContain
 ---
 
 # EcrContainerImageMetadata
-<a name="API_EcrContainerImageMetadata"></a>
 
 Information on the Amazon ECR image metadata associated with a finding.
 

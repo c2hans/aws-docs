@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/security_
 ---
 
 # AWS Serverless Application Repository Application Policy Examples
-<a name="security_iam_resource-based-policy-examples"></a>
 
 Permissions policies attached to AWS Serverless Application Repository applications are referred to as *application policies*. Application policies determine the actions that a specified principal or principalOrg can perform on an AWS Serverless Application Repository application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListAI
 ---
 
 # ListAIBenchmarkJobs
-<a name="API_ListAIBenchmarkJobs"></a>
 
 Returns a list of AI benchmark jobs in your account. You can filter the results by name, status, and creation time, and sort the results. The response is paginated.
 

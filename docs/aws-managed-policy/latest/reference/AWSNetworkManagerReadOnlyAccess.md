@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSN
 ---
 
 # AWSNetworkManagerReadOnlyAccess
-<a name="AWSNetworkManagerReadOnlyAccess"></a>
 
 **Description**: Provides read only access to Amazon NetworkManager via the AWS Management Console.
 

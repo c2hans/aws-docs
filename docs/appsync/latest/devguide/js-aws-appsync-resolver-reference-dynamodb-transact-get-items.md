@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/js-aws-appsync-r
 ---
 
 # TransactGetItems
-<a name="js-aws-appsync-resolver-reference-dynamodb-transact-get-items"></a>
 
 The `TransactGetItems` request object lets you to tell the AWS AppSync DynamoDB function to make a `TransactGetItems` request to DynamoDB to retrieve multiple items, potentially across multiple tables. For this request object, you must specify the following:
 + The table name of each request item where to retrieve the item from

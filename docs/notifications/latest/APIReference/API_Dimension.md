@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Di
 ---
 
 # Dimension
-<a name="API_Dimension"></a>
 
 The key-value pair of properties for an event.
 

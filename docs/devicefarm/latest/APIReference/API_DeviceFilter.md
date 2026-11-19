@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Devic
 ---
 
 # DeviceFilter
-<a name="API_DeviceFilter"></a>
 
 Represents a device filter used to select a set of devices to be included in a test run. This data structure is passed in as the `deviceSelectionConfiguration` parameter to `ScheduleRun`. For an example of the JSON request syntax, see [ScheduleRun](API_ScheduleRun.md).
 

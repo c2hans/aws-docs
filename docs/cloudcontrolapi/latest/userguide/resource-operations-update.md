@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/resourc
 ---
 
 # Updating a resource with AWS Cloud Control API
-<a name="resource-operations-update"></a>
 
 Use the `update-resource` command to make updates to an existing resource. This includes resources that weren't originally provisioned using Cloud Control API.
 

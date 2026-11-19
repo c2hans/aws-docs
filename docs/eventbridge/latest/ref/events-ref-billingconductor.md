@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-billin
 ---
 
 # AWS Billing Conductor events
-<a name="events-ref-billingconductor"></a>
 
 Billing Conductor sends service events to EventBridge via AWS CloudTrail.
 

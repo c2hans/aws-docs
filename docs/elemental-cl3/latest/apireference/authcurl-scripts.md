@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/authcu
 ---
 
 # AuthCurl Scripts
-<a name="authcurl-scripts"></a>
 
 Two helper scripts are available to help construct these headers:
 + auth\_curl.rb

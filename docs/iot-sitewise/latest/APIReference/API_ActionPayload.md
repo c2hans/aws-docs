@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Act
 ---
 
 # ActionPayload
-<a name="API_ActionPayload"></a>
 
 The JSON payload of the action.
 

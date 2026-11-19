@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_T
 ---
 
 # TableResource
-<a name="API_TableResource"></a>
 
 A structure for the table object. A table is a metadata definition that represents your data. You can Grant and Revoke table privileges to a principal.
 

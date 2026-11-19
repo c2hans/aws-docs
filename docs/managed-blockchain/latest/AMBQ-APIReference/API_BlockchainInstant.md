@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # BlockchainInstant
-<a name="API_BlockchainInstant"></a>
 
 The container for time.
 

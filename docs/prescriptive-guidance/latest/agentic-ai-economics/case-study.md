@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Case study: Recruitment operations
-<a name="case-study"></a>
 
 Recruitment operations provide a compelling case study for evaluating the economic trade-offs between human and agentic AI systems, but the ROI calculation depends critically on your current operational baseline. Organizations evaluating agentic AI investments often ask a fundamental question: "What if we simply optimize our existing human processes instead?" To address this directly, this analysis presents two distinct scenarios that bracket the range of human operational efficiency.
 

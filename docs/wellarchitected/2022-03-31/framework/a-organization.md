@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Organization
-<a name="a-organization"></a>
 
 **Topics**
 + [OPS 1  How do you determine what your priorities are?](ops-01.md)

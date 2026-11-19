@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # PutRegistryCatalogData
-<a name="API_PutRegistryCatalogData"></a>
 
 Create or update the catalog data for a public registry.
 

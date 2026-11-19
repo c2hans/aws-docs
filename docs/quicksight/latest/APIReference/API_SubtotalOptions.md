@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Subto
 ---
 
 # SubtotalOptions
-<a name="API_SubtotalOptions"></a>
 
 The subtotal options.
 

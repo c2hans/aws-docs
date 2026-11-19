@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-cloudf
 ---
 
 # AWS CloudFormation events
-<a name="events-ref-cloudformation"></a>
 
 CloudFormation sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/permissions-ecr.html
 ---
 
 # Amazon ECR permissions
-<a name="permissions-ecr"></a>
 
 Before you can run a workflow in a container from your private Amazon ECR repository, you create a resource policy for the repository. The policy grants permission for the HealthOmics service to use the container. You add this resource policy to each private repository referenced by the workflow.
 

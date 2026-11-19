@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Gi
 ---
 
 # GitHubIntegrationInput
-<a name="API_GitHubIntegrationInput"></a>
 
 The input required to create a GitHub integration, including the OAuth authorization code and CSRF state.
 

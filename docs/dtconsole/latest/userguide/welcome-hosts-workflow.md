@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/welcome-hosts
 ---
 
 # Workflow to create or update a host
-<a name="welcome-hosts-workflow"></a>
 
 When you create a connection for an installed provider (on-prem), you use a host resource.
 

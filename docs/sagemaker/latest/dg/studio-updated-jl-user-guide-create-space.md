@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-us
 ---
 
 # Create a space
-<a name="studio-updated-jl-user-guide-create-space"></a>
 
 To get started using JupyterLab, create a space or choose the space that your administrator created for you and open JupyterLab.
 

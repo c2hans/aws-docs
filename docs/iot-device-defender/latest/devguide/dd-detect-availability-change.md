@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/dd-d
 ---
 
 # AWS IoT Device Defender detect feature availability change
-<a name="dd-detect-availability-change"></a>
 
 The AWS IoT Device Defender detect feature will no longer be available to new customers starting August 31, 2026. Existing AWS IoT Device Defender detect customers can continue using the feature.
 

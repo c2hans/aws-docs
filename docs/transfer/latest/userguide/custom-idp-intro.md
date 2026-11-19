@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/custom-idp-int
 ---
 
 # Working with custom identity providers
-<a name="custom-idp-intro"></a>
 
 AWS Transfer Family offers several options for custom identity providers to authenticate and authorize users for secure file transfers. Here are the main approaches:
 + [Custom identity provider solution](custom-idp-toolkit.md)—This topic describes the Transfer Family custom identity provider solution, using a toolkit hosted in GitHub.

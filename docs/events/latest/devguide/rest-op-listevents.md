@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/rest-op-listevent
 ---
 
 # ListEvents
-<a name="rest-op-listevents"></a>
 
 Lists AWS events. By default, it returns ongoing and upcoming events. Set `includePast=true` to also include events that have ended. No sign-in is needed. Use the `eventId` in each entry for `{eventId}` in the other paths in this chapter.
 

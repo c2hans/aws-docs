@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_U
 ---
 
 # UpdateSite
-<a name="API_UpdateSite"></a>
 
 Updates the information for an existing site. To remove information for any of the parameters, specify an empty string.
 

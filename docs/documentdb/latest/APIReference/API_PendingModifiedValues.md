@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Pendi
 ---
 
 # PendingModifiedValues
-<a name="API_PendingModifiedValues"></a>
 
  One or more modified settings for an instance. These modified settings have been requested, but haven't been applied yet.
 

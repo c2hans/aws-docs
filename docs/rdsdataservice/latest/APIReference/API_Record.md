@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_R
 ---
 
 # Record
-<a name="API_Record"></a>
 
 A record returned by a call.
 

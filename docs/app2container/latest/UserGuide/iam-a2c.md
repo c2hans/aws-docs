@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/app2container/latest/UserGuide/iam-a2c.h
 AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container (A2C), AWS Toolkit for .NET Refactoring (TR), and AWS Microservice Extractor (ME) for .NET is no longer open to new customers. If you would like to use the service, sign up prior to November 7, 2025. Alternatively use [AWS Transform](https://aws.amazon.com/transform/), which is an agentic AI service developed to accelerate enterprise modernization of .NET.
 
 # Identity and access management in App2Container
-<a name="iam-a2c"></a>
 
 Your AWS security credentials identify you to AWS and grant you access to your AWS resources. For example, they can allow you to access artifacts saved to an Amazon S3 bucket. You can use features of AWS Identity and Access Management (IAM) to allow other users, services, and applications to use specific resources in your AWS account without sharing your security credentials. You can choose to allow full use or limited use of your AWS resources.
 

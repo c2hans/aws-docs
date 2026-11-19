@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchFullAccess
-<a name="CloudWatchFullAccess"></a>
 
 **Description**: Provides full access to CloudWatch.
 

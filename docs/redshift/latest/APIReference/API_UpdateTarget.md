@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_UpdateT
 ---
 
 # UpdateTarget
-<a name="API_UpdateTarget"></a>
 
 A maintenance track that you can switch the current track to.
 

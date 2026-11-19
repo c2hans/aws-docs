@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # What each component tolerates
-<a name="dr-posture"></a>
 
 | Component | Configuration | On Availability Zone loss |
 | --- | --- | --- |

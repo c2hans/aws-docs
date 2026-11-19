@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # PrimaryKeyObject
-<a name="sam-property-simpletable-primarykeyobject"></a>
 
 The object describing the properties of a primary key.
 

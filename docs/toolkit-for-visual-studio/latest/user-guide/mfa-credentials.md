@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Multi-factor authentication (MFA) in Toolkit for Visual Studio
-<a name="mfa-credentials"></a>
 
 Multi-factor authentication (MFA) is additional security for your AWS accounts. MFA requires users to provide sign-in credentials and unique authentication from an AWS supported MFA mechanism when accessing AWS websites or services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_GoogleAnaly
 ---
 
 # GoogleAnalyticsConnectorProfileProperties
-<a name="API_GoogleAnalyticsConnectorProfileProperties"></a>
 
  The connector-specific profile properties required by Google Analytics.
 

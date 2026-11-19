@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/view-aliases.htm
 ---
 
 # Viewing DNS aliases for file systems and backups
-<a name="view-aliases"></a>
 
 You can view the DNS aliases currently associated with your FSx for Windows File Server file systems and backups using the AWS Management Console, the AWS CLI, and API, as described in the following procedures.
 

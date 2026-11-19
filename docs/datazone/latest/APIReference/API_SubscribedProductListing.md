@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Subscri
 ---
 
 # SubscribedProductListing
-<a name="API_SubscribedProductListing"></a>
 
 The data product listing.
 

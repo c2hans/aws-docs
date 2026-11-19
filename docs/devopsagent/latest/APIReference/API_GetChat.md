@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GetC
 ---
 
 # GetChat
-<a name="API_GetChat"></a>
 
 Retrieves the details of a chat execution, including its execution ID, summary, timestamps, and archive status.
 

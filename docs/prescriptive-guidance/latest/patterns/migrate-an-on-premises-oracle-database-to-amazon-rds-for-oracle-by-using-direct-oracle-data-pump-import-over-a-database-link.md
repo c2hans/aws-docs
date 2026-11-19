@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an Oracle database to Amazon RDS using direct Oracle Data Pump Import over a database link
-<a name="migrate-an-on-premises-oracle-database-to-amazon-rds-for-oracle-by-using-direct-oracle-data-pump-import-over-a-database-link"></a>
 
 *Rizwan Wangde, Amazon Web Services*
 

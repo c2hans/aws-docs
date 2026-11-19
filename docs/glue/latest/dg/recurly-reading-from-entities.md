@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/recurly-reading-from-enti
 ---
 
 # Reading from Recurly entities
-<a name="recurly-reading-from-entities"></a>
 
 **Prerequisites**
 

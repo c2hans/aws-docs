@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Ser
 ---
 
 # Quotas and constraints for Amazon DynamoDB
-<a name="ServiceQuotasRevised"></a>
 
 This topic describes current quotas, formerly referred to as limits, within Amazon DynamoDB. This topic also describes how you can perform the quota management tasks, for example, viewing your current quotas and requesting a quota increase.
 

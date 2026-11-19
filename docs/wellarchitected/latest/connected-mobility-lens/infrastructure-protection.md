@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Infrastructure protection
-<a name="infrastructure-protection"></a>
 
 | CMSEC\_13: How do you protect your systems and APIs from unauthorized access or exposure? |
 | --- |

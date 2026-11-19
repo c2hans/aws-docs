@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-flutter-mobile-app
 ---
 
 # Module 3: Add API
-<a name="module-3"></a>
 
 ## Overview
 <a name="overview"></a>

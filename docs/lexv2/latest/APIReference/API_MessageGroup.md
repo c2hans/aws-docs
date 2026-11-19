@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_MessageGro
 ---
 
 # MessageGroup
-<a name="API_MessageGroup"></a>
 
 Provides one or more messages that Amazon Lex should send to the user.
 

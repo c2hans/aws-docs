@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/evaluationform
 ---
 
 # View an evaluation form audit trail in Connect Customer
-<a name="evaluationform-audit-trail"></a>
 
 1. Select the evaluation form that you want to research.
 ![The evaluation forms page, a box to the left of an evaluation form.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-select.png)

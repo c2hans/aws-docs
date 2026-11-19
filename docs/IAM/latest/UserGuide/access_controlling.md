@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_controlling.
 ---
 
 # Control access to AWS resources using policies
-<a name="access_controlling"></a>
 
 You can use a policy to control access to resources within IAM or all of AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TreeM
 ---
 
 # TreeMapVisual
-<a name="API_TreeMapVisual"></a>
 
 A tree map.
 

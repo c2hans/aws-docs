@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Transforming events with JSONata
-<a name="eb-custom-bus-transform"></a>
 
 To change what a target receives, set `Transformer` on `CreateSubscriber` or `UpdateSubscriber`. `Transformer.Type` `RAW`, the default, delivers the published data alone; `WITH_METADATA` delivers the data with its metadata; and `JSONATA` delivers the result of an expression, for example `{% { "orderId": $events.Data.orderId, "priority": $events.Data.priority } %}`. A subscriber whose target is a Custom Event Bus - Classic supports only `RAW`. A universal target does not use `Transformer`; it shapes its request in `UniversalTargetParameters.Input`, which takes the same expressions.
 

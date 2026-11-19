@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 4: Verify the migration
-<a name="pb-solr-step4"></a>
 
 After backfill completes, confirm the target holds the expected indexes and documents. List the indexes and compare document counts between source and target:
 

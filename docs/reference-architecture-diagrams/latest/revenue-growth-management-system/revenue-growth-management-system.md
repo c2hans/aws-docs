@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/r
 ---
 
 # Revenue Growth Management System on AWS
-<a name="revenue-growth-management-system"></a>
 
 Publication date: **March 25, 2022 ([Diagram history](#rgm-history))**
 

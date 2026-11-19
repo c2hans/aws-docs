@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Provisioning resources using CloudFormation stacks
-<a name="sagemaker-hyperpod-multihead-slurm-cfn"></a>
 
 To set up multiple controller nodes in a HyperPod Slurm cluster, provision AWS resources through two CloudFormation stacks: [Provision basic resources](#sagemaker-hyperpod-multihead-slurm-cfn-basic) and [Provision additional resources to support multiple controller nodes](#sagemaker-hyperpod-multihead-slurm-cfn-multihead).
 

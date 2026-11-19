@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/audi
 ---
 
 # Device certificate expiring
-<a name="audit-chk-device-cert-approaching-expiration"></a>
 
 A device certificate is expiring within the configured threshold period or has expired. The certificate expiration check threshold can be configured between 30 days (minimum) and 3652 days (10 years, maximum) with a default value of 30 days.
 

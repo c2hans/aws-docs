@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetEventTrigger
-<a name="API_connect-customer-profiles_GetEventTrigger"></a>
 
 Get a specific Event Trigger from the domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/feature-pl
 ---
 
 # Turning off features to change feature plans
-<a name="feature-plans-deactivate"></a>
 
 Feature plans add configuration options to your user pool. You can configure and use these features only when the related feature plan is active. For example, you can configure access token customization in the Plus and Essentials plans, but not in the Lite plan. To deactivate these features, you must deactivate each active component. The **Switch to** option in the **Settings** menu in the Amazon Cognito console notifies you of the features you must deactivate before you can change your feature plan. With this chapter, you can learn the changes that deactivation makes to your user pool configuration, and how to turn off these features individually.
 

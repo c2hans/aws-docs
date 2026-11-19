@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # GetTelemetryRuleForOrganization
-<a name="API_GetTelemetryRuleForOrganization"></a>
 
  Retrieves the details of a specific organization telemetry rule. This operation can only be called by the organization's management account or a delegated administrator account.
 

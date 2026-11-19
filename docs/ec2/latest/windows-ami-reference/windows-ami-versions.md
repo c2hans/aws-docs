@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/windows-ami-reference/windows
 ---
 
 # How Amazon creates AWS Windows AMIs
-<a name="windows-ami-versions"></a>
 
 The following content is a high level overview of the process Amazon uses to create AWS Windows AMIs. Details include what you can expect from an official AWS Windows AMI, as well as the standards that Amazon uses to validate AMI security and reliability.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_PendingMaint
 ---
 
 # PendingMaintenanceAction
-<a name="API_PendingMaintenanceAction"></a>
 
 Describes a maintenance action pending for an AWS DMS resource, including when and how it will be applied. This data type is a response element to the `DescribePendingMaintenanceActions` operation.
 

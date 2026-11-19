@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-arrinse
 ---
 
 # JSON.ARRINSERT
-<a name="json-arrinsert"></a>
 
 Inserts one or more values into the array values at the path before the index.
 

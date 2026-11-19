@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetS
 ---
 
 # GetService
-<a name="API_GetService"></a>
 
 Retrieves information about the specified service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/tags-resourc
 ---
 
 # ListTagsForResource, TagResource, UntagResource
-<a name="tags-resourcearn"></a>
 
 ## URI
 <a name="tags-resourcearn-url"></a>

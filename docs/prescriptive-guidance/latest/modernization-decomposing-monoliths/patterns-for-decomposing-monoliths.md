@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Patterns for decomposing monoliths
-<a name="patterns-for-decomposing-monoliths"></a>
 
 After you decide to decompose a monolith in your application portfolio, you should choose the appropriate decomposition patterns and introduce them into your organization.
 

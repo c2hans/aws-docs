@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Us
 ---
 
 # UserDetails
-<a name="API_UserDetails"></a>
 
 A structure that contains information about the user session that this batch of events was collected from.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # UpdateHostedZoneAssociation
-<a name="API_route53globalresolver_UpdateHostedZoneAssociation"></a>
 
 Updates the configuration of a hosted zone association.
 

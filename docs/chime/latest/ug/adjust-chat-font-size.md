@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/adjust-chat-font-size.ht
 ---
 
 # Adjusting the size of chat text
-<a name="adjust-chat-font-size"></a>
 
 **To select your chat font size**
 

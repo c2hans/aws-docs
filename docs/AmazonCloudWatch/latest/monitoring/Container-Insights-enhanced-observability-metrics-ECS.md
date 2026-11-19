@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Amazon ECS Container Insights with enhanced observability metrics
-<a name="Container-Insights-enhanced-observability-metrics-ECS"></a>
 
 Container Insights with enhanced observability provides deeper visibility into containerized workloads by offering:
 + Higher metrics granularity at both task and container levels

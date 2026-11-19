@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/mfa-gettin
 ---
 
 # Prompt users for MFA
-<a name="mfa-getting-started"></a>
 
 You can use the following steps to determine how often workforce users are prompted for multi-factor authentication (MFA) whenever they attempt to sign-in to the AWS access portal. Before you begin, we recommend that you understand the [Available MFA types for IAM Identity Center](mfa-types.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # STAR-JSON Booking Schema
-<a name="reference-star-schema"></a>
 
 AVX emits booking-shaped artifacts as **STAR-JSON**: a JSON representation of the Standards for Technology in Automotive Retail (STAR) XML message types. This enables tenants already consuming STAR XML to receive an equivalent JSON payload and activate an optional XML converter if their downstream dealer management system requires XML.
 

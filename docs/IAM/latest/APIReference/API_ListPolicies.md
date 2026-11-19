@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListPolicies
 ---
 
 # ListPolicies
-<a name="API_ListPolicies"></a>
 
 Lists all the managed policies that are available in your AWS account, including your own customer-defined managed policies and all AWS managed policies.
 

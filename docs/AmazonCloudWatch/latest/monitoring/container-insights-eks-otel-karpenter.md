@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 ---
 
 # Collecting Karpenter metrics with OTel Container Insights
-<a name="container-insights-eks-otel-karpenter"></a>
 
 Karpenter is the recommended node autoscaler for Amazon EKS. Container Insights collects Karpenter metrics through Prometheus scraping. With Container Insights, you gain built-in visibility into node provisioning, scaling speed, and resource use. You do not need to set up Prometheus or Grafana manually.
 

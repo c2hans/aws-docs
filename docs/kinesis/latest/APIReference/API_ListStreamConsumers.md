@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListStre
 ---
 
 # ListStreamConsumers
-<a name="API_ListStreamConsumers"></a>
 
 Lists the consumers registered to receive data from a stream using enhanced fan-out, and provides information about each consumer.
 

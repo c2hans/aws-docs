@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_StageKey.html
 ---
 
 # StageKey
-<a name="API_StageKey"></a>
 
 A reference to a unique stage identified in the format `{restApiId}/{stage}`.
 

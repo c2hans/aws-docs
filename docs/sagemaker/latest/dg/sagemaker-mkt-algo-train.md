@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-mkt-algo-t
 ---
 
 # Use an Algorithm to Run a Training Job
-<a name="sagemaker-mkt-algo-train"></a>
 
 You can create use an algorithm resource to create a training job by using the Amazon SageMaker AI console, the low-level Amazon SageMaker API, or the [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable).
 

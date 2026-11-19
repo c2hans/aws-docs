@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-
 ---
 
 # Daemon task definitions
-<a name="managed-daemons-task-definitions"></a>
 
 A daemon task definition is the blueprint for your daemon. Amazon ECS Managed Daemons use a dedicated daemon task definition resource, distinct from standard Amazon ECS task definitions. You register a daemon task definition to specify the container image, resource requirements, and configuration for your daemon.
 

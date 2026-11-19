@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_CountO
 ---
 
 # CountOpenWorkflowExecutions
-<a name="API_CountOpenWorkflowExecutions"></a>
 
 Returns the number of open workflow executions within the given domain that meet the specified filtering criteria.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-snowflake-connec
 ---
 
 # Creating a Snowflake connection
-<a name="creating-snowflake-connection"></a>
 
 **Note**
  Unified connections (connection v2) standardize all connections to use `USERNAME`, `PASSWORD` keys for basic auth credentials. You can still create a v1 connection via API with secrets containing `sfUser`, `sfPassword`.

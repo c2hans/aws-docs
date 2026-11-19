@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/recurly-configuring.html
 ---
 
 # Configuring Recurly
-<a name="recurly-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Recurly, you must meet the following requirements:
 

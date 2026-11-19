@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # AutomatedDiscoveryInformation
-<a name="API_AutomatedDiscoveryInformation"></a>
 
 Describes automated discovery.
 

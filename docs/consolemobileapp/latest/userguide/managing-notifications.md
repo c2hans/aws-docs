@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/consolemobileapp/latest/userguide/managi
 ---
 
 # Push notifications
-<a name="managing-notifications"></a>
 
 You can use Notifications in the Console Mobile Application to create actionable push notifications from AWS services, such as CloudWatch. These notifications can be delivered to your mobile device when a resource requires your attention. Enabling push notifications requires you to [share your device ID with AWS](data-protection.md#data-privacy). Use this tutorial to get started with and manage your push notifications in the Console Mobile Application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ImageInputSource
-<a name="API_agent-runtime_ImageInputSource"></a>
 
 Details about the source of an input image in the result from a function in the action group invocation.
 

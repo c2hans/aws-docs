@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_InstanceLa
 ---
 
 # InstanceLaunchTemplate
-<a name="API_InstanceLaunchTemplate"></a>
 
 The instance launch configuration for an Amazon ECS Managed Instances capacity provider. Specifies the instance profile, networking, instance selection constraints, capacity pricing model, storage, and monitoring settings.
 

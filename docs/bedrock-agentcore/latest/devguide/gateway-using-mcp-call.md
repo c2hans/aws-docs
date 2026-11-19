@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Call a tool in a AgentCore gateway
-<a name="gateway-using-mcp-call"></a>
 
 To call a specific tool, make a POST request to the gateway’s MCP endpoint. Specify `tools/call` as the method in the request body, along with the name of the tool and its arguments. The request format depends on the MCP protocol version:
 

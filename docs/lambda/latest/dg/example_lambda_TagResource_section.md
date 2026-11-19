@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_lambda_TagResou
 ---
 
 # Use `TagResource` with a CLI
-<a name="example_lambda_TagResource_section"></a>
 
 The following code examples show how to use `TagResource`.
 

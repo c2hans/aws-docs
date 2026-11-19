@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/fl
 ---
 
 # Scaling game hosting capacity with Amazon GameLift Servers
-<a name="fleets-manage-capacity"></a>
 
 Hosting capacity, measured in instances, represents the number of game sessions that Amazon GameLift Servers can host concurrently and the number of concurrent players that those game sessions can accommodate. One of the most challenging tasks with game hosting is scaling capacity to meet player demand without wasting money on resources that you don't need.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # Configure an alarm to create investigations
-<a name="Investigations-configure-alarm-procedures"></a>
 
 After you have an investigation group set up in your account, you can configure existing CloudWatch alarms to automatically create investigations when they enter the ALARM state. This eliminates the need to manually start investigations and ensures consistent response to operational issues. You can configure alarms using the AWS Management Console, AWS CLI, CloudFormation, or AWS SDKs.
 

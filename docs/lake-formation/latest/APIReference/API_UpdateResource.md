@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_U
 ---
 
 # UpdateResource
-<a name="API_UpdateResource"></a>
 
 Updates the data access role used for vending access to the given (registered) resource in AWS Lake Formation.
 

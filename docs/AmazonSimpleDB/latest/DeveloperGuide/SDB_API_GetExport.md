@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB
 ---
 
 # GetExport
-<a name="SDB_API_GetExport"></a>
 
 ## Description
 <a name="SDB_API_GetExport_Description"></a>

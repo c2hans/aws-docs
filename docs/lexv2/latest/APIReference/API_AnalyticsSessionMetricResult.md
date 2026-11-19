@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsS
 ---
 
 # AnalyticsSessionMetricResult
-<a name="API_AnalyticsSessionMetricResult"></a>
 
 An object containing the results for a session metric you requested.
 

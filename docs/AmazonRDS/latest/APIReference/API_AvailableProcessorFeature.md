@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Availa
 ---
 
 # AvailableProcessorFeature
-<a name="API_AvailableProcessorFeature"></a>
 
 Contains the available processor feature information for the DB instance class of a DB instance.
 

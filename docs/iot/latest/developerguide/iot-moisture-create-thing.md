@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-moisture-c
 ---
 
 # Step 2: Create the AWS IoT thing, certificate, and private key
-<a name="iot-moisture-create-thing"></a>
 
 Create a thing in the AWS IoT registry to represent your Raspberry Pi.
 

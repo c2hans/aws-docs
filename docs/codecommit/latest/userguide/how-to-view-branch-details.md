@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-view-
 ---
 
 # View branch details in AWS CodeCommit
-<a name="how-to-view-branch-details"></a>
 
 You can use the CodeCommit console to view details about the branches in a CodeCommit repository. You can view the date of the last commit to a branch, the commit message, and more. You can also use the AWS CLI or Git from a local repo connected to the CodeCommit repository.
 

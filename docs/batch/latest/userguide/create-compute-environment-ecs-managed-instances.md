@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-compute-en
 ---
 
 # Tutorial: Create a managed compute environment using Amazon ECS Managed Instances
-<a name="create-compute-environment-ecs-managed-instances"></a>
 
 This tutorial walks you through creating an AWS Batch compute environment that uses Amazon ECS Managed Instances. Amazon ECS manages the Amazon EC2 instances on your behalf — you specify the maximum capacity and optional instance constraints, and Amazon ECS handles provisioning, scaling, and termination.
 

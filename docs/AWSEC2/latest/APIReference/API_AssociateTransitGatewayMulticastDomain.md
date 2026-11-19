@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Associate
 ---
 
 # AssociateTransitGatewayMulticastDomain
-<a name="API_AssociateTransitGatewayMulticastDomain"></a>
 
 Associates the specified subnets and transit gateway attachments with the specified transit gateway multicast domain.
 

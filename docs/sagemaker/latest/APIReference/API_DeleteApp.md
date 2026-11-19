@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteApp
-<a name="API_DeleteApp"></a>
 
 Used to stop and delete an app.
 

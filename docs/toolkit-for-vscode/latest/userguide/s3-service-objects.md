@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/s3-s
 ---
 
 # Working with Amazon S3 objects
-<a name="s3-service-objects"></a>
 
 Your files, folders, and any other data that's stored in an S3 resource bucket are known as S3 objects.
 

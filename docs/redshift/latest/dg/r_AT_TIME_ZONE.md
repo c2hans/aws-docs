@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_AT_TIME_ZONE.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # AT TIME ZONE function
-<a name="r_AT_TIME_ZONE"></a>
 
 AT TIME ZONE specifies which time zone to use with a TIMESTAMP or TIMESTAMPTZ expression.
 

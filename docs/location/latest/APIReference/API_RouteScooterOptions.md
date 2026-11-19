@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteSc
 ---
 
 # RouteScooterOptions
-<a name="API_RouteScooterOptions"></a>
 
  Travel mode options when the provided travel mode is `Scooter`. For [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers, `ap-southeast-1` and `ap-southeast-5` regions support only `LicensePlate` options.
 

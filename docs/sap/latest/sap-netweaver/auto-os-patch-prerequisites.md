@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/auto-os-patch-p
 ---
 
 # Automated operating system patching prerequisites
-<a name="auto-os-patch-prerequisites"></a>
 
 In addition to the prerequisites described in the [Automation prerequisites](sap-nw-automation.md#automation-prerequisites) section of this guide, verify the following prerequisites that are specific to automated operating system patching:
 + Verify the Patch Manager prerequisites.

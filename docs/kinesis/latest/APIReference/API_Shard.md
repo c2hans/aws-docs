@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Shard.ht
 ---
 
 # Shard
-<a name="API_Shard"></a>
 
 A uniquely identified group of data records in a Kinesis data stream.
 

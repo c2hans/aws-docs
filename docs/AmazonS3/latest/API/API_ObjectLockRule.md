@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ObjectLockRule.h
 ---
 
 # ObjectLockRule
-<a name="API_ObjectLockRule"></a>
 
 The container element for an Object Lock rule.
 

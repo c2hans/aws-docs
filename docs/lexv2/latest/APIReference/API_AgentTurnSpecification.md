@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AgentTurnS
 ---
 
 # AgentTurnSpecification
-<a name="API_AgentTurnSpecification"></a>
 
 The specification of an agent turn.
 

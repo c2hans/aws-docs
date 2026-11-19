@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBMajorEngineVersions
-<a name="API_DescribeDBMajorEngineVersions"></a>
 
 Describes the properties of specific major versions of DB engines.
 

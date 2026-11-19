@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ranger-ad
 ---
 
 # Set up a Ranger Admin server to integrate with Amazon EMR
-<a name="emr-ranger-admin"></a>
 
 For Amazon EMR integration, the Apache Ranger application plugins must communicate with the Admin server using TLS/SSL.
 

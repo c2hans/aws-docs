@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_SaaS
 ---
 
 # SaaSProductSort
-<a name="API_SaaSProductSort"></a>
 
 Objects that allows sorting on SaaS products based on certain fields and sorting order.
 

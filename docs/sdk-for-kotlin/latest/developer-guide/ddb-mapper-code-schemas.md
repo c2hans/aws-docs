@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 ---
 
 # Manually define schemas
-<a name="ddb-mapper-code-schemas"></a>
 
 Instead of generating schemas from annotations, you can define them directly in code. Manual schemas give you full control over how objects map to items and don’t require the schema-generator plugin. They’re useful when you want explicit control over conversion, when you can’t annotate a type (for example, a class from another library), or when you map polymorphic or document-shaped data.
 

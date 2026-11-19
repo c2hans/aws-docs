@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-prep-rules.htm
 ---
 
 # Rules and limits for input prepare in MediaLive
-<a name="input-prep-rules"></a>
 
 **One active prepare at a time**
 The MediaLive schedule can contain any number of input prepare actions, but only one input prepare action can be active at one time.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ClusterHealt
 ---
 
 # ClusterHealth
-<a name="API_ClusterHealth"></a>
 
 An object representing the health of your Amazon EKS cluster.
 

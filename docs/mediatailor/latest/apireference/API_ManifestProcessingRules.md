@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Mani
 ---
 
 # ManifestProcessingRules
-<a name="API_ManifestProcessingRules"></a>
 
 The configuration for manifest processing rules. Manifest processing rules enable customization of the personalized manifests created by MediaTailor.
 

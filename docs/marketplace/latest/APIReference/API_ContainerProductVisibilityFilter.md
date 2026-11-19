@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Cont
 ---
 
 # ContainerProductVisibilityFilter
-<a name="API_ContainerProductVisibilityFilter"></a>
 
 Object that allows filtering on the visibility of the product in the AWS Marketplace.
 

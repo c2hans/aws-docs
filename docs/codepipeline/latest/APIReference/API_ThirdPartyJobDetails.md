@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Thi
 ---
 
 # ThirdPartyJobDetails
-<a name="API_ThirdPartyJobDetails"></a>
 
 The details of a job sent in response to a `GetThirdPartyJobDetails` request.
 

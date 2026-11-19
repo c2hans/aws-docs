@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/security_iam_
 ---
 
 # How AWS End User Messaging SMS works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AWS End User Messaging SMS, learn what IAM features are available to use with AWS End User Messaging SMS.
 

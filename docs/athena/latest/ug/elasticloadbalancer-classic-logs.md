@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/elasticloadbalancer-cla
 ---
 
 # Query Classic Load Balancer logs
-<a name="elasticloadbalancer-classic-logs"></a>
 
 Use Classic Load Balancer logs to analyze and understand traffic patterns to and from Elastic Load Balancing instances and backend applications. You can see the source of traffic, latency, and bytes that have been transferred.
 

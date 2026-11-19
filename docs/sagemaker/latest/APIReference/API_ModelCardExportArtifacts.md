@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelC
 ---
 
 # ModelCardExportArtifacts
-<a name="API_ModelCardExportArtifacts"></a>
 
 The artifacts of the model card export job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/monitoring
 ---
 
 # Monitoring manifest update time in AWS Elemental MediaPackage
-<a name="monitoring-manifest-last-updated"></a>
 
 MediaPackage playback responses include the following custom headers that indicate when MediaPackage last modified the manifest in non-dynamic ad insertion workflows. These headers are helpful when troubleshooting issues related to stale manifests.
 

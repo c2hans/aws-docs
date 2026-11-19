@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/batchupdatecommand-i
 ---
 
 # Batch command in different interfaces
-<a name="batchupdatecommand-interfaces"></a>
 
 The batch update schedule command is represented differently in different interfaces:
 + In the AWS CLI, the command is `batch-update-schedule`.

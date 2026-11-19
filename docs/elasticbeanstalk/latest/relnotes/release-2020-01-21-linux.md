@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk Linux-based platform updates on January 21, 2020
-<a name="release-2020-01-21-linux"></a>
 
 This release provides new Linux-based platform versions for AWS Elastic Beanstalk. The release includes security updates. It also includes Multicontainer Docker, Go, Java SE, Java with Tomcat, and Node.js updates.
 

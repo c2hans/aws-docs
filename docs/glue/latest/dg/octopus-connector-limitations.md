@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/octopus-connector-limitat
 ---
 
 # Limitations and notes for the Octopus Deploy connector
-<a name="octopus-connector-limitations"></a>
 
 The following are limitations and notes for the Octopus Deploy connector:
 + Octopus Deploy is supported as a source only. Writing to Octopus Deploy is not supported.

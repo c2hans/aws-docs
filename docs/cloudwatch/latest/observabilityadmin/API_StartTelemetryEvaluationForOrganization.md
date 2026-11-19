@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # StartTelemetryEvaluationForOrganization
-<a name="API_StartTelemetryEvaluationForOrganization"></a>
 
  This actions begins onboarding the organization and all member accounts to the telemetry config feature.
 

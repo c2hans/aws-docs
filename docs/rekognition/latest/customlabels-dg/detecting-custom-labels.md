@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/detec
 ---
 
 # Analyzing an image with a trained model
-<a name="detecting-custom-labels"></a>
 
 To analyze an image with a trained Amazon Rekognition Custom Labels model, you call the [DetectCustomLabels](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectCustomLabels) API. The result from `DetectCustomLabels` is a prediction that the image contains specific objects, scenes, or concepts.
 

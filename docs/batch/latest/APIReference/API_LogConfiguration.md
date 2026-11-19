@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_LogConfigu
 ---
 
 # LogConfiguration
-<a name="API_LogConfiguration"></a>
 
 Log configuration options to send to a custom log driver for the container.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/registrar-
 ---
 
 # Geographic top-level domains
-<a name="registrar-tld-list-geographic"></a>
 
 The following domain extensions are grouped by geography and include official country-specific extensions, known as *country code top-level domains* (ccTLDs). Examples include .be (Belgium), .in (India), and .mx (Mexico). The rules for registration of ccTLDs vary by country. Some countries are unrestricted, meaning that anyone in the world can register, while others have certain restrictions, such as residency. The listing for each ccTLD indicates any restrictions.
 

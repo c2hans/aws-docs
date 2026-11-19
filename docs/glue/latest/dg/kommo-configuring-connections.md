@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/kommo-configuring-connect
 ---
 
 # Configuring Kommo connections
-<a name="kommo-configuring-connections"></a>
 
 Kommo connections support two authentication types: a long-lived API access token, or OAuth 2.0 (authorization code). For the token, store it in Secrets Manager; for OAuth 2.0, see [Setting up the authorization code flow for Kommo](kommo-setup-authorization-code-flow.md).
 

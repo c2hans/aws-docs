@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_N
 ---
 
 # NetworkResourceCount
-<a name="API_NetworkResourceCount"></a>
 
 Describes a resource count.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-prer
 ---
 
 # Prerequisites for EC2 instance hibernation
-<a name="hibernating-prerequisites"></a>
 
 You can enable hibernation support for an On-Demand Instance or a Spot Instance when you launch it. You can't enable hibernation on an existing instance, whether it is running or stopped. For more information, see [Enable instance hibernation](enabling-hibernation.md).
 

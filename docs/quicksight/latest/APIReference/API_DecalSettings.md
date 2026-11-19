@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Decal
 ---
 
 # DecalSettings
-<a name="API_DecalSettings"></a>
 
 Decal settings for accessibility features that define visual patterns and styling for data elements.
 

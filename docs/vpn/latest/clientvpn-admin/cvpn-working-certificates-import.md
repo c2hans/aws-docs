@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # Import an AWS Client VPN client certificate revocation list
-<a name="cvpn-working-certificates-import"></a>
 
 You must have a Client VPN client certificate revocation list file to import. For more information about generating a client certificate revocation list, see [Generate an AWS Client VPN client certificate revocation list](cvpn-working-certificates-generate.md).
 

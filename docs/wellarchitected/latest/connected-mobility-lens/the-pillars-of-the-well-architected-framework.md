@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # The Pillars of the Well-Architected Framework
-<a name="the-pillars-of-the-well-architected-framework"></a>
 
  This section describes each of the Well-Architected pillars and includes definitions, best practices, questions, considerations, and essential AWS services that are relevant for customers designing, building and managing connected mobility workloads.
 

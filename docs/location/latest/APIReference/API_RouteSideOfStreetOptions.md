@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteSi
 ---
 
 # RouteSideOfStreetOptions
-<a name="API_RouteSideOfStreetOptions"></a>
 
 Options to configure matching the provided position to a side of the street.
 

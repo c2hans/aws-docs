@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # UpdateChannelParameters
-<a name="API_UpdateChannelParameters"></a>
 
 The updated channel-specific parameters used only when you update a notify code configuration. When you omit a channel, that channel's parameters remain unchanged. When you supply a channel, you can clear individual fields by using the empty-string or empty-map sentinel on a member, or drop the whole channel's parameters by clearing every member. These sentinels apply only when you update a configuration; a create request rejects empty values with a validation error.
 

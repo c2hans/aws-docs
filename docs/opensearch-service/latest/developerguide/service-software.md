@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Service software updates in Amazon OpenSearch Service
-<a name="service-software"></a>
 
 **Note**
 For explanations of the changes and additions made in each *major* (non-patch) service software update, see the [release notes](release-notes.md).

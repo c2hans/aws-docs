@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds or overwrites one or more tags for the specified AWS Agent Registry resource. Tags are key-value pairs that you can use to categorize and manage AWS resources. If a tag with the same key already exists on the resource, the service replaces its value with the value you specify.
 

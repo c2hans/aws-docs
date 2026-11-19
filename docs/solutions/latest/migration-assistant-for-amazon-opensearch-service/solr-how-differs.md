@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # How Solr migration differs
-<a name="solr-how-differs"></a>
 
 Apache Solr stores its index definition in a `schema.xml` file (or a managed schema) and lays out its Lucene segments differently from Elasticsearch and OpenSearch. Because there is no Solr-native snapshot format that the solution can read the way it reads an Elasticsearch or OpenSearch snapshot, the Solr migration path relies on a dedicated reader component.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # Set up an integration request in API Gateway
-<a name="api-gateway-integration-settings-integration-request"></a>
 
 To set up an integration request, you perform the following required and optional tasks:
 

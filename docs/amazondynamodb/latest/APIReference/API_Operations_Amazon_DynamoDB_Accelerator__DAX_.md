@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_O
 ---
 
 # DynamoDB Accelerator
-<a name="API_Operations_Amazon_DynamoDB_Accelerator__DAX_"></a>
 
 The following actions are supported by DynamoDB Accelerator:
 +  [CreateCluster](API_dax_CreateCluster.md)

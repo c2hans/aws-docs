@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/move-delete-re
 ---
 
 # Move, rename, or delete files or directories on the remote server
-<a name="move-delete-remote-files"></a>
 
 **Topics**
 + [Move or rename files or directories on the remote SFTP server](#move-remote-file)

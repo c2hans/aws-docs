@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/tenants.html
 ---
 
 # Tenants
-<a name="tenants"></a>
 
 This chapter explains how to use Amazon SES tenant management to isolate, monitor, and manage email sending across multiple tenants within your SES account. This feature helps Independent Software Vendors (ISVs), enterprises, and organizations sending emails on behalf of multiple downstream entities maintain separate reputation profiles and prevent issues with one tenant from affecting others.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_U
 ---
 
 # UplinkDataflowDetails
-<a name="API_UplinkDataflowDetails"></a>
 
 Dataflow details for an uplink endpoint
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/s3-resource
 ---
 
 # s3-resources-protected-by-backup-plan
-<a name="s3-resources-protected-by-backup-plan"></a>
 
 Checks if Amazon Simple Storage Service (Amazon S3) buckets are protected by a backup plan. The rule is NON\_COMPLIANT if the Amazon S3 bucket is not covered by a backup plan.
 

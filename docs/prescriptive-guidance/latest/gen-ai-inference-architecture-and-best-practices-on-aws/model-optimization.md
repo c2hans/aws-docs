@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 ---
 
 # Model optimization techniques
-<a name="model-optimization"></a>
 
 Model optimizations focus on making the model itself faster and more compute and memory efficient — independent of the serving infrastructure. These techniques modify how the model is stored, compiled, or executed at inference time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AuditMitigat
 ---
 
 # AuditMitigationActionsTaskTarget
-<a name="API_AuditMitigationActionsTaskTarget"></a>
 
 Used in MitigationActionParams, this information identifies the target findings to which the mitigation actions are applied. Only one entry appears.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListQueries
-<a name="API_ListQueries"></a>
 
 Retrieves a paginated list of queries for a workspace.
 

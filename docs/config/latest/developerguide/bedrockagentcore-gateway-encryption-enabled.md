@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/bedrockagen
 ---
 
 # bedrockagentcore-gateway-encryption-enabled
-<a name="bedrockagentcore-gateway-encryption-enabled"></a>
 
 Checks whether an Amazon Bedrock AgentCore Gateway is encrypted with a customer-managed KMS key. The rule is NON\_COMPLIANT if the gateway does not have KmsKeyArn configured.
 

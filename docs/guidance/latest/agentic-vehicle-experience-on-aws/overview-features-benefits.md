@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Features and Benefits
-<a name="overview-features-benefits"></a>
 
 ## Agentic Voice and Text on One Platform
 <a name="overview-feature-agentic-voice"></a>

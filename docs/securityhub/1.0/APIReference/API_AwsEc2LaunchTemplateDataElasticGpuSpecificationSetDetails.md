@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataElasticGpuSpecificationSetDetails
-<a name="API_AwsEc2LaunchTemplateDataElasticGpuSpecificationSetDetails"></a>
 
  Provides details about an Elastic Graphics specification for an Amazon EC2 launch template.
 

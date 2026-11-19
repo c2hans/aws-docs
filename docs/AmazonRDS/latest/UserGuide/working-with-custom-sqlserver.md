@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/working-with-
 ---
 
 # Working with RDS Custom for SQL Server
-<a name="working-with-custom-sqlserver"></a>
 
 Following, you can find instructions for creating, managing, and maintaining your RDS Custom for SQL Server DB instances.
 

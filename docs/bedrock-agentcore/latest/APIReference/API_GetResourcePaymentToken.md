@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GetResourcePaymentToken
-<a name="API_GetResourcePaymentToken"></a>
 
 Generates authentication tokens for payment providers that use vendor-specific authentication mechanisms.
 

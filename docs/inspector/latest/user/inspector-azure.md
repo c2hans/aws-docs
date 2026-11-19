@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector-azure.ht
 ---
 
 # Integrating Amazon Inspector with Microsoft Azure
-<a name="inspector-azure"></a>
 
 You can create an integration to Microsoft Azure in Amazon Inspector to detect software vulnerabilities in your Azure resources. After you create the connector, Amazon Inspector continuously scans your Azure Virtual Machines (VMs), Azure Function Apps, and Azure Container Registry (ACR) images for known vulnerabilities and generates findings with remediation guidance.
 

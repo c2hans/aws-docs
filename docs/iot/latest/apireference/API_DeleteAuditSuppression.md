@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteAuditS
 ---
 
 # DeleteAuditSuppression
-<a name="API_DeleteAuditSuppression"></a>
 
  Deletes a Device Defender audit suppression.
 

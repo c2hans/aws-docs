@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/strcasecmp.ht
 ---
 
 # $strcasecmp
-<a name="strcasecmp"></a>
 
 The `$strcasecmp` operator in Amazon DocumentDB performs a case-insensitive comparison between two strings. It returns an integer value indicating the lexicographic comparison of the two input strings, ignoring case differences.
 

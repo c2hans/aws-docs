@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AddSavingsPlanAction
-<a name="API_AWSBCMPricingCalculator_AddSavingsPlanAction"></a>
 
  Represents an action to add a Savings Plan to a bill scenario.
 

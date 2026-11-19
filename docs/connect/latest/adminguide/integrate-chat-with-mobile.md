@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/integrate-chat
 ---
 
 # Integrate Connect Customer chat into a mobile application
-<a name="integrate-chat-with-mobile"></a>
 
 This topic explains how to integrate Connect Customer Chat into your mobile application. You can use one of the following options:
 + [WebView integration](#webview)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Visual overview of the Gitflow strategy
-<a name="visual-overview-of-the-gitflow-strategy"></a>
 
 The following diagram can be used like a [Punnett square](https://en.wikipedia.org/wiki/Punnett_square) to understand the Gitflow branching strategy. Line up the branches on the vertical axis with the AWS environments on the horizontal axis to determine what actions to perform in each scenario. The circled numbers guide you through the sequence of actions represented in the diagram. For more information about the activities that occur in each environment, see [DevOps environments](understanding-the-dev-ops-environments.md) in this guide.
 

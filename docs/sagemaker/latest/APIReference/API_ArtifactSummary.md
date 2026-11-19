@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Artifa
 ---
 
 # ArtifactSummary
-<a name="API_ArtifactSummary"></a>
 
 Lists a summary of the properties of an artifact. An artifact represents a URI addressable object or data. Some examples are a dataset and a model.
 

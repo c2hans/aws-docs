@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Physical migration from MySQL by using Percona XtraBackup and Amazon S3
-<a name="AuroraMySQL.Migrating.ExtMySQL.S3"></a>
 
 You can copy the full and incremental backup files from your source MySQL version 5.7 or 8.0 database to an Amazon S3 bucket. Then you can restore to an Amazon Aurora MySQL DB cluster with the same major DB engine version from those files.
 

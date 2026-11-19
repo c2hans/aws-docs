@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/SubnetGroups
 ---
 
 # Creating a node-based ElastiCache cluster for Redis OSS
-<a name="SubnetGroups.designing-cluster-pre.redis"></a>
 
 Following are the one-time actions you must take in order to create a node-based ElastiCache cluster for Redis OSS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Upd
 ---
 
 # UpdatePermissionSet
-<a name="API_UpdatePermissionSet"></a>
 
 Updates an existing permission set.
 

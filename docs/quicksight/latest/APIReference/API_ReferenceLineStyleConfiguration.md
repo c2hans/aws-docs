@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Refer
 ---
 
 # ReferenceLineStyleConfiguration
-<a name="API_ReferenceLineStyleConfiguration"></a>
 
 The style configuration of the reference line.
 

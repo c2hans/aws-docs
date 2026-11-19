@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/UUID.ht
 ---
 
 # UUID function
-<a name="UUID"></a>
 
 The UUID function generates a Universally Unique Identifier (UUID).
 

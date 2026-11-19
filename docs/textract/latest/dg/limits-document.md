@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/limits-document.html
 ---
 
 # Set Quotas in Amazon Textract
-<a name="limits-document"></a>
 
 The following is a list of set quotas in Amazon Textract, which cannot be changed. For information about limitations in default quotas you can change, see the section [Default Quotas in Amazon Textract.](limits-quotas-explained.md)
 

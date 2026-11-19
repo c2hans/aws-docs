@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/what-is
 ---
 
 # Use AWS Billing and Cost Management for AWS
-<a name="what-is-costmanagement"></a>
 
 Welcome to the AWS Cost Management User Guide.
 

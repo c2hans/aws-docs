@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ResourceDetails
-<a name="API_CostOptimizationHub_ResourceDetails"></a>
 
 Contains detailed information about the specified resource.
 

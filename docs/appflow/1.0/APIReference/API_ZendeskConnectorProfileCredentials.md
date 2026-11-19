@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ZendeskConn
 ---
 
 # ZendeskConnectorProfileCredentials
-<a name="API_ZendeskConnectorProfileCredentials"></a>
 
  The connector-specific profile credentials required when using Zendesk.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/create-notebook-auto
 ---
 
 # Create notebook job with SageMaker AI Python SDK example
-<a name="create-notebook-auto-run-sdk"></a>
 
 To run a standalone notebook using the SageMaker Python SDK, you need to create a Notebook Job step, attach it into a pipeline, and use the utilities provided by Pipelines to run your job on demand or optionally schedule one or more future jobs. The following sections describe the basic steps to create an on-demand or scheduled notebook job and track the run. In addition, refer to the following discussion if you need to pass parameters to your notebook job or connect to Amazon EMR in your notebook—additional preparation of your Jupyter notebook is required in these cases. You can also apply defaults for a subset of the arguments of `NotebookJobStep` so you don’t have to specify them every time you create a Notebook Job step.
 

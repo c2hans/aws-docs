@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_S3Repos
 ---
 
 # S3Repository
-<a name="API_S3Repository"></a>
 
 Information about a repository in an S3 bucket.
 

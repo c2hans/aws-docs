@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 ---
 
 # Calling public parameters for AWS services, Regions, endpoints, Availability Zones, local zones, and Wavelength Zones in Parameter Store
-<a name="parameter-store-public-parameters-global-infrastructure"></a>
 
 You can call the AWS Region, service, endpoint, Availability, and Wavelength Zones of public parameters by using the following path.
 

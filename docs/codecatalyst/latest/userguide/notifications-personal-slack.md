@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/notificati
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Configuring Slack direct messages
-<a name="notifications-personal-slack"></a>
 
 If a CodeCatalyst project has been configured to [send notifications to a Slack channel](notifications-projects.md), those notifications can also be sent as direct messages (DMs). Having notifications sent to you directly as DMs can help raise awareness of events happening in the projects where you have a role. To enable DMs, you must add your Slack member ID to CodeCatalyst.
 

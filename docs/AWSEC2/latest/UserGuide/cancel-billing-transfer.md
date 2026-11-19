@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cancel-billing-t
 ---
 
 # Cancel or revoke billing assignment requests for shared EC2 Capacity Reservations
-<a name="cancel-billing-transfer"></a>
 
 Only the Capacity Reservation owner can cancel a `pending` billing assignment request. If a pending request is cancelled, it enters the `cancelled` state and billing of any available, or *unused*, capacity of the Capacity Reservation remains assigned to Capacity Reservation owner.
 

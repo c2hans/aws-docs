@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSTransformCustomFullAccess
-<a name="AWSTransformCustomFullAccess"></a>
 
 **Description**: Provides full access to AWS Transform custom.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_List
 ---
 
 # ListQueries
-<a name="API_ListQueries"></a>
 
 Lists active openCypher queries.
 

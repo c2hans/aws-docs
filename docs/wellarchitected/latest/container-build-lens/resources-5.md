@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Resources
-<a name="resources-5"></a>
 
  This section provides companion material for the Container Build Lens with respect to the sustainability pillar.
 

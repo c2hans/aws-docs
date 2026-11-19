@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-moni
 ---
 
 # Monitoring your Braket resources with EventBridge
-<a name="braket-monitor-eventbridge"></a>
 
  Amazon EventBridge monitors status change events in Amazon Braket resources, including quantum tasks and spending limits. Events from Amazon Braket are delivered to EventBridge, almost in real time. You can write rules that indicate which events interest you, including automated actions to take when an event matches a rule. Automatic actions that can be triggered include these:
 + Invoking an AWS Lambda function

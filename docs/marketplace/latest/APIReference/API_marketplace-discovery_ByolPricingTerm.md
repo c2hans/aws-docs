@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ByolPricingTerm
-<a name="API_marketplace-discovery_ByolPricingTerm"></a>
 
 Defines a Bring Your Own License (BYOL) pricing term, where buyers use their existing license for the product.
 

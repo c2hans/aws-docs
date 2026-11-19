@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonBraketServiceRolePolicy
-<a name="AmazonBraketServiceRolePolicy"></a>
 
 **Description**: Allows Amazon Braket to create and manage AWS resources on your behalf
 

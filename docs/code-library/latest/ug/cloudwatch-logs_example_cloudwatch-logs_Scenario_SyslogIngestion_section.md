@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudwatch-logs_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Learn CloudWatch Logs syslog ingestion basics using an AWS SDK
-<a name="cloudwatch-logs_example_cloudwatch-logs_Scenario_SyslogIngestion_section"></a>
 
 The following code example shows how to:
 + Deploy a CloudFormation stack that provisions a syslog VPC endpoint.

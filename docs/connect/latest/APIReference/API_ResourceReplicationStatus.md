@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Resource
 ---
 
 # ResourceReplicationStatus
-<a name="API_ResourceReplicationStatus"></a>
 
 Indicates whether a resource type is being replicated and kept in sync in a specific AWS Region of a Global Resiliency deployment.
 

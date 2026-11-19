@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_SMSSandboxPhoneNumber
 ---
 
 # SMSSandboxPhoneNumber
-<a name="API_SMSSandboxPhoneNumber"></a>
 
 A verified or pending destination phone number in the SMS sandbox.
 

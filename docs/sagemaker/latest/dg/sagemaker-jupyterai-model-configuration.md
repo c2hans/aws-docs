@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-jupyterai-
 ---
 
 # Configure your model provider
-<a name="sagemaker-jupyterai-model-configuration"></a>
 
 **Note**
 In this section, we assume that the language and embedding models that you plan to use are already deployed. For models provided by AWS, you should already have the ARN of your SageMaker AI endpoint or access to Amazon Bedrock. For other model providers, you should have the API key used to authenticate and authorize requests to your model.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Manually create or edit the CloudWatch agent configuration file
-<a name="CloudWatch-Agent-Configuration-File-Details"></a>
 
  The CloudWatch agent configuration file is a JSON file with five sections: `agent`, `metrics`, `logs`, `traces`, and `opentelemetry`.
 + The `agent` section includes fields for the overall configuration of the agent.

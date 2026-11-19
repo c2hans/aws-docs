@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/compari
 ---
 
 # Comparison operators
-<a name="comparison-operators"></a>
 
 Comparison conditions state logical relationships between two values. All comparison conditions are binary operators with a Boolean return type.
 

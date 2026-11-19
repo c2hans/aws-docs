@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # CurrentPinAttributes
-<a name="API_CurrentPinAttributes"></a>
 
 The parameter values of the current PIN to be changed on the EMV chip card.
 

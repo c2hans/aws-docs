@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_DeleteDes
 ---
 
 # DeleteDestination
-<a name="API_DeleteDestination"></a>
 
 Deletes a notification destination specified by name.
 

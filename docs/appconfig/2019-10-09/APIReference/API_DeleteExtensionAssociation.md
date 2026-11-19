@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_De
 ---
 
 # DeleteExtensionAssociation
-<a name="API_DeleteExtensionAssociation"></a>
 
 Deletes an extension association. This action doesn't delete extensions defined in the association.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-exp
 ---
 
 # Exporting experiment assignment data
-<a name="appconfig-experimentation-exporting-assignment-data"></a>
 
 To capture which entities are assigned to which treatments during an experiment run, configure AWS AppConfig Agent with the `EXPERIMENT_ASSIGNMENT_LOG_DESTINATION` option (on the Lambda extension, `AWS_APPCONFIG_EXTENSION_EXPERIMENT_ASSIGNMENT_LOG_DESTINATION`). A treatment assignment occurs when a request for the experiment flag is made on behalf of an entity that is currently exposed to the experiment. If you do not set this option, the agent does not emit assignment records.
 

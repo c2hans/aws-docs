@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/service
 ---
 
 # Service Region index file for AWS services
-<a name="service-region-index-file-for-service"></a>
 
 |  |
 | --- |
@@ -12,7 +11,7 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/service
 To understand the service version index file for AWS services, see the following references:
 
 **Contents**
-+ [Example: Service Region index file for an AWS service](#service-region-index-file-for-service)
++ [Example: Service Region index file for an AWS service](service-region-index-file-for-service.md)
 + [Service Region index definitions](#service-region-index-definitions-services)
 
 ## Example: Service Region index file for an AWS service

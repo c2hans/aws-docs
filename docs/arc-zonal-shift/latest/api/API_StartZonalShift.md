@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_StartZona
 ---
 
 # StartZonalShift
-<a name="API_StartZonalShift"></a>
 
 You start a zonal shift to temporarily move load balancer traffic away from an Availability Zone in an AWS Region, to help your application recover immediately, for example, from a developer's bad code deployment or from an AWS infrastructure failure in a single Availability Zone. You can start a zonal shift in ARC only for managed resources in your AWS account in an AWS Region. Resources are automatically registered with ARC by AWS services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Analy
 ---
 
 # AnalysisDefinition
-<a name="API_AnalysisDefinition"></a>
 
 The definition of an analysis.
 

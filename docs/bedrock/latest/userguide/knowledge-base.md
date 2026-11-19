@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.
 ---
 
 # Retrieve data and generate AI responses with Amazon Bedrock Knowledge Bases
-<a name="knowledge-base"></a>
 
 While foundation models have general knowledge, you can further improve their responses by using Retrieval Augmented Generation (RAG). RAG is a technique that uses information from data sources to improve the relevancy and accuracy of generated responses. With Amazon Bedrock Knowledge Bases, you can integrate proprietary information into your generative-AI applications. When a query is made, a knowledge base searches your data to find relevant information to answer the query. The retrieved information can then be used to improve generated responses. Amazon Bedrock Knowledge Bases helps build secure, enterprise-grade agentic AI applications by leveraging retrieval securely over large-scale datasets.
 

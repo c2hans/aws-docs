@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-box-
 ---
 
 # Set up Client Credentials Grant authentication for Box
-<a name="kb-managed-box-ccg-setup"></a>
 
 Client Credentials Grant (`CCG`) authentication is the recommended authentication method for a Box data source. The connector authenticates as a Box app using the Client Credentials Grant (2LO) flow, with a service account (not a user) that crawls all enterprise content and no interactive sign-in. It is the only authentication method that supports document-level access control (ACLs). Use it for most deployments.
 

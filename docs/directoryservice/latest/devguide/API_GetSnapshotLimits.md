@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Get
 ---
 
 # GetSnapshotLimits
-<a name="API_GetSnapshotLimits"></a>
 
 Obtains the manual snapshot limits for a directory.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/example_translate_De
 ---
 
 # Use `DescribeTextTranslationJob` with an AWS SDK
-<a name="example_translate_DescribeTextTranslationJob_section"></a>
 
 The following code examples show how to use `DescribeTextTranslationJob`.
 

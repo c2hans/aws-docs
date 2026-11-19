@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/datasources-s3
 ---
 
 # Data Sources - Amazon S3
-<a name="datasources-s3"></a>
 
 The Amazon S3 Data Sources resource provides statistical data and other information about the Amazon Simple Storage Service (Amazon S3) buckets that Amazon Macie monitors and analyzes for your account. This includes a breakdown of each bucket's public access and encryption settings. It also includes details about the size and number of objects that Macie can analyze to detect sensitive data in a bucket, and whether and when that analysis occurred. The data is available for all the S3 buckets that Macie monitors and analyzes for your account. If you're the Macie administrator for an organization, this includes S3 buckets that your member accounts own.
 

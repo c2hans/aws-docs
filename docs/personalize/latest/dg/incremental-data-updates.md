@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/incremental-data-u
 ---
 
 # Importing individual records into an Amazon Personalize dataset
-<a name="incremental-data-updates"></a>
 
  After you have complete [Creating a schema and a dataset](data-prep-creating-datasets.md), you can import individual records, including item interactions, users, items, actions, or action interactions into an existing dataset. Importing data individually allows you to add small batches of records to your Amazon Personalize datasets as your catalog grows. You can import up to 10 records per individual import operation.
 

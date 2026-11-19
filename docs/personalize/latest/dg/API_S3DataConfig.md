@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_S3DataConfig.h
 ---
 
 # S3DataConfig
-<a name="API_S3DataConfig"></a>
 
 The configuration details of an Amazon S3 input or output bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Outpu
 ---
 
 # OutputDataConfig
-<a name="API_OutputDataConfig"></a>
 
 Provides configuration parameters for the output of inference jobs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/background-filters.h
 ---
 
 # Integrating background filters into a client application for the Amazon Chime SDK
-<a name="background-filters"></a>
 
 This section explains how to programmatically filter video backgrounds by using background blur 2.0 and background replacement 2.0. To add a background filter to a video stream, you create a `VideoFxProcessor` that contains a `VideoFxConfig` object. You then insert that processor into a `VideoTransformDevice`.
 

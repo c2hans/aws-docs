@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sentry-reading-from-entit
 ---
 
 # Reading from Sentry entities
-<a name="sentry-reading-from-entities"></a>
 
 **Prerequisites**
 

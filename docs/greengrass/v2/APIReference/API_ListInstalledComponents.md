@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ListInsta
 ---
 
 # ListInstalledComponents
-<a name="API_ListInstalledComponents"></a>
 
 Retrieves a paginated list of the components that a Greengrass core device runs. By default, this list doesn't include components that are deployed as dependencies of other components. To include dependencies in the response, set the `topologyFilter` parameter to `ALL`.
 

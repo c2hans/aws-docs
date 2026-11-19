@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/dnf-supportinfo-user-gui
 ---
 
 # Using the dnf supportinfo Plugin
-<a name="dnf-supportinfo-user-guide"></a>
 
 The dnf-plugin-support-info package provides the `dnf supportinfo` command for AL2023. Use this command to query lifecycle and support information for packages: find out whether a package is currently supported, what severity levels receive patches, and when support status changes.
 

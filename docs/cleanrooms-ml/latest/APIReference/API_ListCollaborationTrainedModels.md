@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Li
 ---
 
 # ListCollaborationTrainedModels
-<a name="API_ListCollaborationTrainedModels"></a>
 
 Returns a list of the trained models in a collaboration.
 

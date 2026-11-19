@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # BatchGetCalculatedAttributeForProfileError
-<a name="API_connect-customer-profiles_BatchGetCalculatedAttributeForProfileError"></a>
 
 Error object describing why a specific profile and calculated attribute failed.
 

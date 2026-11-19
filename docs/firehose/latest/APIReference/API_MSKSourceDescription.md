@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_MSKSour
 ---
 
 # MSKSourceDescription
-<a name="API_MSKSourceDescription"></a>
 
 Details about the Amazon MSK cluster used as the source for a Firehose stream.
 

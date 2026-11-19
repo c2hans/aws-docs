@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Proced
 ---
 
 # Importing using Oracle SQL\*Loader
-<a name="Oracle.Procedural.Importing.SQLLoader"></a>
 
 You might consider Oracle SQL\*Loader for large databases that contain a limited number of objects. Because the process of exporting from a source database and loading to a target database is specific to the schema, the following example creates the sample schema objects, exports from a source, and then loads the data into a target database.
 

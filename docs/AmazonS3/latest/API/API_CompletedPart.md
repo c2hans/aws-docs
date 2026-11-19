@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompletedPart.ht
 ---
 
 # CompletedPart
-<a name="API_CompletedPart"></a>
 
 Details of the parts that were uploaded.
 

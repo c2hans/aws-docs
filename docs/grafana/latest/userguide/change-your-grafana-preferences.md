@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/change-your-gra
 ---
 
 # Change your preferences
-<a name="change-your-grafana-preferences"></a>
 
 You can perform several tasks on the **Preferences** tab. You can edit your profile, change your Amazon Managed Grafana preferences, and view information about your profile and Amazon Managed Grafana usage.
 

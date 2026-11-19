@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Conf
 ---
 
 # ConfigurationDetails
-<a name="API_ConfigurationDetails"></a>
 
  The configuration details.
 

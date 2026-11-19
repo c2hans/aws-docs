@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutDelive
 ---
 
 # PutDeliveryChannel
-<a name="API_PutDeliveryChannel"></a>
 
 Creates or updates a delivery channel to deliver configuration information and other compliance information.
 

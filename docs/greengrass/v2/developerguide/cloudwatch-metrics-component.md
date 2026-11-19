@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/cloudwatch-
 ---
 
 # CloudWatch metrics
-<a name="cloudwatch-metrics-component"></a>
 
 The Amazon CloudWatch metrics component (`aws.greengrass.Cloudwatch`) publishes custom metrics from Greengrass core devices to Amazon CloudWatch. The component enables components to publish CloudWatch metrics, which you can use to monitor and analyze the Greengrass core device's environment. For more information, see [Using Amazon CloudWatch metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html) in the *Amazon CloudWatch User Guide*.
 

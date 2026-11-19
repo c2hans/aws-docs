@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-a
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references.e761b72a-766b-5ffa-a90d-aaeb20418968"></a>

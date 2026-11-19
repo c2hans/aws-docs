@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/circleci-configuring.html
 ---
 
 # Configuring CircleCI
-<a name="circleci-configuring"></a>
 
 Before you can use AWS Glue to transfer data from CircleCI, you must meet these requirements:
 

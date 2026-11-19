@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Support for specific regions and industries
-<a name="support-for-regions-and-industries"></a>
 
 The latest sample configuration from Landing Zone Accelerator on AWS (LZA), called the [LZA Universal Configuration](https://github.com/aws/lza-universal-configuration), was developed from years of experience in delivering landing zones for highly regulated customers across the world. It is designed to accelerate the deployment of a multi-account AWS environment and blends security best practices with Well-Architected principles, with built-in alignment to leading compliance frameworks. The automated deployment of the Universal Configuration can save hundreds of hours in planning, while still establishing a foundation for long-term security and governance best practices.
 

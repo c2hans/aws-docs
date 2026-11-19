@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/code-security-asse
 ---
 
 # Editing a scan configuration
-<a name="code-security-assessments-edit-configuration"></a>
 
- You can edit a scan configuration at any time. When editing a scan configuration, you can change the scan frequency, scan analysis, tags, and repositories to be scanned. For example, you edit a scan configuration to pause scanning for a particular repository. The following procedure describes how to edit a scan configuration.
+ You can edit a scan configuration at any time. When editing a scan configuration, you can change the scan frequency, scan analysis, automatic fix pull requests, tags, and repositories to be scanned. For example, you edit a scan configuration to pause scanning for a particular repository. The following procedure describes how to edit a scan configuration.
 
 **To edit a scan configuration**
 

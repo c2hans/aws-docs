@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evalua
 ---
 
 # Evaluation terminology
-<a name="evaluations-terminology"></a>
 
 Understanding key concepts and terminology is essential for effectively using AgentCore Evaluations. The following terms define the core components and processes involved in agent evaluation.
 

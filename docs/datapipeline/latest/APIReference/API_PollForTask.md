@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Pol
 ---
 
 # PollForTask
-<a name="API_PollForTask"></a>
 
 Task runners call `PollForTask` to receive a task to perform from AWS Data Pipeline. The task runner specifies which tasks it can perform by setting a value for the `workerGroup` parameter. The task returned can come from any of the pipelines that match the `workerGroup` value passed in by the task runner and that was launched using the user credentials specified by the task runner.
 

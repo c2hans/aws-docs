@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonVPCNetworkAccessAnalyzerFullAccessPolicy
-<a name="AmazonVPCNetworkAccessAnalyzerFullAccessPolicy"></a>
 
 **Description**: Provides permissions to describe AWS resources, run Network Access Analyzer, and create or delete tags on Network Insights Access Scope and Network Insights Access Scope Analysis.
 

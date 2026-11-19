@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Disass
 ---
 
 # DisassociateMembers
-<a name="API_DisassociateMembers"></a>
 
 Disassociates GuardDuty member accounts (from the current administrator account) specified by the account IDs.
 

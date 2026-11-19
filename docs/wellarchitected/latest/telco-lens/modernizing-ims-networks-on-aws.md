@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/modern
 ---
 
 # Modernizing IMS networks on AWS
-<a name="modernizing-ims-networks-on-aws"></a>
 
  This scenario explores modernizing IP Multimedia Subsystem (IMS) networks on the AWS Cloud. IMS is a key component of 5G networks, providing IP-based multimedia services like voice, video, and messaging. As telecommunications providers modernize their infrastructure for 5G, migrating legacy IMS deployments to the cloud can offer significant benefits.
 

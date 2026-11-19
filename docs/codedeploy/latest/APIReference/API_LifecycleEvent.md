@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Lifec
 ---
 
 # LifecycleEvent
-<a name="API_LifecycleEvent"></a>
 
 Information about a deployment lifecycle event.
 

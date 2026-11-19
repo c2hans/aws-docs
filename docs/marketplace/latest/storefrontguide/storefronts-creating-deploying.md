@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/store
 ---
 
 # Creating and deploying storefronts
-<a name="storefronts-creating-deploying"></a>
 
 Create, clone, deploy, and link storefronts to publish your catalog to buyers.
 

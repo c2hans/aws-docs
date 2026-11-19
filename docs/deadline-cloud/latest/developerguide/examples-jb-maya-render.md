@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Render Autodesk Maya scenes on Deadline Cloud
-<a name="examples-jb-maya-render"></a>
 
 The deadline-cloud-samples repository on the GitHub website includes the [maya\_cli\_render](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/maya_cli_render) job bundle, which renders a Maya software renderer scene with the Maya CLI `Render` command. It runs one task per frame using an Open Job Description parameter space and restricts execution to Linux workers through host requirements.
 

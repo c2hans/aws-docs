@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/integrate-with
 ---
 
 # Start chats in your applications by using Connect Customer APIs
-<a name="integrate-with-startchatcontact-api"></a>
 
 Use the StartChatContact API in Connect Customer APIs to start chats in your own applications.
 

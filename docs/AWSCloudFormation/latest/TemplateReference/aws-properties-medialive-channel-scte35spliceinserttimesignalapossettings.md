@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Channel Scte35SpliceInsertTimeSignalAposSettings
-<a name="aws-properties-medialive-channel-scte35spliceinserttimesignalapossettings"></a>
 
 <a name="aws-properties-medialive-channel-scte35spliceinserttimesignalapossettings-description"></a>The `Scte35SpliceInsertTimeSignalAposSettings` property type specifies Property description not available. for an [AWS::MediaLive::Channel](aws-resource-medialive-channel.md).
 

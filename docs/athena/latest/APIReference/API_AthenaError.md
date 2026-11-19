@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_AthenaErr
 ---
 
 # AthenaError
-<a name="API_AthenaError"></a>
 
 Provides information about an Athena query error. The `AthenaError` feature provides standardized error information to help you understand failed queries and take steps after a query failure occurs. `AthenaError` includes an `ErrorCategory` field that specifies whether the cause of the failed query is due to system error, user error, or other error.
 

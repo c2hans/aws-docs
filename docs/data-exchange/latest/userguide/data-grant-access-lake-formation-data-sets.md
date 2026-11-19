@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/data-gran
 ---
 
 # Access an AWS Data Exchange data set containing AWS Lake Formation data sets (Preview)
-<a name="data-grant-access-lake-formation-data-sets"></a>
 
 **Overview for recipients**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/tut
 ---
 
 # Generate images in batch with a diffusion model
-<a name="tutorial-text-to-image-batch"></a>
 
 This tutorial walks you through running high-throughput batch image generation on a JSONL file of prompts using a diffusion model. You submit the [text-to-image batch job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/text_to_image_batch) on the GitHub website to a GPU fleet on your Deadline Cloud farm. The default model is [FLUX.2 Klein 4B](https://huggingface.co/black-forest-labs/FLUX.2-klein-4B) on the Hugging Face website, which is Apache 2.0 licensed, ungated, distilled to 4 steps, and needs about 13 GB of video RAM (VRAM).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 ---
 
 # Connect target AWS accounts and regions
-<a name="transform-vmware-connect-target-account"></a>
 
 Connect AWS Transform to your target AWS environment so the agent can deploy infrastructure, migrate networks, and rehost servers on your behalf. This involves three steps: select your migration type, provide your MAP agreement details (if applicable), and set up the connector. These settings apply across all migration stages, including network migration, landing zone, and server rehost.
 
@@ -26,6 +25,8 @@ You must apply MAP tags to receive MAP credit. For more information about MAP, s
 <a name="transform-vmware-cta-connector"></a>
 
 You use the target account connector to connect your migration job to the AWS environment where your workloads reside after migration. Before you begin, verify that your target AWS account has the necessary permissions, quotas, and configurations to support your migrated infrastructure.
+
+If you migrate to an AWS Local Zone or an Outpost, configure the connector to connect to the parent AWS Region of the Local Zone or Outpost.
 
 When you approve the connector request, you grant AWS Transform permissions to:
 + Manage Amazon S3 bucket operations (read/write) for VMware migration, along with access to AWS Migration Hub and AWS Application Migration Service (MGN). This includes permissions for the following items, all restricted to resources within the target account that are tagged with `CreatedBy:AWSTransform` or `CreatedFor:AWSTransform`:
@@ -220,6 +221,8 @@ A migration target region is the AWS Region where migrated resources are deploye
 + Israel (Tel Aviv)
 + Mexico (Central)
 + South America (São Paulo)
+
+You can also [migrate servers](transform-vmware-migrate-servers.md#transform-vmware-ms-target-locations) to AWS Local Zones and AWS Outposts. In both cases, create the connector in the parent AWS Region of the Local Zone or Outpost.
 
 **Important**
 If you specify a target AWS Region that differs from the AWS Transform AWS Region, some of your data is transferred across AWS Regions.

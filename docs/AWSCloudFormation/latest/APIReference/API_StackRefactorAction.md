@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackRefactorAction
-<a name="API_StackRefactorAction"></a>
 
 Describes the stack and the action that CloudFormation will perform on it if you execute the stack refactor.
 

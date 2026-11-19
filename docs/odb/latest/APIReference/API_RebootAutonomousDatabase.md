@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_RebootAutono
 ---
 
 # RebootAutonomousDatabase
-<a name="API_RebootAutonomousDatabase"></a>
 
 Reboots the specified Autonomous Database.
 

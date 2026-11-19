@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeEven
 ---
 
 # DescribeEvents
-<a name="API_DescribeEvents"></a>
 
  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see [Working with Events and Notifications](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Events.html) in the * AWS Database Migration Service User Guide.*
 

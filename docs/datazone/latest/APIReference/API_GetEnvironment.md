@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetEnvi
 ---
 
 # GetEnvironment
-<a name="API_GetEnvironment"></a>
 
 Gets an Amazon DataZone environment.
 

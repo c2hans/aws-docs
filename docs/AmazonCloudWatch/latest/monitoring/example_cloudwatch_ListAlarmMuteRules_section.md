@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/examp
 ---
 
 # Use `ListAlarmMuteRules` with an AWS SDK
-<a name="example_cloudwatch_ListAlarmMuteRules_section"></a>
 
 The following code examples show how to use `ListAlarmMuteRules`.
 

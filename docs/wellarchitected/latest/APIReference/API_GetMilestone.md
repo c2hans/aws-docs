@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GetMilestone
-<a name="API_GetMilestone"></a>
 
 Get a milestone for an existing workload.
 

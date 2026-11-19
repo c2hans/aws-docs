@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2rw-ssm.html
 ---
 
 # Troubleshoot impaired Windows instance with EC2Rescue and Systems Manager
-<a name="ec2rw-ssm"></a>
 
 Support provides you with a Systems Manager Run Command document to interface with your Systems Manager-enabled instance to run EC2Rescue for Windows Server. The Run Command document is called `AWSSupport-RunEC2RescueForWindowsTool`.
 

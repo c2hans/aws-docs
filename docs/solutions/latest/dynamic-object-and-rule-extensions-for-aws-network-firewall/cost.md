@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 ---
 
 # Cost
-<a name="cost"></a>
 
  You are responsible for the cost of the AWS services used while running this solution. The total cost to run this solution depends on the number of policies installed, the number of AWS Lambda functions and their running duration, and the number of Amazon EventBridge events published. As of the most recent revision, the estimated cost for running this solution with default settings in the US East (N. Virginia) Region without Open Policy Agent (OPA) activated is approximately **$96.48**, and with OPA activated is approximately **$137.48**. The option with OPA activated provides advanced validation for the API. Refer to [Architecture overview](architecture-overview.md) for more details.
 

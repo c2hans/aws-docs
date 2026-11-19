@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agent-activity
 ---
 
 # Agent activity audit report in Connect Customer
-<a name="agent-activity-audit-report"></a>
 
 The agent activity audit is like a report version of the [agent event stream](agent-event-streams.md). All of the data in this report is also in the agent event stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstar
 ---
 
 # Step 5: Add a template constraint to limit instance size
-<a name="getstarted-constraint"></a>
 
 Constraints add another layer of control over products at the portfolio level. Constraints can control the launch context of a product (launch constraints), or add rules to the CloudFormation template (template constraints). For more information, see [Using AWS Service Catalog Constraints](constraints.md).
 

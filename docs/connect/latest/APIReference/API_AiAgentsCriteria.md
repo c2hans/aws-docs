@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AiAgents
 ---
 
 # AiAgentsCriteria
-<a name="API_AiAgentsCriteria"></a>
 
 AI Agent search criteria definitions.
 

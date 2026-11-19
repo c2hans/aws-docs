@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/cloudtrai
 ---
 
 # Example Security Lake queries for CloudTrail data
-<a name="cloudtrail-query-examples"></a>
 
 AWS CloudTrail tracks user activity and API usage in AWS services. Subscribers can query CloudTrail data to learn the following types of information:
 

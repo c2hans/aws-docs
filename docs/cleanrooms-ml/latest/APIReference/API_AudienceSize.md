@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Au
 ---
 
 # AudienceSize
-<a name="API_AudienceSize"></a>
 
 The size of the generated audience. Must match one of the sizes in the configured audience model.
 
@@ -11,7 +10,7 @@ The size of the generated audience. Must match one of the sizes in the configure
 <a name="API_AudienceSize_Contents"></a>
 
  ** type **   <a name="API-Type-AudienceSize-type"></a>
-Whether the audience size is defined in absolute terms or as a percentage. You can use the `ABSOLUTE` [AudienceSize](#API_AudienceSize) to configure out audience sizes using the count of identifiers in the output. You can use the `Percentage` [AudienceSize](#API_AudienceSize) to configure sizes in the range 1-100 percent.
+Whether the audience size is defined in absolute terms or as a percentage. You can use the `ABSOLUTE` [AudienceSize](API_AudienceSize.md) to configure out audience sizes using the count of identifiers in the output. You can use the `Percentage` [AudienceSize](API_AudienceSize.md) to configure sizes in the range 1-100 percent.
 Type: String
 Valid Values: `ABSOLUTE | PERCENTAGE`
 Required: Yes

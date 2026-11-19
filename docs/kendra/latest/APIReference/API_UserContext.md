@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_UserConte
 ---
 
 # UserContext
-<a name="API_UserContext"></a>
 
 Provides information about the user context for an Amazon Kendra index.
 

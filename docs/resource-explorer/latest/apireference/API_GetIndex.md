@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # GetIndex
-<a name="API_GetIndex"></a>
 
 Retrieves details about the AWS Resource Explorer index in the AWS Region in which you invoked the operation.
 
@@ -17,7 +16,7 @@ To call this operation, you must have the following permissions:
  **Related operations**
 + To create an index in a new AWS Region, use [CreateIndex](API_CreateIndex.md).
 + To delete an index and turn off Resource Explorer in an AWS Region, use [DeleteIndex](API_DeleteIndex.md).
-+ To retrieve the details for an index and check its state or its type, use [GetIndex](#API_GetIndex).
++ To retrieve the details for an index and check its state or its type, use [GetIndex](API_GetIndex.md).
 + To list all of the indexes in the AWS account, use [ListIndexes](API_ListIndexes.md).
 + To switch an index between being a local index or an aggregator index, use [UpdateIndexType](API_UpdateIndexType.md).
 

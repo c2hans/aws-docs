@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/cur-query-athena.ht
 ---
 
 # Querying Cost and Usage Reports using Amazon Athena
-<a name="cur-query-athena"></a>
 
 Amazon Athena is a serverless query service that you can use to analyze the data from your AWS Cost and Usage Reports (AWS CUR) in Amazon Simple Storage Service (Amazon S3) using standard SQL. This helps you avoid having to create your own data warehouse solutions to query AWS CUR data.
 

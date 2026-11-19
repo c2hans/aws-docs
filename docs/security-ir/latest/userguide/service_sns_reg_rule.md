@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/service_sns
 ---
 
 # Tutorial: Register an event rule
-<a name="service_sns_reg_rule"></a>
 
  Next, register an event rule that captures only `Membership Updated` events.
 

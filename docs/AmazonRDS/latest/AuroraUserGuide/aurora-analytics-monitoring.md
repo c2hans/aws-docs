@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Monitoring
-<a name="aurora-analytics-monitoring"></a>
 
 This topic describes the metrics, wait events, and diagnostic queries you use to monitor your analytics workload, and how to build dashboards from them. For specific symptoms, see [Troubleshooting](aurora-analytics-troubleshooting.md).
 

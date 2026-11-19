@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/example_kms_Ta
 ---
 
 # Use `TagResource` with an AWS SDK or CLI
-<a name="example_kms_TagResource_section"></a>
 
 The following code examples show how to use `TagResource`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCognitoIdpEmailServiceRolePolicy
-<a name="AmazonCognitoIdpEmailServiceRolePolicy"></a>
 
 **Description**: Allows Amazon Cognito User Pools service to use your SES identities for email sending
 

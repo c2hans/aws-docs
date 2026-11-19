@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Types
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Amazon AppStream API contains several data types that various actions use. This section describes each data type in detail.
 
@@ -28,6 +27,7 @@ The following data types are supported:
 +  [CertificateBasedAuthProperties](API_CertificateBasedAuthProperties.md)
 +  [ComputeCapacity](API_ComputeCapacity.md)
 +  [ComputeCapacityStatus](API_ComputeCapacityStatus.md)
++  [ContentRedirection](API_ContentRedirection.md)
 +  [DirectoryConfig](API_DirectoryConfig.md)
 +  [DomainJoinInfo](API_DomainJoinInfo.md)
 +  [EntitledApplication](API_EntitledApplication.md)
@@ -62,6 +62,7 @@ The following data types are supported:
 +  [StreamingExperienceSettings](API_StreamingExperienceSettings.md)
 +  [Theme](API_Theme.md)
 +  [ThemeFooterLink](API_ThemeFooterLink.md)
++  [UrlRedirectionConfig](API_UrlRedirectionConfig.md)
 +  [UsageReportSubscription](API_UsageReportSubscription.md)
 +  [User](API_User.md)
 +  [UserSetting](API_UserSetting.md)

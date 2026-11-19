@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_CodeCom
 ---
 
 # CodeCommitRepository
-<a name="API_CodeCommitRepository"></a>
 
 Information about an AWS CodeCommit repository. The CodeCommit repository must be in the same AWS Region and AWS account where its CodeGuru Reviewer code reviews are configured.
 

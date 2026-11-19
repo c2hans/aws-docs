@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Amount
-<a name="API_billing_Amount"></a>
 
 A monetary amount with a currency code. Used throughout the Billing API to represent credit balances, allocations, and adjustments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_De
 ---
 
 # DeobfuscationConfiguration
-<a name="API_DeobfuscationConfiguration"></a>
 
  A structure that contains the configuration for how an app monitor can deobfuscate stack traces.
 

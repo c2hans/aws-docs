@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/encryption-static
 ---
 
 # Setting up static key encryption using AWS Elemental MediaConnect
-<a name="encryption-static-key-set-up"></a>
 
 Before you can create a flow or a router I/O with an encrypted source or an output, or an entitlement that uses static key encryption, you must perform the following steps:
 

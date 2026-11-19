@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_GetCod
 ---
 
 # GetCodeIssueArtifact
-<a name="API_GetCodeIssueArtifact"></a>
 
 Retrieves one immutable artifact attached to an issue, including its content.
 

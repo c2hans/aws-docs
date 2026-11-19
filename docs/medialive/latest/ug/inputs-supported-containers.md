@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/inputs-supported-con
 ---
 
 # Input types supported in MediaLive
-<a name="inputs-supported-containers"></a>
 
 This section provides lookup information about the types of input sources that AWS Elemental MediaLive can ingest.
 

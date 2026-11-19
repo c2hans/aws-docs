@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost02.
 ---
 
 # Monitor cost and usage
-<a name="cost02"></a>
 
  Cost optimization begins with visibility. This capability covers the practices that turn a monthly total into cost data teams can act on, attributing spend to the teams, products, and environments that own it. It also covers expressing cost against the business outcomes it produces, and monitoring spend to catch changes as they happen.
 

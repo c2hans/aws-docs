@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # Receive an API response with a compressed payload in API Gateway
-<a name="api-gateway-receive-response-with-compressed-payload"></a>
 
 When making a request on a compression-enabled API, the client can choose to receive a compressed response payload of a specific format by specifying an `Accept-Encoding` header with a [supported content coding](api-gateway-enable-compression.md#api-gateway-supported-content-encodings).
 

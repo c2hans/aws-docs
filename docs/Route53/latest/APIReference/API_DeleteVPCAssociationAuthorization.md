@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteVP
 ---
 
 # DeleteVPCAssociationAuthorization
-<a name="API_DeleteVPCAssociationAuthorization"></a>
 
 Removes authorization to submit an `AssociateVPCWithHostedZone` request to associate a specified VPC with a hosted zone that was created by a different account. You must use the account that created the hosted zone to submit a `DeleteVPCAssociationAuthorization` request.
 

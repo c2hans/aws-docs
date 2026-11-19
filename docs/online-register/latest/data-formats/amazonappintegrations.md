@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon AppIntegrations
-<a name="amazonappintegrations"></a>
 
 Amazon AppIntegrations provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PeeringAt
 ---
 
 # PeeringAttachmentStatus
-<a name="API_PeeringAttachmentStatus"></a>
 
 The status of the transit gateway peering attachment.
 

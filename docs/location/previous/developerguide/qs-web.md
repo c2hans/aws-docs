@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-web.
 ---
 
 # Create a web app to use Amazon Location Service
-<a name="qs-web"></a>
 
  In this section, you will create a static webpage with a map and the ability to search at a location. First you will create your Amazon Location resources and create an API key for your application.
 

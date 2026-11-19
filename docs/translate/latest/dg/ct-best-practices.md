@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/ct-best-practices.ht
 ---
 
 # Best practices
-<a name="ct-best-practices"></a>
 
 Use following general best practices when using custom terminologies:
 + Keep your custom terminology uncluttered. Only include terms for which you need to control the translated values.

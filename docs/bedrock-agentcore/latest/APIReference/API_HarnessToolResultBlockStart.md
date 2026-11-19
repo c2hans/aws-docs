@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessToolResultBlockStart
-<a name="API_HarnessToolResultBlockStart"></a>
 
 Start payload for a tool result content block.
 

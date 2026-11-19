@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/job-configurat
 ---
 
 # Specify job configurations by using the AWS IoT Jobs API
-<a name="job-configurations-api"></a>
 
 You can use the [CreateJob](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateJob.html) or the [CreateJobTemplate](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateJobTemplate.html) API to specify the different job configurations. The following sections describe how to add these configurations. After you've added the configurations, you can use [JobExecutionSummary](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecutionSummary.html) and [JobExecutionSummaryForJob](https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecutionSummaryForJob.html) to view their status.
 

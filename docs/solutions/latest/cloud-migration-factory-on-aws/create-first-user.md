@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Step 4: Create the first user
-<a name="create-first-user"></a>
 
 ## Create the initial user and log in to the solution
 <a name="create-the-initial-user-and-log-in-to-the-solution"></a>

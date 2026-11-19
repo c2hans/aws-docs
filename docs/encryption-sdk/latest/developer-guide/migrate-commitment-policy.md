@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/mi
 ---
 
 # Setting your commitment policy
-<a name="migrate-commitment-policy"></a>
 
 [Key commitment](concepts.md#key-commitment) assures that your encrypted data always decrypts to the same plaintext. To provide this security property, beginning in version 1.7.*x*, the AWS Encryption SDK uses new [algorithm suites](supported-algorithms.md) with key commitment. To determine whether your data is encrypted and decrypted with key commitment, use the [commitment policy](concepts.md#commitment-policy) configuration setting. Encrypting and decrypting data with key commitment is an [AWS Encryption SDK best practice](best-practices.md).
 
@@ -12,7 +11,7 @@ Setting a commitment policy is an important part of the second step in the migra
 The commitment policy setting has three valid values in versions 2.0.*x* and later. In the latest 1.*x* versions (beginning with version 1.7.*x*), only `ForbidEncryptAllowDecrypt` is valid.
 + `ForbidEncryptAllowDecrypt` — The AWS Encryption SDK cannot encrypt with key commitment. It can decrypt ciphertexts encrypted with or without key commitment.
 
-  In the latest 1.*x* versions, this is the only valid value. It ensures that you don't encrypt with key commitment until you are fully prepared to decrypt with key commitment. Setting the value explicitly prevents your commitment policy from changing automatically to `require-encrypt-require-decrypt` when you upgrade to versions 2.0.*x* or later. Instead, you can [migrate your commitment policy](#migrate-commitment-policy) in stages.
+  In the latest 1.*x* versions, this is the only valid value. It ensures that you don't encrypt with key commitment until you are fully prepared to decrypt with key commitment. Setting the value explicitly prevents your commitment policy from changing automatically to `require-encrypt-require-decrypt` when you upgrade to versions 2.0.*x* or later. Instead, you can [migrate your commitment policy](migrate-commitment-policy.md) in stages.
 + `RequireEncryptAllowDecrypt` — The AWS Encryption SDK always encrypts with key commitment. It can decrypt ciphertexts encrypted with or without key commitment. This value is added in version 2.0.*x*.
 + `RequireEncryptRequireDecrypt` — The AWS Encryption SDK always encrypts and decrypts with key commitment. This value is added in version 2.0.*x*. It is the default value in versions 2.0.*x* and later.
 

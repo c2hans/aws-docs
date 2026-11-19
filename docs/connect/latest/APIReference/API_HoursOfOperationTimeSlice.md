@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_HoursOfO
 ---
 
 # HoursOfOperationTimeSlice
-<a name="API_HoursOfOperationTimeSlice"></a>
 
 The start time or end time for an hours of operation.
 

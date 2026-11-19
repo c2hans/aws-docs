@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-
 ---
 
 # Use PartiQL functions with DynamoDB
-<a name="ql-functions"></a>
 
 PartiQL in Amazon DynamoDB supports the following built-in variants of SQL standard functions.
 

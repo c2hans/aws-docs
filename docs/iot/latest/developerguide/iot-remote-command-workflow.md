@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-remote-com
 ---
 
 # High-level commands workflow
-<a name="iot-remote-command-workflow"></a>
 
 This workflow shows how devices interact with AWS IoT Device Management Commands. All HTTP API requests use [Sigv4 credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv.html) for signing.
 

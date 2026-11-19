@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateData
 ---
 
 # GenerateDataKeyPair
-<a name="API_GenerateDataKeyPair"></a>
 
 Returns a unique asymmetric data key pair for use outside of AWS KMS. This operation returns a plaintext public key, a plaintext private key, and a copy of the private key that is encrypted under the symmetric encryption KMS key you specify. You can use the data key pair to perform asymmetric cryptography and implement digital signatures outside of AWS KMS. The bytes in the keys are random; they are not related to the caller or to the KMS key that is used to encrypt the private key.
 

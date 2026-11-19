@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_De
 ---
 
 # DeleteCustomLogSource
-<a name="API_DeleteCustomLogSource"></a>
 
 Removes a custom log source from Amazon Security Lake, to stop sending data from the custom source to Security Lake.
 

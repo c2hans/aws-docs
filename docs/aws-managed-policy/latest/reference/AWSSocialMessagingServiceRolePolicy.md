@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSocialMessagingServiceRolePolicy
-<a name="AWSSocialMessagingServiceRolePolicy"></a>
 
 **Description**: Provides access to publish metrics and provide insights for your social message sending.
 

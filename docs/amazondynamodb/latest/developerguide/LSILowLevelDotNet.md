@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LSI
 ---
 
 # Working with Local Secondary Indexes: .NET
-<a name="LSILowLevelDotNet"></a>
 
 **Topics**
 + [Create a table with a Local Secondary Index](#LSILowLevelDotNet.CreateTableWithIndex)

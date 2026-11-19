@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/accept-update.html
 ---
 
 # Accept an AWS Site-to-Site VPN tunnel maintenance update
-<a name="accept-update"></a>
 
 When a maintenance update is available, you can accept it using the AWS Management Console or CLI. You can choose to accept the Site-to-Site VPN tunnel maintenance update at a time that's convenient for you. Once you accept the maintenance update it will be deployed.
 

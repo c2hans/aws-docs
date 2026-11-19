@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/file-access-auditi
 ---
 
 # Auditing file access
-<a name="file-access-auditing"></a>
 
 Amazon FSx for NetApp ONTAP supports auditing of end-user accesses to files and directories in a storage virtual machine (SVM).
 

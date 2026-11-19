@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Ma
 ---
 
 # ManagedTemplateResponse
-<a name="API_ManagedTemplateResponse"></a>
 
 Response containing managed template information
 

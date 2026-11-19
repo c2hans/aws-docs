@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteBotL
 ---
 
 # DeleteBotLocale
-<a name="API_DeleteBotLocale"></a>
 
 Removes a locale from a bot.
 

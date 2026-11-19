@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/add_c
 ---
 
 # Creating a custom widget for a CloudWatch dashboard
-<a name="add_custom_widget_dashboard_create"></a>
 
 To create a custom widget, you can use one of the samples provided by AWS, or you can create your own. The AWS samples include samples in both JavaScript and Python, and are created by a AWS CloudFormation stack. For a list of samples, see [Sample custom widgets for a CloudWatch dashboard](add_custom_widget_samples.md).
 

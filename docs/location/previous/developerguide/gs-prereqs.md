@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/gs-prer
 ---
 
 # Prerequisites for using Amazon Location Service
-<a name="gs-prereqs"></a>
 
 This section describes what you need to do to use Amazon Location Service. You must have an AWS account and have set up access to Amazon Location for users that want to use it.
 

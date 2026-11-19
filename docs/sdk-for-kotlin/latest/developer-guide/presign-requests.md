@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/pr
 ---
 
 # Presign requests
-<a name="presign-requests"></a>
 
 You can presign requests for some AWS API operations so that another caller can use the request later without presenting their own credentials.
 

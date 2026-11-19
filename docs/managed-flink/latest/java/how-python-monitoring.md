@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-python-mon
 ---
 
 # Monitor your Managed Service for Apache Flink Python application
-<a name="how-python-monitoring"></a>
 
 You use your application's CloudWatch log to monitor your Managed Service for Apache Flink Python application.
 

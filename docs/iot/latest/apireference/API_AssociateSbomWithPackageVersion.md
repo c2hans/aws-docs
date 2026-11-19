@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AssociateSbo
 ---
 
 # AssociateSbomWithPackageVersion
-<a name="API_AssociateSbomWithPackageVersion"></a>
 
 Associates the selected software bill of materials (SBOM) with a specific software package version.
 

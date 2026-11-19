@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Encr
 ---
 
 # EncryptionDetails
-<a name="API_EncryptionDetails"></a>
 
 Configuration details about encryption for the cluster including the AWS KMS key ARN, encryption type, and encryption status.
 

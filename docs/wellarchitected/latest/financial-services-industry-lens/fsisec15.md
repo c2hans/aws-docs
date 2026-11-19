@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSISEC15: How do you implement AI model governance and access controls?
-<a name="fsisec15"></a>
 
  Effective AI governance requires comprehensive access controls, model lifecycle management, and continuous oversight to adhere to regulatory requirements and organizational policies. Financial institutions must establish structured governance frameworks that define roles, responsibilities, and processes for managing AI systems throughout their lifecycle. Without proper governance and access controls, organizations risk unauthorized model changes, compliance violations, and security breaches.
 

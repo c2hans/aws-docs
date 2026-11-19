@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-tar
 ---
 
 # Target tracking scaling policies for Amazon EC2 Auto Scaling
-<a name="as-scaling-target-tracking"></a>
 
 A target tracking scaling policy automatically scales the capacity of your Auto Scaling group based on a target metric value. It automatically adapts to the unique usage patterns of your individual applications. This allows your application to maintain optimal performance and high utilization for your EC2 instances for better cost efficiency without manual intervention.
 

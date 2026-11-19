@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Application Migration Service
-<a name="app-migration-service-considerations"></a>
 
 You can use AWS Application Migration Service to quickly migrate your applications to the cloud with minimal downtime. Application Migration Service minimizes time-intensive, error-prone manual processes by automatically converting your source servers from physical, virtual, and cloud infrastructure to run natively on AWS. Application Migration Service replicates source servers into your AWS account. When you're ready, Application Migration Services automatically converts and launches your servers on AWS so that you can quickly benefit from the cost savings, productivity, resilience, and agility of the AWS Cloud. There are some use cases where Application Migration Service can be the fastest route to the cloud (for example, when you want to migrate a database and operating system to the cloud). To determine if using Application Migration Service is the best option for you, see [When to Choose AWS Application Migration Service](https://aws.amazon.com/application-migration-service/when-to-choose-aws-mgn/) in the Application Migration Service documentation.
 

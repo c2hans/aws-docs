@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automatically extract content from PDF files using Amazon Textract
-<a name="automatically-extract-content-from-pdf-files-using-amazon-textract"></a>
 
 *Tianxia Jia, Amazon Web Services*
 

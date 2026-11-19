@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/turn-on-webcam.html
 ---
 
 # Turning your camera on or off
-<a name="turn-on-webcam"></a>
 
 When you join a meeting, you can choose to join with audio or audio and video. If you a join a meeting without turning video on, you can start your camera at any time during the meeting.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec06-b
 ---
 
 # SEC06-BP03 Reduce manual management and interactive access
-<a name="sec06-bp03"></a>
 
  Interactive login is the traditional way to configure, patch, and troubleshoot a server. A listening remote-access service is a path an unauthorized user can target, and manual steps invite human error and shared credentials. Capturing management actions as automation, and reserving direct access for emergencies, reduces the attack surface and the chance of an unintended change.
 

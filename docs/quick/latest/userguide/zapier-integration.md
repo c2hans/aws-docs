@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/zapier-integratio
 ---
 
 # Zapier integration
-<a name="zapier-integration"></a>
 
 With the Zapier connector, you can trigger workflows across thousands of applications that Zapier connects to, directly in AWS Quick through natural language. Use this connector to extend the action capabilities of AWS Quick to any application that you have already configured in your Zapier account.
 

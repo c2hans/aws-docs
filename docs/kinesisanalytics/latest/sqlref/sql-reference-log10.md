@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # LOG10
-<a name="sql-reference-log10"></a>
 
 ```
 LOG10 ( <number-expression> )

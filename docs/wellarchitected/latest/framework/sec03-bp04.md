@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec03-b
 ---
 
 # SEC03-BP04 Share resources securely within your organization
-<a name="sec03-bp04"></a>
 
  You often need the same resource in several accounts, or you need one account to reach a resource owned by another. Recreating a resource in every account or sharing the resource broadly are both imperfect solutions. Instead, share resources through controlled mechanisms with trusted entities only, and monitor those shares to limit access to what each consumer needs.
 

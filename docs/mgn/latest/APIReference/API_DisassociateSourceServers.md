@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_Disassociate
 ---
 
 # DisassociateSourceServers
-<a name="API_DisassociateSourceServers"></a>
 
 Disassociate source servers from application.
 

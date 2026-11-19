@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/RDS-com
 ---
 
 # Compliance validation for Amazon Aurora
-<a name="RDS-compliance"></a>
 
 Third-party auditors assess the security and compliance of Amazon Aurora as part of multiple AWS compliance programs. These include SOC, PCI, FedRAMP, HIPAA, and others.
 

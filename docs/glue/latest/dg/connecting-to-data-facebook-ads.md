@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-facebo
 ---
 
 # Connecting to Facebook Ads
-<a name="connecting-to-data-facebook-ads"></a>
 
 Facebook Ads is a powerful digital advertising platform used by businesses of all sizes to reach their target audience and achieve various marketing objectives. The platform allows advertisers to create tailored ads that can be displayed across Facebook's family of apps and services, including Facebook and Messenger. With its advanced targeting capabilities, Facebook Ads enables businesses to reach specific demographics, interests, behaviors, and locations.
 

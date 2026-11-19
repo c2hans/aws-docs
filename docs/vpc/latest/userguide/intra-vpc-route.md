@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/intra-vpc-route.htm
 ---
 
 # Inspect traffic between subnets
-<a name="intra-vpc-route"></a>
 
 Consider the scenario where you have multiple subnets in a VPC and you want to inspect the traffic between them using a firewall appliance. Configure and install the firewall appliance on an EC2 instance in a separate subnet in your VPC.
 

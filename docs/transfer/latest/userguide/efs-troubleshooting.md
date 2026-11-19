@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/efs-troublesho
 ---
 
 # Troubleshoot EFS issues
-<a name="efs-troubleshooting"></a>
 
 This section describes possible solutions for issues with Amazon EFS storage.
 

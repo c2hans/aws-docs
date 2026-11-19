@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_S
 ---
 
 # SessionSummary
-<a name="API_SessionSummary"></a>
 
 Summary information about a secure browser session.
 

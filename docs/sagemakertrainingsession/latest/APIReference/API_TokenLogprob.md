@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # TokenLogprob
-<a name="API_TokenLogprob"></a>
 
 The log-probability for a single token.
 

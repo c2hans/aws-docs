@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/service
 ---
 
 # Service version index file for an AWS service
-<a name="service-version-index-file-for-aws-service"></a>
 
 |  |
 | --- |

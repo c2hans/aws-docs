@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListData
 ---
 
 # ListDataTablePrimaryValues
-<a name="API_ListDataTablePrimaryValues"></a>
 
 Lists all primary value combinations for a given data table. Returns the unique combinations of primary attribute values that identify records in the table. Up to 100 records are returned per request.
 

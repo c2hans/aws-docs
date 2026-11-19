@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDetectiveServiceLinkedRolePolicy
-<a name="AmazonDetectiveServiceLinkedRolePolicy"></a>
 
 **Description**: Allows Amazon Detective to make service calls on your behalf
 

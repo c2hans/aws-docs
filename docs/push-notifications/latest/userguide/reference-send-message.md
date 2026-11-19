@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/push-notifications/latest/userguide/refe
 ---
 
 # Sending a message
-<a name="reference-send-message"></a>
 
 The AWS End User Messaging Push API can send transactional push notifications to specific device identifiers. This section contains complete code examples that you can use to send push notifications through the AWS End User Messaging Push API by using an AWS SDK.
 

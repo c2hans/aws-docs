@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # SecurityGroupIdentifier
-<a name="API_devicemanagement_SecurityGroupIdentifier"></a>
 
 Information about the device's security group.
 

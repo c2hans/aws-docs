@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/userguide/end-user
 ---
 
 # Using the end user console view
-<a name="end-user-console"></a>
 
 You can use the AWS Service Catalog end user console view to start and stop products.
 

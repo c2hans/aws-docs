@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Pr
 ---
 
 # PropertyValueHistory
-<a name="API_PropertyValueHistory"></a>
 
 The history of values for a time series property.
 

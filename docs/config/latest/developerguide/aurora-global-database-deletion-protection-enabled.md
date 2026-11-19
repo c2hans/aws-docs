@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/aurora-glob
 ---
 
 # aurora-global-database-deletion-protection-enabled
-<a name="aurora-global-database-deletion-protection-enabled"></a>
 
 Checks if an Amazon Aurora Global cluster has deletion protection enabled. The rule is NON\_COMPLIANT if configuration.DeletionProtection is false.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafv
 ---
 
 # AwsWafv2CustomHttpHeader
-<a name="API_AwsWafv2CustomHttpHeader"></a>
 
  A custom header for custom request and response handling.
 

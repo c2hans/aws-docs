@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/service-jobs.html
 ---
 
 # Service jobs in AWS Batch
-<a name="service-jobs"></a>
 
 AWS Batch service jobs enable you to submit requests to AWS services through AWS Batch job queues. Currently, AWS Batch supports SageMaker Training jobs as service jobs. Unlike containerized jobs where AWS Batch manages the underlying container execution, service jobs allow AWS Batch to provide job scheduling and queuing capabilities while the target AWS service (such as SageMaker AI) handles the actual job execution.
 

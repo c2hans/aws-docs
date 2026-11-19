@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteFle
 ---
 
 # DeleteFleetErrorItem
-<a name="API_DeleteFleetErrorItem"></a>
 
 Describes an EC2 Fleet that was not successfully deleted.
 

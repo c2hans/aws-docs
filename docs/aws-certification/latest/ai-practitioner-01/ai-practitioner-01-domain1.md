@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner
 ---
 
 # Content Domain 1: Fundamentals of AI and ML
-<a name="ai-practitioner-01-domain1"></a>
 
 Domain 1 covers the fundamentals of AI and ML and represents 20% of the scored content on the exam.
 

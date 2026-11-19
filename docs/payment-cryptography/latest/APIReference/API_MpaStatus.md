@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # MpaStatus
-<a name="API_MpaStatus"></a>
 
 The status of an MPA session.
 

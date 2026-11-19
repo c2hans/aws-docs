@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon Lex Model Building V2
 <a name="Welcome_Amazon_Lex_Model_Building_V2"></a>

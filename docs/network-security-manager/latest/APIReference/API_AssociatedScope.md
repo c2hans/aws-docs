@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AssociatedScope
-<a name="API_AssociatedScope"></a>
 
 An association between a deployment and a scope, as returned in outputs. The corresponding request structure is `ScopeReference`.
 

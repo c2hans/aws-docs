@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFile
 ---
 
 # DescribeFileCaches
-<a name="API_DescribeFileCaches"></a>
 
 Returns the description of a specific Amazon File Cache resource, if a `FileCacheIds` value is provided for that cache. Otherwise, it returns descriptions of all caches owned by your AWS account in the AWS Region of the endpoint that you're calling.
 

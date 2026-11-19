@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DateSt
 ---
 
 # DateStatistics
-<a name="API_DateStatistics"></a>
 
 Represents list a map of dates with a count of total findings generated on each date.
 

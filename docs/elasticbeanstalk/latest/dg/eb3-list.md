@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-list.html
 ---
 
 # **eb list**
-<a name="eb3-list"></a>
 
 ## Description
 <a name="eb3-listdescription"></a>

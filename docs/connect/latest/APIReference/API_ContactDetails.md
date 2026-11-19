@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactD
 ---
 
 # ContactDetails
-<a name="API_ContactDetails"></a>
 
 A map of string key/value pairs that contain user-defined attributes which are lightly typed within the contact. This object is used only for task contacts.
 

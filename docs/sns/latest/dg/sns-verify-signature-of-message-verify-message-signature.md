@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-verify-signature-of-me
 ---
 
 # Verifying the signature of an Amazon SNS message when using HTTP query-based requests
-<a name="sns-verify-signature-of-message-verify-message-signature"></a>
 
 Verifying the signature of an Amazon SNS message when using HTTP query-based requests ensures the message's authenticity and integrity. This process confirms that the message originates from Amazon SNS and has not been tampered with during transit. By parsing the message, constructing the correct string to sign, and validating the signature against a trusted public key, you safeguard your system against spoofing and unauthorized message alterations.
 

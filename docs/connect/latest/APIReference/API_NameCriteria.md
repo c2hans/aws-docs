@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_NameCrit
 ---
 
 # NameCriteria
-<a name="API_NameCriteria"></a>
 
 The search criteria based on the contact name
 

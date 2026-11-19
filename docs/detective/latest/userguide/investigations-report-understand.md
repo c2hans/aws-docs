@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/investigation
 ---
 
 # Understanding a Detective Investigations report
-<a name="investigations-report-understand"></a>
 
 A Detective Investigations report lists a summary of the uncommon behavior or malicious activity that indicates compromise. It also lists the recommendations that Detective suggests to mitigate the security risk.
 

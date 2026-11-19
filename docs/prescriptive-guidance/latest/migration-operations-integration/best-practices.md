@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Best practices and recommendations
-<a name="best-practices"></a>
 
 This section provides best practices related to automation, readiness, tools integration, and testing:
 + [AWS services for automation](aws-services-for-automation.md)

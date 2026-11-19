@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_SourceCodeVersi
 ---
 
 # SourceCodeVersion
-<a name="API_SourceCodeVersion"></a>
 
 Identifies a version of code that AWS App Runner refers to within a source code repository.
 

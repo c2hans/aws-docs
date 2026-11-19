@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # Targeted business outcomes
-<a name="targeted-business-outcomes"></a>
 
 This solution helps you achieve the following objectives.
 

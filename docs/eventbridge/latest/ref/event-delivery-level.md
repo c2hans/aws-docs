@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/event-delivery-le
 ---
 
 # Delivery level for AWS service events
-<a name="event-delivery-level"></a>
 
 Each AWS service that generates events sends them to EventBridge as either *best effort* or *durable* delivery attempts.
 + *Best effort delivery* means that the service attempts to send all events to EventBridge, but in some rare cases an event might not be delivered.

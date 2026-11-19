@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/pictures.h
 ---
 
 # .pictures
-<a name="pictures"></a>
 
 Used by anyone interested in photography, art, and media.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENREL04-BP02 Implement a model catalog
-<a name="genrel04-bp02"></a>
 
  Model catalogs store and manage model versions. They act as a reliable store for models which may need to be deployed or rolled back at any time. They also facilitate decoupled deployment automation.
 

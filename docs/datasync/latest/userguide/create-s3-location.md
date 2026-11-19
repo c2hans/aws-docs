@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/create-s3-loca
 ---
 
 # Configuring AWS DataSync transfers with Amazon S3
-<a name="create-s3-location"></a>
 
 To transfer data to or from your Amazon S3 bucket, you create an AWS DataSync transfer *location*. DataSync can use this location as a source or destination for transferring data.
 

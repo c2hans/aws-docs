@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/jdbc-v3-driver-getting-
 ---
 
 # Get started with the JDBC 3.x driver
-<a name="jdbc-v3-driver-getting-started"></a>
 
 Use the information in this section to get started with the Amazon Athena JDBC 3.x driver.
 

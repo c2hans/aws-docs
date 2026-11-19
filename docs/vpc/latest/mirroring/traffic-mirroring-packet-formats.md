@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-p
 ---
 
 # Understanding traffic mirror packet format
-<a name="traffic-mirroring-packet-formats"></a>
 
 Mirrored traffic is encapsulated with a VXLAN header. All appliances that receive traffic directly with this feature should be able parse a VXLAN-encapsulated packet, as shown in the following example:
 

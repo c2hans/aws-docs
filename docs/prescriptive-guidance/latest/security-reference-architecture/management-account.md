@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # The management account, trusted access, and delegated administrators
-<a name="management-account"></a>
 
 The management account (also called the AWS Organization Management account or Org Management account) is unique and differentiated from every other account in AWS Organizations. It is the account that creates the AWS organization. From this account, you can create AWS accounts in the AWS organization, invite other existing accounts to the AWS organization (both types are considered *member accounts*), remove accounts from the AWS organization, and apply policies (such as SCPs, RCPs, and tag policies) to the root, OUs, or accounts within the IAMAWS organization. The management account deploys universal security guardrails through SCPs, RCPs, and service deployments (such as CloudTrail) that will affect all member accounts in the AWS organization.
 

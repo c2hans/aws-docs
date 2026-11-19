@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/securityh
 ---
 
 # Integration with AWS Security Hub CSPM
-<a name="securityhub-integration"></a>
 
 **Integration type:** Source
 

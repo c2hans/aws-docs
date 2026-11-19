@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-custom-sl
 ---
 
 # Custom slots
-<a name="acxd-custom-slots"></a>
 
 Custom slots define structured values your application can capture during a conversation.
 

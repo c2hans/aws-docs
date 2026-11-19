@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/get-started-exercise.
 ---
 
 # Create and run a Managed Service for Apache Flink application
-<a name="get-started-exercise"></a>
 
 In this exercise, you create a Managed Service for Apache Flink application with data streams as a source and a sink.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # OfferInformation
-<a name="API_marketplace-discovery_OfferInformation"></a>
 
 Summary information about an offer, including the offer identifier, name, and seller of record.
 

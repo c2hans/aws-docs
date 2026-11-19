@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_Authorizer.htm
 ---
 
 # Authorizer
-<a name="API_Authorizer"></a>
 
 Represents an authorization layer for methods. If enabled on a method, API Gateway will activate the authorizer when a client calls the method.
 

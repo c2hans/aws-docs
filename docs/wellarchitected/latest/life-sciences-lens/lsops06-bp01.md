@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSOPS06-BP01 Validate data quality during ingestion
-<a name="lsops06-bp01"></a>
 
  Define data quality measurements and implement checks during ingestion.
 

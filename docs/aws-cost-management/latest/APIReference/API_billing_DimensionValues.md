@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DimensionValues
-<a name="API_billing_DimensionValues"></a>
 
  The metadata that you can use to filter and group your results.
 

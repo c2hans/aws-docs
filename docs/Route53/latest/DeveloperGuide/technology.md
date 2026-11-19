@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/technology
 ---
 
 # .technology
-<a name="technology"></a>
 
 Used by technology enthusiasts and those dedicated to technology in companies, services, and manufacturers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Im
 ---
 
 # ImageExtractionConfiguration
-<a name="API_agent_ImageExtractionConfiguration"></a>
 
 Configuration for image extraction.
 

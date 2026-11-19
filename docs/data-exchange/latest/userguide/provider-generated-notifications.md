@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/provider-
 ---
 
 # Provider-generated notifications in AWS Data Exchange
-<a name="provider-generated-notifications"></a>
 
 As a provider in AWS Data Exchange, you can send provider-generated notifications to inform your subscribers about important events related to your data sets. You can contact your subscribers in a structured manner and help them to process their entitled data related events in a consistent manner across providers.
 

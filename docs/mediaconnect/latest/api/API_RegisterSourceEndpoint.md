@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RegisterSour
 ---
 
 # RegisterSourceEndpoint
-<a name="API_RegisterSourceEndpoint"></a>
 
 Registers a new source endpoint in MediaConnect.
 

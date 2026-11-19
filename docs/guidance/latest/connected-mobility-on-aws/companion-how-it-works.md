@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # How it works
-<a name="companion-how-it-works"></a>
 
 ## Sign-in and driver scope
 <a name="companion-auth"></a>

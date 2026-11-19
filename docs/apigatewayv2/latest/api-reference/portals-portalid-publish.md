@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/portal
 ---
 
 # Publish
-<a name="portals-portalid-publish"></a>
 
 Represents publishing a portal.
 

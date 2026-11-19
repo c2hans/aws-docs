@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_CopyD
 ---
 
 # CopyDBClusterSnapshot
-<a name="API_CopyDBClusterSnapshot"></a>
 
 Copies a snapshot of a cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListMulti
 ---
 
 # ListMultiRegionEndpoints
-<a name="API_ListMultiRegionEndpoints"></a>
 
 List the multi-region endpoints (global-endpoints).
 

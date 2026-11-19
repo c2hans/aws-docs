@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Adjustm
 ---
 
 # Adjustment
-<a name="API_Adjustment"></a>
 
 An adjustment to the CVSS metric.
 

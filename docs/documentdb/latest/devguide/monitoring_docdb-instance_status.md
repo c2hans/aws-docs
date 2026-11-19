@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/monitoring_do
 ---
 
 # Monitoring an Amazon DocumentDB instance's status
-<a name="monitoring_docdb-instance_status"></a>
 
 Amazon DocumentDB provides information about the current condition of each configured instance in the database.
 

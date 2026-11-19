@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_Errors.html
 ---
 
 # Service-specific Errors
-<a name="API_Errors"></a>
 
 The AWS Multi-party Approval API contains service-specific exceptions that various actions return. This section describes each exception in detail.
 

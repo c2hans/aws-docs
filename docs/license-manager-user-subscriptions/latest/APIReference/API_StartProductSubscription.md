@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # StartProductSubscription
-<a name="API_StartProductSubscription"></a>
 
 Starts a product subscription for a user with the specified identity provider.
 

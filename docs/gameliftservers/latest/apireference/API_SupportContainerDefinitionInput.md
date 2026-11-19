@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # SupportContainerDefinitionInput
-<a name="API_SupportContainerDefinitionInput"></a>
 
 Describes a support container in a container group. You can define a support container in either a game server container group or a per-instance container group. Support containers don't run game server processes.
 

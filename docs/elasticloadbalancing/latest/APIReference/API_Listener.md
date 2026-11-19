@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # Listener
-<a name="API_Listener"></a>
 
 Information about a listener.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Dele
 ---
 
 # DeleteDomainVerification
-<a name="API_DeleteDomainVerification"></a>
 
  Deletes the specified domain verification.
 

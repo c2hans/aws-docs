@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalScribePostStreamActionsResult
-<a name="API_MedicalScribePostStreamActionsResult"></a>
 
 Results of post-stream actions performed after the audio stream ended
 

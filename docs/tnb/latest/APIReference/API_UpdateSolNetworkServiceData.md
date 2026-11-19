@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_UpdateSolNet
 ---
 
 # UpdateSolNetworkServiceData
-<a name="API_UpdateSolNetworkServiceData"></a>
 
 Information parameters and/or the configurable properties for a network descriptor used for update.
 

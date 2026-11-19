@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/eventbridge-func
 ---
 
 # AWS AppSync JavaScript function reference for EventBridge data source
-<a name="eventbridge-function-reference"></a>
 
 The AWS AppSync integration for Amazon EventBridge data source allows you to send custom events to the EventBridge bus.
 

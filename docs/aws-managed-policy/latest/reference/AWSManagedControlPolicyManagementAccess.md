@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSManagedControlPolicyManagementAccess
-<a name="AWSManagedControlPolicyManagementAccess"></a>
 
 **Description**: Grants AWS permission to manage organization control policies for AWS managed accounts
 

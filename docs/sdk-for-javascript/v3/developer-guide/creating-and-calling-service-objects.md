@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/cr
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Create and call service objects
-<a name="creating-and-calling-service-objects"></a>
 
 The JavaScript API supports most available AWS services. Each service in the JavaScript API provides a client class with a `send` method that you use to to invoke every API the service supports. For more information about service classes, operations, and parameters in the JavaScript API, see the [API Reference](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/).
 

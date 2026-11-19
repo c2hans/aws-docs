@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDataSyncReadOnlyAccess
-<a name="AWSDataSyncReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to AWS DataSync
 

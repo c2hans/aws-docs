@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Di
 ---
 
 # DisableAWSServiceAccess
-<a name="API_DisableAWSServiceAccess"></a>
 
 Disables the integration of an AWS service (the service that is specified by `ServicePrincipal`) with AWS Organizations. When you disable integration, the specified service no longer can create a [service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html) in *new* accounts in your organization. This means the service can't perform operations on your behalf on any new accounts in your organization. The service can still perform operations in older accounts until the service completes its clean-up from AWS Organizations.
 

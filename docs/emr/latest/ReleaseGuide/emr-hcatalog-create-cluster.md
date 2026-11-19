@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hcatalog-cre
 ---
 
 # Creating a cluster with HCatalog
-<a name="emr-hcatalog-create-cluster"></a>
 
 Although HCatalog is included in the Hive project, you must install it as its own application.
 

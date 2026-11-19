@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/cer-annotation.html
 ---
 
 # Annotations
-<a name="cer-annotation"></a>
 
 Annotations label entities in context by associating your custom entity types with the locations where they occur in your training documents.
 

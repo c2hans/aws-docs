@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/lambda-invoke.html
 ---
 
 # AWS Lambda Invoke Function task
-<a name="lambda-invoke"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

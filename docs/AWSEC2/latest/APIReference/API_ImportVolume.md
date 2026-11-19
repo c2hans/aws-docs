@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportVol
 ---
 
 # ImportVolume
-<a name="API_ImportVolume"></a>
 
 **Note**
 This API action supports only single-volume VMs. To import multi-volume VMs, use [ImportImage](API_ImportImage.md) instead. To import a disk to a snapshot, use [ImportSnapshot](API_ImportSnapshot.md) instead.

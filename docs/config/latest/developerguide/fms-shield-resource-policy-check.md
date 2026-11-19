@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/fms-shield-
 ---
 
 # fms-shield-resource-policy-check
-<a name="fms-shield-resource-policy-check"></a>
 
 **Note**
 This rule is currently in the deprecation process. We do not recommend that you use them directly.

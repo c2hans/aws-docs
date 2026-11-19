@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GetS
 ---
 
 # GetStage
-<a name="API_GetStage"></a>
 
 Gets information for the specified stage.
 

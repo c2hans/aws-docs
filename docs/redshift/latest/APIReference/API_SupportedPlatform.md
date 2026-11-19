@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Support
 ---
 
 # SupportedPlatform
-<a name="API_SupportedPlatform"></a>
 
 A list of supported platforms for orderable clusters.
 

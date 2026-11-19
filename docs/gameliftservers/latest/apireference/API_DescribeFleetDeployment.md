@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # DescribeFleetDeployment
-<a name="API_DescribeFleetDeployment"></a>
 
  **This API works with the following fleet types:** Container
 

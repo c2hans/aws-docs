@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 ---
 
 # Jamf (context.jamf.\*)
-<a name="device-posture-trust-data-jamf"></a>
 
 When Jamf is configured as a trust provider, the following fields are available in the Cedar context under the `context.jamf` namespace.
 

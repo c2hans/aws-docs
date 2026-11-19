@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/example_i
 ---
 
 # Policy to grant full access to Compute Optimizer Automation for standalone AWS accounts
-<a name="example_iam-policies.AWSMettleDocs.latest.userguide.automation.xml.3_section"></a>
 
 The following code example shows how to This permission-based policy grant full access to Compute Optimizer Automation for standalone AWS accounts
 

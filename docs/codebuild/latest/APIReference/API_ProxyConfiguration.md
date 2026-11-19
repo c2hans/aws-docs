@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ProxyC
 ---
 
 # ProxyConfiguration
-<a name="API_ProxyConfiguration"></a>
 
 Information about the proxy configurations that apply network access control to your reserved capacity instances.
 

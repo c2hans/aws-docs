@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CreateDistribution
-<a name="API_CreateDistribution"></a>
 
 Creates an Amazon Lightsail content delivery network (CDN) distribution.
 

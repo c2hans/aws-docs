@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-add-
 ---
 
 # Add an Amazon Location interactive map to your application
-<a name="qs-add-map-android"></a>
 
 Now that you have created a basic application, you can add map control to your application. This tutorial uses API keys for managing the map view. The map control itself is part of the [MapLibre Native library](https://github.com/maplibre/maplibre-native), with the API key and MapLibre, and the map data comes from Amazon Location.
 

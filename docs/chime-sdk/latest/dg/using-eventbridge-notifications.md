@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/using-eventbridge-no
 ---
 
 # Using Amazon EventBridge notifications for the Amazon Chime SDK
-<a name="using-eventbridge-notifications"></a>
 
 Amazon Chime SDK Call Analytics supports sending events to the default EventBridge bus when the state of the media insights pipeline changes, or when call analytics real-time alert conditions are met. For the media insights pipeline error status updates, we recommend that you configure an EventBridge target to notify you if your resources fail asynchronously. Call analytics notifications have a aws.chime source and various detail types, which are shared in the following sections. For more information, see the [Amazon EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html).
 

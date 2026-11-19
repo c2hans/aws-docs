@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk console and EB CLI add support for tagging all resources on April 4, 2019
-<a name="release-2019-04-04-tagging-clients"></a>
 
 The Elastic Beanstalk console and EB CLI add tagging operations to all Elastic Beanstalk resources. You can tag Elastic Beanstalk resources during creation, and add, update, or delete tags for existing resources.
 

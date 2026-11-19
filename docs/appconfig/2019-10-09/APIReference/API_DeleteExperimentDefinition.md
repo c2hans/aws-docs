@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_De
 ---
 
 # DeleteExperimentDefinition
-<a name="API_DeleteExperimentDefinition"></a>
 
 Deletes an experiment definition. You can archive the definition to hide it from the active list while preserving it for future reference, or permanently delete it along with all associated run history.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # OrganizationAccessGrantPrincipal
-<a name="API_OrganizationAccessGrantPrincipal"></a>
 
 The principal receiving an organization-level domain access grant. Specify principalId, principalAttributes, or both.
 

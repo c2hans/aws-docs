@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/reserved-instanc
 ---
 
 # Regional and zonal Reserved Instances (scope)
-<a name="reserved-instances-scope"></a>
 
 When you purchase a Reserved Instance, you determine the scope of the Reserved Instance. The scope is either regional or zonal.
 + **Regional**: When you purchase a Reserved Instance for a Region, it's referred to as a *regional* Reserved Instance.

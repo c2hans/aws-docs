@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fee
 ---
 
 # Example policy for MediaTailor access
-<a name="feed-policies-example"></a>
 
 The following example policy grants AWS Elemental MediaTailor permission to call `GetMetadata` on the specified feed. The policy uses two conditions to prevent the *confused deputy* problem:
 + `aws:SourceAccount` – Ensures only MediaTailor operating on behalf of your account can access the feed.

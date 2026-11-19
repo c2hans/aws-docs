@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/setting-up-se
 ---
 
 # Allow CodeBuild to interact with other AWS services
-<a name="setting-up-service-role"></a>
 
 If you follow the steps in [Getting started using the console](getting-started-overview.md#getting-started) to access AWS CodeBuild for the first time, you most likely do not need the information in this topic. However, as you continue using CodeBuild, you might want to do things such as allow CodeBuild to interact with other AWS services.
 

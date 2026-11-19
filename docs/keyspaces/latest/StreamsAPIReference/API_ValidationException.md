@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # ValidationException
-<a name="API_ValidationException"></a>
 
 The request validation failed because one or more input parameters failed validation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # Common Errors
-<a name="CommonErrors"></a>
 
 This section lists the errors common to the API actions of all AWS services. For errors specific to an API action for this service, see the topic for that API action.
 

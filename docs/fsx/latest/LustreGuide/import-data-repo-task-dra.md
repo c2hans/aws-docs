@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/import-data-repo-
 ---
 
 # Using data repository tasks to import changes
-<a name="import-data-repo-task-dra"></a>
 
 The import data repository task imports metadata of objects that are new or changed in your S3 data repository, creating a new file or directory listing for any new object in the S3 data repository. For any object that has been changed in the data repository, the corresponding file or directory listing is updated with the new metadata. No action is taken for objects that have been deleted from the data repository.
 

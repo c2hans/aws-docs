@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # DELETE: Delete a Router Output
-<a name="set-up-router-outputs-delete"></a>
 
 Delete the specified output on the specified router.
 

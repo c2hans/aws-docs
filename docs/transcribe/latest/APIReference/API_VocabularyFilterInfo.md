@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Vocab
 ---
 
 # VocabularyFilterInfo
-<a name="API_VocabularyFilterInfo"></a>
 
 Provides information about a custom vocabulary filter, including the language of the filter, when it was last modified, and its name.
 

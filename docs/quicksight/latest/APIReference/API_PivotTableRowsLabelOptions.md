@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableRowsLabelOptions
-<a name="API_PivotTableRowsLabelOptions"></a>
 
 The options for the label thta is located above the row headers. This option is only applicable when `RowsLayout` is set to `HIERARCHY`.
 

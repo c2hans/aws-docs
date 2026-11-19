@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/understanding
 ---
 
 # Key names for Lightsail object storage buckets
-<a name="understanding-bucket-object-key-names-in-amazon-lightsail"></a>
 
 Files that you upload to your bucket are stored as objects in the Amazon Lightsail object storage service. An object key (or key name) uniquely identifies an object stored in a bucket. This guide explains the concept of key names and key name prefixes that make up the folder structure of buckets viewed through the Lightsail console. For more information about buckets, see [Object storage](buckets-in-amazon-lightsail.md).
 

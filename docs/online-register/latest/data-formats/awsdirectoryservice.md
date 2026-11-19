@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsd
 ---
 
 # Data retrieval APIs for AWS Directory Service
-<a name="awsdirectoryservice"></a>
 
 AWS Directory Service provides the following APIs for data retrieval.
 

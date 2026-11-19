@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ListTerms
-<a name="API_ListTerms"></a>
 
 Returns details about all terms documents for the requested user pool.
 

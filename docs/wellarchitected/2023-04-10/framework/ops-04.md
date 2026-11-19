@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS 4. How do you design your workload so that you can understand its state?
-<a name="ops-04"></a>
 
  Design your workload so that it provides the information necessary across all components (for example, metrics, logs, and traces) for you to understand its internal state. This allows you to provide effective responses when appropriate.
 

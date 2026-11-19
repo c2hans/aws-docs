@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-wa
 ---
 
 # Configuring replication for buckets in different accounts
-<a name="replication-walkthrough-2"></a>
 
 Live replication is the automatic, asynchronous copying of objects across buckets in the same or different AWS Regions. Live replication copies newly created objects and object updates from a source bucket to a destination bucket or buckets. For more information, see [Replicating objects within and across Regions](replication.md).
 

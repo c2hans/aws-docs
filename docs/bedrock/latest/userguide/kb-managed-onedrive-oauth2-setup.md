@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-oned
 ---
 
 # Set up OAuth 2.0 authentication for OneDrive
-<a name="kb-managed-onedrive-oauth2-setup"></a>
 
 OAuth 2.0 authentication (`OAUTH2`) authenticates with an application client ID and secret together with a delegated **refresh token**. The connector uses the refresh token to obtain access tokens that crawl content in the signed-in user's delegated context. The data source covers OneDrive content that user can access — their own drive, plus any drives shared with them or where they have SharePoint admin access. Drives the signed-in user cannot access are silently skipped.
 

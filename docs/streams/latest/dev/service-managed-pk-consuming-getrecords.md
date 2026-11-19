@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-co
 ---
 
 # GetRecords API behavior
-<a name="service-managed-pk-consuming-getrecords"></a>
 
 When reading records from a service-managed stream using the [GetRecords](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetRecords.html) API, the response includes the following behavior for each record:
 + **PartitionKey** – Returns `null` if the producer did not provide a partition key when writing the record. If the producer provided a partition key (which was ignored for shard placement), the original value is returned as-is.

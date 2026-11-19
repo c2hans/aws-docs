@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Crea
 ---
 
 # CreateFaceLivenessSession
-<a name="API_CreateFaceLivenessSession"></a>
 
 This API operation initiates a Face Liveness session. It returns a `SessionId`, which you can use to start streaming Face Liveness video and get the results for a Face Liveness session.
 

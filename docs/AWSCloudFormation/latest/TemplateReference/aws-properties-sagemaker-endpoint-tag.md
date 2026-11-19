@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Endpoint Tag
-<a name="aws-properties-sagemaker-endpoint-tag"></a>
 
 A tag object that consists of a key and an optional value, used to manage metadata for SageMaker AWS resources.
 

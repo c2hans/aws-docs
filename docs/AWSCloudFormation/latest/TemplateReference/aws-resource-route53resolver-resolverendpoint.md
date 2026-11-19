@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53Resolver::ResolverEndpoint
-<a name="aws-resource-route53resolver-resolverendpoint"></a>
 
 Creates a Resolver endpoint. There are two types of Resolver endpoints, inbound and outbound:
 + An *inbound Resolver endpoint* forwards DNS queries to the DNS service for a VPC from your network.

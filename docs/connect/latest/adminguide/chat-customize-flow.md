@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/chat-customize
 ---
 
 # Customize chat flow experiences in Connect Customer by integrating custom participants
-<a name="chat-customize-flow"></a>
 
 You can integrate other solutions, such as bots, with Connect Customer chat to create customized chat flow experiences.
 

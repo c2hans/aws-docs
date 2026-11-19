@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaLimits.htm
 ---
 
 # AWS Private CA service quotas
-<a name="PcaLimits"></a>
 
 AWS Private CA assigns quotas to your allowed number of certificates and certificate authorities. Request rates for API actions are also subject to quotas. AWS Private CA quotas are specific to an AWS account and Region.
 

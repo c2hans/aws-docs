@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreateRelationshipDetail
-<a name="API_channel_CreateRelationshipDetail"></a>
 
 Contains details about a newly created relationship.
 

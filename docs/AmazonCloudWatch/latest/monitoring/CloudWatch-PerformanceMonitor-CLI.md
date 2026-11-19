@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Examples of using the AWS CLI with Performance Monitor
-<a name="CloudWatch-PerformanceMonitor-CLI"></a>
 
 This section provides examples of using the AWS Command Line Interface with Performance Monitor. For more information, see the [Network Flow Monitor API Reference](https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/Welcome.html).
 

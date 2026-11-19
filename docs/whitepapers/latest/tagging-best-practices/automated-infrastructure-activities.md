@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Automated infrastructure activities
-<a name="automated-infrastructure-activities"></a>
 
  Tags can be used in a wide range of automation activities when managing infrastructure. Use of [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/index.html), for example, will allow you to manage automations and runbooks on resources specified by the defined key-value pair you create. For managed nodes, you could define a set of tags to track or target nodes by operating system and environment. You could then run an update script for all nodes in a group or review the status of those nodes. [Systems Manager Resources](https://docs.aws.amazon.com/systems-manager/latest/userguide/taggable-resources.html) can also be tagged to further refine and track your automated activities.
 

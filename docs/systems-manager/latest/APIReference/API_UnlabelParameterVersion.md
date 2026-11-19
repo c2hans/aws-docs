@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # UnlabelParameterVersion
-<a name="API_UnlabelParameterVersion"></a>
 
 Remove a label or labels from a parameter.
 

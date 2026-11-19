@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchCreateBillScenarioCommitmentModificationEntry
-<a name="API_AWSBCMPricingCalculator_BatchCreateBillScenarioCommitmentModificationEntry"></a>
 
  Represents an entry object in the batch operation to create bill scenario commitment modifications.
 

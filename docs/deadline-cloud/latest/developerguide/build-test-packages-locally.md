@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/bui
 ---
 
 # Build and test packages locally
-<a name="build-test-packages-locally"></a>
 
 Before publishing packages to Amazon S3 or setting up CI/CD automation on your Deadline Cloud farm, you can build and test conda packages on your workstation using a local filesystem channel. This approach lets you rapidly iterate locally on recipes and verify packages.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_CheckDNS
 ---
 
 # CheckDNSAvailability
-<a name="API_CheckDNSAvailability"></a>
 
 Checks if the specified CNAME is available.
 

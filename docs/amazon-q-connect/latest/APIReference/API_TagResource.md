@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # TagResource
-<a name="API_amazon-q-connect_TagResource"></a>
 
 Adds the specified tags to the specified resource.
 

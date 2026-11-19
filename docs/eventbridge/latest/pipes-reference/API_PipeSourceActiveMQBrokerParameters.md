@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_P
 ---
 
 # PipeSourceActiveMQBrokerParameters
-<a name="API_PipeSourceActiveMQBrokerParameters"></a>
 
 The parameters for using an Active MQ broker as a source.
 

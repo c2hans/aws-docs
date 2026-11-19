@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/delegatio
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Submitting a reviewed control set back to the audit owner
-<a name="delegation-for-delegates-submitting-back-to-audit-owner"></a>
 
 After reviewing the control set, adding comments or additional evidence, and updating the status of individual controls, you reach an important step – submitting the reviewed control set back to the audit owner. Submitting the reviewed control set marks the completion of your delegated tasks, and enables the audit owner to incorporate your insights and recommendations into the overall assessment.
 

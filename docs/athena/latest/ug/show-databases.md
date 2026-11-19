@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/show-databases.html
 ---
 
 # SHOW DATABASES
-<a name="show-databases"></a>
 
 Lists all databases defined in the metastore. You can use `DATABASES` or `SCHEMAS`. They mean the same thing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Up
 ---
 
 # Performing a major version upgrade
-<a name="USER_UpgradeDBInstance.PostgreSQL.MajorVersion"></a>
 
 Major version upgrades might contain database changes that are not backward-compatible with previous versions of the database. New functionality in a new version can cause your existing applications to stop working correctly. To avoid issues, Amazon Aurora doesn't apply major version upgrades automatically. Rather, we recommend that you carefully plan for a major version upgrade by following these steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BudgetSchedule
-<a name="API_BudgetSchedule"></a>
 
 The start and end time of the budget.
 

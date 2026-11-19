@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/opt-out-list-
 ---
 
 # View the details of an opt-out list in AWS End User Messaging SMS
-<a name="opt-out-list-view"></a>
 
 Use the AWS End User Messaging SMS console or AWS CLI to manage your opt-out lists.
 

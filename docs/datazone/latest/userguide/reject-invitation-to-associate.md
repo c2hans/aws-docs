@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/reject-invitat
 ---
 
 # Reject an account association request from an Amazon DataZone domain
-<a name="reject-invitation-to-associate"></a>
 
 To reject an association request in the Amazon DataZone management console from an Amazon DataZone domain, you must assume an IAM role in the account with administrative permissions. [Configure the IAM permissions required to use the Amazon DataZone management console](create-iam-roles.md) to obtain the minimum permissions.
 

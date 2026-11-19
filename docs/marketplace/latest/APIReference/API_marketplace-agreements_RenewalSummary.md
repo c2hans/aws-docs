@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # RenewalSummary
-<a name="API_marketplace-agreements_RenewalSummary"></a>
 
 The details of the renewal that applies at the end date of an agreement.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/domain-user-profile-
 ---
 
 # Add user profiles
-<a name="domain-user-profile-add"></a>
 
 The following section shows how to add user profiles to a domain using the SageMaker AI console or the AWS CLI.
 

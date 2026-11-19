@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/mediaconvert_erro
 ---
 
 # Error codes
-<a name="mediaconvert_error_codes"></a>
 
 MediaConvert returns error codes when transcoding jobs run into problems. You can use Amazon EventBridge to track the error codes that the service returns.
 

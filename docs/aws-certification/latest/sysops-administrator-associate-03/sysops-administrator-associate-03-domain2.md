@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/sysops-administ
 ---
 
 # Content Domain 2: Reliability and Business Continuity
-<a name="sysops-administrator-associate-03-domain2"></a>
 
 **Topics**
 + [Task 2.1: Implement scalability and elasticity.](#sysops-administrator-associate-03-domain2-task1)

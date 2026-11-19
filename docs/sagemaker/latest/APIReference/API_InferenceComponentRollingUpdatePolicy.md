@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceComponentRollingUpdatePolicy
-<a name="API_InferenceComponentRollingUpdatePolicy"></a>
 
 Specifies a rolling deployment strategy for updating a SageMaker AI inference component.
 

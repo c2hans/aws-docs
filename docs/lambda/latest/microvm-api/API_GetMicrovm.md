@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_GetMicrovm
 ---
 
 # GetMicrovm
-<a name="API_GetMicrovm"></a>
 
 Retrieves the details of a specific MicroVM, including its state, endpoint, image information, and configuration. The state field is eventually consistent — determine readiness by connecting to the endpoint.
 

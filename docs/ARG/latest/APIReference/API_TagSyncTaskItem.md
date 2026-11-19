@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_TagSyncTaskI
 ---
 
 # TagSyncTaskItem
-<a name="API_TagSyncTaskItem"></a>
 
 The Amazon resource name (ARN) of the tag-sync task.
 

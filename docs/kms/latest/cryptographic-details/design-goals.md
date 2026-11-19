@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/cryptographic-details/design-
 ---
 
 # AWS KMS design goals
-<a name="design-goals"></a>
 
 AWS KMS is designed to meet the following requirements.
 

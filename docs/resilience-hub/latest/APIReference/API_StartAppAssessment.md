@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_S
 ---
 
 # StartAppAssessment
-<a name="API_StartAppAssessment"></a>
 
 Creates a new application assessment for an application.
 

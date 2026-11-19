@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Canc
 ---
 
 # CancelMembership
-<a name="API_CancelMembership"></a>
 
 Cancels an existing membership.
 

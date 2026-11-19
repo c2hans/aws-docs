@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ListDomainMaintenances
-<a name="API_ListDomainMaintenances"></a>
 
 A list of maintenance actions for the domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessInstanceUserTrustProviderClientConfiguration
-<a name="API_VerifiedAccessInstanceUserTrustProviderClientConfiguration"></a>
 
 Describes the trust provider.
 

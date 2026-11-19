@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Backup and AWS Organizations
-<a name="services-that-can-integrate-backup"></a>
 
 AWS Backup is a service that allows you to manage and monitor the AWS Backup jobs in your organization. Using AWS Backup, if you sign-in as a user in the organization's management account, you can enable organization-wide backup protection and monitoring. It helps you to achieve compliance by using [backup policies](orgs_manage_policies_backup.md) to centrally apply AWS Backup plans to resources across all of the accounts in your organization. When you use both AWS Backup and AWS Organizations together, you can get the following benefits:
 

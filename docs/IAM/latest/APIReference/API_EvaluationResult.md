@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_EvaluationRe
 ---
 
 # EvaluationResult
-<a name="API_EvaluationResult"></a>
 
 Contains the results of a simulation.
 

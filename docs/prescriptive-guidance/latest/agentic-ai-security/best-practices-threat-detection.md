@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # 7. Threat detection and security posture management for agentic AI systems on AWS
-<a name="best-practices-threat-detection"></a>
 
 Active threat detection identifies security incidents and misconfigurations that could enable lateral movement or data compromise. Continuous posture management highlights security drift and identifies toxic combinations.
 

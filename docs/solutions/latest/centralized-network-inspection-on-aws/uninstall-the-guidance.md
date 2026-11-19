@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 ---
 
 # Uninstall the guidance
-<a name="uninstall-the-guidance"></a>
 
  You can uninstall the guidance from the AWS Management Console or by using the [AWS Command Line Interface](https://aws.amazon.com/cli/) (AWS CLI). You must manually delete [several resources](#manually-uninstalling-resources) created by this guidance. This guidance doesn't automatically delete these resources in case you have stored data to retain.
 

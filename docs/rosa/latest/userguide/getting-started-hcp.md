@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/getting-started-hc
 ---
 
 # Create a ROSA with HCP cluster using the ROSA CLI
-<a name="getting-started-hcp"></a>
 
 The following sections describe how to get started with ROSA with hosted control planes (ROSA with HCP) using AWS STS and the ROSA CLI. For steps to create a ROSA with HCP cluster using Terraform, see [the Red Hat documentation](https://docs.openshift.com/rosa/rosa_hcp/terraform/rosa-hcp-creating-a-cluster-quickly-terraform.html). To learn more about the Terraform provider for creating ROSA clusters, see [the Terraform documentation](https://registry.terraform.io/providers/terraform-redhat/rhcs/latest/docs).
 

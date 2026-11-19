@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-r
 ---
 
 # Creating a scheduled rule (legacy) in Amazon EventBridge
-<a name="eb-create-rule-schedule"></a>
 
 **Note**
 Scheduled rules are a legacy feature of EventBridge.

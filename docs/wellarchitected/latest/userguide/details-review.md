@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/details
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # The AWS Well-Architected Tool Overview tab
-<a name="details-review"></a>
 
 When you initially view a workload, the **Overview** tab is the first information displayed. This tab provides the overall state of your workload followed by the state of each lens.
 

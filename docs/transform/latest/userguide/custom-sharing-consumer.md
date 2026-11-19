@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-sharin
 ---
 
 # Accept, run, and download a shared transformation definition
-<a name="custom-sharing-consumer"></a>
 
 These steps are for the consumer account.
 

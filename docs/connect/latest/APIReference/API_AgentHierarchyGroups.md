@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AgentHie
 ---
 
 # AgentHierarchyGroups
-<a name="API_AgentHierarchyGroups"></a>
 
 A structure that defines search criteria for contacts using agent hierarchy group levels. For more information about agent hierarchies, see [Set Up Agent Hierarchies](https://docs.aws.amazon.com/connect/latest/adminguide/agent-hierarchy.html) in the *Connect Customer Administrator Guide*.
 

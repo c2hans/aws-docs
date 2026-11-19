@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DBSubnetGroup.
 ---
 
 # DBSubnetGroup
-<a name="API_DBSubnetGroup"></a>
 
 Contains the details of an Amazon Neptune DB subnet group.
 

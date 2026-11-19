@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # Amazon API Gateway REST API tutorials
-<a name="api-gateway-rest-tutorials"></a>
 
 The following tutorials provide hands-on exercises to help you learn about API Gateway REST APIs.
 

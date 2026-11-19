@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_SyncConf
 ---
 
 # SyncConfig
-<a name="API_SyncConfig"></a>
 
 Describes a Sync configuration for a resolver.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/or.html
 ---
 
 # $or
-<a name="or"></a>
 
 The `$or` operator is used to perform a logical OR operation on an array of two or more expressions. It returns documents that match at least one of the expressions. This operator is useful when you need to query for documents that satisfy any one of multiple conditions.
 

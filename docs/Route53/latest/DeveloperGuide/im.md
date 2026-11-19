@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/im.html
 ---
 
 # .im (Isle of Man)
-<a name="im"></a>
 
 Also used as a generic TLD, often by instant messaging services or for individuals who want to develop an "I am" personal brand.
 

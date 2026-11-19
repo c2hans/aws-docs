@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Wor
 ---
 
 # WorkflowConfiguration
-<a name="API_WorkflowConfiguration"></a>
 
 Contains control settings and configurable inputs for a workflow resource.
 

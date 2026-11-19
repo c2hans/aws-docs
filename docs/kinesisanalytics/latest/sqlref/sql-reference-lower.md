@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # LOWER
-<a name="sql-reference-lower"></a>
 
 ```
 LOWER ( <character-expression> )

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_UpdatePrimar
 ---
 
 # UpdatePrimaryRegion
-<a name="API_UpdatePrimaryRegion"></a>
 
 Changes the primary key of a multi-Region key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Deploy
 ---
 
 # DeploymentLifecycleHookDetail
-<a name="API_DeploymentLifecycleHookDetail"></a>
 
 The details of a deployment lifecycle hook that is active during a service deployment.
 

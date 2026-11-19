@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/fsx-csi-tuning-non-
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Optimize Amazon FSx for Lustre performance on nodes (non-EFA)
-<a name="fsx-csi-tuning-non-efa"></a>
 
 You can optimize Amazon FSx for Lustre performance by applying tuning parameters during node initialization using launch template user data.
 

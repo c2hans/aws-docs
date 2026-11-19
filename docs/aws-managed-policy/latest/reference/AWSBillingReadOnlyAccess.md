@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBillingReadOnlyAccess
-<a name="AWSBillingReadOnlyAccess"></a>
 
 **Description**: Allows users to view bills on the Billing Console.
 

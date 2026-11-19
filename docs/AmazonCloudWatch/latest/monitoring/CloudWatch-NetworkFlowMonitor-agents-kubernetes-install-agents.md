@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Download Helm charts and install agents
-<a name="CloudWatch-NetworkFlowMonitor-agents-kubernetes-install-agents"></a>
 
 You can download the Network Flow Monitor agent Helm charts from the AWS public repository by using the following command. Make sure that you first authenticate with your GitHub account.
 

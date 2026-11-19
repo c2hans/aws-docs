@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Qu
 ---
 
 # QueryStatisticsForDescribeQuery
-<a name="API_QueryStatisticsForDescribeQuery"></a>
 
 Gets metadata about a query, including the number of events that were matched, the total number of events scanned, the query run time in milliseconds, and the query's creation time.
 

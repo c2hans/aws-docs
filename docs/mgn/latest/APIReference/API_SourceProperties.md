@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_SourceProper
 ---
 
 # SourceProperties
-<a name="API_SourceProperties"></a>
 
 Source server properties.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/archguide/security_iam_s
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # How Amazon Pinpoint works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 To use Amazon Pinpoint, users in your AWS account require permissions that allow them to view analytics data, create projects, define user segments, deploy campaigns, and more. If you integrate a mobile or web app with Amazon Pinpoint, users of your app also require access to Amazon Pinpoint. This access enables your app to register endpoints and report usage data to Amazon Pinpoint. To grant access to Amazon Pinpoint features, create AWS Identity and Access Management (IAM) policies that allow Amazon Pinpoint actions for IAM identities or Amazon Pinpoint resources.
 

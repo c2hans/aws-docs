@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Input SrtCallerSource
-<a name="aws-properties-medialive-input-srtcallersource"></a>
 
 <a name="aws-properties-medialive-input-srtcallersource-description"></a>The `SrtCallerSource` property type specifies Property description not available. for an [AWS::MediaLive::Input](aws-resource-medialive-input.md).
 

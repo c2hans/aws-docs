@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # ListIdentities
-<a name="API_ListIdentities"></a>
 
 Lists the identities in an identity pool.
 

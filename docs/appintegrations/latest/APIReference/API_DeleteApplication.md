@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appintegrations/latest/APIReference/API_
 ---
 
 # DeleteApplication
-<a name="API_connect-app-integrations_DeleteApplication"></a>
 
 Deletes an application. If the application has associations, you must delete them first. Alternatively, use the `force` option to delete the application and remove its associations.
 

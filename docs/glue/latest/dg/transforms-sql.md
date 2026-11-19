@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-sql.html
 ---
 
 # Using a SQL query to transform data
-<a name="transforms-sql"></a>
 
 You can use a **SQL** transform to write your own transform in the form of a SQL query.
 

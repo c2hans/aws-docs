@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-route.html
 ---
 
 # AWS.Networking.Route
-<a name="node-route"></a>
 
 You can define a route node that associates the destination route to the NAT Gateway as the target resource, and adds the route to the associated route table.
 

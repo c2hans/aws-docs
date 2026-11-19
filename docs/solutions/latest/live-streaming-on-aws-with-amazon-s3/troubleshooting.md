@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-w
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 Live Streaming on AWS with Amazon S3 troubleshooting steps
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Testing Amazon Aurora MySQL using fault injection queries
-<a name="AuroraMySQL.Managing.FaultInjectionQueries"></a>
 
 You can test the fault tolerance of your Aurora MySQL DB cluster by using fault injection queries. Fault injection queries are issued as SQL commands to an Amazon Aurora instance. They let you schedule a simulated occurrence of one of the following events:
 + A crash of a writer or reader DB instance

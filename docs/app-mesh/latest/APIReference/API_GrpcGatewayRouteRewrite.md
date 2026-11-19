@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcGat
 ---
 
 # GrpcGatewayRouteRewrite
-<a name="API_GrpcGatewayRouteRewrite"></a>
 
 An object that represents the gateway route to rewrite.
 

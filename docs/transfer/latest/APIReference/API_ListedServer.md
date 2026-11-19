@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListedS
 ---
 
 # ListedServer
-<a name="API_ListedServer"></a>
 
 Returns properties of a file transfer protocol-enabled server that was specified.
 

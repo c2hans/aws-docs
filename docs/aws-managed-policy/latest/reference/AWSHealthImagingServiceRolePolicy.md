@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSH
 ---
 
 # AWSHealthImagingServiceRolePolicy
-<a name="AWSHealthImagingServiceRolePolicy"></a>
 
 **Description**: Provides permissions for AWS HealthImaging to manage service operations and publish service metrics
 

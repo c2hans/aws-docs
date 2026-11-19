@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TaxRegistrationStatusReason
-<a name="API_taxSettings_TaxRegistrationStatusReason"></a>
 
 The reason that a tax registration was rejected.
 

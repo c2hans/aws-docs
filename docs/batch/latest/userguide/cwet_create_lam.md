@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/cwet_create_lam.h
 ---
 
 # Tutorial: Create the Lambda function
-<a name="cwet_create_lam"></a>
 
  In this procedure, you create a simple Lambda function to serve as a target for AWS Batch event stream messages.
 

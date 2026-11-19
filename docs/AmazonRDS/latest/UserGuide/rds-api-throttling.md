@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-api-throt
 ---
 
 # Request throttling for the Amazon RDS API
-<a name="rds-api-throttling"></a>
 
 Amazon RDS throttles API requests for each AWS account in each AWS Region. This helps the performance of the service and ensures fair usage for all Amazon RDS customers. Throttling ensures that requests to the Amazon RDS API don't exceed the maximum allowed API request limits. The request limits apply to API requests from any source, including the following.
 + Your own application code using an AWS SDK

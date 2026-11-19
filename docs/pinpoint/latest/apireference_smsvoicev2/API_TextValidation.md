@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # TextValidation
-<a name="API_TextValidation"></a>
 
 Validation rules for a text field.
 

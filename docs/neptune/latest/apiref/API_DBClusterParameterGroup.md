@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DBClusterParam
 ---
 
 # DBClusterParameterGroup
-<a name="API_DBClusterParameterGroup"></a>
 
 Contains the details of an Amazon Neptune DB cluster parameter group.
 

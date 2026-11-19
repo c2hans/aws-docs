@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Findin
 ---
 
 # Finding
-<a name="API_Finding"></a>
 
 Contains information about the finding that is generated when abnormal or suspicious activity is detected.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC11-BP04 Manual code reviews
-<a name="sec_appsec_manual_code_reviews"></a>
 
 Perform a manual code review of the software that you produce. This process helps verify that the person who wrote the code is not the only one checking the code quality.
 

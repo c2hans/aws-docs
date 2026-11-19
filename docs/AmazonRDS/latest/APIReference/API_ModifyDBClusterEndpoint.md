@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Modify
 ---
 
 # ModifyDBClusterEndpoint
-<a name="API_ModifyDBClusterEndpoint"></a>
 
 Modifies the properties of an endpoint in an Amazon Aurora DB cluster.
 

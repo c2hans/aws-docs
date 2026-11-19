@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zoom-meetings-configuring
 ---
 
 # Configuring the Zoom Meetings client app
-<a name="zoom-meetings-configuring-client-app"></a>
 
 1. Log into the Zoom App Marketplace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_T
 ---
 
 # TableCreationParameters
-<a name="API_TableCreationParameters"></a>
 
  The parameters for the table created as part of the import operation.
 

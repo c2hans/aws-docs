@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Designa
 ---
 
 # DesignationSummary
-<a name="API_DesignationSummary"></a>
 
 The summary representation of a designation returned by `ListDesignations`. The summary omits the Cedar permit policy. Call `GetDesignation` to retrieve the full designation record including the policy.
 

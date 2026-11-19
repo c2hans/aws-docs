@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_KubeApiServe
 ---
 
 # KubeApiServerVersionConfig
-<a name="API_KubeApiServerVersionConfig"></a>
 
 The Kubernetes API server version-specific configuration defaults and constraints.
 

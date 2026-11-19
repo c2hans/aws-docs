@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/aws-extensi
 ---
 
 # Basic attributes
-<a name="aws-extension-basic-attributes"></a>
 
  These are fundamental attributes used for resource identification, location, and basic metadata. They consist of simple data types such as strings, timestamps, and arrays.
 

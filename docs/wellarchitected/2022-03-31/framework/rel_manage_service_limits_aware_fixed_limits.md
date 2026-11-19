@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL01-BP03 Accommodate fixed service quotas and constraints through architecture
-<a name="rel_manage_service_limits_aware_fixed_limits"></a>
 
  Be aware of unchangeable service quotas and physical resources, and architect to prevent these from impacting reliability.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-gpu-cluste
 ---
 
 # Create a GPU-based Kubernetes cluster on Amazon EKS
-<a name="create-gpu-cluster-eks"></a>
 
 Before you create a GPU-based Kubernetes cluster on Amazon EKS, you must have completed the steps in [Getting started with AWS Batch on Amazon EKS](getting-started-eks.md). In addition, also consider the following:
 + AWS Batch supports instance types with NVIDIA GPUs.

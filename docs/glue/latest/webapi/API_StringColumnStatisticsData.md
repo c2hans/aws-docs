@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StringColumnStati
 ---
 
 # StringColumnStatisticsData
-<a name="API_StringColumnStatisticsData"></a>
 
 Defines column statistics supported for character sequence data values.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstar
 ---
 
 # Step 6: Add a Launch constraint to your Terraform product
-<a name="getstarted-launchconstraint-Terraform"></a>
 
 **Important**
 You must create a launch constraint for HashiCorp Terraform products. Without a launch constraint, end users cannot provision the product.

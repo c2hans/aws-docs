@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-secure-t
 ---
 
 # ConnectionState
-<a name="API_iot-secure-tunneling_ConnectionState"></a>
 
 The state of a connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/usingsharedamis-
 ---
 
 # Find shared AMIs to use for Amazon EC2 instances
-<a name="usingsharedamis-finding"></a>
 
 You can use the Amazon EC2 console or the command line to find public or private shared AMIs to use with your Amazon EC2 instances.
 

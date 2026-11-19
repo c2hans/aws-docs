@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Lis
 ---
 
 # ListLogSubscriptions
-<a name="API_ListLogSubscriptions"></a>
 
 Lists the active log subscriptions for the AWS account.
 

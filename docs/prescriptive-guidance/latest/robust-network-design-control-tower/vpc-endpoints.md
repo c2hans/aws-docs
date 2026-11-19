@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-netw
 ---
 
 # Configuring the VPC endpoints
-<a name="vpc-endpoints"></a>
 
 VPC endpoints are created in only the outbound VPC, which acts as the source for all VPCs in the organization to reach AWS services securely. This helps with managing the VPC endpoints. It also helps with cost optimization, because there is only a single endpoint source instead of multiple endpoints in individual VPCs.
 

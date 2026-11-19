@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-hp-forg
 ---
 
 # SageMaker Python SDK
-<a name="nova-hp-forge-sdk"></a>
 
 The SageMaker Python SDK v3 provides a modern, modular API for training, fine-tuning, and managing Amazon Nova models on SageMaker HyperPod. Use trainer classes (CPTTrainer, SFTTrainer, RLVRTrainer) with HyperPodCompute configuration to run distributed customization jobs on your HyperPod cluster.
 

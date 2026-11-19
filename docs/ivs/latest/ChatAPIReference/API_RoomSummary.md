@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_RoomSumm
 ---
 
 # RoomSummary
-<a name="API_RoomSummary"></a>
 
 Summary information about a room.
 

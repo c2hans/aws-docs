@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-exten
 ---
 
 # Activation Checkpointing
-<a name="model-parallel-extended-features-pytorch-activation-checkpointing"></a>
 
 *Activation checkpointing* (or *gradient checkpointing*) is a technique to reduce memory usage by clearing activations of certain layers and recomputing them during a backward pass. Effectively, this trades extra computation time for reduced memory usage. If a module is checkpointed, at the end of a forward pass, the inputs to and outputs from the module stay in memory. Any intermediate tensors that would have been part of the computation inside that module are freed up during the forward pass. During the backward pass of checkpointed modules, these tensors are recomputed. At this point, the layers beyond this checkpointed module have finished their backward pass, so the peak memory usage with checkpointing can be lower.
 

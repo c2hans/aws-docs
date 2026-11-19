@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # Component configuration examples
-<a name="component-configuration-examples"></a>
 
 The following examples show component configurations in JSON format for relevant services.
 

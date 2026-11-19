@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/agreements-
 ---
 
 # Using agreements
-<a name="agreements-overview"></a>
 
 AWS Marketplace seller agreements are contracts between sellers and buyers for products and services sold on AWS Marketplace. An agreement is formed when a buyer accepts an offer, public or private. Agreements also govern how buyers use a seller's products and services. The topics in this section explain the agreement structure, the types and their statuses, and how to change or *amend* agreements.
 
@@ -16,3 +15,4 @@ AWS is not a party to any agreements.
 + [Working with agreements](viewing-your-agreements.md)
 + [Managing agreement renewals](managing-agreement-renewals.md)
 + [Amending agreements in AWS Marketplace](private-offers-upgrades-and-renewals.md)
++ [Receiving buyer contact information](receiving-buyer-contact-information.md)

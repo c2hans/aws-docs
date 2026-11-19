@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisLogExportError
-<a name="API_AnalysisLogExportError"></a>
 
 The analysis log export error.
 

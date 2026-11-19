@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_GetFunction.html
 ---
 
 # GetFunction
-<a name="API_GetFunction"></a>
 
 Returns information about a Lambda Event Function or function version, with a link to download the deployment package that's valid for 10 minutes. If you specify a function version, only details that are specific to that version are returned.
 
@@ -69,6 +68,9 @@ Content-type: application/json
       "ReservedConcurrentExecutions": number
    },
    "Configuration": {
+      "AcceleratorConfig": {
+         "AcceleratorMemorySize": number
+      },
       "Architectures": [ "string" ],
       "CapacityProviderConfig": {
          "LambdaManagedInstancesCapacityProviderConfig": {
@@ -149,6 +151,10 @@ Content-type: application/json
       "RevisionId": "string",
       "Role": "string",
       "Runtime": "string",
+      "RuntimeConfig": {
+         "RuntimeAlias": "string",
+         "RuntimeArn": "string"
+      },
       "RuntimeVersionConfig": {
          "Error": {
             "ErrorCode": "string",

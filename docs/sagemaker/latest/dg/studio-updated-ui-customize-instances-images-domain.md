@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-ui-cu
 ---
 
 # Hide instance types and images on a domain level
-<a name="studio-updated-ui-customize-instances-images-domain"></a>
 
 The following shows how to use the console to set rules to hide Amazon SageMaker AI instance types and images from being displayed in the Amazon SageMaker Studio Classic UI on a *domain level*. For more information, see [Hide instance types and images in the Amazon SageMaker Studio UI](studio-updated-ui-customize-instances-images.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-amaz
 ---
 
 # Amazon RDS for PostgreSQL connector for Amazon AppFlow
-<a name="connectors-amazon-rds-postgres-sql"></a>
 
 Amazon Relational Database Service (Amazon RDS) helps you set up and manage relational databases in the AWS Cloud. With Amazon RDS for PostgreSQL, you can set up Amazon RDS databases that run the PostgreSQL open source database system. If you use Amazon RDS for PostgreSQL, you can also use Amazon AppFlow to populate your databases with data that you transfer from certain AWS services or other supported applications.
 

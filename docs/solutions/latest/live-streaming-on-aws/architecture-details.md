@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws/a
 ---
 
 # Architecture details
-<a name="architecture-details"></a>
 
 Live Streaming on AWS solution architecture details
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_S3File
 ---
 
 # S3FileSystem
-<a name="API_S3FileSystem"></a>
 
 A custom file system in Amazon S3. This is only supported in Amazon SageMaker Unified Studio.
 

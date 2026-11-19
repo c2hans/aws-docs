@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Carrier coverage
-<a name="nx-rcs-launch-sg-carriers"></a>
 
 Singapore has four carriers with different requirements. Singtel requires the full SGNIC prerequisite, Bizfile, and LOA described above. M1, StarHub, and TPG follow the standard approval process with no additional requirements beyond the registration form.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/octopus-configuring-conne
 ---
 
 # Configuring Octopus Deploy connections
-<a name="octopus-configuring-connections"></a>
 
 Octopus Deploy connections authenticate with an API key (or token). You store the key in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

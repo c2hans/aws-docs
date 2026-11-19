@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_Custom
 ---
 
 # CustomAttribute
-<a name="API_CustomAttribute"></a>
 
 Defines the X.500 relative distinguished name (RDN).
 

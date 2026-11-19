@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-ad
 Also available on [Audible](https://www.audible.com/pd/Cloud-Adoption-Framework-CAF-Audiobook/B0B48D8ZXL?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare), [Kindle](https://www.amazon.com/dp/B09X9DBL4V/ref=cm_sw_em_r_mt_dp_44NEN2KA1F5VN2AQCMCT), and as an [eBook](https://d1.awsstatic.com/whitepapers/aws-caf-ebook.pdf).
 
 # Operations perspective: health and availability
-<a name="operations-perspective"></a>
 
 The *operations* perspective focuses on ensuring that cloud services are delivered at a level that is agreed upon with your business stakeholders. Automating and optimizing operations will allow you to effectively scale while improving the reliability of your workloads. This perspective comprises nine capabilities shown in the following figure. Common stakeholders include infrastructure and operations leaders, site reliability engineers, and information technology service managers.
 

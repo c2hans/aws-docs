@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteReceip
 ---
 
 # DeleteReceiptFilter
-<a name="API_DeleteReceiptFilter"></a>
 
 Deletes the specified IP address filter.
 

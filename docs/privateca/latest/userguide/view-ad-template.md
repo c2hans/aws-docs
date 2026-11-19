@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/view-ad-templ
 ---
 
 # View connector template details
-<a name="view-ad-template"></a>
 
 Use the following procedures to view the configuration details of a connector template using the console, command line, or API for AWS Private CA Connector for Active Directory
 

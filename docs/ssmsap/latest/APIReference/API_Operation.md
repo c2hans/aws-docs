@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Operation
 ---
 
 # Operation
-<a name="API_Operation"></a>
 
 The operations performed by AWS Systems Manager for SAP.
 

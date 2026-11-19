@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Upgrading and removing Oracle APEX
-<a name="Appendix.Oracle.Options.APEX.UpgradeandRemove"></a>
 
 To upgrade or remove Oracle APEX, follow the instructions in this topic:
 

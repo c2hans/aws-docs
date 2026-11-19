@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-lambda-rul
 ---
 
 # Tutorial: Formatting a notification by using an AWS Lambda function
-<a name="iot-lambda-rule"></a>
 
 This tutorial demonstrates how to send MQTT message data to an AWS Lambda action for formatting and sending to another AWS service. In this tutorial, the AWS Lambda action uses the AWS SDK to send the formatted message to the Amazon SNS topic you created in the tutorial about how to [Tutorial: Sending an Amazon SNS notification](iot-sns-rule.md).
 

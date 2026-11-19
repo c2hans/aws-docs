@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # MemoryDbCluster
-<a name="API_CostOptimizationHub_MemoryDbCluster"></a>
 
 The MemoryDB cluster recommendation details.
 

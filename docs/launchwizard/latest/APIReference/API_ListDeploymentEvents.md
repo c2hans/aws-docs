@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Lis
 ---
 
 # ListDeploymentEvents
-<a name="API_ListDeploymentEvents"></a>
 
 Lists the events of a deployment.
 

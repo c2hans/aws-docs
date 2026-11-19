@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/add-models-to-endpoi
 ---
 
 # Add or Remove Models
-<a name="add-models-to-endpoint"></a>
 
 You can deploy additional models to a multi-model endpoint and invoke them through that endpoint immediately. When adding a new model, you don't need to update or bring down the endpoint, so you avoid the cost of creating and running a separate endpoint for each new model. The process for adding and removing models is the same for CPU and GPU-backed multi-model endpoints.
 

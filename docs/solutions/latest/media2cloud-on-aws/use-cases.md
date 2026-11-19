@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/use-
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Archive migration**
 

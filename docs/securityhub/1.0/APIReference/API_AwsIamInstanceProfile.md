@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsIamI
 ---
 
 # AwsIamInstanceProfile
-<a name="API_AwsIamInstanceProfile"></a>
 
 Information about an instance profile.
 

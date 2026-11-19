@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/databas
 ---
 
 # Amazon Aurora PostgreSQL user-defined functions for Amazon Location Service
-<a name="database-address-validation"></a>
 
 You can use Amazon Location Service to work with coordinates and addresses stored in database tables to clean and enrich your geospatial data.
 

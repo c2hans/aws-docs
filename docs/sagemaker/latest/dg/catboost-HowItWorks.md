@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/catboost-HowItWorks.
 ---
 
 # How CatBoost Works
-<a name="catboost-HowItWorks"></a>
 
 CatBoost implements a conventional Gradient Boosting Decision Tree (GBDT) algorithm with the addition of two critical algorithmic advances:
 

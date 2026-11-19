@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # EntityRecognizerDocuments
-<a name="API_EntityRecognizerDocuments"></a>
 
 Describes the training documents submitted with an entity recognizer.
 

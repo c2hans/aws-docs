@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/queries-viewing-history
 ---
 
 # View recent queries in the Athena console
-<a name="queries-viewing-history"></a>
 
 You can use the Athena console to see which queries succeeded or failed, and view error details for the queries that failed. Athena keeps a query history for 45 days.
 

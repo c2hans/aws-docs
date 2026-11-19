@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/lo
 The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
 
 # Locking API Versions
-<a name="locking-api-versions"></a>
 
 AWS services have API version numbers to keep track of API compatibility. API versions in AWS services are identified by a `YYYY-mm-dd` formatted date string. For example, the current API version for Amazon S3 is `2006-03-01`.
 

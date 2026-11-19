@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Set up a WebSocket API integration request in API Gateway
-<a name="apigateway-websocket-api-integration-requests"></a>
 
 Setting up an integration request involves the following:
 + Choosing a route key to integrate to the backend.

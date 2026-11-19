@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # IAM authentication for OpenSearch UI
-<a name="application-auth-iam"></a>
 
 This topic covers the minimum IAM permissions required to access an OpenSearch UI application that uses IAM authentication, without AWS IAM Identity Center. After you complete these steps, an IAM role can sign in to the application and query its data sources.
 

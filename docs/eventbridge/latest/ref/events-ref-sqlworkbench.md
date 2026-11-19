@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-sqlwor
 ---
 
 # AWS SQL Workbench events
-<a name="events-ref-sqlworkbench"></a>
 
 AWS SQL Workbench sends service events to EventBridge via AWS CloudTrail.
 

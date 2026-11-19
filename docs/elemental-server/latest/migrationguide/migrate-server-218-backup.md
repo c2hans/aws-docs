@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-server/latest/migrationguide/m
 ---
 
 # Step D: Create an AWS Elemental Server backup
-<a name="migrate-server-218-backup"></a>
 
 You must create a backup of the data on the node. You back up data using the special lifeboat script.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/prompting-vision-l
 ---
 
 # Video understanding limitations
-<a name="prompting-vision-limitations"></a>
 
 The following are key model limitations, where model accuracy and performance might not be guaranteed.
 + **One video per request:** currently the model supports only 1 video per request. Some frameworks and libraries use memory to keep track of previous interactions. There might be a video that was added in a previous context.

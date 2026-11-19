@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_StepTimeline
 ---
 
 # StepTimeline
-<a name="API_StepTimeline"></a>
 
 The timeline of the cluster step lifecycle.
 

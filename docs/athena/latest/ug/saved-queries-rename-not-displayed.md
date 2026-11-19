@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/saved-queries-rename-no
 ---
 
 # Rename an undisplayed saved query
-<a name="saved-queries-rename-not-displayed"></a>
 
 **To rename a saved query not displayed in the query editor**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_E
 ---
 
 # EcsTaskOverride
-<a name="API_EcsTaskOverride"></a>
 
 The overrides that are associated with a task.
 

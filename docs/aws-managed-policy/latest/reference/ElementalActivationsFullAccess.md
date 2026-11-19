@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Elem
 ---
 
 # ElementalActivationsFullAccess
-<a name="ElementalActivationsFullAccess"></a>
 
 **Description**: Full access to view and take action on Elemental Appliances and Software purchased assets
 

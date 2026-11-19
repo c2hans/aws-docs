@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-k
 ---
 
 # Replicate a key with CloudHSM CLI
-<a name="cloudhsm_cli-key-replicate"></a>
 
 Use the **key replicate** command in CloudHSM CLI to replicate a key from a source AWS CloudHSM cluster to a destination AWS CloudHSM cluster.
 

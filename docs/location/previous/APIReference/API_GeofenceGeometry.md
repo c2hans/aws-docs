@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Geofe
 ---
 
 # GeofenceGeometry
-<a name="API_GeofenceGeometry"></a>
 
 Contains the geofence geometry details.
 

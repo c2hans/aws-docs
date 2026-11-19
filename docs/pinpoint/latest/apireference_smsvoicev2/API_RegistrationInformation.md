@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RegistrationInformation
-<a name="API_RegistrationInformation"></a>
 
 Provides information about the requested registration.
 

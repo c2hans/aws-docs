@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Anony
 ---
 
 # AnonymousUserDashboardVisualEmbeddingConfiguration
-<a name="API_AnonymousUserDashboardVisualEmbeddingConfiguration"></a>
 
 The experience that you are embedding. You can use this object to generate a url that embeds a visual into your application.
 

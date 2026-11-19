@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Docker
 ---
 
 # DockerServerStatus
-<a name="API_DockerServerStatus"></a>
 
 Contains information about the status of the docker server.
 

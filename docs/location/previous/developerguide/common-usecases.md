@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/common-
 ---
 
 # Common use cases for using Amazon Location Service
-<a name="common-usecases"></a>
 
 Amazon Location Service lets you build a range of applications, from asset tracking to location-based marketing. The following are common use cases:
 

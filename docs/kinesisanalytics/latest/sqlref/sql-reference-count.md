@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # COUNT
-<a name="sql-reference-count"></a>
 
 Returns the number of qualifying rows of a group of values from a windowed query. A windowed query is defined in terms of time or rows. For information about windowed queries, see [Windowed Queries](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/windowed-sql.html).
 

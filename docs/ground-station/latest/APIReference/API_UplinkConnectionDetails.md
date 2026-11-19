@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_U
 ---
 
 # UplinkConnectionDetails
-<a name="API_UplinkConnectionDetails"></a>
 
 Connection details for customer to Agent and Agent to Ground Station
 

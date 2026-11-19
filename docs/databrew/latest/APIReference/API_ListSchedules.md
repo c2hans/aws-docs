@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_ListSch
 ---
 
 # ListSchedules
-<a name="API_ListSchedules"></a>
 
 Lists the DataBrew schedules that are defined.
 

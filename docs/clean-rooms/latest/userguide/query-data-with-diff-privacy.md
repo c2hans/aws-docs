@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/query-data-
 ---
 
 # Viewing the impact of differential privacy
-<a name="query-data-with-diff-privacy"></a>
 
 In general, writing and running queries doesn't change when differential privacy is turned on. However, you can't run a query if there isn't enough privacy budget remaining. As you run queries and consume the privacy budget, you can see approximately how many aggregations you can run and how that might impact future queries.
 

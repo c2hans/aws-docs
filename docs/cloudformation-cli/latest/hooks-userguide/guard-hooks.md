@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Guard Hooks
-<a name="guard-hooks"></a>
 
 To use an AWS CloudFormation Guard Hook in your account, you must *activate* the Hook for the account and Region where you want to use it. Activating a Hook makes it usable in stack operations in the account and Region where it's activated.
 

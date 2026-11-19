@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_CopySnap
 ---
 
 # Use `CopySnapshot` with a CLI
-<a name="example_ec2_CopySnapshot_section"></a>
 
 The following code examples show how to use `CopySnapshot`.
 

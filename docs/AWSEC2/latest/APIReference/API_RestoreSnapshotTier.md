@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RestoreSn
 ---
 
 # RestoreSnapshotTier
-<a name="API_RestoreSnapshotTier"></a>
 
 Restores an archived Amazon EBS snapshot for use temporarily or permanently, or modifies the restore period or restore type for a snapshot that was previously temporarily restored.
 

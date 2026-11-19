@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetAutom
 ---
 
 # GetAutomatedReasoningPolicyTestCase
-<a name="API_GetAutomatedReasoningPolicyTestCase"></a>
 
 Retrieves details about a specific Automated Reasoning policy test.
 

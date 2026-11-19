@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # AccountAssociationsListElement
-<a name="API_AccountAssociationsListElement"></a>
 
 A representation of a linked account.
 

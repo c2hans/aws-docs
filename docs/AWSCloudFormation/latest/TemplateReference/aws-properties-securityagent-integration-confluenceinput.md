@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityAgent::Integration ConfluenceInput
-<a name="aws-properties-securityagent-integration-confluenceinput"></a>
 
 <a name="aws-properties-securityagent-integration-confluenceinput-description"></a>The `ConfluenceInput` property type specifies Property description not available. for an [AWS::SecurityAgent::Integration](aws-resource-securityagent-integration.md).
 

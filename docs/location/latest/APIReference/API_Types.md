@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Types.h
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by Amazon Location Service Routes V2:
 +  [Circle](API_Circle.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ServiceNetwo
 ---
 
 # ServiceNetworkEndpoint
-<a name="API_ServiceNetworkEndpoint"></a>
 
 The configuration for a service network endpoint.
 

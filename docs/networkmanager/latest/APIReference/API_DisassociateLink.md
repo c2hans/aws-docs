@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DisassociateLink
-<a name="API_DisassociateLink"></a>
 
 Disassociates an existing device from a link. You must first disassociate any customer gateways that are associated with the link.
 

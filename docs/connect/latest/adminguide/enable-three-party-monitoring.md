@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-three-p
 ---
 
 # Enable three-party call monitoring in Connect Customer
-<a name="enable-three-party-monitoring"></a>
 
 **Important**
 This topic applies only if you have **NOT** enabled **Enhanced contact monitoring capabilities** on the Connect Customer console as explained in [Enable enhanced multi-party contact monitoring](monitor-conversations.md).

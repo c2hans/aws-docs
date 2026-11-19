@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Reposi
 ---
 
 # RepositoryCredentials
-<a name="API_RepositoryCredentials"></a>
 
 The repository credentials for private registry authentication.
 

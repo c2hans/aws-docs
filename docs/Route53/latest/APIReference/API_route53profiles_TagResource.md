@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 ---
 
 # TagResource
-<a name="API_route53profiles_TagResource"></a>
 
  Adds one or more tags to a specified resource.
 

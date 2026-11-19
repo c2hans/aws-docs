@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSetupSSMLifecycleManagementExecutionPolicy
-<a name="AWSQuickSetupSSMLifecycleManagementExecutionPolicy"></a>
 
 **Description**: The policy grants administrative permissions that allow Quick Setup to run the a AWS CloudFormation custom resource on lifecycle events during Quick Setup deployment in Systems Manager.
 

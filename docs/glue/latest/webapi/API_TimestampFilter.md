@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TimestampFilter.h
 ---
 
 # TimestampFilter
-<a name="API_TimestampFilter"></a>
 
 A timestamp filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateDelega
 ---
 
 # UpdateDelegationRequest
-<a name="API_UpdateDelegationRequest"></a>
 
 Updates an existing delegation request with additional information. When the delegation request is updated, it reaches the `PENDING_APPROVAL` state.
 

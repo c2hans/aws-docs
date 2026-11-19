@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillingViewHealthStatus
-<a name="API_billing_BillingViewHealthStatus"></a>
 
  Represents the health status of a billing view, including a status code and optional reasons for the status.
 

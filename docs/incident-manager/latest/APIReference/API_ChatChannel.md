@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # ChatChannel
-<a name="API_ChatChannel"></a>
 
 The Amazon Q Developer in chat applications chat channel used for collaboration during an incident.
 

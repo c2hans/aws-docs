@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-op
 ---
 
 # Resources for operationalizing agentic AI
-<a name="resources"></a>
 
 ## AWS services
 <a name="resources-services"></a>

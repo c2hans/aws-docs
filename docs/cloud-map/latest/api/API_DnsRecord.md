@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_DnsRecord.html
 ---
 
 # DnsRecord
-<a name="API_DnsRecord"></a>
 
 A complex type that contains information about the Route 53 DNS records that you want AWS Cloud Map to create when you register an instance.
 

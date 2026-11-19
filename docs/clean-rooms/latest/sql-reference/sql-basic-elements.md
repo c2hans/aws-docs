@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-bas
 ---
 
 # Basic elements
-<a name="sql-basic-elements"></a>
 
 To write SQL queries that run as expected in AWS Clean Rooms, use valid names, correctly formatted literals, and supported data types. The following topics describe the rules and options for each of these elements.
 

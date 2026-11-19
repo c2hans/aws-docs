@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # LambdaFunctionRecommendation
-<a name="API_LambdaFunctionRecommendation"></a>
 
 Describes an AWS Lambda function recommendation.
 

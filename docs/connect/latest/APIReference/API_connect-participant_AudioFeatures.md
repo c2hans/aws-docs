@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # AudioFeatures
-<a name="API_connect-participant_AudioFeatures"></a>
 
 Has audio-specific configurations as the operating parameter for Echo Reduction.
 

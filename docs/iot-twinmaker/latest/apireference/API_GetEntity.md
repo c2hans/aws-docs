@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Ge
 ---
 
 # GetEntity
-<a name="API_GetEntity"></a>
 
 Retrieves information about an entity.
 

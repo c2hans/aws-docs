@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetadat
 ---
 
 # GetBucketMetadataConfigurationResult
-<a name="API_GetBucketMetadataConfigurationResult"></a>
 
  The S3 Metadata configuration for a general purpose bucket.
 

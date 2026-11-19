@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AutoScaling-
 ---
 
 # Editing a scaling policy
-<a name="AutoScaling-Editing-Policy"></a>
 
 You can edit a scaling policy using the AWS Management Console, the AWS CLI, or the Application Auto Scaling API.
 

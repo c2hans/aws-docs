@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Associat
 ---
 
 # AssociateFlow
-<a name="API_AssociateFlow"></a>
 
 Associates a connect resource to a flow.
 

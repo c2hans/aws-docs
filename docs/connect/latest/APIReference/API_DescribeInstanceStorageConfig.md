@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeInstanceStorageConfig
-<a name="API_DescribeInstanceStorageConfig"></a>
 
 This API is in preview release for Connect Customer and is subject to change.
 

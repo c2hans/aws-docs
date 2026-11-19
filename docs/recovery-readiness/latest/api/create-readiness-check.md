@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/create-rea
 ---
 
 # Create a readiness check
-<a name="create-readiness-check"></a>
 
 The following is an example of a request to create a readiness check for an Amazon EBS volume, and the response.
 

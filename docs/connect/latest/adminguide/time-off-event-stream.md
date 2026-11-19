@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/time-off-event
 ---
 
 # Time off event stream
-<a name="time-off-event-stream"></a>
 
 You can use time off events to integrate Connect Customer scheduling with external HR systems, for example, to drive leave-approval workflows. Connect Customer publishes a time off event to EventBridge each time an agent's time off request changes status, directly to your account's default event bus.
 

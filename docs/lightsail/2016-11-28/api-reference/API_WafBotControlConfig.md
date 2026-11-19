@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_W
 ---
 
 # WafBotControlConfig
-<a name="API_WafBotControlConfig"></a>
 
 Describes the configuration of the bot control Web Application Firewall (WAF) rule group.
 

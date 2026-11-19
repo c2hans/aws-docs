@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/farm.html
 ---
 
 # .farm
-<a name="farm"></a>
 
 Used by those in the farming industry, such as farmers and agricultural engineers.
 

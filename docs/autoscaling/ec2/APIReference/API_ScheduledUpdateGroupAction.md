@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Schedul
 ---
 
 # ScheduledUpdateGroupAction
-<a name="API_ScheduledUpdateGroupAction"></a>
 
 Describes a scheduled scaling action.
 

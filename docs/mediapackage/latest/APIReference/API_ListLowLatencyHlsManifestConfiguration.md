@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Lis
 ---
 
 # ListLowLatencyHlsManifestConfiguration
-<a name="API_ListLowLatencyHlsManifestConfiguration"></a>
 
 List the low-latency HTTP live streaming (HLS) manifest configuration.
 

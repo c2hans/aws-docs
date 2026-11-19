@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DisassociateTrustStore
-<a name="API_DisassociateTrustStore"></a>
 
 Disassociates a trust store from a web portal.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/dg/troubleshooting-data-so
 Amazon Kendra is no longer open to new customers. For capabilities similar to Amazon Kendra, explore Amazon Bedrock Knowledge Bases. [Learn more](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
 # Troubleshooting data sources
-<a name="troubleshooting-data-sources"></a>
 
 This section can help you solve common issues when configuring and using Amazon Kendra data source connectors.
 

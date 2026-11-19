@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-xac
 ---
 
 # Set up cross-account support for Pipelines
-<a name="build-and-manage-xaccount"></a>
 
 Cross-account support for Amazon SageMaker Pipelines enables you to collaborate on machine learning pipelines with other teams or organizations that operate in different AWS accounts. By setting up cross-account pipeline sharing, you can grant controlled access to pipelines, allow other accounts to view pipeline details, trigger executions, and monitor runs. The following topic covers how to set up cross-account pipeline sharing, the different permission policies available for shared resources, and how to access and interact with shared pipeline entities through direct API calls to SageMaker AI.
 

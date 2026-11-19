@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/trusted-entity-requi
 ---
 
 # Access requirements for the trusted entity
-<a name="trusted-entity-requirements"></a>
 
 The following table shows all the types of permissions that the MediaLive trusted entity might need. Refer to this table when you [identify the access requirements for the MediaLive trusted entity](complex-scenario-create-trusted-entity-role-step1.md).
 

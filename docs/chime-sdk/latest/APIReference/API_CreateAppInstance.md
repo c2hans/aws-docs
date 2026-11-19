@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Create
 ---
 
 # CreateAppInstance
-<a name="API_CreateAppInstance"></a>
 
 Creates an Amazon Chime SDK messaging `AppInstance` under an AWS account. Only SDK messaging customers use this API. `CreateAppInstance` supports idempotency behavior as described in the AWS API Standard.
 

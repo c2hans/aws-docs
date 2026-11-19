@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-gcs.html
 ---
 
 # Amazon Athena Google Cloud Storage connector
-<a name="connectors-gcs"></a>
 
 The Amazon Athena Google Cloud Storage connector enables Amazon Athena to run queries on Parquet and CSV files stored in a Google Cloud Storage (GCS) bucket. After you group one or more Parquet or CSV files in an unpartitioned or partitioned folder in a GCS bucket, you can organize them in an [AWS Glue](https://aws.amazon.com/glue/) database table.
 

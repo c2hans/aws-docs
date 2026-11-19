@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/graphql-fields.h
 ---
 
 # GraphQL fields
-<a name="graphql-fields"></a>
 
 Fields exist within the scope of a type and hold the value that's requested from the GraphQL service. These are very similar to variables in other programming languages. For example, here's a `Person` object type:
 

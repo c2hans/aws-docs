@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteDed
 ---
 
 # DeleteDedicatedIpPool
-<a name="API_DeleteDedicatedIpPool"></a>
 
 Delete a dedicated IP pool.
 

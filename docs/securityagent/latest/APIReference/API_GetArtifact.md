@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ge
 ---
 
 # GetArtifact
-<a name="API_GetArtifact"></a>
 
 Retrieves an artifact from an agent space.
 

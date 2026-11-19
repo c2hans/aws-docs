@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FlexCostA
 ---
 
 # FlexCostAllocationPolicyVersion
-<a name="API_FlexCostAllocationPolicyVersion"></a>
 
 Describes a version of a flex cost allocation policy.
 

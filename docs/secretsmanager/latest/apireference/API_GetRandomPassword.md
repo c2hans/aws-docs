@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_G
 ---
 
 # GetRandomPassword
-<a name="API_GetRandomPassword"></a>
 
 Generates a random password. We recommend that you specify the maximum length and include every character type that the system you are generating a password for can support. By default, Secrets Manager uses uppercase and lowercase letters, numbers, and the following characters in passwords: `!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~`
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Statist
 ---
 
 # StatisticsConfiguration
-<a name="API_StatisticsConfiguration"></a>
 
 Configuration of evaluations for a profile job. This configuration can be used to select evaluations and override the parameters of selected evaluations.
 

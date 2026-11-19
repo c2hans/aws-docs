@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 We recommend adopting Amazon RDS Proxy to increase your application scalability, performance, and availability. For help with determining which of your databases will benefit most from adopting an RDS Proxy endpoint, see [Planning where to use RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-planning.html).
 

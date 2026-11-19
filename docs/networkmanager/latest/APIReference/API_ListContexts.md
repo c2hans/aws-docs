@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # ListContexts
-<a name="API_ListContexts"></a>
 
 Returns the context entries of a context store, and the version of the context entries. To get the context entries that were added or removed after this version, specify the returned `VersionId` in a `ListContextChanges` request. The context store must be in the `AVAILABLE` state.
 

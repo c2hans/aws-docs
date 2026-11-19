@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Co
 ---
 
 # CollaborationTrainedModelSummary
-<a name="API_CollaborationTrainedModelSummary"></a>
 
 Provides summary information about a trained model in a collaboration.
 

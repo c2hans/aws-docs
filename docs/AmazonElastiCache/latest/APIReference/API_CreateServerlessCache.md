@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CreateServerlessCache
-<a name="API_CreateServerlessCache"></a>
 
 Creates a serverless cache.
 
@@ -41,6 +40,13 @@ Required: No
  ** Description **
 User-provided description for the serverless cache. The default is NULL, i.e. if no description is provided then an empty string will be returned. The maximum length is 255 characters.
 Type: String
+Required: No
+
+ **Integrations.IntegrationRequest.N**
+Which serverless cache integrations to enable. Valid values are:
++  `dynamodb` – DynamoDB integration.
+DynamoDB integration requires the Valkey engine with a major engine version of 9 or above. If not specified, no integrations are enabled.
+Type: Array of [IntegrationRequest](API_IntegrationRequest.md) objects
 Required: No
 
  ** KmsKeyId **

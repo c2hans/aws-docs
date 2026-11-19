@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Batch
 ---
 
 # BatchDeleteGeofence
-<a name="API_BatchDeleteGeofence"></a>
 
 Deletes a batch of geofences from a geofence collection.
 

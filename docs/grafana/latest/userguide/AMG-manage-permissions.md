@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-manage-perm
 ---
 
 # Amazon Managed Grafana permissions and policies for AWS data sources
-<a name="AMG-manage-permissions"></a>
 
 Amazon Managed Grafana offers three permission modes:
 + Service-managed permissions for current account

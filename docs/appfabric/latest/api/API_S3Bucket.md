@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_S3Bucket.html
 ---
 
 # S3Bucket
-<a name="API_S3Bucket"></a>
 
 Contains information about an Amazon S3 bucket.
 

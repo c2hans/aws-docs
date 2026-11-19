@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract_monitoring.h
 ---
 
 # Logging and Monitoring
-<a name="textract_monitoring"></a>
 
 To monitor Amazon Textract, use Amazon CloudWatch. This section provides information on how to set up monitoring for Amazon Textract. It also provides reference content for Amazon Textract metrics.
 

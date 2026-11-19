@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateUsageProfil
 ---
 
 # UpdateUsageProfile
-<a name="API_UpdateUsageProfile"></a>
 
 Update an AWS Glue usage profile.
 

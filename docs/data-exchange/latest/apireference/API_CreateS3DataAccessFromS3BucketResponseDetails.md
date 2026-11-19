@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Cr
 ---
 
 # CreateS3DataAccessFromS3BucketResponseDetails
-<a name="API_CreateS3DataAccessFromS3BucketResponseDetails"></a>
 
 Details about the response of the operation to create an S3 data access from an S3 bucket.
 

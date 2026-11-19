@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 ---
 
 # GetMarketplaceResource
-<a name="API_GetMarketplaceResource"></a>
 
 Verifies the subscription and performs resource dependency checks on the requested AWS Marketplace resource. The caller must be entitled to the resource. For AWS Marketplace components, the response contains fields to download the components and their artifacts.
 

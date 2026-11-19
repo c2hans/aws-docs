@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_FilterSource
 ---
 
 # FilterSource
-<a name="API_FilterSource"></a>
 
 Information about the bot filter that was applied to the request. This structure is populated in the response when you filter by bot category, organization, or name.
 

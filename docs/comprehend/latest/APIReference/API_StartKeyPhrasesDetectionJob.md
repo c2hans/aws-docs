@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Start
 ---
 
 # StartKeyPhrasesDetectionJob
-<a name="API_StartKeyPhrasesDetectionJob"></a>
 
 Starts an asynchronous key phrase detection job for a collection of documents. Use the [DescribeKeyPhrasesDetectionJob](API_DescribeKeyPhrasesDetectionJob.md) operation to track the status of a job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_QueryError.h
 ---
 
 # QueryError
-<a name="API_QueryError"></a>
 
 A two-part error structure that can occur in `ListGroupResources` or `SearchResources`.
 

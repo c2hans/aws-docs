@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon VPC Lattice
-<a name="amazonvpclattice"></a>
 
 Amazon VPC Lattice provides the following APIs for data retrieval.
 

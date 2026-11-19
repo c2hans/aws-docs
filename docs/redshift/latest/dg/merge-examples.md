@@ -5,11 +5,10 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/merge-examples.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Merge examples
-<a name="merge-examples"></a>
 
 The following examples perform a merge to update the SALES table. The first example uses the simpler method of deleting from the target table and then inserting all of the rows from the staging table. The second example requires updating on select columns in the target table, so it includes an extra update step.
 
-The [Merge examples](#merge-examples) use a sample dataset for Amazon Redshift, called the TICKIT data set. As a prerequisite, you can set up the TICKIT tables and data by following the instructions available in the guide [Getting started with common database tasks](https://docs.aws.amazon.com/redshift/latest/gsg/database-tasks.html). More detailed information about the sample data set is found at [Sample database](https://docs.aws.amazon.com/redshift/latest/dg/c_sampledb.html).
+The [Merge examples](merge-examples.md) use a sample dataset for Amazon Redshift, called the TICKIT data set. As a prerequisite, you can set up the TICKIT tables and data by following the instructions available in the guide [Getting started with common database tasks](https://docs.aws.amazon.com/redshift/latest/gsg/database-tasks.html). More detailed information about the sample data set is found at [Sample database](https://docs.aws.amazon.com/redshift/latest/dg/c_sampledb.html).
 
 **Sample merge data source**
 

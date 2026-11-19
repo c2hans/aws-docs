@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopMo
 ---
 
 # StopMonitoringSchedule
-<a name="API_StopMonitoringSchedule"></a>
 
 Stops a previously started monitoring schedule.
 

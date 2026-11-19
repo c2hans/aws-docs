@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/language-runtimes.html
 ---
 
 # Getting started with programming runtimes on AL2023
-<a name="language-runtimes"></a>
 
 AL2023 provides different versions of some language runtimes. We work with upstream projects that support multiple versions at the same time. Find information about how to install and manage these name-versioned packages using the `dnf` command to search and install these packages.
 

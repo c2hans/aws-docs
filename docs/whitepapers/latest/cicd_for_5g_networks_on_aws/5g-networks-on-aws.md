@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 ---
 
 # 5G networks on AWS
-<a name="5g-networks-on-aws"></a>
 
 The typical model of 5G network infrastructure is composed of a 4G/5G radio site, a fronthaul/midhaul/backhaul network, a core network site, and a telecom/IT data center. CSPs can use AWS Services to create a scalable, flexible 5G network infrastructure while reducing upfront investment cost. AWS can be used to implement the virtual Network Operation Center (NOC) in the Region that hosts the Operations Support System/Business Support System (OSS/BSS) and the majority of control plane core network functions.
 

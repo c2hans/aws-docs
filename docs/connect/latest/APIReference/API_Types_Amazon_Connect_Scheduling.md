@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Types_Am
 ---
 
 # Amazon Connect Scheduling
-<a name="API_Types_Amazon_Connect_Scheduling"></a>
 
 The following data types are supported by Amazon Connect Scheduling:
 +  [ActorInfo](API_connect-scheduling_ActorInfo.md)

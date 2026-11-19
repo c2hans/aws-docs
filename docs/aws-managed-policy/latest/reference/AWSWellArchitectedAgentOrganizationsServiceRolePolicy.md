@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSW
 ---
 
 # AWSWellArchitectedAgentOrganizationsServiceRolePolicy
-<a name="AWSWellArchitectedAgentOrganizationsServiceRolePolicy"></a>
 
 **Description**: Allows AWS Well-Architected Agent to access organizational structure and delegated administrator information in AWS Organizations on your behalf
 

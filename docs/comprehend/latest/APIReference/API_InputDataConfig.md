@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Input
 ---
 
 # InputDataConfig
-<a name="API_InputDataConfig"></a>
 
 The input properties for an inference job. The document reader config field applies only to non-text inputs for custom analysis.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-inference.html
 ---
 
 # Common data formats for inference
-<a name="cdf-inference"></a>
 
 Amazon SageMaker AI algorithms accept and produce several different MIME types for the HTTP payloads used in retrieving online and mini-batch predictions. You can use multiple AWS services to transform or preprocess records before running inference. At a minimum, you need to convert the data for the following:
 + Inference request serialization (handled by you)

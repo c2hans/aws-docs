@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/notificatio
 ---
 
 # Setting up notifications
-<a name="notifications"></a>
 
 Communication between you and your ECO team occurs for the following reasons:
 + Events that monitoring alerts create

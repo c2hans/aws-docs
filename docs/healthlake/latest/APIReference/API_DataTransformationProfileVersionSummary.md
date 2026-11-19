@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DataT
 ---
 
 # DataTransformationProfileVersionSummary
-<a name="API_DataTransformationProfileVersionSummary"></a>
 
 Contains summary information about a specific version of a data transformation profile. To retrieve profile content, call `GetDataTransformationProfile`.
 

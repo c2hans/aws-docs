@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Additional security considerations for the Tools for PowerShell
-<a name="additional-security-considerations"></a>
 
 This topic contains security considerations in addition to the security topics covered in earlier sections.
 

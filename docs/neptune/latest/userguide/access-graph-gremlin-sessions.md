@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gr
 ---
 
 # Support for Gremlin script-based sessions
-<a name="access-graph-gremlin-sessions"></a>
 
 You can use Gremlin sessions with implicit transactions in Amazon Neptune. For information about Gremlin sessions, see [Considering Sessions](http://tinkerpop.apache.org/docs/current/reference/#sessions) in the Apache TinkerPop documentation. The sections below describe how to use Gremlin sessions with Java.
 

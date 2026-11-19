@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceRecommendation
-<a name="API_InferenceRecommendation"></a>
 
 A list of recommendations made by Amazon SageMaker Inference Recommender.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnumLis
 ---
 
 # EnumListConfigurationOptions
-<a name="API_EnumListConfigurationOptions"></a>
 
  The options for customizing a security control parameter that is a list of enums.
 

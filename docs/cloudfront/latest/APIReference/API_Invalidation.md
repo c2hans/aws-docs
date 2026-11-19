@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Inval
 ---
 
 # Invalidation
-<a name="API_Invalidation"></a>
 
 An invalidation.
 

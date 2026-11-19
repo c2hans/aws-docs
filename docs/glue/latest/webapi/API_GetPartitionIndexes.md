@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetPartitionIndex
 ---
 
 # GetPartitionIndexes
-<a name="API_GetPartitionIndexes"></a>
 
 Retrieves the partition indexes associated with a table.
 

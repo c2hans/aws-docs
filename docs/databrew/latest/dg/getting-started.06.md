@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/getting-started.06.ht
 ---
 
 # Step 6: Transform the dataset
-<a name="getting-started.06"></a>
 
 Until now, you tested your recipe on only a sample of the dataset. Now it's time to transform the entire dataset by creating a DataBrew recipe job.
 

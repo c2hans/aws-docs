@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_IdMa
 ---
 
 # IdMappingTable
-<a name="API_IdMappingTable"></a>
 
 Describes information about the ID mapping table.
 

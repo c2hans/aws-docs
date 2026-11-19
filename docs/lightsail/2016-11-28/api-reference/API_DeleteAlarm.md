@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DeleteAlarm
-<a name="API_DeleteAlarm"></a>
 
 Deletes an alarm.
 

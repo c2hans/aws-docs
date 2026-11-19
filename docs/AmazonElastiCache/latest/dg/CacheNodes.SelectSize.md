@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.S
 ---
 
 # Choosing your node size
-<a name="CacheNodes.SelectSize"></a>
 
 The node size you select for your ElastiCache cluster impacts costs, performance, and fault tolerance.
 

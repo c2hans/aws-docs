@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Operations_A
 ---
 
 # Amazon Elastic Kubernetes Service
-<a name="API_Operations_Amazon_Elastic_Kubernetes_Service"></a>
 
 The following actions are supported by Amazon Elastic Kubernetes Service:
 +  [ActivateCertificateAuthority](API_ActivateCertificateAuthority.md)

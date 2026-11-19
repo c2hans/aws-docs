@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Using and customizing route tables
-<a name="using-and-customizing-route-tables"></a>
 
 This section provides a user guide for the transit gateway route tables.
 

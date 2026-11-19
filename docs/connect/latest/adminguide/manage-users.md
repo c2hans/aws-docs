@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manage-users.h
 ---
 
 # Manage users that you add to Connect Customer
-<a name="manage-users"></a>
 
 As the admin of your Connect Customer instance, you manage users, give them credentials, and assign appropriate permissions so they can access the features needed to do their job.
 

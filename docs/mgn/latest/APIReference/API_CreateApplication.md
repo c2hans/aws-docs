@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_CreateApplic
 ---
 
 # CreateApplication
-<a name="API_CreateApplication"></a>
 
 Create application.
 

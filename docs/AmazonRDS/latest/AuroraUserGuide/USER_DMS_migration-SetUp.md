@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DM
 ---
 
 # Setting up data migration for EC2 database
-<a name="USER_DMS_migration-SetUp"></a>
 
 To begin migrating data from your EC2 source database, you must create an equivalent Aurora database. For instructions on creating your database, see [Creating an Amazon Aurora DB cluster](Aurora.CreateInstance.md) .
 

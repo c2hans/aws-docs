@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/troubleshoot.html
 ---
 
 # Troubleshooting Amazon SES issues
-<a name="troubleshoot"></a>
 
 This section contains the following topics that may help you when you encounter problems:
 + For information about domain verification problems that you might encounter, see [Domain and Email address verification problems](troubleshoot-verification.md).

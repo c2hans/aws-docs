@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeletePr
 ---
 
 # DeletePromptRouter
-<a name="API_DeletePromptRouter"></a>
 
 Deletes a specified prompt router. This action cannot be undone.
 

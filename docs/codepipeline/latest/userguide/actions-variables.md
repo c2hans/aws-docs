@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/actions-va
 ---
 
 # Working with variables
-<a name="actions-variables"></a>
 
 Some actions in CodePipeline generate variables. To use variables:
 + You assign a namespace to an action to make the variables it produces available to a downstream action configuration.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Get started with bidirectional streaming using WebSocket
-<a name="runtime-get-started-websocket"></a>
 
 Amazon Bedrock AgentCore Runtime lets you deploy agents that support WebSocket streaming for real-time bidirectional communication. This guide walks you through creating, testing, and deploying your first bidirectional streaming agent using WebSocket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Li
 ---
 
 # ListEventSources
-<a name="API_ListEventSources"></a>
 
 Lists EventSources as summaries. By default the list spans the EventSources the caller account owns; set EventBusArn to scope it to one bus. Use DescribeEventSource to retrieve full configuration.
 

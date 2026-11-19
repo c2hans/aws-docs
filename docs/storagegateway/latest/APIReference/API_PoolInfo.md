@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_P
 ---
 
 # PoolInfo
-<a name="API_PoolInfo"></a>
 
 Describes a custom tape pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_S
 ---
 
 # ScoringComponentResiliencyScore
-<a name="API_ScoringComponentResiliencyScore"></a>
 
 Resiliency score of each scoring component. For more information about scoring component, see [Calculating resiliency score](https://docs.aws.amazon.com/resilience-hub/latest/userguide/calculate-score.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_GetCod
 ---
 
 # GetCodeIssue
-<a name="API_GetCodeIssue"></a>
 
 Retrieves the current state and details of an issue.
 

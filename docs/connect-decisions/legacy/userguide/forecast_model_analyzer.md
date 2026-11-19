@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/forec
 ---
 
 # Forecast model analyzer
-<a name="forecast_model_analyzer"></a>
 
 Forecast model analyzer is a self-service tool that you can use to execute forecast experiments on multiple forecast models (forecast period in past and future). Once executed, you can review the results of the different forecast models. Using accuracy metrics and visual comparison between forecasts and actual demand, you can choose the required forecast model that suits your business data patterns. You can execute the forecast model analyzer at the same time the production demand plan is running without any interference between each other or vice-versa.
 

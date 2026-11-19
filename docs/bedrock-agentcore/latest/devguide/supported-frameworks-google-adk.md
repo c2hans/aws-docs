@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/suppor
 ---
 
 # Google ADK
-<a name="supported-frameworks-google-adk"></a>
 
 This page explains how to instrument a [Google Agent Development Kit (ADK)](https://google.github.io/adk-docs/) agent, how spans are identified, and how evaluation fields are extracted.
 

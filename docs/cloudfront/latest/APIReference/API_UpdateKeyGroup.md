@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateKeyGroup
-<a name="API_UpdateKeyGroup"></a>
 
 Updates a key group.
 

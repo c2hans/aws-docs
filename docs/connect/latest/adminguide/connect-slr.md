@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/connect-slr.ht
 ---
 
 # Use service-linked roles and role permissions for Connect Customer
-<a name="connect-slr"></a>
 
 ## What are service-linked roles (SLR) and why are they important?
 <a name="what-is-slr"></a>

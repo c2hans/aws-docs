@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-complianc
 ---
 
 # ISV and multi-brand registration
-<a name="rcs-compliance-isv"></a>
 
 If you are an Independent Software Vendor (ISV) or platform that sends messages on behalf of other brands, additional requirements apply.
 

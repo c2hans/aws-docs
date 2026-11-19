@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # AWS services used for Lambda architecture
-<a name="aws-services-used-for-lambda-architecture"></a>
 
 | AWS service | Description |
 | --- | --- |

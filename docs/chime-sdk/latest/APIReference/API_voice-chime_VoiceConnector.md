@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # VoiceConnector
-<a name="API_voice-chime_VoiceConnector"></a>
 
 The Amazon Chime SDK Voice Connector configuration, including outbound host name and encryption settings.
 

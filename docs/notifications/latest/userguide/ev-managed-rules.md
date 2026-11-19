@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/userguide/ev-manage
 ---
 
 # Amazon EventBridge managed rules in AWS User Notifications
-<a name="ev-managed-rules"></a>
 
 AWS User Notifications uses Amazon EventBridge managed rules. A managed rule is a unique type of rule that is directly linked to User Notifications. These rules match incoming events and send them to targets for processing. Managed rules are predefined by User Notifications and include event patterns that are required by the service to manage customer notifications, and unless defined otherwise, only the owning service can utilize these managed rules. For more information, see [Rules](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html) in the *Amazon EventBridge User Guide*.
 

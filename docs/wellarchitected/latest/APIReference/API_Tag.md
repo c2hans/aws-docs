@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A key-value pair associated with a resource for cost allocation and access control.
 

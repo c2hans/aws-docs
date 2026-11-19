@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Dereg
 ---
 
 # DeregisterOnPremisesInstance
-<a name="API_DeregisterOnPremisesInstance"></a>
 
 Deregisters an on-premises instance.
 

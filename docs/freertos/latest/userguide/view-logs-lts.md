@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/view-logs-lts.
 ---
 
 # View the IDT for FreeRTOSlogs
-<a name="view-logs-lts"></a>
 
 You can find logs that IDT for FreeRTOS generates from test execution in `{{devicetester-extract-location}}/results/{{execution-id}}/logs`. Two sets of logs are generated:
 + `test_manager.log`

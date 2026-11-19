@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_InvokeWithResponse
 ---
 
 # InvokeWithResponseStreamResponseEvent
-<a name="API_InvokeWithResponseStreamResponseEvent"></a>
 
 An object that includes a chunk of the response payload. When the stream has ended, Lambda includes a `InvokeComplete` object.
 

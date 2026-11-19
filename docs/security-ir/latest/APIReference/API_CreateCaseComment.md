@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Crea
 ---
 
 # CreateCaseComment
-<a name="API_CreateCaseComment"></a>
 
 Adds a comment to an existing case.
 

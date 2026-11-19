@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Creat
 ---
 
 # CreateStack
-<a name="API_CreateStack"></a>
 
 Creates a stack to start streaming applications to users. A stack consists of an associated fleet, user access policies, and storage configurations.
 
@@ -36,6 +35,13 @@ Creates a stack to start streaming applications to users. A stack consists of an
    "ApplicationSettings": {
       "Enabled": {{boolean}},
       "SettingsGroup": "{{string}}"
+   },
+   "ContentRedirection": {
+      "HostToClient": {
+         "AllowedUrls": [ "{{string}}" ],
+         "DeniedUrls": [ "{{string}}" ],
+         "Enabled": {{boolean}}
+      }
    },
    "Description": "{{string}}",
    "DisplayName": "{{string}}",
@@ -89,6 +95,11 @@ Required: No
  ** [ApplicationSettings](#API_CreateStack_RequestSyntax) **   <a name="WorkSpacesApplications-CreateStack-request-ApplicationSettings"></a>
 The persistent application settings for users of a stack. When these settings are enabled, changes that users make to applications and Windows settings are automatically saved after each session and applied to the next session.
 Type: [ApplicationSettings](API_ApplicationSettings.md) object
+Required: No
+
+ ** [ContentRedirection](#API_CreateStack_RequestSyntax) **   <a name="WorkSpacesApplications-CreateStack-request-ContentRedirection"></a>
+Configuration for bidirectional URL redirection between the streaming session and the local client. Use HostToClient to redirect URLs from the remote desktop to the local browser.
+Type: [ContentRedirection](API_ContentRedirection.md) object
 Required: No
 
  ** [Description](#API_CreateStack_RequestSyntax) **   <a name="WorkSpacesApplications-CreateStack-request-Description"></a>
@@ -198,6 +209,13 @@ Required: No
          "SettingsGroup": "string"
       },
       "Arn": "string",
+      "ContentRedirection": {
+         "HostToClient": {
+            "AllowedUrls": [ "string" ],
+            "DeniedUrls": [ "string" ],
+            "Enabled": boolean
+         }
+      },
       "CreatedTime": number,
       "Description": "string",
       "DisplayName": "string",

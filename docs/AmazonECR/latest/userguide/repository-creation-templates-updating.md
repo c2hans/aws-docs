@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-cr
 ---
 
 # Updating a repository creation template
-<a name="repository-creation-templates-updating"></a>
 
 You can edit a repository creation template if you need to change its configurations. Once the repository creation template is edited, the new configurations will apply to the existing template.
 

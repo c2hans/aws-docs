@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # MongoDB Atlas Service Account Credentials
-<a name="mes-partner-MongoDBAtlasServiceAccount"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c39b3"></a>

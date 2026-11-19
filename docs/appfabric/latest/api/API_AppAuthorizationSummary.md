@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_AppAuthorizatio
 ---
 
 # AppAuthorizationSummary
-<a name="API_AppAuthorizationSummary"></a>
 
 Contains a summary of an app authorization.
 

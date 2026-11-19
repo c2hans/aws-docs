@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchOmniDomainAccessPolicy
-<a name="CloudWatchOmniDomainAccessPolicy"></a>
 
 **Description**: Provides permissions required to manage CloudWatch Omni domain access.
 

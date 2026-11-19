@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Marketplace Catalog
-<a name="list_marketplace-catalog"></a>
 
 AWS Marketplace Catalog (service prefix: `aws-marketplace`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 
@@ -142,7 +141,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [DescribeAssessment](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeAssessment.html)  **
   - **Description:** Grants permission to return the details of an existing assessment
   - **Resource types (\*required):** [Assessment](#list_marketplace-catalog-resource-Assessment)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [DescribeChangeSet](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeChangeSet.html)  **
@@ -270,6 +269,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)<br />[catalog:ChangeType](#list_marketplace-catalog-catalog_ChangeType)
   - **Access level:** Permissions management, Write
 
+- **   [StartAssessment](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_StartAssessment.html)  **
+  - **Description:** Grants permission to star a new assessment
+  - **Resource types (\*required):** [Entity\*](#list_marketplace-catalog-resource-Entity)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_marketplace-catalog-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_marketplace-catalog-aws_TagKeys)<br />[catalog:ChangeType](#list_marketplace-catalog-catalog_ChangeType)
+  - **Access level:** Write
+
 - **   [StartChangeSet](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_StartChangeSet.html)  **
   - **Description:** Grants permission to request a new change set (Note: resource-level permissions for this action and condition context keys for this action are only supported when used with Catalog API and are not supported when used with AWS Marketplace Management Portal)
   - **Resource types (\*required):** [Entity\*](#list_marketplace-catalog-resource-Entity)
@@ -329,7 +334,7 @@ The following resource types are defined by this service and can be used in the 
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
-|  [Assessment](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeAssessment.html#API_DescribeAssessment_ResponseSyntax)  | arn:${Partition}:aws-marketplace:${Region}::${Catalog}/Assessment/${ResourceId} |   |
+|  [Assessment](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeAssessment.html#API_DescribeAssessment_ResponseSyntax)  | arn:${Partition}:aws-marketplace:${Region}::${Catalog}/Assessment/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_) |
 |  [ChangeSet](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_StartChangeSet.html#API_StartChangeSet_ResponseSyntax)  | arn:${Partition}:aws-marketplace:${Region}:${Account}:${Catalog}/ChangeSet/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)<br />[catalog:ChangeType](#list_marketplace-catalog-catalog_ChangeType) |
 |  [Entity](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeEntity.html#API_DescribeEntity_ResponseSyntax)  | arn:${Partition}:aws-marketplace:${Region}:${Account}:${Catalog}/${EntityType}/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_)<br />[catalog:ChangeType](#list_marketplace-catalog-catalog_ChangeType) |
 |  [InvoiceSubmissionTask](https://docs.aws.amazon.com/marketplace/latest/APIReference/compliance-api-access-control.html)  | arn:${Partition}:aws-marketplace:${Region}:${Account}:catalog/${Catalog}/invoice-submission-task/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_marketplace-catalog-aws_ResourceTag___TagKey_) |

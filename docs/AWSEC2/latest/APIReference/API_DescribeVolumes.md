@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeV
 ---
 
 # DescribeVolumes
-<a name="API_DescribeVolumes"></a>
 
 Describes the specified EBS volumes or all of your EBS volumes.
 

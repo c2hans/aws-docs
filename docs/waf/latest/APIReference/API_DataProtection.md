@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DataProtecti
 ---
 
 # DataProtection
-<a name="API_DataProtection"></a>
 
 Specifies the protection behavior for a field type. This is part of the data protection configuration for a web ACL.
 

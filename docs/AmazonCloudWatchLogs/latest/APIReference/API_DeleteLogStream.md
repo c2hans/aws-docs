@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteLogStream
-<a name="API_DeleteLogStream"></a>
 
 Deletes the specified log stream and permanently deletes all the archived log events associated with the log stream.
 

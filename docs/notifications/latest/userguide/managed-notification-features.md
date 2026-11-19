@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/userguide/managed-n
 ---
 
 # Features
-<a name="managed-notification-features"></a>
 
 AWS User Notifications provides the following features for managing your AWS managed notifications.
 

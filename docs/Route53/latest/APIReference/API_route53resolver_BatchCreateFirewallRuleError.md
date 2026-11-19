@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # BatchCreateFirewallRuleError
-<a name="API_route53resolver_BatchCreateFirewallRuleError"></a>
 
 An error that occurred while creating a firewall rule in a batch operation.
 

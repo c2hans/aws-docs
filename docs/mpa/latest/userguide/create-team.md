@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/create-team.html
 ---
 
 # Create an approval team
-<a name="create-team"></a>
 
 When you sign in to your organization's management account, you can create approval teams by navigating to the Multi-party approval console.
 

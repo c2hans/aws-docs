@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Reco
 ---
 
 # RecommendationRelatedEventResource
-<a name="API_RecommendationRelatedEventResource"></a>
 
  Information about an AWS resource that emitted and event that is related to a recommendation in an insight.
 

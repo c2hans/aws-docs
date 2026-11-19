@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Res
 ---
 
 # ResourceState
-<a name="API_ResourceState"></a>
 
 The state to apply to the image resource in a resource state update request.
 

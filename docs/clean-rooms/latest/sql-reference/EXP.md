@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/EXP.htm
 ---
 
 # EXP function
-<a name="EXP"></a>
 
 The EXP function implements the exponential function for a numeric expression, or the base of the natural logarithm, `e`, raised to the power of expression. The EXP function is the inverse of [LN function](LN.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_CPU.html
 ---
 
 # CPU
-<a name="API_CPU"></a>
 
 Information about a server's CPU.
 

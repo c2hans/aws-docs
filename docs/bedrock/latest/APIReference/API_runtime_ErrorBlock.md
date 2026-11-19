@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ErrorBlock
-<a name="API_runtime_ErrorBlock"></a>
 
 A block containing error information when content processing fails.
 

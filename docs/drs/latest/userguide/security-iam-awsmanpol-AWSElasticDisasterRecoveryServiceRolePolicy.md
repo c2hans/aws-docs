@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/security-iam-awsman
 ---
 
 # AWS managed policy: AWSElasticDisasterRecoveryServiceRolePolicy
-<a name="security-iam-awsmanpol-AWSElasticDisasterRecoveryServiceRolePolicy"></a>
 
 This policy allows AWS Elastic Disaster Recovery to manage AWS resources on your behalf.
 

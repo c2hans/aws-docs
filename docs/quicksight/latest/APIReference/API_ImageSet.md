@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Image
 ---
 
 # ImageSet
-<a name="API_ImageSet"></a>
 
 The image set.
 

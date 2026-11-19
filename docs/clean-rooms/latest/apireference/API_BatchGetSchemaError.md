@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Batc
 ---
 
 # BatchGetSchemaError
-<a name="API_BatchGetSchemaError"></a>
 
 An error describing why a schema could not be fetched.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_De
 ---
 
 # DeleteAsset
-<a name="API_DeleteAsset"></a>
 
 This operation deletes an asset.
 

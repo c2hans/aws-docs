@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler-intera
 ---
 
 # Use an Interactive Data Preparation Widget in an Amazon SageMaker Studio Classic Notebook to Get Data Insights
-<a name="data-wrangler-interactively-prepare-data-notebook"></a>
 
 Use the Data Wrangler data preparation widget to interact with your data, get visualizations, explore actionable insights, and fix data quality issues.
 

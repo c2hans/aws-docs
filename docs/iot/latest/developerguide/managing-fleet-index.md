@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/managing-fleet
 ---
 
 # Managing fleet indexing
-<a name="managing-fleet-index"></a>
 
 Fleet indexing manages two types of indexes for you: thing indexing and thing group indexing.
 

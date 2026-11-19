@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connections.htm
 ---
 
 # Managing Amazon AppFlow connections
-<a name="connections"></a>
 
 To enable data flows in Amazon AppFlow, you provide access to your source and destination applications by creating *connections*. Connections store the configuration details and credentials that Amazon AppFlow requires to transfer data with applications on your behalf. For example, these details include your user names, passwords, secret keys, and API access tokens. After you create a connection, you can assign it to new or existing flows without manually entering the configuration details anew.
 

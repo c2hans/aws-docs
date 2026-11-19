@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/workflow-execu
 ---
 
 # IAM policies for workflows
-<a name="workflow-execution-role"></a>
 
 When you add a workflow to a server, you must select an execution role. The server uses this role when it executes the workflow. If the role does not have the proper permissions, AWS Transfer Family cannot run the workflow.
 

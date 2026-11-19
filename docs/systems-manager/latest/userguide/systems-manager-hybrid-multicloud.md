@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # Managing nodes in hybrid and multicloud environments with Systems Manager
-<a name="systems-manager-hybrid-multicloud"></a>
 
 You can use AWS Systems Manager to manage Amazon Elastic Compute Cloud (Amazon EC2) instances alongside non-EC2 machines in hybrid and multicloud environments. Systems Manager supports on-premises servers, edge devices, and virtual machines running in other cloud environments, including Microsoft Azure.
 

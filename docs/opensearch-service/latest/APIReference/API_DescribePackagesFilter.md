@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DescribePackagesFilter
-<a name="API_DescribePackagesFilter"></a>
 
 A filter to apply to the `DescribePackage` response.
 

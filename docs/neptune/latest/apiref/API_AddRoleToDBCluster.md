@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_AddRoleToDBClu
 ---
 
 # AddRoleToDBCluster
-<a name="API_AddRoleToDBCluster"></a>
 
 Associates an Identity and Access Management (IAM) role with an Neptune DB cluster.
 

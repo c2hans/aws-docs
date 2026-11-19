@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Cr
 ---
 
 # CreateHostedConfigurationVersion
-<a name="API_CreateHostedConfigurationVersion"></a>
 
 Creates a new configuration in the AWS AppConfig hosted configuration store. If you're creating a feature flag, we recommend you familiarize yourself with the JSON schema for feature flag data. For more information, see [Type reference for AWS.AppConfig.FeatureFlags](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-type-reference-feature-flags.html) in the * AWS AppConfig User Guide*.
 

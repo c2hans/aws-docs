@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/vpc-endpoints-
 ---
 
 # Step 5: Configure monitoring with CloudWatch
-<a name="vpc-endpoints-tutorial.monitoring"></a>
 
 This step shows you how to use Amazon CloudWatch to monitor the VPC endpoint connection to Amazon Keyspaces.
 

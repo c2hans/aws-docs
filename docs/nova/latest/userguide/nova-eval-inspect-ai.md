@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-eval-inspect-
 ---
 
 # Evaluation with Inspect AI
-<a name="nova-eval-inspect-ai"></a>
 
 You can evaluate your customized Amazon Nova models using [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), an open-source evaluation framework. Inspect AI supports standardized benchmarks from the AI research community, enabling you to measure model performance across knowledge, reasoning, coding, and safety tasks.
 

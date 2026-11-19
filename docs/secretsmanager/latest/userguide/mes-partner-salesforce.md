@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Salesforce Client Secret
-<a name="mes-partner-salesforce"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c51b3"></a>

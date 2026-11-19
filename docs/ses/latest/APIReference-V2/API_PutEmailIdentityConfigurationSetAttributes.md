@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutEmailI
 ---
 
 # PutEmailIdentityConfigurationSetAttributes
-<a name="API_PutEmailIdentityConfigurationSetAttributes"></a>
 
 Used to associate a configuration set with an email identity.
 

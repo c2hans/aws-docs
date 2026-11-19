@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/slack-new-account-creatio
 ---
 
 # Creating a new Slack account and configuring the client app
-<a name="slack-new-account-creation"></a>
 
 **Creating a Slack account**
 

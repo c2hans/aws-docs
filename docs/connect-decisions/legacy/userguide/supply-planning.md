@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/suppl
 ---
 
 # Supply Planning
-<a name="supply-planning"></a>
 
 AWS Supply Chain supports two types of supply plans to help you accurately plan inventory to meet demand.
 

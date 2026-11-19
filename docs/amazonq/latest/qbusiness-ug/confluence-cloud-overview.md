@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/confluence-c
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Confluence (Cloud) connector overview
-<a name="confluence-cloud-overview"></a>
 
 The following table contains an overview of the Amazon Q Business Confluence (Cloud) connector and its supported features.
 

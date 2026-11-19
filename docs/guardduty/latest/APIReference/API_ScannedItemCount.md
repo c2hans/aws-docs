@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Scanne
 ---
 
 # ScannedItemCount
-<a name="API_ScannedItemCount"></a>
 
 Total number of scanned files.
 

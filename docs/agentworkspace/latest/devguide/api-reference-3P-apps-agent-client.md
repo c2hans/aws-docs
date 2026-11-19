@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/api-refer
 ---
 
 # Connect Customer SDK Agent API
-<a name="api-reference-3P-apps-agent-client"></a>
 
 The Connect Customer SDK provides an `AgentClient` which serves as an interface that your app in the Connect Customer agent workspace can use to subscribe to agent events and make agent data requests.
 

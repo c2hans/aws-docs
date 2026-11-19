@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Mi
 ---
 
 # MissingNodeInputFlowValidationDetails
-<a name="API_agent_MissingNodeInputFlowValidationDetails"></a>
 
 Details about a missing required input in a node.
 

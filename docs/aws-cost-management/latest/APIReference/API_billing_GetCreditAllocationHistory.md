@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetCreditAllocationHistory
-<a name="API_billing_GetCreditAllocationHistory"></a>
 
 Returns the per-billing-month allocation history for credits applied to an AWS account's bills. Traverses the consolidated billing family to capture cross-account credit applications. Supports pagination and optional filtering to a single credit.
 

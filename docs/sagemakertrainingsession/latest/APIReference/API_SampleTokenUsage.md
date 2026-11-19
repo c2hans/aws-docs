@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # SampleTokenUsage
-<a name="API_SampleTokenUsage"></a>
 
 The token usage statistics for a sample generation.
 

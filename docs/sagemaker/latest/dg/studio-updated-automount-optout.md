@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-autom
 ---
 
 # Opt out of Amazon EFS auto-mounting
-<a name="studio-updated-automount-optout"></a>
 
  You can opt-out of Amazon SageMaker AI auto-mounting Amazon EFS user folders during domain and user profile creation or for an existing domain or user profile.
 

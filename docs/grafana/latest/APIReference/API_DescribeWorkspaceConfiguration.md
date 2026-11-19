@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_Describe
 ---
 
 # DescribeWorkspaceConfiguration
-<a name="API_DescribeWorkspaceConfiguration"></a>
 
 Gets the current configuration string for the given workspace.
 

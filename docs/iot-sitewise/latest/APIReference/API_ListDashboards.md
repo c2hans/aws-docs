@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListDashboards
-<a name="API_ListDashboards"></a>
 
 Retrieves a paginated list of dashboards for an AWS IoT SiteWise Monitor project.
 

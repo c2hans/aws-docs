@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/devguide
 ---
 
 # Quick Create for AWS Shield Advanced
-<a name="managing-shield-quick-create"></a>
 
 With Quick Create, you define and deploy AWS Shield Advanced protections in a single guided workflow. Use Quick Create when you want to set up DDoS protection from policies through deployment in one session.
 

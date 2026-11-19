@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/troubleshoot
 ---
 
 # Troubleshooting triggers and AWS CodeCommit
-<a name="troubleshooting-ti"></a>
 
 The following information might help you troubleshoot issues with triggers in AWS CodeCommit.
 

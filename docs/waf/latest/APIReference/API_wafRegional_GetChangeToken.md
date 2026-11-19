@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_
 ---
 
 # GetChangeToken
-<a name="API_wafRegional_GetChangeToken"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.

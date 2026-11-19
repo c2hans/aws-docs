@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DeleteOnlineEvaluationConfig
-<a name="API_DeleteOnlineEvaluationConfig"></a>
 
  Deletes an online evaluation configuration and stops any ongoing evaluation processes associated with it.
 

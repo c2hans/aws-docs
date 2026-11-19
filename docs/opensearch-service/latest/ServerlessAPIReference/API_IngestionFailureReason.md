@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # IngestionFailureReason
-<a name="API_IngestionFailureReason"></a>
 
 A reason that explains why an ingestion stopped.
 

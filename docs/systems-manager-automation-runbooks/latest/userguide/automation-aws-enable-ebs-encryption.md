@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableEbsEncryptionByDefault`
-<a name="automation-aws-enable-ebs-encryption"></a>
 
  **Description**
 

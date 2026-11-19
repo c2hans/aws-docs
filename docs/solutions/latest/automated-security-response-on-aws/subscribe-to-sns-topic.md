@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Subscribe to the SNS topic
-<a name="subscribe-to-sns-topic"></a>
 
  **Remediation Updates**
 

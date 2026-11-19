@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Desc
 ---
 
 # DescribeApiDestination
-<a name="API_DescribeApiDestination"></a>
 
 Retrieves details about an API destination.
 

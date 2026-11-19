@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_StartQue
 ---
 
 # StartQuery
-<a name="API_StartQuery"></a>
 
 Start a query to return data for a specific query type for the Internet Monitor query interface. Specify a time period for the data that you want returned by using `StartTime` and `EndTime`. You filter the query results to return by providing parameters that you specify with `FilterParameters`.
 

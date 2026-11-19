@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/top-accumulat
 ---
 
 # $top
-<a name="top-accumulator"></a>
 
 New from version 8.0.1.
 

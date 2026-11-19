@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_ListTa
 ---
 
 # ListTableBuckets
-<a name="API_s3Buckets_ListTableBuckets"></a>
 
 Lists table buckets for your account. For more information, see [S3 Table buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-buckets.html) in the *Amazon Simple Storage Service User Guide*.
 

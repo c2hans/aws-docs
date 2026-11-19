@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/getting-started-cl
 ---
 
 # Getting started (AWS CLI)
-<a name="getting-started-cli"></a>
 
 In this exercise, you use the AWS Command Line Interface (AWS CLI) to explore Amazon Personalize. You create a campaign that returns movie recommendations for a given user ID.
 

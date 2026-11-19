@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sns-examp
 ---
 
 # Managing subscriptions in Amazon SNS with AWS SDK for PHP Version 3
-<a name="sns-examples-subscribing-unsubscribing-topics"></a>
 
 Use Amazon Simple Notification Service (Amazon SNS) topics to send notifications to Amazon Simple Queue Service (Amazon SQS), HTTP/HTTPS, email addresses, AWS Server Migration Service (AWS SMS), or AWS Lambda.
 

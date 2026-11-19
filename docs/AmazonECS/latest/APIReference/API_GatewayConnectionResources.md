@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayConnectionResources
-<a name="API_GatewayConnectionResources"></a>
 
 The gateway-managed infrastructure resources for a connection, as a union keyed by gateway type.
 

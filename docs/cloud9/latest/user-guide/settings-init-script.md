@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/settings-init-s
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Managing initialization scripts in the AWS Cloud9 IDE
-<a name="settings-init-script"></a>
 
 **Important**
 AWS Cloud9 no longer supports the experimental feature that allowed users to customize an initialization script. This script was automatically run in the IDE. Users can continue to view, edit, and save the `init.js` file using the editor. But, customized initialization scripts are no longer permitted to run and can't modify the IDE's behavior.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/afr-porting
 ---
 
 # Porting the FreeRTOS libraries
-<a name="afr-porting"></a>
 
 Before you start porting, follow the instructions at [Setting up your workspace and project for porting](porting-set-up-project.md).
 

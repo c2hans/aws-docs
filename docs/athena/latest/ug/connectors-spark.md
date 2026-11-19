@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-spark.html
 ---
 
 # Work with data source connectors for Apache Spark
-<a name="connectors-spark"></a>
 
 Some Athena data source connectors are available as Spark DSV2 connectors. The Spark DSV2 connector names have a `-dsv2` suffix (for example, `athena-dynamodb-dsv2`).
 

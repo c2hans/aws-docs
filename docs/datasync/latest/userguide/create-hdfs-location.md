@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/create-hdfs-lo
 ---
 
 # Configuring AWS DataSync transfers with an HDFS cluster
-<a name="create-hdfs-location"></a>
 
 With AWS DataSync, you can transfer data between your Hadoop Distributed File System (HDFS) cluster and the following AWS storage services:
 + [Amazon S3](create-s3-location.md)

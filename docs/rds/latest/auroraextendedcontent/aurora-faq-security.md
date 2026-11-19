@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Security
-<a name="aurora-faq-security"></a>
 
 **Topics**
 + [Does Amazon Aurora run in Amazon Virtual Private Cloud (Amazon VPC)?](#aurora-faq-does-amazon-aurora-run-in-amazon-virtual-private-cloud-amazo)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TaskMa
 ---
 
 # TaskManagedEBSVolumeTerminationPolicy
-<a name="API_TaskManagedEBSVolumeTerminationPolicy"></a>
 
 The termination policy for the Amazon EBS volume when the task exits. For more information, see [Amazon ECS volume termination policy](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-volumes.html#ebs-volume-types).
 

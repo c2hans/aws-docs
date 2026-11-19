@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/creating-the-iam-
 ---
 
 # Creating the IAM role within MediaConvert
-<a name="creating-the-iam-role-in-mediaconvert-configured"></a>
 
 When you create the AWS Identity and Access Management (IAM) role in MediaConvert with configured permissions, you can restrict MediaConvert access to only specific Amazon S3 buckets. You can also specify whether to grant invoke access to your Amazon API Gateway endpoints.
 

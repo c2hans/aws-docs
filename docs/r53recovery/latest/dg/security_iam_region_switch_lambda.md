@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_regio
 ---
 
 # Custom action Lambda execution block sample policy
-<a name="security_iam_region_switch_lambda"></a>
 
  The following is a sample policy to attach if you add execution blocks to a Region switch plan for Lambda functions.
 

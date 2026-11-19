@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/experiments-view-com
 ---
 
 # View experiments and runs
-<a name="experiments-view-compare"></a>
 
 Amazon SageMaker Studio Classic provides an experiments browser that you can use to view lists of experiments and runs. You can choose one of these entities to view detailed information about the entity or choose multiple entities for comparison. You can filter the list of experiments by entity name, type, and tags.
 

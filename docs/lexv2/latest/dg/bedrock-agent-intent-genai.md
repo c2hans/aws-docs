@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/bedrock-agent-intent-gen
 ---
 
 # Enable Bedrock Agent Intent in the Generative AI configuration screen
-<a name="bedrock-agent-intent-genai"></a>
 
 You can enable Bedrock Agent Intent by navigating to the Generative AI screen.
 

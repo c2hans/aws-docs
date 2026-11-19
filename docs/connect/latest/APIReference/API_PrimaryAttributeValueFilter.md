@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PrimaryA
 ---
 
 # PrimaryAttributeValueFilter
-<a name="API_PrimaryAttributeValueFilter"></a>
 
 A primary attribute value filter.
 

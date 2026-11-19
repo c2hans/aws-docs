@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/enabling-ap
 ---
 
 # Enabling application settings persistence
-<a name="enabling-app-settings-persistence"></a>
 
 **Topics**
 + [Prerequisites for enabling application settings persistence](#prerequisites-app-settings-persistence)

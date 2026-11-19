@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/sgai-ad-tracking.h
 ---
 
 # Ad tracking with SGAI
-<a name="sgai-ad-tracking"></a>
 
 SGAI supports both server-side and client-side ad tracking. You set the reporting mode at session initialization. The mode cannot change during the session.
 

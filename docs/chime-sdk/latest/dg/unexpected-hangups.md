@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/unexpected-hangups.h
 ---
 
 # Debugging unexpected hangups in the Amazon Chime SDK PTSN audio service
-<a name="unexpected-hangups"></a>
 
 Complete the following troubleshooting actions if you experience unexpected hangups or error messages with AWS Lambda functions for the PSTN audio service:
 + Verify that your AWS Lambda policy grants the `lambda:InvokeFunction` permission to the [voiceconnector.chime.amazonaws.com](http://voiceconnector.chime.amazonaws.com/) service principal.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Covera
 ---
 
 # CoverageEc2InstanceDetails
-<a name="API_CoverageEc2InstanceDetails"></a>
 
 Contains information about the Amazon EC2 instance runtime coverage details.
 

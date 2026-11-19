@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-usin
 ---
 
 # Using CUDA-Q with Amazon Braket
-<a name="braket-using-cuda-q"></a>
 
 NVIDIA's CUDA-Q is a software library designed for programming hybrid quantum algorithms that combine CPUs, GPUs, and Quantum processing units (QPUs). It provides a unified programming model, allowing developers to express both classical and quantum instructions within a single program, streamlining workflows. CUDA-Q accelerates quantum program simulation and runtime with its built-in CPU and GPU simulators. CUDA-Q is available with native Braket notebook instances (NBIs) and Amazon Braket Hybrid Jobs.
 

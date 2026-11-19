@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Understand SQL Server licensing
-<a name="sql-server-licensing"></a>
 
 ## Overview
 <a name="sql-server-licensing-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeAgentPermissions
-<a name="API_DescribeAgentPermissions"></a>
 
 Describes the resource permissions for an agent.
 

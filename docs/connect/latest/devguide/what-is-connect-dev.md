@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/what-is-connect-
 ---
 
 # What is the Amazon Connect Customer Developer Guide?
-<a name="what-is-connect-dev"></a>
 
 **Note**
 Amazon Connect now refers to a portfolio of agentic solutions for business functions. The legacy product is now called Amazon Connect Customer, or simply Customer. The legacy name is used interchangeably in this documentation.

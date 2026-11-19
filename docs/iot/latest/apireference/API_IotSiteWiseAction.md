@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_IotSiteWiseA
 ---
 
 # IotSiteWiseAction
-<a name="API_IotSiteWiseAction"></a>
 
 Describes an action to send data from an MQTT message that triggered the rule to AWS IoT SiteWise asset properties.
 

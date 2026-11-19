@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/create-k8s-group-ac
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create an access entry using Kubernetes groups with the AWS CLI
-<a name="create-k8s-group-access-entry"></a>
 
 Create Amazon EKS access entries that use Kubernetes groups for authorization and require manual RBAC configuration.
 

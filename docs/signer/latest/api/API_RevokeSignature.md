@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_RevokeSignature.ht
 ---
 
 # RevokeSignature
-<a name="API_RevokeSignature"></a>
 
 Changes the state of a signing job to `REVOKED`. This indicates that the signature is no longer valid.
 

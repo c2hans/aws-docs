@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane
 ---
 
 # CreateBearerToken
-<a name="API_dataplane-signin_CreateBearerToken"></a>
 
 Creates a bearer token that represents your IAM credentials, which you can use to access a supported AWS service.
 

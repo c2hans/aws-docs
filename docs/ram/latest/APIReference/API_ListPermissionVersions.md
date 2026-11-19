@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ListPermissi
 ---
 
 # ListPermissionVersions
-<a name="API_ListPermissionVersions"></a>
 
 Lists the available versions of the specified AWS RAM permission.
 

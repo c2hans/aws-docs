@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Par
 ---
 
 # ParticipatingGatewaysMulticast
-<a name="API_ParticipatingGatewaysMulticast"></a>
 
 Specify the list of gateways to which you want to send the multicast downlink messages. The multicast message will be sent to each gateway in the list, with the transmission interval as the time interval between each message.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/disable-conne
 ---
 
 # Turn off AWS Client VPN connection logging
-<a name="disable-connection-logs"></a>
 
 You can turn off connection logging for a Client VPN endpoint by using the console or the command line. When you turn off connection logging, existing connection logs in CloudWatch Logs are not deleted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsLamb
 ---
 
 # AwsLambdaLayerVersionDetails
-<a name="API_AwsLambdaLayerVersionDetails"></a>
 
 Details about a Lambda layer version.
 

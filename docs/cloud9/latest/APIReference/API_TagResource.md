@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_TagResour
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds tags to an AWS Cloud9 development environment.
 

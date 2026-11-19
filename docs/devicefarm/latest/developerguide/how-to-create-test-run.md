@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/how-to-
 ---
 
 # Creating a test run in Device Farm
-<a name="how-to-create-test-run"></a>
 
 You can use the Device Farm console, AWS CLI, or Device Farm API to create a test run. You can also use a supported plugin, such as the Jenkins or Gradle plugins for Device Farm. For more information about plugins, see [Tools and plugins](aws-device-farm-tools-plugins.md). For information about runs, see [Runs](test-runs.md).
 

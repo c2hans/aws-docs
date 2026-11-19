@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/howitworks_res
 ---
 
 # Configure restore table IAM permissions for Amazon Keyspaces PITR
-<a name="howitworks_restore_permissions"></a>
 
 This section summarizes how to configure permissions for an AWS Identity and Access Management (IAM) principal to restore Amazon Keyspaces tables. In IAM, the AWS managed policy `AmazonKeyspacesFullAccess` includes the permissions to restore Amazon Keyspaces tables. To implement a custom policy with minimum required permissions, consider the requirements outlined in the next section.
 

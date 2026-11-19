@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_RemoveTempla
 ---
 
 # RemoveTemplateAction
-<a name="API_RemoveTemplateAction"></a>
 
 Remove template post migration custom action.
 

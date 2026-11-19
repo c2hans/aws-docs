@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-manage-work
 ---
 
 # Manage workspaces, users, and policies in Amazon Managed Grafana
-<a name="AMG-manage-workspaces-users"></a>
 
 To use Amazon Managed Grafana you create Grafana workspaces. A Grafana workspace is a logical Grafana server, where you can create Grafana dashboards and visualizations to analyze your metrics, logs, and traces. You add users and manage their permissions to administer, edit, or view the workspaces.
 

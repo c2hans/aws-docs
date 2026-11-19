@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/realtime-analysis-c
 ---
 
 # Train custom recognizers (console)
-<a name="realtime-analysis-cer"></a>
 
 You can create custom entity recognizers using the Amazon Comprehend console. This section shows you how to create and train a custom entity recognizer.
 

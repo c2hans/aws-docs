@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/fargate-logging.htm
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Start AWS Fargate logging for your cluster
-<a name="fargate-logging"></a>
 
 Amazon EKS on Fargate offers a built-in log router based on Fluent Bit. This means that you don’t explicitly run a Fluent Bit container as a sidecar, but Amazon runs it for you. All that you have to do is configure the log router. The configuration happens through a dedicated `ConfigMap` that must meet the following criteria:
 + Named `aws-logging`

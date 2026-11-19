@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLau
 ---
 
 # DeleteLaunchTemplateVersionsResponseErrorItem
-<a name="API_DeleteLaunchTemplateVersionsResponseErrorItem"></a>
 
 Describes a launch template version that could not be deleted.
 

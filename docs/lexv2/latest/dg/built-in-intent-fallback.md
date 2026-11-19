@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-fallback
 ---
 
 # AMAZON.FallbackIntent
-<a name="built-in-intent-fallback"></a>
 
 When a user's input to an intent isn't what a bot expects, you can configure Amazon Lex V2 to invoke a *fallback intent*. For example, if the user input "I'd like to order candy" doesn't match an intent in your `OrderFlowers` bot, Amazon Lex V2 invokes the fallback intent to handle the response.
 

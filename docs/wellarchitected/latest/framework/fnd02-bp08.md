@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd02-b
 ---
 
 # FND02-BP08 Audit and rotate credentials periodically
-<a name="fnd02-bp08"></a>
 
  Audit and rotate credentials on a regular schedule to limit how long they can be used to access your resources. Use temporary credentials when possible, and rotate risky long-term credentials regularly.
 

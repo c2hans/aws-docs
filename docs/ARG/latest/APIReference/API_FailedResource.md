@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_FailedResour
 ---
 
 # FailedResource
-<a name="API_FailedResource"></a>
 
 A resource that failed to be added to or removed from a group.
 

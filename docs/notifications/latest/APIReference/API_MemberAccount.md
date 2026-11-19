@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Me
 ---
 
 # MemberAccount
-<a name="API_MemberAccount"></a>
 
 Contains information about a member account.
 

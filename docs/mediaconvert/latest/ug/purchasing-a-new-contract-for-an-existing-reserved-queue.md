@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/purchasing-a-new-
 ---
 
 # Purchasing additional RTS for an expired reserved queue
-<a name="purchasing-a-new-contract-for-an-existing-reserved-queue"></a>
 
 After your initial pricing plan term for reserved transcode slots (RTS) expires, your reserved queue persists without the capacity to run transcoding jobs. You can send jobs to the queue, but MediaConvert doesn't process them. To begin processing jobs through the queue again, you can set up a new pricing plan, which requires a new 12-month commitment.
 

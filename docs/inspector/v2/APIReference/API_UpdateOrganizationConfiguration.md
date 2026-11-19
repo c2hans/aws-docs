@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateOrga
 ---
 
 # UpdateOrganizationConfiguration
-<a name="API_UpdateOrganizationConfiguration"></a>
 
 Updates the configurations for your Amazon Inspector organization.
 

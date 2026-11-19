@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetColumnStatisti
 ---
 
 # GetColumnStatisticsTaskRun
-<a name="API_GetColumnStatisticsTaskRun"></a>
 
 Get the associated metadata/information for a task run, given a task run ID.
 

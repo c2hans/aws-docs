@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # ACCT.17 Restrict AWS API calls to used Regions only
-<a name="acct-17"></a>
 
 Create an [IAM policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) that denies API calls in AWS Regions you do not use. This helps prevent threat actors from creating resources, such as compute instances for cryptocurrency mining, in Regions where you have no monitoring or visibility. This control extends [ACCT.09 Delete unused VPCs, subnets, and security groups](https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup-security-baseline/acct-09.html) by restricting all resource creation in unused Regions, not only VPC-related resources.
 

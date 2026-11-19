@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_D
 ---
 
 # DownlinkDataflowDetails
-<a name="API_DownlinkDataflowDetails"></a>
 
 Dataflow details for a downlink endpoint
 

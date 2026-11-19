@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Viewing discovered dependencies
-<a name="next-gen-viewing-dependencies"></a>
 
 After dependency discovery is enabled, you can view a table of discovered dependencies with the following columns:
 

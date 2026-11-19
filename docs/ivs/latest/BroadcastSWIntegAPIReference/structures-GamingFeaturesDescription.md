@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # GamingFeaturesDescription
-<a name="structures-GamingFeaturesDescription"></a>
 
 Object specifying the gaming features of the client.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/console_search.html
 ---
 
 # Using search to find IAM resources
-<a name="console_search"></a>
 
 As you work through your access findings, you can use the IAM console search page as a faster option for finding IAM resources. You can search for resources using partial resource names or ARNs.
 

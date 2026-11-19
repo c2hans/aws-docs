@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_DeletePr
 ---
 
 # DeleteProtectionGroup
-<a name="API_DeleteProtectionGroup"></a>
 
 Removes the specified protection group.
 

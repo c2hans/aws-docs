@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-ds-update.ht
 ---
 
 # Modify a data source for your Amazon Bedrock knowledge base
-<a name="kb-ds-update"></a>
 
 **Important**
 For optimized retrieval accuracy and a managed experience, we recommend [Amazon Bedrock Managed Knowledge Base](kb-build-managed.md).

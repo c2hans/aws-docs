@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_SubCheckR
 ---
 
 # SubCheckResult
-<a name="API_SubCheckResult"></a>
 
 Represents the result of a sub-check within a configuration check operation.
 

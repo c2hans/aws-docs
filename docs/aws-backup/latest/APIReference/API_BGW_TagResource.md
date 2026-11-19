@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_T
 ---
 
 # TagResource
-<a name="API_BGW_TagResource"></a>
 
 Tag the resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/default-widget
 ---
 
 # Default widgets
-<a name="default-widgets"></a>
 
 Profile Explorer comes with a collection of pre-configured widgets designed to work seamlessly with Customer Profiles data. These default widgets offer immediate value with minimal setup, allowing you to build sophisticated dashboards in a few clicks.
 

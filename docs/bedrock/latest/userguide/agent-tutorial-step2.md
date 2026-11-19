@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agent-tutorial-
 ---
 
 # Step 2: Create an Amazon Bedrock agent
-<a name="agent-tutorial-step2"></a>
 
 Next, you'll create an Amazon Bedrock agent. In this procedure, you'll set up an agent in the Amazon Bedrock console, configure it with a foundation model, and provide instructions that define its behavior as a friendly chatbot that returns date and time information. You'll also create an action group with an OpenAPI schema that defines the API endpoints your agent can call, specifically the endpoint to get the current date and time. Additionally, you'll add an inline policy to your agent's IAM role to allow it to invoke your Lambda function. The agent will serve as the interface between users and your Lambda function, interpreting natural language requests and converting them into structured function calls to retrieve date and time information.
 

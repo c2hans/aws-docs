@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # Create the service roles for Automation using the console
-<a name="automation-setup-iam"></a>
 
 If you need to create a service role for Automation complete the following tasks. For more information about when a service role is required for Automation, see [Setting up Automation](automation-setup.md).
 

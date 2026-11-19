@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # Troubleshooting AgentCore payments
-<a name="payments-troubleshooting"></a>
 
 This section provides solutions to common errors when using AWS Amazon Bedrock AgentCore payments.
 

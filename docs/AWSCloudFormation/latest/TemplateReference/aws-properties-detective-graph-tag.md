@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Detective::Graph Tag
-<a name="aws-properties-detective-graph-tag"></a>
 
 The metadata that you apply to a resource to help you categorize and organize it. Each tag consists of a key and an optional value, both of which you define. For more information about tags, see [What is Tag Editor](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 

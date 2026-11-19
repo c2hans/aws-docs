@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Un
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes one or more tags (keys and values) from an Amazon Security Lake resource: a subscriber, or the data lake configuration for your AWS account in a particular AWS Region.
 

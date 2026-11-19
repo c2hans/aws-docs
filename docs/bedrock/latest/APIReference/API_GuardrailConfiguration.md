@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailConfiguration
-<a name="API_GuardrailConfiguration"></a>
 
 The configuration details for the guardrail.
 

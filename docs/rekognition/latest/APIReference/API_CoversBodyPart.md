@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Cove
 ---
 
 # CoversBodyPart
-<a name="API_CoversBodyPart"></a>
 
 Information about an item of Personal Protective Equipment covering a corresponding body part. For more information, see [DetectProtectiveEquipment](API_DetectProtectiveEquipment.md).
 

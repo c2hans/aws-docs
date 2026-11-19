@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/enable-runtime-monit
 ---
 
 # Enabling Runtime Monitoring for a standalone account
-<a name="enable-runtime-monitoring-standalone-acc"></a>
 
 A standalone account owns the decision to enable or disable a protection plan in their AWS account in a specific AWS Region.
 

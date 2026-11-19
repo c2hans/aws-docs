@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/interactive-sessions-spar
 ---
 
 # Getting started with Spark Connect using Notebooks in SageMaker Unified Studio
-<a name="interactive-sessions-spark-connect-notebooks"></a>
 
 In Amazon SageMaker Unified Studio, you can select AWS Glue as the Spark Connect runtime in the notebook side panel. The notebook manages the session connection automatically, so you don't need to handle endpoint retrieval or token refresh.
 

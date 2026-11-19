@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Imp
 ---
 
 # ImportedSidewalkDevice
-<a name="API_ImportedSidewalkDevice"></a>
 
 Information about a Sidewalk device that has been added to an import task.
 

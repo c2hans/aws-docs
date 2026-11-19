@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Configure VPC Flow Logs for centralization across AWS accounts
-<a name="configure-vpc-flow-logs-for-centralization-across-aws-accounts"></a>
 
 *Benjamin Morris and Aman Kaur Gandhi, Amazon Web Services*
 

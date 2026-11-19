@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/monitor
 ---
 
 # License Manager event structure and change events
-<a name="monitoring-eventbridge-events"></a>
 
 Each License Manager event has a `source` of `aws.license-manager`. The `detail-type` field names the event. This topic covers the `License Change`, `Grant Change`, and `License Token Change` events. License Manager also sends `License Consumption Change` events. For the full list of License Manager events, see [AWS License Manager events](https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-license-manager.html) in the *AWS Events Reference*.
 

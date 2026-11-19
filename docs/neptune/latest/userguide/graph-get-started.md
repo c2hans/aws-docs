@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/graph-get-start
 ---
 
 # Getting started with Amazon Neptune
-<a name="graph-get-started"></a>
 
 Amazon Neptune is a fully managed graph database service that scales to handle billions of relationships and lets you query them with milliseconds latency, at a low cost for that kind of capacity.
 

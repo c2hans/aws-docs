@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/scaling-through
 ---
 
 # Scaling and throughput best practices
-<a name="scaling-throughput-best-practices"></a>
 
 This topic explains how throughput limits and scheduling work across Amazon Bedrock endpoints and provides best practices for scaling your generative AI applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # MetricInfo
-<a name="API_MetricInfo"></a>
 
 Information about the CloudWatch metric that reflects quota usage.
 

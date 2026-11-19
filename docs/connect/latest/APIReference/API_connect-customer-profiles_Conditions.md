@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # Conditions
-<a name="API_connect-customer-profiles_Conditions"></a>
 
 The conditions including range, object count, and threshold for the calculated attribute.
 

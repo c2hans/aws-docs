@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Docum
 ---
 
 # DocumentReaderConfig
-<a name="API_DocumentReaderConfig"></a>
 
 Provides configuration parameters to override the default actions for extracting text from PDF documents and image files.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # WebSearchFilters
-<a name="API_WebSearchFilters"></a>
 
 The filters to apply to a web search.
 

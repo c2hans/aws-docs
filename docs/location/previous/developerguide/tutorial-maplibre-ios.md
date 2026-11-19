@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/tutoria
 ---
 
 # Using the MapLibre Native SDK for iOS with Amazon Location Service
-<a name="tutorial-maplibre-ios"></a>
 
 Use [MapLibre Native SDK for iOS](https://github.com/maplibre/maplibre-gl-native) to embed client-side maps into iOS applications.
 

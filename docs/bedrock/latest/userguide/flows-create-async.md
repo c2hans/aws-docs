@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-create-as
 ---
 
 # Run Amazon Bedrock flows asynchronously with flow executions
-<a name="flows-create-async"></a>
 
 With flow executions, you can run Amazon Bedrock flows asynchronously. This lets your flows run for longer durations and also yield control so that your application can perform other tasks.
 

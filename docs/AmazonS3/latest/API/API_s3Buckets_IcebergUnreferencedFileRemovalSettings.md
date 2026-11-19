@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Iceber
 ---
 
 # IcebergUnreferencedFileRemovalSettings
-<a name="API_s3Buckets_IcebergUnreferencedFileRemovalSettings"></a>
 
 Contains details about the unreferenced file removal settings for an Iceberg table bucket.
 

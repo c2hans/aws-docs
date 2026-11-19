@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Failo
 ---
 
 # FailoverState
-<a name="API_FailoverState"></a>
 
 Contains the state of scheduled or in-process operations on an Amazon DocumentDB global cluster. This data type is empty unless a switchover or failover operation is scheduled or is in progress on the global cluster.
 

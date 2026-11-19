@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/tags-iam.h
 ---
 
 # Use tags with IAM policies
-<a name="tags-iam"></a>
 
 Use resource tags in your IAM policies to control user access and permissions. For example, policies can allow users to only create resources that have a specific tag attached. Policies can also restrict users from creating or modifying resources that have certain tags.
 

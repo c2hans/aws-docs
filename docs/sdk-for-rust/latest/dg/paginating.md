@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/paginating.html
 ---
 
 # Using paginated results in the AWS SDK for Rust
-<a name="paginating"></a>
 
 Many AWS operations return truncated results when the payload is too large to return in a single response. Instead, the service returns a portion of the data and a token to retrieve the next set of items. This pattern is known as pagination.
 

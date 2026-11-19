@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DurationPara
 ---
 
 # DurationParameterConfig
-<a name="API_DurationParameterConfig"></a>
 
 A duration parameter configuration with default value and constraints.
 

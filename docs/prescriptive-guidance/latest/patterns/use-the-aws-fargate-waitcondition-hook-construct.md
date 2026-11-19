@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/us
 ---
 
 # Coordinate resource dependency and task execution by using the AWS Fargate WaitCondition hook construct
-<a name="use-the-aws-fargate-waitcondition-hook-construct"></a>
 
 *Stan Fan, Amazon Web Services*
 

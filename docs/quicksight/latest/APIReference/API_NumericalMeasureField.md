@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Numer
 ---
 
 # NumericalMeasureField
-<a name="API_NumericalMeasureField"></a>
 
 The measure type field with numerical type columns.
 

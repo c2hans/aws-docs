@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # UpdateFirewallDeleteProtection
-<a name="API_UpdateFirewallDeleteProtection"></a>
 
 Modifies the flag, `DeleteProtection`, which indicates whether it is possible to delete the firewall. If the flag is set to `TRUE`, the firewall is protected against deletion. This setting helps protect against accidentally deleting a firewall that's in use.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailTopicPolicy
-<a name="API_GuardrailTopicPolicy"></a>
 
 Contains details about topics that the guardrail should identify and deny.
 

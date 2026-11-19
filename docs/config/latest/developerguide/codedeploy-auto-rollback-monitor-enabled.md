@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/codedeploy-
 ---
 
 # codedeploy-auto-rollback-monitor-enabled
-<a name="codedeploy-auto-rollback-monitor-enabled"></a>
 
 Checks if the deployment group is configured with automatic deployment rollback and deployment monitoring with alarms attached. The rule is NON\_COMPLIANT if AutoRollbackConfiguration or AlarmConfiguration has not been configured or is not enabled.
 

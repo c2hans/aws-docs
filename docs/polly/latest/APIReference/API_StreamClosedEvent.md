@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_StreamClos
 ---
 
 # StreamClosedEvent
-<a name="API_StreamClosedEvent"></a>
 
 Indicates that the synthesis stream is closed and provides summary information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GetI
 ---
 
 # GetIngestConfiguration
-<a name="API_GetIngestConfiguration"></a>
 
 Gets information about the specified IngestConfiguration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotDefaul
 ---
 
 # SlotDefaultValue
-<a name="API_SlotDefaultValue"></a>
 
 Specifies the default value to use when a user doesn't provide a value for a slot.
 

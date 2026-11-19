@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 ---
 
 # Troubleshooting Device Farm errors
-<a name="troubleshooting"></a>
 
 In this section, you will find error messages and procedures to help you fix common problems with Device Farm.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SearchAssets.html
 ---
 
 # SearchAssets
-<a name="API_SearchAssets"></a>
 
 Searches for assets in AWS Glue Data Catalog using full-text search, filters, sorting, and aggregations. Returns matching assets with relevance-ranked results.
 

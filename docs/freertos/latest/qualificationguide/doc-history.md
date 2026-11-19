@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/qualificationguide/doc-h
 ---
 
 # Document history
-<a name="doc-history"></a>
 
 The following table describes the documentation history for the FreeRTOS Qualification Guide and the FreeRTOS Porting Guide.
 

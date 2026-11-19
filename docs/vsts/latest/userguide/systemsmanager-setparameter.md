@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/systemsmanager-set
 ---
 
 # AWS SSM Set Parameter Task
-<a name="systemsmanager-setparameter"></a>
 
 (AWS Systems Manager Set Parameter Task)
 

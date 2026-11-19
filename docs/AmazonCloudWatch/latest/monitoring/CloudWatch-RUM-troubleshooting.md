@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Troubleshooting CloudWatch RUM
-<a name="CloudWatch-RUM-troubleshooting"></a>
 
 This section contains tips to help you troubleshoot CloudWatch RUM.
 

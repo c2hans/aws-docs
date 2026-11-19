@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Tag
-<a name="API_benefits_Tag"></a>
 
 Represents a key-value pair used for categorizing and organizing AWS resources.
 

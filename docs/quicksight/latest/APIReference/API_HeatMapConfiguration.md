@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_HeatM
 ---
 
 # HeatMapConfiguration
-<a name="API_HeatMapConfiguration"></a>
 
 The configuration of a heat map.
 

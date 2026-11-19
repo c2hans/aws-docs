@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-publishing.html
 ---
 
 # Publishing an Amazon SNS message
-<a name="sns-publishing"></a>
 
 After you [create an Amazon SNS topic](sns-create-topic.md) and [subscribe](sns-create-subscribe-endpoint-to-topic.md) an endpoint to it, you can *publish* messages to the topic. When a message is published, Amazon SNS attempts to deliver the message to the subscribed [endpoints](sns-create-subscribe-endpoint-to-topic.md#sns-endpoints).
 

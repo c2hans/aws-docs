@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ListAvailabl
 ---
 
 # ListAvailableManagedRuleGroupVersions
-<a name="API_ListAvailableManagedRuleGroupVersions"></a>
 
 Returns a list of the available versions for the specified managed rule group.
 

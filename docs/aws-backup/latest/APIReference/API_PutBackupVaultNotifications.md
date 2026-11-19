@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_PutBa
 ---
 
 # PutBackupVaultNotifications
-<a name="API_PutBackupVaultNotifications"></a>
 
 Turns on notifications on a backup vault for the specified topic and events.
 

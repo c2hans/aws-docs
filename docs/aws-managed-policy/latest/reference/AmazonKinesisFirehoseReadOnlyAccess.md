@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonKinesisFirehoseReadOnlyAccess
-<a name="AmazonKinesisFirehoseReadOnlyAccess"></a>
 
 **Description**: Provides read only access to all Amazon Kinesis Firehose Delivery Streams.
 

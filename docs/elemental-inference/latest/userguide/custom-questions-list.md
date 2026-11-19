@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Listing question sets and versions
-<a name="custom-questions-list"></a>
 
 To list the versions of a question set, use the `list-question-set-versions` command. The list starts with `DRAFT`, followed by the published versions from the highest number to the lowest.
 

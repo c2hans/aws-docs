@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/topics-custom-ins
 ---
 
 # Adding custom instructions to a Topic
-<a name="topics-custom-instructions"></a>
 
 |  |
 | --- |

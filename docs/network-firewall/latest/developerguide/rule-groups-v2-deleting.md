@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # Deleting a rule group for a Next Generation policy
-<a name="rule-groups-v2-deleting"></a>
 
 To delete a rule group, use the guidance in this section.
 

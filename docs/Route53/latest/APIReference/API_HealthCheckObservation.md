@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_HealthCh
 ---
 
 # HealthCheckObservation
-<a name="API_HealthCheckObservation"></a>
 
 A complex type that contains the last failure reason as reported by one Amazon Route 53 health checker.
 

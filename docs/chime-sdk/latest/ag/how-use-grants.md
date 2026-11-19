@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/how-use-grants.html
 ---
 
 # Understanding how voice analytics uses grants
-<a name="how-use-grants"></a>
 
 Voice analytics requires a grant to use your customer managed key. When you create a voice profile domain, the associated Amazon Chime SDK Voice Connector creates a grant on your behalf by sending a `CreateGrant` request to the AWS KMS. The grant is required in order to use your key for the following internal operations:
 + Sending [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) requests to AWS KMS to verify that the symmetric customer managed key ID provided is valid.

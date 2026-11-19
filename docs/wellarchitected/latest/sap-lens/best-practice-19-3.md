@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 19.3 – Use compression, reorganization, and reclaim strategies
-<a name="best-practice-19-3"></a>
 
 All databases supported by SAP provide mechanisms for reclaiming space. These mechanisms should be part of regular maintenance activities to minimize cost increases associated with extending memory or EBS volumes.
 

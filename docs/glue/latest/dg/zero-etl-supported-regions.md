@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-region
 ---
 
 # Supported Regions
-<a name="zero-etl-supported-regions"></a>
 
 The following Regions are available with AWS Glue Zero-ETL:
 

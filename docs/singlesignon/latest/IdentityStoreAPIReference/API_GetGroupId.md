@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # GetGroupId
-<a name="API_GetGroupId"></a>
 
 Retrieves `GroupId` in an identity store.
 

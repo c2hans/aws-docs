@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBInst
 ---
 
 # DBInstanceRole
-<a name="API_DBInstanceRole"></a>
 
 Information about an AWS Identity and Access Management (IAM) role that is associated with a DB instance.
 

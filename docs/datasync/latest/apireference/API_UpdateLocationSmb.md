@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_UpdateL
 ---
 
 # UpdateLocationSmb
-<a name="API_UpdateLocationSmb"></a>
 
 Modifies the following configuration parameters of the Server Message Block (SMB) transfer location that you're using with AWS DataSync.
 

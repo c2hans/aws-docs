@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_BehaviorCrit
 ---
 
 # BehaviorCriteria
-<a name="API_BehaviorCriteria"></a>
 
 The criteria by which the behavior is determined to be normal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_IdentityI
 ---
 
 # IdentityInfo
-<a name="API_IdentityInfo"></a>
 
 Information about an email identity.
 

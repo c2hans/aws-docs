@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # Instance
-<a name="API_Instance"></a>
 
 The details of the instance.
 

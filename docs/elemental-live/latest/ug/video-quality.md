@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/video-quality.h
 ---
 
 # Controlling video quality
-<a name="video-quality"></a>
 
 You can tune video quality in each output in an Elemental Live event. You tune the video quality by setting parameters that are in the output section of the event: in the relevant output group, choose an **Output**, choose a **Stream**, choose the **Video** tab, then open the **Advanced** section.
 

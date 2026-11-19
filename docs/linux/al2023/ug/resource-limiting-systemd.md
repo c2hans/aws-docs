@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-system
 ---
 
 # Limiting process resource usage in AL2023 using systemd
-<a name="resource-limiting-systemd"></a>
 
  On Amazon Linux 2023 (AL2023), we recommend using `systemd` to control what resources can be used by processes, or groups of processes. Using `systemd` is a powerful and easy to use replacement for either manipulating `cgroups` manually, or using utilities such as [`cpulimit`](epel.md#cpulimit), which was previously only available for Amazon Linux in the third party [EPEL](epel.md) repository.
 

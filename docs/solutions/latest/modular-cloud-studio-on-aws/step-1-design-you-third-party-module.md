@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Step 1: Design your Third-Party Module
-<a name="step-1-design-you-third-party-module"></a>
 
 Beneath the surface, an MCS module is a CloudFormation stack defined by a CloudFormation template. When the module is registered with MCS, it is added to a product portfolio in Service Catalog.
 

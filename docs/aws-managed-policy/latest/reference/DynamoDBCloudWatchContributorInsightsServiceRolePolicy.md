@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Dyna
 ---
 
 # DynamoDBCloudWatchContributorInsightsServiceRolePolicy
-<a name="DynamoDBCloudWatchContributorInsightsServiceRolePolicy"></a>
 
 **Description**: Permissions required to support Amazon CloudWatch Contributor Insights for Amazon DynamoDB.
 

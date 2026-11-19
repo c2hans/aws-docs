@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Cr
 ---
 
 # CreateDomain
-<a name="API_CreateDomain"></a>
 
 Creates a new Domain for managing HealthAgent resources.
 

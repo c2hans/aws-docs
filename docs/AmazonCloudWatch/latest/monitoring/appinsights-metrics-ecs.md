@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Amazon Elastic Container Service (Amazon ECS)
-<a name="appinsights-metrics-ecs"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

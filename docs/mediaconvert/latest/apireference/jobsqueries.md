@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobsque
 ---
 
 # JobsQueries
-<a name="jobsqueries"></a>
 
 ## URI
 <a name="jobsqueries-url"></a>

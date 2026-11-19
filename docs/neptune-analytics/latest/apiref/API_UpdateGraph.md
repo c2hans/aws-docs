@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Upda
 ---
 
 # UpdateGraph
-<a name="API_UpdateGraph"></a>
 
 Updates the configuration of a specified Neptune Analytics graph
 

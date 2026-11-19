@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/how-it-works.
 ---
 
 # How AWS App Studio works
-<a name="how-it-works"></a>
 
 There are a few key concepts to understand when using AWS App Studio to build applications. This topic covers the basics of the following concepts or resources:
 + Using *connectors* to connect to other services to use their resources or API calls in your application. For example, you can use connectors to store and access data, or send notifications from your app.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk Windows Server platform update on February 19, 2025
-<a name="release-2025-02-19-windows"></a>
 
 This release provides support for Windows 2025 with two new platform branches: Windows Server 2025 and Windows Server Core 2025. This release also provides new Windows Server platform versions for AWS Elastic Beanstalk, along with Windows security updates. It also updates framework and AWS components.
 

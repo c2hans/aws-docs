@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/setup-environment/module
 ---
 
 # Module 2: (Optional) For Multiple AWS Accounts Managed Through AWS Organizations
-<a name="module-two"></a>
 
 ## Overview
 <a name="overview"></a>

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/LoginNodes-v3.
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # `LoginNodes` section
-<a name="LoginNodes-v3"></a>
 
 **Note**
 Support for `LoginNodes` is added in AWS ParallelCluster version 3.7.0.
@@ -204,7 +203,7 @@ A list of additional security groups to use for the login nodes pool.
 [Update policy: If this setting is changed, the update is not allowed.](using-pcluster-update-cluster-v3.md#update-policy-fail-v3)
 
 `Dcv` (**Optional**)
-Defines configuration settings for the Amazon DCV server that runs on the [login nodes](#LoginNodes-v3). For more information, see [Connect to the head and login nodes through Amazon DCV](dcv-v3.md)
+Defines configuration settings for the Amazon DCV server that runs on the [login nodes](LoginNodes-v3.md). For more information, see [Connect to the head and login nodes through Amazon DCV](dcv-v3.md)
 
 ```
 Dcv:
@@ -258,7 +257,7 @@ CustomActions:
 ```
 Support for custom actions on login nodes is added in AWS ParallelCluster version 3.11.0.
 `OnNodeStart` (**Optional**)
-Specifies a single script or a sequence of scripts to run on the [login nodes](#LoginNodes-v3) before any node deployment bootstrap action is started. For more information, see [Custom bootstrap actions](custom-bootstrap-actions-v3.md).
+Specifies a single script or a sequence of scripts to run on the [login nodes](LoginNodes-v3.md) before any node deployment bootstrap action is started. For more information, see [Custom bootstrap actions](custom-bootstrap-actions-v3.md).
 `Sequence` (**Optional**)
 List of scripts to run. AWS ParallelCluster runs the scripts in the same order as they are listed in the configuration file, starting with the first.
 `Script` (**Required** `String`)
@@ -271,7 +270,7 @@ Specifies the file to use for a single script. The file path can start with `htt
 `Args` (**Optional** `[String]`)
 List of arguments to pass to the single script.
 `OnNodeConfigured` (**Optional**)
-Specifies a single script or a sequence of scripts to run on the [login nodes](#LoginNodes-v3) after the node bootstrap processes are complete. For more information, see [Custom bootstrap actions](custom-bootstrap-actions-v3.md).
+Specifies a single script or a sequence of scripts to run on the [login nodes](LoginNodes-v3.md) after the node bootstrap processes are complete. For more information, see [Custom bootstrap actions](custom-bootstrap-actions-v3.md).
 `Sequence` (**Optional**)
 List of scripts to run. AWS ParallelCluster runs the scripts in the same order as they are listed in the configuration file, starting with the first.
 `Script` (**Required** `String`)

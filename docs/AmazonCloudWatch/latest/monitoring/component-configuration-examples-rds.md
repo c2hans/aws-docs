@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # Amazon Relational Database Service (RDS) instance
-<a name="component-configuration-examples-rds"></a>
 
 The following example shows a component configuration in JSON format for an Amazon RDS instance.
 

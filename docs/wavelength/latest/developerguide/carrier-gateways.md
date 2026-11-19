@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wavelength/latest/developerguide/carrier
 ---
 
 # Carrier gateway for AWS Wavelength
-<a name="carrier-gateways"></a>
 
 A carrier gateway serves two purposes. It allows inbound traffic from a carrier network in a specific location, and it allows outbound traffic to the carrier network and the internet. There is generally no inbound connection configuration from the internet to a Wavelength Zone through the carrier gateway with the exception of select partners. For more information, see [Multi-access AWS Wavelength](multi-access.md).
 

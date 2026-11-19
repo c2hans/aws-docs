@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_AppS
 ---
 
 # AppSyncParameters
-<a name="API_AppSyncParameters"></a>
 
 Contains the GraphQL operation to be parsed and executed, if the event target is an AWS AppSync API.
 

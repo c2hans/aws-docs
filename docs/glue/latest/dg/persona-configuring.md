@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/persona-configuring.html
 ---
 
 # Configuring Persona
-<a name="persona-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Persona, you must meet the following requirements:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_InlinePolicy
 ---
 
 # InlinePolicy
-<a name="API_InlinePolicy"></a>
 
 Contains an inline policy template that the service embeds in roles that you create from a role template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/overlayin
 ---
 
 # Overlay on the static map
-<a name="overlaying-static-map"></a>
 
 This section explains how to overlay additional information onto static maps using Amazon Location Service. You can customize your static maps by adding various geographical features, such as points, lines, and polygons, to enhance the map's visual representation. Amazon Location Service supports multiple formats, including GeoJSON and a compact overlay format, to provide flexible and efficient ways of adding overlays.
 

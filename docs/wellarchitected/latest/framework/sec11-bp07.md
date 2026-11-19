@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec11-b
 ---
 
 # SEC11-BP07 Deploy software programmatically
-<a name="sec11-bp07"></a>
 
  Manual deployments introduce human error and make it hard to prove that what you tested is what you released. Programmatic deployment runs the same steps every time, removes people from the production path, and gives you a way to verify the integrity of each release. Externalize configuration so one artifact runs in any environment, and sign packages so you can prove they did not change.
 

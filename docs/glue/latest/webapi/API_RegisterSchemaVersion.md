@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RegisterSchemaVer
 ---
 
 # RegisterSchemaVersion
-<a name="API_RegisterSchemaVersion"></a>
 
 Adds a new version to the existing schema. Returns an error if new version of schema does not meet the compatibility requirements of the schema set. This API will not create a new schema set and will return a 404 error if the schema set is not already present in the Schema Registry.
 

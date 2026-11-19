@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AssociateIam
 ---
 
 # AssociateIamRoleToResource
-<a name="API_AssociateIamRoleToResource"></a>
 
 Associates an AWS Identity and Access Management (IAM) service role with a specified resource to enable AWS service integration.
 

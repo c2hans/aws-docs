@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/abac-granting-p
 ---
 
 # Granting permissions using attribute-based access control
-<a name="abac-granting-permissions"></a>
 
 This topic describes the steps you need to follow to grant attribute-based access permissions on Data Catalog resources. You can use the Lake Formation console or the AWS Command Line Interface (AWS CLI).
 

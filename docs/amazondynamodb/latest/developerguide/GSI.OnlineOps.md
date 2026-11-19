@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI
 ---
 
 # Managing Global Secondary Indexes in DynamoDB
-<a name="GSI.OnlineOps"></a>
 
 This section describes how to create, modify, and delete global secondary indexes in Amazon DynamoDB.
 

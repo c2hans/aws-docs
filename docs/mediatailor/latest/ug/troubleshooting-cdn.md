@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/troubleshooting-cd
 ---
 
 # Troubleshoot common issues for CDN and MediaTailor integrations
-<a name="troubleshooting-cdn"></a>
 
 Address common content delivery network (CDN) integration challenges with AWS Elemental MediaTailor before they impact your viewers. This section helps you identify and resolve typical issues that occur during CDN integration with AWS Elemental MediaTailor.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/delete-queue.h
 ---
 
 # Delete a queue from your Connect Customer instance
-<a name="delete-queue"></a>
 
 There are three ways to delete a queue from your Connect Customer instance:
 + Connect Customer admin website

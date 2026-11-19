@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/global-endpoints.html
 ---
 
 # Using Global endpoints in Amazon SES
-<a name="global-endpoints"></a>
 
 Amazon SES Global endpoints is a feature that enhances the continuity and reliability of your email sending operations. This chapter will guide you through the concept, setup, and usage of Global endpoints, helping you leverage multi-region sending (MRS) to achieve higher availability and improved disaster recovery capabilities for your email workloads.
 

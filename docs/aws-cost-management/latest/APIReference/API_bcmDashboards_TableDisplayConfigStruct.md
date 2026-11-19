@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TableDisplayConfigStruct
-<a name="API_bcmDashboards_TableDisplayConfigStruct"></a>
 
 Configuration structure for customizing the tabular display of widget data.
 

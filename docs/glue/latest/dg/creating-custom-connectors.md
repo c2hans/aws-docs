@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-custom-connector
 ---
 
 # Creating custom connectors
-<a name="creating-custom-connectors"></a>
 
 You can also build your own connector and then upload the connector code to AWS Glue Studio.
 

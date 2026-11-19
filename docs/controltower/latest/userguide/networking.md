@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/networking
 ---
 
 # Networking in AWS Control Tower
-<a name="networking"></a>
 
 AWS Control Tower provides basic support for networking through VPCs.
 

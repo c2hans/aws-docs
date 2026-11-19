@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Powe
 ---
 
 # PowerUserAccess
-<a name="PowerUserAccess"></a>
 
 **Description**: Provides full access to AWS services and resources, but does not allow management of Users and groups.
 

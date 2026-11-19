@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/price-chang
 ---
 
 # Price change
-<a name="price-change"></a>
 
 You can change annual prices (the $ value, for example $1,000/year to $1,200/year) every 90 days. However, you must give 90 days' notice to existing customers of annual pricing. The new price will apply to new subscriptions but will have no impact on existing subscriptions.
 

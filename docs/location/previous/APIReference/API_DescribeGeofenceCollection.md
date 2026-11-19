@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Descr
 ---
 
 # DescribeGeofenceCollection
-<a name="API_DescribeGeofenceCollection"></a>
 
 Retrieves the geofence collection details.
 

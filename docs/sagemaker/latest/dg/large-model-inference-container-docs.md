@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/large-model-inferenc
 ---
 
 # The large model inference (LMI) container documentation
-<a name="large-model-inference-container-docs"></a>
 
 The [Large Model Inference (LMI) container documentation](https://docs.djl.ai/master/docs/serving/serving/docs/lmi/index.html) is provided on the Deep Java Library documentation site.
 

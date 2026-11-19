@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/orac
 ---
 
 # Amazon RDS for Oracle Database 19c (19.0.0.0)
-<a name="oracle-version-19-0"></a>
 
 Amazon RDS for Oracle Database 19c (19.0.0.0) releases a new Release Update (RU) engine version each quarter. In the months between quarterly RUs, RDS for Oracle can also release engine versions that add a Monthly Recommended Patch (MRP) to the current RU. An RU engine version incorporates bug fixes from Oracle by including the RU patches for the specified quarter. A Supplemental Patch Bundle (SPB) is an engine version that contains the RU patches plus additional database patches recommended by Oracle for specific use cases, such as Oracle Spatial, Oracle Data Pump, and Oracle GoldenGate. SPBs are supported only for Oracle Database 19c.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # VersionStatus
-<a name="API_VersionStatus"></a>
 
 The status of the the OpenSearch or Elasticsearch version options for the specified Amazon OpenSearch Service domain.
 

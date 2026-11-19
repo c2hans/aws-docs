@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon Simple Email Service v2
-<a name="list_sesv2"></a>
 
 Amazon Simple Email Service v2 (service prefix: `ses`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

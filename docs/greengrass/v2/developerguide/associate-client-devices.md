@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/associate-c
 ---
 
 # Associate client devices
-<a name="associate-client-devices"></a>
 
 To use cloud discovery, associate client devices with a core device so that they can discover the core device. Then, they can use the [Greengrass discovery API](greengrass-discover-api.md) to retrieve connectivity information and certificates for their associated core devices.
 

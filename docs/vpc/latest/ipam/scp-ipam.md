@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/scp-ipam.html
 ---
 
 # Enforce IPAM use for VPC creation with SCPs
-<a name="scp-ipam"></a>
 
 **Note**
  This section is only applicable to you if you've enabled IPAM to integrate with AWS Organizations. For more information, see [Integrate IPAM with accounts in an AWS Organization](enable-integ-ipam.md).

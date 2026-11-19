@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ConsolidationConfiguration
-<a name="API_ConsolidationConfiguration"></a>
 
 Contains consolidation configuration information for a memory strategy.
 

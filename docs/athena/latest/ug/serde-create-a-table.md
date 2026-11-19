@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/serde-create-a-table.ht
 ---
 
 # Use a SerDe to create a table
-<a name="serde-create-a-table"></a>
 
 To use a SerDe when creating a table in Athena, use one of the following methods:
 + Specify `ROW FORMAT DELIMITED` and then use DDL statements to specify field delimiters, as in the following example. When you specify `ROW FORMAT DELIMITED`, Athena uses the LazySimpleSerDe by default.

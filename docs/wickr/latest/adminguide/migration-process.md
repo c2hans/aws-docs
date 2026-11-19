@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/adminguide/migration-proces
 This guide documents the new AWS Wickr administration console, released on March 13, 2025. For documentation on the classic version of the AWS Wickr administration console, see [Classic Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide-classic/what-is-wickr.html).
 
 # Migration from docker method
-<a name="migration-process"></a>
 
 If you currently use the Docker-based data retention bot, you can migrate to the Serverless method with no data loss.
 

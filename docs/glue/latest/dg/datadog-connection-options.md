@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/datadog-connection-option
 ---
 
 # Datadog connection options
-<a name="datadog-connection-options"></a>
 
 The following are connection options for Datadog:
 +  `ENTITY_NAME`(String) – (Required) Used for Read/Write. The name of your Object in Datadog.

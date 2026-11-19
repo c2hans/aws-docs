@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_PromptAtte
 ---
 
 # PromptAttemptSpecification
-<a name="API_PromptAttemptSpecification"></a>
 
 Specifies the settings on a prompt attempt.
 

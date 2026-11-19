@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/docusign-monitor-connecti
 ---
 
 # Docusign Monitor limitations
-<a name="docusign-monitor-connection-limitations"></a>
 
 The following are limitations or notes for Docusign Monitor:
 + When a filter is applied using the `cursor` field, the API retrieves records for the next seven days starting from the specified date.

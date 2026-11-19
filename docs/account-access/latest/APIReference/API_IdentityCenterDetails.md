@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_I
 ---
 
 # IdentityCenterDetails
-<a name="API_IdentityCenterDetails"></a>
 
 Contains detailed information about the IAM Identity Center configuration for an application.
 

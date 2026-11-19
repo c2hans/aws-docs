@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_UpdateAc
 ---
 
 # UpdateAccountPreferences
-<a name="API_UpdateAccountPreferences"></a>
 
 Updates Amazon Q Developer account preferences.
 

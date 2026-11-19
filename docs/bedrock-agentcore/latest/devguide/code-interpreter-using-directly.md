@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Using AgentCore Code Interpreter directly
-<a name="code-interpreter-using-directly"></a>
 
 The following sections show you how to use the Amazon Bedrock AgentCore Code Interpreter directly without an agent framework. This is especially useful when you want to execute specific code snippets programmatically. Before you go through the examples in this section, see [Prerequisites](code-interpreter-getting-started.md#code-interpreter-prerequisites).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 ---
 
 # Best practice 8.1 – Identify analytics solutions that best suit your technical challenges
-<a name="best-practice-8.1-identify-analytics-solutions-that-best-suit-your-technical-challenges."></a>
 
  AWS has multiple analytics processing services that are built for specific purposes. These include Amazon Redshift for data warehousing, Amazon Kinesis for streaming data, and Quick for data visualization. Your organization should consider each step of the data analytics process as an opportunity to identify the right tool for the job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_P
 ---
 
 # PrefixListAssociation
-<a name="API_PrefixListAssociation"></a>
 
 Information about a prefix list association with a core network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AdminConfirmSignUp
-<a name="API_AdminConfirmSignUp"></a>
 
 Confirms user sign-up as an administrator.
 

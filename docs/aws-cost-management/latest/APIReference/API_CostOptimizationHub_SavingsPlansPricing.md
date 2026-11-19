@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlansPricing
-<a name="API_CostOptimizationHub_SavingsPlansPricing"></a>
 
 Pricing information about a Savings Plans.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-versio
 ---
 
 # EC2Launch version history
-<a name="ec2launch-version-details"></a>
 
 To download and install the latest version of EC2Launch, see [Install the latest version of EC2Launch](ec2launch-download.md).
 

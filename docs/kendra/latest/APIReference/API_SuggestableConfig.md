@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Suggestab
 ---
 
 # SuggestableConfig
-<a name="API_SuggestableConfig"></a>
 
 Provides the configuration information for a document field/attribute that you want to base query suggestions on.
 

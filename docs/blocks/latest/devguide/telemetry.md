@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/telemetry.html
 ---
 
 # AWS Blocks CLI telemetry
-<a name="telemetry"></a>
 
 The AWS Blocks CLI collects anonymized usage data to help improve the developer experience. This topic explains what data is collected, how it’s used, and how to opt out of telemetry collection.
 

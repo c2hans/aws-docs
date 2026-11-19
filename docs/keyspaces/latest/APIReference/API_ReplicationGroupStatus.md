@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Replic
 ---
 
 # ReplicationGroupStatus
-<a name="API_ReplicationGroupStatus"></a>
 
  This shows the summary status of the keyspace after a new AWS Region was added.
 

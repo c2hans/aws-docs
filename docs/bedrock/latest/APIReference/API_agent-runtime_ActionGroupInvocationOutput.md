@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ActionGroupInvocationOutput
-<a name="API_agent-runtime_ActionGroupInvocationOutput"></a>
 
 Contains the JSON-formatted string returned by the API invoked by the action group.
 

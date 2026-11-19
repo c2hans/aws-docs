@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started
 ---
 
 # Run example Amazon Bedrock API requests using an Amazon SageMaker AI notebook
-<a name="getting-started-api-ex-sm"></a>
 
 This section guides you through trying out some common operations in Amazon Bedrock with an Amazon SageMaker AI notebook to test that your Amazon Bedrock role permissions are set up properly. Before you run the following examples, you should check that you have fulfilled the following prerequisites:
 

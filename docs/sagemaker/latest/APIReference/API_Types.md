@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Types.
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by Amazon SageMaker Service:
 +  [AcceleratorPartitionConfig](API_AcceleratorPartitionConfig.md)

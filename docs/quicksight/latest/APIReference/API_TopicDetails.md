@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicDetails
-<a name="API_TopicDetails"></a>
 
 A structure that describes the details of a topic, such as its name, description, and associated data sets.
 

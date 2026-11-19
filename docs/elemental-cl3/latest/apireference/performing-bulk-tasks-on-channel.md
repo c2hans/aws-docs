@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/perfor
 ---
 
 # Performing Bulk Tasks on a Channel
-<a name="performing-bulk-tasks-on-channel"></a>
 
 This section covers commands for the channels entity (starting and stopping channels) and for the task\_report entity (monitoring the status of bulk tasks).
 

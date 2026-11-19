@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_SlaContent
 ---
 
 # SlaContent
-<a name="API_connect-cases_SlaContent"></a>
 
 Represents the content of an SLA to be returned to agents.
 

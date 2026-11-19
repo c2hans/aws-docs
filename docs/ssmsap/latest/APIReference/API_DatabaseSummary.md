@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_DatabaseS
 ---
 
 # DatabaseSummary
-<a name="API_DatabaseSummary"></a>
 
 The summary of the database.
 

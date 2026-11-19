@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DeleteIpGroup.
 ---
 
 # DeleteIpGroup
-<a name="API_DeleteIpGroup"></a>
 
 Deletes the specified IP access control group.
 

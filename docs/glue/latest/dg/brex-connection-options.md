@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/brex-connection-options.h
 ---
 
 # Brex connection options
-<a name="brex-connection-options"></a>
 
 The following are connection options for Brex:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Brex object to read.

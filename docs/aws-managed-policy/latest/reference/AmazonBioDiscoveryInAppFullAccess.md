@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonBioDiscoveryInAppFullAccess
-<a name="AmazonBioDiscoveryInAppFullAccess"></a>
 
 **Description**: Provides full access to actions within the Amazon Bio Discovery applications
 

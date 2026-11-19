@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationScanEc2InstanceWithFindings
-<a name="API_OrganizationScanEc2InstanceWithFindings"></a>
 
 Organization-wide EC2 instances with findings scan configuration.
 

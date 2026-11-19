@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Condi
 ---
 
 # Condition
-<a name="API_Condition"></a>
 
 Contains an array of triplets made up of a condition type (such as `StringEquals`), a key, and a value. Used to filter resources using their tags and assign them to a backup plan. Case sensitive.
 

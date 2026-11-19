@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Add a shared portal product to your portal in API Gateway
-<a name="apigateway-portals-use-shared-products"></a>
 
 As a portal owner, you can use portal products shared with you by other accounts in your portal. You maintain full control of your portal.
 

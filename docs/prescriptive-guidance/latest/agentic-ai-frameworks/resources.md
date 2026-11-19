@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Resources
-<a name="resources"></a>
 
 Use the following AWS and other resources related to autonomous agent development.
 

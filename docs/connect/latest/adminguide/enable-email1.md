@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-email1.
 ---
 
 # Enable email for your Connect Customer instance
-<a name="enable-email1"></a>
 
 This topic is for administrators who have access to the Connect Customer console. It explains how to enable email for your instance using the Connect Customer admin website. For a list of the APIs to enable email programmatically, see [APIs to enable email](#apis-email-setup2).
 

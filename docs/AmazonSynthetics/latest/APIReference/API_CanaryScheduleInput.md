@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # CanaryScheduleInput
-<a name="API_CanaryScheduleInput"></a>
 
 This structure specifies how often a canary is to make runs and the date and time when it should stop making runs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/data-api-dp-ml-
 ---
 
 # Neptune ML model training API
-<a name="data-api-dp-ml-training"></a>
 
 **Model training actions:**
 + [StartMLModelTrainingJob (action)](#StartMLModelTrainingJob)

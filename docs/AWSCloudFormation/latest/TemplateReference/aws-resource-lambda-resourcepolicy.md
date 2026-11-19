@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::ResourcePolicy
-<a name="aws-resource-lambda-resourcepolicy"></a>
 
 Use the `AWS::Lambda::ResourcePolicy` resource to attach a resource-based policy to a Lambda resource. A resource-based policy applies to a single Lambda resource, for example, a function, function version, function alias, or web function. To learn more about using resource-based policies with Lambda, see [Working with resource-based policies in Lambda](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html) in the *AWS Lambda Developer Guide*.
 

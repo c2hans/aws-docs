@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Re
 ---
 
 # RecordingConfiguration
-<a name="API_RecordingConfiguration"></a>
 
 An object representing a configuration to record a channel stream.
 

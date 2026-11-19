@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AutoDiscover
 ---
 
 # Connecting to Memcached Cache Nodes Manually
-<a name="AutoDiscovery.Manual"></a>
 
 If your client program does not use Auto Discovery, it can manually connect to each of the Memcached cache nodes. This is the default behavior for Memcached clients.
 

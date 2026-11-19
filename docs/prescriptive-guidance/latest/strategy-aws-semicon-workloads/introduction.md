@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Securing semiconductor development environments on AWS
-<a name="introduction"></a>
 
 *Mike Virgilio, Allan Carter, and Nikhil Marrapu, Amazon Web Services*
 

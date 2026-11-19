@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/ch
 ---
 
 # Keyrings
-<a name="choose-keyring"></a>
 
 Supported programming language implementations use *keyrings* to perform [envelope encryption](concepts.md#envelope-encryption). Keyrings generate, encrypt, and decrypt data keys. Keyrings determine the source of the unique data keys that protect each message, and the [wrapping keys](concepts.md#master-key) that encrypt that data key. You specify a keyring when encrypting and the same or a different keyring when decrypting. You can use the keyrings that the SDK provides or write your own compatible custom keyrings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v10-using-api-k
 ---
 
 # Use API keys to authenticate with Grafana HTTP APIs
-<a name="v10-using-api-keys"></a>
 
 One way to access Grafana APIs is to use an *API key*, which is also called an *API token*. To create an API key, use one of the following procedures. An API key is valid for a limited time that you specify when you create it, up to 30 days.
 

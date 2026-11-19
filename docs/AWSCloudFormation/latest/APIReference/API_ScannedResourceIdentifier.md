@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ScannedResourceIdentifier
-<a name="API_ScannedResourceIdentifier"></a>
 
 Identifies a scanned resource. This is used with the `ListResourceScanRelatedResources` API action.
 

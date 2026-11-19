@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Types_Ama
 ---
 
 # Amazon Kendra Intelligent Ranking
-<a name="API_Types_Amazon_Kendra_Intelligent_Ranking"></a>
 
 The following data types are supported by Amazon Kendra Intelligent Ranking:
 +  [CapacityUnitsConfiguration](API_Ranking_CapacityUnitsConfiguration.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayRequestPolicyRule
-<a name="API_TransitGatewayRequestPolicyRule"></a>
 
 The matching criteria for a transit gateway policy table entry.
 

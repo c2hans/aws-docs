@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/manage-sending-quotas-requ
 ---
 
 # Increasing your Amazon SES sending quotas
-<a name="manage-sending-quotas-request-increase"></a>
 
 Your account has the following quotas per your current region that can be increased.
 

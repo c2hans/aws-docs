@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # BatchCreateRelatedItemIdentifier
-<a name="API_connect-cases_BatchCreateRelatedItemIdentifier"></a>
 
 Identifies a case to associate the related item with in a `BatchCreateRelatedItem` request.
 

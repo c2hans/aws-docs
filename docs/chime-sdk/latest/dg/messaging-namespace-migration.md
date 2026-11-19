@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/messaging-namespace-
 ---
 
 # Migrating to the Amazon Chime SDK messaging namespace
-<a name="messaging-namespace-migration"></a>
 
 The [Amazon Chime SDK Messaging](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Messaging.html) namespace is a dedicated place for the APIs that create and manage Amazon Chime SDK messaging resources. You use the namespace to address Amazon Chime SDK messaging API endpoints in any AWS Region in which they're available. Use this namespace if you're just starting to use the Amazon Chime SDK. For more information about Regions, refer to [Available AWS Regions for the Amazon Chime SDK](sdk-available-regions.md) in this guide.
 

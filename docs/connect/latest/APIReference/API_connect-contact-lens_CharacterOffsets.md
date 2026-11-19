@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CharacterOffsets
-<a name="API_connect-contact-lens_CharacterOffsets"></a>
 
 For characters that were detected as issues, where they occur in the transcript.
 

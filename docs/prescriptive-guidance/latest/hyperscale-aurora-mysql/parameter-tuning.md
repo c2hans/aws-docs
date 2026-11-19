@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hyperscale-
 ---
 
 # Parameter tuning
-<a name="parameter-tuning"></a>
 
 Apart from the connection-related parameters, there are a handful of parameters that you can tune to improve the performance your Amazon Aurora MySQL-Compatible Edition cluster when faced with hypergrowth. When changing any database parameter, it's important to use the following best practices:
 + Change one parameter at time so that you can measure the impact of the change.

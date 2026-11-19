@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BuildS
 ---
 
 # BuildStatusConfig
-<a name="API_BuildStatusConfig"></a>
 
 Contains information that defines how the AWS CodeBuild build project reports the build status to the source provider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # ContactChannel
-<a name="API_SSMContacts_ContactChannel"></a>
 
 The method that Incident Manager uses to engage a contact.
 

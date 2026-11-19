@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Revis
 ---
 
 # RevisionLocation
-<a name="API_RevisionLocation"></a>
 
 Information about the location of an application revision.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/creating-azure
 ---
 
 # Configuring transfers with Microsoft Azure Blob Storage
-<a name="creating-azure-blob-location"></a>
 
 With AWS DataSync, you can transfer data between Microsoft Azure Blob Storage (including Azure Data Lake Storage Gen2 blob storage) and the following AWS storage services:
 + [Amazon S3](create-s3-location.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-experiment
 ---
 
 # Disable Experiments Integration
-<a name="pipelines-experiments-none"></a>
 
 **Create a pipeline**
 

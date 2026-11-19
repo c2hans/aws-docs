@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # Interoperable functions
-<a name="interoperable-functions-6"></a>
 
  The eight management and governance functions, supported by AWS services and AWS Partner solutions, work together and interoperate to reduce complexity. Outputs from these functions are used to inform or integrate with other functions. For Cloud Financial Management this includes:
 +  Setting specific financial **Controls** and organizing them across your environments.

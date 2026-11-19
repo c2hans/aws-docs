@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetBucketAccessKeys
-<a name="API_GetBucketAccessKeys"></a>
 
 Returns the existing access key IDs for the specified Amazon Lightsail bucket.
 

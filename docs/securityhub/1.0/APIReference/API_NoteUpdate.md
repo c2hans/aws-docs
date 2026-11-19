@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_NoteUpd
 ---
 
 # NoteUpdate
-<a name="API_NoteUpdate"></a>
 
 The updated note.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ChatInp
 ---
 
 # ChatInputStream
-<a name="API_ChatInputStream"></a>
 
 The streaming input for the `Chat` API.
 

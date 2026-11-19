@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # AWS IoT Greengrass Development Kit Command-Line Interface commands
-<a name="greengrass-development-kit-cli-commands"></a>
 
 The AWS IoT Greengrass Development Kit Command-Line Interface (GDK CLI) provides a command line interface that you can use to create, build, and publish Greengrass components on your development computer. GDK CLI commands use the following format.
 

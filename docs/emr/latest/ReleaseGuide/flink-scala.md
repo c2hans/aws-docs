@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/flink-scala.html
 ---
 
 # Use the Scala shell
-<a name="flink-scala"></a>
 
 The Flink Scala shell for EMR clusters is only configured to start new YARN sessions. You can use the Scala shell by following the procedure below.
 

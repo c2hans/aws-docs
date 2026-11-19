@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/cloudfron
 ---
 
 # Managing Amazon CloudFront invalidations using the CloudFront API and the AWS SDK for PHP Version 3
-<a name="cloudfront-example-invalidation"></a>
 
 Amazon CloudFront caches copies of static and dynamic files in worldwide edge locations. To remove or update a file on all edge locations, create an invalidation for each file or for a group of files.
 

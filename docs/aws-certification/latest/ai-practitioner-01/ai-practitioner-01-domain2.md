@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner
 ---
 
 # Content Domain 2: Fundamentals of GenAI
-<a name="ai-practitioner-01-domain2"></a>
 
 Domain 2 covers the fundamentals of GenAI and represents 24% of the scored content on the exam.
 

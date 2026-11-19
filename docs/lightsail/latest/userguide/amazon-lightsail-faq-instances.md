@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Instances
-<a name="amazon-lightsail-faq-instances"></a>
 
 ## What is a Lightsail instance?
 <a name="what-is-a-lightsail-instance"></a>

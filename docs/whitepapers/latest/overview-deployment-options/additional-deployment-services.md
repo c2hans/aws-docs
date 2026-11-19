@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # Additional Deployment Services
-<a name="additional-deployment-services"></a>
 
 ##
 <a name="additional-s3"></a>

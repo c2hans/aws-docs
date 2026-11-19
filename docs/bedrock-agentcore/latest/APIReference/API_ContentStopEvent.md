@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ContentStopEvent
-<a name="API_ContentStopEvent"></a>
 
 An event that signals the completion of a command execution. This event contains the final status and exit code of the executed command.
 

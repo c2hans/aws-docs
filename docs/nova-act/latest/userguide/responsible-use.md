@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/responsible-us
 ---
 
 # Responsible use
-<a name="responsible-use"></a>
 
 ## Responsible AI
 <a name="responsible-ai"></a>

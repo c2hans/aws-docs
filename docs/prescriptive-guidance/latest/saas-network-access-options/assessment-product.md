@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Product and commercial metrics that influence networking decisions
-<a name="assessment-product"></a>
 
 Product and commercial teams use success criteria to evaluate whether they are meeting business objectives. This section describes the product or commercial metrics that can be positively or negatively influenced by the networking access decisions that your organization makes.
 

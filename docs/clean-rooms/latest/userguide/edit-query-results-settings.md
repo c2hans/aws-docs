@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/edit-query-
 ---
 
 # Editing default values for query results settings
-<a name="edit-query-results-settings"></a>
 
 **Note**
 The **Results destination in Amazon S3** can't be within the same S3 bucket as any data source.

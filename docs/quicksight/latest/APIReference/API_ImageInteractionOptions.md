@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Image
 ---
 
 # ImageInteractionOptions
-<a name="API_ImageInteractionOptions"></a>
 
 The general image interactions setup for image publish options.
 

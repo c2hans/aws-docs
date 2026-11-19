@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_Lexicon.ht
 ---
 
 # Lexicon
-<a name="API_Lexicon"></a>
 
 Provides lexicon name and lexicon content in string format. For more information, see [Pronunciation Lexicon Specification (PLS) Version 1.0](https://www.w3.org/TR/pronunciation-lexicon/).
 

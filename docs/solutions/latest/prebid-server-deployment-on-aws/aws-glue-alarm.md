@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # AWS Glue
-<a name="aws-glue-alarm"></a>
 
 ## Glue job failure
 <a name="glue-job-failure"></a>

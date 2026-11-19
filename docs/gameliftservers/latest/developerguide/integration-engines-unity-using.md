@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/in
 ---
 
 # Integrate Amazon GameLift Servers into a Unity project
-<a name="integration-engines-unity-using"></a>
 
 Learn how to integrate the Amazon GameLift Servers SDK for Unity into your game projects to access the full server SDK feature set.
 

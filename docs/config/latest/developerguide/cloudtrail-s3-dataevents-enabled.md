@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-
 ---
 
 # cloudtrail-s3-dataevents-enabled
-<a name="cloudtrail-s3-dataevents-enabled"></a>
 
 Checks if at least one AWS CloudTrail trail is logging Amazon Simple Storage Service (Amazon S3) data events for all S3 buckets. The rule is NON\_COMPLIANT if there are trails or if no trails record S3 data events.
 

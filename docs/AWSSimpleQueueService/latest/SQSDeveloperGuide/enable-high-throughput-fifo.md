@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Enabling high throughput for FIFO queues in Amazon SQS
-<a name="enable-high-throughput-fifo"></a>
 
 You can enable high throughput for any new or existing FIFO queue. The feature includes three new options when you create and edit FIFO queues:
 + **Enable high throughput FIFO** – Makes higher throughput available for messages in the current FIFO queue.

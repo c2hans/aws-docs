@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_s
 ---
 
 # Identity
-<a name="API_streams_Identity"></a>
 
 Contains details about the type of identity that made the request.
 

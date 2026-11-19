@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_EksReso
 ---
 
 # EksResourceScalingConfiguration
-<a name="API_EksResourceScalingConfiguration"></a>
 
 The AWS EKS resource scaling configuration.
 

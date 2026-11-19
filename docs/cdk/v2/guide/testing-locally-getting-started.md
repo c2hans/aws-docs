@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/testing-locally-getting-sta
 ---
 
 # Getting started with locally testing
-<a name="testing-locally-getting-started"></a>
 
 This topic describes what you need to use the AWS SAM CLI with AWS CDK applications, and it provides instructions for building and locally testing a simple AWS CDK application.
 

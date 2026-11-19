@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ChainedInvokeDetai
 ---
 
 # ChainedInvokeDetails
-<a name="API_ChainedInvokeDetails"></a>
 
 Contains details about a chained function invocation in a durable execution, including the target function and invocation parameters.
 

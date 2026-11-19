@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sap-odata-connectivity-vp
 ---
 
 # Connectivity / VPC Connection
-<a name="sap-odata-connectivity-vpc-connection"></a>
 
 Steps for VPC Connection:
 

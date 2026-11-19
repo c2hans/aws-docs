@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Service description
-<a name="acc-sd"></a>
 
 AMS Accelerate is an operation plan of the AWS Managed Services service for managing operations of your AWS infrastructure.
 

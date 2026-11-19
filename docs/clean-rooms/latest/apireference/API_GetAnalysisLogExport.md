@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetA
 ---
 
 # GetAnalysisLogExport
-<a name="API_GetAnalysisLogExport"></a>
 
 Returns information about an analysis log export, including its current status and, if the export failed, the reason for the failure.
 

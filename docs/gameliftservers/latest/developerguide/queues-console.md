@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/qu
 ---
 
 # Game session queues in the Amazon GameLift Servers console
-<a name="queues-console"></a>
 
 The queue resource represents your configuration of the game session placement component. It determines how Amazon GameLift Servers searches for and chooses the best possible compute resource to host a new game session, based on your configuration choices.
 

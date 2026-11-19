@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_UpdateD
 ---
 
 # UpdateDestination
-<a name="API_UpdateDestination"></a>
 
 Updates the specified destination of the specified Firehose stream.
 

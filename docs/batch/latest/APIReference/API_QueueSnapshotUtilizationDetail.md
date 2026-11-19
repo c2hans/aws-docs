@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_QueueSnaps
 ---
 
 # QueueSnapshotUtilizationDetail
-<a name="API_QueueSnapshotUtilizationDetail"></a>
 
 The job queue utilization at a specific point in time, including total capacity usage, and quota share or fairshare utilization breakdown depending on the job queue scheduling policy.
 

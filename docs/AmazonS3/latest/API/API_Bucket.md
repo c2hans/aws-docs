@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Bucket.html
 ---
 
 # Bucket
-<a name="API_Bucket"></a>
 
  In terms of implementation, a Bucket is a resource.
 

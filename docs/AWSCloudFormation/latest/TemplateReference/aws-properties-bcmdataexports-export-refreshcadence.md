@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BCMDataExports::Export RefreshCadence
-<a name="aws-properties-bcmdataexports-export-refreshcadence"></a>
 
 The cadence for AWS to update the data export in your S3 bucket.
 

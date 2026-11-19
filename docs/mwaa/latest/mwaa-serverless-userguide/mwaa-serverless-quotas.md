@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/mw
 ---
 
 # Quotas for Amazon MWAA Serverless
-<a name="mwaa-serverless-quotas"></a>
 
 Your AWS account has default quotas for each AWS service. These were formerly called limits. Unless noted otherwise, each quota is Region-specific. You can request increases for some quotas, but other quotas can't be increased.
 

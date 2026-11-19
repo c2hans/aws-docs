@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/Troubleshooting-Launch-Err
 ---
 
 # Troubleshooting launch errors
-<a name="Troubleshooting-Launch-Errors"></a>
 
 Use the information in this section to troubleshoot launch errors.
 

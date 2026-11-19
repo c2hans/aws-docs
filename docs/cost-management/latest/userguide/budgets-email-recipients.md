@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/budgets
 ---
 
 # Adding email recipients to a budget notification
-<a name="budgets-email-recipients"></a>
 
 To be notified about your budget's status, add email recipients to your budget notifications. When you add a new email address as a recipient, AWS Budgets sends a verification email to that address, and only verified addresses receive budget notifications. Email verification uses AWS User Notifications and follows the same recipient-confirm pattern used by other AWS services that rely on User Notifications. Email recipients on budgets created before AWS Budgets added verification continue to receive notifications without change. This topic describes how to add email recipients to a budget notification, how verification works, and how to troubleshoot verification issues.
 

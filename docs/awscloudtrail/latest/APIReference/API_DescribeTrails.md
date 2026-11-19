@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_De
 ---
 
 # DescribeTrails
-<a name="API_DescribeTrails"></a>
 
 Retrieves settings for one or more trails associated with the current Region for your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ProfessionalServicesFulfillmentOption
-<a name="API_marketplace-discovery_ProfessionalServicesFulfillmentOption"></a>
 
 Describes a professional services fulfillment option.
 

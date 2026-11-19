@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElbL
 ---
 
 # AwsElbLoadBalancerAttributes
-<a name="API_AwsElbLoadBalancerAttributes"></a>
 
 Contains attributes for the load balancer.
 

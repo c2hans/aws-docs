@@ -2,10 +2,12 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/case-event-streams-enable.html
 ---
 
-# Set up Connect Customer Cases event streams
-<a name="case-event-streams-enable"></a>
+# Set up Connect Customer Cases event streams using the CLI
 
-This topic explains how to set up and use case event streams. Some of the onboarding steps require you to call [Connect Customer Cases APIs](https://docs.aws.amazon.com/cases/latest/APIReference/Welcome.html).
+This topic explains how to set up and use case event streams using the CLI. Some of the onboarding steps require you to call [Connect Customer Cases APIs](https://docs.aws.amazon.com/cases/latest/APIReference/Welcome.html).
+
+**Note**
+This guide walks through the creation of event streams for specific case fields via CLI. For a simpler configuration experience covering all current and future case fields and related item content, see [Enable Cases integrations](enable-cases.md#configure-cases-integrations).
 
 ## Step 1: Create a Connect Customer instance and enable Customer Profiles
 <a name="step1-case-event-streams-enable"></a>
@@ -32,6 +34,9 @@ If you want to create a case template using the API, see the [CreateTemplate](ht
 
 ## Step 4: Enable case event streams and setup to receive events into an SQS queue
 <a name="step4-case-event-streams-enable"></a>
+
+**Note**
+You can enable **Case event configuration** directly from the console instead of running this command. For more information, see [Enable Cases integrations](enable-cases.md#configure-cases-integrations).
 
 Run the following command to enable case event streams for your Cases domain. After this command runs, when cases are created or updated, an event is published to the default-bus of the EventBridge service in your account (it must be in the same AWS Region as your Cases domain).
 

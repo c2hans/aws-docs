@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListSessionsForWorker
-<a name="API_ListSessionsForWorker"></a>
 
 Lists sessions for a worker.
 

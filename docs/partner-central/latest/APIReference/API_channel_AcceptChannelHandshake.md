@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AcceptChannelHandshake
-<a name="API_channel_AcceptChannelHandshake"></a>
 
 Accepts a pending channel handshake request from another AWS account.
 

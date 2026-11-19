@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/idt-unsupporte
 ---
 
 # Unsupported IDT versions for FreeRTOS
-<a name="idt-unsupported-versions-afr"></a>
 
 This section lists unsupported versions of IDT for FreeRTOS. Unsupported versions do not receive bug fixes or updates. For more information, see [Understand the support policy for AWS IoT Device Tester](idt-support-policy.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_CreateEnv
 ---
 
 # CreateEnvironmentMembership
-<a name="API_CreateEnvironmentMembership"></a>
 
 Adds an environment member to an AWS Cloud9 development environment.
 

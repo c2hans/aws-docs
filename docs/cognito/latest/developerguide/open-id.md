@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/open-id.ht
 ---
 
 # Setting up an OIDC provider as an identity pool IdP
-<a name="open-id"></a>
 
 [OpenID Connect](http://openid.net/connect/) is an open standard for authentication that a number of login providers support. With Amazon Cognito, you can link identities with OpenID Connect providers that you configure through [AWS Identity and Access Management](http://aws.amazon.com/iam/).
 

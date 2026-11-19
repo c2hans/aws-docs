@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Growt
 ---
 
 # GrowthRateComputation
-<a name="API_GrowthRateComputation"></a>
 
 The growth rate computation configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/vm-troublesho
 ---
 
 # Troubleshoot VM issues
-<a name="vm-troubleshooting"></a>
 
 ## Incremental Backups / CBT issues and messages
 <a name="w2aac17c19c43c29b3"></a>

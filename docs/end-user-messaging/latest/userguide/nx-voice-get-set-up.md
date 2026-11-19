@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-v
 ---
 
 # How to get set up
-<a name="nx-voice-get-set-up"></a>
 
 This topic takes you from a new AWS account to sending your first voice message with AWS End User Messaging. Complete the following steps.
 

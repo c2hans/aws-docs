@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_GetC
 ---
 
 # GetConnection
-<a name="API_iotdata_GetConnection"></a>
 
 Retrieves connection information for the specified MQTT client.
 

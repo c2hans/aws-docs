@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DeleteCampaign
-<a name="API_connect-outbound-campaigns_DeleteCampaign"></a>
 
 Deletes an outbound campaign.
 

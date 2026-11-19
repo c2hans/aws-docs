@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/built-in-slot-percent.ht
 ---
 
 # AMAZON.Percentage
-<a name="built-in-slot-percent"></a>
 
 Converts words and symbols that represent a percentage into a numeric value with a percent sign (%).
 

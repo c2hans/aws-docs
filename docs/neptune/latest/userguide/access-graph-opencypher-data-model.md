@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # openCypher data model
-<a name="access-graph-opencypher-data-model"></a>
 
 The Neptune openCypher engine builds on the same property-graph model as Gremlin. In particular:
 + Every node has one or more labels. If you insert a node without labels, a default label named `vertex` is attached. If you try to delete all of a node's labels, an error is thrown.

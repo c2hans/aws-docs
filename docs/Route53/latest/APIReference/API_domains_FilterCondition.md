@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # FilterCondition
-<a name="API_domains_FilterCondition"></a>
 
 Information for the filtering of a list of domains returned by [ListDomains](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains__ListDomains.html).
 

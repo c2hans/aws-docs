@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # TimeRangeFilter
-<a name="API_TimeRangeFilter"></a>
 
 Filters update actions from the service updates that are in available status during the time range.
 

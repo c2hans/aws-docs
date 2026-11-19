@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/managing-repos-os-update
 ---
 
 # Manage package and operating system updates in AL2023
-<a name="managing-repos-os-updates"></a>
 
 Unlike previous versions of Amazon Linux, AL2023 AMIs are locked to a specific version of the Amazon Linux repository. To apply both security and bug fixes to an AL2023 instance, update the DNF configuration to the latest available release version. Alternatively, launch a newer AL2023 instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/launch-work
 ---
 
 # Create a trust relationship between your AWS Managed Microsoft AD directory and your on-premises domain for WorkSpaces Personal
-<a name="launch-workspace-trusted-domain"></a>
 
 In this tutorial, we create a trust relationship between your AWS Managed Microsoft AD directory and your on-premises domain. For tutorials that use the other options, see [Create a directory for WorkSpaces Personal](launch-workspaces-tutorials.md).
 

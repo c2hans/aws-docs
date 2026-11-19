@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/run-pipeline.html
 ---
 
 # Run a pipeline
-<a name="run-pipeline"></a>
 
 After defining the steps of your pipeline as a directed acyclic graph (DAG), you can run your pipeline, which executes the steps defined in your DAG. The following walkthroughs show you how to run an Amazon SageMaker AI pipeline using either the drag-and-drop visual editor in Amazon SageMaker Studio or the Amazon SageMaker Python SDK.
 

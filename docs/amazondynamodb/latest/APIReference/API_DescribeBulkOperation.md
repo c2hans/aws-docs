@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DescribeBulkOperation
-<a name="API_DescribeBulkOperation"></a>
 
 Describes the specified bulk operation.
 

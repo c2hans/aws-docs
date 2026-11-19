@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profi
 ---
 
 # Delete an application inference profile
-<a name="inference-profiles-delete"></a>
 
 If you no longer need an application inference profile, you can delete it. You can only delete inference profiles through the Amazon Bedrock API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/full-text-searc
 ---
 
 # Sample non-string OpenSearch queries in Neptune
-<a name="full-text-search-non-string-examples"></a>
 
 Neptune does not currently support OpenSearch range queries directly. However, you can achieve the same effect using Lucene syntax and query-type="query\_string", as you can see in the following sample queries.
 

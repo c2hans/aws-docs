@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_CapacityA
 ---
 
 # CapacityAllocation
-<a name="API_CapacityAllocation"></a>
 
 Contains the submission time of a single allocation request for a capacity reservation and the most recent status of the attempted allocation.
 

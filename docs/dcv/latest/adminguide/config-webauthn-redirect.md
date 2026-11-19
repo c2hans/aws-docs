@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/config-webauthn-re
 ---
 
 # Configuring WebAuthn Redirection
-<a name="config-webauthn-redirect"></a>
 
 Beginning with Amazon DCV Server 2023.1, users can authenticate on web applications that use the Web Authentication (WebAuthn) standard in supported browsers within remote sessions. This is done by redirecting the authentication prompts to locally connected authenticators, such as Windows Hello or YubiKey, or any other FIDO2 compliant authenticator.
 

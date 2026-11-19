@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_NewR
 ---
 
 # NewRelicServiceAuthorizationConfig
-<a name="API_NewRelicServiceAuthorizationConfig"></a>
 
 Authorization configuration options for New Relic service.
 

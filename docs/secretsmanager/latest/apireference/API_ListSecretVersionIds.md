@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_L
 ---
 
 # ListSecretVersionIds
-<a name="API_ListSecretVersionIds"></a>
 
 Lists the versions of a secret. Secrets Manager uses staging labels to indicate the different versions of a secret. For more information, see [ Secrets Manager concepts: Versions](https://docs.aws.amazon.com/secretsmanager/latest/userguide/getting-started.html#term_version).
 

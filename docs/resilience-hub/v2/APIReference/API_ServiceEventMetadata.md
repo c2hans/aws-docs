@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServiceEventMetadata
-<a name="API_ServiceEventMetadata"></a>
 
 Type-specific metadata for each service event type.
 

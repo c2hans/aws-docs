@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/migrating-tool
 ---
 
 # How to select the right tool for bulk uploading or migrating data to Amazon Keyspaces
-<a name="migrating-tools"></a>
 
 In this section you can review the different tools that you can use to bulk upload or migrate data to Amazon Keyspaces, and learn how to select the correct tool based on your needs. In addition, this section provides an overview and use cases for the available step-by-step tutorials that demonstrate how to import data into Amazon Keyspaces.
 

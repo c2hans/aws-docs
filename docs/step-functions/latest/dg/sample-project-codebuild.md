@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sample-project-
 ---
 
 # Build an AWS CodeBuild project using Step Functions
-<a name="sample-project-codebuild"></a>
 
 This sample project demonstrates how to use AWS Step Functions to build an AWS CodeBuild project, run tests, and then send an Amazon SNS notification based on the results.
 

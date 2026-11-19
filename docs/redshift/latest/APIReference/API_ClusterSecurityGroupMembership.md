@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Cluster
 ---
 
 # ClusterSecurityGroupMembership
-<a name="API_ClusterSecurityGroupMembership"></a>
 
 Describes a cluster security group.
 

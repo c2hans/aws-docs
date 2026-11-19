@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::ServerlessCluster VpcConfig
-<a name="aws-properties-msk-serverlesscluster-vpcconfig"></a>
 
 <a name="aws-properties-msk-serverlesscluster-vpcconfig-description"></a>The `VpcConfig` property type specifies Property description not available. for an [AWS::MSK::ServerlessCluster](aws-resource-msk-serverlesscluster.md).
 

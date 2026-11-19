@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # UpdateProgramManagementAccount
-<a name="API_channel_UpdateProgramManagementAccount"></a>
 
 Updates the properties of a program management account.
 

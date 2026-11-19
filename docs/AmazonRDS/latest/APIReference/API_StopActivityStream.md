@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_StopAc
 ---
 
 # StopActivityStream
-<a name="API_StopActivityStream"></a>
 
 Stops a database activity stream that was started using the AWS console, the `start-activity-stream` AWS CLI command, or the `StartActivityStream` operation.
 

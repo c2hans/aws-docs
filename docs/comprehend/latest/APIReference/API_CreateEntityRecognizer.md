@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Creat
 ---
 
 # CreateEntityRecognizer
-<a name="API_CreateEntityRecognizer"></a>
 
 Creates an entity recognizer using submitted files. After your `CreateEntityRecognizer` request is submitted, you can check job status using the `DescribeEntityRecognizer` API.
 

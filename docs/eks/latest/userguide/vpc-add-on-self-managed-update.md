@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/vpc-add-on-self-man
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Update the Amazon VPC CNI (self-managed add-on)
-<a name="vpc-add-on-self-managed-update"></a>
 
 **Important**
 We recommend adding the Amazon EKS type of the add-on to your cluster instead of using the self-managed type of the add-on. If you’re not familiar with the difference between the types, see [Amazon EKS add-ons](eks-add-ons.md). For more information about adding an Amazon EKS add-on to your cluster, see [Create an Amazon EKS add-on](creating-an-add-on.md). If you’re unable to use the Amazon EKS add-on, we encourage you to submit an issue about why you can’t to the [Containers roadmap GitHub repository](https://github.com/aws/containers-roadmap/issues).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Field
 ---
 
 # FieldComboSeriesItem
-<a name="API_FieldComboSeriesItem"></a>
 
 The field series item configuration of a `ComboChartVisual`.
 

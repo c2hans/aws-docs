@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # Creating associations that run Chef recipes
-<a name="systems-manager-state-manager-chef"></a>
 
 You can create State Manager associations that run Chef recipes by using the `AWS-ApplyChefRecipes` SSM document. State Manager is a tool in AWS Systems Manager. You can target Linux-based Systems Manager managed nodes with the `AWS-ApplyChefRecipes` SSM document. This document offers the following benefits for running Chef recipes:
 + Supports multiple releases of Chef (Chef 11 through Chef 18).

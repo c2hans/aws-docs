@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler-troubl
 ---
 
 # Troubleshoot
-<a name="data-wrangler-trouble-shooting"></a>
 
 If an issue arises when using Amazon SageMaker Data Wrangler, we recommend you do the following:
 + If an error message is provided, read the message and resolve the issue it reports if possible.

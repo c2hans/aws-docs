@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DescribeServiceActionExecutionParameters
-<a name="API_DescribeServiceActionExecutionParameters"></a>
 
 Finds the default parameters for a specific self-service action on a specific provisioned product and returns a map of the results to the user.
 

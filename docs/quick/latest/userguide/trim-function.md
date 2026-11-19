@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/trim-function.htm
 ---
 
 # trim
-<a name="trim-function"></a>
 
 `trim` removes both preceding and following blank space from a string.
 

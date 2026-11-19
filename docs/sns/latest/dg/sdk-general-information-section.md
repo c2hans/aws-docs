@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sdk-general-information-se
 ---
 
 # Using Amazon SNS with an AWS SDK
-<a name="sdk-general-information-section"></a>
 
 AWS software development kits (SDKs) are available for many popular programming languages. Each SDK provides an API, code examples, and documentation that make it easier for developers to build applications in their preferred language.
 

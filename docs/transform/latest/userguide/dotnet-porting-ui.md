@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-portin
 ---
 
 # Porting UI layer code
-<a name="dotnet-porting-ui"></a>
 
 AWS Transform can port the UI layer of ASP.NET websites to UI frameworks compatible with ASP.NET Core, which can run on Linux. The following transformations are available:
 + MVC Razor UI porting

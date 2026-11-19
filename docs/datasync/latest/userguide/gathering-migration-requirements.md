@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/gathering-migr
 ---
 
 # Gathering requirements for your migration
-<a name="gathering-migration-requirements"></a>
 
 The first step in a large data migration requires collecting a variety of information across your organization.
 

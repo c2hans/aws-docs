@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeTestCase
-<a name="API_DescribeTestCase"></a>
 
 Describes the specified test case and allows you to get the content and metadata of the test case for the specified Amazon Connect instance.
 

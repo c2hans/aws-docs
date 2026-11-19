@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCodeGuruSecurityFullAccess
-<a name="AmazonCodeGuruSecurityFullAccess"></a>
 
 **Description**: Provides full access to Amazon CodeGuru Security.
 

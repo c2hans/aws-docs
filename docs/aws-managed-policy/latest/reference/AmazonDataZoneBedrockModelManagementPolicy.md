@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDataZoneBedrockModelManagementPolicy
-<a name="AmazonDataZoneBedrockModelManagementPolicy"></a>
 
 **Description**: Provides permissions to manage Amazon Bedrock model access, including creating, tagging and deleting application inference profiles.
 

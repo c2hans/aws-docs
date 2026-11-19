@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [O.SI.2] Centralize tooling for streamlined system instrumentation and telemetry data interpretation
-<a name="o.si.2-centralize-tooling-for-streamlined-system-instrumentation-and-telemetry-data-interpretation"></a>
 
  **Category:** FOUNDATIONAL
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Undepr
 ---
 
 # UndeprecateDomain
-<a name="API_UndeprecateDomain"></a>
 
 Undeprecates a previously deprecated domain. After a domain has been undeprecated it can be used to create new workflow executions or register new types.
 

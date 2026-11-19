@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_AmazonO
 ---
 
 # AmazonOpenSearchServerlessDestinationConfiguration
-<a name="API_AmazonOpenSearchServerlessDestinationConfiguration"></a>
 
 Describes the configuration of a destination in the Serverless offering for Amazon OpenSearch Service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/connecting-
 ---
 
 # Connecting client devices to an AWS IoT Greengrass Core device with an MQTT broker
-<a name="connecting-to-mqtt"></a>
 
 When you use an MQTT broker on your AWS IoT Greengrass Core device, the device uses a *core device certificate authority (CA)* unique to the device to issue a certificate to the broker for making mutual TLS connections with clients.
 

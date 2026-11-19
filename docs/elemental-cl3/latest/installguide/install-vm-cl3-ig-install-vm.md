@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/installguide/instal
 ---
 
 # Step B: Deploy the VM
-<a name="install-vm-cl3-ig-install-vm"></a>
 
 Perform these steps from your workstation.
 

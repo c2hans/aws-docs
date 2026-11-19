@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Publishing as single sign-on (SSO) Application
-<a name="publishing-as-sso-application"></a>
 
 ## Last Updated
 <a name="last-updated"></a>

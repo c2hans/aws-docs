@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # Revision
-<a name="API_Revision"></a>
 
 Information about the revision for a specific sync event, such as the branch, owner ID, and name of the repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Descr
 ---
 
 # DescribeTrustedAdvisorChecks
-<a name="API_DescribeTrustedAdvisorChecks"></a>
 
 Returns information about all available AWS Trusted Advisor checks, including the name, ID, category, description, and metadata. You must specify a language code.
 

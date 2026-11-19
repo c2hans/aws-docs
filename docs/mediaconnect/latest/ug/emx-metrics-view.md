@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/emx-metrics-view.
 ---
 
 # Viewing metrics for a MediaConnect flow
-<a name="emx-metrics-view"></a>
 
 You can view some metrics in the MediaConnect console. You can view all metrics in the CloudWatch console. You can also retrieve metrics using the CLI, the REST API, or any AWS SDK.
 

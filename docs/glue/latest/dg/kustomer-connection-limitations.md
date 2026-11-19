@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/kustomer-connection-limit
 ---
 
 # Kustomer limitations
-<a name="kustomer-connection-limitations"></a>
 
 The following are limitations or notes for Kustomer:
 + The `Customer Searches` entity is not supported since the Kustomer API documentation has not declared any endpoint for it.

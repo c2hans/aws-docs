@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetWorkGr
 ---
 
 # GetWorkGroup
-<a name="API_GetWorkGroup"></a>
 
 Returns information about the workgroup with the specified name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Resto
 ---
 
 # RestoreTestingPlanForCreate
-<a name="API_RestoreTestingPlanForCreate"></a>
 
 This contains metadata about a restore testing plan.
 

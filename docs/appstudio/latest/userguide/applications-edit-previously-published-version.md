@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/applications-
 ---
 
 # Edit a previously published app version
-<a name="applications-edit-previously-published-version"></a>
 
 Use the following procedure to edit a previously published version of your App Studio application. After you choose to edit the previously published version, you can edit the app in the Development environment, or publish it to Testing and then Production.
 

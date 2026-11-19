@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Header propagation with Gateway
-<a name="gateway-headers"></a>
 
 ## What is header and query parameter propagation
 <a name="gateway-headers-overview"></a>

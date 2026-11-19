@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElas
 ---
 
 # AwsElasticsearchDomainLogPublishingOptions
-<a name="API_AwsElasticsearchDomainLogPublishingOptions"></a>
 
 configures the CloudWatch Logs to publish for the Elasticsearch domain.
 

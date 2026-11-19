@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::ExpressGatewayService ExpressGatewayContainer
-<a name="aws-properties-ecs-expressgatewayservice-expressgatewaycontainer"></a>
 
 Defines the configuration for the primary container in an Express service. This container receives traffic from the Application Load Balancer and runs your application code.
 

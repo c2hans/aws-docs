@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ac
 ---
 
 # ActionGroupSummary
-<a name="API_agent_ActionGroupSummary"></a>
 
 Contains details about an action group.
 

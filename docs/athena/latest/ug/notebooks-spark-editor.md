@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-editor.
 ---
 
 # Use the Athena notebook editor
-<a name="notebooks-spark-editor"></a>
 
 **Note**
 The Athena notebook editor is supported in the Pyspark engine version 3. For using notebooks with Apache Spark version 3.5, see [SageMaker Notebooks](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/what-is-sagemaker-unified-studio.html).

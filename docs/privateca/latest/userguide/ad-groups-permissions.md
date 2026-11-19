@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/ad-groups-per
 ---
 
 # Manage Connector for AD template access control entries
-<a name="ad-groups-permissions"></a>
 
 An access control entry grants controls which Active Directory groups can or cannot enroll certificates for a specific Connector for AD template. When you can create or manage groups and permissions in Connector for AD, you must provide the Security identifier (SID) of the group object from Active Directory. You can obtain the SID using the following PowerShell command. For information about SIDs, see [How security identifiers work](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-identifiers) in the Microsoft Directory Domain Services documentation.
 

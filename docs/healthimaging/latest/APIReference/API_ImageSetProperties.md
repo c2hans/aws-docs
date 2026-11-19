@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Im
 ---
 
 # ImageSetProperties
-<a name="API_ImageSetProperties"></a>
 
 The image set properties.
 

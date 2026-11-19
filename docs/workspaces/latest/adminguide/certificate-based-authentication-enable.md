@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/certificate
 ---
 
 # Enable Certificate-based Authentication
-<a name="certificate-based-authentication-enable"></a>
 
 Complete the following steps to enable certificate-based authentication.
 

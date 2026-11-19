@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Create
 ---
 
 # CreateTable
-<a name="API_s3Buckets_CreateTable"></a>
 
 Creates a new table associated with the given namespace in a table bucket. For more information, see [Creating an Amazon S3 table](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-create.html) in the *Amazon Simple Storage Service User Guide*.
 

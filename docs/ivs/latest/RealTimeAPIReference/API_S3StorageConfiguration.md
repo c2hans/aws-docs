@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_S3St
 ---
 
 # S3StorageConfiguration
-<a name="API_S3StorageConfiguration"></a>
 
 A complex type that describes an S3 location where recorded videos will be stored.
 

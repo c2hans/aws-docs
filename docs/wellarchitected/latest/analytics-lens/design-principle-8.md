@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/de
 ---
 
 # 8 – Choose the best-performing compute solution
-<a name="design-principle-8"></a>
 
 ## How do you select the best-performing options for your analytics workload?
 <a name="how-do-you-select-the-best-performing-options-for-your-analytics-workload"></a>

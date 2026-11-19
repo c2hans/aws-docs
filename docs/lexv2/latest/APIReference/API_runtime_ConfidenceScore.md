@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Co
 ---
 
 # ConfidenceScore
-<a name="API_runtime_ConfidenceScore"></a>
 
 Provides a score that indicates the confidence that Amazon Lex has that an intent is the one that satisfies the user's intent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorDe
 ---
 
 # ConnectorDetail
-<a name="API_ConnectorDetail"></a>
 
 Information about the registered connector.
 

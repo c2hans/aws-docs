@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Unproce
 ---
 
 # UnprocessedCluster
-<a name="API_UnprocessedCluster"></a>
 
 A cluster whose updates have failed
 

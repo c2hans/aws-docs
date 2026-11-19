@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Un
 ---
 
 # UnknownNodeOutputFlowValidationDetails
-<a name="API_agent_UnknownNodeOutputFlowValidationDetails"></a>
 
 Details about an unknown output for a node.
 

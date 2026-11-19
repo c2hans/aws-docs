@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/broker.html
 ---
 
 # Step 2: Set up the Amazon DCV Session Manager broker
-<a name="broker"></a>
 
 The broker must be installed on a Linux host. For more information about the supported Linux distributions, see [Amazon DCV Session Manager requirements](requirements.md). Install the broker on a host that is separate from the agent and the Amazon DCV server host. The host can be installed on a different private network, but it must be able to connect to and communicate with the agent.
 

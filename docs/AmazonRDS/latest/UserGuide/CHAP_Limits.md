@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Limits.h
 ---
 
 # Quotas and constraints for Amazon RDS
-<a name="CHAP_Limits"></a>
 
 Following, you can find a description of the resource quotas and naming constraints for Amazon RDS.
 

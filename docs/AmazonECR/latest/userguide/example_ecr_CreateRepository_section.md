@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/example_ecr_C
 ---
 
 # Use `CreateRepository` with an AWS SDK or CLI
-<a name="example_ecr_CreateRepository_section"></a>
 
 The following code examples show how to use `CreateRepository`.
 

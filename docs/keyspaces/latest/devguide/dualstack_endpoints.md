@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/dualstack_endp
 ---
 
 # Connecting to dual-stack endpoints
-<a name="dualstack_endpoints"></a>
 
 Amazon Keyspaces global endpoints are dual-stack endpoints that accept IPv4 and IPv6 requests.
 

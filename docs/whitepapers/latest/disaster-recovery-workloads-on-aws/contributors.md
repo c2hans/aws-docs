@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-wor
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 +  Alex Livingstone, Practice Lead Cloud Operations, AWS Enterprise Support

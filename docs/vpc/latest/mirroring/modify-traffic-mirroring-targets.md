@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/mirroring/modify-traffic-mirr
 ---
 
 # View traffic mirror targets and modify target tags
-<a name="modify-traffic-mirroring-targets"></a>
 
 A traffic mirror target is the destination for mirrored traffic. For more information, see [Understand traffic mirror target concepts](traffic-mirroring-targets.md).
 

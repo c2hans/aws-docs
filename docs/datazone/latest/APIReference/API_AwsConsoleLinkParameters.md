@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AwsCons
 ---
 
 # AwsConsoleLinkParameters
-<a name="API_AwsConsoleLinkParameters"></a>
 
 The parameters of the console link specified as part of the environment action.
 

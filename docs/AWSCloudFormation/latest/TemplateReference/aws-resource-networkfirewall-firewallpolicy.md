@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkFirewall::FirewallPolicy
-<a name="aws-resource-networkfirewall-firewallpolicy"></a>
 
 Use the firewall policy to define the stateless and stateful network traffic filtering behavior for your firewall. You can use one firewall policy for multiple firewalls.
 

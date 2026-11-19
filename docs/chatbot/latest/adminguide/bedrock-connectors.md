@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/bedrock-connec
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Connecting Amazon Bedrock to chat channels
-<a name="bedrock-connectors"></a>
 
  To connect an agent to a chat channel, you must set up a connector. Connector commands are used to manage connectors in your chat channel. Amazon Q Developer in chat applications connectors work by assigning a friendly name to a specific alias of an Amazon Bedrock agent. Once this configuration is defined, you can start conversing with this agent directly in your chat channel.
 

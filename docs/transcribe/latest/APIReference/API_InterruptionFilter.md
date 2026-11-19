@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Inter
 ---
 
 # InterruptionFilter
-<a name="API_InterruptionFilter"></a>
 
 Flag the presence or absence of interruptions in your Call Analytics transcription output.
 

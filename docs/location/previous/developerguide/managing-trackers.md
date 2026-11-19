@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/managin
 ---
 
 # Manage tracker resources with Amazon Location
-<a name="managing-trackers"></a>
 
 You can manage your trackers using the Amazon Location console, the AWS CLI, or the Amazon Location APIs.
 

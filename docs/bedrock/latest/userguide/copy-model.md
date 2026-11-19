@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/copy-model.html
 ---
 
 # Copy a customized or shared model to use in a Region
-<a name="copy-model"></a>
 
 By default, models are only available in the Region and account in which they were created. Amazon Bedrock provides you the ability to copy some types of models to other Regions. You can copy the following the types of models to other Regions:
 + [Custom models](custom-models.md)

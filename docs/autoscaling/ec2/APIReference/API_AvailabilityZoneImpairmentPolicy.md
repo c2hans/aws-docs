@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Availab
 ---
 
 # AvailabilityZoneImpairmentPolicy
-<a name="API_AvailabilityZoneImpairmentPolicy"></a>
 
  Describes an Availability Zone impairment policy.
 

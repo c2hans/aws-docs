@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Data lifecycle in generative AI
-<a name="lifecycle"></a>
 
 Implementing generative AI in an enterprise involves a data lifecycle that parallels the traditional AI/ML lifecycle. However, there are unique considerations at each stage. The key phases include data preparation, integration into model workflows (such as retrieval or fine-tuning), feedback collection, and ongoing updates. This section explores these interconnected data lifecycle stages and details the essential processes, challenges, and best practices that organizations must consider when developing and deploying generative AI solutions.
 

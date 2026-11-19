@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Creating a custom action
-<a name="securityhub-cwe-configure"></a>
 
 When you create a custom action in AWS Security Hub CSPM, you specify its name, description, and a unique identifier.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DisassociateReplicationGroupMemberAction
-<a name="API_DisassociateReplicationGroupMemberAction"></a>
 
 The parameters for disassociating the local replica from a global table using Version 2019.11.21 with multi-Region eventual consistency (MREC).
 

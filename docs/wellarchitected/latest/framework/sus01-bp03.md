@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus01-b
 ---
 
 # SUS01-BP03 Select Regions that align to your sustainability goals
-<a name="sus01-bp03"></a>
 
  While many factors influence Region selection, incorporating sustainability into your decision-making can support your environmental goals. Choose an AWS Region by first evaluating essential requirements such as cost, latency, service availability, and compliance. Then, from the shortlisted Regions that meet these criteria, consider the carbon intensity of each Region's power grid to make an environmentally conscious decision.
 

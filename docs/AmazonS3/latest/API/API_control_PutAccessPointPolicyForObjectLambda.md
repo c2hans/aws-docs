@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutAcces
 ---
 
 # PutAccessPointPolicyForObjectLambda
-<a name="API_control_PutAccessPointPolicyForObjectLambda"></a>
 
 **Note**
 This operation is not supported by directory buckets.

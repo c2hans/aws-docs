@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Describ
 ---
 
 # DescribeLocationFsxOpenZfs
-<a name="API_DescribeLocationFsxOpenZfs"></a>
 
 Provides details about how an AWS DataSync transfer location for an Amazon FSx for OpenZFS file system is configured.
 

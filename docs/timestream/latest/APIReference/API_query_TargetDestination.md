@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # TargetDestination
-<a name="API_query_TargetDestination"></a>
 
 Destination details to write data for a target data source. Current supported data source is Timestream.
 

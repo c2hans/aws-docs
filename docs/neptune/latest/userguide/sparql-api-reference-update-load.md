@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-api-refe
 ---
 
 # Using SPARQL UPDATE LOAD to import data into Neptune
-<a name="sparql-api-reference-update-load"></a>
 
 The syntax of the SPARQL UPDATE LOAD command is specified in the [SPARQL 1.1 Update recommendation](https://www.w3.org/TR/sparql11-update/#load):
 

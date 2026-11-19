@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Mitigate risks
-<a name="raibr04"></a>
 
 | RAIBR04: How will you mitigate the risks you have identified? |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccess
 ---
 
 # DeleteAccessKey
-<a name="API_DeleteAccessKey"></a>
 
 Deletes the access key pair associated with the specified IAM user.
 

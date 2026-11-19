@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Me
 ---
 
 # MetadataUpdates
-<a name="API_MetadataUpdates"></a>
 
 Contains DICOMUpdates.
 

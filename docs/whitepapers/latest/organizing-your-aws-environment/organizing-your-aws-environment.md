@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # Organizing Your AWS Environment Using Multiple Accounts
-<a name="organizing-your-aws-environment"></a>
 
 Publication date: **April 30, 2025** ([Document history](document-history.md))
 

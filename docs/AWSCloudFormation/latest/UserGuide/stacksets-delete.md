@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stack
 ---
 
 # Delete CloudFormation StackSets
-<a name="stacksets-delete"></a>
 
 To delete a StackSet, you must first delete all stacks in the StackSet. For information about how to delete all stacks, see [Delete stacks from StackSets](stackinstances-delete.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf04-
 ---
 
 # PERF04-BP06 Choose your workload's location based on network requirements
-<a name="perf04-bp06"></a>
 
  Traffic that crosses continents is slower than traffic served nearby. Placing resources close to users and caching content at the edge reduces page load and data transfer times for remote users.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutMulti
 ---
 
 # PutMultiRegionAccessPointPolicyInput
-<a name="API_control_PutMultiRegionAccessPointPolicyInput"></a>
 
 A container for the information associated with a [PutMultiRegionAccessPoint](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutMultiRegionAccessPoint.html) request.
 

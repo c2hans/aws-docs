@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Performing common scheduling tasks for Oracle DB instances
-<a name="Appendix.Oracle.CommonDBATasks.Scheduler"></a>
 
 Some scheduler jobs owned by `SYS` can interfere with normal database operations. In such cases, Oracle Support recommends that you modify the schedule. If you need to enable or disable `SYS` jobs, test the operation on scheduled jobs in a test environment before implementing it in a production environment. To perform tasks for Oracle Scheduler jobs owned by `SYS`, use the Amazon RDS package `rdsadmin.rdsadmin_dbms_scheduler`.
 
@@ -21,7 +20,7 @@ To perform tasks with Oracle Scheduler, use procedures in the Amazon RDS package
 
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |
-| `name` | varchar2 | The procedures listed in the table in [Performing common scheduling tasks for Oracle DB instances](#Appendix.Oracle.CommonDBATasks.Scheduler)  | — | Yes | The name of the job to modify. |
+| `name` | varchar2 | The procedures listed in the table in [Performing common scheduling tasks for Oracle DB instances](Appendix.Oracle.CommonDBATasks.Scheduler.md)  | — | Yes | The name of the job to modify. |
 | `attribute` | varchar2 | `'REPEAT_INTERVAL'`,`'SCHEDULE_NAME'` | – | Yes | Attribute to modify.<br />To modify the repeat interval for the job, specify `'REPEAT_INTERVAL'`.<br />To modify the schedule name for the job, specify `'SCHEDULE_NAME'`. |
 | `value` | varchar2 | A valid schedule interval or schedule name, depending on attribute used. | – | Yes | The new value of the attribute. |
 

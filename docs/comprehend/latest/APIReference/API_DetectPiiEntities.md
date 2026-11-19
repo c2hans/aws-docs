@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Detec
 ---
 
 # DetectPiiEntities
-<a name="API_DetectPiiEntities"></a>
 
 Inspects the input text for entities that contain personally identifiable information (PII) and returns information about them.
 

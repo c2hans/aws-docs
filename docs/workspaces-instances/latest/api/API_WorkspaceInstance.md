@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Work
 ---
 
 # WorkspaceInstance
-<a name="API_WorkspaceInstance"></a>
 
 Represents a single WorkSpace Instance.
 

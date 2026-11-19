@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # Redshift connections
-<a name="aws-glue-programming-etl-connect-redshift-home"></a>
 
 You can use AWS Glue for Spark to read from and write to tables in Amazon Redshift databases. When connecting to Amazon Redshift databases, AWS Glue moves data through Amazon S3 to achieve maximum throughput, using the Amazon Redshift SQL `COPY` and `UNLOAD` commands. In AWS Glue 4.0 and later, you can use the [Amazon Redshift integration for Apache Spark](https://docs.aws.amazon.com/redshift/latest/mgmt/spark-redshift-connector.html) to read and write with optimizations and features specific to Amazon Redshift beyond those available when connecting through previous versions.
 

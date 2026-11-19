@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Descr
 ---
 
 # DescribeCases
-<a name="API_DescribeCases"></a>
 
 Returns a list of cases that you specify by passing one or more case IDs. You can use the `afterTime` and `beforeTime` parameters to filter the cases by date. You can set values for the `includeResolvedCases` and `includeCommunications` parameters to specify how much information to return.
 

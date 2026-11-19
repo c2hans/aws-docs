@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Retrieving Amazon Verified Permissions policy store aliases
-<a name="policy-store-aliases-retrieve"></a>
 
 You can retrieve information about policy store aliases using the `GetPolicyStoreAlias` operation to get details about a specific policy store alias, or the `ListPolicyStoreAliases` operation to list all policy store aliases in your AWS account and Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_IdentitySour
 ---
 
 # IdentitySourceForList
-<a name="API_IdentitySourceForList"></a>
 
 Contains details for an identity source. For more information, see [Identity source](https://docs.aws.amazon.com/mpa/latest/userguide/mpa-concepts.html) in the *Multi-party approval User Guide*.
 

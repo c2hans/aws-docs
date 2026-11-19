@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeLoggingStatus
-<a name="API_DescribeLoggingStatus"></a>
 
 Describes whether information, such as queries and connection attempts, is being logged for the specified Amazon Redshift cluster.
 

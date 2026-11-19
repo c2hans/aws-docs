@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # UpdateSignalingChannel
-<a name="API_UpdateSignalingChannel"></a>
 
 Updates the existing signaling channel. This is an asynchronous operation and takes time to complete.
 

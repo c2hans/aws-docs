@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-migrat
 ---
 
 # Network configuration and port settings
-<a name="dotnet-migrating-applications-network"></a>
 
 This section covers network configuration options for IIS migrations, including VPC settings, port configurations, and multi-site deployments.
 

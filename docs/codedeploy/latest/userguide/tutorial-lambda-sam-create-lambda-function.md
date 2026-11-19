@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-lam
 ---
 
 # Create a file for your Lambda function
-<a name="tutorial-lambda-sam-create-lambda-function"></a>
 
 Create the file for the function you update and deploy later in this tutorial.
 

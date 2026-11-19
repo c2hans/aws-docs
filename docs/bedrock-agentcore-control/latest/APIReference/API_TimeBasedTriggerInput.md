@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # TimeBasedTriggerInput
-<a name="API_TimeBasedTriggerInput"></a>
 
 Trigger configuration based on time.
 

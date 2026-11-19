@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::LaunchTemplate TagSpecification
-<a name="aws-properties-ec2-launchtemplate-tagspecification"></a>
 
 Specifies the tags to apply to resources that are created during instance launch.
 

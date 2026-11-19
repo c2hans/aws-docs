@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/lts-idt-freert
 ---
 
 # IDT with FreeRTOS qualification suite 2.0 (FRQ 2.0)
-<a name="lts-idt-freertos-qualification"></a>
 
 The FreeRTOS qualification suite 2.0 is an updated version of FreeRTOS qualification suite. We recommend developers to use FRQ 2.0 because it consists of relevant test cases to qualify devices that run FreeRTOS Long Term Support (LTS) libraries.
 

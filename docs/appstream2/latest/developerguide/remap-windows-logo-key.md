@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/remap-w
 ---
 
 # Remap the Windows Logo Key or Command Key
-<a name="remap-windows-logo-key"></a>
 
 You can remap the Mac Option and Command keys on your keyboard.
 

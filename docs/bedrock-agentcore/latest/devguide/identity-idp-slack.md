@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Slack
-<a name="identity-idp-slack"></a>
 
 Slack can be configured as an AgentCore Identity credential provider for outbound resource access. This allows your agents to authenticate users through Slack’s OAuth2 service and obtain access tokens for Slack API resources.
 

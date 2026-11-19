@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/spgi-global-energ
 ---
 
 # Using third party data in Quick Research (S&P Global Energy)
-<a name="spgi-global-energy"></a>
 
 S&P Global Energy Data aggregates a vast array of textual content across thousands of documents about commodity and energy markets into an AI Ready data format, updated every 30 minutes. It enables users to ask customized questions on a range of topics such as regulatory challenges, investment opportunities, and trade flows.
 

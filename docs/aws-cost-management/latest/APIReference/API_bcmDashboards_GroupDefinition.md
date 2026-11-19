@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GroupDefinition
-<a name="API_bcmDashboards_GroupDefinition"></a>
 
 Specifies how to group cost and usage data.
 

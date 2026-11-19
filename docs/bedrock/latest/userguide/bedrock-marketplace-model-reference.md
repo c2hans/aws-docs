@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-marketp
 ---
 
 # Model compatibility
-<a name="bedrock-marketplace-model-reference"></a>
 
 All models can use the `InvokeModel` operation. Some models can use the `Converse` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/cm-editcases.h
 ---
 
 # Edit a case in Connect Customer
-<a name="cm-editcases"></a>
 
 To edit a case, the agent chooses **Edit** and **Save** to save any changes.
 

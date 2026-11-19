@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Resources
-<a name="resources"></a>
 
 For more information about mainframe migration and modernization, see the following resources.
 

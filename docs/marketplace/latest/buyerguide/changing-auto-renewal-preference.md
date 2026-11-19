@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/changing-a
 ---
 
 # Changing your auto-renewal preference
-<a name="changing-auto-renewal-preference"></a>
 
 You can opt in or opt out of auto-renewal any time before the renewal decision deadline. Choose **Edit auto-renewal** in any of three places:
 + On the **Manage subscriptions** page, select the agreement, and choose **Edit auto-renewal**.

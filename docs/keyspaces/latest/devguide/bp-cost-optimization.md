@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/bp-cost-optimi
 ---
 
 # Optimizing costs of Amazon Keyspaces tables
-<a name="bp-cost-optimization"></a>
 
 This section covers best practices on how to optimize costs for your existing Amazon Keyspaces tables. You should look at the following strategies to see which cost optimization strategy best suits your needs and approach them iteratively. Each strategy provides an overview of what might be impacting your costs, how to look for opportunities to optimize costs, and prescriptive guidance on how to implement these best practices to help you save.
 

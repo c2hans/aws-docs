@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/d
 ---
 
 # How to customize Docker images
-<a name="docker-custom-images-steps"></a>
 
 Follow these steps to customize Docker images for Amazon EMR on EKS. The steps show you how to get a base image, customize and publish it, and submit a workload using the image.
 + [Prerequisites](#docker-custom-images-prereq)

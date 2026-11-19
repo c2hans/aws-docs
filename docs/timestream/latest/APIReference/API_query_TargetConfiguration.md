@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # TargetConfiguration
-<a name="API_query_TargetConfiguration"></a>
 
 Configuration used for writing the output of a query.
 

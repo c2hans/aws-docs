@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/utterance-generation.htm
 ---
 
 # Use utterance generation to generate sample utterances for intent recognition
-<a name="utterance-generation"></a>
 
 **Note**
 Before you can take advantage of the generative AI features, you must fulfill the following prerequisites

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DialogActi
 ---
 
 # DialogAction
-<a name="API_DialogAction"></a>
 
 Defines the action that the bot executes at runtime when the conversation reaches this step.
 

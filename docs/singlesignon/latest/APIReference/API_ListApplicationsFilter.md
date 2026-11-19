@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListApplicationsFilter
-<a name="API_ListApplicationsFilter"></a>
 
 A structure that describes a filter for applications.
 

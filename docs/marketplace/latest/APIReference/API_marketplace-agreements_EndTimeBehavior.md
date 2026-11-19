@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # EndTimeBehavior
-<a name="API_marketplace-agreements_EndTimeBehavior"></a>
 
 The behavior of an agreement when it reaches its end date. For example, whether the agreement renews, and if it doesn't, the reason why.
 

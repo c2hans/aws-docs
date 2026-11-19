@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_PutSynch
 ---
 
 # PutSynchronizationConfiguration
-<a name="API_S3Files_PutSynchronizationConfiguration"></a>
 
 Creates or updates the synchronization configuration for the specified S3 File System, including import data rules and expiration data rules.
 

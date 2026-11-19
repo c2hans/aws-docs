@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-create-vpc-ipa
 ---
 
 # Tutorial: Create an IPAM and pools using the AWS CLI
-<a name="tutorials-create-vpc-ipam"></a>
 
 Follow the steps in this tutorial to use the AWS CLI to create an IPAM, create IP address pools, and allocate a VPC with a CIDR from an IPAM pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/search-cases.h
 ---
 
 # Search cases in Connect Customer to view customer contact details
-<a name="search-cases"></a>
 
 You can search cases using a keyword match. Connect Customer searches data across all system and custom fields. The results are sorted from most-recently to least-recently updated case.
 

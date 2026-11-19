@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-cross
 ---
 
 # Tutorial: Mount an S3 file system across accounts
-<a name="s3-files-cross-account"></a>
 
 You can access an S3 file system from compute resources in a different AWS account than the file system owner account. This is called cross-account access. With cross-account access, teams in different accounts can share the same file system without duplicating data.
 

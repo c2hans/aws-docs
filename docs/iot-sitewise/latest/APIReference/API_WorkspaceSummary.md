@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Wor
 ---
 
 # WorkspaceSummary
-<a name="API_WorkspaceSummary"></a>
 
 Contains summary information about a workspace, including its name, ARN, status, and creation and update timestamps.
 

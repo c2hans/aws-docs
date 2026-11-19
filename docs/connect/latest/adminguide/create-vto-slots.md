@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-vto-slo
 ---
 
 # Create Voluntary time off slots for agents in your contact center
-<a name="create-vto-slots"></a>
 
 1. Choose the **Make Request** button in the Published schedule calendar UI and select **VTO**.
 

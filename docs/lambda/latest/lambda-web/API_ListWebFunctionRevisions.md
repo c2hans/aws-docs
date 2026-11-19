@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_ListWebFunc
 ---
 
 # ListWebFunctionRevisions
-<a name="API_ListWebFunctionRevisions"></a>
 
 Lists revisions for a web function. Use pagination to ensure that the operation returns quickly and successfully.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # DescribeDeviceEc2Instances
-<a name="API_devicemanagement_DescribeDeviceEc2Instances"></a>
 
 Checks the current state of the Amazon EC2-compatible instances. The output is similar to `describeDevice`, but the results are sourced from the device cache in the AWS Cloud and include a subset of the available fields.
 

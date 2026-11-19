@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotImportS
 ---
 
 # BotImportSpecification
-<a name="API_BotImportSpecification"></a>
 
 Provides the bot parameters required for importing a bot.
 

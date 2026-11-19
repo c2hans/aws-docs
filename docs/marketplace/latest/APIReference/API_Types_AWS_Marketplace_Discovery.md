@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Type
 ---
 
 # AWS Marketplace Discovery
-<a name="API_Types_AWS_Marketplace_Discovery"></a>
 
 The following data types are supported by AWS Marketplace Discovery:
 +  [AmazonMachineImageEbsVolume](API_marketplace-discovery_AmazonMachineImageEbsVolume.md)

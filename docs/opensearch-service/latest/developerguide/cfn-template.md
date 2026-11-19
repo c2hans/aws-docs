@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Using CloudFormation to set up remote inference for semantic search
-<a name="cfn-template"></a>
 
 Starting with OpenSearch version 2.9, you can use remote inference with [semantic search](https://opensearch.org/docs/latest/search-plugins/semantic-search/) to host your own machine learning (ML) models. Remote inference uses the [ML Commons plugin](https://opensearch.org/docs/latest/ml-commons-plugin/index/).
 

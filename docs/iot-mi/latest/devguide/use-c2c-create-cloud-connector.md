@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/use-c2c-create-cl
 ---
 
 # Use a C2C (Cloud-to-Cloud) connector
-<a name="use-c2c-create-cloud-connector"></a>
 
  A C2C connector manages the translation of request and response messages, and enables communication between managed integrations and a third-party vendor cloud. It facilitates unified control across different device types, platforms and protocols enabling third-party devices to be onboarded and managed.
 

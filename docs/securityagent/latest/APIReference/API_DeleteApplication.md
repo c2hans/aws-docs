@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_De
 ---
 
 # DeleteApplication
-<a name="API_DeleteApplication"></a>
 
 Deletes an application and its associated configuration, including IAM Identity Center settings.
 

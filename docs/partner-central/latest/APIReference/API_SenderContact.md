@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # SenderContact
-<a name="API_SenderContact"></a>
 
 An object that contains the details of the sender-provided contact person for the `EngagementInvitation`.
 

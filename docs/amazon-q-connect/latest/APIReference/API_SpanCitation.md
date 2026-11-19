@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # SpanCitation
-<a name="API_amazon-q-connect_SpanCitation"></a>
 
 A citation that spans a specific range of text.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/containe
 ---
 
 # Monitor Amazon ECS container instance health
-<a name="container-instance-health"></a>
 
 Amazon ECS provides container instance health monitoring. You can quickly determine whether Amazon ECS has detected any problems that might prevent your container instances from running containers. Amazon ECS performs automated checks on every running container instance with agent version `1.57.0` or later to identify issues. For more information on verifying the agent version an a container instance, see [Updating the Amazon ECS container agent](ecs-agent-update.md).
 

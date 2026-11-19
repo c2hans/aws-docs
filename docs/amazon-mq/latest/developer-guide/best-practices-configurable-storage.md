@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/best-pr
 ---
 
 # Configurable storage best practices for Amazon MQ for RabbitMQ
-<a name="best-practices-configurable-storage"></a>
 
  Amazon MQ for RabbitMQ brokers use Amazon Elastic Block Store (Amazon EBS) for persistent storage. Configure the storage size within a range that depends on your instance type. Monitoring your broker's disk usage over time helps you choose the right storage size and avoid disk alarm events that block publishers.
 

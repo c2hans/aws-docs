@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # UserIntentCluster
-<a name="API_UserIntentCluster"></a>
 
 A cluster of similar user intents identified across sessions.
 

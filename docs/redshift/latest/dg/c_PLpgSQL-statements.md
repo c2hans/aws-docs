@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/c_PLpgSQL-statements.
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Supported PL/pgSQL statements
-<a name="c_PLpgSQL-statements"></a>
 
  PL/pgSQL statements augment SQL commands with procedural constructs, including looping and conditional expressions, to control logical flow. Most SQL commands can be used, including data manipulation language (DML) such as COPY, UNLOAD, and INSERT, and data definition language (DDL) such as CREATE TABLE. For a list of comprehensive SQL commands, see [SQL commands](c_SQL_commands.md). In addition, the following PL/pgSQL statements are supported by Amazon Redshift.
 

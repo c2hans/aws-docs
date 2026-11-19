@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/view-call-tran
 ---
 
 # View a call transcript during ACW in the CCP or Connect Customer agent workspace
-<a name="view-call-transcript-ccp"></a>
 
 At the end of a call, you can see an unredacted transcript of your conversation in the CCP or agent workspace. You can view the entire transcript for reference, and copy any useful text into your notes.
 

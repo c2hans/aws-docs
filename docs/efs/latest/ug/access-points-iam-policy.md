@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/access-points-iam-policy.h
 ---
 
 # Using access points in IAM policies
-<a name="access-points-iam-policy"></a>
 
 You can use an IAM policy to enforce that a specific NFS client, identified by its IAM role, can only access a specific access point. To do this, you use the `elasticfilesystem:AccessPointArn` IAM condition key. The `AccessPointArn` is the Amazon Resource Name (ARN) of the access point that the file system is mounted with.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_DeleteAp
 ---
 
 # DeleteApplication
-<a name="API_DeleteApplication"></a>
 
 Deletes the specified application along with all associated versions and configurations. The application versions will not be deleted from your Amazon S3 bucket.
 

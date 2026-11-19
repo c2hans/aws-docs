@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/spaces-dev
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Stopping a Dev Environment for your space
-<a name="spaces-devenv-stop"></a>
 
 You can stop a running Dev Environment before it becomes idle if the Dev Environment is configured to have a timeout. Otherwise, a Dev Environment with an elapsed timeout will already be stopped. For more information about stopping a Dev Environment, see [Stopping a Dev Environment](devenvironment-stop.md).
 

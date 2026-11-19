@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_CreateCa
 ---
 
 # Use `CreateCapacityReservation` with a CLI
-<a name="example_ec2_CreateCapacityReservation_section"></a>
 
 The following code examples show how to use `CreateCapacityReservation`.
 

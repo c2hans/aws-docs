@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestExecut
 ---
 
 # TestExecutionSortBy
-<a name="API_TestExecutionSortBy"></a>
 
 Contains information about the method by which to sort the instances of test executions you have carried out.
 

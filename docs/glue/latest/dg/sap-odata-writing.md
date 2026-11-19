@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sap-odata-writing.html
 ---
 
 # Writing to SAP OData
-<a name="sap-odata-writing"></a>
 
  This section describes how to write data to your SAP OData Service using the AWS Glue connector for SAP OData.
 

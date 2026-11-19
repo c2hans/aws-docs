@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # Section
-<a name="API_connect-cases_Section"></a>
 
 This represents a sections within a panel or tab of the page layout.
 

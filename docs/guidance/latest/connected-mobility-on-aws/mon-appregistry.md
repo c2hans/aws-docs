@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Service Catalog AppRegistry
-<a name="mon-appregistry"></a>
 
 The Guidance registers with AWS Service Catalog AppRegistry, which groups every deployed resource under one application for centralized management, tags resources with application metadata for cost tracking, and provides resource health and cost views across the deployment.
 

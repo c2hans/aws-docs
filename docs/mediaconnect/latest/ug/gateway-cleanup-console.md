@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/gateway-cleanup-c
 ---
 
 # Removing a MediaConnect Gateway
-<a name="gateway-cleanup-console"></a>
 
 To remove a gateway, you must first remove all of its components, such as its networks, instances, and bridges. The following is the process for removing a gateway and its components.
 

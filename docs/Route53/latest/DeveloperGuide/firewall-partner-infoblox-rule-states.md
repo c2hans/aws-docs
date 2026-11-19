@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/firewall-p
 ---
 
 # Rule states for Infoblox rules
-<a name="firewall-partner-infoblox-rule-states"></a>
 
 Infoblox rules in DNS Firewall can have different sync states that indicate their status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ResultByTime
-<a name="API_ResultByTime"></a>
 
 The result that's associated with a time period.
 

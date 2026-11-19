@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBClus
 ---
 
 # DBClusterOptionGroupStatus
-<a name="API_DBClusterOptionGroupStatus"></a>
 
 Contains status information for a DB cluster option group.
 

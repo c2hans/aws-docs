@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Dat
 ---
 
 # DatasetSummary
-<a name="API_DatasetSummary"></a>
 
 The summary details for the dataset.
 

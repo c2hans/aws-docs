@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorRu
 ---
 
 # ConnectorRuntimeSetting
-<a name="API_ConnectorRuntimeSetting"></a>
 
 Contains information about the connector runtime settings that are required for flow execution.
 

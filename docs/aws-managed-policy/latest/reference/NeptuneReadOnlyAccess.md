@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Nept
 ---
 
 # NeptuneReadOnlyAccess
-<a name="NeptuneReadOnlyAccess"></a>
 
 **Description**: Provides read only access to Amazon Neptune. Note that this policy also grants access to Amazon RDS resources. For more information, see https://aws.amazon.com/neptune/faqs/.
 

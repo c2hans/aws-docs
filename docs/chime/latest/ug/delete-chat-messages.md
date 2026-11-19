@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/delete-chat-messages.htm
 ---
 
 # Deleting sent messages
-<a name="delete-chat-messages"></a>
 
 By design, Amazon Chime prevents you from deleting chat messages after you send them. This applies to messages sent in conversations, groups, and chat rooms. Amazon Chime does this in order to comply with data retention policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
 Creates or updates a resource-based policy for a resource with the specified resourceArn.
 

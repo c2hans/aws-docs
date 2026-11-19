@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/evidently-s
 ---
 
 # evidently-segment-description
-<a name="evidently-segment-description"></a>
 
 Checks if Amazon CloudWatch Evidently segments have a description. The rule is NON\_COMPLIANT if configuration.Description does not exist or is an empty string.
 

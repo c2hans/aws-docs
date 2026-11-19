@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DataSource
-<a name="API_DataSource"></a>
 
 Data sources that are associated with an OpenSearch application.
 

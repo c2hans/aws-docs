@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsMskC
 ---
 
 # AwsMskClusterClusterInfoClientAuthenticationDetails
-<a name="API_AwsMskClusterClusterInfoClientAuthenticationDetails"></a>
 
  Provides details about different modes of client authentication.
 

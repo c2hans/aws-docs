@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/adminguide/managing-evalua
 ---
 
 # Managing evaluations
-<a name="managing-evaluations"></a>
 
 An evaluation is how Amazon Connect Talent measures a candidate for a job. Recruiters create, configure, publish, and manage evaluations. Each evaluation measures a candidate against the competencies for the job using assessments, an AI-led interview, or both.
 

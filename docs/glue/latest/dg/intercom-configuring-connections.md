@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/intercom-configuring-conn
 ---
 
 # Configuring Intercom connections
-<a name="intercom-configuring-connections"></a>
 
  Intercom supports the `AUTHORIZATION_CODE` grant type for OAuth 2.
 

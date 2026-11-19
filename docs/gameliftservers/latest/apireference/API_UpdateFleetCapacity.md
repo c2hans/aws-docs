@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # UpdateFleetCapacity
-<a name="API_UpdateFleetCapacity"></a>
 
  **This API works with the following fleet types:** EC2, Container
 

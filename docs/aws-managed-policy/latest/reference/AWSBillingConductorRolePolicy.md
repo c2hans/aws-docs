@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBillingConductorRolePolicy
-<a name="AWSBillingConductorRolePolicy"></a>
 
 **Description**: Provides AWS Billing Conductor access to manage billing groups and related resources
 

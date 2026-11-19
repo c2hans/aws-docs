@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Client setup
-<a name="client-setup"></a>
 
 This section describes how to set up and configure the client applications for accessing Spatial Data Management on AWS:
 +  **Web portal** – Browser-based interface for resource management, asset creation and modification, and file upload and download. Convenient for one-off tasks. Uploads are limited to 5,000 files per asset, 50 GB total size, 20 GB per file, and 3 simultaneous operations.

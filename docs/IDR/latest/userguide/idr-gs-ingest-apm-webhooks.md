@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/idr-gs-ingest-apm-w
 ---
 
 # Ingest alarms from APMs without direct integration with EventBridge
-<a name="idr-gs-ingest-apm-webhooks"></a>
 
 AWS Incident Detection and Response supports using webhooks for alarm ingestion from third party APMs that don't have direct integration with Amazon EventBridge.
 

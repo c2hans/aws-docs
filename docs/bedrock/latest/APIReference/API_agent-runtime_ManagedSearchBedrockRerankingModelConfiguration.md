@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ManagedSearchBedrockRerankingModelConfiguration
-<a name="API_agent-runtime_ManagedSearchBedrockRerankingModelConfiguration"></a>
 
 Model configuration for a Bedrock reranking model used in managed search.
 

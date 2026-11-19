@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_BlockAction.
 ---
 
 # BlockAction
-<a name="API_BlockAction"></a>
 
 Specifies that AWS WAF should block the request and optionally defines additional custom handling for the response to the web request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # UpdateFirewallEncryptionConfiguration
-<a name="API_UpdateFirewallEncryptionConfiguration"></a>
 
 A complex type that contains settings for encryption of your firewall resources.
 

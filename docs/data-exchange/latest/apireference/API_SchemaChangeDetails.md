@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Sc
 ---
 
 # SchemaChangeDetails
-<a name="API_SchemaChangeDetails"></a>
 
 Object encompassing information about a schema change to a single, particular field, a notification can have up to 100 of these.
 

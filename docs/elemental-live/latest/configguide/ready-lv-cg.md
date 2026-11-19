@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/ready-
 ---
 
 # Getting ready
-<a name="ready-lv-cg"></a>
 
 Be aware of the following topics before starting phase 2 of installation.
 

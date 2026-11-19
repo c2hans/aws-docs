@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListAu
 ---
 
 # ListAutoMLJobs
-<a name="API_ListAutoMLJobs"></a>
 
 Request a list of jobs.
 

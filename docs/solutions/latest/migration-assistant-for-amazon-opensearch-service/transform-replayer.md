@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Transform live traffic (Traffic Replayer)
-<a name="transform-replayer"></a>
 
 During migrations, some requests may need to be transformed between versions. Traffic Replayer automatically rewrites host and authentication headers. For more complex transformations, specify custom transformation rules in your workflow configuration using the `replayerConfig` section.
 

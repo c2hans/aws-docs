@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_De
 ---
 
 # DeleteAgentAlias
-<a name="API_agent_DeleteAgentAlias"></a>
 
 Deletes an alias of an agent.
 

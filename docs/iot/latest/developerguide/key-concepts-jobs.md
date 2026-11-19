@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/key-concepts-j
 ---
 
 # Jobs key concepts
-<a name="key-concepts-jobs"></a>
 
 The following concepts provide details about AWS IoT Jobs and how to create and deploy jobs to run remote operations on your devices.
 

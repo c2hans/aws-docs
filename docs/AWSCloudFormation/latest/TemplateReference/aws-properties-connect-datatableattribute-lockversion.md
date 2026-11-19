@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::DataTableAttribute LockVersion
-<a name="aws-properties-connect-datatableattribute-lockversion"></a>
 
 <a name="aws-properties-connect-datatableattribute-lockversion-description"></a>The `LockVersion` property type specifies Property description not available. for an [AWS::Connect::DataTableAttribute](aws-resource-connect-datatableattribute.md).
 

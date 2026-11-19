@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Condition
-<a name="API_Condition"></a>
 
 A condition that determines when a gateway rule applies. Conditions can match on principals, request paths, or the requested model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Step 1: Choose your deployment option
-<a name="choose-deployment-option"></a>
 
 There are three options for deployment of the initial stack and choosing the correct one depends on the security policies for the target environment.
 

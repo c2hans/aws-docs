@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_AliasRoutingConfig
 ---
 
 # AliasRoutingConfiguration
-<a name="API_AliasRoutingConfiguration"></a>
 
 The [traffic-shifting](https://docs.aws.amazon.com/lambda/latest/dg/lambda-traffic-shifting-using-aliases.html) configuration of a Lambda function alias.
 

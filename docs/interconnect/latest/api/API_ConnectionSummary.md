@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_ConnectionSu
 ---
 
 # ConnectionSummary
-<a name="API_ConnectionSummary"></a>
 
 Summarized view of a [Connection](API_Connection.md) object.
 

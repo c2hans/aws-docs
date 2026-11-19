@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Cr
 ---
 
 # CreateChannel
-<a name="API_CreateChannel"></a>
 
 Creates a new channel and an associated stream key to start streaming.
 

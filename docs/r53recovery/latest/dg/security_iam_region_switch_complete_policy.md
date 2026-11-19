@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_regio
 ---
 
 # Complete plan execution role permissions
-<a name="security_iam_region_switch_complete_policy"></a>
 
  Creating a comprehensive policy that includes permissions for all execution blocks would require a policy that is quite large. In practice, you should only include permissions for the execution blocks that you use in your specific plans.
 

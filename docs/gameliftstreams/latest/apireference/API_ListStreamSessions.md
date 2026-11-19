@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # ListStreamSessions
-<a name="API_ListStreamSessions"></a>
 
 Retrieves a list of Amazon GameLift Streams stream sessions that a stream group is hosting.
 

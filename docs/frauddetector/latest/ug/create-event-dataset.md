@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/create-event-dat
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Event dataset
-<a name="create-event-dataset"></a>
 
 An event dataset is the historical fraud data for your company. You provide this data to Amazon Fraud Detector to create fraud detection models.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Getting started with AWS
-<a name="getting-started-with-aws"></a>
 
  To begin, you must [create an AWS account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/) and an [AWS Identity and Access Management](https://aws.amazon.com/iam/) (IAM) user. An IAM user is a user within your AWS account. The IAM user allows authentication and authorization to AWS resources. Multiple IAM users can be created if multiple people need access to the same AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecu
 ---
 
 # AwsSecurityFinding
-<a name="API_AwsSecurityFinding"></a>
 
 Provides a consistent format for Security Hub CSPM findings. `AwsSecurityFinding` format allows you to share findings between AWS security services and third-party solutions.
 

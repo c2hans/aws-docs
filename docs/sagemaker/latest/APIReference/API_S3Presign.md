@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_S3Pres
 ---
 
 # S3Presign
-<a name="API_S3Presign"></a>
 
 This object defines the access restrictions to Amazon S3 resources that are included in custom worker task templates using the Liquid filter, `grant_read_access`.
 

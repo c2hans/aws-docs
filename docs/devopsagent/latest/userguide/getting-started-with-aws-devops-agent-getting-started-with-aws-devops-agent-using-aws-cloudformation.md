@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/getting-sta
 ---
 
 # Getting started with AWS DevOps Agent using AWS CloudFormation
-<a name="getting-started-with-aws-devops-agent-getting-started-with-aws-devops-agent-using-aws-cloudformation"></a>
 
 ## Overview
 <a name="overview"></a>

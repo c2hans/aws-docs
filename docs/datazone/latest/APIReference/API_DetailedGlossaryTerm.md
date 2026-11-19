@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Detaile
 ---
 
 # DetailedGlossaryTerm
-<a name="API_DetailedGlossaryTerm"></a>
 
 Details of a glossary term attached to the inventory asset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeCu
 ---
 
 # DescribeCustomVocabularyMetadata
-<a name="API_DescribeCustomVocabularyMetadata"></a>
 
 Provides metadata information about a custom vocabulary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-byoi-sdk-cle
 ---
 
 # Clean up image resources
-<a name="rstudio-byoi-sdk-cleanup"></a>
 
 This guide shows how to clean up RStudio image resources that you created in the previous sections. To delete an image, complete the following steps using either the SageMaker AI console or the AWS CLI, as shown in this guide.
 + Detach the image and image versions from your Amazon SageMaker AI domain.

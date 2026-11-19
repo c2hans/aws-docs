@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomPromptInput
-<a name="API_CustomPromptInput"></a>
 
 The custom prompt input for an agent. This is a union type that can be either an existing prompt profile or new prompt parameters.
 

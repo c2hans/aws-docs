@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/myApp-remo
 ---
 
 # Removing resources in myApplications
-<a name="myApp-remove-resources"></a>
 
 You can remove resources to disassociate them from your application.
 

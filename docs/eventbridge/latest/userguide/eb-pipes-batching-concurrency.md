@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes-ba
 ---
 
 # Amazon EventBridge Pipes batching and concurrency
-<a name="eb-pipes-batching-concurrency"></a>
 
 ## Batching behavior
 <a name="pipes-batching"></a>

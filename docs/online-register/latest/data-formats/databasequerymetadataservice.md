@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/data
 ---
 
 # Data retrieval APIs for Database Query Metadata Service
-<a name="databasequerymetadataservice"></a>
 
 Database Query Metadata Service provides the following APIs for data retrieval.
 

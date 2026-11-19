@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_La
 ---
 
 # LastDayOfMonth
-<a name="API_agent_LastDayOfMonth"></a>
 
 The option to run the monthly sync on the last calendar day of each month.
 

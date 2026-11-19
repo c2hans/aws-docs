@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/attribute
 ---
 
 # Certificate attribute mapping
-<a name="attribute-mapping"></a>
 
  IAM Roles Anywhere provides you with the capability to define a custom set of mapping rules, enabling you to specify which data are extracted from authenticating certificates as session tags for authorization policies. These customized attribute mappings are associated with a [profile](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rolesanywhere-profile.html).
 

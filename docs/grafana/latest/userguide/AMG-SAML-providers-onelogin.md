@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-SAML-provid
 ---
 
 # Configure Amazon Managed Grafana to use OneLogin
-<a name="AMG-SAML-providers-onelogin"></a>
 
 Use the following steps to configure Amazon Managed Grafana to use OneLogin as an identity provider. These steps assume that you have already created your Amazon Managed Grafana workspace and you have made a note of the workspace's ID, URLs, and Region.
 

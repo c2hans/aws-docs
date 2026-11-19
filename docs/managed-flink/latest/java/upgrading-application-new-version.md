@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/upgrading-appl
 ---
 
 # Upgrade your application to a new Apache Flink version
-<a name="upgrading-application-new-version"></a>
 
 You can upgrade your Flink application by using the [UpdateApplication](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UpdateApplication.html) action.
 

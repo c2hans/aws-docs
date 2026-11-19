@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_NodeRepairCo
 ---
 
 # NodeRepairConfig
-<a name="API_NodeRepairConfig"></a>
 
 The node auto repair configuration for the node group.
 

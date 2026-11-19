@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetWorkflowRun.ht
 ---
 
 # GetWorkflowRun
-<a name="API_GetWorkflowRun"></a>
 
 Retrieves the metadata for a given workflow run. Job run history is accessible for 90 days for your workflow and job run.
 

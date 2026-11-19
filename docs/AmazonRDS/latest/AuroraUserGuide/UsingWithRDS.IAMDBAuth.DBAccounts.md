@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWi
 ---
 
 # Creating a database account using IAM authentication
-<a name="UsingWithRDS.IAMDBAuth.DBAccounts"></a>
 
 With IAM database authentication, you don't need to assign database passwords to the user accounts you create. If you remove a user that is mapped to a database account, you should also remove the database account with the `DROP USER` statement.
 

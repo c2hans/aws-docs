@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/confi
 ---
 
 # Configuring AWS Supply Chain Analytics as an administrator
-<a name="configuring_analytics"></a>
 
 You must configure AWS Supply Chain Analytics to use Analytics dashboard.
 

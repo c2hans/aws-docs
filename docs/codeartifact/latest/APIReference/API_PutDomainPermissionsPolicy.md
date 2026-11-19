@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Put
 ---
 
 # PutDomainPermissionsPolicy
-<a name="API_PutDomainPermissionsPolicy"></a>
 
  Sets a resource policy on a domain that specifies permissions to access it.
 

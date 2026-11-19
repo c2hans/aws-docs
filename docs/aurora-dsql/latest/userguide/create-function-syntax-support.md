@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/create-func
 ---
 
 # `CREATE FUNCTION`
-<a name="create-function-syntax-support"></a>
 
 `CREATE FUNCTION` defines a new function.
 

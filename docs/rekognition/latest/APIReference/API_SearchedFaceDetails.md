@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Sear
 ---
 
 # SearchedFaceDetails
-<a name="API_SearchedFaceDetails"></a>
 
 Contains data regarding the input face used for a search.
 

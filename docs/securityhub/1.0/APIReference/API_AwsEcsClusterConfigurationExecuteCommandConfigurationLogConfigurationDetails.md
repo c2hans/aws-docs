@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsC
 ---
 
 # AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetails
-<a name="API_AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetails"></a>
 
 The log configuration for the results of the run command actions.
 

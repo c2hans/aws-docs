@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/kro-concepts.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # kro concepts
-<a name="kro-concepts"></a>
 
 kro enables platform teams to create custom Kubernetes APIs that compose multiple resources into higher-level abstractions. This topic walks through a practical example, then explains the core concepts you need to understand when working with the EKS Capability for kro.
 

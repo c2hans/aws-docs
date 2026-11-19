@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ad
 ---
 
 # How to add a polygon to a static map
-<a name="how-to-add-polygon-static"></a>
 
 Buildings and locations can be highlighted on a map by designating a polygon around them, for example, the Pentagon (located in Washington, D.C.).
 

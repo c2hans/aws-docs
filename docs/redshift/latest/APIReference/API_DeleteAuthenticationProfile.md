@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteA
 ---
 
 # DeleteAuthenticationProfile
-<a name="API_DeleteAuthenticationProfile"></a>
 
 Deletes an authentication profile.
 

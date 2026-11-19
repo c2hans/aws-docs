@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailSummary
-<a name="API_GuardrailSummary"></a>
 
 Contains details about a guardrail.
 

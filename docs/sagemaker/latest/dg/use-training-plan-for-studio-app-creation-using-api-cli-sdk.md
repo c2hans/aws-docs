@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/use-training-plan-fo
 ---
 
 # Create or update a Studio app with a training plan using the SageMaker API or AWS CLI
-<a name="use-training-plan-for-studio-app-creation-using-api-cli-sdk"></a>
 
 To use SageMaker training plans for your SageMaker Studio app, specify the ARN of the training plan in the [`TrainingPlanArn`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ResourceSpec.html#sagemaker-Type-ResourceSpec-TrainingPlanArn) parameter of the [`ResourceSpec`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ResourceSpec.html) when calling the [`CreateApp`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateApp.html) API operation.
 

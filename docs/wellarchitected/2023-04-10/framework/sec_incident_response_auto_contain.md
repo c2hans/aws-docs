@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC10-BP04 Automate containment capability
-<a name="sec_incident_response_auto_contain"></a>
 
 Automate containment and recovery of an incident to reduce response times and organizational impact.
 

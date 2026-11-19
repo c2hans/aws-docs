@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_CrossRegionC
 ---
 
 # CrossRegionCopyRule
-<a name="API_CrossRegionCopyRule"></a>
 
  **[Custom snapshot and AMI policies only]** Specifies a cross-Region copy rule for a snapshot and AMI policies.
 

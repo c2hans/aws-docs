@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Multi
 ---
 
 # MultiRegionTargets
-<a name="API_MultiRegionTargets"></a>
 
 Defines the multi-Region disaster recovery targets for a resilience policy.
 

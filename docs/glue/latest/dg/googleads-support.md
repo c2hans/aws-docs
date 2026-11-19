@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googleads-support.html
 ---
 
 # AWS Glue support for Google Ads
-<a name="googleads-support"></a>
 
 AWS Glue supports Google Ads as follows:
 

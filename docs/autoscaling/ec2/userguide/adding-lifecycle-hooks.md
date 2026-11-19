@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/adding-lifecyc
 ---
 
 # Add lifecycle hooks to your Auto Scaling group
-<a name="adding-lifecycle-hooks"></a>
 
 To put your Auto Scaling instances into a wait state and perform custom actions on them, you can add lifecycle hooks to your Auto Scaling group. Custom actions are performed as the instances launch or before they terminate. Instances remain in a wait state until you either complete the lifecycle action, or the timeout period ends.
 

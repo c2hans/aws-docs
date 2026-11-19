@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/customizing-visua
 ---
 
 # Labels on visual types in Quick
-<a name="customizing-visual-labels"></a>
 
 Use the following procedure to customize, display, or hide the labels for a visual.
 

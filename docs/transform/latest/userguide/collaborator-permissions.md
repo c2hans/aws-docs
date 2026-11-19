@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/collaborator-
 ---
 
 # Understanding collaborator permissions
-<a name="collaborator-permissions"></a>
 
  AWS Transform uses a workspace-based permission model to control access to resources and actions. Each user is assigned a specific role within a workspace, which determines what actions they can perform. A user can have different roles in different workspaces.
 

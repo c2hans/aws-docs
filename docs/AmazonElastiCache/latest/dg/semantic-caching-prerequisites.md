@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/semantic-cac
 ---
 
 # Prerequisites
-<a name="semantic-caching-prerequisites"></a>
 
 To implement semantic caching with ElastiCache for Valkey, you need:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaKubernetes
 ---
 
 # Get started with AWS Private CA Connector for Kubernetes.
-<a name="PcaKubernetes-get-started"></a>
 
 The following topics show how to use AWS Private CA to secure communications in a Kubernetes cluster. For another example, refer to [ Encryption in transit for Kubernetes ](https://github.com/aws-samples/sample-encryption-in-transit-for-kubernetes) on GitHub.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/file-syst
 ---
 
 # File Systems
-<a name="file-system"></a>
 
 ![File systems](https://docs.aws.amazon.com/res/archive/release-minus-3/ug/images/home-file-systems.png)
 

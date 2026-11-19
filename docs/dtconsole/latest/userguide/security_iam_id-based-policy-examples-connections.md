@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/security_iam_
 ---
 
 # Permissions and examples for AWS CodeConnections
-<a name="security_iam_id-based-policy-examples-connections"></a>
 
 The following policy statements and examples can help you manage AWS CodeConnections.
 

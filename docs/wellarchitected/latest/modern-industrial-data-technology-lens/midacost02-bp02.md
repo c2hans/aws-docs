@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDACOST02-BP02 Implement manufacturing-aware resource decommissioning process
-<a name="midacost02-bp02"></a>
 
  Systematically remove unused resources while preserving critical manufacturing data, maintaining production system integrity, and complying with industrial requirements. This involves careful consideration of dependencies between manufacturing systems, data retention requirements, and proper archival procedures before resource removal.
 

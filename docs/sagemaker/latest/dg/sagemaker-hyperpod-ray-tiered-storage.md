@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Tiered checkpointing
-<a name="sagemaker-hyperpod-ray-tiered-storage"></a>
 
 HyperPod managed tiered checkpointing writes checkpoints to your cluster's CPU memory first and replicates them across nodes. It periodically persists them to durable storage such as Amazon S3. Because the fast tier is memory rather than object storage, you can checkpoint more often and lose less progress when a node fails. For how it works and how to configure it, see [HyperPod managed tiered checkpointing](managed-tier-checkpointing.md).
 

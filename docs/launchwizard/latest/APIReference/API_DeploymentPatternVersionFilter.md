@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Dep
 ---
 
 # DeploymentPatternVersionFilter
-<a name="API_DeploymentPatternVersionFilter"></a>
 
 A filter for deployment pattern versions. Use this filter to specify criteria for querying deployment pattern versions in AWS Launch Wizard.
 

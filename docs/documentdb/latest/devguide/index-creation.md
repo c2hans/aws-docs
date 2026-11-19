@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/index-creatio
 ---
 
 # Index creation
-<a name="index-creation"></a>
 
 Building indexes in Amazon DocumentDB requires a number of decisions to be made:
 + How quickly does it need to be completed?

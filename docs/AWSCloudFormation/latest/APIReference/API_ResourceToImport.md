@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ResourceToImport
-<a name="API_ResourceToImport"></a>
 
 Describes the target resource of an import operation.
 

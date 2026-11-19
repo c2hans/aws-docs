@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommandEx
 ---
 
 # GetCommandExecution
-<a name="API_GetCommandExecution"></a>
 
 Gets information about the specific command execution on a single device.
 

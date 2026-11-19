@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BatchGetDest
 ---
 
 # BatchGetDestinationEndpointError
-<a name="API_BatchGetDestinationEndpointError"></a>
 
 An error for a destination endpoint that MediaConnect couldn't retrieve in a `BatchGetDestinationEndpoint` request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DeactivateType
-<a name="API_DeactivateType"></a>
 
 Deactivates a public third-party extension, such as a resource or module, or a CloudFormation Hook when you no longer use it.
 

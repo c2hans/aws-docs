@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormScoringStrategy
-<a name="API_EvaluationFormScoringStrategy"></a>
 
 Information about scoring strategy for an evaluation form.
 

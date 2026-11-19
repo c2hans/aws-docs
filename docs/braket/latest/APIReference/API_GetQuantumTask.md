@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_GetQuantu
 ---
 
 # GetQuantumTask
-<a name="API_GetQuantumTask"></a>
 
 Retrieves the specified quantum task.
 

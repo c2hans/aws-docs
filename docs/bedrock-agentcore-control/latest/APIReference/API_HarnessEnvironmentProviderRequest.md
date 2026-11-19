@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessEnvironmentProviderRequest
-<a name="API_HarnessEnvironmentProviderRequest"></a>
 
 The environment provider request configuration.
 

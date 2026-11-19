@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Deploymen
 ---
 
 # Deployment
-<a name="API_Deployment"></a>
 
 Contains information about a deployment.
 

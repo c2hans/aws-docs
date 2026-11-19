@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSW
 ---
 
 # AWSWellArchitectedOrganizationsServiceRolePolicy
-<a name="AWSWellArchitectedOrganizationsServiceRolePolicy"></a>
 
 **Description**: Allows Well-Architected to access Organizations on your behalf.
 

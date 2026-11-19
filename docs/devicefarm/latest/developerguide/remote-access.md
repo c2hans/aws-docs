@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/remote-
 ---
 
 # Remote access in AWS Device Farm
-<a name="remote-access"></a>
 
  Remote access, or manual testing, allows you to swipe, gesture, and interact with a device through your web browser in real time to test functionality and reproduce customer issues. You interact with a specific device by creating a remote access session with that device. The following key features are supported on Remote Access:
 + **App(s) upload:** Upload app files (.apk, .ipa) or test on web browsers.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/gettingstartedgui
 ---
 
 # Connect and interact with AWS Cloud.
-<a name="elgsg-interact-with-cloud"></a>
 
 In this section, you use the MQTT client in the AWS IoT console to monitor the communication between your evaluation kit and the AWS Cloud.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # Amazon Elastic Kubernetes Service `EKS` deploy action reference
-<a name="action-reference-EKS"></a>
 
 You can use the `EKSDeploy` action to deploy an Amazon EKS service. The deployment requires a Kubernetes manifest file that CodePipeline uses to deploy the image.
 

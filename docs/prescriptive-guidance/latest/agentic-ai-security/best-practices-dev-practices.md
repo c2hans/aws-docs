@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # 2. Secure development practices for agentic AI systems on AWS
-<a name="best-practices-dev-practices"></a>
 
 Agentic AI systems require the same rigorous development practices as traditional applications. However, there are additional considerations for prompt management and AI-specific vulnerabilities.
 

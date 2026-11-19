@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/mp4-pull-input.html
 ---
 
 # Setting up an MP4 input
-<a name="mp4-pull-input"></a>
 
 This section describes how to set up the source content on the upstream system, and how to create an MP4 input that connects the content source to MediaLive.
 

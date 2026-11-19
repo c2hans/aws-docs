@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_TeamsUse
 ---
 
 # TeamsUserIdentity
-<a name="API_TeamsUserIdentity"></a>
 
 Identifes a user level permission for a channel configuration.
 

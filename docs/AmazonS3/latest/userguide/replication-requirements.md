@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-re
 ---
 
 # Requirements and considerations for replication
-<a name="replication-requirements"></a>
 
 Amazon S3 replication requires the following:
 + The source bucket owner must have the source and destination AWS Regions enabled for their account. The destination bucket owner must have the destination Region enabled for their account.

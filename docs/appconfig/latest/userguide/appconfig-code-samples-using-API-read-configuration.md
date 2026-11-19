@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cod
 ---
 
 # Using the GetLatestConfiguration API action to read a freeform configuration profile
-<a name="appconfig-code-samples-using-API-read-configuration"></a>
 
 Each of the following samples includes comments about the actions performed by the code. The samples in this section call the following APIs:
 + [GetLatestConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetLatestConfiguration.html)

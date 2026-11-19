@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Softwar
 ---
 
 # SoftwareFilters
-<a name="API_SoftwareFilters"></a>
 
 Enables filtering of software packages and the resources that contain them.
 

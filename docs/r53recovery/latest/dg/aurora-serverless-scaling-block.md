@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/aurora-serverless-
 ---
 
 # Aurora Serverless Scaling execution block
-<a name="aurora-serverless-scaling-block"></a>
 
 **Category:** Database scaling
 

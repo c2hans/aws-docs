@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetNetworkResources
-<a name="API_GetNetworkResources"></a>
 
 Describes the network resources for the specified global network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_FieldTypeDe
 ---
 
 # FieldTypeDetails
-<a name="API_FieldTypeDetails"></a>
 
  Contains details regarding the supported field type and the operators that can be applied for filtering.
 

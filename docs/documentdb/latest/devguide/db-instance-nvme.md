@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-instance-n
 ---
 
 # NVMe-backed instances
-<a name="db-instance-nvme"></a>
 
 NVMe-backed instances offer up to 7x faster query performance for applications with large datasets that exceed the memory of a regular instance. These instances leverage the local non-volatile memory express (NVMe)-based Solid-State Drive (SSD) storage available on r6gd instances to store ephemeral data, reducing network-based storage access, and improving read latency and throughput.
 

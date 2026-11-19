@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/RAND.ht
 ---
 
 # RAND function
-<a name="RAND"></a>
 
 The RAND function generates a random floating-point number between 0 and 1. The RAND function generates a new random number each time it's called.
 

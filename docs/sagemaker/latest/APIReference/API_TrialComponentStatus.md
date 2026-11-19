@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrialC
 ---
 
 # TrialComponentStatus
-<a name="API_TrialComponentStatus"></a>
 
 The status of the trial component.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Retrieve
 ---
 
 # RetrieveConfig
-<a name="API_RetrieveConfig"></a>
 
 The configuration details for retrieving information from a knowledge base.
 

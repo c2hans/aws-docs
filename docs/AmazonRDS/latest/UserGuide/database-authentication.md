@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/database-auth
 ---
 
 # Database authentication with Amazon RDS
-<a name="database-authentication"></a>
 
  Amazon RDS supports several ways to authenticate database users.
 

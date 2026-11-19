@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Appli
 ---
 
 # Configure HTTP endpoint visibility
-<a name="Application-Signals-EndpointVisibility"></a>
 
 This page provides guidance for Application Signals customers who expect to see their HTTP service operations separated by specific endpoint names, but instead see multiple endpoints grouped into the same metric. By default, Application Signals truncates the `Operation` metric dimension to the first URL path segment for HTTP services (for example, `/api/v1/users` becomes `GET /api`) to preserve low-cardinality metrics. As a result, users may find that services with multiple endpoints sharing the same prefix have limited visibility into the operational health of individual endpoints. You can follow the steps below to configure service operation endpoints to your desired granularity.
 

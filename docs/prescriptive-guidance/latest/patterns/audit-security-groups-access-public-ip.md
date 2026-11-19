@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automatically audit AWS security groups that allow access from public IP addresses
-<a name="audit-security-groups-access-public-ip"></a>
 
 *Eugene Shifer and Stephen DiCato, Amazon Web Services*
 

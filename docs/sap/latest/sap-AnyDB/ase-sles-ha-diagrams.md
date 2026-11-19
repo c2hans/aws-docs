@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/ase-sles-ha-diagram
 ---
 
 # Architecture diagram
-<a name="ase-sles-ha-diagrams"></a>
 
 The following diagram shows the cold standby SAP ASE cluster setup with FSx for ONTAP.
 

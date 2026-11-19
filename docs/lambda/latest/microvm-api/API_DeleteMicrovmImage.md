@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_DeleteMicr
 ---
 
 # DeleteMicrovmImage
-<a name="API_DeleteMicrovmImage"></a>
 
 Deletes a MicroVM image. This operation is idempotent; deleting an image that has already been deleted succeeds without error.
 

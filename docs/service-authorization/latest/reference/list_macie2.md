@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon Macie
-<a name="list_macie2"></a>
 
 Amazon Macie (service prefix: `macie2`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

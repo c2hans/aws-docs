@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 ---
 
 # Reducing MTTR
-<a name="reducing-mttr"></a>
 
  After a failure is discovered, the remainder of the MTTR time is the actual repair or mitigation of impact. To repair or mitigate a failure, you have to know what's wrong. There are two key groups of metrics that provide insight during this phase: 1/*Impact Assessment* metrics and 2/*Operational Health* metrics. The first group tells you the scope of impact during a failure, measuring the number or percentage of the customers, resources, or workloads impacted. The second group helps identify *why* there is impact. After the why is discovered, operators and automation can respond to and resolve the failure. Refer to [Appendix 1 – MTTD and MTTR critical metrics](appendix-1-mttd-and-mttr-critical-metrics.md) for more information about these metrics.
 

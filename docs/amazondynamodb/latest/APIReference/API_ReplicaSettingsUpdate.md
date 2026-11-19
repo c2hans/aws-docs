@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_R
 ---
 
 # ReplicaSettingsUpdate
-<a name="API_ReplicaSettingsUpdate"></a>
 
 Represents the settings for a global table in a Region that will be modified.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-ConnectivityTroubleshooter`
-<a name="automation-awssupport-connectivitytroubleshooter"></a>
 
  **Description**
 

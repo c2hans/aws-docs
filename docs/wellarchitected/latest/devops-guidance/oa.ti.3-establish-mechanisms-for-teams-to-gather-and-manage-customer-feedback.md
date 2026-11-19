@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.TI.3] Establish mechanisms for teams to gather and manage customer feedback
-<a name="oa.ti.3-establish-mechanisms-for-teams-to-gather-and-manage-customer-feedback"></a>
 
  **Category:** FOUNDATIONAL
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/control_plane_
 ---
 
 # Control Plane Monitoring
-<a name="control_plane_monitoring"></a>
 
 ## API Server
 <a name="_api_server"></a>

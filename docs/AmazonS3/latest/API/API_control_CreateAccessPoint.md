@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAc
 ---
 
 # CreateAccessPoint
-<a name="API_control_CreateAccessPoint"></a>
 
 Creates an access point and associates it to a specified bucket. For more information, see [Managing access to shared datasets with access points](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points.html) or [Managing access to shared datasets in directory buckets with access points](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-directory-buckets.html) in the *Amazon S3 User Guide*.
 
@@ -90,7 +89,7 @@ For using this parameter with Amazon S3 on Outposts with the REST API, you must 
 For using this parameter with S3 on Outposts with the AWS SDK and CLI, you must specify the ARN of the bucket accessed in the format `arn:aws:s3-outposts:<Region>:<account-id>:outpost/<outpost-id>/bucket/<my-bucket-name>`. For example, to access the bucket `reports` through Outpost `my-outpost` owned by account `123456789012` in Region `us-west-2`, use the URL encoding of `arn:aws:s3-outposts:us-west-2:123456789012:outpost/my-outpost/bucket/reports`. The value must be URL encoded.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 255.
-Required: Yes
+Required: No
 
  ** [BucketAccountId](#API_control_CreateAccessPoint_RequestSyntax) **   <a name="AmazonS3-control_CreateAccessPoint-request-BucketAccountId"></a>
 The AWS account ID associated with the S3 bucket associated with this access point.

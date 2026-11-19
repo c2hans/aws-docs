@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_D
 ---
 
 # DbParameterGroupSummary
-<a name="API_DbParameterGroupSummary"></a>
 
 Contains a summary of a DB parameter group.
 

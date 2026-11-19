@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Resa
 ---
 
 # ResaleAuthorizationSummary
-<a name="API_ResaleAuthorizationSummary"></a>
 
 Summarized information about a Resale Authorization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-caller-srt-set
 ---
 
 # Create an SRT input
-<a name="input-caller-srt-setup"></a>
 
 After you have obtained the necessary information from the upstream system, you can create the SRT input.
 

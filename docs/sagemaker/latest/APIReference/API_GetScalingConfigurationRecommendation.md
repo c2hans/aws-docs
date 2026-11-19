@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_GetSca
 ---
 
 # GetScalingConfigurationRecommendation
-<a name="API_GetScalingConfigurationRecommendation"></a>
 
 Starts an Amazon SageMaker Inference Recommender autoscaling recommendation job. Returns recommendations for autoscaling policies that you can apply to your SageMaker endpoint.
 

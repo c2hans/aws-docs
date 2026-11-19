@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Set up an Amazon Bedrock AgentCore gateway
-<a name="gateway-building"></a>
 
 Amazon Bedrock AgentCore Gateway provides a unified connectivity layer between agents and the tools and resources they need to interact with. Before setting up your Gateway, it’s important to understand how to specify permissions so that you can secure your gateway properly.
 

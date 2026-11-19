@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/SECTION_pro
 ---
 
 # Aurora DSQL adapter for Tortoise ORM
-<a name="SECTION_program-with-dsql-adapter-for-tortoise-orm"></a>
 
 Like the other adapters and dialects for Amazon Aurora DSQL, the Aurora DSQL adapter for Tortoise ORM (`aurora-dsql-tortoise-orm`) integrates an object-relational mapping (ORM) framework with Aurora DSQL. It provides custom backends for both `asyncpg` and `psycopg` drivers, with Aurora DSQL-aware schema generators for asynchronous index creation, IDENTITY columns, and foreign key enforcement through optimistic concurrency control (OCC), and IAM authentication, so you can use the full Tortoise ORM API against a distributed Aurora DSQL cluster. For more information, see the [Aurora DSQL adapter for Tortoise ORM](https://github.com/awslabs/aurora-dsql-orms/tree/main/python/tortoise-orm) and the [Tortoise ORM pet clinic example application](https://github.com/awslabs/aurora-dsql-orms/tree/main/python/tortoise-orm/example) on the GitHub website.
 

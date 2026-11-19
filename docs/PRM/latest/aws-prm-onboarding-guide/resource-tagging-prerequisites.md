@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/reso
 ---
 
 # Prerequisites
-<a name="resource-tagging-prerequisites"></a>
 
 Before implementing Partner Revenue Measurement, you must have:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DefaultActio
 ---
 
 # DefaultAction
-<a name="API_DefaultAction"></a>
 
 In a [WebACL](API_WebACL.md), this is the action that you want AWS WAF to perform when a web request doesn't match any of the rules in the `WebACL`. The default action must be a terminating action.
 

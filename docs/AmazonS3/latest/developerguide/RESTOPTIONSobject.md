@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/RESTOPTIO
 ---
 
 # Appendix: OPTIONS object
-<a name="RESTOPTIONSobject"></a>
 
 ## Description
 <a name="RESTOPTIONSobject-description"></a>

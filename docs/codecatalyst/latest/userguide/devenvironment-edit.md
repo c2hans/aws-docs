@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/devenviron
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Editing a Dev Environment
-<a name="devenvironment-edit"></a>
 
 While your IDE is running, you can edit the Dev Environment. If you edit your compute or inactivity timeout, your Dev Environment will restart after you've saved your changes.<a name="devenvironment-edit-steps"></a>
 

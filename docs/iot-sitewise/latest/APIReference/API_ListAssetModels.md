@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListAssetModels
-<a name="API_ListAssetModels"></a>
 
 Retrieves a paginated list of summaries of all asset models.
 

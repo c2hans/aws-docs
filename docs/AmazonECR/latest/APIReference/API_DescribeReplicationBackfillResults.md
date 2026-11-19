@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Descri
 ---
 
 # DescribeReplicationBackfillResults
-<a name="API_DescribeReplicationBackfillResults"></a>
 
 Returns the status, progress, and per-image results for a replication backfill. The backfill to describe is identified by the `replicationBackfillId` returned by the [StartReplicationBackfill](API_StartReplicationBackfill.md) operation.
 

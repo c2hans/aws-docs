@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuditSup
 ---
 
 # ListAuditSuppressions
-<a name="API_ListAuditSuppressions"></a>
 
  Lists your Device Defender audit listings.
 

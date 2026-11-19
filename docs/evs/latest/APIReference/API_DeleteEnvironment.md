@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_DeleteEnviro
 ---
 
 # DeleteEnvironment
-<a name="API_DeleteEnvironment"></a>
 
 Deletes an Amazon EVS environment.
 

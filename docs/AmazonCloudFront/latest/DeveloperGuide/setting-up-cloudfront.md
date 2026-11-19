@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/s
 ---
 
 # Set up your AWS account
-<a name="setting-up-cloudfront"></a>
 
 This topic describes preliminary steps, such as creating an AWS account, to prepare you to use Amazon CloudFront.
 

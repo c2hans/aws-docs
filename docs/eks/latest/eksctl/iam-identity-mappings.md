@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/iam-identity-mappings.
 ---
 
 # Manage IAM users and roles
-<a name="iam-identity-mappings"></a>
 
 **Note**
 AWS suggests migraitng to [EKS Pod Identity Associations](pod-identity-associations.md) from the `aws-auth` ConfigMap.

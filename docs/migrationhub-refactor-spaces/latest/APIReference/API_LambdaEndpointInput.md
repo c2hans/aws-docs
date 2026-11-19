@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # LambdaEndpointInput
-<a name="API_LambdaEndpointInput"></a>
 
 The input for the AWS Lambda endpoint type.
 

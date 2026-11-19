@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkF
 ---
 
 # NetworkFirewallMissingFirewallViolation
-<a name="API_NetworkFirewallMissingFirewallViolation"></a>
 
 Violation detail for AWS Network Firewall for a subnet that doesn't have a Firewall Manager managed firewall in its VPC.
 

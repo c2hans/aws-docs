@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/query-examples-waf-logs
 ---
 
 # Query for blocked requests or addresses
-<a name="query-examples-waf-logs-blocked-requests"></a>
 
 The examples in this section query for blocked requests or addresses.
 + [Extract the top 100 IP addresses blocked by a specified rule type](#waf-example-extract-top-100-blocked-ip-by-rule)

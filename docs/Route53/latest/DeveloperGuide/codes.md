@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/codes.html
 ---
 
 # .codes
-<a name="codes"></a>
 
 Used as a generic extension for all kinds of code, such as codes of conduct, building codes, or programming code.
 

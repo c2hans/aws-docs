@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/security_iam_service-with-
 ---
 
 # How AWS TNB works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AWS TNB, learn what IAM features are available to use with AWS TNB.
 

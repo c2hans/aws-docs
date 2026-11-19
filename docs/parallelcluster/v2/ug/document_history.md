@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/document_history.h
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Release notes and document history
-<a name="document_history"></a>
 
 The following table describes the major updates and new features for the *AWS ParallelCluster User Guide*. We also update the documentation frequently to address the feedback that you send us.
 
@@ -37,4 +36,4 @@ The following table describes the major updates and new features for the *AWS Pa
 | [AWS ParallelCluster version 2.5.0 released](https://github.com/aws/aws-parallelcluster/releases/tag/v2.5.0) | AWS ParallelCluster version 2.5.0 released. | November 18, 2019 |
 | [AWS ParallelCluster introduces support for Intel MPI](https://docs.aws.amazon.com/parallelcluster/latest/ug/intelmpi.html) | AWS ParallelCluster version 2.4.1 introduces support for Intel MPI. | July 29, 2019 |
 | [AWS ParallelCluster introduces support for EFA](https://docs.aws.amazon.com/parallelcluster/latest/ug/efa.html) | AWS ParallelCluster version 2.4.0 introduces support for Elastic Fabric Adapter (EFA). | June 11, 2019 |
-| [AWS ParallelCluster documentation released on AWS documentation site](#document_history) | The AWS ParallelCluster documentation is now available in 10 languages and in both HTML and PDF formats. | May 24, 2018 |
+| [AWS ParallelCluster documentation released on AWS documentation site](document_history.md) | The AWS ParallelCluster documentation is now available in 10 languages and in both HTML and PDF formats. | May 24, 2018 |

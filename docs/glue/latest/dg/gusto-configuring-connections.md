@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gusto-configuring-connect
 ---
 
 # Configuring Gusto connections
-<a name="gusto-configuring-connections"></a>
 
 Gusto connections use OAuth 2.0. You register an OAuth application with Gusto, enter its client ID in AWS Glue Studio, store its client secret in Secrets Manager, and authorize the connection through the Gusto consent screen. AWS Glue obtains and refreshes the access token for you.
 

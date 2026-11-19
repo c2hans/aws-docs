@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_MatchOf
 ---
 
 # MatchOffset
-<a name="API_MatchOffset"></a>
 
 The offset of a matched term.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/arch
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
  Deploying the Media2Cloud on AWS solution builds the following environment in the AWS Cloud.
 

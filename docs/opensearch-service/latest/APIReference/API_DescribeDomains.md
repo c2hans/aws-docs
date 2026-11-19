@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DescribeDomains
-<a name="API_DescribeDomains"></a>
 
 Returns domain configuration information about the specified Amazon OpenSearch Service domains.
 

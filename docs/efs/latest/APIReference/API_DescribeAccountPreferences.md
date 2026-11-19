@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_DescribeAcco
 ---
 
 # DescribeAccountPreferences
-<a name="API_DescribeAccountPreferences"></a>
 
 Returns the account preferences settings for the AWS account associated with the user making the request, in the current AWS Region.
 

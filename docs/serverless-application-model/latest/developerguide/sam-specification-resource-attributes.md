@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Resource attributes supported by AWS SAM
-<a name="sam-specification-resource-attributes"></a>
 
 Resource attributes are attributes that you can add to AWS SAM and CloudFormation resources to control additional behaviors and relationships. For more information about resource attributes, see [Resource Attribute Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-product-attribute-reference.html) in the *AWS CloudFormation User Guide*.
 

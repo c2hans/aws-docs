@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-wor
 ---
 
 # What is a disaster?
-<a name="what-is-a-disaster"></a>
 
  When planning for disaster recovery, evaluate your plan for these three main categories of disaster:
 +  Natural disasters, such as earthquakes or floods

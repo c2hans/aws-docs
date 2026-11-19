@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessSummarizationConfiguration
-<a name="API_HarnessSummarizationConfiguration"></a>
 
 Configuration for summarization-based truncation strategy.
 

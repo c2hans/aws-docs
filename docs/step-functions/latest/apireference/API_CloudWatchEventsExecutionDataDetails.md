@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_C
 ---
 
 # CloudWatchEventsExecutionDataDetails
-<a name="API_CloudWatchEventsExecutionDataDetails"></a>
 
 Provides details about execution input or output.
 

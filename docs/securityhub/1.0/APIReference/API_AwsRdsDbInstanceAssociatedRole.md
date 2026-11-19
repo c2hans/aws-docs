@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsD
 ---
 
 # AwsRdsDbInstanceAssociatedRole
-<a name="API_AwsRdsDbInstanceAssociatedRole"></a>
 
 An IAM role associated with the DB instance.
 

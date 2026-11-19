@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricing-calculator/latest/userguide/esti
 ---
 
 # Using groups to organize your estimates
-<a name="estimate-groups"></a>
 
 You can organize your AWS estimates by defining groups. A group can reflect how your company is organized, such as by providing estimates for each cost center.
 

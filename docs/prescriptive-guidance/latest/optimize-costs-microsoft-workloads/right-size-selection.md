@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Select the right instance type for Windows workloads
-<a name="right-size-selection"></a>
 
 ## Overview
 <a name="right-size-selection-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/export-filterin
 ---
 
 # Examples of filtering what is exported
-<a name="export-filtering-examples"></a>
 
 Here are examples that illustrate ways to filter the data that is exported.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/design-p
 ---
 
 # 20 – Manage costs with visibility, planning, and governance
-<a name="design-principle-20"></a>
 
  **How do you practice Cloud Financial Management (CFM) to ensure cost optimization and awareness?** From inception to operation, how do you establish control over your SAP cloud infrastructure budget and continue to optimize its usage aligned with your business requirements.
 

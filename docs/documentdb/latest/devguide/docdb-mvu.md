@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-mvu.htm
 ---
 
 # Amazon DocumentDB in-place major version upgrade
-<a name="docdb-mvu"></a>
 
 You can perform an in-place major version upgrade (MVU) of your Amazon DocumentDB cluster while keeping the same endpoints, storage, and tags. Your applications continue to work without modifications. This feature is available at no additional cost in all AWS Regions where Amazon DocumentDB is available.
 

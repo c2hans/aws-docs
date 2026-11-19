@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/c_security-overview.h
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Amazon Redshift security overview
-<a name="c_security-overview"></a>
 
 Amazon Redshift database security is distinct from other types of Amazon Redshift security. In addition to database security, which is described in this section, Amazon Redshift provides these features to manage security:
 +  **Sign-in credentials** — Access to your Amazon Redshift AWS Management Console is controlled by your AWS account permissions. For more information, see [Sign-in credentials](https://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html).

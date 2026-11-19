@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # Greengrass discovery RESTful API
-<a name="greengrass-discover-api"></a>
 
 AWS IoT Greengrass provides the `Discover` API operation that client devices can use to identify Greengrass core devices where they can connect. Client devices use this data plane operation to retrieve information required to connect to Greengrass core devices where you associate them with the [BatchAssociateClientDeviceWithCoreDevice](https://docs.aws.amazon.com/greengrass/v2/APIReference/API_BatchAssociateClientDeviceWithCoreDevice.html) API operation. When a client device comes online, it can connect to the AWS IoT Greengrass cloud service and use the discovery API to find:
 + The IP address and port for each associated Greengrass core device.

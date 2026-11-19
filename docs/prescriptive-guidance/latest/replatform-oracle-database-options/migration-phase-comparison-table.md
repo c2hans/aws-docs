@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Migration phase comparison table
-<a name="migration-phase-comparison-table"></a>
 
 The following table provides a summary of suitable migration scenarios for each tool to help you choose the option that best meets your business requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_R
 ---
 
 # RelationalDatabaseSnapshot
-<a name="API_RelationalDatabaseSnapshot"></a>
 
 Describes a database snapshot.
 

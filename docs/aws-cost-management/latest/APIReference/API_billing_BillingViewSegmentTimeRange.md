@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillingViewSegmentTimeRange
-<a name="API_billing_BillingViewSegmentTimeRange"></a>
 
  Specifies a time range with an inclusive begin date and an exclusive end date.
 

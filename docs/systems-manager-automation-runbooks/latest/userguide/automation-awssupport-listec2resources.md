@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-ListEC2Resources`
-<a name="automation-awssupport-listec2resources"></a>
 
  **Description**
 

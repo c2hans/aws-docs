@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_StartReadSetExportJ
 ---
 
 # StartReadSetExportJob
-<a name="API_StartReadSetExportJob"></a>
 
 Starts a read set export job. When the export job is finished, the read set is exported to an Amazon S3 bucket which can be retrieved using the `GetReadSetExportJob` API operation.
 

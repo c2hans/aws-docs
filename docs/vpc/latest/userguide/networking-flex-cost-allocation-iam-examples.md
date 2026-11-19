@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/networking-flex-cos
 ---
 
 # Networking Flexible Cost Allocation policy examples
-<a name="networking-flex-cost-allocation-iam-examples"></a>
 
 The following example IAM policies grant permissions for Networking Flexible Cost Allocation (FCA). To grant a user permission to work with FCA, attach a policy to an IAM role or user. For more information, see [Identity and access management for Amazon VPC](security-iam.md).
 

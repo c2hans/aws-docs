@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # DeletePolicyStoreAlias
-<a name="API_DeletePolicyStoreAlias"></a>
 
 Deletes the specified policy store alias.
 

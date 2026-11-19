@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/example_kms_He
 ---
 
 # Hello AWS Key Management Service
-<a name="example_kms_Hello_section"></a>
 
 The following code examples show how to get started using AWS Key Management Service.
 

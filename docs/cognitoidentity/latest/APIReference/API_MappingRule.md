@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # MappingRule
-<a name="API_MappingRule"></a>
 
 A rule that maps a claim name, a claim value, and a match type to a role ARN.
 

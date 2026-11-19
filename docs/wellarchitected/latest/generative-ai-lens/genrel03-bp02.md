@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENREL03-BP02 Implement timeout mechanisms on agentic workflows
-<a name="genrel03-bp02"></a>
 
  Implement controls to detect and terminate long-running unexpected workflows.
 

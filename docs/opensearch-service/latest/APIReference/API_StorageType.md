@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # StorageType
-<a name="API_StorageType"></a>
 
 A list of storage types for an Amazon OpenSearch Service domain that are available for a given intance type.
 

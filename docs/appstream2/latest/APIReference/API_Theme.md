@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Theme
 ---
 
 # Theme
-<a name="API_Theme"></a>
 
 The custom branding theme, which might include a custom logo, website links, and other branding to display to users.
 

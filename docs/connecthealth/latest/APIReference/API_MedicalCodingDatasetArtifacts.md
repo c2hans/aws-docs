@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalCodingDatasetArtifacts
-<a name="API_MedicalCodingDatasetArtifacts"></a>
 
 The results of building a medical coding dataset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sta
 ---
 
 # StartMulticastGroupSession
-<a name="API_StartMulticastGroupSession"></a>
 
 Starts a multicast group session.
 

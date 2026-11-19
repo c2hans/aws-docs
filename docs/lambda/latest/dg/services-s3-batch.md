@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/services-s3-batch.html
 ---
 
 # Invoke a Lambda Event Function with Amazon S3 batch events
-<a name="services-s3-batch"></a>
 
 You can use Amazon S3 batch operations to invoke a Lambda Event Function on a large set of Amazon S3 objects. Amazon S3 tracks the progress of batch operations, sends notifications, and stores a completion report that shows the status of each action.
 

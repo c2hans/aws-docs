@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_StartSpeec
 ---
 
 # StartSpeechSynthesisStreamEventStream
-<a name="API_StartSpeechSynthesisStreamEventStream"></a>
 
 Outbound event stream that contains synthesized audio data and stream status events.
 

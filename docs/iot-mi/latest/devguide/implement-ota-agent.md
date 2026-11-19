@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/implement-ota-age
 ---
 
 # Implement OTA agent
-<a name="implement-ota-agent"></a>
 
 When you receive the job document from managed integrations, you must have an implementation of your own OTA agent that processes the job document, downloads updates, and performs any installation operations. The OTA Agent needs to perform the following steps:
 

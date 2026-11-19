@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Operati
 ---
 
 # Amazon Location Service Geofences
-<a name="API_Operations_Amazon_Location_Service_Geofences"></a>
 
 The following actions are supported by Amazon Location Service Geofences:
 +  [BatchDeleteGeofence](API_WaypointGeofencing_BatchDeleteGeofence.md)

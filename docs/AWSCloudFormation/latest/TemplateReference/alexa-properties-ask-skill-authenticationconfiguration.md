@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # Alexa::ASK::Skill AuthenticationConfiguration
-<a name="alexa-properties-ask-skill-authenticationconfiguration"></a>
 
 The `AuthenticationConfiguration` property type specifies the Login with Amazon (LWA) configuration used to authenticate with the Alexa service. Only Login with Amazon security profiles created through the [Build Skills with the Alexa Skills Kit developer documentation](https://developer.amazon.com/docs/ask-overviews/build-skills-with-the-alexa-skills-kit.html) are supported for authentication. A client ID, client secret, and refresh token are required. You can generate a client ID and client secret by creating a new [security profile](https://developer.amazon.com/lwa/sp/create-security-profile.html) on the Amazon Developer Portal or you can retrieve them from an existing profile. You can then retrieve the refresh token using the Alexa Skills Kit CLI. For instructions, see [util-command](https://developer.amazon.com/docs/smapi/ask-cli-command-reference.html#util-command) in the [ASK CLI Command Reference](https://developer.amazon.com/docs/smapi/ask-cli-command-reference.html).
 

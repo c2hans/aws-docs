@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InvoiceUnit
-<a name="API_invoicing_InvoiceUnit"></a>
 
 An invoice unit is a set of mutually exclusive accounts that correspond to your business entity. Invoice units allow you separate AWS account costs and configures your invoice for each business entity going forward.
 

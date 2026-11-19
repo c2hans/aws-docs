@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Modeling custom CloudFormation Hooks using Java
-<a name="hooks-model-java"></a>
 
 Modeling custom CloudFormation Hooks involves creating a schema that defines the Hook, its properties, and their attributes. This tutorial walks you through modeling custom Hooks using Java.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Enc
 ---
 
 # Encryption
-<a name="API_Encryption"></a>
 
 The parameters for encrypting content.
 

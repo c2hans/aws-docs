@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-helper-e
 ---
 
 # Mounting on EC2 Linux instances using the EFS mount helper
-<a name="mounting-fs-mount-helper-ec2-linux"></a>
 
 This procedure requires the following:
 + You have installed the `amazon-efs-utils` package on the Amazon EC2 instance. For more information, see [Manually installing the Amazon EFS client](installing-amazon-efs-utils.md).

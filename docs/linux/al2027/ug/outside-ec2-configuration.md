@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/outside-ec2-configuratio
 ---
 
 # Amazon Linux 2027 Set up and `cloud-init` configuration when used outside Amazon EC2
-<a name="outside-ec2-configuration"></a>
 
  This section covers how to set up and configure a Amazon Linux 2027 virtual machine when not run directly on Amazon EC2, such as when on KVM, VMware, or Hyper-V.
 

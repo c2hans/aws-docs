@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_OutputCont
 ---
 
 # OutputContext
-<a name="API_OutputContext"></a>
 
 Describes a session context that is activated when an intent is fulfilled.
 

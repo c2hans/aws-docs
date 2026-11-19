@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/operational_t
 ---
 
 # Amazon DocumentDB operational tasks overview
-<a name="operational_tasks"></a>
 
 This section covers operational tasks for your Amazon DocumentDB cluster, and how to accomplish these tasks using the AWS CLI.
 

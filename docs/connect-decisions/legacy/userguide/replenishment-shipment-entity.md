@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/reple
 ---
 
 # shipment
-<a name="replenishment-shipment-entity"></a>
 
 **Primary key (PK)**
 

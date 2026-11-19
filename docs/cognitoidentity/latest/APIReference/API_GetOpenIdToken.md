@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # GetOpenIdToken
-<a name="API_GetOpenIdToken"></a>
 
 Gets an OpenID token, using a known Cognito ID. This known Cognito ID is returned by [GetId](API_GetId.md). You can optionally add additional logins for the identity. Supplying multiple logins creates an implicit link.
 

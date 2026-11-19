@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_FileInformation.htm
 ---
 
 # FileInformation
-<a name="API_FileInformation"></a>
 
 Details about a file.
 

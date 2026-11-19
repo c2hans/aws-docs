@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/updating-a-
 ---
 
 # Update a site using AWS Network Manager
-<a name="updating-a-site"></a>
 
 Update any of the details of a site you've added, including the description, address, latitude, and longitude.
 

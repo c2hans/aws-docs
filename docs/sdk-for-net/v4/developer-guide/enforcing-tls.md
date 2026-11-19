@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Enforcing a minimum TLS version in the AWS SDK for .NET
-<a name="enforcing-tls"></a>
 
 To increase security when communicating with AWS services, you should configure the AWS SDK for .NET to use TLS 1.2 or later.
 

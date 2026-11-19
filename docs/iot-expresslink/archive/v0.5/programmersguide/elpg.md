@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v0.5/programmers
 ---
 
 # AWS IoT ExpressLink programmer's guide v0.5
-<a name="elpg"></a>
 
 **Topics**
 + [1 Overview](elpg-overview.md)

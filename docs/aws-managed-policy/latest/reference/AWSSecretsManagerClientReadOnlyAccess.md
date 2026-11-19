@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSecretsManagerClientReadOnlyAccess
-<a name="AWSSecretsManagerClientReadOnlyAccess"></a>
 
 **Description**: Provides access to retrieve and describe secrets from Secrets Manager. This policy also allows decrypting KMS keys for Secrets Manager secrets.
 

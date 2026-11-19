@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-hook-bash.html
 ---
 
 # AWS.HookDefinition.Bash
-<a name="node-hook-bash"></a>
 
 Defines an AWS HookDefinition in `bash`.
 

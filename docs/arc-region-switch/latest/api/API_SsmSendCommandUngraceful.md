@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_SsmSend
 ---
 
 # SsmSendCommandUngraceful
-<a name="API_SsmSendCommandUngraceful"></a>
 
 The ungraceful execution settings for an AWS Systems Manager `SendCommand` execution block.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListWorkflowStepExecutions
-<a name="API_ListWorkflowStepExecutions"></a>
 
 Returns runtime data for each step in a runtime instance of the workflow that you specify in the request.
 

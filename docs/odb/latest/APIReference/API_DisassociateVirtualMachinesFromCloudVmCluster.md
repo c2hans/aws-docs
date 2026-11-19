@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_Disassociate
 ---
 
 # DisassociateVirtualMachinesFromCloudVmCluster
-<a name="API_DisassociateVirtualMachinesFromCloudVmCluster"></a>
 
 Removes virtual machines from the specified VM cluster.
 

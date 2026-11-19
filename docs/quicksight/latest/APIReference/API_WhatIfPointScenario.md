@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_WhatI
 ---
 
 # WhatIfPointScenario
-<a name="API_WhatIfPointScenario"></a>
 
 Provides the forecast to meet the target for a particular date.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/configure-sftp
 ---
 
 # Creating SFTP connectors
-<a name="configure-sftp-connector"></a>
 
 This topic describes how to create SFTP connectors. Each connector provides the ability to connect with one remote SFTP server. You perform the following high-level tasks to configure an SFTP connector.
 

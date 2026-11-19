@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TableVersionError
 ---
 
 # TableVersionError
-<a name="API_TableVersionError"></a>
 
 An error record for table-version operations.
 

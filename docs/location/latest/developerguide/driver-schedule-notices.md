@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/driver-sc
 ---
 
 # Driver schedule and notices
-<a name="driver-schedule-notices"></a>
 
 ## Driver schedule
 <a name="driver-schedule"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/set
 ---
 
 # Set environment variables in a queue environment
-<a name="set-environment-variables"></a>
 
 Many applications and frameworks use environment variables to control feature settings, logging levels, and display configuration. You can use Open Job Description (OpenJD) environments to set environment variables that every task command within their scope inherits. For more information, see [Environments](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#4-environment) on the GitHub website.
 

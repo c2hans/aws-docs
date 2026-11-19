@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Post-cutover stage
-<a name="post-cutover-stage"></a>
 
 ## Setting up a monitoring dashboard
 <a name="monitoring-dashboard"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.
 ---
 
 # DescribeKey
-<a name="API_DescribeKey"></a>
 
 Provides detailed information about a KMS key. You can run `DescribeKey` on a [customer managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-mgn-key) or an [AWS managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-managed-key).
 
@@ -63,7 +62,7 @@ For example:
 + Key ARN: `arn:aws:kms:us-east-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab`
 + Alias name: `alias/ExampleAlias`
 + Alias ARN: `arn:aws:kms:us-east-2:111122223333:alias/ExampleAlias`
-To get the key ID and key ARN for a KMS key, use [ListKeys](API_ListKeys.md) or [DescribeKey](#API_DescribeKey). To get the alias name and alias ARN, use [ListAliases](API_ListAliases.md).
+To get the key ID and key ARN for a KMS key, use [ListKeys](API_ListKeys.md) or [DescribeKey](API_DescribeKey.md). To get the alias name and alias ARN, use [ListAliases](API_ListAliases.md).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: Yes

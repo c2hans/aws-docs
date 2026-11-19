@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Automating large-scale server migrations with Cloud Migration Factory
-<a name="introduction"></a>
 
 *Wally Lu and Shraddha Ghogare, Amazon Web Services*
 

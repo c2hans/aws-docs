@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # EndpointAccess
-<a name="API_EndpointAccess"></a>
 
 Information about an Amazon Redshift Serverless VPC endpoint.
 

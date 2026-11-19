@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Configure a monitor using the console
-<a name="CloudWatch-IM-working-with"></a>
 
 This chapter includes procedures and recommendations for creating and configuring monitors in Internet Monitor.
 

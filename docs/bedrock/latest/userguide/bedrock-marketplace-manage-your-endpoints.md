@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-marketp
 ---
 
 # Manage your endpoints
-<a name="bedrock-marketplace-manage-your-endpoints"></a>
 
 You view and manage your Amazon Bedrock Marketplace model endpoints in the following ways:
 + Editing the number of instances or instance types

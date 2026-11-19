@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Support
 ---
 
 # SupportedOperation
-<a name="API_SupportedOperation"></a>
 
 Describes the operations that are allowed on a maintenance track.
 

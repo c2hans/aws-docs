@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # FirewallRuleTypeDefinition
-<a name="API_route53resolver_FirewallRuleTypeDefinition"></a>
 
 The definition of an available rule type that can be used in DNS Firewall rules. This is returned by [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md).
 

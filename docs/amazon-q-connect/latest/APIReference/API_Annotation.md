@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # Annotation
-<a name="API_amazon-q-connect_Annotation"></a>
 
 An annotation that provides additional context or metadata.
 

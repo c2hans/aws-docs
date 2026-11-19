@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-target-c
 ---
 
 # Updating connections in EventBridge
-<a name="eb-target-connection-edit"></a>
 
 You can update existing connections.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/iotsitewise
 ---
 
 # IoT SiteWise processor
-<a name="iotsitewise-processor-component"></a>
 
 The IoT SiteWise processor component (`aws.iot.SiteWiseEdgeProcessor`) enables AWS IoT SiteWise Classic streams, V2 gateways to process data at the edge.
 

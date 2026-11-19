@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Amazon SageMaker HyperPod release notes
-<a name="sagemaker-hyperpod-release-notes"></a>
 
 This topic covers release notes that track update, fixes, and new features for Amazon SageMaker HyperPod. If you are looking for general feature releases, updates, and improvements for Amazon SageMaker HyperPod, you might find this page helpful.
 

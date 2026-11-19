@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Scenario 2: Extending on-premises AD DS into AWS (replica)
-<a name="scenario-2-extending-on-premises-ad-ds-into-aws-replica"></a>
 
  This scenario is similar to scenario 1. However, in this scenario, a replica of the customer AD DS is deployed on AWS in combination with AD Connector. This reduces latency of authentication or query requests to AD DS running on Amazon Elastic Compute Cloud (Amazon EC2). The following figure shows a high-level view of each of the components and the user authentication flow.
 

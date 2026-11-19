@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # CategoryDiffResult
-<a name="API_CategoryDiffResult"></a>
 
 The result of comparing one metadata category between two domains.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeB
 ---
 
 # DescribeByoipCidrs
-<a name="API_DescribeByoipCidrs"></a>
 
 Describes the IP address ranges that were provisioned for use with AWS resources through through bring your own IP addresses (BYOIP).
 

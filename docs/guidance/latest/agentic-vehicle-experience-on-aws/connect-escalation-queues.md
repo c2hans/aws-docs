@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Escalation by priority
-<a name="connect-escalation-queues"></a>
 
 Escalation follows the P0–P3 criticality taxonomy. The deterministic classifier sets the level from vehicle state (active DTCs, telemetry thresholds, open recalls), and the language model cannot set or change it.
 

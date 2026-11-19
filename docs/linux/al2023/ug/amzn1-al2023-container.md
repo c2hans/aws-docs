@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/amzn1-al2023-container.h
 ---
 
 # Comparing packages installed on Amazon Linux 1 (AL1) and Amazon Linux 2023 base container images
-<a name="amzn1-al2023-container"></a>
 
 A comparison of the RPMs present on the AL1 and AL2023 base container images.
 

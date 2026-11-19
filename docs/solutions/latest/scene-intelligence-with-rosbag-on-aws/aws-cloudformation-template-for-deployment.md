@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # AWS CloudFormation template for deployment
-<a name="aws-cloudformation-template-for-deployment"></a>
 
 You can download the CloudFormation template for this solution before deploying it. This solution uses a separate CloudFormation template to handle the deployment workflow.
 

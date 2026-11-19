@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-upgrad
 ---
 
 # Using Spark Upgrade Tools
-<a name="emr-spark-upgrade-agent-tools"></a>
 
 ## Available Upgrade Tools
 <a name="emr-spark-upgrade-agent-available-tools"></a>

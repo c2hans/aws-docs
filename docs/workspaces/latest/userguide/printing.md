@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/printing.htm
 ---
 
 # Printing from a WorkSpace
-<a name="printing"></a>
 
 The following printing methods are supported by Amazon WorkSpaces.
 

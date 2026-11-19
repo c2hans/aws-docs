@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Re
 ---
 
 # RegisterDelegatedAdministrator
-<a name="API_RegisterDelegatedAdministrator"></a>
 
 Enables the specified member account to administer the Organizations features of the specified AWS service. It grants read-only access to AWS Organizations service data. The account still requires IAM permissions to access and administer the AWS service.
 

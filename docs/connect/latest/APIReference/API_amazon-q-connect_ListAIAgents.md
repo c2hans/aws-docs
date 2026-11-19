@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ListAIAgents
-<a name="API_amazon-q-connect_ListAIAgents"></a>
 
 Lists AI Agents.
 

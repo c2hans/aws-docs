@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/Audi
 ---
 
 # Audit commands
-<a name="AuditCommands"></a>
 
 ## Manage audit settings
 <a name="AuditCommandsManageSettings"></a>

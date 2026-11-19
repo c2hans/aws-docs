@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage_lens_c
 ---
 
 # Create an Amazon S3 Storage Lens dashboard
-<a name="storage_lens_creating_dashboard"></a>
 
 You can create additional S3 Storage Lens custom dashboards that can be scoped to your organization in AWS Organizations or to specific AWS Regions or buckets within an account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 ---
 
 # Example
-<a name="channel-scheduling-get-list-of-all-channel-schedules-example"></a>
 
 This response shows two schedules:
 + One schedule has the ID 13 and is a repeating schedule that runs the channel on weekdays for an hour.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Interrupt
 ---
 
 # InterruptibleCapacityAllocation
-<a name="API_InterruptibleCapacityAllocation"></a>
 
  Represents the allocation of capacity from a source reservation to an interruptible reservation, tracking current and target instance counts for allocation management.
 

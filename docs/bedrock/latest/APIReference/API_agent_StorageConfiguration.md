@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_St
 ---
 
 # StorageConfiguration
-<a name="API_agent_StorageConfiguration"></a>
 
 Contains the storage configuration of the knowledge base.
 

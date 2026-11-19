@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # HookTarget
-<a name="API_HookTarget"></a>
 
 The `HookTarget` data type.
 

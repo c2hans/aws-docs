@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-describe-e
 ---
 
 # Describing an ACME external account binding
-<a name="sdk-acme-describe-eab"></a>
 
 The following example shows how to use the [DescribeAcmeExternalAccountBinding](https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeAcmeExternalAccountBinding.html) function.
 

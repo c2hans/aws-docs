@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-multim
 ---
 
 # Multimodal understanding
-<a name="using-multimodal-models"></a>
 
 Amazon Nova 2 Lite can understand multiple input modalities. This model is equipped with vision capabilities that enable it to comprehend and analyze images, documents, videos, and speech to infer and answer questions based on the content provided.
 

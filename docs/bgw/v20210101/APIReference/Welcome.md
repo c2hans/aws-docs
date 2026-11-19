@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS Backup gateway connects AWS Backup to your hypervisor, so you can create, store, and restore backups of your virtual machines (VMs) anywhere, whether on-premises or in the VMware Cloud (VMC) on AWS.
 
@@ -13,4 +12,4 @@ Use AWS Backup to assign virtual or on-premises resources to a backup plan, or r
 
 To download the AWS software to get started, navigate to the AWS Backup console, choose **Gateways**, then choose **Create gateway**.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

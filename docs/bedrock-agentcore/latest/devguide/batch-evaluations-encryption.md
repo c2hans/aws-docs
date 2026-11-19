@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/batch-
 ---
 
 # Batch evaluation encryption
-<a name="batch-evaluations-encryption"></a>
 
 When you specify a `kmsKeyArn` on a batch evaluation, the service encrypts all output artifacts stored in S3 using S3 server-side encryption with KMS (SSE-KMS). This includes the data source configuration, session metadata, evaluation results, and insight results (for example from `Builtin.FailureAnalysis`).
 

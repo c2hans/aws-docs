@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/tm-video-poli
 ---
 
 # Creating an AWS IoT TwinMaker video player policy
-<a name="tm-video-policy"></a>
 
 The following is a policy template with all of the video permissions you need for the AWS IoT TwinMaker plugin in Grafana:
 

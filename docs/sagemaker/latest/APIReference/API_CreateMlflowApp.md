@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateMlflowApp
-<a name="API_CreateMlflowApp"></a>
 
 Creates an MLflow Tracking Server using a general purpose Amazon S3 bucket as the artifact store.
 

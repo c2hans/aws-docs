@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_ModelAl
 ---
 
 # ModelAlias
-<a name="API_ModelAlias"></a>
 
 An alias that provides a stable reference to a model version.
 

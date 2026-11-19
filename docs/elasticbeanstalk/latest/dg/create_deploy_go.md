@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy
 ---
 
 # Deploying Go applications with Elastic Beanstalk
-<a name="create_deploy_go"></a>
 
 This chapter provides instructions for configuring and deploying your Go web application to AWS Elastic Beanstalk. Elastic Beanstalk makes it easy to deploy, manage, and scale your Go web applications using Amazon Web Services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListWorkflowsItem
-<a name="API_connect-customer-profiles_ListWorkflowsItem"></a>
 
 A workflow in list of workflows.
 

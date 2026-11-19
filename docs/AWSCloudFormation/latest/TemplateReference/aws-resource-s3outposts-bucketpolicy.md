@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Outposts::BucketPolicy
-<a name="aws-resource-s3outposts-bucketpolicy"></a>
 
 This resource applies a bucket policy to an Amazon S3 on Outposts bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-job-queue-
 ---
 
 # Create an Amazon ECS Managed Instances job queue
-<a name="create-job-queue-ecs-managed-instances"></a>
 
 Complete the following steps to create a job queue for Amazon ECS Managed Instances compute environments.
 

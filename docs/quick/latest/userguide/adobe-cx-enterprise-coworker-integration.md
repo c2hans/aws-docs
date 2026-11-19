@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/adobe-cx-enterpri
 ---
 
 # Adobe CX Enterprise Coworker integration
-<a name="adobe-cx-enterprise-coworker-integration"></a>
 
 Retrieve data and take actions across Adobe Experience Cloud products directly from AWS Quick using natural language. With the Adobe CX Enterprise Coworker connector, you can access Adobe Real-Time Customer Data Platform (Real-Time CDP), Customer Journey Analytics (CJA), and Workfront without leaving AWS Quick. The connector uses the Adobe CX Coworker Gateway, a single Model Context Protocol (MCP) endpoint that provides tools across multiple Adobe products.
 

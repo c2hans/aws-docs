@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/base64.
 ---
 
 # BASE64 function
-<a name="base64"></a>
 
 The BASE64 function converts an expression to a base 64 string using [RFC2045 Base64 transfer encoding for MIME](https://datatracker.ietf.org/doc/html/rfc2045).
 

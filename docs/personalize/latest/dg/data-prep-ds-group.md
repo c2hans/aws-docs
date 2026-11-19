@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/data-prep-ds-group
 ---
 
 # Creating an Amazon Personalize dataset group
-<a name="data-prep-ds-group"></a>
 
 After you [create schema JSON files for your data](how-it-works-dataset-schema.md), you are ready to create a dataset group. In Amazon Personalize, a *dataset group* is a container for Amazon Personalize resources, including datasets, domain recommenders, and custom resources. A dataset group organizes your resources into independent collections, where resources from one dataset group can't influence resources in any other dataset group.
 

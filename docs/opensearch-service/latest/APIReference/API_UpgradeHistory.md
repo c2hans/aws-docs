@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # UpgradeHistory
-<a name="API_UpgradeHistory"></a>
 
 History of the last 10 upgrades and upgrade eligibility checks for an Amazon OpenSearch Service domain.
 

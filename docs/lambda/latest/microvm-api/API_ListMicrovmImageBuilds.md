@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_ListMicrov
 ---
 
 # ListMicrovmImageBuilds
-<a name="API_ListMicrovmImageBuilds"></a>
 
 Lists builds for a MicroVM image version with optional filtering by architecture and chipset. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

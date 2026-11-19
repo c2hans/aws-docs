@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # LeadContact
-<a name="API_LeadContact"></a>
 
 An object that contains a lead contact's details associated with the engagement. This provides contact information for individuals involved in lead-related activities.
 

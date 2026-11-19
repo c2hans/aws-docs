@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-jupyterai-
 ---
 
 # Access Jupyter AI Features
-<a name="sagemaker-jupyterai-overview"></a>
 
 You can access Jupyter AI capabilities through two distinct methods: using the chat UI or using magic commands within notebooks.
 

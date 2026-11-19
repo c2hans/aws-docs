@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_P
 ---
 
 # Portal
-<a name="API_Portal"></a>
 
 The web portal.
 

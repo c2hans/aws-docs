@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # InferenceConnectorSource
-<a name="API_InferenceConnectorSource"></a>
 
 The source identifying the inference connector.
 

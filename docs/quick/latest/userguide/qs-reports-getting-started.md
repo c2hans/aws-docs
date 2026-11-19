@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qs-reports-gettin
 ---
 
 # Getting started
-<a name="qs-reports-getting-started"></a>
 
 To get started working with AWS Quick Sight pixel perfect reports, first get the pixel perfect reporting add-on for your AWS Quick account. Pricing for the add-on applies to your entire Quick account and isn't specific to a Region. After you subscribe to Quick reporting, authors can begin creating, scheduling, and sending pixel perfect reports.
 

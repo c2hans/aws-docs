@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteCluster
-<a name="API_DeleteCluster"></a>
 
 Delete a SageMaker HyperPod cluster.
 

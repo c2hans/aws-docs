@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/session
 ---
 
 # Use Session Scripts on Multi-Session Fleets
-<a name="session-scripts-multi-session-fleets"></a>
 
 When using session scripts on multi-session fleets, there are additional requirements and considerations to ensure optimal performance and security.
 

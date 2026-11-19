@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SnapshotD
 ---
 
 # SnapshotDetail
-<a name="API_SnapshotDetail"></a>
 
 Describes the snapshot created from the imported disk.
 

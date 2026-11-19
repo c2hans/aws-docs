@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_De
 ---
 
 # DeploymentStrategy
-<a name="API_DeploymentStrategy"></a>
 
 ## Contents
 <a name="API_DeploymentStrategy_Contents"></a>

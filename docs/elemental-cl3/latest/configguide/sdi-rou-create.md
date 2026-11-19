@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/sdi-rou
 ---
 
 # Step C: Add the router
-<a name="sdi-rou-create"></a>
 
 Perform this procedure on the primary Conductor Live node.
 

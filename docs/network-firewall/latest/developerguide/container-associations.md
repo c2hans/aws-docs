@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/c
 ---
 
 # Container associations in AWS Network Firewall
-<a name="container-associations"></a>
 
 AWS Network Firewall container associations collect the IP addresses of running containers in your Amazon Elastic Container Service and Amazon Elastic Kubernetes Service clusters. They maintain these addresses as a dynamic IP set. Reference this IP set in your Network Firewall rule groups. Write rules that match traffic by container source or destination IP without hardcoding addresses.
 

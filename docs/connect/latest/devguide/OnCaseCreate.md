@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnCaseCreate.htm
 ---
 
 # OnCaseCreate
-<a name="OnCaseCreate"></a>
 
 ## Assigned queue condition
 <a name="OnCaseCreate-aq-condition"></a>

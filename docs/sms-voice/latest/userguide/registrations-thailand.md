@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # Thailand sender ID registration in AWS End User Messaging SMS
-<a name="registrations-thailand"></a>
 
 Follow these directions to register your sender ID in Thailand.
 

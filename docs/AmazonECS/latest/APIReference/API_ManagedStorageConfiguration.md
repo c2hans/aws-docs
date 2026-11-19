@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedStorageConfiguration
-<a name="API_ManagedStorageConfiguration"></a>
 
 The managed storage configuration for the cluster.
 

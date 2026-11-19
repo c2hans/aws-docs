@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Features and benefits
-<a name="features-and-benefits"></a>
 
  The solution provides the following features:
 

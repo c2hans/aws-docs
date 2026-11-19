@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateExasca
 ---
 
 # UpdateExascaleCloudExadataInfrastructure
-<a name="API_UpdateExascaleCloudExadataInfrastructure"></a>
 
 Configures or updates the Exascale storage on an Exadata infrastructure. After you configure Exascale storage, you can create Exascale storage vaults on the infrastructure and VM clusters that use Exascale storage.
 

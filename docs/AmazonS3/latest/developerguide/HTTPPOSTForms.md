@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/HTTPPOSTF
 ---
 
 # HTML forms (AWS signature version 2)
-<a name="HTTPPOSTForms"></a>
 
 **Topics**
 + [HTML form encoding](#HTTPPOSTFormEncoding)

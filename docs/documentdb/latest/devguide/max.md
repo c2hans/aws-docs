@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/max.html
 ---
 
 # $max
-<a name="max"></a>
 
 The `$max` aggregation operator returns the maximum value of a specified field across a set of documents. This operator is useful for finding the highest value in a set of documents.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Path
 ---
 
 # PathMatchType
-<a name="API_PathMatchType"></a>
 
 Describes a path match type. Each rule can include only one of the following types of paths.
 

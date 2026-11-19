@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Possible
 ---
 
 # PossibleRemediationAction
-<a name="API_PossibleRemediationAction"></a>
 
 A list of remediation actions.
 

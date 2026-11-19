@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/example_kinesis_Regis
 ---
 
 # Use `RegisterStreamConsumer` with an AWS SDK or CLI
-<a name="example_kinesis_RegisterStreamConsumer_section"></a>
 
 The following code examples show how to use `RegisterStreamConsumer`.
 

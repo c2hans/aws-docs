@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # GetMigration
-<a name="API_GetMigration"></a>
 
 Retrieves the current status and progress of a migration job, including the number of exported and imported objects and error details if the migration failed.
 

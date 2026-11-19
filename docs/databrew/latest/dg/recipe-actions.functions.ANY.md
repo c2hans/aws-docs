@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # ANY
-<a name="recipe-actions.functions.ANY"></a>
 
  Returns any values from the selected source columns in a new column. Empty and null values are ignored.
 

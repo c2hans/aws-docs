@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BinCo
 ---
 
 # BinCountOptions
-<a name="API_BinCountOptions"></a>
 
 The options that determine the bin count of a histogram.
 

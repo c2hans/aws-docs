@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes
 ---
 
 # MySQL bugs fixed by Aurora MySQL database engine updates
-<a name="AuroraMySQL.Updates.MySQLBugs"></a>
 
 The following sections identify MySQL bugs that have been fixed by Aurora MySQL database engine updates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DnsReq
 ---
 
 # DnsRequestAction
-<a name="API_DnsRequestAction"></a>
 
 Contains information about the DNS\_REQUEST action described in this finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccoun
 ---
 
 # PutAccountVdmAttributes
-<a name="API_PutAccountVdmAttributes"></a>
 
 Update your Amazon SES account VDM attributes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-android-ge
 ---
 
 # Getting Started with the IVS Chat Client Messaging Android SDK
-<a name="chat-android-getting-started"></a>
 
 Before starting, you should be familiar with [Getting Started with Amazon IVS Chat](getting-started-chat.md).
 

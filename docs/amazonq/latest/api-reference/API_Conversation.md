@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Convers
 ---
 
 # Conversation
-<a name="API_Conversation"></a>
 
 A conversation in an Amazon Q Business application.
 

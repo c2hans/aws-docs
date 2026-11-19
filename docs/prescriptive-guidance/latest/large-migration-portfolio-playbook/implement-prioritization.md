@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task 1: Prioritizing the applications
-<a name="implement-prioritization"></a>
 
 In this task, you review the list of unmigrated applications in your portfolio and, for a subset of the remaining applications, assign an application complexity score and priority. You repeat this process many times throughout the migration project.
 

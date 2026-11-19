@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListSt
 ---
 
 # ListStageDevices
-<a name="API_ListStageDevices"></a>
 
 Lists devices allocated to the stage, containing detailed device information and deployment status.
 

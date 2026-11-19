@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/twilio-step-1.html
 ---
 
 # Step 1: Create a Twilio SMS account
-<a name="twilio-step-1"></a>
 
 Sign up for a Twilio account and record the following account information:
 + **ACCOUNT SID**

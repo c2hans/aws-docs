@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html
 ---
 
 # What is AWS CodeCommit?
-<a name="welcome"></a>
 
 AWS CodeCommit is a version control service hosted by Amazon Web Services that you can use to privately store and manage assets (such as documents, source code, and binary files) in the cloud. For information about pricing for CodeCommit, see [Pricing.](http://aws.amazon.com/codecommit/pricing/)
 

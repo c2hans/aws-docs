@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_RunGroupListItem.ht
 ---
 
 # RunGroupListItem
-<a name="API_RunGroupListItem"></a>
 
 A run group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/jobs
 ---
 
 # Running EMR Serverless jobs on spare capacity with Flex
-<a name="jobs-flex-execution"></a>
 
 EMR Serverless Flex is an execution option that runs Spark batch job runs on spare compute capacity at a discounted rate. When you enable Flex for a job run, EMR Serverless runs the Spark executors on spare capacity and the Spark driver on a Standard worker. EMR Serverless selects the capacity, handles reclamation of spare capacity, and retries affected tasks on your behalf. You add one parameter when you submit the job run. You don't configure instance fleets or Spark decommissioning settings. For pricing information, refer to the [Amazon EMR Pricing](https://aws.amazon.com/emr/pricing/) page.
 

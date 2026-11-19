@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-auto-sc
 ---
 
 # Create Auto Scaling groups using launch templates
-<a name="create-auto-scaling-groups-launch-template"></a>
 
 If you have created a launch template, you can create an Auto Scaling group that uses a launch template as a configuration template for its EC2 instances. The launch template specifies information such as the AMI ID, instance type, key pair, security groups, and block device mapping for your instances. For information about creating launch templates, see [Create a launch template for an Auto Scaling group](create-launch-template.md).
 

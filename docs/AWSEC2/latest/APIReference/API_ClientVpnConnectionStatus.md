@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientVpn
 ---
 
 # ClientVpnConnectionStatus
-<a name="API_ClientVpnConnectionStatus"></a>
 
 Describes the status of a client connection.
 

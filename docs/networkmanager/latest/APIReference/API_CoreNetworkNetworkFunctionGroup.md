@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CoreNetworkNetworkFunctionGroup
-<a name="API_CoreNetworkNetworkFunctionGroup"></a>
 
 Describes a network function group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/contractor
 ---
 
 # .contractors
-<a name="contractors"></a>
 
 Used by contractors, such as contractors in the construction industry.
 

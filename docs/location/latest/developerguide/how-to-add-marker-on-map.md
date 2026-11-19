@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ad
 ---
 
 # How to add a marker on the map
-<a name="how-to-add-marker-on-map"></a>
 
 With Amazon Location, you can add both fixed and draggable markers, and you can also customize the color of the markers based on your data and preferences.
 

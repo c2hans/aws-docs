@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelS
 ---
 
 # ModelSpeculativeDecodingTrainingDataSource
-<a name="API_ModelSpeculativeDecodingTrainingDataSource"></a>
 
 Contains information about the training data source for speculative decoding.
 

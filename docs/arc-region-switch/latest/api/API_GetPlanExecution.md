@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_GetPlan
 ---
 
 # GetPlanExecution
-<a name="API_GetPlanExecution"></a>
 
 Retrieves detailed information about a specific plan execution. You must specify the plan ARN and execution ID.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetC
 ---
 
 # GetCelebrityRecognition
-<a name="API_GetCelebrityRecognition"></a>
 
 Gets the celebrity recognition results for a Amazon Rekognition Video analysis started by [StartCelebrityRecognition](API_StartCelebrityRecognition.md).
 

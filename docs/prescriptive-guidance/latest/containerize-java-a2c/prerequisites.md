@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/containeriz
 ---
 
 # Prerequisites and setup
-<a name="prerequisites"></a>
 
 There are [prerequisites](https://docs.aws.amazon.com/app2container/latest/UserGuide/a2c-setup.html) for setting up and using AWS App2Container (A2C). In most cases, applications are running in a private network. It might not be possible for the application server to meet the requirements to containerize your application and deploy to AWS or to install the Docker engine on the application server. In such cases, a consolidated virtual machine (VM) can be provisioned and used as a platform to containerize the applications running on the application servers. Choose a worker machine that can be used for modernizing multiple applications and application servers. The worker machine should meet the following requirements:
 + Must have internet connectivity or alternate connection with access to necessary AWS services.

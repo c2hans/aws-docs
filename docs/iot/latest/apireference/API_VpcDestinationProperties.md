@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_VpcDestinati
 ---
 
 # VpcDestinationProperties
-<a name="API_VpcDestinationProperties"></a>
 
 The properties of a virtual private cloud (VPC) destination.
 

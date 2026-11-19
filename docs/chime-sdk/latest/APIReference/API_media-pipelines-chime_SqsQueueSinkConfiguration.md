@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # SqsQueueSinkConfiguration
-<a name="API_media-pipelines-chime_SqsQueueSinkConfiguration"></a>
 
 The configuration settings for the SQS sink.
 

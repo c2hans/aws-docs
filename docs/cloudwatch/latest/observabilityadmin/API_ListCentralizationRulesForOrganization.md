@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # ListCentralizationRulesForOrganization
-<a name="API_ListCentralizationRulesForOrganization"></a>
 
 Lists all centralization rules in your organization. This operation can only be called by the organization's management account or a delegated administrator account.
 

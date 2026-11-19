@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # AlertCondition
-<a name="API_AlertCondition"></a>
 
 The condition that determines when the alert fires.
 

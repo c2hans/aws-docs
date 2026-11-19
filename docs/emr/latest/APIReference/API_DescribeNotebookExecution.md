@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_DescribeNote
 ---
 
 # DescribeNotebookExecution
-<a name="API_DescribeNotebookExecution"></a>
 
 Provides details of a notebook execution.
 

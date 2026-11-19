@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/
 ---
 
 # MessageProcessingMetadata
-<a name="API_connect-participant_MessageProcessingMetadata"></a>
 
 Contains metadata for chat messages.
 

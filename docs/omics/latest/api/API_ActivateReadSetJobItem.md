@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ActivateReadSetJobI
 ---
 
 # ActivateReadSetJobItem
-<a name="API_ActivateReadSetJobItem"></a>
 
 A read set activation job.
 

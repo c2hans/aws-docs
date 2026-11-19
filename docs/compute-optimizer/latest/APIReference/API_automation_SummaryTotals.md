@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # SummaryTotals
-<a name="API_automation_SummaryTotals"></a>
 
 Aggregate totals for automation events, including counts and estimated savings.
 
